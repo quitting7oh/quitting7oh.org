@@ -114,8 +114,6 @@ Dissolve a tablet in a known volume of water, then drink a fraction.
 
 **Pick a volume that makes your target dose come out to a whole or half mL.** Doses you can't measure cleanly aren't worth pursuing.
 
-*Reactions:* 👍 1
-
 ## How to do it
 
 1. **Place the tablet in the glass.** Don't crush it. The tablet will dissolve on its own.

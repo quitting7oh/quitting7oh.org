@@ -197,5 +197,3 @@ Adjuncts (clonidine, gabapentin, hydroxyzine, trazodone, magnesium, L-theanine) 
 For most people, bupe is a powerful tool that gets them off 7-OH safely with minimal acute suffering. The tradeoff is that **the brain healing happens after the bupe taper, not during it.** Understanding this prevents the common pattern of "I'm on bupe and I still feel flat — what's wrong?" The answer is often: nothing's wrong, that's bupe, and the real recovery curve starts when you finish the taper.
 
 If you're on bupe right now, focus on getting stable, executing your taper plan, and understanding that PAWS (if you get it) is something to expect after the taper completes, not during.
-
-*Reactions:* ❤️ 1

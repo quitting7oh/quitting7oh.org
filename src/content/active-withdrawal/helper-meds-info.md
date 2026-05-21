@@ -91,8 +91,6 @@ Provider attitudes vary. Some prescribers hand it out readily; others want you m
 - **Methocarbamol (Robaxin)** — older muscle relaxant, less sedating than the others, helpful for muscle pain without much "drugged" feeling.
 - **Magnesium glycinate** (OTC supplement, see [#vitamins-supplements](/active-withdrawal/vitamins-supplements)) is a real adjunct here too. Some people don't need a prescription muscle relaxer if magnesium is on board.
 
-*Reactions:* ❤️ 1
-
 ## Sleep medications
 
 Insomnia is often the worst part of withdrawal. Sleep matters more than people realize for recovery, so this is an area worth optimizing.

@@ -6,8 +6,9 @@ import { CATEGORY_SLUGS } from '~/lib/categories';
 export async function getStaticPaths() {
   const docs = await getCollection('docs', (d) => !d.data.draft);
   return docs.map((doc) => {
-    // doc.id looks like "start-here/welcome.md"
-    const slug = doc.id.replace(/\.(md|mdx)$/, '').split('/').pop()!;
+    // Astro v5's glob loader strips the extension from doc.id, so it looks
+    // like "start-here/welcome" (no .md). Just take the last path segment.
+    const slug = doc.id.split('/').pop()!;
     return {
       params: { category: doc.data.category, slug },
       props: { doc },
@@ -17,6 +18,14 @@ export async function getStaticPaths() {
 
 const { doc } = Astro.props;
 const { Content, headings } = await render(doc);
+
+// `doc.filePath` is the on-disk path (e.g. "src/content/start-here/welcome.md")
+// — use it to construct the GitHub edit link with the correct extension.
+// Falls back to `<id>.md` for backwards compat if filePath is missing.
+const CONTENT_ROOT = 'src/content/';
+const fp = doc.filePath ?? '';
+const idx = fp.indexOf(CONTENT_ROOT);
+const filePath = idx >= 0 ? fp.slice(idx + CONTENT_ROOT.length) : `${doc.id}.md`;
 ---
 
 <DocLayout
@@ -24,7 +33,7 @@ const { Content, headings } = await render(doc);
   description={doc.data.description}
   category={doc.data.category}
   lastUpdated={doc.data.last_updated}
-  filePath={doc.id}
+  filePath={filePath}
   headings={headings}
 >
   <Content />

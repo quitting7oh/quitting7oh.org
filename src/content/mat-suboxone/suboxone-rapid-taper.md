@@ -40,8 +40,6 @@ All schedules assume:
 
 *All doses in mg. Each arrow = next day. Stop after the last listed dose.*
 
-*Reactions:* 🙏 1
-
 ## Choosing the right schedule
 
 **Pick the longer end of the range if:**
@@ -93,5 +91,3 @@ How to stabilize: take enough bupe to make you feel okay (usually somewhere betw
 - Symptoms that feel unmanageable
 
 > 🩺 **Final reminder:** This community has run hundreds of rapid tapers from 7-OH successfully. That doesn't mean every individual case goes smoothly, and it doesn't mean a prescriber would sign off on these schedules. You're choosing a community-developed approach. The schedules above represent collective experience, not clinical recommendations. If anything goes wrong, you have to be willing to slow down, stabilize, or seek help.
-
-*Reactions:* 🔥 2

@@ -35,8 +35,8 @@ Your loved one didn't fail at willpower. They got physically dependent on a comp
 **The brain chemistry recovers.** People in this server have done it.
 
 ## Where to learn more in this server
-- [#withdrawal-symptoms](/active-withdrawal/withdrawal-symptoms) and [#what-to-expect](/start-here/what-to-expect) — what they're going through
-- **#7oh**, [#pseudo](/compounds/pseudo), [#mgm15](/compounds/mgm15), [#mit-a-dhm](/compounds/mit-a-dhm) — what specific compound they may be on
+- **#withdrawal-symptoms** and [#what-to-expect](/start-here/what-to-expect) — what they're going through
+- [#7oh](/compounds/7-oh), [#pseudo](/compounds/pseudo), [#mgm15](/compounds/mgm15), [#mit-a-dhm](/compounds/mit-a-dhm) — what specific compound they may be on
 - [#suboxone-info](/mat-suboxone/suboxone-info) and [#tapering-with-leaf](/other-tools/tapering-with-leaf) — paths out
 - [#cats-claw](/compounds/cats-claw) — products marketed under botanical names that contain hidden synthetics
 
@@ -47,8 +47,6 @@ Your loved one didn't fail at willpower. They got physically dependent on a comp
 - **[SAMHSA Helpline](https://www.samhsa.gov/find-help/national-helpline): 1-800-662-HELP** — free, confidential, 24/7.
 
 You'll find more practical guidance in the next post: **how to talk to them, what helps, what makes things worse, and how to take care of yourself.**
-
-*Reactions:* ❤️ 1
 
 # 🤝 How to Actually Help Someone You Love
 
@@ -127,5 +125,3 @@ You can't pour from an empty cup. People who burn out trying to rescue someone o
 ## A reminder
 
 The person you love is still in there. Opioid dependence is loud and ugly and steals their personality temporarily, but it does not erase who they are. People in this server have come back from this. Your loved one can too.
-
-*Reactions:* ❤️ 5

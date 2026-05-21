@@ -82,8 +82,6 @@ You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your 
 - 3 = piloerection of skin can be felt or hairs standing up on arms
 - 5 = prominent piloerection
 
-*Reactions:* ❤️ 1
-
 ## What your total score means
 
 ```

@@ -84,8 +84,6 @@ Common patterns:
 
 If 50 mg x3 genuinely isn't enough even after increasing, or if you're coming off stacked synthetics rather than 7-OH alone, post in **#sr17018** before improvising. Community experience there is ahead of anything published.
 
-*Reactions:* ❤️ 1
-
 ## Dosing context and pharmacology
 
 The protocol above is what this server commonly uses. For broader context: **there is no clinical dosing protocol for SR-17018 in humans.** Dose information comes entirely from community forums (Reddit, Bluelight) and user reports.

@@ -42,8 +42,6 @@ This is a **reasonable formulation.** Most of these ingredients have at least so
 - The marketing leans heavily on testimonials and emotional appeals; the actual mechanism is just supplements that exist independently.
 - **It's not a magic bullet.** Reviews include people who say it helped and people who say it didn't. The supplements are real; the framing as a "kit" doesn't add pharmacological value beyond what the individual components do.
 
-*Reactions:* ❤️ 1
-
 ## Building it yourself: a comparable DIY stack
 
 Here's what an equivalent stack looks like if you put it together from individual supplements. Prices are approximate and vary by brand. Look for third-party tested brands (NOW Foods, Nature's Way, Pure Encapsulations, Thorne, Doctor's Best are reliable mid-priced options).

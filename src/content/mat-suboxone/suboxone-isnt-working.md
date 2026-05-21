@@ -54,7 +54,7 @@ If you're at 2 mg and you're still feeling withdrawal symptoms throughout the da
 ## If you've been on long-acting synthetics or stacked compounds
 Most people in this server are coming off 7-OH, but if you've also been on **MGM-15, MIT-A, or pseudo**, the picture changes meaningfully:
 
-**MGM-15** is a [dual mu/delta receptor agonist](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Buprenorphine is essentially mu-only and is actually a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off MGM-15. This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. **It's not in your head, it's pharmacology.** See **#mgm-15** for the full breakdown.
+**MGM-15** is a [dual mu/delta receptor agonist](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Buprenorphine is essentially mu-only and is actually a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off MGM-15. This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. **It's not in your head, it's pharmacology.** See [#mgm-15](/compounds/mgm15) for the full breakdown.
 
 **Pseudo (mitragynine pseudoindoxyl)** [binds the mu receptor tighter than buprenorphine itself does](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Even when bupe is on board, displacement and stabilization can be incomplete in a way that doesn't happen with 7-OH.
 
@@ -71,8 +71,6 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 4. **Don't bail in the first 1-2 days.** This is when most people quit, because it's when bupe feels least like what their body was used to and the SNRI symptoms are at their worst. Your dose may not be dialed in yet, your adjuncts may not be in your system yet. Push through to day 2 or 3 with the right dose and adjuncts in place.
 5. **Don't redose your old compound to take the edge off.** That's how this restarts.
 6. **Use this server.** People in **#suboxone** have lived through what you're going through with these specific compounds.
-
-*Reactions:* 👍 1
 
 ## When to seek emergency help
 - Severe symptoms that won't resolve and feel unmanageable

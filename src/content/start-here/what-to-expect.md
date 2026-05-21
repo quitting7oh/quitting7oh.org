@@ -26,7 +26,7 @@ Everyone's different, but most people coming off 7-OH follow a similar shape:
 - **#sos** — for the hardest moments. Just post.
 - **#daily-check-in** — even one word.
 **Withdrawal support:**
-- [#withdrawal-symptoms](/active-withdrawal/withdrawal-symptoms) — what you're feeling, what works
+- **#withdrawal-symptoms** — what you're feeling, what works
 - **#day-1-3-survival** — getting through the early days
 **Tools and tapering options:**
 - [#vitamins-supplements](/active-withdrawal/vitamins-supplements) — taking the edge off
@@ -37,12 +37,10 @@ Everyone's different, but most people coming off 7-OH follow a similar shape:
 - [#sr17018-info](/other-tools/sr17018-info) & #sr17018 — alternative bridge option
 **For after the acute phase:**
 - **#paws-support** — longer-term recovery
-- **#cravings-support**, [#dopamine-recovery](/post-acute/dopamine-recovery), **#sober-life**
+- **#cravings-support**, **#dopamine-recovery**, **#sober-life**
 - [#low-dose-naltrexone](/other-tools/low-dose-naltrexone) — promising for PAWS, must be 1-2 weeks post last opioid use
 **If something else is going on:**
-- Compound-specific channels under "Synthetic & Concentrated" if you've been on **#7oh**, [#mgm15](/compounds/mgm15), [#pseudo](/compounds/pseudo), [#mit-a-dhm](/compounds/mit-a-dhm), or stacked products. The timeline and approach differ.
+- Compound-specific channels under "Synthetic & Concentrated" if you've been on [#7oh](/compounds/7-oh), [#mgm15](/compounds/mgm15), [#pseudo](/compounds/pseudo), [#mit-a-dhm](/compounds/mit-a-dhm), or stacked products. The timeline and approach differ.
 ## You will get through this
 [Recovery is possible](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). People in this server have walked this path. You're not alone. If you can manage one thing today, post in **#sos** or **#daily-check-in**. That's enough.
 If symptoms feel unmanageable, your prescriber or urgent care are appropriate resources.
-
-*Reactions:* 💯 1
