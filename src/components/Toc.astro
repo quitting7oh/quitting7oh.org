@@ -1,0 +1,35 @@
+---
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+
+// Only H2 and H3 — H1 is the page title.
+const filtered = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+---
+
+{filtered.length > 0 && (
+  <nav aria-label="Table of contents" class="text-sm">
+    <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+      On this page
+    </p>
+    <ul class="space-y-1.5 border-l border-zinc-200 dark:border-zinc-800">
+      {filtered.map((h) => (
+        <li>
+          <a
+            href={`#${h.slug}`}
+            class:list={[
+              '-ml-px block border-l border-transparent pl-3 text-zinc-600 transition hover:border-accent-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100',
+              h.depth === 3 && 'pl-6 text-zinc-500 dark:text-zinc-500',
+            ]}
+          >
+            {h.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

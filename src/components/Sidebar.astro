@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import { CATEGORIES, getCategory } from '~/lib/categories';
+
+interface Props {
+  currentPath?: string;
+}
+const { currentPath = '' } = Astro.props;
+
+const docs = await getCollection('docs', (d) => !d.data.draft);
+
+// Group docs by category, sorted by `sort` then title.
+const grouped = CATEGORIES.map((cat) => ({
+  ...cat,
+  items: docs
+    .filter((d) => d.data.category === cat.slug)
+    .sort((a, b) => {
+      const sa = a.data.sort ?? 999;
+      const sb = b.data.sort ?? 999;
+      if (sa !== sb) return sa - sb;
+      return a.data.title.localeCompare(b.data.title);
+    }),
+}));
+---
+
+<aside
+  id="site-sidebar"
+  class="site-sidebar fixed inset-y-0 left-0 top-0 z-20 w-72 -translate-x-full overflow-y-auto border-r border-zinc-200 bg-white pt-20 transition-transform lg:sticky lg:top-16 lg:translate-x-0 lg:self-start lg:pt-0 dark:border-zinc-800 dark:bg-zinc-950"
+  aria-label="Site navigation"
+>
+  <nav class="px-4 py-6 lg:px-6">
+    {grouped.map((cat) => (
+      <section class="mb-6 last:mb-0">
+        <h2 class="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+          <span aria-hidden="true">{cat.emoji}</span>
+          <a href={`/${cat.slug}`} class="hover:text-zinc-900 dark:hover:text-zinc-100">
+            {cat.title}
+          </a>
+        </h2>
+        {cat.items.length === 0 ? (
+          <p class="text-sm italic text-zinc-400">No pages yet.</p>
+        ) : (
+          <ul class="space-y-1">
+            {cat.items.map((item) => {
+              const href = `/${item.data.category}/${item.id.replace(/\.(md|mdx)$/, '').split('/').pop()}`;
+              const isActive = currentPath === href;
+              return (
+                <li>
+                  <a
+                    href={href}
+                    aria-current={isActive ? 'page' : undefined}
+                    class:list={[
+                      'block rounded px-2 py-1 text-sm transition',
+                      isActive
+                        ? 'bg-accent-50 font-medium text-accent-800 dark:bg-accent-950/40 dark:text-accent-200'
+                        : 'text-zinc-700 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:text-zinc-50',
+                    ]}
+                  >
+                    {item.data.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </section>
+    ))}
+  </nav>
+</aside>
+
+<style>
+  .site-sidebar.open {
+    transform: translateX(0);
+  }
+  @media (min-width: 1024px) {
+    .site-sidebar {
+      /* Sticky positioning needs an explicit height under the header. */
+      height: calc(100vh - 4rem);
+      transform: none !important;
+    }
+  }
+</style>

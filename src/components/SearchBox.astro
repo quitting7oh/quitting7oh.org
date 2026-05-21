@@ -1,0 +1,148 @@
+---
+interface Props {
+  /** When true, render an enlarged search bar suitable for the homepage. */
+  variant?: 'header' | 'hero';
+  placeholder?: string;
+}
+const { variant = 'header', placeholder = 'Search the site…' } = Astro.props;
+const isHero = variant === 'hero';
+---
+
+<div
+  class:list={[
+    'pagefind-mount relative',
+    isHero ? 'w-full max-w-2xl' : 'w-full max-w-xs',
+  ]}
+  data-pagefind-variant={variant}
+>
+  <label class="sr-only" for={`search-${variant}`}>Search</label>
+  <input
+    id={`search-${variant}`}
+    type="search"
+    placeholder={placeholder}
+    autocomplete="off"
+    class:list={[
+      'w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-400',
+      'shadow-sm focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-200',
+      'dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500',
+      'dark:focus:border-accent-400 dark:focus:ring-accent-800',
+      isHero && 'px-4 py-3 text-base',
+    ]}
+  />
+  <div
+    class="pagefind-results absolute left-0 right-0 top-full z-40 mt-2 hidden max-h-96 overflow-y-auto rounded-md border border-zinc-200 bg-white shadow-lg dark:border-zinc-700 dark:bg-zinc-900"
+  >
+    <ul class="divide-y divide-zinc-100 dark:divide-zinc-800"></ul>
+    <div class="pagefind-empty hidden p-4 text-sm text-zinc-500">No results.</div>
+  </div>
+</div>
+
+<script>
+  // Lazy-load Pagefind only when the user actually focuses a search input.
+  // This keeps the homepage zero-JS for visitors who never search.
+  type PagefindResult = {
+    id: string;
+    data: () => Promise<{
+      url: string;
+      excerpt: string;
+      meta: { title: string; [k: string]: string };
+      filters?: Record<string, string[]>;
+    }>;
+  };
+
+  type Pagefind = {
+    search: (q: string) => Promise<{ results: PagefindResult[] }>;
+  };
+
+  let pagefindPromise: Promise<Pagefind | null> | null = null;
+  function loadPagefind(): Promise<Pagefind | null> {
+    if (pagefindPromise) return pagefindPromise;
+    pagefindPromise = (async () => {
+      try {
+        // Pagefind writes /pagefind/pagefind.js as a post-Astro-build step,
+        // so it doesn't exist when Vite is bundling the client. Construct
+        // the URL at runtime to keep Rollup from trying to resolve it.
+        const url = window.location.origin + '/pagefind/pagefind.js';
+        const pf = (await import(/* @vite-ignore */ url)) as Pagefind;
+        return pf;
+      } catch {
+        return null;
+      }
+    })();
+    return pagefindPromise;
+  }
+
+  function debounce<T extends (...a: any[]) => void>(fn: T, ms = 150) {
+    let t: number | undefined;
+    return (...args: Parameters<T>) => {
+      if (t) window.clearTimeout(t);
+      t = window.setTimeout(() => fn(...args), ms);
+    };
+  }
+
+  document.querySelectorAll('.pagefind-mount').forEach((mount) => {
+    const input = mount.querySelector('input[type="search"]') as HTMLInputElement;
+    const resultsBox = mount.querySelector('.pagefind-results') as HTMLDivElement;
+    const list = resultsBox.querySelector('ul') as HTMLUListElement;
+    const empty = resultsBox.querySelector('.pagefind-empty') as HTMLDivElement;
+
+    const open = () => resultsBox.classList.remove('hidden');
+    const close = () => resultsBox.classList.add('hidden');
+
+    const search = debounce(async (q: string) => {
+      const trimmed = q.trim();
+      if (!trimmed) {
+        list.innerHTML = '';
+        empty.classList.add('hidden');
+        close();
+        return;
+      }
+      const pf = await loadPagefind();
+      if (!pf) {
+        list.innerHTML = '';
+        empty.textContent = 'Search index not available (was the site built with `npm run build`?).';
+        empty.classList.remove('hidden');
+        open();
+        return;
+      }
+      const { results } = await pf.search(trimmed);
+      const top = await Promise.all(results.slice(0, 8).map((r) => r.data()));
+      list.innerHTML = '';
+      if (top.length === 0) {
+        empty.textContent = 'No results.';
+        empty.classList.remove('hidden');
+        open();
+        return;
+      }
+      empty.classList.add('hidden');
+      for (const r of top) {
+        const li = document.createElement('li');
+        li.className = 'p-3 hover:bg-zinc-50 dark:hover:bg-zinc-800';
+        const category = r.filters?.category?.[0] ?? '';
+        li.innerHTML = `
+          <a href="${r.url}" class="block">
+            <div class="text-xs uppercase tracking-wide text-accent-700 dark:text-accent-300">${category}</div>
+            <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100">${r.meta.title ?? r.url}</div>
+            <div class="mt-1 text-xs text-zinc-500 dark:text-zinc-400">${r.excerpt}</div>
+          </a>`;
+        list.appendChild(li);
+      }
+      open();
+    }, 120);
+
+    input.addEventListener('focus', () => {
+      if (input.value.trim()) open();
+      loadPagefind();
+    });
+    input.addEventListener('input', () => search(input.value));
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        input.blur();
+        close();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (!mount.contains(e.target as Node)) close();
+    });
+  });
+</script>

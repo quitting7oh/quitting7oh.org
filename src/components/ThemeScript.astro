@@ -1,0 +1,35 @@
+---
+// Inline, runs *before* the page renders — prevents flash of incorrect theme.
+// Three states stored as 'system' | 'light' | 'dark'. Default is 'system'.
+---
+<script is:inline>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme'); // 'system' | 'light' | 'dark' | null
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      function effective(mode) {
+        if (mode === 'dark') return 'dark';
+        if (mode === 'light') return 'light';
+        return mql.matches ? 'dark' : 'light';
+      }
+      var mode = stored || 'system';
+      var eff = effective(mode);
+      var root = document.documentElement;
+      if (eff === 'dark') root.classList.add('dark');
+      else root.classList.remove('dark');
+      root.dataset.themeMode = mode;
+
+      // Live OS-theme updates while in 'system' mode.
+      mql.addEventListener('change', function (e) {
+        if ((localStorage.getItem('theme') || 'system') !== 'system') return;
+        if (e.matches) root.classList.add('dark');
+        else root.classList.remove('dark');
+      });
+    } catch (e) {
+      // localStorage may be blocked; default to system via media query.
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+    }
+  })();
+</script>

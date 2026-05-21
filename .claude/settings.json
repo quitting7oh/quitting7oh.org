@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/ingest-discord.mjs)",
+      "Bash(node scripts/ingest-discord.mjs --file imports/_test-edge-cases.md --verbose)",
+      "Read(//tmp/quitting7oh-test/start-here/**)",
+      "Read(//private/tmp/quitting7oh-test/start-here/**)",
+      "Bash(rm -rf /tmp/quitting7oh-test)",
+      "Bash(node scripts/ingest-discord.mjs --file imports/_test-edge-cases.md --out /tmp/quitting7oh-test)",
+      "Bash(chmod +x /Users/patrick/work/random/quitting7oh.org/.githooks/pre-commit)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npx astro *)",
+      "Bash(grep -E '^#[^#]|^## ' 'discord-export-1366097989382307901-2026-05-21 \\(2\\)/__TRACKED_VAR__')",
+      "Bash(cp \"discord-export-1366097989382307901-2026-05-21 \\(2\\)/\"*.md imports/ && ls imports/)",
+      "Bash(node scripts/ingest-discord.mjs --dry-run)",
+      "Bash(cp 'discord-export-1366097989382307901-2026-05-21 \\(4\\)/'*.md imports/ && node scripts/ingest-discord.mjs 2>&1 | tail -25)",
+      "Bash(grep -rnE '\\(^|[^[`]\\)#[a-z][a-z0-9-]+' src/content/)"
+    ],
+    "additionalDirectories": [
+      "/Users/patrick/work/random/quitting7oh.org/discord-export-1366097989382307901-2026-05-21 (2)",
+      "/Users/patrick/work/random/quitting7oh.org/discord-export-1366097989382307901-2026-05-21 (4)"
+    ]
+  }
+}

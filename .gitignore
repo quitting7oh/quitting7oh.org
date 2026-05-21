@@ -1,0 +1,28 @@
+# Astro
+.astro/
+dist/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Build
+.cache/
+.netlify/
+.wrangler/
+
+# Pagefind output (regenerated each build)
+public/pagefind/

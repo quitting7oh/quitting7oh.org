@@ -1,0 +1,33 @@
+---
+import { SITE } from '~/lib/site';
+const year = new Date().getFullYear();
+---
+<footer class="mt-16 border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/50">
+  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div>
+        <p class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">{SITE.title}.org</p>
+        <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{SITE.description}</p>
+      </div>
+      <div class="text-sm text-zinc-600 dark:text-zinc-400">
+        <p class="font-semibold text-zinc-800 dark:text-zinc-100">Medical disclaimer</p>
+        <p class="mt-2">
+          This is community-compiled information, not medical advice. Nothing here is a substitute for
+          a conversation with a qualified clinician familiar with your situation. If you are in
+          immediate crisis, call or text 988 (US) or your local emergency number.
+        </p>
+      </div>
+      <div class="text-sm text-zinc-600 dark:text-zinc-400">
+        <p class="font-semibold text-zinc-800 dark:text-zinc-100">Contribute</p>
+        <p class="mt-2">
+          This site is community-maintained. Open an issue or pull request on
+          <a href={SITE.repo} class="text-accent-700 underline decoration-accent-300 underline-offset-2 hover:decoration-accent-600 dark:text-accent-300 dark:decoration-accent-700">GitHub</a>
+          to suggest a correction or addition.
+        </p>
+      </div>
+    </div>
+    <p class="mt-10 text-xs text-zinc-500 dark:text-zinc-500">
+      © {year} {SITE.title}.org · No accounts, no tracking, no monetization.
+    </p>
+  </div>
+</footer>

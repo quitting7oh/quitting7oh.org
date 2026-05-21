@@ -1,0 +1,40 @@
+---
+type CalloutType = 'info' | 'warning' | 'medical';
+
+interface Props {
+  type?: CalloutType;
+  title?: string;
+}
+
+const { type = 'info', title } = Astro.props;
+
+const classes: Record<CalloutType, string> = {
+  info: 'callout-info',
+  warning: 'callout-warning',
+  medical: 'callout-medical',
+};
+
+const defaultTitles: Record<CalloutType, string> = {
+  info: 'Note',
+  warning: 'Warning',
+  medical: 'Not medical advice',
+};
+
+const icons: Record<CalloutType, string> = {
+  info: 'ℹ️',
+  warning: '⚠️',
+  medical: '⚕️',
+};
+
+const resolvedTitle = title ?? defaultTitles[type];
+---
+
+<aside class:list={[classes[type]]} role="note">
+  <p class="m-0 font-semibold text-zinc-800 dark:text-zinc-100">
+    <span aria-hidden="true" class="mr-1">{icons[type]}</span>
+    {resolvedTitle}
+  </p>
+  <div class="mt-1 text-zinc-700 dark:text-zinc-300">
+    <slot />
+  </div>
+</aside>

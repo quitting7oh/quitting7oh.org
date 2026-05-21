@@ -1,0 +1,25 @@
+{
+  "config": {
+    "default": true,
+    // Allow long lines — content is prose, not code.
+    "MD013": false,
+    // Allow inline HTML (we use occasional <svg>, <kbd>, etc.).
+    "MD033": false,
+    // First line doesn't need to be a heading — our `title:` front matter
+    // becomes the H1, so the body shouldn't have one.
+    "MD041": false,
+    // Allow duplicate headings across the doc (front-matter title isn't visible).
+    "MD024": { "siblings_only": true },
+    // Trailing punctuation in headings is fine ("Day 1–3").
+    "MD026": false,
+    // Allow bare URLs (links auto-render).
+    "MD034": false
+  },
+  "ignores": [
+    "node_modules",
+    "dist",
+    ".astro",
+    "imports/_*.md",
+    "**/README.md"
+  ]
+}

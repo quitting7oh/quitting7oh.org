@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: interest-cohort=(), browsing-topics=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+# Long-cache hashed Astro assets
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pagefind index files
+/pagefind/*
+  Cache-Control: public, max-age=86400

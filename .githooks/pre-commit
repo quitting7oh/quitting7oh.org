@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Pre-commit hook for quitting7oh.org. Runs markdownlint on staged content
+# files only. To install: `git config core.hooksPath .githooks`.
+
+set -e
+
+# Find staged markdown files under src/content/.
+staged=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '^src/content/.*\.(md|mdx)$' || true)
+
+if [ -z "$staged" ]; then
+  exit 0
+fi
+
+if ! command -v npx >/dev/null 2>&1; then
+  echo "pre-commit: npx not found; skipping markdown lint." >&2
+  exit 0
+fi
+
+echo "pre-commit: linting $(echo "$staged" | wc -l | tr -d ' ') markdown file(s)…"
+echo "$staged" | xargs npx --no-install markdownlint-cli2 || {
+  echo
+  echo "pre-commit: markdownlint failed. Fix the issues above, restage, and commit again."
+  exit 1
+}

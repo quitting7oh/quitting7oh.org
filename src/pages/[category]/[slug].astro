@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import DocLayout from '~/layouts/DocLayout.astro';
+import { CATEGORY_SLUGS } from '~/lib/categories';
+
+export async function getStaticPaths() {
+  const docs = await getCollection('docs', (d) => !d.data.draft);
+  return docs.map((doc) => {
+    // doc.id looks like "start-here/welcome.md"
+    const slug = doc.id.replace(/\.(md|mdx)$/, '').split('/').pop()!;
+    return {
+      params: { category: doc.data.category, slug },
+      props: { doc },
+    };
+  });
+}
+
+const { doc } = Astro.props;
+const { Content, headings } = await render(doc);
+---
+
+<DocLayout
+  title={doc.data.title}
+  description={doc.data.description}
+  category={doc.data.category}
+  lastUpdated={doc.data.last_updated}
+  filePath={doc.id}
+  headings={headings}
+>
+  <Content />
+</DocLayout>

@@ -1,0 +1,63 @@
+{
+  "channels": {
+    "welcome": { "category": "start-here", "title_override": null },
+    "what-to-expect": { "category": "start-here", "title_override": null },
+    "for-loved-ones": { "category": "start-here", "title_override": "For Loved Ones" },
+    "scams-to-avoid": { "category": "start-here", "title_override": null },
+
+    "sos-resources": { "category": "active-withdrawal", "title_override": null },
+    "day-1-3": { "category": "active-withdrawal", "title_override": "Day 1–3" },
+    "withdrawal-symptoms": { "category": "active-withdrawal", "title_override": null },
+    "supplements": { "category": "active-withdrawal", "title_override": null },
+    "helper-meds-info": { "category": "active-withdrawal", "title_override": "Helper Medications" },
+    "quitkit-info": { "category": "active-withdrawal", "title_override": "Quit Kit & DIY Supplement Stacks" },
+    "vitamins-supplements": { "category": "active-withdrawal", "title_override": "Vitamins & Supplements" },
+
+    "7-oh": { "category": "compounds", "title_override": "7-OH" },
+    "pseudo": { "category": "compounds", "title_override": null },
+    "mgm15": { "category": "compounds", "title_override": "MGM-15" },
+    "mit-a-dhm": { "category": "compounds", "title_override": null },
+    "mitragynine": { "category": "compounds", "title_override": null },
+    "cats-claw": { "category": "compounds", "title_override": "Cat’s Claw" },
+
+    "suboxone-info": { "category": "mat-suboxone", "title_override": null },
+    "suboxone-cows": { "category": "mat-suboxone", "title_override": "COWS Guide" },
+    "suboxone-custom-dose": { "category": "mat-suboxone", "title_override": "Custom Suboxone Dosing" },
+    "suboxone-isnt-working": { "category": "mat-suboxone", "title_override": null },
+    "suboxone-rapid-taper": { "category": "mat-suboxone", "title_override": "Suboxone Rapid Taper" },
+    "suboxone-risks": { "category": "mat-suboxone", "title_override": null },
+    "sublocade-brixadi-info": { "category": "mat-suboxone", "title_override": null },
+
+    "sr17018-info": { "category": "other-tools", "title_override": "SR-17018" },
+    "low-dose-naltrexone": { "category": "other-tools", "title_override": "Low-Dose Naltrexone (LDN)" },
+    "mega-vit-c-info": { "category": "other-tools", "title_override": "Mega Vitamin C" },
+    "tapering-with-leaf": { "category": "other-tools", "title_override": null },
+
+    "what-is-paws": { "category": "post-acute", "title_override": null },
+    "sleep-recovery": { "category": "post-acute", "title_override": null },
+    "dopamine-recovery": { "category": "post-acute", "title_override": null },
+    "cravings": { "category": "post-acute", "title_override": null },
+    "hormones": { "category": "post-acute", "title_override": null },
+
+    "quickmd-info": { "category": "resources", "title_override": null },
+    "telehealth-options": { "category": "resources", "title_override": null },
+    "meeting-schedules": { "category": "resources", "title_override": null },
+    "finding-help": { "category": "resources", "title_override": null }
+  },
+  "emojiMap": {
+    ":warning:": "⚠️",
+    ":info:": "ℹ️",
+    ":sos:": "🆘",
+    ":pill:": "💊",
+    ":sparkles:": "✨",
+    ":heart:": "❤️",
+    ":green_heart:": "💚",
+    ":eyes:": "👀",
+    ":thumbsup:": "👍",
+    ":pray:": "🙏",
+    ":fire:": "🔥",
+    ":sob:": "😭",
+    ":hugs:": "🫂",
+    ":seedling:": "🌱"
+  }
+}

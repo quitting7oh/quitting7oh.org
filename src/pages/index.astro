@@ -1,0 +1,79 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import SearchBox from '~/components/SearchBox.astro';
+import { CATEGORIES } from '~/lib/categories';
+import { getCollection } from 'astro:content';
+
+const docs = await getCollection('docs', (d) => !d.data.draft);
+
+const counts = Object.fromEntries(
+  CATEGORIES.map((c) => [c.slug, docs.filter((d) => d.data.category === c.slug).length]),
+);
+---
+
+<BaseLayout>
+  <main id="main-content">
+    <section class="mx-auto max-w-4xl px-4 pt-12 pb-8 sm:px-6 sm:pt-16 lg:px-8">
+      <h1 class="text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+        A calm reference for getting off 7-OH and kratom synthetics.
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-300">
+        This site is community-compiled information from people who have been through it, for people
+        going through it now and the people who love them. It is not medical advice. It is what we
+        wish someone had told us.
+      </p>
+
+      <div class="mt-8">
+        <SearchBox variant="hero" placeholder="Search for a topic, drug name, symptom…" />
+      </div>
+
+      <a
+        href="/active-withdrawal"
+        class="mt-8 inline-flex items-center gap-3 rounded-lg border-2 border-amber-500 bg-amber-50 px-5 py-4 text-amber-900 transition hover:bg-amber-100 dark:border-amber-400 dark:bg-amber-950/40 dark:text-amber-100 dark:hover:bg-amber-950/70"
+      >
+        <span class="text-2xl" aria-hidden="true">🆘</span>
+        <span>
+          <span class="block font-semibold">In active withdrawal right now?</span>
+          <span class="block text-sm opacity-80">Start with the SOS resources →</span>
+        </span>
+      </a>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <h2 class="sr-only">Browse by category</h2>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {CATEGORIES.map((cat) => (
+          <a
+            href={`/${cat.slug}`}
+            class="group rounded-xl border border-zinc-200 bg-white p-6 transition hover:border-accent-400 hover:shadow-sm dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-accent-500"
+          >
+            <div class="flex items-center gap-3">
+              <span class="text-2xl" aria-hidden="true">{cat.emoji}</span>
+              <h3 class="text-lg font-semibold text-zinc-900 group-hover:text-accent-700 dark:text-zinc-50 dark:group-hover:text-accent-300">
+                {cat.title}
+              </h3>
+            </div>
+            <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{cat.blurb}</p>
+            <p class="mt-3 text-xs text-zinc-400 dark:text-zinc-500">
+              {counts[cat.slug]} {counts[cat.slug] === 1 ? 'page' : 'pages'}
+            </p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-4xl px-4 pb-16 pt-4 sm:px-6 lg:px-8">
+      <div class="callout-medical">
+        <p class="m-0 font-semibold text-zinc-800 dark:text-zinc-100">
+          <span aria-hidden="true" class="mr-1">⚕️</span> A note before you read anything else
+        </p>
+        <p class="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+          Recovery is medical territory. The information here helps you ask better questions and
+          understand what other people in your shoes have tried. It does not replace a prescriber
+          who knows your situation. When something here disagrees with a clinician you trust, trust
+          the clinician.
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
