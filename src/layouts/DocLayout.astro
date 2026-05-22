@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Sidebar from '~/components/Sidebar.astro';
 import Toc from '~/components/Toc.astro';
+import TocMobile from '~/components/TocMobile.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import { getCategory } from '~/lib/categories';
 import { editOnGithubUrl } from '~/lib/site';
@@ -62,6 +63,10 @@ const updatedStr = lastUpdated
             wide && 'max-w-3xl',
           ]}>{description}</p>
         )}
+
+        {/* Mobile/medium TOC — collapsed by default. Hidden on xl+ where
+            the sticky right-rail TOC is visible. Skipped on wide pages. */}
+        {!wide && <div class="mt-6"><TocMobile headings={headings} /></div>}
 
         <article class:list={[
           'prose-recovery dark:prose-invert mt-8',
