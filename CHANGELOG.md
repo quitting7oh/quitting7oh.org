@@ -8,6 +8,11 @@ versioning is not strict — changes ship continuously.
 
 ## [Unreleased] — 2026-05-21 / 2026-05-22
 
+> ℹ️ Re-deployed 2026-05-22 after a Cloudflare-wide outage caused
+> several intermediate builds to fail mid-deploy and leave the site
+> in a 500 state. Rollback to the prior good build worked; this commit
+> triggers a clean rebuild.
+
 ### Site bootstrap & initial content
 
 - **New Astro 5 project** with content collections, MDX, Tailwind v4
