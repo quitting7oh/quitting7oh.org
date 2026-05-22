@@ -47,11 +47,45 @@ import { SITE } from '~/lib/site';
 
 <script>
   const btn = document.getElementById('nav-toggle');
-  btn?.addEventListener('click', () => {
-    const sidebar = document.getElementById('site-sidebar');
+  const sidebar = document.getElementById('site-sidebar');
+  const backdrop = document.getElementById('site-sidebar-backdrop');
+  const closeBtn = document.getElementById('sidebar-close');
+
+  function setSidebarOpen(open: boolean) {
     if (!sidebar) return;
-    const open = sidebar.classList.toggle('open');
-    btn.setAttribute('aria-expanded', String(open));
+    sidebar.classList.toggle('open', open);
+    backdrop?.classList.toggle('open', open);
+    btn?.setAttribute('aria-expanded', String(open));
+    sidebar.setAttribute('aria-hidden', String(!open));
     document.body.classList.toggle('overflow-hidden', open);
+  }
+
+  btn?.addEventListener('click', () => {
+    const isOpen = sidebar?.classList.contains('open');
+    setSidebarOpen(!isOpen);
   });
+  backdrop?.addEventListener('click', () => setSidebarOpen(false));
+  closeBtn?.addEventListener('click', () => setSidebarOpen(false));
+
+  // Close on Escape — standard a11y for modal-style drawers.
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && sidebar?.classList.contains('open')) {
+      setSidebarOpen(false);
+      btn?.focus();
+    }
+  });
+
+  // On desktop the sidebar is always visible (sticky), so aria-hidden must
+  // not be true. Sync once on load and on breakpoint changes.
+  const desktopMQ = window.matchMedia('(min-width: 1024px)');
+  function syncAriaForBreakpoint() {
+    if (!sidebar) return;
+    if (desktopMQ.matches) {
+      sidebar.setAttribute('aria-hidden', 'false');
+    } else if (!sidebar.classList.contains('open')) {
+      sidebar.setAttribute('aria-hidden', 'true');
+    }
+  }
+  syncAriaForBreakpoint();
+  desktopMQ.addEventListener('change', syncAriaForBreakpoint);
 </script>
