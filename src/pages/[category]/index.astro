@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Sidebar from '~/components/Sidebar.astro';
 import { CATEGORIES, getCategory } from '~/lib/categories';
 
 export async function getStaticPaths() {
@@ -22,10 +22,13 @@ docs.sort((a, b) => {
 ---
 
 <BaseLayout title={cat.title} description={cat.blurb}>
-  <div class="mx-auto max-w-[80rem] px-4 sm:px-6 lg:px-8">
-    <main id="main-content" class="min-w-0 py-8 lg:py-12">
+  <div class="mx-auto flex max-w-[88rem] gap-8 px-4 sm:px-6 lg:px-8">
+    <Sidebar currentPath={Astro.url.pathname} />
+    <main id="main-content" class="min-w-0 flex-1 py-8 lg:py-12">
       <div class="mx-auto max-w-[52rem]">
-        <Breadcrumbs crumbs={[{ label: cat.title }]} />
+        <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-accent-700 dark:text-accent-300">
+          Category
+        </p>
         <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
           <span aria-hidden="true" class="mr-2">{cat.emoji}</span>{cat.title}
         </h1>
