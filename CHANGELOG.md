@@ -6,7 +6,7 @@ This site is a community recovery resource compiled from Discord channel
 exports. The format is loosely based on [Keep a Changelog](https://keepachangelog.com/);
 versioning is not strict — changes ship continuously.
 
-## [Unreleased] — 2026-05-21
+## [Unreleased] — 2026-05-21 / 2026-05-22
 
 ### Site bootstrap & initial content
 
@@ -473,6 +473,67 @@ actually wants to land.
   see it once.
 - Renders correctly in both light (amber-50 bg, amber-900 text) and
   dark (amber-950/50 bg, amber-100 text) modes.
+
+### Breadcrumbs — site-wide
+
+- New **`Breadcrumbs.astro`** component renders an accessible
+  `<nav aria-label="Breadcrumb">` with an `<ol>` of crumb links. Last
+  crumb is the current page (`aria-current="page"`, no link).
+  "Home" is always prepended automatically.
+- Wired into **all three** templates that render a non-homepage view:
+  - `DocLayout.astro` → every content page (e.g. `Home › MAT / Suboxone › COWS & SOWS Guide`)
+  - `[category]/index.astro` → every category landing (e.g. `Home › Compounds`)
+  - `sitemap.astro` → `Home › Site map`
+- Replaced the old "category eyebrow" link on doc pages with the
+  breadcrumb (the eyebrow only showed the parent category; the
+  breadcrumb shows the full trail including Home).
+- Verified: 0 pages missing breadcrumbs across the entire built site
+  (excluding the homepage, which intentionally has none).
+
+### Mobile sidebar fix
+
+The mobile nav drawer wasn't fully clickable. Root cause: sidebar at
+`z-20`, sticky header at `z-30` — so the header was capturing clicks
+on the top portion of the drawer where they overlapped. Compounded
+by no backdrop, no close button, and no Escape handler.
+
+Fixes:
+
+- **Sidebar bumped to `z-40`** on mobile so it sits above the header.
+  Drops back to `lg:z-10` on desktop so the sticky header still tucks
+  over the sidebar when scrolling.
+- **Tap-to-close backdrop** (`z-30`, dim + blur) covers the rest of the
+  viewport while the drawer is open. Mobile-only — `lg:hidden`.
+- **Close button** at the top of the drawer (mobile-only), inside a
+  "Navigate" header bar.
+- **Escape closes the drawer** and returns focus to the hamburger
+  button — standard a11y for modal-style drawers.
+- **`aria-hidden` syncs with open state and breakpoint** (was missing
+  entirely). On `lg`+ the sidebar is always exposed to AT; below `lg`
+  it's hidden until opened.
+- Dropped the now-unnecessary `pt-20` from the sidebar — it was
+  trying to clear the header, but the sidebar floats above the header
+  now so the padding isn't needed.
+
+### Mobile "On this page" TOC
+
+Below `xl` (1280px) the sticky right-side TOC is hidden, which left
+mobile and tablet readers with no in-page navigation. Added a
+**collapsible `<details>` "On this page" block** at the top of every
+content page, visible only below `xl`.
+
+- Lives in **`TocMobile.astro`**; native `<details>` so works without
+  JS.
+- Collapsed by default ("On this page (N sections)") so it doesn't
+  push the article down on first paint.
+- Chevron icon rotates 180° on open.
+- Hidden entirely on `xl`+ where the sticky right-side TOC is visible.
+- Hidden on wide pharmacology pages (`wide: true`) and on category
+  index / sitemap pages — none of those have per-section navigation.
+- Sources from the same `headings` array as the desktop TOC, so they
+  stay in sync.
+
+Verified live on all 28 content pages.
 
 ## Still in flight / next up
 

@@ -23,11 +23,38 @@ const grouped = CATEGORIES.map((cat) => ({
 }));
 ---
 
+<!-- Backdrop: shown only when the mobile sidebar is open. Tap to close. -->
+<div
+  id="site-sidebar-backdrop"
+  class="site-sidebar-backdrop fixed inset-0 z-30 hidden bg-black/40 backdrop-blur-sm lg:hidden"
+  aria-hidden="true"
+></div>
+
 <aside
   id="site-sidebar"
-  class="site-sidebar fixed inset-y-0 left-0 top-0 z-20 w-72 -translate-x-full overflow-y-auto border-r border-zinc-200 bg-white pt-20 transition-transform lg:sticky lg:top-16 lg:translate-x-0 lg:self-start lg:pt-0 dark:border-zinc-800 dark:bg-zinc-950"
+  class="site-sidebar fixed inset-y-0 left-0 z-40 w-72 -translate-x-full overflow-y-auto border-r border-zinc-200 bg-white transition-transform lg:sticky lg:top-16 lg:z-10 lg:translate-x-0 lg:self-start dark:border-zinc-800 dark:bg-zinc-950"
   aria-label="Site navigation"
+  aria-hidden="true"
 >
+  <!-- Mobile close button (hidden on lg+). Inside the sidebar so it's
+       reachable with one thumb. -->
+  <div class="flex items-center justify-between border-b border-zinc-200 px-4 py-3 lg:hidden dark:border-zinc-800">
+    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+      Navigate
+    </span>
+    <button
+      id="sidebar-close"
+      type="button"
+      class="-mr-1 inline-flex h-8 w-8 items-center justify-center rounded text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+      aria-label="Close navigation"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+
   <nav class="px-4 py-6 lg:px-6">
     {grouped.map((cat) => (
       <section class="mb-6 last:mb-0">
@@ -69,14 +96,22 @@ const grouped = CATEGORIES.map((cat) => ({
 </aside>
 
 <style>
+  /* Mobile drawer: starts off-screen via -translate-x-full; .open slides
+     it in. Backdrop is toggled in sync. */
   .site-sidebar.open {
     transform: translateX(0);
+  }
+  .site-sidebar-backdrop.open {
+    display: block;
   }
   @media (min-width: 1024px) {
     .site-sidebar {
       /* Sticky positioning needs an explicit height under the header. */
       height: calc(100vh - 4rem);
       transform: none !important;
+    }
+    .site-sidebar-backdrop {
+      display: none !important;
     }
   }
 </style>
