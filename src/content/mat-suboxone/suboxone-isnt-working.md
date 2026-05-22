@@ -2,7 +2,7 @@
 title: "Why Suboxone Might Not Be Working — Read This First"
 description: "Why bupe sometimes doesn't cover you — SNRI symptoms, the dose-ceiling question, long-acting compounds."
 category: "mat-suboxone"
-last_updated: "2026-05-02"
+last_updated: "2026-05-21"
 source_channel: "#suboxone-isnt-working"
 ---
 If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are real, well-understood reasons it can feel inadequate, especially coming off [7-OH](/compounds/7-oh) and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is genuinely different in several ways, and the medication needs to be used a little differently to fully cover what's happening.

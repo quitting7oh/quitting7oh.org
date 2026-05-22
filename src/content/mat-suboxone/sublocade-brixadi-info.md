@@ -2,7 +2,7 @@
 title: "Sublocade & Brixadi: Long-Acting Buprenorphine Injections"
 description: "Long-acting buprenorphine injections — when they help, the long discontinuation tail, who they fit."
 category: "mat-suboxone"
-last_updated: "2026-05-02"
+last_updated: "2026-05-21"
 source_channel: "#sublocade-brixadi-info"
 ---
 > ⚠️ **Information channel, not medical advice.** This is reference material on extended-release buprenorphine injections. For discussion, questions, or community support, see **#suboxone** or post in general support channels. For long-term maintenance discussion specifically, [r/suboxone](https://www.reddit.com/r/suboxone/) is the better resource.

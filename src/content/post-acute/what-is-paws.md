@@ -2,7 +2,7 @@
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal: timeline, common symptoms, and what helps once acute withdrawal is over."
 category: "post-acute"
-last_updated: "2026-05-02"
+last_updated: "2026-05-21"
 source_channel: "#what-is-paws"
 ---
 You made it through acute withdrawal. The worst is behind you. Then somewhere between week 2 and month 2, you might notice things still aren't quite right. Sleep is broken. Mood swings out of nowhere. You can't focus. You feel flat, then anxious, then fine, then exhausted.

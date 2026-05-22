@@ -2,7 +2,7 @@
 title: "What You Should Know About Long-Term Suboxone"
 description: "Long-term effects, dependence, hormone changes, and the realities of tapering off Suboxone."
 category: "mat-suboxone"
-last_updated: "2026-05-02"
+last_updated: "2026-05-21"
 source_channel: "#suboxone-risks"
 ---
 > ⚠️ **This is honest, evidence-based information about a medication a lot of us in this community are using.** It is not anti-MAT. Suboxone has saved lives, and for many people it's the right tool. But it's also a powerful, long-acting opioid, and that's worth understanding fully before you commit to long-term use. **For discussion, questions, or to share your own experience, see #suboxone.**

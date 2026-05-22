@@ -2,7 +2,7 @@
 title: "MGM-15"
 description: "Mitragynine pseudoindoxyl-15 — dual mu/delta agonist, long half-life, and what that means for tapering."
 category: "compounds"
-last_updated: "2026-04-28"
+last_updated: "2026-05-21"
 source_channel: "#mgm15"
 ---
 ## What it is

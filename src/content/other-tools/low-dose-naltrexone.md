@@ -2,7 +2,7 @@
 title: "Low-Dose Naltrexone (LDN)"
 description: "LDN for PAWS, sleep, and mood — after acute withdrawal: what it is, how to get a prescription."
 category: "other-tools"
-last_updated: "2026-04-29"
+last_updated: "2026-05-21"
 source_channel: "#low-dose-naltrexone"
 ---
 > ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this community have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.

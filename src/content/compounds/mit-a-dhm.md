@@ -2,7 +2,7 @@
 title: "MIT-A / DHM (Dihydromitragynine)"
 description: "Dihydromitragynine in the wild — receptor profile, half-life, and what makes it harder to quit than 7-OH."
 category: "compounds"
-last_updated: "2026-04-28"
+last_updated: "2026-05-21"
 source_channel: "#mit-a-dhm"
 ---
 ## Risks

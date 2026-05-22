@@ -2,7 +2,7 @@
 title: "For Loved Ones"
 description: "For partners, parents, and friends of someone using 7-OH, kratom synthetics, or stacked products."
 category: "start-here"
-last_updated: "2026-05-02"
+last_updated: "2026-05-21"
 source_channel: "#for-loved-ones"
 ---
 If you found this site because your partner, son, daughter, sibling, parent, or close friend has been taking "gas station pills", "[7-OH](/compounds/7-oh) tablets" or anything in that family, **you're in the right place.** Take a breath. You don't need to fix everything tonight.
