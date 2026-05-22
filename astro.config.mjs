@@ -10,6 +10,10 @@ import rehypeHeadingAnchors from './src/lib/rehype/headingAnchors.mjs';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://quitting7oh.org',
+  // Static-only build. Documented explicitly so a future change doesn't
+  // accidentally flip on SSR / Cloudflare adapter, which would otherwise
+  // make the deploy invoke a Pages Function on every request.
+  output: 'static',
   trailingSlash: 'never',
   integrations: [mdx(), sitemap()],
   vite: {
