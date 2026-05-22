@@ -32,7 +32,7 @@ const grouped = CATEGORIES.map((cat) => ({
 
 <aside
   id="site-sidebar"
-  class="site-sidebar fixed inset-y-0 left-0 top-0 z-40 w-72 -translate-x-full overflow-y-auto border-r border-zinc-200 bg-white pt-20 transition-transform lg:sticky lg:top-16 lg:z-10 lg:translate-x-0 lg:self-start lg:pt-0 dark:border-zinc-800 dark:bg-zinc-950"
+  class="site-sidebar fixed inset-y-0 left-0 top-0 z-40 w-72 overflow-y-auto border-r border-zinc-200 bg-white pt-20 lg:sticky lg:top-16 lg:z-10 lg:self-start lg:pt-0 dark:border-zinc-800 dark:bg-zinc-950"
   aria-label="Site navigation"
   aria-hidden="true"
 >
@@ -93,6 +93,16 @@ const grouped = CATEGORIES.map((cat) => ({
 </aside>
 
 <style>
+  /* Mobile drawer transform — defined explicitly in scoped CSS rather
+     than Tailwind's -translate-x-full utility. Tailwind composes the
+     transform property through CSS custom properties (--tw-translate-x),
+     which made the `.open { transform: translateX(0) }` override flaky:
+     the backdrop would appear but the drawer wouldn't slide in. */
+  .site-sidebar {
+    transform: translateX(-100%);
+    transition: transform 220ms ease-out;
+    will-change: transform;
+  }
   .site-sidebar.open {
     transform: translateX(0);
   }
@@ -101,9 +111,10 @@ const grouped = CATEGORIES.map((cat) => ({
   }
   @media (min-width: 1024px) {
     .site-sidebar {
-      /* Sticky positioning needs an explicit height under the header. */
+      /* Desktop: always visible. Sticky needs an explicit height
+         under the header. */
+      transform: none;
       height: calc(100vh - 4rem);
-      transform: none !important;
     }
     .site-sidebar-backdrop {
       display: none !important;
