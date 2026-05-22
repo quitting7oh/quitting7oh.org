@@ -2,7 +2,7 @@
 title: "7-OH (7-Hydroxymitragynine)"
 description: "Concentrated 7-hydroxymitragynine — how it differs from kratom leaf, why dependence builds fast, and what makes it tapereable."
 category: "compounds"
-last_updated: "2026-05-21"
+last_updated: "2026-05-22"
 source_channel: "#7-oh"
 sort: 1
 manual: true
@@ -185,7 +185,7 @@ rather than the clinical-default 16-24 mg.
 
 **If you're not sure what you've been on, that's important to figure
 out before induction** — the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
-pseudo) have different timelines and different induction-window
+[pseudo](/compounds/pseudo)) have different timelines and different induction-window
 requirements. See the half-life table in
 [#suboxone-cows](/mat-suboxone/suboxone-cows).
 
@@ -219,7 +219,7 @@ which don't survive the pharmacology:
 
 ## What to do if you're trying to stop
 
-Three real paths, in increasing order of medical support:
+Four real paths people in this community have used:
 
 1. **Cold turkey with helper meds and supplements** — works for many
    people on short-acting 7-OH at moderate doses.
@@ -229,7 +229,13 @@ Three real paths, in increasing order of medical support:
    7-OH dependence specifically. 5-14 days, structured, low-and-slow
    induction. [#suboxone-info](/mat-suboxone/suboxone-info) is the
    overview.
-3. **Plain kratom-leaf taper** — a planned, deliberate protocol that
+3. **SR-17018** — an informal, non-prescription taper tool some people
+   in this community have used to come off 7-OH. It's still an opioid
+   and there's no clinical literature on humans, but the duration and
+   usage pattern make it easier to step down from than 7-OH itself
+   for some users. See [#sr17018-info](/other-tools/sr17018-info)
+   for the community protocol and the real risks.
+4. **Plain kratom-leaf taper** — a planned, deliberate protocol that
    uses leaf as a stepdown from concentrated 7-OH. Not for everyone,
    not for everyone's dose level, and not a rescue strategy during
    acute withdrawal. See
