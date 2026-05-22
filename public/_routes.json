@@ -1,6 +1,0 @@
-{
-  "version": 1,
-  "description": "This site is pure static (Astro + Pagefind). No Cloudflare Pages Functions. The matching `include` and `exclude` patterns explicitly disable Function routing so CF can't accidentally invoke a stale binding from a prior deploy attempt.",
-  "include": ["/*"],
-  "exclude": ["/*"]
-}
