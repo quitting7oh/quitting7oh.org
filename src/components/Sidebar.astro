@@ -4,8 +4,12 @@ import { CATEGORIES, getCategory } from '~/lib/categories';
 
 interface Props {
   currentPath?: string;
+  /** When false, sidebar is hidden on desktop entirely. Mobile drawer
+   * still works. Use on the homepage and other landing pages where the
+   * sidebar isn't needed as a fixed nav rail. */
+  desktopVisible?: boolean;
 }
-const { currentPath = '' } = Astro.props;
+const { currentPath = '', desktopVisible = true } = Astro.props;
 
 const docs = await getCollection('docs', (d) => !d.data.draft);
 
@@ -32,7 +36,8 @@ const grouped = CATEGORIES.map((cat) => ({
 
 <aside
   id="site-sidebar"
-  class="site-sidebar fixed inset-y-0 left-0 z-40 w-72 -translate-x-full overflow-y-auto border-r border-zinc-200 bg-white transition-transform lg:sticky lg:top-16 lg:z-10 lg:translate-x-0 lg:self-start dark:border-zinc-800 dark:bg-zinc-950"
+  data-desktop-visible={String(desktopVisible)}
+  class="site-sidebar fixed bottom-0 left-0 top-0 z-40 w-72 overflow-y-auto border-r border-zinc-200 bg-white lg:top-16 dark:border-zinc-800 dark:bg-zinc-950"
   aria-label="Site navigation"
   aria-hidden="true"
 >
@@ -96,19 +101,32 @@ const grouped = CATEGORIES.map((cat) => ({
 </aside>
 
 <style>
-  /* Mobile drawer: starts off-screen via -translate-x-full; .open slides
-     it in. Backdrop is toggled in sync. */
+  /* Mobile drawer transform — explicit CSS instead of Tailwind's
+     -translate-x-full utility, so the .open state reliably overrides
+     it (Tailwind's transform utility composes via custom properties
+     which made the override flaky). */
+  .site-sidebar {
+    transform: translateX(-100%);
+    transition: transform 220ms ease-out;
+    will-change: transform;
+  }
   .site-sidebar.open {
     transform: translateX(0);
   }
   .site-sidebar-backdrop.open {
     display: block;
   }
+
   @media (min-width: 1024px) {
-    .site-sidebar {
-      /* Sticky positioning needs an explicit height under the header. */
-      height: calc(100vh - 4rem);
-      transform: none !important;
+    /* Desktop: always visible (no transform), positioned-fixed under
+       the header. Pages opt into a left gutter so content doesn't sit
+       underneath. The "desktop-visible=false" variant is hidden on
+       desktop entirely — used by the homepage and other landing pages. */
+    .site-sidebar[data-desktop-visible="true"] {
+      transform: none;
+    }
+    .site-sidebar[data-desktop-visible="false"] {
+      display: none;
     }
     .site-sidebar-backdrop {
       display: none !important;

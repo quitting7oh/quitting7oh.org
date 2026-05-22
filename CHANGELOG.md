@@ -535,6 +535,74 @@ content page, visible only below `xl`.
 
 Verified live on all 28 content pages.
 
+### Sidebar refactor — drawer works on every page; slide-in bug fixed
+
+Two more sidebar problems surfaced after the first mobile fix:
+
+**1. The drawer wasn't actually sliding in** ("just makes the page blurry"
+on mobile). Root cause: Tailwind's `-translate-x-full` utility composes
+the `transform` property through CSS custom properties
+(`--tw-translate-x`), and the `.open { transform: translateX(0) }`
+rule in the component's scoped `<style>` block wasn't reliably winning
+the cascade. The backdrop appeared (blurring + dimming the page) but
+the drawer stayed off-screen.
+
+Fix: removed `-translate-x-full` from the class list and defined both
+states explicitly in the component's scoped CSS:
+
+```css
+.site-sidebar             { transform: translateX(-100%); }
+.site-sidebar.open        { transform: translateX(0); }
+@media (min-width: 1024px) {
+  .site-sidebar[data-desktop-visible="true"]  { transform: none; }
+  .site-sidebar[data-desktop-visible="false"] { display: none; }
+}
+```
+
+No more composition conflict; the override is unambiguous.
+
+**2. The hamburger button was on the homepage but did nothing.** The
+Sidebar component was only rendered inside `DocLayout` and the
+category index, but the hamburger lives in the global `Header` (in
+`BaseLayout`). Tapping it on the homepage (which uses `BaseLayout`
+directly) found no `#site-sidebar` element to toggle.
+
+Fix: lifted Sidebar rendering up to `BaseLayout` so every route mounts
+it. Added a `noSidebarOnDesktop` prop to BaseLayout that:
+- Sets `data-desktop-visible="false"` on the sidebar (hides via CSS
+  on `lg`+ only).
+- Removes the `lg:pl-72` gutter from the slot wrapper.
+
+The mobile drawer remains available on every page regardless of the
+prop. Verified post-build:
+
+| Page              | Mobile drawer | Desktop sticky |
+| ----------------- | ------------- | -------------- |
+| Homepage          | ✓             | hidden         |
+| Doc pages         | ✓             | ✓              |
+| Category indexes  | ✓             | ✓              |
+| Sitemap           | ✓             | ✓              |
+
+**Structural consequences of the refactor:**
+
+- Sidebar is now `position: fixed` on desktop too (no longer `sticky`).
+  That frees it from needing a flex parent, so it works anywhere
+  it's mounted. Pages reserve left gutter via `BaseLayout`'s
+  `lg:pl-72`.
+- Mobile drawer now covers full viewport height (`top: 0` on mobile,
+  `lg:top-16` on desktop) — standard mobile-drawer pattern. Dismiss
+  via the X button, backdrop tap, or Escape.
+- **`DocLayout` and `[category]/index.astro` no longer render their
+  own `<Sidebar />`** — they used to be flex containers with the
+  sidebar as a column. Now they're just main + (optional) right TOC.
+  Outer container narrowed from `max-w-[88rem]` (1408px) to
+  `max-w-[80rem]` (1280px) since the sidebar's 288px lives outside
+  via `BaseLayout`'s `lg:pl-72`. Effective page width on desktop is
+  unchanged: 288 (sidebar) + 1280 (content) = 1568px max.
+- Sitemap page (which had used `BaseLayout` directly without a
+  sidebar) now gets the sticky sidebar for free on desktop — better
+  consistency.
+
 ## Still in flight / next up
 
 - **`compounds/7-oh.md`** is still a placeholder; the real Discord

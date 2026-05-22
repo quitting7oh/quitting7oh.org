@@ -3,17 +3,27 @@ import '~/styles/global.css';
 import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
 import BetaBanner from '~/components/BetaBanner.astro';
+import Sidebar from '~/components/Sidebar.astro';
 import Footer from '~/components/Footer.astro';
 import { SITE } from '~/lib/site';
 
 interface Props {
   title?: string;
   description?: string;
-  /** When true, render the canonical URL as the homepage. */
+  /** Canonical URL override. */
   canonical?: string;
+  /** When true, the global sidebar is hidden on desktop (mobile drawer
+   * still works). Use on landing pages — e.g. the homepage — where the
+   * sidebar isn't needed as a fixed nav rail. Default: false. */
+  noSidebarOnDesktop?: boolean;
 }
 
-const { title, description = SITE.description, canonical } = Astro.props;
+const {
+  title,
+  description = SITE.description,
+  canonical,
+  noSidebarOnDesktop = false,
+} = Astro.props;
 const pageTitle = title ? `${title} · ${SITE.title}.org` : `${SITE.title}.org — recovery information`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
 ---
@@ -39,7 +49,17 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <a class="skip-link" href="#main-content">Skip to content</a>
     <BetaBanner />
     <Header />
-    <slot />
-    <Footer />
+    <!-- Global sidebar: mobile drawer everywhere, desktop sticky nav unless
+         the page opts out via noSidebarOnDesktop. -->
+    <Sidebar
+      currentPath={Astro.url.pathname}
+      desktopVisible={!noSidebarOnDesktop}
+    />
+    <!-- On desktop, when the sidebar is visible, reserve gutter space so
+         page content doesn't sit underneath it. -->
+    <div class:list={[!noSidebarOnDesktop && 'lg:pl-72']}>
+      <slot />
+      <Footer />
+    </div>
   </body>
 </html>

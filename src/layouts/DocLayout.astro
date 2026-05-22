@@ -1,6 +1,5 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import Sidebar from '~/components/Sidebar.astro';
 import Toc from '~/components/Toc.astro';
 import TocMobile from '~/components/TocMobile.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
@@ -15,9 +14,10 @@ interface Props {
   lastUpdated?: Date;
   filePath: string; // e.g. "start-here/welcome.md"
   headings: MarkdownHeading[];
-  /** Wide layout: hides the left sidebar + right TOC, lets the main column
-   * take the full container. For reference docs (charts/diagrams) that
-   * need horizontal room and don't really benefit from category nav. */
+  /** Wide layout: hides the right TOC and lets the main column take the
+   * full container. For reference docs (charts/diagrams) that need
+   * horizontal room and don't really benefit from a per-page TOC.
+   * The category sidebar (in BaseLayout) is still shown. */
   wide?: boolean;
 }
 
@@ -40,12 +40,10 @@ const updatedStr = lastUpdated
 <BaseLayout title={title} description={description}>
   <div class:list={[
     'mx-auto flex gap-8 px-4 sm:px-6 lg:px-8',
-    /* On wide pages we let the outer container stretch wider than the
-       normal 88rem so the chart has room next to the sidebar. */
-    wide ? 'max-w-[112rem]' : 'max-w-[88rem]',
+    /* The outer container width matches the rest of the site. Wide
+       pages drop the right TOC and let main content fill more. */
+    wide ? 'max-w-[88rem]' : 'max-w-[80rem]',
   ]}>
-    <Sidebar currentPath={Astro.url.pathname} />
-
     <main id="main-content" class="min-w-0 flex-1 py-8 lg:py-12">
       <div class:list={['mx-auto', wide ? 'max-w-full' : 'max-w-[52rem]']}>
         <Breadcrumbs
