@@ -41,6 +41,15 @@
   html {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    /* When the browser scrolls to a #fragment anchor, leave this much
+       room above it so the heading doesn't get hidden behind the sticky
+       header. Larger on mobile (header includes the search row). */
+    scroll-padding-top: 5rem;
+  }
+  @media (max-width: 640px) {
+    html {
+      scroll-padding-top: 7rem;
+    }
   }
 
   body {
