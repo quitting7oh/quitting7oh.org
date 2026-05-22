@@ -10,8 +10,8 @@
 
 [QuickMD](https://www.quick.md/) is a telehealth provider that prescribes [Suboxone (buprenorphine-naloxone) for opioid use disorder, including for kratom and 7-OH dependence](https://www.quick.md/faqs/). They're cash-pay, same-day appointments are usually available, and they explicitly handle kratom-derivative cases, which makes them notably better-suited for our community than most general telehealth providers.
 
-## Why this server points people here
-A common problem people in this server hit: standard primary care doctors haven't heard of 7-OH, MGM-15, MIT-A, or pseudo, and induction conversations get awkward when you have to explain what you've been on before you can even start the appointment. QuickMD providers explicitly note that [Suboxone has shown clinical effectiveness for dependence on substances like kratom and tianeptine due to their mu-opioid receptor activity](https://www.quick.md/faqs/), so the basic premise of why you're there doesn't need to be argued.
+## Why this site recommends QuickMD
+A common problem people in this community hit: standard primary care doctors haven't heard of 7-OH, MGM-15, MIT-A, or pseudo, and induction conversations get awkward when you have to explain what you've been on before you can even start the appointment. QuickMD providers explicitly note that [Suboxone has shown clinical effectiveness for dependence on substances like kratom and tianeptine due to their mu-opioid receptor activity](https://www.quick.md/faqs/), so the basic premise of why you're there doesn't need to be argued.
 
 That doesn't mean every QuickMD provider is going to be intimately familiar with the specific synthetic mitragynine derivatives. You should still come prepared to explain what you've actually been on (see the questions list below). But you're starting from a much better baseline than with a typical PCP.
 

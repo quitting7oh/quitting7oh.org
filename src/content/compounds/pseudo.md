@@ -1,6 +1,6 @@
 ---
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
-description: "## General risks - Despite the \"safer opioid\" academic framing, MP is still a potent MOR agonist with full opioid-class dependence, withdrawal, and overdose…"
+description: "Mitragynine pseudoindoxyl (MP) — receptor affinity, why bupe induction is harder, what to watch for."
 category: "compounds"
 last_updated: "2026-04-28"
 source_channel: "#pseudo"
@@ -10,10 +10,10 @@ source_channel: "#pseudo"
 - The reduced-respiratory-depression findings come from controlled animal studies — they don't mean MP is safe to mix with depressants. **Combining with benzos, alcohol, gabapentinoids, or other opioids significantly raises overdose risk.**
 - **Naloxone reverses overdose.** Higher or repeated doses may be needed because of MP's tight MOR binding.
 - Withdrawal looks like classical opioid withdrawal.
-- Products labeled MP, 7-OH, or "pseudoindoxyl kratom" frequently contain a mix of compounds. **What's on the label is not necessarily what's in the bottle.**
+- Products labeled MP, [7-OH](/compounds/7-oh), or "pseudoindoxyl kratom" frequently contain a mix of compounds. **What's on the label is not necessarily what's in the bottle.**
 
 ## Legal status
-MP is named in state-level scheduling actions targeting mitragynine-derived semi-synthetics. The FDA's July 2025 recommendation to schedule 7-OH would likely sweep MP under analog enforcement at the federal level.
+MP is named in state-level scheduling actions targeting mitragynine-derived semi-synthetics. The FDA's July 2025 recommendation to schedule [7-OH](/compounds/7-oh) would likely sweep MP under analog enforcement at the federal level.
 
 # 7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)
 

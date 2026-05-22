@@ -1,0 +1,33 @@
+# Build artifacts and caches
+node_modules
+dist
+.astro
+.wrangler
+.cache
+
+# Editor / system
+.vscode
+.idea
+.DS_Store
+*.swp
+
+# Git
+.git
+.gitignore
+.githooks
+
+# Env
+.env
+.env.*
+
+# Big files we don't need in the image
+imports
+example-export.md
+
+# CI / docs that don't ship in the image
+.github
+docs
+
+# Local
+.vite
+.eslintcache

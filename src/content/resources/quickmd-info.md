@@ -1,6 +1,6 @@
 ---
 title: "QuickMD: Telehealth Suboxone Provider"
-description: "QuickMD is a telehealth provider that prescribes Suboxone (buprenorphine-naloxone) for opioid use disorder, including for kratom and 7-OH dependence. They're…"
+description: "QuickMD telehealth review — same-day Suboxone prescriptions, what to ask, pharmacy gotchas."
 category: "resources"
 last_updated: "2026-05-02"
 source_channel: "#quickmd-info"
@@ -9,8 +9,8 @@ source_channel: "#quickmd-info"
 
 [QuickMD](https://www.quick.md/) is a telehealth provider that prescribes [Suboxone (buprenorphine-naloxone) for opioid use disorder, including for kratom and 7-OH dependence](https://www.quick.md/faqs/). They're cash-pay, same-day appointments are usually available, and they explicitly handle kratom-derivative cases, which makes them notably better-suited for our community than most general telehealth providers.
 
-## Why this server points people here
-A common problem people in this server hit: standard primary care doctors haven't heard of 7-OH, MGM-15, MIT-A, or pseudo, and induction conversations get awkward when you have to explain what you've been on before you can even start the appointment. QuickMD providers explicitly note that [Suboxone has shown clinical effectiveness for dependence on substances like kratom and tianeptine due to their mu-opioid receptor activity](https://www.quick.md/faqs/), so the basic premise of why you're there doesn't need to be argued.
+## Why this site recommends QuickMD
+A common problem people in this community hit: standard primary care doctors haven't heard of [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pseudo, and induction conversations get awkward when you have to explain what you've been on before you can even start the appointment. QuickMD providers explicitly note that [Suboxone has shown clinical effectiveness for dependence on substances like kratom and tianeptine due to their mu-opioid receptor activity](https://www.quick.md/faqs/), so the basic premise of why you're there doesn't need to be argued.
 
 That doesn't mean every QuickMD provider is going to be intimately familiar with the specific synthetic mitragynine derivatives. You should still come prepared to explain what you've actually been on (see the questions list below). But you're starting from a much better baseline than with a typical PCP.
 
@@ -58,7 +58,7 @@ This community uses a specific approach (low-and-slow induction, COWS-based timi
 - **"I'd like to use COWS-based timing for induction rather than a fixed hours-since-last-dose rule. Are you on board with that?"**
 - **"I'd like to start at 2 mg and titrate up by 1 mg as needed rather than starting at 4 mg. Is that something you can support?"**
 - **"My goal is a structured short taper rather than long-term maintenance. Are you supportive of that, and willing to help me plan the taper when I'm ready?"**
-- **"I've been on [name the specific compound: 7-OH, MGM-15, MIT-A, pseudo]. Are you familiar with this, and how does it change your approach?"**
+- **"I've been on [name the specific compound: [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), pseudo]. Are you familiar with this, and how does it change your approach?"**
 - **"Are you willing to consider helper medications like gabapentin, clonidine, hydroxyzine, trazodone, or baclofen for the non-opioid symptoms early on?"**
 
 ## Community experience (mixed but mostly positive)

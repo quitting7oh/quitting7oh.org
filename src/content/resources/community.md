@@ -5,6 +5,7 @@ category: "resources"
 last_updated: "2026-05-21"
 source_channel: "#community"
 sort: 0
+manual: true
 ---
 
 This site is reference material. The **community** is where the live conversation
@@ -34,7 +35,7 @@ What you'll find:
   `#daily-check-in`, `#paws-support`) are where conversation happens.
 - **A `#sos` channel** for the hardest moments. Post one word. People will
   see it.
-- **Compound-specific channels** for 7-OH, MGM-15, pseudo, MIT-A, and
+- **Compound-specific channels** for [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), pseudo, [MIT-A](/compounds/mit-a-dhm), and
   kratom leaf, in case your situation needs more specific input than the
   general channels cover.
 

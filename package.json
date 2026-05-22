@@ -11,6 +11,8 @@
     "astro": "astro",
     "ingest": "node scripts/ingest-discord.mjs",
     "ingest:dry": "node scripts/ingest-discord.mjs --dry-run",
+    "link:compounds": "node scripts/link-compounds.mjs",
+    "link:compounds:dry": "node scripts/link-compounds.mjs --dry-run",
     "lint:md": "markdownlint-cli2 \"src/content/**/*.md\" \"src/content/**/*.mdx\""
   },
   "dependencies": {

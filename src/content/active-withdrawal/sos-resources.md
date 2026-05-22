@@ -1,10 +1,11 @@
 ---
 title: "SOS: You're in Withdrawal Right Now"
-description: "If you're in active withdrawal from 7-OH or a kratom synthetic right now, start here. The next hour, the next day, and where to get help."
+description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "active-withdrawal"
 last_updated: "2026-05-21"
 source_channel: "#sos-resources"
 sort: 1
+manual: true
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you can't keep water
@@ -57,17 +58,24 @@ Do these things, in this order:
 
 **Don't:**
 
-- Don't redose. Even a "small" dose resets your timeline.
+- Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm),
+  pseudo, or any stacked synthetic). Even a "small" dose resets your
+  timeline.
+- Don't improvise with kratom leaf to "take the edge off" right now.
+  Plain leaf is a real taper tool for some people in this community
+  ([#tapering-with-leaf](/other-tools/tapering-with-leaf)) — but it's a
+  *planned* protocol started before acute withdrawal sets in, not a
+  3 a.m. rescue.
 - Don't take benzodiazepines (Xanax, Klonopin, Ativan) "to take the
   edge off" unless they're already prescribed to you for this. Mixing
   benzos with opioid withdrawal recovery is a real overdose risk later.
 - Don't drink to take the edge off. Same reason.
-- Don't take opioid blockers (Narcan, naltrexone). They will make
-  withdrawal worse, fast.
+- Don't take opioid blockers (Narcan, [naltrexone](/other-tools/low-dose-naltrexone))
+  while still in withdrawal. They will make it worse, fast.
 
 ## What's coming, hour by hour
 
-If you've been on **7-OH alone** (the most common short-acting case):
+If you've been on **[7-OH](/compounds/7-oh) alone** (the most common short-acting case):
 
 | Time since last dose | What's happening                                        |
 | -------------------- | -------------------------------------------------------- |
@@ -77,7 +85,7 @@ If you've been on **7-OH alone** (the most common short-acting case):
 | **Days 3–5**         | Symptoms start lifting. Sleep returns in pieces. You feel drained but human. |
 | **Week 2 onward**    | Acute is mostly over. Welcome to [post-acute (PAWS)](/post-acute/what-is-paws), which is its own thing but much easier than this. |
 
-If you've been on **MGM-15, MIT-A/DHM, or a stacked product**, the
+If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), or a stacked product**, the
 timeline runs longer — peak symptoms can be 48–96 hours out instead of
 24–72, and the tail is longer. The shape is the same, just stretched.
 See [#mgm15](/compounds/mgm15) and [#mit-a-dhm](/compounds/mit-a-dhm).
@@ -87,9 +95,10 @@ to the receptor tighter than buprenorphine itself. See
 [#pseudo](/compounds/pseudo). Suboxone induction is harder and may
 require a different approach. Talk to a prescriber.
 
-## Two paths from here
+## Three paths from here
 
-You have a real choice right now.
+You have a real choice right now. None of these is the "right" one for
+everyone — pick the one that fits your situation.
 
 ### Path 1 — tough it out (cold turkey with helper meds and supplements)
 
@@ -123,10 +132,28 @@ within hours.
   same-day telehealth option in this community (45+ US states, $99
   flat). Call them now; you can have a prescription in hours.
 
+### Path 3 — SR-17018 (informal taper tool)
+
+A non-prescription option some people in this community have used to
+come off 7-OH and related synthetics. SR-17018 is still an opioid — it
+binds the mu receptor — but it has a longer duration and a usage
+pattern that community members have found makes it easier to step down
+from than the compound they were on.
+
+- Read **[#sr17018-info](/other-tools/sr17018-info)** for what it is,
+  the community protocol, the real risks, and what's unknown. There is
+  **no clinical literature on SR-17018 in humans** — dose info comes
+  entirely from community forums and user reports. Read carefully
+  before deciding.
+- This path is unregulated and lacks the clinical-safety net of Suboxone.
+  It's a real option that's worked for some people, and it's not a path
+  anyone should take without understanding the trade-offs.
+
 You don't have to decide right this minute. If you're early in
-withdrawal (< 24 hours) and your COWS score is still low, both paths
-are open. If you're past 24 hours and miserable, Path 2 will get you
-relief much faster.
+withdrawal (< 24 hours) and your COWS score is still low, all three
+paths are open. If you're past 24 hours and miserable, Path 2 (Suboxone)
+will get you relief fastest. Path 3 (SR-17018) is mid-tier — slower
+than Suboxone but doesn't require a prescription.
 
 ## When to go to the ER
 
@@ -148,10 +175,52 @@ are not "just withdrawal" and need urgent medical care:**
 - **Pregnancy.** Acute opioid withdrawal carries miscarriage and
   premature-labor risk. Go in.
 
-ERs are required to stabilize you regardless of insurance, immigration
-status, or ability to pay. You will not get in legal trouble for
-telling them what you've been taking. Many ERs can start you on
-Suboxone right there if appropriate.
+### What to expect from an ER visit
+
+**The legal facts:** ERs in the US are required by law (EMTALA) to
+stabilize you regardless of insurance, immigration status, or ability
+to pay. You will not get in legal trouble for telling them what you've
+been taking. Many ERs can start you on Suboxone right there if
+appropriate.
+
+**The honest reality:** not every ER and not every doctor handles
+withdrawal the same way. Some are excellent — they take you seriously,
+treat the symptoms aggressively, induct you on Suboxone if you want,
+and connect you with follow-up MAT before discharge. Some are not —
+people in this community have been talked down to, treated like
+drug-seekers, denied adequate symptom management, or sent home with
+nothing more than a referral and a brochure. Stigma against people who
+use drugs is real in clinical settings, even though it shouldn't be.
+
+If you encounter that:
+
+- **Stick to the medical facts.** "I'm in opioid withdrawal, my COWS
+  score is X, I'm dehydrated and can't keep fluids down." Symptoms,
+  numbers, what you need. That kind of language tends to be taken
+  more seriously than describing how you feel emotionally.
+- **You can ask for a different provider.** "I'd like to be seen by
+  someone else" is a reasonable request. ERs have multiple physicians
+  on shift.
+- **You can ask for the attending.** If a resident or nurse is
+  dismissive, the attending physician is the one responsible for
+  your care plan.
+- **Bring someone with you if possible.** Having another person in
+  the room often shifts how staff behave. They don't have to
+  advocate; just being there helps.
+- **You're allowed to leave.** If you're not in an active medical
+  emergency (the bullets above), you can leave against medical
+  advice. AMA discharges are documented but you don't get arrested
+  or charged.
+- **A bad ER experience doesn't mean medical care won't help you** —
+  it means *that* ER wasn't the right fit. A telehealth Suboxone
+  appointment via [#quickmd-info](/resources/quickmd-info) is often
+  a better path than a second ER visit if you're not in a true
+  emergency.
+
+If you're in an emergency from the red-flag list above, go anyway.
+A bad provider is still better than a missed serious problem. But
+you have more agency in that room than people in withdrawal usually
+realize.
 
 ## Sleep
 

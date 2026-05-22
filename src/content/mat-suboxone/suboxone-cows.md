@@ -1,17 +1,41 @@
 ---
-title: "COWS Guide"
-description: "The COWS (Clinical Opiate Withdrawal Scale) is the single most important tool for timing your Suboxone induction. In this community, we use COWS to decide when…"
+title: "COWS & SOWS Guide"
+description: "Timing your first Suboxone dose with the COWS and SOWS scales — and why the clock alone can mislead you."
 category: "mat-suboxone"
-last_updated: "2026-05-02"
+last_updated: "2026-05-21"
 source_channel: "#suboxone-cows"
+manual: true
 ---
 > ⚠️ **Community information, not medical advice.** Use this alongside guidance from a qualified provider.
 
-The COWS (Clinical Opiate Withdrawal Scale) is the single most important tool for timing your Suboxone induction. **In this community, we use COWS to decide when to take that first dose, not the clock.** Time since last dose is a useful reference, but it's not what predicts a clean induction. What predicts a clean induction is whether your receptors are clear enough that bupe won't precipitate withdrawal when it displaces what's there. COWS measures that directly through your body's withdrawal response.
+The single most important thing about Suboxone induction is **timing it by your withdrawal score, not by the clock**. Two scoring tools exist for this — COWS and SOWS. Both measure the same underlying thing (are you in enough withdrawal that bupe won't precipitate worse withdrawal?), just with different methods and different scales.
 
-**The rule: don't induct until COWS ≥ 12, regardless of how many hours it's been.** If you hit 24 hours and your COWS is still at 8, you're not ready. If you hit 14 hours and your COWS is solidly at 14, you probably are. Trust the score over the timer.
+**The rule: don't induct until COWS ≥ 12 (or SOWS ≥ 17), regardless of how many hours it's been.** If you hit 24 hours and your COWS is still at 8, you're not ready. If you hit 14 hours and your COWS is solidly at 14, you probably are. Trust the score over the timer.
 
-## How to score yourself
+## COWS vs SOWS — which to use
+
+| Scale     | Full name                            | Who scores it       | Items | Range  | Best for                                  |
+| --------- | ------------------------------------ | ------------------- | ----- | ------ | ----------------------------------------- |
+| **COWS**  | Clinical Opiate Withdrawal Scale     | A clinician (ideally) | 11  | 0–48   | Induction in a clinical/telehealth setting |
+| **SOWS**  | Subjective Opiate Withdrawal Scale   | The patient (you)   | 16    | 0–64   | Inducting at home, solo, on your own timeline |
+
+**COWS** is the standard clinical tool. It mixes things you can self-report (yawning, anxiety, GI upset) with **observable signs** that someone else should ideally measure: resting pulse, pupil size, blood pressure trends, gooseflesh on visual inspection. Some of these are doable solo with a pulse oximeter or wearable; some aren't. The [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) is the official version.
+
+**SOWS** is purely subjective — you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed.
+
+In practice:
+
+- **If you have a prescriber or nurse on a video call**, they're going to score COWS. Know what they're looking at.
+- **If you're inducting solo at home** (common with telehealth-only providers like QuickMD), **SOWS is more honest** because you're not faking the observable items you can't actually measure. Score yourself, write it down with a timestamp, and re-score every hour.
+- **Both are useful at the same time.** They're correlated but not identical — sometimes SOWS catches the subjective awfulness before COWS reaches the threshold (or vice versa). Most prescribers will accept either if you bring numbers and timestamps.
+
+**Thresholds for inducting:**
+
+- COWS ≥ 12 (moderate withdrawal) — the standard induction floor
+- SOWS ≥ 17 (mild-to-moderate range) — roughly equivalent
+- Some prescribers want COWS ≥ 13 or higher for the long-acting compounds; ask yours
+
+## How to score yourself — COWS
 
 You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your total. The official [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) has the full scoring rubric and is what you should actually use. Below is a summary so you know what each item is asking.
 
@@ -82,7 +106,7 @@ You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your 
 - 3 = piloerection of skin can be felt or hairs standing up on arms
 - 5 = prominent piloerection
 
-## What your total score means
+## What your total COWS score means
 
 ```
 Score      Severity
@@ -95,13 +119,59 @@ Over 36    Severe withdrawal
 
 **Induct at COWS ≥ 12.** Some people prefer to wait until 13 to 17 for extra safety margin, particularly if you've been on long-acting compounds. If you induct below 12, you risk precipitated withdrawal. If you wait much past the moderate range, you're suffering longer than you need to.
 
+## How to score yourself — SOWS
+
+SOWS is 16 items, each scored **0 (not at all) to 4 (extremely)**. Add them up for your total (range 0–64). Re-score every 60–90 minutes during induction so you can see the trajectory, not just a single snapshot.
+
+The items:
+
+1. I feel **anxious**
+2. I feel like **yawning**
+3. I'm **perspiring** / sweating
+4. My **eyes are tearing**
+5. My **nose is running**
+6. I have **goosebumps**
+7. I am **shaking**
+8. I have **hot flashes**
+9. I have **cold flashes**
+10. My **bones and muscles ache**
+11. I feel **restless** (can't sit still)
+12. I feel **nauseous**
+13. I feel like **vomiting**
+14. My **muscles twitch**
+15. I have **cramps in my stomach**
+16. I feel like **using right now** / strong cravings
+
+**Scoring each item:**
+
+- **0** = not at all
+- **1** = a little
+- **2** = moderately
+- **3** = quite a bit
+- **4** = extremely
+
+## What your total SOWS score means
+
+```
+Score      Severity
+─────────  ──────────────────
+0 to 10    Mild withdrawal
+11 to 20   Moderate withdrawal
+21 to 30   Severe withdrawal
+Over 30    Very severe
+```
+
+**Induct at SOWS ≥ 17.** That's roughly equivalent to COWS ≥ 12 — moderate, induction-ready withdrawal. If your SOWS is in the 21+ range, you're past induction-ready and probably shouldn't wait longer than necessary.
+
+If you're scoring both COWS and SOWS and they disagree (e.g., COWS at 9 but SOWS at 22), trust the higher one and re-score in an hour. The two scales emphasize different things — long-acting compounds sometimes produce strong subjective misery before the observable signs catch up.
+
 ## Half-lives as context (not as the gate)
 
 Half-life tells you roughly **when** your COWS is likely to climb to induction-ready, not whether you should induct.
 
-- **7-OH alone:** plasma half-life ~100 minutes. Most users hit COWS ≥ 12 in the 12 to 18 hour range.
-- **MGM-15:** ~15 hour half-life. Often takes 36 to 72 hours to reach induction-ready COWS.
-- **MIT-A/DHM:** also long-acting. Similar timeline to MGM-15.
+- **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Most users hit COWS ≥ 12 in the 12 to 18 hour range.
+- **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Often takes 36 to 72 hours to reach induction-ready COWS.
+- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
 - **Pseudo (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
 If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. The clock isn't the gate, but the half-life is why some people wait longer than others.

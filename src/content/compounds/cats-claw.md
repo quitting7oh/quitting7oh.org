@@ -1,6 +1,6 @@
 ---
 title: "Cat’s Claw"
-description: "If you're seeing tablets, capsules, or shots labeled \"Cat's Claw\" or \"Rhynchophylline\" at smoke shops or gas stations, read this before you take one."
+description: "Rhynchophylline products marketed as 'Cat's Claw' at smoke shops and gas stations — what they actually are."
 category: "compounds"
 last_updated: "2026-04-29"
 source_channel: "#cats-claw"
@@ -17,13 +17,13 @@ This is why marketers can technically claim some chemical relationship. But the 
 
 ## What's actually in these products
 Lab testing on the new "Cat's Claw" product lines suggests they contain:
-- **MGM-15** or **MGM-16** (semi-synthetic opioids derived from 7-OH)
+- **[MGM-15](/compounds/mgm15)** or **MGM-16** (semi-synthetic opioids derived from [7-OH](/compounds/7-oh))
 - **undisclosed synthetic compounds** with unknown pharmacology
 
-Companies are launching these product lines under the "Cat's Claw" name to **evade regulatory scrutiny** as 7-OH and related compounds get scheduled. The botanical-cousin relationship is being used as marketing cover. It's the same playbook tianeptine used with names like "Tianaa" and "Zaza", benign label, potent synthetic inside.
+Companies are launching these product lines under the "Cat's Claw" name to **evade regulatory scrutiny** as [7-OH](/compounds/7-oh) and related compounds get scheduled. The botanical-cousin relationship is being used as marketing cover. It's the same playbook tianeptine used with names like "Tianaa" and "Zaza", benign label, potent synthetic inside.
 
 ## The synthetic-derivative angle is real and worth knowing about
-[Researchers have already demonstrated precursor-directed biosynthesis with *Uncaria guianensis* (a cat's claw species) to produce novel oxindole alkaloid analogues, including fluorinated versions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6683290/). That's the same kind of structural modification (adding fluorine to a kratom-family alkaloid) that produced MGM-16 from MGM-15. The cat's claw scaffold is being looked at as a starting point for novel synthetic compounds, and there's nothing stopping unregulated chemists from doing the same work and selling the results under the "Cat's Claw" name.
+[Researchers have already demonstrated precursor-directed biosynthesis with *Uncaria guianensis* (a cat's claw species) to produce novel oxindole alkaloid analogues, including fluorinated versions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6683290/). That's the same kind of structural modification (adding fluorine to a kratom-family alkaloid) that produced MGM-16 from [MGM-15](/compounds/mgm15). The cat's claw scaffold is being looked at as a starting point for novel synthetic compounds, and there's nothing stopping unregulated chemists from doing the same work and selling the results under the "Cat's Claw" name.
 
 In other words: real cat's claw extract is benign, but products marketed as "Cat's Claw" may contain synthetic modifications of cat's-claw-related alkaloids that have nothing to do with the traditional herb.
 

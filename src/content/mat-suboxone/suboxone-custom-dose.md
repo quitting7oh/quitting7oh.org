@@ -1,6 +1,6 @@
 ---
 title: "Custom Suboxone Dosing"
-description: "Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5 mg, 4/1 mg, 8/2 mg, 12/3 mg). When you're tapering, especially at the lower…"
+description: "Liquid titration for doses below 0.5 mg — when pill cuts can't get you low enough to finish a taper."
 category: "mat-suboxone"
 last_updated: "2026-05-02"
 source_channel: "#suboxone-custom-dose"

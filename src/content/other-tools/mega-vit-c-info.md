@@ -1,6 +1,6 @@
 ---
 title: "Mega Vitamin C"
-description: "Vitamin C megadosing is one of the older harm-reduction tools in the opioid withdrawal toolkit. It has research support going back to the 1960s, and the…"
+description: "High-dose vitamin C as a withdrawal adjunct — protocol, dosing, evidence, and limits."
 category: "other-tools"
 last_updated: "2026-05-03"
 source_channel: "#mega-vit-c-info"
@@ -120,7 +120,7 @@ Cheaper approaches:
 - **You have kidney problems or a history of kidney stones.** Talk to your doctor first.
 - **You're already pursuing a Suboxone induction or other MAT path.** Vitamin C megadosing is for people doing more direct taper or cold-turkey approaches. It complements MAT but isn't the primary tool there.
 - **You can't afford the protocol and won't dose at therapeutic levels.** Underdosing doesn't help much. Better to focus on cheaper interventions that you can do consistently.
-- **You're on long-acting synthetics like MGM-15 or pseudo at high doses.** These need more pharmaceutical support; vitamin C alone isn't enough.
+- **You're on long-acting synthetics like [MGM-15](/compounds/mgm15) or pseudo at high doses.** These need more pharmaceutical support; vitamin C alone isn't enough.
 
 ## Bottom line
 Vitamin C megadosing is an inexpensive (relatively), low-risk, evidence-supported tool that has helped many people through opioid withdrawal. Liposomal form makes higher therapeutic doses practical without GI side effects. **Preload, dose frequently, combine with the rest of a real recovery protocol, and don't expect miracles.** For the right person it can take a meaningful edge off withdrawal. For everyone, it's adjunctive support, not the main event.

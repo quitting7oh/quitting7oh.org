@@ -1,0 +1,34 @@
+# Caddyfile — reverse proxy + automatic HTTPS for quitting7oh.org.
+# Drop this in /opt/quitting7oh/Caddyfile on the server.
+# Caddy handles ACME (Let's Encrypt) automatically as long as DNS points
+# at the host.
+
+quitting7oh.org, www.quitting7oh.org {
+    # Canonicalize www → apex
+    @www host www.quitting7oh.org
+    redir @www https://quitting7oh.org{uri} permanent
+
+    # Reverse-proxy everything to the site container.
+    reverse_proxy site:8080
+
+    # Belt-and-suspenders headers (the container already sets most of these,
+    # but Caddy is the public-facing layer and may strip some).
+    header {
+        # HSTS — set here (not in nginx) because we're the TLS terminator.
+        Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+        # Don't leak Caddy/nginx versions
+        -Server
+    }
+
+    # Compression — Caddy supports zstd, gzip, brotli out of the box.
+    encode zstd gzip
+
+    # Access logs — comment this out if you'd rather not log.
+    log {
+        output file /var/log/caddy/access.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+        format json
+    }
+}

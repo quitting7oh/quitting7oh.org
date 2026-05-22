@@ -10,7 +10,7 @@
 
 SR-17018 is a synthetic compound originally [developed at the Scripps Research Institute and first described in scientific literature by Laura Bohn and colleagues in 2017](https://en.wikipedia.org/wiki/SR-17018). It's a biased mu-opioid receptor agonist with a pharmacological profile that's genuinely different from classical opioids like morphine, oxycodone, or even buprenorphine, and that profile has made it interesting to people trying to come off opioid dependence.
 
-[On Reddit and other forums, discussion of SR-17018 dramatically increased through 2024, with the compound emerging as an informal tool for opioid discontinuation and withdrawal management](https://en.wikipedia.org/wiki/SR-17018). Some people in this server have used it as part of their plan to come off 7-OH and the related synthetics. **It's a valid option worth understanding.** It's also still an opioid, and we want to be honest about that.
+[On Reddit and other forums, discussion of SR-17018 dramatically increased through 2024, with the compound emerging as an informal tool for opioid discontinuation and withdrawal management](https://en.wikipedia.org/wiki/SR-17018). Some people in this community have used it as part of their plan to come off 7-OH and the related synthetics. **It's a valid option worth understanding.** It's also still an opioid, and we want to be honest about that.
 
 ## What makes it pharmacologically interesting
 SR-17018 is a [biased partial agonist at the mu-opioid receptor with strong selectivity for activation of G protein signaling over β-arrestin2 recruitment](https://en.wikipedia.org/wiki/SR-17018). The G-protein-vs-β-arrestin distinction matters because the analgesic and reward effects of opioids run primarily through G-protein signaling, while many of the worst side effects (respiratory depression, severe withdrawal, fast tolerance buildup) involve β-arrestin signaling. Compounds biased toward G-protein signaling theoretically deliver the helpful effects with fewer of the harmful ones.
@@ -59,9 +59,9 @@ Common patterns:
 
 ### 18YearsOfRegret — May 17, 2026, 4:48 PM
 
-## The community protocol (server-reported)
+## The community protocol
 
-**This is the most common SR-17018 plan reported by people in this server.** It's not a clinical protocol, it's community experience. Treat it as a reference, not a prescription.
+**This is the most common SR-17018 plan reported by people in this community.** It's not a clinical protocol, it's community experience. Treat it as a reference, not a prescription.
 
 **The standard plan:**
 
@@ -95,9 +95,9 @@ If 50 mg x3 genuinely isn't enough even after increasing, or if you're coming of
 
 ## Dosing context and pharmacology
 
-The protocol above is what this server commonly uses. For broader context: **there is no clinical dosing protocol for SR-17018 in humans.** Dose information comes entirely from community forums (Reddit, Bluelight) and user reports.
+The protocol above is what this community commonly uses. For broader context: **there is no clinical dosing protocol for SR-17018 in humans.** Dose information comes entirely from community forums (Reddit, Bluelight) and user reports.
 
-[Bluelight reports describe oral dosing starting with a small allergy-test dose, followed by titration, with doses around 10 mg producing minimal effects and 20 to 35 mg producing more noticeable effects in opioid-tolerant users](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/). [Other community guides describe finding a maintenance dose by tracking which 8-hour totals adequately managed withdrawal symptoms](https://sr17018.org/tapering). The server's 50 mg x3 starting point sits within the range these sources describe.
+[Bluelight reports describe oral dosing starting with a small allergy-test dose, followed by titration, with doses around 10 mg producing minimal effects and 20 to 35 mg producing more noticeable effects in opioid-tolerant users](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/). [Other community guides describe finding a maintenance dose by tracking which 8-hour totals adequately managed withdrawal symptoms](https://sr17018.org/tapering). The community's 50 mg x3 starting point sits within the range these sources describe.
 
 **Half-life and dosing frequency:** SR-17018 has [a half-life of approximately 6 hours in rodent studies](https://www.mdpi.com/1422-0067/26/5/1862). This is why the protocol doses every 6-8 hours, three times a day. Less frequent dosing lets blood levels drop and withdrawal symptoms break through between doses.
 

@@ -1,21 +1,21 @@
 ---
 title: "For Loved Ones"
-description: "If you found this server because your partner, son, daughter, sibling, parent, or close friend has been taking \"gas station pills\", \"7-OH tablets\" or anything…"
+description: "For partners, parents, and friends of someone using 7-OH, kratom synthetics, or stacked products."
 category: "start-here"
 last_updated: "2026-05-02"
 source_channel: "#for-loved-ones"
 ---
-If you found this server because your partner, son, daughter, sibling, parent, or close friend has been taking "gas station pills", "7-OH tablets" or anything in that family, **you're in the right place.** Take a breath. You don't need to fix everything tonight.
+If you found this site because your partner, son, daughter, sibling, parent, or close friend has been taking "gas station pills", "[7-OH](/compounds/7-oh) tablets" or anything in that family, **you're in the right place.** Take a breath. You don't need to fix everything tonight.
 
-This channel is information-only, but the rest of the server is full of people who have lived through what your person is going through. The information below is meant to help you understand what you're actually dealing with, because the marketing on these products has misled almost everyone.
+This page is reference material; our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are where people who have lived through what your person is going through gather to talk. The information below is meant to help you understand what you're actually dealing with, because the marketing on these products has misled almost everyone.
 
 ## What these products actually are
 These products are sold in smoke shops, gas stations, and online as _7-OH_ and dozens of other names. Despite often being marketed as supplements or natural alternatives, **they are far closer to prescription pain medications than to herbal supplements.**
 
 Specifically:
-- The active compound, 7-hydroxymitragynine (7-OH), is a [potent mu-opioid receptor agonist](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/) and produces effects in the same family as prescription opioid medications.
+- The active compound, [7-hydroxymitragynine](/compounds/7-oh) (7-OH), is a [potent mu-opioid receptor agonist](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/) and produces effects in the same family as prescription opioid medications.
 - Regular use produces dependence, tolerance, and a withdrawal syndrome that resembles classical opioid withdrawal.
-- Many products on this market are even more potent semi-synthetic compounds (MGM-15, MIT-A, mitragynine pseudoindoxyl) that don't appear on standard drug tests and weren't designed for human consumption.
+- Many products on this market are even more potent semi-synthetic compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [mitragynine pseudoindoxyl](/compounds/pseudo)) that don't appear on standard drug tests and weren't designed for human consumption.
 
 **Your loved one isn't taking a supplement.** 
 
@@ -32,9 +32,9 @@ This isn't because they're a bad person. It's because **dependence rewires prior
 ## This is not a moral failing
 Your loved one didn't fail at willpower. They got physically dependent on a compound that was sold to them as something safe. The withdrawal syndrome is medically real, miserable, and the main reason people keep using even when they want to stop.
 
-**The brain chemistry recovers.** People in this server have done it.
+**The brain chemistry recovers.** People in this community have done it.
 
-## Where to learn more in this server
+## Where to learn more on this site
 - **#withdrawal-symptoms** and [#what-to-expect](/start-here/what-to-expect) — what they're going through
 - [#7oh](/compounds/7-oh), [#pseudo](/compounds/pseudo), [#mgm15](/compounds/mgm15), [#mit-a-dhm](/compounds/mit-a-dhm) — what specific compound they may be on
 - [#suboxone-info](/mat-suboxone/suboxone-info) and [#tapering-with-leaf](/other-tools/tapering-with-leaf) — paths out
@@ -56,7 +56,7 @@ Continuing from the welcome post above. This is the practical version: what tend
 
 ## What tends to help
 
-- **Learn what they're actually using.** "Kratom" can mean leaf (mild), 7-OH tablets (potent), MGM-15 (extremely potent), or stacked synthetics. The compound matters for understanding withdrawal severity and recovery options. The compound channels in this server have details.
+- **Learn what they're actually using.** "Kratom" can mean leaf (mild), 7-OH tablets (potent), [MGM-15](/compounds/mgm15) (extremely potent), or stacked synthetics. The compound matters for understanding withdrawal severity and recovery options. The [compound pages on this site](/compounds) have details.
 - **Express concern without ultimatums.** "I'm worried about you and I want to understand what's happening" lands differently than "you need to stop." Curiosity opens conversations; demands close them.
 - **Acknowledge that withdrawal is real.** Telling someone to "just stop" when they're physically dependent is asking them to do something genuinely difficult without help.
 - **Know that medical options exist.** Suboxone (buprenorphine), used as a short-term taper or bridge, is the most evidence-based path. Telehealth makes it accessible. Your person doesn't need rehab to start.
@@ -73,7 +73,7 @@ Continuing from the welcome post above. This is the practical version: what tend
 
 ## Warning signs of escalation
 
-- New compounds entering the picture (especially synthetics: MGM-15, MIT-A, pseudo)
+- New compounds entering the picture (especially synthetics: MGM-15, [MIT-A](/compounds/mit-a-dhm), pseudo)
 - Combining with alcohol, benzos, or other depressants — **this is the overdose risk pattern**
 - Increasing isolation, withdrawal from family/friends
 - Sudden financial emergencies, missing money
@@ -87,7 +87,7 @@ You may read online that 7-OH and kratom-derived products "don't cause respirato
 
 - **Many products are mixed.** Stacked synthetics, adulterants, or contaminants may behave very differently from pure mitragynine.
 - **Combinations are dangerous.** Mixing with alcohol, benzos, gabapentinoids, or other depressants can produce respiratory depression even when the kratom product alone might not.
-- **The semi-synthetics are different.** MGM-15, MIT-A, and pseudoindoxyl are more potent and less studied. The "no respiratory depression" claim doesn't reliably extend to them.
+- **The semi-synthetics are different.** MGM-15, MIT-A, and [pseudoindoxyl](/compounds/pseudo) are more potent and less studied. The "no respiratory depression" claim doesn't reliably extend to them.
 - **Narcan is essentially harmless if given to someone who didn't need it.** Worst case is mild withdrawal symptoms; that's not a real downside.
 
 **As one paramedic put it: no EMT has ever been upset at someone for using Narcan.** If your person is unresponsive, breathing slowly, or you can't wake them, give the Narcan and call 911. You don't need to be sure it's an opioid overdose. You don't need to second-guess yourself. **Use it.**
@@ -124,4 +124,4 @@ You can't pour from an empty cup. People who burn out trying to rescue someone o
 
 ## A reminder
 
-The person you love is still in there. Opioid dependence is loud and ugly and steals their personality temporarily, but it does not erase who they are. People in this server have come back from this. Your loved one can too.
+The person you love is still in there. Opioid dependence is loud and ugly and steals their personality temporarily, but it does not erase who they are. People in this community have come back from this. Your loved one can too.

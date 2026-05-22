@@ -46,6 +46,12 @@ export const CATEGORIES = [
     emoji: '🌱',
   },
   {
+    slug: 'pharmacology',
+    title: 'Pharmacology',
+    blurb: 'Deeper science — receptor binding, structure-activity, minor alkaloids.',
+    emoji: '🔬',
+  },
+  {
     slug: 'resources',
     title: 'Resources',
     blurb: 'QuickMD and other telehealth, meetings, finding help.',

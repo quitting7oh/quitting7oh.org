@@ -11,7 +11,7 @@
 > ⚠️ **This is for 7-OH dependence only.** If you've been on MGM-15, MIT-A, pseudo, or stacked compounds, **these schedules will not work for you** and you'll get hurt trying. Long-acting synthetics and high-affinity binders need longer tapers because of their pharmacology, not because of medical conservatism. See the relevant compound channels for the right approach.
 
 ## Why this works for 7-OH (and not for the heavier synthetics)
-7-OH has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this server has consistently observed:** a brief, low-dose bupe course taken just long enough to bridge through acute 7-OH withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
+7-OH has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken just long enough to bridge through acute 7-OH withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
 
 This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see **#suboxone-risks**). Same medication, different use case, different outcome.
 
@@ -82,7 +82,7 @@ All schedules assume:
 Rapid tapers don't always work. **It's not failure to stop and try again with a slower taper.** Stabilize and reassess if:
 - You can't keep fluids down for more than 24 hours
 - Heart rate stays consistently above 110 at rest
-- You're having thoughts of using your old compound to make it stop
+- You're having thoughts of using the synthetic that brought you here to make it stop
 - You're having thoughts of self-harm
 - Symptoms are severe enough you can't function at all for more than a day
 

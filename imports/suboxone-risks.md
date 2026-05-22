@@ -10,7 +10,7 @@
 
 If you're new here, you may have been told that Suboxone is "different from other opioids," "blocks opioids," or is "less risky." All of those are true in narrow, specific ways, and all of them can also obscure what's actually happening pharmacologically. Buprenorphine is a partial mu-opioid receptor agonist with extremely high binding affinity. **It is an opioid.** Your body becomes dependent on it. Coming off it produces opioid withdrawal. Long-term use changes how you feel emotionally and physically.
 
-This server leans toward short-term tapers in part because of the things on this page. None of this is meant to push you off a medication that's working. It's meant to make sure that if you stay on it long-term, it's a fully informed choice.
+This community leans toward short-term tapers in part because of the things on this page. None of this is meant to push you off a medication that's working. It's meant to make sure that if you stay on it long-term, it's a fully informed choice.
 
 ## It is an opioid. Full stop.
 Buprenorphine activates the same mu-opioid receptors as the kratom-derived synthetics and other prescription opioids. It's a "partial agonist" with a ceiling on activation, but partial agonist is not the same as "not an opioid." Some specifics:
@@ -60,7 +60,7 @@ None of this is a reason not to use Suboxone. **Suboxone keeps people out of act
 
 What this *does* mean is that the casual framing of Suboxone as a benign, take-it-as-long-as-you-want-no-big-deal medication isn't accurate. Time on the medication is a real cost, and that cost compounds. The longer you're on it, the harder coming off becomes, and the more time you spend with whatever long-term effects show up for you.
 
-## How this server thinks about it
+## How this community thinks about it
 This community leans toward **short, structured tapers** because of what's on this page. The reasoning:
 
 - **Less time on the medication = less withdrawal to come off of later.**
@@ -69,7 +69,7 @@ This community leans toward **short, structured tapers** because of what's on th
 
 That said, **maintenance is a valid choice for some people.** If your life situation is unstable, your relapse history is severe, or you've tried tapers before and they haven't worked, staying on Suboxone longer-term may genuinely be the right call. Don't let this post push you into a taper you're not ready for. The worst outcome would be coming off too soon, relapsing, and ending up worse than when you started.
 
-If you're considering long-term Suboxone maintenance, [r/suboxone](https://www.reddit.com/r/suboxone/) is the better resource. This server's focus is shorter taper paths.
+If you're considering long-term Suboxone maintenance, [r/suboxone](https://www.reddit.com/r/suboxone/) is the better resource. This site's focus is shorter taper paths.
 
 ## Sources
 - [Long Term Suboxone Emotional Reactivity (Hill et al., 2013, PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3706486/)

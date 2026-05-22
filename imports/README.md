@@ -54,6 +54,25 @@ The importer is **idempotent**: re-running it on the same input produces
 the same output, and only rewrites a file if its content actually changed.
 You can safely run it as many times as you want.
 
+### Protecting editorially-edited pages
+
+Some pages get restructured by hand after import — a quick-reference table
+added at the top, sections reordered, paragraphs combined. To protect that
+work from being clobbered by a future re-ingest, add `manual: true` to the
+page's front matter:
+
+```yaml
+---
+title: "..."
+category: "..."
+manual: true   # ← ingest will not overwrite this file
+---
+```
+
+The ingest will log a `skipped` line for any file with this flag set. To
+re-pull from the import, set the flag back to `false` (or remove the line)
+and re-run.
+
 ## Test fixtures
 
 Files in this folder whose names start with `_` (e.g. `_test-edge-cases.md`)

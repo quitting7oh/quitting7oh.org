@@ -1,13 +1,13 @@
 ---
 title: "Helper Medications"
-description: "The compounds we deal with here (7-OH and the synthetics) hit your opioid receptors and the noradrenergic, serotonergic, GABA, and other systems via the…"
+description: "Prescription adjuncts that take the edge off — clonidine, gabapentin, hydroxyzine, trazodone, baclofen."
 category: "active-withdrawal"
 last_updated: "2026-05-17"
 source_channel: "#helper-meds-info"
 ---
 > ⚠️ **This is a reference, not a prescription.** All of these require a doctor. [#quickmd-info](/resources/quickmd-info) has telehealth options. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
-The compounds we deal with here (7-OH and the synthetics) hit your opioid receptors *and* the noradrenergic, serotonergic, GABA, and other systems via [the SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/). Suboxone covers the opioid side. Helper meds cover everything else.
+The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* the noradrenergic, serotonergic, GABA, and other systems via [the SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/). Suboxone covers the opioid side. Helper meds cover everything else.
 
 This post organizes them by what they do, not by what they're "officially" prescribed for. **You don't need every one of these.** Most people benefit from 2-4. A skilled prescriber will help you figure out which ones fit your symptoms.
 

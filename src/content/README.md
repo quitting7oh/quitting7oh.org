@@ -43,6 +43,7 @@ src/content/resources/quickmd-info.md → quitting7oh.org/resources/quickmd-info
 | `source_channel` | no       | Original Discord channel (e.g. `#welcome`). Provenance only.  |
 | `sort`           | no       | Sort order within a category. Lower numbers float to the top. |
 | `draft`          | no       | If `true`, the page is excluded from the build.               |
+| `manual`         | no       | If `true`, the ingest pipeline will **not** overwrite this file even if its source channel exists in `/imports/`. Use this when you've editorially restructured a page (e.g., added a quick-reference table at the top) and don't want a future re-ingest to clobber that work. |
 
 ## Markdown features available
 

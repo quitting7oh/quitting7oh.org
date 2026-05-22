@@ -21,7 +21,7 @@ Everyone's different, but most people coming off 7-OH follow a similar shape:
 - **Hydrate aggressively.** Electrolytes, not just water.
 - **Sleep when you can.** Don't beat yourself up if you can't.
 - **You don't have to do this alone.** Tools and people are available.
-## Where to go in this server
+## Where to go from here
 **If you need support right now:**
 - **#sos** — for the hardest moments. Just post.
 - **#daily-check-in** — even one word.
@@ -42,7 +42,7 @@ Everyone's different, but most people coming off 7-OH follow a similar shape:
 **If something else is going on:**
 - Compound-specific channels under "Synthetic & Concentrated" if you've been on **#7oh**, **#mgm15**, **#pseudo**, **#mit-a-dhm**, or stacked products. The timeline and approach differ.
 ## You will get through this
-[Recovery is possible](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). People in this server have walked this path. You're not alone. If you can manage one thing today, post in **#sos** or **#daily-check-in**. That's enough.
+[Recovery is possible](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). People in this community have walked this path. You're not alone. If you can manage one thing today, post in **#sos** or **#daily-check-in**. That's enough.
 If symptoms feel unmanageable, your prescriber or urgent care are appropriate resources.
 -# Discussion happens throughout the server. This channel is the starting orientation.
 

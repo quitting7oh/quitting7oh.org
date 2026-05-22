@@ -1,0 +1,70 @@
+# Reference docker-compose for deploying quitting7oh.org on a server.
+#
+# What this stack does:
+#   - `site`: pulls the latest image from GHCR and serves the static site
+#     on port 8080 inside the docker network.
+#   - `caddy`: terminates TLS (Let's Encrypt) and reverse-proxies to `site`.
+#   - `watchtower` (optional): polls GHCR every 5 minutes and restarts
+#     `site` whenever a new image is available.
+#
+# To use:
+#   1. Copy this file and the Caddyfile to /opt/quitting7oh/ on your server.
+#   2. Edit the `image:` line below to match your GHCR path.
+#   3. Edit Caddyfile to use your domain.
+#   4. `docker compose up -d`
+#
+# See docs/deploying.md for the full walkthrough.
+
+services:
+  site:
+    image: ghcr.io/quitting7oh/quitting7oh.org:latest
+    container_name: q7oh-site
+    restart: unless-stopped
+    # Internal-only; Caddy is what's exposed to the internet.
+    expose:
+      - "8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    # Memory limit — the static site needs very little.
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: q7oh-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"     # HTTP/3
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      site:
+        condition: service_healthy
+
+  # OPTIONAL: auto-pull new versions from GHCR every 5 minutes.
+  # Comment this section out if you prefer manual updates.
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: q7oh-watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      WATCHTOWER_CLEANUP: "true"          # remove old images after update
+      WATCHTOWER_POLL_INTERVAL: "300"     # 5 minutes
+      WATCHTOWER_LABEL_ENABLE: "true"     # only watch containers that opt in
+      WATCHTOWER_INCLUDE_RESTARTING: "true"
+
+volumes:
+  caddy_data:
+  caddy_config:

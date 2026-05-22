@@ -5,10 +5,11 @@ category: "start-here"
 last_updated: "2026-05-21"
 source_channel: "#welcome"
 sort: 1
+manual: true
 ---
 
 If you're reading this, you (or someone you love) is probably stuck on a
-"7-OH tablet", a "gas station pill", a kratom-derived synthetic, a leaf
+"[7-OH](/compounds/7-oh) tablet", a "gas station pill", a kratom-derived synthetic, a leaf
 habit that got out of hand, or some combination of those. You're trying
 to figure out how to stop. You're scared, exhausted, or both.
 
@@ -17,8 +18,8 @@ what you don't, and come back to the rest when you're ready.
 
 ## What this site is
 
-This site is a calm, organized reference for getting off **7-OH and
-related kratom synthetics** — including pseudo, MGM-15, MIT-A/DHM, and the
+This site is a calm, organized reference for getting off **[7-OH](/compounds/7-oh) and
+related kratom synthetics** — including pseudo, [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
 stacked products built around them — and the medical and self-care tools
 people in our community have used to do it.
 
@@ -77,8 +78,8 @@ that hasn't come back.
 
 ### 🧪 You want to understand what you've been on
 
-The **[Compounds](/compounds)** section has overviews of 7-OH, MGM-15,
-pseudo, MIT-A/DHM, cat's claw, and how each one differs from raw kratom
+The **[Compounds](/compounds)** section has overviews of 7-OH, [MGM-15](/compounds/mgm15),
+pseudo, [MIT-A/DHM](/compounds/mit-a-dhm), [cat's claw](/compounds/cats-claw), and how each one differs from raw kratom
 leaf. The compound matters — the timeline and the best approach are
 genuinely different across them.
 

@@ -35,6 +35,7 @@ const filePath = idx >= 0 ? fp.slice(idx + CONTENT_ROOT.length) : `${doc.id}.md`
   lastUpdated={doc.data.last_updated}
   filePath={filePath}
   headings={headings}
+  wide={doc.data.wide}
 >
   <Content />
 </DocLayout>

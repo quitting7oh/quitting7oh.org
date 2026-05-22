@@ -1,6 +1,6 @@
 ---
 title: "Quit Kit & DIY Supplement Stacks"
-description: "A note on naming: there are at least two similarly-named products in this space — Quit Kit at tryquitkit.com and QuitK at quitk.com (sold via Soul…"
+description: "Honest review of the Quit Kit supplement stack, and how to build a comparable DIY version for less."
 category: "active-withdrawal"
 last_updated: "2026-05-03"
 source_channel: "#quitkit-info"
@@ -11,7 +11,7 @@ A note on naming: there are at least two similarly-named products in this space 
 
 ## What it is
 
-Quit Kit and QuitK are **commercial supplement stacks** marketed specifically for kratom, 7-OH, and opioid withdrawal. They come as morning and nighttime capsule packs, typically taken for several weeks before and during a taper. Both products are made of well-known recovery supplements bundled into convenient pre-packed doses.
+Quit Kit and QuitK are **commercial supplement stacks** marketed specifically for kratom, [7-OH](/compounds/7-oh), and opioid withdrawal. They come as morning and nighttime capsule packs, typically taken for several weeks before and during a taper. Both products are made of well-known recovery supplements bundled into convenient pre-packed doses.
 
 **Common ingredients (varies by product):**
 - **Magnesium glycinate** — anxiety, sleep, restless legs

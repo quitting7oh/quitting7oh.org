@@ -13,7 +13,7 @@ const counts = Object.fromEntries(
 
 <BaseLayout>
   <main id="main-content">
-    <section class="mx-auto max-w-4xl px-4 pt-12 pb-8 sm:px-6 sm:pt-16 lg:px-8">
+    <section class="mx-auto max-w-5xl px-4 pt-12 pb-8 sm:px-6 sm:pt-16 lg:px-8">
       <h1 class="text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
         A calm reference for getting off 7-OH and kratom synthetics.
       </h1>
@@ -28,7 +28,7 @@ const counts = Object.fromEntries(
       </div>
 
       <a
-        href="/active-withdrawal"
+        href="/active-withdrawal/sos-resources"
         class="mt-8 inline-flex items-center gap-3 rounded-lg border-2 border-amber-500 bg-amber-50 px-5 py-4 text-amber-900 transition hover:bg-amber-100 dark:border-amber-400 dark:bg-amber-950/40 dark:text-amber-100 dark:hover:bg-amber-950/70"
       >
         <span class="text-2xl" aria-hidden="true">🆘</span>
@@ -37,11 +37,55 @@ const counts = Object.fromEntries(
           <span class="block text-sm opacity-80">Start with the SOS resources →</span>
         </span>
       </a>
+
+      {/* Live community links — Discord + subreddit. People in distress find a
+          lot of value in real-time conversation, not just static reference. */}
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href="https://discord.gg/quitting7oh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group inline-flex items-center gap-3 rounded-lg border border-zinc-200 bg-white px-4 py-3 transition hover:border-accent-400 hover:bg-accent-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-accent-500 dark:hover:bg-accent-950/30"
+        >
+          <span class="text-xl" aria-hidden="true">💬</span>
+          <span>
+            <span class="block text-sm font-semibold text-zinc-900 group-hover:text-accent-700 dark:text-zinc-50 dark:group-hover:text-accent-300">
+              Join the Discord
+            </span>
+            <span class="block text-xs text-zinc-500 dark:text-zinc-400">
+              discord.gg/quitting7oh — real-time community
+            </span>
+          </span>
+        </a>
+        <a
+          href="https://www.reddit.com/r/quitting7oh/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group inline-flex items-center gap-3 rounded-lg border border-zinc-200 bg-white px-4 py-3 transition hover:border-accent-400 hover:bg-accent-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-accent-500 dark:hover:bg-accent-950/30"
+        >
+          <span class="text-xl" aria-hidden="true">📖</span>
+          <span>
+            <span class="block text-sm font-semibold text-zinc-900 group-hover:text-accent-700 dark:text-zinc-50 dark:group-hover:text-accent-300">
+              r/quitting7oh
+            </span>
+            <span class="block text-xs text-zinc-500 dark:text-zinc-400">
+              Searchable, slower — good for stories
+            </span>
+          </span>
+        </a>
+        <a
+          href="/resources/community"
+          class="group inline-flex items-center gap-3 rounded-lg border border-transparent px-4 py-3 text-sm text-zinc-600 transition hover:border-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:border-zinc-800 dark:hover:text-zinc-100"
+        >
+          <span aria-hidden="true">→</span>
+          <span>About the community</span>
+        </a>
+      </div>
     </section>
 
-    <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-[88rem] px-4 py-8 sm:px-6 lg:px-8">
       <h2 class="sr-only">Browse by category</h2>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {CATEGORIES.map((cat) => (
           <a
             href={`/${cat.slug}`}
@@ -62,16 +106,18 @@ const counts = Object.fromEntries(
       </div>
     </section>
 
-    <section class="mx-auto max-w-4xl px-4 pb-16 pt-4 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-5xl px-4 pb-16 pt-4 sm:px-6 lg:px-8">
       <div class="callout-medical">
         <p class="m-0 font-semibold text-zinc-800 dark:text-zinc-100">
           <span aria-hidden="true" class="mr-1">⚕️</span> A note before you read anything else
         </p>
         <p class="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-          Recovery is medical territory. The information here helps you ask better questions and
-          understand what other people in your shoes have tried. It does not replace a prescriber
-          who knows your situation. When something here disagrees with a clinician you trust, trust
-          the clinician.
+          Recovery is medical territory. The information here is meant to help you bring lived
+          experience and better questions into the conversation with your prescriber, not replace
+          that conversation. For most medical decisions a clinician who knows your situation will
+          have context you don't — listen to them. For a few (like Suboxone starting doses and
+          taper pacing) the community has hands-on experience worth bringing to the table. Both
+          sides of that conversation matter.
         </p>
       </div>
     </section>

@@ -31,6 +31,7 @@ Insurance rarely covers compounded LDN, but cash prices are typically reasonable
 - **Not a withdrawal medication.** It will make withdrawal worse, not better, if started too early.
 - **Not a magic bullet.** It helps some people with PAWS and not everyone. Sleep, exercise, nutrition, therapy, and time still do most of the heavy lifting.
 - **Not appropriate for everyone**, especially people with liver issues, certain medications, or other specific conditions. Your provider needs your full medical picture to make that call.
+- **Not the same as ULDN.** Ultra-Low-Dose Naltrexone uses microgram doses (about 1,000× smaller) and is taken *with* opioids to reduce tolerance or smooth a taper. Different dose, different timing, different use case. See **#ultra-low-dose-naltrexone** if you're considering it.
 
 ## Further reading (please do your own research before deciding anything)
 - [LDN Research Trust](https://ldnresearchtrust.org/), the central independent hub for LDN info, provider directory, pharmacy directory, patient stories
@@ -42,7 +43,7 @@ Insurance rarely covers compounded LDN, but cash prices are typically reasonable
 
 # Low Dose Naltrexone (LDN), For After You're Through Withdrawal
 
-> ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this server have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.
+> ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this community have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.
 
 LDN is one of the more interesting tools that **may** be worth looking into **after** you're past acute withdrawal and into the long, slow part where things still don't feel right. It's not a withdrawal medication, it's not a substitute for MAT, and it absolutely **cannot be taken while there are still opioids on your receptors**. But for PAWS, low mood, low energy, sleep issues, and that persistent "off" feeling that hangs around for months, a lot of people report finding it helpful. Whether it's right for *you* is a question for a clinician.
 

@@ -12,7 +12,7 @@ Sublocade and Brixadi are two FDA-approved long-acting buprenorphine injections 
 
 This post exists because some people in this community have been offered these injections by their prescribers, and the pharmacology, dosing, and discontinuation profile differ enough from oral Suboxone that it's worth understanding before agreeing to one.
 
-**Heads up about this server's focus:** these are maintenance-oriented medications. They're designed for stable, sustained dosing over months to years, not for short tapers. This server is **focused on short-term tapers**, so for most people here, daily sublingual Suboxone with a structured taper plan will be a better fit than long-acting injections. That said, the information below is here so you can have an informed conversation with your prescriber if these come up.
+**Heads up about this site's focus:** these are maintenance-oriented medications. They're designed for stable, sustained dosing over months to years, not for short tapers. This site is **focused on short-term tapers**, so for most people here, daily sublingual Suboxone with a structured taper plan will be a better fit than long-acting injections. That said, the information below is here so you can have an informed conversation with your prescriber if these come up.
 
 ## What they are
 

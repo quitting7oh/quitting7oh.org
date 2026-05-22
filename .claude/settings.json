@@ -16,11 +16,17 @@
       "Bash(node scripts/ingest-discord.mjs --dry-run)",
       "Bash(cp 'discord-export-1366097989382307901-2026-05-21 \\(4\\)/'*.md imports/ && node scripts/ingest-discord.mjs 2>&1 | tail -25)",
       "Bash(grep -rnE '\\(^|[^[`]\\)#[a-z][a-z0-9-]+' src/content/)",
-      "Bash(node scripts/ingest-discord.mjs --verbose)"
+      "Bash(node scripts/ingest-discord.mjs --verbose)",
+      "Bash(docker build *)",
+      "Bash(node scripts/link-compounds.mjs)",
+      "Bash(awk 'NR==8' src/content/active-withdrawal/helper-meds-info.md)",
+      "Bash(node -e ' *)"
     ],
     "additionalDirectories": [
       "/Users/patrick/work/random/quitting7oh.org/discord-export-1366097989382307901-2026-05-21 (2)",
-      "/Users/patrick/work/random/quitting7oh.org/discord-export-1366097989382307901-2026-05-21 (4)"
+      "/Users/patrick/work/random/quitting7oh.org/discord-export-1366097989382307901-2026-05-21 (4)",
+      "/tmp",
+      "/private/tmp"
     ]
   }
 }

@@ -6,9 +6,9 @@
 
 # 👋 If Someone You Love Is Using 7-OH or Related Product
 
-If you found this server because your partner, son, daughter, sibling, parent, or close friend has been taking "gas station pills", "7-OH tablets" or anything in that family, **you're in the right place.** Take a breath. You don't need to fix everything tonight.
+If you found this site because your partner, son, daughter, sibling, parent, or close friend has been taking "gas station pills", "7-OH tablets" or anything in that family, **you're in the right place.** Take a breath. You don't need to fix everything tonight.
 
-This channel is information-only, but the rest of the server is full of people who have lived through what your person is going through. The information below is meant to help you understand what you're actually dealing with, because the marketing on these products has misled almost everyone.
+This page is reference material; our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are where people who have lived through what your person is going through gather to talk. The information below is meant to help you understand what you're actually dealing with, because the marketing on these products has misled almost everyone.
 
 ## What these products actually are
 These products are sold in smoke shops, gas stations, and online as _7-OH_ and dozens of other names. Despite often being marketed as supplements or natural alternatives, **they are far closer to prescription pain medications than to herbal supplements.**
@@ -33,9 +33,9 @@ This isn't because they're a bad person. It's because **dependence rewires prior
 ## This is not a moral failing
 Your loved one didn't fail at willpower. They got physically dependent on a compound that was sold to them as something safe. The withdrawal syndrome is medically real, miserable, and the main reason people keep using even when they want to stop.
 
-**The brain chemistry recovers.** People in this server have done it.
+**The brain chemistry recovers.** People in this community have done it.
 
-## Where to learn more in this server
+## Where to learn more on this site
 - **#withdrawal-symptoms** and **#what-to-expect** — what they're going through
 - **#7oh**, **#pseudo**, **#mgm15**, **#mit-a-dhm** — what specific compound they may be on
 - **#suboxone-info** and **#tapering-with-leaf** — paths out
@@ -61,7 +61,7 @@ Continuing from the welcome post above. This is the practical version: what tend
 
 ## What tends to help
 
-- **Learn what they're actually using.** "Kratom" can mean leaf (mild), 7-OH tablets (potent), MGM-15 (extremely potent), or stacked synthetics. The compound matters for understanding withdrawal severity and recovery options. The compound channels in this server have details.
+- **Learn what they're actually using.** "Kratom" can mean leaf (mild), 7-OH tablets (potent), MGM-15 (extremely potent), or stacked synthetics. The compound matters for understanding withdrawal severity and recovery options. The [compound pages on this site](/compounds) have details.
 - **Express concern without ultimatums.** "I'm worried about you and I want to understand what's happening" lands differently than "you need to stop." Curiosity opens conversations; demands close them.
 - **Acknowledge that withdrawal is real.** Telling someone to "just stop" when they're physically dependent is asking them to do something genuinely difficult without help.
 - **Know that medical options exist.** Suboxone (buprenorphine), used as a short-term taper or bridge, is the most evidence-based path. Telehealth makes it accessible. Your person doesn't need rehab to start.
@@ -133,7 +133,7 @@ You can't pour from an empty cup. People who burn out trying to rescue someone o
 
 ## A reminder
 
-The person you love is still in there. Opioid dependence is loud and ugly and steals their personality temporarily, but it does not erase who they are. People in this server have come back from this. Your loved one can too.
+The person you love is still in there. Opioid dependence is loud and ugly and steals their personality temporarily, but it does not erase who they are. People in this community have come back from this. Your loved one can too.
 
 -# This is an information channel. For peer support and discussion, the other channels in the server are open to you.
 

@@ -123,25 +123,71 @@ Implementation: an inline script in `<head>` sets the `dark` class before the
 page paints (prevents flash-of-incorrect-theme), and a `matchMedia` listener
 keeps the page in sync with OS changes while in `system` mode.
 
-## Deploying (Cloudflare Pages)
+## Deploying
 
-The site is configured for **Cloudflare Pages**. To deploy:
+You have two supported deployment paths. **Both are wired up; pick whichever
+suits where you want the site to live.**
+
+### Option A — Cloudflare Pages (managed, free, no server)
+
+Cloudflare builds the site directly from the repo and serves it from
+Cloudflare's edge. No server to manage. Best if you don't already have a
+VPS or don't want one.
 
 1. Push the repo to GitHub.
-2. In the Cloudflare dashboard → Workers & Pages → Create → Pages → Connect
-   to Git. Select this repo.
-3. Set build command: `npm run build`. Build output directory: `dist`.
-   Node version: 22 (or whichever Astro currently supports).
-4. Set environment variable `NODE_VERSION=22` if Cloudflare picks an older
-   default.
+2. In the Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages**
+   → **Connect to Git**. Select this repo.
+3. Set the **build command** to `npm run build` and the **build output
+   directory** to `dist`.
+4. Set environment variable `NODE_VERSION=22` (Cloudflare sometimes defaults
+   to older Node).
 5. Deploy. Subsequent commits to `main` deploy automatically.
 
-`wrangler.toml` is included for `wrangler pages deploy dist` local deploys.
-`public/_headers` sets HTTP caching and security headers.
+The repo includes:
 
-Cloudflare's built-in **Web Analytics** can be enabled in the dashboard. It
-doesn't use cookies and doesn't collect personal data, matching our no-
-tracking policy. Don't add Google Analytics or similar.
+- **[wrangler.toml](wrangler.toml)** — `pages_build_output_dir = "dist"`
+- **[public/_headers](public/_headers)** — security + cache headers
+- **[public/_redirects](public/_redirects)** — placeholder for permanent redirects
+
+Enable **Cloudflare Web Analytics** in the dashboard for cookieless,
+privacy-preserving traffic stats. Don't add Google Analytics.
+
+### Option B — Self-hosted (Docker + GHCR + Caddy)
+
+The site also builds into a **Docker image published to GHCR** by GitHub
+Actions on every push to `main`. The image runs nginx and is intended to
+sit behind Caddy on a small VPS for TLS termination.
+
+**Full walkthrough:** [docs/deploying.md](docs/deploying.md) — server
+setup, DNS, Docker install, Caddy TLS, Watchtower auto-updates,
+rollback, logs, and hardening.
+
+**TL;DR on an existing server:**
+
+```sh
+cd /opt/quitting7oh
+docker compose pull && docker compose up -d
+```
+
+The repo includes:
+
+- **[Dockerfile](Dockerfile)** — multi-stage build (Node → nginx)
+- **[docker/nginx.conf](docker/nginx.conf)** — gzip, caching, security headers, trailing-slash routing
+- **[docker-compose.yml](docker-compose.yml)** — site + Caddy + Watchtower
+- **[Caddyfile](Caddyfile)** — TLS, HTTP→HTTPS, www→apex
+- **[.github/workflows/docker-publish.yml](.github/workflows/docker-publish.yml)** — multi-arch (amd64 + arm64) image, pushed to GHCR as `latest`, `sha-<short>`, and semver tags
+
+### Which one?
+
+| You want…                                  | Use            |
+| ------------------------------------------ | -------------- |
+| Zero server management, free, fast setup   | Cloudflare     |
+| Total control, custom logging, on-prem     | Docker / VPS   |
+| Multi-region for free                      | Cloudflare     |
+| Custom server-side logic later             | Docker / VPS   |
+
+You can also run both at once — Cloudflare in front of the VPS — and use
+Cloudflare for caching/DDoS protection while keeping origin control.
 
 ## What this site won't do
 

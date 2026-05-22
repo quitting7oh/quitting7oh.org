@@ -8,7 +8,7 @@
 
 If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are real, well-understood reasons it can feel inadequate, especially coming off 7-OH and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is genuinely different in several ways, and the medication needs to be used a little differently to fully cover what's happening.
 
-This server leans toward short-term tapers, so most of what's below is about **how to make bupe work well enough to get you through to the other side**, not about long-term maintenance.
+This community leans toward short-term tapers, so most of what's below is about **how to make bupe work well enough to get you through to the other side**, not about long-term maintenance.
 
 ## The big one: bupe doesn't touch the SNRI side of withdrawal
 This is the part most people aren't told, and it's the single biggest reason Suboxone feels incomplete for our population.
@@ -46,18 +46,18 @@ See **#vitamins-supplements** for the full picture on supplement support.
 ## Dose: you might just need more
 This is the second-biggest thing people don't get told. The "right" dose of bupe varies a lot between people, and **landing at too low a dose is one of the most common reasons bupe feels inadequate.**
 
-This server uses a low-and-slow induction (start at 2 mg, titrate up by 1 mg as needed) precisely because we don't want people parked at a higher dose than they need. But the flip side is also true: **if you're parked too low, the bupe isn't covering you, and that's a fixable problem.**
+This community uses a low-and-slow induction (start at 2 mg, titrate up by 1 mg as needed) precisely because we don't want people parked at a higher dose than they need. But the flip side is also true: **if you're parked too low, the bupe isn't covering you, and that's a fixable problem.**
 
 If you're at 2 mg and you're still feeling withdrawal symptoms throughout the day, your dose is probably too low. If you're at 4 mg and feeling waves of return-of-symptoms before your next dose, your dose is probably too low. **Most people coming off 7-OH land somewhere in the 4 to 8 mg range when fully covered.** Some need less, some need more.
 
-**On the dose ceiling:** the conventional wisdom held that buprenorphine has a flat ceiling at 24 to 32 mg/day, meaning higher doses don't add benefit. [More recent research has challenged this](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11303732/), suggesting the ceiling effect is more individual than the older guidance assumed and some patients do get meaningful benefit at higher doses. This server doesn't generally encourage going above 8 mg/day because higher doses make tapering harder and longer, and most 7-OH users don't need it. But if your prescriber suggests a higher dose because you're not stabilizing, the newer research supports that being a reasonable approach.
+**On the dose ceiling:** the conventional wisdom held that buprenorphine has a flat ceiling at 24 to 32 mg/day, meaning higher doses don't add benefit. [More recent research has challenged this](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11303732/), suggesting the ceiling effect is more individual than the older guidance assumed and some patients do get meaningful benefit at higher doses. This community doesn't generally encourage going above 8 mg/day because higher doses make tapering harder and longer, and most 7-OH users don't need it. But if your prescriber suggests a higher dose because you're not stabilizing, the newer research supports that being a reasonable approach.
 
 **The practical takeaway:** if you're struggling on bupe, before assuming the medication isn't working, check whether you're at a dose that covers you. Track when symptoms return relative to dosing. If they're returning hours before your next dose, talk to your prescriber about either a higher dose or splitting your daily dose into two smaller doses (morning and evening) to keep blood levels more stable.
 
 ### 18YearsOfRegret — May 2, 2026, 8:37 AM
 
 ## If you've been on long-acting synthetics or stacked compounds
-Most people in this server are coming off 7-OH, but if you've also been on **MGM-15, MIT-A, or pseudo**, the picture changes meaningfully:
+Most people in this community are coming off 7-OH, but if you've also been on **MGM-15, MIT-A, or pseudo**, the picture changes meaningfully:
 
 **MGM-15** is a [dual mu/delta receptor agonist](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Buprenorphine is essentially mu-only and is actually a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off MGM-15. This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. **It's not in your head, it's pharmacology.** See **#mgm-15** for the full breakdown.
 
@@ -74,8 +74,8 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 2. **Check your dose.** Are you genuinely covered, or parked too low? If symptoms return before your next dose, your dose is too low or you need to split it.
 3. **Be honest about what you were on.** If MGM-15, MIT-A, or pseudo were in the mix, the playbook changes.
 4. **Don't bail in the first 1-2 days.** This is when most people quit, because it's when bupe feels least like what their body was used to and the SNRI symptoms are at their worst. Your dose may not be dialed in yet, your adjuncts may not be in your system yet. Push through to day 2 or 3 with the right dose and adjuncts in place.
-5. **Don't redose your old compound to take the edge off.** That's how this restarts.
-6. **Use this server.** People in **#suboxone** have lived through what you're going through with these specific compounds.
+5. **Don't redose the synthetic that brought you here** — 7-OH, MGM-15, MIT-A/DHM, pseudo, or stacked products — **to take the edge off.** That's how this restarts. (Planned kratom-leaf tapering is a different, deliberate protocol — see **#tapering-with-leaf**.)
+6. **Talk to the community.** People in our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) have lived through what you're going through with these specific compounds.
 
 *Reactions:* 👍 1
 
@@ -91,7 +91,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 None of those is giving up. They're tools.
 
 ## A note on patience
-The standard recovery resources tell you bupe will make you feel "back to normal" pretty quickly. For our population, that's not always true on the standard timeline. **The first few days are the hardest, and day 1 to 2 is when most people in this server quit.** That's exactly the window where bupe hasn't fully kicked in, your dose probably isn't optimized yet, and the SNRI symptoms haven't responded to adjuncts that need a day or two to take effect. **Push through.** Adjuncts help. The right dose helps. By day 4 or 5 most people are in noticeably better shape than day 1 or 2.
+The standard recovery resources tell you bupe will make you feel "back to normal" pretty quickly. For our population, that's not always true on the standard timeline. **The first few days are the hardest, and day 1 to 2 is when most people in this community quit.** That's exactly the window where bupe hasn't fully kicked in, your dose probably isn't optimized yet, and the SNRI symptoms haven't responded to adjuncts that need a day or two to take effect. **Push through.** Adjuncts help. The right dose helps. By day 4 or 5 most people are in noticeably better shape than day 1 or 2.
 
 If you're approaching the end of your taper and still feel terrible, that's worth its own conversation in **#suboxone**. There may be something specific to your situation worth troubleshooting.
 

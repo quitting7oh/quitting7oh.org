@@ -13,7 +13,7 @@ Or you might feel mostly fine. Sleeping well. Energy back. Some lingering blahne
 ## What PAWS actually is
 PAWS, or post-acute withdrawal syndrome, is the [cluster of psychological, mood, and cognitive symptoms that can persist after acute physical withdrawal ends](https://www.sciencedirect.com/science/article/abs/pii/S1555415521005523). It's caused by your brain rebuilding the chemistry it outsourced to 7-OH (or whatever you were on) for however long.
 
-**Not everyone gets PAWS.** [Estimates vary, with some sources putting it as high as 90% of opioid recovery cases](https://www.webmd.com/mental-health/addiction/opioids-post-acute-withdrawal-syndrome) and others reporting much lower rates depending on what's defined as PAWS. What matters: **plenty of people in this server bounced back within weeks of acutes ending and never had significant PAWS at all.** If that's you, that's great, and you don't need to be looking for symptoms that aren't there.
+**Not everyone gets PAWS.** [Estimates vary, with some sources putting it as high as 90% of opioid recovery cases](https://www.webmd.com/mental-health/addiction/opioids-post-acute-withdrawal-syndrome) and others reporting much lower rates depending on what's defined as PAWS. What matters: **plenty of people in this community bounced back within weeks of acutes ending and never had significant PAWS at all.** If that's you, that's great, and you don't need to be looking for symptoms that aren't there.
 
 For people who do get PAWS, severity and duration vary enormously. Factors that influence it:
 - How long you were using and at what dose
@@ -63,7 +63,7 @@ When a wave hits, recognize it for what it is, ride it out, and trust that the n
 
 **HALT.** Hungry, Angry, Lonely, Tired. The four states that make cravings strongest. When a craving hits or your mood drops, run through HALT. Eat something. Vent. Reach out. Sleep. Often the craving is one of these four wearing a costume.
 
-**90 in 90.** Originally an AA concept (90 meetings in 90 days). The principle generalizes: the first 90 days benefit from active daily structure. Whether that's meetings, this server, exercise, journaling, therapy, or all of the above. Don't rely on willpower; rely on routine.
+**90 in 90.** Originally an AA concept (90 meetings in 90 days). The principle generalizes: the first 90 days benefit from active daily structure. Whether that's meetings, our [Discord](https://discord.gg/quitting7oh), exercise, journaling, therapy, or all of the above. Don't rely on willpower; rely on routine.
 
 **One day at a time.** PAWS makes the future feel impossible. Don't think about staying clean for a year. Think about today. Sometimes the next hour. That's not weakness, that's calibration.
 
@@ -94,7 +94,7 @@ Whether you have full-blown PAWS or just the occasional rough day, these are wha
 - **Hydration.** Aim for half your body weight in ounces of water daily.
 - **Eat regularly.** Skipping meals worsens HALT and cravings.
 
-**Connection.** Isolation makes recovery harder. The server is one form of connection. In-person contact is another. SMART Recovery, AA, NA, therapy, friends, family who get it. Pick at least two and keep them in your week.
+**Connection.** Isolation makes recovery harder. The community ([Discord](https://discord.gg/quitting7oh), [subreddit](https://www.reddit.com/r/quitting7oh/)) is one form of connection. In-person contact is another. SMART Recovery, AA, NA, therapy, friends, family who get it. Pick at least two and keep them in your week.
 
 **Limit other substances.** Alcohol, weed, and even excessive caffeine can prolong recovery. Your brain is rebuilding; don't keep poking it.
 
@@ -145,7 +145,7 @@ See **#vitamins-supplements** for the full breakdown including brand recommendat
 
 **Naltrexone (full dose).** Different from LDN. Used to block opioid receptors entirely as relapse prevention.
 
-## When to seek help beyond the server
+## When to seek help beyond this community
 PAWS, when it happens, is uncomfortable but generally manageable. There are situations where you need more than community support and supplements:
 - Depression that's deep, persistent, and not improving over weeks
 - Anxiety that's stopping you from functioning
@@ -172,7 +172,7 @@ You're not broken. You're rebuilding.
 
 ## If you're on Suboxone, your PAWS picture is different
 
-A lot of people in this server use Suboxone (or did) as a short-term taper tool. If you're currently on bupe, the PAWS picture above doesn't quite map to your experience, and it's worth understanding why.
+A lot of people in this community use Suboxone (or did) as a short-term taper tool. If you're currently on bupe, the PAWS picture above doesn't quite map to your experience, and it's worth understanding why.
 
 ### Bupe blunts the healing while it's working
 Buprenorphine is a partial mu-opioid receptor agonist. While you're on it, your receptors are still being activated. That's the whole point — it's why bupe suppresses cravings and withdrawal. But it also means **your brain isn't fully rebuilding the way it would if you were opioid-free.** Endogenous endorphin production stays suppressed. Receptor recovery is partial. Some of the brain healing PAWS represents is on pause.

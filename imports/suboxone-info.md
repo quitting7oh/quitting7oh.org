@@ -8,9 +8,9 @@
 
 > ⚠️ **This post is community information, not medical advice.** Suboxone is a prescription medication that requires a qualified provider for induction, dosing, and monitoring. The induction and taper approaches described here reflect what this community has found works best for our specific population (people coming off 7-OH and related synthetics), and may differ from standard clinical protocols. Please verify what you read here against linked sources and follow your doctor's protocol.
 
-Suboxone is the most common medication used to come off opioid dependence, and for most people in this server, it's the medication route worth understanding. This channel is for info on induction, dosing, taper plans, and the specific challenges that come with using bupe to come off the synthetic mitragynine derivatives we deal with here.
+Suboxone is the most common medication used to come off opioid dependence, and for most people in this community, it's the medication route worth understanding. This page covers induction, dosing, taper plans, and the specific challenges that come with using bupe to come off the synthetic mitragynine derivatives we deal with here.
 
-**Important up front:** this server is focused on **short-term tapers**. The goal here is using Suboxone as a structured tool to get from dependence to off opioids entirely. If you're considering long-term Suboxone maintenance, that's a valid choice, but [r/suboxone](https://www.reddit.com/r/suboxone/) is a better community for that conversation. No judgment, just a different focus than what this server is set up for.
+**Important up front:** this site is focused on **short-term tapers**. The goal here is using Suboxone as a structured tool to get from dependence to off opioids entirely. If you're considering long-term Suboxone maintenance, that's a valid choice, but [r/suboxone](https://www.reddit.com/r/suboxone/) is a better community for that conversation. No judgment, just a different focus than what this site is set up for.
 
 ## What it is
 Suboxone is a combination of two medications:
@@ -45,7 +45,7 @@ A few pharmacological reasons that come up here:
 
 For more on bupe failure modes, see **#suboxone-isnt-working**.
 
-## How this server approaches induction
+## How this community approaches induction
 This community uses a **low-and-slow induction** approach. The point is to find the minimum effective dose, not to load up. Lower starting doses leave you with less to taper off later, which matters when the goal is a short taper.
 
 1. Wait until COWS ≥ 12. Trust the score, not the clock.
@@ -67,7 +67,7 @@ Once you've found your day 1 dose - decide your taper schedule. Examples can be 
 A few things that help during the taper:
 - The supplements and adjuncts in **#vitamins-supplements** can take the edge off the lower-dose portions.
 - Keep your COWS awareness up. Tracking symptoms during a taper helps you decide when to drop and when to hold.
-- Don't redose your old compound. That restarts the cycle.
+- Don't redose the compound that brought you here — 7-OH, MGM-15, MIT-A/DHM, pseudo, or stacked synthetics. That restarts the cycle. (Planned kratom-leaf tapering is a separate, deliberate protocol — see **#tapering-with-leaf**.)
 
 ## How to find a Suboxone prescriber
 - [SAMHSA's buprenorphine practitioner locator](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)

@@ -6,7 +6,7 @@
 
 # 💤 Sleep Recovery: The Long Road Back to Real Sleep
 
-If you're new here and trying to sleep, **welcome.** Sleep disruption is the most universal complaint in opioid recovery, and almost everyone in this server has been where you are. The good news: sleep does come back. The harder news: it takes longer than you want, and it's not linear.
+If you're new here and trying to sleep, **welcome.** Sleep disruption is the most universal complaint in opioid recovery, and almost everyone in this community has been where you are. The good news: sleep does come back. The harder news: it takes longer than you want, and it's not linear.
 
 ## What's happening to your sleep
 
@@ -47,7 +47,7 @@ The full sleep recovery curve looks roughly like this:
 
 ## You will sleep again
 
-Your brain is rebuilding the sleep system that opioids hijacked. The first month is the hardest. Most people in this server were sleeping decently by month 2-3 with some combination of the tools above. Tracking your sleep (Oura, Apple Watch, Whoop, or even a basic journal) often reveals the curve before you can feel it — you're sleeping more than you think, even when it feels like nothing is working.
+Your brain is rebuilding the sleep system that opioids hijacked. The first month is the hardest. Most people in this community were sleeping decently by month 2-3 with some combination of the tools above. Tracking your sleep (Oura, Apple Watch, Whoop, or even a basic journal) often reveals the curve before you can feel it — you're sleeping more than you think, even when it feels like nothing is working.
 
 Post in this channel about what's helping, what isn't, and your sleep wins. **#sos** for the 3 AM despair moments.
 

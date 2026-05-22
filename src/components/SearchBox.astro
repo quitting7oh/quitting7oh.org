@@ -100,7 +100,7 @@ const isHero = variant === 'hero';
       const pf = await loadPagefind();
       if (!pf) {
         list.innerHTML = '';
-        empty.textContent = 'Search index not available (was the site built with `npm run build`?).';
+        empty.textContent = 'Search is only available on the deployed site. To test locally, run `npm run build && npm run preview`.';
         empty.classList.remove('hidden');
         open();
         return;

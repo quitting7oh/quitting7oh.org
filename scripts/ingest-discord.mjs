@@ -31,6 +31,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { linkCompounds } from './lib/compound-linker.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -337,6 +338,12 @@ function deriveTitle(body, channel, mapping) {
     .join(' ');
 }
 
+// Auto-derived descriptions are kept short (snippets get truncated by some
+// renderers/cards at ~100-120 chars). Manually-curated descriptions in the
+// existing front matter are preferred over this — see preserveDescription
+// below.
+const DESCRIPTION_TARGET_LEN = 120;
+
 function deriveDescription(body) {
   // Strip code fences and the first H1 (we use it for title); then find the
   // first paragraph.
@@ -350,10 +357,29 @@ function deriveDescription(body) {
     .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/[*_`]/g, '');
-  if (plain.length <= 160) return plain;
-  const cut = plain.slice(0, 160);
+  if (plain.length <= DESCRIPTION_TARGET_LEN) return plain;
+  const cut = plain.slice(0, DESCRIPTION_TARGET_LEN);
   const lastSpace = cut.lastIndexOf(' ');
-  return (lastSpace > 120 ? cut.slice(0, lastSpace) : cut).trim() + '…';
+  return (lastSpace > DESCRIPTION_TARGET_LEN - 30 ? cut.slice(0, lastSpace) : cut).trim() + '…';
+}
+
+/**
+ * Read the existing target file's front matter and return its `description:`
+ * value, if present and non-empty. Used to preserve hand-curated descriptions
+ * across re-imports — see the README in /imports/ for the workflow.
+ */
+async function existingDescription(p) {
+  try {
+    const existing = await fs.readFile(p, 'utf8');
+    const fm = /^---\n([\s\S]*?)\n---/.exec(existing);
+    if (!fm) return null;
+    const m = /^description:\s*"((?:[^"\\]|\\.)*)"\s*$/m.exec(fm[1]);
+    if (!m) return null;
+    const value = m[1].replace(/\\"/g, '"');
+    return value.trim() ? value : null;
+  } catch {
+    return null;
+  }
 }
 
 function stripLeadingH1(body) {
@@ -409,28 +435,38 @@ async function processFile(filePath, mapping, knownChannels) {
       });
     const joined = ordered.map((m) => m.body.join('\n').trim()).join('\n\n');
 
-    const transformed = transformBody(joined, mapping, knownChannels);
-    const cleanedBody = trimBlankLines(stripLeadingH1(transformed));
-
-    // Derive title and description from the *transformed* body so we don't
-    // leak Discord-specific syntax like `*(edited)*` into the front matter.
-    const title = deriveTitle(transformed, block.channel, mapping);
-    const description = deriveDescription(transformed);
-    const mostRecent = messages
-      .map((m) => m.date)
-      .filter(Boolean)
-      .sort((a, b) => b.getTime() - a.getTime())[0];
-
+    // Compute the target output path early so we can check for an existing
+    // hand-curated description to preserve across re-imports, and so the
+    // compound-linker can avoid creating self-links on compound pages.
     const target = mapping.channels[block.channel];
     const category = target?.category;
     const slug = slugify(block.channel);
-
     const outCategory = category || 'uncategorized';
+    const outPath = path.join(OUTPUT_DIR, outCategory, `${slug}.md`);
+    const selfUrl = `/${outCategory}/${slug}`;
+
     if (!category) {
       warn(
         `channel #${block.channel} is not in scripts/channel-mapping.json — writing to src/content/uncategorized/ for review`,
       );
     }
+
+    const transformed = transformBody(joined, mapping, knownChannels);
+    // Auto-link the first mention of each known compound (7-OH, MGM-15,
+    // MIT-A/DHM, pseudoindoxyl, Cat's Claw) to its compound page. Skip
+    // self-links so a compound page doesn't link mentions of itself.
+    const compoundLinked = linkCompounds(transformed, { selfUrl });
+    const cleanedBody = trimBlankLines(stripLeadingH1(compoundLinked));
+
+    // Derive title and description from the *transformed* body so we don't
+    // leak Discord-specific syntax like `*(edited)*` into the front matter.
+    const title = deriveTitle(transformed, block.channel, mapping);
+    const existingDesc = await existingDescription(outPath);
+    const description = existingDesc ?? deriveDescription(transformed);
+    const mostRecent = messages
+      .map((m) => m.date)
+      .filter(Boolean)
+      .sort((a, b) => b.getTime() - a.getTime())[0];
 
     const fm = {
       title,
@@ -441,8 +477,6 @@ async function processFile(filePath, mapping, knownChannels) {
     };
 
     const fileContent = buildFrontMatter(fm) + cleanedBody;
-    const outDir = path.join(OUTPUT_DIR, outCategory);
-    const outPath = path.join(outDir, `${slug}.md`);
     results.push({ channel: block.channel, outPath, fileContent });
   }
   return results;
@@ -456,6 +490,23 @@ async function fileExistsAndIsSame(p, content) {
   try {
     const existing = await fs.readFile(p, 'utf8');
     return existing === content;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Returns true if the existing file at `p` has `manual: true` in its
+ * front matter. Such files are protected from ingest overwrites — they've
+ * been editorially restructured beyond what a raw Discord export produces.
+ */
+async function fileIsManual(p) {
+  try {
+    const existing = await fs.readFile(p, 'utf8');
+    // Only scan the front-matter block at the top of the file.
+    const fm = /^---\n([\s\S]*?)\n---/.exec(existing);
+    if (!fm) return false;
+    return /^manual:\s*true\s*$/im.test(fm[1]);
   } catch {
     return false;
   }
@@ -552,28 +603,35 @@ async function main() {
 
   let written = 0;
   let unchanged = 0;
+  let skipped = 0;
   for (const f of inputFiles) {
     const outputs = await processFile(f, mapping, knownChannels);
     for (const out of outputs) {
+      const rel = path.relative(PROJECT_ROOT, out.outPath);
+      if (await fileIsManual(out.outPath)) {
+        skipped++;
+        log(`skipped ${rel} (manual: true) — edit /imports/ then flip the flag to re-ingest`);
+        continue;
+      }
       const sameAsExisting = await fileExistsAndIsSame(out.outPath, out.fileContent);
       if (DRY_RUN) {
-        log(`[dry-run] would write ${path.relative(PROJECT_ROOT, out.outPath)} (#${out.channel})${sameAsExisting ? ' [unchanged]' : ''}`);
+        log(`[dry-run] would write ${rel} (#${out.channel})${sameAsExisting ? ' [unchanged]' : ''}`);
         continue;
       }
       if (sameAsExisting) {
         unchanged++;
-        vlog(`unchanged: ${path.relative(PROJECT_ROOT, out.outPath)}`);
+        vlog(`unchanged: ${rel}`);
         continue;
       }
       await ensureDir(path.dirname(out.outPath));
       await fs.writeFile(out.outPath, out.fileContent, 'utf8');
       written++;
-      log(`wrote ${path.relative(PROJECT_ROOT, out.outPath)} (#${out.channel})`);
+      log(`wrote ${rel} (#${out.channel})`);
     }
   }
 
   if (!DRY_RUN) {
-    log(`\nDone. ${written} file(s) written, ${unchanged} unchanged.`);
+    log(`\nDone. ${written} file(s) written, ${unchanged} unchanged, ${skipped} skipped (manual).`);
   }
 }
 

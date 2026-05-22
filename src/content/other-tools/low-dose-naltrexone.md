@@ -1,11 +1,11 @@
 ---
 title: "Low-Dose Naltrexone (LDN)"
-description: "LDN is one of the more interesting tools that may be worth looking into after you're past acute withdrawal and into the long, slow part where things still…"
+description: "LDN for PAWS, sleep, and mood — after acute withdrawal: what it is, how to get a prescription."
 category: "other-tools"
 last_updated: "2026-04-29"
 source_channel: "#low-dose-naltrexone"
 ---
-> ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this server have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.
+> ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this community have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.
 
 LDN is one of the more interesting tools that **may** be worth looking into **after** you're past acute withdrawal and into the long, slow part where things still don't feel right. It's not a withdrawal medication, it's not a substitute for MAT, and it absolutely **cannot be taken while there are still opioids on your receptors**. But for PAWS, low mood, low energy, sleep issues, and that persistent "off" feeling that hangs around for months, a lot of people report finding it helpful. Whether it's right for *you* is a question for a clinician.
 
@@ -15,7 +15,7 @@ Naltrexone is an opioid antagonist. At the standard 50 mg dose, it blocks opioid
 The general idea: **it may nudge your own opioid system back toward producing what it should be producing on its own.** That's a system that's commonly disrupted in PAWS.
 
 ## Why people in this community look into it
-After heavy use of 7-OH, pseudo, MGM-15, MIT-A, or similar, the endogenous opioid system gets suppressed. Your brain stops making its own endorphins because the receptors were being flooded externally. Once you stop, it takes weeks to months for that system to come back online, and that's part of what PAWS is. Anhedonia, low motivation, low pain tolerance, sleep disruption, emotional flatness: all of these are consistent with a depleted endogenous opioid system.
+After heavy use of [7-OH](/compounds/7-oh), pseudo, [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or similar, the endogenous opioid system gets suppressed. Your brain stops making its own endorphins because the receptors were being flooded externally. Once you stop, it takes weeks to months for that system to come back online, and that's part of what PAWS is. Anhedonia, low motivation, low pain tolerance, sleep disruption, emotional flatness: all of these are consistent with a depleted endogenous opioid system.
 
 LDN is one of the few tools that *may* target that mechanism specifically. **Commonly reported benefits in recovery contexts** (not all clinically proven, varies by person):
 - Reduced cravings and reduced "low-grade misery" of PAWS
@@ -28,7 +28,7 @@ Whether any of these apply to your specific situation is a question worth bringi
 
 ## Critical timing, please discuss this with a doctor before starting
 **LDN will precipitate withdrawal if there are opioids on your receptors.** This includes:
-- 7-OH, pseudo, MGM-15, MIT-A, and any other kratom-derived synthetic
+- [7-OH](/compounds/7-oh), pseudo, [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and any other kratom-derived synthetic
 - Suboxone/buprenorphine
 - Methadone
 - All other opioids
@@ -62,6 +62,7 @@ Insurance rarely covers compounded LDN, but cash prices are typically reasonable
 - **Not a withdrawal medication.** It will make withdrawal worse, not better, if started too early.
 - **Not a magic bullet.** It helps some people with PAWS and not everyone. Sleep, exercise, nutrition, therapy, and time still do most of the heavy lifting.
 - **Not appropriate for everyone**, especially people with liver issues, certain medications, or other specific conditions. Your provider needs your full medical picture to make that call.
+- **Not the same as [ULDN](/other-tools/ultra-low-dose-naltrexone).** Ultra-Low-Dose Naltrexone uses microgram doses (about 1,000× smaller) and is taken *with* opioids to reduce tolerance or smooth a taper. Different dose, different timing, different use case. Read [#ultra-low-dose-naltrexone](/other-tools/ultra-low-dose-naltrexone) if you're considering it.
 
 ## Further reading (please do your own research before deciding anything)
 - [LDN Research Trust](https://ldnresearchtrust.org/), the central independent hub for LDN info, provider directory, pharmacy directory, patient stories

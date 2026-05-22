@@ -29,7 +29,7 @@ Appeared in the U.S. market in 2025 as part of the wave of mitragynine-derived s
 ## Pharmacology
 Reducing the 1,2 double bond of mitragynine changes its receptor profile and pharmacokinetics. **Public peer-reviewed pharmacology specifically on dihydromitragynine as a standalone compound is thin** — most published kratom-analog research has focused on mitragynine, 7-OH, MP, and MGM-15. That alone is worth flagging: people are taking it in real-world doses faster than the literature is keeping up.
 
-In terms of where it sits on the spectrum of compounds people in this server are dealing with: leaf kratom < concentrated mitragynine extracts < 7-OH < MIT-A/DHM < pseudoindoxyl < MGM-15. The semi-synthetics and isolates all behave more like classical opioids than they do like the leaf material.
+In terms of where it sits on the spectrum of compounds people in this community are dealing with: leaf kratom < concentrated mitragynine extracts < 7-OH < MIT-A/DHM < pseudoindoxyl < MGM-15. The semi-synthetics and isolates all behave more like classical opioids than they do like the leaf material.
 
 ## Half-life — same problem as MGM-15
 Like MGM-15, MIT-A is a 1,2-dihydro reduction product, and that structural change extends its duration of action well beyond 7-OH. Community reports and the limited available data put it in the **long-acting** category — significantly longer than 7-OH's few-hour duration. Practical consequences:

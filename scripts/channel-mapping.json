@@ -30,6 +30,7 @@
 
     "sr17018-info": { "category": "other-tools", "title_override": "SR-17018" },
     "low-dose-naltrexone": { "category": "other-tools", "title_override": "Low-Dose Naltrexone (LDN)" },
+    "ultra-low-dose-naltrexone": { "category": "other-tools", "title_override": "Ultra-Low-Dose Naltrexone (ULDN)" },
     "mega-vit-c-info": { "category": "other-tools", "title_override": "Mega Vitamin C" },
     "tapering-with-leaf": { "category": "other-tools", "title_override": null },
 
