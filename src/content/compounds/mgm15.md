@@ -8,7 +8,7 @@ last_updated: "2026-05-24"
 MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). Structurally, it's the 1,2-dihydro version of [7-OH](/compounds/7-oh). In academic papers it's sometimes also written as "DiHydro-[7-OH](/compounds/7-oh)-Mitragynine" or "DH-[7OH](/compounds/7-oh)-MIT" — **not** the same molecule as [dihydromitragynine](/compounds/mit-a-dhm) (DHM) sold under "[MIT-A](/compounds/mit-a-dhm)".
 
 ## Where it came from
-First reported by Japanese researchers in 2014 as a candidate analgesic. It sat in the academic literature for about a decade before showing up in U.S. designer-drug products in early 2025. Its 9-fluoro analog, MGM-16, is roughly 240× the potency of morphine in animal studies — same scaffold with a fluorine added.
+First reported by Japanese researchers in 2014 as a candidate analgesic. It sat in the academic literature for about a decade before showing up in U.S. designer-drug products in early 2025. Its 9-fluoro analog, [MGM-16](/compounds/mgm16), is approximately 240× the potency of morphine **in a mouse tail-flick antinociception assay** ([Matsumoto et al. 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/)) — same scaffold with a fluorine added. MGM-16 has not been documented in any US consumer product as of this writing; MGM-15 has.
 
 ## Pharmacology
 A high-affinity **full agonist** at both the mu-opioid receptor (~28 nM at hMOR) **and** the delta-opioid receptor (~59 nM at hDOR), exceeding 7-OH at both. The dual MOR/DOR action matters — it's a big part of why this compound behaves differently from medications that only hit mu, and why switching off it onto something MOR-only doesn't feel like a clean swap.
