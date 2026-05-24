@@ -67,7 +67,7 @@ The core ideas:
 3. **Make use less rewarding.** Stop the rescues, the cleanups, the lies-to-others on their behalf. Don't punish — just stop absorbing the costs that have been insulating them from the impact of use.
 4. **Improve your own life.** Hobbies, friendships, work, rest. This is part of the framework, not separate. People in treatment-resistant addiction often come into treatment partly because they notice the people around them are doing fine without them, and the contrast becomes intolerable.
 5. **Communication skills.** The "concern not accusation" / "I-statements" / specific-behavior framing above is the CRAFT version of communication training.
-6. **When the moment comes, have a treatment plan ready.** When they say "okay, I'll try" — you want to be able to call somewhere that day. Pre-research providers, insurance coverage, telehealth options. See [When They're Recovering at Home](/for-loved-ones/at-home-recovery) for the path most people use, or [Rehabilitation Centers](/for-loved-ones/rehabilitation-centers) if a formal program is the right fit.
+6. **When the moment comes, have a treatment plan ready.** When they say "okay, I'll try" — you want to be able to call somewhere that day. Pre-research providers, insurance coverage, telehealth options. See [When They're Recovering at Home](/for-loved-ones/at-home-recovery) for what the at-home path looks like, or [Rehabilitation Centers](/for-loved-ones/rehabilitation-centers) if a formal program is the right fit.
 
 CRAFT isn't a magic formula or a substitute for your own support. It's a framework for being effective in situations where the obvious instincts (lecturing, rescuing) tend to backfire.
 
