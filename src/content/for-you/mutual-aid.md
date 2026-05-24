@@ -11,7 +11,7 @@ Mutual aid groups are free, accessible, and put you in a room (real or virtual) 
 A few principles before the directory:
 
 - **Try more than one group.** People often write off "recovery groups" after a single bad meeting at a single chapter. The culture varies dramatically between fellowships and even between meetings within the same fellowship.
-- **The 12-step vs. secular vs. mindfulness split is real.** None is "the right one." The right one is the one you'll actually attend.
+- **The 12-step vs. secular vs. mindfulness split matters.** None is "the right one." The right one is the one you'll actually attend.
 - **Online meetings count.** They are not a lesser version of in-person meetings. For many people, the privacy and accessibility are exactly what makes attending sustainable.
 - **You do not have to be abstinent to attend most of these.** The traditional 12-step requirement is "a desire to stop using," not proof you've stopped.
 
