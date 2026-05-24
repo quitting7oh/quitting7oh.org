@@ -5,7 +5,7 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 3
 ---
-> ⚠️ **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** Talk to your prescriber before starting any supplement, especially if you're on Suboxone, LDN, or other medications.
+> ⚠️ **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** If you're on a prescribed medication (Suboxone, LDN, antidepressants, etc.), check interactions for any new supplement with your pharmacist or prescriber — that's the narrow ask they can actually help with. Otherwise this is community ground; **#vitamins-supplements** is the chat channel for what's worked.
 
 A note on naming: there are at least two similarly-named products in this space — **Quit Kit** at tryquitkit.com and **QuitK** at quitk.com (sold via Soul Supplements). They're separate products with overlapping marketing. The general analysis below applies to both, though specific formulations and prices differ.
 
@@ -25,7 +25,7 @@ Quit Kit and QuitK are **commercial supplement stacks** marketed specifically fo
 - **Agmatine** — proposed to reduce opioid tolerance
 - **B vitamins, vitamin D, zinc** — foundational nutrients depleted during withdrawal
 
-This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's covered in [Vitamins & Supplements](/other-tools/vitamins-supplements) (the comprehensive guide to individual supplements, dosing, brands, and what to skip). The convenience of pre-packaged morning/night doses is real.
+This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's covered in [Vitamins & Supplements](/other-tools/vitamins-supplements) (the comprehensive guide to individual supplements, dosing, brands, and what to skip). Pre-packaged morning/night doses are genuinely convenient, especially when you're in the fog of acute withdrawal.
 
 ## The honest tradeoff
 
@@ -57,7 +57,7 @@ A few specific concerns about both Quit Kit and QuitK:
 - **Marketing language** ("backed by science," "12-in-1," etc.) is essentially supplement industry standard. The supplements work because of what they are, not because they're packaged as a "kit."
 
 ## Bottom line
-If you can afford it and convenience matters more than cost, the commercial kits are a reasonable starting point. The ingredients are real. People have used them and gotten through withdrawal.
+If you can afford it and convenience matters more than cost, the commercial kits are a reasonable starting point. The ingredients are evidence-supported and people in this community have used them to get through withdrawal.
 
 If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper** — see **[Vitamins & Supplements](/other-tools/vitamins-supplements)** for the full per-supplement guide.
 
