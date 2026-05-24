@@ -125,9 +125,9 @@ Doable for **short-acting [7-OH](/compounds/7-oh) at moderate doses**. Much hard
 long-acting or stacked compounds. If you choose this path:
 
 - Read **[Helper Medications](/other-tools/helper-meds-info)** for
-  what prescriptions actually help (clonidine, hydroxyzine, gabapentin,
-  trazodone, baclofen). A telehealth appointment same-day can get most
-  of these.
+  what prescriptions actually help (clonidine, gabapentin, trazodone,
+  baclofen, and others). A telehealth appointment same-day can get
+  most of these.
 - Read **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
   for what to buy from the pharmacy *right now* (magnesium glycinate,
   electrolytes, vitamin C, NAC, melatonin for sleep, others).
@@ -340,8 +340,9 @@ add for sleep specifically), see
 [Vitamins & Supplements](/other-tools/vitamins-supplements).
 
 Helper meds that work for sleep (prescription, ask a provider):
-trazodone, hydroxyzine, gabapentin. See
-[Helper Medications](/other-tools/helper-meds-info).
+trazodone, doxepin, gabapentin. See
+[Helper Medications](/other-tools/helper-meds-info) for the full
+menu (including the meds with restless-legs caveats).
 
 ## Food
 
