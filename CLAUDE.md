@@ -482,6 +482,43 @@ If you find yourself writing a sentence that implicitly answers "which
 path is the real one," delete it and rewrite as neutral description.
 The reader gets to weigh the trade-offs.
 
+#### No unsupported popularity claims about which path people pick
+
+A close cousin of the rank-paths violation: writing that **most**
+community members use X, that X is **often** the path people pick,
+that X is **typically** what works. These are popularity claims, and
+popularity is a form of ranking — telling the reader "this is the
+dominant choice" functionally signals "this is the right/normal/
+expected one." We don't have data to back up popularity claims about
+which paths community members use, and even if we did, the
+don't-rank-paths rule above asks us not to lean on it.
+
+**Banned framings:**
+
+- "The path most people in this community use is X"
+- "Most people don't need [alternative path]"
+- "Often the path people pick when..."
+- "Typically people pick X for..."
+- "Usually X works for..."
+
+**Fix shape: describe what the path IS, not who picks it.** Don't
+characterize popularity, frequency, or who-tends-to-do-this. Describe
+the path itself and let the reader decide whether it fits.
+
+| Before | After |
+| --- | --- |
+| "The path most people in this community use is at-home treatment" | "This site is built around the at-home path: a structured taper or planned stop, with the right medications and supplements queued up..." |
+| "Most people don't need inpatient or residential care" | "Inpatient or residential care isn't required to come off 7-OH — what's required is a plan, the right tools, and..." |
+| "Often the path people pick when they're on higher-dose 7-OH" | "Suboxone is a partial opioid agonist. Taken correctly during a successful induction, it can drop withdrawal to nearly zero within hours..." |
+
+**Exception: "most" / "often" doing factual work about something
+other than which quitting path people pick is fine.** Examples:
+"most people inducting solo at home find SOWS more honest than
+COWS" (clinical observation about a scoring tool), "most people
+coming off 7-OH land in the 2–8 mg range" (dose observation).
+These are observations about a specific clinical detail, not
+popularity claims about which path is the right one.
+
 #### Subs ↔ SR-17 pairing rule
 
 The site is **opinionless** on which path someone uses to quit. Every
