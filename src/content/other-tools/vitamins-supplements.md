@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-> ⚠️ **Community info, not medical advice.** Talk to a doctor or pharmacist before starting anything, especially with prescription meds.
+> ⚠️ **Community info, not medical advice.** If you're on a prescribed medication, check interactions with your pharmacist or prescriber before adding anything from this list — pharmacists are usually the better-fit handoff for that specific ask. The broader stack design is community ground.
 
 ## Quick recommended list
 
