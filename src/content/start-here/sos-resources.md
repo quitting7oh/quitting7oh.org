@@ -272,6 +272,8 @@ A few things people who've been here wish someone had told them:
 
 ## When you can — read these next
 
+- **[Thinking About Using?](/start-here/thinking-about-using)** —
+  bookmark for the "fuck its" moments. They'll come.
 - **[What to Expect](/start-here/what-to-expect)** — the bigger
   picture, the full timeline, common surprises
 - **[Helper Medications](/other-tools/helper-meds-info)** — what

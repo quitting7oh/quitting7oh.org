@@ -63,7 +63,7 @@ When a wave hits, recognize it for what it is, ride it out, and trust that the n
 
 **One day at a time.** PAWS makes the future feel impossible. Don't think about staying clean for a year. Think about today. Sometimes the next hour. That's not weakness, that's calibration.
 
-**The "fuck it" voice.** That moment where you're tired, miserable, and a part of your brain says some version of "what's the point, just use." Recognize this voice as a symptom, not a thought worth listening to. It usually shows up during waves. It passes.
+**The "fuck it" voice.** That moment where you're tired, miserable, and a part of your brain says some version of "what's the point, just use." Recognize this voice as a symptom, not a thought worth listening to. It usually shows up during waves. It passes. If it's loud right now, go to [Thinking About Using?](/start-here/thinking-about-using) — that page is for this exact moment.
 
 ## Lifestyle interventions (the foundation)
 

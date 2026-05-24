@@ -23,6 +23,7 @@ Everyone's different, but most people coming off [7-OH](/compounds/7-oh) follow 
 - **You don't have to do this alone.** Tools and people are available.
 ## Where to go from here
 **If you need support right now:**
+- **[Thinking About Using?](/start-here/thinking-about-using)** — if cravings are loud and you might use today.
 - **#sos** — for the hardest moments. Just post.
 - **#daily-check-in** — even one word.
 **Withdrawal support:**

@@ -74,6 +74,12 @@ That's almost always PAWS — **post-acute withdrawal syndrome**. Read
 **[Sleep Recovery](/post-acute/sleep-recovery)** if sleep is the part
 that hasn't come back.
 
+### 🌀 You're abstinent but a craving wave just hit
+
+Bookmark **[Thinking About Using?](/start-here/thinking-about-using)**.
+That page is for the moments where the "fuck its" show up — at week 2,
+month 4, or year 2. Most people who hit that page hit it more than once.
+
 ### 🧪 You want to understand what you've been on
 
 The **[Compounds](/compounds)** section has overviews of [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15),
