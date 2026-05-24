@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Search } from 'lucide-react';
 import { Input } from '~/components/ui/input';
+import { Skeleton } from '~/components/ui/skeleton';
 import { cn } from '~/lib/utils';
 
 type PagefindResult = {
@@ -54,6 +55,10 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   const wrapperRef = React.useRef<HTMLDivElement>(null);
   const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<ResolvedResult[]>([]);
+  // The query string the current `results` were computed from. Used to
+  // detect when results are stale relative to what the user has typed,
+  // so we can show a skeleton instead of a misleading "No results."
+  const [resultsFor, setResultsFor] = React.useState('');
   const [pagefindAvailable, setPagefindAvailable] = React.useState<boolean | null>(null);
   const [open, setOpen] = React.useState(false);
   const debouncedQuery = useDebouncedValue(query, 150);
@@ -87,6 +92,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
     const trimmed = debouncedQuery.trim();
     if (!trimmed) {
       setResults([]);
+      setResultsFor('');
       return;
     }
     let cancelled = false;
@@ -96,6 +102,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       if (!pf) {
         setPagefindAvailable(false);
         setResults([]);
+        setResultsFor(trimmed);
         return;
       }
       setPagefindAvailable(true);
@@ -103,6 +110,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       const top = await Promise.all(hits.slice(0, 8).map((r) => r.data()));
       if (cancelled) return;
       setResults(top);
+      setResultsFor(trimmed);
     })();
     return () => {
       cancelled = true;
@@ -111,8 +119,16 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
 
   const isHero = variant === 'hero';
   const ph = placeholder ?? 'Search the site…';
+  const trimmedQuery = query.trim();
   const showDropdown =
-    open && (query.trim().length > 0 || pagefindAvailable === false);
+    open && (trimmedQuery.length > 0 || pagefindAvailable === false);
+  // Search is in flight whenever what the user has typed doesn't match
+  // the query that produced the current results. Covers the debounce
+  // window, the Pagefind dynamic import, and the search itself.
+  const searching =
+    trimmedQuery.length > 0 &&
+    trimmedQuery !== resultsFor &&
+    pagefindAvailable !== false;
 
   return (
     <div
@@ -166,6 +182,16 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
               </code>
               .
             </p>
+          ) : searching && results.length === 0 ? (
+            <ul className="divide-y divide-border" aria-busy="true" aria-label="Searching…">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <li key={i} className="space-y-2 p-3">
+                  <Skeleton className="h-3 w-20" />
+                  <Skeleton className="h-4 w-3/4" />
+                  <Skeleton className="h-3 w-full" />
+                </li>
+              ))}
+            </ul>
           ) : results.length === 0 ? (
             <p className="p-4 text-sm text-muted-foreground">No results.</p>
           ) : (
