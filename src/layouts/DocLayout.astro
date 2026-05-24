@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import { SidebarShell } from '~/components/SidebarShell';
 import Toc from '~/components/Toc.astro';
 import TocMobile from '~/components/TocMobile.astro';
-import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { getCategory } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { editOnGithubUrl } from '~/lib/site';
@@ -51,6 +51,7 @@ const currentPath = Astro.url.pathname;
       <div class:list={['mx-auto flex gap-8', wide ? 'max-w-[112rem]' : 'max-w-[88rem]']}>
         <div class:list={['mx-auto min-w-0 flex-1', wide ? 'max-w-full' : 'max-w-[52rem]']}>
           <Breadcrumbs
+            client:load
             crumbs={[
               ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
               { label: title },

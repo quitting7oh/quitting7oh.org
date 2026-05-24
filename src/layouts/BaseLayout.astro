@@ -2,9 +2,9 @@
 import '~/styles/global.css';
 import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
-import BetaBanner from '~/components/BetaBanner.astro';
+import { BetaBanner } from '~/components/BetaBanner';
 import { BackToTop } from '~/components/BackToTop';
-import Footer from '~/components/Footer.astro';
+import { Footer } from '~/components/Footer';
 import { SITE } from '~/lib/site';
 
 interface Props {
@@ -38,10 +38,10 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
   </head>
   <body class="min-h-screen">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <BetaBanner />
+    <BetaBanner client:load />
     <Header />
     <slot />
-    <Footer />
+    <Footer client:idle />
     <BackToTop client:idle />
   </body>
 </html>
