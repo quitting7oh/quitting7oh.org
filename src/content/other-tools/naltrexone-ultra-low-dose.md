@@ -96,12 +96,11 @@ tolerance and dependence. That hypothesis remains preclinical and
 contested; it has not been confirmed in human imaging or receptor
 studies.
 
-The honest summary: the **phenomenology** (some patients in some
-trials had less tolerance buildup and potentiated analgesia at
-microgram doses) has peer-reviewed support, mostly older. The
-**molecular explanation** is unsettled, and the most-specific
-proposed mechanism (filamin A) is no longer in the live
-literature.
+The **phenomenology** (some patients in some trials had less
+tolerance buildup and potentiated analgesia at microgram doses)
+has peer-reviewed support, mostly older. The **molecular
+explanation** is unsettled, and the most-specific proposed
+mechanism (filamin A) is no longer in the live literature.
 
 ## Theoretical clinical applications
 
@@ -187,9 +186,8 @@ Putting the framing in one box:
   tool that needs a prescriber in the loop.
 - **Not a hidden missing piece of recovery.** ULDN sometimes
   attracts framing of the "mainstream medicine missed this" type.
-  The honest version is that the field tried, the clinical
-  translation didn't hold up, and the mechanism work that would
-  have explained why it should hasn't survived peer review.
+  The field tried, the clinical translation didn't hold up, and
+  the mechanism work hasn't survived peer review.
 
 ## Where to read next
 
