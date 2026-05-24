@@ -57,7 +57,7 @@ to attempt (the polysubstance case above).
 
 Living onsite at a treatment facility. 24-hour clinical support, away from the environments and access points that fed the use. Most structured option. Insurance authorization is usually the limiting factor on length of stay — programs that say "we'll keep you as long as needed" are not always being straight about what insurance will actually pay.
 
-Residential is genuinely valuable for some people; for others it's expensive overkill. The honest version: if you have a stable home, supportive people around you, and a way to get to outpatient appointments, you may not need residential. If your home environment is itself part of the problem, or if you've tried outpatient and it didn't hold, residential makes a lot of sense.
+Residential is genuinely valuable for some people; for others it's expensive overkill. If you have a stable home, supportive people around you, and a way to get to outpatient appointments, you may not need residential. If your home environment is itself part of the problem, or if you've tried outpatient and it didn't hold, residential makes a lot of sense.
 
 ### Partial Hospitalization Program (PHP)
 
