@@ -27,10 +27,11 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             <p className="font-semibold text-foreground">AI disclaimer</p>
             <p className="mt-2">
-              Compiled with AI help from over a year of real Discord and Reddit
-              conversations, then reviewed line-by-line by humans who have
-              lived through this. We stand behind the data. If that approach
-              isn't for you, that's fine — read something else.{' '}
+              The source is community members who've lived through 7-OH and
+              kratom-synthetic recovery. AI is the editing and organization
+              tool — it doesn't decide what goes on these pages, humans do.
+              Every factual claim is verified against a primary source, and
+              humans review and stand behind every page.{' '}
               <a
                 href="/about/this-site#the-ai-disclaimer"
                 className="text-primary underline underline-offset-2 hover:opacity-80"
