@@ -28,17 +28,7 @@ Suboxone is a combination of two medications:
 Subutex is the buprenorphine-only version, sometimes used for pregnant patients, those with naloxone sensitivity, or for the lowest portion of a taper. Functionally, the buprenorphine is doing the work in both.
 
 ## Use COWS or SOWS, not the clock
-**The single most important thing about Suboxone induction is timing it by your withdrawal score, not by hours since last dose.** Time is a useful reference, but it's not what predicts a clean induction. What predicts a clean induction is whether your receptors are clear enough that bupe won't precipitate withdrawal when it displaces what's there.
-
-Two scoring tools exist — **COWS** (Clinical Opiate Withdrawal Scale, observed by a clinician) and **SOWS** (Subjective Opiate Withdrawal Scale, self-rated). Use whichever fits your situation — most people inducting solo at home find SOWS more honest.
-
-**The rule:**
-
-- **Don't induct until COWS ≥ 12** (or SOWS ≥ 17), regardless of how many hours it's been.
-
-If you hit 24 hours and your COWS is still at 8, you're not ready. If you hit 14 hours and your COWS is solidly at 14, you probably are. Trust the score over the timer.
-
-**📌 The full COWS & SOWS scoring guide lives in [COWS & SOWS Guide](/mat-suboxone/suboxone-cows).** Read it before you induct. It walks through both scales, the scoring rubrics, severity ranges, and practical tips for self-scoring honestly.
+**Time induction by your withdrawal score, not by hours since last dose.** Don't induct until **COWS ≥ 12** (or **SOWS ≥ 17**), regardless of how many hours it's been. The full scoring rubrics, severity ranges, and practical tips for self-scoring honestly are on the [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) — read it before you induct.
 
 ## Half-lives as context (not as the gate)
 Half-life tells you roughly **when** your COWS is likely to climb to induction-ready, not whether you should induct.
