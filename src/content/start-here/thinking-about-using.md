@@ -198,11 +198,15 @@ A few things that are documented, with sources:
 - **Relapse is common in early recovery — exactly how common is
   disputed.** [NIDA's widely-cited 40–60% figure](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery)
   is a long-term, chronic-illness-comparable rate (compared to
-  hypertension and asthma at 50–70%). **Some early-window cohort
-  studies report substantially higher rates — into the 80s and 90s in
-  the first months** — depending on the substance, the population, and
-  how "relapse" is defined. **In the first weeks and months, relapse
-  is genuinely common. It doesn't mean treatment failed; it means
+  hypertension and asthma at 50–70%). **Early-window cohort
+  studies report substantially higher rates.** A widely-cited
+  Irish inpatient-detox cohort
+  ([Smyth et al., *Ir Med J* 2010](https://pubmed.ncbi.nlm.nih.gov/20669601/))
+  found that **91% of patients relapsed within the follow-up period,
+  with 59% relapsing in the first week post-discharge**. The exact
+  numbers vary by substance, population, treatment setting, and how
+  "relapse" is defined. **In the first weeks and months, relapse is
+  genuinely common. It doesn't mean treatment failed; it means
   treatment needs to be adjusted or resumed.**
 - **Kratom-specific relapse data barely exists.** The 2023 scientific
   expert forum on kratom withdrawal
