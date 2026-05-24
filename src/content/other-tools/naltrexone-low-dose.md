@@ -203,8 +203,11 @@ with a clinician, not as DIY.
 - **[What is PAWS](/post-acute/what-is-paws)** and
   **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**
   — the post-acute symptoms LDN is often discussed for.
-- **[Telehealth Providers](/resources/telehealth)** — for finding a
-  prescriber familiar with LDN.
+- **[LDN Research Trust](https://ldnresearchtrust.org/)** — the
+  closest thing to a directory of LDN-friendly prescribers.
+  Most OUD-specific telehealth providers do not routinely
+  prescribe LDN; integrative-medicine, pain-medicine, and
+  functional-medicine clinicians are more likely to.
 
 ## Further reading
 

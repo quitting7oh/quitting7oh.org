@@ -574,6 +574,75 @@ When writing taper, induction, or dosing guidance:
   say so plainly. Don't default to taper in situations where it
   doesn't fit.
 
+### Only route to a clinician or telehealth for things a clinician will actually do
+
+A "talk to a clinician" or "see [Telehealth Providers]" handoff is
+only useful if the reader can actually get the thing from that
+clinician. If a typical addiction-medicine prescriber isn't going to
+engage with the topic — or will brush it off, pathologize the
+question, or refuse to discuss it — pointing the reader at telehealth
+wastes their time and erodes trust in the rest of the site. A reader
+in withdrawal who books a same-day video appointment expecting help
+with X, then gets a clinician who flatly won't discuss X, has just
+spent $99 and an hour to feel dismissed.
+
+**Things telehealth and addiction-medicine clinicians reliably handle.**
+Route to [Telehealth Providers](/resources/telehealth) confidently
+when the page is about:
+
+- Buprenorphine (Suboxone, Subutex) induction, maintenance, or taper
+- Helper meds: clonidine, gabapentin, hydroxyzine, trazodone,
+  baclofen, ondansetron, mirtazapine
+- Antidepressants for post-acute use (SSRIs, SNRIs, bupropion)
+- Sublocade / Brixadi (specific platforms; check the telehealth page)
+- Sleep medications (trazodone, doxepin, mirtazapine, hydroxyzine)
+- Drug-interaction questions about a specific prescribed medication
+
+**Things telehealth and most clinicians won't substantively engage with.**
+These are community-territory topics. Default to "talk to a sponsor,
+a peer in this community, or someone in your life who knows your
+situation." Mention a clinician only as a narrow optional secondary
+path, and only when you can name the specific thing a clinician would
+actually help with:
+
+- **Cannabis use during recovery.** Most clinicians have a
+  one-sentence policy (allow / don't allow), not a conversation.
+  Drug-interaction questions (CBD ↔ bupe) are the narrow exception.
+- **SR-17018.** Off-prescription, no human clinical literature; most
+  clinicians have never heard of it.
+- **LDN / ULDN protocols for post-acute use.** A small subset of
+  prescribers run these; the typical addiction-medicine telehealth
+  intake will not. Route only with the caveat that prescribers
+  familiar with the protocol are uncommon.
+- **Tapering with kratom leaf as a strategy.** Some clinicians engage;
+  many treat any kratom use as the problem and won't help plan a
+  taper. Acknowledge the variance rather than implying it's a standard
+  prescribed protocol.
+- **Phenibut, kava, "natural" research chemicals.** Community-only
+  territory.
+- **Most of the supplement stack.** Beyond a brief "I'm taking X, any
+  interaction concern?" most prescribers won't engage substantively.
+
+**The default reframe for community-territory topics:**
+
+> This isn't a decision to make alone. Talk to a sponsor, a peer in
+> this community who's faced the same question, or someone in your
+> life who knows your situation. If you're on a prescribed
+> medication and you're worried about a specific interaction, that's
+> a question for your prescriber. Otherwise this is community ground.
+
+Adapt the wording per page. The principle: lead with people, not
+prescribers, for topics prescribers won't really help with. When you
+do name a clinician role, name what the clinician would actually do
+in that sentence ("ask your prescriber about the CYP3A4 interaction
+between CBD and buprenorphine"), not a vague "see a clinician."
+
+The cost of routing wrong is asymmetric: routing too eagerly to
+telehealth for a topic clinicians won't engage with sends the reader
+on a wasted appointment; routing too cautiously to community for a
+topic clinicians do handle just means the reader reads more of the
+site before booking. Err toward community.
+
 ## Content density
 
 - Expand on information where it genuinely serves the reader's

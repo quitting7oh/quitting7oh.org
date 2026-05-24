@@ -26,9 +26,12 @@ sort: 11
 > - 7-OH-specific data are very limited. Most of what's below is
 >   extrapolated from opioid use disorder, alcohol use disorder, or
 >   general cannabis pharmacology. Labeled as such.
-> - This isn't a decision to make alone. A clinician who treats
->   substance use and who knows your situation is the right person to
->   weigh this with — see [Telehealth Providers](/resources/telehealth).
+> - This isn't a decision to make alone, but it's mostly community
+>   territory, not clinician territory. Talk to a sponsor, a peer
+>   who's faced the same question, or someone in your life who knows
+>   your situation. A prescriber's input has a narrow role here,
+>   mostly around drug interactions if you're on bupe or another
+>   medication CBD can affect.
 
 ## What cannabis is doing, pharmacologically
 
@@ -385,34 +388,51 @@ people you'd normally tell, using to manage withdrawal from previous
 use. If two or three of those are true, the cost-benefit has shifted
 ([Hasin et al., 2013, DSM-5 criteria](https://pubmed.ncbi.nlm.nih.gov/23903334/)).
 
-## When to bring this to a clinician
+## Who to talk to
 
-If you're weighing this seriously, or if it's already happening,
-bring it up with a clinician who treats substance use. Be specific:
-which product, which cannabinoid, how often, for what symptom.
+For most readers, this is community ground, not clinic ground. The
+people most useful to talk to are the ones who know your situation
+and have either been in it themselves or watched it up close: a
+sponsor, a peer in this community who's faced the same question, a
+trusted friend or family member, a therapist if you have one. Be
+specific (which product, which cannabinoid, how often, for what
+symptom) and listen to how it lands when you say it out loud. The
+real answer to the question usually surfaces in that conversation.
 
-Clinicians vary on this. Some are matter-of-fact about occasional
-cannabis use during recovery. Some require abstinence as a condition
-of treatment. Some sit in between. Finding a clinician whose stance
-matches your situation matters more than finding the most
-"permissive" or the most "strict" one. The
-[Telehealth Providers comparison](/resources/telehealth) lists the
-US telehealth providers that handle 7-OH and kratom cases; their
-postures on cannabis use during treatment vary, and asking directly
-during the intake call is a reasonable thing to do.
+A prescriber's input has a narrow but real role:
 
-If you're using cannabis for sleep and it's working but you're worried
-about chronic-use costs, [Sleep Recovery](/post-acute/sleep-recovery)
-covers the non-cannabis options. If you're using it for anxiety or
-mood, [Depression and Anhedonia](/post-acute/depression-and-anhedonia)
-and [Impending Doom](/post-acute/impending-doom) cover those symptoms
-and what helps for each. For the broader symptom-management toolkit,
-[Helper Medications](/other-tools/helper-meds-info) and
-[Vitamins & Supplements](/other-tools/vitamins-supplements) are the
-primary pages.
+- **If you're on bupe and considering CBD**, the CYP3A4 interaction
+  is a specific, concrete question your prescriber can answer with
+  reference to your dose and your other medications. That's worth
+  asking about.
+- **If you're on an SSRI, an SNRI, an anticonvulsant, warfarin, or
+  several other medications**, CBD can affect blood levels — same
+  framing. Bring it up.
+- **If you're in a MAT program with a cannabis-abstinence
+  requirement**, that's a fact about your treatment contract; talk
+  to your prescriber about whether occasional use will be flagged
+  and what the consequences would be.
+
+For the broader "should I use cannabis at all during recovery"
+question, most clinicians will not have a substantive conversation
+with you. Some will give a one-line policy ("we don't allow it").
+Some will shrug and say it's your call. Few will engage with the
+dose-vs-cannabinoid-vs-frequency nuance the literature actually
+supports. This isn't where most of their training or their tools
+live, and treating telehealth as the right address for the question
+sets you up to feel dismissed.
+
+For symptoms specifically, the site has focused pages that may be
+more useful than cannabis: [Sleep Recovery](/post-acute/sleep-recovery),
+[Depression and Anhedonia](/post-acute/depression-and-anhedonia),
+[Impending Doom](/post-acute/impending-doom), and the
+prescription-adjunct options on
+[Helper Medications](/other-tools/helper-meds-info) — those *are*
+things a prescriber will actively help with, and several of them
+target the same symptoms cannabis sometimes gets used for, without
+the addiction-substitution risk.
 
 > 🩺 **Reminder.** This is community information, not medical advice.
 > Cannabis is federally controlled and state-regulated; legal status
-> varies. Whatever you decide, decide with your clinician in the loop
-> and your situation in view — not based on what a page on the
-> internet leans toward.
+> varies. Decide with the people who know your situation in view, not
+> based on what a page on the internet leans toward.
