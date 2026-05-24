@@ -20,7 +20,11 @@
       "Bash(docker build *)",
       "Bash(node scripts/link-compounds.mjs)",
       "Bash(awk 'NR==8' src/content/active-withdrawal/helper-meds-info.md)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" -H \"Accept-Language: en-US,en;q=0.9\" --max-time 20 \"https://www.amazon.com/dp/B086RQVNDV\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" -H \"Accept-Language: en-US,en;q=0.9\" --max-time 25 \"https://www.amazon.com/s?k=magnesium+glycinate+capsules&rh=n%3A3760901\" -o /tmp/amzn_test.html)",
+      "Bash(python3 -)",
+      "Bash(curl -sL --compressed -A 'Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36' -H 'Accept-Language: en-US,en;q=0.9' --max-time 30 https://www.amazon.com/s?k=__TRACKED_VAR__ -o /tmp/amzn/__TRACKED_VAR__.html)"
     ],
     "additionalDirectories": [
       "/Users/patrick/work/random/quitting7oh.org/discord-export-1366097989382307901-2026-05-21 (2)",
