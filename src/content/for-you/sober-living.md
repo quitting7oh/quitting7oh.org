@@ -2,7 +2,7 @@
 title: "Sober Living Homes"
 description: "What sober living actually is, the NARR quality levels, how to find a legitimate one, what it costs, red flags for predatory homes, and how Oxford House differs."
 category: "for-you"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 7
 ---
 
@@ -21,6 +21,29 @@ A few common patterns where sober living is a good fit:
 - **You're working on returning to work or school** and want a stable base while you do.
 
 Sober living is not magic, and it's not for everyone. Some people do better with their own apartment plus an intensive outpatient program; some thrive in the shared structure. The choice should match your situation.
+
+## Who you'll be living with
+
+A sober living home, by design, puts you in a house with other people in early recovery. That's part of what makes the model work: shared experience, peer accountability, the "I'm not the only one going through this" frame. It's also where the model is hardest, and where the variance between a great house and a rough one mostly lives.
+
+People in early recovery (you included) are often:
+
+- **Sleep-disrupted, irritable, and mood-volatile.** [PAWS](/post-acute/what-is-paws) is real, and a houseful of people in different stages of it produces a real amount of friction.
+- **Not at peak self-care.** Messes, food left in the sink, laundry piles, late-night noise. Early recovery doesn't leave a lot of bandwidth for household tidiness, and "everyone here is going through it" can become its own excuse.
+- **Going through their own stuff.** Interpersonal conflict, family crises, relapse close-calls, sometimes mental health crises. You'll be sharing space with all of it.
+- **Sometimes actively using or close to it.** Even with drug testing, some residents relapse. A house that handles that well (clear eviction process, supportive of the person leaving, no using residue lingering in the environment) is very different from a house where it festers.
+
+A well-functioning house turns this into something useful: people who get it, structure that holds, accountability grounded in shared experience. A poorly-functioning house turns it into chaos that's actively bad for your recovery — sleep loss, environmental triggers, drama that pulls focus from your own work, sometimes outright access to substances through other residents. Picking the wrong house is worse than picking no house.
+
+That argues for **careful vetting of specific houses**, not just confirming a home meets the formal criteria. The [How to find a legitimate one](#how-to-find-a-legitimate-one) section below covers the formal vetting (NARR certification, referral conflicts, rules and contracts). The equally important informal vetting:
+
+- **Visit before you commit.** Spend an hour in the common areas. Calm or chaotic? People engaged with each other or holed up in their rooms? How does the house manager handle the visit?
+- **Talk to current residents, ideally away from staff.** "How long have you been here? What's the rhythm like? What's the hardest part of this specific house?" Honest answers from a current resident tell you more than a tour does.
+- **Ask about recent relapses and how the house handled them.** "When someone uses, what happens? How fast? Who decides?" The answer reveals the house's actual culture, not its written rules.
+- **Ask about turnover.** A house where residents leave within weeks has a problem worth understanding before you move in. A house where people stay six months or longer usually has something working.
+- **Pay attention to the house manager.** In Level II and III homes especially, the manager sets the tone. A manager who's burnt out, dismissive, or vague about the rules is a manager whose house will reflect that.
+
+If a house doesn't feel right during the visit, that's information. There are other houses.
 
 ## Levels of structure (NARR levels)
 
