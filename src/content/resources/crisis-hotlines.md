@@ -78,8 +78,8 @@ Additionally:
 - [Withdrawal Help](/start-here/withdrawal-help) — our own page for
   what to do this hour if you're in active withdrawal.
 - [At-Home Treatment](/for-you/at-home-treatment) — the at-home path
-  most people in this community use, including the four
-  community-validated approaches.
+  this site is built around, including the four community-validated
+  approaches.
 - [Rehabilitation Centers](/for-you/rehabilitation-centers) —
   longer-form on what formal treatment programs look like and how to
   navigate them.
