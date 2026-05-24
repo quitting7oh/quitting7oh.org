@@ -3,6 +3,7 @@ title: "COWS & SOWS Guide"
 description: "Timing your first Suboxone dose with the COWS and SOWS scales — and why the clock alone can mislead you."
 category: "mat-suboxone"
 last_updated: "2026-05-24"
+sort: 1
 ---
 > ⚠️ **Community information, not medical advice.** Use this alongside guidance from a qualified provider.
 

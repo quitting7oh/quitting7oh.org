@@ -3,6 +3,7 @@ title: "Suboxone (Buprenorphine/Naloxone)"
 description: "Suboxone overview — what it is, how to induct, taper-oriented approach, and why we start low."
 category: "mat-suboxone"
 last_updated: "2026-05-24"
+sort: 2
 ---
 > ⚠️ **This post is community information, not medical advice.** Suboxone is a prescription medication that requires a qualified provider for induction, dosing, and monitoring. The induction and taper approaches described here reflect what this community has found works best for our specific population (people coming off 7-OH and related synthetics), and may differ from standard clinical protocols. Please verify what you read here against linked sources and follow your doctor's protocol.
 
