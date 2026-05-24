@@ -53,9 +53,9 @@ const id = 'doctabs-' + randomBytes(4).toString('hex');
   <div
     role="tablist"
     aria-label="Page sections"
-    class="doc-tabs-list inline-flex h-10 items-center justify-start rounded-lg bg-muted p-1 text-muted-foreground"
+    class="doc-tabs-list flex flex-wrap items-end gap-1 border-b border-border"
   ></div>
-  <div class="doc-tabs-panels mt-4">
+  <div class="doc-tabs-panels pt-6">
     <slot />
   </div>
 </div>
@@ -97,7 +97,7 @@ const id = 'doctabs-' + randomBytes(4).toString('hex');
       btn.id = `tab-${id}-${value}`;
       btn.setAttribute('aria-controls', `tabpanel-${id}-${value}`);
       btn.className =
-        'inline-flex h-8 items-center justify-center whitespace-nowrap rounded-md px-3 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 hover:text-foreground';
+        'doc-tab-trigger relative -mb-px inline-flex h-10 items-center justify-center whitespace-nowrap border-b-2 border-transparent px-4 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2';
       btn.textContent = label;
       btn.addEventListener('click', () => setActive(value));
       listEl.appendChild(btn);
@@ -131,11 +131,11 @@ const id = 'doctabs-' + randomBytes(4).toString('hex');
         const isActive = v === active;
         btn.setAttribute('aria-selected', String(isActive));
         if (isActive) {
-          btn.classList.add('bg-background', 'text-foreground', 'shadow-sm');
-          btn.classList.remove('text-muted-foreground');
+          btn.classList.add('border-primary', 'text-foreground');
+          btn.classList.remove('border-transparent', 'text-muted-foreground');
         } else {
-          btn.classList.remove('bg-background', 'text-foreground', 'shadow-sm');
-          btn.classList.add('text-muted-foreground');
+          btn.classList.remove('border-primary', 'text-foreground');
+          btn.classList.add('border-transparent', 'text-muted-foreground');
         }
       });
     }
