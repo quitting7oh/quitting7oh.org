@@ -60,6 +60,7 @@ function NavContent({ categories, currentPath }: Props) {
 export function AppSidebar({ categories, currentPath }: Props) {
   const isMobile = useIsMobile();
   const [open, setOpen] = React.useState(false);
+  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
 
   // The mobile hamburger lives in Header.astro (outside this React tree)
   // and dispatches 'toggle-sidebar' which we toggle from here.
@@ -68,6 +69,37 @@ export function AppSidebar({ categories, currentPath }: Props) {
     window.addEventListener('toggle-sidebar', handler);
     return () => window.removeEventListener('toggle-sidebar', handler);
   }, []);
+
+  // Scroll the desktop sidebar so the active page is centered in view.
+  // Without this, a long sidebar always starts at the top and readers
+  // have to scan to find where they are. Skips on mobile (the Sheet
+  // doesn't use scrollContainerRef).
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (isMobile) return;
+    // Defer to next paint so the DOM is fully laid out before measuring.
+    const raf = requestAnimationFrame(() => {
+      const container = scrollContainerRef.current;
+      if (!container) return;
+      const active = container.querySelector<HTMLElement>(
+        'a[aria-current="page"]',
+      );
+      if (!active) return;
+      const cRect = container.getBoundingClientRect();
+      const aRect = active.getBoundingClientRect();
+      // If already fully visible, don't move.
+      if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
+      // Position of the active item in the container's content coord space.
+      const offsetTop = aRect.top - cRect.top + container.scrollTop;
+      const target =
+        offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
+      // Bypass the page's CSS scroll-behavior: smooth so this lands
+      // instantly on page load instead of animating in.
+      container.style.scrollBehavior = 'auto';
+      container.scrollTop = Math.max(0, target);
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [currentPath, isMobile]);
 
   // Mobile: Sheet drawer (Radix Dialog under the hood — focus trap, ESC,
   // scroll lock, ARIA all handled).
@@ -85,27 +117,6 @@ export function AppSidebar({ categories, currentPath }: Props) {
       </Sheet>
     );
   }
-
-  // Desktop: aside stretches to the full height of the flex container
-  // (matches the main column's height, so it runs as long as the article).
-  // The inner scrollable div is sticky so the nav stays in view as the
-  // reader scrolls. On mount, scroll the active page into view within the
-  // sidebar — otherwise a long sidebar starts at the top and the user has
-  // to scan to find where they are.
-  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
-    const active = container.querySelector<HTMLElement>('[aria-current="page"]');
-    if (!active) return;
-    // Use the container's geometry to compute the desired scrollTop so
-    // we don't fight the page's own scroll (scrollIntoView would do that).
-    const cRect = container.getBoundingClientRect();
-    const aRect = active.getBoundingClientRect();
-    const offsetTop = aRect.top - cRect.top + container.scrollTop;
-    // Center the active item vertically within the visible area.
-    container.scrollTop = offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
-  }, [currentPath]);
 
   return (
     <aside
