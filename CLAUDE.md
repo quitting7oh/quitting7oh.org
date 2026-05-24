@@ -5,6 +5,39 @@ These are durable rules — they survive across sessions.
 
 ## Always
 
+### External links open in new tabs
+
+Any link to an off-site URL must open in a new tab:
+
+```html
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">
+  Example
+</a>
+```
+
+Why both attributes:
+- `target="_blank"` opens the link in a new tab
+- `rel="noopener noreferrer"` is the security pair — `noopener` prevents the
+  opened page from accessing `window.opener` (which can be a vector for
+  tab-jacking), `noreferrer` prevents leaking the current URL via the
+  Referer header.
+
+**Markdown / MDX content gets this automatically** via the
+`rehypeExternalLinks` plugin in `astro.config.mjs`. The plugin walks the
+rendered tree, finds anchors whose `href` is an external URL (not relative,
+not `#anchor`, and not on `quitting7oh.org`), and adds both attributes plus
+an `external-link` CSS class. Don't add the attributes manually in markdown
+— let the plugin do it.
+
+**Hand-written JSX / Astro components** must include both attributes
+explicitly. The plugin only runs on markdown. If you write an `<a
+href="https://...">` in a `.tsx`, `.astro`, or `.mdx` JSX context, it
+won't get target/rel without you adding them.
+
+Internal links (relative URLs, fragments, `quitting7oh.org`) stay in the
+same tab — opening a new tab for in-site navigation is jarring and breaks
+the back button.
+
 ### Treat examples as illustrations, not specifications
 
 When the user asks "implement X for Y", any example I offer ("here's what
