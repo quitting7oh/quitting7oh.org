@@ -28,12 +28,15 @@ sort: 7
 > of structure and distance.
 
 If your loved one is coming off [7-OH](/compounds/7-oh) or kratom
-synthetics at home, that's the path most people in this community
-take. Most people doing this work do it at home, often with a
-telehealth prescriber and the community as backup. This page is about what at-home recovery looks like from
-outside it: what tools they're likely using, what you can do that
-helps, what tends to backfire, and when higher-intensity care is the
-right call instead.
+synthetics at home, this page is about what that path looks like
+from outside it: what tools they're likely using, what you can do
+that helps, what tends to backfire, and when higher-intensity care
+is the right call instead. At-home recovery is the path this site
+is built around — usually with a telehealth prescriber in the loop
+and the community as backup. The
+[When higher-intensity care is the right call](#when-higher-intensity-care-is-the-right-call)
+section at the bottom covers the situations where at-home isn't a
+fit.
 
 If at-home isn't the right fit for their situation (covered at the
 bottom), the
@@ -57,11 +60,12 @@ them](/for-you/at-home-treatment) has the full version):
   and [supplements](/other-tools/vitamins-supplements)** — for shorter
   exposures and lower doses.
 
-Most people pick one path and stick with it. None is ranked above the
-others on this site; the right one depends on the specific situation,
+Picking one path and sticking with it tends to work better than
+mid-stream switching. None of the four is ranked above the others
+on this site; the right one depends on the specific situation,
 what's worked or not worked before, and what they're willing to
-commit to. Your job isn't to second-guess the path — it's to support
-the attempt.
+commit to. Your job isn't to second-guess the path — it's to
+support the attempt.
 
 ## What this looks like day-to-day
 
@@ -112,10 +116,11 @@ for weeks to months.
   what they're taking — Subs, SR-17, leaf, supplements, helper meds —
   is theirs to manage. You can help with logistics; you can't run
   the protocol.
-- **Treating the at-home path as inadequate.** The at-home path is
-  what most people in this community use successfully. Pushing for
-  residential mid-stop because the at-home isn't going perfectly is
-  rarely the right call.
+- **Treating the at-home path as inadequate.** Pushing for
+  residential mid-stop because the at-home attempt isn't going
+  perfectly is rarely the right call. At-home recovery is a real
+  path with real tools; mid-stop escalation usually destabilizes
+  the attempt rather than rescuing it.
 
 ## When higher-intensity care is the right call
 
