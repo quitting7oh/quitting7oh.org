@@ -5,6 +5,30 @@ These are durable rules — they survive across sessions.
 
 ## Always
 
+### Treat examples as illustrations, not specifications
+
+When the user asks "implement X for Y", any example I offer ("here's what
+that might look like — A, B, C") is one illustration, not a finalized
+spec. Don't execute on my own example as if it were the user's
+requirement.
+
+Before building:
+
+- **Search the actual content / code** for the real shape of the work.
+  e.g., if the user asks to add tabs to "long pages", inspect the actual
+  pages (length, structure, natural section breaks) before deciding which
+  pages qualify and what the tabs should be.
+- **If the right answer isn't obvious from the content, ask** — short,
+  multiple-choice when possible. Better to spend 30 seconds confirming
+  than to ship a wrong implementation based on a hypothetical example.
+- **Never reuse my earlier hypothetical** (e.g., "Overview / Pharmacology
+  / Withdrawal / Tapering") as if it were the user's pick. Those were
+  conversational scaffolding, not requirements.
+
+A good rule of thumb: if my plan to implement something is built entirely
+on examples I generated myself (not on the actual repo state or an
+explicit user choice), I'm probably about to do the wrong thing.
+
 ### Bump `last_updated` when editing content
 
 When editing any file under `src/content/**/*.{md,mdx}`, update its
