@@ -2,10 +2,8 @@
 title: "Welcome"
 description: "What this site is, who it's for, where to start, and how to find the community."
 category: "start-here"
-last_updated: "2026-05-21"
-source_channel: "#welcome"
+last_updated: "2026-05-23"
 sort: 1
-manual: true
 ---
 
 If you're reading this, you (or someone you love) is probably stuck on a
@@ -78,15 +76,17 @@ that hasn't come back.
 
 ### 🧪 You want to understand what you've been on
 
-The **[Compounds](/compounds)** section has overviews of 7-OH, [MGM-15](/compounds/mgm15),
+The **[Compounds](/compounds)** section has overviews of [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15),
 pseudo, [MIT-A/DHM](/compounds/mit-a-dhm), [cat's claw](/compounds/cats-claw), and how each one differs from raw kratom
 leaf. The compound matters — the timeline and the best approach are
 genuinely different across them.
 
 ### 🫂 Your loved one is in this, and you don't know what to do
 
-Start with **[#for-loved-ones](/start-here/for-loved-ones)**. It was
-written by people who have been on both sides of this.
+Start with **[For Loved Ones](/for-loved-ones/start-here)**. The whole
+section was written by and for people who have been on both sides of
+this — what to expect, how to talk to them, how to stay safe, how to
+find treatment, and how to take care of yourself.
 
 ### 🔬 You're a researcher or clinician trying to understand what these compounds actually are
 

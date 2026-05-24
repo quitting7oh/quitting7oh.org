@@ -3,7 +3,6 @@ title: "Custom Suboxone Dosing"
 description: "Liquid titration for doses below 0.5 mg — when pill cuts can't get you low enough to finish a taper."
 category: "mat-suboxone"
 last_updated: "2026-05-21"
-source_channel: "#suboxone-custom-dose"
 ---
 > ⚠️ **Community information, not medical advice.** Cutting films goes outside the manufacturer's labeling and your prescriber may or may not approve. The pharmacology supports it (the medication is uniformly distributed in the film), but you're taking responsibility for accurate dosing. If you're unsure, ask your prescriber.
 

@@ -2,11 +2,11 @@
 title: "Suboxone (Buprenorphine/Naloxone)"
 description: "Suboxone overview — what it is, how to induct, taper-oriented approach, and why we start low."
 category: "mat-suboxone"
-last_updated: "2026-05-21"
-source_channel: "#suboxone-info"
-manual: true
+last_updated: "2026-05-23"
 ---
 > ⚠️ **This post is community information, not medical advice.** Suboxone is a prescription medication that requires a qualified provider for induction, dosing, and monitoring. The induction and taper approaches described here reflect what this community has found works best for our specific population (people coming off 7-OH and related synthetics), and may differ from standard clinical protocols. Please verify what you read here against linked sources and follow your doctor's protocol.
+
+> 💼 **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues that have nothing to do with whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
 
 Suboxone is the most common medication used to come off opioid dependence, and for most people in this community, it's the medication route worth understanding. This page covers induction, dosing, taper plans, and the specific challenges that come with using bupe to come off the synthetic mitragynine derivatives we deal with here.
 
@@ -15,7 +15,7 @@ Suboxone is the most common medication used to come off opioid dependence, and f
 **Two things to know before you sit down with a prescriber:**
 
 1. **Doctors often want to start you at 16 mg, sometimes 24 mg, on day 1.** They're not wrong about safety, but the cost of starting that high is a much longer, harder taper later. See [Why we start low — receptor occupancy](#why-we-start-low--receptor-occupancy) for the pharmacology.
-2. **The "14-day taper" figure isn't a deadline.** For 7-OH-focused tapers in this community, expect **5–14 days** depending on your day-1 dose; a few extra days at the bottom is normal and not failure. See [About taper duration](#about-taper-duration).
+2. **The "14-day taper" figure isn't a deadline.** For [7-OH](/compounds/7-oh)-focused tapers in this community, expect **5–14 days** depending on your day-1 dose; a few extra days at the bottom is normal and not failure. See [About taper duration](#about-taper-duration).
 
 Both of these are conversations you can have with your prescriber. Bringing the receptor-occupancy data and the realistic-timeline data into that conversation tends to go better than just disagreeing.
 
@@ -44,10 +44,10 @@ Half-life tells you roughly **when** your COWS is likely to climb to induction-r
 
 - **7-OH alone:** plasma half-life ~100 minutes. Most users hit COWS ≥ 12 in the 12 to 18 hour range, and this is what we typically see succeed in this community.
 - **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Often takes 36 to 72 hours to reach induction-ready COWS.
-- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to MGM-15.
+- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
 - **Pseudo (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
-If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were actually on. Most providers haven't heard of MGM-15, pseudo, or MIT-A, and if they default to the standard short-acting-opioid playbook for the long-acting compounds, induction can fail.
+If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were actually on. Most providers haven't heard of MGM-15, pseudo, or [MIT-A](/compounds/mit-a-dhm), and if they default to the standard short-acting-opioid playbook for the long-acting compounds, induction can fail.
 
 ## Why bupe might not fully cover you (it's not your imagination)
 A few pharmacological reasons that come up here:

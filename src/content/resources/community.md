@@ -3,9 +3,7 @@ title: "Community: Discord & Subreddit"
 description: "Where to find the people behind this site — the Discord server and the subreddit."
 category: "resources"
 last_updated: "2026-05-21"
-source_channel: "#community"
 sort: 0
-manual: true
 ---
 
 This site is reference material. The **community** is where the live conversation

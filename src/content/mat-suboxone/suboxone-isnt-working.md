@@ -3,7 +3,6 @@ title: "Why Suboxone Might Not Be Working — Read This First"
 description: "Why bupe sometimes doesn't cover you — SNRI symptoms, the dose-ceiling question, long-acting compounds."
 category: "mat-suboxone"
 last_updated: "2026-05-21"
-source_channel: "#suboxone-isnt-working"
 ---
 If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are real, well-understood reasons it can feel inadequate, especially coming off [7-OH](/compounds/7-oh) and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is genuinely different in several ways, and the medication needs to be used a little differently to fully cover what's happening.
 
@@ -45,7 +44,7 @@ This is the second-biggest thing people don't get told. The "right" dose of bupe
 
 This community uses a low-and-slow induction (start at 2 mg, titrate up by 1 mg as needed) precisely because we don't want people parked at a higher dose than they need. But the flip side is also true: **if you're parked too low, the bupe isn't covering you, and that's a fixable problem.**
 
-If you're at 2 mg and you're still feeling withdrawal symptoms throughout the day, your dose is probably too low. If you're at 4 mg and feeling waves of return-of-symptoms before your next dose, your dose is probably too low. **Most people coming off 7-OH land somewhere in the 4 to 8 mg range when fully covered.** Some need less, some need more.
+If you're at 2 mg and you're still feeling withdrawal symptoms throughout the day, your dose is probably too low. If you're at 4 mg and feeling waves of return-of-symptoms before your next dose, your dose is probably too low. **Most people coming off [7-OH](/compounds/7-oh) land somewhere in the 4 to 8 mg range when fully covered.** Some need less, some need more.
 
 **On the dose ceiling:** the conventional wisdom held that buprenorphine has a flat ceiling at 24 to 32 mg/day, meaning higher doses don't add benefit. [More recent research has challenged this](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11303732/), suggesting the ceiling effect is more individual than the older guidance assumed and some patients do get meaningful benefit at higher doses. This community doesn't generally encourage going above 8 mg/day because higher doses make tapering harder and longer, and most 7-OH users don't need it. But if your prescriber suggests a higher dose because you're not stabilizing, the newer research supports that being a reasonable approach.
 
@@ -54,7 +53,7 @@ If you're at 2 mg and you're still feeling withdrawal symptoms throughout the da
 ## If you've been on long-acting synthetics or stacked compounds
 Most people in this community are coming off 7-OH, but if you've also been on **[MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pseudo**, the picture changes meaningfully:
 
-**[MGM-15](/compounds/mgm15)** is a [dual mu/delta receptor agonist](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Buprenorphine is essentially mu-only and is actually a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off MGM-15. This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. **It's not in your head, it's pharmacology.** See [#mgm-15](/compounds/mgm15) for the full breakdown.
+**[MGM-15](/compounds/mgm15)** is a [dual mu/delta receptor agonist](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Buprenorphine is essentially mu-only and is actually a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off [MGM-15](/compounds/mgm15). This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. **It's not in your head, it's pharmacology.** See [#mgm-15](/compounds/mgm15) for the full breakdown.
 
 **Pseudo ([mitragynine pseudoindoxyl](/compounds/pseudo))** [binds the mu receptor tighter than buprenorphine itself does](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Even when bupe is on board, displacement and stabilization can be incomplete in a way that doesn't happen with 7-OH.
 
@@ -67,7 +66,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 ## What to do right now if Suboxone isn't working
 1. **Check the SNRI piece first.** If you have any of the symptoms in the SNRI list above, that's where the problem is. Get clonidine, hydroxyzine, gabapentin, or trazodone added.
 2. **Check your dose.** Are you genuinely covered, or parked too low? If symptoms return before your next dose, your dose is too low or you need to split it.
-3. **Be honest about what you were on.** If MGM-15, MIT-A, or pseudo were in the mix, the playbook changes.
+3. **Be honest about what you were on.** If MGM-15, [MIT-A](/compounds/mit-a-dhm), or pseudo were in the mix, the playbook changes.
 4. **Don't bail in the first 1-2 days.** This is when most people quit, because it's when bupe feels least like what their body was used to and the SNRI symptoms are at their worst. Your dose may not be dialed in yet, your adjuncts may not be in your system yet. Push through to day 2 or 3 with the right dose and adjuncts in place.
 5. **Don't redose your old compound to take the edge off.** That's how this restarts.
 6. **Talk to the community.** People in our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) have lived through what you're going through with these specific compounds.

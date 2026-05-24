@@ -3,7 +3,6 @@ title: "QuickMD: Telehealth Suboxone Provider"
 description: "QuickMD telehealth review — same-day Suboxone prescriptions, what to ask, pharmacy gotchas."
 category: "resources"
 last_updated: "2026-05-21"
-source_channel: "#quickmd-info"
 ---
 > ⚠️ **Information channel, not medical advice or paid endorsement.** This is community reference material on QuickMD as a telehealth option for getting Suboxone prescribed. Members of this community have used them with good results, which is why they get their own info channel, but your situation may differ. For discussion or to share your own experience, see **#suboxone**.
 

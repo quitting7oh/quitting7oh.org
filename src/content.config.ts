@@ -7,13 +7,8 @@ const docsSchema = z.object({
   description: z.string().optional().default(''),
   category: z.enum(CATEGORY_SLUGS),
   last_updated: z.coerce.date().optional(),
-  source_channel: z.string().optional(),
   sort: z.number().optional(),
   draft: z.boolean().optional().default(false),
-  // When true, the ingest pipeline will NOT overwrite this file even if its
-  // source channel appears in /imports/. Use for pages that have been
-  // editorially restructured beyond what a raw Discord export produces.
-  manual: z.boolean().optional().default(false),
   // When true, the page renders without the left category sidebar or
   // right TOC — the main column gets the full container width. Use for
   // reference docs (charts, tables, diagrams) that need horizontal space.

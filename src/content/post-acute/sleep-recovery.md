@@ -3,7 +3,6 @@ title: "💤 Sleep Recovery: The Long Road Back to Real Sleep"
 description: "Sleep recovery after opioid use — what's normal, what helps, and how long it actually takes."
 category: "post-acute"
 last_updated: "2026-05-21"
-source_channel: "#sleep-recovery"
 ---
 If you're new here and trying to sleep, **welcome.** Sleep disruption is the most universal complaint in opioid recovery, and almost everyone in this community has been where you are. The good news: sleep does come back. The harder news: it takes longer than you want, and it's not linear.
 

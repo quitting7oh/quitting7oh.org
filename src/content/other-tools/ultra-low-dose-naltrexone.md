@@ -3,9 +3,7 @@ title: "Ultra-Low-Dose Naltrexone (ULDN)"
 description: "Microgram-range naltrexone taken alongside opioids — used to reduce tolerance, blunt withdrawal, or smooth a Suboxone taper."
 category: "other-tools"
 last_updated: "2026-05-21"
-source_channel: "#ultra-low-dose-naltrexone"
 sort: 3
-manual: true
 ---
 
 > ⚠️ **This post is community information, not medical advice.** ULDN

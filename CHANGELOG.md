@@ -6,6 +6,146 @@ This site is a community recovery resource compiled from Discord channel
 exports. The format is loosely based on [Keep a Changelog](https://keepachangelog.com/);
 versioning is not strict — changes ship continuously.
 
+## [Unreleased] — 2026-05-23
+
+### Retired the Discord-export ingest pipeline
+
+The site is now the sole source of truth for content. The ingest pipeline
+that originally imported Discord channel exports into `src/content/` has
+been removed to prevent future sessions from accidentally re-ingesting and
+clobbering editorial work.
+
+- **Deleted:** `scripts/ingest-discord.mjs`,
+  `scripts/channel-mapping.json`, the entire `imports/` directory (raw
+  Discord exports + the HTML source files for the pharmacology pages).
+- **Removed `npm run ingest` and `npm run ingest:dry`** from
+  `package.json`. The `link:compounds` script stays — it operates on
+  current site content and isn't tied to ingest.
+- **Schema cleanup:** dropped `source_channel` and `manual` from the
+  content collection schema in `src/content.config.ts`. Both fields
+  only existed to serve the ingest pipeline: `source_channel` was
+  provenance from the originating Discord channel, `manual` told the
+  ingester not to overwrite an editorially-restructured page. With no
+  ingester to talk to, they were dead weight.
+- **Front-matter sweep:** stripped `source_channel:` and `manual:` lines
+  from all 46 content files. The site rebuilds cleanly with the
+  trimmed schema.
+- **Docs cleanup:** updated
+  [src/content/README.md](src/content/README.md) front-matter table to
+  drop the removed fields and add a row for the `wide` field that was
+  already in use. Updated [CLAUDE.md](CLAUDE.md) to remove the ingest
+  references in the "Editing content" section and the build commands
+  block.
+
+User-facing Discord references (the homepage card, the
+[/resources/community](/resources/community) page, "Join the Discord"
+callouts, the `discord.gg/quitting7oh` invite link) are **kept** — these
+are community-pointer content, not data sources, and they're how
+readers find live help.
+
+**Also retired:** `scripts/convert-pharma-html.mjs` (the one-shot
+HTML-to-Astro converter for the pharmacology charts). Its input folder
+`imports/_html-source/` was part of the deleted `imports/` tree, and
+the Astro components it produced (`MinorAlkaloids.astro`,
+`MorphineVsKratom.astro`) are already committed and stable. The
+generator-attribution comments at the top of those components have
+been replaced with plain descriptions.
+
+### Third-party link sweep and new MAT-and-licensure page
+
+- **CLAUDE.md updated** with a "Link every third party we name" rule.
+  When we cite an outside organization, hotline, treatment program, tool,
+  credential, government program, law, or book, link it on first mention
+  (internally if we have a page, externally otherwise). See the rule for
+  the curated list of canonical URLs for the most common references
+  (SAMHSA, 988, DV/Childhelp hotlines, CARF, NARR, Medicaid, MHPAEA, ADA,
+  FMLA, etc.).
+- **Audit and sweep across all new pages** for unlinked third-party
+  callouts: Salvation Army ARCs, CARF, Joint Commission, NARR, Oxford
+  House, Medicaid, Vivitrol, VA, FQHCs, MHPAEA, ADA, FMLA, HIPAA, ACA,
+  Department of Labor, Wage and Hour Division, EEOC, 988 Lifeline, DV
+  Hotline, Childhelp, Poison Control, Open Path Collective, Inclusive
+  Therapists/Therapy for Black Girls/Latinx Therapy, NA, AA, Heroin
+  Anonymous, The Phoenix, In The Rooms, Al-Anon, Nar-Anon, Families
+  Anonymous, Allies in Recovery, *Beyond Addiction* and *Get Your Loved
+  One Sober* (book links). Each now has a link on first mention.
+- **Prominent FMLA-eligibility callout** at the top of both FMLA pages
+  ([for-you/fmla-ada-job](/for-you/fmla-ada-job) and
+  [for-loved-ones/fmla-workplace](/for-loved-ones/fmla-workplace)). The
+  12-month / 1,250-hour / 50-employees-within-75-miles requirements are
+  the biggest gotcha; readers commonly plan around FMLA without
+  realizing they don't qualify. The warning is now the first thing they
+  see, with a pointer to state programs as the alternative.
+- **New page: [MAT & Your Professional License](/for-you/mat-and-your-job)**.
+  Most jobs have no business in your medical info — but a defined set of
+  regulated professions (CDL/DOT FMCSA, FAA pilots and ATC via the HIMS
+  program, law enforcement, armed security and firearms permitting,
+  healthcare licensure via state PHPs, federal security-clearance roles,
+  heavy machinery/safety-sensitive positions, school bus and transit
+  operators) treat MAT use as a licensure issue distinct from employer
+  policy. Page covers each profession's regulatory landscape, the
+  practical "what to do before disclosing" sequence, and flags Vivitrol
+  (extended-release naltrexone) as the non-controlled-substance option
+  that sidesteps many regulatory issues that buprenorphine and methadone
+  trigger. Cross-linked from
+  [suboxone-info](/mat-suboxone/suboxone-info),
+  [for-you/treatment-rehab](/for-you/treatment-rehab),
+  [for-you/fmla-ada-job](/for-you/fmla-ada-job),
+  [for-you/start-here](/for-you/start-here), and
+  [for-loved-ones/treatment-options](/for-loved-ones/treatment-options).
+- **for-you/ sort order updated** to slot the new MAT-job page between
+  fmla-ada-job (3) and mutual-aid: mat-and-your-job (4), mutual-aid (5),
+  sober-living (6).
+
+### Two new sibling sections: For You + For Loved Ones
+
+- **New top-level category `for-you`** (💚) — practical recovery resources for
+  the person in recovery: Treatment & Rehab, FMLA/ADA/Job, Mutual Aid & Recovery
+  Groups, Sober Living Homes, plus a section hub at `/for-you/start-here`.
+- **New top-level category `for-loved-ones`** (🫂) — for family, partners, and
+  friends of someone struggling: What to Expect, How to Talk (with a CRAFT
+  primer), Boundaries Without Punishment, Safety (incorporating the full
+  naloxone walkthrough), Asking Them to Leave the House, Treatment & Rehab
+  (family POV), FMLA & Workplace Protections, Taking Care of Yourself, Support
+  Groups for Family & Friends, plus a section hub at `/for-loved-ones/start-here`.
+- **Old `/start-here/for-loved-ones` page retired.** Content redistributed
+  across the new section's pages where it fits topically; the substance
+  explainer cross-links to `/compounds/7-oh` instead of duplicating. Channel
+  mapping entry for `for-loved-ones` removed from
+  `scripts/channel-mapping.json` to prevent re-ingest from clobbering the
+  new editorial section. Inbound link in `start-here/welcome.md` updated.
+- **Sidebar ordering** — both new sections sit right after Start Here, with
+  For You first (primary audience) and For Loved Ones second.
+- **Mutual aid directory** in `/for-you/mutual-aid` leads with **Kratom
+  Anonymous** as the most directly applicable fellowship for this community,
+  followed by Quitting Kratom Support (TIAWO), opioid-specific fellowships
+  (NA, Heroin Anonymous), and the broader options (SMART, Refuge Recovery,
+  Recovery Dharma, The Phoenix, In The Rooms, LifeRing, Women for Sobriety,
+  Celebrate Recovery, AA, HAMS). Family-side directory in
+  `/for-loved-ones/support-groups` covers Nar-Anon, SMART F&F, Learn to Cope,
+  TIAWO (welcomes family), Al-Anon, Families Anonymous, ACA, GRASP, plus a
+  short CRAFT-learning sub-section pointing to Allies in Recovery and the
+  Foote/Meyers books.
+- **New `/resources/meeting-schedules` page** — full Kratom Anonymous weekly
+  schedule with day, time, format, cutt.ly shortlink, and resolved Zoom URL.
+  Linked from both `/for-you/mutual-aid` and `/for-loved-ones/support-groups`.
+- **MAT relationship:** both treatment pages link out to existing
+  `/mat-suboxone/*`, `/other-tools/low-dose-naltrexone`,
+  `/other-tools/ultra-low-dose-naltrexone`, and `/resources/quickmd-info`
+  rather than duplicating that content. Family page also points readers to
+  the corresponding For You page so they can see what their loved one is
+  navigating, and vice versa.
+- **Substance framing:** new pages consistently distinguish kratom **leaf**
+  (sometimes a valid taper tool) from concentrated **7-OH / MGM-15 / MIT-A /
+  pseudo** synthetics. Polysubstance warnings (alcohol, benzos, gabapentinoids)
+  with SAMHSA + findtreatment.gov routing appear on every page where
+  withdrawal, detox, or medical risk is discussed.
+- **House-style language:** family pages use "person with a substance use
+  disorder" / "your loved one" / "the person you love" rather than "addict."
+  Recovery-side pages meet the reader where they are without assuming
+  readiness, abstinence, or shame. "Server" used only for Discord references;
+  "community" / "site" for everything else.
+
 ## [Unreleased] — 2026-05-21
 
 ### Site bootstrap & initial content

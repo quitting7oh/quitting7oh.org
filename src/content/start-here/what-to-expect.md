@@ -3,7 +3,6 @@ title: "👋 What to Expect: 7-OH Withdrawal"
 description: "What 7-OH withdrawal looks like — symptoms, timeline, and the shape of the first two weeks."
 category: "start-here"
 last_updated: "2026-05-21"
-source_channel: "#what-to-expect"
 ---
 If you're here, you're probably scared, exhausted, or both. **Welcome.** If you're a loved one of someone going through this, head to [#for-loved-ones](/start-here/for-loved-ones).
 For everyone else: this post is a quick orientation, not the full picture. The full picture is in the channels around you, and you don't need to read it all today.

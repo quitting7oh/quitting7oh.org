@@ -3,7 +3,6 @@ title: "Mega Vitamin C"
 description: "High-dose vitamin C as a withdrawal adjunct — protocol, dosing, evidence, and limits."
 category: "other-tools"
 last_updated: "2026-05-21"
-source_channel: "#mega-vit-c-info"
 ---
 > ⚠️ **Community information, not medical advice.** Talk to your prescriber before starting any high-dose supplement protocol, especially if you have kidney issues, take medications, or have a history of kidney stones. **Not appropriate for everyone.**
 

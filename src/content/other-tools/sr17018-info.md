@@ -3,7 +3,6 @@ title: "SR-17018"
 description: "SR-17018 as an informal taper tool — what it is, the community protocol, real risks, what's unknown."
 category: "other-tools"
 last_updated: "2026-05-21"
-source_channel: "#sr17018-info"
 ---
 > ⚠️ **Community information, not medical advice.** SR-17018 is a research chemical not approved for human use anywhere in the world. The information below reflects community experience, published research on rodent models, and harm reduction principles. **For discussion, see #sr17018 **
 
@@ -25,7 +24,7 @@ In rodent studies, this has translated to real, documented advantages: [SR-17018
 - **Reports of "minimal euphoria" are accurate but not the whole story.** Most users describe SR-17018 as not producing the same kind of high other opioids do, which is part of why it's used as a transition tool rather than recreationally. But the absence of euphoria doesn't mean absence of opioid effects.
 
 ## Preload, don't quit cold first
-**The most important practical point: SR-17018 is taken alongside your existing [7-OH](/compounds/7-oh) (or other opioid) for several days before you stop the original compound.** This is called preloading and it's how community protocols actually work. Stopping 7-OH first and then starting SR is the wrong sequence and leads to unnecessary withdrawal.
+**The most important practical point: SR-17018 is taken alongside your existing [7-OH](/compounds/7-oh) (or other opioid) for several days before you stop the original compound.** This is called preloading and it's how community protocols actually work. Stopping [7-OH](/compounds/7-oh) first and then starting SR is the wrong sequence and leads to unnecessary withdrawal.
 
 The reasoning: SR-17018's tolerance-reversing and withdrawal-suppressing properties [demonstrated in rodent studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) work through *substitution* at the mu receptor, not as a withdrawal treatment after the fact. You want SR-17018 occupying receptors and shifting the receptor adaptation pattern *while* you taper or discontinue the original compound, not afterward.
 
@@ -101,7 +100,7 @@ The short answer: **probably yes for [MGM-15](/compounds/mgm15), but the data is
 
 The published [Bohn lab research demonstrated SR-17018 substituting for and reversing tolerance to morphine](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) and oxycodone in rodent models. There are no published studies specifically pairing SR-17018 with [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), pseudo, or 7-OH.
 
-That said, the pharmacological logic is consistent. MGM-15 is a [semi-synthetic mu/delta agonist derived from 7-OH](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/), and 7-OH itself is a potent mu-opioid agonist. SR-17018's substitution mechanism operates at the mu receptor, which all of these compounds activate.
+That said, the pharmacological logic is consistent. [MGM-15](/compounds/mgm15) is a [semi-synthetic mu/delta agonist derived from 7-OH](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/), and 7-OH itself is a potent mu-opioid agonist. SR-17018's substitution mechanism operates at the mu receptor, which all of these compounds activate.
 
 **The MGM-15 caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help.
 

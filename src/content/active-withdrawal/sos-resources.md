@@ -3,9 +3,7 @@ title: "SOS: You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "active-withdrawal"
 last_updated: "2026-05-21"
-source_channel: "#sos-resources"
 sort: 1
-manual: true
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you can't keep water
@@ -102,7 +100,7 @@ everyone — pick the one that fits your situation.
 
 ### Path 1 — tough it out (cold turkey with helper meds and supplements)
 
-Doable for **short-acting 7-OH at moderate doses**. Much harder for
+Doable for **short-acting [7-OH](/compounds/7-oh) at moderate doses**. Much harder for
 long-acting or stacked compounds. If you choose this path:
 
 - Read **[#helper-meds-info](/active-withdrawal/helper-meds-info)** for

@@ -3,7 +3,6 @@ title: "Suboxone Rapid Taper"
 description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
 category: "mat-suboxone"
 last_updated: "2026-05-21"
-source_channel: "#suboxone-rapid-taper"
 ---
 > ⚠️ **This post describes rapid taper schedules used by this community for 7-OH dependence. These schedules deliberately go faster than standard medical guidance.** They reflect community experience with hundreds of successful rapid tapers from 7-OH, where short bupe courses (5 to 10 days) at low-to-moderate doses have not produced meaningful bupe dependence in our population. **This is not how a prescriber will typically run a taper, and most prescribers won't sign off on these timelines.** If you're considering this, you're choosing a community-developed approach over standard clinical practice. Make sure you understand what you're choosing.
 
@@ -43,7 +42,7 @@ All schedules assume:
 ## Choosing the right schedule
 
 **Pick the longer end of the range if:**
-- This is your first attempt at coming off 7-OH
+- This is your first attempt at coming off [7-OH](/compounds/7-oh)
 - You've been on 7-OH for more than a few months
 - You don't have a stable home environment, support person, or time off work
 - You have a history of relapse during withdrawal

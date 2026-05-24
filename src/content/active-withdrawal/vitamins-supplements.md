@@ -3,8 +3,6 @@ title: "Vitamins & Supplements"
 description: "A community-tested supplement stack for opioid withdrawal and PAWS — what to start with, what to skip."
 category: "active-withdrawal"
 last_updated: "2026-05-21"
-source_channel: "#vitamins-supplements"
-manual: true
 ---
 
 > ⚠️ **This post is community information, not medical advice.** Everything
@@ -208,7 +206,7 @@ enough.
 
 ## Avoid
 
-- **The compound that put you here** — 7-OH, MGM-15, MIT-A/DHM, pseudo,
+- **The compound that put you here** — [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo,
   or any stacked synthetic kratom product. "Just a little" restarts
   the cycle.
 - **Improvising with kratom leaf** to take the edge off acute

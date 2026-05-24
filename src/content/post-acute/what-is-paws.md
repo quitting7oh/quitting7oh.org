@@ -3,7 +3,6 @@ title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal: timeline, common symptoms, and what helps once acute withdrawal is over."
 category: "post-acute"
 last_updated: "2026-05-21"
-source_channel: "#what-is-paws"
 ---
 You made it through acute withdrawal. The worst is behind you. Then somewhere between week 2 and month 2, you might notice things still aren't quite right. Sleep is broken. Mood swings out of nowhere. You can't focus. You feel flat, then anxious, then fine, then exhausted.
 
@@ -45,7 +44,7 @@ Everyone is different, and the shape below is for people who experience meaningf
 - **Months 3 to 6:** for most, symptoms become less frequent. Sleep starts genuinely improving. Pleasure starts coming back, in small doses at first.
 - **Months 6 to 12:** for the people who had longer PAWS, symptoms typically fade significantly. Some people report PAWS-type symptoms surfacing under stress for [up to a year or longer](https://en.wikipedia.org/wiki/Post-acute-withdrawal_syndrome), but the *intensity* drops dramatically over time.
 
-**Most people coming off 7-OH alone do not have prolonged PAWS.** People who were on stacked synthetics, [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pseudo for extended periods are more likely to. Your specific situation matters more than averages.
+**Most people coming off [7-OH](/compounds/7-oh) alone do not have prolonged PAWS.** People who were on stacked synthetics, [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pseudo for extended periods are more likely to. Your specific situation matters more than averages.
 
 ## Windows and waves
 For people who do experience PAWS, the most important pattern to understand is that **it's not linear.** You don't get steadily better day by day. You cycle through "windows" (good days, sometimes whole good weeks where you feel almost normal) and "waves" (bad days where it feels like everything regressed).

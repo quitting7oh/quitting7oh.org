@@ -3,13 +3,12 @@ title: "Tapering with Leaf Kratom"
 description: "Using kratom leaf to bridge off concentrated 7-OH and synthetics — when it works, when it doesn't."
 category: "other-tools"
 last_updated: "2026-05-21"
-source_channel: "#tapering-with-leaf"
 ---
 > ⚠️ **Community information, not medical advice.** This is a community-developed approach for users coming off lower-dose 7-OH dependence. Leaf kratom is not FDA-approved for treating opioid dependence. **For discussion, see #kratom-leaf.**
 
 For some users in this community, **plain kratom leaf powder can be used as a taper tool** to come off [7-OH](/compounds/7-oh) and other concentrated kratom-derived products. The reasoning is straightforward: [7-OH](/compounds/7-oh) is one of the alkaloids naturally present in kratom leaf, just at far lower concentrations than in concentrated products. Tapering down to leaf is essentially reducing your alkaloid exposure to a fraction of what concentrated products deliver, and then tapering off the leaf itself.
 
-**This works best for users currently at lower daily 7-OH equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [#suboxone-info](/mat-suboxone/suboxone-info)) or SR-17018 to bridge through. **The two paths covered here:**
+**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [#suboxone-info](/mat-suboxone/suboxone-info)) or SR-17018 to bridge through. **The two paths covered here:**
 
 - **Under ~100 mg 7-OH equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work

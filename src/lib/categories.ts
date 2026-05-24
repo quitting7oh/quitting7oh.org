@@ -12,8 +12,20 @@ export const CATEGORIES = [
   {
     slug: 'start-here',
     title: 'Start Here',
-    blurb: 'Welcome, what to expect, for loved ones, scams to avoid.',
+    blurb: 'Welcome, what to expect, scams to avoid.',
     emoji: '🧭',
+  },
+  {
+    slug: 'for-you',
+    title: 'For You',
+    blurb: 'Treatment, work protections, mutual aid, sober living — for the person in recovery.',
+    emoji: '💚',
+  },
+  {
+    slug: 'for-loved-ones',
+    title: 'For Loved Ones',
+    blurb: 'For family, partners, and friends of someone struggling — what to expect, how to help, how to stay safe.',
+    emoji: '🫂',
   },
   {
     slug: 'active-withdrawal',

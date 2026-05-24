@@ -3,7 +3,6 @@ title: "Helper Medications"
 description: "Prescription adjuncts that take the edge off — clonidine, gabapentin, hydroxyzine, trazodone, baclofen."
 category: "active-withdrawal"
 last_updated: "2026-05-21"
-source_channel: "#helper-meds-info"
 ---
 > ⚠️ **This is a reference, not a prescription.** All of these require a doctor. [#quickmd-info](/resources/quickmd-info) has telehealth options. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 

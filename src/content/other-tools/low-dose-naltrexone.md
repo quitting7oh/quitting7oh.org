@@ -3,7 +3,6 @@ title: "Low-Dose Naltrexone (LDN)"
 description: "LDN for PAWS, sleep, and mood — after acute withdrawal: what it is, how to get a prescription."
 category: "other-tools"
 last_updated: "2026-05-21"
-source_channel: "#low-dose-naltrexone"
 ---
 > ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this community have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.
 
@@ -33,7 +32,7 @@ Whether any of these apply to your specific situation is a question worth bringi
 - Methadone
 - All other opioids
 
-The general guidance is **7 to 10 days fully opioid-free** before starting LDN, but the right washout for *your* situation depends on what you've been on, how long, and at what dose. Your prescriber should make that call. For the long-half-life synthetics (MGM-15, MIT-A), longer washouts are commonly recommended. If you're on Suboxone, that's its own conversation with your prescriber.
+The general guidance is **7 to 10 days fully opioid-free** before starting LDN, but the right washout for *your* situation depends on what you've been on, how long, and at what dose. Your prescriber should make that call. For the long-half-life synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm)), longer washouts are commonly recommended. If you're on Suboxone, that's its own conversation with your prescriber.
 
 ## Practical stuff (general info, your provider's protocol takes precedence)
 - **Typical starting dose:** often 1.5 mg at bedtime, titrated up over a few weeks toward 3 to 4.5 mg. Some people do best at lower doses; not everyone needs the full 4.5. Dosing should be set by your prescriber based on your situation.
