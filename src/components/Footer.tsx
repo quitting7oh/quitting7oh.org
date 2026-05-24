@@ -59,7 +59,7 @@ export function Footer() {
                 good-faith effort to validate every page. The AI itself runs
                 on data centers a billionaire class is cooking the planet to
                 build, so the rest of the internet can autogenerate slop. We
-                know we're participating in that. We don't give a fuck,
+                know we're participating in that. We're doing it anyway,
                 because people landing here at 3 a.m. in withdrawal find
                 what they need.{' '}
                 <a
