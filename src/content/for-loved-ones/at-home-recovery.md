@@ -29,9 +29,8 @@ sort: 7
 
 If your loved one is coming off [7-OH](/compounds/7-oh) or kratom
 synthetics at home, that's the path most people in this community
-take. It's not a downgrade from "real" treatment — it's the version
-most people use, often with a telehealth prescriber and the community
-as backup. This page is about what at-home recovery looks like from
+take. Most people doing this work do it at home, often with a
+telehealth prescriber and the community as backup. This page is about what at-home recovery looks like from
 outside it: what tools they're likely using, what you can do that
 helps, what tends to backfire, and when higher-intensity care is the
 right call instead.
@@ -113,8 +112,8 @@ for weeks to months.
   what they're taking — Subs, SR-17, leaf, supplements, helper meds —
   is theirs to manage. You can help with logistics; you can't run
   the protocol.
-- **Treating the at-home path as inadequate.** It isn't. It's what
-  most people in this community do successfully. Pushing for
+- **Treating the at-home path as inadequate.** The at-home path is
+  what most people in this community use successfully. Pushing for
   residential mid-stop because the at-home isn't going perfectly is
   rarely the right call.
 
