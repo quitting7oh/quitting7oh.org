@@ -19,7 +19,7 @@ than as a daily sublingual film or tablet.
 This page exists for two reasons. First, some people in this community
 have been offered these injections by their prescribers, and the
 pharmacology, dosing, and discontinuation profile differ enough from
-oral Suboxone that it's worth understanding before agreeing to one.
+oral Suboxone that you should understand them before agreeing to one.
 Second — and increasingly relevant for this site's audience — **a
 single shot of long-acting buprenorphine followed by discontinuation
 is showing promising results as an exit tool for people who have been
