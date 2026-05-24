@@ -12,7 +12,7 @@ This section is the practical-resources version. The rest of the site covers wha
 
 ## A note before you go any further
 
-**Ambivalence is normal.** Wanting to quit and not wanting to quit at the same time is the single most common state of mind for people thinking about coming off opioid-class dependence, and it's not a sign that you can't do it. It's just where almost everyone starts.
+**Ambivalence is normal.** Wanting to quit and not wanting to quit at the same time is the single most common state of mind for people thinking about coming off opioid-class dependence. It's where almost everyone starts, not a sign you can't do it.
 
 **You don't have to be "ready" to use this section.** Reading is not committing. Looking up what treatment costs is not signing up for treatment. Knowing your job protections is not telling your boss. Browsing meeting times is not promising to attend. None of this binds you to anything.
 
