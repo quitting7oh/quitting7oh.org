@@ -6,6 +6,8 @@ import { TocMobile } from '~/components/TocMobile';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { getCategory } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
+import { getPrevNext } from '~/lib/pagination';
+import Pagination from '~/components/Pagination.astro';
 import { viewOnGithubUrl } from '~/lib/site';
 import type { MarkdownHeading } from 'astro';
 
@@ -39,6 +41,7 @@ const updatedStr = lastUpdated
 
 const sidebarCategories = await getSidebarCategories();
 const currentPath = Astro.url.pathname;
+const { prev, next } = await getPrevNext(currentPath);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -74,6 +77,8 @@ const currentPath = Astro.url.pathname;
         ]} data-pagefind-body>
           <slot />
         </article>
+
+        <Pagination prev={prev} next={next} />
 
         <div class="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           {updatedStr && <span>Last updated: <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
