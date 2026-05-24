@@ -100,11 +100,10 @@ What "dopamine recovery" does **not** mean:
   content treats as accelerants mostly don't have evidence behind
   the urgency they imply.
 
-The honest read: **your dopamine system is rebalancing on its own
-timeline, mostly driven by time and reasonable lifestyle inputs.**
-That's not nothing — it's actually the whole answer — but it isn't
-the answer people are usually looking for when they search for "how
-to recover dopamine fast."
+**Your dopamine system is rebalancing on its own timeline, mostly
+driven by time and reasonable lifestyle inputs.** That's actually
+the whole answer, but it isn't the answer people are usually
+looking for when they search for "how to recover dopamine fast."
 
 ## What helps
 
@@ -114,7 +113,7 @@ discuss — sits on the umbrella **[PAWS page](/post-acute/what-is-paws)**.
 That framework applies to dopamine-system recovery too; this page
 isn't going to duplicate it.
 
-What's worth noting *specifically* for the dopamine picture:
+Specifically for the dopamine picture:
 
 - **Exercise has a dopaminergic mechanism**, not just a general
   mood mechanism. Aerobic cardio is the single intervention with
@@ -220,8 +219,10 @@ returns. Not on a schedule you can post about, but it returns.
   acute-anxiety side of the post-acute picture.
 - **[Long-Term Outlook](/post-acute/long-term-outlook)** — what
   recovery actually looks like over the coming months.
-- **[Telehealth Providers](/resources/telehealth)** — for any of
-  the clinically-used options above.
+- **[Telehealth Providers](/resources/telehealth)** — for the
+  bupropion, SSRI / SNRI, and Suboxone options above. LDN sits
+  outside standard OUD telehealth; see the
+  [LDN page](/other-tools/naltrexone-low-dose) for that routing.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)** —
   if you want to try any of the community-discussed items, the
   practical breakdown.
