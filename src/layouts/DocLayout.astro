@@ -1,10 +1,11 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import Sidebar from '~/components/Sidebar.astro';
+import { SidebarShell } from '~/components/SidebarShell';
 import Toc from '~/components/Toc.astro';
 import TocMobile from '~/components/TocMobile.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import { getCategory } from '~/lib/categories';
+import { getSidebarCategories } from '~/lib/sidebar-data';
 import { editOnGithubUrl } from '~/lib/site';
 import type { MarkdownHeading } from 'astro';
 
@@ -15,9 +16,9 @@ interface Props {
   lastUpdated?: Date;
   filePath: string; // e.g. "start-here/welcome.md"
   headings: MarkdownHeading[];
-  /** Wide layout: hides the left sidebar + right TOC, lets the main column
-   * take the full container. For reference docs (charts/diagrams) that
-   * need horizontal room and don't really benefit from category nav. */
+  /** Wide layout: hides the right TOC, lets the main column take the full
+   *  container. For reference docs (charts/diagrams) that need horizontal
+   *  room and don't really benefit from a TOC. */
   wide?: boolean;
 }
 
@@ -35,61 +36,61 @@ const editUrl = editOnGithubUrl(filePath);
 const updatedStr = lastUpdated
   ? lastUpdated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
   : undefined;
+
+const sidebarCategories = await getSidebarCategories();
+const currentPath = Astro.url.pathname;
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class:list={[
-    'mx-auto flex gap-8 px-4 sm:px-6 lg:px-8',
-    /* On wide pages we let the outer container stretch wider than the
-       normal 88rem so the chart has room next to the sidebar. */
-    wide ? 'max-w-[112rem]' : 'max-w-[88rem]',
-  ]}>
-    <Sidebar currentPath={Astro.url.pathname} />
+  <SidebarShell
+    client:load
+    categories={sidebarCategories}
+    currentPath={currentPath}
+  >
+    <div id="main-content" class="py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
+      <div class:list={['mx-auto flex gap-8', wide ? 'max-w-[112rem]' : 'max-w-[88rem]']}>
+        <div class:list={['mx-auto min-w-0 flex-1', wide ? 'max-w-full' : 'max-w-[52rem]']}>
+          <Breadcrumbs
+            crumbs={[
+              ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
+              { label: title },
+            ]}
+          />
+          <h1 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            {title}
+          </h1>
+          {description && (
+            <p class:list={[
+              'mt-3 text-lg text-muted-foreground',
+              wide && 'max-w-3xl',
+            ]}>{description}</p>
+          )}
 
-    <main id="main-content" class="min-w-0 flex-1 py-8 lg:py-12">
-      <div class:list={['mx-auto', wide ? 'max-w-full' : 'max-w-[52rem]']}>
-        <Breadcrumbs
-          crumbs={[
-            ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
-            { label: title },
-          ]}
-        />
-        <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
-          {title}
-        </h1>
-        {description && (
-          <p class:list={[
-            'mt-3 text-lg text-zinc-600 dark:text-zinc-400',
-            wide && 'max-w-3xl',
-          ]}>{description}</p>
+          {!wide && <div class="mt-6"><TocMobile headings={headings} /></div>}
+
+          <article class:list={[
+            'prose-recovery dark:prose-invert mt-8',
+            wide && 'max-w-none',
+          ]} data-pagefind-body>
+            <slot />
+          </article>
+
+          <div class="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+            {updatedStr && <span>Last updated: <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
+            <a href={editUrl} class="text-primary underline underline-offset-2 hover:opacity-80">
+              Edit this page on GitHub
+            </a>
+          </div>
+        </div>
+
+        {!wide && (
+          <aside class="hidden w-56 shrink-0 py-4 xl:block">
+            <div class="sticky top-24">
+              <Toc headings={headings} />
+            </div>
+          </aside>
         )}
-
-        {/* Mobile/medium TOC — collapsed by default. Hidden on xl+ where
-            the sticky right-rail TOC is visible. Skipped on wide pages. */}
-        {!wide && <div class="mt-6"><TocMobile headings={headings} /></div>}
-
-        <article class:list={[
-          'prose-recovery dark:prose-invert mt-8',
-          wide && 'max-w-none',
-        ]} data-pagefind-body>
-          <slot />
-        </article>
-
-        <div class="mt-12 flex flex-col gap-2 border-t border-zinc-200 pt-6 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:text-zinc-400">
-          {updatedStr && <span>Last updated: <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
-          <a href={editUrl} class="text-accent-700 underline decoration-accent-300 underline-offset-2 hover:decoration-accent-600 dark:text-accent-300 dark:decoration-accent-700">
-            Edit this page on GitHub
-          </a>
-        </div>
       </div>
-    </main>
-
-    {!wide && (
-      <aside class="hidden w-56 shrink-0 py-12 xl:block">
-        <div class="sticky top-24">
-          <Toc headings={headings} />
-        </div>
-      </aside>
-    )}
-  </div>
+    </div>
+  </SidebarShell>
 </BaseLayout>

@@ -5,16 +5,14 @@ import { SITE } from '~/lib/site';
 ---
 
 <header
-  class="sticky top-0 z-30 border-b border-zinc-200 bg-white/85 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/85"
+  class="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur"
 >
   <div class="mx-auto flex max-w-[88rem] items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
     <button
       id="nav-toggle"
       type="button"
-      class="-ml-2 inline-flex h-9 w-9 items-center justify-center rounded-md text-zinc-600 hover:bg-zinc-100 lg:hidden dark:text-zinc-300 dark:hover:bg-zinc-800"
+      class="-ml-2 inline-flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground hover:bg-accent hover:text-accent-foreground lg:hidden"
       aria-label="Open navigation"
-      aria-controls="site-sidebar"
-      aria-expanded="false"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
         <line x1="3" y1="6" x2="21" y2="6" />
@@ -25,10 +23,10 @@ import { SITE } from '~/lib/site';
 
     <a
       href="/"
-      class="flex items-center gap-2 text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
+      class="flex items-center gap-2 text-base font-semibold tracking-tight text-foreground"
     >
-      <span class="inline-block h-2.5 w-2.5 rounded-full bg-accent-500" aria-hidden="true"></span>
-      <span>{SITE.title}<span class="text-zinc-400">.org</span></span>
+      <span class="inline-block h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true"></span>
+      <span>{SITE.title}<span class="text-muted-foreground">.org</span></span>
     </a>
 
     <div class="ml-auto flex items-center gap-3">
@@ -40,52 +38,16 @@ import { SITE } from '~/lib/site';
   </div>
 
   <!-- Mobile-only search row -->
-  <div class="border-t border-zinc-200 px-4 py-2 sm:hidden dark:border-zinc-800">
+  <div class="border-t border-border px-4 py-2 sm:hidden">
     <SearchBox variant="header" />
   </div>
 </header>
 
 <script>
+  // The mobile hamburger lives outside the React SidebarShell tree, so it
+  // dispatches a custom event the AppSidebar listens for.
   const btn = document.getElementById('nav-toggle');
-  const sidebar = document.getElementById('site-sidebar');
-  const backdrop = document.getElementById('site-sidebar-backdrop');
-  const closeBtn = document.getElementById('sidebar-close');
-
-  function setSidebarOpen(open: boolean) {
-    if (!sidebar) return;
-    sidebar.classList.toggle('open', open);
-    backdrop?.classList.toggle('open', open);
-    btn?.setAttribute('aria-expanded', String(open));
-    sidebar.setAttribute('aria-hidden', String(!open));
-    document.body.classList.toggle('overflow-hidden', open);
-  }
-
   btn?.addEventListener('click', () => {
-    const isOpen = sidebar?.classList.contains('open');
-    setSidebarOpen(!isOpen);
+    window.dispatchEvent(new CustomEvent('toggle-sidebar'));
   });
-  backdrop?.addEventListener('click', () => setSidebarOpen(false));
-  closeBtn?.addEventListener('click', () => setSidebarOpen(false));
-
-  // Close on Escape — standard a11y for modal-style drawers.
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && sidebar?.classList.contains('open')) {
-      setSidebarOpen(false);
-      btn?.focus();
-    }
-  });
-
-  // On desktop the sidebar is always visible (sticky), so aria-hidden must
-  // not be true. Sync once on load and on breakpoint changes.
-  const desktopMQ = window.matchMedia('(min-width: 1024px)');
-  function syncAriaForBreakpoint() {
-    if (!sidebar) return;
-    if (desktopMQ.matches) {
-      sidebar.setAttribute('aria-hidden', 'false');
-    } else if (!sidebar.classList.contains('open')) {
-      sidebar.setAttribute('aria-hidden', 'true');
-    }
-  }
-  syncAriaForBreakpoint();
-  desktopMQ.addEventListener('change', syncAriaForBreakpoint);
 </script>
