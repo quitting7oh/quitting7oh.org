@@ -27,19 +27,19 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             <p className="font-semibold text-foreground">AI disclaimer</p>
             <p className="mt-2">
-              Yes, we used AI to help build out some of this content. We're
-              not hiding it — it let us turn a year of community lived
-              experience into navigable pages faster than we could have done
-              it by hand. The source is community members who've lived
-              through 7-OH and kratom-synthetic recovery; humans verify every
-              factual claim against a primary source and stand behind every
-              page.{' '}
+              Yes, we used AI to help build out some of this content. The
+              source is community members who've lived through 7-OH and
+              kratom-synthetic recovery; humans verify every factual claim
+              against a primary source and stand behind every page.{' '}
               <a
                 href="/about/this-site#the-ai-disclaimer"
                 className="text-primary underline underline-offset-2 hover:opacity-80"
               >
                 Full disclaimer →
               </a>
+            </p>
+            <p className="mt-3 text-foreground">
+              Don't like that? Go read something else.
             </p>
           </div>
           <div className="text-sm text-muted-foreground">
