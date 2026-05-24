@@ -244,7 +244,9 @@ profiles, and the practical "don't stack everything at once" guidance.
 - **Alcohol for sleep or anxiety.** Wrecks sleep architecture and
   is its own dependence vector.
 - **Heavy cannabis use.** Has its own dependence profile and
-  prolongs sleep architecture recovery for some people.
+  prolongs sleep architecture recovery for some people. See
+  [Cannabis and THC in Recovery](/other-tools/cannabis-thc-in-recovery)
+  for the two-sided treatment of cannabis use during recovery.
 - **Phenibut, kava, kratom-extract products marketed as "natural."**
   These are how people who've quit one dependence end up in another.
 - **"Dopamine fasting" / extreme abstinence protocols.** The

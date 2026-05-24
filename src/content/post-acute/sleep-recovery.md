@@ -40,7 +40,7 @@ The full sleep recovery curve looks roughly like this:
 
 - **Catastrophizing the early weeks.** "I'll never sleep again" feels true at week 1 and is not actually true.
 - **Sleep medication dependence.** Using prescription sleep aids every night for months can create its own dependence. Use them as a bridge.
-- **THC for sleep.** Works short-term, has its own sleep architecture impact long-term, can become its own dependence.
+- **THC for sleep.** Works short-term, has its own sleep architecture impact long-term, can become its own dependence. See [Cannabis and THC in Recovery](/other-tools/cannabis-thc-in-recovery) for the longer treatment.
 - **Using Alcohol for sleep.** Wrecks the rest of recovery. Not worth it.
 - **Doomscrolling at 3 AM.** The single most common modern sleep destroyer.
 
