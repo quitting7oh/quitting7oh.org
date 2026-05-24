@@ -69,6 +69,8 @@ This community uses a **low-and-slow induction** approach. The point is to find 
 
 Most people coming off 7-OH land in the 2 to 8 mg range using this approach. People coming off the long-acting synthetics may need more. The standard clinical protocol starts at 4 mg right out of the gate, which is usually more than necessary for our population and harder to taper down from.
 
+> ℹ️ **Standard induction not working — or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway that doesn't require you to wait in withdrawal. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days. It's especially worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm)) and for anyone who's tried standard induction before and gotten precipitated withdrawal.
+
 ## Why we start low — receptor occupancy
 
 Buprenorphine binding to mu-opioid receptors **doesn't scale linearly with dose**. It saturates fast. PET imaging studies — the actual measurements of receptor occupancy — show approximately:
