@@ -18,6 +18,13 @@ interface Props {
 const { title, description = SITE.description, canonical } = Astro.props;
 const pageTitle = title ? `${title} · ${SITE.title}.org` : `${SITE.title}.org — recovery information`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
+
+// Per-page OG image, pre-rendered at build time by src/pages/og/[...slug].png.ts.
+// Path math: '/' → /og/index.png; '/start-here/welcome' → /og/start-here/welcome.png.
+const ogPath = Astro.url.pathname === '/'
+  ? '/og/index.png'
+  : `/og${Astro.url.pathname.replace(/\/$/, '')}.png`;
+const ogImageUrl = new URL(ogPath, SITE.url).toString();
 ---
 
 <!doctype html>
@@ -30,10 +37,23 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {/* Open Graph (Discord, LinkedIn, Slack, Facebook). */}
+    <meta property="og:site_name" content={`${SITE.title}.org`} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={pageTitle} />
+    {/* Twitter / X. */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    {/* Discord pulls this for the accent strip on the left edge of the embed. */}
+    <meta name="theme-color" content="#0d9488" />
     <meta name="robots" content="index,follow" />
     <ThemeScript />
   </head>

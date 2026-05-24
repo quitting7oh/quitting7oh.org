@@ -36,10 +36,12 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "markdownlint-cli2": "^0.14.0",
+    "satori": "^0.26.0",
     "typescript": "^5.5.0"
   }
 }
