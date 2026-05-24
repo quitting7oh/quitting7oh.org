@@ -71,7 +71,7 @@ For most rapid-taper schedules, an 8 mg film cut into eighths gives you 1 mg dos
 - **Cutting too small.** Below 0.25 mg per piece (a thirty-second of an 8 mg film), the pieces are hard to handle and easy to lose. If you need doses below 0.25 mg, switch to a smaller-strength film and re-cut from there.
 - **Static cling.** Tiny film pieces stick to fingers, blades, and surfaces. Work over a clean plate so anything that flies off can be retrieved.
 
-## Alternative methods worth knowing about
+## Alternative methods
 
 - **Tabs (not films).** Generic buprenorphine-naloxone tablets can be split with a pill cutter for halves, but quartering tablets accurately is hard because they crumble. Films cut more reliably than tablets do.
 - **Dissolving in water.** Some people dissolve a film in a measured amount of water and dose by volume. This is technically possible (bupe is water-soluble), but the suspension isn't stable for long, and it's harder to get accurate doses than with cutting. Most people find cutting is simpler.
