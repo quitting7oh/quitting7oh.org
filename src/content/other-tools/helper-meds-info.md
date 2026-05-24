@@ -1,8 +1,8 @@
 ---
 title: "Helper Medications"
 description: "Prescription adjuncts that take the edge off — clonidine, gabapentin, hydroxyzine, trazodone, baclofen."
-category: "active-withdrawal"
-last_updated: "2026-05-21"
+category: "other-tools"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **This is a reference, not a prescription.** All of these require a doctor. [#quickmd-info](/resources/quickmd-info) has telehealth options. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
@@ -88,7 +88,7 @@ Provider attitudes vary. Some prescribers hand it out readily; others want you m
 - **Tizanidine (Zanaflex)** — alpha-2 agonist (similar mechanism to clonidine), helps muscle spasms and anxiety. Useful when clonidine isn't enough. Sedating.
 - **Cyclobenzaprine (Flexeril)** — short-term muscle relaxant, helpful for the body-aches part of withdrawal. Often only prescribed for 1-2 weeks. Sedating.
 - **Methocarbamol (Robaxin)** — older muscle relaxant, less sedating than the others, helpful for muscle pain without much "drugged" feeling.
-- **Magnesium glycinate** (OTC supplement, see [#vitamins-supplements](/active-withdrawal/vitamins-supplements)) is a real adjunct here too. Some people don't need a prescription muscle relaxer if magnesium is on board.
+- **Magnesium glycinate** (OTC supplement, see [#vitamins-supplements](/other-tools/vitamins-supplements)) is a real adjunct here too. Some people don't need a prescription muscle relaxer if magnesium is on board.
 
 ## Sleep medications
 
@@ -170,4 +170,4 @@ Common starter combos:
 - **Adding for muscle pain:** plus baclofen or tizanidine
 - **Adding for post-acute mood:** Wellbutrin (after the acute phase ends)
 
-See [#vitamins-supplements](/active-withdrawal/vitamins-supplements) for the supplement side, [#what-is-paws](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
+See [#vitamins-supplements](/other-tools/vitamins-supplements) for the supplement side, [#what-is-paws](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.

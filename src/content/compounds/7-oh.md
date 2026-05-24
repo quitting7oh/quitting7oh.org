@@ -12,7 +12,7 @@ sort: 1
 > Anything below is a pharmacology and recovery reference, not dosing
 > guidance and not safety guidance for current use. If you're trying
 > to come off, the [#suboxone-info](/mat-suboxone/suboxone-info) and
-> [#sos-resources](/active-withdrawal/sos-resources) pages are where
+> [#sos-resources](/start-here/sos-resources) pages are where
 > you actually go.
 
 7-OH is the compound this site is named after — and the compound most
@@ -127,7 +127,7 @@ gives 7-OH withdrawal an SNRI-discontinuation-like overlay: brain zaps,
 wired-but-exhausted feeling, autonomic instability. See
 [#suboxone-isnt-working](/mat-suboxone/suboxone-isnt-working) for why
 this overlay makes bupe alone feel insufficient for some people, and
-see [#helper-meds-info](/active-withdrawal/helper-meds-info) for what
+see [#helper-meds-info](/other-tools/helper-meds-info) for what
 addresses the non-opioid side.
 
 ## Why 7-OH is actually tapereable
@@ -210,7 +210,7 @@ which don't survive the pharmacology:
   alkaloids, and are frequently combined by users with alcohol, benzos,
   or other depressants — any of which restores respiratory-depression
   risk. Get Narcan. See
-  [#for-loved-ones](/start-here/for-loved-ones) for more.
+  [For Loved Ones](/for-loved-ones/start-here) for more.
 - *"FDA approved" / "Doctor recommended"* — almost always not true.
   Trace mitragynine appears in some research contexts, but no
   concentrated 7-OH product has FDA approval as of this writing.
@@ -221,8 +221,8 @@ Four real paths people in this community have used:
 
 1. **Cold turkey with helper meds and supplements** — works for many
    people on short-acting 7-OH at moderate doses.
-   [#helper-meds-info](/active-withdrawal/helper-meds-info) and
-   [#vitamins-supplements](/active-withdrawal/vitamins-supplements).
+   [#helper-meds-info](/other-tools/helper-meds-info) and
+   [#vitamins-supplements](/other-tools/vitamins-supplements).
 2. **Suboxone short taper** — the community's most common path for
    7-OH dependence specifically. 5-14 days, structured, low-and-slow
    induction. [#suboxone-info](/mat-suboxone/suboxone-info) is the

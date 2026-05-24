@@ -89,7 +89,7 @@ The reasoning: vitamin C tissue saturation takes time. Starting at full dose the
 - **Vitamin E** — the original Evangelou study used vitamin C with vitamin E (5 mg/kg/day). The two work together as antioxidants.
 - **Magnesium glycinate** — for sleep, anxiety, and muscle symptoms.
 - **Electrolytes** — vitamin C megadosing increases urination; replenish.
-- **Standard withdrawal stack** — L-tyrosine, NAC, B-complex, omega-3, etc. (see [#vitamins-supplements](/active-withdrawal/vitamins-supplements))
+- **Standard withdrawal stack** — L-tyrosine, NAC, B-complex, omega-3, etc. (see [#vitamins-supplements](/other-tools/vitamins-supplements))
 - **Hydration** — drink more water than you think you need.
 
 **Be careful with:**
@@ -124,4 +124,4 @@ Cheaper approaches:
 ## Bottom line
 Vitamin C megadosing is an inexpensive (relatively), low-risk, evidence-supported tool that has helped many people through opioid withdrawal. Liposomal form makes higher therapeutic doses practical without GI side effects. **Preload, dose frequently, combine with the rest of a real recovery protocol, and don't expect miracles.** For the right person it can take a meaningful edge off withdrawal. For everyone, it's adjunctive support, not the main event.
 
-See [#vitamins-supplements](/active-withdrawal/vitamins-supplements) for the broader supplement context, [#what-is-paws](/post-acute/what-is-paws) for the longer-term picture.
+See [#vitamins-supplements](/other-tools/vitamins-supplements) for the broader supplement context, [#what-is-paws](/post-acute/what-is-paws) for the longer-term picture.

@@ -579,6 +579,10 @@
   html {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    /* Smooth in-page nav when clicking TOC links or heading anchors.
+       Browsers honor prefers-reduced-motion automatically and fall
+       back to instant scroll. */
+    scroll-behavior: smooth;
     /* When the browser scrolls to a #fragment anchor, leave this much
        room above it so the heading doesn't get hidden behind the sticky
        header. Larger on mobile (header includes the search row). */

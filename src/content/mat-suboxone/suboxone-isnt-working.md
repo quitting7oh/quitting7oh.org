@@ -37,7 +37,7 @@ If any of this sounds like what you're experiencing on bupe, **bupe is doing its
 - **Magnesium glycinate.** OTC. Genuinely [helps with the restless-legs, muscle-tension, anxiety cluster](https://naturalcalm.ca/magnesium-for-addiction/).
 - **L-theanine.** OTC. [Takes the edge off without sedation](https://southsideharmreduction.org/wp-content/uploads/2024/01/OpioidWithdrawalCondensed.pdf).
 
-See [#vitamins-supplements](/active-withdrawal/vitamins-supplements) for the full picture on supplement support.
+See [#vitamins-supplements](/other-tools/vitamins-supplements) for the full picture on supplement support.
 
 ## Dose: you might just need more
 This is the second-biggest thing people don't get told. The "right" dose of bupe varies a lot between people, and **landing at too low a dose is one of the most common reasons bupe feels inadequate.**
@@ -91,4 +91,4 @@ If you're approaching the end of your taper and still feel terrible, that's wort
 - [Mitragyna speciosa Alkaloids and Effects (Kratom Science)](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/) — overview of minor alkaloids and their SNRI-like effects
 - [Natural Calm: Magnesium for Addiction Recovery](https://naturalcalm.ca/magnesium-for-addiction/) — magnesium and amino acids for opioid withdrawal
 - [Southside Harm Reduction: At-Home Opioid Withdrawal Management (PDF)](https://southsideharmreduction.org/wp-content/uploads/2024/01/OpioidWithdrawalCondensed.pdf) — community harm reduction guide
-- See also: [#vitamins-supplements](/active-withdrawal/vitamins-supplements) and [#quickmd-info](/resources/quickmd-info) for adjunct medications and supplements
+- See also: [#vitamins-supplements](/other-tools/vitamins-supplements) and [#quickmd-info](/resources/quickmd-info) for adjunct medications and supplements

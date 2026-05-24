@@ -4,7 +4,7 @@ description: "What 7-OH withdrawal looks like — symptoms, timeline, and the sh
 category: "start-here"
 last_updated: "2026-05-21"
 ---
-If you're here, you're probably scared, exhausted, or both. **Welcome.** If you're a loved one of someone going through this, head to [#for-loved-ones](/start-here/for-loved-ones).
+If you're here, you're probably scared, exhausted, or both. **Welcome.** If you're a loved one of someone going through this, head to [For Loved Ones](/for-loved-ones/start-here).
 For everyone else: this post is a quick orientation, not the full picture. The full picture is in the channels around you, and you don't need to read it all today.
 ## What's actually happening to your body
 [7-OH](/compounds/7-oh) is a [potent mu-opioid receptor agonist that binds 13 to 22 times more strongly than morphine](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/). Your body adapted to its constant presence. When you stop, your opioid receptors are temporarily underactive while your nervous system rebalances. That mismatch is what withdrawal feels like.
@@ -28,9 +28,9 @@ Everyone's different, but most people coming off [7-OH](/compounds/7-oh) follow 
 - **#withdrawal-symptoms** — what you're feeling, what works
 - **#day-1-3-survival** — getting through the early days
 **Tools and tapering options:**
-- [#vitamins-supplements](/active-withdrawal/vitamins-supplements) — taking the edge off
+- [#vitamins-supplements](/other-tools/vitamins-supplements) — taking the edge off
 - [#tapering-with-leaf](/other-tools/tapering-with-leaf) — gentler taper for lower doses
-- [#helper-meds-info](/active-withdrawal/helper-meds-info) & #helper-meds - RX meds
+- [#helper-meds-info](/other-tools/helper-meds-info) & #helper-meds - RX meds
 - [#suboxone-info](/mat-suboxone/suboxone-info) & #suboxone — bupe-based induction and short tapers
 - [#quickmd-info](/resources/quickmd-info) — telehealth for prescriptions
 - [#sr17018-info](/other-tools/sr17018-info) & #sr17018 — alternative bridge option

@@ -50,4 +50,4 @@ You're not the first person to be where you are. Real-time conversation often he
 - **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline)** — 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
 - **911** — for immediate danger
 
-If you're in active withdrawal and looking for what to do right now, the **[SOS Resources](/active-withdrawal/sos-resources)** page is the more relevant starting point than this section.
+If you're in active withdrawal and looking for what to do right now, the **[SOS Resources](/start-here/sos-resources)** page is the more relevant starting point than this section.

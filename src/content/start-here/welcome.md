@@ -53,7 +53,7 @@ matches yours:
 ### 🆘 You're in active withdrawal right now
 
 Go to **[#what-to-expect](/start-here/what-to-expect)** for an overview
-of the timeline, then **[#helper-meds-info](/active-withdrawal/helper-meds-info)**
+of the timeline, then **[#helper-meds-info](/other-tools/helper-meds-info)**
 for the practical "what helps" guide. If you have a few minutes for the
 [Discord](https://discord.gg/quitting7oh), the live `#sos` channel there
 is staffed by people who have been where you are.

@@ -111,7 +111,7 @@ Symptom-specific:
 - **For anxiety:** L-theanine, magnesium, ashwagandha (300 to 600 mg, avoid if hyperthyroid).
 - **For cognitive fog:** omega-3, B-complex, exercise, sleep.
 
-See [#vitamins-supplements](/active-withdrawal/vitamins-supplements) for the full breakdown including brand recommendations and interactions.
+See [#vitamins-supplements](/other-tools/vitamins-supplements) for the full breakdown including brand recommendations and interactions.
 
 ## Pharmaceutical options
 
@@ -154,7 +154,7 @@ If you're in the smooth-recovery group: enjoy it, keep your routines, don't get 
 
 If you're in the PAWS group: your brain is healing. Receptors are recovering. Endorphin production is rebuilding. The work you do here, the supplements you take, the routines you build, the connections you maintain — all of it adds up.
 
-Use the channels: **#paws-support** for the day-to-day, **#sos** for the hardest moments, [#vitamins-supplements](/active-withdrawal/vitamins-supplements) for the practical stack, [#quickmd-info](/resources/quickmd-info) for medical support.
+Use the channels: **#paws-support** for the day-to-day, **#sos** for the hardest moments, [#vitamins-supplements](/other-tools/vitamins-supplements) for the practical stack, [#quickmd-info](/resources/quickmd-info) for medical support.
 
 You're not broken. You're rebuilding.
 

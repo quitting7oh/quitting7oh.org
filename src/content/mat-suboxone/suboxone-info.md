@@ -52,7 +52,7 @@ If you've been on the long-acting compounds and your COWS isn't climbing past 24
 ## Why bupe might not fully cover you (it's not your imagination)
 A few pharmacological reasons that come up here:
 
-**The SNRI piece.** The minor alkaloids in concentrated kratom and synthetic products ([rhynchophylline](/compounds/cats-claw), corynantheidine, others) produce SNRI-like effects on top of the opioid action. Suboxone is purely opioid-receptor medication and does not address the noradrenergic and serotonergic side of the dependence picture. The wired/anxious/can't-sleep part of withdrawal that doesn't lift on bupe is often this. Adjuncts like clonidine, gabapentin, lofexidine, hydroxyzine, and short-term sleep support can fill that gap. ([#helper-meds-info](/active-withdrawal/helper-meds-info)) for more reading on helper medications.
+**The SNRI piece.** The minor alkaloids in concentrated kratom and synthetic products ([rhynchophylline](/compounds/cats-claw), corynantheidine, others) produce SNRI-like effects on top of the opioid action. Suboxone is purely opioid-receptor medication and does not address the noradrenergic and serotonergic side of the dependence picture. The wired/anxious/can't-sleep part of withdrawal that doesn't lift on bupe is often this. Adjuncts like clonidine, gabapentin, lofexidine, hydroxyzine, and short-term sleep support can fill that gap. ([#helper-meds-info](/other-tools/helper-meds-info)) for more reading on helper medications.
 
 For more on bupe failure modes, see [#suboxone-isnt-working](/mat-suboxone/suboxone-isnt-working).
 
@@ -101,7 +101,7 @@ Once you've found your day 1 dose - decide your taper schedule. Examples can be 
 **Discuss the taper plan with your prescriber** A short taper still requires medical oversight, and your prescriber may have reasons specific to your situation to adjust the pace.
 
 A few things that help during the taper:
-- The supplements and adjuncts in [#vitamins-supplements](/active-withdrawal/vitamins-supplements) can take the edge off the lower-dose portions.
+- The supplements and adjuncts in [#vitamins-supplements](/other-tools/vitamins-supplements) can take the edge off the lower-dose portions.
 - Keep your COWS awareness up. Tracking symptoms during a taper helps you decide when to drop and when to hold.
 - Don't redose the compound that brought you here — [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo, or stacked synthetics. That restarts the cycle. (Planned kratom-leaf tapering is a separate, deliberate protocol — see [#tapering-with-leaf](/other-tools/tapering-with-leaf).)
 

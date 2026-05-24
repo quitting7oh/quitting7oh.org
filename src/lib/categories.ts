@@ -12,7 +12,7 @@ export const CATEGORIES = [
   {
     slug: 'start-here',
     title: 'Start Here',
-    blurb: 'Welcome, what to expect, scams to avoid.',
+    blurb: 'Welcome, what to expect, SOS, scams to avoid.',
     emoji: '🧭',
   },
   {
@@ -22,24 +22,6 @@ export const CATEGORIES = [
     emoji: '💚',
   },
   {
-    slug: 'for-loved-ones',
-    title: 'For Loved Ones',
-    blurb: 'For family, partners, and friends of someone struggling — what to expect, how to help, how to stay safe.',
-    emoji: '🫂',
-  },
-  {
-    slug: 'active-withdrawal',
-    title: 'Active Withdrawal',
-    blurb: 'SOS resources, day 1–3, symptoms, supplements, helper meds.',
-    emoji: '🆘',
-  },
-  {
-    slug: 'compounds',
-    title: 'Compounds',
-    blurb: '7-OH, pseudo, MGM-15, MIT-A, mitragynine, cat’s claw.',
-    emoji: '🧪',
-  },
-  {
     slug: 'mat-suboxone',
     title: 'MAT / Suboxone',
     blurb: 'COWS, induction, tapers, risks, custom dosing.',
@@ -47,8 +29,8 @@ export const CATEGORIES = [
   },
   {
     slug: 'other-tools',
-    title: 'Other Tools',
-    blurb: 'SR-17018, low-dose naltrexone, vitamin C, tapering with leaf.',
+    title: 'Helpful Medications / Supplements',
+    blurb: 'Helper meds, supplements, quit-kit stacks, SR-17018, low-dose naltrexone, tapering with leaf.',
     emoji: '🛠️',
   },
   {
@@ -56,6 +38,18 @@ export const CATEGORIES = [
     title: 'Post-Acute',
     blurb: 'PAWS, sleep recovery, dopamine recovery, cravings, hormones.',
     emoji: '🌱',
+  },
+  {
+    slug: 'for-loved-ones',
+    title: 'For Loved Ones',
+    blurb: 'For family, partners, and friends of someone struggling — what to expect, how to help, how to stay safe.',
+    emoji: '🫂',
+  },
+  {
+    slug: 'compounds',
+    title: 'Compounds',
+    blurb: '7-OH, pseudo, MGM-15, MIT-A, mitragynine, cat’s claw.',
+    emoji: '🧪',
   },
   {
     slug: 'pharmacology',

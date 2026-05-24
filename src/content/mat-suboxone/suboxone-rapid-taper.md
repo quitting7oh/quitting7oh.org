@@ -68,7 +68,7 @@ All schedules assume:
 - **Hydration and electrolytes.** LMNT, Liquid IV, coconut water, or salt + lemon in water. Sweating and GI symptoms drain you fast.
 - **Helper meds, ideally prescribed.** Clonidine, hydroxyzine, trazodone, gabapentin, baclofen. See [#quickmd-info](/resources/quickmd-info) for getting these prescribed via telehealth.
 - **OTC support.** Loperamide for diarrhea (labeled doses only, do not exceed), ibuprofen for body aches, ginger for nausea.
-- **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [#vitamins-supplements](/active-withdrawal/vitamins-supplements).
+- **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [#vitamins-supplements](/other-tools/vitamins-supplements).
 - **A check-in person.** Someone who knows what you're doing and will check on you daily, especially days 3 to 7 after the last dose.
 - **Time off.** Don't try this during a high-stress work week if you can avoid it.
 

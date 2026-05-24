@@ -72,7 +72,7 @@ This is the same logic as Suboxone + helper meds (see [#suboxone-isnt-working](/
 
 **Avoid hydroxyzine for users with significant RLS symptoms.** [First-generation antihistamines have been associated with worsening restless legs syndrome](https://pubmed.ncbi.nlm.nih.gov/15165526/), and RLS is a common symptom in this population.
 
-See [#vitamins-supplements](/active-withdrawal/vitamins-supplements) for the full supplement protocol.
+See [#vitamins-supplements](/other-tools/vitamins-supplements) for the full supplement protocol.
 
 **General approach for path 2:**
 - Same leaf-replacement and stabilization steps as Path 1
@@ -112,4 +112,4 @@ What to look for:
 - [Chemical composition of kratom (Nature)](https://www.nature.com/articles/s41598-020-76119-w)
 - [Red Kratom Guide](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom)
 - [Mitragyna alkaloid breakdown](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/)
-- See also: [#suboxone-info](/mat-suboxone/suboxone-info), [#vitamins-supplements](/active-withdrawal/vitamins-supplements), [#quickmd-info](/resources/quickmd-info)
+- See also: [#suboxone-info](/mat-suboxone/suboxone-info), [#vitamins-supplements](/other-tools/vitamins-supplements), [#quickmd-info](/resources/quickmd-info)

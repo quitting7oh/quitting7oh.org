@@ -1,8 +1,8 @@
 ---
 title: "SOS: You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
-category: "active-withdrawal"
-last_updated: "2026-05-21"
+category: "start-here"
+last_updated: "2026-05-24"
 sort: 1
 ---
 
@@ -103,14 +103,14 @@ everyone — pick the one that fits your situation.
 Doable for **short-acting [7-OH](/compounds/7-oh) at moderate doses**. Much harder for
 long-acting or stacked compounds. If you choose this path:
 
-- Read **[#helper-meds-info](/active-withdrawal/helper-meds-info)** for
+- Read **[#helper-meds-info](/other-tools/helper-meds-info)** for
   what prescriptions actually help (clonidine, hydroxyzine, gabapentin,
   trazodone, baclofen). A telehealth appointment same-day can get most
   of these.
-- Read **[#vitamins-supplements](/active-withdrawal/vitamins-supplements)**
+- Read **[#vitamins-supplements](/other-tools/vitamins-supplements)**
   for what to buy from the pharmacy *right now* (magnesium glycinate,
   electrolytes, vitamin C, NAC, melatonin for sleep, others).
-- The **[QuitKit-style](/active-withdrawal/quitkit-info)** pre-packaged
+- The **[QuitKit-style](/other-tools/quitkit-info)** pre-packaged
   stacks exist if you don't want to source individual supplements.
 
 ### Path 2 — get on Suboxone (MAT)
@@ -238,7 +238,7 @@ just brutal. Things that help:
 
 Helper meds that work for sleep (prescription, ask a provider):
 trazodone, hydroxyzine, gabapentin. See
-[#helper-meds-info](/active-withdrawal/helper-meds-info).
+[#helper-meds-info](/other-tools/helper-meds-info).
 
 ## Food
 
@@ -274,9 +274,9 @@ A few things people who've been here wish someone had told them:
 
 - **[#what-to-expect](/start-here/what-to-expect)** — the bigger
   picture, the full timeline, common surprises
-- **[#helper-meds-info](/active-withdrawal/helper-meds-info)** — what
+- **[#helper-meds-info](/other-tools/helper-meds-info)** — what
   to ask a prescriber for
-- **[#vitamins-supplements](/active-withdrawal/vitamins-supplements)**
+- **[#vitamins-supplements](/other-tools/vitamins-supplements)**
   — what's worth buying, what isn't
 - **[#suboxone-info](/mat-suboxone/suboxone-info)** — the MAT path,
   if you're considering it

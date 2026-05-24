@@ -88,13 +88,34 @@ export function AppSidebar({ categories, currentPath }: Props) {
 
   // Desktop: aside stretches to the full height of the flex container
   // (matches the main column's height, so it runs as long as the article).
-  // The inner div is sticky so the nav stays in view as the reader scrolls.
+  // The inner scrollable div is sticky so the nav stays in view as the
+  // reader scrolls. On mount, scroll the active page into view within the
+  // sidebar — otherwise a long sidebar starts at the top and the user has
+  // to scan to find where they are.
+  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+    const active = container.querySelector<HTMLElement>('[aria-current="page"]');
+    if (!active) return;
+    // Use the container's geometry to compute the desired scrollTop so
+    // we don't fight the page's own scroll (scrollIntoView would do that).
+    const cRect = container.getBoundingClientRect();
+    const aRect = active.getBoundingClientRect();
+    const offsetTop = aRect.top - cRect.top + container.scrollTop;
+    // Center the active item vertically within the visible area.
+    container.scrollTop = offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
+  }, [currentPath]);
+
   return (
     <aside
       aria-label="Site navigation"
       className="hidden w-64 shrink-0 border-r border-border lg:block"
     >
-      <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto">
+      <div
+        ref={scrollContainerRef}
+        className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto"
+      >
         <NavContent categories={categories} currentPath={currentPath} />
       </div>
     </aside>

@@ -163,4 +163,4 @@ If you're going to use it, **plan the post-SR phase as carefully as the SR phase
 - [Federal Analogue Act — Wikipedia](https://en.wikipedia.org/wiki/Federal_Analogue_Act)
 - [Concrete Confessional: SR-17018 Promise and Warning](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning)
 - [From kratom to 7-hydroxymitragynine (PMC, MGM-15 context)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/)
-- See also: [#suboxone-info](/mat-suboxone/suboxone-info), [#suboxone-rapid-taper](/mat-suboxone/suboxone-rapid-taper), [#vitamins-supplements](/active-withdrawal/vitamins-supplements)
+- See also: [#suboxone-info](/mat-suboxone/suboxone-info), [#suboxone-rapid-taper](/mat-suboxone/suboxone-rapid-taper), [#vitamins-supplements](/other-tools/vitamins-supplements)

@@ -39,7 +39,7 @@ Withdrawal from [7-OH](/compounds/7-oh) and kratom synthetics is opioid-like. Th
 - Goosebumps and chills
 - Intense, overwhelming cravings
 
-**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out — withdrawal may take longer to start and longer to peak. For more on the day-by-day shape, see [#what-to-expect](/start-here/what-to-expect). If they're in acute crisis right now, [SOS Resources](/active-withdrawal/sos-resources) is the more directly useful page.
+**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out — withdrawal may take longer to start and longer to peak. For more on the day-by-day shape, see [#what-to-expect](/start-here/what-to-expect). If they're in acute crisis right now, [SOS Resources](/start-here/sos-resources) is the more directly useful page.
 
 This is genuinely miserable. It's not "the flu." It's why people keep using even when they desperately want to stop.
 
