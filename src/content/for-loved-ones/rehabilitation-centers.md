@@ -6,8 +6,8 @@ last_updated: "2026-05-24"
 sort: 8
 ---
 
-Most people in this community come off [7-OH](/compounds/7-oh) and
-kratom synthetics at home — see
+This site is built around at-home recovery from
+[7-OH](/compounds/7-oh) and kratom synthetics — see
 **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)**
 for what that looks like from the outside and what you can do that
 helps. This page is for the situations where a formal treatment
@@ -147,7 +147,7 @@ Things that almost never help:
 
 ## Where to read next
 
-- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** — what to know about the at-home path, which is what most people in this community use
+- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** — what to know about the at-home path, which is what this site is built around
 - **[FMLA & Workplace Protections](/for-loved-ones/fmla-workplace)** — taking leave to care for them during treatment
 - **[Support Groups](/for-loved-ones/support-groups)** — including ones with strong CRAFT and treatment-navigation guidance
 - **[For You: Rehabilitation Centers](/for-you/rehabilitation-centers)** — the same material from your loved one's POV, useful to read so you understand what they're navigating
