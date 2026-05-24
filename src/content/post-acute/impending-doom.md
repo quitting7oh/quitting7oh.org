@@ -157,8 +157,8 @@ gives way).
 
 The general non-medication baseline-movers — sleep, exercise, CBT,
 social contact, regular meals — sit on the umbrella
-**[PAWS page](/post-acute/what-is-paws)**. Two things worth flagging
-*specifically* for the impending-doom symptom:
+**[PAWS page](/post-acute/what-is-paws)**. Two things specific to
+the impending-doom symptom:
 
 - **Cut caffeine first.** Caffeine reliably amplifies anxiety in a
   dose-dependent way ([2026 systematic review](https://pmc.ncbi.nlm.nih.gov/articles/PMC12813734/)),
@@ -175,7 +175,7 @@ For some people the doom isn't wave-shaped. It's a background
 texture that sits there for days or weeks without fully lifting.
 Cortisol patterns are still off. Sleep is still broken.
 HPA recovery is slow. The in-the-moment techniques above still
-help — keep using them — but the work shifts from "weather this
+help (keep using them), but the work shifts from "weather this
 wave" to "build a life that's livable while this is happening."
 
 What people who've been in the sustained version say has helped:
@@ -214,10 +214,9 @@ What people who've been in the sustained version say has helped:
   somatic or DBT-skills approaches when the cognitive piece
   isn't landing because the symptom is too body-driven.
 
-The sustained version is still impending doom, not something
-worse — it's the same neurobiology stretched out over a longer
-window. **It still ends.** The endpoint is the same as the
-wave version; the path there is just slower.
+The sustained version is the same neurobiology as the wave version,
+stretched out over a longer window. The endpoint is the same; the
+path there is just slower.
 
 ## Pharmacological options
 
