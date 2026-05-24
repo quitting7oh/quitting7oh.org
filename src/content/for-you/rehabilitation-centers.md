@@ -6,10 +6,10 @@ last_updated: "2026-05-24"
 sort: 3
 ---
 
-Most people in this community come off [7-OH](/compounds/7-oh) and
-kratom synthetics at home, with a combination of a
-[telehealth prescriber](/resources/telehealth), helper meds,
-supplements, and community support — see
+This site is built around at-home recovery from
+[7-OH](/compounds/7-oh) and kratom synthetics — usually some
+combination of a [telehealth prescriber](/resources/telehealth),
+helper meds, supplements, and community support. See
 **[At-Home Treatment](/for-you/at-home-treatment)** for that path.
 
 This page is for situations where a formal treatment program is the
@@ -182,7 +182,7 @@ If the first program isn't a fit (capacity, insurance issues, distance, philosop
 
 ## Where to read next
 
-- **[At-Home Treatment](/for-you/at-home-treatment)** — the at-home path most people in this community use, including the four community-validated approaches
+- **[At-Home Treatment](/for-you/at-home-treatment)** — the at-home path this site is built around, including the four community-validated approaches
 - **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — taking leave for treatment without losing your job
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — Kratom Anonymous, NA, SMART, and others — free peer support during and after
 - **[MAT / Suboxone](/mat-suboxone)** — the detailed pharmacology and induction protocol pages for our specific situation
