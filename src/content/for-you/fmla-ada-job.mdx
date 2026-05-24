@@ -5,6 +5,8 @@ category: "for-you"
 last_updated: "2026-05-23"
 sort: 3
 ---
+import DocTabs from '~/components/DocTabs.astro';
+import DocTabPanel from '~/components/DocTabPanel.astro';
 
 If you're worried about how to take time off for treatment without losing your job, you have more legal protection than most people realize. This page walks through the two federal laws that matter ([FMLA](https://www.dol.gov/agencies/whd/fmla) and [ADA](https://www.ada.gov)), what HR actually sees, and how Employee Assistance Programs work.
 
@@ -14,11 +16,14 @@ If you're worried about how to take time off for treatment without losing your j
 > 2. You've worked **at least 1,250 hours** in the 12 months immediately before the leave (roughly 24 hours/week, on average).
 > 3. Your employer has **50 or more employees within 75 miles** of your worksite.
 >
-> If any of those is false, federal FMLA does not apply to you. New hires, part-timers, gig workers, and people at small employers are commonly **not** covered. **This is the biggest gotcha on this page** — please check eligibility before you build a plan around FMLA. If you're not eligible, see the ["If you don't qualify for FMLA"](#if-you-dont-qualify-for-fmla) section below for what to do instead. State paid-leave programs sometimes have lower thresholds and may cover you when federal FMLA doesn't.
+> If any of those is false, federal FMLA does not apply to you. New hires, part-timers, gig workers, and people at small employers are commonly **not** covered. **This is the biggest gotcha on this page** — please check eligibility before you build a plan around FMLA. If you're not eligible, see the ["If you don't qualify for FMLA"](#if-you-dont-qualify-for-fmla) section in the FMLA tab below for what to do instead. State paid-leave programs sometimes have lower thresholds and may cover you when federal FMLA doesn't.
 
 This is general information, not legal advice. For specific situations — especially if your employer has already started treating you differently because of suspected use — talk to an employment lawyer. Many offer free initial consultations.
 
 > 💼 **Working in a regulated profession?** If you hold a CDL, FAA airman certificate, ATC medical, a law-enforcement position, an armed-security license, or work as a heavy-machinery operator, **MAT can have professional-licensure implications separate from anything your employer does.** See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT in any of those contexts.
+
+<DocTabs>
+<DocTabPanel value="fmla" label="FMLA">
 
 ## FMLA for your own treatment
 
@@ -66,6 +71,27 @@ When you request FMLA leave, HR gives you a packet of forms. The key one is a **
 
 Your medical information stays between you and your providers under [HIPAA](https://www.hhs.gov/hipaa/index.html). The FMLA certification goes to HR, but the underlying medical records do not. HR cannot demand or access your treatment records, and your providers cannot release them without your written consent.
 
+## State protections
+
+State laws often go further than federal. California, New York, New Jersey, Massachusetts, Washington, Oregon, Connecticut, Rhode Island, Colorado, and DC have notably broader laws — often including smaller employers, paid leave, and broader definitions of who qualifies. Search "[state name] family medical leave" and "[state name] disability discrimination" for specifics.
+
+The Department of Labor maintains a state-by-state overview at [dol.gov/agencies/whd/state](https://www.dol.gov/agencies/whd/state).
+
+## If you don't qualify for FMLA
+
+If your employer has under 50 employees within 75 miles, or you haven't been there long enough, or you haven't hit the 1,250-hour threshold, federal FMLA does not cover you. You still have options:
+
+- **State paid-leave programs.** Many states (CA, NY, NJ, MA, WA, OR, CT, RI, CO, DC, and others) have their own family/medical leave laws with lower eligibility thresholds and sometimes paid benefits. See the [Department of Labor's state-by-state overview](https://www.dol.gov/agencies/whd/state). Some of these cover smaller employers and shorter tenures than federal FMLA.
+- **[ADA](https://www.ada.gov) reasonable accommodations.** The ADA applies to employers with 15+ employees (lower threshold than FMLA's 50). For employees in recovery or in treatment, requested accommodations like a modified schedule for treatment appointments are often grantable even when FMLA leave isn't available. See the ADA tab.
+- **Many employers offer unpaid personal leave** outside of FMLA. It's discretionary and not job-protected the same way, but it exists at many employers.
+- **PTO, sick leave, vacation** — using these strategically can buy time while you arrange longer-term plans.
+- **Short-term disability** may apply if your treatment-related condition (or a co-occurring condition documented by your provider) meets the policy's definition. Check your benefits or ask HR.
+- **Your [EAP](#eaps--employee-assistance-programs)**, if you have one, doesn't go through HR and may cover counseling sessions and referrals at no cost regardless of FMLA eligibility. See the HR & Practical tab.
+- **An employment lawyer** — many offer free initial consultations — can review your specific situation. If your employer has been treating you differently because of suspected use, this conversation is worth having early.
+
+</DocTabPanel>
+<DocTabPanel value="ada" label="ADA">
+
 ## ADA — Americans with Disabilities Act
 
 The **[ADA](https://www.ada.gov)** is separate from FMLA and provides different (overlapping) protections.
@@ -91,11 +117,8 @@ The ADA requires employers to provide "reasonable accommodations" for disabiliti
 
 You generally need to **disclose enough to establish the disability and the need** — but not the specific diagnosis. "I have a serious health condition that requires me to attend weekly medical appointments on Tuesday afternoons" is often sufficient to start.
 
-## State protections
-
-State laws often go further than federal. California, New York, New Jersey, Massachusetts, Washington, Oregon, Connecticut, Rhode Island, Colorado, and DC have notably broader laws — often including smaller employers, paid leave, and broader definitions of who qualifies. Search "[state name] family medical leave" and "[state name] disability discrimination" for specifics.
-
-The Department of Labor maintains a state-by-state overview at [dol.gov/agencies/whd/state](https://www.dol.gov/agencies/whd/state).
+</DocTabPanel>
+<DocTabPanel value="practical" label="HR & Practical">
 
 ## EAPs — Employee Assistance Programs
 
@@ -135,23 +158,14 @@ Common wrongful pushback patterns:
 
 Any of these is worth documenting and consulting on. You don't have to know whether it's "really" illegal — that's what the consultation is for.
 
-## If you don't qualify for FMLA
-
-If your employer has under 50 employees within 75 miles, or you haven't been there long enough, or you haven't hit the 1,250-hour threshold, federal FMLA does not cover you. You still have options:
-
-- **State paid-leave programs.** Many states (CA, NY, NJ, MA, WA, OR, CT, RI, CO, DC, and others) have their own family/medical leave laws with lower eligibility thresholds and sometimes paid benefits. See the [Department of Labor's state-by-state overview](https://www.dol.gov/agencies/whd/state). Some of these cover smaller employers and shorter tenures than federal FMLA.
-- **[ADA](https://www.ada.gov) reasonable accommodations.** The ADA applies to employers with 15+ employees (lower threshold than FMLA's 50). For employees in recovery or in treatment, requested accommodations like a modified schedule for treatment appointments are often grantable even when FMLA leave isn't available.
-- **Many employers offer unpaid personal leave** outside of FMLA. It's discretionary and not job-protected the same way, but it exists at many employers.
-- **PTO, sick leave, vacation** — using these strategically can buy time while you arrange longer-term plans.
-- **Short-term disability** may apply if your treatment-related condition (or a co-occurring condition documented by your provider) meets the policy's definition. Check your benefits or ask HR.
-- **Your [EAP](#eaps--employee-assistance-programs)**, if you have one, doesn't go through HR and may cover counseling sessions and referrals at no cost regardless of FMLA eligibility.
-- **An employment lawyer** — many offer free initial consultations — can review your specific situation. If your employer has been treating you differently because of suspected use, this conversation is worth having early.
-
 ## A word on disclosure to coworkers
 
 You don't owe anyone a story. "I had a health thing" or "I needed to take care of something" or simply "I was out on medical leave" are complete answers. The people who care will respect that, and the people who don't respect it weren't your friends in the meaningful sense.
 
 Some people do find it useful, eventually, to be more open — both because it removes the burden of secrecy and because it sometimes connects you with coworkers who turn out to be in recovery themselves. That's a personal call and there's no right timing for it. Disclose if and when you want to, to people you trust, on your own schedule.
+
+</DocTabPanel>
+</DocTabs>
 
 ## Where to read next
 
