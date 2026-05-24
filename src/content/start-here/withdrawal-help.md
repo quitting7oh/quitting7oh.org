@@ -328,6 +328,13 @@ just brutal. Things that help:
 - **A weighted blanket** if you have one, or any heavy blanket. The
   pressure helps with restless legs.
 
+**Avoid OTC antihistamine sleep aids** — Benadryl (diphenhydramine),
+Unisom (doxylamine), ZzzQuil, and any "PM" formulation (Tylenol PM,
+Advil PM, etc.) that's diphenhydramine underneath the brand name.
+[First-generation antihistamines worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/),
+and restless legs is one of the loudest symptoms in opioid
+withdrawal. You'll feel like you slept worse, not better.
+
 For the full per-supplement breakdown (dosing, brands, what else to
 add for sleep specifically), see
 [Vitamins & Supplements](/other-tools/vitamins-supplements).
