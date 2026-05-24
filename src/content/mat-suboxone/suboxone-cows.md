@@ -22,7 +22,7 @@ The single most important thing about Suboxone induction is **timing it by your 
 
 **COWS** is the standard clinical tool. It mixes things you can self-report (yawning, anxiety, GI upset) with **observable signs** that someone else should ideally measure: resting pulse, pupil size, blood pressure trends, gooseflesh on visual inspection. Some of these are doable solo with a pulse oximeter or wearable; some aren't. The [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) is the official version.
 
-**SOWS** is purely subjective — you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed.
+**SOWS** is purely subjective — you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed. The [WHO Annex 10 SOWS form (PDF)](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) and the [SAMHSA TIP 40 SOWS table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/) are the canonical published versions.
 
 In practice:
 
@@ -122,7 +122,7 @@ Over 36    Severe withdrawal
 
 ## How to score yourself — SOWS
 
-SOWS is 16 items, each scored **0 (not at all) to 4 (extremely)**. Add them up for your total (range 0–64). Re-score every 60–90 minutes during induction so you can see the trajectory, not just a single snapshot.
+SOWS is 16 items, each scored **0 (not at all) to 4 (extremely)**. Add them up for your total (range 0–64). Re-score every 60–90 minutes during induction so you can see the trajectory, not just a single snapshot. The official forms are the [WHO Annex 10 PDF](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) (a clean printable version, parallel to the NIDA COWS PDF above) and the [SAMHSA TIP 40 HTML table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/). Below is a quick-reference of the items.
 
 The items:
 
