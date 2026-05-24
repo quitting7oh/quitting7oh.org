@@ -42,6 +42,6 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <Header />
     <slot />
     <Footer client:idle />
-    <BackToTop client:idle />
+    <BackToTop client:load />
   </body>
 </html>
