@@ -30,7 +30,14 @@ export function Footer() {
               Yes, we used AI to help build out some of this content. The
               source is community members who've lived through 7-OH and
               kratom-synthetic recovery; humans verify every factual claim
-              against a primary source and stand behind every page.{' '}
+              against a primary source.
+            </p>
+            <p className="mt-2">
+              Those humans made a good-faith effort to validate every page,
+              but they are sadly jelly-filled meat bags that aren't the
+              product of billionaires siphoning money out of the working
+              class. The use of AI here is a simple fact, one you can accept
+              or not.{' '}
               <a
                 href="/about/this-site#the-ai-disclaimer"
                 className="text-primary underline underline-offset-2 hover:opacity-80"
