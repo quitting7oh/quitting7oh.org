@@ -28,6 +28,11 @@ isn't broken — it's adjusting. The receptors recover. Endorphin
 production comes back online. The discomfort is real, time-limited, and
 part of a process that ends.
 
+If this is a re-entry to withdrawal after a stretch off — and symptoms
+seem to be hitting faster than they did the first time — see
+[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)
+for why that happens.
+
 ## You are not alone — talk to someone
 
 The community runs an active Discord and subreddit. People are on it

@@ -169,6 +169,11 @@ Reading this after a slip, not before? **You haven't lost everything.**
 A return to use doesn't erase the work that got you the abstinence in
 the first place. The neurobiology of recovery doesn't reset to zero.
 
+If withdrawal symptoms are returning faster than you expected — within
+hours, by morning — that's a documented pattern, not a sign you're
+back at day one. **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**
+covers why it happens and what it means.
+
 **The one safety thing to know:**
 
 > ⚠️ **Don't mix.** The real fatal pattern in kratom-adjacent deaths

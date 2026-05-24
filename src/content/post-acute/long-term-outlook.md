@@ -3,7 +3,7 @@ title: "Long-Term Outlook"
 description: "What recovery from 7-OH dependence actually looks like — honest about how hard it is, honest about relapse, honest that the compound is new enough that the long-arc picture borrows from the broader opioid-recovery literature, and honest that the people who got there did it one day at a time."
 category: "post-acute"
 last_updated: "2026-05-24"
-sort: 6
+sort: 7
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you don't trust
@@ -107,10 +107,13 @@ The line that matters is not "did you slip" but "did you come back."
 
 If you slipped recently and you're reading this:
 [Thinking About Using?](/start-here/thinking-about-using) has the
-practical "what now" content. The neurobiology of recovery doesn't
-reset to zero just because you used once or twice or twenty times.
-The receptors that were rebuilding are still rebuilding. The work
-that got you the abstinence in the first place is still in you.
+practical "what now" content, and
+[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)
+covers why withdrawal can return fast after a re-use. The neurobiology
+of recovery doesn't reset to zero just because you used once or twice
+or twenty times. The receptors that were rebuilding are still
+rebuilding. The work that got you the abstinence in the first place
+is still in you.
 
 ## What we actually know about long-term outcomes
 
@@ -242,6 +245,8 @@ Keep going.
 
 - **[Thinking About Using?](/start-here/thinking-about-using)** —
   if a craving is loud right now, that's the page.
+- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)** —
+  the focused page on what happens if you use again after a stretch off.
 - **[What is PAWS](/post-acute/what-is-paws)** — the broader
   post-acute picture.
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)** —

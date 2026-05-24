@@ -133,6 +133,11 @@ that take time to unwind:
 This is the system rebuilding what it outsourced. The discomfort is
 real, time-limited, and part of a process that ends.
 
+Those persistent adaptations are also why a return to use can re-trigger
+withdrawal faster than your first quit did. For the picture of how
+re-exposure interacts with the unfinished healing, see
+**[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**.
+
 ## Windows and waves
 
 For people who do experience PAWS, the most important pattern to
@@ -362,6 +367,8 @@ connections you maintain — all of it adds up.
   longest tail; the focused page.
 - **[Impending Doom](/post-acute/impending-doom)** — the specific
   terror that hits in withdrawal and PAWS, and what to do with it.
+- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)** —
+  what happens if you use again after a stretch off.
 - **[Long-Term Outlook](/post-acute/long-term-outlook)** — what
   recovery actually looks like over the coming months.
 - **[Thinking About Using?](/start-here/thinking-about-using)** —
