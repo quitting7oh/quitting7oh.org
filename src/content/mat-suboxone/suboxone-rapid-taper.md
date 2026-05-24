@@ -5,9 +5,11 @@ category: "mat-suboxone"
 last_updated: "2026-05-24"
 sort: 4
 ---
+> **Note: Suboxone is one path off 7-OH, not the default starting point.** If your use is in the range where lighter tools work, consider those before committing to a bupe induction: [tapering with leaf](/other-tools/tapering-with-leaf), [cold turkey with helper meds](/other-tools/helper-meds-info), or [SR-17](/other-tools/sr17018-info). This page is for when you've decided Subs is the right tool.
+
 > ⚠️ **This post describes rapid taper schedules used by this community for 7-OH dependence. These schedules deliberately go faster than standard medical guidance.** They reflect community experience with hundreds of successful rapid tapers from 7-OH, where short bupe courses (5 to 10 days) at low-to-moderate doses have not produced meaningful bupe dependence in our population. **This is not how a prescriber will typically run a taper, and most prescribers won't sign off on these timelines.** If you're considering this, you're choosing a community-developed approach over standard clinical practice. Make sure you understand what you're choosing.
 
-> ⚠️ **This is for 7-OH dependence only.** If you've been on MGM-15, MIT-A, pseudo, or stacked compounds, **these schedules will not work for you** and you'll get hurt trying. Long-acting synthetics and high-affinity binders need longer tapers because of their pharmacology, not because of medical conservatism. See the relevant compound channels for the right approach.
+> ⚠️ **This is for 7-OH dependence only.** If you've been on MGM-15, MIT-A, pseudo, or stacked compounds, **these schedules will not work for you** and you'll get hurt trying. Long-acting synthetics and high-affinity binders need longer tapers because of their pharmacology, not because of medical conservatism. See the relevant compound page for the right approach.
 
 ## Why this works for 7-OH (and not for the heavier synthetics)
 [7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken just long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
@@ -15,35 +17,73 @@ sort: 4
 This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks)). Same medication, different use case, different outcome.
 
 ## The schedules
+
 All schedules assume:
 - Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) & [Suboxone](/mat-suboxone/suboxone-info))
-- You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose) 
+- You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
 
-## Starting at 2 mg
-**5-day:** 2 → 1.5 → 1 → 0.5 → 0.25 → stop
-## Starting at 4 mg
-**5-day:** 4 → 2 → 1 → 0.5 → 0.25 → stop
-**7-day:** 4 → 4 → 3 → 2 → 1 → 0.5 → 0.25 → stop
-## Starting at 6 mg
-**5-day** **:** 6 → 4 → 2 → 1 → 0.5 → stop
-**7-day:** 6 → 6 → 4 → 3 → 2 → 1 → 0.5 → stop
-**10-day** **:** 6 → 6 → 6 → 4 → 4 → 3 → 2 → 1 → 0.5 → 0.25 → stop
-## Starting at 8 mg
-> If you ended up at 8 mg, **double-check that 7-OH alone is what you were on.** This dose is on the higher end for pure 7-OH dependence and may indicate underlying use of MGM-15, MIT-A, pseudo, or stacked compounds. 
+*All doses in mg. Each row is one day; each column is a schedule option. A dash means that schedule has already ended — no more doses.*
 
-**5-day** **:** 8 → 5 → 3 → 1.5 → 0.5 → stop
-**7-day:** 8 → 8 → 6 → 4 → 2 → 1 → 0.5 → stop
-**10-day** **:** 8 → 6 → 5 → 4 → 3 → 2 → 1 → 0.5 → stop
-## Starting at **MORE** than 8 mg
-**User ChatGPT/Gemini/Claude to generate your own custom taper plan**
+### Starting at 2 mg
 
-*All doses in mg. Each arrow = next day. Stop after the last listed dose.*
+| Day | 5-day |
+|---|---|
+| 1 | 2 |
+| 2 | 1.5 |
+| 3 | 1 |
+| 4 | 0.5 |
+| 5 | 0.25 |
+
+### Starting at 4 mg
+
+| Day | 5-day | 7-day |
+|---|---|---|
+| 1 | 4 | 4 |
+| 2 | 2 | 4 |
+| 3 | 1 | 3 |
+| 4 | 0.5 | 2 |
+| 5 | 0.25 | 1 |
+| 6 | — | 0.5 |
+| 7 | — | 0.25 |
+
+### Starting at 6 mg
+
+| Day | 5-day | 7-day | 10-day |
+|---|---|---|---|
+| 1 | 6 | 6 | 6 |
+| 2 | 4 | 6 | 6 |
+| 3 | 2 | 4 | 6 |
+| 4 | 1 | 3 | 4 |
+| 5 | 0.5 | 2 | 4 |
+| 6 | — | 1 | 3 |
+| 7 | — | 0.5 | 2 |
+| 8 | — | — | 1 |
+| 9 | — | — | 0.5 |
+| 10 | — | — | 0.25 |
+
+### Starting at 8 mg
+
+> If you ended up at 8 mg, **double-check that 7-OH alone is what you were on.** This dose is on the higher end for pure 7-OH dependence and may indicate underlying use of MGM-15, MIT-A, pseudo, or stacked compounds.
+
+| Day | 5-day | 7-day | 10-day |
+|---|---|---|---|
+| 1 | 8 | 8 | 8 |
+| 2 | 5 | 8 | 6 |
+| 3 | 3 | 6 | 5 |
+| 4 | 1.5 | 4 | 4 |
+| 5 | 0.5 | 2 | 3 |
+| 6 | — | 1 | 2 |
+| 7 | — | 0.5 | 1 |
+| 8 | — | — | 0.5 |
+
+### Starting at more than 8 mg
+
+Use ChatGPT, Gemini, or Claude to generate your own custom taper plan based on the patterns above.
 
 ## Choosing the right schedule
 
 **Pick the longer end of the range if:**
-- This is your first attempt at coming off [7-OH](/compounds/7-oh)
 - You've been on [7-OH](/compounds/7-oh) for more than a few months
 - You don't have a stable home environment, support person, or time off work
 - You have a history of relapse during withdrawal

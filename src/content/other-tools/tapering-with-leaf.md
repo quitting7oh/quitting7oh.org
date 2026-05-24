@@ -14,7 +14,7 @@ For some users in this community, **plain kratom leaf powder can be used as a ta
 - **Under ~100 mg [7-OH](/compounds/7-oh) equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
 
-**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure [pseudo](/compounds/pseudo) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound channels for the right approach.
+**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure [pseudo](/compounds/pseudo) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound page for the right approach.
 
 ## The pharmacology of why leaf works
 Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is the dominant alkaloid (up to 66% of total alkaloid content in Thai varieties), with 7-OH as a minor constituent (up to 2% of total alkaloid content)](https://en.wikipedia.org/wiki/Mitragynine). [Total alkaloid concentration in dried leaves ranges from 0.5 to 1.5%](https://en.wikipedia.org/wiki/Mitragynine).

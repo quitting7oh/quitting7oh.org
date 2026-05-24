@@ -24,7 +24,7 @@ This page is the overview of what it is and where it fits. **The standard COWS-g
 | **Precipitated withdrawal risk** | Real if timed early | Very low |
 | **Strongest fit** | [7-OH](/compounds/7-oh) alone, short-acting compounds | Long-acting synthetics, methadone/fentanyl background, prior precip-WD attempts |
 | **Evidence base** | Decades, large RCTs | ~10 years, mostly case series; one registered RCT |
-| **Hardest part** | Tolerating the wait | Getting a prescriber on board and sourcing the small doses |
+| **Hardest part** | Tolerating the wait | Keeping your opioid going while bup ramps up |
 
 ## Who this might fit
 
@@ -117,18 +117,24 @@ For the right person micro-induction works, but plan for the support structure t
 
 If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has actually tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
 
-**A handful of people in this community have used micro-induction successfully for MGM-15 and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked — community knowledge here is genuinely ahead of the published literature.
+**A handful of people in this community have used micro-induction successfully for 7-OH, MGM-15, and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked — community knowledge here is genuinely ahead of the published literature.
 
-## How to talk to a prescriber about this
+## You usually don't need prescriber buy-in on the protocol
 
-Most primary-care prescribers haven't trained on micro-induction. Telehealth prescribers vary widely. The conversation goes better if you bring:
+The "sourcing small doses" framing common in older write-ups overstates the problem for our audience. A standard Suboxone prescription is 8/2 mg sublingual strips. An 8 mg strip cuts into eighths for 1 mg per piece, or sixteenths for 0.5 mg — enough granularity for any of the schedules above. People in this community doing micro-induction generally do it with strips from a standard prescription, divided themselves.
+
+What that changes: you're not asking a prescriber to bless a custom schedule, you're getting the same Suboxone prescription anyone starting MAT gets. The intake conversation — kratom or 7-OH dependence, ready to come off, want to start Suboxone — is the same regardless of how you plan to do day 1.
+
+## If you do want your prescriber engaged on the protocol
+
+Some people want their prescriber to know the specific schedule, either as a backstop if something goes sideways, or because the intake gates on a COWS-readiness conversation that doesn't fit a Bernese plan. Most primary-care prescribers haven't trained on micro-induction; telehealth prescribers vary. The conversation goes better if you bring:
 
 - **A specific reason.** "I've been on a long-acting kratom synthetic with a ~15 hour half-life, and I'm concerned about a precipitated-withdrawal failure on standard induction" lands differently than "I read about this online."
 - **A specific protocol you're willing to discuss.** Pointing at the [BC 7-day schedule](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/) or the [original Hammig 2016 paper](https://pubmed.ncbi.nlm.nih.gov/27499655/) gives them something concrete to engage with, rather than putting them in the position of designing a novel protocol on the fly.
 - **A reference to the guideline body that recognizes it.** [The ASAM 2020 National Practice Guideline focused update](https://www.asam.org/quality-care/clinical-guidelines/national-practice-guideline) explicitly recognizes low-dose initiation (0.25–2 mg sublingual or 5–20 mcg/hr transdermal) as an option. The [BC Centre on Substance Use](https://www.bccsu.ca/) has a patient resource specifically on this method. Knowing these exist helps if your prescriber's first reaction is "I've never done that."
-- **A willingness to be honest about your full agonist source.** This is the part that often blocks the conversation — micro-induction requires you to keep taking your opioid during the overlap. If your prescriber needs to know what compound and what dose you're continuing, telling them is part of the deal.
+- **A willingness to be honest about your full agonist source.** Micro-induction requires you to keep taking your opioid during the overlap. If your prescriber needs to know what compound and what dose you're continuing, telling them is part of the deal.
 
-If your current prescriber isn't comfortable with micro-induction, the [Telehealth Providers](/resources/telehealth) comparison flags which providers have specifically mentioned kratom or 7-OH experience — those are the most likely to engage with the protocol rather than default to the standard playbook.
+If your current prescriber isn't comfortable with the protocol, the [Telehealth Providers](/resources/telehealth) comparison flags which providers have specifically mentioned kratom or 7-OH experience.
 
 ## When micro-induction isn't the answer
 
