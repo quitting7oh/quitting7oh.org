@@ -86,11 +86,13 @@ export function AppSidebar({ categories, currentPath }: Props) {
     );
   }
 
-  // Desktop: sticky aside, lives inside the page's flex container.
+  // Desktop: aside stretches to the full height of the flex container
+  // (matches the main column's height, so it runs as long as the article).
+  // The inner div is sticky so the nav stays in view as the reader scrolls.
   return (
     <aside
       aria-label="Site navigation"
-      className="hidden w-64 shrink-0 self-start lg:block"
+      className="hidden w-64 shrink-0 border-r border-border lg:block"
     >
       <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto">
         <NavContent categories={categories} currentPath={currentPath} />
