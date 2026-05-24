@@ -153,11 +153,14 @@ sideways switch.
 
 ### Path 3 — get on Suboxone (MAT)
 
-Often the path people pick when they're on **higher-dose
-[7-OH](/compounds/7-oh), on the long-acting synthetics, or when
-previous attempts to come off without medication didn't hold**.
-Suboxone is a partial opioid agonist; taken correctly it cuts
-withdrawal to nearly zero within hours.
+Suboxone is a partial opioid agonist. Taken correctly during a
+successful induction, it can drop withdrawal to nearly zero within
+hours. It requires a prescriber, and induction has to wait until
+your COWS score is ≥ 12 (typically 12–24 hours into withdrawal, and
+often longer for the long-acting synthetics like
+[MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and
+[pseudo](/compounds/pseudo), where there's still meaningful drug on
+your receptors at the standard wait window).
 
 The community's general posture is a **short, structured rapid taper**
 — 5 to 10 days, **14 days at the outside**. That's the range we feel
@@ -207,16 +210,29 @@ withdrawal (< 24 hours) and your COWS score is still low, all four
 paths are open. The practical differences that usually shape the
 choice:
 
-- **Speed of symptom relief.** Suboxone cuts withdrawal to near zero
-  within hours of a successful induction. SR-17 takes a day or two to
-  stabilize. Leaf is a gradual reduction. Cold turkey has no
-  pharmacological relief — symptoms run their course and the helper
-  meds take the edge off.
-- **What you need to start.** Suboxone needs a prescriber and a
-  COWS score above 12. SR-17 needs sourcing and a willingness to
-  take an unregulated compound. Leaf needs sourcing from a trusted
-  vendor, ideally with a planned schedule. Cold turkey needs a
-  pharmacy run and the helper-med list.
+- **Access and timing.** Cold turkey with helper meds is the path
+  you can start the soonest — a same-day telehealth visit covers
+  most of the helper meds, and many of the supplements are at any
+  pharmacy. Leaf you can start as soon as you have a trusted source
+  on hand. SR-17 requires sourcing first. Suboxone requires
+  *both* a prescriber and a COWS score above 12 (or SOWS ≥ 17),
+  which usually means waiting at least 12–24 hours into withdrawal
+  before the first dose — longer for the long-acting synthetics
+  ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
+  [pseudo](/compounds/pseudo)).
+- **What the path does for symptoms.** Suboxone, when induction
+  goes well, can drop withdrawal to near zero by occupying the
+  receptors with a partial agonist. Induction can also fail —
+  precipitated withdrawal during induction is hours of feeling
+  significantly worse than baseline withdrawal, and the risk runs
+  higher with the long-acting compounds. SR-17 occupies the
+  receptors with a longer-acting opioid; symptoms ease over a day
+  or two of stabilization. Leaf provides a weaker version of the
+  receptor activation you had, so the step-down is gradual rather
+  than a hard switch. Cold turkey has no pharmacological
+  replacement — helper meds blunt symptoms (clonidine on the
+  noradrenergic side, gabapentin on the wired/anxious side,
+  trazodone on sleep) while your system recalibrates.
 - **What it costs you later.** Suboxone brings its own dependence
   and a taper at the end. SR-17 brings its own dependence and a
   less-charted taper. Leaf brings its own dependence; the taper is
