@@ -3,6 +3,7 @@ title: "SR-17"
 description: "SR-17018 as an informal taper tool — what it is, the community protocol, real risks, what's unknown."
 category: "other-tools"
 last_updated: "2026-05-24"
+sort: 6
 ---
 > ⚠️ **Community information, not medical advice.** SR-17018 is a research chemical not approved for human use anywhere in the world. The information below reflects community experience, published research on rodent models, and harm reduction principles. **For discussion, see #sr17018 **
 

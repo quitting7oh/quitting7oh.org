@@ -74,8 +74,11 @@ Do these things, in this order:
   edge off" unless they're already prescribed to you for this. Mixing
   benzos with opioid withdrawal recovery is a real overdose risk later.
 - Don't drink to take the edge off. Same reason.
-- Don't take opioid blockers (Narcan, [naltrexone](/other-tools/low-dose-naltrexone))
-  while still in withdrawal. They will make it worse, fast.
+- Don't take opioid blockers ([naltrexone](/other-tools/naltrexone)
+  in any form — Vivitrol, oral, LDN) while still in withdrawal.
+  They will make it worse, fast. Narcan is the exception — keep
+  Narcan on hand for actual overdose; it's harmless if given when
+  not needed.
 
 ## What's coming, hour by hour
 

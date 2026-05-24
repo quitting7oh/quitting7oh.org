@@ -324,7 +324,7 @@ partial opioid antagonist; bupe is a partial agonist. They fight at
 the receptor and you'll get precipitated withdrawal. LDN is a tool
 for *after* you've fully tapered off bupe and waited the full
 washout period (typically 7 to 14 days). See
-[Low-Dose Naltrexone](/other-tools/low-dose-naltrexone).
+[Low-Dose Naltrexone](/other-tools/naltrexone-low-dose).
 
 ### The honest framing
 

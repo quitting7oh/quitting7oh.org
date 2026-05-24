@@ -34,11 +34,12 @@ the [Compounds](/compounds) section are the broader picture.
 > ⚠️ **Naltrexone (LDN, ULDN, Vivitrol) is not a path off opioids.**
 > It's an opioid antagonist — taking it while there are still opioids
 > on your receptors will trigger immediate, severe precipitated
-> withdrawal. [LDN](/other-tools/low-dose-naltrexone) and
-> [ULDN](/other-tools/ultra-low-dose-naltrexone) come in **after**
+> withdrawal. [LDN](/other-tools/naltrexone-low-dose) and
+> [ULDN](/other-tools/naltrexone-ultra-low-dose) come in **after**
 > acute withdrawal as recovery support for the endorphin system. Don't
 > let any provider — telehealth or otherwise — start you on naltrexone
-> before you're at least 7–10 days fully opioid-free.
+> before you're at least 7–10 days fully opioid-free. See
+> [Naltrexone (Overview)](/other-tools/naltrexone) for the full picture.
 
 [Suboxone]: /mat-suboxone/suboxone-info
 [Subutex]: /mat-suboxone/suboxone-info

@@ -159,7 +159,7 @@ What's worth noting *specifically* for depression and anhedonia:
   use it to support endogenous endorphin recovery, which is part
   of the underlying picture for both depression and anhedonia.
   Cannot be taken while on Suboxone — see
-  **[Low-Dose Naltrexone](/other-tools/low-dose-naltrexone)**.
+  **[Low-Dose Naltrexone](/other-tools/naltrexone-low-dose)**.
 - **Affect labeling.** Naming the state ("I'm depressed right
   now," "this is the flat feeling") measurably reduces amygdala
   activity ([Lieberman et al., 2007](https://journals.sagepub.com/doi/10.1111/j.1467-9280.2007.01916.x)).

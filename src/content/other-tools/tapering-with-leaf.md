@@ -3,6 +3,7 @@ title: "Tapering with Leaf Kratom"
 description: "Using kratom leaf to bridge off concentrated 7-OH and synthetics — when it works, when it doesn't."
 category: "other-tools"
 last_updated: "2026-05-24"
+sort: 5
 ---
 > ⚠️ **Community information, not medical advice.** This is a community-developed approach for users coming off lower-dose 7-OH dependence. Leaf kratom is not FDA-approved for treating opioid dependence. **For discussion, see #kratom-leaf.**
 

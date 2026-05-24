@@ -3,6 +3,7 @@ title: "Vitamins & Supplements"
 description: "A community-tested supplement stack for opioid withdrawal and PAWS — what to start with, what to skip."
 category: "other-tools"
 last_updated: "2026-05-24"
+sort: 2
 ---
 
 > ⚠️ **This post is community information, not medical advice.** Everything

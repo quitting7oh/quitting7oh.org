@@ -3,6 +3,7 @@ title: "Quit Kit & DIY Supplement Stacks"
 description: "Honest review of the Quit Kit supplement stack, and how to build a comparable DIY version for less."
 category: "other-tools"
 last_updated: "2026-05-24"
+sort: 3
 ---
 > ⚠️ **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** Talk to your prescriber before starting any supplement, especially if you're on Suboxone, LDN, or other medications.
 

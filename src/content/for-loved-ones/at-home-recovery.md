@@ -6,6 +6,27 @@ last_updated: "2026-05-24"
 sort: 7
 ---
 
+> ⚠️ **A note before you read further.** This page assumes there's
+> still meaningful **trust** in the relationship — that you and your
+> loved one can be in the same house, that they want you nearby (at
+> least sometimes), and that you're working with them rather than
+> around them. A lot of the practical advice below — being present,
+> handling logistics, helping with appointments — only lands when
+> that baseline is intact.
+>
+> **If the trust is gone** — if active using has produced lying,
+> stealing, manipulation, or worse, and you've stopped being able to
+> believe what they tell you — some of this won't apply, and trying
+> to apply it can put you in a worse spot. The pages that may fit
+> better:
+> [Boundaries Without Punishment](/for-loved-ones/boundaries),
+> [Safety](/for-loved-ones/safety),
+> [Asking Them to Leave](/for-loved-ones/asking-them-to-leave),
+> and [Taking Care of Yourself](/for-loved-ones/taking-care-of-yourself).
+> You can come back to this page if the relationship gets to a
+> place where these practices fit again — many do, after a stretch
+> of structure and distance.
+
 If your loved one is coming off [7-OH](/compounds/7-oh) or kratom
 synthetics at home, that's the path most people in this community
 take. It's not a downgrade from "real" treatment — it's the version

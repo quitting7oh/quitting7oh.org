@@ -3,6 +3,7 @@ title: "Helper Medications"
 description: "Prescription adjuncts that take the edge off — clonidine, gabapentin, hydroxyzine, trazodone, baclofen."
 category: "other-tools"
 last_updated: "2026-05-24"
+sort: 1
 ---
 > ⚠️ **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 

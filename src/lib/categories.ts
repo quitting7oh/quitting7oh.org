@@ -30,7 +30,7 @@ export const CATEGORIES = [
   {
     slug: 'other-tools',
     title: 'Helpful Medications / Supplements',
-    blurb: 'Helper meds, supplements, quit-kit stacks, SR-17, low-dose naltrexone, tapering with leaf.',
+    blurb: 'Helper meds, supplements, quit-kit stacks, SR-17, naltrexone (normal, low, ultra-low), tapering with leaf.',
     emoji: '🛠️',
   },
   {
