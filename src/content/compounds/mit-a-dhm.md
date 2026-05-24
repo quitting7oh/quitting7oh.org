@@ -23,7 +23,7 @@ MIT-A, sold and discussed as **DHM (dihydromitragynine)**, is a semi-synthetic c
 Appeared in the U.S. market in 2025 as part of the wave of mitragynine-derived semi-synthetics being sold in tablet, gummy, and chewable form alongside 7-OH products, often through the same retailers and smoke shops.
 
 ## Pharmacology
-Reducing the 1,2 double bond of mitragynine changes its receptor profile and pharmacokinetics. **Public peer-reviewed pharmacology specifically on dihydromitragynine as a standalone compound is thin** — most published kratom-analog research has focused on mitragynine, 7-OH, MP, and [MGM-15](/compounds/mgm15). That alone is worth flagging: people are taking it in real-world doses faster than the literature is keeping up.
+Reducing the 1,2 double bond of mitragynine changes its receptor profile and pharmacokinetics. **Public peer-reviewed pharmacology specifically on dihydromitragynine as a standalone compound is thin** — most published kratom-analog research has focused on mitragynine, 7-OH, MP, and [MGM-15](/compounds/mgm15). The practical implication: people are taking it in real-world doses faster than the literature is keeping up.
 
 In terms of where it sits on the spectrum of compounds people in this community are dealing with: leaf kratom < concentrated mitragynine extracts < 7-OH < MIT-A/DHM < [pseudoindoxyl](/compounds/pseudo) < [MGM-15](/compounds/mgm15). The semi-synthetics and isolates all behave more like classical opioids than they do like the leaf material.
 
@@ -45,3 +45,7 @@ Standard induction guidance was built around shorter-acting opioids. With MIT-A'
 - Net effect that matches what people report: bupe covers a lot but leaves a persistent low-grade "off" feeling — restlessness, anhedonia, low mood — that takes weeks to settle. Many people end up needing a higher stabilizing dose than their initial induction dose. See [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader treatment picture for these symptoms.
 
 If you're planning this transition, a longer washout, a prescriber who actually understands kratom-derivative dependence, and openness to a higher stabilizing dose all tend to make it go better. Share what's worked or hasn't here — community knowledge is genuinely ahead of the published literature on this compound.
+
+## SR-17 as the other community-validated path
+
+[SR-17](/other-tools/sr17018-info) is the second MAT-equivalent option community members have used to come off MIT-A and other long-acting kratom-derived synthetics. SR-17 is a biased mu agonist with a long duration of action; it avoids the partial-agonist displacement that drives the precipitated-withdrawal risk during Suboxone induction. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-info) is the path with the clinical safety net. Neither is the "right" answer for everyone; both are real options people have used to come off MIT-A. The [SR-17 page](/other-tools/sr17018-info) has the protocol, what's known, and what's not.
