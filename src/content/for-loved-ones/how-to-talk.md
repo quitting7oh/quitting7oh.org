@@ -2,7 +2,7 @@
 title: "How to Talk to Your Loved One"
 description: "When to bring it up, how to say it, and what tends to land vs. backfire. Includes a primer on CRAFT, the evidence-based framework that outperforms both Al-Anon and confrontational interventions for getting a loved one into treatment."
 category: "for-loved-ones"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 3
 ---
 
@@ -10,12 +10,27 @@ There's no script that guarantees they'll listen, no perfect sentence that ends 
 
 ## When not to bring it up
 
+Some moments reliably close the door:
+
 - **During use.** They're not present. Their brain is processing pleasure and relief, not concern.
 - **During acute withdrawal.** They're miserable and can barely think. Save the important conversations for stable moments.
 - **During an acute crisis** (right after a fight, after they've been caught lying, in front of others). Not the time to add weight.
 - **When you're white-hot angry.** Your tone will overwhelm the words. Wait. The conversation isn't going anywhere.
 
-The best time is often boring: a quiet evening, a long drive, a walk. Lower-stakes physical settings let high-stakes content land.
+The best moments are often boring: a quiet evening, a long drive, a walk. Lower-stakes physical settings let high-stakes content land.
+
+## When the "stable moment" almost never comes
+
+For families of someone in a tight daily cycle — especially with short-acting [7-OH](/compounds/7-oh), where the gap between use and withdrawal can be hours — the list above can read as "wait for a moment that doesn't exist." That's a real bind. A few openings to watch for, none perfect, all better than the cycle's worst points:
+
+- **The post-dose comedown window.** After a recent dose has settled and before the next withdrawal arc starts, there's usually a stretch where they're physically comfortable and mentally present. Not euphoric, not climbing. This is often the longest stable window available.
+- **First thing in the morning, before the day's first dose.** For some people this is the clearest-headed moment of the day. For others it's mild withdrawal and useless. You'll know which after a week of paying attention.
+- **Days where they're using less by their own choice.** They voluntarily stretched a dose, or they ran out and decided to wait. These moments are often when they're already half-thinking about the question themselves.
+- **When they bring something up first.** A complaint about cost, about sleep, about not feeling like themselves, about a side effect they didn't expect. Don't pivot it into an intervention; just listen, and let them keep going.
+
+The principle: you're picking the less-bad window, not the perfect one. If you wait for the perfect window in a daily-cycle situation, you don't talk. The conversation doesn't have to be the conversation. A two-minute moment that opens the door is worth more than a planned sit-down that never happens.
+
+It's also worth saying directly: if there is genuinely no opening — they're never reachable, never present, never not in one phase of the cycle or the other — that's information too, and it usually means the conversation isn't the move right now. The CRAFT framework below is built precisely for that case: change what you can change about your own behavior and your environment, and let the changes (not the conversation) do the work.
 
 ## How to phrase it
 
@@ -54,7 +69,7 @@ The core ideas:
 5. **Communication skills.** The "concern not accusation" / "I-statements" / specific-behavior framing above is the CRAFT version of communication training.
 6. **When the moment comes, have a treatment plan ready.** When they say "okay, I'll try" — you want to be able to call somewhere that day. Pre-research providers, insurance coverage, telehealth options. See [When They're Recovering at Home](/for-loved-ones/at-home-recovery) for the path most people use, or [Rehabilitation Centers](/for-loved-ones/rehabilitation-centers) if a formal program is the right fit.
 
-CRAFT is not a magic formula and it's not a substitute for your own support. It's a framework for being skillful, sustainable, and effective in a situation where most instincts (lecturing, rescuing, controlling) backfire.
+CRAFT isn't a magic formula or a substitute for your own support. It's a framework for being effective in situations where the obvious instincts (lecturing, rescuing) tend to backfire.
 
 ### Where to learn CRAFT more deeply
 
