@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="mt-16 border-t border-border bg-muted/50">
       <div className="mx-auto max-w-[88rem] px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="text-sm font-semibold text-foreground">
               {SITE.title}.org
@@ -22,6 +22,21 @@ export function Footer() {
               Nothing here is a substitute for a conversation with a qualified
               clinician familiar with your situation. If you are in immediate
               crisis, call or text 988 (US) or your local emergency number.
+            </p>
+          </div>
+          <div className="text-sm text-muted-foreground">
+            <p className="font-semibold text-foreground">AI disclaimer</p>
+            <p className="mt-2">
+              Compiled with AI help from years of real Discord and Reddit
+              conversations, then reviewed line-by-line by humans who have
+              lived through this. We stand behind the data. If that approach
+              isn't for you, that's fine — read something else.{' '}
+              <a
+                href="/about/this-site#the-ai-disclaimer"
+                className="text-primary underline underline-offset-2 hover:opacity-80"
+              >
+                Full disclaimer →
+              </a>
             </p>
           </div>
           <div className="text-sm text-muted-foreground">
