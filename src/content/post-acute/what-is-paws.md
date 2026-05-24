@@ -214,8 +214,10 @@ sleep, restless legs), **clonidine** (stress reactivity, sleep),
 **mirtazapine** (sleep, anxiety, depression, nausea — single-med
 coverage), **buspirone** (anxiety without dependence),
 **low-dose naltrexone** (post-acute only, can't combine with bupe),
-and continued **MAT** or the
-[single-shot Sublocade exit](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone).
+and continued **MAT** — buprenorphine via the [Sublocade single-shot
+exit](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone),
+or [SR-17](/other-tools/sr17018-info) as the second
+community-validated medication-assisted path off the synthetics.
 
 For what each does, when it's used, dosing context, and the
 interaction profile: **[Helper Medications](/other-tools/helper-meds-info)**
@@ -375,5 +377,8 @@ connections you maintain — all of it adds up.
   recovery actually looks like over the coming months.
 - **[Thinking About Using?](/start-here/thinking-about-using)** —
   bookmark for craving moments.
-- **[Telehealth Providers](/resources/telehealth)** — for any of the
-  clinically-used interventions above.
+- **[Telehealth Providers](/resources/telehealth)** — for the
+  SSRI / SNRI / bupropion / buspirone / Suboxone / Sublocade items
+  in the clinically-used list. LDN sits outside standard OUD
+  telehealth; see the [LDN page](/other-tools/naltrexone-low-dose)
+  for that routing. SR-17 is off-prescription.
