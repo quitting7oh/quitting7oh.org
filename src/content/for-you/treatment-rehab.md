@@ -2,7 +2,7 @@
 title: "Treatment & Rehab: Finding Help and Paying for It"
 description: "Levels of care from your POV as the patient, how to find a program that fits, what to expect when you call, and how insurance, Medicaid, VA, and sliding-scale options actually work."
 category: "for-you"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 2
 ---
 
@@ -46,7 +46,7 @@ MAT is not a separate "level" — it's a medication-based approach that can sit 
 
 - **[Buprenorphine](/mat-suboxone/suboxone-info)** ([Suboxone](/mat-suboxone/suboxone-info), [Subutex](/mat-suboxone/suboxone-info), [Sublocade injection](/mat-suboxone/sublocade-brixadi-info)). For our community, the low-and-slow taper approach has the strongest track record — see [MAT / Suboxone](/mat-suboxone) for the full pharmacology and protocol, [induction by COWS/SOWS](/mat-suboxone/suboxone-cows) (timing matters more than the clock), [custom dosing strategies](/mat-suboxone/suboxone-custom-dose), [when bupe isn't fully covering you](/mat-suboxone/suboxone-isnt-working), the [Suboxone rapid taper](/mat-suboxone/suboxone-rapid-taper) for the short-taper structure, and [Suboxone risks](/mat-suboxone/suboxone-risks) for the honest counterpoint.
 - **[Naltrexone](/other-tools/low-dose-naltrexone)** (oral, or [Vivitrol](https://www.vivitrol.com) monthly injection). Works differently from [bupe](/mat-suboxone/suboxone-info) — it's an opioid antagonist, not a partial agonist, so it requires being off opioids for a stretch before starting. See [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone) and [Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone) for the specific [7-OH](/compounds/7-oh)–relevant approaches.
-- **Methadone**. More tightly regulated (typically requires daily clinic visits). Less commonly the first-line choice for 7-OH-specific dependence, but it's a legitimate option for some situations.
+- **Methadone**. More tightly regulated (typically requires daily clinic visits). Less commonly the first-line choice for [7-OH](/compounds/7-oh)-specific dependence, but it's a legitimate option for some situations.
 - **[SR-17018](/other-tools/sr17018-info)** and **[tapering with kratom leaf](/other-tools/tapering-with-leaf)** are two non-MAT pathways some in this community have used. Both have specific use-cases and limitations covered on their pages.
 
 For 7-OH/kratom specifically: many providers haven't encountered these compounds in their training, and the standard playbook (e.g., starting bupe at 16 mg on day one) often produces a longer, harder taper than the community has found necessary. Reading the relevant pages here and bringing the receptor-occupancy data into the conversation tends to go better than just disagreeing with your prescriber.

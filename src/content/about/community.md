@@ -2,7 +2,7 @@
 title: "The Community"
 description: "The Discord and subreddit, how the project started, and the people currently running it."
 category: "about"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 2
 ---
 
@@ -21,7 +21,7 @@ What you'll find:
 - **Live support.** Someone is usually around, day or night.
 - **Topic channels** mirroring the categories on this site. The locked reference channels (like `#suboxone-info` or `#what-is-paws`) are what this site indexes; the unlocked discussion channels (`#sos`, `#daily-check-in`, `#paws-support`) are where conversation happens.
 - **A `#sos` channel** for the hardest moments. Post one word. People will see it.
-- **Compound-specific channels** for [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), pseudo, [MIT-A](/compounds/mit-a-dhm), and kratom leaf, in case your situation needs more specific input than the general channels cover.
+- **Compound-specific channels** for [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm), and kratom leaf, in case your situation needs more specific input than the general channels cover.
 
 Anonymity is normal. You don't need to use your real name. You don't need to introduce yourself to participate. Lurking is allowed and encouraged until you're ready to post.
 
@@ -91,7 +91,7 @@ Not Indivior. Not any other Suboxone manufacturer. Not any pharma company at all
 
 **Nobody endorses us.**
 
-We don't represent any company. We don't have a relationship with any company. When we mention QuickMD or buprenorphine or [generic clonidine that costs literally a penny a pill](/other-tools/helper-meds-info), it's because people in this community have used those things to come off 7-OH and they worked. Does the generic manufacturer of clonidine — a 50-year-old off-patent medication selling for pennies — slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
+We don't represent any company. We don't have a relationship with any company. When we mention QuickMD or buprenorphine or [generic clonidine that costs literally a penny a pill](/other-tools/helper-meds-info), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine — a 50-year-old off-patent medication selling for pennies — slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
 
 **What we actually do, every day:**
 

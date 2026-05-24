@@ -2,7 +2,7 @@
 title: "Ultra-Low-Dose Naltrexone (ULDN)"
 description: "Microgram-range naltrexone taken alongside opioids — used to reduce tolerance, blunt withdrawal, or smooth a Suboxone taper."
 category: "other-tools"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 sort: 3
 ---
 
@@ -104,7 +104,7 @@ roughly 30 to 3,000 times smaller than LDN. At those scales:
 - **Liquid titration is the standard approach** — naltrexone HCl
   dissolved in a known volume, then a measured fraction taken. This
   is the same general technique used for the bottom of a Suboxone
-  taper (see [#suboxone-custom-dose](/mat-suboxone/suboxone-custom-dose)).
+  taper (see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)).
 - **Errors are unforgiving.** A 10× dosing mistake puts you into LDN
   territory and, if you're on opioids, into precipitated-withdrawal
   territory.

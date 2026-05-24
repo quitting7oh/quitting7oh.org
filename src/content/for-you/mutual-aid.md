@@ -2,7 +2,7 @@
 title: "Mutual Aid & Recovery Groups"
 description: "Free peer support groups for the person in recovery — Kratom Anonymous (the most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others. Try more than one."
 category: "for-you"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 5
 ---
 
@@ -25,9 +25,9 @@ These are the most directly applicable for our community. Lead with these.
 
 A peer-led **12-step** program specifically for kratom, kratom extracts, and [7-OH](/compounds/7-oh) addiction. Daily virtual meetings throughout the week (10 AM ET morning meetings, 9 PM ET evening meetings, and weekend afternoons), with meeting format alternating between **Discussion** and **Step** focus depending on the day.
 
-This is the single most directly applicable mutual aid for this site's audience. The meetings know the substances by name; nobody has to explain what 7-OH is.
+This is the single most directly applicable mutual aid for this site's audience. The meetings know the substances by name; nobody has to explain what [7-OH](/compounds/7-oh) is.
 
-The full schedule with Zoom links is at **[#meeting-schedules](/resources/meeting-schedules)**.
+The full schedule with Zoom links is at **[Meeting Schedules](/resources/meeting-schedules)**.
 
 ### Quitting Kratom Support (TIAWO — "There Is A Way Out")
 

@@ -2,7 +2,7 @@
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal: timeline, common symptoms, and what helps once acute withdrawal is over."
 category: "post-acute"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 You made it through acute withdrawal. The worst is behind you. Then somewhere between week 2 and month 2, you might notice things still aren't quite right. Sleep is broken. Mood swings out of nowhere. You can't focus. You feel flat, then anxious, then fine, then exhausted.
 
@@ -15,7 +15,7 @@ PAWS, or post-acute withdrawal syndrome, is the [cluster of psychological, mood,
 
 For people who do get PAWS, severity and duration vary enormously. Factors that influence it:
 - How long you were using and at what dose
-- Which compound ([7-OH](/compounds/7-oh) alone vs. stacked synthetics like [MGM-15](/compounds/mgm15) or pseudo)
+- Which compound ([7-OH](/compounds/7-oh) alone vs. stacked synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo))
 - Genetics, baseline mental health, sleep quality, support system
 - Lifestyle: nutrition, exercise, stress, connection
 
@@ -111,15 +111,15 @@ Symptom-specific:
 - **For anxiety:** L-theanine, magnesium, ashwagandha (300 to 600 mg, avoid if hyperthyroid).
 - **For cognitive fog:** omega-3, B-complex, exercise, sleep.
 
-See [#vitamins-supplements](/other-tools/vitamins-supplements) for the full breakdown including brand recommendations and interactions.
+See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full breakdown including brand recommendations and interactions.
 
 ## Pharmaceutical options
 
-> ⚠️ **All of this requires a prescriber.** None of it is community-available without medical supervision. [#quickmd-info](/resources/quickmd-info) has telehealth options if you don't have a local doctor.
+> ⚠️ **All of this requires a prescriber.** None of it is community-available without medical supervision. [QuickMD](/resources/quickmd-info) has telehealth options if you don't have a local doctor.
 
 **You may not need any of these.** A lot of people get through recovery on lifestyle and supplements alone. These are tools for people whose symptoms are significant enough to need more help.
 
-**Low-dose naltrexone (LDN).** The most underrated tool for PAWS specifically. LDN appears to upregulate your body's own endorphin production, which is exactly what's broken in PAWS. **Cannot be started until you're 7 to 10 days fully opioid-free** (longer if you've been on long-acting synthetics). For most people, LDN is something to consider 1 to 2 weeks after acute withdrawal ends, not during. See [#low-dose-naltrexone](/other-tools/low-dose-naltrexone) for the full picture.
+**Low-dose naltrexone (LDN).** The most underrated tool for PAWS specifically. LDN appears to upregulate your body's own endorphin production, which is exactly what's broken in PAWS. **Cannot be started until you're 7 to 10 days fully opioid-free** (longer if you've been on long-acting synthetics). For most people, LDN is something to consider 1 to 2 weeks after acute withdrawal ends, not during. See [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone) for the full picture.
 
 **SSRIs/SNRIs (antidepressants).** If your PAWS includes significant depression or anxiety that isn't lifting on its own, antidepressants can help. They take 4 to 6 weeks to work. **Talk to a prescriber, especially before mixing with supplements like 5-HTP or L-tryptophan, which can interact dangerously.**
 
@@ -148,13 +148,13 @@ PAWS, when it happens, is uncomfortable but generally manageable. There are situ
 Your prescriber, urgent care, or a therapist who understands addiction recovery are the right resources.
 
 ## You will get through this
-For some people, recovery from 7-OH is genuinely smooth. For others, PAWS is a real and uncomfortable phase. **Both are normal. Neither is a sign you did something wrong.**
+For some people, recovery from [7-OH](/compounds/7-oh) is genuinely smooth. For others, PAWS is a real and uncomfortable phase. **Both are normal. Neither is a sign you did something wrong.**
 
 If you're in the smooth-recovery group: enjoy it, keep your routines, don't get complacent.
 
 If you're in the PAWS group: your brain is healing. Receptors are recovering. Endorphin production is rebuilding. The work you do here, the supplements you take, the routines you build, the connections you maintain — all of it adds up.
 
-Use the channels: **#paws-support** for the day-to-day, **#sos** for the hardest moments, [#vitamins-supplements](/other-tools/vitamins-supplements) for the practical stack, [#quickmd-info](/resources/quickmd-info) for medical support.
+Use the channels: **#paws-support** for the day-to-day, **#sos** for the hardest moments, [Vitamins & Supplements](/other-tools/vitamins-supplements) for the practical stack, [QuickMD](/resources/quickmd-info) for medical support.
 
 You're not broken. You're rebuilding.
 
@@ -176,13 +176,13 @@ This trips up a lot of people. While on bupe, you may experience:
 - Fatigue
 - Sweating, especially at night
 
-[These are documented long-term Suboxone side effects](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3706486/), not necessarily PAWS. The distinction matters because **the fix is different.** If it's PAWS, time and lifestyle interventions help. If it's bupe-related, lowering the dose or completing the taper is what helps. See [#suboxone-risks](/mat-suboxone/suboxone-risks) for the deeper dive on long-term bupe effects.
+[These are documented long-term Suboxone side effects](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3706486/), not necessarily PAWS. The distinction matters because **the fix is different.** If it's PAWS, time and lifestyle interventions help. If it's bupe-related, lowering the dose or completing the taper is what helps. See [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks) for the deeper dive on long-term bupe effects.
 
 If you've been on bupe for months and you're feeling consistently flat, blunted, or "fine but not really" — that's likely the medication, not unhealing brain chemistry. Talk to your prescriber about whether your dose is higher than it needs to be.
 
 ### What bupe doesn't address
 Suboxone covers the opioid receptor side of things. It does **not** address:
-- The SNRI piece ([rhynchophylline](/compounds/cats-claw) and other minor alkaloids you were exposed to). The wired anxiety, brain zaps, and broken sleep that don't lift on bupe are usually this. See [#suboxone-isnt-working](/mat-suboxone/suboxone-isnt-working).
+- The SNRI piece ([rhynchophylline](/compounds/cats-claw) and other minor alkaloids you were exposed to). The wired anxiety, brain zaps, and broken sleep that don't lift on bupe are usually this. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
 - The dopamine/reward system rebuild
 - The behavioral and habit patterns
 - Sleep architecture changes
@@ -190,7 +190,7 @@ Suboxone covers the opioid receptor side of things. It does **not** address:
 Adjuncts (clonidine, gabapentin, hydroxyzine, trazodone, magnesium, L-theanine) can help these gaps while you're on bupe. Most of the lifestyle interventions in this post still apply: exercise, sleep hygiene, nutrition, sunlight, connection.
 
 ### LDN and bupe don't mix
-**Low-dose naltrexone cannot be taken while on bupe.** LDN is a partial opioid antagonist; bupe is a partial agonist. They fight at the receptor and you'll get precipitated withdrawal. LDN is a tool for *after* you've fully tapered off bupe and waited the full washout period (typically 7 to 14 days). See [#low-dose-naltrexone](/other-tools/low-dose-naltrexone).
+**Low-dose naltrexone cannot be taken while on bupe.** LDN is a partial opioid antagonist; bupe is a partial agonist. They fight at the receptor and you'll get precipitated withdrawal. LDN is a tool for *after* you've fully tapered off bupe and waited the full washout period (typically 7 to 14 days). See [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone).
 
 ### The honest framing
 For most people, bupe is a powerful tool that gets them off 7-OH safely with minimal acute suffering. The tradeoff is that **the brain healing happens after the bupe taper, not during it.** Understanding this prevents the common pattern of "I'm on bupe and I still feel flat — what's wrong?" The answer is often: nothing's wrong, that's bupe, and the real recovery curve starts when you finish the taper.

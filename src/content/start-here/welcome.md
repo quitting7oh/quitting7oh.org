@@ -2,7 +2,7 @@
 title: "Welcome"
 description: "What this site is, who it's for, where to start, and how to find the community."
 category: "start-here"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 1
 ---
 
@@ -17,7 +17,7 @@ what you don't, and come back to the rest when you're ready.
 ## What this site is
 
 This site is a calm, organized reference for getting off **[7-OH](/compounds/7-oh) and
-related kratom synthetics** — including pseudo, [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
+related kratom synthetics** — including [pseudo](/compounds/pseudo), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
 stacked products built around them — and the medical and self-care tools
 people in our community have used to do it.
 
@@ -52,26 +52,26 @@ matches yours:
 
 ### 🆘 You're in active withdrawal right now
 
-Go to **[#what-to-expect](/start-here/what-to-expect)** for an overview
-of the timeline, then **[#helper-meds-info](/other-tools/helper-meds-info)**
+Go to **[What to Expect](/start-here/what-to-expect)** for an overview
+of the timeline, then **[Helper Medications](/other-tools/helper-meds-info)**
 for the practical "what helps" guide. If you have a few minutes for the
 [Discord](https://discord.gg/quitting7oh), the live `#sos` channel there
 is staffed by people who have been where you are.
 
 ### 💊 You're thinking about Suboxone (MAT)
 
-Start with **[#suboxone-info](/mat-suboxone/suboxone-info)** for the
+Start with **[Suboxone](/mat-suboxone/suboxone-info)** for the
 overview. Most people in this community use a **short, structured taper**
 rather than indefinite maintenance, and the induction protocols
-here reflect that. See **[#suboxone-cows](/mat-suboxone/suboxone-cows)**
-for timing your first dose and **[#quickmd-info](/resources/quickmd-info)**
+here reflect that. See **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)**
+for timing your first dose and **[QuickMD](/resources/quickmd-info)**
 if you need a telehealth prescriber.
 
 ### 🌱 You're already through the worst, but something still isn't right
 
 That's almost always PAWS — **post-acute withdrawal syndrome**. Read
-**[#what-is-paws](/post-acute/what-is-paws)** for the shape of it and
-**[#sleep-recovery](/post-acute/sleep-recovery)** if sleep is the part
+**[What is PAWS](/post-acute/what-is-paws)** for the shape of it and
+**[Sleep Recovery](/post-acute/sleep-recovery)** if sleep is the part
 that hasn't come back.
 
 ### 🧪 You want to understand what you've been on
@@ -96,15 +96,15 @@ done our best to flag what's established vs. what's community-observed.
 We welcome corrections via
 [GitHub](https://github.com/quitting7oh/quitting7oh.org).
 
-## How to use this site
+## Finding your way around
 
-- The **sidebar** lists every page by category. On mobile, tap the menu
-  icon to open it.
-- The **search bar** in the header is full-text and indexes every page.
-  Try drug names, symptoms, or medication names.
-- **External links** open in a new tab and are marked with a small icon.
-- **Internal cross-references** between pages are linked automatically
-  — you'll see them as `#channel-name`-style links throughout the site.
+- **Sidebar** (menu icon on mobile) — every page, grouped by topic. The
+  Start Here section is what you're reading now; everything else is
+  organized so you can dip in where you need to.
+- **Search** in the header — full-text across the whole site. Drug
+  names, symptoms, and medication names all work.
+- **Theme** picker in the top-right — light, dark, or system, plus a
+  handful of color variants. Pick whatever's easiest on your eyes.
 
 ## Find the community
 
@@ -116,7 +116,7 @@ For real-time help, live conversation, and the people behind the writing:
   searchable, slower, good for stories and questions you want to keep
   around
 
-See **[#community](/about/community)** for more on which to use when.
+See **[Community](/about/community)** for more on which to use when.
 
 ## One more thing
 

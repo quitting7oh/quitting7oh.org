@@ -2,18 +2,18 @@
 title: "Tapering with Leaf Kratom"
 description: "Using kratom leaf to bridge off concentrated 7-OH and synthetics — when it works, when it doesn't."
 category: "other-tools"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **Community information, not medical advice.** This is a community-developed approach for users coming off lower-dose 7-OH dependence. Leaf kratom is not FDA-approved for treating opioid dependence. **For discussion, see #kratom-leaf.**
 
 For some users in this community, **plain kratom leaf powder can be used as a taper tool** to come off [7-OH](/compounds/7-oh) and other concentrated kratom-derived products. The reasoning is straightforward: [7-OH](/compounds/7-oh) is one of the alkaloids naturally present in kratom leaf, just at far lower concentrations than in concentrated products. Tapering down to leaf is essentially reducing your alkaloid exposure to a fraction of what concentrated products deliver, and then tapering off the leaf itself.
 
-**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [#suboxone-info](/mat-suboxone/suboxone-info)) or SR-17018 to bridge through. **The two paths covered here:**
+**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [Suboxone](/mat-suboxone/suboxone-info)) or SR-17018 to bridge through. **The two paths covered here:**
 
-- **Under ~100 mg 7-OH equivalent per day:** leaf alone may be enough
+- **Under ~100 mg [7-OH](/compounds/7-oh) equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
 
-**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure pseudo products, leaf tapering is unlikely to be sufficient.** See the appropriate compound channels for the right approach.
+**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure [pseudo](/compounds/pseudo) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound channels for the right approach.
 
 ## The pharmacology of why leaf works
 Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is the dominant alkaloid (up to 66% of total alkaloid content in Thai varieties), with 7-OH as a minor constituent (up to 2% of total alkaloid content)](https://en.wikipedia.org/wiki/Mitragynine). [Total alkaloid concentration in dried leaves ranges from 0.5 to 1.5%](https://en.wikipedia.org/wiki/Mitragynine).
@@ -59,12 +59,12 @@ For users at lower daily 7-OH doses, **leaf alone is often enough to manage the 
 
 For users at moderate-to-higher 7-OH doses, **leaf alone often isn't enough to fully cover the transition**, but **leaf + appropriate adjuncts can be**. The leaf does the opioid receptor coverage; the helper meds handle the SNRI side, sleep, and physical symptoms that leaf doesn't address.
 
-This is the same logic as Suboxone + helper meds (see [#suboxone-isnt-working](/mat-suboxone/suboxone-isnt-working) for the SNRI explanation), just with leaf doing the opioid coverage instead of bupe.
+This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for the SNRI explanation), just with leaf doing the opioid coverage instead of bupe.
 
 **Helper meds that pair well with leaf tapering:**
 
 - **Clonidine** — alpha-2 agonist, takes the edge off noradrenergic symptoms (sweating, anxiety, restlessness, fast heart rate). The single most useful adjunct for this approach.
-- **Gabapentin** — anxiety, restless legs, sleep, brain zaps. Genuinely effective. See [#quickmd-info](/resources/quickmd-info) for telehealth options.
+- **Gabapentin** — anxiety, restless legs, sleep, brain zaps. Genuinely effective. See [QuickMD](/resources/quickmd-info) for telehealth options.
 - **Trazodone** — sleep specifically. Non-addictive.
 - **Baclofen** — muscle relaxant, helps with body tension and aches.
 - **Magnesium glycinate** (OTC) — restless legs, anxiety, sleep cluster.
@@ -72,7 +72,7 @@ This is the same logic as Suboxone + helper meds (see [#suboxone-isnt-working](/
 
 **Avoid hydroxyzine for users with significant RLS symptoms.** [First-generation antihistamines have been associated with worsening restless legs syndrome](https://pubmed.ncbi.nlm.nih.gov/15165526/), and RLS is a common symptom in this population.
 
-See [#vitamins-supplements](/other-tools/vitamins-supplements) for the full supplement protocol.
+See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full supplement protocol.
 
 **General approach for path 2:**
 - Same leaf-replacement and stabilization steps as Path 1
@@ -112,4 +112,4 @@ What to look for:
 - [Chemical composition of kratom (Nature)](https://www.nature.com/articles/s41598-020-76119-w)
 - [Red Kratom Guide](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom)
 - [Mitragyna alkaloid breakdown](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/)
-- See also: [#suboxone-info](/mat-suboxone/suboxone-info), [#vitamins-supplements](/other-tools/vitamins-supplements), [#quickmd-info](/resources/quickmd-info)
+- See also: [Suboxone](/mat-suboxone/suboxone-info), [Vitamins & Supplements](/other-tools/vitamins-supplements), [QuickMD](/resources/quickmd-info)

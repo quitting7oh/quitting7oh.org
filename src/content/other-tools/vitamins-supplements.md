@@ -13,7 +13,7 @@ last_updated: "2026-05-24"
 > especially if you have liver, kidney, heart, or mental health
 > conditions, or if you're pregnant. **None of this replaces medical care.**
 
-The compounds we're recovering from ([7-OH](/compounds/7-oh), pseudo, [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and
+The compounds we're recovering from ([7-OH](/compounds/7-oh), [pseudo](/compounds/pseudo), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and
 similar synthetics) hit the body harder than leaf kratom, and the recovery
 process tends to involve more nutrient depletion, more sleep disruption,
 and a longer PAWS tail. Supplements aren't a substitute for time, sleep,
@@ -68,7 +68,7 @@ brands, and the *why* behind each one.
   cycle.
 - **Improvising with kratom leaf** to take the edge off acute
   withdrawal from synthetics. *Plain leaf can be a deliberate taper
-  tool* (see [#tapering-with-leaf](/other-tools/tapering-with-leaf)),
+  tool* (see [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)),
   but that's a planned protocol started before acute withdrawal sets in
   — it isn't a 3 a.m. rescue medication.
 - **Phenibut** — itself addictive with brutal withdrawal.
@@ -211,7 +211,7 @@ enough.
   the cycle.
 - **Improvising with kratom leaf** to take the edge off acute
   withdrawal from synthetics. *Plain leaf can be a deliberate taper
-  tool* (see [#tapering-with-leaf](/other-tools/tapering-with-leaf)),
+  tool* (see [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)),
   but that's a planned protocol — not a rescue medication.
 - **Phenibut.** Itself addictive with brutal withdrawal. Avoid.
 - **Kava.** Stresses the liver, especially with other supplements or

@@ -2,7 +2,7 @@
 title: "Suboxone Rapid Taper"
 description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
 category: "mat-suboxone"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **This post describes rapid taper schedules used by this community for 7-OH dependence. These schedules deliberately go faster than standard medical guidance.** They reflect community experience with hundreds of successful rapid tapers from 7-OH, where short bupe courses (5 to 10 days) at low-to-moderate doses have not produced meaningful bupe dependence in our population. **This is not how a prescriber will typically run a taper, and most prescribers won't sign off on these timelines.** If you're considering this, you're choosing a community-developed approach over standard clinical practice. Make sure you understand what you're choosing.
 
@@ -11,12 +11,12 @@ last_updated: "2026-05-21"
 ## Why this works for 7-OH (and not for the heavier synthetics)
 [7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken just long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
 
-This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [#suboxone-risks](/mat-suboxone/suboxone-risks)). Same medication, different use case, different outcome.
+This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks)). Same medication, different use case, different outcome.
 
 ## The schedules
 All schedules assume:
-- Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [#suboxone-cows](/mat-suboxone/suboxone-cows) & [#suboxone-info](/mat-suboxone/suboxone-info))
-- You're using sublingual tabs or films that can be split for fractional dosing, see [#suboxone-custom-dose](/mat-suboxone/suboxone-custom-dose) 
+- Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) & [Suboxone](/mat-suboxone/suboxone-info))
+- You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose) 
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
 
 ## Starting at 2 mg
@@ -43,7 +43,7 @@ All schedules assume:
 
 **Pick the longer end of the range if:**
 - This is your first attempt at coming off [7-OH](/compounds/7-oh)
-- You've been on 7-OH for more than a few months
+- You've been on [7-OH](/compounds/7-oh) for more than a few months
 - You don't have a stable home environment, support person, or time off work
 - You have a history of relapse during withdrawal
 - You have any cardiovascular, mental health, or chronic medical conditions
@@ -66,9 +66,9 @@ All schedules assume:
 ## Harm reduction layer (use ALL of these, not optional)
 
 - **Hydration and electrolytes.** LMNT, Liquid IV, coconut water, or salt + lemon in water. Sweating and GI symptoms drain you fast.
-- **Helper meds, ideally prescribed.** Clonidine, hydroxyzine, trazodone, gabapentin, baclofen. See [#quickmd-info](/resources/quickmd-info) for getting these prescribed via telehealth.
+- **Helper meds, ideally prescribed.** Clonidine, hydroxyzine, trazodone, gabapentin, baclofen. See [QuickMD](/resources/quickmd-info) for getting these prescribed via telehealth.
 - **OTC support.** Loperamide for diarrhea (labeled doses only, do not exceed), ibuprofen for body aches, ginger for nausea.
-- **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [#vitamins-supplements](/other-tools/vitamins-supplements).
+- **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
 - **A check-in person.** Someone who knows what you're doing and will check on you daily, especially days 3 to 7 after the last dose.
 - **Time off.** Don't try this during a high-stress work week if you can avoid it.
 

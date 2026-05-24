@@ -2,7 +2,7 @@
 title: "What to Expect: Addiction, Withdrawal & the Long Road of Recovery"
 description: "What dependence on 7-OH and kratom synthetics actually looks like from the outside, what withdrawal does to the brain and body, and the long PAWS tail almost nobody warns families about."
 category: "for-loved-ones"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 2
 ---
 
@@ -39,7 +39,7 @@ Withdrawal from [7-OH](/compounds/7-oh) and kratom synthetics is opioid-like. Th
 - Goosebumps and chills
 - Intense, overwhelming cravings
 
-**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out — withdrawal may take longer to start and longer to peak. For more on the day-by-day shape, see [#what-to-expect](/start-here/what-to-expect). If they're in acute crisis right now, [SOS Resources](/start-here/sos-resources) is the more directly useful page.
+**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out — withdrawal may take longer to start and longer to peak. For more on the day-by-day shape, see [What to Expect](/start-here/what-to-expect). If they're in acute crisis right now, [SOS Resources](/start-here/sos-resources) is the more directly useful page.
 
 This is genuinely miserable. It's not "the flu." It's why people keep using even when they desperately want to stop.
 
@@ -59,7 +59,7 @@ This is genuinely miserable. It's not "the flu." It's why people keep using even
 
 **Here's the part to brace for: your loved one may seem emotionally worse for a while *after* getting clean, before they get better.** This is normal. It's not failure. It's not relapse-imminent. It's the brain healing on its own slow timeline.
 
-The community's full page on this — [#what-is-paws](/post-acute/what-is-paws) — has more detail and is worth reading. Knowing PAWS is real and has a shape makes it easier to ride out without panic.
+The community's full page on this — [What is PAWS](/post-acute/what-is-paws) — has more detail and is worth reading. Knowing PAWS is real and has a shape makes it easier to ride out without panic.
 
 ## Relapse is common, and is information, not the end
 

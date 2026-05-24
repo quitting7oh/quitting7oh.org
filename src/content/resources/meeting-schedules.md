@@ -2,7 +2,7 @@
 title: "Meeting Schedules"
 description: "Full meeting schedule for Kratom Anonymous (KA) — the mutual aid fellowship most directly applicable to this community — with day, time, format, and Zoom links."
 category: "resources"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 ---
 
 This page is the full schedule for **Kratom Anonymous (KA)**, the 12-step mutual aid fellowship focused specifically on kratom, kratom extracts, and [7-OH](/compounds/7-oh) addiction. Source: [kratom-anonymous.org](https://www.kratom-anonymous.org).
@@ -53,7 +53,7 @@ KA runs **multiple daily virtual meetings** across the week. The same Zoom room 
 KA follows the standard 12-step meeting format. The general shape:
 
 1. **Opening readings** — the preamble, the Twelve Steps, sometimes a daily reading or topic.
-2. **Introductions** — first name only is the convention; "Hi, I'm [name], and I'm a [whatever you identify as — addict, person in recovery from 7-OH, etc.]."
+2. **Introductions** — first name only is the convention; "Hi, I'm [name], and I'm a [whatever you identify as — addict, person in recovery from [7-OH](/compounds/7-oh), etc.]."
 3. **Discussion or step study.** Discussion meetings have a topic (often suggested by the chair or by a reading); Step meetings work through one of the 12 steps in depth.
 4. **Sharing.** Members take turns speaking briefly about their experience related to the topic. Crosstalk (commenting on what someone else said) is generally not part of the format.
 5. **Closing.** Usually a closing reading and the Serenity Prayer.

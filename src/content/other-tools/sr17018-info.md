@@ -2,7 +2,7 @@
 title: "SR-17018"
 description: "SR-17018 as an informal taper tool — what it is, the community protocol, real risks, what's unknown."
 category: "other-tools"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **Community information, not medical advice.** SR-17018 is a research chemical not approved for human use anywhere in the world. The information below reflects community experience, published research on rodent models, and harm reduction principles. **For discussion, see #sr17018 **
 
@@ -29,7 +29,7 @@ In rodent studies, this has translated to real, documented advantages: [SR-17018
 The reasoning: SR-17018's tolerance-reversing and withdrawal-suppressing properties [demonstrated in rodent studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) work through *substitution* at the mu receptor, not as a withdrawal treatment after the fact. You want SR-17018 occupying receptors and shifting the receptor adaptation pattern *while* you taper or discontinue the original compound, not afterward.
 
 **Typical preload approach as reported in community discussion:**
-- Continue your normal 7-OH dose
+- Continue your normal [7-OH](/compounds/7-oh) dose
 - Add SR-17018 at a low starting dose, dosed every 6 to 8 hours
 - Stabilize on both for 2 to 3 days, ensuring SR is tolerated
 - Begin tapering or stopping the 7-OH while continuing SR-17018
@@ -98,11 +98,11 @@ The protocol above is what this community commonly uses. For broader context: **
 ## Does it work for MGM-15 and the other synthetics?
 The short answer: **probably yes for [MGM-15](/compounds/mgm15), but the data is community-reasoned rather than research-confirmed.**
 
-The published [Bohn lab research demonstrated SR-17018 substituting for and reversing tolerance to morphine](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) and oxycodone in rodent models. There are no published studies specifically pairing SR-17018 with [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), pseudo, or 7-OH.
+The published [Bohn lab research demonstrated SR-17018 substituting for and reversing tolerance to morphine](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) and oxycodone in rodent models. There are no published studies specifically pairing SR-17018 with [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo), or 7-OH.
 
 That said, the pharmacological logic is consistent. [MGM-15](/compounds/mgm15) is a [semi-synthetic mu/delta agonist derived from 7-OH](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/), and 7-OH itself is a potent mu-opioid agonist. SR-17018's substitution mechanism operates at the mu receptor, which all of these compounds activate.
 
-**The MGM-15 caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help.
+**The [MGM-15](/compounds/mgm15) caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help.
 
 For pseudo or [MIT-A](/compounds/mit-a-dhm), the same logic applies. **Be honest about your full compound history when planning a transition.** Stacked synthetics may need a more careful, possibly longer preload window than pure 7-OH.
 
@@ -163,4 +163,4 @@ If you're going to use it, **plan the post-SR phase as carefully as the SR phase
 - [Federal Analogue Act — Wikipedia](https://en.wikipedia.org/wiki/Federal_Analogue_Act)
 - [Concrete Confessional: SR-17018 Promise and Warning](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning)
 - [From kratom to 7-hydroxymitragynine (PMC, MGM-15 context)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/)
-- See also: [#suboxone-info](/mat-suboxone/suboxone-info), [#suboxone-rapid-taper](/mat-suboxone/suboxone-rapid-taper), [#vitamins-supplements](/other-tools/vitamins-supplements)
+- See also: [Suboxone](/mat-suboxone/suboxone-info), [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper), [Vitamins & Supplements](/other-tools/vitamins-supplements)

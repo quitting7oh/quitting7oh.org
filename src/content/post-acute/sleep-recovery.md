@@ -2,7 +2,7 @@
 title: "💤 Sleep Recovery: The Long Road Back to Real Sleep"
 description: "Sleep recovery after opioid use — what's normal, what helps, and how long it actually takes."
 category: "post-acute"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 If you're new here and trying to sleep, **welcome.** Sleep disruption is the most universal complaint in opioid recovery, and almost everyone in this community has been where you are. The good news: sleep does come back. The harder news: it takes longer than you want, and it's not linear.
 
@@ -31,9 +31,9 @@ The full sleep recovery curve looks roughly like this:
 - Get sunlight within an hour of waking (resets circadian rhythm)
 - If you can't sleep, don't lie there spiraling. Get up, do something boring in dim light, try again
 
-**Supplement support** (see [#vitamins-supplements](/other-tools/vitamins-supplements)): magnesium glycinate/threonate 200-400 mg at bedtime, glycine 3 g before bed, L-theanine 100-200 mg, melatonin at LOW doses (0.3-1 mg, not the 5-10 mg most stores sell), apigenin.
+**Supplement support** (see [Vitamins & Supplements](/other-tools/vitamins-supplements)): magnesium glycinate/threonate 200-400 mg at bedtime, glycine 3 g before bed, L-theanine 100-200 mg, melatonin at LOW doses (0.3-1 mg, not the 5-10 mg most stores sell), apigenin.
 
-**Medications** (see [#helper-meds-info](/other-tools/helper-meds-info)): trazodone is the most prescribed sleep med in recovery contexts. Mirtazapine at low doses covers sleep + anxiety + nausea in one. Doxepin at 3-6 mg is FDA-approved for insomnia. Hydroxyzine works for some but can worsen restless legs.
+**Medications** (see [Helper Medications](/other-tools/helper-meds-info)): trazodone is the most prescribed sleep med in recovery contexts. Mirtazapine at low doses covers sleep + anxiety + nausea in one. Doxepin at 3-6 mg is FDA-approved for insomnia. Hydroxyzine works for some but can worsen restless legs.
 
 ## Common pitfalls
 

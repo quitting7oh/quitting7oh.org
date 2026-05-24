@@ -2,7 +2,7 @@
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
 description: "Mitragynine pseudoindoxyl (MP) — receptor affinity, why bupe induction is harder, what to watch for."
 category: "compounds"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 ## General risks
 - **Despite the "safer opioid" academic framing, MP is still a potent MOR agonist** with full opioid-class dependence, withdrawal, and overdose risk in real-world unregulated use.
@@ -17,7 +17,7 @@ MP is named in state-level scheduling actions targeting mitragynine-derived semi
 # 7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)
 
 ## What it is
-MP is a skeletal rearrangement product of [7-OH](/compounds/7-oh). The indolenine core of 7-OH gets restructured into a spiro-pseudoindoxyl scaffold, making it chemically and pharmacologically distinct from its parent compound. Also called VM1502 or "Compound 3" in research literature, and sometimes "7-pseudo," "pseudoindoxyl," or "mit-pseudo" in community discussion.
+MP is a skeletal rearrangement product of [7-OH](/compounds/7-oh). The indolenine core of [7-OH](/compounds/7-oh) gets restructured into a spiro-pseudoindoxyl scaffold, making it chemically and pharmacologically distinct from its parent compound. Also called VM1502 or "Compound 3" in research literature, and sometimes "7-pseudo," "pseudoindoxyl," or "mit-pseudo" in community discussion.
 
 ## Where it came from
 MP was originally identified as a research target because of its unusual receptor profile — it's been studied as a template for developing opioids with reduced side effects. It started showing up in U.S. consumer products in 2024–2025, sold as its own thing or as part of "enhanced" products.

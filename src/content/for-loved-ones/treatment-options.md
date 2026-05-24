@@ -2,7 +2,7 @@
 title: "Treatment & Rehab: Options and How to Pay"
 description: "Levels of care explained from the family's perspective, how insurance parity works under MHPAEA, free and low-cost paths, and how to spot predatory treatment marketing."
 category: "for-loved-ones"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 7
 ---
 
@@ -40,7 +40,7 @@ Weekly or biweekly individual therapy, often with a recovery group component. Wh
 
 MAT is not a separate "level" — it's a medication-based approach that can be combined with any of the above. For [7-OH](/compounds/7-oh) and opioid dependence, the medications most relevant are **[buprenorphine](/mat-suboxone/suboxone-info)** ([Suboxone](/mat-suboxone/suboxone-info), [Subutex](/mat-suboxone/suboxone-info), [Sublocade](/mat-suboxone/sublocade-brixadi-info)), **[naltrexone](/other-tools/low-dose-naltrexone)** (oral, or as [Vivitrol](https://www.vivitrol.com) monthly injection), and **methadone** (more tightly regulated, typically clinic-based).
 
-For [7-OH](/compounds/7-oh) and kratom synthetics specifically, this site has a dedicated section: see [MAT / Suboxone](/mat-suboxone) for the community's experience with [buprenorphine](/mat-suboxone/suboxone-info) tapers (including [COWS/SOWS timing](/mat-suboxone/suboxone-cows), [custom dosing](/mat-suboxone/suboxone-custom-dose), [what to do when bupe isn't fully covering withdrawal](/mat-suboxone/suboxone-isnt-working), and the [Suboxone rapid taper protocol](/mat-suboxone/suboxone-rapid-taper)), [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone), [Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone), [SR-17018](/other-tools/sr17018-info), and [tapering with kratom leaf](/other-tools/tapering-with-leaf). These pages are technical but worth reading if your loved one is considering MAT — many clinicians have not encountered 7-OH dependence specifically and the standard protocols sometimes need adjustment.
+For [7-OH](/compounds/7-oh) and kratom synthetics specifically, this site has a dedicated section: see [MAT / Suboxone](/mat-suboxone) for the community's experience with [buprenorphine](/mat-suboxone/suboxone-info) tapers (including [COWS/SOWS timing](/mat-suboxone/suboxone-cows), [custom dosing](/mat-suboxone/suboxone-custom-dose), [what to do when bupe isn't fully covering withdrawal](/mat-suboxone/suboxone-isnt-working), and the [Suboxone rapid taper protocol](/mat-suboxone/suboxone-rapid-taper)), [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone), [Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone), [SR-17018](/other-tools/sr17018-info), and [tapering with kratom leaf](/other-tools/tapering-with-leaf). These pages are technical but worth reading if your loved one is considering MAT — many clinicians have not encountered [7-OH](/compounds/7-oh) dependence specifically and the standard protocols sometimes need adjustment.
 
 > 💼 **If your loved one works in a regulated profession** — CDL driver, pilot, ATC, law enforcement, armed security, healthcare licensure, federal employment with clearance — the choice of MAT medication can have professional-licensure implications separate from anything their employer does. See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before they choose a medication or disclose to a regulator. The medication choice matters here: naltrexone (Vivitrol) is not a controlled substance and sidesteps many of the issues that buprenorphine and methadone can trigger.
 

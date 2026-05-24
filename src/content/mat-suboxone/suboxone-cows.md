@@ -2,7 +2,7 @@
 title: "COWS & SOWS Guide"
 description: "Timing your first Suboxone dose with the COWS and SOWS scales — and why the clock alone can mislead you."
 category: "mat-suboxone"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **Community information, not medical advice.** Use this alongside guidance from a qualified provider.
 
@@ -170,7 +170,7 @@ Half-life tells you roughly **when** your COWS is likely to climb to induction-r
 - **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Most users hit COWS ≥ 12 in the 12 to 18 hour range.
 - **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Often takes 36 to 72 hours to reach induction-ready COWS.
 - **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
-- **Pseudo (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
+- **[Pseudo](/compounds/pseudo) (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
 If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. The clock isn't the gate, but the half-life is why some people wait longer than others.
 

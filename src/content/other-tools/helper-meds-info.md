@@ -4,7 +4,7 @@ description: "Prescription adjuncts that take the edge off — clonidine, gabape
 category: "other-tools"
 last_updated: "2026-05-24"
 ---
-> ⚠️ **This is a reference, not a prescription.** All of these require a doctor. [#quickmd-info](/resources/quickmd-info) has telehealth options. **#helper-meds** is the chat channel for discussing your experiences with these meds.
+> ⚠️ **This is a reference, not a prescription.** All of these require a doctor. [QuickMD](/resources/quickmd-info) has telehealth options. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
 The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* the noradrenergic, serotonergic, GABA, and other systems via [the SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/). Suboxone covers the opioid side. Helper meds cover everything else.
 
@@ -73,7 +73,7 @@ The good news: the two most effective tools are cheap and over the counter.
 
 **Pregabalin (Lyrica)** is similar but more potent, faster-acting, and has a higher abuse profile. Less commonly prescribed in MAT contexts but works for the same symptoms.
 
-Provider attitudes vary. Some prescribers hand it out readily; others want you more established before adding it. [#quickmd-info](/resources/quickmd-info) has notes on advocating for this.
+Provider attitudes vary. Some prescribers hand it out readily; others want you more established before adding it. [QuickMD](/resources/quickmd-info) has notes on advocating for this.
 
 ## Baclofen and muscle relaxants
 
@@ -88,7 +88,7 @@ Provider attitudes vary. Some prescribers hand it out readily; others want you m
 - **Tizanidine (Zanaflex)** — alpha-2 agonist (similar mechanism to clonidine), helps muscle spasms and anxiety. Useful when clonidine isn't enough. Sedating.
 - **Cyclobenzaprine (Flexeril)** — short-term muscle relaxant, helpful for the body-aches part of withdrawal. Often only prescribed for 1-2 weeks. Sedating.
 - **Methocarbamol (Robaxin)** — older muscle relaxant, less sedating than the others, helpful for muscle pain without much "drugged" feeling.
-- **Magnesium glycinate** (OTC supplement, see [#vitamins-supplements](/other-tools/vitamins-supplements)) is a real adjunct here too. Some people don't need a prescription muscle relaxer if magnesium is on board.
+- **Magnesium glycinate** (OTC supplement, see [Vitamins & Supplements](/other-tools/vitamins-supplements)) is a real adjunct here too. Some people don't need a prescription muscle relaxer if magnesium is on board.
 
 ## Sleep medications
 
@@ -154,7 +154,7 @@ Benzos (Xanax, Klonopin, Valium, Ativan, Librium) are highly effective for the a
 
 ## How to get these
 
-Most are non-controlled and easy to prescribe. [#quickmd-info](/resources/quickmd-info) covers telehealth options. Standard primary care doctors will prescribe most of these readily; bring research if needed.
+Most are non-controlled and easy to prescribe. [QuickMD](/resources/quickmd-info) covers telehealth options. Standard primary care doctors will prescribe most of these readily; bring research if needed.
 
 For MAT contexts (Suboxone), your bupe prescriber is usually the right person to add helper meds to your protocol. They already know your situation.
 
@@ -170,4 +170,4 @@ Common starter combos:
 - **Adding for muscle pain:** plus baclofen or tizanidine
 - **Adding for post-acute mood:** Wellbutrin (after the acute phase ends)
 
-See [#vitamins-supplements](/other-tools/vitamins-supplements) for the supplement side, [#what-is-paws](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
+See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.

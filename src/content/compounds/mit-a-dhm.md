@@ -2,7 +2,7 @@
 title: "MIT-A / DHM (Dihydromitragynine)"
 description: "Dihydromitragynine in the wild — receptor profile, half-life, and what makes it harder to quit than 7-OH."
 category: "compounds"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 ## Risks
 - Treat it as opioid-class — dependence, tolerance, withdrawal, and respiratory depression risk apply.
@@ -17,7 +17,7 @@ Because the published literature is sparse, most of what's known about MIT-A/DHM
 # MIT-A / DHM (Dihydromitragynine)
 
 ## What it is
-MIT-A, sold and discussed as **DHM (dihydromitragynine)**, is a semi-synthetic compound — the 1,2-dihydro reduction product of mitragynine itself, *not* of [7-OH](/compounds/7-oh). It is **not** the same as [MGM-15](/compounds/mgm15) (which is the dihydro form of 7-OH and is also sometimes called "DHM" in academic papers — naming in this space is genuinely a mess, so when in doubt, ask).
+MIT-A, sold and discussed as **DHM (dihydromitragynine)**, is a semi-synthetic compound — the 1,2-dihydro reduction product of mitragynine itself, *not* of [7-OH](/compounds/7-oh). It is **not** the same as [MGM-15](/compounds/mgm15) (which is the dihydro form of [7-OH](/compounds/7-oh) and is also sometimes called "DHM" in academic papers — naming in this space is genuinely a mess, so when in doubt, ask).
 
 ## Where it came from
 Appeared in the U.S. market in 2025 as part of the wave of mitragynine-derived semi-synthetics being sold in tablet, gummy, and chewable form alongside 7-OH products, often through the same retailers and smoke shops.
@@ -28,7 +28,7 @@ Reducing the 1,2 double bond of mitragynine changes its receptor profile and pha
 In terms of where it sits on the spectrum of compounds people in this community are dealing with: leaf kratom < concentrated mitragynine extracts < 7-OH < MIT-A/DHM < [pseudoindoxyl](/compounds/pseudo) < [MGM-15](/compounds/mgm15). The semi-synthetics and isolates all behave more like classical opioids than they do like the leaf material.
 
 ## Half-life — same problem as MGM-15
-Like MGM-15, MIT-A is a 1,2-dihydro reduction product, and that structural change extends its duration of action well beyond 7-OH. Community reports and the limited available data put it in the **long-acting** category — significantly longer than 7-OH's few-hour duration. Practical consequences:
+Like [MGM-15](/compounds/mgm15), MIT-A is a 1,2-dihydro reduction product, and that structural change extends its duration of action well beyond 7-OH. Community reports and the limited available data put it in the **long-acting** category — significantly longer than 7-OH's few-hour duration. Practical consequences:
 
 - Effects and receptor occupancy persist far longer than people expect coming from 7-OH.
 - Withdrawal onset is **delayed** — often 24+ hours after last dose rather than the same-day rebound 7-OH users are used to.

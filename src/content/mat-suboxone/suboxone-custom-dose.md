@@ -2,13 +2,13 @@
 title: "Custom Suboxone Dosing"
 description: "Liquid titration for doses below 0.5 mg — when pill cuts can't get you low enough to finish a taper."
 category: "mat-suboxone"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **Community information, not medical advice.** Cutting films goes outside the manufacturer's labeling and your prescriber may or may not approve. The pharmacology supports it (the medication is uniformly distributed in the film), but you're taking responsibility for accurate dosing. If you're unsure, ask your prescriber.
 
 Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5 mg, 4/1 mg, 8/2 mg, 12/3 mg). When you're tapering, especially at the lower end, you need fractional doses that don't exist as a manufactured product. Cutting films into smaller pieces is how the bupe community has handled this for years. Done carefully, it's accurate enough to taper by 0.25 mg increments.
 
-This post is the practical how-to. The general taper schedules are in [#suboxone-rapid-taper](/mat-suboxone/suboxone-rapid-taper) and [#suboxone-info](/mat-suboxone/suboxone-info).
+This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-info).
 
 ## What you need
 - **Bupe film** (any strength, but 8 mg films give you the most flexibility)
@@ -83,7 +83,7 @@ For most rapid-taper schedules, an 8 mg film cut into eighths gives you 1 mg dos
 
 When you're tapering below 0.5 mg, cutting tablets into ever-smaller pieces becomes difficult. Subutex tablets crumble more than films do, and quartering them is hard enough, eighths and sixteenths is unreliable. **Liquid titration solves this by dissolving a known dose in a known volume of water, then drinking a measured fraction of it.** Done carefully, you can dose accurately down to 0.063 mg or smaller, which is what the bottom of a real taper actually requires. [Reddit-based research on bupe tapering found that community-reported successful final doses were as low as 0.063 mg, much smaller than what published clinical taper schedules typically describe](https://www.biorxiv.org/content/10.1101/871608.full.pdf).
 
-This post is the practical how-to. The general taper schedules are in [#suboxone-rapid-taper](/mat-suboxone/suboxone-rapid-taper) and [#suboxone-info](/mat-suboxone/suboxone-info).
+This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-info).
 
 ## Why this works
 [Buprenorphine HCl is soluble in water at approximately 17 mg/mL at room temperature](https://www.uspharmacist.com/article/buprenorphine-2-mgml-sublingual-drops). At taper doses, you're working with concentrations far below saturation, so the bupe goes fully into solution. Once dissolved evenly, every milliliter of the solution contains a proportional fraction of the original dose. Drinking 1/8 of the volume = 1/8 of the dose.

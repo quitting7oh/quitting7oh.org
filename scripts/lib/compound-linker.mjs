@@ -44,13 +44,7 @@ export const COMPOUNDS = [
   },
   {
     url: '/compounds/pseudo',
-    patterns: [
-      'mitragynine pseudoindoxyl',
-      'pseudoindoxyl',
-      // "pseudo" alone is too generic — only match when used as the
-      // compound shorthand (e.g., when it appears next to other compound
-      // names). Skipping bare "pseudo" to avoid false positives.
-    ],
+    patterns: ['mitragynine pseudoindoxyl', 'pseudoindoxyl', 'pseudo'],
   },
   {
     url: '/compounds/cats-claw',

@@ -2,7 +2,7 @@
 title: "What You Should Know About Long-Term Suboxone"
 description: "Long-term effects, dependence, hormone changes, and the realities of tapering off Suboxone."
 category: "mat-suboxone"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **This is honest, evidence-based information about a medication a lot of us in this community are using.** It is not anti-MAT. Suboxone has saved lives, and for many people it's the right tool. But it's also a powerful, long-acting opioid, and that's worth understanding fully before you commit to long-term use. **For discussion, questions, or to share your own experience, see #suboxone.**
 
@@ -105,4 +105,4 @@ The logic: long-acting injectables have terminal half-lives in the 43 to 60 day 
 - What's the realistic withdrawal timeline I should expect?
 - If symptoms get rough at the 6-to-12-week mark, what's our backup plan?
 
-For more on the injectables themselves (how they work, dosing, full risk profile), see [#sublocade-brixadi-info](/mat-suboxone/sublocade-brixadi-info).
+For more on the injectables themselves (how they work, dosing, full risk profile), see [Sublocade & Brixadi](/mat-suboxone/sublocade-brixadi-info).

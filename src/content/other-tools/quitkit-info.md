@@ -24,7 +24,7 @@ Quit Kit and QuitK are **commercial supplement stacks** marketed specifically fo
 - **Agmatine** — proposed to reduce opioid tolerance
 - **B vitamins, vitamin D, zinc** — foundational nutrients depleted during withdrawal
 
-This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's recommended in [#vitamins-supplements](/other-tools/vitamins-supplements) and [#what-is-paws](/post-acute/what-is-paws). The convenience of pre-packaged morning/night doses is real.
+This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's recommended in [Vitamins & Supplements](/other-tools/vitamins-supplements) and [What is PAWS](/post-acute/what-is-paws). The convenience of pre-packaged morning/night doses is real.
 
 ## The honest tradeoff
 
@@ -84,6 +84,6 @@ A few specific concerns about both Quit Kit and QuitK:
 ## Bottom line
 If you can afford it and convenience matters more than cost, the commercial kits are a reasonable starting point. The ingredients are real. People have used them and gotten through withdrawal.
 
-If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper.** See [#vitamins-supplements](/other-tools/vitamins-supplements) for the full guide on individual supplements, brands, and dosing.
+If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper.** See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full guide on individual supplements, brands, and dosing.
 
 Either way: supplements help, but they're not the main event. Sleep, hydration, lifestyle, and (for some) medical support like Suboxone or LDN do the heaviest lifting. Don't let any commercial product convince you it's the difference between success and failure — it isn't.

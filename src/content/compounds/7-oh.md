@@ -2,7 +2,7 @@
 title: "7-OH (7-Hydroxymitragynine)"
 description: "Concentrated 7-hydroxymitragynine — how it differs from kratom leaf, why dependence builds fast, and what makes it tapereable."
 category: "compounds"
-last_updated: "2026-05-22"
+last_updated: "2026-05-24"
 sort: 1
 ---
 
@@ -11,8 +11,8 @@ sort: 1
 > "7" — and what's on the label is often not what's in the product.
 > Anything below is a pharmacology and recovery reference, not dosing
 > guidance and not safety guidance for current use. If you're trying
-> to come off, the [#suboxone-info](/mat-suboxone/suboxone-info) and
-> [#sos-resources](/start-here/sos-resources) pages are where
+> to come off, the [Suboxone](/mat-suboxone/suboxone-info) and
+> [SOS Resources](/start-here/sos-resources) pages are where
 > you actually go.
 
 7-OH is the compound this site is named after — and the compound most
@@ -56,7 +56,7 @@ obscures this scale difference; the dependence reality doesn't.
 - **Receptor selectivity:** mu-dominant. Little meaningful activity at
   κ or δ receptors at typical doses, and far less of the serotonergic
   and adrenergic activity that leaf carries via its other minor
-  alkaloids (see [#minor-alkaloids](/pharmacology/minor-alkaloids)).
+  alkaloids (see [Minor Alkaloids](/pharmacology/minor-alkaloids)).
 
 ### Plasma half-life
 
@@ -125,9 +125,9 @@ other minor alkaloids, or undisclosed compounds. Those carry serotonergic
 (5-HT<sub>1A</sub>, 5-HT<sub>2B</sub>) and α-adrenergic activity that
 gives 7-OH withdrawal an SNRI-discontinuation-like overlay: brain zaps,
 wired-but-exhausted feeling, autonomic instability. See
-[#suboxone-isnt-working](/mat-suboxone/suboxone-isnt-working) for why
+[Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for why
 this overlay makes bupe alone feel insufficient for some people, and
-see [#helper-meds-info](/other-tools/helper-meds-info) for what
+see [Helper Medications](/other-tools/helper-meds-info) for what
 addresses the non-opioid side.
 
 ## Why 7-OH is actually tapereable
@@ -151,11 +151,11 @@ what makes coming off it relatively clean:
   are less entrenched than they are with long-term full-agonist use.
 
 This is why the rapid-taper protocol in
-[#suboxone-rapid-taper](/mat-suboxone/suboxone-rapid-taper) works for
+[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) works for
 so many people coming off 7-OH alone, and why this community leans
 toward short Suboxone tapers rather than indefinite maintenance for
 this population specifically. See
-[#suboxone-info](/mat-suboxone/suboxone-info) for the full overview,
+[Suboxone](/mat-suboxone/suboxone-info) for the full overview,
 including the receptor-occupancy reason we start at low Suboxone doses
 rather than the clinical-default 16-24 mg.
 
@@ -168,7 +168,7 @@ rather than the clinical-default 16-24 mg.
   format.
 - **Liquid shots** — 1-2 oz bottles labeled by mg or by "potency",
   often inconsistent between batches.
-- **"Pseudo" tablets and shots** — these are
+- **"[Pseudo](/compounds/pseudo)" tablets and shots** — these are
   [mitragynine pseudoindoxyl (MP)](/compounds/pseudo), a different
   compound that binds even tighter than buprenorphine. Sometimes
   labeled or co-marketed with 7-OH; the pharmacology is different
@@ -185,7 +185,7 @@ rather than the clinical-default 16-24 mg.
 out before induction** — the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
 [pseudo](/compounds/pseudo)) have different timelines and different induction-window
 requirements. See the half-life table in
-[#suboxone-cows](/mat-suboxone/suboxone-cows).
+[COWS & SOWS Guide](/mat-suboxone/suboxone-cows).
 
 ## Marketing claims to be skeptical of
 
@@ -221,27 +221,27 @@ Four real paths people in this community have used:
 
 1. **Cold turkey with helper meds and supplements** — works for many
    people on short-acting 7-OH at moderate doses.
-   [#helper-meds-info](/other-tools/helper-meds-info) and
-   [#vitamins-supplements](/other-tools/vitamins-supplements).
+   [Helper Medications](/other-tools/helper-meds-info) and
+   [Vitamins & Supplements](/other-tools/vitamins-supplements).
 2. **Suboxone short taper** — the community's most common path for
    7-OH dependence specifically. 5-14 days, structured, low-and-slow
-   induction. [#suboxone-info](/mat-suboxone/suboxone-info) is the
+   induction. [Suboxone](/mat-suboxone/suboxone-info) is the
    overview.
 3. **SR-17018** — an informal, non-prescription taper tool some people
    in this community have used to come off 7-OH. It's still an opioid
    and there's no clinical literature on humans, but the duration and
    usage pattern make it easier to step down from than 7-OH itself
-   for some users. See [#sr17018-info](/other-tools/sr17018-info)
+   for some users. See [SR-17018](/other-tools/sr17018-info)
    for the community protocol and the real risks.
 4. **Plain kratom-leaf taper** — a planned, deliberate protocol that
    uses leaf as a stepdown from concentrated 7-OH. Not for everyone,
    not for everyone's dose level, and not a rescue strategy during
    acute withdrawal. See
-   [#tapering-with-leaf](/other-tools/tapering-with-leaf).
+   [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf).
 
 Whichever path you take, **don't try to navigate it without at least
 one other person knowing**. The Discord and subreddit linked at
-[#community](/about/community) are where most people in this
+[Community](/about/community) are where most people in this
 position end up.
 
 ## Further reading

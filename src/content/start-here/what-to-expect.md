@@ -1,8 +1,9 @@
 ---
-title: "👋 What to Expect: 7-OH Withdrawal"
+title: "What to Expect: 7-OH Withdrawal"
 description: "What 7-OH withdrawal looks like — symptoms, timeline, and the shape of the first two weeks."
 category: "start-here"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
+sort: 3
 ---
 If you're here, you're probably scared, exhausted, or both. **Welcome.** If you're a loved one of someone going through this, head to [For Loved Ones](/for-loved-ones/start-here).
 For everyone else: this post is a quick orientation, not the full picture. The full picture is in the channels around you, and you don't need to read it all today.
@@ -14,7 +15,7 @@ Everyone's different, but most people coming off [7-OH](/compounds/7-oh) follow 
 - **6 to 12 hours after last dose:** [first symptoms](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). Anxiety, restlessness, sweating, runny nose, mild aches.
 - **Days 2 to 4:** [symptoms peak](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). Insomnia, body aches, GI upset, restless legs, temperature swings, mood shifts. Brain zaps and a "wired but exhausted" feeling are common from the [SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/).
 - **Days 5 to 7:** acute physical symptoms fade. Sleep and mood still rough.
-- **Week 2 onward:** physical symptoms mostly resolve. Energy, mood, sleep, and motivation rebuild over weeks. This is the PAWS phase, see **#paws-support** & [#what-is-paws](/post-acute/what-is-paws).
+- **Week 2 onward:** physical symptoms mostly resolve. Energy, mood, sleep, and motivation rebuild over weeks. This is the PAWS phase, see **#paws-support** & [What is PAWS](/post-acute/what-is-paws).
 [Acute symptoms typically last 3 to 7 days](https://www.issup.net/node/33844). Emotional recovery and sleep can take 2 to 3 weeks.
 ## What helps right now
 - **Hydrate aggressively.** Electrolytes, not just water.
@@ -28,18 +29,18 @@ Everyone's different, but most people coming off [7-OH](/compounds/7-oh) follow 
 - **#withdrawal-symptoms** — what you're feeling, what works
 - **#day-1-3-survival** — getting through the early days
 **Tools and tapering options:**
-- [#vitamins-supplements](/other-tools/vitamins-supplements) — taking the edge off
-- [#tapering-with-leaf](/other-tools/tapering-with-leaf) — gentler taper for lower doses
-- [#helper-meds-info](/other-tools/helper-meds-info) & #helper-meds - RX meds
-- [#suboxone-info](/mat-suboxone/suboxone-info) & #suboxone — bupe-based induction and short tapers
-- [#quickmd-info](/resources/quickmd-info) — telehealth for prescriptions
-- [#sr17018-info](/other-tools/sr17018-info) & #sr17018 — alternative bridge option
+- [Vitamins & Supplements](/other-tools/vitamins-supplements) — taking the edge off
+- [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf) — gentler taper for lower doses
+- [Helper Medications](/other-tools/helper-meds-info) & #helper-meds - RX meds
+- [Suboxone](/mat-suboxone/suboxone-info) & #suboxone — bupe-based induction and short tapers
+- [QuickMD](/resources/quickmd-info) — telehealth for prescriptions
+- [SR-17018](/other-tools/sr17018-info) & #sr17018 — alternative bridge option
 **For after the acute phase:**
 - **#paws-support** — longer-term recovery
 - **#cravings-support**, **#dopamine-recovery**, **#sober-life**
-- [#low-dose-naltrexone](/other-tools/low-dose-naltrexone) — promising for PAWS, must be 1-2 weeks post last opioid use
+- [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone) — promising for PAWS, must be 1-2 weeks post last opioid use
 **If something else is going on:**
-- Compound-specific channels under "Synthetic & Concentrated" if you've been on [#7oh](/compounds/7-oh), [#mgm15](/compounds/mgm15), [#pseudo](/compounds/pseudo), [#mit-a-dhm](/compounds/mit-a-dhm), or stacked products. The timeline and approach differ.
+- Compound-specific channels under "Synthetic & Concentrated" if you've been on [#7oh](/compounds/7-oh), [MGM-15](/compounds/mgm15), [Pseudoindoxyl](/compounds/pseudo), [MIT-A / DHM](/compounds/mit-a-dhm), or stacked products. The timeline and approach differ.
 ## You will get through this
 [Recovery is possible](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). People in this community have walked this path. You're not alone. If you can manage one thing today, post in **#sos** or **#daily-check-in**. That's enough.
 If symptoms feel unmanageable, your prescriber or urgent care are appropriate resources.

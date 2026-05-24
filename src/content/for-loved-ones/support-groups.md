@@ -2,7 +2,7 @@
 title: "Support Groups for Family & Friends"
 description: "Peer support groups specifically for people with a loved one in addiction — Nar-Anon, SMART Recovery Family & Friends, Learn to Cope, the kratom-specific options, and others."
 category: "for-loved-ones"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 10
 ---
 
@@ -20,7 +20,7 @@ These substances are newer and often dismissed as "legal," "natural," or "just k
 
 **Website:** [kratomquitters.com](https://kratomquitters.com)
 
-A peer-led virtual community specifically focused on kratom and 7-OH recovery, run by people who have been through it. Welcomes both **people in recovery and their loved ones**. Daily online meetings hosted by volunteers. Not 12-step — closer to a peer-support model. Sometimes referred to by its founders' phrase "There Is A Way Out."
+A peer-led virtual community specifically focused on kratom and [7-OH](/compounds/7-oh) recovery, run by people who have been through it. Welcomes both **people in recovery and their loved ones**. Daily online meetings hosted by volunteers. Not 12-step — closer to a peer-support model. Sometimes referred to by its founders' phrase "There Is A Way Out."
 
 The 7-OH–specific angle is what makes this one valuable for the readership of this site. The other major groups (Nar-Anon, SMART F&F, Learn to Cope) are excellent and broadly applicable, but TIAWO will know the substances by name.
 

@@ -2,7 +2,7 @@
 title: "Mega Vitamin C"
 description: "High-dose vitamin C as a withdrawal adjunct — protocol, dosing, evidence, and limits."
 category: "other-tools"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **Community information, not medical advice.** Talk to your prescriber before starting any high-dose supplement protocol, especially if you have kidney issues, take medications, or have a history of kidney stones. **Not appropriate for everyone.**
 
@@ -89,7 +89,7 @@ The reasoning: vitamin C tissue saturation takes time. Starting at full dose the
 - **Vitamin E** — the original Evangelou study used vitamin C with vitamin E (5 mg/kg/day). The two work together as antioxidants.
 - **Magnesium glycinate** — for sleep, anxiety, and muscle symptoms.
 - **Electrolytes** — vitamin C megadosing increases urination; replenish.
-- **Standard withdrawal stack** — L-tyrosine, NAC, B-complex, omega-3, etc. (see [#vitamins-supplements](/other-tools/vitamins-supplements))
+- **Standard withdrawal stack** — L-tyrosine, NAC, B-complex, omega-3, etc. (see [Vitamins & Supplements](/other-tools/vitamins-supplements))
 - **Hydration** — drink more water than you think you need.
 
 **Be careful with:**
@@ -119,9 +119,9 @@ Cheaper approaches:
 - **You have kidney problems or a history of kidney stones.** Talk to your doctor first.
 - **You're already pursuing a Suboxone induction or other MAT path.** Vitamin C megadosing is for people doing more direct taper or cold-turkey approaches. It complements MAT but isn't the primary tool there.
 - **You can't afford the protocol and won't dose at therapeutic levels.** Underdosing doesn't help much. Better to focus on cheaper interventions that you can do consistently.
-- **You're on long-acting synthetics like [MGM-15](/compounds/mgm15) or pseudo at high doses.** These need more pharmaceutical support; vitamin C alone isn't enough.
+- **You're on long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo) at high doses.** These need more pharmaceutical support; vitamin C alone isn't enough.
 
 ## Bottom line
 Vitamin C megadosing is an inexpensive (relatively), low-risk, evidence-supported tool that has helped many people through opioid withdrawal. Liposomal form makes higher therapeutic doses practical without GI side effects. **Preload, dose frequently, combine with the rest of a real recovery protocol, and don't expect miracles.** For the right person it can take a meaningful edge off withdrawal. For everyone, it's adjunctive support, not the main event.
 
-See [#vitamins-supplements](/other-tools/vitamins-supplements) for the broader supplement context, [#what-is-paws](/post-acute/what-is-paws) for the longer-term picture.
+See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the broader supplement context, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture.

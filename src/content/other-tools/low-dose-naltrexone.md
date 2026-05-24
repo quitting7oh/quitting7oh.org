@@ -2,7 +2,7 @@
 title: "Low-Dose Naltrexone (LDN)"
 description: "LDN for PAWS, sleep, and mood — after acute withdrawal: what it is, how to get a prescription."
 category: "other-tools"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 > ⚠️ **This post is community information, not medical advice.** Everything below is a starting point for your own research and a conversation with a qualified provider. People in this community have found LDN helpful, but individual situations vary, and your doctor (not a Discord post) should be the one making decisions about your care. Please verify what you read here against the linked sources, ask questions, and listen to your prescribing clinician.
 
@@ -14,7 +14,7 @@ Naltrexone is an opioid antagonist. At the standard 50 mg dose, it blocks opioid
 The general idea: **it may nudge your own opioid system back toward producing what it should be producing on its own.** That's a system that's commonly disrupted in PAWS.
 
 ## Why people in this community look into it
-After heavy use of [7-OH](/compounds/7-oh), pseudo, [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or similar, the endogenous opioid system gets suppressed. Your brain stops making its own endorphins because the receptors were being flooded externally. Once you stop, it takes weeks to months for that system to come back online, and that's part of what PAWS is. Anhedonia, low motivation, low pain tolerance, sleep disruption, emotional flatness: all of these are consistent with a depleted endogenous opioid system.
+After heavy use of [7-OH](/compounds/7-oh), [pseudo](/compounds/pseudo), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or similar, the endogenous opioid system gets suppressed. Your brain stops making its own endorphins because the receptors were being flooded externally. Once you stop, it takes weeks to months for that system to come back online, and that's part of what PAWS is. Anhedonia, low motivation, low pain tolerance, sleep disruption, emotional flatness: all of these are consistent with a depleted endogenous opioid system.
 
 LDN is one of the few tools that *may* target that mechanism specifically. **Commonly reported benefits in recovery contexts** (not all clinically proven, varies by person):
 - Reduced cravings and reduced "low-grade misery" of PAWS
@@ -61,7 +61,7 @@ Insurance rarely covers compounded LDN, but cash prices are typically reasonable
 - **Not a withdrawal medication.** It will make withdrawal worse, not better, if started too early.
 - **Not a magic bullet.** It helps some people with PAWS and not everyone. Sleep, exercise, nutrition, therapy, and time still do most of the heavy lifting.
 - **Not appropriate for everyone**, especially people with liver issues, certain medications, or other specific conditions. Your provider needs your full medical picture to make that call.
-- **Not the same as [ULDN](/other-tools/ultra-low-dose-naltrexone).** Ultra-Low-Dose Naltrexone uses microgram doses (about 1,000× smaller) and is taken *with* opioids to reduce tolerance or smooth a taper. Different dose, different timing, different use case. Read [#ultra-low-dose-naltrexone](/other-tools/ultra-low-dose-naltrexone) if you're considering it.
+- **Not the same as [ULDN](/other-tools/ultra-low-dose-naltrexone).** Ultra-Low-Dose Naltrexone uses microgram doses (about 1,000× smaller) and is taken *with* opioids to reduce tolerance or smooth a taper. Different dose, different timing, different use case. Read [Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone) if you're considering it.
 
 ## Further reading (please do your own research before deciding anything)
 - [LDN Research Trust](https://ldnresearchtrust.org/), the central independent hub for LDN info, provider directory, pharmacy directory, patient stories

@@ -2,10 +2,10 @@
 title: "MGM-15"
 description: "Mitragynine pseudoindoxyl-15 — dual mu/delta agonist, long half-life, and what that means for tapering."
 category: "compounds"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
 ## What it is
-MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). Structurally, it's the 1,2-dihydro version of [7-OH](/compounds/7-oh). In academic papers it's sometimes also written as "DiHydro-[7-OH](/compounds/7-oh)-Mitragynine" or "DH-7OH-MIT" — **not** the same molecule as [dihydromitragynine](/compounds/mit-a-dhm) (DHM) sold under "[MIT-A](/compounds/mit-a-dhm)".
+MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). Structurally, it's the 1,2-dihydro version of [7-OH](/compounds/7-oh). In academic papers it's sometimes also written as "DiHydro-[7-OH](/compounds/7-oh)-Mitragynine" or "DH-[7OH](/compounds/7-oh)-MIT" — **not** the same molecule as [dihydromitragynine](/compounds/mit-a-dhm) (DHM) sold under "[MIT-A](/compounds/mit-a-dhm)".
 
 ## Where it came from
 First reported by Japanese researchers in 2014 as a candidate analgesic. It sat in the academic literature for about a decade before showing up in U.S. designer-drug products in early 2025. Its 9-fluoro analog, MGM-16, is roughly 240× the potency of morphine in animal studies — same scaffold with a fluorine added.

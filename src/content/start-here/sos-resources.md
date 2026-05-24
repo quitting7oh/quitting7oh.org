@@ -3,7 +3,7 @@ title: "SOS: You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "start-here"
 last_updated: "2026-05-24"
-sort: 1
+sort: 2
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you can't keep water
@@ -29,7 +29,7 @@ right now. You don't need to introduce yourself. You can just post:
   — slower, but searchable. Read what others have done. Post your own
   question when you're ready.
 
-See [#community](/about/community) for more on which to use.
+See [Community](/about/community) for more on which to use.
 
 ## In the next hour
 
@@ -57,11 +57,11 @@ Do these things, in this order:
 **Don't:**
 
 - Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm),
-  pseudo, or any stacked synthetic). Even a "small" dose resets your
+  [pseudo](/compounds/pseudo), or any stacked synthetic). Even a "small" dose resets your
   timeline.
 - Don't improvise with kratom leaf to "take the edge off" right now.
   Plain leaf is a real taper tool for some people in this community
-  ([#tapering-with-leaf](/other-tools/tapering-with-leaf)) — but it's a
+  ([Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)) — but it's a
   *planned* protocol started before acute withdrawal sets in, not a
   3 a.m. rescue.
 - Don't take benzodiazepines (Xanax, Klonopin, Ativan) "to take the
@@ -86,11 +86,11 @@ If you've been on **[7-OH](/compounds/7-oh) alone** (the most common short-actin
 If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), or a stacked product**, the
 timeline runs longer — peak symptoms can be 48–96 hours out instead of
 24–72, and the tail is longer. The shape is the same, just stretched.
-See [#mgm15](/compounds/mgm15) and [#mit-a-dhm](/compounds/mit-a-dhm).
+See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dhm).
 
 If you've been on **pseudo**, the dynamics are different — pseudo binds
 to the receptor tighter than buprenorphine itself. See
-[#pseudo](/compounds/pseudo). Suboxone induction is harder and may
+[Pseudoindoxyl](/compounds/pseudo). Suboxone induction is harder and may
 require a different approach. Talk to a prescriber.
 
 ## Three paths from here
@@ -103,11 +103,11 @@ everyone — pick the one that fits your situation.
 Doable for **short-acting [7-OH](/compounds/7-oh) at moderate doses**. Much harder for
 long-acting or stacked compounds. If you choose this path:
 
-- Read **[#helper-meds-info](/other-tools/helper-meds-info)** for
+- Read **[Helper Medications](/other-tools/helper-meds-info)** for
   what prescriptions actually help (clonidine, hydroxyzine, gabapentin,
   trazodone, baclofen). A telehealth appointment same-day can get most
   of these.
-- Read **[#vitamins-supplements](/other-tools/vitamins-supplements)**
+- Read **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
   for what to buy from the pharmacy *right now* (magnesium glycinate,
   electrolytes, vitamin C, NAC, melatonin for sleep, others).
 - The **[QuitKit-style](/other-tools/quitkit-info)** pre-packaged
@@ -115,18 +115,18 @@ long-acting or stacked compounds. If you choose this path:
 
 ### Path 2 — get on Suboxone (MAT)
 
-Often the right choice for **higher-dose 7-OH, long-acting synthetics,
+Often the right choice for **higher-dose [7-OH](/compounds/7-oh), long-acting synthetics,
 or anyone for whom path 1 has failed before**. Suboxone is a partial
 opioid agonist; taken correctly it cuts withdrawal to nearly zero
 within hours.
 
-- Read **[#suboxone-info](/mat-suboxone/suboxone-info)** for the
+- Read **[Suboxone](/mat-suboxone/suboxone-info)** for the
   overview and our community's low-and-slow induction approach.
-- Read **[#suboxone-cows](/mat-suboxone/suboxone-cows)** for *when* to
+- Read **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)** for *when* to
   take your first dose — this matters more than people realize. Going
   too early causes **precipitated withdrawal**, which is much worse
   than what you're feeling now.
-- **[#quickmd-info](/resources/quickmd-info)** is the most common
+- **[QuickMD](/resources/quickmd-info)** is the most common
   same-day telehealth option in this community (45+ US states, $99
   flat). Call them now; you can have a prescription in hours.
 
@@ -138,7 +138,7 @@ binds the mu receptor — but it has a longer duration and a usage
 pattern that community members have found makes it easier to step down
 from than the compound they were on.
 
-- Read **[#sr17018-info](/other-tools/sr17018-info)** for what it is,
+- Read **[SR-17018](/other-tools/sr17018-info)** for what it is,
   the community protocol, the real risks, and what's unknown. There is
   **no clinical literature on SR-17018 in humans** — dose info comes
   entirely from community forums and user reports. Read carefully
@@ -211,7 +211,7 @@ If you encounter that:
   or charged.
 - **A bad ER experience doesn't mean medical care won't help you** —
   it means *that* ER wasn't the right fit. A telehealth Suboxone
-  appointment via [#quickmd-info](/resources/quickmd-info) is often
+  appointment via [QuickMD](/resources/quickmd-info) is often
   a better path than a second ER visit if you're not in a true
   emergency.
 
@@ -238,7 +238,7 @@ just brutal. Things that help:
 
 Helper meds that work for sleep (prescription, ask a provider):
 trazodone, hydroxyzine, gabapentin. See
-[#helper-meds-info](/other-tools/helper-meds-info).
+[Helper Medications](/other-tools/helper-meds-info).
 
 ## Food
 
@@ -272,14 +272,14 @@ A few things people who've been here wish someone had told them:
 
 ## When you can — read these next
 
-- **[#what-to-expect](/start-here/what-to-expect)** — the bigger
+- **[What to Expect](/start-here/what-to-expect)** — the bigger
   picture, the full timeline, common surprises
-- **[#helper-meds-info](/other-tools/helper-meds-info)** — what
+- **[Helper Medications](/other-tools/helper-meds-info)** — what
   to ask a prescriber for
-- **[#vitamins-supplements](/other-tools/vitamins-supplements)**
+- **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
   — what's worth buying, what isn't
-- **[#suboxone-info](/mat-suboxone/suboxone-info)** — the MAT path,
+- **[Suboxone](/mat-suboxone/suboxone-info)** — the MAT path,
   if you're considering it
-- **[#what-is-paws](/post-acute/what-is-paws)** — what comes after the
+- **[What is PAWS](/post-acute/what-is-paws)** — what comes after the
   worst is over
-- **[#community](/about/community)** — Discord and subreddit
+- **[Community](/about/community)** — Discord and subreddit
