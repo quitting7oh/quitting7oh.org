@@ -643,6 +643,43 @@ on a wasted appointment; routing too cautiously to community for a
 topic clinicians do handle just means the reader reads more of the
 site before booking. Err toward community.
 
+### Hydroxyzine: name the restless-legs caveat, or don't mention it at all
+
+Hydroxyzine (Atarax, Vistaril) is a non-controlled first-generation
+antihistamine that's otherwise a useful adjunct for anxiety and
+sleep. The problem: first-gen antihistamines worsen restless legs
+([Yang et al., *Sleep Med* 2005](https://pubmed.ncbi.nlm.nih.gov/15165526/)),
+and restless legs is one of the loudest symptoms in opioid
+withdrawal. For a large fraction of our audience, hydroxyzine will
+make the worst symptom worse. Recommending it without flagging that
+is misleading.
+
+**The rule:**
+
+- **If the page has room for a caveat, name the RLS issue inline.**
+  ("Hydroxyzine works for some but can worsen restless legs.")
+  The [Helper Medications](/other-tools/helper-meds-info) entry is
+  the canonical version.
+- **If the mention is part of a compact list of adjuncts** —
+  "clonidine, hydroxyzine, gabapentin, trazodone" — **drop
+  hydroxyzine from the list.** Adding the caveat would gum up the
+  list, and not adding it sends readers with active RLS toward the
+  wrong medication. The helper-meds page lists it with the caveat;
+  readers who want the full menu will find it there.
+- **The helper-meds page itself is the exception.** Bare mentions
+  of hydroxyzine inside `other-tools/helper-meds-info.md` (the page
+  where the canonical caveat lives) are fine.
+- **Factual documentation of what a third party offers is fine.**
+  Quoting a vendor's published list of comfort meds (e.g., the
+  telehealth-providers comparison) is documenting reality, not the
+  site recommending hydroxyzine.
+
+This rule is hydroxyzine-specific because hydroxyzine is the only
+non-controlled helper med where the standard prescribing pattern
+genuinely interacts with a major symptom of our audience. Trazodone,
+clonidine, gabapentin, baclofen, etc. don't have the same issue and
+can stay in bare lists.
+
 ## Content density
 
 - Expand on information where it genuinely serves the reader's
