@@ -269,6 +269,7 @@ position end up.
 
 > 🩺 **Reminder:** 7-OH is an opioid. Treat it as one, both in terms of
 > not underestimating dependence development and in terms of using
-> opioid-recovery tools (MAT, helper meds, structured tapers) when
-> coming off. The community here is built around people who have done
-> this; you are not the first person to try.
+> opioid-recovery tools (MAT, [SR-17](/other-tools/sr17018-info),
+> helper meds, structured tapers) when coming off. The community here
+> is built around people who have done this; you are not the first
+> person to try.
