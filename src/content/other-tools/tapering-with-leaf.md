@@ -57,9 +57,9 @@ For users at lower daily 7-OH doses, **leaf alone is often enough to manage the 
 
 ## Path 2: Leaf + helper meds (under ~500 mg/day 7-OH equivalent)
 
-For users at moderate-to-higher 7-OH doses, **leaf alone often isn't enough to fully cover the transition**, but **leaf + appropriate adjuncts can be**. The leaf does the opioid receptor coverage; the helper meds handle the SNRI side, sleep, and physical symptoms that leaf doesn't address.
+For users at moderate-to-higher 7-OH doses, **leaf alone often isn't enough to fully cover the transition**, but **leaf + appropriate adjuncts can be**. The leaf does the opioid receptor coverage; the helper meds handle the serotonergic and adrenergic symptoms, sleep, and physical symptoms that leaf doesn't address.
 
-This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for the SNRI explanation), just with leaf doing the opioid coverage instead of bupe.
+This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for the receptor-level explanation), just with leaf doing the opioid coverage instead of bupe.
 
 **Helper meds that pair well with leaf tapering:**
 

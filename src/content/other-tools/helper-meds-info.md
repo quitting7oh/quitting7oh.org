@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 ---
 > ⚠️ **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
-The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* the noradrenergic, serotonergic, GABA, and other systems via [the SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/). Suboxone covers the opioid side. Helper meds cover everything else.
+The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* serotonin, adrenergic, GABA, and other systems. Kratom's minor alkaloids bind 5-HT₁ₐ, 5-HT₂ᵦ, α-1, and α-2 receptors **directly** as agonists or antagonists ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)) — not via the reuptake-inhibition mechanism that SSRIs and SNRIs use. Suboxone covers the opioid side. Helper meds cover everything else.
 
 This post organizes them by what they do, not by what they're "officially" prescribed for. **You don't need every one of these.** Most people benefit from 2-4. A skilled prescriber will help you figure out which ones fit your symptoms.
 
@@ -63,7 +63,7 @@ The good news: the two most effective tools are cheap and over the counter.
 
 [GABA analog that calms nervous system overactivity](https://www.the-hospitalist.org/hospitalist/article/36857/key-clinical-questions/which-non-opioid-medications-are-best-for-symptom-management-in-ows/). Genuinely useful for the wired/anxious/can't-sleep cluster that bupe and clonidine don't fully cover.
 
-**What it helps:** anxiety, restless legs, insomnia, brain zaps, muscle/nerve pain, the SNRI-discontinuation feeling.
+**What it helps:** anxiety, restless legs, insomnia, brain zaps, muscle/nerve pain, the SSRI/SNRI-discontinuation-style feeling.
 
 **Typical dosing:** [start at 100-300 mg, titrate up to 1,800-2,100 mg/day in divided doses](https://www.oregonpainguidance.org/wp-content/uploads/2020/03/Medications-to-Treat-Opioid-Withdrawal-Symptoms.pdf). Most prescribers start lower and let you find your dose.
 

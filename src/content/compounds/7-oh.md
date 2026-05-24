@@ -116,19 +116,26 @@ through the worst by day 5, into "functional but drained" by day 7,
 and out of acute by week 2. The post-acute tail (PAWS) is its own
 chapter and is usually much more manageable than peak acute.
 
-### The SNRI-like component
+### The serotonergic and adrenergic overlay
 
 7-OH itself isn't particularly active at serotonergic or adrenergic
 receptors — but the **concentrated kratom-derived products people
 actually use are rarely pure 7-OH**. Many are stacked with mitragynine,
-other minor alkaloids, or undisclosed compounds. Those carry serotonergic
-(5-HT<sub>1A</sub>, 5-HT<sub>2B</sub>) and α-adrenergic activity that
-gives 7-OH withdrawal an SNRI-discontinuation-like overlay: brain zaps,
-wired-but-exhausted feeling, autonomic instability. See
-[Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for why
-this overlay makes bupe alone feel insufficient for some people, and
-see [Helper Medications](/other-tools/helper-meds-info) for what
-addresses the non-opioid side.
+other minor alkaloids, or undisclosed compounds. Two of those minor
+alkaloids — paynantheine and speciogynine — bind 5-HT<sub>1A</sub> and
+5-HT<sub>2B</sub> receptors at low-nanomolar affinity
+([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)),
+and corynantheidine plus mitragynine bind α-1 and α-2 adrenergic
+receptors directly ([Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/);
+[Obeng et al., *Eur J Pharmacol* 2024](https://pubmed.ncbi.nlm.nih.gov/39111419/)).
+This is **direct receptor activity**, not SSRI/SNRI-style reuptake
+inhibition — but the resulting withdrawal symptom picture (brain zaps,
+wired-but-exhausted feeling, autonomic instability) looks a lot like
+SSRI/SNRI discontinuation because the same receptor families are
+involved. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
+for why this overlay makes bupe alone feel insufficient for some
+people, and [Helper Medications](/other-tools/helper-meds-info) for
+what addresses the non-opioid side.
 
 ## Why 7-OH is actually tapereable
 

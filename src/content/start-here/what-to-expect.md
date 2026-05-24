@@ -13,7 +13,7 @@ Your brain isn't broken. It's adjusting. The receptors recover. Endorphin produc
 ## The general timeline
 Everyone's different, but most people coming off [7-OH](/compounds/7-oh) follow a similar shape:
 - **6 to 12 hours after last dose:** [first symptoms](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). Anxiety, restlessness, sweating, runny nose, mild aches.
-- **Days 2 to 4:** [symptoms peak](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). Insomnia, body aches, GI upset, restless legs, temperature swings, mood shifts. Brain zaps and a "wired but exhausted" feeling are common from the [SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/).
+- **Days 2 to 4:** [symptoms peak](https://tryquitkit.com/blogs/news/timeline-of-7oh-withdrawals). Insomnia, body aches, GI upset, restless legs, temperature swings, mood shifts. Brain zaps and a "wired but exhausted" feeling are common from direct serotonin and adrenergic receptor activity of kratom's [minor alkaloids](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/) — symptoms that *resemble* SSRI/SNRI discontinuation but arise through a different mechanism.
 - **Days 5 to 7:** acute physical symptoms fade. Sleep and mood still rough.
 - **Week 2 onward:** physical symptoms mostly resolve. Energy, mood, sleep, and motivation rebuild over weeks. This is the PAWS phase, see **#paws-support** & [What is PAWS](/post-acute/what-is-paws).
 [Acute symptoms typically last 3 to 7 days](https://www.issup.net/node/33844). Emotional recovery and sleep can take 2 to 3 weeks.

@@ -182,7 +182,7 @@ If you've been on bupe for months and you're feeling consistently flat, blunted,
 
 ### What bupe doesn't address
 Suboxone covers the opioid receptor side of things. It does **not** address:
-- The SNRI piece ([rhynchophylline](/compounds/cats-claw) and other minor alkaloids you were exposed to). The wired anxiety, brain zaps, and broken sleep that don't lift on bupe are usually this. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
+- The serotonergic and adrenergic piece — direct receptor activity from minor alkaloids like paynantheine, speciogynine, and corynantheidine ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)). The wired anxiety, brain zaps, and broken sleep that don't lift on bupe are usually this. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
 - The dopamine/reward system rebuild
 - The behavioral and habit patterns
 - Sleep architecture changes
