@@ -1,5 +1,5 @@
 ---
-import ThemeToggle from './ThemeToggle.astro';
+import { ThemePicker } from './ThemePicker';
 import SearchBox from './SearchBox.astro';
 import { SITE } from '~/lib/site';
 ---
@@ -35,7 +35,7 @@ import { SITE } from '~/lib/site';
       <div class="hidden sm:block">
         <SearchBox variant="header" />
       </div>
-      <ThemeToggle />
+      <ThemePicker client:load />
     </div>
   </div>
 

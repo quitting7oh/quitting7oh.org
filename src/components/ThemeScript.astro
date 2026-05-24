@@ -1,23 +1,36 @@
 ---
 // Inline, runs *before* the page renders — prevents flash of incorrect theme.
-// Three states stored as 'system' | 'light' | 'dark'. Default is 'system'.
+//
+// Two pieces of theme state:
+//   - mode    : 'system' | 'light' | 'dark'                       (key: 'theme')
+//   - variant : 'accent-teal' | 'zinc' | 'slate' | 'stone' |
+//               'neutral' | 'rose' | 'blue' | 'green'             (key: 'theme-variant')
+//
+// Defaults: mode=system, variant=accent-teal (the absence of localStorage
+// values implies the defaults; we don't write defaults to localStorage so
+// it's easy to tell "user picked this" from "user hasn't picked anything").
 ---
 <script is:inline>
   (function () {
     try {
-      var stored = localStorage.getItem('theme'); // 'system' | 'light' | 'dark' | null
+      var storedMode = localStorage.getItem('theme'); // 'system' | 'light' | 'dark' | null
+      var storedVariant = localStorage.getItem('theme-variant'); // 'zinc' | ... | null
       var mql = window.matchMedia('(prefers-color-scheme: dark)');
-      function effective(mode) {
-        if (mode === 'dark') return 'dark';
-        if (mode === 'light') return 'light';
-        return mql.matches ? 'dark' : 'light';
-      }
-      var mode = stored || 'system';
-      var eff = effective(mode);
       var root = document.documentElement;
-      if (eff === 'dark') root.classList.add('dark');
+
+      var mode = storedMode || 'system';
+      var dark = mode === 'dark' || (mode === 'system' && mql.matches);
+      if (dark) root.classList.add('dark');
       else root.classList.remove('dark');
       root.dataset.themeMode = mode;
+
+      var variant = storedVariant || 'accent-teal';
+      if (variant === 'accent-teal') {
+        // Default; no attribute needed (the :root rule covers it).
+        delete root.dataset.theme;
+      } else {
+        root.dataset.theme = variant;
+      }
 
       // Live OS-theme updates while in 'system' mode.
       mql.addEventListener('change', function (e) {
