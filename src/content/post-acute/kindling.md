@@ -97,7 +97,7 @@ adapted.
 **The clock that gets reset is bigger than acute withdrawal.** The
 [PAWS adaptations](/post-acute/what-is-paws) interact with re-use. A
 slip that costs you a few days of acute can also re-trigger the
-slower stuff — sleep, mood, anhedonia — that you'd been climbing out
+slower stuff (sleep, mood, anhedonia) that you'd been climbing out
 of.
 
 **Days stacked aren't erased.** The framing on
@@ -128,10 +128,11 @@ got you here are still in you. The next decision matters more than
 the last one.
 
 [Thinking About Using?](/start-here/thinking-about-using) has the
-in-the-moment reach-out ladder. [Telehealth
-Providers](/resources/telehealth) is for getting (or getting back) a
-prescriber who knows kratom and 7-OH. If you were tapering, return to
-the plan. If you weren't, this is a reasonable moment to get one.
+in-the-moment reach-out ladder. If you want to restart Suboxone or
+get back on helper meds, [Telehealth
+Providers](/resources/telehealth) is the prescriber comparison. If
+you were tapering, return to the plan. If you weren't, this is a
+reasonable moment to get one.
 
 ## Sources
 
