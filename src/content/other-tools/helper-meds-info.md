@@ -4,7 +4,7 @@ description: "Prescription adjuncts that take the edge off — clonidine, gabape
 category: "other-tools"
 last_updated: "2026-05-24"
 ---
-> ⚠️ **This is a reference, not a prescription.** All of these require a doctor. [QuickMD](/resources/quickmd-info) has telehealth options. **#helper-meds** is the chat channel for discussing your experiences with these meds.
+> ⚠️ **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
 The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* the noradrenergic, serotonergic, GABA, and other systems via [the SNRI-like activity of kratom's minor alkaloids](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/). Suboxone covers the opioid side. Helper meds cover everything else.
 
@@ -73,7 +73,7 @@ The good news: the two most effective tools are cheap and over the counter.
 
 **Pregabalin (Lyrica)** is similar but more potent, faster-acting, and has a higher abuse profile. Less commonly prescribed in MAT contexts but works for the same symptoms.
 
-Provider attitudes vary. Some prescribers hand it out readily; others want you more established before adding it. [QuickMD](/resources/quickmd-info) has notes on advocating for this.
+Provider attitudes vary. Some prescribers hand it out readily; others want you more established before adding it. The [Telehealth Providers comparison](/resources/telehealth) flags which platforms community members have had success with for adjuncts.
 
 ## Baclofen and muscle relaxants
 
@@ -136,13 +136,13 @@ Benzos (Xanax, Klonopin, Valium, Ativan, Librium) are highly effective for the a
 - **[Benzo + opioid combinations significantly increase overdose risk](https://pmc.ncbi.nlm.nih.gov/articles/PMC7385662/).** Most opioid overdose deaths involve a benzo or alcohol on board. If you're on bupe and add a benzo, the combo carries real risk.
 - **Cross-tolerance with alcohol.** People with substance use history are statistically more likely to develop benzo dependence.
 - **Benzo withdrawal is significantly worse than opioid withdrawal.** It's medically dangerous (seizure risk) and lasts much longer. Trading one dependence for another is a real concern.
-- **Telehealth restrictions** make them harder to prescribe via platforms like QuickMD even when a provider is willing.
+- **Telehealth restrictions** on Schedule IV controlled substances make them harder to prescribe via any telehealth platform even when a provider is willing.
 
 **When they do get prescribed:** sometimes a short course (1-2 weeks max) for severe acute withdrawal under close supervision. Not as a maintenance medication.
 
 **The realistic alternatives:** clonidine + gabapentin + hydroxyzine or trazodone covers most of what people want benzos for, without the dependence risk. The combo is less dramatic moment-to-moment but doesn't trade one problem for another.
 
-**Don't ask your QuickMD provider for benzos.** It will slow the visit down and won't change the answer.
+**Don't ask any telehealth Suboxone provider for benzos.** It will slow the visit down and won't change the answer — most have an explicit no-benzo policy on top of the regulatory restrictions.
 
 ## Other meds worth knowing about
 
@@ -154,7 +154,7 @@ Benzos (Xanax, Klonopin, Valium, Ativan, Librium) are highly effective for the a
 
 ## How to get these
 
-Most are non-controlled and easy to prescribe. [QuickMD](/resources/quickmd-info) covers telehealth options. Standard primary care doctors will prescribe most of these readily; bring research if needed.
+Most are non-controlled and easy to prescribe. The [Telehealth Providers comparison](/resources/telehealth) covers options that work with kratom/7-OH cases. Standard primary care doctors will prescribe most of these readily; bring research if needed.
 
 For MAT contexts (Suboxone), your bupe prescriber is usually the right person to add helper meds to your protocol. They already know your situation.
 

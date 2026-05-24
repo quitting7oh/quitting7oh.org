@@ -60,7 +60,7 @@ A few tools to start with:
 - **[findtreatment.gov](https://findtreatment.gov)** — official SAMHSA treatment locator. Filter by insurance, level of care, MAT availability, and special needs (women-only, LGBTQ+ affirming, specific languages, veterans-focused, etc.). The most useful single resource on this page.
 - **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline) — 1-800-662-4357.** Free, confidential, 24/7. Real humans give referrals based on your zip and insurance. If you call once in your whole search, this is the call.
 - **Your existing healthcare providers** — primary care doctor, therapist, gynecologist, anyone who knows you. They can write referrals and often have specific local recommendations that the directories won't surface.
-- **For telehealth-only [Suboxone](/mat-suboxone/suboxone-info) induction** — see [QuickMD](/resources/quickmd-info). You can be in a video appointment and have a prescription the same day, no in-person visit required. The lowest activation-energy starting point if MAT is your direction.
+- **For telehealth-only [Suboxone](/mat-suboxone/suboxone-info) induction** — see the [Telehealth Providers comparison](/resources/telehealth). Several options let you do a video appointment and have a prescription the same day, no in-person visit required. The lowest activation-energy starting point if MAT is your direction.
 
 ## How to pay
 

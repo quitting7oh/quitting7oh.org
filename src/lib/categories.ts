@@ -60,7 +60,7 @@ export const CATEGORIES = [
   {
     slug: 'resources',
     title: 'Resources',
-    blurb: 'QuickMD and other telehealth, meetings, finding help.',
+    blurb: 'Telehealth providers, meetings, finding help.',
     emoji: '🔗',
   },
   {

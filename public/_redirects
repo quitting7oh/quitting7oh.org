@@ -1,3 +1,8 @@
 # Permanent redirects for category-name changes go here.
 # Example:
 # /old-path  /new-path  301
+
+# 2026-05-24: replaced single-provider QuickMD page with the
+# multi-provider /resources/telehealth comparison. Old URL keeps
+# working via a 301 to the QuickMD section anchor.
+/resources/quickmd-info  /resources/telehealth#quickmd  301

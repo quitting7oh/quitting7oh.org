@@ -64,8 +64,8 @@ Start with **[Suboxone](/mat-suboxone/suboxone-info)** for the
 overview. Most people in this community use a **short, structured taper**
 rather than indefinite maintenance, and the induction protocols
 here reflect that. See **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)**
-for timing your first dose and **[QuickMD](/resources/quickmd-info)**
-if you need a telehealth prescriber.
+for timing your first dose and **[Telehealth Providers](/resources/telehealth)**
+for a fact-checked comparison if you need a telehealth prescriber.
 
 ### 🌱 You're already through the worst, but something still isn't right
 

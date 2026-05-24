@@ -126,9 +126,10 @@ within hours.
   take your first dose — this matters more than people realize. Going
   too early causes **precipitated withdrawal**, which is much worse
   than what you're feeling now.
-- **[QuickMD](/resources/quickmd-info)** is the most common
-  same-day telehealth option in this community (45+ US states, $99
-  flat). Call them now; you can have a prescription in hours.
+- **[Telehealth options](/resources/telehealth)** can put a Suboxone
+  prescription in your hands the same day in most US states. Cash-pay
+  and insurance options both exist, with prices and coverage that vary
+  by provider — see the comparison page for the current shortlist.
 
 ### Path 3 — SR-17018 (informal taper tool)
 
@@ -210,10 +211,9 @@ If you encounter that:
   advice. AMA discharges are documented but you don't get arrested
   or charged.
 - **A bad ER experience doesn't mean medical care won't help you** —
-  it means *that* ER wasn't the right fit. A telehealth Suboxone
-  appointment via [QuickMD](/resources/quickmd-info) is often
-  a better path than a second ER visit if you're not in a true
-  emergency.
+  it means *that* ER wasn't the right fit. A
+  [telehealth Suboxone appointment](/resources/telehealth) is often a
+  better path than a second ER visit if you're not in a true emergency.
 
 If you're in an emergency from the red-flag list above, go anyway.
 A bad provider is still better than a missed serious problem. But

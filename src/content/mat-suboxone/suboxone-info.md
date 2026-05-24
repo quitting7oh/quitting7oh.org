@@ -124,7 +124,7 @@ If your prescriber is pushing a longer schedule than makes sense for your dose, 
 ## How to find a Suboxone prescriber
 - [SAMHSA's buprenorphine practitioner locator](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)
 - [SAMHSA's national helpline](https://www.samhsa.gov/find-help/national-helpline) (1-800-662-HELP)
-- Telehealth options: QuickMD, Bicycle Health, Ophelia, Workit Health, Boulder Care, and others. Coverage varies by state.
+- [Telehealth Providers](/resources/telehealth) — fact-checked comparison of the major options (QuickMD, Bicycle Health, Ophelia, Workit Health, Boulder Care, and others) with current prices, states served, and which ones explicitly handle kratom or 7-OH.
 - [As of 2023, the X-waiver requirement was eliminated](https://www.samhsa.gov/medications-substance-use-disorders/become-buprenorphine-waivered-practitioner), so any provider with a DEA license can prescribe buprenorphine. Most primary care doctors can now prescribe it, even if they haven't historically.
 
 ## Common things to ask your prescriber
@@ -158,7 +158,7 @@ For long-term maintenance discussion specifically, [r/suboxone](https://www.redd
 ## Further reading
 - [COWS & SOWS Guide](/mat-suboxone/suboxone-cows)
 - [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks)
-- [QuickMD](/resources/quickmd-info) 
+- [Telehealth Providers](/resources/telehealth) — comparison of options that prescribe Suboxone online
 - [NIDA Clinical Opiate Withdrawal Scale (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf)
 - [Emergency Care BC: COWS-based Suboxone induction protocol](https://emergencycarebc.ca/clinical_resource/clinical-summary/clinical-opiate-withdrawal-scale-treatment/)
 - [SAMHSA: Find a buprenorphine practitioner](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)

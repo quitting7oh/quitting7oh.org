@@ -44,7 +44,7 @@ For [7-OH](/compounds/7-oh) and kratom synthetics specifically, this site has a 
 
 > 💼 **If your loved one works in a regulated profession** — CDL driver, pilot, ATC, law enforcement, armed security, healthcare licensure, federal employment with clearance — the choice of MAT medication can have professional-licensure implications separate from anything their employer does. See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before they choose a medication or disclose to a regulator. The medication choice matters here: naltrexone (Vivitrol) is not a controlled substance and sidesteps many of the issues that buprenorphine and methadone can trigger.
 
-**A note on telehealth.** For [7-OH](/compounds/7-oh) and kratom synthetics specifically, telehealth providers can prescribe [Suboxone](/mat-suboxone/suboxone-info) without an in-person visit — see [QuickMD](/resources/quickmd-info) for one option community members have used. This dramatically lowers the activation energy of starting MAT; your loved one doesn't have to find and visit a specialty addiction clinic, they can start from their phone.
+**A note on telehealth.** For [7-OH](/compounds/7-oh) and kratom synthetics specifically, telehealth providers can prescribe [Suboxone](/mat-suboxone/suboxone-info) without an in-person visit — see the [Telehealth Providers comparison](/resources/telehealth) for a fact-checked list of options, including which ones explicitly mention kratom or 7-OH on their own sites. This dramatically lowers the activation energy of starting MAT; your loved one doesn't have to find and visit a specialty addiction clinic, they can start from their phone.
 
 ## How to pay for treatment
 

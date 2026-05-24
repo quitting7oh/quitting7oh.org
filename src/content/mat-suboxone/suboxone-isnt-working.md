@@ -28,7 +28,9 @@ When you stop, you don't just get opioid withdrawal. You get **opioid withdrawal
 
 If any of this sounds like what you're experiencing on bupe, **bupe is doing its job and there's a separate piece that needs separate help.** The fix is not more bupe. The fix is adjuncts.
 
-## Adjuncts that actually help with the SNRI piece - Provider attitudes vary; see [QuickMD](/resources/quickmd-info) for telehealth options.
+## Adjuncts that actually help with the SNRI piece
+
+Provider attitudes vary on which adjuncts they'll add; see the [telehealth providers comparison](/resources/telehealth) if you need a prescriber who works with kratom/7-OH dependence.
 - **Clonidine.** Alpha-2 agonist. Takes the edge off the noradrenergic symptoms (sweating, anxiety, fast heart rate, restlessness). Most prescribers familiar with MAT will prescribe this on request.
 - **Hydroxyzine.** Non-addictive antihistamine that helps with anxiety and sleep without controlled-substance risk. Easy to get prescribed. **Caveat:** hydroxyzine is a first-generation antihistamine (H1 antagonist), and antihistamines have been associated with [worsening restless legs syndrome and may exacerbate other withdrawal symptoms in some people](https://pubmed.ncbi.nlm.nih.gov/15165526/). If you're already struggling with RLS, twitchy legs, or jumpy/agitated symptoms, hydroxyzine may make these worse rather than better. Worth trying carefully, but if you notice your legs getting worse after starting it, that's a known mechanism and a reason to switch to a different adjunct.
 - **Gabapentin.** Anxiety, restless legs, sleep, brain zaps. Genuinely effective. 
@@ -91,4 +93,4 @@ If you're approaching the end of your taper and still feel terrible, that's wort
 - [Mitragyna speciosa Alkaloids and Effects (Kratom Science)](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/) — overview of minor alkaloids and their SNRI-like effects
 - [Natural Calm: Magnesium for Addiction Recovery](https://naturalcalm.ca/magnesium-for-addiction/) — magnesium and amino acids for opioid withdrawal
 - [Southside Harm Reduction: At-Home Opioid Withdrawal Management (PDF)](https://southsideharmreduction.org/wp-content/uploads/2024/01/OpioidWithdrawalCondensed.pdf) — community harm reduction guide
-- See also: [Vitamins & Supplements](/other-tools/vitamins-supplements) and [QuickMD](/resources/quickmd-info) for adjunct medications and supplements
+- See also: [Vitamins & Supplements](/other-tools/vitamins-supplements) for supplement strategies, and [Telehealth Providers](/resources/telehealth) for prescribers comfortable adding adjunct medications

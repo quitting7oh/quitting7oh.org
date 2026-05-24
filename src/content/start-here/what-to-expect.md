@@ -33,7 +33,7 @@ Everyone's different, but most people coming off [7-OH](/compounds/7-oh) follow 
 - [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf) — gentler taper for lower doses
 - [Helper Medications](/other-tools/helper-meds-info) & #helper-meds - RX meds
 - [Suboxone](/mat-suboxone/suboxone-info) & #suboxone — bupe-based induction and short tapers
-- [QuickMD](/resources/quickmd-info) — telehealth for prescriptions
+- [Telehealth Providers](/resources/telehealth) — fact-checked comparison of options that prescribe Suboxone online
 - [SR-17018](/other-tools/sr17018-info) & #sr17018 — alternative bridge option
 **For after the acute phase:**
 - **#paws-support** — longer-term recovery

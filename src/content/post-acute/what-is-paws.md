@@ -115,7 +115,7 @@ See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full bre
 
 ## Pharmaceutical options
 
-> ⚠️ **All of this requires a prescriber.** None of it is community-available without medical supervision. [QuickMD](/resources/quickmd-info) has telehealth options if you don't have a local doctor.
+> ⚠️ **All of this requires a prescriber.** None of it is community-available without medical supervision. See the [Telehealth Providers comparison](/resources/telehealth) if you don't have a local doctor.
 
 **You may not need any of these.** A lot of people get through recovery on lifestyle and supplements alone. These are tools for people whose symptoms are significant enough to need more help.
 
@@ -154,7 +154,7 @@ If you're in the smooth-recovery group: enjoy it, keep your routines, don't get 
 
 If you're in the PAWS group: your brain is healing. Receptors are recovering. Endorphin production is rebuilding. The work you do here, the supplements you take, the routines you build, the connections you maintain — all of it adds up.
 
-Use the channels: **#paws-support** for the day-to-day, **#sos** for the hardest moments, [Vitamins & Supplements](/other-tools/vitamins-supplements) for the practical stack, [QuickMD](/resources/quickmd-info) for medical support.
+Use the channels: **#paws-support** for the day-to-day, **#sos** for the hardest moments, [Vitamins & Supplements](/other-tools/vitamins-supplements) for the practical stack, [Telehealth Providers](/resources/telehealth) for medical support.
 
 You're not broken. You're rebuilding.
 

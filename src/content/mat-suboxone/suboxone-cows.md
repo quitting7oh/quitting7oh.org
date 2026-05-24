@@ -24,7 +24,7 @@ The single most important thing about Suboxone induction is **timing it by your 
 In practice:
 
 - **If you have a prescriber or nurse on a video call**, they're going to score COWS. Know what they're looking at.
-- **If you're inducting solo at home** (common with telehealth-only providers like QuickMD), **SOWS is more honest** because you're not faking the observable items you can't actually measure. Score yourself, write it down with a timestamp, and re-score every hour.
+- **If you're inducting solo at home** (common with [telehealth-only providers](/resources/telehealth)), **SOWS is more honest** because you're not faking the observable items you can't actually measure. Score yourself, write it down with a timestamp, and re-score every hour.
 - **Both are useful at the same time.** They're correlated but not identical — sometimes SOWS catches the subjective awfulness before COWS reaches the threshold (or vice versa). Most prescribers will accept either if you bring numbers and timestamps.
 
 **Thresholds for inducting:**

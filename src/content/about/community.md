@@ -91,7 +91,7 @@ Not Indivior. Not any other Suboxone manufacturer. Not any pharma company at all
 
 **Nobody endorses us.**
 
-We don't represent any company. We don't have a relationship with any company. When we mention QuickMD or buprenorphine or [generic clonidine that costs literally a penny a pill](/other-tools/helper-meds-info), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine — a 50-year-old off-patent medication selling for pennies — slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
+We don't represent any company. We don't have a relationship with any company. When we mention a [telehealth provider like QuickMD or Bicycle Health or Boulder Care](/resources/telehealth), or buprenorphine, or [generic clonidine that costs literally a penny a pill](/other-tools/helper-meds-info), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine — a 50-year-old off-patent medication selling for pennies — slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
 
 **What we actually do, every day:**
 

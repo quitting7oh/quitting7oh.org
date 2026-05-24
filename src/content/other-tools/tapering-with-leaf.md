@@ -64,7 +64,7 @@ This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be
 **Helper meds that pair well with leaf tapering:**
 
 - **Clonidine** — alpha-2 agonist, takes the edge off noradrenergic symptoms (sweating, anxiety, restlessness, fast heart rate). The single most useful adjunct for this approach.
-- **Gabapentin** — anxiety, restless legs, sleep, brain zaps. Genuinely effective. See [QuickMD](/resources/quickmd-info) for telehealth options.
+- **Gabapentin** — anxiety, restless legs, sleep, brain zaps. Genuinely effective. See the [Telehealth Providers comparison](/resources/telehealth) for prescribers comfortable adding adjuncts.
 - **Trazodone** — sleep specifically. Non-addictive.
 - **Baclofen** — muscle relaxant, helps with body tension and aches.
 - **Magnesium glycinate** (OTC) — restless legs, anxiety, sleep cluster.
@@ -112,4 +112,4 @@ What to look for:
 - [Chemical composition of kratom (Nature)](https://www.nature.com/articles/s41598-020-76119-w)
 - [Red Kratom Guide](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom)
 - [Mitragyna alkaloid breakdown](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/)
-- See also: [Suboxone](/mat-suboxone/suboxone-info), [Vitamins & Supplements](/other-tools/vitamins-supplements), [QuickMD](/resources/quickmd-info)
+- See also: [Suboxone](/mat-suboxone/suboxone-info), [Vitamins & Supplements](/other-tools/vitamins-supplements), [Telehealth Providers](/resources/telehealth)

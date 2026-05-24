@@ -32,7 +32,7 @@ This site has substantial MAT content already. If medication-assisted treatment 
 
 - **[MAT / Suboxone](/mat-suboxone)** — overview, induction, [COWS/SOWS timing](/mat-suboxone/suboxone-cows), low-and-slow community approach, [tapers](/mat-suboxone/suboxone-rapid-taper), [what to do when bupe doesn't fully cover you](/mat-suboxone/suboxone-isnt-working).
 - **[Low-Dose Naltrexone](/other-tools/low-dose-naltrexone)** and **[Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone)** — non-[bupe](/mat-suboxone/suboxone-info) medication options.
-- **[QuickMD](/resources/quickmd-info)** — telehealth path to getting a [Suboxone](/mat-suboxone/suboxone-info) prescription without an in-person visit.
+- **[Telehealth Providers](/resources/telehealth)** — a fact-checked comparison of telehealth options that prescribe [Suboxone](/mat-suboxone/suboxone-info) without an in-person visit.
 
 The community's experience with [7-OH](/compounds/7-oh) and kratom synthetics specifically often differs from the standard clinical playbook (lower starting doses for bupe, attention to the long-acting synthetics, the polysubstance picture). Those pages are worth reading even if you've already been through general addiction-medicine guidance.
 
