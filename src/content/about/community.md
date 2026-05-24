@@ -79,19 +79,49 @@ In **May 2026**, Fly stepped down — from the subreddit ([passing the admin tor
 
 The team is unpaid, volunteer, and rotates as people's situations change. If you'd like to help moderate, the fastest way in is to be a useful, steady presence in the community first, then talk to the current Head Mod when there's an opening.
 
-## Just to be unmistakably clear
+## Just to be unmistakably fucking clear
 
-We have been accused, in earnest, of being shills for Suboxone manufacturers. Of pushing MAT for kickbacks. Of being "dangerous" because we point people toward buprenorphine instead of telling them to white-knuckle it. Of running a front for the pharmaceutical industry. Of being part of some coordinated agenda against the kratom industry. We have been called every name in the book.
+The volunteer team running this thing has, no joke, been called shills for Suboxone manufacturers. Pharma plants. Dangerous for "pushing MAT" on people. Running a coordinated agenda against the kratom industry. Big Pharma puppets. Every variation of "you're the real bad guys here" you can imagine, in DMs, in modmail, in reply chains, in subreddit posts that get deleted ten minutes later, and in the occasional unhinged email.
 
-For the record:
+So let's settle this in writing once.
 
-- **No one pays us.** Not Indivior, not any other Suboxone manufacturer, not any pharma company, not any treatment center, not any telehealth provider, not anyone. Zero dollars have changed hands. Ever.
-- **No one endorses us.** We don't represent any company. We don't have a relationship with any company. The site has no ads. The Discord has no sponsorships. The subreddit has no affiliate links. If we mention QuickMD or a specific MAT medication, it's because community members have used it and reported what happened — not because anyone is paying us to mention it.
-- **We have no agenda beyond the obvious one:** people in our community are dependent on 7-OH and kratom synthetics and want to stop. We point them at the tools that actually work for that, based on what people in this community have actually used to get free.
+**Nobody pays us. Nobody.**
 
-If you've decided we're the bad guys for any of the above, you can leave. We are exhausted with the "you're a shill for Big Pharma" routine from people whose own product is being sold at gas stations and is putting our community members in withdrawal that destroys their lives. Take the criticism to whoever is actually profiting from this — it isn't us.
+Not Indivior. Not any other Suboxone manufacturer. Not any pharma company at all. Not any treatment center. Not any telehealth provider. Not Reddit. Not Discord. Not a single dollar has ever changed hands. The mods run this on their own time, with their own money, after their own day jobs, while managing their own recoveries. The site has no ads, no sponsorships, no affiliate links, no Patreon, no "buy me a coffee," no merch, nothing. If you can find a single revenue line attached to any of this, we'd love to hear about it, because we'd want to know too.
 
-Anyone showing up in good faith with concerns, corrections, or a genuine disagreement about a recommendation we make is welcome. Anyone showing up to call us shills can find the door.
+**Nobody endorses us.**
+
+We don't represent any company. We don't have a relationship with any company. When we mention QuickMD or buprenorphine or [generic clonidine that costs literally a penny a pill](/other-tools/helper-meds-info), it's because people in this community have used those things to come off 7-OH and they worked. Does the generic manufacturer of clonidine — a 50-year-old off-patent medication selling for pennies — slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
+
+**What we actually do, every day:**
+
+- **Hours of moderation work** keeping scammers, sketchy vendors, gas-station-pill marketers, MLM kratom hawkers, and outright bad actors out of the Discord and subreddit. Hours. Every day. That work is invisible until you go look at the ban log.
+- **Hours of writing and cataloging.** Collecting community knowledge into a place that doesn't disappear when Discord's scrollback eats it. Translating lived experience into reference material someone in withdrawal at 3 a.m. can actually use. The compound pages, the protocols, the dosing math, the hotline numbers — that didn't exist in this form before we built it. Now it does, and it's free.
+- **Showing people there is a way out.** Because when you're stuck on this stuff and the people selling it to you are telling you it's "natural" and "safe" and "you're just experiencing wellness benefits" — having someone in your corner who says "no, this is opioid dependence, here's how people get off it" is the difference between getting free and not.
+
+**And here's the kicker — we cover every approach.** We don't push one path because we don't have one to push. People in our community have gotten off 7-OH via:
+
+- [SR-17018](/other-tools/sr17018-info), a biased agonist research chemical with its own caveats
+- Straight tapers on the substance itself, slow and careful
+- Tapers using kratom leaf as a bridge ([this works for some](/other-tools/tapering-with-leaf), doesn't for others)
+- Switching to [MIT-A or DHM](/compounds/mit-a-dhm) temporarily as a step down
+- Cold turkey, with [helper meds](/other-tools/helper-meds-info) and a lot of suffering
+- Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi-info) and [naltrexone](/other-tools/low-dose-naltrexone)
+- Inpatient detox when polysubstance use makes that necessary
+
+If we were "pushing" any one of these, the other six pages on the site wouldn't exist. Take a look around. Count the protocols. The whole point of this resource is that people get off this stuff in different ways and you should have access to the full menu, not just the option a Reddit account with three hours of posting history insists is the only "natural" way.
+
+**If you're showing up to call us shills:**
+
+Take a hard look in the mirror first.
+
+Whose product is being sold at gas stations next to the lottery tickets? Whose product put thousands of people in this community into opioid dependence they didn't sign up for? Whose marketing told everyone it was "natural" and "non-addictive" and "totally safe"? Whose business model depends on people not understanding what they're actually buying?
+
+It isn't us. It isn't the volunteers. It isn't the unpaid mods writing this on a Saturday. The actual people profiting from 7-OH are the ones selling it. Take your "you're the real bad guys" accusation to them. We'll wait.
+
+**We are tired of this.** Tired of the routine where someone gets sober off this poison with our help, then a week later a vendor account shows up to call us pharma plants for pointing them at buprenorphine. Tired of being the target because we're the visible, accountable thing — easier to attack than the actual industry built on this. Tired of having to explain that no, the volunteer in his pajamas at midnight writing a taper schedule from his own recovery experience isn't on Big Pharma's payroll.
+
+Anyone showing up in good faith with concerns, corrections, a genuine disagreement about a recommendation, or a "hey, this page is wrong about X" is welcome and encouraged — see [Contributing & Feedback](/about/contributing). Anyone showing up to call us shills, plants, or "the real problem" can take it somewhere else. We have actual work to do.
 
 ## Helping out
 
