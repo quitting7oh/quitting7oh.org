@@ -54,7 +54,7 @@ If you're going to read one book alongside attending meetings, [Beyond Addiction
 
 **Website:** [al-anon.org](https://al-anon.org)
 
-The largest family support network in the world. Named for and centered on **alcoholism**, but many groups welcome anyone affected by a loved one's substance use, especially in areas where Nar-Anon isn't available. Worth knowing about because of sheer availability — Al-Anon meetings exist nearly everywhere, at multiple times per day, in most US cities, plus a robust online and phone meeting structure.
+The largest family support network in the world. Named for and centered on **alcoholism**, but many groups welcome anyone affected by a loved one's substance use, especially in areas where Nar-Anon isn't available. Useful because of sheer availability — Al-Anon meetings exist nearly everywhere, at multiple times per day, in most US cities, plus a robust online and phone meeting structure.
 
 Twelve-step. The fellowship is large and culturally varied — meetings differ a lot from each other, so if one doesn't fit, try another. Many people who eventually settle into Nar-Anon or SMART F&F start at Al-Anon because that's what their local community has.
 
