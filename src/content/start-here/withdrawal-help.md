@@ -153,10 +153,11 @@ sideways switch.
 
 ### Path 3 — get on Suboxone (MAT)
 
-Often the right choice for **higher-dose [7-OH](/compounds/7-oh), long-acting synthetics,
-or anyone for whom the lower-intensity paths have failed before**.
-Suboxone is a partial opioid agonist; taken correctly it cuts withdrawal
-to nearly zero within hours.
+Often the path people pick when they're on **higher-dose
+[7-OH](/compounds/7-oh), on the long-acting synthetics, or when
+previous attempts to come off without medication didn't hold**.
+Suboxone is a partial opioid agonist; taken correctly it cuts
+withdrawal to nearly zero within hours.
 
 The community's general posture is a **short, structured rapid taper**
 — 5 to 10 days, **14 days at the outside**. That's the range we feel
@@ -203,11 +204,29 @@ from than the compound they were on.
 
 You don't have to decide right this minute. If you're early in
 withdrawal (< 24 hours) and your COWS score is still low, all four
-paths are open. If you're past 24 hours and miserable, Path 3 (Suboxone)
-will get you relief fastest. Path 4 (SR-17018) is mid-tier — slower
-than Suboxone but doesn't require a prescription. Path 2 (leaf) is the
-gentlest landing if you already have leaf on hand or can source it from
-a trusted vendor.
+paths are open. The practical differences that usually shape the
+choice:
+
+- **Speed of symptom relief.** Suboxone cuts withdrawal to near zero
+  within hours of a successful induction. SR-17 takes a day or two to
+  stabilize. Leaf is a gradual reduction. Cold turkey has no
+  pharmacological relief — symptoms run their course and the helper
+  meds take the edge off.
+- **What you need to start.** Suboxone needs a prescriber and a
+  COWS score above 12. SR-17 needs sourcing and a willingness to
+  take an unregulated compound. Leaf needs sourcing from a trusted
+  vendor, ideally with a planned schedule. Cold turkey needs a
+  pharmacy run and the helper-med list.
+- **What it costs you later.** Suboxone brings its own dependence
+  and a taper at the end. SR-17 brings its own dependence and a
+  less-charted taper. Leaf brings its own dependence; the taper is
+  the protocol. Cold turkey doesn't add a new substance to come off
+  later.
+
+None of these is "the right" path in general. Different paths fit
+different situations, and people in this community have come off
+[7-OH](/compounds/7-oh) and the synthetics through every one of
+them.
 
 ## When to go to the ER
 
