@@ -8,9 +8,11 @@ sort: 1
 
 > ⚠️ **Reference page, not medical advice.** This is a pharmacology
 > primer. It does not contain doses, taper schedules, or product
-> recommendations. For clinical decisions — including whether and how
-> to taper — see the [Telehealth Providers](/resources/telehealth)
-> comparison and talk to a prescriber.
+> recommendations. If you're on a prescribed medication and worried
+> about interactions, ask your pharmacist or prescriber about that
+> specific concern. The leaf-taper plan itself is mostly community
+> ground — see the [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)
+> page for the community-documented approach.
 
 > ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language.
@@ -234,8 +236,8 @@ explains, is genuinely contested in the literature.**
 **Settled:** the conversion happens and produces measurable
 circulating 7-OH. **Not settled:** how much of leaf's opioid-like
 effect is mitragynine itself vs. converted 7-OH, and whether
-"prodrug" framing applies in humans. One other piece worth knowing:
-in mice, mitragynine's respiratory-depression effect plateaus at
+"prodrug" framing applies in humans. One other thing: in mice,
+mitragynine's respiratory-depression effect plateaus at
 higher doses because conversion to 7-OH **saturates**, while direct
 7-OH dosing is dose-linear ([Berthold 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9314834/)) —
 a mechanistic argument for why oral leaf has a self-limiting opioid
@@ -289,12 +291,14 @@ that exists. Known caveats:
 - **Switching dependencies is not resolving dependency.** Leaf
   tapering shifts what you depend on; it doesn't, on its own, get
   you to abstinence.
-- **A prescriber familiar with kratom and 7-OH can help.** Many
-  clinicians have never encountered these compounds and may not handle
-  a taper conversation well. The
-  [Telehealth Providers](/resources/telehealth) comparison lists
-  options that have specific kratom/7-OH experience if you want a
-  clinician in the loop.
+- **Clinician engagement varies a lot here.** The leaf taper plan
+  itself is mostly community ground — many clinicians have never
+  encountered these compounds and won't have a substantive taper
+  conversation. The narrow asks where a prescriber genuinely helps
+  are adjunct meds (clonidine, gabapentin) and lab work. The
+  [Telehealth Providers](/resources/telehealth) comparison flags
+  options with specific kratom/7-OH experience if you want adjunct
+  support alongside a leaf taper.
 
 If you're considering this approach in detail, the
 [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf) page
@@ -332,4 +336,6 @@ and DEA primary sources before relying on anything specific.
 > ([Suboxone](/mat-suboxone/suboxone-info),
 > [SR-17](/other-tools/sr17018-info), or toughing it out with
 > [helper meds](/other-tools/helper-meds-info)). For finding a
-> prescriber, see [Telehealth Providers](/resources/telehealth).
+> prescriber for Suboxone or helper meds, see
+> [Telehealth Providers](/resources/telehealth). SR-17 is
+> off-prescription; community ground.
