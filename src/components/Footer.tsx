@@ -49,10 +49,8 @@ export function Footer() {
             <div className="text-sm text-muted-foreground md:col-span-2">
               <p className="font-semibold text-foreground">AI disclaimer</p>
               <p className="mt-2">
-                Yes, we used AI to help build out some of this content. The
-                source is community members who've lived through 7-OH and
-                kratom-synthetic recovery; humans verify every factual claim
-                against a primary source.
+                Yes, we used AI to write this. The source is community
+                members who've come off 7-OH and kratom derivatives.
               </p>
               <p className="mt-2">
                 The humans here are jelly-filled meat bags making a
