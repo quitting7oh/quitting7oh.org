@@ -16,7 +16,7 @@ sort: 3
 You're not making it up. Two of the most consistent symptoms people
 report in the weeks and months after coming off 7-OH and kratom
 synthetics are **depression** and **anhedonia**. They feel related
-because they often happen together, but they're not the same thing —
+because they often happen together, but they're not the same thing,
 and treating them as the same thing usually misses what helps.
 
 This page is about both.
@@ -38,8 +38,8 @@ Music sounds fine but doesn't move you. Food is fuel. Sex is
 mechanical. A walk in the morning is just a walk. People describe
 it as "living behind glass" or "okay but never great."
 
-The reason the distinction matters: **anhedonia responds to
-different interventions than classical depression.** Bupropion
+**Anhedonia responds to different interventions than classical
+depression**, which is why the distinction matters. Bupropion
 (a norepinephrine-dopamine reuptake inhibitor) is often preferred
 over SSRIs when anhedonia is the primary feature. Behavioral
 activation outperforms passive coping. The dopamine system
@@ -68,10 +68,9 @@ took shape in early 2024](/post-acute/long-term-outlook). The
 broader opioid recovery literature is the closest reference, with
 that caveat.
 
-What this means in practice: if you're past acute and you feel
-flat or low, you're in normal company. It does not mean recovery
-isn't working. It usually means the system is rebalancing on its
-own timeline.
+If you're past acute and you feel flat or low, you're in normal
+company. It doesn't mean recovery isn't working. It usually means
+the system is rebalancing on its own timeline.
 
 ## Why this happens
 
@@ -136,7 +135,7 @@ community-discussed (the supplement list) — sits on the umbrella
 **[PAWS page](/post-acute/what-is-paws)**. That framework applies
 here too; this page isn't going to duplicate it.
 
-What's worth noting *specifically* for depression and anhedonia:
+Specifically for depression and anhedonia:
 
 - **Bupropion over SSRIs when anhedonia is the leading symptom.**
   Bupropion is a norepinephrine-dopamine reuptake inhibitor —
@@ -196,15 +195,16 @@ self-medicating, etc.), see the
 - You don't trust what you'll do in the next few hours
 
 Suicidal thinking in post-opioid recovery is a documented elevated
-risk, especially in the first months. **It's not weakness, it's
-neurobiology** — and it's treatable. The 988 operators have heard
+risk, especially in the first months. It's a neurobiological
+symptom of receptor recalibration, and it's treatable. The 988
+operators have heard
 "I'm in opioid recovery and I'm having dark thoughts" thousands of
 times. Calling is the right move, not a failure.
 
 If a craving is part of what's pushing you toward the edge, see
 also [Thinking About Using?](/start-here/thinking-about-using).
 
-## The honest framing
+## What recovery looks like
 
 For most people, the depression and anhedonia of post-acute
 withdrawal are a phase, not a permanent state. The dopamine system
