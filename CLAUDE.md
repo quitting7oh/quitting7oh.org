@@ -388,6 +388,48 @@ narrow scope (a page about Suboxone is naturally about Suboxone), but
 their opening framing should still acknowledge bupe as one of several
 options before diving in.
 
+### Don't apply opioid-overdose framing to 7-OH specifically
+
+7-OH is a mu-opioid agonist on paper, but **pure-7-OH overdoses
+without polysubstance involvement are clinically rare.** The standard
+opioid-overdose literature — prison-release mortality multipliers,
+MAT-reduces-OD-deaths cohort data, "tolerance drops then you OD"
+framings — describes traditional opioids (heroin, fentanyl,
+prescription opioids) and does not transfer cleanly to 7-OH.
+
+**Do not write or imply:**
+
+- "129× overdose mortality" / Binswanger-NEJM-style stats as if they
+  apply to 7-OH
+- "Your tolerance dropped during abstinence; returning to your old
+  dose is dangerous" as a 7-OH-specific warning
+- MAT-mortality numbers (Larochelle, Sordo) as a 7-OH-specific
+  argument for buprenorphine
+- Anything that suggests pure-7-OH overdose is a common cause of
+  kratom-adjacent death
+
+**What IS appropriate:**
+
+- **Polysubstance combinations kill people.** Mixing 7-OH with
+  alcohol, benzos, gabapentinoids, or other depressants raises real
+  overdose risk. This is the actual fatal pattern.
+- **Have naloxone (Narcan) on hand as harmless safety equipment.**
+  See [for-loved-ones/safety](/for-loved-ones/safety) for the existing
+  framing: real-world products are mixed, combinations are dangerous,
+  and Narcan is essentially harmless if given when not needed — so
+  use it if there's any doubt.
+- **Other kratom-derived compounds DO have meaningful overdose risk.**
+  [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and
+  [pseudo](/compounds/pseudo) are full mu-agonists or have long
+  half-lives — overdose framing on those pages is correct and should
+  stay.
+
+If you find a passage on the site that treats 7-OH as if it carries
+the overdose-mortality profile of traditional opioids, **remove it.**
+Keep the polysubstance-is-dangerous framing and the practical-Narcan
+framing where they exist on their own; cut the 7-OH-OD-mortality
+claims entirely rather than reframing them.
+
 ### Default to lower / slower than typical clinical guidance
 
 The community has consistently found that the standard clinical

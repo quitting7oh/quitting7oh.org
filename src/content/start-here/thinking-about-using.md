@@ -48,14 +48,36 @@ button in the corner of any page.
 
 ## What this feeling is
 
-Cravings aren't a willpower failure. They spike when a few specific
-things stack up — most of the time, some combination of **HALT**
-(hungry, angry, lonely, tired) plus a conditioned trigger (a smell, a
-place, a time of day, a stressful conversation).
+The "fuck its" aren't the same as an early-withdrawal craving. Early
+cravings feel physical — your body is loud, you know what it wants,
+and you know you're white-knuckling it. The "fuck its" are different.
+They're quieter. They feel like clarity.
 
-If you're past acute withdrawal, you may be in a
-[PAWS](/post-acute/what-is-paws) wave. PAWS is non-linear: a craving
-spike at month 7 doesn't mean you lost months 1–6. Waves pass.
+They usually show up as a re-frame. The voice doesn't say "I want to
+use." It says some version of:
+
+- *"What's the point. I've been doing this for months and I still feel
+  like shit."*
+- *"One time won't matter. I've earned it."*
+- *"Maybe I had it under control all along and I overreacted."*
+- *"I'll just use a little. Just enough to take the edge off tonight."*
+
+Notice how reasonable each of those sounds. **That's the trick.** A
+craving you can recognize as a craving is easy to refuse. The "fuck
+its" don't feel like a craving — they feel like you finally seeing
+clearly. That's why they're more dangerous than the screaming-physical
+kind. The brain is finding plausible-sounding reasons because it wants
+the thing.
+
+They spike when a few specific things stack up — usually some
+combination of **HALT** (hungry, angry, lonely, tired) plus a
+conditioned trigger (a smell, a place, a time of day, a stressful
+conversation), often in a [PAWS](/post-acute/what-is-paws) wave.
+
+**The reframe to keep in your back pocket:** if a thought about using
+shows up suddenly *and* feels uncharacteristically reasonable,
+that's the symptom, not the truth. Treat it like a craving and use
+the techniques below.
 
 ## The reach-out ladder
 
@@ -119,45 +141,48 @@ lifting, see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-wor
 
 A few things that are documented, with sources:
 
-- **Relapse is common across all substance use disorders.**
-  [NIDA puts the range at 40–60%](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery)
-  — comparable to chronic illnesses like asthma and hypertension.
-  **Relapse doesn't mean treatment failed. It means treatment needs
-  to be adjusted or resumed.**
-- **MAT (medication for opioid use disorder) substantially reduces
-  death.** After a nonfatal opioid overdose, people on methadone had
-  ~59% lower opioid-related mortality and people on buprenorphine
-  ~38% lower, over the following year
-  ([Larochelle et al., *Ann Intern Med* 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6387681/)).
-- **Kratom-specific relapse data barely exists.** The numbers above
-  come from broader opioid use disorder literature. The 2023
-  scientific expert forum on kratom withdrawal
+- **Relapse is common in early recovery — exactly how common is
+  disputed.** [NIDA's widely-cited 40–60% figure](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery)
+  is a long-term, chronic-illness-comparable rate (compared to
+  hypertension and asthma at 50–70%). **Some early-window cohort
+  studies report substantially higher rates — into the 80s and 90s in
+  the first months** — depending on the substance, the population, and
+  how "relapse" is defined. The honest version: in the first weeks
+  and months, relapse is genuinely common. **It doesn't mean treatment
+  failed. It means treatment needs to be adjusted or resumed.**
+- **Kratom-specific relapse data barely exists.** The 2023 scientific
+  expert forum on kratom withdrawal
   ([Smith et al., *Drug Alcohol Depend Rep* 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10311168/))
-  explicitly flags this as a research gap.
-
-You won't find "X% relapse in 90 days" numbers on this page because
-those numbers, when you trace them, mostly aren't real.
+  explicitly flags this as a research gap. Anything specific you've
+  seen — "X% of kratom users relapse in Y days" — is almost certainly
+  not from a real study.
+- **What does reduce relapse risk: staying in contact with people.**
+  Peer support, regular check-ins, [meetings](https://meetings.smartrecovery.org/meetings/),
+  a [Telehealth prescriber](/resources/telehealth) who knows you,
+  family who knows what's going on. The specific number on "how much"
+  varies by study, but the direction is consistent.
 
 ## If you've already used
 
 Reading this after a slip, not before? **You haven't lost everything.**
-A relapse doesn't erase the work that got you the abstinence in the
-first place. The neurobiology of recovery doesn't reset to zero.
+A return to use doesn't erase the work that got you the abstinence in
+the first place. The neurobiology of recovery doesn't reset to zero.
 
-**One safety thing you need to know right now:**
+**The one safety thing to know:**
 
-> ⚠️ **Your tolerance dropped during abstinence.** Returning to your
-> old dose is dangerous in a way it wasn't before. People released from
-> prison have [~129× the overdose death rate](https://www.nejm.org/doi/full/10.1056/NEJMsa064115)
-> of the general population in their first two weeks back, almost
-> entirely from this tolerance-loss mechanism. Population data doesn't
-> exist for 7-OH specifically, but 7-OH is a mu-opioid agonist — the
-> mechanism is the same.
+> ⚠️ **Don't mix.** The real fatal pattern in kratom-adjacent deaths
+> is **combinations** — mixing with **alcohol, benzodiazepines,
+> gabapentinoids, or other depressants**. That's what kills people.
+> Other kratom-derived synthetics
+> ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
+> [pseudo](/compounds/pseudo)) are more potent on their own and carry
+> more risk solo.
 >
-> **Start much lower than you used to.** Tell someone you're with. Have
-> [naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
-> nearby. Do not mix with alcohol, benzodiazepines, or other depressants
-> — the combination is what kills people, not the compound alone.
+> Keep [naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
+> nearby as cheap, harmless safety equipment. Tell someone you're with.
+> If you're alone, [Never Use Alone](https://neverusealone.com)
+> (**1-800-484-3731**) stays on the call and sends EMS if you stop
+> responding.
 
 Next step that makes sense: get back in touch with your prescriber,
 return to your taper plan, or — if you didn't have one — see the
