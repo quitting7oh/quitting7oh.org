@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-The most useful thing you can have right now is a realistic picture of what your loved one is going through, what's coming, and what the timeline actually looks like. Most families are working from movie-of-the-week stereotypes about "rock bottom" and "just stop using," and the reality is both worse and more recoverable than that.
+The most useful thing you can have right now is a realistic picture of what your loved one is going through, what's coming, and what the timeline actually looks like. Most families are working from movie-of-the-week stereotypes about "rock bottom" and "just stop using." What's actually happening is both worse and more recoverable than that.
 
 ## Addiction is not a moral failing
 
@@ -14,16 +14,55 @@ The lying, the stealing, the broken promises, the disappearing — those behavio
 
 This doesn't mean your loved one isn't responsible for repairing harm later. It means that "if they really loved me they would stop" is, biologically, the wrong frame. The dependence is loud and ugly, and it does not erase who they are.
 
+The next several sections walk through the specific patterns families see — the dishonesty, the disappearing and secrecy, the financial side, and the broken promises around quitting. The point isn't to catalog grievances; it's to give you a picture concrete enough that you can tell what's the dependence and what's the person, and to stop wondering whether what you're seeing is normal. It is.
+
+## What the dishonesty pattern usually looks like
+
+Lying about use is one of the most consistent things families report, and it's where the gap between the person you know and the person in dependence shows up most plainly. The pattern typically includes:
+
+- Denying use that you've directly witnessed, or that's obvious from the room they just walked out of.
+- Minimizing how much, how often, or how long it's been going on. "Just a couple a day" when the receipts show closer to ten.
+- Hidden stashes in bags, glove compartments, drawers, under furniture, in places they "would never put anything." Often discovered by accident.
+- Defensiveness or anger when the topic comes up, sometimes flipped to make you feel like the problem for asking.
+- "I'll never lie to you about this" said with sincerity, followed by lying about it again within days or hours.
+
+The lying isn't strategic the way it looks from the outside. It's protective of access — the dependence treats anyone who might interrupt use as a threat, and the brain produces whatever explanation, denial, or counterattack will end the interruption fastest. The same person, sober and a year out, will often be horrified at the lying patterns they ran.
+
+## What the disappearing and secrecy pattern usually looks like
+
+A second pattern that hits families hard: the person becomes harder to find, harder to reach, and increasingly compartmentalized. The shape:
+
+- Going quiet for hours when they used to be reachable. Phone "died." Phone "on silent." Phone left at home.
+- Locked phones where there used to be none. New accounts you find out about by accident. Browser history wiped.
+- Spending more time alone in bathrooms, garages, cars — anywhere with a door that closes.
+- Trips out of the house that don't quite make sense, or that come back with explanations that don't add up.
+- Withdrawing from family events, hobbies they used to love, friendships that aren't using-adjacent.
+- A second social orbit, online or in person, that's separate from family and that you only get glimpses of.
+
+Same mechanism as the dishonesty pattern: the dependence prioritizes uninterrupted access to use. Privacy that used to be normal-amount-of-privacy starts being load-bearing for the use itself. The shrinking world isn't disinterest in you; it's the brain economizing time and attention around the substance.
+
 ## What the financial pattern usually looks like
 
-A common reality for families: spending is much higher than the person has admitted. The pattern typically includes:
+The financial side is the one most families can document, because the receipts exist whether the person admits to them or not. The pattern typically includes:
 
-- Significant daily costs that scale up as tolerance builds — what started as "a few dollars" can become hundreds per day within months.
+- Significant daily costs that scale up as tolerance builds. What started as "a few dollars" can become hundreds per day within months.
 - Purchases hidden across different cards, in cash, or through accounts the family doesn't see.
 - Drained savings, missed bills, possessions disappearing.
+- Borrowing money for reasons that don't quite track, or that change when you ask twice.
 - Defensive or evasive responses when money comes up.
 
-This isn't because they're a bad person. It's because **dependence rewires priorities.** The substance becomes a daily survival need, and the brain produces increasingly creative justifications for spending on it. Knowing this doesn't mean you have to fund the use — see [Boundaries Without Punishment](/for-loved-ones/boundaries) — but it helps to understand what you're actually seeing.
+Same root cause: **dependence rewires priorities.** The substance becomes a daily survival need, and the brain produces increasingly creative justifications for spending on it. Knowing this doesn't mean you have to fund the use (see [Boundaries Without Punishment](/for-loved-ones/boundaries)), but it helps to understand what you're actually seeing.
+
+## What the broken-promises pattern usually looks like
+
+Most families have heard "I'm done" or "I'm tapering" or "this is the last time" more than once. That repetition isn't proof your loved one is lying to you on purpose. The pattern usually includes:
+
+- Genuine intent in the moment, often after a bad night or a scare, followed by the intent quietly evaporating once the symptoms ease.
+- Tapers that start, slip, restart, and slip again, sometimes within days.
+- A "quit date" that gets moved. Then moved again.
+- Periods of real abstinence, sometimes days or weeks, followed by a return that they didn't see coming either.
+
+The promise was sincere when it was made. The dependence is what unmakes it. This matters because it changes what you do with the next promise: you don't punish them for breaking it (they were going to break it; the dependence does that), and you also don't believe it without seeing evidence behind it. The [Boundaries](/for-loved-ones/boundaries) page and the CRAFT section in [How to Talk](/for-loved-ones/how-to-talk) cover the practical version of how to navigate this without pretending things are fine or burning the relationship down.
 
 ## What withdrawal looks like
 
@@ -57,7 +96,7 @@ This is genuinely miserable. It's not "the flu." It's why people keep using even
 - Irritability and anger that feels disproportionate
 - For people with longer use histories, hormonal disruption can also be part of the picture
 
-**Here's the part to brace for: your loved one may seem emotionally worse for a while *after* getting clean, before they get better.** This is normal. It's not failure. It's not relapse-imminent. It's the brain healing on its own slow timeline.
+**Here's the part to brace for: your loved one may seem emotionally worse for a while *after* getting clean, before they get better.** This is normal — the brain healing on its own slow timeline, not a failure or impending relapse.
 
 The community's full page on this — [What is PAWS](/post-acute/what-is-paws) — has more detail and is worth reading. Knowing PAWS is real and has a shape makes it easier to ride out without panic.
 
