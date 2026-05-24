@@ -128,10 +128,13 @@ on repeat for 12 hours is a recipe for being so depleted that the
 next wave wins. The longer version needs a different toolkit.
 
 - **Externalize the decision.** Don't try to win 12 hours of "should
-  I" with willpower. Hand it to a person. *"I'm having a rough one. If
-  I message you asking about using later, please remind me I asked you
-  to remind me."* Make the choice structural rather than
-  minute-by-minute.
+  I" with willpower. Hand it to a person now, while you're clear, so
+  they can anchor you to it later when you're not. The script is
+  roughly: *"I'm in a rough one tonight. I'm not going to use. If I
+  message you later sounding casual about it or saying I've changed
+  my mind, that's the craving talking — push back and remind me
+  what I said right now."* The choice becomes structural rather
+  than something you have to re-win every hour.
 - **Change your environment.** Same-place fuck its are partly
   conditioned triggers (a couch, a parking lot, a drawer, the route
   home from work). A long walk, a drive, a visit to family, a coffee
