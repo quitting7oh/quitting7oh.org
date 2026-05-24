@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Phone, MessageSquare, ExternalLink } from 'lucide-react';
+import { Phone, MessageSquare, ExternalLink, X } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -74,16 +74,69 @@ const HOTLINES: Hotline[] = [
   },
 ];
 
+const SESSION_KEY = 'crisis-button-dismissed';
+const PERSISTENT_KEY = 'crisis-button-disabled';
+
 export function CrisisButton() {
+  // Default to hidden during SSR so it never flashes before we know whether
+  // the user has dismissed it.
+  const [hidden, setHidden] = React.useState(true);
+
+  React.useEffect(() => {
+    try {
+      if (localStorage.getItem(PERSISTENT_KEY) === '1') return;
+      if (sessionStorage.getItem(SESSION_KEY) === '1') return;
+      setHidden(false);
+    } catch {
+      // Storage blocked → still show the button (safer default for a
+      // crisis affordance than hiding it).
+      setHidden(false);
+    }
+  }, []);
+
+  const dismissForSession = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setHidden(true);
+    try {
+      sessionStorage.setItem(SESSION_KEY, '1');
+    } catch {
+      // ignore
+    }
+  };
+
+  const dismissForever = () => {
+    setHidden(true);
+    try {
+      localStorage.setItem(PERSISTENT_KEY, '1');
+    } catch {
+      // ignore
+    }
+  };
+
+  if (hidden) return null;
+
   return (
     <Sheet>
-      <SheetTrigger
-        className="fixed bottom-6 left-6 z-20 inline-flex h-11 items-center gap-2 rounded-full border-2 border-amber-500 bg-amber-50 px-4 text-sm font-semibold text-amber-900 shadow-lg transition hover:bg-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 sm:bottom-8 sm:left-8 dark:border-amber-400 dark:bg-amber-950/70 dark:text-amber-100 dark:hover:bg-amber-950"
-        aria-label="Open crisis resources"
-      >
-        <span aria-hidden="true">🆘</span>
-        <span>Crisis</span>
-      </SheetTrigger>
+      <div className="fixed bottom-6 left-6 z-20 sm:bottom-8 sm:left-8">
+        <SheetTrigger
+          className="inline-flex h-11 items-center gap-2 rounded-full border-2 border-amber-500 bg-amber-50 pl-4 pr-10 text-sm font-semibold text-amber-900 shadow-lg transition hover:bg-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:border-amber-400 dark:bg-amber-950/70 dark:text-amber-100 dark:hover:bg-amber-950"
+          aria-label="Open crisis resources"
+        >
+          <span aria-hidden="true">🆘</span>
+          <span>Crisis</span>
+        </SheetTrigger>
+        {/* The X sits on top of the right side of the pill — its own
+            button so clicking it dismisses without triggering the Sheet. */}
+        <button
+          type="button"
+          onClick={dismissForSession}
+          aria-label="Hide crisis button"
+          className="absolute right-1 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-amber-900/70 hover:bg-amber-200/80 hover:text-amber-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-100/70 dark:hover:bg-amber-900 dark:hover:text-amber-50"
+        >
+          <X className="h-4 w-4" />
+        </button>
+      </div>
       <SheetContent
         side="right"
         className="w-full overflow-y-auto sm:max-w-md"
@@ -132,25 +185,34 @@ export function CrisisButton() {
             </li>
           ))}
         </ul>
-        <p className="border-t border-border px-4 py-4 text-xs text-muted-foreground">
-          Need treatment, not crisis? Visit{' '}
-          <a
-            href="https://findtreatment.gov"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline"
+        <div className="border-t border-border px-4 py-4">
+          <p className="text-xs text-muted-foreground">
+            Need treatment, not crisis? Visit{' '}
+            <a
+              href="https://findtreatment.gov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              findtreatment.gov
+            </a>
+            {' '}or read our{' '}
+            <a
+              href="/start-here/sos-resources"
+              className="text-primary hover:underline"
+            >
+              SOS Resources
+            </a>{' '}
+            page.
+          </p>
+          <button
+            type="button"
+            onClick={dismissForever}
+            className="mt-3 text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
           >
-            findtreatment.gov
-          </a>
-          {' '}or read our{' '}
-          <a
-            href="/start-here/sos-resources"
-            className="text-primary hover:underline"
-          >
-            SOS Resources
-          </a>{' '}
-          page.
-        </p>
+            Don’t show this button again
+          </button>
+        </div>
       </SheetContent>
     </Sheet>
   );
