@@ -2,7 +2,7 @@
 title: "Taking Care of Yourself"
 description: "The unglamorous basics that keep you standing through a long process. Therapy, support groups, sleep, the hypervigilance trap, and why it's okay to be happy while they're still suffering."
 category: "for-loved-ones"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 10
 ---
 
