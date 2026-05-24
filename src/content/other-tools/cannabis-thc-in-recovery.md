@@ -281,7 +281,7 @@ regular use can blunt drive and follow-through, has some support
 with methodological limits
 ([Pacheco-Colón et al., systematic review, 2021](https://pubmed.ncbi.nlm.nih.gov/34079688/)).
 For someone working on the behavioral and routine-building side of
-recovery, this is worth weighing.
+recovery, that matters.
 
 **Psychosis risk in predisposed individuals.** A dose-response
 relationship is now well-established: heaviest users have
