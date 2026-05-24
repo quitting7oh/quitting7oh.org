@@ -31,6 +31,8 @@ export function Footer() {
               on{' '}
               <a
                 href={SITE.repo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary underline underline-offset-2 hover:opacity-80"
               >
                 GitHub
@@ -51,7 +53,7 @@ export function Footer() {
             <a href="/resources/community" className="hover:text-foreground">
               Community
             </a>
-            <a href={SITE.repo} className="hover:text-foreground">
+            <a href={SITE.repo} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
               GitHub
             </a>
           </nav>
