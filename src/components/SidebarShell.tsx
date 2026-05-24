@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { SidebarProvider, SidebarInset } from '~/components/ui/sidebar';
 import { AppSidebar, type SidebarCategory } from '~/components/AppSidebar';
 
 interface Props {
@@ -8,15 +7,14 @@ interface Props {
   children: React.ReactNode;
 }
 
-/** Wraps the page's main content area in a SidebarProvider so the
- *  SidebarTrigger and the AppSidebar share context. The Astro hamburger
- *  in Header.astro toggles the mobile drawer via a 'toggle-sidebar' event
- *  that AppSidebar listens for. */
+/** Lays out the sidebar + main content side by side. On mobile the sidebar
+ *  is hidden in a Sheet drawer that the Astro hamburger in Header opens via
+ *  a 'toggle-sidebar' custom event. */
 export function SidebarShell({ categories, currentPath, children }: Props) {
   return (
-    <SidebarProvider defaultOpen={true}>
+    <div className="mx-auto flex max-w-[88rem] gap-8 px-4 sm:px-6 lg:px-8">
       <AppSidebar categories={categories} currentPath={currentPath} />
-      <SidebarInset>{children}</SidebarInset>
-    </SidebarProvider>
+      <div className="min-w-0 flex-1">{children}</div>
+    </div>
   );
 }

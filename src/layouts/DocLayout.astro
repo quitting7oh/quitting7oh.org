@@ -1,8 +1,8 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { SidebarShell } from '~/components/SidebarShell';
-import Toc from '~/components/Toc.astro';
-import TocMobile from '~/components/TocMobile.astro';
+import { Toc } from '~/components/Toc';
+import { TocMobile } from '~/components/TocMobile';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { getCategory } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
@@ -47,51 +47,49 @@ const currentPath = Astro.url.pathname;
     categories={sidebarCategories}
     currentPath={currentPath}
   >
-    <div id="main-content" class="py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
-      <div class:list={['mx-auto flex gap-8', wide ? 'max-w-[112rem]' : 'max-w-[88rem]']}>
-        <div class:list={['mx-auto min-w-0 flex-1', wide ? 'max-w-full' : 'max-w-[52rem]']}>
-          <Breadcrumbs
-            client:load
-            crumbs={[
-              ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
-              { label: title },
-            ]}
-          />
-          <h1 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            {title}
-          </h1>
-          {description && (
-            <p class:list={[
-              'mt-3 text-lg text-muted-foreground',
-              wide && 'max-w-3xl',
-            ]}>{description}</p>
-          )}
-
-          {!wide && <div class="mt-6"><TocMobile headings={headings} /></div>}
-
-          <article class:list={[
-            'prose-recovery dark:prose-invert mt-8',
-            wide && 'max-w-none',
-          ]} data-pagefind-body>
-            <slot />
-          </article>
-
-          <div class="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-            {updatedStr && <span>Last updated: <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
-            <a href={editUrl} class="text-primary underline underline-offset-2 hover:opacity-80">
-              Edit this page on GitHub
-            </a>
-          </div>
-        </div>
-
-        {!wide && (
-          <aside class="hidden w-56 shrink-0 py-4 xl:block">
-            <div class="sticky top-24">
-              <Toc headings={headings} />
-            </div>
-          </aside>
+    <main id="main-content" class="flex min-w-0 flex-1 gap-8 py-8 lg:py-12">
+      <div class:list={['mx-auto min-w-0 flex-1', wide ? 'max-w-full' : 'max-w-[52rem]']}>
+        <Breadcrumbs
+          client:load
+          crumbs={[
+            ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
+            { label: title },
+          ]}
+        />
+        <h1 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          {title}
+        </h1>
+        {description && (
+          <p class:list={[
+            'mt-3 text-lg text-muted-foreground',
+            wide && 'max-w-3xl',
+          ]}>{description}</p>
         )}
+
+        {!wide && <div class="mt-6"><TocMobile headings={headings} client:load /></div>}
+
+        <article class:list={[
+          'prose-recovery dark:prose-invert mt-8',
+          wide && 'max-w-none',
+        ]} data-pagefind-body>
+          <slot />
+        </article>
+
+        <div class="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+          {updatedStr && <span>Last updated: <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
+          <a href={editUrl} class="text-primary underline underline-offset-2 hover:opacity-80">
+            Edit this page on GitHub
+          </a>
+        </div>
       </div>
-    </div>
+
+      {!wide && (
+        <aside class="hidden w-56 shrink-0 py-4 xl:block">
+          <div class="sticky top-24">
+            <Toc headings={headings} client:idle />
+          </div>
+        </aside>
+      )}
+    </main>
   </SidebarShell>
 </BaseLayout>

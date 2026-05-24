@@ -595,25 +595,6 @@
     @apply sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50
            focus:rounded focus:bg-accent-600 focus:px-3 focus:py-2 focus:text-white;
   }
-
-  /* shadcn Sidebar positions itself fixed at viewport top:0. Our sticky
-     Header (z-30) and BetaBanner sit above it visually, so the sidebar's
-     top items would otherwise be hidden behind them. Pad the sidebar's
-     inner content area down by the combined banner+header height so the
-     nav list starts where it's actually visible. */
-  [data-sidebar="sidebar"] {
-    padding-top: 6.5rem;
-  }
-  @media (max-width: 640px) {
-    [data-sidebar="sidebar"] {
-      padding-top: 8rem;
-    }
-  }
-  /* On mobile, the sidebar is the Sheet portal — that one IS above the
-     header (Sheet uses z-50 by default) so it doesn't need the offset. */
-  [data-sidebar="sidebar"][data-mobile="true"] {
-    padding-top: 0;
-  }
 }
 
 :root {
