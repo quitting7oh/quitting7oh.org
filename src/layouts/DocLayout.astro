@@ -6,7 +6,7 @@ import { TocMobile } from '~/components/TocMobile';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { getCategory } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
-import { editOnGithubUrl } from '~/lib/site';
+import { viewOnGithubUrl } from '~/lib/site';
 import type { MarkdownHeading } from 'astro';
 
 interface Props {
@@ -32,7 +32,7 @@ const {
   wide = false,
 } = Astro.props;
 const cat = getCategory(category);
-const editUrl = editOnGithubUrl(filePath);
+const sourceUrl = viewOnGithubUrl(filePath);
 const updatedStr = lastUpdated
   ? lastUpdated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
   : undefined;
@@ -77,8 +77,8 @@ const currentPath = Astro.url.pathname;
 
         <div class="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           {updatedStr && <span>Last updated: <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
-          <a href={editUrl} class="text-primary underline underline-offset-2 hover:opacity-80">
-            Edit this page on GitHub
+          <a href={sourceUrl} class="text-primary underline underline-offset-2 hover:opacity-80">
+            View source on GitHub
           </a>
         </div>
       </div>
