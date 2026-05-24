@@ -148,14 +148,14 @@ A few things that are documented, with sources:
   hypertension and asthma at 50–70%). **Some early-window cohort
   studies report substantially higher rates — into the 80s and 90s in
   the first months** — depending on the substance, the population, and
-  how "relapse" is defined. The honest version: in the first weeks
-  and months, relapse is genuinely common. **It doesn't mean treatment
-  failed. It means treatment needs to be adjusted or resumed.**
+  how "relapse" is defined. **In the first weeks and months, relapse
+  is genuinely common. It doesn't mean treatment failed; it means
+  treatment needs to be adjusted or resumed.**
 - **Kratom-specific relapse data barely exists.** The 2023 scientific
   expert forum on kratom withdrawal
   ([Smith et al., *Drug Alcohol Depend Rep* 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10311168/))
   explicitly flags this as a research gap. Anything specific you've
-  seen — "X% of kratom users relapse in Y days" — is almost certainly
+  seen ("X% of kratom users relapse in Y days") is almost certainly
   not from a real study.
 - **What does reduce relapse risk: staying in contact with people.**
   Peer support, regular check-ins, [meetings](https://meetings.smartrecovery.org/meetings/),
