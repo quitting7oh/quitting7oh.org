@@ -164,7 +164,7 @@ comfortable recommending for 7-OH and the synthetics; the goal is to
 use Suboxone as a bridge through acute, not as an open-ended
 maintenance medication. Longer-term use is a real choice some people
 make, but it brings its own dependence and a separate set of risks
-that are worth understanding before you commit — see
+to understand before you commit; see
 **[What You Should Know About Long-Term Suboxone](/mat-suboxone/suboxone-risks)**.
 
 - Read **[Suboxone](/mat-suboxone/suboxone-info)** for the
