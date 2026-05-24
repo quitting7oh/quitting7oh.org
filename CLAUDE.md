@@ -66,6 +66,53 @@ The site is the source of truth. Edit pages directly under
 front-matter and conventions. The original Discord-export ingest
 pipeline has been retired; do not reintroduce it.
 
+## UI components: shadcn/ui + React
+
+All user-facing components are **React** built on **shadcn/ui** (Radix
+primitives + Tailwind). Astro renders the markup and content collection
+shell; React handles every interactive component as an island.
+
+Conventions:
+
+- New components go in `src/components/` (top level) and import shadcn
+  primitives from `~/components/ui/`.
+- Add a new shadcn primitive with `npx shadcn@latest add <name>` — it
+  drops the source into `src/components/ui/<name>.tsx`, which you can
+  edit freely.
+- Mount React components from `.astro` files with the appropriate
+  hydration directive:
+  - `client:load` — needs to be interactive immediately (theme picker,
+    search trigger, callouts, sidebar drawer).
+  - `client:idle` — passive (back-to-top scroll listener, footer, right-
+    rail TOC).
+  - `client:visible` — below-the-fold-only components.
+- Use semantic theme tokens (`bg-background`, `text-foreground`,
+  `text-primary`, `text-muted-foreground`, `border-border`, etc.) rather
+  than hardcoded zinc/teal scales. The theme picker switches between 8
+  variants by setting `data-theme` on `<html>`; only semantic tokens
+  follow the variant.
+- The `--color-accent-*` (hex) scale is preserved for backward
+  compatibility but new code should use semantic tokens.
+
+Theme picker state:
+
+- `theme` localStorage key → mode (`system` | `light` | `dark`)
+- `theme-variant` localStorage key → variant (`accent-teal` | `zinc` |
+  `slate` | `stone` | `neutral` | `rose` | `blue` | `green`)
+- `ThemeScript.astro` is the inline pre-paint script — it applies both
+  values to `<html>` before first render so there's no flash.
+
+Layout:
+
+- `BaseLayout.astro` provides the HTML shell + Header + BetaBanner +
+  Footer + BackToTop.
+- `DocLayout.astro` wraps in `SidebarShell` which provides the centered
+  flex container with the sidebar (Sheet on mobile, plain `<aside>` on
+  desktop) and the main content area.
+- The Astro hamburger in `Header.astro` dispatches a `'toggle-sidebar'`
+  window event that `AppSidebar.tsx` listens for to open the mobile
+  drawer.
+
 ## House style
 
 - Calm, factual, harm-reduction tone. The audience is in recovery — no

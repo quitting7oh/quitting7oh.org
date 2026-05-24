@@ -8,6 +8,58 @@ versioning is not strict — changes ship continuously.
 
 ## [Unreleased] — 2026-05-23
 
+### shadcn/ui migration (`experiment/shadcn` branch)
+
+Full React + shadcn/ui rebuild of all interactive components. Shipped
+as 7 focused commits on `experiment/shadcn` rather than `main`; merge
+to main after visual review in a browser.
+
+- **Phase 0 — foundation.** Added `@astrojs/react`, React 19, lucide-
+  react, class-variance-authority, clsx, tailwind-merge, the `radix-ui`
+  unified package. Created `components.json` (shadcn config),
+  `src/lib/utils.ts` (cn helper), `src/components/ui/` directory.
+  Defined HSL theme variables for 8 variants in `src/styles/global.css`
+  via the Tailwind v4 `@theme inline {}` pattern.
+- **Phase 1 — theme picker.** Replaced `ThemeToggle.astro` (icon-cycle
+  button) with `ThemePicker.tsx`: a shadcn DropdownMenu with two radio
+  groups (Appearance: System/Light/Dark, Color: 8 variants). Both
+  axes persist to localStorage; pre-paint script applies both before
+  first render so no flash on either mode or variant switches.
+- **Phase 2 — sidebar.** First tried the official shadcn Sidebar
+  component but its `fixed inset-y-0 left-0` positioning fought this
+  site's centered max-w-[88rem] layout. Replaced with a hybrid:
+  shadcn Sheet for the mobile drawer (gets Radix focus trap, scroll
+  lock, ESC, ARIA for free), plain `<aside>` for desktop sticky rail
+  inside the centered container. Astro hamburger dispatches a
+  `'toggle-sidebar'` window event the React sidebar listens for.
+- **Phase 3 — search + back-to-top.** `SearchBox.tsx` uses shadcn
+  Command (cmdk) inside a CommandDialog opened via the button or ⌘K;
+  Pagefind runs the actual queries via the existing runtime-import
+  pattern. `BackToTop.tsx` uses shadcn Button + ArrowUp icon, hydrates
+  with `client:idle`.
+- **Phase 4 — Callout/Breadcrumbs/BetaBanner/Footer.** Callout uses
+  shadcn Alert with three variants (info=Info, warning=AlertTriangle,
+  medical=Stethoscope). Breadcrumbs uses shadcn Breadcrumb. BetaBanner
+  is a custom React component with sessionStorage dismiss. Footer is a
+  plain React port using semantic tokens (`bg-muted`, `text-foreground`,
+  `text-primary`) so it follows theme-variant changes.
+- **Phase 5 — TOC + TocMobile.** Toc is a plain right-rail nav with
+  semantic tokens. TocMobile uses shadcn Collapsible (Radix) instead
+  of native `<details>`. Fixed a missing `import * as React from "react"`
+  in the CLI-installed `collapsible.tsx` that broke SSR.
+- **Phase 6 — cleanup.** Deleted all superseded `.astro` versions
+  (Sidebar, ThemeToggle, SearchBox, BackToTop, Callout, Breadcrumbs,
+  BetaBanner, Footer, Toc, TocMobile). Updated `src/pages/sitemap.astro`
+  to import the new React Breadcrumbs and dropped the
+  `source_channel`/`manual` rendering (those fields are gone with the
+  Discord ingest retirement). Added a "UI components: shadcn/ui +
+  React" section to CLAUDE.md documenting the new conventions, theme
+  picker storage keys, semantic tokens, and the hamburger event bridge.
+
+Bundle size: about +100 KB gzipped for the React runtime + Radix on
+pages with interactive islands. Acceptable trade-off for the consistent
+shadcn design system, accessible primitives, and the theme-picker UX.
+
 ### Retired the Discord-export ingest pipeline
 
 The site is now the sole source of truth for content. The ingest pipeline

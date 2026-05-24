@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { getCollection } from 'astro:content';
 import { CATEGORIES } from '~/lib/categories';
 import { SITE } from '~/lib/site';
@@ -29,7 +29,7 @@ const totalPages = docs.length;
 >
   <main id="main-content" class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
     <header class="border-b border-zinc-200 pb-6 dark:border-zinc-800">
-      <Breadcrumbs crumbs={[{ label: 'Site map' }]} />
+      <Breadcrumbs client:load crumbs={[{ label: 'Site map' }]} />
       <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
         Site map
       </h1>
@@ -75,16 +75,6 @@ const totalPages = docs.length;
                       >
                         {item.data.title}
                       </a>
-                      {item.data.source_channel && (
-                        <span class="font-mono text-xs text-zinc-400 dark:text-zinc-500">
-                          {item.data.source_channel}
-                        </span>
-                      )}
-                      {item.data.manual && (
-                        <span class="rounded border border-zinc-300 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">
-                          editorial
-                        </span>
-                      )}
                     </div>
                     {item.data.description && (
                       <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
