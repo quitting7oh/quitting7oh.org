@@ -36,7 +36,7 @@ step down to [kratom leaf](/other-tools/tapering-with-leaf),
 
 - **[Withdrawal Help](/start-here/withdrawal-help)** — the main page for this.
 - **[Helper Medications](/other-tools/helper-meds-info)** — clonidine,
-  hydroxyzine, gabapentin, trazodone, baclofen. A same-day telehealth
+  gabapentin, trazodone, baclofen, and others. A same-day telehealth
   appointment can get most of these.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)** —
   magnesium, electrolytes, NAC, melatonin, the rest of the OTC stack
