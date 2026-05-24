@@ -182,7 +182,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
               </code>
               .
             </p>
-          ) : searching && results.length === 0 ? (
+          ) : searching ? (
             <ul className="divide-y divide-border" aria-busy="true" aria-label="Searching…">
               {Array.from({ length: 4 }).map((_, i) => (
                 <li key={i} className="space-y-2 p-3">
