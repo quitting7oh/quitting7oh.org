@@ -29,13 +29,15 @@ This is the single most directly applicable mutual aid for this site's audience.
 
 The full schedule with Zoom links is at **[Meeting Schedules](/resources/meeting-schedules)**.
 
-### Quitting Kratom Support (TIAWO — "There Is A Way Out")
+### Quitting Kratom Support (KQS / TIAWO — "There Is A Way Out")
 
 **Website:** [kratomquitters.com](https://kratomquitters.com)
 
-A peer-led, **non-12-step** virtual community focused on kratom and 7-OH recovery. Daily online meetings hosted by volunteers, plus a 24/7 chat infrastructure. Welcomes both people in recovery and their loved ones, which is unusual.
+A peer-led, **non-12-step** virtual community focused on kratom and 7-OH recovery. Daily online meetings hosted by volunteers (8 AM, 12 PM, and 8 PM ET, plus a 9:15 PM ET late-evening slot on Tues/Thurs/Sun, plus Sunday men's and women's meetings), plus a 24/7 chat infrastructure. Welcomes both people in recovery and their loved ones, which is unusual.
 
 If 12-step language is a bad fit but you still want a kratom-specific peer support community, this is the natural complement (or alternative) to KA.
+
+The full schedule with Google Meet links is at **[Meeting Schedules](/resources/meeting-schedules#quitting-kratom-support-kqs--tiawo--full-schedule)**.
 
 ## Opioid-relevant fellowships
 
@@ -153,6 +155,6 @@ The [quitting7oh Discord and subreddit](/about/community) complement (not replac
 
 ## Where to read next
 
-- **[Meeting Schedules](/resources/meeting-schedules)** — full Kratom Anonymous schedule with Zoom links
+- **[Meeting Schedules](/resources/meeting-schedules)** — full schedules for both kratom-specific fellowships (Kratom Anonymous and Quitting Kratom Support / TIAWO) with day, time, format, and join links
 - **[Sober Living Homes](/for-you/sober-living)** — when meetings need to be supplemented with a different living environment
 - **[Community](/about/community)** — about the Discord and subreddit
