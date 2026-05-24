@@ -42,3 +42,7 @@ MP's MOR affinity (~0.087 nM) is stronger than buprenorphine's (~1.5 nM). In fen
 The delta picture is actually favorable here: buprenorphine is essentially a delta antagonist, and MP is too — so there's no significant delta-receptor activation gap when switching. The main complication is the affinity at MOR.
 
 What people have found helps: a longer washout when feasible, prescribers familiar with high-affinity opioid transitions (the fentanyl-induction playbook is more relevant here than the standard kratom-recovery playbook), and being patient with stabilization — it can take 2–3 weeks.
+
+## SR-17 as the other community-validated path
+
+[SR-17](/other-tools/sr17018-info) is the second MAT-equivalent option community members have used for coming off pseudo. SR-17 is a biased mu agonist with a long duration of action; because there's no partial-agonist displacement involved, it sidesteps the high-affinity precipitated-withdrawal problem that makes Suboxone induction off MP genuinely difficult. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-info) is the path with the clinical safety net. Pseudo's tight MOR binding is exactly the territory where the SR-17 community discussion is most active. The [SR-17 page](/other-tools/sr17018-info) has the protocol and the real unknowns.
