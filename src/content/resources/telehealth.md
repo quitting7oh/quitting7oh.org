@@ -417,9 +417,9 @@ does not advertise kratom or 7-OH as treated conditions. No 7-OH
 content.
 
 **Notable issues.** No lawsuits, FTC, or DEA actions surfaced. The
-group-mandatory model is a fit issue worth knowing about before
-signing up: this is not the platform for someone who wants
-medication-only check-ins.
+group-mandatory model is a fit issue to consider before signing
+up: this is not the platform for someone who wants medication-only
+check-ins.
 
 ## Ophelia
 
@@ -727,9 +727,9 @@ official settlement site).
 
 ## Questions to ask any telehealth provider before your first visit
 
-Whichever one you pick, these are worth knowing the answer to before
-you give them a credit card. None of these are exotic — any program
-that treats OUD seriously should be able to answer them quickly.
+Whichever one you pick, get the answer to these before you give
+them a credit card. None of these are exotic — any program that
+treats OUD seriously should be able to answer them quickly.
 
 1. **What's your induction approach for kratom or 7-OH specifically?**
    Are you comfortable with COWS-based timing rather than fixed
