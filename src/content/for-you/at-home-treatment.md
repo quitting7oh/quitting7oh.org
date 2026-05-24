@@ -55,8 +55,9 @@ one is the one that fits yours and that you'll actually use.
   ready-to-drink protein for when solid food won't go down. A scoop
   of protein powder stirred into yogurt is easier than a meal.
 - **A plan for sleep** — see [Helper Medications](/other-tools/helper-meds-info)
-  for the prescription options (trazodone, hydroxyzine, gabapentin),
-  plus low-dose melatonin and magnesium from the supplement stack.
+  for the prescription options (trazodone, gabapentin, doxepin, and
+  others), plus low-dose melatonin and magnesium from the supplement
+  stack.
 - **[Naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
   in the house.** Even with a clean stop, real-world products are
   mixed and combinations are dangerous. Narcan is essentially harmless
