@@ -6,7 +6,8 @@ export function Footer() {
   return (
     <footer className="mt-16 border-t border-border bg-muted/50">
       <div className="mx-auto max-w-[88rem] px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        {/* Top row: site title, medical disclaimer, contribute */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <p className="text-sm font-semibold text-foreground">
               {SITE.title}.org
@@ -22,31 +23,6 @@ export function Footer() {
               Nothing here is a substitute for a conversation with a qualified
               clinician familiar with your situation. If you are in immediate
               crisis, call or text 988 (US) or your local emergency number.
-            </p>
-          </div>
-          <div className="text-sm text-muted-foreground">
-            <p className="font-semibold text-foreground">AI disclaimer</p>
-            <p className="mt-2">
-              Yes, we used AI to help build out some of this content. The
-              source is community members who've lived through 7-OH and
-              kratom-synthetic recovery; humans verify every factual claim
-              against a primary source.
-            </p>
-            <p className="mt-2">
-              Those humans made a good-faith effort to validate every page,
-              but they are sadly jelly-filled meat bags that aren't the
-              product of billionaires siphoning money out of the working
-              class. The use of AI here is a simple fact, one you can accept
-              or not.{' '}
-              <a
-                href="/about/this-site#the-ai-disclaimer"
-                className="text-primary underline underline-offset-2 hover:opacity-80"
-              >
-                Full disclaimer →
-              </a>
-            </p>
-            <p className="mt-3 text-foreground">
-              Don't like that? Go read something else.
             </p>
           </div>
           <div className="text-sm text-muted-foreground">
@@ -66,6 +42,42 @@ export function Footer() {
             </p>
           </div>
         </div>
+
+        {/* AI disclaimer: own band with internal 2-column layout */}
+        <div className="mt-10 border-t border-border pt-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="text-sm text-muted-foreground md:col-span-2">
+              <p className="font-semibold text-foreground">AI disclaimer</p>
+              <p className="mt-2">
+                Yes, we used AI to help build out some of this content. The
+                source is community members who've lived through 7-OH and
+                kratom-synthetic recovery; humans verify every factual claim
+                against a primary source.
+              </p>
+              <p className="mt-2">
+                The humans here are jelly-filled meat bags making a
+                good-faith effort to validate every page. The AI was built by
+                billionaires siphoning money out of the working class. We
+                used it anyway, because it works.{' '}
+                <a
+                  href="/about/this-site#the-ai-disclaimer"
+                  className="text-primary underline underline-offset-2 hover:opacity-80"
+                >
+                  Full disclaimer →
+                </a>
+              </p>
+            </div>
+            <div className="flex items-center text-sm">
+              <p className="font-semibold text-foreground">
+                Don't like that?
+                <br />
+                Go read something else.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom row: copyright + nav */}
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
           <p>
             © {year} {SITE.title}.org · No accounts, no tracking, no
