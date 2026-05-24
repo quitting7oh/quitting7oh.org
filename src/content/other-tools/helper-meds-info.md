@@ -84,7 +84,7 @@ Provider attitudes vary. Some prescribers hand it out readily; others want you m
 
 **Side effects:** sedation, fatigue, occasional confusion at higher doses. **Taper off when discontinuing**, abrupt stops can cause hallucinations and seizures (rare but real).
 
-**Other muscle relaxants** worth knowing about:
+**Other muscle relaxants:**
 
 - **Tizanidine (Zanaflex)** — alpha-2 agonist (similar mechanism to clonidine), helps muscle spasms and anxiety. Useful when clonidine isn't enough. Sedating.
 - **Cyclobenzaprine (Flexeril)** — short-term muscle relaxant, helpful for the body-aches part of withdrawal. Often only prescribed for 1-2 weeks. Sedating.
@@ -145,7 +145,7 @@ Benzos (Xanax, Klonopin, Valium, Ativan, Librium) are highly effective for the a
 
 **Don't ask any telehealth Suboxone provider for benzos.** It will slow the visit down and won't change the answer — most have an explicit no-benzo policy on top of the regulatory restrictions.
 
-## Other meds worth knowing about
+## Other medications
 
 - **NSAIDs (ibuprofen, naproxen)** — body aches, headaches. OTC, useful, gentle on the system. Don't overdo it (kidney/stomach impact).
 - **Acetaminophen (Tylenol)** — body aches without GI issues. Watch the daily limit.
@@ -171,4 +171,4 @@ Common starter combos:
 - **Adding for muscle pain:** plus baclofen or tizanidine
 - **Adding for post-acute mood:** Wellbutrin (after the acute phase ends)
 
-See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
+Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/tapering-with-leaf), [Suboxone](/mat-suboxone/suboxone-info), or [SR-17](/other-tools/sr17018-info). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
