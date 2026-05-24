@@ -67,7 +67,7 @@ All schedules assume:
 ## Harm reduction layer (use ALL of these, not optional)
 
 - **Hydration and electrolytes.** LMNT, Liquid IV, coconut water, or salt + lemon in water. Sweating and GI symptoms drain you fast.
-- **Helper meds, ideally prescribed.** Clonidine, hydroxyzine, trazodone, gabapentin, baclofen. See the [Telehealth Providers comparison](/resources/telehealth) for prescribers who will work with you on adjuncts.
+- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/other-tools/helper-meds-info) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth) for prescribers who will work with you on adjuncts.
 - **OTC support.** Loperamide for diarrhea (labeled doses only, do not exceed), ibuprofen for body aches, ginger for nausea.
 - **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
 - **A check-in person.** Someone who knows what you're doing and will check on you daily, especially days 3 to 7 after the last dose.
