@@ -57,6 +57,12 @@ This community uses a **low-and-slow induction** approach. The point is to find 
 5. Whatever total you landed on is your **day 1 dose**, and that's your dose for day 2.
 6. If symptoms worsen at any point during induction → stop, this may be precipitated withdrawal.
 
+**A few notes on this protocol:**
+
+- **If you're especially worried about precipitated withdrawal, start at 1 mg instead of 2 mg.** Same protocol otherwise — wait, reassess, titrate up in 1 mg increments. Longer ramp, softer landing if your COWS was borderline.
+- **If symptoms get noticeably worse after the first dose, stop and wait it out.** That's the signature of precipitated withdrawal. It's uncomfortable but it passes — usually within a couple of hours. Don't keep dosing through it. Once the worst has eased, you can re-attempt induction.
+- **Be patient with the 2-hour window on the first dose.** Bupe takes time to take effect; if you're at hour 1 with no relief, the first 2 mg probably isn't done working yet. You *can* add 1 mg early if symptoms are intolerable, but waiting as close to the full 2 hours as you can gives the most honest signal of whether you actually need more.
+
 Most people coming off 7-OH land in the 2 to 8 mg range using this approach. People coming off the long-acting synthetics may need more. The standard clinical protocol starts at 4 mg right out of the gate, which is usually more than necessary for our population and harder to taper down from.
 
 > ℹ️ **Standard induction not working — or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway that doesn't require you to wait in withdrawal. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days. It's especially worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm)) and for anyone who's tried standard induction before and gotten precipitated withdrawal.
