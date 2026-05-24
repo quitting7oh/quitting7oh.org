@@ -49,8 +49,10 @@ export function Footer() {
             <div className="text-sm text-muted-foreground md:col-span-2">
               <p className="font-semibold text-foreground">AI disclaimer</p>
               <p className="mt-2">
-                Yes, we used AI to write this. The source is community
-                members who've come off 7-OH and kratom derivatives.
+                We used AI to write this, guided by a detailed, guard-railed
+                instruction set built for accuracy and voice — not
+                unsupervised slop. The source is community members who've
+                come off 7-OH and kratom derivatives.
               </p>
               <p className="mt-2">
                 The humans here are jelly-filled meat bags making a
