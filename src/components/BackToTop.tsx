@@ -7,13 +7,8 @@ const SHOW_AFTER_PX = 400;
 
 export function BackToTop() {
   const [shown, setShown] = React.useState(false);
-  const prefersReducedMotion = React.useRef(false);
 
   React.useEffect(() => {
-    prefersReducedMotion.current = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
-
     const update = () => setShown(window.scrollY > SHOW_AFTER_PX);
     update();
     window.addEventListener('scroll', update, { passive: true });
@@ -21,10 +16,11 @@ export function BackToTop() {
   }, []);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    window.scrollTo({
-      top: 0,
-      behavior: prefersReducedMotion.current ? 'auto' : 'smooth',
-    });
+    // 'instant' explicitly overrides the page's CSS scroll-behavior:smooth.
+    // We want BackToTop to be a fast jump from anywhere on the page — the
+    // CSS smooth-scroll takes multiple seconds when traveling thousands of
+    // pixels, which feels broken on long articles.
+    window.scrollTo({ top: 0, behavior: 'instant' });
     e.currentTarget.blur();
   };
 
