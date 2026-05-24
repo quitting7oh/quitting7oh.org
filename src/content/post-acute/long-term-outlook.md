@@ -24,15 +24,15 @@ This page is about what's between those two days. What recovery from
 the broader opioid use disorder literature tells us about the arc
 beyond that.
 
-The honest framing up top: **7-OH only emerged as a widely-used
-synthetic in 2023, and the community of people quitting it really
-took shape in early 2024.** That means this site has ~18 months of
-collective 7-OH-specific experience to draw from — not decades. Where
-this page talks about long-term recovery beyond that window, it's
-borrowing from the broader OUD literature and labeling clearly.
+**7-OH only emerged as a widely-used synthetic in 2023, and the
+community of people quitting it really took shape in early 2024.**
+This site has about 18 months of collective 7-OH-specific experience
+to draw from, not decades. Where this page talks about long-term
+recovery beyond that window, it's borrowing from the broader OUD
+literature and labeling clearly.
 
-The honest version — not the inspirational-poster version, not the
-recovery-blog tagline version. The one that earns the second mirror.
+What follows isn't the inspirational-poster version. It's the one
+that earns the second mirror.
 
 ## How bad this actually is
 
@@ -180,8 +180,8 @@ The functional version — what you'll actually notice:
 - **Energy returns.** Real energy, not stimulant energy. The kind
   that lets you do hard things again.
 
-The variance is real. Some people in this community are mostly
-back to themselves within a couple of months. Some have a longer,
+Variance is wide. Some people in this community are mostly back to
+themselves within a couple of months. Some have a longer,
 harder stretch. The broader opioid-recovery literature documents
 recovery arcs that for some people extend well past a year — and
 since 7-OH-specific cohorts are too young to give us our own data
