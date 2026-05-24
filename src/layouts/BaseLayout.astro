@@ -4,6 +4,7 @@ import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
 import { BetaBanner } from '~/components/BetaBanner';
 import { BackToTop } from '~/components/BackToTop';
+import { CrisisButton } from '~/components/CrisisButton';
 import { Footer } from '~/components/Footer';
 import { SITE } from '~/lib/site';
 
@@ -43,5 +44,6 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <slot />
     <Footer client:idle />
     <BackToTop client:load />
+    <CrisisButton client:load />
   </body>
 </html>
