@@ -3,7 +3,7 @@ title: "Thinking About Using? (The Fuck Its)"
 description: "You're considering using again right now. Here's the one thing to do first, the people to call, and what to know about post-abstinence tolerance."
 category: "start-here"
 last_updated: "2026-05-24"
-sort: 4
+sort: 5
 ---
 
 You're here because you're thinking about using. Not because you wanted

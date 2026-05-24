@@ -3,7 +3,7 @@ title: "How to Use This Website"
 description: "A short map of the site, organized by where you are right now — find the one page that's most useful for what you're going through."
 category: "start-here"
 last_updated: "2026-05-24"
-sort: 2
+sort: 3
 ---
 
 > 🆘 **In crisis right now?** Call or text **988** (US Suicide & Crisis
@@ -97,9 +97,11 @@ what you're on and what stopping actually looks like.
 ## I don't really know what any of this is
 
 Total newcomer — you saw a "7" tablet at a gas station, your loved one
-mentioned it, or you found this page from a search. Start with what
-the substances actually are.
+mentioned it, or you found this page from a search. Start with the
+60-second version, then go as deep as you want.
 
+- **[What the Hell Is 7-OH?](/start-here/what-is-7-oh)** — the elevator
+  pitch, plain language, no jargon.
 - **[Kratom Leaf](/compounds/kratom-leaf)** — what raw kratom is.
 - **[7-OH](/compounds/7-oh)** — what the concentrated synthetic is.
 - **[Compounds](/compounds)** — the rest of the family (pseudo, MGM-15,

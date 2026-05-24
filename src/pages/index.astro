@@ -27,16 +27,32 @@ const counts = Object.fromEntries(
         <SearchBox variant="hero" placeholder="Search for a topic, drug name, symptom…" client:load />
       </div>
 
-      <a
-        href="/start-here/withdrawal-help"
-        class="mt-8 inline-flex items-center gap-3 rounded-lg border-2 border-amber-500 bg-amber-50 px-5 py-4 text-amber-900 transition hover:bg-amber-100 dark:border-amber-400 dark:bg-amber-950/40 dark:text-amber-100 dark:hover:bg-amber-950/70"
-      >
-        <span class="text-2xl" aria-hidden="true">🆘</span>
-        <span>
-          <span class="block font-semibold">In active withdrawal right now?</span>
-          <span class="block text-sm opacity-80">What to do this hour →</span>
-        </span>
-      </a>
+      {/* Paired entry points: crisis path (amber, visual priority) +
+          newcomer path (neutral outlined). Crisis CTA keeps its
+          original treatment; the newcomer CTA sits beside it for
+          cold readers who don't yet know what 7-OH is. */}
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href="/start-here/withdrawal-help"
+          class="inline-flex items-center gap-3 rounded-lg border-2 border-amber-500 bg-amber-50 px-5 py-4 text-amber-900 transition hover:bg-amber-100 dark:border-amber-400 dark:bg-amber-950/40 dark:text-amber-100 dark:hover:bg-amber-950/70"
+        >
+          <span class="text-2xl" aria-hidden="true">🆘</span>
+          <span>
+            <span class="block font-semibold">In active withdrawal right now?</span>
+            <span class="block text-sm opacity-80">What to do this hour →</span>
+          </span>
+        </a>
+        <a
+          href="/start-here/what-is-7-oh"
+          class="inline-flex items-center gap-3 rounded-lg border-2 border-zinc-300 bg-white px-5 py-4 text-zinc-700 transition hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:bg-zinc-800"
+        >
+          <span class="text-2xl" aria-hidden="true">❓</span>
+          <span>
+            <span class="block font-semibold">What the Hell Is 7-OH?</span>
+            <span class="block text-sm opacity-80">60-second explainer →</span>
+          </span>
+        </a>
+      </div>
 
       {/* Live community links — Discord + subreddit. People in distress find a
           lot of value in real-time conversation, not just static reference. */}

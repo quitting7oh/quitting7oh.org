@@ -16,6 +16,9 @@ sort: 2
 > [SR-17](/other-tools/sr17018-info), or toughing it out with
 > [helper meds](/other-tools/helper-meds-info) and supplements.
 
+> ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
+> covers the basics in plain language before the pharmacology below.
+
 7-OH is the compound this site is named after — and the compound most
 people here are trying to get off of. **It is an opioid.** Whatever the
 gas-station marketing says, whatever the "all-natural kratom alkaloid"

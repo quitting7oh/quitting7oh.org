@@ -56,12 +56,14 @@ people who built it wanted the resource they wished they'd had.
 
 ## Where to go next
 
-The next page — **[How to Use This Website](/start-here/how-to-use-this-website)** —
-is a short map. Find the description that sounds most like where you
-are right now (in withdrawal, thinking about using, in PAWS, planning
-to quit, helping someone else, or just trying to understand what any
-of this is) and click through to the page that's actually written for
-it.
+If you don't yet know what kratom or 7-OH actually are,
+**[What the Hell Is 7-OH?](/start-here/what-is-7-oh)** is the 60-second
+elevator version — plain language, no jargon, no chemistry.
+
+When you're ready for the map, **[How to Use This Website](/start-here/how-to-use-this-website)**
+routes you to the right page for your situation (in withdrawal,
+thinking about using, in PAWS, planning to quit, helping someone else,
+or just trying to understand what any of this is).
 
 If you're in active withdrawal right now and don't want to read
 anything else: **[Withdrawal Help](/start-here/withdrawal-help)** is the

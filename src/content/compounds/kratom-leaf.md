@@ -12,6 +12,9 @@ sort: 1
 > to taper — see the [Telehealth Providers](/resources/telehealth)
 > comparison and talk to a prescriber.
 
+> ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
+> covers the basics in plain language.
+
 ## TL;DR
 
 - **Kratom** is the dried leaf of a Southeast Asian tree (*Mitragyna

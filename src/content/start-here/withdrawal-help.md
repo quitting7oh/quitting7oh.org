@@ -3,7 +3,7 @@ title: "You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "start-here"
 last_updated: "2026-05-24"
-sort: 3
+sort: 4
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you can't keep water
