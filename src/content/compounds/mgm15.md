@@ -21,7 +21,7 @@ MGM-15 has a half-life of **around 15 hours**. For comparison, 7-OH is short-act
 - Dose-stacking sneaks up on people. If you're redosing on the same schedule that worked for 7-OH, MGM-15 accumulates well past where you think you are.
 
 ## Why Suboxone is tricky with MGM-15 — and why bupe may not "take the edge off"
-Two separate issues. Both pharmacological, both worth understanding before you try this transition:
+Two separate pharmacological issues come up if you're moving from MGM-15 to Suboxone:
 
 **1. Precipitated withdrawal risk is bigger and lasts longer than the standard guidance assumes.**
 Typical Suboxone induction guidance is to wait 12–24 hours after the last opioid dose. That window was built around shorter-acting opioids and works fine for 7-OH. With MGM-15's ~15-hour half-life, that window is often *not enough* — there's still meaningful MGM-15 sitting on your receptors. Buprenorphine has extremely high MOR affinity and will displace it, but bupe is only a partial agonist, so the swap drops receptor activation hard and fast → precipitated withdrawal. There are reports of attempted micro-inductions where every time the dose reached 1–2 mg, precipitated withdrawal set in, making the process intolerable.
@@ -32,6 +32,10 @@ Typical Suboxone induction guidance is to wait 12–24 hours after the last opio
 - Net effect: people coming off MGM-15 onto Suboxone often report bupe doesn't fully cover them, especially restlessness, low mood, anhedonia, and a persistent low-grade "off" feeling. Stabilization typically takes 2–3 weeks, and many people need a higher stabilizing dose than their initial induction dose to fully settle. See [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader treatment picture for the mood and anhedonia symptoms.
 
 **What people have found helps:** a longer washout than the standard 12–24 hours when feasible (closer to 36–72 hours puts you well past the worst of MGM-15's receptor occupancy), a prescriber who actually understands kratom-derivative dependence, and being upfront about the dual-receptor pharmacology so a higher stabilizing dose is on the table from day one. Share what's worked or not worked here — community knowledge on this is genuinely ahead of the published literature.
+
+## SR-17 as the other community-validated path
+
+[SR-17](/other-tools/sr17018-info) is the second MAT-equivalent option the community has converged on for getting off the synthetics, and it's worth surfacing for MGM-15 specifically. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above — there's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol, the dose ranges community members have used for long-acting compounds like MGM-15, and the real unknowns. It's off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-info) is the path with the clinical safety net. Both are legitimate; the right one depends on your situation.
 
 ## General risks
 - Tolerance and dependence develop fast.
