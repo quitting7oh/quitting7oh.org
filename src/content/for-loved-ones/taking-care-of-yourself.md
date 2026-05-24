@@ -39,7 +39,7 @@ Most family members go through a phase (sometimes a years-long phase) of:
 
 All of this is understandable. It also doesn't work. People who want to hide use are very good at hiding it; surveillance turns up information you didn't want, then you have to do something with it, and the cycle restarts. Meanwhile, the surveillance is destroying you — your sleep, your focus, your trust in your own ability to function without controlling someone else.
 
-This is one of the hardest things to give up because giving it up feels like giving up. It isn't. **Stopping the surveillance is not consent for their use. It's a recognition that the surveillance has costs to you that are not buying anything for them.** What you trade is "knowing everything" for "having a life again, and being capable of showing up when it actually matters."
+This is one of the hardest things to give up because giving it up feels like giving up. **Stopping the surveillance isn't consent for their use; it's an acknowledgment that the surveillance costs you something and isn't buying anything for them.** What you trade is "knowing everything" for "having a life again, and being capable of showing up when it actually matters."
 
 If you can't stop this on your own — and most people can't — that's a sign to find a therapist or a support group. The work of letting go of control is genuinely hard and not something most people do unsupported.
 
