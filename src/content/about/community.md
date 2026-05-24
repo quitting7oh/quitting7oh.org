@@ -106,7 +106,7 @@ We don't represent any company. We don't have a relationship with any company. W
 - Tapers using kratom leaf as a bridge ([this works for some](/other-tools/tapering-with-leaf), doesn't for others)
 - Switching to [MIT-A or DHM](/compounds/mit-a-dhm) temporarily as a step down
 - Cold turkey, with [helper meds](/other-tools/helper-meds-info) and a lot of suffering
-- Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi-info) and [naltrexone](/other-tools/low-dose-naltrexone)
+- Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi-info)
 - Inpatient detox when polysubstance use makes that necessary
 
 If we were "pushing" any one of these, the other six pages on the site wouldn't exist. Take a look around. Count the protocols. The whole point of this resource is that people get off this stuff in different ways and you should have access to the full menu, not just the option a Reddit account with three hours of posting history insists is the only "natural" way.

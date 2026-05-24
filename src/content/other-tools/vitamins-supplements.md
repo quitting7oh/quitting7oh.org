@@ -17,7 +17,7 @@ The compounds we're recovering from ([7-OH](/compounds/7-oh), [pseudo](/compound
 similar synthetics) hit the body harder than leaf kratom, and the recovery
 process tends to involve more nutrient depletion, more sleep disruption,
 and a longer PAWS tail. Supplements aren't a substitute for time, sleep,
-food, hydration, and (when appropriate) MAT or LDN, but they can take some
+food, hydration, and (when appropriate) MAT, but they can take some
 of the edge off.
 
 ## Quick recommended list

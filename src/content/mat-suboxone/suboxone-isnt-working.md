@@ -87,7 +87,7 @@ None of those is giving up. They're tools.
 ## A note on patience
 The standard recovery resources tell you bupe will make you feel "back to normal" pretty quickly. For our population, that's not always true on the standard timeline. **The first few days are the hardest, and day 1 to 2 is when most people in this community quit.** That's exactly the window where bupe hasn't fully kicked in, your dose probably isn't optimized yet, and the serotonergic/adrenergic symptoms haven't responded to adjuncts that need a day or two to take effect. **Push through.** Adjuncts help. The right dose helps. By day 4 or 5 most people are in noticeably better shape than day 1 or 2.
 
-If you're approaching the end of your taper and still feel terrible, that's worth its own conversation in **#suboxone**. There may be something specific to your situation worth troubleshooting.
+If you're approaching the end of your taper and still feel terrible, talk to your prescriber, and post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) for community input. There may be something specific to your situation worth troubleshooting.
 
 ## Sources
 - [León F, Obeng S, et al. Activity of *Mitragyna speciosa* ("Kratom") Alkaloids at Serotonin Receptors. *J Med Chem* 2021;64(18):13510–13523](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/) — 5-HT₁ₐ/2 binding affinities for mitragynine vs. paynantheine and speciogynine; opioid-independent 5-HT₁ₐ antinociception

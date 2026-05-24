@@ -2,11 +2,11 @@
 title: "MAT & Your Professional License"
 description: "Most jobs have no business in your medical records — but a handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare roles) treat MAT use as a licensure issue. What to check before you disclose or start."
 category: "for-you"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 4
 ---
 
-> ⚠️ **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info), [methadone](/for-you/treatment-rehab#medication-assisted-treatment-mat), and sometimes [naltrexone](/other-tools/low-dose-naltrexone) as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator — or starting MAT while holding any of the credentials below — talk to a labor lawyer or licensure attorney who knows your specific field.**
+> ⚠️ **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and [methadone](/for-you/treatment-rehab#medication-assisted-treatment-mat) as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator — or starting MAT while holding any of the credentials below — talk to a labor lawyer or licensure attorney who knows your specific field.**
 
 This page is general information, not legal or medical advice. Rules change. Verify with the current regulator and a qualified attorney before making decisions.
 
@@ -35,15 +35,13 @@ If you hold a [Commercial Driver's License](https://www.fmcsa.dot.gov/registrati
 
 **Buprenorphine (Suboxone, Subutex, Sublocade):** More nuanced. FMCSA does not categorically disqualify buprenorphine, but it does require the medical examiner to determine, on a case-by-case basis, whether the medication impairs your ability to operate a CMV safely. Many examiners will require a letter from your prescriber and may impose monitoring or shorter certification periods (e.g., one year instead of two). Some examiners are more conservative than others. Outcomes vary widely.
 
-**Naltrexone (oral) and Vivitrol (extended-release injection):** Not opioids. Generally not disqualifying on the controlled-substance basis, though the medical examiner still evaluates overall fitness for duty.
-
 **What to do before disclosing:** Pull the FMCSA Medical Examiner Handbook ([fmcsa.dot.gov](https://www.fmcsa.dot.gov)), talk to a medical examiner who has experience with MAT cases (some are noted as more SUD-aware in driver forums), and consider consulting a labor lawyer who specializes in transportation. CDL drivers have lost certifications by disclosing MAT to an examiner who applied the most restrictive interpretation.
 
 ### Pilots and Air Traffic Controllers (FAA)
 
 The [FAA](https://www.faa.gov) issues first-, second-, and third-class airman medical certificates for pilots, and separate medical certifications for air traffic controllers. The FAA's [medical certification process](https://www.faa.gov/pilots/medical_certification) (find an [Aviation Medical Examiner](https://www.faa.gov/pilots/amelocator)) takes substance use disorder history seriously, and current MAT use is generally not compatible with a standard medical certification.
 
-**Buprenorphine, methadone, naltrexone:** All require special issuance review at minimum; routine medical certification is not available while on these medications under typical circumstances.
+**Buprenorphine and methadone:** Both require special issuance review at minimum; routine medical certification is not available while on these medications under typical circumstances.
 
 **HIMS — Human Intervention Motivation Study:** The FAA's [HIMS program](https://www.himsprogram.com) is an industry-wide structured program for pilots in recovery from substance use disorder. It is the recognized path back to flying for many pilots after SUD diagnosis, including some on MAT under specific protocols. ATC has analogous programs through the FAA Drug and Alcohol Program.
 
@@ -73,8 +71,6 @@ Armed security work typically requires a state-issued license or permit, often i
 
 **Buprenorphine and methadone** are Schedule III and II controlled substances respectively. Federal law has historically treated lawful prescription use as not making someone an "unlawful user," but the legal landscape around the 4473 question and recent court cases is complex and evolving. Recent federal cases ([Bruen and related decisions](https://www.supremecourt.gov/opinions/21pdf/20-843_7j80.pdf)) have unsettled some restrictions but not in a way that gives clear answers for MAT users.
 
-**Naltrexone** is not a controlled substance and does not affect 4473 answers.
-
 **What to do:** This is a question for a Second Amendment attorney in your state who can read the current case law and your state's firearms statutes. State firearm law varies significantly; what's legal in one state can be a felony in another.
 
 ### Heavy machinery, industrial, and trades
@@ -94,7 +90,6 @@ Doctors, nurses, pharmacists, dentists, paramedics, and other licensed healthcar
 If you're in a healthcare licensure track:
 
 - Many state PHPs now accept buprenorphine treatment; some still don't.
-- Naltrexone is generally accepted across PHPs because it's not a controlled substance.
 - Self-reporting before a board investigation generally produces better outcomes than waiting until you're caught.
 - The [Federation of State Physician Health Programs](https://www.fsphp.org) maintains an overview of state-level programs.
 - Talk to a healthcare licensure attorney in your state before any board contact.
@@ -113,15 +108,13 @@ If you're applying for or hold a clearance, work with a security clearance attor
 
 Patterns that come up in the community:
 
-1. **Get the regulatory analysis before starting MAT, not after.** If you're a pilot, CDL driver, or LEO considering buprenorphine, the order of operations matters a lot. Talking to a labor or licensure attorney before you start medication may change the medication choice (e.g., favoring [naltrexone](/other-tools/low-dose-naltrexone) over [buprenorphine](/mat-suboxone/suboxone-info)) or the timing of any required disclosure.
-2. **Consider Vivitrol (extended-release naltrexone) specifically.** Because it's not a controlled substance, it sidesteps many of the regulatory issues that buprenorphine and methadone trigger. Whether it's clinically appropriate depends on your specific situation, but it's worth bringing up with your prescriber as a regulated-profession consideration. See [Low-Dose Naltrexone](/other-tools/low-dose-naltrexone) and [Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone).
-3. **Use specialty programs where they exist.** HIMS for pilots, state PHPs for healthcare workers, union-sponsored peer assistance programs in many trades. These programs are designed for your situation and often produce better outcomes than going it alone.
-4. **Document everything.** Dated notes from prescribers, written employer policies you've been given, conversations with HR. If a credentialing dispute arises later, the paper trail matters.
-5. **Get the right kind of lawyer.** A general employment lawyer may not know FAA medical rules or state nursing board procedures. Pay for a specialist consult upfront — it often saves the licensure.
+1. **Get the regulatory analysis before starting MAT, not after.** If you're a pilot, CDL driver, or LEO considering [buprenorphine](/mat-suboxone/suboxone-info), the order of operations matters a lot. Talking to a labor or licensure attorney before you start medication may change the medication choice or the timing of any required disclosure.
+2. **Use specialty programs where they exist.** HIMS for pilots, state PHPs for healthcare workers, union-sponsored peer assistance programs in many trades. These programs are designed for your situation and often produce better outcomes than going it alone.
+3. **Document everything.** Dated notes from prescribers, written employer policies you've been given, conversations with HR. If a credentialing dispute arises later, the paper trail matters.
+4. **Get the right kind of lawyer.** A general employment lawyer may not know FAA medical rules or state nursing board procedures. Pay for a specialist consult upfront — it often saves the licensure.
 
 ## Where to read next
 
 - **[For You: FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — the broader employment/leave/discrimination picture
 - **[Treatment & Rehab](/for-you/treatment-rehab)** — choosing among MAT options
 - **[MAT / Suboxone](/mat-suboxone)** — what the medications actually do
-- **[Low-Dose Naltrexone](/other-tools/low-dose-naltrexone)** and **[Ultra-Low-Dose Naltrexone](/other-tools/ultra-low-dose-naltrexone)** — non-controlled-substance MAT options, often preferred for regulated professions

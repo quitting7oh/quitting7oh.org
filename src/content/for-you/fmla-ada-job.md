@@ -2,7 +2,7 @@
 title: "FMLA, ADA & Your Job"
 description: "Federal job-protected leave for your own treatment, ADA protections for people in recovery, what HR actually sees, and how to use EAPs without your manager finding out."
 category: "for-you"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 3
 ---
 
@@ -78,7 +78,7 @@ The **[ADA](https://www.ada.gov)** is separate from FMLA and provides different 
 
 **For people currently using illegally:** the ADA does **not** protect current illegal drug use. This is the major carve-out. "Currently using" is a specific term in the case law, generally meaning use that is recent and ongoing.
 
-**For people on legally prescribed medications including MAT:** the ADA does protect you. An employer who discovers you're on prescribed [buprenorphine](/mat-suboxone/suboxone-info) and fires you on that basis is on legally shaky ground. The same is true for prescribed [naltrexone](/other-tools/low-dose-naltrexone), methadone (when prescribed at a licensed clinic), and other prescription medications.
+**For people on legally prescribed medications including MAT:** the ADA does protect you. An employer who discovers you're on prescribed [buprenorphine](/mat-suboxone/suboxone-info) and fires you on that basis is on legally shaky ground. The same is true for methadone (when prescribed at a licensed clinic) and other prescription medications used in recovery.
 
 ### Reasonable accommodations
 
