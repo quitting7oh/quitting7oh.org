@@ -5,7 +5,7 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 4
 ---
-> ⚠️ **Community information, not medical advice.** Talk to your prescriber before starting any high-dose supplement protocol, especially if you have kidney issues, take medications, or have a history of kidney stones. **Not appropriate for everyone.**
+> ⚠️ **Community information, not medical advice.** If you have a history of kidney stones, kidney disease, or hemochromatosis (iron overload), or you're on an iron supplement, ask your prescriber about that specific concern before megadosing — those are the narrow asks a clinician will actually engage with. The protocol design itself is community territory. **Not appropriate for everyone.**
 
 > 🛒 **A note on the product links.** Manufacturer-direct and Amazon links throughout this page are **starting points**, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip these vendors entirely; the protocol matters, not where you source it.
 
@@ -106,7 +106,7 @@ The reasoning: vitamin C tissue saturation takes time. Starting at full dose the
 **Be careful with:**
 - **Iron supplements.** Vitamin C dramatically increases iron absorption. If you have hemochromatosis or take iron supplements, talk to your doctor first.
 - **Kidney issues.** High-dose vitamin C can increase oxalate excretion, which is a kidney stone risk factor for some people. If you have a history of kidney stones or kidney disease, talk to your prescriber.
-- **G6PD deficiency.** A genetic condition where high-dose vitamin C can trigger hemolysis. Rare but worth knowing about.
+- **G6PD deficiency.** A genetic condition where high-dose vitamin C can trigger hemolysis. Rare but possible.
 - **Certain blood tests.** High-dose vitamin C can interfere with glucose, occult blood, and other lab tests. Tell your doctor if you're getting bloodwork.
 
 ## Common mistakes
@@ -137,6 +137,6 @@ The two situations where mega-dose vitamin C genuinely isn't the right call:
 - **You can't afford the protocol and won't dose at therapeutic levels.** Underdosing (a couple of grams a day) doesn't replicate the effect the studies describe. Better to focus on cheaper interventions you'll actually do consistently — the foundational supplements on [Vitamins & Supplements](/other-tools/vitamins-supplements) are inexpensive and broadly useful.
 
 ## Bottom line
-Vitamin C megadosing is a low-risk, evidence-supported tool that has helped many people through opioid withdrawal. Liposomal form makes higher therapeutic doses practical without GI side effects, though it's not cheap — a full preload-through-taper liposomal protocol is a real expense, and the buffered-powder route (sodium ascorbate) is the cost-conscious alternative. **Preload, dose frequently, combine with the rest of a real recovery protocol, and don't expect miracles.** For the right person it can take a meaningful edge off withdrawal. For everyone, it's adjunctive support, not the main event.
+Vitamin C megadosing is a low-risk, evidence-supported tool that has helped many people through opioid withdrawal. Liposomal form makes higher therapeutic doses practical without GI side effects, though it's not cheap — a full preload-through-taper liposomal protocol is a real expense, and the buffered-powder route (sodium ascorbate) is the cost-conscious alternative. **Preload, dose frequently, combine with the rest of a real recovery protocol, and don't expect miracles.**
 
 See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the broader supplement context, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture.
