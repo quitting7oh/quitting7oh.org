@@ -747,8 +747,10 @@ treats OUD seriously should be able to answer them quickly.
    medication management, any missed-appointment fees. Ask about
    anything that isn't on the published pricing page.
 6. **What adjunct meds will you prescribe alongside buprenorphine if
-   I need them?** Clonidine, hydroxyzine, gabapentin, ondansetron,
-   trazodone, baclofen. Most providers can; some won't.
+   I need them?** Clonidine, gabapentin, ondansetron, trazodone,
+   baclofen, and the rest of the menu on
+   [Helper Medications](/other-tools/helper-meds-info). Most
+   providers can; some won't.
 7. **Are you supportive if my goal is a structured taper rather than
    long-term maintenance, or vice versa?** Both are valid; make sure
    you and your provider want the same outcome.
