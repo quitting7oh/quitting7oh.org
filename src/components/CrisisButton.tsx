@@ -187,7 +187,15 @@ export function CrisisButton() {
         </ul>
         <div className="border-t border-border px-4 py-4">
           <p className="text-xs text-muted-foreground">
-            Need treatment, not crisis? Visit{' '}
+            All of the above also lives at{' '}
+            <a
+              href="/resources/crisis-hotlines"
+              className="text-primary hover:underline"
+            >
+              Crisis Hotlines
+            </a>{' '}
+            if you’d rather bookmark a page. Looking for treatment, not
+            crisis? Visit{' '}
             <a
               href="https://findtreatment.gov"
               target="_blank"
