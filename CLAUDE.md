@@ -388,6 +388,76 @@ narrow scope (a page about Suboxone is naturally about Suboxone), but
 their opening framing should still acknowledge bupe as one of several
 options before diving in.
 
+#### The site is objective; don't rank paths in editorial voice
+
+This is the **broader rule** that the Subs↔SR-17 pairing rule (below)
+operationalizes. The site is an objective reference. We describe
+options, the evidence behind them, the trade-offs, and the practical
+realities. We do **not** rank one path as more legitimate, more
+medical, or more evidence-based than another in our own editorial
+voice.
+
+**Specifically banned framings** (these have all shown up and all
+violated the rule):
+
+- "The evidence-based path is X" / "the clinical answer is X" — sets
+  up everything else as not-evidence-based.
+- "This is self-medication without clinical supervision" / "this is
+  unsupervised" / "this isn't real medicine" — applied to leaf taper,
+  SR-17, helper-med cold turkey, or anything community-documented.
+  All four are legitimate paths some people in this community use.
+- "The standard treatment is Suboxone" / "the gold standard is X" /
+  "the standard of care is X" — already covered above, restated here
+  because it's the same family of error.
+- "Real recovery looks like X" / "the proper way is X" — any prose
+  that implies a hierarchy of legitimacy.
+- Framing one path as the "official" version and others as informal,
+  off-label, or grey-area in a way that signals editorial disapproval
+  rather than neutral description.
+
+**Acceptable usages of "standard," "evidence-based," etc.:**
+
+- Describing what mainstream clinicians default to — *as a fact about
+  clinical practice* — before explaining where the community's
+  experience differs ("the standard clinical protocol starts at 4 mg;
+  the community has found 2 mg works better"). This is the dominant
+  pattern on the site and it's correct.
+- Describing a specific framework that genuinely has RCT-grade
+  evidence behind it ([[CRAFT for families]] is the canonical
+  example) when the contrast group also has weaker evidence. The
+  "evidence-based" label here is doing factual work, not editorial
+  ranking.
+- Direct vendor quotes in blockquotes, attributed (documenting what
+  the vendor says, not endorsing).
+
+If you find yourself writing a sentence that implicitly answers "which
+path is the real one," delete it and rewrite as neutral description.
+The reader gets to weigh the trade-offs.
+
+#### Subs ↔ SR-17 pairing rule
+
+The site is **opinionless** on which path someone uses to quit. Every
+option has real pros and cons; the job here is to educate, not steer.
+
+**Easy rule to remember: if Suboxone is named in a quitting context,
+[SR-17](/other-tools/sr17018-info) is named alongside it.** They're the
+two community-validated medication-assisted paths off 7-OH and related
+synthetics. Naming one without the other implicitly endorses the named
+one as the "real" answer, which violates the opinionless posture.
+
+Applies whenever the writing is recommending or routing — wayfinder
+branches, "where to go next" sections, in-content "if you're trying to
+quit, see X" callouts, compound-page reminders, etc. It does **not**
+apply inside content that is itself scoped to a specific medication (a
+Suboxone induction page can stay focused on Suboxone; an SR-17 protocol
+page can stay focused on SR-17).
+
+[Tapering with leaf](/other-tools/tapering-with-leaf) and cold turkey
+with [helper meds](/other-tools/helper-meds-info) are also legitimate
+paths — name them when they fit the context — but the Subs↔SR-17 pair
+is the load-bearing one: those are the two MAT-equivalent options the
+community has converged on for getting off the synthetics.
+
 ### Don't apply opioid-overdose framing to 7-OH specifically
 
 7-OH is a mu-opioid agonist on paper, but **pure-7-OH overdoses
