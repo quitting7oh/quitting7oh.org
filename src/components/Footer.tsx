@@ -27,7 +27,7 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             <p className="font-semibold text-foreground">AI disclaimer</p>
             <p className="mt-2">
-              Compiled with AI help from years of real Discord and Reddit
+              Compiled with AI help from over a year of real Discord and Reddit
               conversations, then reviewed line-by-line by humans who have
               lived through this. We stand behind the data. If that approach
               isn't for you, that's fine — read something else.{' '}
