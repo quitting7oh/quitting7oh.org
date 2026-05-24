@@ -1,14 +1,6 @@
 import * as React from 'react';
 import { Search } from 'lucide-react';
-import {
-  CommandDialog,
-  CommandEmpty,
-  CommandInput,
-  CommandList,
-  CommandItem,
-  CommandGroup,
-} from '~/components/ui/command';
-import { Button } from '~/components/ui/button';
+import { Input } from '~/components/ui/input';
 import { cn } from '~/lib/utils';
 
 type PagefindResult = {
@@ -33,9 +25,6 @@ function loadPagefind(): Promise<Pagefind | null> {
   if (pagefindPromise) return pagefindPromise;
   pagefindPromise = (async () => {
     try {
-      // Pagefind writes /pagefind/pagefind.js as a post-Astro-build step,
-      // so it doesn't exist when Vite is bundling the client. Construct
-      // the URL at runtime to keep Rollup from trying to resolve it.
       const url = window.location.origin + '/pagefind/pagefind.js';
       const pf = (await import(/* @vite-ignore */ url)) as Pagefind;
       return pf;
@@ -46,47 +35,67 @@ function loadPagefind(): Promise<Pagefind | null> {
   return pagefindPromise;
 }
 
+function useDebouncedValue<T>(value: T, delay = 150): T {
+  const [debounced, setDebounced] = React.useState(value);
+  React.useEffect(() => {
+    const t = window.setTimeout(() => setDebounced(value), delay);
+    return () => window.clearTimeout(t);
+  }, [value, delay]);
+  return debounced;
+}
+
 interface Props {
   variant?: 'header' | 'hero';
   placeholder?: string;
 }
 
 export function SearchBox({ variant = 'header', placeholder }: Props) {
-  const [open, setOpen] = React.useState(false);
+  const inputRef = React.useRef<HTMLInputElement>(null);
+  const wrapperRef = React.useRef<HTMLDivElement>(null);
   const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<ResolvedResult[]>([]);
-  const [searching, setSearching] = React.useState(false);
   const [pagefindAvailable, setPagefindAvailable] = React.useState<boolean | null>(null);
+  const [open, setOpen] = React.useState(false);
+  const debouncedQuery = useDebouncedValue(query, 150);
 
-  // Open with Cmd/Ctrl+K from anywhere.
+  // Focus input on ⌘/Ctrl+K from anywhere.
   React.useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
-        setOpen((o) => !o);
+        inputRef.current?.focus();
       }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, []);
 
-  // Run a search whenever the query changes.
+  // Close results on outside click.
   React.useEffect(() => {
     if (!open) return;
-    const trimmed = query.trim();
+    const handler = (e: MouseEvent) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [open]);
+
+  // Run search when the debounced query changes.
+  React.useEffect(() => {
+    const trimmed = debouncedQuery.trim();
     if (!trimmed) {
       setResults([]);
       return;
     }
     let cancelled = false;
-    setSearching(true);
     (async () => {
       const pf = await loadPagefind();
       if (cancelled) return;
       if (!pf) {
         setPagefindAvailable(false);
         setResults([]);
-        setSearching(false);
         return;
       }
       setPagefindAvailable(true);
@@ -94,92 +103,101 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       const top = await Promise.all(hits.slice(0, 8).map((r) => r.data()));
       if (cancelled) return;
       setResults(top);
-      setSearching(false);
     })();
     return () => {
       cancelled = true;
     };
-  }, [query, open]);
+  }, [debouncedQuery]);
 
   const isHero = variant === 'hero';
-  const triggerPlaceholder = placeholder ?? 'Search the site…';
+  const ph = placeholder ?? 'Search the site…';
+  const showDropdown =
+    open && (query.trim().length > 0 || pagefindAvailable === false);
 
   return (
-    <>
-      <Button
-        type="button"
-        variant="outline"
-        onClick={() => setOpen(true)}
+    <div
+      ref={wrapperRef}
+      className={cn(
+        'relative',
+        isHero ? 'w-full max-w-2xl' : 'w-full max-w-xs',
+      )}
+    >
+      <Search
         className={cn(
-          'relative h-9 justify-start gap-2 text-sm text-muted-foreground',
-          isHero ? 'w-full max-w-2xl px-4 py-3 text-base' : 'w-full max-w-xs',
+          'pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground',
+          isHero ? 'h-5 w-5' : 'h-4 w-4',
         )}
-        aria-label="Open search"
-      >
-        <Search className="h-4 w-4" />
-        <span className="flex-1 text-left">{triggerPlaceholder}</span>
-        <kbd className="pointer-events-none hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground sm:inline-flex">
-          <span className="text-xs">⌘</span>K
-        </kbd>
-      </Button>
-
-      <CommandDialog
-        open={open}
-        onOpenChange={setOpen}
-        title="Search the site"
-        description="Find pages by topic, drug name, or symptom."
-      >
-        <CommandInput
-          placeholder="Type to search…"
-          value={query}
-          onValueChange={setQuery}
-        />
-        <CommandList>
-          {/* cmdk filters items by string match; we override by always showing
-              the Pagefind results we computed, regardless of cmdk's internal filter. */}
-          {searching && <CommandEmpty>Searching…</CommandEmpty>}
-          {!searching && query.trim() && results.length === 0 && (
-            <CommandEmpty>
-              {pagefindAvailable === false
-                ? 'Search is only available on the deployed site. To test locally, run `npm run build && npm run preview`.'
-                : 'No results.'}
-            </CommandEmpty>
-          )}
-          {!query.trim() && (
-            <CommandEmpty>Type to search the site.</CommandEmpty>
-          )}
-          {results.length > 0 && (
-            <CommandGroup heading="Results">
+        aria-hidden="true"
+      />
+      <Input
+        ref={inputRef}
+        type="search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onFocus={() => {
+          setOpen(true);
+          loadPagefind();
+        }}
+        onKeyDown={(e) => {
+          if (e.key === 'Escape') {
+            inputRef.current?.blur();
+            setOpen(false);
+          }
+        }}
+        placeholder={ph}
+        autoComplete="off"
+        className={cn(
+          'pl-9',
+          isHero ? 'h-12 text-base pl-11' : 'h-9',
+        )}
+        aria-label="Search the site"
+      />
+      {showDropdown && (
+        <div
+          className="absolute left-0 right-0 top-full z-50 mt-2 max-h-96 overflow-y-auto rounded-md border border-border bg-popover text-popover-foreground shadow-lg"
+          role="listbox"
+        >
+          {pagefindAvailable === false ? (
+            <p className="p-4 text-sm text-muted-foreground">
+              Search is only available on the deployed site. To test locally,
+              run{' '}
+              <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">
+                npm run build &amp;&amp; npm run preview
+              </code>
+              .
+            </p>
+          ) : results.length === 0 ? (
+            <p className="p-4 text-sm text-muted-foreground">No results.</p>
+          ) : (
+            <ul className="divide-y divide-border">
               {results.map((r) => {
                 const category = r.filters?.category?.[0] ?? '';
                 return (
-                  <CommandItem
-                    key={r.url}
-                    value={`${r.meta.title} ${r.url}`}
-                    onSelect={() => {
-                      window.location.href = r.url;
-                    }}
-                    className="flex flex-col items-start gap-1"
-                  >
-                    {category && (
-                      <span className="text-xs uppercase tracking-wide text-primary">
-                        {category}
-                      </span>
-                    )}
-                    <span className="text-sm font-medium">
-                      {r.meta.title || r.url}
-                    </span>
-                    <span
-                      className="text-xs text-muted-foreground"
-                      dangerouslySetInnerHTML={{ __html: r.excerpt }}
-                    />
-                  </CommandItem>
+                  <li key={r.url}>
+                    <a
+                      href={r.url}
+                      className="block p-3 transition hover:bg-accent hover:text-accent-foreground"
+                    >
+                      {category && (
+                        <div className="text-xs uppercase tracking-wide text-primary">
+                          {category}
+                        </div>
+                      )}
+                      <div className="text-sm font-medium">
+                        {r.meta.title || r.url}
+                      </div>
+                      <div
+                        className="mt-1 text-xs text-muted-foreground"
+                        dangerouslySetInnerHTML={{ __html: r.excerpt }}
+                      />
+                    </a>
+                  </li>
                 );
               })}
-            </CommandGroup>
+            </ul>
           )}
-        </CommandList>
-      </CommandDialog>
-    </>
+        </div>
+      )}
+    </div>
   );
 }
