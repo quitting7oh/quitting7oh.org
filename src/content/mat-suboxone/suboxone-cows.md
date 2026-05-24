@@ -180,6 +180,7 @@ If you've been on the long-acting compounds and your COWS isn't climbing past 24
 ## Practical tips
 
 - **Score yourself every couple of hours** once you're past 12 hours since last dose. Watch the trajectory.
+- **Wait about an hour after waking up before scoring.** A first-thing-in-the-morning score is unreliable — pulse hasn't settled, you've been still for hours so restlessness reads low, and the mental fog of just waking up makes the subjective items inconsistent. Get up, drink water, walk around, then score.
 - **Be honest about each item.** Don't talk yourself into a higher score because you want to dose. Don't talk yourself into a lower score because you're scared.
 - **Pulse and pupils are the hardest to fake either direction.** If those are climbing, you're getting close.
 - **Pulse needs a real resting reading.** Sit or lie down for at least a minute first. Anxiety alone can spike pulse and inflate your score.
