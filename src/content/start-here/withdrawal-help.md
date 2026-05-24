@@ -328,6 +328,10 @@ just brutal. Things that help:
 - **A weighted blanket** if you have one, or any heavy blanket. The
   pressure helps with restless legs.
 
+For the full per-supplement breakdown (dosing, brands, what else to
+add for sleep specifically), see
+[Vitamins & Supplements](/other-tools/vitamins-supplements).
+
 Helper meds that work for sleep (prescription, ask a provider):
 trazodone, hydroxyzine, gabapentin. See
 [Helper Medications](/other-tools/helper-meds-info).
