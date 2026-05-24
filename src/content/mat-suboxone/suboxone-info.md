@@ -9,9 +9,9 @@ sort: 2
 
 > 💼 **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues that have nothing to do with whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
 
-Suboxone is the most common medication used to come off opioid dependence, and for most people in this community, it's the medication route worth understanding. This page covers induction, dosing, taper plans, and the specific challenges that come with using bupe to come off the synthetic mitragynine derivatives we deal with here.
+Suboxone is one widely-used medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr17018-info); [tapering with kratom leaf](/other-tools/tapering-with-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds-info) are the non-MAT paths. This page covers Suboxone specifically — induction, dosing, taper plans, and the challenges that come with using bupe to come off the synthetic mitragynine derivatives.
 
-**Important up front:** this site is focused on **short-term tapers**. The goal here is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** — see [Long-term maintenance is a real option](#long-term-maintenance-is-a-real-option) further down. The reason this community leans short-taper is **pharmacological, not demographic**: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and leaves the body quickly. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, which means a brief, structured bupe course is enough to bridge through acute withdrawal for a large portion of our community. People coming off the longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) or off years of stacked use are in a different situation — for them, longer protocols or long-term maintenance often make more sense.
+**Important up front:** this site is focused on **short-term tapers**. The goal here is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance is a real option](#long-term-maintenance-is-a-real-option) further down). The reason this community leans short-taper is **pharmacological, not demographic**: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and leaves the body quickly. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, which means a brief, structured bupe course is enough to bridge through acute withdrawal for a large portion of our community. People coming off the longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) or off years of stacked use are in a different situation; longer protocols or long-term maintenance often make more sense for them.
 
 **Two things to know before you sit down with a prescriber:**
 
@@ -53,7 +53,7 @@ If you've been on the long-acting compounds and your COWS isn't climbing past 24
 ## Why bupe might not fully cover you (it's not your imagination)
 A few pharmacological reasons that come up here:
 
-**The serotonergic and adrenergic piece.** Kratom's minor alkaloids — paynantheine, speciogynine, corynantheidine, and others — bind serotonin and adrenergic receptors **directly** ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)). This is not SSRI/SNRI-style reuptake inhibition (no peer-reviewed study has shown a kratom alkaloid blocking SERT or NET); it's direct agonism/antagonism at the receptors themselves. Suboxone is purely opioid-receptor medication and does not address that side of the picture. The wired/anxious/can't-sleep part of withdrawal that doesn't lift on bupe is often this. Adjuncts like clonidine, gabapentin, lofexidine, hydroxyzine, and short-term sleep support can fill that gap — see [Helper Medications](/other-tools/helper-meds-info).
+**The serotonergic and adrenergic piece.** Kratom's minor alkaloids (paynantheine, speciogynine, corynantheidine, and others) bind serotonin and adrenergic receptors **directly** ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)). This is not SSRI/SNRI-style reuptake inhibition (no peer-reviewed study has shown a kratom alkaloid blocking SERT or NET); it's direct agonism/antagonism at the receptors themselves. Suboxone is purely opioid-receptor medication and does not address that side of the picture. The wired/anxious/can't-sleep part of withdrawal that doesn't lift on bupe is often this. Adjuncts like clonidine, gabapentin, lofexidine, hydroxyzine, and short-term sleep support can fill that gap (see [Helper Medications](/other-tools/helper-meds-info)).
 
 For more on bupe failure modes, see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
 
@@ -94,7 +94,7 @@ What that means in practice:
 
 When a prescriber wants to start you at 16 mg "to make sure you're covered," they're not wrong about coverage — they're trading a tiny additional safety margin for a much longer, harder taper. That's a real cost, and one most clinicians don't fully track because **they're not the ones doing the taper.**
 
-This is the reason behind the low-and-slow protocol — not because lower doses are intrinsically better, but because **the dose you start at is the dose you have to come off of**, and that math compounds badly above 8 mg.
+Low-and-slow exists because **the dose you start at is the dose you have to come off of**, and that math compounds badly above 8 mg.
 
 If you genuinely need 16 mg or more to feel stable, you need 16 mg. The point isn't to under-dose; it's to find the minimum effective dose, not the maximum tolerable one.
 
@@ -110,7 +110,7 @@ A few things that help during the taper:
 
 ## About taper duration
 
-The "**14 days**" figure that gets thrown around for Suboxone tapers isn't a deadline. For people coming off 7-OH — which is most of this community — **tapers usually land between 5 and 14 days**, the same range as the rapid-taper protocol in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper).
+The "**14 days**" figure that gets thrown around for Suboxone tapers isn't a deadline. For people coming off 7-OH (which is most of this community), **tapers usually land between 5 and 14 days**, the same range as the rapid-taper protocol in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper).
 
 Rough shape, by total day-1 dose:
 
@@ -120,9 +120,9 @@ Rough shape, by total day-1 dose:
 
 The pattern that does **not** match this community's experience is the long, drawn-out, weeks-or-months taper. Those mostly come out of long-term high-dose bupe maintenance, which is a different starting position than what most people here are tapering from. Short, mu-dominant compounds like 7-OH clear faster, and the bupe course bridges through acute withdrawal without entrenching its own dependence the way years of high-dose maintenance can.
 
-A few days longer than your plan is fine if you stall at the bottom or want extra time on a particular dose — that's not failure, that's pacing yourself. What we **don't** generally see work well: dragging a taper out beyond a few weeks "just in case." That tends to make the final drop harder, not easier, because you've spent more time on bupe than the medication's structural role required.
+Stalling at the bottom or wanting extra time on a particular dose is normal pacing. What we **don't** generally see work well: dragging a taper out beyond a few weeks "just in case." That tends to make the final drop harder, not easier, because you've spent more time on bupe than the medication's structural role required.
 
-If your prescriber is pushing a longer schedule than makes sense for your dose, "**Can we plan a shorter step-down? My total dose is only X mg**" is a reasonable question. The reverse — needing one or two more days for a comfortable last drop — is also fine. Both are conversations worth having explicitly.
+If your prescriber is pushing a longer schedule than makes sense for your dose, "**Can we plan a shorter step-down? My total dose is only X mg**" is a reasonable question. Needing one or two more days for a comfortable last drop is also a reasonable ask. Both are conversations worth having explicitly.
 
 ## How to find a Suboxone prescriber
 - [SAMHSA's buprenorphine practitioner locator](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)
