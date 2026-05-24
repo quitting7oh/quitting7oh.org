@@ -119,6 +119,59 @@ needle:
 - **Time-bound distraction.** A specific show, a specific chore, a
   specific call. Not "scroll your phone."
 
+## When ten minutes isn't enough
+
+The wave model above works for cravings that come in 15–30 minute
+peaks. The fuck its sometimes don't. They sit there for hours, all
+evening, an entire day, sometimes longer. Running the 10-minute rule
+on repeat for 12 hours is a recipe for being so depleted that the
+next wave wins. The longer version needs a different toolkit.
+
+- **Externalize the decision.** Don't try to win 12 hours of "should
+  I" with willpower. Hand it to a person. *"I'm having a rough one. If
+  I message you asking about using later, please remind me I asked you
+  to remind me."* Make the choice structural rather than
+  minute-by-minute.
+- **Change your environment.** Same-place fuck its are partly
+  conditioned triggers (a couch, a parking lot, a drawer, the route
+  home from work). A long walk, a drive, a visit to family, a coffee
+  shop you don't usually go to — relocation does work that more time
+  at home doesn't.
+- **Plan the rest of the day, not the next ten minutes.** Sustained
+  cravings respond to filled time. Make actual plans: dinner with
+  someone, a meeting, an errand, a movie at a specific theater at a
+  specific showtime. Empty time is when the loop wins.
+- **Sleep through it if you can.** Fuck its often peak in the evening
+  or overnight, when defenses are lowest. Going to bed early — with a
+  prescribed sleep med if you have one — moves you past it.
+  Tomorrow-you is usually more resourced than tonight-you.
+- **A long call or an in-person hangout, not a text thread.** A
+  sustained wave needs a sustained connection. 60–90 minutes of
+  voice or in-person presence does what async text doesn't.
+- **Get to a meeting today.**
+  [SMART Recovery](https://meetings.smartrecovery.org/meetings/)
+  and [NA](https://www.na.org/meetingsearch/) both run multiple
+  meetings daily — online and in person. A meeting that starts in
+  three hours is a time anchor bigger than any timer.
+- **Reach a prescriber if this has been loud for days, not hours.**
+  Persistent loud cravings past acute withdrawal are information.
+  They often mean something needs adjusting: helper meds, MAT dose,
+  treatment for the
+  [anhedonia](/post-acute/depression-and-anhedonia) or
+  [sleep disruption](/post-acute/sleep-recovery) that's feeding the
+  craving. If you don't have a prescriber, see
+  [Telehealth Providers](/resources/telehealth).
+
+If you've been loud for many hours and none of this is catching,
+prepare for a possible slip rather than pretending you won't have
+one: tell someone you're at risk, keep
+[naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
+within reach, and read the
+[If you've already used](#if-youve-already-used) section below now
+so the don't-mix and
+[Never Use Alone](https://neverusealone.com) routing is in front
+of you before you need it.
+
 ## Why you might be feeling this right now
 
 Cravings cluster predictably:
