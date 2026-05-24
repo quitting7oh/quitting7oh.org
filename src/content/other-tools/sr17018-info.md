@@ -102,7 +102,7 @@ The published [Bohn lab research](https://pmc.ncbi.nlm.nih.gov/articles/PMC69016
 
 That said, the pharmacological logic is consistent. [MGM-15](/compounds/mgm15) is a [semi-synthetic mu/delta agonist](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/) derived from 7-OH, and 7-OH itself is a potent mu-opioid agonist. SR-17018's substitution mechanism operates at the mu receptor, which all of these compounds activate.
 
-**The [MGM-15](/compounds/mgm15) caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help.
+**The [MGM-15](/compounds/mgm15) caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help — see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader picture.
 
 For pseudo or [MIT-A](/compounds/mit-a-dhm), the same logic applies. **Be honest about your full compound history when planning a transition.** Stacked synthetics may need a more careful, possibly longer preload window than pure 7-OH.
 

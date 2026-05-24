@@ -1,14 +1,28 @@
 ---
-title: "Treatment & Rehab: Options and How to Pay"
-description: "Levels of care explained from the family's perspective, how insurance parity works under MHPAEA, free and low-cost paths, and how to spot predatory treatment marketing."
+title: "Rehabilitation Centers"
+description: "Detox, residential, PHP, IOP, and outpatient — from the family's perspective. How to navigate insurance, parity law, free and low-cost paths, and how to spot predatory treatment marketing."
 category: "for-loved-ones"
 last_updated: "2026-05-24"
-sort: 7
+sort: 8
 ---
 
-When your loved one says "okay, I'll try," you want to be able to point them somewhere within hours, not days. This page is for the pre-research: knowing the levels of care, knowing how the money side actually works, and knowing how to spot the programs to avoid.
+Most people in this community come off [7-OH](/compounds/7-oh) and
+kratom synthetics at home — see
+**[When They're Recovering at Home](/for-loved-ones/at-home-recovery)**
+for what that looks like from the outside and what you can do that
+helps. This page is for the situations where a formal treatment
+program is the right fit, either by choice or because the at-home
+path hasn't held.
 
-It is written from the family-member POV — what you can usefully know and help with. The reader-of-this-page POV is on the [For You: Treatment & Rehab](/for-you/treatment-rehab) page.
+When your loved one says "okay, I'll try," you want to be able to
+point them somewhere within hours, not days. This page is for the
+pre-research: knowing the levels of care, knowing how the money side
+actually works, and knowing how to spot the programs to avoid.
+
+Written from the family-member POV. The reader-of-this-page POV is on
+the
+[For You: Rehabilitation Centers](/for-you/rehabilitation-centers)
+page.
 
 ## Levels of care
 
@@ -36,15 +50,34 @@ Roughly 9–15 hours per week, often in evenings to allow employment. Group ther
 
 Weekly or biweekly individual therapy, often with a recovery group component. Where many people land long-term after higher levels of care.
 
-### Medication-Assisted Treatment (MAT)
+### Medication-Assisted Treatment (MAT) inside a program
 
-MAT is not a separate "level" — it's a medication-based approach that can be combined with any of the above. For [7-OH](/compounds/7-oh) and opioid dependence, the medications most relevant are **[buprenorphine](/mat-suboxone/suboxone-info)** ([Suboxone](/mat-suboxone/suboxone-info), [Subutex](/mat-suboxone/suboxone-info), [Sublocade](/mat-suboxone/sublocade-brixadi-info)) and **methadone** (more tightly regulated, typically clinic-based).
+MAT is not a separate level — it's a medication-based approach that
+can be combined with any of the above. Most rehabilitation centers
+offer **[Suboxone](/mat-suboxone/suboxone-info)** as part of detox or
+ongoing treatment. **Methadone** is more tightly regulated (typically
+daily clinic visits) and is generally delivered through dedicated
+methadone clinics rather than residential programs. Both are
+legitimate; the right one depends on the specific situation.
 
-For [7-OH](/compounds/7-oh) and kratom synthetics specifically, this site has a dedicated section: see [MAT / Suboxone](/mat-suboxone) for the community's experience with [buprenorphine](/mat-suboxone/suboxone-info) tapers (including [COWS/SOWS timing](/mat-suboxone/suboxone-cows), [custom dosing](/mat-suboxone/suboxone-custom-dose), [what to do when bupe isn't fully covering withdrawal](/mat-suboxone/suboxone-isnt-working), and the [Suboxone rapid taper protocol](/mat-suboxone/suboxone-rapid-taper)), [SR-17](/other-tools/sr17018-info), and [tapering with kratom leaf](/other-tools/tapering-with-leaf). These pages are technical but worth reading if your loved one is considering MAT — many clinicians have not encountered [7-OH](/compounds/7-oh) dependence specifically and the standard protocols sometimes need adjustment.
+For the medication details — community-validated induction protocol,
+rapid-taper structure, long-term risks, and the other
+community-documented paths like [SR-17](/other-tools/sr17018-info) and
+[tapering with kratom leaf](/other-tools/tapering-with-leaf) — see
+**[When They're Recovering at Home](/for-loved-ones/at-home-recovery)**
+or the [MAT / Suboxone section](/mat-suboxone). Many clinicians have
+not encountered [7-OH](/compounds/7-oh) dependence specifically and
+the standard protocols sometimes need adjustment; the more your loved
+one understands going in, the better the conversation with their
+prescriber tends to go.
 
-> 💼 **If your loved one works in a regulated profession** — CDL driver, pilot, ATC, law enforcement, armed security, healthcare licensure, federal employment with clearance — the choice of MAT medication can have professional-licensure implications separate from anything their employer does. See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before they choose a medication or disclose to a regulator.
-
-**A note on telehealth.** For [7-OH](/compounds/7-oh) and kratom synthetics specifically, telehealth providers can prescribe [Suboxone](/mat-suboxone/suboxone-info) without an in-person visit — see the [Telehealth Providers comparison](/resources/telehealth) for a fact-checked list of options, including which ones explicitly mention kratom or 7-OH on their own sites. This dramatically lowers the activation energy of starting MAT; your loved one doesn't have to find and visit a specialty addiction clinic, they can start from their phone.
+> 💼 **If your loved one works in a regulated profession** — CDL
+> driver, pilot, ATC, law enforcement, armed security, healthcare
+> licensure, federal employment with clearance — the choice of MAT
+> medication can have professional-licensure implications separate
+> from anything their employer does. See
+> **[MAT & Your Professional License](/for-you/mat-and-your-job)**
+> before they choose a medication or disclose to a regulator.
 
 ## How to pay for treatment
 
@@ -94,7 +127,7 @@ The treatment industry has real warning signs. Some patterns to recognize:
 - **Free travel to far-away programs.** This is called "patient brokering." A program in Florida or California offering to fly you in from across the country at no cost is almost always operating on a commission-driven business model where the insurance billing for your loved one funds the flights. It is illegal in many states and unethical everywhere. Beware.
 - **Pressure to act immediately without information.** Real treatment programs will answer questions, give you time to think, and explain costs.
 - **No clear treatment philosophy or licensed clinical staff.** Ask: who runs the clinical program, what are their credentials, what evidence-based modalities are used (CBT, motivational interviewing, MAT availability, etc.).
-- **Refusing or discouraging MAT.** A residential program for opioid dependence that refuses to allow medication-assisted treatment is operating against the strongest evidence base for the condition. There are sometimes legitimate reasons to favor non-MAT approaches (especially for some specific situations), but a blanket policy is a yellow flag worth questioning.
+- **Refusing or banning MAT as a matter of policy.** A residential program that categorically prohibits Suboxone, methadone, or any opioid-replacement medication — regardless of what the patient or their prescriber thinks is right — is an ideological stance, not a clinical one. It removes a path that works for many people. Worth questioning before committing.
 - **Aftercare that's vague or absent.** Ask what happens on day 31. Real programs have aftercare plans, alumni structures, and concrete continuing-care recommendations. Programs that send people home with no plan have much higher relapse rates.
 
 ## How to support without controlling
@@ -114,6 +147,7 @@ Things that almost never help:
 
 ## Where to read next
 
+- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** — what to know about the at-home path, which is what most people in this community use
 - **[FMLA & Workplace Protections](/for-loved-ones/fmla-workplace)** — taking leave to care for them during treatment
 - **[Support Groups](/for-loved-ones/support-groups)** — including ones with strong CRAFT and treatment-navigation guidance
-- **[For You: Treatment & Rehab](/for-you/treatment-rehab)** — the same material from your loved one's POV, useful to read so you understand what they're navigating
+- **[For You: Rehabilitation Centers](/for-you/rehabilitation-centers)** — the same material from your loved one's POV, useful to read so you understand what they're navigating

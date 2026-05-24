@@ -12,7 +12,7 @@ export const CATEGORIES = [
   {
     slug: 'start-here',
     title: 'Start Here',
-    blurb: 'Welcome, what to expect, SOS, scams to avoid.',
+    blurb: 'Welcome, how to use the site, withdrawal help, craving moments.',
     emoji: '🧭',
   },
   {

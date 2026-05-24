@@ -1,26 +1,57 @@
 ---
-title: "Treatment & Rehab: Finding Help and Paying for It"
-description: "Levels of care from your POV as the patient, how to find a program that fits, what to expect when you call, and how insurance, Medicaid, VA, and sliding-scale options actually work."
+title: "Rehabilitation Centers"
+description: "Detox, residential, PHP, IOP, and outpatient — what each level of care looks like, how to find a program, how to pay, and what to be skeptical of."
 category: "for-you"
 last_updated: "2026-05-24"
-sort: 2
+sort: 3
 ---
 
-This page is the practical version of "how do I actually get into treatment, and how do I pay for it." Written from your POV as the person who would be the patient.
+Most people in this community come off [7-OH](/compounds/7-oh) and
+kratom synthetics at home, with a combination of a
+[telehealth prescriber](/resources/telehealth), helper meds,
+supplements, and community support — see
+**[At-Home Treatment](/for-you/at-home-treatment)** for that path.
 
-The companion page for your family is at [For Loved Ones: Treatment & Rehab](/for-loved-ones/treatment-options); some of the same material is there but framed for someone helping you navigate.
+This page is for situations where a formal treatment program is the
+right fit, either by choice or because the at-home path hasn't held.
+Written from your POV as the patient. The companion page for your
+family is at
+[For Loved Ones: Rehabilitation Centers](/for-loved-ones/rehabilitation-centers).
+
+When at-home is **not** the right fit:
+
+- Polysubstance use, especially with alcohol or benzodiazepines —
+  combined withdrawal can be medically dangerous and benzo withdrawal
+  in particular can be fatal without management
+- A home environment that's tied to the use
+- Repeated at-home attempts that haven't held
+- Severe co-occurring mental health issues that need higher-intensity
+  clinical support alongside withdrawal
 
 ## Levels of care, from your POV
 
-Treatment is organized as a stepped continuum. You don't need all of it; the right level depends on your specific situation. You can step up or down as things change.
+Treatment is organized as a stepped continuum. You don't need all of
+it; the right level depends on your specific situation. You can step
+up or down as things change.
 
 ### Medical detox (typically 3–7 days)
 
-Supervised withdrawal. For [7-OH](/compounds/7-oh) and opioid dependence, detox handles the worst of the acute physical symptoms with medical support — IV fluids if you can't keep things down, medications to help with the nausea, sleep, anxiety, and (in many programs) a bupe induction to bridge into longer-term MAT. Useful especially if you've tried to taper or quit on your own and the withdrawal has knocked you back.
+Supervised withdrawal. For [7-OH](/compounds/7-oh) and opioid
+dependence, detox handles the worst of the acute physical symptoms
+with medical support — IV fluids if you can't keep things down,
+medications to help with nausea, sleep, anxiety, and (in many
+programs) a bupe induction to bridge into longer-term MAT. Most
+clearly indicated when at-home withdrawal isn't working or isn't safe
+to attempt (the polysubstance case above).
 
-You don't *have* to start with detox. Many people in this community manage acute withdrawal outpatient with a [low-and-slow bupe induction](/mat-suboxone/suboxone-info) ([COWS/SOWS timing](/mat-suboxone/suboxone-cows) matters more than the clock), [helper meds](/other-tools/helper-meds-info), and a [supplement stack](/other-tools/quitkit-info). Detox is most clearly indicated when withdrawal at home isn't working — either because the symptoms are unmanageable, the environment isn't supporting it, or you've tried before and [bupe wasn't fully covering you](/mat-suboxone/suboxone-isnt-working).
-
-> 🆘 **If you're using 7-OH or opioids along with any other substance — alcohol, benzodiazepines, gabapentinoids, other depressants — please don't come off without medical supervision.** Combined withdrawal can be medically dangerous. Benzo withdrawal in particular can be fatal without medical management. Call **[SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at 1-800-662-4357** or visit [findtreatment.gov](https://findtreatment.gov) for supervised options.
+> 🆘 **If you're using 7-OH or opioids along with any other substance
+> — alcohol, benzodiazepines, gabapentinoids, other depressants —
+> please don't come off without medical supervision.** Combined
+> withdrawal can be medically dangerous. Benzo withdrawal in
+> particular can be fatal without medical management. Call
+> **[SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at
+> 1-800-662-4357** or visit [findtreatment.gov](https://findtreatment.gov)
+> for supervised options.
 
 ### Residential / inpatient (typically 28–90 days)
 
@@ -40,17 +71,37 @@ Roughly 9–15 hours per week, often in the evenings to work around employment. 
 
 Weekly or biweekly individual therapy, often with a recovery group component on the side (your local mutual aid meetings count). Where most people land long-term.
 
-### Medication-Assisted Treatment (MAT)
+### Medication-Assisted Treatment (MAT) inside a program
 
-MAT is not a separate "level" — it's a medication-based approach that can sit alongside any of the above, or on its own without other treatment. For [7-OH](/compounds/7-oh) and opioid dependence, the medications most relevant are:
+MAT is not a separate level — it's a medication-based approach that
+can sit alongside any of the above. Most rehabilitation centers offer
+**[Suboxone](/mat-suboxone/suboxone-info)** as part of detox or
+ongoing treatment. **Methadone** is more tightly regulated (typically
+requires daily clinic visits) and is generally delivered through
+dedicated methadone clinics rather than residential programs. Both
+are legitimate; the right one depends on the specific situation.
 
-- **[Buprenorphine](/mat-suboxone/suboxone-info)** ([Suboxone](/mat-suboxone/suboxone-info), [Subutex](/mat-suboxone/suboxone-info), [Sublocade injection](/mat-suboxone/sublocade-brixadi-info)). For our community, the low-and-slow taper approach has the strongest track record — see [MAT / Suboxone](/mat-suboxone) for the full pharmacology and protocol, [induction by COWS/SOWS](/mat-suboxone/suboxone-cows) (timing matters more than the clock), [custom dosing strategies](/mat-suboxone/suboxone-custom-dose), [when bupe isn't fully covering you](/mat-suboxone/suboxone-isnt-working), the [Suboxone rapid taper](/mat-suboxone/suboxone-rapid-taper) for the short-taper structure, and [Suboxone risks](/mat-suboxone/suboxone-risks) for the honest counterpoint.
-- **Methadone**. More tightly regulated (typically requires daily clinic visits). Less commonly the first-line choice for [7-OH](/compounds/7-oh)-specific dependence, but it's a legitimate option for some situations.
-- **[SR-17](/other-tools/sr17018-info)** and **[tapering with kratom leaf](/other-tools/tapering-with-leaf)** are two non-MAT pathways some in this community have used. Both have specific use-cases and limitations covered on their pages.
+For the full medication details (community-validated induction
+protocol, rapid-taper structure, long-term risks, and the other
+community-documented paths like [SR-17](/other-tools/sr17018-info)
+and [tapering with kratom leaf](/other-tools/tapering-with-leaf)),
+see **[At-Home Treatment](/for-you/at-home-treatment)** and the
+**[MAT / Suboxone section](/mat-suboxone)**.
 
-For 7-OH/kratom specifically: many providers haven't encountered these compounds in their training, and the standard playbook (e.g., starting bupe at 16 mg on day one) often produces a longer, harder taper than the community has found necessary. Reading the relevant pages here and bringing the receptor-occupancy data into the conversation tends to go better than just disagreeing with your prescriber.
+For 7-OH and kratom specifically: many providers haven't encountered
+these compounds in their training, and the standard playbook (e.g.,
+starting bupe at 16 mg on day one) often produces a longer, harder
+taper than the community has found necessary. Bringing the
+receptor-occupancy data into the conversation tends to go better than
+just disagreeing with your prescriber.
 
-> 💼 **Working in a regulated profession?** If you hold a CDL, FAA airman certificate, ATC medical, law-enforcement position, armed-security license, healthcare license, or other regulated credential, **MAT can have licensure implications separate from your employer's policies.** See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before choosing a medication or disclosing to a regulator.
+> 💼 **Working in a regulated profession?** If you hold a CDL, FAA
+> airman certificate, ATC medical, law-enforcement position,
+> armed-security license, healthcare license, or other regulated
+> credential, **MAT can have licensure implications separate from
+> your employer's policies.** See
+> **[MAT & Your Professional License](/for-you/mat-and-your-job)**
+> before choosing a medication or disclosing to a regulator.
 
 ## How to find a program
 
@@ -126,11 +177,12 @@ If the first program isn't a fit (capacity, insurance issues, distance, philosop
 - **Aggressive marketing** — programs that find you via Google ads or unsolicited calls after you've searched online often work on commission models rather than outcomes.
 - **"Luxury rehab" pricing without accreditation** — look for **CARF** ([carf.org](https://www.carf.org)) or **Joint Commission** ([jointcommission.org](https://www.jointcommission.org)) accreditation. Their absence is a real red flag for a residential program.
 - **Free travel to far-away programs** — this is called "patient brokering." Illegal in many states, unethical everywhere. A program offering to fly you across the country at no cost is funding those flights with the insurance billing they'll do once you're there.
-- **Programs that refuse to allow MAT.** For opioid-class dependence (which 7-OH is), refusing MAT runs against the strongest evidence base for the condition. There are sometimes specific reasons to choose non-MAT pathways, but a blanket prohibition is a yellow flag worth questioning.
+- **Programs that ban MAT as a matter of policy.** Some residential programs categorically prohibit Suboxone, methadone, or any opioid-replacement medication regardless of what the patient or their prescriber thinks is right. That's an ideological stance, not a clinical one — and it removes a path that works for many people. Worth questioning before committing.
 - **Vague or absent aftercare planning.** Ask what happens on day 31. Real programs have aftercare plans, alumni structures, and continuing-care recommendations.
 
 ## Where to read next
 
+- **[At-Home Treatment](/for-you/at-home-treatment)** — the at-home path most people in this community use, including the four community-validated approaches
 - **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — taking leave for treatment without losing your job
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — Kratom Anonymous, NA, SMART, and others — free peer support during and after
 - **[MAT / Suboxone](/mat-suboxone)** — the detailed pharmacology and induction protocol pages for our specific situation

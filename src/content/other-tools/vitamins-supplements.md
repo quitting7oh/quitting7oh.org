@@ -66,11 +66,6 @@ brands, and the *why* behind each one.
 - **The compound that put you here** — [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo,
   or any stacked synthetic kratom product. "Just a little" restarts the
   cycle.
-- **Improvising with kratom leaf** to take the edge off acute
-  withdrawal from synthetics. *Plain leaf can be a deliberate taper
-  tool* (see [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)),
-  but that's a planned protocol started before acute withdrawal sets in
-  — it isn't a 3 a.m. rescue medication.
 - **Phenibut** — itself addictive with brutal withdrawal.
 - **Kava** — stresses the liver.
 - **St. John's Wort** — interacts with SSRIs, birth control, many other
@@ -181,6 +176,8 @@ so don't combine with alcohol or other sedatives.
 
 ## Mood, motivation, and anhedonia (the PAWS stuff)
 
+For the broader treatment picture for these symptoms — including the evidence-based interventions and prescription options — see [Depression and Anhedonia](/post-acute/depression-and-anhedonia). The supplements below are the community-discussed tier of that page.
+
 **L-tyrosine** at 500 to 1500 mg in the morning.
 [Precursor to dopamine and norepinephrine, supports synthesis of these neurotransmitters which become imbalanced during withdrawal](https://reactionrecovery.com/kratom/).
 Helps with the flat, unmotivated, brain-foggy feeling that hangs around
@@ -209,10 +206,6 @@ enough.
 - **The compound that put you here** — [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo,
   or any stacked synthetic kratom product. "Just a little" restarts
   the cycle.
-- **Improvising with kratom leaf** to take the edge off acute
-  withdrawal from synthetics. *Plain leaf can be a deliberate taper
-  tool* (see [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)),
-  but that's a planned protocol — not a rescue medication.
 - **Phenibut.** Itself addictive with brutal withdrawal. Avoid.
 - **Kava.** Stresses the liver, especially with other supplements or
   alcohol.

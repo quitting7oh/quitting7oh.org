@@ -3,7 +3,7 @@ title: "Taking Care of Yourself"
 description: "The unglamorous basics that keep you standing through a long process. Therapy, support groups, sleep, the hypervigilance trap, and why it's okay to be happy while they're still suffering."
 category: "for-loved-ones"
 last_updated: "2026-05-23"
-sort: 9
+sort: 10
 ---
 
 You cannot pour from an empty cup. The people who burn out trying to rescue someone often end up unable to help when their person is finally ready. Taking care of yourself isn't selfish, it's strategic — and it's also just necessary, because you matter independently of whether anyone else gets well.

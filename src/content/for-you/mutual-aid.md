@@ -3,7 +3,7 @@ title: "Mutual Aid & Recovery Groups"
 description: "Free peer support groups for the person in recovery — Kratom Anonymous (the most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others. Try more than one."
 category: "for-you"
 last_updated: "2026-05-24"
-sort: 5
+sort: 6
 ---
 
 Mutual aid groups are free, accessible, and put you in a room (real or virtual) with people who get it. Most have online options, most run multiple times a week, and almost all of them welcome you whether you're 100% abstinent, struggling, or just curious.

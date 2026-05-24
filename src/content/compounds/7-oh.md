@@ -11,9 +11,10 @@ sort: 2
 > "7" — and what's on the label is often not what's in the product.
 > Anything below is a pharmacology and recovery reference, not dosing
 > guidance and not safety guidance for current use. If you're trying
-> to come off, the [Suboxone](/mat-suboxone/suboxone-info) and
-> [SOS Resources](/start-here/sos-resources) pages are where
-> you actually go.
+> to come off, the [Withdrawal Help](/start-here/withdrawal-help) page
+> covers the three real paths out — [Suboxone](/mat-suboxone/suboxone-info),
+> [SR-17](/other-tools/sr17018-info), or toughing it out with
+> [helper meds](/other-tools/helper-meds-info) and supplements.
 
 7-OH is the compound this site is named after — and the compound most
 people here are trying to get off of. **It is an opioid.** Whatever the

@@ -108,7 +108,7 @@ Insomnia is often the worst part of withdrawal. Sleep matters more than people r
 
 ## Wellbutrin (bupropion) — for after, mostly
 
-[Bupropion is a norepinephrine-dopamine reuptake inhibitor](https://my.clevelandclinic.org/health/diseases/opioid-withdrawal). It directly addresses the dopamine and norepinephrine deficits that cause anhedonia and low motivation in PAWS.
+[Bupropion is a norepinephrine-dopamine reuptake inhibitor](https://my.clevelandclinic.org/health/diseases/opioid-withdrawal). It directly addresses the dopamine and norepinephrine deficits that cause anhedonia and low motivation in PAWS. For the broader treatment picture for these symptoms, see [Depression and Anhedonia](/post-acute/depression-and-anhedonia).
 
 **The catch:** it's not great during *active* withdrawal. The stimulating effect can worsen anxiety and insomnia in the acute phase, and it takes 4-6 weeks to reach full effect anyway. **Most prescribers add it 2-4 weeks into recovery** when the worst is over and PAWS-style anhedonia is settling in.
 

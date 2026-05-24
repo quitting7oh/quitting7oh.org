@@ -1,9 +1,9 @@
 ---
-title: "SOS: You're in Withdrawal Right Now"
+title: "You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "start-here"
 last_updated: "2026-05-24"
-sort: 2
+sort: 3
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you can't keep water
@@ -16,6 +16,17 @@ sort: 2
 You're going to be okay. Even if it doesn't feel like it right now.
 Withdrawal is a finite, time-limited process. Your body knows how to do
 this. We're going to walk you through the next few hours.
+
+## What's actually happening
+
+[7-OH](/compounds/7-oh) is a [potent mu-opioid receptor agonist that binds
+13 to 22 times more strongly than morphine](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/).
+Your body adapted to its constant presence. When you stop, your opioid
+receptors are temporarily underactive while your nervous system
+rebalances. That mismatch is what withdrawal feels like. Your brain
+isn't broken — it's adjusting. The receptors recover. Endorphin
+production comes back online. The discomfort is real, time-limited, and
+part of a process that ends.
 
 ## You are not alone — talk to someone
 
@@ -59,11 +70,6 @@ Do these things, in this order:
 - Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm),
   [pseudo](/compounds/pseudo), or any stacked synthetic). Even a "small" dose resets your
   timeline.
-- Don't improvise with kratom leaf to "take the edge off" right now.
-  Plain leaf is a real taper tool for some people in this community
-  ([Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)) — but it's a
-  *planned* protocol started before acute withdrawal sets in, not a
-  3 a.m. rescue.
 - Don't take benzodiazepines (Xanax, Klonopin, Ativan) "to take the
   edge off" unless they're already prescribed to you for this. Mixing
   benzos with opioid withdrawal recovery is a real overdose risk later.
@@ -88,12 +94,19 @@ timeline runs longer — peak symptoms can be 48–96 hours out instead of
 24–72, and the tail is longer. The shape is the same, just stretched.
 See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dhm).
 
+A note on **"brain zaps" and a wired-but-exhausted feeling** at the
+peak: kratom's [minor alkaloids](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)
+also act at serotonin and adrenergic receptors, so withdrawal can
+include symptoms that *resemble* SSRI/SNRI discontinuation — through a
+different mechanism. It's a known part of the shape; it passes with the
+rest of the acute phase.
+
 If you've been on **pseudo**, the dynamics are different — pseudo binds
 to the receptor tighter than buprenorphine itself. See
 [Pseudoindoxyl](/compounds/pseudo). Suboxone induction is harder and may
 require a different approach. Talk to a prescriber.
 
-## Three paths from here
+## Your options from here
 
 You have a real choice right now. None of these is the "right" one for
 everyone — pick the one that fits your situation.
@@ -113,25 +126,57 @@ long-acting or stacked compounds. If you choose this path:
 - The **[QuitKit-style](/other-tools/quitkit-info)** pre-packaged
   stacks exist if you don't want to source individual supplements.
 
-### Path 2 — get on Suboxone (MAT)
+### Path 2 — step down to kratom leaf
+
+Plain [kratom leaf](/compounds/kratom-leaf) is a real taper tool. The
+reasoning is straightforward: 7-OH is one of the alkaloids naturally
+present in leaf, just at a small fraction of the concentration. Stepping
+down from concentrated synthetics to leaf, then tapering the leaf
+itself, is a meaningful reduction in alkaloid exposure rather than a
+sideways switch.
+
+- Read **[Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)**
+  for the community protocol, what doses to start at, and the common
+  mistakes (most importantly: avoiding "enhanced" leaf products that
+  are secretly adulterated with extract or 7-OH).
+- This works best when planned ahead, but reaching for leaf mid-acute
+  is also a real harm-reduction move people have made. The page above
+  has practical guidance either way.
+
+### Path 3 — get on Suboxone (MAT)
 
 Often the right choice for **higher-dose [7-OH](/compounds/7-oh), long-acting synthetics,
-or anyone for whom path 1 has failed before**. Suboxone is a partial
-opioid agonist; taken correctly it cuts withdrawal to nearly zero
-within hours.
+or anyone for whom the lower-intensity paths have failed before**.
+Suboxone is a partial opioid agonist; taken correctly it cuts withdrawal
+to nearly zero within hours.
+
+The community's general posture is a **short, structured rapid taper**
+— 5 to 10 days, **14 days at the outside**. That's the range we feel
+comfortable recommending for 7-OH and the synthetics; the goal is to
+use Suboxone as a bridge through acute, not as an open-ended
+maintenance medication. Longer-term use is a real choice some people
+make, but it brings its own dependence and a separate set of risks
+that are worth understanding before you commit — see
+**[What You Should Know About Long-Term Suboxone](/mat-suboxone/suboxone-risks)**.
 
 - Read **[Suboxone](/mat-suboxone/suboxone-info)** for the
   overview and our community's low-and-slow induction approach.
+- Read **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**
+  for the 5-to-10-day protocol people in this community have used to
+  come off short-acting 7-OH.
 - Read **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)** for *when* to
   take your first dose — this matters more than people realize. Going
   too early causes **precipitated withdrawal**, which is much worse
   than what you're feeling now.
+- Read **[What You Should Know About Long-Term Suboxone](/mat-suboxone/suboxone-risks)**
+  before extending past the 10-to-14-day window. Hormone changes,
+  dependence, and a tougher taper later are the trade-offs.
 - **[Telehealth options](/resources/telehealth)** can put a Suboxone
   prescription in your hands the same day in most US states. Cash-pay
   and insurance options both exist, with prices and coverage that vary
   by provider — see the comparison page for the current shortlist.
 
-### Path 3 — SR-17018 (informal taper tool)
+### Path 4 — SR-17018 (informal taper tool)
 
 A non-prescription option some people in this community have used to
 come off 7-OH and related synthetics. SR-17018 is still an opioid — it
@@ -149,10 +194,12 @@ from than the compound they were on.
   anyone should take without understanding the trade-offs.
 
 You don't have to decide right this minute. If you're early in
-withdrawal (< 24 hours) and your COWS score is still low, all three
-paths are open. If you're past 24 hours and miserable, Path 2 (Suboxone)
-will get you relief fastest. Path 3 (SR-17018) is mid-tier — slower
-than Suboxone but doesn't require a prescription.
+withdrawal (< 24 hours) and your COWS score is still low, all four
+paths are open. If you're past 24 hours and miserable, Path 3 (Suboxone)
+will get you relief fastest. Path 4 (SR-17018) is mid-tier — slower
+than Suboxone but doesn't require a prescription. Path 2 (leaf) is the
+gentlest landing if you already have leaf on hand or can source it from
+a trusted vendor.
 
 ## When to go to the ER
 
@@ -226,7 +273,9 @@ Sleep is the hardest part for most people. You probably won't get
 much for the first 2–3 nights and that's normal — it's not dangerous,
 just brutal. Things that help:
 
-- **Melatonin** — 3 to 10 mg at bedtime. Cheap, OTC, helps onset.
+- **Melatonin** — start low. The community sees more success at
+  **1 to 3 mg at bedtime** than at the 5-10 mg most stores sell.
+  Cheap, OTC, helps onset.
 - **Magnesium glycinate** — 400 mg before bed. Calms the muscle
   twitchiness that wrecks sleep.
 - **A hot bath or shower** before trying to sleep. The temperature
@@ -247,8 +296,15 @@ more than food right now.** When you can eat, start simple:
 
 - Broth, plain rice, bananas, toast, applesauce.
 - Avoid greasy/spicy until your stomach settles. It'll come back.
+- **Protein shakes, ready-to-drink protein, or any high-protein liquid**
+  (Premier Protein, Fairlife, Orgain, store-brand equivalents) go down
+  when solid food won't and cover the calorie + protein gap. If solid
+  food is a stretch but yogurt is tolerable, stir a scoop of protein
+  powder into it — easier to keep down than a meal and useful for
+  blunting the muscle wasting that comes with a week of barely eating.
 - Protein and real food matter for recovery, but week 1 isn't the
-  time. Just don't fall apart.
+  time for forcing a full plate. Just don't fall apart — keep something
+  with protein and calories going in, even if it's a sip at a time.
 
 ## The mindset
 
@@ -274,8 +330,6 @@ A few things people who've been here wish someone had told them:
 
 - **[Thinking About Using?](/start-here/thinking-about-using)** —
   bookmark for the "fuck its" moments. They'll come.
-- **[What to Expect](/start-here/what-to-expect)** — the bigger
-  picture, the full timeline, common surprises
 - **[Helper Medications](/other-tools/helper-meds-info)** — what
   to ask a prescriber for
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**

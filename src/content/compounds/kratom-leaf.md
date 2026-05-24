@@ -286,13 +286,12 @@ that exists. Known caveats:
 - **Switching dependencies is not resolving dependency.** Leaf
   tapering shifts what you depend on; it doesn't, on its own, get
   you to abstinence.
-- **This is self-medication without clinical supervision.** The
-  evidence-based path for opioid-receptor dependence is
-  buprenorphine-based MAT ([Suboxone](/mat-suboxone/suboxone-info));
-  the [Telehealth Providers](/resources/telehealth) comparison lists
-  options that have specific kratom/7-OH experience, since many
-  clinicians have never encountered these compounds and will not
-  handle the taper well otherwise.
+- **A prescriber familiar with kratom and 7-OH can help.** Many
+  clinicians have never encountered these compounds and may not handle
+  a taper conversation well. The
+  [Telehealth Providers](/resources/telehealth) comparison lists
+  options that have specific kratom/7-OH experience if you want a
+  clinician in the loop.
 
 If you're considering this approach in detail, the
 [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf) page
@@ -325,8 +324,9 @@ and DEA primary sources before relying on anything specific.
 
 > 🩺 **Reminder.** This is a pharmacology reference, not medical
 > advice. If you're trying to come off concentrated 7-OH products,
-> the [SOS Resources](/start-here/sos-resources) page is where to go
-> for what to do right now, [Suboxone](/mat-suboxone/suboxone-info)
-> for the standard medical option, and
-> [Telehealth Providers](/resources/telehealth) for getting a
-> prescriber who works with these compounds.
+> the [Withdrawal Help](/start-here/withdrawal-help) page is where to go
+> for what to do right now — including the three real paths out
+> ([Suboxone](/mat-suboxone/suboxone-info),
+> [SR-17](/other-tools/sr17018-info), or toughing it out with
+> [helper meds](/other-tools/helper-meds-info)). For finding a
+> prescriber, see [Telehealth Providers](/resources/telehealth).

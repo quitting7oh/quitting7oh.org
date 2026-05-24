@@ -3,7 +3,7 @@ title: "FMLA & Workplace Protections (for caregivers)"
 description: "Federal job-protected leave to care for a family member in addiction treatment. Eligibility, what counts, who's covered, state expansions, and EAPs."
 category: "for-loved-ones"
 last_updated: "2026-05-23"
-sort: 8
+sort: 9
 ---
 
 If your loved one is going into treatment, or is recovering from a serious medical complication of use, you may have a legal right to job-protected unpaid leave to care for them. Most family members don't know this, and most employers don't volunteer the information.
@@ -78,7 +78,7 @@ EAPs can be useful for:
 - A few free sessions with a counselor who specializes in addiction in families.
 - Referrals to local treatment programs, including for your loved one.
 - Crisis support during particularly hard stretches.
-- Some EAPs include legal and financial consultation (helpful for the [Asking Them to Leave](/for-loved-ones/asking-them-to-leave) and [Treatment & Rehab](/for-loved-ones/treatment-options) decisions).
+- Some EAPs include legal and financial consultation (helpful for the [Asking Them to Leave](/for-loved-ones/asking-them-to-leave) and [Rehabilitation Centers](/for-loved-ones/rehabilitation-centers) decisions).
 
 Check your benefits packet, your benefits portal, or your HR intranet — many employees never use the EAP because they didn't know it existed.
 
@@ -102,6 +102,6 @@ If your employer is under 50 employees, or you haven't been there long enough, o
 
 ## Where to read next
 
-- **[Treatment & Rehab](/for-loved-ones/treatment-options)** — the why of the leave you're taking
+- **[Rehabilitation Centers](/for-loved-ones/rehabilitation-centers)** — the why of the leave you're taking
 - **[Taking Care of Yourself](/for-loved-ones/taking-care-of-yourself)** — including managing burnout while juggling work and caregiving
 - **[For You: FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — the analogous resource if your loved one is the employee

@@ -3,7 +3,7 @@ title: "Support Groups for Family & Friends"
 description: "Peer support groups specifically for people with a loved one in addiction — Nar-Anon, SMART Recovery Family & Friends, Learn to Cope, the kratom-specific options, and others."
 category: "for-loved-ones"
 last_updated: "2026-05-24"
-sort: 10
+sort: 11
 ---
 
 Peer support groups for family and friends are the most underused resource for caregivers in addiction. They are free, accessible (most have online options), and put you in a room with people who have lived your specific situation in a way no therapist can replicate.

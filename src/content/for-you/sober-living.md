@@ -3,7 +3,7 @@ title: "Sober Living Homes"
 description: "What sober living actually is, the NARR quality levels, how to find a legitimate one, what it costs, red flags for predatory homes, and how Oxford House differs."
 category: "for-you"
 last_updated: "2026-05-23"
-sort: 6
+sort: 7
 ---
 
 A sober living home is a structured, substance-free residence — somewhere between treatment and full independence. Most residents work or job-hunt, attend recovery meetings or treatment programs, and follow house rules around curfews, chores, drug testing, and meeting attendance. The point is environmental support: a place to live where the people, the rules, and the routine all reinforce recovery instead of working against it.
@@ -145,6 +145,6 @@ Some homes also require a length of sobriety before admission (often 30 days). O
 
 ## Where to read next
 
-- **[Treatment & Rehab](/for-you/treatment-rehab)** — sober living often follows or runs alongside formal treatment
+- **[Rehabilitation Centers](/for-you/rehabilitation-centers)** — sober living often follows or runs alongside formal treatment
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — meeting attendance is a typical sober living requirement and a real source of structure
 - **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — for managing the employment piece during this transition

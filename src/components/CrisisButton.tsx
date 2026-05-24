@@ -206,10 +206,10 @@ export function CrisisButton() {
             </a>
             {' '}or read our{' '}
             <a
-              href="/start-here/sos-resources"
+              href="/start-here/withdrawal-help"
               className="text-primary hover:underline"
             >
-              SOS Resources
+              Withdrawal Help
             </a>{' '}
             page.
           </p>

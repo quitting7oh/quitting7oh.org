@@ -52,7 +52,7 @@ The core ideas:
 3. **Make use less rewarding.** Stop the rescues, the cleanups, the lies-to-others on their behalf. Don't punish — just stop absorbing the costs that have been insulating them from the impact of use.
 4. **Improve your own life.** Hobbies, friendships, work, rest. This is part of the framework, not separate. People in treatment-resistant addiction often come into treatment partly because they notice the people around them are doing fine without them, and the contrast becomes intolerable.
 5. **Communication skills.** The "concern not accusation" / "I-statements" / specific-behavior framing above is the CRAFT version of communication training.
-6. **When the moment comes, have a treatment plan ready.** When they say "okay, I'll try" — you want to be able to call somewhere that day. Pre-research providers, insurance coverage, telehealth options. See [Treatment & Rehab](/for-loved-ones/treatment-options).
+6. **When the moment comes, have a treatment plan ready.** When they say "okay, I'll try" — you want to be able to call somewhere that day. Pre-research providers, insurance coverage, telehealth options. See [When They're Recovering at Home](/for-loved-ones/at-home-recovery) for the path most people use, or [Rehabilitation Centers](/for-loved-ones/rehabilitation-centers) if a formal program is the right fit.
 
 CRAFT is not a magic formula and it's not a substitute for your own support. It's a framework for being skillful, sustainable, and effective in a situation where most instincts (lecturing, rescuing, controlling) backfire.
 
@@ -72,5 +72,5 @@ What matters across the arc is that you stayed connected, you stayed honest, you
 ## Where to read next
 
 - **[Boundaries Without Punishment](/for-loved-ones/boundaries)** — limits that protect you without trying to control them
-- **[Treatment & Rehab](/for-loved-ones/treatment-options)** — so you're ready when they say yes
+- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** and **[Rehabilitation Centers](/for-loved-ones/rehabilitation-centers)** — so you're ready when they say yes, on either path
 - **[Support Groups for Family & Friends](/for-loved-ones/support-groups)** — [Nar-Anon](https://www.nar-anon.org), [SMART F&F](https://smartrecovery.org/family), [Learn to Cope](https://learn2cope.org), and others

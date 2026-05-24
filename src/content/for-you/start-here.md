@@ -20,7 +20,8 @@ This section is the practical-resources version. The rest of the site covers wha
 
 ## What's in this section
 
-- **[Treatment & Rehab: Finding Help and Paying for It](/for-you/treatment-rehab)** — levels of care explained, how insurance parity works under [MHPAEA](https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/mental-health-and-substance-use-disorder-parity), free and low-cost options, and what to expect when you call.
+- **[At-Home Treatment](/for-you/at-home-treatment)** — the path most people in this community use: the four community-validated approaches (cold turkey with helper meds, leaf taper, Suboxone, SR-17), the tools to have on hand, and when at-home isn't the right fit.
+- **[Rehabilitation Centers](/for-you/rehabilitation-centers)** — detox, residential, PHP, IOP, and outpatient, plus how insurance parity works under [MHPAEA](https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/mental-health-and-substance-use-disorder-parity), free and low-cost options, and what to expect when you call.
 - **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — federal job-protected leave for your own treatment, [ADA](https://www.ada.gov) recovery protections, what HR actually sees, and EAPs.
 - **[MAT & Your Professional License](/for-you/mat-and-your-job)** — what to check first if you hold a CDL, FAA medical, law-enforcement position, armed-security license, healthcare license, or other regulated credential before starting MAT.
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — Kratom Anonymous (the most directly applicable for our community), [NA](https://www.na.org), [HA](https://heroinanonymous.org), SMART, Refuge Recovery, Recovery Dharma, [The Phoenix](https://thephoenix.org), and others.
@@ -49,4 +50,4 @@ You're not the first person to be where you are. Real-time conversation often he
 - **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline)** — 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
 - **911** — for immediate danger
 
-If you're in active withdrawal and looking for what to do right now, the **[SOS Resources](/start-here/sos-resources)** page is the more relevant starting point than this section.
+If you're in active withdrawal and looking for what to do right now, the **[Withdrawal Help](/start-here/withdrawal-help)** page is the more relevant starting point than this section.

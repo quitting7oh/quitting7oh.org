@@ -14,7 +14,7 @@ Naltrexone is an opioid antagonist. At the standard 50 mg dose, it blocks opioid
 The general idea: **it may nudge your own opioid system back toward producing what it should be producing on its own.** That's a system that's commonly disrupted in PAWS.
 
 ## Why people in this community look into it
-After heavy use of [7-OH](/compounds/7-oh), [pseudo](/compounds/pseudo), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or similar, the endogenous opioid system gets suppressed. Your brain stops making its own endorphins because the receptors were being flooded externally. Once you stop, it takes weeks to months for that system to come back online, and that's part of what PAWS is. Anhedonia, low motivation, low pain tolerance, sleep disruption, emotional flatness: all of these are consistent with a depleted endogenous opioid system.
+After heavy use of [7-OH](/compounds/7-oh), [pseudo](/compounds/pseudo), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or similar, the endogenous opioid system gets suppressed. Your brain stops making its own endorphins because the receptors were being flooded externally. Once you stop, it takes weeks to months for that system to come back online, and that's part of what PAWS is. Anhedonia, low motivation, low pain tolerance, sleep disruption, emotional flatness: all of these are consistent with a depleted endogenous opioid system. See [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the focused page on the mood and pleasure side of that picture.
 
 LDN is one of the few tools that *may* target that mechanism specifically. **Commonly reported benefits in recovery contexts** (not all clinically proven, varies by person):
 - Reduced cravings and reduced "low-grade misery" of PAWS

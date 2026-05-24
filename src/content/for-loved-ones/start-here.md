@@ -31,7 +31,8 @@ The pages in this section walk through, in roughly the order most families need 
 - **[Boundaries Without Punishment](/for-loved-ones/boundaries)** — limits that protect your life without trying to control theirs.
 - **[Safety: You and Your Kids Come First](/for-loved-ones/safety)** — when to leave, who to call, and how to use naloxone (Narcan).
 - **[Asking Them to Leave the House](/for-loved-ones/asking-them-to-leave)** — when staying isn't safe, the legal landscape, and where to get help.
-- **[Treatment & Rehab: Options and How to Pay](/for-loved-ones/treatment-options)** — levels of care, insurance, free options, and warning signs of predatory programs.
+- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** — what the at-home path looks like from outside it, what helps, what backfires, and the tools they may be using. The path most people in this community take.
+- **[Rehabilitation Centers](/for-loved-ones/rehabilitation-centers)** — detox, residential, PHP, IOP, insurance, free options, and warning signs of predatory programs. For when a formal program is the right fit.
 - **[FMLA & Workplace Protections](/for-loved-ones/fmla-workplace)** — federal leave to care for an immediate family member in treatment.
 - **[Taking Care of Yourself](/for-loved-ones/taking-care-of-yourself)** — the unglamorous basics that keep you standing through a long process.
 - **[Support Groups for Family & Friends](/for-loved-ones/support-groups)** — peer support specifically for the people walking alongside.

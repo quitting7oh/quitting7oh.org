@@ -39,7 +39,7 @@ Withdrawal from [7-OH](/compounds/7-oh) and kratom synthetics is opioid-like. Th
 - Goosebumps and chills
 - Intense, overwhelming cravings
 
-**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out — withdrawal may take longer to start and longer to peak. For more on the day-by-day shape, see [What to Expect](/start-here/what-to-expect). If they're in acute crisis right now, [SOS Resources](/start-here/sos-resources) is the more directly useful page.
+**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out — withdrawal may take longer to start and longer to peak. For the day-by-day shape and what to do if they're in acute crisis right now, see [Withdrawal Help](/start-here/withdrawal-help).
 
 This is genuinely miserable. It's not "the flu." It's why people keep using even when they desperately want to stop.
 
@@ -50,7 +50,7 @@ This is genuinely miserable. It's not "the flu." It's why people keep using even
 [Post-acute withdrawal syndrome](/post-acute/what-is-paws) is the long tail of opioid recovery, and almost nobody warns families about it. After the acute withdrawal eases, the brain is still recalibrating from months or years of having its receptors flooded daily. That recalibration takes **months**, sometimes a year or more. During that time, your loved one may experience:
 
 - Mood swings and emotional dysregulation
-- Anhedonia (inability to feel pleasure or interest in things they used to enjoy)
+- Anhedonia (inability to feel pleasure or interest in things they used to enjoy) — see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the focused page
 - Low energy, brain fog, difficulty concentrating
 - [Sleep problems](/post-acute/sleep-recovery) — light sleep, vivid dreams, nighttime waking
 - Sudden cravings, sometimes weeks or months after they thought they were "past it"

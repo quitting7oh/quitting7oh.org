@@ -1,6 +1,6 @@
 ---
 title: "Welcome"
-description: "What this site is, who it's for, where to start, and how to find the community."
+description: "What this site is, who it's for, and where to go next."
 category: "start-here"
 last_updated: "2026-05-24"
 sort: 1
@@ -14,12 +14,21 @@ to figure out how to stop. You're scared, exhausted, or both.
 **You're in the right place.** Take a breath. Read what you need, ignore
 what you don't, and come back to the rest when you're ready.
 
+If any of those words are new: **[kratom](/compounds/kratom-leaf)** is a
+Southeast Asian plant whose leaves contain mu-opioid-active alkaloids.
+**[7-hydroxymitragynine (7-OH)](/compounds/7-oh)** is one of those
+alkaloids — concentrated, isolated, and sold as tablets or "shots."
+Those concentrated synthetics — 7-OH, [pseudo](/compounds/pseudo),
+[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
+products built around them — are what this site is mostly about.
+
 ## What this site is
 
-This site is a calm, organized reference for getting off **[7-OH](/compounds/7-oh) and
-related kratom synthetics** — including [pseudo](/compounds/pseudo), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
-stacked products built around them — and the medical and self-care tools
-people in our community have used to do it.
+This site is a calm, organized reference for getting off 7-OH and
+related kratom synthetics, and the medical and self-care tools people
+in our community have used to do it. It's for people quitting, people
+considering quitting, people in PAWS, and the family and friends
+trying to help them.
 
 The content here was written by people who actually went through this.
 It was originally posted in our [Discord server](https://discord.gg/quitting7oh)
@@ -45,72 +54,18 @@ people who built it wanted the resource they wished they'd had.
   a specific medication, it's because community members have used it,
   not because anyone is paying us to mention it.
 
-## Where to start
+## Where to go next
 
-Different situations need different starting points. Pick whichever
-matches yours:
+The next page — **[How to Use This Website](/start-here/how-to-use-this-website)** —
+is a short map. Find the description that sounds most like where you
+are right now (in withdrawal, thinking about using, in PAWS, planning
+to quit, helping someone else, or just trying to understand what any
+of this is) and click through to the page that's actually written for
+it.
 
-### 🆘 You're in active withdrawal right now
-
-Go to **[What to Expect](/start-here/what-to-expect)** for an overview
-of the timeline, then **[Helper Medications](/other-tools/helper-meds-info)**
-for the practical "what helps" guide. If you have a few minutes for the
-[Discord](https://discord.gg/quitting7oh), the live `#sos` channel there
-is staffed by people who have been where you are.
-
-### 💊 You're thinking about Suboxone (MAT)
-
-Start with **[Suboxone](/mat-suboxone/suboxone-info)** for the
-overview. Most people in this community use a **short, structured taper**
-rather than indefinite maintenance, and the induction protocols
-here reflect that. See **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)**
-for timing your first dose and **[Telehealth Providers](/resources/telehealth)**
-for a fact-checked comparison if you need a telehealth prescriber.
-
-### 🌱 You're already through the worst, but something still isn't right
-
-That's almost always PAWS — **post-acute withdrawal syndrome**. Read
-**[What is PAWS](/post-acute/what-is-paws)** for the shape of it and
-**[Sleep Recovery](/post-acute/sleep-recovery)** if sleep is the part
-that hasn't come back.
-
-### 🌀 You're abstinent but a craving wave just hit
-
-Bookmark **[Thinking About Using?](/start-here/thinking-about-using)**.
-That page is for the moments where the "fuck its" show up — at week 2,
-month 4, or year 2. Most people who hit that page hit it more than once.
-
-### 🧪 You want to understand what you've been on
-
-The **[Compounds](/compounds)** section has overviews of [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15),
-pseudo, [MIT-A/DHM](/compounds/mit-a-dhm), [cat's claw](/compounds/cats-claw), and how each one differs from raw kratom
-leaf. The compound matters — the timeline and the best approach are
-genuinely different across them.
-
-### 🫂 Your loved one is in this, and you don't know what to do
-
-Start with **[For Loved Ones](/for-loved-ones/start-here)**. The whole
-section was written by and for people who have been on both sides of
-this — what to expect, how to talk to them, how to stay safe, how to
-find treatment, and how to take care of yourself.
-
-### 🔬 You're a researcher or clinician trying to understand what these compounds actually are
-
-The **[Compounds](/compounds)** and **[MAT / Suboxone](/mat-suboxone)**
-sections cite primary sources and pharmacology where available. We've
-done our best to flag what's established vs. what's community-observed.
-We welcome corrections via
-[GitHub](https://github.com/quitting7oh/quitting7oh.org).
-
-## Finding your way around
-
-- **Sidebar** (menu icon on mobile) — every page, grouped by topic. The
-  Start Here section is what you're reading now; everything else is
-  organized so you can dip in where you need to.
-- **Search** in the header — full-text across the whole site. Drug
-  names, symptoms, and medication names all work.
-- **Theme** picker in the top-right — light, dark, or system, plus a
-  handful of color variants. Pick whatever's easiest on your eyes.
+If you're in active withdrawal right now and don't want to read
+anything else: **[Withdrawal Help](/start-here/withdrawal-help)** is the
+single most useful page for the next hour.
 
 ## Find the community
 

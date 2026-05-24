@@ -1,16 +1,39 @@
 ---
 title: "Sublocade & Brixadi: Long-Acting Buprenorphine Injections"
-description: "Long-acting buprenorphine injections — when they help, the long discontinuation tail, who they fit."
+description: "Long-acting buprenorphine injections — maintenance use, the long discontinuation tail, and the single-shot exit strategy showing promising results for long-term Suboxone patients."
 category: "mat-suboxone"
-last_updated: "2026-05-21"
+last_updated: "2026-05-24"
 ---
-> ⚠️ **Information channel, not medical advice.** This is reference material on extended-release buprenorphine injections. For discussion, questions, or community support, see **#suboxone** or post in general support channels. For long-term maintenance discussion specifically, [r/suboxone](https://www.reddit.com/r/suboxone/) is the better resource.
 
-Sublocade and Brixadi are two FDA-approved long-acting buprenorphine injections used in medication-assisted treatment (MAT) for opioid use disorder. Both contain buprenorphine, the same active ingredient as Suboxone, just delivered as a slow-release subcutaneous depot rather than as a daily sublingual film or tablet.
+> ⚠️ **Information page, not medical advice.** This is reference
+> material on extended-release buprenorphine injections. For long-term
+> maintenance discussion specifically, [r/suboxone](https://www.reddit.com/r/suboxone/)
+> is the better resource.
 
-This post exists because some people in this community have been offered these injections by their prescribers, and the pharmacology, dosing, and discontinuation profile differ enough from oral Suboxone that it's worth understanding before agreeing to one.
+Sublocade and Brixadi are two FDA-approved long-acting buprenorphine
+injections used in medication-assisted treatment (MAT) for opioid use
+disorder. Both contain buprenorphine, the same active ingredient as
+Suboxone, just delivered as a slow-release subcutaneous depot rather
+than as a daily sublingual film or tablet.
 
-**Heads up about this site's focus:** these are maintenance-oriented medications. They're designed for stable, sustained dosing over months to years, not for short tapers. This site is **focused on short-term tapers**, so for most people here, daily sublingual Suboxone with a structured taper plan will be a better fit than long-acting injections. That said, the information below is here so you can have an informed conversation with your prescriber if these come up.
+This page exists for two reasons. First, some people in this community
+have been offered these injections by their prescribers, and the
+pharmacology, dosing, and discontinuation profile differ enough from
+oral Suboxone that it's worth understanding before agreeing to one.
+Second — and increasingly relevant for this site's audience — **a
+single shot of long-acting buprenorphine followed by discontinuation
+is showing promising results as an exit tool for people who have been
+on long-term sublingual Suboxone and can't get past the bottom of a
+sublingual taper.** That use case has its own section below.
+
+**Heads up about this site's focus:** these injections were designed
+for stable, sustained maintenance dosing over months to years. This
+site leans toward short-term tapers, so if you're early in recovery and
+haven't tried a sublingual rapid taper yet, that's where to start.
+Where these injections become directly relevant for our readers is
+the single-shot-exit use case — see **[Using a single shot as an exit
+from long-term Suboxone](#using-a-single-shot-as-an-exit-from-long-term-suboxone)**
+below.
 
 ## What they are
 
@@ -49,6 +72,115 @@ Because of the long half-life, **stopping these injections is essentially a buil
 
 [Brixadi's prescribing information notes that if discontinued, ongoing buprenorphine effects should be monitored for ~1 month for weekly and ~4 months for monthly formulations](https://www.brixadihcp.com/dosing-and-administration/).
 
+## Using a single shot as an exit from long-term Suboxone
+
+This is the section to read if you've already been on daily Suboxone
+for months or years, you've tried a sublingual taper, and the bottom
+of the taper has been the wall.
+
+**A single dose of long-acting injectable buprenorphine — Sublocade or
+Brixadi — followed by discontinuation is showing promising results as
+an exit tool.** It's an off-label use of medications that were approved
+for maintenance, but it's becoming a recognized strategy among
+MAT-experienced prescribers specifically for helping patients leave MAT
+cleanly.
+
+### Why it works
+
+The depot under the skin releases buprenorphine slowly. Monthly
+Sublocade's terminal half-life is 43 to 60 days; monthly Brixadi is
+similar. After a single injection and no further dosing, plasma
+buprenorphine declines over months rather than dropping the way it
+does when you stop daily dosing — the body sees an automatic,
+ultra-slow taper instead of the cliff that comes off a sublingual cut
+to zero.
+
+For people whose specific blocker has been the **acute withdrawal at
+the bottom of a sublingual taper** (the 2 mg → 0 transition that
+chemistry rarely makes easier), this approach can convert that cliff
+into a multi-month glide.
+
+### What the evidence looks like so far
+
+- A small [case series (Kazim et al., PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
+  reported on patients on low-dose sublingual buprenorphine who were
+  transitioned to a single 100 mg dose of Sublocade and then ceased
+  treatment without eliciting opioid withdrawal symptoms. Small N,
+  short series, but the outcome was clean exit.
+- Larger [Reddit-based qualitative research (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12064969/)
+  found mixed results — some patients had relatively mild withdrawal
+  due to the gradual decline; others reported protracted symptoms that
+  ramped up weeks after the last injection.
+
+Honest read: **the early signal is encouraging, the literature is
+still thin, and outcomes vary by individual.** It's not a guaranteed
+clean exit, and the multi-month tail is real. For the specific
+population this is aimed at — long-term sublingual Subs patients stuck
+at the bottom of a taper — it's the most promising new exit option in
+this space in years.
+
+### When this might make sense
+
+- You've been on daily Suboxone for months or years and lower-dose
+  sublingual tapers (1 mg, 0.5 mg, 0.25 mg) have repeatedly failed at
+  the bottom.
+- The blocker has specifically been the acute withdrawal at the end
+  of the taper — not ongoing anhedonia, PAWS, or instability that
+  longer maintenance would address.
+- You have a prescriber willing to consider an off-label single-dose
+  injectable approach for taper purposes (a critical gating factor —
+  the injectable is administered in-clinic, so you cannot DIY this).
+- You're stable enough that a months-long tail of declining medication
+  is something you can live through without it becoming a destabilizing
+  uncertainty.
+
+### When this probably doesn't make sense
+
+- You're early in recovery and a short sublingual rapid taper hasn't
+  been tried yet. Start there.
+- You're already at low daily doses (2 mg or below) and managing the
+  drop is feasible with smaller sublingual cuts.
+- Your prescriber isn't on board. This isn't a path you can take on
+  your own.
+- You can't tolerate the idea of months of declining medication. Once
+  injected, it can't be removed (Sublocade can only be surgically
+  removed within 14 days of injection, and only under specific clinical
+  circumstances).
+
+### Trade-offs to understand
+
+- **You're committing to months of declining buprenorphine in your
+  system.** For some this is a feature (built-in taper, no daily
+  decisions). For others it's frustrating to have a medication you've
+  decided to stop continuing to act on you.
+- **The withdrawal tail varies.** Outcomes range from mild and gradual
+  to moderately rough at the 1-to-2-month mark. The literature is
+  thin — be ready for either.
+- **Cost.** A single Sublocade or Brixadi injection runs **$1,500 to
+  $1,900 list price.** Insurance often covers it as MAT, but if your
+  insurer has stopped considering you appropriate for MAT (because
+  you're stable), getting a single dose specifically for taper
+  purposes can be a coverage fight worth budgeting time for.
+- **Not all prescribers will do this.** It's an off-label use of an
+  injectable marketed for maintenance. Some MAT-experienced
+  prescribers see the logic; others won't go off-label. Telehealth
+  bupe providers generally won't administer injectables — this
+  requires an in-person clinic.
+
+### What to ask your prescriber
+
+- Have you used Sublocade or Brixadi as a single-dose taper tool
+  before, and if so, what have outcomes looked like in your practice?
+- What dose would you recommend for taper purposes specifically (the
+  case-series literature has used 100 mg Sublocade, not the standard
+  300 mg maintenance dose)?
+- What's the realistic withdrawal timeline I should expect?
+- If symptoms get rough at the 6-to-12-week mark, what's our backup
+  plan — helper meds queued up, a return to low-dose sublingual, or
+  something else?
+- Is the cost covered by my insurance for this indication, and what's
+  my out-of-pocket?
+
 ## When these might make sense
 - **Adherence problems with daily oral dosing.** Missing oral Suboxone doses can lead to relapse; injections eliminate that risk.
 - **Stable maintenance over months to years** is the actual goal (rather than a short taper).
@@ -83,6 +215,7 @@ Both medications must be administered by a healthcare provider; you can't take t
 - [Brixadi prescribing information](https://www.brixadihcp.com/dosing-and-administration/)
 - [Sublocade FDA package insert (2025)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/209819s031lbl.pdf)
 - [Medscape: Sublocade/Brixadi comparison](https://reference.medscape.com/drug/sublocade-brixadi-buprenorphine-long-acting-injection-1000211)
-- [Reddit-based research on stopping extended-release buprenorphine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12064969/)
+- [Single-dose Sublocade for taper purposes — case series (Kazim et al., PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
+- [Reddit-based research on stopping extended-release buprenorphine (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12064969/)
 
 > 🩺 **Reminder:** This is informational content. Long-acting buprenorphine decisions should be made with a prescriber familiar with your specific situation, especially given the multi-month commitment these injections involve. The community here is mostly oriented toward shorter-term tapers, so if you're considering long-term maintenance, additional resources like [r/suboxone](https://www.reddit.com/r/suboxone/) may be more useful.

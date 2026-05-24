@@ -75,7 +75,11 @@ Additionally:
 
 - [findtreatment.gov](https://findtreatment.gov) — federal treatment
   locator searchable by zip, insurance, and substance.
-- [SOS Resources](/start-here/sos-resources) — our own page for
+- [Withdrawal Help](/start-here/withdrawal-help) — our own page for
   what to do this hour if you're in active withdrawal.
-- [Treatment & Rehab](/for-you/treatment-rehab) — longer-form on what
-  treatment options look like and how to think about them.
+- [At-Home Treatment](/for-you/at-home-treatment) — the at-home path
+  most people in this community use, including the four
+  community-validated approaches.
+- [Rehabilitation Centers](/for-you/rehabilitation-centers) —
+  longer-form on what formal treatment programs look like and how to
+  navigate them.
