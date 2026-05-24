@@ -79,6 +79,20 @@ In **May 2026**, Fly stepped down — from the subreddit ([passing the admin tor
 
 The team is unpaid, volunteer, and rotates as people's situations change. If you'd like to help moderate, the fastest way in is to be a useful, steady presence in the community first, then talk to the current Head Mod when there's an opening.
 
+## Just to be unmistakably clear
+
+We have been accused, in earnest, of being shills for Suboxone manufacturers. Of pushing MAT for kickbacks. Of being "dangerous" because we point people toward buprenorphine instead of telling them to white-knuckle it. Of running a front for the pharmaceutical industry. Of being part of some coordinated agenda against the kratom industry. We have been called every name in the book.
+
+For the record:
+
+- **No one pays us.** Not Indivior, not any other Suboxone manufacturer, not any pharma company, not any treatment center, not any telehealth provider, not anyone. Zero dollars have changed hands. Ever.
+- **No one endorses us.** We don't represent any company. We don't have a relationship with any company. The site has no ads. The Discord has no sponsorships. The subreddit has no affiliate links. If we mention QuickMD or a specific MAT medication, it's because community members have used it and reported what happened — not because anyone is paying us to mention it.
+- **We have no agenda beyond the obvious one:** people in our community are dependent on 7-OH and kratom synthetics and want to stop. We point them at the tools that actually work for that, based on what people in this community have actually used to get free.
+
+If you've decided we're the bad guys for any of the above, you can leave. We are exhausted with the "you're a shill for Big Pharma" routine from people whose own product is being sold at gas stations and is putting our community members in withdrawal that destroys their lives. Take the criticism to whoever is actually profiting from this — it isn't us.
+
+Anyone showing up in good faith with concerns, corrections, or a genuine disagreement about a recommendation we make is welcome. Anyone showing up to call us shills can find the door.
+
 ## Helping out
 
 If you've come through this and want to give back, the most valuable things you can do are:
