@@ -2,7 +2,7 @@
 title: "For Loved Ones — Start Here"
 description: "If you love someone who's using 7-OH, kratom synthetics, or stacked products, this is where to start. Calm reference for the people walking alongside someone in recovery."
 category: "for-loved-ones"
-last_updated: "2026-05-23"
+last_updated: "2026-05-24"
 sort: 1
 ---
 
@@ -31,7 +31,7 @@ The pages in this section walk through, in roughly the order most families need 
 - **[Boundaries Without Punishment](/for-loved-ones/boundaries)** — limits that protect your life without trying to control theirs.
 - **[Safety: You and Your Kids Come First](/for-loved-ones/safety)** — when to leave, who to call, and how to use naloxone (Narcan).
 - **[Asking Them to Leave the House](/for-loved-ones/asking-them-to-leave)** — when staying isn't safe, the legal landscape, and where to get help.
-- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** — what the at-home path looks like from outside it, what helps, what backfires, and the tools they may be using. The path most people in this community take.
+- **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)** — what the at-home path looks like from outside it, what helps, what backfires, and the tools they may be using. The path this site is built around.
 - **[Rehabilitation Centers](/for-loved-ones/rehabilitation-centers)** — detox, residential, PHP, IOP, insurance, free options, and warning signs of predatory programs. For when a formal program is the right fit.
 - **[FMLA & Workplace Protections](/for-loved-ones/fmla-workplace)** — federal leave to care for an immediate family member in treatment.
 - **[Taking Care of Yourself](/for-loved-ones/taking-care-of-yourself)** — the unglamorous basics that keep you standing through a long process.
