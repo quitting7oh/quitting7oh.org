@@ -116,7 +116,7 @@ For real-time help, live conversation, and the people behind the writing:
   searchable, slower, good for stories and questions you want to keep
   around
 
-See **[#community](/resources/community)** for more on which to use when.
+See **[#community](/about/community)** for more on which to use when.
 
 ## One more thing
 

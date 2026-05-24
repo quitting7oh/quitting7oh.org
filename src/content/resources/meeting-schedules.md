@@ -72,4 +72,4 @@ If you've never been to a 12-step meeting and the format sounds intimidating, go
 
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — full directory of options for the person in recovery
 - **[Support Groups for Family & Friends](/for-loved-ones/support-groups)** — peer support for the people walking alongside
-- **[Community](/resources/community)** — the quitting7oh Discord and subreddit (complements mutual aid attendance)
+- **[Community](/about/community)** — the quitting7oh Discord and subreddit (complements mutual aid attendance)

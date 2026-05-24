@@ -69,6 +69,12 @@ export const CATEGORIES = [
     blurb: 'QuickMD and other telehealth, meetings, finding help.',
     emoji: '🔗',
   },
+  {
+    slug: 'about',
+    title: 'About This Site',
+    blurb: 'What this site is, who runs it, how to contribute or send feedback.',
+    emoji: 'ℹ️',
+  },
 ] as const satisfies readonly Category[];
 
 export const CATEGORY_SLUGS = CATEGORIES.map((c) => c.slug) as [

@@ -42,7 +42,7 @@ You're not the first person to be where you are. Real-time conversation often he
 
 - **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh) — active, real-time, includes a `#sos` channel for the hardest moments.
 - **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh) — slower, searchable, good for reading how others handled what you're going through.
-- See **[#community](/resources/community)** for which to use when.
+- See **[#community](/about/community)** for which to use when.
 
 ## If you're in crisis right now
 

@@ -241,7 +241,7 @@ Four real paths people in this community have used:
 
 Whichever path you take, **don't try to navigate it without at least
 one other person knowing**. The Discord and subreddit linked at
-[#community](/resources/community) are where most people in this
+[#community](/about/community) are where most people in this
 position end up.
 
 ## Further reading

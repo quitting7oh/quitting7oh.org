@@ -29,7 +29,7 @@ right now. You don't need to introduce yourself. You can just post:
   — slower, but searchable. Read what others have done. Post your own
   question when you're ready.
 
-See [#community](/resources/community) for more on which to use.
+See [#community](/about/community) for more on which to use.
 
 ## In the next hour
 
@@ -282,4 +282,4 @@ A few things people who've been here wish someone had told them:
   if you're considering it
 - **[#what-is-paws](/post-acute/what-is-paws)** — what comes after the
   worst is over
-- **[#community](/resources/community)** — Discord and subreddit
+- **[#community](/about/community)** — Discord and subreddit
