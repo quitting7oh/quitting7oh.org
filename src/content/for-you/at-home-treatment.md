@@ -6,13 +6,16 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-The path most people in this community use is some version of at-home
-treatment: a structured taper or planned stop, with the right
-medications and supplements queued up, often supported by a telehealth
-prescriber and the community as backup. **Most people don't need
-inpatient or residential care to come off [7-OH](/compounds/7-oh) and
-kratom synthetics.** They need a plan, the right tools on hand, and a
-few people they can text.
+At-home treatment is the path this site is built around: a
+structured taper or planned stop, with the right medications and
+supplements queued up, often supported by a telehealth prescriber
+and the community as backup. **Inpatient or residential care
+isn't required to come off [7-OH](/compounds/7-oh) and kratom
+synthetics for everyone.** What's required is a plan, the right
+tools on hand, and a few people you can text. The
+[Rehabilitation Centers](/for-you/rehabilitation-centers) page
+covers when residential or higher-intensity care genuinely is the
+right call.
 
 This page is the at-home overview. If at-home isn't the right fit for
 your situation (a real call for some — covered at the bottom), the
