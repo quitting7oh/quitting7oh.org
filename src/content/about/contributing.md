@@ -45,7 +45,7 @@ We don't promise to agree with every concern, but every flagged-as-harmful issue
 
 A few honest limits:
 
-- **No individual medical advice.** Even via DM. We're not a clinical resource and shouldn't be one — see your prescriber.
+- **No individual medical advice.** Even via DM. We're not a clinical resource and shouldn't be one — see your prescriber, or the [Telehealth Providers comparison](/resources/telehealth) if you don't yet have one.
 - **No vendor recommendations or endorsements.** We don't compare brands, recommend specific products, or vouch for online pharmacies. The site mentions a couple of telehealth providers because community members have used them, not as endorsements.
 - **No guarantee of privacy on public channels.** Modmail and Discord DMs to a specific moderator are private; public posts and channels are not. If something is sensitive, choose accordingly.
 - **No fast response times.** Mods are volunteers with their own lives and recoveries. Expect hours-to-days, not minutes. The live `#sos` channel on Discord is monitored more frequently than the rest, but it is still volunteer-based — **not a crisis line, not a substitute for 988 / 911 / SAMHSA, and not a guaranteed-response service.** If you are in an emergency, call the appropriate hotline first; post in `#sos` after.
