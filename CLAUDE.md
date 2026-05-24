@@ -363,9 +363,18 @@ is **one of several legitimate paths** people use to come off 7-OH and
 kratom synthetics. Others documented on the site include:
 
 - [SR-17](/other-tools/sr17018-info) as an informal taper bridge
-- [Low-dose / ultra-low-dose naltrexone](/other-tools/low-dose-naltrexone)
 - [Tapering with kratom leaf](/other-tools/tapering-with-leaf)
 - Cold turkey with [helper meds](/other-tools/helper-meds-info)
+
+**Naltrexone (LDN, ULDN, Vivitrol) is NOT a path off opioids.** It's a
+mu-opioid *antagonist* — taking it while there are still opioids on
+your receptors will precipitate withdrawal. The
+[LDN](/other-tools/low-dose-naltrexone) and
+[ULDN](/other-tools/ultra-low-dose-naltrexone) pages are for the
+**post-acute** phase, after withdrawal is over, to help the endogenous
+endorphin system come back online. Never list naltrexone as one of
+the ways to quit — it's recovery support, not a quitting tool, and
+the framing matters because misusing it is genuinely dangerous.
 
 **Never write "the standard treatment is buprenorphine," "the gold
 standard," "the standard of care," or any phrasing that frames bupe

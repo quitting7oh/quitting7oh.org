@@ -21,7 +21,7 @@ sort: 2
 
 **Buprenorphine is one of several options** people in this community
 use to come off [7-OH](/compounds/7-oh) and kratom synthetics — others
-include [SR-17](/other-tools/sr17018-info), [low-dose naltrexone](/other-tools/low-dose-naltrexone),
+include [SR-17](/other-tools/sr17018-info),
 [tapering with leaf kratom](/other-tools/tapering-with-leaf), and
 cold-turkey with [helper meds](/other-tools/helper-meds-info). This
 page is specifically about telehealth providers that handle the
@@ -30,6 +30,15 @@ page is specifically about telehealth providers that handle the
 prescriber relationship is the bottleneck for most people. If you're
 weighing approaches in general, [Start Here](/start-here/welcome) and
 the [Compounds](/compounds) section are the broader picture.
+
+> ⚠️ **Naltrexone (LDN, ULDN, Vivitrol) is not a path off opioids.**
+> It's an opioid antagonist — taking it while there are still opioids
+> on your receptors will trigger immediate, severe precipitated
+> withdrawal. [LDN](/other-tools/low-dose-naltrexone) and
+> [ULDN](/other-tools/ultra-low-dose-naltrexone) come in **after**
+> acute withdrawal as recovery support for the endorphin system. Don't
+> let any provider — telehealth or otherwise — start you on naltrexone
+> before you're at least 7–10 days fully opioid-free.
 
 [Suboxone]: /mat-suboxone/suboxone-info
 [Subutex]: /mat-suboxone/suboxone-info
