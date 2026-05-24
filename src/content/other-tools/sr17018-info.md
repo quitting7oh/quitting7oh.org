@@ -9,7 +9,7 @@ sort: 6
 
 **SR-17018**, also known informally as **SR-17**, is a synthetic compound originally developed at the Scripps Research Institute and [first described by Bohn and colleagues in 2017](https://en.wikipedia.org/wiki/SR-17018). It's a biased mu-opioid receptor agonist with a pharmacological profile that's genuinely different from classical opioids like morphine, oxycodone, or even buprenorphine, and that profile has made it interesting to people trying to come off opioid dependence.
 
-On Reddit and other forums, [discussion of SR-17018 dramatically increased through 2024](https://en.wikipedia.org/wiki/SR-17018), with the compound emerging as an informal tool for opioid discontinuation and withdrawal management. Some people in this community have used it as part of their plan to come off [7-OH](/compounds/7-oh) and the related synthetics. **It's a valid option worth understanding.** It's also still an opioid, and we want to be honest about that.
+On Reddit and other forums, [discussion of SR-17018 dramatically increased through 2024](https://en.wikipedia.org/wiki/SR-17018), with the compound emerging as an informal tool for opioid discontinuation and withdrawal management. Some people in this community have used it as part of their plan to come off [7-OH](/compounds/7-oh) and the related synthetics. It's a valid option, and it's also still an opioid — be clear-eyed about that.
 
 ## What makes it pharmacologically interesting
 SR-17018 is a [biased partial agonist](https://en.wikipedia.org/wiki/SR-17018) at the mu-opioid receptor with strong selectivity for G-protein signaling over β-arrestin2 recruitment. The G-protein-vs-β-arrestin distinction matters because the analgesic and reward effects of opioids run primarily through G-protein signaling, while many of the worst side effects (respiratory depression, severe withdrawal, fast tolerance buildup) involve β-arrestin signaling. Compounds biased toward G-protein signaling theoretically deliver the helpful effects with fewer of the harmful ones.
@@ -56,7 +56,7 @@ Common patterns:
 
 ## The community protocol
 
-**This is the most common SR-17018 plan reported by people in this community.** It's not a clinical protocol, it's community experience. Treat it as a reference, not a prescription.
+**This is the most common SR-17018 plan reported by people in this community.** Community experience, not a clinical protocol — treat it as a reference.
 
 **The standard plan:**
 
