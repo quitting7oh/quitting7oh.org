@@ -111,6 +111,11 @@ fact-checked comparison of options with kratom experience.
 - **[Ultra-Low-Dose Naltrexone (ULDN)](/other-tools/naltrexone-ultra-low-dose)** —
   the investigational tier. Honest framing about how thin the
   evidence is.
-- **[Telehealth Providers](/resources/telehealth)** — for finding a
-  prescriber familiar with any of these protocols, especially for
-  kratom/7-OH dependence.
+- **[Telehealth Providers](/resources/telehealth)** — primarily for
+  normal-dose naltrexone (FDA-approved and routinely prescribed by
+  OUD telehealth). LDN and ULDN are mostly outside standard OUD
+  telehealth — the [LDN page](/other-tools/naltrexone-low-dose)
+  points at the LDN Research Trust directory, and the
+  [ULDN page](/other-tools/naltrexone-ultra-low-dose) notes that
+  pain-medicine and integrative-medicine clinicians are the
+  realistic prescribers.
