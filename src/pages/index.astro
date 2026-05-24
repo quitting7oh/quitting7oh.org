@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import SearchBox from '~/components/SearchBox.astro';
+import { SearchBox } from '~/components/SearchBox';
 import { CATEGORIES } from '~/lib/categories';
 import { getCollection } from 'astro:content';
 
@@ -24,7 +24,7 @@ const counts = Object.fromEntries(
       </p>
 
       <div class="mt-8">
-        <SearchBox variant="hero" placeholder="Search for a topic, drug name, symptom…" />
+        <SearchBox variant="hero" placeholder="Search for a topic, drug name, symptom…" client:load />
       </div>
 
       <a
