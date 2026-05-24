@@ -50,7 +50,7 @@ For more on bupe failure modes, see [Why Suboxone Might Not Be Working](/mat-sub
 ## How this community approaches induction
 This community uses a **low-and-slow induction** approach. The point is to find the minimum effective dose, not to load up. Lower starting doses leave you with less to taper off later, which matters when the goal is a short taper.
 
-1. Wait until COWS ≥ 12 (or SOWS ≥ 17). Trust the score, not the clock.
+1. Wait until **COWS ≥ 12 (or SOWS ≥ 17)** — see the [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) for the scoring rubrics. Trust the score, not the clock.
 2. **Start with 2 mg buprenorphine sublingually.** Wait 2 hours. Reassess how you feel.
 3. If you still feel withdrawal symptoms: add another 1 mg. Wait an hour. Reassess.
 4. Repeat 1 mg increases hourly until you feel fine.
@@ -59,9 +59,10 @@ This community uses a **low-and-slow induction** approach. The point is to find 
 
 **A few notes on this protocol:**
 
-- **If you're especially worried about precipitated withdrawal, start at 1 mg instead of 2 mg.** Same protocol otherwise — wait, reassess, titrate up in 1 mg increments. Longer ramp, softer landing if your COWS was borderline.
+- **If you're especially worried about precipitated withdrawal, start at 1 mg instead of 2 mg.** Same protocol otherwise — wait, reassess, titrate up in 1 mg increments. Longer ramp, softer landing if your [COWS](/mat-suboxone/suboxone-cows) was borderline.
 - **If symptoms get noticeably worse after the first dose, stop and wait it out.** That's the signature of precipitated withdrawal. It's uncomfortable but it passes — usually within a couple of hours. Don't keep dosing through it. Once the worst has eased, you can re-attempt induction.
 - **Be patient with the 2-hour window on the first dose.** Bupe takes time to take effect; if you're at hour 1 with no relief, the first 2 mg probably isn't done working yet. You *can* add 1 mg early if symptoms are intolerable, but waiting as close to the full 2 hours as you can gives the most honest signal of whether you actually need more.
+- **If you're in deep precipitated withdrawal and waiting it out isn't easing it:** there's emerging evidence that *more* buprenorphine can resolve PWD rather than make it worse — the mechanism is full receptor occupancy, where the receptors are fully filled by bupe rather than partially blocked while a residual full agonist is being displaced. A 2025 case report ([Laxton, *Cureus*](https://pmc.ncbi.nlm.nih.gov/articles/PMC11993309/)) describes three sequential 8 mg doses (24 mg total over 24 hours) fully resolving PWD after standard supportive care had failed; the author notes "growing evidence in the literature that withdrawals precipitated by buprenorphine can and should be treated with increased doses of buprenorphine." **Proceed with serious caution.** This is an ED-level intervention in the published case literature, requires more bupe than most people have at home, and shouldn't be attempted without clinical guidance if at all possible. If you're in deep PWD, calling your prescriber (see [Telehealth Providers](/resources/telehealth)) or going to an ER is the right move; this note exists so you know there's a path on the other side of that call.
 
 Most people coming off 7-OH land in the 2 to 8 mg range using this approach. People coming off the long-acting synthetics may need more. The standard clinical protocol starts at 4 mg right out of the gate, which is usually more than necessary for our population and harder to taper down from.
 
