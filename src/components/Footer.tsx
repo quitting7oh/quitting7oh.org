@@ -56,9 +56,12 @@ export function Footer() {
               </p>
               <p className="mt-2">
                 The humans here are jelly-filled meat bags making a
-                good-faith effort to validate every page. The AI was built by
-                billionaires siphoning money out of the working class. We
-                used it anyway, because it works.{' '}
+                good-faith effort to validate every page. The AI itself runs
+                on data centers a billionaire class is cooking the planet to
+                build, so the rest of the internet can autogenerate slop. We
+                know we're participating in that. We don't give a fuck,
+                because people landing here at 3 a.m. in withdrawal find
+                what they need.{' '}
                 <a
                   href="/about/this-site#the-ai-disclaimer"
                   className="text-primary underline underline-offset-2 hover:opacity-80"
