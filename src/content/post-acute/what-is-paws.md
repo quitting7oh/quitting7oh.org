@@ -210,9 +210,9 @@ Prescribers use a recognizable set of medications for PAWS-adjacent
 symptoms: **SSRIs/SNRIs** (persistent depression/anxiety),
 **bupropion** (anhedonia, low motivation), **gabapentin** (anxiety,
 sleep, restless legs), **clonidine** (stress reactivity, sleep),
-**trazodone** (sleep), **hydroxyzine** (anxiety, sleep),
-**mirtazapine** (sleep, anxiety, depression, nausea — single-med
-coverage), **buspirone** (anxiety without dependence),
+**trazodone** (sleep), **mirtazapine** (sleep, anxiety, depression,
+nausea — single-med coverage), **buspirone** (anxiety without
+dependence),
 **low-dose naltrexone** (post-acute only, can't combine with bupe),
 and continued **MAT** — buprenorphine via the [Sublocade single-shot
 exit](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone),
@@ -321,8 +321,8 @@ address:
 - The behavioral and habit patterns.
 - Sleep architecture changes.
 
-Adjuncts (clonidine, gabapentin, hydroxyzine, trazodone, magnesium,
-L-theanine) can help these gaps while you're on bupe. Most of the
+Adjuncts (clonidine, gabapentin, trazodone, magnesium, L-theanine)
+can help these gaps while you're on bupe. Most of the
 lifestyle interventions in this post still apply: exercise, sleep
 hygiene, nutrition, sunlight, connection.
 
