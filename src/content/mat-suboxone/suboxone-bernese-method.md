@@ -10,7 +10,7 @@ sort: 3
 
 The **Bernese method** (also called **micro-induction** or **low-dose buprenorphine induction, LDBI**) is a Suboxone-induction approach that **doesn't require you to wait in withdrawal**. Instead of stopping your opioid, holding through escalating COWS, and then taking a 2–4 mg dose at the bottom of the wait, you start with very small doses of buprenorphine — typically 0.2–0.5 mg — **while you continue your normal opioid**, and gradually titrate the bup up over 5 to 10 days. The full agonist gets dropped only once bup coverage is high enough to bridge through.
 
-It exists because **standard COWS-gated induction has a higher failure rate on long-acting opioids**, and because some people genuinely cannot tolerate the wait. For the 7-OH-alone case (short half-life, fast clearance), standard induction usually works fine. For the long-acting kratom synthetics ([MGM-15](/compounds/mgm15) at ~15 hours, [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm)) — and for anyone who's already tried standard induction and gotten precipitated withdrawal — micro-induction is the alternative pathway worth knowing about.
+It exists because **standard COWS-gated induction has a higher failure rate on long-acting opioids**, and because some people genuinely cannot tolerate the wait. For the 7-OH-alone case (short half-life, fast clearance), standard induction usually works fine. For the long-acting kratom synthetics ([MGM-15](/compounds/mgm15) at ~15 hours, [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm)), and for anyone who's already tried standard induction and gotten precipitated withdrawal, micro-induction is the alternative pathway.
 
 This page is the overview of what it is and where it fits. **The standard COWS-gated approach is on [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-info), and the timing tool for that approach is on [COWS & SOWS Guide](/mat-suboxone/suboxone-cows).** Neither is "the real" induction; they're different pathways for different situations. [SR-17](/other-tools/sr17018-info) is another path entirely if Suboxone isn't right for you.
 
@@ -95,7 +95,7 @@ That's the mechanism. It's well-supported pharmacologically; what's less well-te
 
 ## What the outcome data actually shows
 
-This is the honest middle of the page. **Most published evidence is case series and small cohorts, not RCTs.** The [2020 systematic review (Ahmed et al.)](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698) covered 20 studies and 57 patients — 19 of those 20 were case series or case reports; 1 feasibility study; no RCTs. All patients in the included studies reached their target dose, but the review explicitly noted "inconsistent reporting, selection bias, and poor quality evidence."
+**Most published evidence is case series and small cohorts, not RCTs.** The [2020 systematic review (Ahmed et al.)](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698) covered 20 studies and 57 patients — 19 of those 20 were case series or case reports; 1 feasibility study; no RCTs. All patients in the included studies reached their target dose, but the review explicitly noted "inconsistent reporting, selection bias, and poor quality evidence."
 
 Since then:
 
@@ -103,9 +103,9 @@ Since then:
 - **Inpatient cohort** ([Button et al. 2022, n=72 attempts](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/)) showed 73.5% completion. 18% discontinued early — most commonly for inadequate pain control or preference for methadone.
 - **Outpatient cohort** ([Suen et al. 2024, n=175 attempts in the fentanyl era](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/)) showed **34% completion** — 38% for the 4-day, 28% for the 7-day. 28-day buprenorphine retention was 21% (4-day) and 18% (7-day).
 
-The honest read: **inpatient completion is high; outpatient completion is much lower.** That's the gap that matters for most people in this community, because most micro-inductions for kratom-derivative dependence will be done at home, not in a hospital. The dropoff comes mostly from people abandoning the protocol partway through — inadequate symptom relief during the overlap, life getting in the way of the dosing schedule, or returning to the full agonist when it feels easier than continuing the slow ramp.
+**Inpatient completion is high; outpatient completion is much lower.** That's the gap that matters for most people in this community, because most micro-inductions for kratom-derivative dependence will be done at home, not in a hospital. The dropoff comes mostly from people abandoning the protocol partway through — inadequate symptom relief during the overlap, life getting in the way of the dosing schedule, or returning to the full agonist when it feels easier than continuing the slow ramp.
 
-The takeaway isn't "don't do this" — for the right person, it works. It is: **plan for the support structure that the inpatient setting provides, because that's the variable that drives completion.** A prescriber who's reachable when symptoms get rough mid-overlap. A clear plan for adjuncts ([see Helper Medications](/other-tools/helper-meds-info)). A few people who know what you're doing and can help you stay on the schedule.
+For the right person micro-induction works, but plan for the support structure that an inpatient setting would provide: a prescriber who's reachable when symptoms get rough mid-overlap, a clear plan for adjuncts ([see Helper Medications](/other-tools/helper-meds-info)), and a few people who know what you're doing and can help you stay on the schedule. That's the variable that drives completion.
 
 ## The kratom-derivative evidence gap
 
@@ -115,9 +115,9 @@ The takeaway isn't "don't do this" — for the right person, it works. It is: **
 - [Kiyokawa et al. 2023 (home induction for kratom use disorder, n=2)](https://academic.oup.com/fampra/article/40/4/596/7232451) — standard COWS-gated home induction starting at 2/0.5 mg. Both patients abstinent at 2 years. Not micro-induction.
 - A [mitragynine pseudoindoxyl case in *Psychoactives* 2026](https://www.mdpi.com/2813-1851/5/1/7) — opposite end of the spectrum, **macro-dose** induction at 32 mg day 1.
 
-If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale is the same shape — a long-acting full agonist with receptor adaptation that benefits from a gradual ramp — and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has actually tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
+If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has actually tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
 
-The community-validated reality, as of this writing: **a handful of people in this community have used micro-induction successfully for MGM-15 and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked — community knowledge here is genuinely ahead of the published literature.
+**A handful of people in this community have used micro-induction successfully for MGM-15 and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked — community knowledge here is genuinely ahead of the published literature.
 
 ## How to talk to a prescriber about this
 
@@ -133,7 +133,7 @@ If your current prescriber isn't comfortable with micro-induction, the [Teleheal
 ## When micro-induction isn't the answer
 
 - **You're on [7-OH](/compounds/7-oh) alone at a moderate dose, with short use history.** Standard COWS-gated induction is faster and well-evidenced for this case.
-- **You don't have stable access to your full agonist for the overlap period.** Micro-induction requires you to keep dosing your current opioid through days 1–7+. If you can't reliably do that — running out mid-overlap, source disruption — the protocol falls apart and you're worse off than a clean standard induction.
+- **You don't have stable access to your full agonist for the overlap period.** Micro-induction requires you to keep dosing your current opioid through days 1–7+. If you can't reliably do that (running out mid-overlap, source disruption), the protocol falls apart and you're worse off than a clean standard induction.
 - **You don't have a prescriber on board.** Self-running a micro-induction from films cut by hand, with no clinical backstop if symptoms get rough, is a much higher-risk version of this protocol than the published cohorts describe. Some people do it; it's not the safe version.
 - **You're in acute withdrawal already.** If you've already been off your opioid for 12+ hours and your COWS is climbing, you're in a position where standard induction is the cleaner move. Micro-induction starts from a stable baseline of full-agonist use, not from active withdrawal.
 
