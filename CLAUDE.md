@@ -5,6 +5,28 @@ These are durable rules — they survive across sessions.
 
 ## Always
 
+### Don't push to prod without explicit approval for that push
+
+`git push` is a deploy. CF Pages auto-deploys from `main`, so a push
+is a production change visible to readers in withdrawal. Treat every
+push as a discrete authorization decision.
+
+- **Per-commit approval, not standing approval.** When the user says
+  "push that," they're approving the specific commit they just
+  reviewed. They are not granting a license to push every future
+  commit in the session.
+- **Default after committing: stop and report.** Once a commit lands
+  locally, summarize what changed and wait for "push it" / "ok push"
+  / similar. Don't push as part of the same turn as the commit
+  unless the user told you to before you committed.
+- **Batch when possible.** If the user is making several edits in a
+  row, prefer committing the work and asking once at a logical
+  stopping point rather than pushing each commit.
+- The only exception is content the user has explicitly pre-cleared
+  to auto-deploy ("just push fixes as you go"). That authorization
+  has to be explicit and time-scoped — assume it expires when the
+  task it covered is done.
+
 ### External links open in new tabs
 
 Any link to an off-site URL must open in a new tab:
@@ -333,6 +355,55 @@ a lot of session time on infrastructure.
   opioids with other substances requires professional medical
   supervision, and route the reader to SAMHSA (1-800-662-4357) or
   findtreatment.gov.
+
+### Buprenorphine is AN option, not THE option
+
+The community is medication-agnostic. Buprenorphine (Suboxone, Subutex)
+is **one of several legitimate paths** people use to come off 7-OH and
+kratom synthetics. Others documented on the site include:
+
+- [SR-17](/other-tools/sr17018-info) as an informal taper bridge
+- [Low-dose / ultra-low-dose naltrexone](/other-tools/low-dose-naltrexone)
+- [Tapering with kratom leaf](/other-tools/tapering-with-leaf)
+- Cold turkey with [helper meds](/other-tools/helper-meds-info)
+
+**Never write "the standard treatment is buprenorphine," "the gold
+standard," "the standard of care," or any phrasing that frames bupe
+as the singular correct answer.** Bupe is widely used and well-studied,
+but framing it as the only path undermines readers who have made
+informed choices in another direction. Write "one option," "one common
+path," "a widely-used option" — not "the standard."
+
+Telehealth pages and MAT pages are allowed to assume bupe in their own
+narrow scope (a page about Suboxone is naturally about Suboxone), but
+their opening framing should still acknowledge bupe as one of several
+options before diving in.
+
+### Default to lower / slower than typical clinical guidance
+
+The community has consistently found that the standard clinical
+playbook for opioid dependence over-medicates for 7-OH and kratom
+synthetics. Standard primary-care advice tends toward higher induction
+doses (16 mg on day 1) and open-ended maintenance; what this community
+has found to work better is **low-and-slow induction** (2 mg start,
+titrate by 1 mg) and **short structured tapers** (typically 5–14 days
+for 7-OH) where the reader's situation supports it.
+
+When writing taper, induction, or dosing guidance:
+
+- **Default to the community's low-and-slow numbers** (2 mg start vs.
+  4 mg or 16 mg; 5–14 day taper vs. open maintenance), unless the
+  reader's situation specifically calls for maintenance (long-acting
+  synthetics, years of stacked use, prior unsuccessful tapers).
+- **Name the tension with typical doctor advice explicitly.** Don't
+  pretend the community's posture is medical consensus — it isn't.
+  Being honest about that ("a standard primary-care doctor will likely
+  suggest X; the community has consistently found Y works better
+  because Z") helps the reader navigate the conversation with their
+  prescriber rather than blindsiding them.
+- For the rare case where maintenance genuinely is the right call,
+  say so plainly. Don't default to taper in situations where it
+  doesn't fit.
 
 ## Content density
 

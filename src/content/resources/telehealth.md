@@ -19,23 +19,30 @@ sort: 2
 
 ## Why telehealth at all
 
-For kratom or 7-OH dependence, the standard medical intervention is
-**buprenorphine** ([Suboxone] is buprenorphine + naloxone; [Subutex]
-is buprenorphine alone), prescribed off-label since the FDA approval
-is for opioid use disorder. Both kratom's mitragynine and 7-OH act on
-the mu-opioid receptor, so the same medication that treats OUD also
-treats kratom dependence — but most primary-care doctors have never
-heard of [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), or the
-related synthetics, and the explanation step alone can be exhausting.
-Telehealth providers that work in OUD daily skip that friction.
+**Buprenorphine is one of several options** people in this community
+use to come off [7-OH](/compounds/7-oh) and kratom synthetics — others
+include [SR-17](/other-tools/sr17018-info), [low-dose naltrexone](/other-tools/low-dose-naltrexone),
+[tapering with leaf kratom](/other-tools/tapering-with-leaf), and
+cold-turkey with [helper meds](/other-tools/helper-meds-info). This
+page is specifically about telehealth providers that handle the
+**buprenorphine** path ([Suboxone] is buprenorphine + naloxone;
+[Subutex] is buprenorphine alone), since that's the part where a
+prescriber relationship is the bottleneck for most people. If you're
+weighing approaches in general, [Start Here](/start-here/welcome) and
+the [Compounds](/compounds) section are the broader picture.
 
 [Suboxone]: /mat-suboxone/suboxone-info
 [Subutex]: /mat-suboxone/suboxone-info
 
+Why telehealth specifically: most primary-care doctors haven't heard
+of [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), or the related
+synthetics, and the explanation step alone can be exhausting.
+Telehealth providers that work in OUD daily skip that friction.
+
 The trade-off is the usual one: convenience, same-day or near-same-day
 appointments, and a national footprint, **versus** the local
 relationship a good primary-care doctor or specialty addiction clinic
-can offer. Both paths work. This page only covers the telehealth side.
+can offer. This page only covers the telehealth side.
 
 ## At a glance
 
