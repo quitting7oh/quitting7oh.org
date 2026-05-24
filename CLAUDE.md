@@ -209,6 +209,54 @@ Layout:
   (`npm run link:compounds`). Don't add the links by hand on first
   occurrence; do add them on subsequent references that need them.
 
+### Prose voice: write like a person, not like an LLM performing thoughtfulness
+
+Newer pages have drifted into a recognizable AI register. The patterns
+below feel "balanced" while you're writing them and read as droning slop
+to anyone else. Notice when you're reaching for them, and pick the plainer
+version instead.
+
+- **The antithesis ladder.** "It's not X, it's Y." "Not because A, but
+  because B." "Trust the score, not the timer." Fine once for a genuine
+  contrast; tic when stacked through a whole page. Say the thing directly
+  instead of triangulating against what it isn't.
+- **Performance signposting.** "The honest middle is...", "The bottom
+  line is...", "What this means in practice is...". You're announcing
+  that you're about to be credible instead of being credible. Cut the
+  announcement; keep the credible sentence.
+- **Em-dash addiction.** Most of your em-dashes should be commas,
+  periods, or parentheses. Save the dash for moments that genuinely
+  need the break. If a paragraph has more than one, audit them.
+- **Bolded throat-clearing.** Bold should mark surprise or load-bearing
+  words, not "the sentence I want the reader to definitely notice." If
+  half the paragraphs have a bold sentence, the bolding has stopped
+  meaning anything.
+- **Triplet rhythm.** Three bullets, three examples, three parallel-
+  structure clauses in a sentence. Vary the count, or cut to two, or use
+  prose instead of a list. Real writing varies; a page where everything
+  comes in threes reads as padded to a shape.
+- **"Worth knowing / worth bringing up / worth understanding."**
+  Throat-clearing. Either say it or don't.
+- **Restating the takeaway at the end of every section.** The reader
+  just read it. Trust them.
+- **"As of this writing" / "in the current literature" as a tic.** Use
+  it once when something might actually change soon. Not as defensive
+  cover sprinkled throughout.
+- **Hedge-stacking.** "Generally / typically / often / usually / in most
+  cases" piled into the same sentence. Pick one. If the claim needs four
+  hedges, rewrite the claim more precisely.
+- **The "X is real" / "Y is fine" tic.** "Precipitated withdrawal is
+  real." "A few extra days is fine, that's not failure." Used sparingly
+  these land; used as a refrain they read as ChatGPT performing
+  reassurance. Cut, or rephrase as a direct statement of the fact.
+
+What good prose on this site sounds like: short declarative sentences,
+concrete details, quiet authority. The voice of a harm-reduction worker
+who knows the material and trusts the reader to follow without being
+walked. Read a paragraph aloud. If it sounds like an executive summary
+written to be defensible in a meeting, rewrite it. If it sounds like
+something a person would actually say to another person, ship it.
+
 ### Link every third party we name
 
 When the content names a specific outside resource — an organization, a
