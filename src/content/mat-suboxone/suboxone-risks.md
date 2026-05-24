@@ -7,9 +7,9 @@ last_updated: "2026-05-24"
 
 > ⚠️ **This is honest, evidence-based information about a medication a
 > lot of us in this community are using.** It is not anti-MAT. Suboxone
-> has saved lives, and for many people it's the right tool. But it's
-> also a powerful, long-acting opioid, and that's worth understanding
-> fully before you commit to long-term use.
+> has saved lives, and for many people it's the right tool. It's also
+> a powerful, long-acting opioid, and the long-term picture matters
+> before you commit to long-term use.
 
 If you're new here, you may have been told that Suboxone is "different
 from other opioids," "blocks opioids," or is "less risky." All of those
@@ -103,7 +103,7 @@ Many people who have been on Suboxone for years report that the withdrawal from 
 
 The longer you've been on it, the more it costs to come off. That's not a reason to stop right now, panicking, today. It's a reason to think carefully about how long you plan to be on it, and to start the taper conversation with your prescriber sooner rather than later if your situation allows.
 
-## Other long-term effects worth knowing about
+## Other long-term effects
 
 - **Hormonal effects.** Sustained opioid receptor activation can lead
   to [hypogonadism — low testosterone, low libido, fatigue, and in some
