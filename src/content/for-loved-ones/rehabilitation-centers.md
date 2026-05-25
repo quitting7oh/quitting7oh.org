@@ -32,7 +32,7 @@ Treatment is organized as a stepped continuum, roughly from highest-intensity to
 
 Supervised withdrawal with medical support. For [7-OH](/compounds/7-oh) and opioid dependence, detox handles the worst of the acute withdrawal — vomiting, dehydration, the most dangerous parts of insomnia and anxiety — and stabilizes the person before further treatment. Detox alone is not treatment; it's a bridge from active use to the next step.
 
-> 🆘 **Detox is essential when there's polysubstance use.** If your loved one is using 7-OH or opioids along with alcohol, benzodiazepines, or other depressants, supervised detox is not optional — combined withdrawal can be medically dangerous (benzo withdrawal in particular can be fatal without management). Call **[SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at 1-800-662-4357** for supervised options, or visit [findtreatment.gov](https://findtreatment.gov).
+> **Detox is essential when there's polysubstance use.** If your loved one is using 7-OH or opioids along with alcohol, benzodiazepines, or other depressants, supervised detox is not optional — combined withdrawal can be medically dangerous (benzo withdrawal in particular can be fatal without management). Call **[SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at 1-800-662-4357** for supervised options, or visit [findtreatment.gov](https://findtreatment.gov).
 
 ### Residential / inpatient (typically 28–90 days)
 
@@ -71,7 +71,7 @@ the standard protocols sometimes need adjustment; the more your loved
 one understands going in, the better the conversation with their
 prescriber tends to go.
 
-> 💼 **If your loved one works in a regulated profession** — CDL
+> **If your loved one works in a regulated profession** — CDL
 > driver, pilot, ATC, law enforcement, armed security, healthcare
 > licensure, federal employment with clearance — the choice of MAT
 > medication can have professional-licensure implications separate

@@ -115,7 +115,7 @@ They aren't ranked here because the receptor-binding literature
 for them is thinner. Don't read this table as the complete
 spectrum; read it as the slice with reliable data.
 
-> 🩺 **Reference, not advice.** This is structural pharmacology.
+> **Reference, not advice.** This is structural pharmacology.
 > It won't tell you what to take or how to taper — those decisions
 > belong with a clinician familiar with your situation. For
 > coming-off paths see [Withdrawal Help](/start-here/withdrawal-help).

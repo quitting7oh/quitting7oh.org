@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 11
 ---
 
-> ℹ️ **What this page is.** A neutral, sourced look at cannabis and THC
+> **What this page is.** A neutral, sourced look at cannabis and THC
 > use during recovery from [7-OH](/compounds/7-oh) and kratom
 > synthetics — both the real symptom-management benefits and the real
 > downsides, including the risk of trading one dependence for another.

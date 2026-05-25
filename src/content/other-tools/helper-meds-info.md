@@ -5,7 +5,7 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 1
 ---
-> ⚠️ **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
+> **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
 The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* serotonin, adrenergic, GABA, and other systems. Kratom's minor alkaloids bind 5-HT₁ₐ, 5-HT₂ᵦ, α-1, and α-2 receptors **directly** as agonists or antagonists ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)) — not via the reuptake-inhibition mechanism that SSRIs and SNRIs use. Suboxone covers the opioid side. Helper meds cover everything else.
 

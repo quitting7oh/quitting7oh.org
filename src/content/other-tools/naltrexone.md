@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 7
 ---
 
-> ⚠️ **Read first if you're using right now:** naltrexone in its
+> **Read first if you're using right now:** naltrexone in its
 > standard form is a **full opioid antagonist**. Taking it while
 > [7-OH](/compounds/7-oh), kratom, buprenorphine, methadone, or any
 > other opioid is still on your receptors causes immediate, severe

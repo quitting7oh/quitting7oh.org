@@ -142,4 +142,4 @@ If you absolutely have to make ahead (e.g., traveling that day), **make it that 
 - **Above 0.5 mg per dose, cutting films is faster, easier, and accurate enough.** Liquid titration is for the very bottom of a taper, not for the whole thing.
 - **If you're inconsistent with technique.** If you sometimes use a syringe and sometimes eyeball it, you're getting inconsistent doses, which makes the taper worse than just cutting.
 
-> 🩺 **Reminder:** Some bupe-taper guides specifically advise against liquid titration because of the variability it introduces. They're not wrong: poor technique makes this less accurate than cutting. Done carefully with a real syringe and consistent practice, it's accurate enough to land doses no other method can hit. If you're going to do this, do it right.
+> **Reminder:** Some bupe-taper guides specifically advise against liquid titration because of the variability it introduces. They're not wrong: poor technique makes this less accurate than cutting. Done carefully with a real syringe and consistent practice, it's accurate enough to land doses no other method can hit. If you're going to do this, do it right.

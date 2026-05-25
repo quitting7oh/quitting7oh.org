@@ -234,7 +234,7 @@ covers why it happens and what it means.
 
 **The one safety thing to know:**
 
-> ⚠️ **Don't mix.** The real fatal pattern in kratom-adjacent deaths
+> **Don't mix.** The real fatal pattern in kratom-adjacent deaths
 > is **combinations** — mixing with **alcohol, benzodiazepines,
 > gabapentinoids, or other depressants**. That's what kills people.
 > Other kratom-derived synthetics
@@ -261,7 +261,7 @@ your phone too. Future you will thank present you.
 
 ---
 
-> 🩺 **One more time:** this is community information, not medical
+> **One more time:** this is community information, not medical
 > advice. If you're trying to get back on track after a slip — or
 > trying to stay on track right now — talk to a qualified prescriber
 > who knows your situation.

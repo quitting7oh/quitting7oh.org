@@ -44,7 +44,7 @@ programs) a bupe induction to bridge into longer-term MAT. Most
 clearly indicated when at-home withdrawal isn't working or isn't safe
 to attempt (the polysubstance case above).
 
-> 🆘 **If you're using 7-OH or opioids along with any other substance
+> **If you're using 7-OH or opioids along with any other substance
 > — alcohol, benzodiazepines, gabapentinoids, other depressants —
 > please don't come off without medical supervision.** Combined
 > withdrawal can be medically dangerous. Benzo withdrawal in
@@ -95,7 +95,7 @@ taper than the community has found necessary. Bringing the
 receptor-occupancy data into the conversation tends to go better than
 just disagreeing with your prescriber.
 
-> 💼 **Working in a regulated profession?** If you hold a CDL, FAA
+> **Working in a regulated profession?** If you hold a CDL, FAA
 > airman certificate, ATC medical, law-enforcement position,
 > armed-security license, healthcare license, or other regulated
 > credential, **MAT can have licensure implications separate from

@@ -198,7 +198,7 @@ Two honest things to know:
 - [Ohio Board of Pharmacy, mitragynine-related compounds Schedule I classification](https://www.pharmacy.ohio.gov/documents/pubs/special/kratom/classification%20of%20mitragynine-related%20compounds%20as%20schedule%20i%20controlled%20substances.pdf)
   — does not name MGM-16 individually; covers the class
 
-> 🩺 **Reference, not advice.** Everything on this page is sourced
+> **Reference, not advice.** Everything on this page is sourced
 > from published literature and government documents. None of it
 > tells you what to take, how to taper, or how to evaluate a
 > specific product you're using — those decisions belong with a

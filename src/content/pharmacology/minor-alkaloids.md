@@ -125,7 +125,7 @@ which is part of why:
 The clinical takeaway is on the recovery pages; the pharmacology
 behind it is on this one.
 
-> 🩺 **Reference, not advice.** Activity ratings synthesize
+> **Reference, not advice.** Activity ratings synthesize
 > multiple *in vitro* and rodent studies. The literature disagrees
 > on some entries (notably speciociliatine at the µ-receptor); the
 > tables above describe the dominant findings, with disagreements

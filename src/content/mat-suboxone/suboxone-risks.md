@@ -5,7 +5,7 @@ category: "mat-suboxone"
 last_updated: "2026-05-24"
 ---
 
-> ⚠️ **This is honest, evidence-based information about a medication a
+> **This is honest, evidence-based information about a medication a
 > lot of us in this community are using.** It is not anti-MAT. Suboxone
 > has saved lives, and for many people it's the right tool. It's also
 > a powerful, long-acting opioid, and the long-term picture matters
@@ -176,7 +176,7 @@ strategy](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-fr
 - [Naloxone (Narcan) overview (CDC)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
 - [Buprenorphine taper guide (NAABT)](http://www.helpmegetoffdrugs.com/taper)
 
-> 🩺 **Reminder:** This is information, not a directive. Talk to your
+> **Reminder:** This is information, not a directive. Talk to your
 > prescriber about anything on this page that applies to your
 > situation. The honest answer to "should I stay on Suboxone or taper?"
 > — and to "should I try the single-shot exit?" — is "it depends, and

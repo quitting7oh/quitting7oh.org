@@ -16,10 +16,8 @@ this. We're going to walk you through the next few hours.
 13 to 22 times more strongly than morphine](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/).
 Your body adapted to its constant presence. When you stop, your opioid
 receptors are temporarily underactive while your nervous system
-rebalances. That mismatch is what withdrawal feels like. Your brain
-isn't broken — it's adjusting. The receptors recover. Endorphin
-production comes back online. The discomfort is real, time-limited, and
-part of a process that ends.
+rebalances. That mismatch is what withdrawal feels like — physiology,
+not damage.
 
 If this is a re-entry to withdrawal after a stretch off — and symptoms
 seem to be hitting faster than they did the first time — see

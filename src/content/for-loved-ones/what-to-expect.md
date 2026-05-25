@@ -82,7 +82,7 @@ Withdrawal from [7-OH](/compounds/7-oh) and kratom synthetics is opioid-like. Th
 
 This is genuinely miserable. It's not "the flu." It's why people keep using even when they desperately want to stop.
 
-> 🆘 **If your loved one is mixing 7-OH or kratom with other substances — alcohol, benzodiazepines, other opioids, gabapentinoids — professional medical detox isn't optional.** Combined withdrawal can be medically dangerous, especially benzo withdrawal, which can be fatal without medical management. Call [SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at **1-800-662-4357** or visit [findtreatment.gov](https://findtreatment.gov) for supervised options.
+> **If your loved one is mixing 7-OH or kratom with other substances — alcohol, benzodiazepines, other opioids, gabapentinoids — professional medical detox isn't optional.** Combined withdrawal can be medically dangerous, especially benzo withdrawal, which can be fatal without medical management. Call [SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at **1-800-662-4357** or visit [findtreatment.gov](https://findtreatment.gov) for supervised options.
 
 ## PAWS — the part most families don't expect
 

@@ -8,7 +8,7 @@ sort: 9
 
 If your loved one is going into treatment, or is recovering from a serious medical complication of use, you may have a legal right to job-protected unpaid leave to care for them. Most family members don't know this, and most employers don't volunteer the information.
 
-> ⚠️ **Read this before counting on FMLA.** [FMLA](https://www.dol.gov/agencies/whd/fmla) is **not universal.** It only covers you if **all three** are true:
+> **Read this before counting on FMLA.** [FMLA](https://www.dol.gov/agencies/whd/fmla) is **not universal.** It only covers you if **all three** are true:
 >
 > 1. You've worked for this employer for **at least 12 months** (doesn't have to be consecutive, but most must be within the last 7 years).
 > 2. You've worked **at least 1,250 hours** in the 12 months immediately before the leave (roughly 24 hours/week, on average).

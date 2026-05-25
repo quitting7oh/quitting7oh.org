@@ -6,7 +6,7 @@ last_updated: "2026-05-23"
 sort: 5
 ---
 
-> 🚨 **If you or your children are in danger, your safety is not negotiable.** Leaving a dangerous situation is not abandoning recovery — staying in a dangerous situation doesn't help anyone get well, and it can cost you and your kids more than you can afford to lose. This page covers when to act, who to call, and how to plan.
+> **If you or your children are in danger, your safety is not negotiable.** Leaving a dangerous situation is not abandoning recovery — staying in a dangerous situation doesn't help anyone get well, and it can cost you and your kids more than you can afford to lose. This page covers when to act, who to call, and how to plan.
 
 ## The hard truth about active addiction and risk
 
@@ -56,7 +56,7 @@ If you are worried about your children's safety, that worry is more important th
 
 ## Crisis numbers, repeated for visibility
 
-> 🆘 **In immediate danger, call 911.**
+> **In immediate danger, call 911.**
 >
 > - **[National Domestic Violence Hotline](https://www.thehotline.org)** — call 1-800-799-7233, text "START" to 88788, or chat at [thehotline.org](https://www.thehotline.org). 24/7, confidential, free.
 > - **[Childhelp National Child Abuse Hotline](https://www.childhelphotline.org)** — 1-800-422-4453. 24/7.

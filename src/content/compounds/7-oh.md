@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-> ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
+> **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language before the pharmacology below.
 
 7-OH is the compound this site is named after — and the compound most
@@ -257,7 +257,7 @@ position end up.
   — semi-synthetic derivative work.
 - [Kratom withdrawal timeline (clinical summary)](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/).
 
-> 🩺 **Reminder:** 7-OH is an opioid. Treat it as one, both in terms of
+> **Reminder:** 7-OH is an opioid. Treat it as one, both in terms of
 > not underestimating dependence development and in terms of using
 > opioid-recovery tools (MAT, [SR-17](/other-tools/sr17018-info),
 > helper meds, structured tapers) when coming off. The community here

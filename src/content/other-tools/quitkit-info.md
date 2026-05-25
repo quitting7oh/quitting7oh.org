@@ -5,7 +5,7 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 3
 ---
-> ⚠️ **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** If you're on a prescribed medication (Suboxone, LDN, antidepressants, etc.), check interactions for any new supplement with your pharmacist or prescriber — that's the narrow ask they can actually help with. Otherwise this is community ground; **#vitamins-supplements** is the chat channel for what's worked.
+> **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** If you're on a prescribed medication (Suboxone, LDN, antidepressants, etc.), check interactions for any new supplement with your pharmacist or prescriber — that's the narrow ask they can actually help with. Otherwise this is community ground; **#vitamins-supplements** is the chat channel for what's worked.
 
 A note on naming: there are at least two similarly-named products in this space — **Quit Kit** at tryquitkit.com and **QuitK** at quitk.com (sold via Soul Supplements). They're separate products with overlapping marketing. The general analysis below applies to both, though specific formulations and prices differ.
 

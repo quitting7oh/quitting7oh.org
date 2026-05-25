@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 5
 ---
 
-> ⚠️ **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator — or starting MAT while holding any of the credentials below — talk to a labor lawyer or licensure attorney who knows your specific field.**
+> **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator — or starting MAT while holding any of the credentials below — talk to a labor lawyer or licensure attorney who knows your specific field.**
 
 This page is general information, not legal or medical advice. Rules change. Verify with the current regulator and a qualified attorney before making decisions.
 

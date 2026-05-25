@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-> ℹ️ **What this page is.** A neutral, every-claim-cited comparison of
+> **What this page is.** A neutral, every-claim-cited comparison of
 > US telehealth providers that prescribe buprenorphine for opioid use
 > disorder (OUD), including the subset that explicitly mention kratom
 > or 7-OH on their own sites. **There is no "best" here.** Different
@@ -31,7 +31,7 @@ prescriber relationship is the bottleneck for most people. If you're
 weighing approaches in general, [Start Here](/start-here/welcome) and
 the [Compounds](/compounds) section are the broader picture.
 
-> ⚠️ **Naltrexone (LDN, ULDN, Vivitrol) is not a path off opioids.**
+> **Naltrexone (LDN, ULDN, Vivitrol) is not a path off opioids.**
 > It's an opioid antagonist — taking it while there are still opioids
 > on your receptors will trigger immediate, severe precipitated
 > withdrawal. [LDN](/other-tools/naltrexone-low-dose) and
@@ -609,7 +609,7 @@ Methadone, naltrexone, Vivitrol, and Sublocade/Brixadi are not
 mentioned on their site. **The site does not enumerate adjunct
 comfort meds** (clonidine, gabapentin, hydroxyzine, trazodone, etc.).
 
-> 💬 **From the community:** members report having success requesting
+> **From the community:** members report having success requesting
 > helper meds — gabapentin, clonidine, hydroxyzine, trazodone — during
 > their QuickMD visits. This is **provider discretion**, not a
 > published QuickMD policy: some clinicians on the platform will write
@@ -802,7 +802,7 @@ this page is meant to be re-verified periodically, and the access
 date next to every claim is there so you can spot when something
 needs to be checked again.
 
-> 🩺 **Reminder:** This is community information, not medical
+> **Reminder:** This is community information, not medical
 > advice. No telehealth provider is a perfect fit for everyone. The
 > prescriber relationship matters more than the platform. If a
 > specific provider doesn't work for you, you can request a different

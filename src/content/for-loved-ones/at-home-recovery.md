@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 7
 ---
 
-> ⚠️ **A note before you read further.** This page assumes there's
+> **A note before you read further.** This page assumes there's
 > still meaningful **trust** in the relationship — that you and your
 > loved one can be in the same house, that they want you nearby (at
 > least sometimes), and that you're working with them rather than

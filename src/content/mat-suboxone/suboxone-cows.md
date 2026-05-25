@@ -9,7 +9,7 @@ The single most important thing about Suboxone induction is **timing it by your 
 
 **The rule: don't induct until COWS ≥ 12 (or SOWS ≥ 17), regardless of how many hours it's been.** If you hit 24 hours and your COWS is still at 8, you're not ready. If you hit 14 hours and your COWS is solidly at 14, you probably are. Trust the score over the timer.
 
-> ℹ️ **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the COWS gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway — especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo), or after a prior precipitated-withdrawal attempt — read the Bernese page; the COWS scoring on this page is for the standard wait-then-induct approach.
+> **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the COWS gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway — especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo), or after a prior precipitated-withdrawal attempt — read the Bernese page; the COWS scoring on this page is for the standard wait-then-induct approach.
 
 ## COWS vs SOWS — which to use
 
@@ -191,4 +191,4 @@ If you've been on the long-acting compounds and your COWS isn't climbing past 24
 - [Emergency Care BC: COWS-based induction protocol](https://emergencycarebc.ca/clinical_resource/clinical-summary/clinical-opiate-withdrawal-scale-treatment/)
 - [SAMHSA induction guidance](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)
 
-> 🩺 **Reminder:** Suboxone induction is a medical event. The COWS score is the standard tool, but interpreting it and acting on it is best done with a prescriber who's on board with what you're trying to do. If you're inducting at home, ideally your prescriber knows that and is reachable.
+> **Reminder:** Suboxone induction is a medical event. The COWS score is the standard tool, but interpreting it and acting on it is best done with a prescriber who's on board with what you're trying to do. If you're inducting at home, ideally your prescriber knows that and is reachable.

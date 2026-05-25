@@ -158,7 +158,7 @@ For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone
 - [Hendler R et al. *J Addict Med* 2026 (PMID 41875249)](https://pubmed.ncbi.nlm.nih.gov/41875249/) — 7-HMG use disorder case (methadone-mediated, not Bernese)
 - [Kiyokawa M et al. *Fam Pract* 2023](https://academic.oup.com/fampra/article/40/4/596/7232451) — kratom home induction case series (standard, not Bernese)
 
-> 🩺 **Reminder.** This page describes a clinical method that requires a prescriber's involvement to do safely. Reading about the protocol is not the same as having a clinician who's tracking your COWS, your dose, your full-agonist source, and your adjuncts. If your current prescriber isn't comfortable with micro-induction, that's a reason to find a different prescriber — not to run the protocol unsupervised.
+> **Reminder.** This page describes a clinical method that requires a prescriber's involvement to do safely. Reading about the protocol is not the same as having a clinician who's tracking your COWS, your dose, your full-agonist source, and your adjuncts. If your current prescriber isn't comfortable with micro-induction, that's a reason to find a different prescriber — not to run the protocol unsupervised.
 
 ## Where to read next
 

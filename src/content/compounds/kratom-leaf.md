@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 1
 ---
 
-> ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
+> **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language.
 
 ## TL;DR
@@ -102,7 +102,7 @@ compounds. The major ones, by concentration:
   degradation product and now appears as a synthetic in some
   designer-drug products.
 
-> 📊 **The key numbers, by dry weight of leaf**
+> **The key numbers, by dry weight of leaf**
 >
 > - **Mitragynine: roughly 0.5–2.7%** across published analyses; most
 >   authenticated leaf samples cluster around 1–2%. Concentration
@@ -321,7 +321,7 @@ and DEA primary sources before relying on anything specific.
 
 ---
 
-> 🩺 **Reminder.** This is a pharmacology reference, not medical
+> **Reminder.** This is a pharmacology reference, not medical
 > advice. If you're trying to come off concentrated 7-OH products,
 > the [Withdrawal Help](/start-here/withdrawal-help) page is where to go
 > for what to do right now — including the three real paths out

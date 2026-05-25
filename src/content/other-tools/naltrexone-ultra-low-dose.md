@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 10
 ---
 
-> ⚠️ **Honest framing up front.** ULDN is **investigational**, not
+> **Honest framing up front.** ULDN is **investigational**, not
 > standard of care. The clinical evidence is thin, mostly from the
 > mid-2000s, and never translated into an approved product. The
 > mechanism papers most often cited to explain why it should work

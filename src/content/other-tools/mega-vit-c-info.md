@@ -5,9 +5,9 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 4
 ---
-> ⚠️ **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, or hemochromatosis (iron overload), or you're on an iron supplement. These interact with high-dose vitamin C in real ways. **Not appropriate for everyone.**
+> **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, or hemochromatosis (iron overload), or you're on an iron supplement. These interact with high-dose vitamin C in real ways. **Not appropriate for everyone.**
 
-> 🛒 **A note on the product links.** Manufacturer-direct and Amazon links throughout this page are **starting points**, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip these vendors entirely; the protocol matters, not where you source it.
+> **A note on the product links.** Manufacturer-direct and Amazon links throughout this page are **starting points**, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip these vendors entirely; the protocol matters, not where you source it.
 
 Vitamin C megadosing is one of the older harm-reduction tools in the opioid withdrawal toolkit. It has [research support going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/), and the studies that exist suggest it can meaningfully reduce withdrawal severity. **It is not a magic bullet.** It works as part of a broader approach (rest, hydration, nutrition, sleep, other supplements). For some people it makes withdrawal noticeably more manageable; for others the effect is subtle or hard to distinguish from other interventions.
 

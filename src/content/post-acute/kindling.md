@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 7
 ---
 
-> 🆘 **If you're about to use right now**, read [Thinking About
+> **If you're about to use right now**, read [Thinking About
 > Using?](/start-here/thinking-about-using) first. That page has the
 > in-the-moment reach-out ladder and crisis lines. This page is for
 > the underlying question: *if I do use again, what happens?*
@@ -107,7 +107,7 @@ work that got you to whatever stretch you had is still in you.
 Recovery isn't binary, and a slip isn't a reset to day one. It's also
 not free.
 
-> ⚠️ **Polysubstance safety, specifically.** [7-OH](/compounds/7-oh)
+> **Polysubstance safety, specifically.** [7-OH](/compounds/7-oh)
 > alone doesn't produce the kind of respiratory depression that drives
 > the "lost tolerance after abstinence → fatal overdose" pattern with
 > fentanyl and heroin — that framing doesn't fit kratom-derived
@@ -156,7 +156,7 @@ reasonable moment to get one.
 - [2026 7-OH withdrawal case report](https://pubmed.ncbi.nlm.nih.gov/41690384/) — recent clinical case; no kindling content
 - [2025 7-OH + nicotine pouch case (PMC12758578)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12758578/) — recent clinical case; no kindling content
 
-> 🩺 **One more time:** this is community information, not medical
+> **One more time:** this is community information, not medical
 > advice. If you've slipped and you're trying to get back on track, or
 > you're trying to stay on track right now, talk to a qualified
 > prescriber who knows your situation.

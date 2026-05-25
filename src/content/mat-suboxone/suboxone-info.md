@@ -5,7 +5,7 @@ category: "mat-suboxone"
 last_updated: "2026-05-24"
 sort: 2
 ---
-> 💼 **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues that have nothing to do with whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
+> **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues that have nothing to do with whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
 
 Suboxone is one widely-used medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr17018-info); [tapering with kratom leaf](/other-tools/tapering-with-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds-info) are the non-MAT paths. This page covers Suboxone specifically — induction, dosing, taper plans, and the challenges that come with using bupe to come off the synthetic mitragynine derivatives.
 
@@ -64,7 +64,7 @@ This community uses a **low-and-slow induction** approach. The point is to find 
 
 Most people coming off 7-OH land in the 2 to 8 mg range using this approach. People coming off the long-acting synthetics may need more. The standard clinical protocol starts at 4 mg right out of the gate, which is usually more than necessary for our population and harder to taper down from.
 
-> ℹ️ **Standard induction not working — or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway that doesn't require you to wait in withdrawal. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days. It's especially worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm)) and for anyone who's tried standard induction before and gotten precipitated withdrawal.
+> **Standard induction not working — or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway that doesn't require you to wait in withdrawal. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days. It's especially worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm)) and for anyone who's tried standard induction before and gotten precipitated withdrawal.
 
 ## Why we start low — receptor occupancy
 
@@ -163,4 +163,4 @@ For long-term maintenance discussion specifically, [r/suboxone](https://www.redd
 - See also: [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for the deeper dive on common failure modes
 - For long-term Suboxone maintenance discussion: [r/suboxone](https://www.reddit.com/r/suboxone/)
 
-> 🩺 **Reminder:** Suboxone is a powerful, effective medication. The induction and taper approach this community uses differs from some standard clinical protocols, and works best when your prescriber is on board with the goal (short taper, low-and-slow induction, COWS-based timing). If something isn't working, that's a conversation with your prescriber, not a reason to stop or to redose the synthetic that brought you here.
+> **Reminder:** Suboxone is a powerful, effective medication. The induction and taper approach this community uses differs from some standard clinical protocols, and works best when your prescriber is on board with the goal (short taper, low-and-slow induction, COWS-based timing). If something isn't working, that's a conversation with your prescriber, not a reason to stop or to redose the synthetic that brought you here.

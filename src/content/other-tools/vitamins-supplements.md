@@ -60,7 +60,7 @@ brands, and the *why* behind each one.
   serotonin syndrome is real (more below).
 - **Anything "high-dose"** unless a clinician told you specifically.
 
-> 🩺 **One rule, no exceptions:** don't start everything at once. Begin
+> **One rule, no exceptions:** don't start everything at once. Begin
 > with the foundational six for a week, then add symptom-specific ones
 > one at a time. Otherwise you won't know what's helping, what's not, and
 > what's causing side effects.
@@ -74,9 +74,9 @@ and a longer PAWS tail. Supplements aren't a substitute for time, sleep,
 food, hydration, and (when appropriate) MAT, but they can take some
 of the edge off.
 
-> ℹ️ **Don't want to assemble it yourself?** Pre-packaged commercial kits like [Quit Kit & QuitK](/other-tools/quitkit-info) bundle many of these supplements into morning/night packs. More expensive than building it yourself, but the convenience is real in early withdrawal.
+> **Don't want to assemble it yourself?** Pre-packaged commercial kits like [Quit Kit & QuitK](/other-tools/quitkit-info) bundle many of these supplements into morning/night packs. More expensive than building it yourself, but the convenience is real in early withdrawal.
 
-> 🛒 **A note on the Amazon links below.** Products linked throughout the deep dives are **starting points** at the doses recommended — well-reviewed brands at fair prices, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip Amazon entirely; the supplements matter, not where you get them.
+> **A note on the Amazon links below.** Products linked throughout the deep dives are **starting points** at the doses recommended — well-reviewed brands at fair prices, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip Amazon entirely; the supplements matter, not where you get them.
 
 ## Foundational support (most people benefit, low risk)
 

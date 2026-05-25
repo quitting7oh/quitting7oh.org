@@ -6,7 +6,7 @@ last_updated: "2026-05-24"
 sort: 8
 ---
 
-> 🆘 **SAFETY — read before anything else on this page.**
+> **SAFETY — read before anything else on this page.**
 >
 > Naltrexone is a **full opioid receptor antagonist**. Starting it
 > while opioids are still on your receptors causes immediate, severe

@@ -8,7 +8,7 @@ sort: 4
 
 If you're worried about how to take time off for treatment without losing your job, you have more legal protection than most people realize. This page walks through the two federal laws that matter ([FMLA](https://www.dol.gov/agencies/whd/fmla) and [ADA](https://www.ada.gov)), what HR actually sees, and how Employee Assistance Programs work.
 
-> ⚠️ **Read this before counting on FMLA.** [FMLA](https://www.dol.gov/agencies/whd/fmla) is **not universal.** It only covers you if **all three** are true:
+> **Read this before counting on FMLA.** [FMLA](https://www.dol.gov/agencies/whd/fmla) is **not universal.** It only covers you if **all three** are true:
 >
 > 1. You've worked for this employer for **at least 12 months** (doesn't have to be consecutive, but most must be within the last 7 years).
 > 2. You've worked **at least 1,250 hours** in the 12 months immediately before the leave (roughly 24 hours/week, on average).
@@ -18,7 +18,7 @@ If you're worried about how to take time off for treatment without losing your j
 
 This is general information, not legal advice. For specific situations — especially if your employer has already started treating you differently because of suspected use — talk to an employment lawyer. Many offer free initial consultations.
 
-> 💼 **Working in a regulated profession?** If you hold a CDL, FAA airman certificate, ATC medical, a law-enforcement position, an armed-security license, or work as a heavy-machinery operator, **MAT can have professional-licensure implications separate from anything your employer does.** See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT in any of those contexts.
+> **Working in a regulated profession?** If you hold a CDL, FAA airman certificate, ATC medical, a law-enforcement position, an armed-security license, or work as a heavy-machinery operator, **MAT can have professional-licensure implications separate from anything your employer does.** See **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT in any of those contexts.
 
 ## FMLA for your own treatment
 

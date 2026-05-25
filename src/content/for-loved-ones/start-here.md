@@ -43,7 +43,7 @@ Your loved one isn't taking a supplement. [7-hydroxymitragynine (7-OH)](/compoun
 
 The person you love is not gone. They're trapped in a pattern that's genuinely hard to break, and harder when no one in their life understands what they're actually fighting. The brain chemistry does recover. People in this community have come back from this.
 
-> ⚕️ **About this section.** Nothing here is medical, legal, or psychiatric advice. It's reference material written by people who have been in your shoes, drawing on evidence-based frameworks (CRAFT, harm reduction, parity law) and the practical experience of families in this community. For decisions specific to your situation, work with qualified professionals who know the people involved.
+> **About this section.** Nothing here is medical, legal, or psychiatric advice. It's reference material written by people who have been in your shoes, drawing on evidence-based frameworks (CRAFT, harm reduction, parity law) and the practical experience of families in this community. For decisions specific to your situation, work with qualified professionals who know the people involved.
 
 ## If you or your loved one is in crisis right now
 

@@ -111,7 +111,7 @@ For any of these, the [Rehabilitation Centers](/for-you/rehabilitation-centers)
 page covers what programs exist, how to pay for them, and what to
 expect when you call.
 
-> 💼 **Working in a regulated profession?** If you hold a CDL, FAA
+> **Working in a regulated profession?** If you hold a CDL, FAA
 > medical, law-enforcement position, armed-security license,
 > healthcare license, or other regulated credential, **MAT can have
 > licensure implications separate from your employer's policies.** See
