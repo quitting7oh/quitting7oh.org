@@ -1,18 +1,33 @@
 import * as React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Pin } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '~/components/ui/sheet';
 import { useIsMobile } from '~/hooks/use-mobile';
 import { getCategoryIcon, getCategorySection } from '~/lib/categories';
 import { cn } from '~/lib/utils';
 
+export interface SidebarItem {
+  href: string;
+  title: string;
+}
+
+export interface SidebarGroup {
+  name: string;
+  items: SidebarItem[];
+}
+
 export interface SidebarCategory {
   slug: string;
   title: string;
-  items: { href: string; title: string }[];
+  /** Flat list, used when the category has no sub-groups. */
+  items: SidebarItem[];
+  /** When present, the sidebar renders these instead of the flat items
+   *  list — each group gets its own sub-heading. */
+  groups?: SidebarGroup[];
 }
 
 interface Props {
   categories: SidebarCategory[];
+  pinned: SidebarItem[];
   currentPath: string;
 }
 
@@ -22,14 +37,58 @@ function isCategoryCurrent(slug: string, currentPath: string): boolean {
   return currentPath === `/${slug}` || currentPath.startsWith(`/${slug}/`);
 }
 
+interface ItemLinkProps {
+  item: SidebarItem;
+  currentPath: string;
+  /** Indent the link to sit under a group sub-heading. */
+  indented?: boolean;
+}
+
+function ItemLink({ item, currentPath, indented }: ItemLinkProps) {
+  const isActive = currentPath === item.href;
+  return (
+    <li>
+      <a
+        href={item.href}
+        aria-current={isActive ? 'page' : undefined}
+        className={cn(
+          'block rounded px-2 py-1 text-sm transition',
+          indented && 'ml-3',
+          isActive
+            ? 'bg-accent font-medium text-accent-foreground'
+            : 'text-foreground/80 hover:bg-accent/50 hover:text-foreground',
+        )}
+      >
+        {item.title}
+      </a>
+    </li>
+  );
+}
+
 interface NavContentProps extends Props {
   expanded: Record<string, boolean>;
   toggle: (slug: string) => void;
 }
 
-function NavContent({ categories, currentPath, expanded, toggle }: NavContentProps) {
+function NavContent({ categories, pinned, currentPath, expanded, toggle }: NavContentProps) {
   return (
     <nav className="px-4 py-6 lg:px-6">
+      {/* Pinned: quick links to the highest-traffic pages, persistent
+          across categories. Mirrors the homepage funnel. */}
+      {pinned.length > 0 && (
+        <section className="mb-6 border-b border-border pb-4">
+          <h2 className="mb-2 flex items-center gap-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/70">
+            <Pin className="h-3 w-3 shrink-0" aria-hidden={true} />
+            Quick links
+          </h2>
+          <ul className="space-y-0.5">
+            {pinned.map((item) => (
+              <ItemLink key={item.href} item={item} currentPath={currentPath} />
+            ))}
+          </ul>
+        </section>
+      )}
+
       {categories.map((cat, idx) => {
         const Icon = getCategoryIcon(cat.slug);
         const userToggled = expanded[cat.slug];
@@ -48,6 +107,9 @@ function NavContent({ categories, currentPath, expanded, toggle }: NavContentPro
         const showSeparator =
           thisSection === 'reference' && prevSection !== 'reference';
 
+        const hasGroups = cat.groups && cat.groups.length > 0;
+        const hasItems = hasGroups || cat.items.length > 0;
+
         return (
           <React.Fragment key={cat.slug}>
             {showSeparator && (
@@ -57,61 +119,65 @@ function NavContent({ categories, currentPath, expanded, toggle }: NavContentPro
                 </p>
               </div>
             )}
-          <section className="mb-6 last:mb-0">
-            <h2 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              <button
-                type="button"
-                onClick={() => toggle(cat.slug)}
-                aria-expanded={isOpen}
-                aria-controls={listId}
-                className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded text-muted-foreground hover:bg-accent/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
-                <ChevronRight
-                  className={cn(
-                    'h-3.5 w-3.5 transition-transform',
-                    isOpen && 'rotate-90',
-                  )}
-                  aria-hidden={true}
-                />
-                <span className="sr-only">
-                  {isOpen ? 'Collapse' : 'Expand'} {cat.title}
-                </span>
-              </button>
-              {Icon && <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />}
-              <a href={`/${cat.slug}`} className="hover:text-foreground">
-                {cat.title}
-              </a>
-            </h2>
-            {isOpen && (
-              cat.items.length === 0 ? (
-                <p id={listId} className="text-sm italic text-muted-foreground/70">
-                  No pages yet.
-                </p>
-              ) : (
-                <ul id={listId} className="space-y-1">
-                  {cat.items.map((item) => {
-                    const isActive = currentPath === item.href;
-                    return (
-                      <li key={item.href}>
-                        <a
-                          href={item.href}
-                          aria-current={isActive ? 'page' : undefined}
-                          className={cn(
-                            'block rounded px-2 py-1 text-sm transition',
-                            isActive
-                              ? 'bg-accent font-medium text-accent-foreground'
-                              : 'text-foreground/80 hover:bg-accent/50 hover:text-foreground',
-                          )}
-                        >
-                          {item.title}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )
-            )}
-          </section>
+            <section className="mb-6 last:mb-0">
+              <h2 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                <button
+                  type="button"
+                  onClick={() => toggle(cat.slug)}
+                  aria-expanded={isOpen}
+                  aria-controls={listId}
+                  className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded text-muted-foreground hover:bg-accent/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <ChevronRight
+                    className={cn(
+                      'h-3.5 w-3.5 transition-transform',
+                      isOpen && 'rotate-90',
+                    )}
+                    aria-hidden={true}
+                  />
+                  <span className="sr-only">
+                    {isOpen ? 'Collapse' : 'Expand'} {cat.title}
+                  </span>
+                </button>
+                {Icon && <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />}
+                <a href={`/${cat.slug}`} className="hover:text-foreground">
+                  {cat.title}
+                </a>
+              </h2>
+              {isOpen && (
+                !hasItems ? (
+                  <p id={listId} className="text-sm italic text-muted-foreground/70">
+                    No pages yet.
+                  </p>
+                ) : hasGroups ? (
+                  <div id={listId} className="space-y-3">
+                    {cat.groups!.map((group) => (
+                      <div key={group.name}>
+                        <p className="mb-1 px-2 text-[10px] font-medium uppercase tracking-wider text-muted-foreground/55">
+                          {group.name}
+                        </p>
+                        <ul className="space-y-0.5">
+                          {group.items.map((item) => (
+                            <ItemLink
+                              key={item.href}
+                              item={item}
+                              currentPath={currentPath}
+                              indented
+                            />
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <ul id={listId} className="space-y-1">
+                    {cat.items.map((item) => (
+                      <ItemLink key={item.href} item={item} currentPath={currentPath} />
+                    ))}
+                  </ul>
+                )
+              )}
+            </section>
           </React.Fragment>
         );
       })}
@@ -139,7 +205,7 @@ function scrollActiveIntoCenter(container: HTMLDivElement | null) {
   container.scrollTop = Math.max(0, target);
 }
 
-export function AppSidebar({ categories, currentPath }: Props) {
+export function AppSidebar({ categories, pinned, currentPath }: Props) {
   const isMobile = useIsMobile();
   const [open, setOpen] = React.useState(false);
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
@@ -232,7 +298,7 @@ export function AppSidebar({ categories, currentPath }: Props) {
             <SheetTitle>Site navigation</SheetTitle>
           </SheetHeader>
           <div ref={mobileScrollRef} className="h-full overflow-y-auto pt-4">
-            <NavContent categories={categories} currentPath={currentPath} expanded={expanded} toggle={toggle} />
+            <NavContent categories={categories} pinned={pinned} currentPath={currentPath} expanded={expanded} toggle={toggle} />
           </div>
         </SheetContent>
       </Sheet>
@@ -248,7 +314,7 @@ export function AppSidebar({ categories, currentPath }: Props) {
         ref={scrollContainerRef}
         className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto"
       >
-        <NavContent categories={categories} currentPath={currentPath} expanded={expanded} toggle={toggle} />
+        <NavContent categories={categories} pinned={pinned} currentPath={currentPath} expanded={expanded} toggle={toggle} />
       </div>
     </aside>
   );

@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { SidebarShell } from '~/components/SidebarShell';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
-import { CATEGORIES, getCategory } from '~/lib/categories';
+import { CATEGORIES, getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 
 export async function getStaticPaths() {
@@ -30,6 +30,7 @@ const currentPath = Astro.url.pathname;
   <SidebarShell
     client:load
     categories={sidebarCategories}
+    pinned={PINNED_PAGES}
     currentPath={currentPath}
   >
     <main id="main-content" class="min-w-0 flex-1 py-8 lg:py-12">

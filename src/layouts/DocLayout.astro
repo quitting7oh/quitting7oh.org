@@ -4,7 +4,7 @@ import { SidebarShell } from '~/components/SidebarShell';
 import { Toc } from '~/components/Toc';
 import { TocMobile } from '~/components/TocMobile';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
-import { getCategory } from '~/lib/categories';
+import { getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getPrevNext } from '~/lib/pagination';
 import Pagination from '~/components/Pagination.astro';
@@ -48,6 +48,7 @@ const { prev, next } = await getPrevNext(currentPath);
   <SidebarShell
     client:load
     categories={sidebarCategories}
+    pinned={PINNED_PAGES}
     currentPath={currentPath}
   >
     <main id="main-content" class="flex min-w-0 flex-1 gap-8 py-8 lg:py-12">

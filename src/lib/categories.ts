@@ -124,3 +124,50 @@ export function getCategoryIcon(slug: string): LucideIcon | undefined {
 export function getCategorySection(slug: string): CategorySection | undefined {
   return CATEGORIES.find((c) => c.slug === slug)?.section;
 }
+
+/** Pinned at the top of the sidebar on every page. Mirrors the homepage
+ *  funnel for cross-page persistence so a reader doesn't have to navigate
+ *  back to / to find the high-traffic destinations again. Keep this list
+ *  short (6 max) — these are shortcuts, not a nav tree. */
+export const PINNED_PAGES: { href: string; title: string }[] = [
+  { href: '/start-here/withdrawal-help', title: 'In active withdrawal' },
+  { href: '/other-tools/vitamins-supplements', title: 'Vitamins & Supplements' },
+  { href: '/other-tools/mega-vit-c-info', title: 'Mega-Dose Vitamin C' },
+  { href: '/other-tools/helper-meds-info', title: 'Helper Medications' },
+  { href: '/other-tools/tapering-with-leaf', title: 'Tapering with Kratom' },
+  { href: '/mat-suboxone/suboxone-info', title: 'Suboxone' },
+];
+
+/** Sub-groupings inside long categories. Each entry maps a group name
+ *  to the page slugs (just the file basename, without .md) that belong
+ *  to that group, in display order.
+ *
+ *  Categories not listed here render flat. Pages not listed in any group
+ *  are dropped from the sidebar — keep these lists in sync when adding
+ *  pages to a grouped category. */
+export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]> = {
+  'mat-suboxone': [
+    { name: 'Getting on bupe', slugs: ['suboxone-info', 'suboxone-cows', 'suboxone-bernese-method'] },
+    { name: 'Coming off', slugs: ['suboxone-rapid-taper', 'suboxone-custom-dose'] },
+    { name: 'Long-term', slugs: ['sublocade-brixadi-info', 'suboxone-risks'] },
+    { name: 'Troubleshooting', slugs: ['suboxone-isnt-working'] },
+  ],
+  'for-loved-ones': [
+    { name: 'Orientation', slugs: ['start-here', 'what-to-expect', 'how-to-talk'] },
+    { name: 'Boundaries & safety', slugs: ['boundaries', 'safety', 'asking-them-to-leave'] },
+    { name: 'Day-to-day', slugs: ['at-home-recovery', 'rehabilitation-centers', 'fmla-workplace'] },
+    { name: 'For yourself', slugs: ['taking-care-of-yourself', 'support-groups'] },
+  ],
+  'other-tools': [
+    { name: 'Helper meds & supplements', slugs: ['helper-meds-info', 'vitamins-supplements', 'quitkit-info', 'mega-vit-c-info'] },
+    { name: 'Bridges off the synthetics', slugs: ['tapering-with-leaf', 'sr17018-info'] },
+    { name: 'Naltrexone (post-acute)', slugs: ['naltrexone', 'naltrexone-normal-dose', 'naltrexone-low-dose', 'naltrexone-ultra-low-dose'] },
+    { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
+  ],
+  'post-acute': [
+    { name: 'The map', slugs: ['what-is-paws'] },
+    { name: 'Specific symptoms', slugs: ['pink-cloud', 'dopamine-recovery', 'depression-and-anhedonia', 'impending-doom', 'sleep-recovery'] },
+    { name: 'Long view', slugs: ['kindling', 'long-term-outlook'] },
+  ],
+};
+
