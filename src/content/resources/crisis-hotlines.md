@@ -2,7 +2,7 @@
 title: "Crisis Hotlines"
 description: "Numbers for the moments that can't wait — suicide, medical emergency, treatment referrals, domestic violence, child abuse, poison control."
 category: "resources"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 1
 ---
 
@@ -21,7 +21,7 @@ someone who is. Call or text.
 - **Call or text:** [988](tel:988)
 - **Web:** [988lifeline.org](https://988lifeline.org)
 
-## 911 — Medical Emergency
+## 911, Medical Emergency
 
 For seizures, can't keep water down for 24+ hours, chest pain,
 suspected overdose, anything actively dangerous. Stop reading and
@@ -34,7 +34,7 @@ call.
 
 Free, confidential, 24/7. Real humans who will give you referrals
 based on your zip code and insurance. The single most useful number
-for finding treatment — if you call once in your whole search, this
+for finding treatment, if you call once in your whole search, this
 is the call.
 
 - **Call:** [1-800-662-4357](tel:18006624357)
@@ -73,11 +73,11 @@ If you're looking for ongoing treatment rather than crisis support,
 the SAMHSA helpline above is still a great starting point.
 Additionally:
 
-- [findtreatment.gov](https://findtreatment.gov) — federal treatment
+- [findtreatment.gov](https://findtreatment.gov), federal treatment
   locator searchable by zip, insurance, and substance.
-- [Withdrawal Help](/start-here/withdrawal-help) — our own page for
+- [Withdrawal Help](/start-here/withdrawal-help), our own page for
   what to do this hour if you're in active withdrawal.
-- [At-Home Treatment](/for-you/at-home-treatment) — the at-home path
+- [At-Home Treatment](/for-you/at-home-treatment), the at-home path
   this site is built around, including the four community-validated
   approaches.
 - [Rehabilitation Centers](/for-you/rehabilitation-centers) —

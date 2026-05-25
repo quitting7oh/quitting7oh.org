@@ -1,15 +1,15 @@
 ---
 title: "7-OH (7-Hydroxymitragynine)"
-description: "Concentrated 7-hydroxymitragynine — how it differs from kratom leaf, why dependence builds fast, and what makes it tapereable."
+description: "Concentrated 7-hydroxymitragynine, how it differs from kratom leaf, why dependence builds fast, and what makes it tapereable."
 category: "compounds"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 2
 ---
 
 > **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language before the pharmacology below.
 
-7-OH is the compound this site is named after — and the compound most
+7-OH is the compound this site is named after, and the compound most
 people here are trying to get off of. **It is an opioid.** Whatever the
 gas-station marketing says, whatever the "all-natural kratom alkaloid"
 framing implies, the practical reality is that 7-OH binds the mu-opioid
@@ -18,7 +18,7 @@ withdrawal when you stop.
 
 The good news, if there is good news: **7-OH's pharmacology is actually
 favorable for coming off it.** Short half-life, mu-dominant, fast
-clearance — the same things that make it easy to get hooked also make
+clearance, the same things that make it easy to get hooked also make
 it tapereable in days rather than weeks once you commit to stopping.
 
 ## What it is
@@ -30,7 +30,7 @@ the main alkaloid, dominates leaf at 40-66%. So 7-OH-as-it-exists-in-leaf
 is a minor character.
 
 What's sold as "7-OH" in tablet, shot, and liquid form is **concentrated
-or semi-synthetic 7-hydroxymitragynine** — extracted, isolated, or
+or semi-synthetic 7-hydroxymitragynine**, extracted, isolated, or
 synthesized to deliver doses far above anything achievable from leaf.
 A single 5–15 mg 7-OH tablet contains more 7-OH than several grams of
 leaf would. The marketing language ("kratom enhanced", "all-natural")
@@ -55,7 +55,7 @@ obscures this scale difference; the dependence reality doesn't.
 ### Plasma half-life
 
 **Roughly 100 minutes** (about 1 hour 40 minutes). This is short by
-opioid standards — close to immediate-release oxycodone, much shorter
+opioid standards, close to immediate-release oxycodone, much shorter
 than [MGM-15](/compounds/mgm15)'s ~15-hour half-life or methadone's
 24+ hours.
 
@@ -67,22 +67,22 @@ behavioral signature of a 7-OH habit.
 ## How it differs from kratom leaf
 
 Calling 7-OH "kratom" is technically true and practically misleading.
-The differences that actually matter:
+The differences that matter:
 
-| Property                       | Leaf kratom (mitragynine-dominant) | Concentrated 7-OH        |
+| Property | Leaf kratom (mitragynine-dominant) | Concentrated 7-OH |
 | ------------------------------ | ---------------------------------- | ------------------------ |
-| **Main active alkaloid**       | Mitragynine (~40-66% of leaf)      | 7-OH (isolated)          |
-| **µ-receptor binding affinity**| Modest (K<sub>i</sub> ~160-230 nM) | High (K<sub>i</sub> ~13-17 nM)  |
-| **µ-agonism efficacy**         | Low (E<sub>max</sub> ~34%)         | Substantially higher     |
-| **Serotonergic / adrenergic activity** | Significant (via minor alkaloids) | Minimal                  |
-| **Typical use cadence**        | Every 4-6 h, often less            | Every 3-6 h, often more  |
-| **Dependence trajectory**      | Slow                               | Fast (weeks to months)   |
-| **Withdrawal severity**        | Mild to moderate                   | Moderate to severe       |
-| **Withdrawal duration (acute)**| Several days                       | 5-10 days                |
-| **Bupe-induction profile**     | Straightforward                    | Straightforward (12-18 h) |
+| **Main active alkaloid** | Mitragynine (~40-66% of leaf) | 7-OH (isolated) |
+| **µ-receptor binding affinity**| Modest (K<sub>i</sub> ~160-230 nM) | High (K<sub>i</sub> ~13-17 nM) |
+| **µ-agonism efficacy** | Low (E<sub>max</sub> ~34%) | Substantially higher |
+| **Serotonergic / adrenergic activity** | Significant (via minor alkaloids) | Minimal |
+| **Typical use cadence** | Every 4-6 h, often less | Every 3-6 h, often more |
+| **Dependence trajectory** | Slow | Fast (weeks to months) |
+| **Withdrawal severity** | Mild to moderate | Moderate to severe |
+| **Withdrawal duration (acute)**| Several days | 5-10 days |
+| **Bupe-induction profile** | Straightforward | Straightforward (12-18 h) |
 
 The shorthand: **kratom leaf is to 7-OH roughly what poppy tea is to
-heroin** — same plant family, vastly different concentration and
+heroin**, same plant family, vastly different concentration and
 delivery. The pharmacology that makes 7-OH attractive (faster onset,
 stronger effect, smaller dose to carry around) is the same pharmacology
 that makes dependence form quickly.
@@ -97,15 +97,15 @@ alkaloids, so stepping down is a meaningful taper rather than a switch.
 Acute 7-OH withdrawal follows a recognizable opioid-withdrawal arc,
 compressed into days because of the short half-life:
 
-| Time since last dose | What's happening                                                       |
+| Time since last dose | What's happening |
 | -------------------- | ---------------------------------------------------------------------- |
-| **6-12 hours**       | First symptoms — anxiety, restlessness, sweating, runny nose, aches    |
-| **12-24 hours**      | Symptoms climb — diarrhea, chills, goosebumps, insomnia, cravings      |
-| **24-72 hours**      | **Peak** — body aches, restless legs, no sleep, profound discomfort    |
-| **Days 3-5**         | Symptoms start lifting; sleep returns in fragments                     |
-| **Week 2 onward**    | Acute mostly done; welcome to [PAWS](/post-acute/what-is-paws)         |
+| **6-12 hours** | First symptoms, anxiety, restlessness, sweating, runny nose, aches |
+| **12-24 hours** | Symptoms climb, diarrhea, chills, goosebumps, insomnia, cravings |
+| **24-72 hours** | **Peak**, body aches, restless legs, no sleep, profound discomfort |
+| **Days 3-5** | Symptoms start lifting; sleep returns in fragments |
+| **Week 2 onward** | Acute mostly done; welcome to [PAWS](/post-acute/what-is-paws) |
 
-The peak is genuinely awful but **time-limited**. Most people are
+The peak is awful but **time-limited**. Most people are
 through the worst by day 5, into "functional but drained" by day 7,
 and out of acute by week 2. The post-acute tail (PAWS) is its own
 chapter and is usually much more manageable than peak acute.
@@ -113,17 +113,17 @@ chapter and is usually much more manageable than peak acute.
 ### The serotonergic and adrenergic overlay
 
 7-OH itself isn't particularly active at serotonergic or adrenergic
-receptors — but the **concentrated kratom-derived products people
-actually use are rarely pure 7-OH**. Many are stacked with mitragynine,
+receptors, but the **concentrated kratom-derived products people
+use are rarely pure 7-OH**. Many are stacked with mitragynine,
 other minor alkaloids, or undisclosed compounds. Two of those minor
-alkaloids — paynantheine and speciogynine — bind 5-HT<sub>1A</sub> and
+alkaloids, paynantheine and speciogynine, bind 5-HT<sub>1A</sub> and
 5-HT<sub>2B</sub> receptors at low-nanomolar affinity
 ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)),
 and corynantheidine plus mitragynine bind α-1 and α-2 adrenergic
 receptors directly ([Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/);
 [Obeng et al., *Eur J Pharmacol* 2024](https://pubmed.ncbi.nlm.nih.gov/39111419/)).
 This is **direct receptor activity**, not SSRI/SNRI-style reuptake
-inhibition — but the resulting withdrawal symptom picture (brain zaps,
+inhibition, but the resulting withdrawal symptom picture (brain zaps,
 wired-but-exhausted feeling, autonomic instability) looks a lot like
 SSRI/SNRI discontinuation because the same receptor families are
 involved. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
@@ -144,10 +144,10 @@ what makes coming off it relatively clean:
   component left dangling (unlike [MGM-15](/compounds/mgm15)) and no
   unusually-tight binding that fights bupe induction (unlike
   [pseudo](/compounds/pseudo)).
-- **Predictable bupe-induction window** — COWS ≥ 12 usually arrives
+- **Predictable bupe-induction window**: COWS ≥ 12 usually arrives
   12-18 hours after last dose, which fits well into a same-day
   telehealth Suboxone appointment.
-- **Short receptor adaptation** — because dependence on 7-OH typically
+- **Short receptor adaptation**: because dependence on 7-OH typically
   develops over months (not years), the underlying receptor changes
   are less entrenched than they are with long-term full-agonist use.
 
@@ -164,26 +164,26 @@ rather than the clinical-default 16-24 mg.
 
 7-OH shows up in retail under a few names and formats:
 
-- **Tablets / "7s"** — typically 5-15 mg per tablet, often marketed
+- **Tablets / "7s"**: typically 5-15 mg per tablet, often marketed
   as "tianeptine-free" or "kratom enhanced". The dominant gas-station
   format.
-- **Liquid shots** — 1-2 oz bottles labeled by mg or by "potency",
+- **Liquid shots**: 1-2 oz bottles labeled by mg or by "potency",
   often inconsistent between batches.
-- **"[Pseudo](/compounds/pseudo)" tablets and shots** — these are
+- **"[Pseudo](/compounds/pseudo)" tablets and shots**: these are
   [mitragynine pseudoindoxyl (MP)](/compounds/pseudo), a different
   compound that binds even tighter than buprenorphine. Sometimes
   labeled or co-marketed with 7-OH; the pharmacology is different
   enough that you need to know which you've been on.
-- **Stacked products** — combinations of 7-OH, mitragynine,
+- **Stacked products**: combinations of 7-OH, mitragynine,
   [pseudoindoxyl](/compounds/pseudo), and sometimes
   [MGM-15](/compounds/mgm15) or
   [MIT-A/DHM](/compounds/mit-a-dhm). The label may say "kratom
-  extract" and tell you nothing about what's actually in it.
-- **Raw 7-OH powder** — less common in retail; more common in
+  extract" and tell you nothing about what's in it.
+- **Raw 7-OH powder**: less common in retail; more common in
   enthusiast communities. Tends to be the most concentrated form.
 
 **If you're not sure what you've been on, that's important to figure
-out before induction** — the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
+out before induction**, the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
 [pseudo](/compounds/pseudo)) have different timelines and different induction-window
 requirements. See the half-life table in
 [COWS & SOWS Guide](/mat-suboxone/suboxone-cows).
@@ -193,26 +193,26 @@ requirements. See the half-life table in
 Retail 7-OH marketing tends toward a recurring set of claims, most of
 which don't survive the pharmacology:
 
-- *"Non-addictive"* — false. The dependence profile is opioid-class.
+- *"Non-addictive"*, false. The dependence profile is opioid-class.
   The withdrawal profile is opioid-class. The receptor mechanism is
   opioid-class.
-- *"All-natural / just kratom"* — technically the molecule exists in
+- *"All-natural / just kratom"*, technically the molecule exists in
   the plant, but the concentrations sold retail are orders of magnitude
   beyond what leaf delivers. Calling a 15 mg 7-OH tablet "natural"
   because the alkaloid is plant-derived is the same argument as
   calling pure morphine "natural" because poppies make it.
-- *"Safer than opioids"* — 7-OH is an opioid. The "safer" claim usually
+- *"Safer than opioids"*, 7-OH is an opioid. The "safer" claim usually
   rests on the ceiling-effect-at-the-receptor argument, which has some
   truth at high doses but doesn't change the dependence and withdrawal
   trajectory at typical use levels.
-- *"Doesn't cause respiratory depression"* — disputed. Pure mitragynine
+- *"Doesn't cause respiratory depression"*, disputed. Pure mitragynine
   in animal models has shown a respiratory ceiling effect, but real-world
   products are not pure mitragynine, are often stacked with other
   alkaloids, and are frequently combined by users with alcohol, benzos,
-  or other depressants — any of which restores respiratory-depression
+  or other depressants, any of which restores respiratory-depression
   risk. Get Narcan. See
   [For Loved Ones](/for-loved-ones/start-here) for more.
-- *"FDA approved" / "Doctor recommended"* — almost always not true.
+- *"FDA approved" / "Doctor recommended"*, almost always not true.
   Trace mitragynine appears in some research contexts, but no
   concentrated 7-OH product has FDA approval as of this writing.
 
@@ -220,21 +220,21 @@ which don't survive the pharmacology:
 
 Four real paths people in this community have used:
 
-1. **Cold turkey with helper meds and supplements** — works for many
+1. **Cold turkey with helper meds and supplements**, works for many
    people on short-acting 7-OH at moderate doses.
    [Helper Medications](/other-tools/helper-meds-info) and
    [Vitamins & Supplements](/other-tools/vitamins-supplements).
-2. **Suboxone short taper** — the community's most common path for
+2. **Suboxone short taper**, the community's most common path for
    7-OH dependence specifically. 5-14 days, structured, low-and-slow
    induction. [Suboxone](/mat-suboxone/suboxone-info) is the
    overview.
-3. **SR-17018** — an informal, non-prescription taper tool some people
+3. **SR-17018**, an informal, non-prescription taper tool some people
    in this community have used to come off 7-OH. It's still an opioid
    and there's no clinical literature on humans, but the duration and
    usage pattern make it easier to step down from than 7-OH itself
    for some users. See [SR-17018](/other-tools/sr17018-info)
    for the community protocol and the real risks.
-4. **Plain kratom-leaf taper** — a planned, deliberate protocol that
+4. **Plain kratom-leaf taper**, a planned, deliberate protocol that
    uses leaf as a stepdown from concentrated 7-OH. Not for everyone,
    not for everyone's dose level, and not a rescue strategy during
    acute withdrawal. See
@@ -247,14 +247,14 @@ position end up.
 
 ## Further reading
 
-- [Kruegel AC, Grundmann O — Medicinal chemistry and neuropharmacology of kratom](https://pubmed.ncbi.nlm.nih.gov/29033098/)
-  — the canonical review.
-- [Váradi A et al — Mitragynine/corynantheidine pseudoindoxyl as a discovery platform for opioids with reduced side effects](https://pubmed.ncbi.nlm.nih.gov/27434260/)
-  — receptor-pharmacology context.
-- [León F, Obeng S et al — 7-Hydroxymitragynine in Mitragyna speciosa](https://pubmed.ncbi.nlm.nih.gov/33983021/)
-  — alkaloid context.
-- [Wilson LL et al — Optimization of the 7-hydroxymitragynine scaffold](https://pubmed.ncbi.nlm.nih.gov/33760579/)
-  — semi-synthetic derivative work.
+- [Kruegel AC, Grundmann O, Medicinal chemistry and neuropharmacology of kratom](https://pubmed.ncbi.nlm.nih.gov/29033098/)
+ , the canonical review.
+- [Váradi A et al, Mitragynine/corynantheidine pseudoindoxyl as a discovery platform for opioids with reduced side effects](https://pubmed.ncbi.nlm.nih.gov/27434260/)
+ , receptor-pharmacology context.
+- [León F, Obeng S et al, 7-Hydroxymitragynine in Mitragyna speciosa](https://pubmed.ncbi.nlm.nih.gov/33983021/)
+ , alkaloid context.
+- [Wilson LL et al, Optimization of the 7-hydroxymitragynine scaffold](https://pubmed.ncbi.nlm.nih.gov/33760579/)
+ , semi-synthetic derivative work.
 - [Kratom withdrawal timeline (clinical summary)](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/).
 
 > **Reminder:** 7-OH is an opioid. Treat it as one, both in terms of

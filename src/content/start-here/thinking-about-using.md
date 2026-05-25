@@ -2,12 +2,12 @@
 title: "Thinking About Using? (The Fuck Its)"
 description: "You're considering using again right now. Here's the one thing to do first, the people to call, and what to know about post-abstinence tolerance."
 category: "start-here"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 5
 ---
 
 You're here because you're thinking about using. Not because you wanted
-to — because the urge crept up and now it's loud.
+to, because the urge crept up and now it's loud.
 
 **That feeling has a name.** The community calls it **the "fuck its."**
 It's a real, known craving state, and it doesn't mean you're failing.
@@ -16,7 +16,7 @@ You're here, reading this. That counts.
 ## One thing first
 
 **Stop reading this in 60 seconds and text or call one person.** Not to
-confess, not to ask permission to use — just to say:
+confess, not to ask permission to use, just to say:
 
 > *Hey, I'm having a rough one. Can we talk for ten minutes?*
 
@@ -29,25 +29,23 @@ right now.
 
 If you're past a craving and into something more urgent, the right numbers:
 
-- **[988 Suicide & Crisis Lifeline](https://988lifeline.org)** —
-  call or text **988**. 24/7. English and Spanish.
-- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)** —
-  **1-800-662-4357**. Free, confidential, 24/7. Real humans, treatment
+- **[988 Suicide & Crisis Lifeline](https://988lifeline.org)**: call or text **988**. 24/7. English and Spanish.
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)**: **1-800-662-4357**. Free, confidential, 24/7. Real humans, treatment
   referrals.
-- **[Never Use Alone](https://neverusealone.com)** — **1-800-484-3731**.
+- **[Never Use Alone](https://neverusealone.com)**: **1-800-484-3731**.
   If you've decided to use and can't talk yourself out of it, this
   line stays on the call with you and sends EMS if you stop
   responding.
 
 Calling one of these is not a failure. It's the right move. More
-numbers — Poison Control, DV Hotline, Childhelp — on
+numbers, Poison Control, DV Hotline, Childhelp, on
 [Crisis Hotlines](/resources/crisis-hotlines) or the Crisis button
 in the corner of any page.
 
 ## What this feeling is
 
 The "fuck its" aren't the same as an early-withdrawal craving. Early
-cravings feel physical — your body is loud, you know what it wants,
+cravings feel physical, your body is loud, you know what it wants,
 and you know you're white-knuckling it. The "fuck its" are different.
 They're quieter. They feel like clarity.
 
@@ -62,12 +60,12 @@ use." It says some version of:
 
 Notice how reasonable each of those sounds. **That's the trick.** A
 craving you can recognize as a craving is easy to refuse. The "fuck
-its" don't feel like a craving — they feel like you finally seeing
+its" don't feel like a craving, they feel like you finally seeing
 clearly. That's why they're more dangerous than the screaming-physical
 kind. The brain is finding plausible-sounding reasons because it wants
 the thing.
 
-They spike when a few specific things stack up — usually some
+They spike when a few specific things stack up, usually some
 combination of **HALT** (hungry, angry, lonely, tired) plus a
 conditioned trigger (a smell, a place, a time of day, a stressful
 conversation), often in a [PAWS](/post-acute/what-is-paws) wave.
@@ -81,9 +79,9 @@ the techniques below.
 
 In order. **Real humans first. Digital community is the fallback.**
 
-1. **Someone in your house** — partner, roommate, family. Don't text
+1. **Someone in your house**, partner, roommate, family. Don't text
    from the next room. Walk in.
-2. **A neighbor or friend you can physically get to** — drive over,
+2. **A neighbor or friend you can physically get to**, drive over,
    walk over, show up.
 3. **A meeting, today** —
    [SMART Recovery meetings](https://meetings.smartrecovery.org/meetings/)
@@ -92,18 +90,18 @@ In order. **Real humans first. Digital community is the fallback.**
 4. **A phone call to a human who knows you.** Texting doesn't activate
    the same parts of your brain. Call.
 5. **A phone call to a helpline.** The three numbers above.
-6. **Text a human who knows you** — if a call is genuinely impossible
+6. **Text a human who knows you**, if a call is impossible
    right now.
-7. **Online community** — the
+7. **Online community**, the
    [Discord](https://discord.gg/quitting7oh) `#sos` channel, the
    [r/quittingkratom](https://www.reddit.com/r/quittingkratom/) and
    [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) subreddits.
    These are real people, but they're the **fallback**, not the first
-   move — async text in a feed doesn't substitute for a voice.
+   move, async text in a feed doesn't substitute for a voice.
 
 ## While you wait
 
-Things you can do in the next ten minutes that will actually move the
+Things you can do in the next ten minutes that will move the
 needle:
 
 - **The 10-minute rule.** Tell yourself you can use in 10 minutes, not
@@ -130,21 +128,21 @@ next wave wins. The longer version needs a different toolkit.
   they can anchor you to it later when you're not. The script is
   roughly: *"I'm in a rough one tonight. I'm not going to use. If I
   message you later sounding casual about it or saying I've changed
-  my mind, that's the craving talking — push back and remind me
+  my mind, that's the craving talking, push back and remind me
   what I said right now."* The choice becomes structural rather
   than something you have to re-win every hour.
 - **Change your environment.** Same-place fuck its are partly
   conditioned triggers (a couch, a parking lot, a drawer, the route
   home from work). A long walk, a drive, a visit to family, a coffee
-  shop you don't usually go to — relocation does work that more time
+  shop you don't usually go to, relocation does work that more time
   at home doesn't.
 - **Plan the rest of the day, not the next ten minutes.** Sustained
   cravings respond to filled time. Make actual plans: dinner with
   someone, a meeting, an errand, a movie at a specific theater at a
   specific showtime. Empty time is when the loop wins.
 - **Sleep through it if you can.** Fuck its often peak in the evening
-  or overnight, when defenses are lowest. Going to bed early — with a
-  prescribed sleep med if you have one — moves you past it.
+  or overnight, when defenses are lowest. Going to bed early, with a
+  prescribed sleep med if you have one, moves you past it.
   Tomorrow-you is usually more resourced than tonight-you.
 - **A long call or an in-person hangout, not a text thread.** A
   sustained wave needs a sustained connection. 60–90 minutes of
@@ -152,7 +150,7 @@ next wave wins. The longer version needs a different toolkit.
 - **Get to a meeting today.**
   [SMART Recovery](https://meetings.smartrecovery.org/meetings/)
   and [NA](https://www.na.org/meetingsearch/) both run multiple
-  meetings daily — online and in person. A meeting that starts in
+  meetings daily, online and in person. A meeting that starts in
   three hours is a time anchor bigger than any timer.
 - **Reach a prescriber if this has been loud for days, not hours.**
   Persistent loud cravings past acute withdrawal are information.
@@ -177,15 +175,15 @@ of you before you need it.
 
 Cravings cluster predictably:
 
-- **Acute withdrawal** (week 1) — your brain wants the thing it
+- **Acute withdrawal** (week 1), your brain wants the thing it
   adapted to. See [Withdrawal Help](/start-here/withdrawal-help).
-- **Sub-acute (weeks 2–4)** — sleep is broken, mood swings, anhedonia
+- **Sub-acute (weeks 2–4)**: sleep is broken, mood swings, anhedonia
   starting to lift but not gone. Highest-risk window for many people.
-- **[PAWS](/post-acute/what-is-paws), months 1–6** — waves less
+- **[PAWS](/post-acute/what-is-paws), months 1–6**: waves less
   constant, can hit harder;
   [anhedonia](/post-acute/depression-and-anhedonia) and conditioned
   triggers do most of the work.
-- **Late PAWS (6+ months)** — waves are shorter and farther apart. A
+- **Late PAWS (6+ months)**: waves are shorter and farther apart. A
   wave here is **not regression**. It's a wave. Don't let the surprise
   of it talk you into anything.
 
@@ -196,7 +194,7 @@ lifting, see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-wor
 
 A few things that are documented, with sources:
 
-- **Relapse is common in early recovery — exactly how common is
+- **Relapse is common in early recovery, exactly how common is
   disputed.** [NIDA's widely-cited 40–60% figure](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery)
   is a long-term, chronic-illness-comparable rate (compared to
   hypertension and asthma at 50–70%). **Early-window cohort
@@ -207,7 +205,7 @@ A few things that are documented, with sources:
   with 59% relapsing in the first week post-discharge**. The exact
   numbers vary by substance, population, treatment setting, and how
   "relapse" is defined. **In the first weeks and months, relapse is
-  genuinely common. It doesn't mean treatment failed; it means
+  common. It doesn't mean treatment failed; it means
   treatment needs to be adjusted or resumed.**
 - **Kratom-specific relapse data barely exists.** The 2023 scientific
   expert forum on kratom withdrawal
@@ -227,15 +225,15 @@ Reading this after a slip, not before? **You haven't lost everything.**
 A return to use doesn't erase the work that got you the abstinence in
 the first place. The neurobiology of recovery doesn't reset to zero.
 
-If withdrawal symptoms are returning faster than you expected — within
-hours, by morning — that's a documented pattern, not a sign you're
+If withdrawal symptoms are returning faster than you expected, within
+hours, by morning, that's a documented pattern, not a sign you're
 back at day one. **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**
 covers why it happens and what it means.
 
 **The one safety thing to know:**
 
 > **Don't mix.** The real fatal pattern in kratom-adjacent deaths
-> is **combinations** — mixing with **alcohol, benzodiazepines,
+> is **combinations**: mixing with **alcohol, benzodiazepines,
 > gabapentinoids, or other depressants**. That's what kills people.
 > Other kratom-derived synthetics
 > ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
@@ -249,7 +247,7 @@ covers why it happens and what it means.
 > responding.
 
 Next step that makes sense: get back in touch with your prescriber,
-return to your taper plan, or — if you didn't have one — see the
+return to your taper plan, or, if you didn't have one, see the
 [Telehealth Providers](/resources/telehealth) page for getting a
 prescriber who works with kratom and 7-OH cases.
 
@@ -262,6 +260,6 @@ your phone too. Future you will thank present you.
 ---
 
 > **One more time:** this is community information, not medical
-> advice. If you're trying to get back on track after a slip — or
-> trying to stay on track right now — talk to a qualified prescriber
+> advice. If you're trying to get back on track after a slip, or
+> trying to stay on track right now, talk to a qualified prescriber
 > who knows your situation.

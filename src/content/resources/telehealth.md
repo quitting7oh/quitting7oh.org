@@ -2,7 +2,7 @@
 title: "Telehealth Providers for Suboxone (Comparison)"
 description: "Neutral, fact-checked comparison of telehealth providers that prescribe buprenorphine for opioid use disorder, including those who explicitly treat kratom and 7-OH dependence."
 category: "resources"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 2
 ---
 
@@ -20,7 +20,7 @@ sort: 2
 ## Why telehealth at all
 
 **Buprenorphine is one of several options** people in this community
-use to come off [7-OH](/compounds/7-oh) and kratom synthetics — others
+use to come off [7-OH](/compounds/7-oh) and kratom synthetics, others
 include [SR-17](/other-tools/sr17018-info),
 [tapering with leaf kratom](/other-tools/tapering-with-leaf), and
 cold-turkey with [helper meds](/other-tools/helper-meds-info). This
@@ -32,12 +32,12 @@ weighing approaches in general, [Start Here](/start-here/welcome) and
 the [Compounds](/compounds) section are the broader picture.
 
 > **Naltrexone (LDN, ULDN, Vivitrol) is not a path off opioids.**
-> It's an opioid antagonist — taking it while there are still opioids
+> It's an opioid antagonist, taking it while there are still opioids
 > on your receptors will trigger immediate, severe precipitated
 > withdrawal. [LDN](/other-tools/naltrexone-low-dose) and
 > [ULDN](/other-tools/naltrexone-ultra-low-dose) come in **after**
 > acute withdrawal as recovery support for the endorphin system. Don't
-> let any provider — telehealth or otherwise — start you on naltrexone
+> let any provider, telehealth or otherwise, start you on naltrexone
 > before you're at least 7–10 days fully opioid-free. See
 > [Naltrexone (Overview)](/other-tools/naltrexone) for the full picture.
 
@@ -58,17 +58,17 @@ can offer. This page only covers the telehealth side.
 
 | Provider | States | Initial / follow-up | Insurance | Primary MOUD | Kratom-specific content |
 |---|---|---|---|---|---|
-| [Bicycle Health](#bicycle-health) | 27 (per their locations page) | Bundled — $249/mo self-pay | Yes — UHC, Anthem, Aetna, BCBS, Cigna, Medicare | Buprenorphine/naloxone | Educational blog only |
-| [Boulder Care](#boulder-care) | 7 (CO, MI, NM, NC, OH, OR, WA) | Insurance / self-pay (price not published) | Yes — broad Medicaid by state + commercial | Buprenorphine/naloxone | **Yes — kratom + 7-OH** ([blog by MD](https://www.boulder.care/blog/what-is-kratom)) |
-| [Bright Heart Health](#bright-heart-health) | ~7 confirmed | $300 initial / $740 monthly self-pay (one state LP) | Yes — Medicaid + commercial | Buprenorphine ± naloxone | None found |
-| [Confidant Health](#confidant-health) | 4 clinical (CT, VA, TX, FL) | Sliding-scale "pay-what-you-can" (not published) | Yes — Aetna, Cigna, Anthem, UHC, Humana, Medicare, Medicaid | Buprenorphine/naloxone | One educational article |
-| [Eleanor Health](#eleanor-health) | 19 (hybrid with clinics in 5) | ~$249/mo self-pay (secondary source) | Yes — Aetna, UHC, BCBS, Cigna, select Medicaid | Buprenorphine/naloxone | Educational blog only |
-| [Groups Recover Together](#groups-recover-together) | 14 (incl. **KY, TN**) | $50/wk self-pay (ME/NH only published) | Yes — broad, varies by state; some Medicaid | Buprenorphine/naloxone | One educational blog post |
-| [Ophelia](#ophelia) | 15 | $245/mo self-pay (bundled) | Yes — broad, varies by state; many Medicaid | Buprenorphine/naloxone | **Yes — kratom + 7-OH** ([blog](https://ophelia.com/blog/suboxone-vs-kratom-vs-7-oh)) |
+| [Bicycle Health](#bicycle-health) | 27 (per their locations page) | Bundled, $249/mo self-pay | Yes, UHC, Anthem, Aetna, BCBS, Cigna, Medicare | Buprenorphine/naloxone | Educational blog only |
+| [Boulder Care](#boulder-care) | 7 (CO, MI, NM, NC, OH, OR, WA) | Insurance / self-pay (price not published) | Yes, broad Medicaid by state + commercial | Buprenorphine/naloxone | **Yes, kratom + 7-OH** ([blog by MD](https://www.boulder.care/blog/what-is-kratom)) |
+| [Bright Heart Health](#bright-heart-health) | ~7 confirmed | $300 initial / $740 monthly self-pay (one state LP) | Yes, Medicaid + commercial | Buprenorphine ± naloxone | None found |
+| [Confidant Health](#confidant-health) | 4 clinical (CT, VA, TX, FL) | Sliding-scale "pay-what-you-can" (not published) | Yes, Aetna, Cigna, Anthem, UHC, Humana, Medicare, Medicaid | Buprenorphine/naloxone | One educational article |
+| [Eleanor Health](#eleanor-health) | 19 (hybrid with clinics in 5) | ~$249/mo self-pay (secondary source) | Yes, Aetna, UHC, BCBS, Cigna, select Medicaid | Buprenorphine/naloxone | Educational blog only |
+| [Groups Recover Together](#groups-recover-together) | 14 (incl. **KY, TN**) | $50/wk self-pay (ME/NH only published) | Yes, broad, varies by state; some Medicaid | Buprenorphine/naloxone | One educational blog post |
+| [Ophelia](#ophelia) | 15 | $245/mo self-pay (bundled) | Yes, broad, varies by state; many Medicaid | Buprenorphine/naloxone | **Yes, kratom + 7-OH** ([blog](https://ophelia.com/blog/suboxone-vs-kratom-vs-7-oh)) |
 | [Pelago](#pelago) | Employer benefit only | Covered by employer/health plan; **no direct consumer signup** | Via partner plan | Buprenorphine/naloxone | None found |
-| [PursueCare](#pursuecare) | 6 clinical (incl. **KY**) | $50+/session self-pay | Yes — "most" insurance + state Medicaid | Buprenorphine/naloxone + Subutex | **Yes — kratom + 7-OH** (page; protocols "still developing") |
-| [QuickMD](#quickmd) | 41 + DC for addiction | $99 / $99 cash-pay | **No — cash-pay only** | Buprenorphine/naloxone (Subutex by exception) | **Yes — kratom + 7-OH** (multiple [articles](https://www.quick.md/quick-tips/kratom-7oh/)) |
-| [Workit Health](#workit-health) | 14 | Not published on site (~$300/mo per secondary source) | Yes — Aetna, BCBS, Cigna, UHC, Humana, Oscar, Medicare, select Medicaid | Buprenorphine/naloxone, naltrexone | **Yes — kratom + 7-OH** ([page](https://www.workithealth.com/kratom/)) |
+| [PursueCare](#pursuecare) | 6 clinical (incl. **KY**) | $50+/session self-pay | Yes, "most" insurance + state Medicaid | Buprenorphine/naloxone + Subutex | **Yes, kratom + 7-OH** (page; protocols "still developing") |
+| [QuickMD](#quickmd) | 41 + DC for addiction | $99 / $99 cash-pay | **No, cash-pay only** | Buprenorphine/naloxone (Subutex by exception) | **Yes, kratom + 7-OH** (multiple [articles](https://www.quick.md/quick-tips/kratom-7oh/)) |
+| [Workit Health](#workit-health) | 14 | Not published on site (~$300/mo per secondary source) | Yes, Aetna, BCBS, Cigna, UHC, Humana, Oscar, Medicare, select Medicaid | Buprenorphine/naloxone, naltrexone | **Yes, kratom + 7-OH** ([page](https://www.workithealth.com/kratom/)) |
 
 ## If you're in Kentucky or Tennessee
 
@@ -81,7 +81,7 @@ states follow. Realistic options as of 2026-05-24:
   (virtual) and [PursueCare](#pursuecare) (clinical).
 - **Tennessee:** [Groups Recover Together](#groups-recover-together)
   (virtual). [Pelago](#pelago) may be available **only** if it's
-  contracted through your employer or health plan — no direct
+  contracted through your employer or health plan, no direct
   consumer signup.
 
 If neither fits, the local-clinic path through
@@ -100,7 +100,7 @@ If neither fits, the local-clinic path through
 lists 27 states: AZ, CA, CO, CT, DE, FL, ID, IL, IA, ME, MD, MI, MN,
 MT, NE, NV, NM, NC, ND, OR, PA, SD, TX, VA, WA, WI, WY. A separate
 state-coverage page returned a shorter 18-state list on the same date
-(internal contradiction — confirm your state directly).
+(internal contradiction, confirm your state directly).
 
 **Treatment model.** Long-term maintenance on buprenorphine/naloxone
 (Suboxone) with progressively-less-frequent visits. The
@@ -108,7 +108,7 @@ state-coverage page returned a shorter 18-state list on the same date
 bundles "Doctor's visits, unlimited instant messaging, care navigation,
 online therapy groups" into one monthly fee. Recent BBB and app-store
 reviews report a current requirement of weekly or near-weekly groups
-on top of medication visits — patient-reported, not in the published
+on top of medication visits, patient-reported, not in the published
 policy.
 
 **Medications.** Buprenorphine/naloxone is the only MOUD their site
@@ -119,7 +119,7 @@ not listed.
 **Cost.** Self-pay **$249/month** (bundled). Medication separate:
 "$0–150 per month" depending on insurance.
 
-**Insurance.** Yes — UnitedHealthcare, Anthem, Aetna, Blue Cross Blue
+**Insurance.** Yes, UnitedHealthcare, Anthem, Aetna, Blue Cross Blue
 Shield, Cigna, Medicare named on the homepage. Per-state subpages
 list Medicaid coverage where applicable.
 
@@ -137,7 +137,7 @@ list Medicaid coverage where applicable.
 **Kratom / 7-OH.** Educational [blog posts](https://www.bicyclehealth.com/blog/what-is-kratom-how-does-kratom-work)
 discuss kratom and mention 7-hydroxymitragynine as one of kratom's two
 psychoactive compounds. **No kratom-specific clinical protocol
-published** — kratom users would be folded into the standard
+published**, kratom users would be folded into the standard
 buprenorphine program.
 
 **Notable issues.** No regulatory action surfaced. The BBB rating and
@@ -147,11 +147,11 @@ lawsuit, FTC action, or news investigation that we could find.
 
 ## Boulder Care
 
-> "Online addiction care — on your terms" ([boulder.care](https://boulder.care/),
+> "Online addiction care, on your terms" ([boulder.care](https://boulder.care/),
 > accessed 2026-05-24).
 
-**States.** 7 — Colorado, Michigan, New Mexico, North Carolina, Ohio,
-Oregon, Washington — per the
+**States.** 7, Colorado, Michigan, New Mexico, North Carolina, Ohio,
+Oregon, Washington, per the
 [Eligibility & Insurance page](https://boulder.care/eligibility-and-insurance).
 
 **Treatment model.** Telehealth-first, video-and-chat with a care
@@ -159,7 +159,7 @@ team that includes Peer Recovery Specialists (people with lived
 experience), case managers, and care navigators. Counseling-like
 peer support is included; in-house licensed therapy is not advertised.
 
-**Medications.** Buprenorphine — primarily Suboxone — for OUD;
+**Medications.** Buprenorphine, primarily Suboxone, for OUD;
 naltrexone and acamprosate (Campral) for alcohol use disorder. Site
 is silent on adjunct comfort meds (clonidine, gabapentin, hydroxyzine,
 etc.).
@@ -169,7 +169,7 @@ checker rather than listing self-pay rates. The Eligibility & Insurance
 page mentions an "affordable self-pay option in select states" without
 a specific number.
 
-**Insurance.** Yes — **broad Medicaid coverage by state** is their
+**Insurance.** Yes, **broad Medicaid coverage by state** is their
 distinguishing trait. Per their eligibility page (verbatim, 2026-05-24):
 - **Colorado:** CCHA, Health First Colorado, Medicare Colorado,
   Wellcare.
@@ -193,11 +193,11 @@ distinguishing trait. Per their eligibility page (verbatim, 2026-05-24):
 - **BBB:** no profile located for the telehealth company.
 - **Trustpilot:** no profile located.
 
-**Kratom / 7-OH.** **Yes — explicit.** A
+**Kratom / 7-OH.** **Yes, explicit.** A
 [2026 blog post](https://www.boulder.care/blog/what-is-kratom),
 "What is Kratom? Understanding its Uses and Risks," features clinical
 guidance from Dr. Shannon Boustead, MD (Boulder Care addiction
-medicine). The post addresses 7-OH directly — Boustead is quoted that
+medicine). The post addresses 7-OH directly, Boustead is quoted that
 "kratom is often sold in a synthetic form called '7-OH,' and there's
 no reliable way to verify the dose," and that **"naloxone fully
 reverses 7-OH toxicity, because 7-OH acts like a classical opioid."**
@@ -211,7 +211,7 @@ breach disclosures surfaced.
 
 > "Telemedicine for addiction, pain, or eating disorder regardless of
 > location, schedule, or finances" ([brighthearthealth.com](https://www.brighthearthealth.com/),
-> accessed via search 2026-05-24 — their site sits behind Imperva so
+> accessed via search 2026-05-24, their site sits behind Imperva so
 > direct page fetches were blocked).
 
 **States.** State-specific pages confirmed for at least California,
@@ -225,19 +225,19 @@ current accreditation status not re-verified). Counseling, case
 management, and drug screening are bundled into the MAT program.
 
 **Medications.** Buprenorphine/naloxone (Suboxone), buprenorphine
-mono (Subutex), and oral naltrexone — per a
+mono (Subutex), and oral naltrexone, per a
 [Treatment Atlas listing](https://www.treatmentatlas.org/facility/bright-heart-health-inc-1).
 **Vivitrol (long-acting naltrexone) and methadone are not offered.**
 
 **Cost.** **$300 initial / $740 monthly** self-pay, sourced from one
-state-specific landing page (the New Mexico painkiller LP) — whether
+state-specific landing page (the New Mexico painkiller LP), whether
 this pricing applies uniformly across all states/programs is not
 confirmed.
 
-**Insurance.** Yes — Medicaid, Medicare, and commercial. Carriers
+**Insurance.** Yes, Medicaid, Medicare, and commercial. Carriers
 include Aetna, Anthem, Cigna, Humana, BCBS, Molina, WellCare, Highmark,
 Presbyterian, UnitedHealthcare, and Magellan. Medicaid acceptance is
-named in New Mexico, Tennessee, and Michigan in one source — but
+named in New Mexico, Tennessee, and Michigan in one source, but
 state-by-state Medicaid plan lists were not published.
 
 **Reviews & complaints.**
@@ -254,7 +254,7 @@ state-by-state Medicaid plan lists were not published.
 
 **Notable issues.** A **putative class action** —
 *N. v. Bright Heart Health, Inc.*, case no. 3:24-cv-02112,
-N.D. Cal., filed April 8, 2024 — is pending. Specific allegations and
+N.D. Cal., filed April 8, 2024, is pending. Specific allegations and
 status are not publicly visible without PACER. Source:
 [Law360 case summary](https://www.law360.com/cases/661478b9c1356c00b17e22de)
 (accessed 2026-05-24).
@@ -265,8 +265,8 @@ status are not publicly visible without PACER. Source:
 > real outcomes" ([confidanthealth.com](https://www.confidanthealth.com/),
 > accessed 2026-05-24).
 
-**States.** **4 clinical states** — Connecticut, Virginia, Texas,
-Florida — per their [locations page](https://www.confidanthealth.com/locations).
+**States.** **4 clinical states**, Connecticut, Virginia, Texas,
+Florida, per their [locations page](https://www.confidanthealth.com/locations).
 Digital resources, recovery coaching, and groups are available
 nationwide; **medication services are not.**
 
@@ -289,7 +289,7 @@ amounts are shown to the user in-app at booking.
 **Insurance.** Yes. Named carriers: Aetna, Cigna, Anthem,
 UnitedHealthcare, Humana, Medicare, Medicaid (subsets per page).
 One app-store reviewer reports the Virginia Optima Medicaid MCO is
-not accepted — unverified against an official list.
+not accepted, unverified against an official list.
 
 **Reviews & complaints.**
 - **App Store:** 4.4 / 5 across 69 ratings (small sample).
@@ -322,7 +322,7 @@ is open at Ahdoot & Wolfson, PC.
 **States.** 19 states listed on the homepage: AZ, CO, FL, GA, ID, IL,
 LA, MA, MO, MT, NJ, NM, NC, OH, OK, PA, TX, WA, WI. Eleanor has
 **physical clinics** in a subset (Durham NC, Hickory NC, Mooresville
-NC, Baton Rouge LA, San Antonio TX, Seattle WA, Verona NJ) — the
+NC, Baton Rouge LA, San Antonio TX, Seattle WA, Verona NJ), the
 homepage's "fully online" framing under-communicates the hybrid model.
 
 **Treatment model.** MAT + therapy + peer support / recovery coaching.
@@ -337,12 +337,12 @@ plus buprenorphine, naltrexone, and Vivitrol per secondary sources.
 Methadone is not mentioned (telehealth methadone requires an OTP).
 
 **Cost.** Eleanor's own pricing page returned 404 on 2026-05-24.
-Secondary sources cite **~$249/month** for the MAT program — treat
+Secondary sources cite **~$249/month** for the MAT program, treat
 as unverified against current Eleanor copy.
 
-**Insurance.** Yes — Aetna, UnitedHealthcare/Optum, BCBS, Cigna,
+**Insurance.** Yes, Aetna, UnitedHealthcare/Optum, BCBS, Cigna,
 Horizon, Oscar, Oxford, Ambetter, Wellpoint, select Medicare; Medicaid
-acceptance in LA, MA, NJ, NC, OH, TX (per secondary source — confirm
+acceptance in LA, MA, NJ, NC, OH, TX (per secondary source, confirm
 with Eleanor).
 
 **Reviews & complaints.**
@@ -395,7 +395,7 @@ April 28, 2025, per their
 [self-pay policy post](https://joingroups.com/self-pay-policy-at-groups/).
 Self-pay rates in other states are not posted.
 
-**Insurance.** Yes — Aetna, Anthem, Ambetter, BCBS, CareSource,
+**Insurance.** Yes, Aetna, Anthem, Ambetter, BCBS, CareSource,
 Cigna, Humana, Harvard Pilgrim, AmeriHealth Caritas NH, WellPoint,
 plus UHC and Optum per search snippets. Medicaid acceptance is
 state-by-state. ([Insurance page](https://joingroups.com/insurance/).)
@@ -408,7 +408,7 @@ state-by-state. ([Insurance page](https://joingroups.com/insurance/).)
   profiles exist.
 - **Trustpilot:** no profile.
 - Employee-side Glassdoor mentions 2026 layoffs and "lack of strategy
-  and direction" — relevant only as context for organizational stability.
+  and direction", relevant only as context for organizational stability.
 
 **Kratom / 7-OH.** One blog post —
 [Can You Take Kratom With Suboxone?](https://joingroups.com/can-you-take-kratom-with-suboxone-explaining-potential-dangers/) —
@@ -423,16 +423,16 @@ check-ins.
 
 ## Ophelia
 
-> "Reduce opioid cravings and manage withdrawal with Suboxone® — Get
+> "Reduce opioid cravings and manage withdrawal with Suboxone®, Get
 > the gold standard of treatment at home." ([ophelia.com](https://ophelia.com/),
 > accessed 2026-05-24).
 
-**States.** 15 — Arizona, California, Connecticut, Delaware, Florida,
+**States.** 15, Arizona, California, Connecticut, Delaware, Florida,
 Maine, Maryland, Montana, New Jersey, New York, Pennsylvania, Texas,
 Vermont, Virginia, Washington. Per
 [ophelia.com/insurance-and-pricing](https://ophelia.com/insurance-and-pricing).
 A 2025/2026 press release claims "49 states + DC" via licensure
-expansion; their own UI only lists 15 — treat the higher figure as
+expansion; their own UI only lists 15, treat the higher figure as
 unverified until their site catches up.
 
 **Treatment model.** Maintenance with buprenorphine/naloxone. Visit
@@ -454,7 +454,7 @@ With insurance: "most patients pay less than $10 a month." Medication
 billed separately by pharmacy. $20 fees for late cancellations and
 no-shows.
 
-**Insurance.** Yes — broad. Carriers include Aetna, AmeriHealth,
+**Insurance.** Yes, broad. Carriers include Aetna, AmeriHealth,
 multiple BCBS plans, Cigna, Geisinger, Healthfirst, Highmark, Humana,
 Independence Blue Cross, MultiPlan, Tricare East, UnitedHealthcare,
 UPMC, plus Medicare/Medicaid in many of their 15 states. Full list on
@@ -468,9 +468,9 @@ their [insurance and pricing page](https://ophelia.com/insurance-and-pricing).
 - **Trustpilot:** page exists but returned 403 to direct fetch;
   reported score not independently verifiable.
 - **Self-reported reviews:** their /reviews page cites "1,700+
-  five-star reviews from patients" — curated on their own site.
+  five-star reviews from patients", curated on their own site.
 
-**Kratom / 7-OH.** **Yes — explicit.** A
+**Kratom / 7-OH.** **Yes, explicit.** A
 [blog post](https://ophelia.com/blog/suboxone-vs-kratom-vs-7-oh)
 titled "Suboxone vs. Kratom vs. 7-OH: What's the Difference?"
 addresses 7-hydroxymitragynine directly: characterizes commercial 7-OH
@@ -489,7 +489,7 @@ negative signal.
 > "Specialty substance use care, built for real life." ([pelagohealth.com](https://www.pelagohealth.com/),
 > accessed 2026-05-24). **Formerly known as Quit Genius.**
 
-**Access model — important.** Pelago is **B2B**: a benefit contracted
+**Access model, important.** Pelago is **B2B**: a benefit contracted
 through your employer or health plan, not a direct-to-consumer
 service. There is no consumer signup page; the
 [Am I Covered](https://www.pelagohealth.com/members/am-i-covered/)
@@ -541,7 +541,7 @@ Hampshire, Ohio, West Virginia. (Their mail-order pharmacy ships to
 20 states, but that's separate from clinical telehealth.) **One of
 two telehealth providers in KY.**
 
-**Treatment model.** Both taper and maintenance models — their
+**Treatment model.** Both taper and maintenance models, their
 [Patient FAQ](https://www.pursuecare.com/patients/patient-faq/)
 notes "some people may begin to taper down their recovery medications
 after 12-18 months." Weekly visits in the first month, then monthly
@@ -558,7 +558,7 @@ the OUD-specific pages.
 ("~$85/month for psychiatry") is referenced by a secondary source
 but not on PursueCare's own published pages.
 
-**Insurance.** Yes — "most insurances." Carriers per a secondary
+**Insurance.** Yes, "most insurances." Carriers per a secondary
 source: Aetna, Anthem, CareSource, Cigna, Humana, Molina, Highmark,
 UnitedHealthcare, WellCare, Wellpoint. Medicaid in supported states,
 but no state-by-state matrix published.
@@ -572,7 +572,7 @@ but no state-by-state matrix published.
 - **App Store:** 4.8 / 5 across 539 ratings.
 - **Trustpilot:** no profile located.
 
-**Kratom / 7-OH.** **Yes — explicit.** Lists "Kratom & 7-OH recovery"
+**Kratom / 7-OH.** **Yes, explicit.** Lists "Kratom & 7-OH recovery"
 as a service. Published an
 [educational/positioning page](https://www.pursuecare.com/understanding-the-emerging-risks-of-7-oh-mitragynine/)
 on 7-OH stating their teams are **"developing specific protocols"** —
@@ -585,7 +585,7 @@ theme. No regulatory action found.
 
 ## QuickMD
 
-> "Take control of your health with online doctor visits — Get
+> "Take control of your health with online doctor visits, Get
 > affordable care from actual doctors, whenever you need it."
 > ([quick.md](https://www.quick.md/), accessed 2026-05-24).
 
@@ -599,7 +599,7 @@ Rhode Island, South Dakota, Tennessee, and West Virginia.**
 required counseling. Induction visit prescribes a 7-day supply; first
 follow-up included if completed within 14 days; monthly visits
 thereafter. Some states require periodic in-person visits to maintain
-telemedicine MAT — state list not enumerated on their FAQ.
+telemedicine MAT, state list not enumerated on their FAQ.
 
 **Medications.** Suboxone (buprenorphine/naloxone) is the default.
 Subutex is available **only by exception**, for documented allergy or
@@ -610,7 +610,7 @@ mentioned on their site. **The site does not enumerate adjunct
 comfort meds** (clonidine, gabapentin, hydroxyzine, trazodone, etc.).
 
 > **From the community:** members report having success requesting
-> helper meds — gabapentin, clonidine, hydroxyzine, trazodone — during
+> helper meds, gabapentin, clonidine, hydroxyzine, trazodone, during
 > their QuickMD visits. This is **provider discretion**, not a
 > published QuickMD policy: some clinicians on the platform will write
 > these readily, others won't or will want you established first.
@@ -629,7 +629,7 @@ accessed 2026-05-24):
   patients only)
 - Medication is separate, billed by the pharmacy.
 
-**Insurance.** **No — cash-pay only.** Their FAQ:
+**Insurance.** **No, cash-pay only.** Their FAQ:
 "QuickMD does not accept insurance at this time." Your insurance can
 still cover the medication at your chosen pharmacy.
 
@@ -639,12 +639,12 @@ still cover the medication at your chosen pharmacy.
 - **Trustpilot:** page returned 403 on verification; search snippets
   reported ~4.0/5 across ~1,159 reviews (live number uncertain).
 - **BBB:** [profile](https://www.bbb.org/us/ca/los-angeles/profile/medical-doctor/quick-md-medical-group-1216-1652815)
-  exists; **"not rated"** — BBB notes "BBB does not have sufficient
+  exists; **"not rated"**, BBB notes "BBB does not have sufficient
   information to issue a rating on this business." Complaint themes
   include double-billing, $35 missed-appointment / rescheduling fees,
   and refunds converted to non-redeemable app credits.
 
-**Kratom / 7-OH.** **Yes — extensive.** Multiple dedicated articles
+**Kratom / 7-OH.** **Yes, extensive.** Multiple dedicated articles
 including
 [Kratom vs. 7-OH](https://www.quick.md/quick-tips/kratom-7oh/),
 [What Is 7-OH](https://www.quick.md/quick-tips/7oh/),
@@ -666,7 +666,7 @@ as of 2026-05-24.
 > "The most trusted app for addiction treatment." ([workithealth.com](https://www.workithealth.com/),
 > accessed 2026-05-24).
 
-**States.** 14 — Arizona, California, Florida, Illinois, Michigan,
+**States.** 14, Arizona, California, Florida, Illinois, Michigan,
 Montana, New Jersey, New Mexico, New York, North Carolina, Ohio,
 Oklahoma, Texas, Washington. Per
 [workithealth.com/locations](https://www.workithealth.com/locations/).
@@ -698,12 +698,12 @@ state-limited.
 
 **Reviews & complaints.**
 - **App Store:** 4.7 / 5 across 936 ratings (Workit's own /reviews
-  page claims 32K+ "App Store reviews" — figure not reconcilable with
+  page claims 32K+ "App Store reviews", figure not reconcilable with
   the 936 visible on Apple, possibly iOS + Android + in-app combined).
 - **BBB:** A+, not accredited.
 - **Trustpilot:** page returned 403; live score not confirmed.
 
-**Kratom / 7-OH.** **Yes — explicit.** A
+**Kratom / 7-OH.** **Yes, explicit.** A
 [dedicated page](https://www.workithealth.com/kratom/) titled "Kratom
 and 7-OH" addresses both directly. A
 [member story](https://www.workithealth.com/blog/true-kratom-story/)
@@ -728,7 +728,7 @@ official settlement site).
 ## Questions to ask any telehealth provider before your first visit
 
 Whichever one you pick, get the answer to these before you give
-them a credit card. None of these are exotic — any program that
+them a credit card. None of these are exotic, any program that
 treats OUD seriously should be able to answer them quickly.
 
 1. **What's your induction approach for kratom or 7-OH specifically?**
@@ -743,7 +743,7 @@ treats OUD seriously should be able to answer them quickly.
 4. **Do you have a discharge policy if I lose insurance or miss a
    payment?** Some providers will pause prescribing immediately;
    others will work with you. Get this in writing if possible.
-5. **What do you actually charge?** Initial visit, follow-ups,
+5. **What do you charge?** Initial visit, follow-ups,
    medication management, any missed-appointment fees. Ask about
    anything that isn't on the published pricing page.
 6. **What adjunct meds will you prescribe alongside buprenorphine if
@@ -756,8 +756,8 @@ treats OUD seriously should be able to answer them quickly.
    you and your provider want the same outcome.
 8. **What's your data privacy policy?** Specifically: do you use
    tracking pixels or analytics that share data with third parties?
-   (This is asked because at least two providers — Workit Health and
-   Confidant Health — have had primary-sourced data-handling issues
+   (This is asked because at least two providers, Workit Health and
+   Confidant Health, have had primary-sourced data-handling issues
    in the last two years.)
 
 If your loved one is the one calling rather than you, the
@@ -780,7 +780,7 @@ For every provider on this page:
   it's flagged as such.
 - **Red flags are primary-sourced.** Lawsuits, regulatory actions,
   settlements, and data-breach disclosures are linked to court dockets,
-  regulatory press releases, or reputable news reports — not Reddit.
+  regulatory press releases, or reputable news reports, not Reddit.
 - **We didn't rank.** Providers are alphabetical. Different programs
   fit different people.
 

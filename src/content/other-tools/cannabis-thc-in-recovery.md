@@ -1,41 +1,41 @@
 ---
 title: "Cannabis and THC in Recovery"
-description: "Honest, sourced two-sided treatment of cannabis and THC use during acute withdrawal and PAWS from 7-OH and kratom — benefits, harms, the cannabinoid landscape, and how to think about the decision."
+description: "Honest, sourced two-sided treatment of cannabis and THC use during acute withdrawal and PAWS from 7-OH and kratom, benefits, harms, the cannabinoid landscape, and how to think about the decision."
 category: "other-tools"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 11
 ---
 
 > **What this page is.** A neutral, sourced look at cannabis and THC
 > use during recovery from [7-OH](/compounds/7-oh) and kratom
-> synthetics — both the real symptom-management benefits and the real
+> synthetics, both the real symptom-management benefits and the real
 > downsides, including the risk of trading one dependence for another.
 > The page describes; it doesn't prescribe.
 >
 > **TL;DR:**
 > - Cannabis has documented short-term benefits for some symptoms common
->   in withdrawal and [PAWS](/post-acute/what-is-paws) (nausea, sleep
->   onset, anxiety at low doses, appetite), and clear downsides with
->   chronic use, including cannabis use disorder (more likely in people
->   with prior substance use history).
+> in withdrawal and [PAWS](/post-acute/what-is-paws) (nausea, sleep
+> onset, anxiety at low doses, appetite), and clear downsides with
+> chronic use, including cannabis use disorder (more likely in people
+> with prior substance use history).
 > - The "cannabis" sold today is not one thing. THC, CBD, delta-8, and
->   the gas-station hemp-derived psychoactives are pharmacologically
->   different products with different evidence bases and different
->   safety profiles. The [cannabinoid landscape](#the-cannabinoid-landscape)
->   section breaks them out.
+> the gas-station hemp-derived psychoactives are pharmacologically
+> different products with different evidence bases and different
+> safety profiles. The [cannabinoid landscape](#the-cannabinoid-landscape)
+> section breaks them out.
 > - 7-OH-specific data are very limited. Most of what's below is
->   extrapolated from opioid use disorder, alcohol use disorder, or
->   general cannabis pharmacology. Labeled as such.
+> extrapolated from opioid use disorder, alcohol use disorder, or
+> general cannabis pharmacology. Labeled as such.
 > - This isn't a decision to make alone, but it's mostly community
->   territory, not clinician territory. Talk to a sponsor, a peer
->   who's faced the same question, or someone in your life who knows
->   your situation. A prescriber's input has a narrow role here,
->   mostly around drug interactions if you're on bupe or another
->   medication CBD can affect.
+> territory, not clinician territory. Talk to a sponsor, a peer
+> who's faced the same question, or someone in your life who knows
+> your situation. A prescriber's input has a narrow role here,
+> mostly around drug interactions if you're on bupe or another
+> medication CBD can affect.
 
 ## What cannabis is doing, pharmacologically
 
-The human body has an **endocannabinoid system** — receptors (CB1 and
+The human body has an **endocannabinoid system**, receptors (CB1 and
 CB2), endogenous lipids that bind them (anandamide and 2-AG), and the
 enzymes that make and break those lipids. CB1 receptors are
 concentrated in the brain (especially areas governing memory, motor
@@ -83,7 +83,7 @@ anxiety, paranoia, and impaired stress recovery
 ### CBD (cannabidiol)
 
 Non-psychoactive at typical doses. Marketed for sleep, anxiety, and
-pain. Evidence is genuinely mixed: strong for specific seizure
+pain. Evidence is mixed: strong for specific seizure
 disorders (Epidiolex, the FDA-approved cannabidiol formulation, is
 indicated for Lennox-Gastaut, Dravet, and tuberous sclerosis complex
 seizures —
@@ -178,7 +178,7 @@ where most consumer information goes wrong.
 users in the short term
 ([Babson et al., *Curr Psychiatry Rep* 2017](https://pubmed.ncbi.nlm.nih.gov/28349316/)).
 For someone in week one of withdrawal staring at the ceiling, that
-acute effect is genuinely felt. CBD and CBN are marketed for sleep
+acute effect is felt. CBD and CBN are marketed for sleep
 on weaker evidence; the controlled-trial signal is thinner than the
 marketing implies. The picture changes with regular use, covered in
 the harms section below.
@@ -206,7 +206,7 @@ evidence for cannabinoids in chemotherapy-induced nausea
 [NCI PDQ on cannabis and cannabinoids](https://www.cancer.gov/about-cancer/treatment/cam/patient/cannabis-pdq)).
 Withdrawal nausea has not been studied directly, but the antiemetic
 mechanism is well-characterized. For most people, prescribed
-ondansetron is a cleaner first-line option — see
+ondansetron is a cleaner first-line option, see
 [Helper Medications](/other-tools/helper-meds-info).
 
 **Chronic pain (cannabis-based medicines).** The National Academies'
@@ -241,7 +241,7 @@ higher-risk substance," not "cannabis use is harmless."
 
 **Cannabis use disorder is real and the risk is non-trivial for this
 audience.** Among ever-users of cannabis, lifetime risk of developing
-cannabis dependence is roughly 9% in the general population — higher
+cannabis dependence is roughly 9% in the general population, higher
 in those who start in adolescence and higher in people with prior
 substance use disorder history
 ([Lopez-Quintero et al., 2011](https://pubmed.ncbi.nlm.nih.gov/21145178/)).
@@ -360,12 +360,12 @@ are real on both ends.
 This is the part to answer for yourself.
 
 - **What is your prior relationship with cannabis?** None, occasional,
-  problematic — these change the risk profile.
+  problematic, these change the risk profile.
 - **What specifically are you using it for?** A defined symptom
   (nausea this week, sleep tonight) is a narrower target than "I want
   to feel less bad in general."
 - **Is the use staying stable, or is it creeping up?** Escalating
-  frequency, escalating dose, using earlier in the day — these are
+  frequency, escalating dose, using earlier in the day, these are
   the signs that look the same regardless of the substance.
 - **What does your treatment context say?** A MAT program with a
   cannabis-abstinence requirement and a MAT program with a
@@ -406,7 +406,7 @@ A prescriber's input has a narrow but real role:
   reference to your dose and your other medications. That's worth
   asking about.
 - **If you're on an SSRI, an SNRI, an anticonvulsant, warfarin, or
-  several other medications**, CBD can affect blood levels — same
+  several other medications**, CBD can affect blood levels, same
   framing. Bring it up.
 - **If you're in a MAT program with a cannabis-abstinence
   requirement**, that's a fact about your treatment contract; talk
@@ -427,7 +427,7 @@ more useful than cannabis: [Sleep Recovery](/post-acute/sleep-recovery),
 [Depression and Anhedonia](/post-acute/depression-and-anhedonia),
 [Impending Doom](/post-acute/impending-doom), and the
 prescription-adjunct options on
-[Helper Medications](/other-tools/helper-meds-info) — those *are*
+[Helper Medications](/other-tools/helper-meds-info), those *are*
 things a prescriber will actively help with, and several of them
 target the same symptoms cannabis sometimes gets used for, without
 the addiction-substitution risk.

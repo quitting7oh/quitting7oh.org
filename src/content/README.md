@@ -1,4 +1,4 @@
-# `src/content/` — site content
+# `src/content/`, site content
 
 Every file in this tree becomes a page on quitting7oh.org. The folder is the
 category. The filename (without the `.md` extension) is the URL slug.
@@ -11,7 +11,7 @@ src/content/resources/telehealth.md  →   quitting7oh.org/resources/telehealth
 ## Adding a new page in 5 steps
 
 1. Decide which category the page belongs in. The categories are the folder
-   names you see in this directory. Don't invent a new one — if a page
+   names you see in this directory. Don't invent a new one, if a page
    doesn't fit, ask in the Discord.
 2. Create a new `.md` file in that category folder. Use a short, descriptive
    slug as the filename, lowercase, hyphen-separated: e.g.
@@ -21,8 +21,8 @@ src/content/resources/telehealth.md  →   quitting7oh.org/resources/telehealth
        ---
        title: "Your page title"
        description: "One sentence summary, around 120-160 characters."
-       category: "category-slug"        # must match the folder name
-       last_updated: "2026-05-23"       # ISO date (YYYY-MM-DD)
+       category: "category-slug" # must match the folder name
+       last_updated: "2026-05-23" # ISO date (YYYY-MM-DD)
        ---
 
 4. Write the page body in standard markdown below the front matter. Headings
@@ -33,15 +33,15 @@ src/content/resources/telehealth.md  →   quitting7oh.org/resources/telehealth
 
 ## Front matter reference
 
-| Field            | Required | Description                                                   |
+| Field | Required | Description |
 | ---------------- | -------- | ------------------------------------------------------------- |
-| `title`          | yes      | Page title. Becomes `<h1>` and the `<title>` tag.             |
-| `description`    | no       | Short summary. Used for meta tags and the category listing.   |
-| `category`       | yes      | Must match the folder name (a known category slug).           |
-| `last_updated`   | no       | ISO date. Shown at the bottom of the page.                    |
-| `sort`           | no       | Sort order within a category. Lower numbers float to the top. |
-| `draft`          | no       | If `true`, the page is excluded from the build.               |
-| `wide`           | no       | If `true`, the page renders without the left category sidebar or right TOC — the main column gets the full container width. Use for reference docs (charts, tables, diagrams) that need horizontal space. |
+| `title` | yes | Page title. Becomes `<h1>` and the `<title>` tag. |
+| `description` | no | Short summary. Used for meta tags and the category listing. |
+| `category` | yes | Must match the folder name (a known category slug). |
+| `last_updated` | no | ISO date. Shown at the bottom of the page. |
+| `sort` | no | Sort order within a category. Lower numbers float to the top. |
+| `draft` | no | If `true`, the page is excluded from the build. |
+| `wide` | no | If `true`, the page renders without the left category sidebar or right TOC, the main column gets the full container width. Use for reference docs (charts, tables, diagrams) that need horizontal space. |
 
 ## Markdown features available
 
@@ -71,6 +71,6 @@ src/content/resources/telehealth.md  →   quitting7oh.org/resources/telehealth
 
 ## Don't
 
-- Don't put an `<h1>` in the body — the front-matter `title:` handles that.
-- Don't use HTML directly in `.md` files unless you really need to.
+- Don't put an `<h1>` in the body, the front-matter `title:` handles that.
+- Don't use HTML directly in `.md` files unless you need to.
 - Don't add affiliate links or external sponsorship of any kind.

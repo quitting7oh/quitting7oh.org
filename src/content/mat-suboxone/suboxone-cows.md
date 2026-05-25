@@ -1,42 +1,42 @@
 ---
 title: "COWS & SOWS Guide"
-description: "Timing your first Suboxone dose with the COWS and SOWS scales — and why the clock alone can mislead you."
+description: "Timing your first Suboxone dose with the COWS and SOWS scales, and why the clock alone can mislead you."
 category: "mat-suboxone"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 1
 ---
-The single most important thing about Suboxone induction is **timing it by your withdrawal score, not by the clock**. Two scoring tools exist for this — COWS and SOWS. Both measure the same underlying thing (are you in enough withdrawal that bupe won't precipitate worse withdrawal?), just with different methods and different scales.
+The single most important thing about Suboxone induction is **timing it by your withdrawal score, not by the clock**. Two scoring tools exist for this, COWS and SOWS. Both measure the same underlying thing (are you in enough withdrawal that bupe won't precipitate worse withdrawal?), just with different methods and different scales.
 
 **The rule: don't induct until COWS ≥ 12 (or SOWS ≥ 17), regardless of how many hours it's been.** If you hit 24 hours and your COWS is still at 8, you're not ready. If you hit 14 hours and your COWS is solidly at 14, you probably are. Trust the score over the timer.
 
-> **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the COWS gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway — especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo), or after a prior precipitated-withdrawal attempt — read the Bernese page; the COWS scoring on this page is for the standard wait-then-induct approach.
+> **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the COWS gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway, especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo), or after a prior precipitated-withdrawal attempt, read the Bernese page; the COWS scoring on this page is for the standard wait-then-induct approach.
 
-## COWS vs SOWS — which to use
+## COWS vs SOWS, which to use
 
-| Scale     | Full name                            | Who scores it       | Items | Range  | Best for                                  |
+| Scale | Full name | Who scores it | Items | Range | Best for |
 | --------- | ------------------------------------ | ------------------- | ----- | ------ | ----------------------------------------- |
-| **COWS**  | Clinical Opiate Withdrawal Scale     | A clinician (ideally) | 11  | 0–48   | Induction in a clinical/telehealth setting |
-| **SOWS**  | Subjective Opiate Withdrawal Scale   | The patient (you)   | 16    | 0–64   | Inducting at home, solo, on your own timeline |
+| **COWS** | Clinical Opiate Withdrawal Scale | A clinician (ideally) | 11 | 0–48 | Induction in a clinical/telehealth setting |
+| **SOWS** | Subjective Opiate Withdrawal Scale | The patient (you) | 16 | 0–64 | Inducting at home, solo, on your own timeline |
 
 **COWS** is the standard clinical tool. It mixes things you can self-report (yawning, anxiety, GI upset) with **observable signs** that someone else should ideally measure: resting pulse, pupil size, blood pressure trends, gooseflesh on visual inspection. Some of these are doable solo with a pulse oximeter or wearable; some aren't. The [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) is the official version.
 
-**SOWS** is purely subjective — you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed. The [WHO Annex 10 SOWS form (PDF)](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) and the [SAMHSA TIP 40 SOWS table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/) are the canonical published versions.
+**SOWS** is purely subjective, you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed. The [WHO Annex 10 SOWS form (PDF)](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) and the [SAMHSA TIP 40 SOWS table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/) are the canonical published versions.
 
 In practice:
 
 - **If you have a prescriber or nurse on a video call**, they're going to score COWS. Know what they're looking at.
-- **If you're inducting solo at home** (common with [telehealth-only providers](/resources/telehealth)), **SOWS is more honest** because you're not faking the observable items you can't actually measure. Score yourself, write it down with a timestamp, and re-score every hour.
-- **Both are useful at the same time.** They're correlated but not identical — sometimes SOWS catches the subjective awfulness before COWS reaches the threshold (or vice versa). Most prescribers will accept either if you bring numbers and timestamps.
+- **If you're inducting solo at home** (common with [telehealth-only providers](/resources/telehealth)), **SOWS is more honest** because you're not faking the observable items you can't measure. Score yourself, write it down with a timestamp, and re-score every hour.
+- **Both are useful at the same time.** They're correlated but not identical, sometimes SOWS catches the subjective awfulness before COWS reaches the threshold (or vice versa). Most prescribers will accept either if you bring numbers and timestamps.
 
 **Thresholds for inducting:**
 
-- COWS ≥ 12 (moderate withdrawal) — the standard induction floor
-- SOWS ≥ 17 (mild-to-moderate range) — roughly equivalent
+- COWS ≥ 12 (moderate withdrawal), the standard induction floor
+- SOWS ≥ 17 (mild-to-moderate range), roughly equivalent
 - Some prescribers want COWS ≥ 13 or higher for the long-acting compounds; ask yours
 
-## How to score yourself — COWS
+## How to score yourself, COWS
 
-You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your total. The official [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) has the full scoring rubric and is what you should actually use. Below is a summary so you know what each item is asking.
+You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your total. The official [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) has the full scoring rubric and is what you should use. Below is a summary so you know what each item is asking.
 
 **1. Resting pulse rate** (after sitting/lying for 1 minute)
 - 0 = pulse 80 or below
@@ -118,7 +118,7 @@ Over 36    Severe withdrawal
 
 **Induct at COWS ≥ 12.** Some people prefer to wait until 13 to 17 for extra safety margin, particularly if you've been on long-acting compounds. If you induct below 12, you risk precipitated withdrawal. If you wait much past the moderate range, you're suffering longer than you need to.
 
-## How to score yourself — SOWS
+## How to score yourself, SOWS
 
 SOWS is 16 items, each scored **0 (not at all) to 4 (extremely)**. Add them up for your total (range 0–64). Re-score every 60–90 minutes during induction so you can see the trajectory, not just a single snapshot. The official forms are the [WHO Annex 10 PDF](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) (a clean printable version, parallel to the NIDA COWS PDF above) and the [SAMHSA TIP 40 HTML table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/). Below is a quick-reference of the items.
 
@@ -160,9 +160,9 @@ Score      Severity
 Over 30    Very severe
 ```
 
-**Induct at SOWS ≥ 17.** That's roughly equivalent to COWS ≥ 12 — moderate, induction-ready withdrawal. If your SOWS is in the 21+ range, you're past induction-ready and probably shouldn't wait longer than necessary.
+**Induct at SOWS ≥ 17.** That's roughly equivalent to COWS ≥ 12, moderate, induction-ready withdrawal. If your SOWS is in the 21+ range, you're past induction-ready and probably shouldn't wait longer than necessary.
 
-If you're scoring both COWS and SOWS and they disagree (e.g., COWS at 9 but SOWS at 22), trust the higher one and re-score in an hour. The two scales emphasize different things — long-acting compounds sometimes produce strong subjective misery before the observable signs catch up.
+If you're scoring both COWS and SOWS and they disagree (e.g., COWS at 9 but SOWS at 22), trust the higher one and re-score in an hour. The two scales emphasize different things, long-acting compounds sometimes produce strong subjective misery before the observable signs catch up.
 
 ## Half-lives as context (not as the gate)
 
@@ -178,7 +178,7 @@ If you've been on the long-acting compounds and your COWS isn't climbing past 24
 ## Practical tips
 
 - **Score yourself every couple of hours** once you're past 12 hours since last dose. Watch the trajectory.
-- **Wait about an hour after waking up before scoring.** A first-thing-in-the-morning score is unreliable — pulse hasn't settled, you've been still for hours so restlessness reads low, and the mental fog of just waking up makes the subjective items inconsistent. Get up, drink water, walk around, then score.
+- **Wait about an hour after waking up before scoring.** A first-thing-in-the-morning score is unreliable, pulse hasn't settled, you've been still for hours so restlessness reads low, and the mental fog of just waking up makes the subjective items inconsistent. Get up, drink water, walk around, then score.
 - **Be honest about each item.** Don't talk yourself into a higher score because you want to dose. Don't talk yourself into a lower score because you're scared.
 - **Pulse and pupils are the hardest to fake either direction.** If those are climbing, you're getting close.
 - **Pulse needs a real resting reading.** Sit or lie down for at least a minute first. Anxiety alone can spike pulse and inflate your score.

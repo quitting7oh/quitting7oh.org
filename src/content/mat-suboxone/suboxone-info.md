@@ -76,12 +76,12 @@ Buprenorphine binding to mu-opioid receptors **doesn't scale linearly with dose*
 
 | Daily dose | Mu-receptor occupancy |
 | ---------- | --------------------- |
-|  **2 mg**  | ~50–60%               |
-|  **4 mg**  | ~70–80%               |
-|  **8 mg**  | ~85–90%               |
-| **16 mg**  | ~92%                  |
-| **24 mg**  | ~94%                  |
-| **32 mg**  | ~95%                  |
+| **2 mg** | ~50–60% |
+| **4 mg** | ~70–80% |
+| **8 mg** | ~85–90% |
+| **16 mg** | ~92% |
+| **24 mg** | ~94% |
+| **32 mg** | ~95% |
 
 The curve flattens past 8 mg. ([Greenwald et al. 2003, Brody et al. 2014](https://pubmed.ncbi.nlm.nih.gov/12660736/), and follow-up imaging studies.)
 
@@ -100,8 +100,6 @@ If you need 16 mg or more to feel stable, you need 16 mg. The point is finding t
 ## Tapering off
 
 Once you've found your day 1 dose, decide your taper schedule. Examples are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper). The last 0.5 to 1 mg are the hardest part for most people. Slow to 0.5 mg drops or smaller at that point. Some people switch to Subutex (no naloxone) for the lowest portion of the taper.
-
-**Discuss the taper plan with your prescriber.** A short taper still requires medical oversight, and your prescriber may have reasons specific to your situation to adjust the pace.
 
 Things that help during the taper:
 

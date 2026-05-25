@@ -2,7 +2,7 @@
 title: "You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "start-here"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 4
 ---
 
@@ -17,21 +17,21 @@ times harder. Your body adapted to having it around. When you stop,
 those receptors run underactive for a while as the system readjusts.
 That mismatch is what withdrawal feels like.
 
-If this is a re-entry to withdrawal after a stretch off — and symptoms
-seem to be hitting faster than they did the first time — see
+If this is a re-entry to withdrawal after a stretch off, and symptoms
+seem to be hitting faster than they did the first time, see
 [Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)
 for why that happens.
 
-## You are not alone — talk to someone
+## You are not alone, talk to someone
 
 The community runs an active Discord and subreddit. People are on it
 right now. You don't need to introduce yourself. You can just post:
 
 - 💬 **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh)
-  — the `#sos` channel is for the hardest moments. Post one word.
+ , the `#sos` channel is for the hardest moments. Post one word.
   Someone will reply.
 - 📖 **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh/)
-  — slower, but searchable. Read what others have done. Post your own
+ , slower, but searchable. Read what others have done. Post your own
   question when you're ready.
 
 See [Community](/about/community) for more on which to use.
@@ -69,8 +69,8 @@ Do these things, in this order:
   benzos with opioid withdrawal recovery is a real overdose risk later.
 - Don't drink to take the edge off. Same reason.
 - Don't take opioid blockers ([naltrexone](/other-tools/naltrexone)
-  in any form — Vivitrol, oral, LDN) while still in withdrawal.
-  They will make it worse, fast. Narcan is the exception — keep
+  in any form, Vivitrol, oral, LDN) while still in withdrawal.
+  They will make it worse, fast. Narcan is the exception, keep
   Narcan on hand for actual overdose; it's harmless if given when
   not needed.
 
@@ -78,27 +78,27 @@ Do these things, in this order:
 
 If you've been on **[7-OH](/compounds/7-oh) alone** (the most common short-acting case):
 
-| Time since last dose | What's happening                                        |
+| Time since last dose | What's happening |
 | -------------------- | -------------------------------------------------------- |
-| **6–12 hours**       | First symptoms: anxiety, restlessness, sweating, runny nose, mild aches. |
-| **12–24 hours**      | Symptoms climb. Diarrhea, chills/sweats, goosebumps, insomnia, strong cravings. |
-| **24–72 hours**      | **Peak.** Worst body aches, restless legs, can't sit still. Sleep is broken or absent. |
-| **Days 3–5**         | Symptoms start lifting. Sleep returns in pieces. You feel drained but human. |
-| **Week 2 onward**    | Acute is mostly over. Welcome to [post-acute (PAWS)](/post-acute/what-is-paws), which is its own thing but much easier than this. |
+| **6–12 hours** | First symptoms: anxiety, restlessness, sweating, runny nose, mild aches. |
+| **12–24 hours** | Symptoms climb. Diarrhea, chills/sweats, goosebumps, insomnia, strong cravings. |
+| **24–72 hours** | **Peak.** Worst body aches, restless legs, can't sit still. Sleep is broken or absent. |
+| **Days 3–5** | Symptoms start lifting. Sleep returns in pieces. You feel drained but human. |
+| **Week 2 onward** | Acute is mostly over. Welcome to [post-acute (PAWS)](/post-acute/what-is-paws), which is its own thing but much easier than this. |
 
 If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), or a stacked product**, the
-timeline runs longer — peak symptoms can be 48–96 hours out instead of
+timeline runs longer, peak symptoms can be 48–96 hours out instead of
 24–72, and the tail is longer. The shape is the same, just stretched.
 See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dhm).
 
 A note on **"brain zaps" and a wired-but-exhausted feeling** at the
 peak: kratom's [minor alkaloids](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)
 also act at serotonin and adrenergic receptors, so withdrawal can
-include symptoms that *resemble* SSRI/SNRI discontinuation — through a
+include symptoms that *resemble* SSRI/SNRI discontinuation, through a
 different mechanism. It's a known part of the shape; it passes with the
 rest of the acute phase.
 
-If you've been on **pseudo**, the dynamics are different — pseudo binds
+If you've been on **pseudo**, the dynamics are different, pseudo binds
 to the receptor tighter than buprenorphine itself. See
 [Pseudoindoxyl](/compounds/pseudo). Suboxone induction is harder and may
 require a different approach. Talk to a prescriber.
@@ -106,15 +106,15 @@ require a different approach. Talk to a prescriber.
 ## Your options from here
 
 You have a real choice right now. None of these is the "right" one for
-everyone — pick the one that fits your situation.
+everyone, pick the one that fits your situation.
 
-### Path 1 — tough it out (cold turkey with helper meds and supplements)
+### Path 1, tough it out (cold turkey with helper meds and supplements)
 
 Doable for **short-acting [7-OH](/compounds/7-oh) at moderate doses**. Much harder for
 long-acting or stacked compounds. If you choose this path:
 
 - Read **[Helper Medications](/other-tools/helper-meds-info)** for
-  what prescriptions actually help (clonidine, gabapentin, trazodone,
+  what prescriptions help (clonidine, gabapentin, trazodone,
   baclofen, and others). A telehealth appointment same-day can get
   most of these.
 - Read **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
@@ -123,7 +123,7 @@ long-acting or stacked compounds. If you choose this path:
 - The **[QuitKit-style](/other-tools/quitkit-info)** pre-packaged
   stacks exist if you don't want to source individual supplements.
 
-### Path 2 — step down to kratom leaf
+### Path 2, step down to kratom leaf
 
 Plain [kratom leaf](/compounds/kratom-leaf) is a real taper tool. The
 reasoning is straightforward: 7-OH is one of the alkaloids naturally
@@ -140,7 +140,7 @@ sideways switch.
   is also a real harm-reduction move people have made. The page above
   has practical guidance either way.
 
-### Path 3 — get on Suboxone (MAT)
+### Path 3, get on Suboxone (MAT)
 
 Suboxone is a partial opioid agonist. Taken correctly during a
 successful induction, it can drop withdrawal to nearly zero within
@@ -166,7 +166,7 @@ to understand before you commit; see
   for the 5-to-10-day protocol people in this community have used to
   come off short-acting 7-OH.
 - Read **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)** for *when* to
-  take your first dose — this matters more than people realize. Going
+  take your first dose, this matters more than people realize. Going
   too early causes **precipitated withdrawal**, which is much worse
   than what you're feeling now.
 - Read **[What You Should Know About Long-Term Suboxone](/mat-suboxone/suboxone-risks)**
@@ -175,19 +175,19 @@ to understand before you commit; see
 - **[Telehealth options](/resources/telehealth)** can put a Suboxone
   prescription in your hands the same day in most US states. Cash-pay
   and insurance options both exist, with prices and coverage that vary
-  by provider — see the comparison page for the current shortlist.
+  by provider, see the comparison page for the current shortlist.
 
-### Path 4 — SR-17018 (informal taper tool)
+### Path 4, SR-17018 (informal taper tool)
 
 A non-prescription option some people in this community have used to
-come off 7-OH and related synthetics. SR-17018 is still an opioid — it
-binds the mu receptor — but it has a longer duration and a usage
+come off 7-OH and related synthetics. SR-17018 is still an opioid, it
+binds the mu receptor, but it has a longer duration and a usage
 pattern that community members have found makes it easier to step down
 from than the compound they were on.
 
 - Read **[SR-17018](/other-tools/sr17018-info)** for what it is,
   the community protocol, the real risks, and what's unknown. There is
-  **no clinical literature on SR-17018 in humans** — dose info comes
+  **no clinical literature on SR-17018 in humans**, dose info comes
   entirely from community forums and user reports. Read carefully
   before deciding.
 - This path is unregulated and lacks the clinical-safety net of Suboxone.
@@ -200,13 +200,13 @@ paths are open. The practical differences that usually shape the
 choice:
 
 - **Access and timing.** Cold turkey with helper meds is the path
-  you can start the soonest — a same-day telehealth visit covers
+  you can start the soonest, a same-day telehealth visit covers
   most of the helper meds, and many of the supplements are at any
   pharmacy. Leaf you can start as soon as you have a trusted source
   on hand. SR-17 requires sourcing first. Suboxone requires
   *both* a prescriber and a COWS score above 12 (or SOWS ≥ 17),
   which usually means waiting at least 12–24 hours into withdrawal
-  before the first dose — longer for the long-acting synthetics
+  before the first dose, longer for the long-acting synthetics
   ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
   [pseudo](/compounds/pseudo)).
 - **What the path does for symptoms.** Suboxone, when induction
@@ -219,7 +219,7 @@ choice:
   or two of stabilization. Leaf provides a weaker version of the
   receptor activation you had, so the step-down is gradual rather
   than a hard switch. Cold turkey has no pharmacological
-  replacement — helper meds blunt symptoms (clonidine on the
+  replacement, helper meds blunt symptoms (clonidine on the
   noradrenergic side, gabapentin on the wired/anxious side,
   trazodone on sleep) while your system recalibrates.
 - **What it costs you later.** Suboxone brings its own dependence
@@ -262,7 +262,7 @@ been taking. Many ERs can start you on Suboxone right there if
 appropriate.
 
 **The honest reality:** not every ER and not every doctor handles
-withdrawal the same way. Some are excellent — they take you seriously,
+withdrawal the same way. Some are excellent, they take you seriously,
 treat the symptoms aggressively, induct you on Suboxone if you want,
 and connect you with follow-up MAT before discharge. Some are not —
 people in this community have been talked down to, treated like
@@ -289,8 +289,7 @@ If you encounter that:
   emergency (the bullets above), you can leave against medical
   advice. AMA discharges are documented but you don't get arrested
   or charged.
-- **A bad ER experience doesn't mean medical care won't help you** —
-  it means *that* ER wasn't the right fit. A
+- **A bad ER experience doesn't mean medical care won't help you**: it means *that* ER wasn't the right fit. A
   [telehealth Suboxone appointment](/resources/telehealth) is often a
   better path than a second ER visit if you're not in a true emergency.
 
@@ -302,22 +301,22 @@ realize.
 ## Sleep
 
 Sleep is the hardest part for most people. You probably won't get
-much for the first 2–3 nights and that's normal — it's not dangerous,
+much for the first 2–3 nights and that's normal, it's not dangerous,
 just brutal. Things that help:
 
-- **Melatonin** — start low. The community sees more success at
+- **Melatonin**: start low. The community sees more success at
   **1 to 3 mg at bedtime** than at the 5-10 mg most stores sell.
   Cheap, OTC, helps onset.
-- **Magnesium glycinate** — 400 mg before bed. Calms the muscle
+- **Magnesium glycinate**: 400 mg before bed. Calms the muscle
   twitchiness that wrecks sleep.
 - **A hot bath or shower** before trying to sleep. The temperature
   drop afterward triggers sleepiness.
 - **Movies, audiobooks, podcasts** running. Don't try to lie in
-  silence — the racing brain takes over. Background sound helps.
+  silence, the racing brain takes over. Background sound helps.
 - **A weighted blanket** if you have one, or any heavy blanket. The
   pressure helps with restless legs.
 
-**Avoid OTC antihistamine sleep aids** — Benadryl (diphenhydramine),
+**Avoid OTC antihistamine sleep aids**, Benadryl (diphenhydramine),
 Unisom (doxylamine), ZzzQuil, and any "PM" formulation (Tylenol PM,
 Advil PM, etc.) that's diphenhydramine underneath the brand name.
 [First-generation antihistamines worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/),
@@ -344,10 +343,10 @@ more than food right now.** When you can eat, start simple:
   (Premier Protein, Fairlife, Orgain, store-brand equivalents) go down
   when solid food won't and cover the calorie + protein gap. If solid
   food is a stretch but yogurt is tolerable, stir a scoop of protein
-  powder into it — easier to keep down than a meal and useful for
+  powder into it, easier to keep down than a meal and useful for
   blunting the muscle wasting that comes with a week of barely eating.
 - Protein and real food matter for recovery, but week 1 isn't the
-  time for forcing a full plate. Just don't fall apart — keep something
+  time for forcing a full plate. Just don't fall apart, keep something
   with protein and calories going in, even if it's a sip at a time.
 
 ## The mindset
@@ -364,16 +363,15 @@ A few things people who've been here wish someone had told them:
 - **Whatever brought you here, you're already doing the hardest part
   by stopping.** You don't need to also be perfect about it.
 
-## When you can — read these next
+## When you can, read these next
 
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  bookmark for the "fuck its" moments. They'll come.
-- **[Helper Medications](/other-tools/helper-meds-info)** — what
+- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark for the "fuck its" moments. They'll come.
+- **[Helper Medications](/other-tools/helper-meds-info)**: what
   to ask a prescriber for
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
-  — what's worth buying, what isn't
-- **[Suboxone](/mat-suboxone/suboxone-info)** — the MAT path,
+ , what's worth buying, what isn't
+- **[Suboxone](/mat-suboxone/suboxone-info)**: the MAT path,
   if you're considering it
-- **[What is PAWS](/post-acute/what-is-paws)** — what comes after the
+- **[What is PAWS](/post-acute/what-is-paws)**: what comes after the
   worst is over
-- **[Community](/about/community)** — Discord and subreddit
+- **[Community](/about/community)**: Discord and subreddit

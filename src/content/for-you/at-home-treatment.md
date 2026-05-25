@@ -1,8 +1,8 @@
 ---
 title: "At-Home Treatment"
-description: "Coming off 7-OH and kratom synthetics at home — the community-validated paths, the tools to have on hand, and when at-home isn't the right fit."
+description: "Coming off 7-OH and kratom synthetics at home, the community-validated paths, the tools to have on hand, and when at-home isn't the right fit."
 category: "for-you"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 2
 ---
 
@@ -14,11 +14,11 @@ isn't required to come off [7-OH](/compounds/7-oh) and kratom
 synthetics for everyone.** What's required is a plan, the right
 tools on hand, and a few people you can text. The
 [Rehabilitation Centers](/for-you/rehabilitation-centers) page
-covers when residential or higher-intensity care genuinely is the
+covers when residential or higher-intensity care is the
 right call.
 
 This page is the at-home overview. If at-home isn't the right fit for
-your situation (a real call for some — covered at the bottom), the
+your situation (a real call for some, covered at the bottom), the
 [Rehabilitation Centers](/for-you/rehabilitation-centers) page covers
 detox, residential, PHP, IOP, and how to pay for them.
 
@@ -34,30 +34,29 @@ four in detail, including hour-by-hour what to do. Short version:
 2. **Step down to [kratom leaf](/other-tools/tapering-with-leaf).**
    Substitute lower-concentration leaf for concentrated 7-OH, then
    taper the leaf.
-3. **[Suboxone (MAT)](/mat-suboxone/suboxone-info)** — typically as
+3. **[Suboxone (MAT)](/mat-suboxone/suboxone-info)**, typically as
    a short, structured rapid taper (5 to 10 days, 14 at the outside
    is what the community feels comfortable recommending).
    [Telehealth prescribers](/resources/telehealth) can put a Suboxone
    prescription in your hands the same day in most US states.
-4. **[SR-17](/other-tools/sr17018-info)** — a non-prescription
+4. **[SR-17](/other-tools/sr17018-info)**, a non-prescription
    option some people use to bridge off the synthetics.
 
 These are options, not a ranking. The site is opinionless about which
 one you choose. Different paths fit different situations; the right
-one is the one that fits yours and that you'll actually use.
+one is the one that fits yours and that you'll use.
 
 ## The tools to have on hand before you stop
 
-- **A [supplement and OTC stack](/other-tools/vitamins-supplements)** —
-  magnesium glycinate, electrolytes, vitamin C, melatonin at low
+- **A [supplement and OTC stack](/other-tools/vitamins-supplements)**: magnesium glycinate, electrolytes, vitamin C, melatonin at low
   doses (1 to 3 mg), NAC. The
   [Quit Kit-style pre-packaged stacks](/other-tools/quitkit-info) are
   an option if you'd rather not source individual supplements.
-- **A few days of food and drinks you can keep down** — broth, plain
+- **A few days of food and drinks you can keep down**: broth, plain
   rice, bananas, toast, applesauce, and protein shakes or
   ready-to-drink protein for when solid food won't go down. A scoop
   of protein powder stirred into yogurt is easier than a meal.
-- **A plan for sleep** — see [Helper Medications](/other-tools/helper-meds-info)
+- **A plan for sleep**: see [Helper Medications](/other-tools/helper-meds-info)
   for the prescription options (trazodone, gabapentin, doxepin, and
   others), plus low-dose melatonin and magnesium from the supplement
   stack.
@@ -74,13 +73,13 @@ If you're on the Suboxone path, [telehealth providers](/resources/telehealth)
 have changed what at-home treatment looks like. Several do video
 appointments and have a prescription at your pharmacy the same day,
 no in-person visit required. The Telehealth Providers comparison
-flags which ones explicitly mention kratom or 7-OH experience — many
+flags which ones explicitly mention kratom or 7-OH experience, many
 clinicians have never encountered these compounds and may not handle
 the taper well otherwise.
 
 Same-day telehealth can also surface several of the [helper
-medications](/other-tools/helper-meds-info) — clonidine, gabapentin,
-trazodone — for the cold-turkey path.
+medications](/other-tools/helper-meds-info), clonidine, gabapentin,
+trazodone, for the cold-turkey path.
 
 ## When at-home isn't the right fit
 
@@ -90,7 +89,7 @@ community. It isn't the right fit for every situation:
 - **Polysubstance use, especially with alcohol or benzodiazepines.**
   Combined withdrawal can be medically dangerous. Benzo withdrawal
   in particular can be fatal without medical management. If this is
-  you, supervised detox is not optional — call
+  you, supervised detox is not optional, call
   [SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at
   **1-800-662-4357** or use [findtreatment.gov](https://findtreatment.gov).
 - **A home environment that's part of the problem.** If the people
@@ -100,8 +99,8 @@ community. It isn't the right fit for every situation:
 - **You've tried at-home and it didn't hold.** Repeated attempts
   that collapse at the same spot can mean you need more structure
   than at-home can provide.
-- **Severe co-occurring mental health issues** — active suicidality,
-  uncontrolled bipolar, severe depression — that need higher-intensity
+- **Severe co-occurring mental health issues**: active suicidality,
+  uncontrolled bipolar, severe depression, that need higher-intensity
   clinical support alongside withdrawal. (The milder
   post-acute depression that's common in recovery is covered on
   [Depression and Anhedonia](/post-acute/depression-and-anhedonia);
@@ -123,23 +122,21 @@ expect when you call.
 Once you're through the first few weeks, the work shifts to PAWS,
 sleep recovery, and rebuilding.
 
-- **[What is PAWS](/post-acute/what-is-paws)** — the post-acute
+- **[What is PAWS](/post-acute/what-is-paws)**: the post-acute
   withdrawal shape, weeks to months out.
-- **[Sleep Recovery](/post-acute/sleep-recovery)** — sleep is the
+- **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is the
   longest tail.
-- **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — Kratom
+- **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)**: Kratom
   Anonymous, NA, SMART Recovery, and others. Free, peer-based,
   complementary to whatever path you took.
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  bookmark this. Cravings come back.
+- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark this. Cravings come back.
 
 ## Where to read next
 
-- **[Withdrawal Help](/start-here/withdrawal-help)** — hour-by-hour
+- **[Withdrawal Help](/start-here/withdrawal-help)**: hour-by-hour
   if you're in acute right now.
-- **[MAT / Suboxone](/mat-suboxone)** — full pharmacology and
+- **[MAT / Suboxone](/mat-suboxone)**: full pharmacology and
   protocol if Suboxone is your direction.
-- **[Telehealth Providers](/resources/telehealth)** — the
+- **[Telehealth Providers](/resources/telehealth)**: the
   fact-checked provider comparison.
-- **[Rehabilitation Centers](/for-you/rehabilitation-centers)** —
-  if at-home isn't the right fit for your situation.
+- **[Rehabilitation Centers](/for-you/rehabilitation-centers)**: if at-home isn't the right fit for your situation.

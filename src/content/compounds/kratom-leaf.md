@@ -2,7 +2,7 @@
 title: "Kratom Leaf & Mitragynine"
 description: "What kratom actually is, what mitragynine does in the body, how it relates to 7-OH, and why concentrated 7-OH products are not the same thing as leaf."
 category: "compounds"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 1
 ---
 
@@ -14,16 +14,16 @@ sort: 1
 - **Kratom** is the dried leaf of a Southeast Asian tree (*Mitragyna
   speciosa*) that contains dozens of related compounds called
   alkaloids.
-- **Mitragynine** is the main one — about 1–2% of the dry leaf — and
+- **Mitragynine** is the main one, about 1–2% of the dry leaf, and
   it's a weak, partial activator of the same receptor (mu-opioid)
   that opioid painkillers act on.
 - **7-OH (7-hydroxymitragynine)** is a very minor alkaloid in the
-  leaf — typically under 0.04% — but it binds that receptor far more
+  leaf, typically under 0.04%, but it binds that receptor far more
   tightly and is more efficacious than mitragynine. The body also
   makes a small amount of 7-OH from mitragynine in the liver.
 - The **concentrated "7-OH" tablets, shots, and gummies** sold in the
   US deliver 7-OH at roughly **100× to 1,000× the concentration
-  found in natural leaf** — a level that peer-reviewed analytical
+  found in natural leaf**, a level that peer-reviewed analytical
   chemistry says can only be achieved by semi-synthetic conversion or
   adding exogenous 7-OH, not by extracting leaf.
 - "Kratom" and "7-OH product" are therefore not interchangeable
@@ -39,7 +39,7 @@ of origin, people have chewed fresh leaves, brewed them as tea, or
 ground dried leaf into powder for centuries.
 
 **Why people take it.** At lower amounts, users describe stimulant-like
-effects — alertness, mild stimulation, similar in feel to strong
+effects, alertness, mild stimulation, similar in feel to strong
 coffee. At higher amounts, the effects shift toward sedation and
 pain relief, more in line with what a mild opioid does. Both effects
 come from the same plant; what differs is the dose. (Throughout this
@@ -47,8 +47,8 @@ page, "users describe" or "reported" is the framing used for
 subjective effects, because the receptor pharmacology that produces
 them is documented separately below.)
 
-**How it's sold in the US today.** Plain dried-leaf forms — powder,
-capsules, brewed teas — are still common. So are "extracts" of varying
+**How it's sold in the US today.** Plain dried-leaf forms, powder,
+capsules, brewed teas, are still common. So are "extracts" of varying
 concentration. **In the last several years a separate, much more
 potent product category has taken over the US market**: tablets,
 gummies, drink mixes, and shots built around a specific alkaloid
@@ -61,7 +61,7 @@ at all is part of what the rest of this page explains.
 *Mitragyna speciosa* is a tree in the Rubiaceae family (the coffee
 family), traditionally cultivated and harvested in southern Thailand,
 peninsular Malaysia, and parts of Indonesia. Its use is documented in
-ethnobotany literature going back over a century — traditionally as a
+ethnobotany literature going back over a century, traditionally as a
 mild stimulant for manual labor, a folk treatment for diarrhea and
 chronic pain, and a substitute for opium during periods when opium
 was harder to obtain. Most published Western pharmacology research on
@@ -76,28 +76,28 @@ the plant is much more recent: roughly the last fifteen years.
   or a ratio.
 - **Concentrated 7-OH products.** Tablets, shots, gummies, and drink
   mixes specifically engineered to deliver 7-OH at concentrations
-  that don't naturally occur in leaf — categorically different from
+  that don't naturally occur in leaf, categorically different from
   the first two and the focus of the rest of this site.
 
 ## What's actually in the leaf
 
-Dried *Mitragyna speciosa* leaf contains **dozens of alkaloids** — a
+Dried *Mitragyna speciosa* leaf contains **dozens of alkaloids**, a
 chemistry term for naturally-occurring nitrogen-containing plant
 compounds. The major ones, by concentration:
 
-- **Mitragynine** — the dominant alkaloid, accounting for the largest
+- **Mitragynine**: the dominant alkaloid, accounting for the largest
   share of opioid-receptor activity in leaf preparations.
-- **Paynantheine, speciogynine, speciociliatine** — minor
+- **Paynantheine, speciogynine, speciociliatine**: minor
   diastereomers (slightly different 3D arrangements of the same
   atoms) with their own receptor activity, especially at serotonin
   and adrenergic receptors. Background context lives on the
   [Kratom's Minor Alkaloids](/pharmacology/minor-alkaloids) page.
-- **7-Hydroxymitragynine** — the alkaloid this site is named around.
+- **7-Hydroxymitragynine**: the alkaloid this site is named around.
   Present in *very small* amounts in fresh leaf; somewhat more in
   dried/aged leaf because mitragynine oxidizes to 7-OH over time.
 - **Mitraphylline, [rhynchophylline](/compounds/cats-claw), and
-  others** — trace alkaloids with limited or non-opioid activity.
-- **Mitragynine [pseudoindoxyl](/compounds/pseudo)** — not typically
+  others**, trace alkaloids with limited or non-opioid activity.
+- **Mitragynine [pseudoindoxyl](/compounds/pseudo)**: not typically
   present in fresh leaf in meaningful amounts but produced as a
   degradation product and now appears as a synthetic in some
   designer-drug products.
@@ -105,28 +105,28 @@ compounds. The major ones, by concentration:
 > **The key numbers, by dry weight of leaf**
 >
 > - **Mitragynine: roughly 0.5–2.7%** across published analyses; most
->   authenticated leaf samples cluster around 1–2%. Concentration
->   varies with region, cultivar, leaf maturity, and harvest season
->   ([Leksungnoen et al., *PeerJ* 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9648690/);
->   [Murayama et al., *J AOAC Int* 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12733965/);
->   [Tanna et al., *Molecules* 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/)).
+> authenticated leaf samples cluster around 1–2%. Concentration
+> varies with region, cultivar, leaf maturity, and harvest season
+> ([Leksungnoen et al., *PeerJ* 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9648690/);
+> [Murayama et al., *J AOAC Int* 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12733965/);
+> [Tanna et al., *Molecules* 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/)).
 > - **7-Hydroxymitragynine: roughly 0.003–0.04%** in authenticated
->   leaf — two orders of magnitude lower than mitragynine. Drying,
->   storage, heat, and oxygen exposure increase 7-OH content as
->   mitragynine oxidizes
->   ([Murayama 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12733965/);
->   [Tanna 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/);
->   [Smith et al., *Addiction* 2025](https://onlinelibrary.wiley.com/doi/10.1111/add.16728)).
+> leaf, two orders of magnitude lower than mitragynine. Drying,
+> storage, heat, and oxygen exposure increase 7-OH content as
+> mitragynine oxidizes
+> ([Murayama 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12733965/);
+> [Tanna 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/);
+> [Smith et al., *Addiction* 2025](https://onlinelibrary.wiley.com/doi/10.1111/add.16728)).
 
 Alkaloid profile varies significantly between batches, regions, and
-processing methods. No single number above is universal — the ranges
+processing methods. No single number above is universal, the ranges
 are what's published.
 
 ## Mitragynine pharmacology
 
 **Mu-opioid receptor activity.** Mitragynine binds the human
 mu-opioid receptor (the same receptor that morphine and other
-classical opioids act on) as a **partial agonist** — meaning it
+classical opioids act on) as a **partial agonist**, meaning it
 activates the receptor incompletely. Binding affinity (Ki) is
 roughly 160–240 nM in radioligand assays
 ([Obeng et al., *J Med Chem* 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/);
@@ -135,7 +135,7 @@ roughly 160–240 nM in radioligand assays
 about 100–160× weaker than morphine (~1.5 nM at the same receptor in
 the same reference). Functionally, it's a low-to-moderate-efficacy
 partial agonist with reduced β-arrestin recruitment relative to
-classical opioids — a signaling profile some researchers think
+classical opioids, a signaling profile some researchers think
 contributes to its lower respiratory-depression risk at equivalent
 mu-receptor occupancy.
 
@@ -143,7 +143,7 @@ mu-receptor occupancy.
 essentially no delta-opioid activity (Frontiers 2026). It also binds
 α-1 and α-2 adrenergic receptors at moderate strength
 ([Obeng et al., *Eur J Pharmacol* 2024](https://pubmed.ncbi.nlm.nih.gov/39111419/))
-and acts as a low-efficacy α-2A agonist *in vivo* in rats — the same
+and acts as a low-efficacy α-2A agonist *in vivo* in rats, the same
 receptor that clonidine acts on. The minor alkaloids paynantheine and
 speciogynine bind serotonin (5-HT₁ₐ) receptors at low-nanomolar
 affinity ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)).
@@ -158,7 +158,7 @@ Primary metabolism is by hepatic **CYP3A4** (an enzyme in the liver
 that processes many drugs), with secondary contributions from CYP2D6
 and CYP2C9 ([Kamble et al., *DMD* 2020 and follow-on PK studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC10201580/)).
 **That same CYP3A4 pathway is what produces 7-OH from mitragynine
-inside the body** — the central pharmacological link between leaf and
+inside the body**, the central pharmacological link between leaf and
 7-OH, discussed in detail below.
 
 ## 7-OH pharmacology
@@ -167,23 +167,23 @@ inside the body** — the central pharmacological link between leaf and
 that matters here:
 
 - **Receptor activity:** binds the mu-opioid receptor at roughly
-  **7–15 nM** — about 10–30× tighter than mitragynine — and acts as
+  **7–15 nM**, about 10–30× tighter than mitragynine, and acts as
   a near-full agonist
   ([Obeng 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/);
   [Frontiers 2026](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full)).
   In mice, equipotent to or more potent than morphine for
   antinociception ([Berthold *Br J Pharmacol* 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9314834/)).
 - **Reinforcement:** preclinical self-administration consistently
-  shows 7-OH — *not* mitragynine — is the alkaloid that drives it.
+  shows 7-OH, *not* mitragynine, is the alkaloid that drives it.
   Rats self-administer 7-OH and substitute it for morphine;
   mitragynine alone is not self-administered above vehicle
   ([Hemby *Addiction Biol* 2019](https://pubmed.ncbi.nlm.nih.gov/29949228/)).
 - **Half-life in humans:** limited direct data. The only published
   numbers come from measuring 7-OH as a metabolite during
-  mitragynine dosing — roughly **4–9 hours**
+  mitragynine dosing, roughly **4–9 hours**
   ([Tanna 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/)).
   No published human PK study has dosed isolated 7-OH as a single
-  agent — a real evidence gap.
+  agent, a real evidence gap.
 
 ## How leaf becomes 7-OH: three different pathways
 
@@ -196,17 +196,17 @@ the confusion lives.
 
 A small amount of 7-OH forms naturally in the living leaf and in the
 process of drying and storing it. Mitragynine oxidizes to 7-OH on
-exposure to air, heat, and time — the longer and warmer the storage,
+exposure to air, heat, and time, the longer and warmer the storage,
 the more 7-OH a batch of dried leaf will contain
 ([Murayama 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12733965/)).
-Even so, the amounts stay in the range cited above — under 0.04% of
+Even so, the amounts stay in the range cited above, under 0.04% of
 dry weight in authenticated material.
 
 ### 2. In the body (in vivo conversion)
 
 When mitragynine is consumed, a fraction is metabolized to 7-OH in
 the liver via CYP3A4. **How much, and how much of leaf's effect this
-explains, is genuinely contested in the literature.**
+explains, is contested in the literature.**
 
 - [Kruegel et al., *ACS Cent Sci* 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6598159/)
   argues from mouse data that brain 7-OH levels after mitragynine
@@ -216,13 +216,13 @@ explains, is genuinely contested in the literature.**
 - A direct rebuttal in mice
   ([Maxwell et al., *DMD* 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8969138/))
   reports brain 7-OH from mitragynine dosing is 4-fold lower than
-  needed for equivalent effects from direct 7-OH — concluding
+  needed for equivalent effects from direct 7-OH, concluding
   mitragynine itself does most of the work in mice, while flagging
   that humans may convert more.
 - The best human data
   ([Tanna 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/))
   show plasma 7-OH at roughly **20–30%** of mitragynine exposure
-  (Cmax and AUC) after oral dried leaf — higher than the mouse
+  (Cmax and AUC) after oral dried leaf, higher than the mouse
   ratios, but not yet linked to a specific share of subjective effect.
 
 **Settled:** the conversion happens and produces measurable
@@ -237,8 +237,8 @@ effect that purified 7-OH does not.
 
 ### 3. In manufacturing
 
-Concentrated 7-OH products on the US market — tablets, gummies,
-shots, drink mixes — contain 7-OH at roughly **22–75 mg per gram of
+Concentrated 7-OH products on the US market, tablets, gummies,
+shots, drink mixes, contain 7-OH at roughly **22–75 mg per gram of
 product (2.2–7.5% by weight)**, with some preparations reportedly up
 to 98% purity
 ([Murayama 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12733965/);
@@ -273,7 +273,7 @@ strongly. Substituting leaf for concentrate reduces overall
 mu-opioid stimulation while avoiding the abrupt receptor-occupancy
 drop that drives acute withdrawal.
 
-This is **not a recommendation** — it's a description of an approach
+This is **not a recommendation**, it's a description of an approach
 that exists. Known caveats:
 
 - **Leaf itself is addictive** and produces its own withdrawal.
@@ -284,9 +284,9 @@ that exists. Known caveats:
   tapering shifts what you depend on; it doesn't, on its own, get
   you to abstinence.
 - **Clinician engagement varies a lot here.** The leaf taper plan
-  itself is mostly community ground — many clinicians have never
+  itself is mostly community ground, many clinicians have never
   encountered these compounds and won't have a substantive taper
-  conversation. The narrow asks where a prescriber genuinely helps
+  conversation. The narrow asks where a prescriber helps
   are adjunct meds (clonidine, gabapentin) and lab work. The
   [Telehealth Providers](/resources/telehealth) comparison flags
   options with specific kratom/7-OH experience if you want adjunct
@@ -324,7 +324,7 @@ and DEA primary sources before relying on anything specific.
 > **Reminder.** This is a pharmacology reference, not medical
 > advice. If you're trying to come off concentrated 7-OH products,
 > the [Withdrawal Help](/start-here/withdrawal-help) page is where to go
-> for what to do right now — including the three real paths out
+> for what to do right now, including the three real paths out
 > ([Suboxone](/mat-suboxone/suboxone-info),
 > [SR-17](/other-tools/sr17018-info), or toughing it out with
 > [helper meds](/other-tools/helper-meds-info)). For finding a

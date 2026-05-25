@@ -1,12 +1,12 @@
 ---
 title: "MAT & Your Professional License"
-description: "Most jobs have no business in your medical records — but a handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare roles) treat MAT use as a licensure issue. What to check before you disclose or start."
+description: "Most jobs have no business in your medical records, but a handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare roles) treat MAT use as a licensure issue. What to check before you disclose or start."
 category: "for-you"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 5
 ---
 
-> **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator — or starting MAT while holding any of the credentials below — talk to a labor lawyer or licensure attorney who knows your specific field.**
+> **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator, or starting MAT while holding any of the credentials below, talk to a labor lawyer or licensure attorney who knows your specific field.**
 
 This page is general information, not legal or medical advice. Rules change. Verify with the current regulator and a qualified attorney before making decisions.
 
@@ -25,9 +25,9 @@ The exceptions below are real and matter, but they are exceptions, not the rule.
 
 ## The exceptions: regulated professions
 
-The professions on this page share a common pattern — a federal or state agency (not just your employer) sets the medical standards for the credential you need to do your job, and those standards have explicit rules about controlled substances and opioid-class medications. The agency can revoke or refuse to renew your credential based on MAT use even if your direct employer is supportive.
+The professions on this page share a common pattern, a federal or state agency (not just your employer) sets the medical standards for the credential you need to do your job, and those standards have explicit rules about controlled substances and opioid-class medications. The agency can revoke or refuse to renew your credential based on MAT use even if your direct employer is supportive.
 
-### Commercial drivers (CDL — DOT FMCSA)
+### Commercial drivers (CDL, DOT FMCSA)
 
 If you hold a [Commercial Driver's License](https://www.fmcsa.dot.gov/registration/commercial-drivers-license) and operate commercial motor vehicles in interstate commerce, you must hold a DOT medical certification issued by a [certified medical examiner](https://nationalregistry.fmcsa.dot.gov/). FMCSA rules ([49 CFR 391.41](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-391/subpart-E/section-391.41)) govern what disqualifies you medically.
 
@@ -43,7 +43,7 @@ The [FAA](https://www.faa.gov) issues first-, second-, and third-class airman me
 
 **Buprenorphine and methadone:** Both require special issuance review at minimum; routine medical certification is not available while on these medications under typical circumstances.
 
-**HIMS — Human Intervention Motivation Study:** The FAA's [HIMS program](https://www.himsprogram.com) is an industry-wide structured program for pilots in recovery from substance use disorder. It is the recognized path back to flying for many pilots after SUD diagnosis, including some on MAT under specific protocols. ATC has analogous programs through the FAA Drug and Alcohol Program.
+**HIMS, Human Intervention Motivation Study:** The FAA's [HIMS program](https://www.himsprogram.com) is an industry-wide structured program for pilots in recovery from substance use disorder. It is the recognized path back to flying for many pilots after SUD diagnosis, including some on MAT under specific protocols. ATC has analogous programs through the FAA Drug and Alcohol Program.
 
 **What to know:**
 
@@ -59,7 +59,7 @@ Policies vary by department, state, and federal agency. There is no single natio
 **Common patterns:**
 
 - Many departments have policies excluding active MAT use from sworn positions, especially patrol or armed roles.
-- Some departments distinguish between past SUD treatment (including past MAT) and current MAT — past treatment in good-standing recovery is often acceptable; current MAT may not be.
+- Some departments distinguish between past SUD treatment (including past MAT) and current MAT, past treatment in good-standing recovery is often acceptable; current MAT may not be.
 - Federal law enforcement (FBI, DEA, ATF, US Marshals, etc.) has its own background investigation and medical standards that vary by agency and position.
 - Officer Employee Assistance Programs sometimes accommodate MAT during treatment, but return-to-duty conditions may differ from pre-treatment status.
 
@@ -85,7 +85,7 @@ These are mostly employer-level policies rather than government licensure. The [
 
 ### Healthcare professionals
 
-Doctors, nurses, pharmacists, dentists, paramedics, and other licensed healthcare workers face state board investigations triggered by SUD diagnoses, drug test positives, or controlled-substance prescribing concerns. Most states have **Health Professional Monitoring Programs (PHPs)** — voluntary or board-mandated programs that monitor recovery, often with terms that traditionally favored abstinence-only approaches over MAT, though that's evolving.
+Doctors, nurses, pharmacists, dentists, paramedics, and other licensed healthcare workers face state board investigations triggered by SUD diagnoses, drug test positives, or controlled-substance prescribing concerns. Most states have **Health Professional Monitoring Programs (PHPs)**, voluntary or board-mandated programs that monitor recovery, often with terms that traditionally favored abstinence-only approaches over MAT, though that's evolving.
 
 If you're in a healthcare licensure track:
 
@@ -111,10 +111,10 @@ Patterns that come up in the community:
 1. **Get the regulatory analysis before starting MAT, not after.** If you're a pilot, CDL driver, or LEO considering [buprenorphine](/mat-suboxone/suboxone-info), the order of operations matters a lot. Talking to a labor or licensure attorney before you start medication may change the medication choice or the timing of any required disclosure.
 2. **Use specialty programs where they exist.** HIMS for pilots, state PHPs for healthcare workers, union-sponsored peer assistance programs in many trades. These programs are designed for your situation and often produce better outcomes than going it alone.
 3. **Document everything.** Dated notes from prescribers, written employer policies you've been given, conversations with HR. If a credentialing dispute arises later, the paper trail matters.
-4. **Get the right kind of lawyer.** A general employment lawyer may not know FAA medical rules or state nursing board procedures. Pay for a specialist consult upfront — it often saves the licensure.
+4. **Get the right kind of lawyer.** A general employment lawyer may not know FAA medical rules or state nursing board procedures. Pay for a specialist consult upfront, it often saves the licensure.
 
 ## Where to read next
 
-- **[For You: FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — the broader employment/leave/discrimination picture
-- **[At-Home Treatment](/for-you/at-home-treatment)** — overview of the community-validated paths, including the MAT options
-- **[MAT / Suboxone](/mat-suboxone)** — what the medications actually do
+- **[For You: FMLA, ADA & Your Job](/for-you/fmla-ada-job)**: the broader employment/leave/discrimination picture
+- **[At-Home Treatment](/for-you/at-home-treatment)**: overview of the community-validated paths, including the MAT options
+- **[MAT / Suboxone](/mat-suboxone)**: what the medications do

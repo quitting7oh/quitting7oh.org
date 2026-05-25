@@ -1,13 +1,13 @@
 ---
 title: "Rehabilitation Centers"
-description: "Detox, residential, PHP, IOP, and outpatient — what each level of care looks like, how to find a program, how to pay, and what to be skeptical of."
+description: "Detox, residential, PHP, IOP, and outpatient, what each level of care looks like, how to find a program, how to pay, and what to be skeptical of."
 category: "for-you"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 3
 ---
 
 This site is built around at-home recovery from
-[7-OH](/compounds/7-oh) and kratom synthetics — usually some
+[7-OH](/compounds/7-oh) and kratom synthetics, usually some
 combination of a [telehealth prescriber](/resources/telehealth),
 helper meds, supplements, and community support. See
 **[At-Home Treatment](/for-you/at-home-treatment)** for that path.
@@ -38,14 +38,14 @@ up or down as things change.
 
 Supervised withdrawal. For [7-OH](/compounds/7-oh) and opioid
 dependence, detox handles the worst of the acute physical symptoms
-with medical support — IV fluids if you can't keep things down,
+with medical support, IV fluids if you can't keep things down,
 medications to help with nausea, sleep, anxiety, and (in many
 programs) a bupe induction to bridge into longer-term MAT. Most
 clearly indicated when at-home withdrawal isn't working or isn't safe
 to attempt (the polysubstance case above).
 
 > **If you're using 7-OH or opioids along with any other substance
-> — alcohol, benzodiazepines, gabapentinoids, other depressants —
+>, alcohol, benzodiazepines, gabapentinoids, other depressants —
 > please don't come off without medical supervision.** Combined
 > withdrawal can be medically dangerous. Benzo withdrawal in
 > particular can be fatal without medical management. Call
@@ -55,9 +55,9 @@ to attempt (the polysubstance case above).
 
 ### Residential / inpatient (typically 28–90 days)
 
-Living onsite at a treatment facility. 24-hour clinical support, away from the environments and access points that fed the use. Most structured option. Insurance authorization is usually the limiting factor on length of stay — programs that say "we'll keep you as long as needed" are not always being straight about what insurance will actually pay.
+Living onsite at a treatment facility. 24-hour clinical support, away from the environments and access points that fed the use. Most structured option. Insurance authorization is usually the limiting factor on length of stay, programs that say "we'll keep you as long as needed" are not always being straight about what insurance will pay.
 
-Residential is genuinely valuable for some people; for others it's expensive overkill. If you have a stable home, supportive people around you, and a way to get to outpatient appointments, you may not need residential. If your home environment is itself part of the problem, or if you've tried outpatient and it didn't hold, residential makes a lot of sense.
+Residential is valuable for some people; for others it's expensive overkill. If you have a stable home, supportive people around you, and a way to get to outpatient appointments, you may not need residential. If your home environment is itself part of the problem, or if you've tried outpatient and it didn't hold, residential makes a lot of sense.
 
 ### Partial Hospitalization Program (PHP)
 
@@ -73,7 +73,7 @@ Weekly or biweekly individual therapy, often with a recovery group component on 
 
 ### Medication-Assisted Treatment (MAT) inside a program
 
-MAT is not a separate level — it's a medication-based approach that
+MAT is not a separate level, it's a medication-based approach that
 can sit alongside any of the above. Most rehabilitation centers offer
 **[Suboxone](/mat-suboxone/suboxone-info)** as part of detox or
 ongoing treatment. **Methadone** is more tightly regulated (typically
@@ -107,10 +107,10 @@ just disagreeing with your prescriber.
 
 A few tools to start with:
 
-- **[findtreatment.gov](https://findtreatment.gov)** — official SAMHSA treatment locator. Filter by insurance, level of care, MAT availability, and special needs (women-only, LGBTQ+ affirming, specific languages, veterans-focused, etc.). The most useful single resource on this page.
-- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline) — 1-800-662-4357.** Free, confidential, 24/7. Real humans give referrals based on your zip and insurance. If you call once in your whole search, this is the call.
-- **Your existing healthcare providers** — primary care doctor, therapist, gynecologist, anyone who knows you. They can write referrals and often have specific local recommendations that the directories won't surface.
-- **For telehealth-only [Suboxone](/mat-suboxone/suboxone-info) induction** — see the [Telehealth Providers comparison](/resources/telehealth). Several options let you do a video appointment and have a prescription the same day, no in-person visit required. The lowest activation-energy starting point if MAT is your direction.
+- **[findtreatment.gov](https://findtreatment.gov)**: official SAMHSA treatment locator. Filter by insurance, level of care, MAT availability, and special needs (women-only, LGBTQ+ affirming, specific languages, veterans-focused, etc.). The most useful single resource on this page.
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline), 1-800-662-4357.** Free, confidential, 24/7. Real humans give referrals based on your zip and insurance. If you call once in your whole search, this is the call.
+- **Your existing healthcare providers**: primary care doctor, therapist, gynecologist, anyone who knows you. They can write referrals and often have specific local recommendations that the directories won't surface.
+- **For telehealth-only [Suboxone](/mat-suboxone/suboxone-info) induction**: see the [Telehealth Providers comparison](/resources/telehealth). Several options let you do a video appointment and have a prescription the same day, no in-person visit required. The lowest activation-energy starting point if MAT is your direction.
 
 ## How to pay
 
@@ -129,11 +129,11 @@ Practical script:
 
 ### Medicaid
 
-In all 50 states, [Medicaid](https://www.medicaid.gov) covers some form of SUD treatment under the [ACA](https://www.healthcare.gov/glossary/affordable-care-act/), including in non-expansion states (though coverage is meaningfully better in expansion states). Specifics vary by state; some cover residential, others heavily favor outpatient and MAT. If you don't have insurance and are uncertain whether you qualify for Medicaid, **apply** — eligibility limits are higher than most people assume, and there's no penalty for applying even if you're denied.
+In all 50 states, [Medicaid](https://www.medicaid.gov) covers some form of SUD treatment under the [ACA](https://www.healthcare.gov/glossary/affordable-care-act/), including in non-expansion states (though coverage is meaningfully better in expansion states). Specifics vary by state; some cover residential, others heavily favor outpatient and MAT. If you don't have insurance and are uncertain whether you qualify for Medicaid, **apply**, eligibility limits are higher than most people assume, and there's no penalty for applying even if you're denied.
 
 ### Veterans
 
-The [VA](https://www.va.gov/health-care/health-needs-conditions/substance-use-problems/) offers comprehensive SUD treatment for veterans at **no cost** — detox, residential, MAT, outpatient. Quality varies by region but the access is real and underused. If you're a veteran and not enrolled in VA healthcare, enrolling is worth doing even if you don't use it for this; many veterans are eligible and don't know it.
+The [VA](https://www.va.gov/health-care/health-needs-conditions/substance-use-problems/) offers comprehensive SUD treatment for veterans at **no cost**, detox, residential, MAT, outpatient. Quality varies by region but the access is real and underused. If you're a veteran and not enrolled in VA healthcare, enrolling is worth doing even if you don't use it for this; many veterans are eligible and don't know it.
 
 ### State-funded programs
 
@@ -141,10 +141,10 @@ Every state has block-grant-funded SUD treatment for the uninsured. Wait times a
 
 ### Sliding-scale and free
 
-- **[Salvation Army Adult Rehabilitation Centers (ARCs)](https://www.salvationarmyusa.org/usn/rehabilitation/)** — long-term residential, free, faith-based, work-therapy model. Religious component is significant; not for everyone, but a real free option in most major cities.
-- **Community mental health centers** — sliding scale based on income.
-- **[Federally Qualified Health Centers (FQHCs)](https://findahealthcenter.hrsa.gov)** — primary care clinics that often offer MAT and outpatient SUD treatment on a sliding scale.
-- **University-affiliated training clinics** — psychology, social work, medical school clinics; very low cost, supervised trainees.
+- **[Salvation Army Adult Rehabilitation Centers (ARCs)](https://www.salvationarmyusa.org/usn/rehabilitation/)**: long-term residential, free, faith-based, work-therapy model. Religious component is significant; not for everyone, but a real free option in most major cities.
+- **Community mental health centers**: sliding scale based on income.
+- **[Federally Qualified Health Centers (FQHCs)](https://findahealthcenter.hrsa.gov)**: primary care clinics that often offer MAT and outpatient SUD treatment on a sliding scale.
+- **University-affiliated training clinics**: psychology, social work, medical school clinics; very low cost, supervised trainees.
 
 ## What to expect when you call
 
@@ -156,7 +156,7 @@ The intake conversation is usually 15–30 minutes. They'll ask:
 - **Insurance:** carrier, policy number, group number.
 - **Social situation:** living situation, employment, transportation, kids, supports.
 
-**Please be honest.** It changes the treatment plan, not their willingness to help you. If you've been mixing substances, say so — it's medically important and detox protocols differ. If you've relapsed multiple times before, say so — that's information that helps them plan, not a reason for them to refuse you. They've heard everything.
+**Please be honest.** It changes the treatment plan, not their willingness to help you. If you've been mixing substances, say so, it's medically important and detox protocols differ. If you've relapsed multiple times before, say so, that's information that helps them plan, not a reason for them to refuse you. They've heard everything.
 
 If the first program isn't a fit (capacity, insurance issues, distance, philosophy), ask them to refer you elsewhere. Treatment intake staff usually know the local landscape and can point you at programs that match your situation better.
 
@@ -166,7 +166,7 @@ If the first program isn't a fit (capacity, insurance issues, distance, philosop
 
 **"They'll call my employer."** No. Your medical information is [HIPAA](https://www.hhs.gov/hipaa/index.html)-protected. They cannot contact your employer without your written consent, period.
 
-**"They'll take my kids."** Treatment programs are not mandated reporters in the same way schools and pediatricians are; their job is treating you. If there are active child safety concerns separate from your treatment, that's a separate conversation, but engaging in treatment voluntarily for your own substance use is generally not itself something that triggers CPS involvement — and CPS systems, when they do get involved, treat "parent who is seeking treatment" very differently from "parent who is not."
+**"They'll take my kids."** Treatment programs are not mandated reporters in the same way schools and pediatricians are; their job is treating you. If there are active child safety concerns separate from your treatment, that's a separate conversation, but engaging in treatment voluntarily for your own substance use is generally not itself something that triggers CPS involvement, and CPS systems, when they do get involved, treat "parent who is seeking treatment" very differently from "parent who is not."
 
 **"I can't afford it."** Read the payment section above. You have more options than you think. The [SAMHSA helpline](https://www.samhsa.gov/find-help/national-helpline) (1-800-662-4357) is specifically designed for this conversation.
 
@@ -174,15 +174,15 @@ If the first program isn't a fit (capacity, insurance issues, distance, philosop
 
 ## What to be skeptical of
 
-- **Aggressive marketing** — programs that find you via Google ads or unsolicited calls after you've searched online often work on commission models rather than outcomes.
-- **"Luxury rehab" pricing without accreditation** — look for **CARF** ([carf.org](https://www.carf.org)) or **Joint Commission** ([jointcommission.org](https://www.jointcommission.org)) accreditation. Their absence is a real red flag for a residential program.
-- **Free travel to far-away programs** — this is called "patient brokering." Illegal in many states, unethical everywhere. A program offering to fly you across the country at no cost is funding those flights with the insurance billing they'll do once you're there.
-- **Programs that ban MAT as a matter of policy.** Some residential programs categorically prohibit Suboxone, methadone, or any opioid-replacement medication regardless of what the patient or their prescriber thinks is right. That's an ideological stance, not a clinical one — and it removes a path that works for many people. Worth questioning before committing.
+- **Aggressive marketing**: programs that find you via Google ads or unsolicited calls after you've searched online often work on commission models rather than outcomes.
+- **"Luxury rehab" pricing without accreditation**: look for **CARF** ([carf.org](https://www.carf.org)) or **Joint Commission** ([jointcommission.org](https://www.jointcommission.org)) accreditation. Their absence is a real red flag for a residential program.
+- **Free travel to far-away programs**: this is called "patient brokering." Illegal in many states, unethical everywhere. A program offering to fly you across the country at no cost is funding those flights with the insurance billing they'll do once you're there.
+- **Programs that ban MAT as a matter of policy.** Some residential programs categorically prohibit Suboxone, methadone, or any opioid-replacement medication regardless of what the patient or their prescriber thinks is right. That's an ideological stance, not a clinical one, and it removes a path that works for many people. Worth questioning before committing.
 - **Vague or absent aftercare planning.** Ask what happens on day 31. Real programs have aftercare plans, alumni structures, and continuing-care recommendations.
 
 ## Where to read next
 
-- **[At-Home Treatment](/for-you/at-home-treatment)** — the at-home path this site is built around, including the four community-validated approaches
-- **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)** — taking leave for treatment without losing your job
-- **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** — Kratom Anonymous, NA, SMART, and others — free peer support during and after
-- **[MAT / Suboxone](/mat-suboxone)** — the detailed pharmacology and induction protocol pages for our specific situation
+- **[At-Home Treatment](/for-you/at-home-treatment)**: the at-home path this site is built around, including the four community-validated approaches
+- **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)**: taking leave for treatment without losing your job
+- **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)**: Kratom Anonymous, NA, SMART, and others, free peer support during and after
+- **[MAT / Suboxone](/mat-suboxone)**: the detailed pharmacology and induction protocol pages for our specific situation

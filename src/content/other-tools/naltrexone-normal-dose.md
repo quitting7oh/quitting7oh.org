@@ -1,16 +1,16 @@
 ---
 title: "Normal-Dose Naltrexone (Oral and Vivitrol)"
-description: "Full-dose naltrexone — oral 50 mg daily and Vivitrol 380 mg monthly injection — for sustained abstinence after detox. The page with the unmissable precipitated-withdrawal safety note."
+description: "Full-dose naltrexone, oral 50 mg daily and Vivitrol 380 mg monthly injection, for sustained abstinence after detox. The page with the unmissable precipitated-withdrawal safety note."
 category: "other-tools"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 8
 ---
 
-> **SAFETY — read before anything else on this page.**
+> **SAFETY, read before anything else on this page.**
 >
 > Naltrexone is a **full opioid receptor antagonist**. Starting it
 > while opioids are still on your receptors causes immediate, severe
-> **precipitated withdrawal** — symptoms within ~5 minutes, lasting
+> **precipitated withdrawal**: symptoms within ~5 minutes, lasting
 > up to 48 hours, sometimes severe enough to require ICU admission
 > ([ReVia FDA label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/018932s017lbl.pdf)).
 >
@@ -57,7 +57,7 @@ adherent to naltrexone:
 - No respiratory depression from a typical opioid dose
 
 It's also why **starting naltrexone while opioids are on the
-receptor produces precipitated withdrawal** — the antagonist
+receptor produces precipitated withdrawal**, the antagonist
 competitively displaces the agonist, dropping receptor activation to
 zero in minutes ([ReVia FDA label, Warnings](https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/018932s017lbl.pdf)).
 
@@ -86,9 +86,9 @@ zero in minutes ([ReVia FDA label, Warnings](https://www.accessdata.fda.gov/drug
   adherence problem that limits oral naltrexone in OUD. But it
   requires a monthly in-clinic visit, runs about $1,500+ per dose
   list price (insurance often covers as MAT), and once injected
-  cannot be removed — the depot lasts the full 4 weeks regardless.
+  cannot be removed, the depot lasts the full 4 weeks regardless.
 
-## Initiation — getting the timing right
+## Initiation, getting the timing right
 
 This is the hard part of starting naltrexone, and the part where a
 clinician matters most.
@@ -138,7 +138,7 @@ prevention. Two important findings, both real:
 
 1. **Among patients who successfully completed induction**, the two
    medications were equally safe and effective.
-2. **But induction itself was the obstacle for Vivitrol** — 28% of
+2. **But induction itself was the obstacle for Vivitrol**, 28% of
    XR-NTX assignees couldn't get through the required opioid-free
    window, versus 6% for bupe-nx. On intention-to-treat analysis,
    bupe-nx had a lower relapse rate (HR 1.36, 95% CI 1.10–1.68
@@ -175,20 +175,20 @@ sleep disturbance.
 
 **This is the one that kills people.** Naltrexone occupies opioid
 receptors, which over time reduces opioid tolerance. If a patient
-discontinues naltrexone — by stopping oral doses, by reaching the end
-of a Vivitrol injection's effect, or by leaving treatment — and then
+discontinues naltrexone, by stopping oral doses, by reaching the end
+of a Vivitrol injection's effect, or by leaving treatment, and then
 uses opioids again, their **reduced tolerance plus a dose calibrated
 to their pre-treatment tolerance is the documented fatal pattern**.
 
 The [NEPOD cohort study (Digiusto et al., Addiction 2004)](https://pubmed.ncbi.nlm.nih.gov/15049745/)
 found naltrexone-treated patients had **39 overdoses per 100
-person-years** after leaving treatment — eight times the rate of
-agonist-treatment leavers — with 44% of those overdoses occurring
+person-years** after leaving treatment, eight times the rate of
+agonist-treatment leavers, with 44% of those overdoses occurring
 within 2 weeks of stopping naltrexone.
 
 If you stop naltrexone and there's any chance you'll use opioids
-again — known craving pattern, prior relapse history, environmental
-risk — **keep [naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
+again, known craving pattern, prior relapse history, environmental
+risk, **keep [naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
 in the house**, tell someone you're with, and read
 [Thinking About Using?](/start-here/thinking-about-using) so the
 information is in your head before the moment.
@@ -199,7 +199,7 @@ The OUD evidence base above is the closest reference for someone
 coming off 7-OH or kratom synthetics. There is no peer-reviewed
 clinical literature specifically on naltrexone for 7-OH dependence.
 Clinicians prescribing it for this population are using the broader
-OUD evidence — which is reasonable, since the underlying pharmacology
+OUD evidence, which is reasonable, since the underlying pharmacology
 (mu-opioid agonist dependence) is the same, but it should be named
 as extrapolation rather than 7-OH-specific evidence.
 
@@ -221,13 +221,10 @@ lists the fact-checked options with kratom and 7-OH experience.
 
 ## Where to read next
 
-- **[Naltrexone (Overview)](/other-tools/naltrexone)** — the parent
+- **[Naltrexone (Overview)](/other-tools/naltrexone)**: the parent
   page comparing all three protocols.
-- **[Low-Dose Naltrexone (LDN)](/other-tools/naltrexone-low-dose)** —
-  for the off-label, post-acute use case.
-- **[Ultra-Low-Dose Naltrexone (ULDN)](/other-tools/naltrexone-ultra-low-dose)** —
-  the investigational tier.
-- **[Telehealth Providers](/resources/telehealth)** — for finding a
+- **[Low-Dose Naltrexone (LDN)](/other-tools/naltrexone-low-dose)**: for the off-label, post-acute use case.
+- **[Ultra-Low-Dose Naltrexone (ULDN)](/other-tools/naltrexone-ultra-low-dose)**: the investigational tier.
+- **[Telehealth Providers](/resources/telehealth)**: for finding a
   prescriber.
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  bookmark this if you're on naltrexone and craving hits.
+- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark this if you're on naltrexone and craving hits.

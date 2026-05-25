@@ -2,7 +2,7 @@
 title: "Suboxone Rapid Taper"
 description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
 category: "mat-suboxone"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 4
 ---
 > **Note: Suboxone is one path off 7-OH, not the default starting point.** If your use is in the range where lighter tools work, consider those before committing to a bupe induction: [tapering with leaf](/other-tools/tapering-with-leaf), [cold turkey with helper meds](/other-tools/helper-meds-info), or [SR-17](/other-tools/sr17018-info). This page is for when you've decided Subs is the right tool.
@@ -23,7 +23,7 @@ All schedules assume:
 - You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
 
-*All doses in mg. Each row is one day; each column is a schedule option. A dash means that schedule has already ended — no more doses.*
+*All doses in mg. Each row is one day; each column is a schedule option. A dash means that schedule has already ended, no more doses.*
 
 ### Starting at 2 mg
 

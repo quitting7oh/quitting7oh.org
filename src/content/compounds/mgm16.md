@@ -1,14 +1,14 @@
 ---
 title: "MGM-16"
-description: "The fluorinated analog of MGM-15 — a 2014 medicinal-chemistry compound that's been discussed in scheduling proceedings but, as of this writing, has not been documented in any US consumer product. What's published, what isn't, and what it means."
+description: "The fluorinated analog of MGM-15, a 2014 medicinal-chemistry compound that's been discussed in scheduling proceedings but, as of this writing, has not been documented in any US consumer product. What's published, what isn't, and what it means."
 category: "compounds"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 ---
 
 MGM-16 is a fluorinated semi-synthetic derivative of mitragynine,
 first reported by the Takayama / Matsumoto research group in
 [*J Pharmacol Exp Ther* 2014 (PMID 24345467)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/).
-It's structurally adjacent to [MGM-15](/compounds/mgm15) — the same
+It's structurally adjacent to [MGM-15](/compounds/mgm15), the same
 saturated 7-hydroxymitragynine scaffold with a single fluorine added
 to the indole ring. The change is small chemically; the reported
 potency difference is large.
@@ -18,7 +18,7 @@ recovery-community conversations and in state-level scheduling
 discussions. Most of what circulates is community awareness rather
 than verified information. This page tries to bridge that gap
 honestly: it stays inside what one peer-reviewed paper and a few
-government documents actually establish, and it labels the (many)
+government documents establish, and it labels the (many)
 gaps as gaps.
 
 ## What MGM-16 actually is
@@ -33,7 +33,7 @@ the indole ring of MGM-15.
 "9-fluoro MGM-15." That's correct in the IUPAC systematic numbering
 used in the published paper's full chemical name. The same atom is
 also referred to as the **10-position** in the natural-product
-numbering that's standard for mitragynine itself — the published
+numbering that's standard for mitragynine itself, the published
 paper calls the chemical precursor "10-fluoro-7-hydroxymitragynine"
 before it's reduced to MGM-16. **They are the same atom**; the two
 numbers reflect two different ring-numbering conventions in the
@@ -51,7 +51,7 @@ just with a fluorine already on the precursor.
 The compound has no PubChem CID and no CAS registry number that I
 could locate.
 
-## What's been measured — and the one paper it traces to
+## What's been measured, and the one paper it traces to
 
 **Every quantitative pharmacology claim about MGM-16 traces back to
 a single 2014 paper.** No independent replication has been published.
@@ -70,7 +70,7 @@ From [Matsumoto et al., *J Pharmacol Exp Ther* 2014](https://pmc.ncbi.nlm.nih.go
 | Antiallodynic effect | **≈ 100× more potent than gabapentin** | Mouse partial sciatic nerve-ligation |
 
 The "**≈ 240× the potency of morphine**" claim that circulates in
-community discussions comes from the ED₅₀ ratio above — **mouse
+community discussions comes from the ED₅₀ ratio above, **mouse
 tail-flick antinociception, oral administration**. It's a real number
 from a real paper. It's also a single in-vivo measurement in one
 species, one assay, one route, one comparator. Use it as that, not as
@@ -89,14 +89,14 @@ has been published for MGM-16 specifically:
 - **No abuse-liability or dependence studies on MGM-16 specifically.**
   (An earlier paper from the same group studied a structurally
   related compound called MGM-9 and reported "weak rewarding
-  effects" — that finding is for MGM-9, not MGM-16, and shouldn't be
+  effects", that finding is for MGM-9, not MGM-16, and shouldn't be
   transferred across.)
 - **No withdrawal-syndrome data on MGM-16 specifically.**
 - **No replication by an independent lab.** The 2014 paper is the
   sole primary report; subsequent literature that mentions MGM-16
   cites the 2014 paper rather than re-measuring.
 
-## Where it shows up — and where it hasn't
+## Where it shows up, and where it hasn't
 
 **The headline finding from the regulatory record is that MGM-16
 does not show up.**
@@ -106,8 +106,8 @@ A California State Senate Committee on Health
 characterizes MGM-16 as "**the most potent**" of the
 mitragynine-related opioids in the published literature but adds that
 it is "**currently prohibitively expensive to synthesize**." The
-characterization that's circulated in community spaces — that MGM-16
-is "the next 7-OH" or that it's already in products — is not, as of
+characterization that's circulated in community spaces, that MGM-16
+is "the next 7-OH" or that it's already in products, is not, as of
 this writing, supported by any documented forensic detection.
 
 Specifically:
@@ -124,7 +124,7 @@ Specifically:
 - **No forensic-chemistry or analytical-chemistry publication**
   documents MGM-16 in a US-seized consumer product.
 
-If MGM-16 starts appearing in products, that record will change — and
+If MGM-16 starts appearing in products, that record will change, and
 this page should be updated when it does. The right framing today is
 **"present in the published research literature, named in
 scheduling-policy discussion, not yet documented in commercial
@@ -177,7 +177,7 @@ Two honest things to know:
    from the outside.
 2. **If you suspect a product you're using contains anything in the
    mitragynine-derivative family,** the practical advice on the
-   site doesn't change — see [Withdrawal Help](/start-here/withdrawal-help)
+   site doesn't change, see [Withdrawal Help](/start-here/withdrawal-help)
    for the four community-validated paths off the synthetics, and
    [Telehealth Providers](/resources/telehealth) for finding a
    clinician familiar with kratom and 7-OH dependence.
@@ -185,36 +185,36 @@ Two honest things to know:
 ## Sources
 
 - [Matsumoto K, Takayama H et al., *J Pharmacol Exp Ther* 2014;348(3):383-392 (PMID 24345467, PMC6067406)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/)
-  — the foundational and only primary pharmacology paper on MGM-16
+ , the foundational and only primary pharmacology paper on MGM-16
 - [Matsumoto K et al., *Neuropharmacology* 2008;55(2):154-65 (PMID 18550129)](https://pubmed.ncbi.nlm.nih.gov/18550129/)
-  — earlier paper from the same research program (MGM-9), establishes
+ , earlier paper from the same research program (MGM-9), establishes
   the multi-paper program of fluorinated mitragynine derivatives
 - [Bhowmik S, Galeta J et al., *Nat Commun* 2021;12:3858](https://www.nature.com/articles/s41467-021-23736-2)
-  — medicinal-chemistry context for halogen substitution on the
+ , medicinal-chemistry context for halogen substitution on the
   indole ring of mitragynine analogs (does not study MGM-16 directly)
 - [California State Senate Committee on Health, *Kratom and 7-Hydroxymitragynine* background paper, Feb 2026](https://shea.senate.ca.gov/system/files/2026-02/kratom-and-7-oh-background-paper.pdf)
-  — state-government characterization including the "prohibitively
+ , state-government characterization including the "prohibitively
   expensive to synthesize" framing
 - [Ohio Board of Pharmacy, mitragynine-related compounds Schedule I classification](https://www.pharmacy.ohio.gov/documents/pubs/special/kratom/classification%20of%20mitragynine-related%20compounds%20as%20schedule%20i%20controlled%20substances.pdf)
-  — does not name MGM-16 individually; covers the class
+ , does not name MGM-16 individually; covers the class
 
 > **Reference, not advice.** Everything on this page is sourced
 > from published literature and government documents. None of it
 > tells you what to take, how to taper, or how to evaluate a
-> specific product you're using — those decisions belong with a
+> specific product you're using, those decisions belong with a
 > clinician familiar with your situation.
 
 ## Where to read next
 
-- **[MGM-15](/compounds/mgm15)** — the non-fluorinated parent
+- **[MGM-15](/compounds/mgm15)**: the non-fluorinated parent
   compound; the one with current consumer-product detection
-- **[7-OH](/compounds/7-oh)** — the upstream compound from which both
+- **[7-OH](/compounds/7-oh)**: the upstream compound from which both
   MGM-15 and MGM-16 are derived
 - **[Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom)**
-  — structural-pharmacology comparison of the mitragynine derivative
+ , structural-pharmacology comparison of the mitragynine derivative
   family
 - **[Chemical Structures (Appendix)](/pharmacology/chemical-structures)**
-  — 2D skeletal-formula diagrams for the related compounds (MGM-16
+ , 2D skeletal-formula diagrams for the related compounds (MGM-16
   is not yet in the appendix)
-- **[Telehealth Providers](/resources/telehealth)** — for finding a
+- **[Telehealth Providers](/resources/telehealth)**: for finding a
   prescriber experienced with kratom and 7-OH dependence

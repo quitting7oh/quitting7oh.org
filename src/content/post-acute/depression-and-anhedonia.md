@@ -2,7 +2,7 @@
 title: "Depression and Anhedonia"
 description: "The depression and the can't-feel-anything that show up in the weeks and months after coming off 7-OH and kratom synthetics — what each one is, why they happen, what helps, and when to call a clinician."
 category: "post-acute"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 4
 ---
 
@@ -55,7 +55,7 @@ opioid-dependent samples**, with severity correlating to both
 craving and relapse risk. Depression rates in OUD recovery are
 similarly elevated relative to the general population.
 
-7-OH-specific prevalence numbers don't exist — the compound is too
+7-OH-specific prevalence numbers don't exist, the compound is too
 new for cohort studies, and the [community of quitters only really
 took shape in early 2024](/post-acute/long-term-outlook). The
 broader opioid recovery literature is the closest reference, with
@@ -74,7 +74,7 @@ The short version, with the deeper picture on
   suppresses both the endogenous endorphin system and the
   dopaminergic reward circuit. When you stop, both systems are
   underactive while they recover. The subjective experience is
-  reduced pleasure response — anhedonia — and often a flattened
+  reduced pleasure response, anhedonia, and often a flattened
   mood baseline.
 - **HPA axis dysregulation.** [Chronic opioid use suppresses the
   stress-response system](https://pmc.ncbi.nlm.nih.gov/articles/PMC10003084/);
@@ -111,7 +111,7 @@ broader [PAWS](/post-acute/what-is-paws) timeline:
 - **Beyond 6 months:** for people with longer or more intense use
   histories, residual flatness or depressed mood can persist
   longer. The broader opioid-recovery literature documents arcs
-  that for some people extend well past a year — and since
+  that for some people extend well past a year, and since
   7-OH-specific cohorts are too young to give us our own data
   yet, that's a reasonable range to keep in mind.
 
@@ -124,7 +124,7 @@ None of those outcomes means recovery isn't happening.
 The general 3-tier intervention framework for PAWS symptoms —
 evidence-based (exercise, sleep, CBT, social contact, morning
 sunlight), clinically used (the prescription list), and
-community-discussed (the supplement list) — sits on the umbrella
+community-discussed (the supplement list), sits on the umbrella
 **[PAWS page](/post-acute/what-is-paws)**. That framework applies
 here too; this page isn't going to duplicate it.
 
@@ -145,12 +145,12 @@ Specifically for depression and anhedonia:
 - **Mirtazapine as a single-med coverage option.** A
   [2023 review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10509332/)
   proposed it as a "one-stop strategy" for several recovery-cluster
-  symptoms — depression, anxiety, insomnia, nausea — in one
+  symptoms, depression, anxiety, insomnia, nausea, in one
   medication.
 - **Low-dose naltrexone for post-acute specifically.** Some people
   use it to support endogenous endorphin recovery, which is part
   of the underlying picture for both depression and anhedonia.
-  Cannot be taken while on Suboxone — see
+  Cannot be taken while on Suboxone, see
   **[Low-Dose Naltrexone](/other-tools/naltrexone-low-dose)**.
 - **Affect labeling.** Naming the state ("I'm depressed right
   now," "this is the flat feeling") measurably reduces amygdala
@@ -211,7 +211,7 @@ another substance. Give it time.
 
 For some people, the depression that surfaces in recovery turns
 out to be a primary mood disorder that the substance was
-masking. That's also treatable — and the recovery context is
+masking. That's also treatable, and the recovery context is
 often the first time a clinician can see it clearly enough to
 treat it well. A prescriber who understands addiction can tell
 the difference, often by watching how your mood moves over the
@@ -222,17 +222,16 @@ that, and it ends.
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)** — the broader
+- **[What is PAWS](/post-acute/what-is-paws)**: the broader
   post-acute picture.
-- **[Dopamine Recovery](/post-acute/dopamine-recovery)** — the
+- **[Dopamine Recovery](/post-acute/dopamine-recovery)**: the
   neurobiology underneath anhedonia specifically.
-- **[Sleep Recovery](/post-acute/sleep-recovery)** — sleep is
+- **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is
   load-bearing for mood recovery.
-- **[Impending Doom](/post-acute/impending-doom)** — for the
+- **[Impending Doom](/post-acute/impending-doom)**: for the
   acute-anxiety side of the post-acute picture.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)** — what
-  recovery actually looks like over the coming months.
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  if depression and craving are stacking up.
-- **[Telehealth Providers](/resources/telehealth)** — for any
+- **[Long-Term Outlook](/post-acute/long-term-outlook)**: what
+  recovery looks like over the coming months.
+- **[Thinking About Using?](/start-here/thinking-about-using)**: if depression and craving are stacking up.
+- **[Telehealth Providers](/resources/telehealth)**: for any
   clinically-used intervention above.

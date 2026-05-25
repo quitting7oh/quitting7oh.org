@@ -1,8 +1,8 @@
 ---
 title: "Long-Term Outlook"
-description: "What recovery from 7-OH dependence actually looks like — honest about how hard it is, honest about relapse, honest that the compound is new enough that the long-arc picture borrows from the broader opioid-recovery literature, and honest that the people who got there did it one day at a time."
+description: "What recovery from 7-OH dependence actually looks like, honest about how hard it is, honest about relapse, honest that the compound is new enough that the long-arc picture borrows from the broader opioid-recovery literature, and honest that the people who got there did it one day at a time."
 category: "post-acute"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 8
 ---
 
@@ -18,12 +18,12 @@ and reached for the bottle anyway.
 The opposite of that day is possible.
 
 This page is about what's between those two days. What recovery from
-7-OH dependence actually looks like over the coming months — and what
+7-OH dependence looks like over the coming months, and what
 the broader opioid use disorder literature tells us about the arc
 beyond that.
 
 **7-OH only emerged as a widely-used synthetic in 2023, and the
-community of people quitting it really took shape in early 2024.**
+community of people quitting it took shape in early 2024.**
 This site has about 18 months of collective 7-OH-specific experience
 to draw from, not decades. Where this page talks about long-term
 recovery beyond that window, it's borrowing from the broader OUD
@@ -35,32 +35,32 @@ that earns the second mirror.
 ## How bad this actually is
 
 7-OH dependence is severe. This isn't kratom-leaf-habit territory.
-The concentrated synthetic — and the stacked products built around
-it — produces a dependence pattern that hits hard and fast, and one
+The concentrated synthetic, and the stacked products built around
+it, produces a dependence pattern that hits hard and fast, and one
 of the things people in this community describe almost universally
 is the **compulsive redose quality** of it.
 
 You know what this feels like. You knew you were going to use again
 in two hours. You knew it while you were taking the dose you were
-taking. The pull wasn't "I want more" — it was a kind of inevitable
+taking. The pull wasn't "I want more", it was a kind of inevitable
 math your body did without asking you. The next dose was always
 already happening.
 
 People who've been through it often describe that compulsive,
 loss-of-control quality as feeling closer to what stimulant users
 describe than what people coming off traditional opioids report.
-That comparison is **experiential, not pharmacological** — 7-OH is
+That comparison is **experiential, not pharmacological**, 7-OH is
 a mu-opioid agonist, not a stimulant. But the *felt experience* of
 chasing the next dose, the strain on every commitment and every
 relationship, the way time disappeared into the loop of redose and
-wait and redose again — that's what people in this community keep
+wait and redose again, that's what people in this community keep
 saying.
 
 The pharmacology backs the abuse-liability part of that picture, at
 least preclinically. [Hemby, McCurdy and colleagues (2019,
 Addiction Biology)](https://pubmed.ncbi.nlm.nih.gov/29949228/)
-showed in rat self-administration that 7-OH — unlike its parent
-alkaloid mitragynine — substitutes for morphine and is
+showed in rat self-administration that 7-OH, unlike its parent
+alkaloid mitragynine, substitutes for morphine and is
 self-administered in a dose-dependent way. [The 2025 review in
 Addiction](https://onlinelibrary.wiley.com/doi/10.1111/add.16728)
 documents the rapid emergence of semi-synthetic 7-OH consumer
@@ -89,7 +89,7 @@ treatment plan. The chronic-disease model is the honest one for
 opioid dependence too.
 
 In the first weeks and months specifically, relapse rates are
-higher than that average — the early window is the highest-risk
+higher than that average, the early window is the highest-risk
 stretch. People in this community know this from inside it. The
 fuck-its hit at week 3 and week 6 and month 4 and they hit harder
 than they should.
@@ -126,7 +126,7 @@ The honest scientific picture, source-checked:
   rates.
 - **The 5-year mark is meaningful.** NIDA's chronic-disease framing
   notes that after multiple years of sustained remission, relapse
-  risk drops substantially — approaching general-population rates.
+  risk drops substantially, approaching general-population rates.
   Time off works in your favor.
 - **7-OH-specific long-term outcome data is essentially zero.** The
   compound and its semi-synthetic product market are too new for
@@ -143,7 +143,7 @@ Two things that are NOT in the literature:
   making it up.
 - A predictable timeline for when *you* specifically will feel
   better. The broader opioid-recovery literature shows recovery
-  curves with enormous individual variation — some people feel
+  curves with enormous individual variation, some people feel
   mostly normal within weeks, some have a longer stretch.
   Extrapolating that variance to 7-OH is reasonable until
   7-OH-specific cohorts catch up.
@@ -153,13 +153,13 @@ Two things that are NOT in the literature:
 The receptors come back. The signaling normalizes. The HPA axis
 renormalizes. The sleep architecture reassembles. The dopamine
 system rebalances. Endorphin production rebuilds. These aren't
-promises — they're what the imaging and clinical literature
+promises, they're what the imaging and clinical literature
 consistently shows ([Volkow et al., PET imaging in addiction](https://pmc.ncbi.nlm.nih.gov/articles/PMC3760378/);
 [opioid receptor adaptation review](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2025.1597922/full);
 [sleep recovery in opioid dependence](https://pubmed.ncbi.nlm.nih.gov/25462136/);
 [HPA axis recovery review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10003084/)).
 
-The functional version — what you'll actually notice:
+The functional version, what you'll notice:
 
 - **Sleep comes back.** First in pieces, then more consolidated,
   then real. Months, not weeks for most people. See
@@ -181,7 +181,7 @@ The functional version — what you'll actually notice:
 Variance is wide. Some people in this community are mostly back to
 themselves within a couple of months. Some have a longer,
 harder stretch. The broader opioid-recovery literature documents
-recovery arcs that for some people extend well past a year — and
+recovery arcs that for some people extend well past a year, and
 since 7-OH-specific cohorts are too young to give us our own data
 yet, that's a reasonable range to keep in mind. None of those
 outcomes is "wrong" or means recovery isn't happening. The
@@ -194,7 +194,7 @@ Your body knows how to do this.
 
 ## Stacking the days
 
-Here's the unglamorous version of how this actually works.
+Here's the unglamorous version of how this works.
 
 You don't recover by *deciding* to recover. You recover by stacking
 days. One, then another, then another. The first ten days are the
@@ -215,7 +215,7 @@ started." Both are weather.
 Stack the days. Crush the weeks. Eventually the months will look
 back at you.
 
-The people in this community who are a year out — and the broader
+The people in this community who are a year out, and the broader
 opioid-recovery community with decades of experience coming off
 heroin, fentanyl, prescription opioids before this compound existed
 — did exactly this. They did not have some quality you don't have.
@@ -241,20 +241,16 @@ Keep going.
 
 ## Where to read next
 
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  if a craving is loud right now, that's the page.
-- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)** —
-  the focused page on what happens if you use again after a stretch off.
-- **[What is PAWS](/post-acute/what-is-paws)** — the broader
+- **[Thinking About Using?](/start-here/thinking-about-using)**: if a craving is loud right now, that's the page.
+- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: the focused page on what happens if you use again after a stretch off.
+- **[What is PAWS](/post-acute/what-is-paws)**: the broader
   post-acute picture.
-- **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)** —
-  the focused page on the flat-mood side of post-acute.
-- **[Dopamine Recovery](/post-acute/dopamine-recovery)** — what's
-  actually happening when joy comes back.
-- **[Sleep Recovery](/post-acute/sleep-recovery)** — the longest
+- **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the focused page on the flat-mood side of post-acute.
+- **[Dopamine Recovery](/post-acute/dopamine-recovery)**: what's
+  happening when joy comes back.
+- **[Sleep Recovery](/post-acute/sleep-recovery)**: the longest
   tail of recovery.
-- **[Impending Doom](/post-acute/impending-doom)** — for the
+- **[Impending Doom](/post-acute/impending-doom)**: for the
   acute-anxiety waves that hit on the way.
-- **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)** —
-  Kratom Anonymous and others. The people who are doing what
+- **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)**: Kratom Anonymous and others. The people who are doing what
   this page is about.

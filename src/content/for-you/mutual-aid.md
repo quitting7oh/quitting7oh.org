@@ -1,8 +1,8 @@
 ---
 title: "Mutual Aid & Recovery Groups"
-description: "Free peer support groups for the person in recovery — Kratom Anonymous (the most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others. Try more than one."
+description: "Free peer support groups for the person in recovery, Kratom Anonymous (the most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others. Try more than one."
 category: "for-you"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 6
 ---
 
@@ -11,7 +11,7 @@ Mutual aid groups are free, accessible, and put you in a room (real or virtual) 
 A few principles before the directory:
 
 - **Try more than one group.** People often write off "recovery groups" after a single bad meeting at a single chapter. The culture varies dramatically between fellowships and even between meetings within the same fellowship.
-- **The 12-step vs. secular vs. mindfulness split matters.** None is "the right one." The right one is the one you'll actually attend.
+- **The 12-step vs. secular vs. mindfulness split matters.** None is "the right one." The right one is the one you'll attend.
 - **Online meetings count.** They are not a lesser version of in-person meetings. For many people, the privacy and accessibility are exactly what makes attending sustainable.
 - **You do not have to be abstinent to attend most of these.** The traditional 12-step requirement is "a desire to stop using," not proof you've stopped.
 
@@ -29,7 +29,7 @@ This is the single most directly applicable mutual aid for this site's audience.
 
 The full schedule with Zoom links is at **[Meeting Schedules](/resources/meeting-schedules)**.
 
-### Quitting Kratom Support (KQS / TIAWO — "There Is A Way Out")
+### Quitting Kratom Support (KQS / TIAWO, "There Is A Way Out")
 
 **Website:** [kratomquitters.com](https://kratomquitters.com)
 
@@ -47,7 +47,7 @@ The full schedule with Google Meet links is at **[Meeting Schedules](/resources/
 
 **Website:** [na.org](https://www.na.org)
 
-The largest mutual aid fellowship for any drug-use recovery. **12-step**, all substances welcome — the only requirement is "the desire to stop using." Enormous in-person and online network; in most US cities you can find an [NA](https://www.na.org) meeting almost any hour of any day.
+The largest mutual aid fellowship for any drug-use recovery. **12-step**, all substances welcome, the only requirement is "the desire to stop using." Enormous in-person and online network; in most US cities you can find an [NA](https://www.na.org) meeting almost any hour of any day.
 
 The "all substances welcome" framing matters here: NA does not distinguish between "primary" substances. If you're coming off 7-OH, you qualify, and your story belongs.
 
@@ -81,7 +81,7 @@ If meditation, mindfulness, or Buddhist philosophy resonates, Refuge offers a st
 
 **Website:** [recoverydharma.org](https://recoverydharma.org)
 
-A more recent split from Refuge Recovery, with a similar mindfulness orientation but more decentralized — peer-led with no central paid leadership. Free, in-person and online. Some readers will find the lower hierarchy and more bottom-up structure appealing; others may prefer Refuge's more established meeting network.
+A more recent split from Refuge Recovery, with a similar mindfulness orientation but more decentralized, peer-led with no central paid leadership. Free, in-person and online. Some readers will find the lower hierarchy and more bottom-up structure appealing; others may prefer Refuge's more established meeting network.
 
 The recovery practices are similar across both; the difference is mostly organizational and cultural.
 
@@ -89,7 +89,7 @@ The recovery practices are similar across both; the difference is mostly organiz
 
 **Website:** [thephoenix.org](https://thephoenix.org)
 
-**Sober active community.** Not a meeting-based fellowship — instead, a network of free fitness, climbing, yoga, hiking, cycling, social, and creative-arts events for people in recovery. The only "membership" requirement is **48 hours sober** to participate in any given event.
+**Sober active community.** Not a meeting-based fellowship, instead, a network of free fitness, climbing, yoga, hiking, cycling, social, and creative-arts events for people in recovery. The only "membership" requirement is **48 hours sober** to participate in any given event.
 
 Particularly useful for the post-acute and longer-term recovery stretches when isolation and lack of a sober social circle become the bigger challenge. The community is real and the events are well-organized. Free.
 
@@ -97,13 +97,13 @@ Particularly useful for the post-acute and longer-term recovery stretches when i
 
 **Website:** [intherooms.com](https://www.intherooms.com)
 
-Online meeting network spanning many fellowships — [NA](https://www.na.org), [AA](https://www.aa.org), SMART, Refuge, Dharma, women's-only, LGBTQ+, and many others. Useful as a single place to browse and try different formats. Free.
+Online meeting network spanning many fellowships, [NA](https://www.na.org), [AA](https://www.aa.org), SMART, Refuge, Dharma, women's-only, LGBTQ+, and many others. Useful as a single place to browse and try different formats. Free.
 
 ### LifeRing Secular Recovery
 
 **Website:** [lifering.org](https://lifering.org)
 
-**Secular, abstinence-focused.** Uses a "Sober Self vs. Addict Self" framing — strengthening the part of you that wants sobriety, weakening the part that wants to use. Less prescriptive than SMART; more emphasis on each person developing their own personal recovery plan. In-person and online. Free.
+**Secular, abstinence-focused.** Uses a "Sober Self vs. Addict Self" framing, strengthening the part of you that wants sobriety, weakening the part that wants to use. Less prescriptive than SMART; more emphasis on each person developing their own personal recovery plan. In-person and online. Free.
 
 ### Women for Sobriety
 
@@ -123,15 +123,15 @@ If a Christian framework is what works for you, this is the most established opt
 
 **Website:** [aa.org](https://www.aa.org)
 
-Named for alcoholism, but in many areas it's the only fellowship that runs meetings every hour of every day. **12-step.** Many people in opioid and kratom recovery attend AA simply because the meetings are everywhere and the format is familiar.
+Named for alcoholism, but in many areas it's the only fellowship that runs meetings every hour of every day. **12-step.** Many people in opioid and kratom recovery attend AA because the meetings are everywhere and the format is familiar.
 
 You don't need to be alcoholic to attend an open AA meeting; many groups explicitly welcome anyone working a recovery program. If you're new to mutual aid and want to attend a meeting tonight, the AA meeting near you is often the most accessible starting point even if you ultimately settle into NA, HA, KA, SMART, or another fellowship.
 
-### HAMS — Harm Reduction, Abstinence, and Moderation Support
+### HAMS, Harm Reduction, Abstinence, and Moderation Support
 
 **Website:** [hams.cc](https://hams.cc)
 
-For people who want **choice in their goal** — abstinence, moderation, harm reduction, or some combination. Online network with chat rooms, forums, and resources. Less meeting-format-driven than the others on this page.
+For people who want **choice in their goal**, abstinence, moderation, harm reduction, or some combination. Online network with chat rooms, forums, and resources. Less meeting-format-driven than the others on this page.
 
 HAMS is included here for completeness and because some people aren't ready for abstinence-only frameworks. Note: for opioid-class dependence specifically (which is what 7-OH is), moderation is much harder to sustain than abstinence, and the harm-reduction framing pairs more easily with MAT than with pure willpower-based moderation. Many in this community ultimately move toward abstinence even if they start in a harm-reduction frame.
 
@@ -151,10 +151,10 @@ Practical heuristics for picking what to try first:
 
 ## On this community
 
-The [quitting7oh Discord and subreddit](/about/community) complement (not replace) any of the above. The Discord is a 24/7 chat infrastructure, not scheduled meetings — it pairs well with attending live meetings somewhere. The pattern that tends to work for many people is **one or two regular meetings somewhere + the Discord/subreddit for the in-between hours**.
+The [quitting7oh Discord and subreddit](/about/community) complement (not replace) any of the above. The Discord is a 24/7 chat infrastructure, not scheduled meetings, it pairs well with attending live meetings somewhere. The pattern that tends to work for many people is **one or two regular meetings somewhere + the Discord/subreddit for the in-between hours**.
 
 ## Where to read next
 
-- **[Meeting Schedules](/resources/meeting-schedules)** — full schedules for both kratom-specific fellowships (Kratom Anonymous and Quitting Kratom Support / TIAWO) with day, time, format, and join links
-- **[Sober Living Homes](/for-you/sober-living)** — when meetings need to be supplemented with a different living environment
-- **[Community](/about/community)** — about the Discord and subreddit
+- **[Meeting Schedules](/resources/meeting-schedules)**: full schedules for both kratom-specific fellowships (Kratom Anonymous and Quitting Kratom Support / TIAWO) with day, time, format, and join links
+- **[Sober Living Homes](/for-you/sober-living)**: when meetings need to be supplemented with a different living environment
+- **[Community](/about/community)**: about the Discord and subreddit

@@ -1,8 +1,8 @@
 ---
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
-description: "Post-acute withdrawal syndrome — what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what actually helps, labeled by evidence level."
+description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what actually helps, labeled by evidence level."
 category: "post-acute"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 1
 ---
 
@@ -16,21 +16,21 @@ lingering blahness here and there but generally good. **Both are
 normal.** This page is to help you understand what's happening either
 way.
 
-If what you're feeling right now is actually *more* than fine —
-clear, optimistic, energized, almost euphoric — that's the
+If what you're feeling right now is *more* than fine —
+clear, optimistic, energized, almost euphoric, that's the
 [pink cloud](/post-acute/pink-cloud), and it has its own page on
 how to use the window and what tends to come after.
 
 ## What PAWS actually is
 
-PAWS — **post-acute withdrawal syndrome** — is the cluster of
+PAWS, **post-acute withdrawal syndrome**, is the cluster of
 psychological, mood, sleep, and cognitive symptoms that can persist
 after acute physical withdrawal ends. The construct is recognized in
 [SAMHSA's TIP-45 detoxification guidance](https://store.samhsa.gov/product/tip-45-detoxification-substance-abuse-treatment/sma15-4131)
 and described as the "second-phase" of withdrawal in a substantial
 body of [peer-reviewed addiction literature](https://www.sciencedirect.com/science/article/abs/pii/S1555415521005523).
-It's not exclusive to opioids — alcohol, benzodiazepine, and stimulant
-PAWS are all documented — but the opioid version is what concerns this
+It's not exclusive to opioids, alcohol, benzodiazepine, and stimulant
+PAWS are all documented, but the opioid version is what concerns this
 site.
 
 **Not everyone gets PAWS.** [Reported prevalence varies enormously](https://www.webmd.com/mental-health/addiction/opioids-post-acute-withdrawal-syndrome)
@@ -65,7 +65,7 @@ you're not, ignore this.
   This is when most people who hit walls hit them, because the
   novelty of being clean has worn off.
 - **Months 3 to 6:** for most, symptoms become less frequent. Sleep
-  starts genuinely improving. Pleasure starts coming back, in small
+  starts improving. Pleasure starts coming back, in small
   doses at first.
 - **Months 6 to 12:** for the people who had longer PAWS, symptoms
   typically fade significantly. Some people report
@@ -87,7 +87,7 @@ You may have some, all, or none of these:
   dreams, fatigue that sleep doesn't fix. See
   [Sleep Recovery](/post-acute/sleep-recovery) for the focused page.
 - **Anhedonia and depression.** Things that used to feel good —
-  food, music, sex, hobbies — feel muted or empty. See
+  food, music, sex, hobbies, feel muted or empty. See
   [Depression and Anhedonia](/post-acute/depression-and-anhedonia)
   for the focused page on these symptoms, or
   [Dopamine Recovery](/post-acute/dopamine-recovery) for the
@@ -127,7 +127,7 @@ that take time to unwind:
   sleep disruption that define early PAWS.
 - **Dopamine system effects.** Imaging research shows reduced
   dopamine receptor availability and altered reward processing in
-  long-term opioid use that recovers over weeks to months — covered
+  long-term opioid use that recovers over weeks to months, covered
   on the [Dopamine Recovery](/post-acute/dopamine-recovery) page.
 - **Sleep architecture.** REM and deep sleep are
   [suppressed by chronic opioid use](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2670904/)
@@ -166,7 +166,7 @@ Use this to calibrate.
 
 **Normal during PAWS:**
 
-- Anhedonia, flat mood, low motivation — especially weeks 2 to 12
+- Anhedonia, flat mood, low motivation, especially weeks 2 to 12
 - Sleep disruption that improves gradually over months
 - Vivid dreams (sometimes nightmares about using)
 - Mood swings, irritability, free-floating anxiety
@@ -192,8 +192,8 @@ and in the **🆘 Crisis** button on every page.
 
 ## What helps
 
-Interventions cluster into three tiers — evidence-based,
-clinically used, and community-discussed — plus a "what to avoid"
+Interventions cluster into three tiers, evidence-based,
+clinically used, and community-discussed, plus a "what to avoid"
 list. This page gives the overview; the focused pages own the detail.
 
 ### Evidence-based
@@ -216,10 +216,10 @@ symptoms: **SSRIs/SNRIs** (persistent depression/anxiety),
 **bupropion** (anhedonia, low motivation), **gabapentin** (anxiety,
 sleep, restless legs), **clonidine** (stress reactivity, sleep),
 **trazodone** (sleep), **mirtazapine** (sleep, anxiety, depression,
-nausea — single-med coverage), **buspirone** (anxiety without
+nausea, single-med coverage), **buspirone** (anxiety without
 dependence),
 **low-dose naltrexone** (post-acute only, can't combine with bupe),
-and continued **MAT** — buprenorphine via the [Sublocade single-shot
+and continued **MAT**, buprenorphine via the [Sublocade single-shot
 exit](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone),
 or [SR-17](/other-tools/sr17018-info) as the second
 community-validated medication-assisted path off the synthetics.
@@ -240,7 +240,7 @@ profiles (L-tyrosine with MAOIs, ashwagandha with hyperthyroidism,
 serotonergic interactions with SSRIs).
 
 **[Vitamins & Supplements](/other-tools/vitamins-supplements)** is
-the primary page — full breakdown by symptom, the interaction
+the primary page, full breakdown by symptom, the interaction
 profiles, and the practical "don't stack everything at once" guidance.
 
 ### What to avoid
@@ -258,7 +258,7 @@ profiles, and the practical "don't stack everything at once" guidance.
   These are how people who've quit one dependence end up in another.
 - **"Dopamine fasting" / extreme abstinence protocols.** The
   underlying behavioral practice may help; the dopamine framing is
-  wrong and the extreme versions backfire — see
+  wrong and the extreme versions backfire, see
   [Dopamine Recovery](/post-acute/dopamine-recovery) for the longer
   treatment of why this framing falls apart.
 
@@ -273,7 +273,7 @@ understanding why.
 
 Buprenorphine is a partial mu-opioid receptor agonist. While you're
 on it, your receptors are still being activated. That's the whole
-point — it's why bupe suppresses cravings and withdrawal. But it
+point, it's why bupe suppresses cravings and withdrawal. But it
 also means **your brain isn't fully rebuilding the way it would if
 you were opioid-free.** Endogenous endorphin production stays
 suppressed. Receptor recovery is partial. Some of the brain healing
@@ -305,7 +305,7 @@ helps. See
 deeper dive.
 
 If you've been on bupe for months and you're feeling consistently
-flat, blunted, or "fine but not really" — that's likely the
+flat, blunted, or "fine but not really", that's likely the
 medication, not unhealing brain chemistry. Talk to your prescriber
 about whether your dose is higher than it needs to be.
 
@@ -314,14 +314,14 @@ about whether your dose is higher than it needs to be.
 Suboxone covers the opioid receptor side of things. It does **not**
 address:
 
-- The serotonergic and adrenergic piece — direct receptor activity
+- The serotonergic and adrenergic piece, direct receptor activity
   from minor alkaloids like paynantheine, speciogynine, and
   corynantheidine ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/);
   [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)).
   The wired anxiety, brain zaps, and broken sleep that don't lift on
   bupe are usually this. See
   [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
-- The dopamine/reward system rebuild — see
+- The dopamine/reward system rebuild, see
   [Dopamine Recovery](/post-acute/dopamine-recovery).
 - The behavioral and habit patterns.
 - Sleep architecture changes.
@@ -346,7 +346,7 @@ For most people, bupe is a powerful tool that gets them off 7-OH
 safely with minimal acute suffering. The trade-off is that **the
 brain healing happens after the bupe taper, not during it.**
 Understanding this prevents the common pattern of "I'm on bupe and
-I still feel flat — what's wrong?" The answer is often: nothing's
+I still feel flat, what's wrong?" The answer is often: nothing's
 wrong, that's bupe, and the real recovery curve starts when you
 finish the taper.
 
@@ -361,31 +361,28 @@ routines, don't get complacent.
 
 If you're in the PAWS group: your brain is healing. Receptors are
 recovering. Endorphin production is rebuilding. The work you do
-here — the supplements you consider, the routines you build, the
-connections you maintain — all of it adds up.
+here, the supplements you consider, the routines you build, the
+connections you maintain, all of it adds up.
 
 ## Where to read next
 
-- **[The Pink Cloud](/post-acute/pink-cloud)** — the early-recovery
+- **[The Pink Cloud](/post-acute/pink-cloud)**: the early-recovery
   upside some people hit after acute eases. Calibrated for "what to
   do with this energy" rather than "wait for it to fade."
-- **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)** —
-  the focused page on the flat-mood and can't-feel-pleasure side
+- **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the focused page on the flat-mood and can't-feel-pleasure side
   of PAWS.
-- **[Dopamine Recovery](/post-acute/dopamine-recovery)** — the
+- **[Dopamine Recovery](/post-acute/dopamine-recovery)**: the
   dopamine side specifically: what's happening, what helps, what's
   pop-neuroscience.
-- **[Sleep Recovery](/post-acute/sleep-recovery)** — sleep is the
+- **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is the
   longest tail; the focused page.
-- **[Impending Doom](/post-acute/impending-doom)** — the specific
+- **[Impending Doom](/post-acute/impending-doom)**: the specific
   terror that hits in withdrawal and PAWS, and what to do with it.
-- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)** —
-  what happens if you use again after a stretch off.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)** — what
-  recovery actually looks like over the coming months.
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  bookmark for craving moments.
-- **[Telehealth Providers](/resources/telehealth)** — for the
+- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: what happens if you use again after a stretch off.
+- **[Long-Term Outlook](/post-acute/long-term-outlook)**: what
+  recovery looks like over the coming months.
+- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark for craving moments.
+- **[Telehealth Providers](/resources/telehealth)**: for the
   SSRI / SNRI / bupropion / buspirone / Suboxone / Sublocade items
   in the clinically-used list. LDN sits outside standard OUD
   telehealth; see the [LDN page](/other-tools/naltrexone-low-dose)

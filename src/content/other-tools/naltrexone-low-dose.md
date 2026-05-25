@@ -2,14 +2,14 @@
 title: "Low-Dose Naltrexone (LDN)"
 description: "Naltrexone at a small fraction of the standard dose, used off-label for chronic pain, autoimmune conditions, and increasingly as an adjunct in addiction recovery once acute withdrawal is over. What it is, what the evidence does and doesn't show, and the safety caveats."
 category: "other-tools"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 9
 ---
 
 LDN is the same molecule as
 [normal-dose naltrexone](/other-tools/naltrexone-normal-dose) used at
 roughly 1/10 to 1/50 of the standard dose. At those low doses the
-behavior is different — it does not produce sustained opioid
+behavior is different, it does not produce sustained opioid
 receptor blockade, and the hypothesized mechanisms involve transient
 blockade triggering compensatory endogenous opioid system
 upregulation and (separately) anti-inflammatory effects on microglia.
@@ -57,7 +57,7 @@ established as the complete explanation:
   work (*Eur J Neurosci* 2008)](https://pubmed.ncbi.nlm.nih.gov/18662331/)
   established this mechanism in rodent models.
 
-The two mechanisms are not mutually exclusive — current LDN
+The two mechanisms are not mutually exclusive, current LDN
 researchers generally invoke both. Pages that present a single
 mechanism as settled (or that present LDN's mechanism as
 "definitive") are getting ahead of the literature.
@@ -68,7 +68,7 @@ The published clinical evidence is real but limited. Pattern: pilot
 trials, small RCTs, and case series, mostly from single groups,
 with large multi-site replication still lacking.
 
-**Fibromyalgia.** Two small trials from the Younger lab — a
+**Fibromyalgia.** Two small trials from the Younger lab, a
 [pilot (n=10, *Pain Med* 2009)](https://pubmed.ncbi.nlm.nih.gov/19453963/)
 and a [crossover RCT (n=31, *Arthritis Rheum* 2013)](https://pubmed.ncbi.nlm.nih.gov/23359310/)
 — showed 28.8% vs. 18.0% pain reduction (p=0.016) with 4.5 mg/day
@@ -89,7 +89,7 @@ found LDN safe and well-tolerated with reduced spasticity. A
 showed mental-health quality-of-life improvements but high dropout
 limited statistical power.
 
-**Opioid detox enhancement.** One RCT — [Mannelli et al.
+**Opioid detox enhancement.** One RCT, [Mannelli et al.
 (*Am J Addict* 2009)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3190236/)
 — added very-low-dose naltrexone (0.125–0.25 mg) to a methadone
 taper and reported attenuated withdrawal and significantly higher
@@ -106,8 +106,8 @@ honestly rather than dressed up as 7-OH-specific evidence.
 
 ## How it's typically used in recovery contexts
 
-Clinical practice — what prescribers using LDN for post-acute
-recovery actually do, descriptively:
+Clinical practice, what prescribers using LDN for post-acute
+recovery do, descriptively:
 
 - **Started after complete opioid clearance**, typically 7 to 14
   days fully opioid-free per the standard naltrexone-initiation
@@ -131,8 +131,8 @@ sits with a clinician who knows your situation.
 
 ## Side effects
 
-LDN's side-effect profile is generally mild — much milder than
-full-dose naltrexone — but it is real:
+LDN's side-effect profile is generally mild, much milder than
+full-dose naltrexone, but it is real:
 
 - **Vivid dreams and sleep disruption** in the first one to two
   weeks, often resolving with continued use or a switch to morning
@@ -148,7 +148,7 @@ provider**. Standard opioid analgesics will be partially blocked
 during the active dose window. Carrying a card or note that
 identifies you as taking LDN is a reasonable precaution.
 
-## Safety — the precipitated-withdrawal caveat
+## Safety, the precipitated-withdrawal caveat
 
 LDN's precipitated-withdrawal risk is **lower than full-dose
 naltrexone** but **not zero**. The same mechanism (mu-opioid
@@ -179,22 +179,22 @@ with a clinician, not as DIY.
 - **Not [ULDN](/other-tools/naltrexone-ultra-low-dose).**
   Ultra-low-dose naltrexone uses microgram doses (about
   1,000× smaller), is taken *with* opioids, and is investigational
-  with thin evidence — completely different protocol with different
+  with thin evidence, completely different protocol with different
   pharmacology and different risks.
 
 ## Where to read next
 
-- **[Naltrexone (Overview)](/other-tools/naltrexone)** — the parent
+- **[Naltrexone (Overview)](/other-tools/naltrexone)**: the parent
   page comparing all three protocols.
 - **[Normal-Dose Naltrexone](/other-tools/naltrexone-normal-dose)**
-  — the full-dose, FDA-approved indication, and the page with the
+ , the full-dose, FDA-approved indication, and the page with the
   unmissable precipitated-withdrawal safety content.
 - **[Ultra-Low-Dose Naltrexone (ULDN)](/other-tools/naltrexone-ultra-low-dose)**
-  — the investigational microgram tier.
+ , the investigational microgram tier.
 - **[What is PAWS](/post-acute/what-is-paws)** and
   **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**
-  — the post-acute symptoms LDN is often discussed for.
-- **[LDN Research Trust](https://ldnresearchtrust.org/)** — the
+ , the post-acute symptoms LDN is often discussed for.
+- **[LDN Research Trust](https://ldnresearchtrust.org/)**: the
   closest thing to a directory of LDN-friendly prescribers.
   Most OUD-specific telehealth providers do not routinely
   prescribe LDN; integrative-medicine, pain-medicine, and
@@ -202,8 +202,8 @@ with a clinician, not as DIY.
 
 ## Further reading
 
-- [LDN Research Trust](https://ldnresearchtrust.org/) — independent
+- [LDN Research Trust](https://ldnresearchtrust.org/), independent
   hub, provider and pharmacy directories, patient resources
-- [Toljan & Vrooman (*Med Sci* 2018) — therapeutic uses review](https://pmc.ncbi.nlm.nih.gov/articles/PMC6313374/)
-- [Leiber & Parker (*Cureus* 2025) — scoping review of 68 LDN studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC12017383/)
-- [Younger, Parkitny & McLain (*Clin Rheumatol* 2014) — mechanism review](https://pubmed.ncbi.nlm.nih.gov/24526250/)
+- [Toljan & Vrooman (*Med Sci* 2018), therapeutic uses review](https://pmc.ncbi.nlm.nih.gov/articles/PMC6313374/)
+- [Leiber & Parker (*Cureus* 2025), scoping review of 68 LDN studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC12017383/)
+- [Younger, Parkitny & McLain (*Clin Rheumatol* 2014), mechanism review](https://pubmed.ncbi.nlm.nih.gov/24526250/)

@@ -1,14 +1,14 @@
 ---
 title: "Bernese Method (Micro-Induction)"
-description: "Low-dose buprenorphine induction with overlapping full-agonist use — what it is, the original Bernese protocol, the modern variants, and where it fits for kratom-derivative dependence."
+description: "Low-dose buprenorphine induction with overlapping full-agonist use, what it is, the original Bernese protocol, the modern variants, and where it fits for kratom-derivative dependence."
 category: "mat-suboxone"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 3
 ---
 
-The **Bernese method** (also called **micro-induction** or **low-dose buprenorphine induction, LDBI**) is a Suboxone-induction approach that **doesn't require you to wait in withdrawal**. Instead of stopping your opioid, holding through escalating COWS, and then taking a 2–4 mg dose at the bottom of the wait, you start with very small doses of buprenorphine — typically 0.2–0.5 mg — **while you continue your normal opioid**, and gradually titrate the bup up over 5 to 10 days. The full agonist gets dropped only once bup coverage is high enough to bridge through.
+The **Bernese method** (also called **micro-induction** or **low-dose buprenorphine induction, LDBI**) is a Suboxone-induction approach that **doesn't require you to wait in withdrawal**. Instead of stopping your opioid, holding through escalating COWS, and then taking a 2–4 mg dose at the bottom of the wait, you start with very small doses of buprenorphine, typically 0.2–0.5 mg, **while you continue your normal opioid**, and gradually titrate the bup up over 5 to 10 days. The full agonist gets dropped only once bup coverage is high enough to bridge through.
 
-It exists because **standard COWS-gated induction has a higher failure rate on long-acting opioids**, and because some people genuinely cannot tolerate the wait. For the 7-OH-alone case (short half-life, fast clearance), standard induction usually works fine. For the long-acting kratom synthetics ([MGM-15](/compounds/mgm15) at ~15 hours, [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm)), and for anyone who's already tried standard induction and gotten precipitated withdrawal, micro-induction is the alternative pathway.
+It exists because **standard COWS-gated induction has a higher failure rate on long-acting opioids**, and because some people cannot tolerate the wait. For the 7-OH-alone case (short half-life, fast clearance), standard induction usually works fine. For the long-acting kratom synthetics ([MGM-15](/compounds/mgm15) at ~15 hours, [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm)), and for anyone who's already tried standard induction and gotten precipitated withdrawal, micro-induction is the alternative pathway.
 
 This page is the overview of what it is and where it fits. **The standard COWS-gated approach is on [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-info), and the timing tool for that approach is on [COWS & SOWS Guide](/mat-suboxone/suboxone-cows).** Neither is "the real" induction; they're different pathways for different situations. [SR-17](/other-tools/sr17018-info) is another path entirely if Suboxone isn't right for you.
 
@@ -16,7 +16,7 @@ This page is the overview of what it is and where it fits. **The standard COWS-g
 
 | | **COWS-gated (standard)** | **Bernese (micro-induction)** |
 |---|---|---|
-| **Wait in withdrawal?** | Yes — until COWS ≥ 12 (SOWS ≥ 17) | No — you keep your opioid going |
+| **Wait in withdrawal?** | Yes, until COWS ≥ 12 (SOWS ≥ 17) | No, you keep your opioid going |
 | **First bup dose** | 2 mg sublingual | 0.2–0.5 mg sublingual (or transdermal patch) |
 | **Time to full coverage** | Hours (same day, if induction succeeds) | 5–10 days (some 4-day and 7-day variants) |
 | **Precipitated withdrawal risk** | Real if timed early | Very low |
@@ -28,10 +28,10 @@ This page is the overview of what it is and where it fits. **The standard COWS-g
 
 You're a reasonable candidate to discuss micro-induction with a prescriber if any of these apply:
 
-- **You've been on long-acting synthetics** — [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm) — where the half-life means the COWS-gated wait stretches to 36–72+ hours and standard induction has a documented higher failure rate
-- **You've tried standard induction before and gotten precipitated withdrawal** — even with COWS at threshold, the displacement can be too much
-- **You're on a stacked product** where you don't actually know which compound (or combination) you're coming off
-- **You cannot tolerate the wait** — life circumstances, prior trauma around active withdrawal, severe baseline symptoms
+- **You've been on long-acting synthetics**: [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm), where the half-life means the COWS-gated wait stretches to 36–72+ hours and standard induction has a documented higher failure rate
+- **You've tried standard induction before and gotten precipitated withdrawal**: even with COWS at threshold, the displacement can be too much
+- **You're on a stacked product** where you don't know which compound (or combination) you're coming off
+- **You cannot tolerate the wait**: life circumstances, prior trauma around active withdrawal, severe baseline symptoms
 
 It's **not** a default-better approach for everyone. For most [7-OH](/compounds/7-oh)-alone users (short half-life, mu-dominant, clears fast), the standard COWS-gated induction is faster, has decades of evidence behind it, and works. The case for micro-induction is specific.
 
@@ -55,7 +55,7 @@ That 29-day timeline is on the long end. Most modern variants compress it substa
 
 ## Modern variant protocols
 
-The original 8–10 day approach has been adapted into shorter schedules as adoption spread. None of these is "the official" protocol — they're different attempts to balance speed, completion rate, and out-of-pocket complexity.
+The original 8–10 day approach has been adapted into shorter schedules as adoption spread. None of these is "the official" protocol, they're different attempts to balance speed, completion rate, and out-of-pocket complexity.
 
 **The BC 7-day schedule** ([described in Suen et al. 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/)) is commonly used in North America:
 
@@ -69,17 +69,17 @@ The original 8–10 day approach has been adapted into shorter schedules as adop
 | 6 | 4 mg BID |
 | 7+ | 12 mg single dose, then standard maintenance |
 
-**The 4-day accelerated variant** front-loads more aggressively — 0.5 mg QID rising to 8 mg TID by day 4. Higher dropout in outpatient data but faster.
+**The 4-day accelerated variant** front-loads more aggressively, 0.5 mg QID rising to 8 mg TID by day 4. Higher dropout in outpatient data but faster.
 
 **Transdermal start** uses a buprenorphine patch (Butrans 20 mcg/hr) for the first ~7 days while the full agonist tapers, then transitions to sublingual. A small case series (Hess et al. 2022, n=7) [reported 5 of 7 outpatients succeeded with this approach](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/). Useful if you can't reliably handle multiple small sublingual doses per day or want a smoother ramp.
 
-**The 8-hour "rapid" home variant** ([Vu et al., n=9](https://pmc.ncbi.nlm.nih.gov/articles/PMC12590818/)): 1 mg bup/nx (1/8 of a 2 mg film) hourly for 8 hours in fentanyl users who'd waited ≥24 hours since last use, then standard 8/2 mg BID. 7 of 9 succeeded. This is much closer to standard induction but with smaller increments — sometimes useful as a middle ground.
+**The 8-hour "rapid" home variant** ([Vu et al., n=9](https://pmc.ncbi.nlm.nih.gov/articles/PMC12590818/)): 1 mg bup/nx (1/8 of a 2 mg film) hourly for 8 hours in fentanyl users who'd waited ≥24 hours since last use, then standard 8/2 mg BID. 7 of 9 succeeded. This is much closer to standard induction but with smaller increments, sometimes useful as a middle ground.
 
-For practical mechanics on how to actually get 0.25–0.5 mg doses out of 2 mg or 8 mg films, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose) — the eighth-of-a-2mg-film cut is the standard micro-induction unit.
+For practical mechanics on how to get 0.25–0.5 mg doses out of 2 mg or 8 mg films, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose), the eighth-of-a-2mg-film cut is the standard micro-induction unit.
 
 ## Why it works (the pharmacology)
 
-The standard "wait for COWS" approach exists because of one specific failure mode: when bup (high mu-receptor affinity, partial agonist) hits receptors that are heavily occupied by a full agonist, bup **displaces** the full agonist. Because bup's intrinsic activation is lower than the full agonist's was, the net opioid signaling drops sharply — that's precipitated withdrawal. The standard fix is to wait until receptors are mostly cleared (COWS climbs as receptor occupancy drops), then introduce bup against an emptier receptor field.
+The standard "wait for COWS" approach exists because of one specific failure mode: when bup (high mu-receptor affinity, partial agonist) hits receptors that are heavily occupied by a full agonist, bup **displaces** the full agonist. Because bup's intrinsic activation is lower than the full agonist's was, the net opioid signaling drops sharply, that's precipitated withdrawal. The standard fix is to wait until receptors are mostly cleared (COWS climbs as receptor occupancy drops), then introduce bup against an emptier receptor field.
 
 Micro-induction works on the same pharmacology from the other direction. [Receptor-occupancy imaging data summarized by De Aquino et al. (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8020374/):
 
@@ -87,21 +87,21 @@ Micro-induction works on the same pharmacology from the other direction. [Recept
 - 16 mg/day → ~80%
 - 32 mg/day → ~84%
 
-So a **microinduction dose of 0.25–1 mg/day** displaces only a small fraction of receptors at any given moment — staying below the displacement threshold that triggers withdrawal. Because bup has high affinity and slow dissociation, each tiny dose **accumulates** rather than washing out, gradually building up receptor occupancy while the full agonist continues to provide the dominant signal. Over days, the balance shifts. When bup occupancy is high enough, the full agonist can be tapered or stopped without a withdrawal cliff.
+So a **microinduction dose of 0.25–1 mg/day** displaces only a small fraction of receptors at any given moment, staying below the displacement threshold that triggers withdrawal. Because bup has high affinity and slow dissociation, each tiny dose **accumulates** rather than washing out, gradually building up receptor occupancy while the full agonist continues to provide the dominant signal. Over days, the balance shifts. When bup occupancy is high enough, the full agonist can be tapered or stopped without a withdrawal cliff.
 
-That's the mechanism. It's well-supported pharmacologically; what's less well-tested is how often outpatients actually complete the protocol (see next section).
+That's the mechanism. It's well-supported pharmacologically; what's less well-tested is how often outpatients complete the protocol (see next section).
 
 ## What the outcome data actually shows
 
-**Most published evidence is case series and small cohorts, not RCTs.** The [2020 systematic review (Ahmed et al.)](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698) covered 20 studies and 57 patients — 19 of those 20 were case series or case reports; 1 feasibility study; no RCTs. All patients in the included studies reached their target dose, but the review explicitly noted "inconsistent reporting, selection bias, and poor quality evidence."
+**Most published evidence is case series and small cohorts, not RCTs.** The [2020 systematic review (Ahmed et al.)](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698) covered 20 studies and 57 patients, 19 of those 20 were case series or case reports; 1 feasibility study; no RCTs. All patients in the included studies reached their target dose, but the review explicitly noted "inconsistent reporting, selection bias, and poor quality evidence."
 
 Since then:
 
 - **A registered RCT** ([Sandhu et al. 2021, Vancouver General Hospital, n=50 inpatients](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/)) compared rapid micro-induction vs. standard induction. Protocol registered; results have been slow to publish.
-- **Inpatient cohort** ([Button et al. 2022, n=72 attempts](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/)) showed 73.5% completion. 18% discontinued early — most commonly for inadequate pain control or preference for methadone.
-- **Outpatient cohort** ([Suen et al. 2024, n=175 attempts in the fentanyl era](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/)) showed **34% completion** — 38% for the 4-day, 28% for the 7-day. 28-day buprenorphine retention was 21% (4-day) and 18% (7-day).
+- **Inpatient cohort** ([Button et al. 2022, n=72 attempts](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/)) showed 73.5% completion. 18% discontinued early, most commonly for inadequate pain control or preference for methadone.
+- **Outpatient cohort** ([Suen et al. 2024, n=175 attempts in the fentanyl era](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/)) showed **34% completion**, 38% for the 4-day, 28% for the 7-day. 28-day buprenorphine retention was 21% (4-day) and 18% (7-day).
 
-**Inpatient completion is high; outpatient completion is much lower.** That's the gap that matters for most people in this community, because most micro-inductions for kratom-derivative dependence will be done at home, not in a hospital. The dropoff comes mostly from people abandoning the protocol partway through — inadequate symptom relief during the overlap, life getting in the way of the dosing schedule, or returning to the full agonist when it feels easier than continuing the slow ramp.
+**Inpatient completion is high; outpatient completion is much lower.** That's the gap that matters for most people in this community, because most micro-inductions for kratom-derivative dependence will be done at home, not in a hospital. The dropoff comes mostly from people abandoning the protocol partway through, inadequate symptom relief during the overlap, life getting in the way of the dosing schedule, or returning to the full agonist when it feels easier than continuing the slow ramp.
 
 For the right person micro-induction works, but plan for the support structure that an inpatient setting would provide: a prescriber who's reachable when symptoms get rough mid-overlap, a clear plan for adjuncts ([see Helper Medications](/other-tools/helper-meds-info)), and a few people who know what you're doing and can help you stay on the schedule. That's the variable that drives completion.
 
@@ -109,19 +109,19 @@ For the right person micro-induction works, but plan for the support structure t
 
 **There is essentially no published micro-induction-specific evidence for 7-OH, MGM-15, or any kratom-derived compound.** The handful of buprenorphine-for-kratom case reports in the literature all used different approaches:
 
-- [Hendler et al. 2026 (7-HMG use disorder)](https://pubmed.ncbi.nlm.nih.gov/41875249/) — methadone stabilization first, then standard transition. Not Bernese-style overlap.
-- [Kiyokawa et al. 2023 (home induction for kratom use disorder, n=2)](https://academic.oup.com/fampra/article/40/4/596/7232451) — standard COWS-gated home induction starting at 2/0.5 mg. Both patients abstinent at 2 years. Not micro-induction.
-- A [mitragynine pseudoindoxyl case in *Psychoactives* 2026](https://www.mdpi.com/2813-1851/5/1/7) — opposite end of the spectrum, **macro-dose** induction at 32 mg day 1.
+- [Hendler et al. 2026 (7-HMG use disorder)](https://pubmed.ncbi.nlm.nih.gov/41875249/), methadone stabilization first, then standard transition. Not Bernese-style overlap.
+- [Kiyokawa et al. 2023 (home induction for kratom use disorder, n=2)](https://academic.oup.com/fampra/article/40/4/596/7232451), standard COWS-gated home induction starting at 2/0.5 mg. Both patients abstinent at 2 years. Not micro-induction.
+- A [mitragynine pseudoindoxyl case in *Psychoactives* 2026](https://www.mdpi.com/2813-1851/5/1/7), opposite end of the spectrum, **macro-dose** induction at 32 mg day 1.
 
-If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has actually tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
+If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
 
-**A handful of people in this community have used micro-induction successfully for 7-OH, MGM-15, and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked — community knowledge here is genuinely ahead of the published literature.
+**A handful of people in this community have used micro-induction successfully for 7-OH, MGM-15, and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked, community knowledge here is ahead of the published literature.
 
 ## You usually don't need prescriber buy-in on the protocol
 
-The "sourcing small doses" framing common in older write-ups overstates the problem for our audience. A standard Suboxone prescription is 8/2 mg sublingual strips. An 8 mg strip cuts into eighths for 1 mg per piece, or sixteenths for 0.5 mg — enough granularity for any of the schedules above. People in this community doing micro-induction generally do it with strips from a standard prescription, divided themselves.
+The "sourcing small doses" framing common in older write-ups overstates the problem for our audience. A standard Suboxone prescription is 8/2 mg sublingual strips. An 8 mg strip cuts into eighths for 1 mg per piece, or sixteenths for 0.5 mg, enough granularity for any of the schedules above. People in this community doing micro-induction generally do it with strips from a standard prescription, divided themselves.
 
-What that changes: you're not asking a prescriber to bless a custom schedule, you're getting the same Suboxone prescription anyone starting MAT gets. The intake conversation — kratom or 7-OH dependence, ready to come off, want to start Suboxone — is the same regardless of how you plan to do day 1.
+What that changes: you're not asking a prescriber to bless a custom schedule, you're getting the same Suboxone prescription anyone starting MAT gets. The intake conversation, kratom or 7-OH dependence, ready to come off, want to start Suboxone, is the same regardless of how you plan to do day 1.
 
 ## If you do want your prescriber engaged on the protocol
 
@@ -145,27 +145,27 @@ For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone
 
 ## Sources
 
-- [Hammig R, Kemter A, Strasser J, et al. *Subst Abuse Rehabil* 2016;7:99–105 (PMID 27499655)](https://pubmed.ncbi.nlm.nih.gov/27499655/) — original Bernese method case report; [full text](https://www.dovepress.com/use-of-microdoses-for-induction-of-buprenorphine-treatment-with-overla-peer-reviewed-fulltext-article-SAR)
-- [De Aquino JP, Parida S, Sofuoglu M. *Clin Drug Investig* 2021 (PMC8020374)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8020374/) — pharmacology of micro-induction, receptor-occupancy data
-- [Ahmed S, Bhivandkar S, Lonergan BB, Suzuki J. *Drug Alcohol Depend* 2020 — systematic review of micro-induction studies](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698)
-- [Klaire S, Zivanovic R, Barbic SP, et al. *Am J Addict* 2019 (PMID 30901127)](https://pubmed.ncbi.nlm.nih.gov/30901127/) — rapid micro-induction case series
-- [Sandhu R et al. 2021 RCT protocol (PMC7881636)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/) — registered comparison of rapid micro-induction vs. standard
-- [Button D, Hartley J, Robbins J, et al. *J Addict Med* 2022 (PMC8595358)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/) — hospitalized cohort, n=72
-- [Suen LW, Joshi N, Coffin PO, et al. *J Addict Med* 2024 (PMC11762237)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/) — largest outpatient cohort to date, 4-day vs. 7-day comparison
-- [Hess M et al. *J Addict Med* 2022 (PMC9317019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/) — transdermal buprenorphine micro-induction
-- [BC Pharmacy Association — microdosing/Bernese method tables](https://www.bcpharmacy.ca/tablet/fall-18/microdosing-buprenorphine-induction-bernese-method)
-- [ASAM 2020 National Practice Guideline focused update](https://www.asam.org/quality-care/clinical-guidelines/national-practice-guideline) — recognizes LDBI as an option
-- [Hendler R et al. *J Addict Med* 2026 (PMID 41875249)](https://pubmed.ncbi.nlm.nih.gov/41875249/) — 7-HMG use disorder case (methadone-mediated, not Bernese)
-- [Kiyokawa M et al. *Fam Pract* 2023](https://academic.oup.com/fampra/article/40/4/596/7232451) — kratom home induction case series (standard, not Bernese)
+- [Hammig R, Kemter A, Strasser J, et al. *Subst Abuse Rehabil* 2016;7:99–105 (PMID 27499655)](https://pubmed.ncbi.nlm.nih.gov/27499655/), original Bernese method case report; [full text](https://www.dovepress.com/use-of-microdoses-for-induction-of-buprenorphine-treatment-with-overla-peer-reviewed-fulltext-article-SAR)
+- [De Aquino JP, Parida S, Sofuoglu M. *Clin Drug Investig* 2021 (PMC8020374)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8020374/), pharmacology of micro-induction, receptor-occupancy data
+- [Ahmed S, Bhivandkar S, Lonergan BB, Suzuki J. *Drug Alcohol Depend* 2020, systematic review of micro-induction studies](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698)
+- [Klaire S, Zivanovic R, Barbic SP, et al. *Am J Addict* 2019 (PMID 30901127)](https://pubmed.ncbi.nlm.nih.gov/30901127/), rapid micro-induction case series
+- [Sandhu R et al. 2021 RCT protocol (PMC7881636)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/), registered comparison of rapid micro-induction vs. standard
+- [Button D, Hartley J, Robbins J, et al. *J Addict Med* 2022 (PMC8595358)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/), hospitalized cohort, n=72
+- [Suen LW, Joshi N, Coffin PO, et al. *J Addict Med* 2024 (PMC11762237)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/), largest outpatient cohort to date, 4-day vs. 7-day comparison
+- [Hess M et al. *J Addict Med* 2022 (PMC9317019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/), transdermal buprenorphine micro-induction
+- [BC Pharmacy Association, microdosing/Bernese method tables](https://www.bcpharmacy.ca/tablet/fall-18/microdosing-buprenorphine-induction-bernese-method)
+- [ASAM 2020 National Practice Guideline focused update](https://www.asam.org/quality-care/clinical-guidelines/national-practice-guideline), recognizes LDBI as an option
+- [Hendler R et al. *J Addict Med* 2026 (PMID 41875249)](https://pubmed.ncbi.nlm.nih.gov/41875249/), 7-HMG use disorder case (methadone-mediated, not Bernese)
+- [Kiyokawa M et al. *Fam Pract* 2023](https://academic.oup.com/fampra/article/40/4/596/7232451), kratom home induction case series (standard, not Bernese)
 
-> **Reminder.** This page describes a clinical method that requires a prescriber's involvement to do safely. Reading about the protocol is not the same as having a clinician who's tracking your COWS, your dose, your full-agonist source, and your adjuncts. If your current prescriber isn't comfortable with micro-induction, that's a reason to find a different prescriber — not to run the protocol unsupervised.
+> **Reminder.** This page describes a clinical method that requires a prescriber's involvement to do safely. Reading about the protocol is not the same as having a clinician who's tracking your COWS, your dose, your full-agonist source, and your adjuncts. If your current prescriber isn't comfortable with micro-induction, that's a reason to find a different prescriber, not to run the protocol unsupervised.
 
 ## Where to read next
 
-- **[Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-info)** — the standard COWS-gated induction approach, the community's low-and-slow dosing rationale, and the receptor-occupancy data
-- **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)** — the timing tool for standard induction (not needed for micro-induction)
-- **[Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)** — once you've stabilized, the serotonergic/adrenergic gap and what fills it
-- **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)** — the practical mechanics of cutting films to micro-induction doses (0.25, 0.5, 1 mg)
-- **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)** — what happens after you've stabilized, regardless of which induction method got you there
-- **[Telehealth Providers](/resources/telehealth)** — prescriber comparison; flags which providers explicitly handle kratom/7-OH
-- **[SR-17](/other-tools/sr17018-info)** — the other community-discussed pathway off the synthetics, if Suboxone isn't the right fit
+- **[Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-info)**: the standard COWS-gated induction approach, the community's low-and-slow dosing rationale, and the receptor-occupancy data
+- **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)**: the timing tool for standard induction (not needed for micro-induction)
+- **[Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)**: once you've stabilized, the serotonergic/adrenergic gap and what fills it
+- **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)**: the practical mechanics of cutting films to micro-induction doses (0.25, 0.5, 1 mg)
+- **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**: what happens after you've stabilized, regardless of which induction method got you there
+- **[Telehealth Providers](/resources/telehealth)**: prescriber comparison; flags which providers explicitly handle kratom/7-OH
+- **[SR-17](/other-tools/sr17018-info)**: the other community-discussed pathway off the synthetics, if Suboxone isn't the right fit

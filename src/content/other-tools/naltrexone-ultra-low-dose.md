@@ -1,8 +1,8 @@
 ---
 title: "Ultra-Low-Dose Naltrexone (ULDN)"
-description: "Naltrexone at microgram-range doses taken alongside opioids — an investigational concept with thin and aging clinical evidence. What it is, what's been tried, why it isn't standard of care."
+description: "Naltrexone at microgram-range doses taken alongside opioids, an investigational concept with thin and aging clinical evidence. What it is, what's been tried, why it isn't standard of care."
 category: "other-tools"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 10
 ---
 
@@ -35,7 +35,7 @@ ULDN.
 
 **ULDN is not LDN.** The two share a molecule and a name; they
 differ by roughly three orders of magnitude in dose and by what
-they're actually doing:
+they're doing:
 
 - **[LDN](/other-tools/naltrexone-low-dose):** 1 to 5 **milligrams**,
   taken **after** opioid clearance, goal is post-acute support
@@ -54,11 +54,11 @@ The most-cited clinical reports of ULDN-with-opioid all come from
 the mid-2000s pain-medicine literature:
 
 - **[Cruciani et al., *J Pain Symptom Manage* 2003](https://pubmed.ncbi.nlm.nih.gov/12782427/)**
-  — case series of patients on methadone given oral naltrexone at
+ , case series of patients on methadone given oral naltrexone at
   approximately 1 μg; reported reduced methadone side effects and
   potentiated analgesia.
 - **[Hamann & Sloan, *J Opioid Manag* 2007](https://pubmed.ncbi.nlm.nih.gov/18027539/)**
-  — small pilot RCT (n=15) of ULDN combined with **intrathecal
+ , small pilot RCT (n=15) of ULDN combined with **intrathecal
   morphine** at 10 μg and 100 μg twice daily; 100 μg BID showed the
   greatest analgesic improvement but the trial was underpowered
   (p=0.07).
@@ -70,16 +70,16 @@ the mid-2000s pain-medicine literature:
 
 That is essentially the entire clinical evidence base. Oxytrex was
 the most-cited result and the closest thing to a translation
-attempt — but the product was **never approved by the FDA**, the
+attempt, but the product was **never approved by the FDA**, the
 developing company eventually abandoned it, and no newer human RCTs
 have replicated the tolerance-blunting effect in a comparable
 design.
 
-## Mechanism — explicitly unsettled
+## Mechanism, explicitly unsettled
 
 The mechanism story for ULDN has a real problem. The two
 [PLOS ONE papers from the Wang & Burns group (2008 and 2009)](https://pubmed.ncbi.nlm.nih.gov/18253501/)
-that proposed the **filamin A binding hypothesis** — the most
+that proposed the **filamin A binding hypothesis**, the most
 specific and frequently-cited explanation for ULDN's selectivity —
 were [retracted by the journal in March 2022](https://pubmed.ncbi.nlm.nih.gov/35353861/)
 over data-integrity concerns. Content elsewhere that still presents
@@ -89,7 +89,7 @@ primary literature.
 The earlier, broader hypothesis from the [Crain & Shen group
 (*Brain Res* 2001](https://pubmed.ncbi.nlm.nih.gov/11146054/) and
 [earlier 1997 work](https://pubmed.ncbi.nlm.nih.gov/9200746/)) is
-still on the books — picomolar-to-nanomolar naltrexone selectively
+still on the books, picomolar-to-nanomolar naltrexone selectively
 blocks the Gs-coupled excitatory mu-opioid receptor signal in
 rodent models, unmasking inhibitory analgesia and attenuating
 tolerance and dependence. That hypothesis remains preclinical and
@@ -109,7 +109,7 @@ all extrapolated from the literature above:
 
 - **Reducing tolerance buildup** during long-term opioid agonist
   therapy (the Oxytrex-style use case)
-- **Smoothing the bottom of a Suboxone taper** — the
+- **Smoothing the bottom of a Suboxone taper**: the
   0.5-to-0.25 mg → 0 transition, theoretically by blocking the
   excitatory signaling component while leaving the analgesic
   component active
@@ -134,14 +134,14 @@ not evidence-based for this specific use case.
 If a reader is considering this with a prescriber:
 
 - **Compounding pharmacy required** that can prepare microgram-range
-  preparations — the standard 50 mg naltrexone tablet cannot be
+  preparations, the standard 50 mg naltrexone tablet cannot be
   reliably cut to the μg range, and not every compounding pharmacy
   is equipped for liquid titration at these scales. Verify with the
   pharmacist before assuming.
 - **Very few clinicians are familiar with this protocol.**
   Pain-medicine and addiction-medicine specialists are the most
   likely; primary care typically is not.
-- **Dose accuracy matters more than with LDN** — a 10× dosing
+- **Dose accuracy matters more than with LDN**: a 10× dosing
   mistake puts you into LDN territory, and if you're on opioids
   that can mean precipitated-withdrawal-style symptoms.
 - **No insurance coverage** for compounded ULDN preparations in
@@ -191,18 +191,18 @@ Putting the framing in one box:
 
 ## Where to read next
 
-- **[Naltrexone (Overview)](/other-tools/naltrexone)** — the
+- **[Naltrexone (Overview)](/other-tools/naltrexone)**: the
   parent page comparing all three protocols.
 - **[Low-Dose Naltrexone (LDN)](/other-tools/naltrexone-low-dose)**
-  — the off-label milligram-range protocol used after opioid
+ , the off-label milligram-range protocol used after opioid
   clearance.
 - **[Normal-Dose Naltrexone](/other-tools/naltrexone-normal-dose)**
-  — the FDA-approved 50 mg oral / 380 mg Vivitrol use, with the
+ , the FDA-approved 50 mg oral / 380 mg Vivitrol use, with the
   precipitated-withdrawal safety content.
 - **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)**
-  — for the actual bottom-of-taper approach that has community
+ , for the actual bottom-of-taper approach that has community
   validation.
-- **[Telehealth Providers](/resources/telehealth)** — most general
+- **[Telehealth Providers](/resources/telehealth)**: most general
   OUD telehealth platforms will not prescribe ULDN; this is mostly
   pain-medicine and integrative-medicine territory. Use the
   comparison only if you've already confirmed the specific
@@ -211,14 +211,14 @@ Putting the framing in one box:
 ## Further reading
 
 - [Crain & Shen (*Brain Res* 2001)](https://pubmed.ncbi.nlm.nih.gov/11146054/)
-  — foundational preclinical paper on the Gs-coupled excitatory
+ , foundational preclinical paper on the Gs-coupled excitatory
   signaling hypothesis
 - [Webster et al., Oxytrex Phase III (*J Pain* 2006)](https://pubmed.ncbi.nlm.nih.gov/17157780/)
-  — the most-cited human trial; product never approved
+ , the most-cited human trial; product never approved
 - [Cruciani et al. (*J Pain Symptom Manage* 2003)](https://pubmed.ncbi.nlm.nih.gov/12782427/)
-  — methadone-context case series
+ , methadone-context case series
 - [Hamann & Sloan (*J Opioid Manag* 2007)](https://pubmed.ncbi.nlm.nih.gov/18027539/)
-  — intrathecal-morphine pilot RCT
+ , intrathecal-morphine pilot RCT
 - [PLOS ONE retraction notice (2022) for the Wang/Burns filamin A papers](https://pubmed.ncbi.nlm.nih.gov/35353861/)
-  — the data-integrity retraction that affects how the mechanism
+ , the data-integrity retraction that affects how the mechanism
   story is told

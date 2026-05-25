@@ -1,13 +1,13 @@
 ---
 title: "SR-17"
-description: "SR-17018 as an informal taper tool — what it is, the community protocol, real risks, what's unknown."
+description: "SR-17018 as an informal taper tool, what it is, the community protocol, real risks, what's unknown."
 category: "other-tools"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 6
 ---
-**SR-17018**, also known informally as **SR-17**, is a synthetic compound originally developed at the Scripps Research Institute and [first described by Bohn and colleagues in 2017](https://en.wikipedia.org/wiki/SR-17018). It's a biased mu-opioid receptor agonist with a pharmacological profile that's genuinely different from classical opioids like morphine, oxycodone, or even buprenorphine, and that profile has made it interesting to people trying to come off opioid dependence.
+**SR-17018**, also known informally as **SR-17**, is a synthetic compound originally developed at the Scripps Research Institute and [first described by Bohn and colleagues in 2017](https://en.wikipedia.org/wiki/SR-17018). It's a biased mu-opioid receptor agonist with a pharmacological profile that's different from classical opioids like morphine, oxycodone, or even buprenorphine, and that profile has made it interesting to people trying to come off opioid dependence.
 
-On Reddit and other forums, [discussion of SR-17018 dramatically increased through 2024](https://en.wikipedia.org/wiki/SR-17018), with the compound emerging as an informal tool for opioid discontinuation and withdrawal management. Some people in this community have used it as part of their plan to come off [7-OH](/compounds/7-oh) and the related synthetics. It's a valid option, and it's also still an opioid — be clear-eyed about that.
+On Reddit and other forums, [discussion of SR-17018 dramatically increased through 2024](https://en.wikipedia.org/wiki/SR-17018), with the compound emerging as an informal tool for opioid discontinuation and withdrawal management. Some people in this community have used it as part of their plan to come off [7-OH](/compounds/7-oh) and the related synthetics. It's a valid option, and it's also still an opioid, be clear-eyed about that.
 
 ## What makes it pharmacologically interesting
 SR-17018 is a [biased partial agonist](https://en.wikipedia.org/wiki/SR-17018) at the mu-opioid receptor with strong selectivity for G-protein signaling over β-arrestin2 recruitment. The G-protein-vs-β-arrestin distinction matters because the analgesic and reward effects of opioids run primarily through G-protein signaling, while many of the worst side effects (respiratory depression, severe withdrawal, fast tolerance buildup) involve β-arrestin signaling. Compounds biased toward G-protein signaling theoretically deliver the helpful effects with fewer of the harmful ones.
@@ -23,7 +23,7 @@ In rodent studies, this has translated to real, documented advantages: SR-17018 
 - **Reports of "minimal euphoria" are accurate but not the whole story.** Most users describe SR-17018 as not producing the same kind of high other opioids do, which is part of why it's used as a transition tool rather than recreationally. But the absence of euphoria doesn't mean absence of opioid effects.
 
 ## Preload, don't quit cold first
-**The most important practical point: SR-17018 is taken alongside your existing [7-OH](/compounds/7-oh) (or other opioid) for several days before you stop the original compound.** This is called preloading and it's how community protocols actually work. Stopping [7-OH](/compounds/7-oh) first and then starting SR is the wrong sequence and leads to unnecessary withdrawal.
+**The most important practical point: SR-17018 is taken alongside your existing [7-OH](/compounds/7-oh) (or other opioid) for several days before you stop the original compound.** This is called preloading and it's how community protocols work. Stopping [7-OH](/compounds/7-oh) first and then starting SR is the wrong sequence and leads to unnecessary withdrawal.
 
 The reasoning: SR-17018's tolerance-reversing and withdrawal-suppressing properties [demonstrated in rodent studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) work through *substitution* at the mu receptor, not as a withdrawal treatment after the fact. You want SR-17018 occupying receptors and shifting the receptor adaptation pattern *while* you taper or discontinue the original compound, not afterward.
 
@@ -54,19 +54,19 @@ Common patterns:
 
 ## The community protocol
 
-**This is the most common SR-17018 plan reported by people in this community.** Community experience, not a clinical protocol — treat it as a reference.
+**This is the most common SR-17018 plan reported by people in this community.** Community experience, not a clinical protocol, treat it as a reference.
 
 **The standard plan:**
 
 1. **Allergy test first.** Take ~10 mg of SR-17018 orally. Wait several hours, watch for any reaction. SR isn't a known allergen, but unregulated research chemicals can carry contaminants, so this step matters.
 
-2. **Day 1 — preload.** SR-17018 **50 mg, three times a day** (every 6-8 hours), *alongside* your normal 7-OH dose. You're not cutting 7-OH yet. You're getting SR onto your receptors first.
+2. **Day 1, preload.** SR-17018 **50 mg, three times a day** (every 6-8 hours), *alongside* your normal 7-OH dose. You're not cutting 7-OH yet. You're getting SR onto your receptors first.
 
-3. **Day 2 — cut 7-OH in half.** Continue SR **50 mg x3**. Reduce your 7-OH dose to half of normal.
+3. **Day 2, cut 7-OH in half.** Continue SR **50 mg x3**. Reduce your 7-OH dose to half of normal.
 
-4. **Day 3 — drop 7-OH entirely.** Continue SR **50 mg x3**. No 7-OH at all from here on.
+4. **Day 3, drop 7-OH entirely.** Continue SR **50 mg x3**. No 7-OH at all from here on.
 
-5. **Days 3-10 — hold.** Continue SR **50 mg x3**. This is the stretch where SR is fully covering you and the 7-OH is out of your system.
+5. **Days 3-10, hold.** Continue SR **50 mg x3**. This is the stretch where SR is fully covering you and the 7-OH is out of your system.
 
 6. **Taper the SR.** Toward the end of the 7-10 day window, step the SR down. A common taper: **50 mg x3 → 100 mg/day → 75 → 50 → 25 → jump.** Adjust the pace to how you feel.
 
@@ -80,7 +80,7 @@ Common patterns:
 
 **What the timeline looks like in practice:** roughly 3 days of overlap/transition, 4-7 days of SR holding you while 7-OH clears and your receptors start adjusting, then a 2-4 day SR taper. Total: about 10-14 days start to finish.
 
-If 50 mg x3 genuinely isn't enough even after increasing, or if you're coming off stacked synthetics rather than 7-OH alone, post in **#sr17018** before improvising. Community experience there is ahead of anything published.
+If 50 mg x3 isn't enough even after increasing, or if you're coming off stacked synthetics rather than 7-OH alone, post in **#sr17018** before improvising. Community experience there is ahead of anything published.
 
 ## Dosing context and pharmacology
 
@@ -92,7 +92,7 @@ The protocol above is what this community commonly uses. For broader context: **
 
 **Bioavailability and how to take it:** SR-17018 has [roughly 69% oral bioavailability in mice](https://en.wikipedia.org/wiki/SR-17018) and crosses the blood-brain barrier efficiently. It's highly lipophilic with very poor water solubility, so it doesn't mix into water. Dosing typically involves dissolving it in a carrier like oil, propylene glycol, or an ethanol-based solution. Vendors selling it in liquid form have usually done this already; powder requires you to handle it yourself.
 
-**The caveat on rodent data:** the 24 to 48 mg/kg/day used in mouse studies does not translate linearly to human doses. Don't do that math and dose accordingly; you'd massively overshoot. Community-reported human doses are far lower in absolute terms, and the variability between people is significant. The data is genuinely thin.
+**The caveat on rodent data:** the 24 to 48 mg/kg/day used in mouse studies does not translate linearly to human doses. Don't do that math and dose accordingly; you'd massively overshoot. Community-reported human doses are far lower in absolute terms, and the variability between people is significant. The data is thin.
 
 ## Does it work for MGM-15 and the other synthetics?
 The short answer: **probably yes for [MGM-15](/compounds/mgm15), but the data is community-reasoned rather than research-confirmed.**
@@ -101,7 +101,7 @@ The published [Bohn lab research](https://pmc.ncbi.nlm.nih.gov/articles/PMC69016
 
 That said, the pharmacological logic is consistent. [MGM-15](/compounds/mgm15) is a [semi-synthetic mu/delta agonist](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/) derived from 7-OH, and 7-OH itself is a potent mu-opioid agonist. SR-17018's substitution mechanism operates at the mu receptor, which all of these compounds activate.
 
-**The [MGM-15](/compounds/mgm15) caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help — see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader picture.
+**The [MGM-15](/compounds/mgm15) caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help, see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader picture.
 
 For pseudo or [MIT-A](/compounds/mit-a-dhm), the same logic applies. **Be honest about your full compound history when planning a transition.** Stacked synthetics may need a more careful, possibly longer preload window than pure 7-OH.
 
@@ -120,7 +120,7 @@ The practical reality:
 **This isn't legal advice.** If you're concerned about your specific situation, consult a lawyer.
 
 ## Sourcing and quality concerns
-This is the genuinely hard part of using SR-17018, and worth being honest about.
+This is the hard part of using SR-17018, and worth being honest about.
 
 - **No FDA oversight, no pharmaceutical-grade quality control.** SR-17018 is [currently available exclusively from chemical suppliers](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning) who are not adhering to standards usually applied to pharmaceuticals intended for human consumption.
 - **Purity verification matters.** Reputable RC suppliers provide third-party HPLC/NMR analysis. Less reputable ones provide nothing or fake certificates of analysis. Vet your source.
@@ -131,7 +131,7 @@ This is the genuinely hard part of using SR-17018, and worth being honest about.
 
 ## Honest tradeoffs
 **In favor:**
-- Genuinely novel pharmacology that may produce less respiratory depression and less tolerance than classical opioids in lab settings
+- novel pharmacology that may produce less respiratory depression and less tolerance than classical opioids in lab settings
 - Reported by users to have minimal euphoria, making it a tool rather than a temptation
 - Can substitute for stronger opioids and ease tolerance/withdrawal via the preload approach
 - Cash-pay, no prescriber needed (which is also a downside)
@@ -154,12 +154,12 @@ If you're going to use it, **plan the post-SR phase as carefully as the SR phase
 **Don't use SR-17018 alone if at all possible.**
 
 ## Sources
-- [SR-17018 — Wikipedia](https://en.wikipedia.org/wiki/SR-17018)
+- [SR-17018, Wikipedia](https://en.wikipedia.org/wiki/SR-17018)
 - [Grim et al., G protein signaling-biased agonist reverses morphine tolerance (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/)
 - [SR-17018 Stimulates Atypical µ-Opioid Receptor Phosphorylation (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348759/)
 - [Biased Opioid Receptor Agonists review (MDPI, 2025)](https://www.mdpi.com/1422-0067/26/5/1862)
 - [Bluelight: SR-17018 / RC opioid detoxes thread](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/)
-- [Federal Analogue Act — Wikipedia](https://en.wikipedia.org/wiki/Federal_Analogue_Act)
+- [Federal Analogue Act, Wikipedia](https://en.wikipedia.org/wiki/Federal_Analogue_Act)
 - [Concrete Confessional: SR-17018 Promise and Warning](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning)
 - [From kratom to 7-hydroxymitragynine (PMC, MGM-15 context)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/)
 - See also: [Suboxone](/mat-suboxone/suboxone-info), [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper), [Vitamins & Supplements](/other-tools/vitamins-supplements)

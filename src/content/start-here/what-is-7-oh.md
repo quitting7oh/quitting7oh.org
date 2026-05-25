@@ -2,7 +2,7 @@
 title: "What the Hell Is 7-OH?"
 description: "The 60-second elevator version: what kratom is, what 7-OH is, how it got into people's lives, and why this site exists."
 category: "start-here"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 2
 ---
 
@@ -13,7 +13,7 @@ you here, this is the elevator version of what this is.
 
 **[Kratom](/compounds/kratom-leaf)** is a leaf from a tree (*Mitragyna
 speciosa*) that grows in Thailand, Malaysia, and Indonesia. People
-there have chewed it and brewed it as tea for centuries — small amounts
+there have chewed it and brewed it as tea for centuries, small amounts
 act like a mild stimulant, larger amounts relax you and dull pain. In
 the US it shows up as powder, capsules, and teas, often used by people
 looking for an alternative to alcohol, prescription painkillers, or
@@ -34,14 +34,14 @@ up in a leaf naturally.
 ## The everyday comparison
 
 Beer is 5% alcohol. Hard liquor is 40%. Everclear is 95%. Same
-molecule, completely different category — most people who have a beer
+molecule, completely different category, most people who have a beer
 at a barbecue don't end up like someone drinking straight Everclear
 daily.
 
 A tighter parallel: people in the Andes have chewed coca leaves for
 centuries with effects comparable to a cup of coffee. **Cocaine is the
 same molecule from the same plant, isolated and concentrated.** Kratom
-leaf to 7-OH products follows the same arc — a minor compound, made
+leaf to 7-OH products follows the same arc, a minor compound, made
 into the main event.
 
 ## How it got into people's lives
@@ -59,7 +59,7 @@ closer to a traditional opioid.
 
 7-OH dependence develops fast, and the withdrawal hits like classical
 opioid withdrawal. People going through it deserve honest, organized
-information from people who've been through it — not marketing copy,
+information from people who've been through it, not marketing copy,
 not a sales pitch, not a clinic invoice. This site doesn't sell
 anything, isn't affiliated with any product or treatment program, and
 isn't trying to monetize anyone's recovery.
@@ -67,7 +67,7 @@ isn't trying to monetize anyone's recovery.
 ## Where to go next
 
 **[How to Use This Website](/start-here/how-to-use-this-website)** is
-the map — find the description that fits your situation (in withdrawal,
+the map, find the description that fits your situation (in withdrawal,
 thinking about using, planning to quit, helping someone else, just
 trying to understand) and click through.
 

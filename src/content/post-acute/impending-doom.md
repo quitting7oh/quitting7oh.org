@@ -1,25 +1,25 @@
 ---
 title: "Impending Doom"
-description: "The specific terror that hits in withdrawal and PAWS — that something catastrophic is about to happen, that you might die, that the world is ending. What it is, what to do in the next ten minutes, and when it's more than a withdrawal symptom."
+description: "The specific terror that hits in withdrawal and PAWS, that something catastrophic is about to happen, that you might die, that the world is ending. What it is, what to do in the next ten minutes, and when it's more than a withdrawal symptom."
 category: "post-acute"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 5
 ---
 
 You know the feeling this page is about. The sudden, gut-deep
 certainty that something terrible is about to happen. That you might
 be dying. That the room is wrong. That everything is wrong. You can't
-point at what — it's just **doom**, sitting in your chest, refusing to
+point at what, it's just **doom**, sitting in your chest, refusing to
 be reasoned with.
 
-It's a recognized symptom of acute withdrawal and PAWS — not
+It's a recognized symptom of acute withdrawal and PAWS, not
 something you're imagining, not a sign you're losing it. Plenty of
 people in this community have hit it. **It's awful. It does end** —
 though for some it ends in an hour, and for others it sits as a
 low-grade background dread that doesn't fully lift for days or
 weeks. Both shapes are real; this page covers both.
 
-The actionable stuff is first — those techniques are what to reach
+The actionable stuff is first, those techniques are what to reach
 for in a wave. If yours is the sustained kind that isn't really
 wave-shaped, skip down to
 [When it doesn't pass quickly](#when-it-doesnt-pass-quickly--the-sustained-version).
@@ -27,7 +27,7 @@ wave-shaped, skip down to
 ## What to do in the next ten minutes
 
 These are interventions you can do *now*, alone, without a
-prescription. They don't fix the underlying neurobiology — they take
+prescription. They don't fix the underlying neurobiology, they take
 the edge off the wave.
 
 ### 1. Cold water on your face
@@ -42,8 +42,8 @@ have access to.
 
 ### 2. Slow your breathing
 
-The "physiological sigh" — **two short inhales through the nose,
-followed by one long exhale through the mouth** — is the best-studied
+The "physiological sigh", **two short inhales through the nose,
+followed by one long exhale through the mouth**, is the best-studied
 single breathing technique for acute anxiety reduction. A [2023 Cell
 Reports Medicine RCT](https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8)
 found 5 minutes daily of cyclic sighing improved mood and reduced
@@ -54,7 +54,7 @@ Box breathing (4 in, 4 hold, 4 out, 4 hold) and 4-7-8 breathing (4 in,
 breathwork literature](https://pmc.ncbi.nlm.nih.gov/articles/PMC10622034/),
 which shows small-to-moderate state-anxiety reductions. The specific
 ratios matter less than the slowing-down. **Long exhales are the key
-ingredient** — they engage the parasympathetic nervous system.
+ingredient**, they engage the parasympathetic nervous system.
 
 Don't overthink the technique. Two minutes of slow breathing with
 long exhales is enough to start.
@@ -62,7 +62,7 @@ long exhales is enough to start.
 ### 3. Name what's happening
 
 Out loud, ideally. "This is impending doom. It's a withdrawal symptom.
-It's going to pass." Naming an emotional state — [putting it into
+It's going to pass." Naming an emotional state, [putting it into
 words](https://journals.sagepub.com/doi/10.1111/j.1467-9280.2007.01916.x) —
 measurably reduces amygdala activity and increases prefrontal
 regulation, per Lieberman's foundational fMRI work. "Name it to tame
@@ -98,7 +98,7 @@ does.
 ### 6. Call someone
 
 A real human, on the phone, voice to voice. Texting helps less. If
-you can't call a friend, call a hotline — **[988](https://988lifeline.org)**
+you can't call a friend, call a hotline, **[988](https://988lifeline.org)**
 is appropriate for anxiety waves that feel dangerous, not just for
 suicidal crises. The operators have heard "I'm in opioid withdrawal
 and I'm scared" hundreds of times.
@@ -135,7 +135,7 @@ systems are out of balance at once:
 
 In sum: your body is in a state that mimics genuine catastrophe —
 elevated heart rate, racing thoughts, cortisol surges, sympathetic
-overdrive — without any external catastrophe to attach it to. The
+overdrive, without any external catastrophe to attach it to. The
 brain finds something to attach the feeling to (the future, your
 health, your relationships, the world) because that's what brains
 do with unexplained dread.
@@ -149,8 +149,8 @@ gives way).
 
 ## What helps over time
 
-The general non-medication baseline-movers — sleep, exercise, CBT,
-social contact, regular meals — sit on the umbrella
+The general non-medication baseline-movers, sleep, exercise, CBT,
+social contact, regular meals, sit on the umbrella
 **[PAWS page](/post-acute/what-is-paws)**. Two things specific to
 the impending-doom symptom:
 
@@ -163,7 +163,7 @@ the impending-doom symptom:
   category that the grounding exercises above come from. Useful as
   a structured way to expand the in-the-moment toolkit.
 
-## When it doesn't pass quickly — the sustained version
+## When it doesn't pass quickly, the sustained version
 
 For some people the doom isn't wave-shaped. It's a background
 texture that sits there for days or weeks without fully lifting.
@@ -175,8 +175,8 @@ wave" to "build a life that's livable while this is happening."
 What people who've been in the sustained version say has helped:
 
 - **Stop fighting every minute.** The dread is going to be there
-  for a while. Accepting it as the texture of the day — not as a
-  problem to solve hourly — drops the catastrophic overlay that
+  for a while. Accepting it as the texture of the day, not as a
+  problem to solve hourly, drops the catastrophic overlay that
   often makes it worse than the underlying symptom.
 - **Daily structure that doesn't depend on how you feel.**
   Bedtime, wake time, three meals, one walk. Same time every day.
@@ -185,7 +185,7 @@ What people who've been in the sustained version say has helped:
 - **A short list of non-negotiables.** Two or three things you do
   every day regardless of how the doom shows up. Walk in the
   morning. Call one person. Eat real food. The point isn't to
-  feel better — it's to stay functional while the system
+  feel better, it's to stay functional while the system
   recovers.
 - **Track the actual pattern.** Even "constant" usually has
   variations. Note when it's worst (often early morning, after
@@ -196,12 +196,12 @@ What people who've been in the sustained version say has helped:
   life now" is a depressive overlay on top of impending doom, not
   the doom itself. If that thought is loud, see
   [Depression and Anhedonia](/post-acute/depression-and-anhedonia)
-  — sustained doom often co-occurs with the depressive picture, and
+ , sustained doom often co-occurs with the depressive picture, and
   the depression has its own treatment.
 - **Start the prescriber conversation early.** SSRIs and SNRIs
   take 4 to 6 weeks to reach effect. If you're at week 2 of
   sustained doom, don't wait another month before raising the med
-  question — by the time you actually felt the effect, you'd be at
+  question, by the time you felt the effect, you'd be at
   week 8 of the symptom. Bringing it up at week 2 puts the option
   on the table while you decide.
 - **Therapy, specifically.** CBT for the cognitive patterns;
@@ -217,11 +217,11 @@ path there is just slower.
 Categorically, the medications a prescriber might use for the acute
 anxiety / impending-doom picture include:
 
-- **SSRIs / SNRIs** — longer-term, take weeks to work, not for acute waves
-- **Hydroxyzine** — non-controlled, [Cochrane evidence for GAD](https://www.cochrane.org/evidence/CD006815_hydroxyzine-generalised-anxiety-disorder). First-gen antihistamine, so [worsens restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/) — skip if RLS is part of your picture.
-- **Propranolol** — beta-blocker, targets the [physical symptoms specifically](https://pmc.ncbi.nlm.nih.gov/articles/PMC9456064/)
-- **Benzodiazepines** — effective short-term with real caveats (dependence, cross-tolerance with bupe is a documented overdose pattern)
-- **Buprenorphine or other MAT** — addresses the underlying
+- **SSRIs / SNRIs**: longer-term, take weeks to work, not for acute waves
+- **Hydroxyzine**: non-controlled, [Cochrane evidence for GAD](https://www.cochrane.org/evidence/CD006815_hydroxyzine-generalised-anxiety-disorder). First-gen antihistamine, so [worsens restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/), skip if RLS is part of your picture.
+- **Propranolol**: beta-blocker, targets the [physical symptoms specifically](https://pmc.ncbi.nlm.nih.gov/articles/PMC9456064/)
+- **Benzodiazepines**: effective short-term with real caveats (dependence, cross-tolerance with bupe is a documented overdose pattern)
+- **Buprenorphine or other MAT**: addresses the underlying
   receptor-system dysregulation. See [MAT / Suboxone](/mat-suboxone)
   and [SR-17](/other-tools/sr17018-info) as the two
   community-validated medication-assisted paths off the synthetics
@@ -238,7 +238,7 @@ A normal impending-doom presentation in withdrawal or PAWS:
 - Comes on for unclear reasons (often early morning, late night,
   after caffeine, after stress)
 - Either resolves in an hour or sits as a sustained background
-  dread that doesn't fully lift for days or weeks — both shapes
+  dread that doesn't fully lift for days or weeks, both shapes
   are within the symptom
 - Responds (at least partially) to the in-the-moment techniques
   above
@@ -254,7 +254,7 @@ A normal impending-doom presentation in withdrawal or PAWS:
   dehydration from acute withdrawal.
 - You have a **seizure**. Pure opioid withdrawal doesn't usually
   cause seizures, but combined withdrawal (alcohol or benzos in the
-  mix) can — and if you have any of those in your history, take it
+  mix) can, and if you have any of those in your history, take it
   seriously.
 
 **Call or text 988, or go to the ER, if:**
@@ -267,23 +267,21 @@ A normal impending-doom presentation in withdrawal or PAWS:
 
 A bad impending-doom wave is awful and almost always passes within
 hours. A wave that includes suicidal ideation is a separate medical
-issue and needs prompt help. The two can co-occur — opioid PAWS does
+issue and needs prompt help. The two can co-occur, opioid PAWS does
 include elevated suicidal-ideation risk, especially in the first
-months — and you don't have to be sure which one you're having to
+months, and you don't have to be sure which one you're having to
 make the call.
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)** — the larger picture
+- **[What is PAWS](/post-acute/what-is-paws)**: the larger picture
   this symptom sits inside.
-- **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)** —
-  for the flat-mood / can't-feel-anything side of the same
+- **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: for the flat-mood / can't-feel-anything side of the same
   post-acute picture.
-- **[Dopamine Recovery](/post-acute/dopamine-recovery)** — for the
+- **[Dopamine Recovery](/post-acute/dopamine-recovery)**: for the
   deeper neurobiology.
-- **[Sleep Recovery](/post-acute/sleep-recovery)** — sleep
+- **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep
   disruption is one of the biggest drivers of recurring waves.
-- **[Thinking About Using?](/start-here/thinking-about-using)** —
-  if the wave is showing up as a craving, not just dread.
-- **[Crisis Hotlines](/resources/crisis-hotlines)** — for
+- **[Thinking About Using?](/start-here/thinking-about-using)**: if the wave is showing up as a craving, not just dread.
+- **[Crisis Hotlines](/resources/crisis-hotlines)**: for
   bookmarking.

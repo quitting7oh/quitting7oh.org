@@ -2,12 +2,12 @@
 title: "Kratom's Minor Alkaloids"
 description: "Mitragynine is the headline alkaloid, but kratom leaf contains 40+ others. This page covers the six better-studied 'minor' alkaloids and their activity across the µ-opioid, serotonergic, and adrenergic systems."
 category: "pharmacology"
-last_updated: "2026-05-24"
+last_updated: "2026-05-25"
 sort: 1
 ---
 
 This is a deeper, more academic reference. **If you're in active
-withdrawal, this is not the page for you** — head to
+withdrawal, this is not the page for you**, head to
 [Withdrawal Help](/start-here/withdrawal-help) instead. This page is
 for people trying to understand *why* kratom feels the way it does,
 why withdrawal is harder than its raw opioid story suggests, and why
@@ -20,7 +20,7 @@ mitragynine, and they hit three different receptor systems —
 **µ-opioid**, **serotonergic** (5-HT₁ₐ / 5-HT₂ᵦ), and **adrenergic**
 (α-1 / α-2). The serotonergic and adrenergic activity is part of why
 withdrawal off concentrated kratom products doesn't fully respond to
-a pure-opioid medication like Suboxone — see
+a pure-opioid medication like Suboxone, see
 [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
 
 ## The seven alkaloids at a glance
@@ -58,7 +58,7 @@ it weakly).
 Speciociliatine's agonist-vs-antagonist classification differs
 between studies; ranking reflects functional behaviour in the more
 recent receptor-binding work, not abundance in the leaf. The
-literature genuinely disagrees on this one — see
+literature disagrees on this one, see
 [León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)
 and [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)
 for the underlying receptor pharmacology.
@@ -67,14 +67,14 @@ for the underlying receptor pharmacology.
 
 This is the part that matters for withdrawal experience. Kratom's
 effects (and the symptoms when you come off it) are the **summed
-action of many alkaloids at many targets** — not just the µ-opioid
+action of many alkaloids at many targets**, not just the µ-opioid
 story.
 
 | Alkaloid | µ-opioid | Serotonergic (5-HT) | Adrenergic (α) |
 |---|---|---|---|
 | **Mitragynine** | Partial agonist (low efficacy) | Low 5-HT₁ₐ affinity | Moderate, α-1 & α-2 |
-| **Paynantheine** | Weak antagonist | **High 5-HT₁ₐ** — mediates analgesia | Weak / not established |
-| **Speciogynine** | Weak antagonist | **High 5-HT₁ₐ** — mediates analgesia | Moderate, α-2 |
+| **Paynantheine** | Weak antagonist | **High 5-HT₁ₐ**, mediates analgesia | Weak / not established |
+| **Speciogynine** | Weak antagonist | **High 5-HT₁ₐ**, mediates analgesia | Moderate, α-2 |
 | **Speciociliatine** | Partial agonist (higher affinity) | Low | Weak α-2 binding |
 | **Corynantheidine** | **Antagonist** | Modest | **High, α-1D-selective** |
 | **9-Hydroxycorynantheidine** | Partial agonist | (not well characterized) | Weak / not established |
@@ -88,8 +88,8 @@ A few things to read off that table:
   [7-OH](/compounds/7-oh)).
 - **Paynantheine and speciogynine add a serotonergic layer** through
   5-HT₁ₐ. This is part of why kratom withdrawal produces some
-  symptoms that resemble SSRI/SNRI discontinuation — brain zaps,
-  wired-but-exhausted feeling — even though the mechanism is
+  symptoms that resemble SSRI/SNRI discontinuation, brain zaps,
+  wired-but-exhausted feeling, even though the mechanism is
   different. See
   [Depression and Anhedonia](/post-acute/depression-and-anhedonia)
   for the recovery side of that picture.
@@ -97,7 +97,7 @@ A few things to read off that table:
   activity.** The α-1D-selectivity is unusual and is the reason
   corynantheidine sometimes gets discussed as a stimulant-leaning
   modulator of the kratom effect profile.
-- **Mitraphylline is included for completeness** — it's an oxindole
+- **Mitraphylline is included for completeness**: it's an oxindole
   alkaloid, structurally interesting, but its activity at all three
   systems is poorly characterized in the published literature.
 
@@ -116,7 +116,7 @@ which is part of why:
   that pure-opioid models don't predict
 - [Suboxone](/mat-suboxone/suboxone-info) (a pure µ-opioid
   intervention) covers the opioid receptor side but doesn't lift the
-  serotonergic/adrenergic side — see
+  serotonergic/adrenergic side, see
   [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
 - Adjuncts like clonidine (α-2 agonist, see
   [Helper Medications](/other-tools/helper-meds-info)) target the
@@ -135,21 +135,21 @@ behind it is on this one.
 ## Sources
 
 - [León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)
-  — minor-alkaloid receptor pharmacology (paynantheine, speciogynine,
+ , minor-alkaloid receptor pharmacology (paynantheine, speciogynine,
   corynantheidine)
 - [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)
-  — minor-alkaloid receptor profile
+ , minor-alkaloid receptor profile
 - [Chemical Structures (appendix)](/pharmacology/chemical-structures)
-  — 2D skeletal-formula diagrams for each alkaloid above
+ , 2D skeletal-formula diagrams for each alkaloid above
 
 ## Where to read next
 
 - **[Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom)**
-  — how structural modifications to mitragynine produce 7-OH,
+ , how structural modifications to mitragynine produce 7-OH,
   MGM-15, and the other synthetics; affinity comparison against
   morphine
 - **[Chemical Structures (Appendix)](/pharmacology/chemical-structures)**
-  — visual structures for the seven alkaloids above and the
+ , visual structures for the seven alkaloids above and the
   modified derivatives
-- **[Compounds](/compounds)** — clinical / lay overviews of each
+- **[Compounds](/compounds)**: clinical / lay overviews of each
   named compound (7-OH, MGM-15, MIT-A/DHM, pseudo, cat's claw, kratom leaf)
