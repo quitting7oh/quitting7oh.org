@@ -585,6 +585,44 @@ Keep the polysubstance-is-dangerous framing and the practical-Narcan
 framing where they exist on their own; cut the 7-OH-OD-mortality
 claims entirely rather than reframing them.
 
+### Don't make multi-year claims about the synthetics
+
+Concentrated 7-OH products emerged in U.S. consumer markets around
+2023; the kratom-synthetic recovery community took shape in early
+2024. **No reader of this site has multiple years of dependence on
+the synthetics specifically.** Any phrasing that assumes a multi-year
+arc of 7-OH, MGM-15, MIT-A, or pseudo use is inaccurate and dates
+itself fast.
+
+**Banned framings:**
+
+- "years of stacked use" / "years of 7-OH use" / "years on the synthetics"
+- "decade-long use" / "multi-year dependence" / "after years of"
+- Any phrasing that puts a multi-year clock on dependence on the
+  concentrated synthetics specifically.
+
+**Fix shape: describe severity without time.** "Longer-term extended
+use," "heavy stacked use," "high-dose chronic use," "established
+dependence." These capture what makes a case harder to manage without
+invoking a timeframe the synthetics can't support.
+
+**Where multi-year time references stay accurate:**
+
+- **Kratom leaf** has been used for decades; "years of kratom-leaf
+  use" is often accurate for a specific reader's situation. The carve-out
+  is the synthetics, not the plant.
+- The broader **opioid-use-disorder literature** has decades of data;
+  cite it with explicit labeling that it's OUD-broad, not 7-OH-specific
+  ("NIDA's chronic-disease framing notes...").
+- **Post-quit recovery durations** (5-year remission marks, etc.)
+  cited from OUD literature with the same labeling.
+- **Buprenorphine maintenance** can legitimately be "years long" —
+  bupe has been prescribed for OUD for 20+ years.
+
+If you're tempted to write a duration, ask: is this about the
+synthetic specifically, or about kratom leaf / the broader OUD context?
+The synthetic side has a hard ceiling at ~3 years; the rest doesn't.
+
 ### Default to lower / slower than typical clinical guidance
 
 The community has consistently found that the standard clinical

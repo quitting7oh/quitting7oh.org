@@ -9,7 +9,7 @@ sort: 2
 
 Suboxone is one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr17018-info). [Tapering with kratom leaf](/other-tools/tapering-with-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds-info) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
 
-**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) or off years of stacked use are in a different situation; longer protocols or long-term maintenance fit better for them.
+**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
 
 **Two things to know before you sit down with a prescriber:**
 
@@ -147,7 +147,7 @@ This site is taper-focused. **Long-term Suboxone maintenance is also a valid cho
 
 This community leans short-taper for a specific reason: **7-OH responds well to short, structured bupe courses.** Short plasma half-life, mu-dominant binding, fast clearance. Receptor adaptation doesn't entrench the way it does with long-acting full agonists. That's the pharmacology behind the short-taper approach.
 
-Short tapers don't work for everyone here. People coming off long-acting synthetics (MGM-15, MIT-A, pseudo), off years of stacked use, or already established on Suboxone maintenance are in different situations. A different approach makes more sense for them.
+Short tapers don't work for everyone here. People coming off long-acting synthetics (MGM-15, MIT-A, pseudo), off longer-term extended use, or already established on Suboxone maintenance are in different situations. A different approach may be the right call, though not always.
 
 **If long-term maintenance fits your situation better, you have options:**
 
