@@ -9,6 +9,12 @@ import {
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
 } from '~/components/ui/dropdown-menu';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '~/components/ui/tooltip';
 import { Button } from '~/components/ui/button';
 
 type Mode = 'system' | 'light' | 'dark';
@@ -26,8 +32,8 @@ const STORAGE_MODE = 'theme';
 const STORAGE_VARIANT = 'theme-variant';
 
 const VARIANTS: { key: Variant; label: string }[] = [
-  { key: 'accent-teal', label: 'Accent Teal' },
   { key: 'zinc', label: 'Zinc' },
+  { key: 'accent-teal', label: 'Accent Teal' },
   { key: 'slate', label: 'Slate' },
   { key: 'stone', label: 'Stone' },
   { key: 'neutral', label: 'Neutral' },
@@ -46,7 +52,7 @@ function applyMode(mode: Mode) {
 
 function applyVariant(variant: Variant) {
   const root = document.documentElement;
-  if (variant === 'accent-teal') {
+  if (variant === 'zinc') {
     delete root.dataset.theme;
   } else {
     root.dataset.theme = variant;
@@ -62,18 +68,18 @@ function readInitialMode(): Mode {
 }
 
 function readInitialVariant(): Variant {
-  if (typeof document === 'undefined') return 'accent-teal';
+  if (typeof document === 'undefined') return 'zinc';
   const fromDom = document.documentElement.dataset.theme as Variant | undefined;
   if (fromDom) return fromDom;
   const fromStorage = localStorage.getItem(STORAGE_VARIANT) as Variant | null;
-  return fromStorage || 'accent-teal';
+  return fromStorage || 'zinc';
 }
 
 export function ThemePicker() {
   // Start with safe defaults to avoid hydration mismatch; the useEffect
   // below syncs to whatever the pre-paint script set on the DOM.
   const [mode, setMode] = React.useState<Mode>('system');
-  const [variant, setVariant] = React.useState<Variant>('accent-teal');
+  const [variant, setVariant] = React.useState<Variant>('zinc');
 
   React.useEffect(() => {
     setMode(readInitialMode());
@@ -101,7 +107,7 @@ export function ThemePicker() {
   const handleVariantChange = (next: string) => {
     const v = next as Variant;
     setVariant(v);
-    if (v === 'accent-teal') localStorage.removeItem(STORAGE_VARIANT);
+    if (v === 'zinc') localStorage.removeItem(STORAGE_VARIANT);
     else localStorage.setItem(STORAGE_VARIANT, v);
     applyVariant(v);
   };
@@ -110,11 +116,18 @@ export function ThemePicker() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" aria-label={`Theme: ${mode}`}>
-          <Icon className="h-4 w-4" />
-        </Button>
-      </DropdownMenuTrigger>
+      <TooltipProvider delayDuration={300}>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="icon" aria-label={`Theme: ${mode}`}>
+                <Icon className="h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+          </TooltipTrigger>
+          <TooltipContent side="bottom">Theme &amp; color</TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
       <DropdownMenuContent align="end" className="w-56">
         <DropdownMenuLabel>Appearance</DropdownMenuLabel>
         <DropdownMenuRadioGroup value={mode} onValueChange={handleModeChange}>
