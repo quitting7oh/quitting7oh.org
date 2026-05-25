@@ -8,7 +8,7 @@ sort: 1
 
 Wherever you are in this — thinking about quitting, day 2 and miserable, day 200 and stable, just relapsed, ambivalent, terrified, somewhere in between all of those — you're in the right place.
 
-This section is the practical-resources version. The rest of the site covers what's happening biochemically, how to get through acute withdrawal, MAT options, and post-acute recovery. This section covers the other infrastructure: how treatment actually works, what your job legally has to do for you, where to find free peer support, and where to live if your current situation isn't working.
+This section is the practical-resources version. The rest of this site covers what's happening biochemically, how to get through acute withdrawal, MAT options, and post-acute recovery. This section covers the other infrastructure: how treatment actually works, what your job legally has to do for you, where to find free peer support, and where to live if your current situation isn't working.
 
 ## A note before you go any further
 

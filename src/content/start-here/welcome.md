@@ -53,6 +53,11 @@ people who built it wanted the resource they wished they'd had.
   facility.** If a page mentions a telehealth provider, a supplement, or
   a specific medication, it's because community members have used it,
   not because anyone is paying us to mention it.
+- **Not anti-kratom advocacy.** The site is for people whose use went
+  sideways. People who use kratom or 7-OH without dependence problems
+  exist, and the site isn't trying to argue with them. See
+  [Where the Site Stands](/about/where-we-stand) for the full position
+  on responsible use, bans, and regulation.
 
 ## Where to go next
 

@@ -50,5 +50,6 @@ please open an issue or pull request on [GitHub](https://github.com/quitting7oh/
 - **[Start Here](/start-here/welcome)** — if you came looking for actual recovery information rather than meta-content about the site.
 - **[The Community](/about/community)** — about the Discord and subreddit, the history of how this project started, and the current mod and admin teams.
 - **[Contributing & Feedback](/about/contributing)** — how to suggest corrections, propose changes, or reach the team.
+- **[Where the Site Stands](/about/where-we-stand)** — for readers from the broader kratom community, responsible users, or anyone wondering whether the site is part of a ban-related campaign. (It isn't.)
 
 > ⚕️ **One more time, because it matters:** this is community information, not medical advice. For medication, induction, tapering, or treatment decisions, work with a qualified clinician who knows your specific situation.

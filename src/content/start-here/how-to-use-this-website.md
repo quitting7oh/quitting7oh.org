@@ -119,6 +119,15 @@ people who've been on both sides of this.
 - **[Thinking About Using?](/start-here/thinking-about-using)** — so
   you know the language and the signs.
 
+## I'm not sure this site is for me
+
+You use kratom or 7-OH without a dependence problem, or you're part of
+the broader kratom community, or the addiction framing across this site
+reads off to you and you want to know where the site actually stands.
+
+- **[Where the Site Stands](/about/where-we-stand)** — on responsible
+  users, bans, and regulation. Short and direct.
+
 ## Other ways to find a page
 
 - **Sidebar** (menu icon on mobile) — every page, grouped by topic.
