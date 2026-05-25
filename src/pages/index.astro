@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { SearchBox } from '~/components/SearchBox';
+import { NextMeeting } from '~/components/NextMeeting';
 import { CATEGORIES } from '~/lib/categories';
 import { getCollection } from 'astro:content';
 import { LifeBuoy, HelpCircle, Signpost, Users, MessageCircle, BookOpen } from 'lucide-react';
@@ -96,6 +97,13 @@ const hotPaths = [
           </a>
         ))}
       </div>
+    </section>
+
+    {/* Next live meeting (KA + KQS) in the viewer's local timezone.
+        client:load: the widget needs `new Date()` at render time and
+        the viewer's IANA tz, neither known at build time. */}
+    <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
+      <NextMeeting client:load />
     </section>
 
     {/* Community: Discord + Reddit + about-link, single compact row */}

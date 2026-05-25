@@ -1,0 +1,198 @@
+---
+/** Renders one fellowship's meeting schedule as an inline table from
+ *  the structured data in src/data/meetings.ts. The meetings page
+ *  (meeting-schedules.mdx) embeds this twice, once per fellowship.
+ *
+ *  Multi-day recurrences (e.g. "Mon, Wed, Fri at 10am") collapse into
+ *  a single row so the table communicates the *pattern* of the schedule
+ *  rather than enumerating every day independently. */
+import { MEETINGS, FELLOWSHIPS, type Fellowship, type Meeting } from '~/data/meetings';
+
+interface Props {
+  fellowship: Fellowship;
+  /** "schedule" renders the day-by-day meeting table (default).
+   *  "zoom-lookup" renders the shortlink → full Zoom URL lookup for KA. */
+  variant?: 'schedule' | 'zoom-lookup';
+}
+
+const { fellowship, variant = 'schedule' } = Astro.props;
+const meta = FELLOWSHIPS[fellowship];
+
+const DAY_FULL = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+] as const;
+const DAY_SHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
+
+/** Rank days starting Monday so sort order matches the canonical week. */
+function monRank(dow: number): number {
+  return (dow + 6) % 7;
+}
+
+function formatDayCell(days: number[]): string {
+  if (days.length === 7) return 'Daily (Mon–Sun)';
+  if (days.length === 1) return DAY_FULL[days[0]];
+  // Sort Mon-first
+  const sorted = [...days].sort((a, b) => monRank(a) - monRank(b));
+  // If contiguous run, dash. Otherwise comma list.
+  const ranks = sorted.map(monRank);
+  const contiguous = ranks.every((r, i) => i === 0 || r === ranks[i - 1] + 1);
+  if (contiguous && sorted.length >= 3) {
+    return `${DAY_FULL[sorted[0]]}–${DAY_FULL[sorted[sorted.length - 1]]}`;
+  }
+  // Short labels for compact display when comma-separated
+  return sorted.map((d) => DAY_SHORT[d]).join(', ');
+}
+
+function format12hET(hour: number, minute: number): string {
+  const period = hour >= 12 ? 'PM' : 'AM';
+  const h = hour % 12 === 0 ? 12 : hour % 12;
+  return `${h}:${String(minute).padStart(2, '0')} ${period}`;
+}
+
+function format12hPT(hour: number, minute: number): string {
+  const ptHour = (hour - 3 + 24) % 24;
+  return format12hET(ptHour, minute);
+}
+
+function shortLinkLabel(url: string): string {
+  return url.replace(/^https?:\/\//, '');
+}
+
+const rows: Meeting[] = MEETINGS
+  .filter((m) => m.fellowship === fellowship)
+  .sort((a, b) => {
+    const aFirst = Math.min(...a.daysOfWeek.map(monRank));
+    const bFirst = Math.min(...b.daysOfWeek.map(monRank));
+    if (aFirst !== bFirst) return aFirst - bFirst;
+    return a.hourET * 60 + a.minuteET - (b.hourET * 60 + b.minuteET);
+  });
+
+// For the URL-lookup view, derive a unique (shortLink, joinUrl) list.
+const zoomLookup = (() => {
+  const seen = new Set<string>();
+  const out: { shortLink: string; joinUrl: string }[] = [];
+  for (const m of rows) {
+    if (!m.shortLink) continue;
+    if (seen.has(m.shortLink)) continue;
+    seen.add(m.shortLink);
+    out.push({ shortLink: m.shortLink, joinUrl: m.joinUrl });
+  }
+  return out;
+})();
+---
+
+{variant === 'zoom-lookup' && (
+  <div class="overflow-x-auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Shortlink</th>
+          <th>Zoom URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {zoomLookup.map((r) => (
+          <tr>
+            <td>
+              <a href={r.shortLink} target="_blank" rel="noopener noreferrer">
+                {shortLinkLabel(r.shortLink)}
+              </a>
+            </td>
+            <td>
+              <a href={r.joinUrl} target="_blank" rel="noopener noreferrer">
+                {shortLinkLabel(r.joinUrl)}
+              </a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+{variant === 'schedule' && fellowship === 'KA' && (
+  <div class="overflow-x-auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time (ET / PT)</th>
+          <th>Format</th>
+          <th>Shortlink</th>
+          <th>Zoom Room</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((m) => (
+          <tr>
+            <td>
+              <strong>{formatDayCell(m.daysOfWeek)}</strong>
+              {m.note && <em class="ml-1">({m.note})</em>}
+            </td>
+            <td>
+              {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
+            </td>
+            <td>{m.format}</td>
+            <td>
+              {m.shortLink ? (
+                <a href={m.shortLink} target="_blank" rel="noopener noreferrer">
+                  {shortLinkLabel(m.shortLink)}
+                </a>
+              ) : (
+                '—'
+              )}
+            </td>
+            <td>
+              {m.room ? (
+                m.room
+              ) : (
+                <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
+                  {shortLinkLabel(m.joinUrl)}
+                </a>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+{variant === 'schedule' && fellowship === 'KQS' && (
+  <div class="overflow-x-auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time (ET / PT)</th>
+          <th>Meeting</th>
+          <th>Join</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((m) => (
+          <tr>
+            <td>
+              <strong>{formatDayCell(m.daysOfWeek)}</strong>
+            </td>
+            <td>
+              {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
+            </td>
+            <td>{m.format}</td>
+            <td>
+              <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
+                {shortLinkLabel(m.joinUrl)}
+              </a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
