@@ -60,10 +60,31 @@ function NavContent({ categories, currentPath }: Props) {
   );
 }
 
+/** Scroll the given overflow-y-auto container so its active page link
+ *  is centered. No-op if there is no active link, or if it is already
+ *  fully visible. Only touches the container's own scrollTop, never the
+ *  document. */
+function scrollActiveIntoCenter(container: HTMLDivElement | null) {
+  if (!container) return;
+  const active = container.querySelector<HTMLElement>(
+    'a[aria-current="page"]',
+  );
+  if (!active) return;
+  const cRect = container.getBoundingClientRect();
+  const aRect = active.getBoundingClientRect();
+  if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
+  const offsetTop = aRect.top - cRect.top + container.scrollTop;
+  const target =
+    offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
+  container.style.scrollBehavior = 'auto';
+  container.scrollTop = Math.max(0, target);
+}
+
 export function AppSidebar({ categories, currentPath }: Props) {
   const isMobile = useIsMobile();
   const [open, setOpen] = React.useState(false);
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+  const mobileScrollRef = React.useRef<HTMLDivElement>(null);
 
   // The mobile hamburger lives in Header.astro (outside this React tree)
   // and dispatches 'toggle-sidebar' which we toggle from here.
@@ -94,24 +115,7 @@ export function AppSidebar({ categories, currentPath }: Props) {
     let raf2 = 0;
     raf1 = requestAnimationFrame(() => {
       raf2 = requestAnimationFrame(() => {
-        const container = scrollContainerRef.current;
-        if (!container) return;
-        const active = container.querySelector<HTMLElement>(
-          'a[aria-current="page"]',
-        );
-        if (!active) return;
-        const cRect = container.getBoundingClientRect();
-        const aRect = active.getBoundingClientRect();
-        // If already fully visible, don't move.
-        if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
-        // Position of the active item in the container's content coord space.
-        const offsetTop = aRect.top - cRect.top + container.scrollTop;
-        const target =
-          offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
-        // Bypass the page's CSS scroll-behavior: smooth so this lands
-        // instantly on page load instead of animating in.
-        container.style.scrollBehavior = 'auto';
-        container.scrollTop = Math.max(0, target);
+        scrollActiveIntoCenter(scrollContainerRef.current);
       });
     });
     return () => {
@@ -119,6 +123,28 @@ export function AppSidebar({ categories, currentPath }: Props) {
       if (raf2) cancelAnimationFrame(raf2);
     };
   }, [currentPath, isMobile]);
+
+  // Mobile: when the Sheet opens, center the active page in the drawer.
+  // Runs on every open (and whenever the page changes while the drawer
+  // is open) so the user always sees where they are. The double-RAF
+  // gives Radix's open animation time to settle the layout before we
+  // measure.
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (!isMobile) return;
+    if (!open) return;
+    let raf1 = 0;
+    let raf2 = 0;
+    raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => {
+        scrollActiveIntoCenter(mobileScrollRef.current);
+      });
+    });
+    return () => {
+      cancelAnimationFrame(raf1);
+      if (raf2) cancelAnimationFrame(raf2);
+    };
+  }, [isMobile, open, currentPath]);
 
   // Mobile: Sheet drawer (Radix Dialog under the hood — focus trap, ESC,
   // scroll lock, ARIA all handled).
@@ -129,7 +155,7 @@ export function AppSidebar({ categories, currentPath }: Props) {
           <SheetHeader className="sr-only">
             <SheetTitle>Site navigation</SheetTitle>
           </SheetHeader>
-          <div className="h-full overflow-y-auto pt-4">
+          <div ref={mobileScrollRef} className="h-full overflow-y-auto pt-4">
             <NavContent categories={categories} currentPath={currentPath} />
           </div>
         </SheetContent>
