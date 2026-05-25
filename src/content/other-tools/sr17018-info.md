@@ -1,165 +1,132 @@
 ---
 title: "SR-17"
-description: "SR-17018 as an informal taper tool, what it is, the community protocol, real risks, what's unknown."
+description: "SR-17018 as an informal taper tool. The community protocol, the caveats, the legal and sourcing realities."
 category: "other-tools"
 last_updated: "2026-05-25"
 sort: 6
 ---
-**SR-17018**, also known informally as **SR-17**, is a synthetic compound originally developed at the Scripps Research Institute and [first described by Bohn and colleagues in 2017](https://en.wikipedia.org/wiki/SR-17018). It's a biased mu-opioid receptor agonist with a pharmacological profile that's different from classical opioids like morphine, oxycodone, or even buprenorphine, and that profile has made it interesting to people trying to come off opioid dependence.
 
-On Reddit and other forums, [discussion of SR-17018 dramatically increased through 2024](https://en.wikipedia.org/wiki/SR-17018), with the compound emerging as an informal tool for opioid discontinuation and withdrawal management. Some people in this community have used it as part of their plan to come off [7-OH](/compounds/7-oh) and the related synthetics. It's a valid option, and it still acts on the mu-opioid receptor, be clear-eyed about that.
+> **SR-17018 has never been studied in humans.** All efficacy and safety data is rodent. Doses below come from community forums (Reddit, Bluelight), not clinical trials. It is still a mu-opioid agonist and produces its own dependence and withdrawal.
 
-## What makes it pharmacologically interesting
-SR-17018 is a [biased partial agonist](https://en.wikipedia.org/wiki/SR-17018) at the mu-opioid receptor with strong selectivity for G-protein signaling over β-arrestin2 recruitment. The G-protein-vs-β-arrestin distinction matters because the analgesic and reward effects of opioids run primarily through G-protein signaling, while many of the worst side effects (respiratory depression, severe withdrawal, fast tolerance buildup) involve β-arrestin signaling. Compounds biased toward G-protein signaling theoretically deliver the helpful effects with fewer of the harmful ones.
+SR-17018 (also called SR-17) is a biased mu-opioid agonist developed at Scripps in 2017. Community use as an informal bridge off [7-OH](/compounds/7-oh) and the related synthetics took off through 2024. The appeal is its pharmacology: rodent studies show it suppresses withdrawal and reverses tolerance with much less respiratory depression than classical opioids. The catch is everything that comes with using a research chemical for human dependence.
 
-In rodent studies, this has translated to real, documented advantages: SR-17018 [produces robust analgesia with very little respiratory depression](https://en.wikipedia.org/wiki/SR-17018) and much less analgesic tolerance than morphine. [Substituting SR-17018 for morphine in dependent mice](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) reversed analgesic tolerance and suppressed withdrawal symptoms, which is the mechanism that makes it interesting for human opioid discontinuation. **This is the part that's been gaining attention.**
+## The protocol
 
-[More recent research](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348759/) has shown SR-17018 also stimulates an unusual pattern of mu-opioid receptor phosphorylation that persists for hours, which may explain its tolerance-reversing effects through a mechanism distinct from the simpler G-protein bias model.
+**This is the most common SR-17 plan reported in this community.** Community experience, not a clinical protocol. Treat it as a reference.
 
-## Important truths about it
-- **It is still an opioid.** It binds the mu-opioid receptor with a [Ki of 11 nM](https://en.wikipedia.org/wiki/SR-17018), comparable to many clinical opioids. It produces opioid effects, and it can produce dependence.
-- **It produces its own withdrawal.** [Studies have documented withdrawal upon cessation](https://www.mdpi.com/1422-0067/26/5/1862), though shorter and reportedly less intense than morphine withdrawal. Long-term use will produce dependence on SR-17018.
-- **It has not been studied in humans.** All of the published data is from mice and rats. [The drug has not been formally studied in humans](https://en.wikipedia.org/wiki/SR-17018), implying an unknown safety profile.
-- **Reports of "minimal euphoria" are accurate but not the whole story.** Most users describe SR-17018 as not producing the same kind of high other opioids do, which is part of why it's used as a transition tool rather than recreationally. But the absence of euphoria doesn't mean absence of opioid effects.
+**Step 0: allergy test.** Take ~10 mg of SR-17 orally. Wait several hours, watch for any reaction. SR isn't a known allergen, but unregulated research chemicals can carry contaminants.
 
-## Preload, don't quit cold first
-**The most important practical point: SR-17018 is taken alongside your existing [7-OH](/compounds/7-oh) (or other opioid) for several days before you stop the original compound.** This is called preloading and it's how community protocols work. Stopping [7-OH](/compounds/7-oh) first and then starting SR is the wrong sequence and leads to unnecessary withdrawal.
+**The day-by-day:**
 
-The reasoning: SR-17018's tolerance-reversing and withdrawal-suppressing properties [demonstrated in rodent studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) work through *substitution* at the mu receptor, not as a withdrawal treatment after the fact. You want SR-17018 occupying receptors and shifting the receptor adaptation pattern *while* you taper or discontinue the original compound, not afterward.
+| Day | SR-17 | 7-OH (or your current opioid) |
+| --- | --- | --- |
+| 1 (preload) | 50 mg × 3 (every 6 to 8 hours) | Normal dose, no change |
+| 2 | 50 mg × 3 | Cut in half |
+| 3 | 50 mg × 3 | Stop completely |
+| 4 to 7 (hold) | 50 mg × 3 | None |
+| Taper | 100 mg/day → 75 → 50 → 25 → jump | None |
 
-**Typical preload approach as reported in community discussion:**
-- Continue your normal [7-OH](/compounds/7-oh) dose
-- Add SR-17018 at a low starting dose, dosed every 6 to 8 hours
-- Stabilize on both for 2 to 3 days, ensuring SR is tolerated
-- Begin tapering or stopping the 7-OH while continuing SR-17018
-- Once the 7-OH is fully off and you're stable on SR-17018 alone, begin tapering SR
+**Total runway:** roughly 10 to 14 days start to finish.
 
-This is significantly more comfortable than stopping 7-OH first and then trying to use SR to recover.
+**Three principles behind it:**
 
-## Dosing approaches reported in the community
-**There is no clinical dosing protocol for SR-17018 in humans.** What follows are dose ranges reported on Reddit, Bluelight, and other community forums by people who have used it for opioid discontinuation. Treat these as starting reference points, not prescriptions.
+1. **Preload first, don't quit cold.** SR's tolerance-reversing effect works through substitution at the mu receptor while you still have the original compound on board. Stopping 7-OH first and then trying to recover with SR is the wrong sequence and produces unnecessary withdrawal.
+2. **Use more SR, not 7-OH, to cover gaps.** If 50 mg × 3 isn't holding you in the first few days, raise the SR. Some readers run higher per-dose totals early. Reaching back for 7-OH undermines the whole transition.
+3. **Always taper the SR.** Extended use creates SR-specific dependence. Keep the total course at 7 to 10 days maximum, then step down. Abrupt stops after even a short course can produce a rough few days that a taper would have avoided.
 
-[Bluelight reports](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/) describe oral dosing starting with a small allergy-test dose (under 1 mg), followed by titration, with doses around 10 mg producing minimal effects and 20 to 35 mg producing more noticeable effects in opioid-tolerant users. [Community guides compiled from Reddit](https://sr17018.org/tapering) describe starting around 25 mg and finding a maintenance dose by tracking which 8-hour totals adequately managed withdrawal symptoms.
+If 50 mg × 3 isn't enough even after increasing, or you're coming off stacked synthetics rather than 7-OH alone, ask on the [Discord](https://discord.gg/quitting7oh) or [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) before improvising. Community experience there is ahead of anything published.
 
-Common patterns:
+## Why these doses
 
-- **Allergy test dose first.** Under 10 mg orally, wait several hours, watch for any reaction.
-- **Starting effective dose for opioid-dependent users:** typically 50 to 150 mg orally, depending on dependence baseline.
-- **Maintenance:** total daily dose split across multiple administrations to account for SR-17018's [half-life of approximately 6 hours](https://www.mdpi.com/1422-0067/26/5/1862) in rodent studies. Most protocols dose every 6 to 8 hours.
-- **Taper:** community guides describe reducing dose by approximately 10% per day once stabilized, with flexibility to pause and hold if withdrawal becomes intolerable.
+There is no clinical dosing protocol for SR-17 in humans. The 50 mg × 3 starting point sits inside the range reported on [Bluelight](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/) and [community guides on sr17018.org](https://sr17018.org/tapering): allergy-test dose under 10 mg, opioid-tolerant starting doses commonly 50 to 150 mg total daily, split across multiple administrations.
 
-**Bioavailability:** SR-17018 has [approximately 69% oral bioavailability in mice](https://en.wikipedia.org/wiki/SR-17018) and crosses the blood-brain barrier efficiently. It's highly lipophilic with very poor water solubility, so dosing usually involves dissolution in a carrier (oils, propylene glycol, or ethanol) rather than aqueous suspension.
+Dosing every 6 to 8 hours follows from a [~6-hour half-life in rodent studies](https://www.mdpi.com/1422-0067/26/5/1862). Less frequent dosing lets blood levels drop and withdrawal symptoms break through between doses.
 
-**Important caveat:** rodent doses don't translate linearly to human doses. The 24 to 48 mg/kg/day used in mouse studies is not what humans should target. Community-reported human doses are much lower in absolute terms but the variability is significant and the data thin.
+SR-17 has [roughly 69% oral bioavailability in mice](https://en.wikipedia.org/wiki/SR-17018) and crosses the blood-brain barrier efficiently. It's highly lipophilic with poor water solubility, so dosing requires a carrier (oil, propylene glycol, ethanol-based solution). Vendors selling liquid form have usually handled this; powder requires you to do it yourself.
 
-## The community protocol
+Rodent doses (24 to 48 mg/kg/day in the published work) do not translate linearly to humans. Don't do that math.
 
-**This is the most common SR-17018 plan reported by people in this community.** Community experience, not a clinical protocol, treat it as a reference.
+## Truths to be clear-eyed about
 
-**The standard plan:**
+- **It is still an opioid.** Mu-receptor [Ki of 11 nM](https://en.wikipedia.org/wiki/SR-17018), comparable to many clinical opioids. It produces opioid effects.
+- **It produces its own withdrawal.** [Documented in rodent cessation studies](https://www.mdpi.com/1422-0067/26/5/1862). Reported shorter and less intense than morphine withdrawal, but it is real.
+- **Reports of "minimal euphoria" are common.** That's part of why it's used as a tool rather than recreationally. Absence of euphoria is not absence of opioid effects.
+- **Keep naloxone (Narcan) on hand.** SR-17 overdose responds to naloxone like any mu agonist. Non-negotiable.
+- **Don't use SR-17 alone if at all possible.** Someone needs to know what you're doing and be able to reach you.
 
-1. **Allergy test first.** Take ~10 mg of SR-17018 orally. Wait several hours, watch for any reaction. SR isn't a known allergen, but unregulated research chemicals can carry contaminants, so this step matters.
+## Sourcing and quality
 
-2. **Day 1, preload.** SR-17018 **50 mg, three times a day** (every 6-8 hours), *alongside* your normal 7-OH dose. You're not cutting 7-OH yet. You're getting SR onto your receptors first.
+This is the hard part of using SR-17.
 
-3. **Day 2, cut 7-OH in half.** Continue SR **50 mg x3**. Reduce your 7-OH dose to half of normal.
+- **No FDA oversight, no pharmaceutical-grade QC.** SR-17 is sold by [chemical suppliers operating outside pharmaceutical standards](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning).
+- **Demand a third-party COA.** Reputable research-chemical vendors provide HPLC or NMR analysis. Less reputable ones provide nothing or fake certificates.
+- **Contamination risk is real.** Designer opioids in the same chemical family have appeared mislabeled or as adulterants. Brorphine specifically [carries severe respiratory-depression risk despite producing little euphoria](https://en.wikipedia.org/wiki/SR-17018) — the failure mode you don't want.
+- **Batch-to-batch variability.** Without lab equipment, you're trusting the vendor's stated concentration. Some readers have reported significant variability across batches.
 
-4. **Day 3, drop 7-OH entirely.** Continue SR **50 mg x3**. No 7-OH at all from here on.
+## MGM-15 and the other synthetics
 
-5. **Days 3-10, hold.** Continue SR **50 mg x3**. This is the stretch where SR is fully covering you and the 7-OH is out of your system.
+Probably effective for [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and [pseudo](/compounds/pseudo), but the data is community-reasoned rather than research-confirmed. The published [Bohn lab work](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) demonstrated substitution for morphine and oxycodone, not the kratom synthetics specifically. The pharmacological logic transfers because all of these compounds activate the mu receptor.
 
-6. **Taper the SR.** Toward the end of the 7-10 day window, step the SR down. A common taper: **50 mg x3 → 100 mg/day → 75 → 50 → 25 → jump.** Adjust the pace to how you feel.
+**The MGM-15 caveat:** MGM-15 has dual mu/delta activity. SR-17 is essentially mu-only ([Ki >10,000 nM at delta](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), the same gap [Suboxone](/mat-suboxone/suboxone-info) users coming off MGM-15 report. See [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the post-acute mood picture.
 
-**Key principles behind this protocol:**
+For pseudo or MIT-A, the same logic applies. Stacked synthetics may need a longer preload window than pure 7-OH. Be honest about your full compound history when planning a transition.
 
-- **Use more SR, not 7-OH, to cover symptoms.** If 50 mg x3 isn't holding you in the first few days, the community approach is to *increase the SR dose* rather than reaching back for 7-OH. Some people report needing more than 50 mg per dose early on. The whole point is to break the 7-OH dependence, so don't undermine it by topping up with 7-OH.
+## Legal status
 
-- **Keep the total SR course short.** The strong community recommendation is **7-10 days of SR maximum.** SR-17018 produces its own dependence and withdrawal with extended use. The longer you're on it, the more you have to taper off of. Short course, then taper, then done.
+SR-17 is **not specifically scheduled** under the U.S. Controlled Substances Act or international drug control treaties. That doesn't mean it's clearly legal.
 
-- **Always taper the SR at the end.** Don't stop SR abruptly after a 7-10 day course. The step-down (100/75/50/25/jump or similar) reduces the chance of SR-related withdrawal symptoms. Abruptly stopping after even a short course can leave you with a rough few days that a simple taper would have prevented.
+The [Federal Analogue Act, 21 U.S.C. § 813](https://en.wikipedia.org/wiki/Federal_Analogue_Act), treats any substance "substantially similar" in chemical structure or pharmacological effect to a Schedule I or II controlled substance as if it were Schedule I, **but only if intended for human consumption.** SR-17 is a mu-opioid agonist with effects that overlap with scheduled opioids, so analogue-act prosecution is plausible if intent to consume is established.
 
-**What the timeline looks like in practice:** roughly 3 days of overlap/transition, 4-7 days of SR holding you while 7-OH clears and your receptors start adjusting, then a 2-4 day SR taper. Total: about 10-14 days start to finish.
+Practical reality:
 
-If 50 mg x3 isn't enough even after increasing, or if you're coming off stacked synthetics rather than 7-OH alone, post in **#sr17018** before improvising. Community experience there is ahead of anything published.
+- Vendors sell SR-17 as a "research chemical" with "not for human consumption" disclaimers. That labeling is the legal fig leaf the analogue framework runs on.
+- Personal-use possession has not, to our knowledge, been the basis for federal prosecution. The analogue act has historically targeted vendors and large-scale distributors.
+- State laws vary. Some states have broader analogue statutes than federal law.
+- The landscape can change quickly. Designer opioids attract ongoing regulatory attention.
 
-## Dosing context and pharmacology
-
-The protocol above is what this community commonly uses. For broader context: **there is no clinical dosing protocol for SR-17018 in humans.** Dose information comes entirely from community forums (Reddit, Bluelight) and user reports.
-
-[Bluelight reports](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/) describe oral dosing starting with a small allergy-test dose, followed by titration, with doses around 10 mg producing minimal effects and 20 to 35 mg producing more noticeable effects in opioid-tolerant users. [Other community guides](https://sr17018.org/tapering) describe finding a maintenance dose by tracking which 8-hour totals adequately managed withdrawal symptoms. The community's 50 mg x3 starting point sits within the range these sources describe.
-
-**Half-life and dosing frequency:** SR-17018 has a [half-life of approximately 6 hours](https://www.mdpi.com/1422-0067/26/5/1862) in rodent studies. This is why the protocol doses every 6-8 hours, three times a day. Less frequent dosing lets blood levels drop and withdrawal symptoms break through between doses.
-
-**Bioavailability and how to take it:** SR-17018 has [roughly 69% oral bioavailability in mice](https://en.wikipedia.org/wiki/SR-17018) and crosses the blood-brain barrier efficiently. It's highly lipophilic with very poor water solubility, so it doesn't mix into water. Dosing typically involves dissolving it in a carrier like oil, propylene glycol, or an ethanol-based solution. Vendors selling it in liquid form have usually done this already; powder requires you to handle it yourself.
-
-**The caveat on rodent data:** the 24 to 48 mg/kg/day used in mouse studies does not translate linearly to human doses. Don't do that math and dose accordingly; you'd massively overshoot. Community-reported human doses are far lower in absolute terms, and the variability between people is significant. The data is thin.
-
-## Does it work for MGM-15 and the other synthetics?
-The short answer: **probably yes for [MGM-15](/compounds/mgm15), but the data is community-reasoned rather than research-confirmed.**
-
-The published [Bohn lab research](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) demonstrated SR-17018 substituting for and reversing tolerance to morphine and oxycodone in rodent models. There are no published studies specifically pairing SR-17018 with [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo), or 7-OH.
-
-That said, the pharmacological logic is consistent. [MGM-15](/compounds/mgm15) is a [semi-synthetic mu/delta agonist](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/) derived from 7-OH, and 7-OH itself is a potent mu-opioid agonist. SR-17018's substitution mechanism operates at the mu receptor, which all of these compounds activate.
-
-**The [MGM-15](/compounds/mgm15) caveat:** MGM-15 has dual mu/delta activity, and SR-17018 is essentially mu-only ([very low δ-receptor affinity, Ki >10,000 nM](https://en.wikipedia.org/wiki/SR-17018)). SR covers the mu component but doesn't replace the delta activation MGM-15 was producing. Expect a "delta gap" feeling (anhedonia, low mood, persistent off feeling), same as bupe users coming off MGM-15 report. Adjuncts and time help, see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader picture.
-
-For pseudo or [MIT-A](/compounds/mit-a-dhm), the same logic applies. **Be honest about your full compound history when planning a transition.** Stacked synthetics may need a more careful, possibly longer preload window than pure 7-OH.
-
-## The legal question (Federal Analogue Act)
-SR-17018 is **not specifically scheduled** under the U.S. Controlled Substances Act or international drug control treaties. However, that doesn't mean it's clearly legal.
-
-The [Federal Analogue Act, 21 U.S.C. § 813](https://en.wikipedia.org/wiki/Federal_Analogue_Act), treats any substance "substantially similar" in chemical structure or pharmacological effect to a Schedule I or II controlled substance as if it were Schedule I, but only if intended for human consumption. SR-17018 is a mu-opioid receptor agonist with effects that overlap meaningfully with scheduled opioids, which means [it could plausibly be prosecuted](https://www.justanswer.com/criminal-law/sigya-sr17018-research-chemical-opioid-tolerance.html) as a controlled substance analogue if intended for human consumption.
-
-The practical reality:
-
-- **Vendors sell SR-17018 as a "research chemical"** with disclaimers that it's not for human consumption. This labeling is the legal fig leaf the analogue act framework runs on.
-- **Possession or use for personal harm-reduction purposes** has not, to our knowledge, been the basis for federal prosecution. The analogue act has historically been used against vendors and large-scale distributors.
-- **The legal landscape can change quickly.** Designer opioids, including SR-17018's structural cousin brorphine, are subject to ongoing regulatory attention.
-- **State laws vary.** Some states have broader analogue statutes than federal law.
-
-**This isn't legal advice.** If you're concerned about your specific situation, consult a lawyer.
-
-## Sourcing and quality concerns
-This is the hard part of using SR-17018, and worth being honest about.
-
-- **No FDA oversight, no pharmaceutical-grade quality control.** SR-17018 is [currently available exclusively from chemical suppliers](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning) who are not adhering to standards usually applied to pharmaceuticals intended for human consumption.
-- **Purity verification matters.** Reputable RC suppliers provide third-party HPLC/NMR analysis. Less reputable ones provide nothing or fake certificates of analysis. Vet your source.
-- **Contamination risk is real.** Other novel synthetic opioids in the same chemical family (like brorphine) have appeared mislabeled or as adulterants. Brorphine specifically [has potential for severe respiratory depression](https://en.wikipedia.org/wiki/SR-17018) despite producing little euphoria, which is the failure mode you don't want.
-- **Dose verification is difficult.** Without lab equipment, you're trusting the vendor's claimed concentration. Some users have reported significant batch-to-batch variability.
-
-**Naloxone reverses overdose from SR-17018** as it does for any mu-opioid agonist. Keep some on hand. This is non-negotiable.
+This isn't legal advice.
 
 ## Honest tradeoffs
+
 **In favor:**
-- novel pharmacology that may produce less respiratory depression and less tolerance than classical opioids in lab settings
-- Reported by users to have minimal euphoria, making it a tool rather than a temptation
-- Can substitute for stronger opioids and ease tolerance/withdrawal via the preload approach
-- Cash-pay, no prescriber needed (which is also a downside)
+
+- Novel pharmacology that reduces respiratory depression and tolerance in lab settings
+- Minimal euphoria in user reports, making it function as a tool rather than a temptation
+- Substitutes for stronger opioids via preload, eases the transition off
+- Cash-pay, no prescriber needed (also a downside)
 
 **Against:**
-- No human clinical data; all efficacy claims come from rodent studies
-- Sourcing is gray-market with all the quality concerns that brings
-- Legal status is ambiguous under the Analogue Act
-- It still produces dependence and withdrawal
-- [Many users who get off their primary opioid using SR end up relapsing](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning), with rapidly reduced tolerance creating significant overdose risk if they return to use
 
-If you're going to use it, **plan the post-SR phase as carefully as the SR phase itself.** PAWS, supplements, support, and structure for the weeks after stopping matter as much as the SR-17018 protocol itself.
+- No human clinical data; all efficacy claims come from rodent studies
+- Sourcing is gray-market with the quality concerns that brings
+- Legal status is ambiguous under the analogue act
+- It still produces dependence and withdrawal
+- [Post-SR relapse with reduced tolerance is a documented pattern](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning), and a returning user faces significant overdose risk
+
+If you're going to use it, **plan the post-SR phase as carefully as the SR phase itself.** Supplements, PAWS support, and structure for the weeks after stopping matter as much as the SR-17 protocol itself. [Suboxone](/mat-suboxone/suboxone-info) is the other community-validated path off the synthetics and is worth considering alongside this one.
 
 ## When to seek emergency help
-- Severe respiratory depression (slow or shallow breathing, blue lips/fingertips)
+
+- Severe respiratory depression (slow or shallow breathing, blue lips or fingertips)
 - Loss of consciousness
 - Severe chest pain or irregular heartbeat
-- Any thoughts of self-harm or suicide. Call or text **911/988**.
+- Any thoughts of self-harm or suicide. Call or text **988**.
 
-**Don't use SR-17018 alone if at all possible.**
+## Why people choose SR-17 (the pharmacology)
+
+SR-17 is a [biased partial agonist](https://en.wikipedia.org/wiki/SR-17018) at the mu-opioid receptor with strong selectivity for G-protein signaling over β-arrestin2 recruitment. The G-protein-vs-β-arrestin distinction matters because the analgesic and reward effects of opioids run primarily through G-protein signaling, while many of the worst side effects (respiratory depression, severe withdrawal, fast tolerance buildup) involve β-arrestin signaling. Compounds biased toward G-protein signaling deliver the helpful effects with fewer of the harmful ones, in theory.
+
+In rodent studies this translated to real, documented advantages: SR-17 [produces robust analgesia with very little respiratory depression](https://en.wikipedia.org/wiki/SR-17018) and much less analgesic tolerance than morphine. [Substituting SR-17 for morphine in dependent mice](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/) reversed analgesic tolerance and suppressed withdrawal symptoms. That last finding is the mechanism that made SR interesting for human opioid discontinuation.
+
+[More recent research](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348759/) shows SR-17 stimulates an unusual pattern of mu-opioid receptor phosphorylation that persists for hours, which may explain its tolerance-reversing effects through a mechanism distinct from the simpler G-protein bias model.
 
 ## Sources
+
 - [SR-17018, Wikipedia](https://en.wikipedia.org/wiki/SR-17018)
-- [Grim et al., G protein signaling-biased agonist reverses morphine tolerance (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/)
-- [SR-17018 Stimulates Atypical µ-Opioid Receptor Phosphorylation (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348759/)
+- [Grim et al., G-protein-biased agonist reverses morphine tolerance (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6901606/)
+- [SR-17018 stimulates atypical µ-opioid receptor phosphorylation (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8348759/)
 - [Biased Opioid Receptor Agonists review (MDPI, 2025)](https://www.mdpi.com/1422-0067/26/5/1862)
 - [Bluelight: SR-17018 / RC opioid detoxes thread](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/)
 - [Federal Analogue Act, Wikipedia](https://en.wikipedia.org/wiki/Federal_Analogue_Act)
 - [Concrete Confessional: SR-17018 Promise and Warning](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning)
-- [From kratom to 7-hydroxymitragynine (PMC, MGM-15 context)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12671409/)
 - See also: [Suboxone](/mat-suboxone/suboxone-info), [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper), [Vitamins & Supplements](/other-tools/vitamins-supplements)
