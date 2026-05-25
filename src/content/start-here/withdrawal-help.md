@@ -12,12 +12,10 @@ this. We're going to walk you through the next few hours.
 
 ## What's actually happening
 
-[7-OH](/compounds/7-oh) is a [potent mu-opioid receptor agonist that binds
-13 to 22 times more strongly than morphine](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/).
-Your body adapted to its constant presence. When you stop, your opioid
-receptors are temporarily underactive while your nervous system
-rebalances. That mismatch is what withdrawal feels like — physiology,
-not damage.
+[7-OH](/compounds/7-oh) hits the same receptors as morphine, 13 to 22
+times harder. Your body adapted to having it around. When you stop,
+those receptors run underactive for a while as the system readjusts.
+That mismatch is what withdrawal feels like.
 
 If this is a re-entry to withdrawal after a stretch off — and symptoms
 seem to be hitting faster than they did the first time — see
