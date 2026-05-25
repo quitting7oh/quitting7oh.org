@@ -22,29 +22,9 @@ your situation (a real call for some, covered at the bottom), the
 [Rehabilitation Centers](/for-you/rehabilitation-centers) page covers
 detox, residential, PHP, IOP, and how to pay for them.
 
-## The four paths people in this community use
+## Picking a path
 
-The [Withdrawal Help](/start-here/withdrawal-help) page covers all
-four in detail, including hour-by-hour what to do. Short version:
-
-1. **Tough it out with [helper medications](/other-tools/helper-meds-info)
-   and [supplements](/other-tools/vitamins-supplements).** Doable for
-   short-acting 7-OH at moderate doses. Harder for long-acting
-   synthetics.
-2. **Step down to [kratom leaf](/other-tools/tapering-with-leaf).**
-   Substitute lower-concentration leaf for concentrated 7-OH, then
-   taper the leaf.
-3. **[Suboxone (MAT)](/mat-suboxone/suboxone-info)**, typically as
-   a short, structured rapid taper (5 to 10 days, 14 at the outside
-   is what the community feels comfortable recommending).
-   [Telehealth prescribers](/resources/telehealth) can put a Suboxone
-   prescription in your hands the same day in most US states.
-4. **[SR-17](/other-tools/sr17018-info)**, a non-prescription
-   option some people use to bridge off the synthetics.
-
-These are options, not a ranking. The site is opinionless about which
-one you choose. Different paths fit different situations; the right
-one is the one that fits yours and that you'll use.
+The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths this community has used, in the order to try them. The rest of this page covers the tools that work alongside whichever path you pick.
 
 ## The tools to have on hand before you stop
 

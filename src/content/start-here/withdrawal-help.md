@@ -103,135 +103,18 @@ to the receptor tighter than buprenorphine itself. See
 [Pseudoindoxyl](/compounds/pseudo). Suboxone induction is harder and may
 require a different approach. Talk to a prescriber.
 
+## Reaching for relief right now
+
+You don't have to white-knuckle this. What you can reach for in the next few hours, roughly in order of how fast you can have them on hand:
+
+- **[Kratom leaf or mitragynine concentrate](/other-tools/tapering-with-leaf).** If you already have leaf, or can get it locally today, reaching for plain [kratom leaf](/compounds/kratom-leaf) (or a mitragynine concentrate if leaf isn't available) to take the edge off is a legitimate harm-reduction step-down. It doesn't undo the work of getting off the synthetics. Leaf is much lower-potency than 7-OH.
+- **[Pharmacy-shelf supplements](/other-tools/vitamins-supplements).** Magnesium glycinate for restless legs and sleep, electrolyte powder (LMNT, Liquid IV, Pedialyte) for hydration, melatonin (1 to 3 mg) for sleep, vitamin C, NAC. Available at any drugstore today. The [Quit Kit-style pre-packaged stacks](/other-tools/quitkit-info) are an option if you don't want to source individually.
+- **[Prescription helper medications](/other-tools/helper-meds-info)** via [same-day telehealth](/resources/telehealth). Clonidine, gabapentin, trazodone, baclofen, ondansetron, and others can take the edge off specific symptoms. A telehealth visit can get most of these in your hands the same day.
+- **[Suboxone](/mat-suboxone/suboxone-info)** via same-day [telehealth](/resources/telehealth). A correct induction can drop withdrawal to near zero within hours. The prescription is same-day in most US states, but you have to wait until your [COWS score is ≥ 12](/mat-suboxone/suboxone-cows) before the first dose (typically 12 to 24 hours into withdrawal, longer for the long-acting synthetics). Going earlier causes precipitated withdrawal.
+
 ## Your options from here
 
-You have a real choice right now. None of these is the "right" one for
-everyone, pick the one that fits your situation.
-
-### Path 1, tough it out (cold turkey with helper meds and supplements)
-
-Doable for **short-acting [7-OH](/compounds/7-oh) at moderate doses**. Much harder for
-long-acting or stacked compounds. If you choose this path:
-
-- Read **[Helper Medications](/other-tools/helper-meds-info)** for
-  what prescriptions help (clonidine, gabapentin, trazodone,
-  baclofen, and others). A telehealth appointment same-day can get
-  most of these.
-- Read **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
-  for what to buy from the pharmacy *right now* (magnesium glycinate,
-  electrolytes, vitamin C, NAC, melatonin for sleep, others).
-- The **[QuitKit-style](/other-tools/quitkit-info)** pre-packaged
-  stacks exist if you don't want to source individual supplements.
-
-### Path 2, step down to kratom leaf
-
-Plain [kratom leaf](/compounds/kratom-leaf) is a real taper tool. The
-reasoning is straightforward: 7-OH is one of the alkaloids naturally
-present in leaf, just at a small fraction of the concentration. Stepping
-down from concentrated synthetics to leaf, then tapering the leaf
-itself, is a meaningful reduction in alkaloid exposure rather than a
-sideways switch.
-
-- Read **[Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)**
-  for the community protocol, what doses to start at, and the common
-  mistakes (most importantly: avoiding "enhanced" leaf products that
-  are secretly adulterated with extract or 7-OH).
-- This works best when planned ahead, but reaching for leaf mid-acute
-  is also a real harm-reduction move people have made. The page above
-  has practical guidance either way.
-
-### Path 3, get on Suboxone (MAT)
-
-Suboxone is a partial opioid agonist. Taken correctly during a
-successful induction, it can drop withdrawal to nearly zero within
-hours. It requires a prescriber, and induction has to wait until
-your COWS score is ≥ 12 (typically 12–24 hours into withdrawal, and
-often longer for the long-acting synthetics like
-[MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and
-[pseudo](/compounds/pseudo), where there's still meaningful drug on
-your receptors at the standard wait window).
-
-The community's general posture is a **short, structured rapid taper**
-— 5 to 10 days, **14 days at the outside**. That's the range we feel
-comfortable recommending for 7-OH and the synthetics; the goal is to
-use Suboxone as a bridge through acute, not as an open-ended
-maintenance medication. Longer-term use is a real choice some people
-make, but it brings its own dependence and a separate set of risks
-to understand before you commit; see
-**[What You Should Know About Long-Term Suboxone](/mat-suboxone/suboxone-risks)**.
-
-- Read **[Suboxone](/mat-suboxone/suboxone-info)** for the
-  overview and our community's low-and-slow induction approach.
-- Read **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**
-  for the 5-to-10-day protocol people in this community have used to
-  come off short-acting 7-OH.
-- Read **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)** for *when* to
-  take your first dose, this matters more than people realize. Going
-  too early causes **precipitated withdrawal**, which is much worse
-  than what you're feeling now.
-- Read **[What You Should Know About Long-Term Suboxone](/mat-suboxone/suboxone-risks)**
-  before extending past the 10-to-14-day window. Hormone changes,
-  dependence, and a tougher taper later are the trade-offs.
-- **[Telehealth options](/resources/telehealth)** can put a Suboxone
-  prescription in your hands the same day in most US states. Cash-pay
-  and insurance options both exist, with prices and coverage that vary
-  by provider, see the comparison page for the current shortlist.
-
-### Path 4, SR-17018 (informal taper tool)
-
-A non-prescription option some people in this community have used to
-come off 7-OH and related synthetics. SR-17018 still binds the mu-opioid
-receptor, but it has a longer duration and a usage pattern that community
-members have found makes it easier to step down from than the compound
-they were on.
-
-- Read **[SR-17018](/other-tools/sr17018-info)** for what it is,
-  the community protocol, the real risks, and what's unknown. There is
-  **no clinical literature on SR-17018 in humans**, dose info comes
-  entirely from community forums and user reports. Read carefully
-  before deciding.
-- This path is unregulated and lacks the clinical-safety net of Suboxone.
-  It's a real option that's worked for some people, and it's not a path
-  anyone should take without understanding the trade-offs.
-
-You don't have to decide right this minute. If you're early in
-withdrawal (< 24 hours) and your COWS score is still low, all four
-paths are open. The practical differences that usually shape the
-choice:
-
-- **Access and timing.** Cold turkey with helper meds is the path
-  you can start the soonest, a same-day telehealth visit covers
-  most of the helper meds, and many of the supplements are at any
-  pharmacy. Leaf you can start as soon as you have a trusted source
-  on hand. SR-17 requires sourcing first. Suboxone requires
-  *both* a prescriber and a COWS score above 12 (or SOWS ≥ 17),
-  which usually means waiting at least 12–24 hours into withdrawal
-  before the first dose, longer for the long-acting synthetics
-  ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
-  [pseudo](/compounds/pseudo)).
-- **What the path does for symptoms.** Suboxone, when induction
-  goes well, can drop withdrawal to near zero by occupying the
-  receptors with a partial agonist. Induction can also fail —
-  precipitated withdrawal during induction is hours of feeling
-  significantly worse than baseline withdrawal, and the risk runs
-  higher with the long-acting compounds. SR-17 occupies the
-  receptors with a longer-acting opioid; symptoms ease over a day
-  or two of stabilization. Leaf provides a weaker version of the
-  receptor activation you had, so the step-down is gradual rather
-  than a hard switch. Cold turkey has no pharmacological
-  replacement, helper meds blunt symptoms (clonidine on the
-  noradrenergic side, gabapentin on the wired/anxious side,
-  trazodone on sleep) while your system recalibrates.
-- **What it costs you later.** Suboxone brings its own dependence
-  and a taper at the end. SR-17 brings its own dependence and a
-  less-charted taper. Leaf brings its own dependence; the taper is
-  the protocol. Cold turkey doesn't add a new substance to come off
-  later.
-
-None of these is "the right" path in general. Different paths fit
-different situations, and people in this community have come off
-[7-OH](/compounds/7-oh) and the synthetics through every one of
-them.
+These are short-term tools. The longer-term decision is which path off you want to take. The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths the community has used, ranked by how the harm-reduction logic shakes out.
 
 ## When to go to the ER
 

@@ -226,27 +226,7 @@ which don't survive the pharmacology:
 
 ## What to do if you're trying to stop
 
-Four real paths people in this community have used:
-
-1. **Cold turkey with helper meds and supplements**, works for many
-   people on short-acting 7-OH at moderate doses.
-   [Helper Medications](/other-tools/helper-meds-info) and
-   [Vitamins & Supplements](/other-tools/vitamins-supplements).
-2. **Suboxone short taper**, the community's most common path for
-   7-OH dependence specifically. 5-14 days, structured, low-and-slow
-   induction. [Suboxone](/mat-suboxone/suboxone-info) is the
-   overview.
-3. **SR-17018**, an informal, non-prescription taper tool some people
-   in this community have used to come off 7-OH. It's still a mu-opioid
-   receptor agonist and there's no clinical literature on humans, but
-   the duration and usage pattern make it easier to step down from than
-   7-OH itself for some users. See [SR-17018](/other-tools/sr17018-info)
-   for the community protocol and the real risks.
-4. **Plain kratom-leaf taper**, a planned, deliberate protocol that
-   uses leaf as a stepdown from concentrated 7-OH. Not for everyone,
-   not for everyone's dose level, and not a rescue strategy during
-   acute withdrawal. See
-   [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf).
+See [Paths Off 7-OH](/start-here/paths-off) for the six ranked paths this community has used, in the order to try them. The [Withdrawal Help](/start-here/withdrawal-help) page covers what to do hour-by-hour once you've picked one.
 
 Whichever path you take, **don't try to navigate it without at least
 one other person knowing**. The Discord and subreddit linked at
