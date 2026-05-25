@@ -78,12 +78,15 @@ export function AppSidebar({ categories, currentPath }: Props) {
   // have to scan to find where they are. Skips on mobile (the Sheet
   // doesn't use scrollContainerRef).
   //
-  // Double-RAF + scrollIntoView: the Lucide SVG icons in each category
+  // Double-RAF before measuring: the Lucide SVG icons in each category
   // header render at their intrinsic 24×24 before Tailwind's h-3.5
   // applies, so measuring on the first frame after hydration sometimes
-  // catches a stale layout. Waiting two frames lets the CSS settle, and
-  // scrollIntoView avoids the manual offset math that was sensitive to
-  // that timing.
+  // catches a stale layout. Two frames lets the CSS settle.
+  //
+  // We set container.scrollTop directly (not scrollIntoView) because
+  // scrollIntoView with block:'center' also scrolls the document to
+  // bring the link into viewport-center, which causes a visible
+  // page-level jump on every refresh.
   React.useEffect(() => {
     if (typeof window === 'undefined') return;
     if (isMobile) return;
@@ -101,11 +104,14 @@ export function AppSidebar({ categories, currentPath }: Props) {
         const aRect = active.getBoundingClientRect();
         // If already fully visible, don't move.
         if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
-        active.scrollIntoView({
-          block: 'center',
-          inline: 'nearest',
-          behavior: 'auto',
-        });
+        // Position of the active item in the container's content coord space.
+        const offsetTop = aRect.top - cRect.top + container.scrollTop;
+        const target =
+          offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
+        // Bypass the page's CSS scroll-behavior: smooth so this lands
+        // instantly on page load instead of animating in.
+        container.style.scrollBehavior = 'auto';
+        container.scrollTop = Math.max(0, target);
       });
     });
     return () => {
