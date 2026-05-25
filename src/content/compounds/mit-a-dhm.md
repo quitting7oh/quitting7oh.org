@@ -3,6 +3,7 @@ title: "MIT-A / DHM (Dihydromitragynine)"
 description: "Dihydromitragynine in the wild, receptor profile, half-life, and what makes it harder to quit than 7-OH."
 category: "compounds"
 last_updated: "2026-05-25"
+sort: 5
 ---
 ## Risks
 - Treat it as opioid-class, dependence, tolerance, withdrawal, and respiratory depression risk apply.

@@ -3,6 +3,7 @@ title: "Sublocade & Brixadi: Long-Acting Buprenorphine Injections"
 description: "Long-acting buprenorphine injections, maintenance use, the long discontinuation tail, and the single-shot exit strategy showing promising results for long-term Suboxone patients."
 category: "mat-suboxone"
 last_updated: "2026-05-25"
+sort: 6
 ---
 
 Sublocade and Brixadi are two FDA-approved long-acting buprenorphine

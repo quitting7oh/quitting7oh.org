@@ -3,6 +3,7 @@ title: "MGM-15"
 description: "A long-acting opioid derived from 7-OH. What the long half-life means for tapering and Suboxone induction."
 category: "compounds"
 last_updated: "2026-05-25"
+sort: 3
 ---
 ## What it is
 

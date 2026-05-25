@@ -3,6 +3,7 @@ title: "Meeting Schedules"
 description: "Full meeting schedules for the two kratom-specific peer support fellowships, Kratom Anonymous (12-step) and Quitting Kratom Support / TIAWO (non-12-step), with day, time, format, and join links."
 category: "resources"
 last_updated: "2026-05-25"
+sort: 3
 ---
 
 This page is the schedule for the two peer support fellowships focused specifically on kratom, kratom extracts, and [7-OH](/compounds/7-oh): **Kratom Anonymous (KA)**, a 12-step fellowship, and **Quitting Kratom Support (KQS / "There Is A Way Out" / TIAWO)**, a non-12-step volunteer-led community. Both are listed below with day, time, format, and join links, pulled from the fellowships' own sites.

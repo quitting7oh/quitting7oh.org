@@ -3,6 +3,7 @@ title: "Cat’s Claw"
 description: "Rhynchophylline products marketed as 'Cat's Claw' at smoke shops and gas stations — what they actually are."
 category: "compounds"
 last_updated: "2026-05-25"
+sort: 7
 ---
 If you're seeing tablets, capsules, or shots labeled **"Cat's Claw"** or **"Rhynchophylline"** at smoke shops or gas stations, read this before you take one.
 

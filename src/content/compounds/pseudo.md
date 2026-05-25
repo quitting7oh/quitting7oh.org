@@ -3,6 +3,7 @@ title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
 description: "Mitragynine pseudoindoxyl (MP), receptor affinity, why bupe induction is harder, what to watch for."
 category: "compounds"
 last_updated: "2026-05-25"
+sort: 6
 ---
 ## General risks
 - **Despite the "safer opioid" academic framing, MP is still a potent MOR agonist** with full opioid-class dependence, withdrawal, and overdose risk in real-world unregulated use.

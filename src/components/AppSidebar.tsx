@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { ChevronRight } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '~/components/ui/sheet';
 import { useIsMobile } from '~/hooks/use-mobile';
-import { getCategoryIcon } from '~/lib/categories';
+import { getCategoryIcon, getCategorySection } from '~/lib/categories';
 import { cn } from '~/lib/utils';
 
 export interface SidebarCategory {
@@ -15,45 +16,103 @@ interface Props {
   currentPath: string;
 }
 
-function NavContent({ categories, currentPath }: Props) {
+/** True if currentPath sits under this category. Used to decide which
+ *  category opens by default on each page load. */
+function isCategoryCurrent(slug: string, currentPath: string): boolean {
+  return currentPath === `/${slug}` || currentPath.startsWith(`/${slug}/`);
+}
+
+interface NavContentProps extends Props {
+  expanded: Record<string, boolean>;
+  toggle: (slug: string) => void;
+}
+
+function NavContent({ categories, currentPath, expanded, toggle }: NavContentProps) {
   return (
     <nav className="px-4 py-6 lg:px-6">
-      {categories.map((cat) => {
+      {categories.map((cat, idx) => {
         const Icon = getCategoryIcon(cat.slug);
+        const userToggled = expanded[cat.slug];
+        const isOpen =
+          userToggled !== undefined
+            ? userToggled
+            : isCategoryCurrent(cat.slug, currentPath);
+        const listId = `sidebar-section-${cat.slug}`;
+
+        // Draw a labeled separator when the section flips from
+        // 'recovery' (active what-to-do content) to 'reference'
+        // (compound details, pharmacology, external links, meta).
+        const thisSection = getCategorySection(cat.slug);
+        const prevSection =
+          idx > 0 ? getCategorySection(categories[idx - 1].slug) : undefined;
+        const showSeparator =
+          thisSection === 'reference' && prevSection !== 'reference';
+
         return (
-        <section key={cat.slug} className="mb-6 last:mb-0">
-          <h2 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            {Icon && <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />}
-            <a href={`/${cat.slug}`} className="hover:text-foreground">
-              {cat.title}
-            </a>
-          </h2>
-          {cat.items.length === 0 ? (
-            <p className="text-sm italic text-muted-foreground/70">No pages yet.</p>
-          ) : (
-            <ul className="space-y-1">
-              {cat.items.map((item) => {
-                const isActive = currentPath === item.href;
-                return (
-                  <li key={item.href}>
-                    <a
-                      href={item.href}
-                      aria-current={isActive ? 'page' : undefined}
-                      className={cn(
-                        'block rounded px-2 py-1 text-sm transition',
-                        isActive
-                          ? 'bg-accent font-medium text-accent-foreground'
-                          : 'text-foreground/80 hover:bg-accent/50 hover:text-foreground',
-                      )}
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </section>
+          <React.Fragment key={cat.slug}>
+            {showSeparator && (
+              <div className="mb-6 border-t border-border pt-4">
+                <p className="px-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/60">
+                  Reference
+                </p>
+              </div>
+            )}
+          <section className="mb-6 last:mb-0">
+            <h2 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              <button
+                type="button"
+                onClick={() => toggle(cat.slug)}
+                aria-expanded={isOpen}
+                aria-controls={listId}
+                className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded text-muted-foreground hover:bg-accent/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <ChevronRight
+                  className={cn(
+                    'h-3.5 w-3.5 transition-transform',
+                    isOpen && 'rotate-90',
+                  )}
+                  aria-hidden={true}
+                />
+                <span className="sr-only">
+                  {isOpen ? 'Collapse' : 'Expand'} {cat.title}
+                </span>
+              </button>
+              {Icon && <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />}
+              <a href={`/${cat.slug}`} className="hover:text-foreground">
+                {cat.title}
+              </a>
+            </h2>
+            {isOpen && (
+              cat.items.length === 0 ? (
+                <p id={listId} className="text-sm italic text-muted-foreground/70">
+                  No pages yet.
+                </p>
+              ) : (
+                <ul id={listId} className="space-y-1">
+                  {cat.items.map((item) => {
+                    const isActive = currentPath === item.href;
+                    return (
+                      <li key={item.href}>
+                        <a
+                          href={item.href}
+                          aria-current={isActive ? 'page' : undefined}
+                          className={cn(
+                            'block rounded px-2 py-1 text-sm transition',
+                            isActive
+                              ? 'bg-accent font-medium text-accent-foreground'
+                              : 'text-foreground/80 hover:bg-accent/50 hover:text-foreground',
+                          )}
+                        >
+                          {item.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )
+            )}
+          </section>
+          </React.Fragment>
         );
       })}
     </nav>
@@ -85,6 +144,23 @@ export function AppSidebar({ categories, currentPath }: Props) {
   const [open, setOpen] = React.useState(false);
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
   const mobileScrollRef = React.useRef<HTMLDivElement>(null);
+
+  // Per-category expand/collapse state. Entries are user-set overrides;
+  // the default for any unset slug is "expanded iff this category
+  // contains the current page." That gives a sensible first render
+  // (current section open, others closed) and lets users override.
+  const [expanded, setExpanded] = React.useState<Record<string, boolean>>({});
+  const toggle = React.useCallback(
+    (slug: string) =>
+      setExpanded((prev) => ({
+        ...prev,
+        [slug]:
+          prev[slug] === undefined
+            ? !isCategoryCurrent(slug, currentPath)
+            : !prev[slug],
+      })),
+    [currentPath],
+  );
 
   // The mobile hamburger lives in Header.astro (outside this React tree)
   // and dispatches 'toggle-sidebar' which we toggle from here.
@@ -156,7 +232,7 @@ export function AppSidebar({ categories, currentPath }: Props) {
             <SheetTitle>Site navigation</SheetTitle>
           </SheetHeader>
           <div ref={mobileScrollRef} className="h-full overflow-y-auto pt-4">
-            <NavContent categories={categories} currentPath={currentPath} />
+            <NavContent categories={categories} currentPath={currentPath} expanded={expanded} toggle={toggle} />
           </div>
         </SheetContent>
       </Sheet>
@@ -172,7 +248,7 @@ export function AppSidebar({ categories, currentPath }: Props) {
         ref={scrollContainerRef}
         className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto"
       >
-        <NavContent categories={categories} currentPath={currentPath} />
+        <NavContent categories={categories} currentPath={currentPath} expanded={expanded} toggle={toggle} />
       </div>
     </aside>
   );
