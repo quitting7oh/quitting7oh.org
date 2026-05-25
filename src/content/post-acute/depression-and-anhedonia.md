@@ -6,13 +6,6 @@ last_updated: "2026-05-24"
 sort: 4
 ---
 
-> 🆘 **If you're thinking about hurting yourself, or you don't trust
-> what you'll do in the next hour:** call or text **988** (US Suicide
-> & Crisis Lifeline). Depression and the anhedonic flatness this page
-> is about can both include suicidal thinking. That's a medical
-> situation, not a "wait it out" situation. More numbers on
-> [Crisis Hotlines](/resources/crisis-hotlines).
-
 You're not making it up. Two of the most consistent symptoms people
 report in the weeks and months after coming off 7-OH and kratom
 synthetics are **depression** and **anhedonia**. They feel related

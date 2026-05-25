@@ -6,14 +6,6 @@ last_updated: "2026-05-24"
 sort: 1
 ---
 
-> ⚠️ **Reference page, not medical advice.** This is a pharmacology
-> primer. It does not contain doses, taper schedules, or product
-> recommendations. If you're on a prescribed medication and worried
-> about interactions, ask your pharmacist or prescriber about that
-> specific concern. The leaf-taper plan itself is mostly community
-> ground — see the [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)
-> page for the community-documented approach.
-
 > ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language.
 

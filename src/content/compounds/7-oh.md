@@ -6,16 +6,6 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-> ⚠️ **Community information, not medical advice.** 7-OH is sold as a
-> loosely regulated supplement — "7-OH tablets", "gas station pills",
-> "7" — and what's on the label is often not what's in the product.
-> Anything below is a pharmacology and recovery reference, not dosing
-> guidance and not safety guidance for current use. If you're trying
-> to come off, the [Withdrawal Help](/start-here/withdrawal-help) page
-> covers the three real paths out — [Suboxone](/mat-suboxone/suboxone-info),
-> [SR-17](/other-tools/sr17018-info), or toughing it out with
-> [helper meds](/other-tools/helper-meds-info) and supplements.
-
 > ℹ️ **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language before the pharmacology below.
 

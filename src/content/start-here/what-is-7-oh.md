@@ -74,7 +74,3 @@ trying to understand) and click through.
 If you use kratom or 7-OH without dependence problems and the framing
 on this page reads as one-sided, **[Where the Site Stands](/about/where-we-stand)**
 is short and direct on who the site is and isn't for.
-
-> 🩺 This site is community information, not medical advice. Decisions
-> about treatment should happen with a qualified clinician who knows
-> your situation.

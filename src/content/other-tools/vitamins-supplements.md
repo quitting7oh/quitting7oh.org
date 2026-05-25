@@ -6,8 +6,6 @@ last_updated: "2026-05-24"
 sort: 2
 ---
 
-> ⚠️ **Community info, not medical advice.** If you're on a prescribed medication, check interactions with your pharmacist or prescriber before adding anything from this list — pharmacists are usually the better-fit handoff for that specific ask. The broader stack design is community ground.
-
 ## Quick recommended list
 
 If you only do a few things, do these. Scroll down for dosing details,

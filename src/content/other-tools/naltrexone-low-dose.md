@@ -6,15 +6,6 @@ last_updated: "2026-05-24"
 sort: 9
 ---
 
-> ⚠️ **Community information, not medical advice.** LDN is
-> prescription-only, requires a compounding pharmacy, and **cannot
-> be taken while there are still opioids on your receptors** — see
-> the safety section below. People in this community have found
-> LDN helpful for post-acute symptoms; the published clinical
-> literature is real but limited, and your prescribing clinician
-> (not a Discord post) should be the one making decisions about
-> your care.
-
 LDN is the same molecule as
 [normal-dose naltrexone](/other-tools/naltrexone-normal-dose) used at
 roughly 1/10 to 1/50 of the standard dose. At those low doses the

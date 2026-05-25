@@ -6,8 +6,6 @@ last_updated: "2026-05-24"
 sort: 3
 ---
 
-> ⚠️ **Community information, not medical advice.** Micro-induction is a recognized clinical method, but the dosing schedules, the source of small-dose buprenorphine, and the decision to continue your full agonist through the overlap are decisions to make with a qualified prescriber. The community discussion below is here to help you have a more informed conversation with that prescriber — not to replace one.
-
 The **Bernese method** (also called **micro-induction** or **low-dose buprenorphine induction, LDBI**) is a Suboxone-induction approach that **doesn't require you to wait in withdrawal**. Instead of stopping your opioid, holding through escalating COWS, and then taking a 2–4 mg dose at the bottom of the wait, you start with very small doses of buprenorphine — typically 0.2–0.5 mg — **while you continue your normal opioid**, and gradually titrate the bup up over 5 to 10 days. The full agonist gets dropped only once bup coverage is high enough to bridge through.
 
 It exists because **standard COWS-gated induction has a higher failure rate on long-acting opioids**, and because some people genuinely cannot tolerate the wait. For the 7-OH-alone case (short half-life, fast clearance), standard induction usually works fine. For the long-acting kratom synthetics ([MGM-15](/compounds/mgm15) at ~15 hours, [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm)), and for anyone who's already tried standard induction and gotten precipitated withdrawal, micro-induction is the alternative pathway.

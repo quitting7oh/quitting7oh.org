@@ -6,11 +6,9 @@ last_updated: "2026-05-24"
 sort: 8
 ---
 
-> 🆘 **If you're thinking about hurting yourself, or you don't trust
-> what you'll do tonight:** call or text **988**. If a craving is
-> loud right now, [Thinking About Using?](/start-here/thinking-about-using)
-> is the page to read first. The page you're on is for after the
-> wave passes.
+*This page is for after the wave passes. If a craving is loud right
+now, [Thinking About Using?](/start-here/thinking-about-using) is
+the one to read first.*
 
 Do you remember the day you knew it had to stop? The day you looked
 in the mirror and thought *holy fuck, what happened to me.* Or

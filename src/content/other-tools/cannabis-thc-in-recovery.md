@@ -431,8 +431,3 @@ prescription-adjunct options on
 things a prescriber will actively help with, and several of them
 target the same symptoms cannabis sometimes gets used for, without
 the addiction-substitution risk.
-
-> 🩺 **Reminder.** This is community information, not medical advice.
-> Cannabis is federally controlled and state-regulated; legal status
-> varies. Decide with the people who know your situation in view, not
-> based on what a page on the internet leans toward.

@@ -25,26 +25,24 @@ That's the whole message. Copy it if you want.
 If you can't think of anyone, the next block has humans you can reach
 right now.
 
-## If this is worse than craving — call 988
+## If this is worse than a craving
 
-> 🆘 **If you're thinking about hurting yourself, or you don't trust
-> what you'll do in the next hour:**
->
-> - **[988 Suicide & Crisis Lifeline](https://988lifeline.org)** —
->   call or text **988**. 24/7. English and Spanish.
-> - **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)** —
->   **1-800-662-4357**. Free, confidential, 24/7. Real humans, treatment
->   referrals.
-> - **[Never Use Alone](https://neverusealone.com)** — **1-800-484-3731**.
->   If you've decided to use and can't talk yourself out of it, this
->   line stays on the call with you and sends EMS if you stop
->   responding.
->
-> Calling one of these is not a failure. It's the right move.
+If you're past a craving and into something more urgent, the right numbers:
 
-More numbers — Poison Control, DV Hotline, Childhelp — on
-[Crisis Hotlines](/resources/crisis-hotlines) or the **🆘 Crisis**
-button in the corner of any page.
+- **[988 Suicide & Crisis Lifeline](https://988lifeline.org)** —
+  call or text **988**. 24/7. English and Spanish.
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)** —
+  **1-800-662-4357**. Free, confidential, 24/7. Real humans, treatment
+  referrals.
+- **[Never Use Alone](https://neverusealone.com)** — **1-800-484-3731**.
+  If you've decided to use and can't talk yourself out of it, this
+  line stays on the call with you and sends EMS if you stop
+  responding.
+
+Calling one of these is not a failure. It's the right move. More
+numbers — Poison Control, DV Hotline, Childhelp — on
+[Crisis Hotlines](/resources/crisis-hotlines) or the Crisis button
+in the corner of any page.
 
 ## What this feeling is
 

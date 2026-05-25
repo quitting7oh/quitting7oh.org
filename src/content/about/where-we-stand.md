@@ -17,5 +17,3 @@ Some of it will read as one-sided, alarmist, or unfamiliar to readers whose expe
 The site does not take a stance on bans, schedules, or restrictions on kratom, 7-OH, or any related compound — not for, not against. Nobody pays us, we don't pay anyone, and we have no relationship with regulatory advocacy of any flavor.
 
 Readers from any of these communities (responsible users, kratom advocates, anti-ban activists, people in recovery, family members, clinicians) are welcome to use the site, share it, link it, or push back on it. The site's focus is recovery, not advocacy, not industry, not policy. That focus is the reason these pages exist and the reason they stay useful. If you came here looking for the recovery content, **[How to Use This Website](/start-here/how-to-use-this-website)** is the map.
-
-> ⚕️ **One more time, because it matters:** this is community information, not medical advice. For medication, induction, tapering, or treatment decisions, work with a qualified clinician who knows your specific situation.

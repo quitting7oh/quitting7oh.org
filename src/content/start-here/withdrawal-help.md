@@ -6,13 +6,6 @@ last_updated: "2026-05-24"
 sort: 4
 ---
 
-> 🆘 **If you're thinking about hurting yourself, or you can't keep water
-> down, or your heart is racing in a way that scares you:** call or text
-> **988** in the US (Suicide & Crisis Lifeline), or **911** for medical
-> emergencies. Withdrawal feels terrible but is rarely directly
-> life-threatening. The exceptions are real, though, and they're listed
-> below.
-
 You're going to be okay. Even if it doesn't feel like it right now.
 Withdrawal is a finite, time-limited process. Your body knows how to do
 this. We're going to walk you through the next few hours.
@@ -374,12 +367,6 @@ A few things people who've been here wish someone had told them:
   on the other side of it. Track yourself one hour at a time.
 - **Whatever brought you here, you're already doing the hardest part
   by stopping.** You don't need to also be perfect about it.
-
-> 🩺 **Reminder:** This is community information, not medical advice.
-> If you're seriously unwell, get medical care. Acute withdrawal can be
-> managed and often dramatically eased with the right help — you don't
-> have to white-knuckle through it. A telehealth Suboxone appointment
-> can be set up today. Reach out.
 
 ## When you can — read these next
 

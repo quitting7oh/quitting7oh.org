@@ -93,8 +93,3 @@ The fact that you're reading this — that you're looking for information,
 that you're trying to understand what's happening to you — is already
 the hardest part of the hardest part. The rest is a sequence of small
 practical decisions. We can help with those.
-
-> 🩺 **Reminder:** This is community information, not medical advice.
-> Decisions about medication, induction, tapering, and treatment should
-> happen with a qualified clinician who knows your specific situation.
-> Nothing on this site changes that.

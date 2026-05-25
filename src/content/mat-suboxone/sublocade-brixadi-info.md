@@ -5,11 +5,6 @@ category: "mat-suboxone"
 last_updated: "2026-05-24"
 ---
 
-> ⚠️ **Information page, not medical advice.** This is reference
-> material on extended-release buprenorphine injections. For long-term
-> maintenance discussion specifically, [r/suboxone](https://www.reddit.com/r/suboxone/)
-> is the better resource.
-
 Sublocade and Brixadi are two FDA-approved long-acting buprenorphine
 injections used in medication-assisted treatment (MAT) for opioid use
 disorder. Both contain buprenorphine, the same active ingredient as

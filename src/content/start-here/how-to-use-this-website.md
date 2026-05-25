@@ -6,11 +6,6 @@ last_updated: "2026-05-24"
 sort: 3
 ---
 
-> 🆘 **In crisis right now?** Call or text **988** (US Suicide & Crisis
-> Lifeline), or **911** for medical emergencies. If you're thinking
-> about using again, the [Thinking About Using?](/start-here/thinking-about-using)
-> page is the one to read first. More numbers on [Crisis Hotlines](/resources/crisis-hotlines).
-
 This site has a lot of pages. This one is a map: find the description
 that sounds most like where you are right now, and click through to the
 page that's actually written for it.

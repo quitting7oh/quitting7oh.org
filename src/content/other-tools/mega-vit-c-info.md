@@ -5,7 +5,7 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 4
 ---
-> ⚠️ **Community information, not medical advice.** If you have a history of kidney stones, kidney disease, or hemochromatosis (iron overload), or you're on an iron supplement, ask your prescriber about that specific concern before megadosing — those are the narrow asks a clinician will actually engage with. The protocol design itself is community territory. **Not appropriate for everyone.**
+> ⚠️ **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, or hemochromatosis (iron overload), or you're on an iron supplement. These interact with high-dose vitamin C in real ways. **Not appropriate for everyone.**
 
 > 🛒 **A note on the product links.** Manufacturer-direct and Amazon links throughout this page are **starting points**, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip these vendors entirely; the protocol matters, not where you source it.
 

@@ -5,8 +5,6 @@ category: "mat-suboxone"
 last_updated: "2026-05-24"
 sort: 1
 ---
-> ⚠️ **Community information, not medical advice.** Use this alongside guidance from a qualified provider.
-
 The single most important thing about Suboxone induction is **timing it by your withdrawal score, not by the clock**. Two scoring tools exist for this — COWS and SOWS. Both measure the same underlying thing (are you in enough withdrawal that bupe won't precipitate worse withdrawal?), just with different methods and different scales.
 
 **The rule: don't induct until COWS ≥ 12 (or SOWS ≥ 17), regardless of how many hours it's been.** If you hit 24 hours and your COWS is still at 8, you're not ready. If you hit 14 hours and your COWS is solidly at 14, you probably are. Trust the score over the timer.

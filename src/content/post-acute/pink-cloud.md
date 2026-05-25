@@ -86,5 +86,3 @@ Not everyone gets a pink cloud. Some people feel steadily okay through early rec
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)** — if the fade has brought flat mood.
 - **[Impending Doom](/post-acute/impending-doom)** — for the acute-anxiety waves that can return as the cloud fades.
 - **[Thinking About Using?](/start-here/thinking-about-using)** — bookmark for craving moments.
-
-> ⚕️ **One more time, because it matters:** this is community information, not medical advice. For decisions about medication, dosage changes, or treatment, work with a qualified clinician who knows your specific situation.

@@ -5,8 +5,6 @@ category: "mat-suboxone"
 last_updated: "2026-05-24"
 sort: 2
 ---
-> ⚠️ **This post is community information, not medical advice.** Suboxone is a prescription medication that requires a qualified provider for induction, dosing, and monitoring. The induction and taper approaches described here reflect what this community has found works best for our specific population (people coming off 7-OH and related synthetics), and may differ from standard clinical protocols. Please verify what you read here against linked sources and follow your doctor's protocol.
-
 > 💼 **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues that have nothing to do with whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
 
 Suboxone is one widely-used medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr17018-info); [tapering with kratom leaf](/other-tools/tapering-with-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds-info) are the non-MAT paths. This page covers Suboxone specifically — induction, dosing, taper plans, and the challenges that come with using bupe to come off the synthetic mitragynine derivatives.

@@ -6,12 +6,6 @@ last_updated: "2026-05-24"
 sort: 5
 ---
 
-> 🆘 **If you're thinking about hurting yourself, or you don't trust
-> what you'll do in the next hour:** call or text **988** (US Suicide
-> & Crisis Lifeline). If a craving is loud right now,
-> [Thinking About Using?](/start-here/thinking-about-using) is the
-> page to read. More numbers on [Crisis Hotlines](/resources/crisis-hotlines).
-
 You know the feeling this page is about. The sudden, gut-deep
 certainty that something terrible is about to happen. That you might
 be dying. That the room is wrong. That everything is wrong. You can't
@@ -277,11 +271,6 @@ issue and needs prompt help. The two can co-occur — opioid PAWS does
 include elevated suicidal-ideation risk, especially in the first
 months — and you don't have to be sure which one you're having to
 make the call.
-
-> 🆘 **The crisis numbers, one more time:**
-> **988** (call or text). **911** for medical emergencies.
-> **SAMHSA** — **1-800-662-4357**. **Never Use Alone** —
-> **1-800-484-3731**.
 
 ## Where to read next
 

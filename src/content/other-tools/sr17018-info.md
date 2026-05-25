@@ -5,8 +5,6 @@ category: "other-tools"
 last_updated: "2026-05-24"
 sort: 6
 ---
-> ⚠️ **Community information, not medical advice.** SR-17018 is a research chemical not approved for human use anywhere in the world. The information below reflects community experience, published research on rodent models, and harm reduction principles. **For discussion, see #sr17018 **
-
 **SR-17018**, also known informally as **SR-17**, is a synthetic compound originally developed at the Scripps Research Institute and [first described by Bohn and colleagues in 2017](https://en.wikipedia.org/wiki/SR-17018). It's a biased mu-opioid receptor agonist with a pharmacological profile that's genuinely different from classical opioids like morphine, oxycodone, or even buprenorphine, and that profile has made it interesting to people trying to come off opioid dependence.
 
 On Reddit and other forums, [discussion of SR-17018 dramatically increased through 2024](https://en.wikipedia.org/wiki/SR-17018), with the compound emerging as an informal tool for opioid discontinuation and withdrawal management. Some people in this community have used it as part of their plan to come off [7-OH](/compounds/7-oh) and the related synthetics. It's a valid option, and it's also still an opioid — be clear-eyed about that.
