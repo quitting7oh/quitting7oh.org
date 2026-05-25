@@ -16,6 +16,11 @@ lingering blahness here and there but generally good. **Both are
 normal.** This page is to help you understand what's happening either
 way.
 
+If what you're feeling right now is actually *more* than fine —
+clear, optimistic, energized, almost euphoric — that's the
+[pink cloud](/post-acute/pink-cloud), and it has its own page on
+how to use the window and what tends to come after.
+
 ## What PAWS actually is
 
 PAWS — **post-acute withdrawal syndrome** — is the cluster of
@@ -361,6 +366,9 @@ connections you maintain — all of it adds up.
 
 ## Where to read next
 
+- **[The Pink Cloud](/post-acute/pink-cloud)** — the early-recovery
+  upside some people hit after acute eases. Calibrated for "what to
+  do with this energy" rather than "wait for it to fade."
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)** —
   the focused page on the flat-mood and can't-feel-pleasure side
   of PAWS.

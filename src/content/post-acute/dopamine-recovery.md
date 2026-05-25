@@ -3,7 +3,7 @@ title: "Dopamine Recovery"
 description: "What the dopamine system actually does, how 7-OH dependence disrupts it, how recovery works, and what people try to influence it — separating evidence-based interventions from internet wellness folklore."
 category: "post-acute"
 last_updated: "2026-05-24"
-sort: 2
+sort: 3
 ---
 
 This page is about the dopamine system. Specifically: what it does,

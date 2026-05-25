@@ -3,7 +3,7 @@ title: "Long-Term Outlook"
 description: "What recovery from 7-OH dependence actually looks like — honest about how hard it is, honest about relapse, honest that the compound is new enough that the long-arc picture borrows from the broader opioid-recovery literature, and honest that the people who got there did it one day at a time."
 category: "post-acute"
 last_updated: "2026-05-24"
-sort: 7
+sort: 8
 ---
 
 > 🆘 **If you're thinking about hurting yourself, or you don't trust
