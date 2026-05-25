@@ -12,7 +12,7 @@ Try more than one. Different fellowships have very different cultures, and "this
 
 ## A short note for 7-OH and kratom families
 
-These substances are newer and often dismissed as "legal," "natural," or "just kratom." Family members frequently report feeling gaslit, even by clinicians, when they try to describe what they're seeing. The kratom-specific groups below are the most directly applicable; the opioid-specific groups ([Learn to Cope](https://learn2cope.org)) are also a strong fit, since [7-OH](/compounds/7-oh) and kratom synthetics are biochemically opioid dependence; and the substance-agnostic groups ([Nar-Anon](https://www.nar-anon.org), [SMART F&F](https://smartrecovery.org/family)) work because they don't gatekeep or minimize. You don't need to "qualify" to participate.
+These substances are newer and often dismissed as "legal," "natural," or "just kratom." Family members frequently report feeling gaslit, even by clinicians, when they try to describe what they're seeing. The kratom-specific groups below are the most directly applicable; the opioid-specific groups ([Learn to Cope](https://learn2cope.org)) are also a strong fit, since dependence on [7-OH](/compounds/7-oh) and the kratom synthetics is biochemically opioid dependence; and the substance-agnostic groups ([Nar-Anon](https://www.nar-anon.org), [SMART F&F](https://smartrecovery.org/family)) work because they don't gatekeep or minimize. You don't need to "qualify" to participate.
 
 ## Groups most directly applicable to 7-OH and opioid families
 

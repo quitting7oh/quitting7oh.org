@@ -180,10 +180,10 @@ to understand before you commit; see
 ### Path 4, SR-17018 (informal taper tool)
 
 A non-prescription option some people in this community have used to
-come off 7-OH and related synthetics. SR-17018 is still an opioid, it
-binds the mu receptor, but it has a longer duration and a usage
-pattern that community members have found makes it easier to step down
-from than the compound they were on.
+come off 7-OH and related synthetics. SR-17018 still binds the mu-opioid
+receptor, but it has a longer duration and a usage pattern that community
+members have found makes it easier to step down from than the compound
+they were on.
 
 - Read **[SR-17018](/other-tools/sr17018-info)** for what it is,
   the community protocol, the real risks, and what's unknown. There is

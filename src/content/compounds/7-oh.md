@@ -10,11 +10,11 @@ sort: 2
 > covers the basics in plain language before the pharmacology below.
 
 7-OH is the compound this site is named after, and the compound most
-people here are trying to get off of. **It is an opioid.** Whatever the
-gas-station marketing says, whatever the "all-natural kratom alkaloid"
-framing implies, the practical reality is that 7-OH binds the mu-opioid
-receptor, produces opioid-class dependence, and goes through opioid-class
-withdrawal when you stop.
+people here are trying to get off of. **It walks and talks like an opioid.**
+Whatever the gas-station marketing says, whatever the "all-natural kratom
+alkaloid" framing implies, the practical reality is that 7-OH binds the
+mu-opioid receptor, produces opioid-class dependence, and goes through
+opioid-class withdrawal when you stop.
 
 The good news, if there is good news: **7-OH's pharmacology is actually
 favorable for coming off it.** Short half-life, mu-dominant, fast
@@ -201,10 +201,11 @@ which don't survive the pharmacology:
   beyond what leaf delivers. Calling a 15 mg 7-OH tablet "natural"
   because the alkaloid is plant-derived is the same argument as
   calling pure morphine "natural" because poppies make it.
-- *"Safer than opioids"*, 7-OH is an opioid. The "safer" claim usually
-  rests on the ceiling-effect-at-the-receptor argument, which has some
-  truth at high doses but doesn't change the dependence and withdrawal
-  trajectory at typical use levels.
+- *"Safer than opioids"*, 7-OH binds the same mu-opioid receptors and
+  produces the same dependence and withdrawal pattern as a classical
+  opioid. The "safer" claim usually rests on the ceiling-effect-at-the-
+  receptor argument, which has some truth at high doses but doesn't
+  change the dependence and withdrawal trajectory at typical use levels.
 - *"Doesn't cause respiratory depression"*, disputed. Pure mitragynine
   in animal models has shown a respiratory ceiling effect, but real-world
   products are not pure mitragynine, are often stacked with other
@@ -229,10 +230,10 @@ Four real paths people in this community have used:
    induction. [Suboxone](/mat-suboxone/suboxone-info) is the
    overview.
 3. **SR-17018**, an informal, non-prescription taper tool some people
-   in this community have used to come off 7-OH. It's still an opioid
-   and there's no clinical literature on humans, but the duration and
-   usage pattern make it easier to step down from than 7-OH itself
-   for some users. See [SR-17018](/other-tools/sr17018-info)
+   in this community have used to come off 7-OH. It's still a mu-opioid
+   receptor agonist and there's no clinical literature on humans, but
+   the duration and usage pattern make it easier to step down from than
+   7-OH itself for some users. See [SR-17018](/other-tools/sr17018-info)
    for the community protocol and the real risks.
 4. **Plain kratom-leaf taper**, a planned, deliberate protocol that
    uses leaf as a stepdown from concentrated 7-OH. Not for everyone,
@@ -257,7 +258,7 @@ position end up.
  , semi-synthetic derivative work.
 - [Kratom withdrawal timeline (clinical summary)](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/).
 
-> **Reminder:** 7-OH is an opioid. Treat it as one, both in terms of
+> **Reminder:** 7-OH walks and talks like an opioid. Treat it as one, both in terms of
 > not underestimating dependence development and in terms of using
 > opioid-recovery tools (MAT, [SR-17](/other-tools/sr17018-info),
 > helper meds, structured tapers) when coming off. The community here

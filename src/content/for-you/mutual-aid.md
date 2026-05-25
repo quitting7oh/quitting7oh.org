@@ -41,7 +41,7 @@ The full schedule with Google Meet links is at **[Meeting Schedules](/resources/
 
 ## Opioid-relevant fellowships
 
-7-OH and kratom synthetics are biochemically opioid dependence, so the opioid-specific fellowships are also a strong fit.
+Dependence on 7-OH and the kratom synthetics is biochemically opioid dependence, so the opioid-specific fellowships are also a strong fit.
 
 ### Narcotics Anonymous (NA)
 
