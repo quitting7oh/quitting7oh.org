@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Phone, MessageSquare, ExternalLink, X } from 'lucide-react';
+import { LifeBuoy, Phone, MessageSquare, ExternalLink, X } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -123,7 +123,7 @@ export function CrisisButton() {
           className="inline-flex h-11 items-center gap-2 rounded-full border-2 border-amber-500 bg-amber-50 pl-4 pr-10 text-sm font-semibold text-amber-900 shadow-lg transition hover:bg-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:border-amber-400 dark:bg-amber-950/70 dark:text-amber-100 dark:hover:bg-amber-950"
           aria-label="Open crisis resources"
         >
-          <span aria-hidden="true">🆘</span>
+          <LifeBuoy className="h-4 w-4" aria-hidden="true" />
           <span>Crisis</span>
         </SheetTrigger>
         {/* The X sits on top of the right side of the pill — its own

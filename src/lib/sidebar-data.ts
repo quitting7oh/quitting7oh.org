@@ -9,7 +9,6 @@ export async function getSidebarCategories(): Promise<SidebarCategory[]> {
   return CATEGORIES.map((cat) => ({
     slug: cat.slug,
     title: cat.title,
-    emoji: cat.emoji,
     items: docs
       .filter((d: CollectionEntry<'docs'>) => d.data.category === cat.slug)
       .sort((a: CollectionEntry<'docs'>, b: CollectionEntry<'docs'>) => {

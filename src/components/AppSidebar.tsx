@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '~/components/ui/sheet';
 import { useIsMobile } from '~/hooks/use-mobile';
+import { getCategoryIcon } from '~/lib/categories';
 import { cn } from '~/lib/utils';
 
 export interface SidebarCategory {
   slug: string;
   title: string;
-  emoji: string;
   items: { href: string; title: string }[];
 }
 
@@ -18,10 +18,12 @@ interface Props {
 function NavContent({ categories, currentPath }: Props) {
   return (
     <nav className="px-4 py-6 lg:px-6">
-      {categories.map((cat) => (
+      {categories.map((cat) => {
+        const Icon = getCategoryIcon(cat.slug);
+        return (
         <section key={cat.slug} className="mb-6 last:mb-0">
           <h2 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            <span aria-hidden="true">{cat.emoji}</span>
+            {Icon && <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />}
             <a href={`/${cat.slug}`} className="hover:text-foreground">
               {cat.title}
             </a>
@@ -52,7 +54,8 @@ function NavContent({ categories, currentPath }: Props) {
             </ul>
           )}
         </section>
-      ))}
+        );
+      })}
     </nav>
   );
 }
