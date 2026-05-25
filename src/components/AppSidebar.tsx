@@ -77,31 +77,41 @@ export function AppSidebar({ categories, currentPath }: Props) {
   // Without this, a long sidebar always starts at the top and readers
   // have to scan to find where they are. Skips on mobile (the Sheet
   // doesn't use scrollContainerRef).
+  //
+  // Double-RAF + scrollIntoView: the Lucide SVG icons in each category
+  // header render at their intrinsic 24×24 before Tailwind's h-3.5
+  // applies, so measuring on the first frame after hydration sometimes
+  // catches a stale layout. Waiting two frames lets the CSS settle, and
+  // scrollIntoView avoids the manual offset math that was sensitive to
+  // that timing.
   React.useEffect(() => {
     if (typeof window === 'undefined') return;
     if (isMobile) return;
-    // Defer to next paint so the DOM is fully laid out before measuring.
-    const raf = requestAnimationFrame(() => {
-      const container = scrollContainerRef.current;
-      if (!container) return;
-      const active = container.querySelector<HTMLElement>(
-        'a[aria-current="page"]',
-      );
-      if (!active) return;
-      const cRect = container.getBoundingClientRect();
-      const aRect = active.getBoundingClientRect();
-      // If already fully visible, don't move.
-      if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
-      // Position of the active item in the container's content coord space.
-      const offsetTop = aRect.top - cRect.top + container.scrollTop;
-      const target =
-        offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
-      // Bypass the page's CSS scroll-behavior: smooth so this lands
-      // instantly on page load instead of animating in.
-      container.style.scrollBehavior = 'auto';
-      container.scrollTop = Math.max(0, target);
+    let raf1 = 0;
+    let raf2 = 0;
+    raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => {
+        const container = scrollContainerRef.current;
+        if (!container) return;
+        const active = container.querySelector<HTMLElement>(
+          'a[aria-current="page"]',
+        );
+        if (!active) return;
+        const cRect = container.getBoundingClientRect();
+        const aRect = active.getBoundingClientRect();
+        // If already fully visible, don't move.
+        if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
+        active.scrollIntoView({
+          block: 'center',
+          inline: 'nearest',
+          behavior: 'auto',
+        });
+      });
     });
-    return () => cancelAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(raf1);
+      if (raf2) cancelAnimationFrame(raf2);
+    };
   }, [currentPath, isMobile]);
 
   // Mobile: Sheet drawer (Radix Dialog under the hood — focus trap, ESC,
