@@ -43,40 +43,26 @@ export function Footer() {
           </div>
         </div>
 
-        {/* AI disclaimer: own band with internal 2-column layout */}
+        {/* AI disclaimer */}
         <div className="mt-10 border-t border-border pt-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="text-sm text-muted-foreground md:col-span-2">
-              <p className="font-semibold text-foreground">AI disclaimer</p>
-              <p className="mt-2">
-                We used AI to write this, guided by a detailed, guard-railed
-                instruction set built for accuracy and voice — not
-                unsupervised slop. The source is community members who've
-                come off 7-OH and kratom derivatives.
-              </p>
-              <p className="mt-2">
-                The humans here are jelly-filled meat bags making a
-                good-faith effort to validate every page. The AI runs on
-                data centers the billionaire class is cooking the planet to
-                build, extracting more wealth from a failing system to fund
-                more slop and bigger boats. We're aware. We're using it
-                anyway, because someone in withdrawal at 3 a.m. doesn't
-                care whose boat just got bigger — they need the info.{' '}
-                <a
-                  href="/about/this-site#the-ai-disclaimer"
-                  className="text-primary underline underline-offset-2 hover:opacity-80"
-                >
-                  Full disclaimer →
-                </a>
-              </p>
-            </div>
-            <div className="flex items-center text-sm">
-              <p className="font-semibold text-foreground">
-                Don't like that?
-                <br />
-                Go read something else.
-              </p>
-            </div>
+          <div className="text-sm text-muted-foreground">
+            <p className="font-semibold text-foreground">AI disclaimer</p>
+            <p className="mt-2">
+              AI was used as an augment to help write this, guided by a
+              detailed, guard-railed instruction set built for accuracy
+              and voice — not unsupervised slop. The source is community
+              members who've come off 7-OH and kratom derivatives.
+            </p>
+            <p className="mt-2">
+              We understand the AI hate, and frankly don't care. You're
+              not who we're targeting — you can move on.{' '}
+              <a
+                href="/about/this-site#the-ai-disclaimer"
+                className="text-primary underline underline-offset-2 hover:opacity-80"
+              >
+                Full disclaimer →
+              </a>
+            </p>
           </div>
         </div>
 
