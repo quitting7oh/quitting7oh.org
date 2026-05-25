@@ -38,15 +38,22 @@ obscures this scale difference; the dependence reality doesn't.
 
 ### Pharmacology, briefly
 
-- **Mu-opioid receptor:** [7-OH binds the µ-receptor 13 to 22 times
-  more strongly than morphine](https://anchornm.com/resources/kratom-withdrawal-timeline-for-detox/),
-  with K<sub>i</sub> around 13–17 nM at the human µ-receptor.
-  Mitragynine, by comparison, has K<sub>i</sub> around 160–230 nM —
-  about a 10× difference in binding affinity.
-- **Agonist character:** partial agonist at the µ-receptor with
-  meaningful intrinsic activity (E<sub>max</sub> notably higher than
-  mitragynine's ~34%). Functionally, it produces opioid-class analgesia,
-  sedation, euphoria, and (over time) dependence.
+- **Mu-opioid receptor:** at the human µ-receptor, [7-OH binds with
+  K<sub>i</sub> around 78 nM and acts as a partial agonist](https://pmc.ncbi.nlm.nih.gov/articles/PMC7923387/)
+  (Hiranita et al. 2022, CHO-hMOR). Morphine actually binds tighter in
+  the same assay (K<sub>i</sub> ~4 nM), but it's a full agonist with
+  higher E<sub>max</sub>. The "13× more potent than morphine" claim
+  that circulates in secondary sources is from rodent antinociception
+  assays (potency by weight in mouse tail-flick / hot-plate), not from
+  human receptor binding. Mitragynine binds weakly at hMOR (K<sub>i</sub>
+  ~709 nM) with little to no agonism in the same assay.
+- **Agonist character:** partial agonist at the µ-receptor
+  (E<sub>max</sub> ~41% in [³⁵S]GTPγS at hMOR), with functional EC50
+  (~43 nM) about 3× lower than morphine's (~125 nM). The lower
+  E<sub>max</sub> is part of why the recreational reputation focuses on
+  the ceiling-vs-full-agonist distinction. Functionally, 7-OH produces
+  opioid-class analgesia, sedation, euphoria, and (over time)
+  dependence.
 - **Receptor selectivity:** mu-dominant. Little meaningful activity at
   κ or δ receptors at typical doses, and far less of the serotonergic
   and adrenergic activity that leaf carries via its other minor
@@ -72,8 +79,8 @@ The differences that matter:
 | Property | Leaf kratom (mitragynine-dominant) | Concentrated 7-OH |
 | ------------------------------ | ---------------------------------- | ------------------------ |
 | **Main active alkaloid** | Mitragynine (~40-66% of leaf) | 7-OH (isolated) |
-| **µ-receptor binding affinity**| Modest (K<sub>i</sub> ~160-230 nM) | High (K<sub>i</sub> ~13-17 nM) |
-| **µ-agonism efficacy** | Low (E<sub>max</sub> ~34%) | Substantially higher |
+| **µ-receptor binding affinity**| Weak (K<sub>i</sub> ~709 nM at hMOR) | Moderate (K<sub>i</sub> ~78 nM at hMOR) |
+| **µ-agonism efficacy** | Minimal at hMOR | Partial agonist (E<sub>max</sub> ~41%) |
 | **Serotonergic / adrenergic activity** | Significant (via minor alkaloids) | Minimal |
 | **Typical use cadence** | Every 4-6 h, often less | Every 3-6 h, often more |
 | **Dependence trajectory** | Slow | Fast (weeks to months) |

@@ -12,10 +12,10 @@ this. We're going to walk you through the next few hours.
 
 ## What's actually happening
 
-[7-OH](/compounds/7-oh) hits the same receptors as morphine, 13 to 22
-times harder. Your body adapted to having it around. When you stop,
-those receptors run underactive for a while as the system readjusts.
-That mismatch is what withdrawal feels like.
+[7-OH](/compounds/7-oh) hits the same receptors as morphine. Your body
+adapted to having it around. When you stop, those receptors run
+underactive for a while as the system readjusts. That mismatch is what
+withdrawal feels like.
 
 If this is a re-entry to withdrawal after a stretch off, and symptoms
 seem to be hitting faster than they did the first time, see
