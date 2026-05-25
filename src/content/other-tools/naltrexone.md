@@ -15,29 +15,9 @@ sort: 7
 > Read that page's safety section before considering naltrexone in
 > any form.
 
-Naltrexone is a **mu-opioid receptor antagonist**, it occupies the
-same receptors that opioids bind to, but it doesn't activate them.
-With naltrexone on the receptor, opioid agonists (including 7-OH and
-the kratom synthetics) can't bind to produce their effects. No
-euphoria, no analgesia, no reinforcement, and (in the standard-dose
-case) immediate precipitated withdrawal if opioids are already in the
-system.
+Naltrexone is a **mu-opioid receptor antagonist**: it occupies the same receptors that opioids bind to, without activating them. It's one of three FDA-approved medications for opioid use disorder, alongside [buprenorphine](/mat-suboxone/suboxone-info) (partial mu agonist) and methadone (full mu agonist), and the three are not formally ranked ([ASAM 2020](https://www.asam.org/docs/default-source/practice-support/guidelines-and-consensus-docs/asam-national-practice-guideline-pocketguide.pdf), [SAMHSA TIP 63](https://library.samhsa.gov/sites/default/files/pep21-02-01-002.pdf)).
 
-It is one of three FDA-approved medications for opioid use disorder,
-alongside [buprenorphine](/mat-suboxone/suboxone-info) (a partial
-mu-opioid agonist) and methadone (a full mu-opioid agonist).
-**Naltrexone sits at the opposite end of that spectrum from
-methadone**, it blocks the receptor rather than activating it. Per
-ASAM and SAMHSA practice guidelines, the three FDA-approved
-medications are not formally ranked; the right one depends on the
-patient's situation, history, and preferences ([ASAM National
-Practice Guideline 2020](https://www.asam.org/docs/default-source/practice-support/guidelines-and-consensus-docs/asam-national-practice-guideline-pocketguide.pdf);
-[SAMHSA TIP 63](https://library.samhsa.gov/sites/default/files/pep21-02-01-002.pdf)).
-
-This page is the hub. Three protocols exist that all involve the
-naltrexone molecule but differ by **roughly three orders of
-magnitude** in dose, and they're used for entirely different
-purposes. Don't mix them up.
+Three protocols use the same molecule at doses that span **three orders of magnitude** for three different purposes. Don't mix them up.
 
 ## The three protocols at a glance
 
