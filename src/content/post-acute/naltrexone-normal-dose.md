@@ -1,9 +1,9 @@
 ---
 title: "Normal-Dose Naltrexone (Oral and Vivitrol)"
 description: "Full-dose naltrexone, oral 50 mg daily and Vivitrol 380 mg monthly injection, for sustained abstinence after detox. The page with the unmissable precipitated-withdrawal safety note."
-category: "other-tools"
+category: "post-acute"
 last_updated: "2026-05-25"
-sort: 8
+sort: 10
 ---
 
 > **SAFETY, read before anything else on this page.**
@@ -39,9 +39,9 @@ oral tablets (typically 50 mg/day) and the extended-release
 intramuscular injection **Vivitrol** (380 mg every 4 weeks). It's
 the most clinically established of the three naltrexone protocols
 covered on this site (see the
-[parent overview](/other-tools/naltrexone) for the comparison
-across normal-dose, [LDN](/other-tools/naltrexone-low-dose), and
-[ULDN](/other-tools/naltrexone-ultra-low-dose)).
+[parent overview](/post-acute/naltrexone) for the comparison
+across normal-dose, [LDN](/post-acute/naltrexone-low-dose), and
+[ULDN](/post-acute/naltrexone-ultra-low-dose)).
 
 ## What it is and how it works
 
@@ -221,10 +221,10 @@ lists the fact-checked options with kratom and 7-OH experience.
 
 ## Where to read next
 
-- **[Naltrexone (Overview)](/other-tools/naltrexone)**: the parent
+- **[Naltrexone (Overview)](/post-acute/naltrexone)**: the parent
   page comparing all three protocols.
-- **[Low-Dose Naltrexone (LDN)](/other-tools/naltrexone-low-dose)**: for the off-label, post-acute use case.
-- **[Ultra-Low-Dose Naltrexone (ULDN)](/other-tools/naltrexone-ultra-low-dose)**: the investigational tier.
+- **[Low-Dose Naltrexone (LDN)](/post-acute/naltrexone-low-dose)**: for the off-label, post-acute use case.
+- **[Ultra-Low-Dose Naltrexone (ULDN)](/post-acute/naltrexone-ultra-low-dose)**: the investigational tier.
 - **[Telehealth Providers](/resources/telehealth)**: for finding a
   prescriber.
 - **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark this if you're on naltrexone and craving hits.

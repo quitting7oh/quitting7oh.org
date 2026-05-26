@@ -1,9 +1,9 @@
 ---
 title: "Ultra-Low-Dose Naltrexone (ULDN)"
 description: "Naltrexone at microgram-range doses taken alongside opioids, an investigational concept with thin and aging clinical evidence. Overview, what's been tried, why it isn't standard of care."
-category: "other-tools"
+category: "post-acute"
 last_updated: "2026-05-25"
-sort: 10
+sort: 12
 ---
 
 > **Framing up front.** ULDN is **investigational**, not
@@ -20,8 +20,8 @@ sort: 10
 > evidence's actual confidence level rather than the enthusiasm
 > the protocol sometimes attracts.
 
-ULDN is the same molecule as [normal-dose naltrexone](/other-tools/naltrexone-normal-dose)
-used at doses **orders of magnitude smaller than [LDN](/other-tools/naltrexone-low-dose)**,
+ULDN is the same molecule as [normal-dose naltrexone](/post-acute/naltrexone-normal-dose)
+used at doses **orders of magnitude smaller than [LDN](/post-acute/naltrexone-low-dose)**,
 typically in the microgram range rather than the milligram range.
 At those doses it is hypothesized to behave differently again,
 selectively blocking one mode of opioid-receptor signaling while
@@ -29,15 +29,15 @@ leaving the analgesic mode intact, and it has been studied
 **alongside opioids** rather than after withdrawal.
 
 This page is one of three in the naltrexone group on this site. See
-the [parent overview](/other-tools/naltrexone) for the comparison
-across normal-dose, [LDN](/other-tools/naltrexone-low-dose), and
+the [parent overview](/post-acute/naltrexone) for the comparison
+across normal-dose, [LDN](/post-acute/naltrexone-low-dose), and
 ULDN.
 
 **ULDN is not LDN.** The two share a molecule and a name; they
 differ by roughly three orders of magnitude in dose and by what
 they're doing:
 
-- **[LDN](/other-tools/naltrexone-low-dose):** 1 to 5 **milligrams**,
+- **[LDN](/post-acute/naltrexone-low-dose):** 1 to 5 **milligrams**,
   taken **after** opioid clearance, goal is post-acute support
 - **ULDN:** roughly 1 to 100 **micrograms**, taken **alongside
   opioids** (including buprenorphine), goal is to modulate
@@ -171,7 +171,7 @@ Putting the framing in one box:
 
 ## Boundaries: what ULDN is not
 
-- **Not [LDN](/other-tools/naltrexone-low-dose).** Three orders of
+- **Not [LDN](/post-acute/naltrexone-low-dose).** Three orders of
   magnitude smaller, opposite timing relative to opioids,
   different intended use.
 - **Not a substitute for [MAT](/mat-suboxone/suboxone-info) or
@@ -191,12 +191,12 @@ Putting the framing in one box:
 
 ## Where to read next
 
-- **[Naltrexone (Overview)](/other-tools/naltrexone)**: the
+- **[Naltrexone (Overview)](/post-acute/naltrexone)**: the
   parent page comparing all three protocols.
-- **[Low-Dose Naltrexone (LDN)](/other-tools/naltrexone-low-dose)**
+- **[Low-Dose Naltrexone (LDN)](/post-acute/naltrexone-low-dose)**
  , the off-label milligram-range protocol used after opioid
   clearance.
-- **[Normal-Dose Naltrexone](/other-tools/naltrexone-normal-dose)**
+- **[Normal-Dose Naltrexone](/post-acute/naltrexone-normal-dose)**
  , the FDA-approved 50 mg oral / 380 mg Vivitrol use, with the
   precipitated-withdrawal safety content.
 - **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)**

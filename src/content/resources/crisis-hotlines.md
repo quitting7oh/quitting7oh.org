@@ -10,7 +10,7 @@ If you or someone you love needs help right now. These lines are
 staffed 24/7 unless noted. On mobile, the phone numbers below are tap-
 to-call.
 
-This page also lives in the **🆘 Crisis** button in the bottom-left
+This page also lives in the **Crisis** button in the bottom-left
 corner of every page on this site, so you don't have to hunt for it.
 
 ## 988 Suicide & Crisis Lifeline

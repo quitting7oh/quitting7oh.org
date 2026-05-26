@@ -36,85 +36,30 @@ In practice:
 
 ## Self-scoring COWS
 
-You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your total. The official [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) has the full scoring rubric and is what you should use. Below is a summary so you know what each item is asking.
+You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your total. The official [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) has the full scoring rubric and is what you should use. Below is a quick-reference so you know what each item is asking.
 
-**1. Resting pulse rate** (after sitting/lying for 1 minute)
-- 0 = pulse 80 or below
-- 1 = 81 to 100
-- 2 = 101 to 120
-- 4 = above 120
-
-**2. Sweating** (over the past 30 min, not from heat or activity)
-- 0 = no chills or flushing
-- 1 = subjective chills/flushing
-- 2 = flushed or visible moisture on face
-- 3 = beads of sweat on brow or face
-- 4 = sweat streaming off face
-
-**3. Restlessness** (during observation)
-- 0 = able to sit still
-- 1 = reports difficulty sitting still but is able to
-- 3 = frequent shifting or extraneous movements of legs/arms
-- 5 = unable to sit still for more than a few seconds
-
-**4. Pupil size**
-- 0 = pinned or normal for room light
-- 1 = possibly larger than normal
-- 2 = moderately dilated
-- 5 = so dilated only the rim of the iris is visible
-
-**5. Bone or joint aches** (only if attributable to withdrawal)
-- 0 = not present
-- 1 = mild diffuse discomfort
-- 2 = patient reports severe diffuse aching of joints/muscles
-- 4 = patient is rubbing joints/muscles, unable to sit still
-
-**6. Runny nose or tearing** (not from cold/allergies)
-- 0 = not present
-- 1 = nasal stuffiness or unusually moist eyes
-- 2 = nose running or tearing
-- 4 = nose constantly running or tears streaming down cheeks
-
-**7. GI upset** (over the last 30 min)
-- 0 = no GI symptoms
-- 1 = stomach cramps
-- 2 = nausea or loose stool
-- 3 = vomiting or diarrhea
-- 5 = multiple episodes of diarrhea or vomiting
-
-**8. Tremor** (observation of outstretched hands)
-- 0 = no tremor
-- 1 = tremor can be felt but not observed
-- 2 = slight tremor observable
-- 4 = gross tremor or muscle twitching
-
-**9. Yawning** (during observation)
-- 0 = no yawning
-- 1 = yawning once or twice during assessment
-- 2 = yawning three or more times during assessment
-- 4 = yawning several times per minute
-
-**10. Anxiety or irritability**
-- 0 = none
-- 1 = patient reports increasing irritability or anxiousness
-- 2 = patient obviously irritable or anxious
-- 4 = so irritable/anxious that participation in assessment is difficult
-
-**11. Gooseflesh skin**
-- 0 = skin is smooth
-- 3 = piloerection of skin can be felt or hairs standing up on arms
-- 5 = prominent piloerection
+| # | Item | Scoring |
+| ---: | --- | --- |
+| 1 | **Resting pulse** (after sitting/lying 1 min) | 0: ≤80 · 1: 81–100 · 2: 101–120 · 4: >120 |
+| 2 | **Sweating** (past 30 min, not heat/activity) | 0: none · 1: subjective chills/flushing · 2: flushed or moisture on face · 3: beads of sweat · 4: streaming off face |
+| 3 | **Restlessness** (during observation) | 0: sits still · 1: reports difficulty but can · 3: frequent shifting · 5: can't sit still more than a few seconds |
+| 4 | **Pupil size** | 0: pinned or normal · 1: possibly larger · 2: moderately dilated · 5: only iris rim visible |
+| 5 | **Bone or joint aches** (withdrawal-attributable only) | 0: none · 1: mild diffuse · 2: severe diffuse aching · 4: rubbing joints, can't sit still |
+| 6 | **Runny nose or tearing** (not cold/allergies) | 0: none · 1: nasal stuffiness or moist eyes · 2: running or tearing · 4: constantly running or streaming |
+| 7 | **GI upset** (last 30 min) | 0: none · 1: stomach cramps · 2: nausea or loose stool · 3: vomiting or diarrhea · 5: multiple episodes |
+| 8 | **Tremor** (outstretched hands) | 0: none · 1: felt but not observed · 2: slight observable · 4: gross tremor or twitching |
+| 9 | **Yawning** (during observation) | 0: none · 1: once or twice · 2: three or more · 4: several per minute |
+| 10 | **Anxiety or irritability** | 0: none · 1: reports increased · 2: obviously so · 4: assessment difficult |
+| 11 | **Gooseflesh skin** | 0: smooth · 3: piloerection felt or hairs up · 5: prominent piloerection |
 
 ## Interpreting your COWS total
 
-```
-Score      Severity
-─────────  ──────────────────
-5 to 12    Mild withdrawal
-13 to 24   Moderate withdrawal
-25 to 36   Moderately severe
-Over 36    Severe withdrawal
-```
+| Score | Severity |
+| ---: | --- |
+| 5–12 | Mild withdrawal |
+| 13–24 | Moderate withdrawal |
+| 25–36 | Moderately severe |
+| 36+ | Severe withdrawal |
 
 **Induct at COWS ≥ 12.** Some people prefer to wait until 13 to 17 for extra safety margin, particularly if you've been on long-acting compounds. If you induct below 12, you risk precipitated withdrawal. If you wait much past the moderate range, you're suffering longer than you need to.
 
@@ -151,14 +96,12 @@ The items:
 
 ## Interpreting your SOWS total
 
-```
-Score      Severity
-─────────  ──────────────────
-0 to 10    Mild withdrawal
-11 to 20   Moderate withdrawal
-21 to 30   Severe withdrawal
-Over 30    Very severe
-```
+| Score | Severity |
+| ---: | --- |
+| 0–10 | Mild withdrawal |
+| 11–20 | Moderate withdrawal |
+| 21–30 | Severe withdrawal |
+| 30+ | Very severe |
 
 **Induct at SOWS ≥ 17.** That's roughly equivalent to COWS ≥ 12, moderate, induction-ready withdrawal. If your SOWS is in the 21+ range, you're past induction-ready and probably shouldn't wait longer than necessary.
 

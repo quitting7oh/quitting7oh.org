@@ -1,13 +1,13 @@
 ---
 title: "Low-Dose Naltrexone (LDN)"
 description: "Naltrexone at a small fraction of the standard dose, used off-label for chronic pain, autoimmune conditions, and increasingly as an adjunct in addiction recovery once acute withdrawal is over. Overview, evidence, and the safety caveats."
-category: "other-tools"
+category: "post-acute"
 last_updated: "2026-05-25"
-sort: 9
+sort: 11
 ---
 
 LDN is the same molecule as
-[normal-dose naltrexone](/other-tools/naltrexone-normal-dose) used at
+[normal-dose naltrexone](/post-acute/naltrexone-normal-dose) used at
 roughly 1/10 to 1/50 of the standard dose. At those low doses the
 behavior is different, it does not produce sustained opioid
 receptor blockade, and the hypothesized mechanisms involve transient
@@ -18,9 +18,9 @@ gaining attention as an adjunct for post-acute recovery from opioid
 dependence.
 
 This page is one of three in the naltrexone group on this site. See
-the [parent overview](/other-tools/naltrexone) for the comparison
+the [parent overview](/post-acute/naltrexone) for the comparison
 across normal-dose, LDN, and
-[ULDN](/other-tools/naltrexone-ultra-low-dose).
+[ULDN](/post-acute/naltrexone-ultra-low-dose).
 
 ## Overview
 
@@ -111,7 +111,7 @@ recovery do, descriptively:
 
 - **Started after complete opioid clearance**, typically 7 to 14
   days fully opioid-free per the standard naltrexone-initiation
-  windows (see the [normal-dose page](/other-tools/naltrexone-normal-dose#initiation--getting-the-timing-right)
+  windows (see the [normal-dose page](/post-acute/naltrexone-normal-dose#initiation--getting-the-timing-right)
   for the underlying guidance). For the longer-acting kratom
   synthetics, longer windows are often used out of caution.
 - **Dose-titration over weeks** is common rather than starting at
@@ -160,7 +160,7 @@ buprenorphine), or if the abstinence window was shorter than the
 clinical guidelines call for.
 
 The opioid-free windows on the
-[normal-dose page](/other-tools/naltrexone-normal-dose#initiation--getting-the-timing-right)
+[normal-dose page](/post-acute/naltrexone-normal-dose#initiation--getting-the-timing-right)
 are the right starting reference. LDN initiation still belongs
 with a clinician, not as DIY.
 
@@ -176,7 +176,7 @@ with a clinician, not as DIY.
 - **Not a cure-all.** Real evidence in fibromyalgia and some
   autoimmune conditions; thinner evidence in OUD recovery; almost
   no 7-OH-specific data. Real but limited.
-- **Not [ULDN](/other-tools/naltrexone-ultra-low-dose).**
+- **Not [ULDN](/post-acute/naltrexone-ultra-low-dose).**
   Ultra-low-dose naltrexone uses microgram doses (about
   1,000× smaller), is taken *with* opioids, and is investigational
   with thin evidence, completely different protocol with different
@@ -184,12 +184,12 @@ with a clinician, not as DIY.
 
 ## Where to read next
 
-- **[Naltrexone (Overview)](/other-tools/naltrexone)**: the parent
+- **[Naltrexone (Overview)](/post-acute/naltrexone)**: the parent
   page comparing all three protocols.
-- **[Normal-Dose Naltrexone](/other-tools/naltrexone-normal-dose)**
+- **[Normal-Dose Naltrexone](/post-acute/naltrexone-normal-dose)**
  , the full-dose, FDA-approved indication, and the page with the
   unmissable precipitated-withdrawal safety content.
-- **[Ultra-Low-Dose Naltrexone (ULDN)](/other-tools/naltrexone-ultra-low-dose)**
+- **[Ultra-Low-Dose Naltrexone (ULDN)](/post-acute/naltrexone-ultra-low-dose)**
  , the investigational microgram tier.
 - **[What is PAWS](/post-acute/what-is-paws)** and
   **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**

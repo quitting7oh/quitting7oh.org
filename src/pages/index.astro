@@ -2,11 +2,14 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { SearchBox } from '~/components/SearchBox';
 import { NextMeeting } from '~/components/NextMeeting';
-import { CATEGORIES } from '~/lib/categories';
+import { AppSidebar } from '~/components/AppSidebar';
+import { CATEGORIES, PINNED_PAGES } from '~/lib/categories';
+import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getCollection } from 'astro:content';
 import { LifeBuoy, HelpCircle, Signpost, Users, MessageCircle, BookOpen } from 'lucide-react';
 
 const docs = await getCollection('docs', (d) => !d.data.draft);
+const sidebarCategories = await getSidebarCategories();
 
 const counts = Object.fromEntries(
   CATEGORIES.map((c) => [c.slug, docs.filter((d) => d.data.category === c.slug).length]),
@@ -45,6 +48,19 @@ const hotPaths = [
 ---
 
 <BaseLayout>
+  {/* Mobile-only: mount AppSidebar to power the hamburger drawer.
+      Sheet renders to body via Radix Portal, so being inside lg:hidden
+      doesn't block it. Desktop suppresses the inline aside entirely so
+      the homepage layout stays centered without a sidebar column. */}
+  <div class="lg:hidden">
+    <AppSidebar
+      client:load
+      categories={sidebarCategories}
+      pinned={PINNED_PAGES}
+      currentPath={Astro.url.pathname}
+    />
+  </div>
+
   <main id="main-content">
     {/* Hero: title + tight tagline + search */}
     <section class="mx-auto max-w-5xl px-4 pt-12 pb-6 sm:px-6 sm:pt-16 lg:px-8">
@@ -58,6 +74,15 @@ const hotPaths = [
       <div class="mt-6">
         <SearchBox variant="hero" placeholder="Search for a topic, drug name, symptom…" client:load />
       </div>
+    </section>
+
+    {/* Next live meeting (KA + TIAWO) in the viewer's local timezone.
+        Placed above the hot list so it's visible on mobile without
+        scrolling past four stacked hot-list cards. client:load: the
+        widget needs `new Date()` at render time and the viewer's IANA
+        tz, neither known at build time. */}
+    <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
+      <NextMeeting client:load />
     </section>
 
     {/* Hot list: four funnel paths (crisis card gets amber emphasis) */}
@@ -97,13 +122,6 @@ const hotPaths = [
           </a>
         ))}
       </div>
-    </section>
-
-    {/* Next live meeting (KA + KQS) in the viewer's local timezone.
-        client:load: the widget needs `new Date()` at render time and
-        the viewer's IANA tz, neither known at build time. */}
-    <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
-      <NextMeeting client:load />
     </section>
 
     {/* Community: Discord + Reddit + about-link, single compact row */}
