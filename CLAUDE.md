@@ -257,6 +257,37 @@ walked. Read a paragraph aloud. If it sounds like an executive summary
 written to be defensible in a meeting, rewrite it. If it sounds like
 something a person would actually say to another person, ship it.
 
+### The stop-slop ruleset
+
+The operationalized version of the prose-voice rule above lives in
+**[docs/stop-slop/](docs/stop-slop/)** as a vendored snapshot of the
+[stop-slop skill](https://github.com/hardikpandya/stop-slop) (Hardik
+Pandya, MIT) plus local additions documented in the snapshot's
+[CHANGELOG](docs/stop-slop/CHANGELOG.md). It's the rulebook every page
+gets passed through before shipping. To avoid duplicating ~500 lines
+of pattern rules here, this section just points at the canonical files:
+
+- **[docs/stop-slop/SKILL.md](docs/stop-slop/SKILL.md)** — top-level
+  rules and the Quick Checks list (run through these before delivering
+  any prose)
+- **[docs/stop-slop/references/phrases.md](docs/stop-slop/references/phrases.md)**
+  — phrases to cut or replace (throat-clearing, business jargon,
+  performative authority, AI vocabulary tells, the "serves as" dodge,
+  validating-the-audience tics, banned sentence openers)
+- **[docs/stop-slop/references/structures.md](docs/stop-slop/references/structures.md)**
+  — structural patterns to avoid (binary contrasts, dramatic fragmentation,
+  self-posed rhetorical questions, anaphora, listicle-in-a-trench-coat,
+  superficial participle analyses, false ranges, "despite its challenges"
+  pivot, invented concept labels, one-point dilution, the dead metaphor,
+  symmetric structures, Wh-headers)
+- **[docs/stop-slop/references/examples.md](docs/stop-slop/references/examples.md)**
+  — before/after transformations
+
+When a page violates one of these patterns, the fix is in the relevant
+reference file. The rules here in CLAUDE.md describe project-specific
+constraints (substance framing, audience mode, link verification);
+stop-slop covers the general anti-AI-writing-pattern enforcement.
+
 ### Link every third party we name
 
 When the content names a specific outside resource — an organization, a
