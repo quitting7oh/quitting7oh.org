@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { SearchBox } from '~/components/SearchBox';
 import { NextMeeting } from '~/components/NextMeeting';
 import { AppSidebar } from '~/components/AppSidebar';
 import { CATEGORIES, PINNED_PAGES } from '~/lib/categories';
@@ -71,9 +70,6 @@ const hotPaths = [
         Community-compiled by people who have been through it, for people going through it now and
         the ones who love them.
       </p>
-      <div class="mt-6">
-        <SearchBox variant="hero" placeholder="Search for a topic, drug name, symptom…" client:load />
-      </div>
     </section>
 
     {/* Next live meeting (KA + TIAWO) in the viewer's local timezone.
