@@ -3,7 +3,7 @@ title: "Sober Living Homes"
 description: "Sober living, defined: NARR quality levels, how to find a legitimate one, what it costs, red flags for predatory homes, and how Oxford House differs."
 category: "for-you"
 last_updated: "2026-05-25"
-sort: 7
+sort: 8
 ---
 
 A sober living home is a structured, substance-free residence, somewhere between treatment and full independence. Most residents work or job-hunt, attend recovery meetings or treatment programs, and follow house rules around curfews, chores, drug testing, and meeting attendance. The point is environmental support: a place to live where the people, the rules, and the routine all reinforce recovery instead of working against it.

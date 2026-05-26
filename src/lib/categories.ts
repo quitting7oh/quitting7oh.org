@@ -161,12 +161,12 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
   'other-tools': [
     { name: 'Helper meds & supplements', slugs: ['helper-meds-info', 'vitamins-supplements', 'quitkit-info', 'mega-vit-c-info'] },
     { name: 'Bridges off the synthetics', slugs: ['tapering-with-leaf', 'sr17018-info'] },
-    { name: 'Naltrexone (post-acute)', slugs: ['naltrexone', 'naltrexone-normal-dose', 'naltrexone-low-dose', 'naltrexone-ultra-low-dose'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
   ],
   'post-acute': [
     { name: 'The map', slugs: ['what-is-paws'] },
     { name: 'Specific symptoms', slugs: ['pink-cloud', 'dopamine-recovery', 'depression-and-anhedonia', 'impending-doom', 'sleep-recovery'] },
+    { name: 'Naltrexone', slugs: ['naltrexone', 'naltrexone-normal-dose', 'naltrexone-low-dose', 'naltrexone-ultra-low-dose'] },
     { name: 'Long view', slugs: ['kindling', 'long-term-outlook'] },
   ],
 };

@@ -3,7 +3,7 @@ title: "MAT & Your Professional License"
 description: "Most jobs have no business in your medical records, but a handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare roles) treat MAT use as a licensure issue. What to check before you disclose or start."
 category: "for-you"
 last_updated: "2026-05-25"
-sort: 5
+sort: 6
 ---
 
 > **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator, or starting MAT while holding any of the credentials below, talk to a labor lawyer or licensure attorney who knows your specific field.**

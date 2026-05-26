@@ -24,7 +24,7 @@ detox, residential, PHP, IOP, and how to pay for them.
 
 ## Picking a path
 
-The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths this community has used, in the order to try them. The rest of this page covers the tools that work alongside whichever path you pick.
+The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths this community has used, in the order to try them. If you're tapering the concentrated 7-OH dose directly rather than switching to leaf or bupe, [Tapering Off 7-OH](/for-you/tapering-7oh) covers what that looks like in practice. The rest of this page covers the tools that work alongside whichever path you pick.
 
 ## The tools to have on hand before you stop
 

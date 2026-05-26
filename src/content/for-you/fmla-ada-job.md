@@ -3,7 +3,7 @@ title: "FMLA, ADA & Your Job"
 description: "Federal job-protected leave for your own treatment, ADA protections for people in recovery, what HR actually sees, and how to use EAPs without your manager finding out."
 category: "for-you"
 last_updated: "2026-05-25"
-sort: 4
+sort: 5
 ---
 
 If you're worried about how to take time off for treatment without losing your job, you have more legal protection than most people realize. This page walks through the two federal laws that matter ([FMLA](https://www.dol.gov/agencies/whd/fmla) and [ADA](https://www.ada.gov)), what HR sees, and how Employee Assistance Programs work.

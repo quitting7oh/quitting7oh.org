@@ -3,7 +3,7 @@ title: "Rehabilitation Centers"
 description: "Detox, residential, PHP, IOP, and outpatient, what each level of care looks like, how to find a program, how to pay, and what to be skeptical of."
 category: "for-you"
 last_updated: "2026-05-25"
-sort: 3
+sort: 4
 ---
 
 This site is built around at-home recovery from

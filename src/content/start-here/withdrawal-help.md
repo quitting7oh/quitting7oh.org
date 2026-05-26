@@ -68,7 +68,7 @@ Do these things, in this order:
   edge off" unless they're already prescribed to you for this. Mixing
   benzos with opioid withdrawal recovery is a real overdose risk later.
 - Don't drink to take the edge off. Same reason.
-- Don't take opioid blockers ([naltrexone](/other-tools/naltrexone)
+- Don't take opioid blockers ([naltrexone](/post-acute/naltrexone)
   in any form, Vivitrol, oral, LDN) while still in withdrawal.
   They will make it worse, fast. Narcan is the exception, keep
   Narcan on hand for actual overdose; it's harmless if given when
@@ -114,7 +114,7 @@ You don't have to white-knuckle this. What you can reach for in the next few hou
 
 ## Options from here
 
-These are short-term tools. The longer-term decision is which path off you want to take. The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths the community has used, ranked by how the harm-reduction logic shakes out.
+These are short-term tools. The longer-term decision is which path off you want to take. The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths the community has used, ranked by how the harm-reduction logic shakes out. If you're tapering the 7-OH dose itself rather than switching off, [Tapering Off 7-OH](/for-you/tapering-7oh) covers what that looks like.
 
 ## When to go to the ER
 

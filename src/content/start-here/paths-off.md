@@ -74,6 +74,8 @@ See [SR-17018](/other-tools/sr17018-info).
 
 **Rungs 5 and 6 are equivalent.** Pick based on access, prior experience, and which prescriber relationship you have.
 
+**A note on direct dose-tapering of 7-OH itself.** Some people don't switch to anything; they step the concentrated 7-OH dose down on its own schedule, halving from high doses, plateauing at the lower end, then jumping off. That path sits adjacent to this ladder rather than on it (it doesn't reduce to one rung), and it has its own characteristic shape and stall points. [Tapering Off 7-OH](/for-you/tapering-7oh) covers what it looks like in practice and how it usually ends.
+
 ## Moving between rungs
 
 You can move between rungs in either direction. Some people start cold turkey, hit the wall on day three, and induct on Suboxone. Others stabilize on Suboxone and wind down to a leaf taper later.

@@ -188,7 +188,7 @@ Use this to calibrate.
 - Inability to keep yourself safe
 
 Crisis numbers live on [Crisis Hotlines](/resources/crisis-hotlines)
-and in the **🆘 Crisis** button on every page.
+and in the **Crisis** button on every page.
 
 ## Interventions
 
@@ -218,7 +218,7 @@ sleep, restless legs), **clonidine** (stress reactivity, sleep),
 **trazodone** (sleep), **mirtazapine** (sleep, anxiety, depression,
 nausea, single-med coverage), **buspirone** (anxiety without
 dependence),
-**low-dose naltrexone** (post-acute only, can't combine with bupe),
+**[low-dose naltrexone](/post-acute/naltrexone-low-dose)** (post-acute only, can't combine with bupe),
 and continued **MAT**, buprenorphine via the [Sublocade single-shot
 exit](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone),
 or [SR-17](/other-tools/sr17018-info) as the second
@@ -338,7 +338,7 @@ partial opioid antagonist; bupe is a partial agonist. They fight at
 the receptor and you'll get precipitated withdrawal. LDN is a tool
 for *after* you've fully tapered off bupe and waited the full
 washout period (typically 7 to 14 days). See
-[Low-Dose Naltrexone](/other-tools/naltrexone-low-dose).
+[Low-Dose Naltrexone](/post-acute/naltrexone-low-dose).
 
 ### The trade-off, plainly
 
@@ -385,5 +385,5 @@ connections you maintain, all of it adds up.
 - **[Telehealth Providers](/resources/telehealth)**: for the
   SSRI / SNRI / bupropion / buspirone / Suboxone / Sublocade items
   in the clinically-used list. LDN sits outside standard OUD
-  telehealth; see the [LDN page](/other-tools/naltrexone-low-dose)
+  telehealth; see the [LDN page](/post-acute/naltrexone-low-dose)
   for that routing. SR-17 is off-prescription.
