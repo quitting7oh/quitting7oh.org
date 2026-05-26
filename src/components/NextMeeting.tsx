@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Calendar, ExternalLink } from 'lucide-react';
 import {
   findDisplayMeeting,
+  findNextStartingAfter,
   FELLOWSHIPS,
   platformFromUrl,
   type DisplayMeeting,
@@ -106,11 +107,28 @@ interface CardProps {
   now: Date;
 }
 
+/** If the primary meeting is live or just started, surface what's
+ *  queued up next so a reader mid-meeting knows what's coming. Only
+ *  shown when the next meeting starts within MAX_NEXT_UP_WINDOW_MS
+ *  after the current one ends — anything further isn't "right after." */
+const MAX_NEXT_UP_WINDOW_MS = 120 * 60_000; // 2 hours
+
+function shouldShowNextUp(status: MeetingStatus): boolean {
+  return status === 'live-now' || status === 'meeting-starting';
+}
+
 function MeetingCard({ display, now }: CardProps) {
   const { meeting, start, end, status } = display;
   const badge = STATUS_BADGE[status];
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
+
+  const nextUp = shouldShowNextUp(status)
+    ? findNextStartingAfter(end)
+    : null;
+  const showNextUp =
+    nextUp !== null &&
+    nextUp.start.getTime() - end.getTime() <= MAX_NEXT_UP_WINDOW_MS;
   return (
     <div className="flex flex-col gap-4 rounded-lg border-2 border-sky-300 bg-sky-50 p-5 shadow-sm dark:border-sky-800/70 dark:bg-sky-950/30">
       {/* Framing line — orients the reader on what this widget is and
@@ -167,6 +185,22 @@ function MeetingCard({ display, now }: CardProps) {
           All meetings
         </a>
       </div>
+
+      {showNextUp && nextUp && (
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-sky-200 pt-3 text-xs text-muted-foreground dark:border-sky-900/60">
+          <span className="font-medium text-foreground/80">Up next at {formatLocalTime(nextUp.start)}:</span>
+          <a
+            href={nextUp.meeting.joinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 font-medium text-foreground hover:text-sky-700 dark:hover:text-sky-300"
+          >
+            {FELLOWSHIPS[nextUp.meeting.fellowship].shortName} — {nextUp.meeting.format}
+            <ExternalLink className="h-3 w-3" aria-hidden={true} />
+          </a>
+          <span>· {platformFromUrl(nextUp.meeting.joinUrl)}</span>
+        </div>
+      )}
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-sky-200 pt-3 text-xs text-muted-foreground dark:border-sky-900/60">
         <span>Broader groups, not kratom-specific:</span>

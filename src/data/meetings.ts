@@ -315,3 +315,43 @@ export function findDisplayMeeting(now: Date = new Date()): DisplayMeeting | nul
   candidates.sort((a, b) => a.start.getTime() - b.start.getTime());
   return candidates[0];
 }
+
+/** Find the next meeting whose start is strictly after `afterTime`.
+ *  Used by the widget to surface a "next up" line when the primary
+ *  meeting is currently live or just started, so a reader mid-meeting
+ *  can see what's queued up next without leaving the page.
+ *
+ *  Different from findDisplayMeeting: that function uses "end > now"
+ *  to keep live meetings selected. This one uses "start > afterTime"
+ *  so it skips meetings that are already running. */
+export function findNextStartingAfter(afterTime: Date): DisplayMeeting | null {
+  const candidates: DisplayMeeting[] = [];
+  const probeDate = etToday(afterTime);
+  for (const m of MEETINGS) {
+    const durationMs =
+      (m.durationMinutes ?? FELLOWSHIPS[m.fellowship].defaultDurationMin) * 60_000;
+    for (let offset = -1; offset <= 7; offset++) {
+      const dayET = addDays(probeDate.y, probeDate.m, probeDate.d, offset);
+      if (!m.daysOfWeek.includes(dayET.dow)) continue;
+      const startMs = etWallClockToUTC(
+        dayET.y,
+        dayET.m,
+        dayET.d,
+        m.hourET,
+        m.minuteET,
+      );
+      if (startMs > afterTime.getTime()) {
+        candidates.push({
+          meeting: m,
+          start: new Date(startMs),
+          end: new Date(startMs + durationMs),
+          status: 'future',
+        });
+        break;
+      }
+    }
+  }
+  if (candidates.length === 0) return null;
+  candidates.sort((a, b) => a.start.getTime() - b.start.getTime());
+  return candidates[0];
+}
