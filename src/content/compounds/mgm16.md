@@ -17,16 +17,15 @@ potency difference is large.
 This page exists because the compound is starting to come up in
 recovery-community conversations and in state-level scheduling
 discussions. Most of what circulates is community awareness rather
-than verified information. This page tries to bridge that gap
-honestly: it stays inside what one peer-reviewed paper and a few
-government documents establish, and it labels the (many)
-gaps as gaps.
+than verified information. This page tries to bridge that gap: it
+stays inside what one peer-reviewed paper and a few government
+documents establish, and it labels the (many) gaps as gaps.
 
-## What MGM-16 actually is
+## Structure and chemistry
 
 **Structure.** MGM-16 is the fluorine-substituted analog of
-[MGM-15](/compounds/mgm15) (which is itself dihydro-7-hydroxymitragynine
-— the saturated indoline reduction product of
+[MGM-15](/compounds/mgm15) (which is itself dihydro-7-hydroxymitragynine,
+the saturated indoline reduction product of
 [7-OH](/compounds/7-oh)). MGM-16 adds a single fluorine atom on
 the indole ring of MGM-15.
 
@@ -42,21 +41,20 @@ chemistry literature. Don't be thrown by seeing both numbers in
 different papers.
 
 **Synthesis.** Per the Matsumoto 2014 paper, MGM-16 is prepared by
-sodium borohydride (NaBH₄) reduction of 10-fluoro-7-hydroxymitragynine —
-mechanically the same reduction step that produces MGM-15 from 7-OH,
-just with a fluorine already on the precursor.
+sodium borohydride (NaBH₄) reduction of 10-fluoro-7-hydroxymitragynine.
+Mechanically the same reduction step that produces MGM-15 from 7-OH,
+with a fluorine already on the precursor.
 
 **IUPAC name** (from the published paper): (E)-methyl
 2-((2S,3S,7aS,12aR,12bS)-3-ethyl-9-fluoro-7a-hydroxy-8-methoxy-1,2,3,4,6,7,7a,12,12a,12b-decahydroindolo[2,3-a]quinolizin-2-yl)-3-methoxyacrylate.
 
-The compound has no PubChem CID and no CAS registry number that I
-could locate.
+As of this writing, no PubChem CID or CAS registry number could be located.
 
-## What's been measured, and the one paper it traces to
+## Measured data, and the one paper it traces to
 
 **Every quantitative pharmacology claim about MGM-16 traces back to
 a single 2014 paper.** No independent replication has been published.
-That's the honest center of the evidence base.
+That's where the evidence centers.
 
 From [Matsumoto et al., *J Pharmacol Exp Ther* 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/):
 
@@ -77,9 +75,9 @@ from a real paper. It's also a single in-vivo measurement in one
 species, one assay, one route, one comparator. Use it as that, not as
 a free-standing potency statement.
 
-## What has not been measured
+## Gaps in the evidence
 
-These absences are part of the honest picture. None of the following
+These absences are part of the evidence picture. None of the following
 has been published for MGM-16 specifically:
 
 - **No human data of any kind.** No clinical trials, no case reports,
@@ -97,19 +95,21 @@ has been published for MGM-16 specifically:
   sole primary report; subsequent literature that mentions MGM-16
   cites the 2014 paper rather than re-measuring.
 
-## Where it shows up, and where it hasn't
+## Presence in the regulatory and forensic record
 
 **The headline finding from the regulatory record is that MGM-16
 does not show up.**
 
 A California State Senate Committee on Health
 [2026 background paper on kratom and 7-OH](https://shea.senate.ca.gov/system/files/2026-02/kratom-and-7-oh-background-paper.pdf)
-characterizes MGM-16 as "**the most potent**" of the
-mitragynine-related opioids in the published literature but adds that
-it is "**currently prohibitively expensive to synthesize**." The
-characterization that's circulated in community spaces, that MGM-16
-is "the next 7-OH" or that it's already in products, is not, as of
-this writing, supported by any documented forensic detection.
+contains a **single, unsourced reference** to MGM-16, calling it
+"**the most potent**" of the mitragynine-related opioids in the
+published literature and noting that it is "**currently prohibitively
+expensive to synthesize**." The paper provides no detection data,
+forensic citations, or independent sourcing behind those
+characterizations. The community framing that MGM-16 is "the next
+7-OH" or that it's already in products is not, as of this writing,
+supported by any documented forensic detection.
 
 Specifically:
 
@@ -120,8 +120,7 @@ Specifically:
 - **FDA warning letters and import alerts** for the 7-OH wave of
   July 2025 named 7-OH and its vendors. MGM-16 is not in those
   documents.
-- **DEA microgram bulletins** have no entry for MGM-16 that I could
-  locate.
+- **DEA microgram bulletins** have no entry for MGM-16 as of this writing.
 - **No forensic-chemistry or analytical-chemistry publication**
   documents MGM-16 in a US-seized consumer product.
 
@@ -143,45 +142,8 @@ community sometimes uses.
   (effective December 12, 2025). The rule's class-level language
   presumably reaches MGM-16, though the document itself does not
   name MGM-16 individually.
-- **Other states:** I could not find MGM-16 individually named in
-  any state scheduling document.
-- **International:** no specific scheduling I could locate.
-
-## Why this page exists for this site's audience
-
-Recovery communities are encountering MGM-16 as a topic of discussion
-— in scheduling debates, in characterizations of the
-"next-generation" kratom-derivative landscape, in conversations
-about the broader semi-synthetic mitragynine derivative market that
-also includes [7-OH](/compounds/7-oh) and
-[MGM-15](/compounds/mgm15). What people are reading is a mix of one
-2014 primary paper, government documents that briefly reference the
-compound, and a much larger volume of community lore.
-
-This page exists to consolidate what's verifiable so a reader
-trying to evaluate what they're seeing can do it from sourced
-information rather than from the heat of the conversation.
-
-## If you've encountered MGM-16 in a product
-
-Two honest things to know:
-
-1. **There is no published forensic detection of MGM-16 in any US
-   consumer product** that I could find. If you've been told a
-   product contains MGM-16, the most likely explanations are (a)
-   the product contains [MGM-15](/compounds/mgm15) or
-   [7-OH](/compounds/7-oh) and is being marketed inaccurately,
-   (b) it contains a mitragynine derivative for which the seller
-   has used "MGM-16" as a name-of-convenience, or (c) it actually
-   contains MGM-16 from one of the few labs that have synthesized
-   it. Without a third-party lab analysis, there's no way to tell
-   from the outside.
-2. **If you suspect a product you're using contains anything in the
-   mitragynine-derivative family,** the practical advice on the
-   site doesn't change, see [Withdrawal Help](/start-here/withdrawal-help)
-   for the four community-validated paths off the synthetics, and
-   [Telehealth Providers](/resources/telehealth) for finding a
-   clinician familiar with kratom and 7-OH dependence.
+- **Other states:** as of this writing, no state scheduling document has been located that names MGM-16 individually.
+- **International:** as of this writing, no specific scheduling has been located.
 
 ## Sources
 
