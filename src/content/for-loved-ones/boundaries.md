@@ -26,7 +26,7 @@ A boundary is a decision *you* make about what you will accept in your own life.
 
 Notice what changed. In every case, the boundary version names a behavior you'll do, not one they have to do. They might still call you high, lie to you, use in the house. The boundary determines what happens next.
 
-## Why this works better
+## The advantage of this framing
 
 Two reasons.
 

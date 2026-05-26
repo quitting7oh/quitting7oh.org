@@ -1,11 +1,11 @@
 ---
-title: "Why Suboxone Might Not Be Working — Read This First"
-description: "Why bupe sometimes doesn't cover you — serotonergic and adrenergic symptoms, the dose-ceiling question, long-acting compounds."
+title: "Why Suboxone Might Not Be Working: Read This First"
+description: "Why bupe sometimes doesn't cover you: serotonergic and adrenergic symptoms, the dose-ceiling question, long-acting compounds."
 category: "mat-suboxone"
 last_updated: "2026-05-25"
 sort: 7
 ---
-If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are real, well-understood reasons it can feel inadequate, especially coming off [7-OH](/compounds/7-oh) and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is different in several ways, and the medication needs to be used a little differently to fully cover what's happening.
+If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are well-understood reasons it can feel inadequate, especially coming off [7-OH](/compounds/7-oh) and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is different in several ways, and the medication needs to be used a little differently to fully cover what's happening.
 
 This community leans toward short-term tapers, so most of what's below is about **how to make bupe work well enough to get you through to the other side**, not about long-term maintenance.
 
@@ -31,7 +31,7 @@ When you stop, you don't just get opioid withdrawal. You get **opioid withdrawal
 
 If any of this sounds like what you're experiencing on bupe, **bupe is doing its job and there's a separate piece that needs separate help.** The fix is not more bupe. The fix is adjuncts.
 
-## Adjuncts that actually help with the serotonergic and adrenergic piece
+## Adjuncts for the serotonergic and adrenergic piece
 
 Provider attitudes vary on which adjuncts they'll add; see the [telehealth providers comparison](/resources/telehealth) if you need a prescriber who works with kratom/7-OH dependence.
 - **Clonidine.** Alpha-2 agonist. Takes the edge off the noradrenergic symptoms (sweating, anxiety, fast heart rate, restlessness). Most prescribers familiar with MAT will prescribe this on request.
@@ -44,7 +44,7 @@ Provider attitudes vary on which adjuncts they'll add; see the [telehealth provi
 
 See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full picture on supplement support.
 
-## Dose: you might just need more
+## Dose: you might need more
 This is the second-biggest thing people don't get told. The "right" dose of bupe varies a lot between people, and **landing at too low a dose is one of the most common reasons bupe feels inadequate.**
 
 This community uses a low-and-slow induction (start at 2 mg, titrate up by 1 mg as needed) precisely because we don't want people parked at a higher dose than they need. But the flip side is also true: **if you're parked too low, the bupe isn't covering you, and that's a fixable problem.**
@@ -70,7 +70,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 
 > **If standard induction itself failed**: precipitated withdrawal, couldn't wait long enough, or symptoms wouldn't stabilize regardless of dose, the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is the alternative induction pathway for the long-acting compounds. Different mechanics: you keep your opioid going and ramp bup in over 5–10 days, instead of waiting in withdrawal and dosing larger at the bottom of the wait. Most clinical evidence is in fentanyl and methadone populations; the kratom-derivative experience is community-extrapolated rather than published. Bring it up with a prescriber if standard induction isn't a fit for your situation.
 
-## What to do right now if Suboxone isn't working
+## Steps to take right now if Suboxone isn't working
 1. **Check the serotonergic/adrenergic piece first.** If you have any of the symptoms in the list above, that's where the problem is. Get clonidine, gabapentin, or trazodone added (see [Helper Medications](/other-tools/helper-meds-info) for the full menu, including the meds with RLS caveats).
 2. **Check your dose.** Are you covered, or parked too low? If symptoms return before your next dose, your dose is too low or you need to split it.
 3. **Be honest about what you were on.** If MGM-15, [MIT-A](/compounds/mit-a-dhm), or pseudo were in the mix, the playbook changes.

@@ -1,6 +1,6 @@
 ---
 title: "Crisis Hotlines"
-description: "Numbers for the moments that can't wait — suicide, medical emergency, treatment referrals, domestic violence, child abuse, poison control."
+description: "Numbers for the moments that can't wait: suicide, medical emergency, treatment referrals, domestic violence, child abuse, poison control."
 category: "resources"
 last_updated: "2026-05-25"
 sort: 1
@@ -80,6 +80,6 @@ Additionally:
 - [At-Home Treatment](/for-you/at-home-treatment), the at-home path
   this site is built around, including the four community-validated
   approaches.
-- [Rehabilitation Centers](/for-you/rehabilitation-centers) —
+- [Rehabilitation Centers](/for-you/rehabilitation-centers),
   longer-form on what formal treatment programs look like and how to
   navigate them.

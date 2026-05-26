@@ -11,7 +11,7 @@ The single most important thing about Suboxone induction is **timing it by your 
 
 > **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the COWS gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway, especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo), or after a prior precipitated-withdrawal attempt, read the Bernese page; the COWS scoring on this page is for the standard wait-then-induct approach.
 
-## COWS vs SOWS, which to use
+## Choosing between COWS and SOWS
 
 | Scale | Full name | Who scores it | Items | Range | Best for |
 | --------- | ------------------------------------ | ------------------- | ----- | ------ | ----------------------------------------- |
@@ -34,7 +34,7 @@ In practice:
 - SOWS ≥ 17 (mild-to-moderate range), roughly equivalent
 - Some prescribers want COWS ≥ 13 or higher for the long-acting compounds; ask yours
 
-## How to score yourself, COWS
+## Self-scoring COWS
 
 You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your total. The official [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) has the full scoring rubric and is what you should use. Below is a summary so you know what each item is asking.
 
@@ -105,7 +105,7 @@ You're scoring 11 items, each on a 0 to 4 or 0 to 5 scale. Add them up for your 
 - 3 = piloerection of skin can be felt or hairs standing up on arms
 - 5 = prominent piloerection
 
-## What your total COWS score means
+## Interpreting your COWS total
 
 ```
 Score      Severity
@@ -118,7 +118,7 @@ Over 36    Severe withdrawal
 
 **Induct at COWS ≥ 12.** Some people prefer to wait until 13 to 17 for extra safety margin, particularly if you've been on long-acting compounds. If you induct below 12, you risk precipitated withdrawal. If you wait much past the moderate range, you're suffering longer than you need to.
 
-## How to score yourself, SOWS
+## Self-scoring SOWS
 
 SOWS is 16 items, each scored **0 (not at all) to 4 (extremely)**. Add them up for your total (range 0–64). Re-score every 60–90 minutes during induction so you can see the trajectory, not just a single snapshot. The official forms are the [WHO Annex 10 PDF](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) (a clean printable version, parallel to the NIDA COWS PDF above) and the [SAMHSA TIP 40 HTML table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/). Below is a quick-reference of the items.
 
@@ -149,7 +149,7 @@ The items:
 - **3** = quite a bit
 - **4** = extremely
 
-## What your total SOWS score means
+## Interpreting your SOWS total
 
 ```
 Score      Severity

@@ -37,7 +37,7 @@ Chemical structures for all seven are on the
 **[Chemical Structures](/pharmacology/chemical-structures)**
 appendix.
 
-## How structural modifications change µ-opioid binding
+## Structural modifications and µ-opioid binding
 
 Each modification in the table below is a single-step change from
 either mitragynine or 7-OH. Two patterns repeat: **adding an –OH
@@ -85,7 +85,7 @@ Two notes worth holding when reading this table:
   reports don't always order the same way. The table above
   reflects receptor-binding affinity specifically.
 
-## What this tells you about the kratom synthetic landscape
+## Implications for the kratom synthetic landscape
 
 Every compound on this page except morphine is a one- or two-step
 modification of mitragynine. The dominant chemistry pattern of the

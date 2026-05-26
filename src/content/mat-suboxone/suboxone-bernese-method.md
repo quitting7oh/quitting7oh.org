@@ -1,6 +1,6 @@
 ---
 title: "Bernese Method (Micro-Induction)"
-description: "Low-dose buprenorphine induction with overlapping full-agonist use, what it is, the original Bernese protocol, the modern variants, and where it fits for kratom-derivative dependence."
+description: "Low-dose buprenorphine induction with overlapping full-agonist use: overview, the original Bernese protocol, the modern variants, and where it fits for kratom-derivative dependence."
 category: "mat-suboxone"
 last_updated: "2026-05-25"
 sort: 3
@@ -24,7 +24,7 @@ This page is the overview of what it is and where it fits. **The standard COWS-g
 | **Evidence base** | Decades, large RCTs | ~10 years, mostly case series; one registered RCT |
 | **Hardest part** | Tolerating the wait | Keeping your opioid going while bup ramps up |
 
-## Who this might fit
+## Who should consider micro-induction
 
 You're a reasonable candidate to discuss micro-induction with a prescriber if any of these apply:
 
@@ -77,7 +77,7 @@ The original 8–10 day approach has been adapted into shorter schedules as adop
 
 For practical mechanics on how to get 0.25–0.5 mg doses out of 2 mg or 8 mg films, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose), the eighth-of-a-2mg-film cut is the standard micro-induction unit.
 
-## Why it works (the pharmacology)
+## Pharmacology of micro-induction
 
 The standard "wait for COWS" approach exists because of one specific failure mode: when bup (high mu-receptor affinity, partial agonist) hits receptors that are heavily occupied by a full agonist, bup **displaces** the full agonist. Because bup's intrinsic activation is lower than the full agonist's was, the net opioid signaling drops sharply, that's precipitated withdrawal. The standard fix is to wait until receptors are mostly cleared (COWS climbs as receptor occupancy drops), then introduce bup against an emptier receptor field.
 
@@ -91,7 +91,7 @@ So a **microinduction dose of 0.25–1 mg/day** displaces only a small fraction 
 
 That's the mechanism. It's well-supported pharmacologically; what's less well-tested is how often outpatients complete the protocol (see next section).
 
-## What the outcome data actually shows
+## Clinical outcomes
 
 **Most published evidence is case series and small cohorts, not RCTs.** The [2020 systematic review (Ahmed et al.)](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698) covered 20 studies and 57 patients, 19 of those 20 were case series or case reports; 1 feasibility study; no RCTs. All patients in the included studies reached their target dose, but the review explicitly noted "inconsistent reporting, selection bias, and poor quality evidence."
 
@@ -134,7 +134,7 @@ Some people want their prescriber to know the specific schedule, either as a bac
 
 If your current prescriber isn't comfortable with the protocol, the [Telehealth Providers](/resources/telehealth) comparison flags which providers have specifically mentioned kratom or 7-OH experience.
 
-## When micro-induction isn't the answer
+## When to skip micro-induction
 
 - **You're on [7-OH](/compounds/7-oh) alone at a moderate dose, with short use history.** Standard COWS-gated induction is faster and well-evidenced for this case.
 - **You don't have stable access to your full agonist for the overlap period.** Micro-induction requires you to keep dosing your current opioid through days 1–7+. If you can't reliably do that (running out mid-overlap, source disruption), the protocol falls apart and you're worse off than a clean standard induction.

@@ -10,7 +10,7 @@ You're going to be okay. Even if it doesn't feel like it right now.
 Withdrawal is a finite, time-limited process. Your body knows how to do
 this. We're going to walk you through the next few hours.
 
-## What's actually happening
+## The mechanism, briefly
 
 [7-OH](/compounds/7-oh) hits the same receptors as morphine. Your body
 adapted to having it around. When you stop, those receptors run
@@ -74,7 +74,7 @@ Do these things, in this order:
   Narcan on hand for actual overdose; it's harmless if given when
   not needed.
 
-## What's coming, hour by hour
+## Hour-by-hour timeline
 
 If you've been on **[7-OH](/compounds/7-oh) alone** (the most common short-acting case):
 
@@ -112,7 +112,7 @@ You don't have to white-knuckle this. What you can reach for in the next few hou
 - **[Prescription helper medications](/other-tools/helper-meds-info)** via [same-day telehealth](/resources/telehealth). Clonidine, gabapentin, trazodone, baclofen, ondansetron, and others can take the edge off specific symptoms. A telehealth visit can get most of these in your hands the same day.
 - **[Suboxone](/mat-suboxone/suboxone-info)** via same-day [telehealth](/resources/telehealth). A correct induction can drop withdrawal to near zero within hours. The prescription is same-day in most US states, but you have to wait until your [COWS score is ≥ 12](/mat-suboxone/suboxone-cows) before the first dose (typically 12 to 24 hours into withdrawal, longer for the long-acting synthetics). Going earlier causes precipitated withdrawal.
 
-## Your options from here
+## Options from here
 
 These are short-term tools. The longer-term decision is which path off you want to take. The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths the community has used, ranked by how the harm-reduction logic shakes out.
 
@@ -136,7 +136,7 @@ are not "just withdrawal" and need urgent medical care:**
 - **Pregnancy.** Acute opioid withdrawal carries miscarriage and
   premature-labor risk. Go in.
 
-### What to expect from an ER visit
+### Expectations for an ER visit
 
 **The legal facts:** ERs in the US are required by law (EMTALA) to
 stabilize you regardless of insurance, immigration status, or ability
@@ -144,14 +144,14 @@ to pay. You will not get in legal trouble for telling them what you've
 been taking. Many ERs can start you on Suboxone right there if
 appropriate.
 
-**The honest reality:** not every ER and not every doctor handles
-withdrawal the same way. Some are excellent, they take you seriously,
+**The reality:** not every ER and not every doctor handles
+withdrawal the same way. Some are excellent: they take you seriously,
 treat the symptoms aggressively, induct you on Suboxone if you want,
-and connect you with follow-up MAT before discharge. Some are not —
-people in this community have been talked down to, treated like
+and connect you with follow-up MAT before discharge. Some are not.
+People in this community have been talked down to, treated like
 drug-seekers, denied adequate symptom management, or sent home with
 nothing more than a referral and a brochure. Stigma against people who
-use drugs is real in clinical settings, even though it shouldn't be.
+use drugs persists in clinical settings, even though it shouldn't.
 
 If you encounter that:
 

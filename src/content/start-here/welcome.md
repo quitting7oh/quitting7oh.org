@@ -22,7 +22,7 @@ Those concentrated synthetics, 7-OH, [pseudo](/compounds/pseudo),
 [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
 products built around them, are what this site is mostly about.
 
-## What this site is
+## About this site
 
 This site is a calm, organized reference for getting off 7-OH and
 related kratom synthetics, and the medical and self-care tools people
@@ -40,7 +40,7 @@ There are no ads, no sponsors, no products being sold, no analytics
 tracking you, and no monetization of any kind. This exists because the
 people who built it wanted the resource they wished they'd had.
 
-## What this site is not
+## Scope and disclaimers
 
 - **Not medical advice.** Everything here is community-compiled
   information. It is a starting point for your own research and a
@@ -78,9 +78,9 @@ single most useful page for the next hour.
 
 For real-time help, live conversation, and the people behind the writing:
 
-- **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh) —
+- **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh),
   the active, real-time community
-- **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) —
+- **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh/),
   searchable, slower, good for stories and questions you want to keep
   around
 

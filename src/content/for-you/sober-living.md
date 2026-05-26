@@ -1,6 +1,6 @@
 ---
 title: "Sober Living Homes"
-description: "What sober living actually is, the NARR quality levels, how to find a legitimate one, what it costs, red flags for predatory homes, and how Oxford House differs."
+description: "Sober living, defined: NARR quality levels, how to find a legitimate one, what it costs, red flags for predatory homes, and how Oxford House differs."
 category: "for-you"
 last_updated: "2026-05-25"
 sort: 7
@@ -10,7 +10,7 @@ A sober living home is a structured, substance-free residence, somewhere between
 
 For some people, sober living is the missing piece between a structured treatment program and a full return to whatever they came from. For others, it's not needed. This page is the practical version: what it is, how to find a good one, what to be wary of, and what it costs.
 
-## When sober living makes sense
+## Where sober living fits
 
 A few common patterns where sober living is a good fit:
 
@@ -22,7 +22,7 @@ A few common patterns where sober living is a good fit:
 
 Sober living is not magic, and it's not for everyone. Some people do better with their own apartment plus an intensive outpatient program; some thrive in the shared structure. The choice should match your situation.
 
-## Who you'll be living with
+## The other residents
 
 A sober living home, by design, puts you in a house with other people in early recovery. That's part of what makes the model work: shared experience, peer accountability, the "I'm not the only one going through this" frame. It's also where the model is hardest, and where the variance between a great house and a rough one mostly lives.
 
@@ -35,7 +35,7 @@ People in early recovery (you included) are often:
 
 A well-functioning house turns this into something useful: people who get it, structure that holds, accountability grounded in shared experience. A poorly-functioning house turns it into chaos that's actively bad for your recovery, sleep loss, environmental triggers, drama that pulls focus from your own work, sometimes outright access to substances through other residents. Picking the wrong house is worse than picking no house.
 
-That argues for **careful vetting of specific houses**, not just confirming a home meets the formal criteria. The [How to find a legitimate one](#how-to-find-a-legitimate-one) section below covers the formal vetting (NARR certification, referral conflicts, rules and contracts). The equally important informal vetting:
+That argues for **careful vetting of specific houses**, not just confirming a home meets the formal criteria. The [Finding a legitimate home](#finding-a-legitimate-home) section below covers the formal vetting (NARR certification, referral conflicts, rules and contracts). The equally important informal vetting:
 
 - **Visit before you commit.** Spend an hour in the common areas. Calm or chaotic? People engaged with each other or holed up in their rooms? How does the house manager handle the visit?
 - **Talk to current residents, ideally away from staff.** "How long have you been here? What's the rhythm like? What's the hardest part of this specific house?" Honest answers from a current resident tell you more than a tour does.
@@ -80,7 +80,7 @@ The **[National Alliance for Recovery Residences (NARR)](https://narronline.org)
 
 Higher levels are not "better" in general, they're appropriate for people who need more structure. Many people land at Level I or II and do well; others need a Level III or IV environment to start.
 
-## How to find a legitimate one
+## Finding a legitimate home
 
 Sober living is unevenly regulated. Some states have robust oversight; others have almost none. That regulatory patchwork creates space for both excellent homes and exploitative ones. **Vetting matters.**
 
@@ -151,7 +151,7 @@ The trade-off is that quality depends heavily on the specific house's current re
 
 If you're considering sober living and cost is a concern, Oxford House is the option most worth investigating first.
 
-## What to expect, briefly
+## Common features, briefly
 
 Common features of most sober living homes:
 

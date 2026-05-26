@@ -79,7 +79,7 @@ prescriber tends to go.
 > **[MAT & Your Professional License](/for-you/mat-and-your-job)**
 > before they choose a medication or disclose to a regulator.
 
-## How to pay for treatment
+## Paying for treatment
 
 This is where many families get stuck. The headline: there are more paths than most people realize.
 
@@ -118,7 +118,7 @@ The [VA](https://www.va.gov/health-care/health-needs-conditions/substance-use-pr
 - **[findtreatment.gov](https://findtreatment.gov)**: official SAMHSA treatment locator. Searchable by zip code, filterable by insurance, level of care, MAT availability, and special populations.
 - **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline): 1-800-662-4357**: free, confidential, 24/7. Real humans who will give referrals based on zip and insurance. This is the single most useful phone number on this page.
 
-## How to spot predatory treatment programs
+## Spotting predatory programs
 
 The treatment industry has real warning signs. Some patterns to recognize:
 
@@ -130,7 +130,7 @@ The treatment industry has real warning signs. Some patterns to recognize:
 - **Refusing or banning MAT as a matter of policy.** A residential program that categorically prohibits Suboxone, methadone, or any opioid-replacement medication, regardless of what the patient or their prescriber thinks is right, is an ideological stance, not a clinical one. It removes a path that works for many people. Worth questioning before committing.
 - **Aftercare that's vague or absent.** Ask what happens on day 31. Real programs have aftercare plans, alumni structures, and concrete continuing-care recommendations. Programs that send people home with no plan have much higher relapse rates.
 
-## How to support without controlling
+## Supporting without controlling
 
 Once they've decided to seek help, the line between "help" and "control" can blur fast. Things that almost always help:
 

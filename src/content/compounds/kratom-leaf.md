@@ -1,6 +1,6 @@
 ---
 title: "Kratom Leaf & Mitragynine"
-description: "What kratom actually is, what mitragynine does in the body, how it relates to 7-OH, and why concentrated 7-OH products are not the same thing as leaf."
+description: "Kratom basics, what mitragynine does in the body, how it relates to 7-OH, and why concentrated 7-OH products are not the same thing as leaf."
 category: "compounds"
 last_updated: "2026-05-25"
 sort: 1
@@ -30,7 +30,7 @@ sort: 1
   terms, even though the marketing often blurs them. This site is
   about quitting the concentrated 7-OH products.
 
-## What kratom is (start here)
+## Kratom basics (start here)
 
 **Kratom is a leaf** from a tree (*Mitragyna speciosa*) native to
 Thailand, Malaysia, Indonesia, and other parts of Southeast Asia.
@@ -79,7 +79,7 @@ the plant is much more recent: roughly the last fifteen years.
   that don't naturally occur in leaf, categorically different from
   the first two and the focus of the rest of this site.
 
-## What's actually in the leaf
+## Leaf composition
 
 Dried *Mitragyna speciosa* leaf contains **dozens of alkaloids**, a
 chemistry term for naturally-occurring nitrogen-containing plant
@@ -185,7 +185,7 @@ that matters here:
   No published human PK study has dosed isolated 7-OH as a single
   agent, a real evidence gap.
 
-## How leaf becomes 7-OH: three different pathways
+## From leaf to 7-OH: three pathways
 
 This is the section that matters most for understanding the
 discourse around these products. There are **three distinct ways**
@@ -231,9 +231,9 @@ effect is mitragynine itself vs. converted 7-OH, and whether
 "prodrug" framing applies in humans. One other thing: in mice,
 mitragynine's respiratory-depression effect plateaus at
 higher doses because conversion to 7-OH **saturates**, while direct
-7-OH dosing is dose-linear ([Berthold 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9314834/)) —
-a mechanistic argument for why oral leaf has a self-limiting opioid
-effect that purified 7-OH does not.
+7-OH dosing is dose-linear ([Berthold 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9314834/)).
+That's a mechanistic argument for why oral leaf has a self-limiting
+opioid effect that purified 7-OH does not.
 
 ### 3. In manufacturing
 

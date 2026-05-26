@@ -31,7 +31,7 @@ the single-shot-exit use case, see **[Using a single shot as an exit
 from long-term Suboxone](#using-a-single-shot-as-an-exit-from-long-term-suboxone)**
 below.
 
-## What they are
+## Sublocade and Brixadi: overview
 
 **Sublocade** ([approved 2017](https://www.drugs.com/medical-answers/what-difference-between-sublocade-brixadi-3574098/)) is a monthly subcutaneous injection. The liquid forms a solid depot under the skin that releases buprenorphine over ~28 to 30 days. Doses: 100 mg or 300 mg.
 
@@ -44,7 +44,7 @@ below.
 - **Initiation requirements:** [Sublocade requires at least one dose of transmucosal buprenorphine and a 1-hour observation period before injection](https://www.drugs.com/medical-answers/what-difference-between-sublocade-brixadi-3574098/). Brixadi can be initiated with a single test dose of transmucosal buprenorphine, and weekly Brixadi can be used to start treatment in people new to buprenorphine.
 - **Dose strength:** Sublocade only comes in higher doses; Brixadi has lower-dose weekly options that some people find easier to start with.
 
-## How they work
+## Mechanism
 The depot under the skin releases buprenorphine into the bloodstream at a controlled rate. Once steady-state is reached (typically after a few injections), plasma buprenorphine levels stay relatively constant between doses, which avoids the daily peak-and-trough cycle of oral Suboxone. For people whose adherence is a problem with daily dosing, this is a significant practical advantage. For people who are stable on oral and want fine-grained dose control, it removes that flexibility.
 
 ## The very long half-life (this is the part that matters most)
@@ -81,7 +81,7 @@ for maintenance, but it's becoming a recognized strategy among
 MAT-experienced prescribers specifically for helping patients leave MAT
 cleanly.
 
-### Why it works
+### The mechanism
 
 The depot under the skin releases buprenorphine slowly. Monthly
 Sublocade's terminal half-life is 43 to 60 days; monthly Brixadi is
@@ -96,7 +96,7 @@ the bottom of a sublingual taper** (the 2 mg → 0 transition that
 chemistry rarely makes easier), this approach can convert that cliff
 into a multi-month glide.
 
-### What the evidence looks like so far
+### Evidence so far
 
 - A small [case series (Kazim et al., PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
   reported on patients on low-dose sublingual buprenorphine who were
@@ -108,14 +108,14 @@ into a multi-month glide.
   due to the gradual decline; others reported protracted symptoms that
   ramped up weeks after the last injection.
 
-Honest read: **the early signal is encouraging, the literature is
-still thin, and outcomes vary by individual.** It's not a guaranteed
-clean exit, and the multi-month tail is real. For the specific
-population this is aimed at, long-term sublingual Subs patients stuck
-at the bottom of a taper, it's the most promising new exit option in
-this space in years.
+**The early signal is encouraging, the literature is still thin, and
+outcomes vary by individual.** It's not a guaranteed clean exit, and
+the multi-month tail is genuine. For the specific population this is
+aimed at, long-term sublingual Subs patients stuck at the bottom of a
+taper, it's the most promising new exit option in this space in
+years.
 
-### When this might make sense
+### Where this fits
 
 - You've been on daily Suboxone for months or years and lower-dose
   sublingual tapers (1 mg, 0.5 mg, 0.25 mg) have repeatedly failed at
@@ -124,13 +124,13 @@ this space in years.
   of the taper, not ongoing anhedonia, PAWS, or instability that
   longer maintenance would address.
 - You have a prescriber willing to consider an off-label single-dose
-  injectable approach for taper purposes (a critical gating factor —
+  injectable approach for taper purposes (a critical gating factor;
   the injectable is administered in-clinic, so you cannot DIY this).
 - You're stable enough that a months-long tail of declining medication
   is something you can live through without it becoming a destabilizing
   uncertainty.
 
-### When this probably doesn't make sense
+### Where this doesn't fit
 
 - You're early in recovery and a short sublingual rapid taper hasn't
   been tried yet. Start there.
@@ -163,7 +163,7 @@ this space in years.
   bupe providers generally won't administer injectables, this
   requires an in-person clinic.
 
-### What to ask your prescriber
+### Questions for your prescriber
 
 - Have you used Sublocade or Brixadi as a single-dose taper tool
   before, and if so, what have outcomes looked like in your practice?
@@ -177,21 +177,21 @@ this space in years.
 - Is the cost covered by my insurance for this indication, and what's
   my out-of-pocket?
 
-## When these might make sense
+## When injectables make sense
 - **Adherence problems with daily oral dosing.** Missing oral Suboxone doses can lead to relapse; injections eliminate that risk.
 - **Stable maintenance over months to years** is the actual goal (rather than a short taper).
 - **High-stakes life situations** (incarceration transitions, custody arrangements, employment requirements) where consistent treatment is critical.
 - **Diversion or theft concerns** in a household.
 - **Cravings that aren't controlled by oral bupe** even at maximum dosing.
 
-## When these might not make sense
+## When injectables aren't the fit
 - **Short taper is the goal.** These medications make a fast, controlled exit much harder. Once injected, the long tail is unavoidable.
 - **You're still figuring out the right dose.** Dose changes are slow, monthly affairs rather than day-to-day adjustments.
 - **You're considering pregnancy.** Talk to your prescriber. Buprenorphine is generally considered acceptable in pregnancy, but the long-acting nature complicates things if changes are needed.
 - **You haven't been stable on oral bupe for at least a week.** [Sublocade specifically requires this](https://reference.medscape.com/drug/sublocade-brixadi-buprenorphine-long-acting-injection-1000211).
 - **Cost or access issues.** [Brixadi requires REMS-certified providers and pharmacies](https://mcgs.bcbsfl.com/MCG?mcgId=09-J2000-68&pv=false).
 
-## What to ask if your prescriber suggests one
+## Questions if your prescriber suggests one
 - What's the long-term plan? Indefinite maintenance, or a defined endpoint?
 - If I want to stop, what does that look like, and how long will I feel effects after the last injection?
 - Why this over continuing oral bupe, in my specific situation?

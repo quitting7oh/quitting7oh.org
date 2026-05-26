@@ -1,6 +1,6 @@
 ---
 title: "What to Expect: Addiction, Withdrawal & the Long Road of Recovery"
-description: "What dependence on 7-OH and kratom synthetics actually looks like from the outside, what withdrawal does to the brain and body, and the long PAWS tail almost nobody warns families about."
+description: "Dependence on 7-OH and kratom synthetics as it looks from the outside, what withdrawal does to the brain and body, and the long PAWS tail almost nobody warns families about."
 category: "for-loved-ones"
 last_updated: "2026-05-25"
 sort: 2
@@ -10,13 +10,13 @@ The most useful thing you can have right now is a realistic picture of what your
 
 ## Addiction is not a moral failing
 
-The lying, the stealing, the broken promises, the disappearing, those behaviors are real, and they cause real harm to the people around them. They are also driven by a hijacked brain, not by who your person is. Opioid dependence rewires the reward and survival systems so completely that getting the next dose stops feeling like a choice and starts feeling like breathing. The brain is doing what it was built to do when it learned that this substance is more important than food or safety.
+The lying, the stealing, the broken promises, the disappearing: those behaviors happen, and they cause real harm to the people around them. They are also driven by a hijacked brain, not by who your person is. Opioid dependence rewires the reward and survival systems so completely that getting the next dose stops feeling like a choice and starts feeling like breathing. The brain is doing what it was built to do when it learned that this substance is more important than food or safety.
 
 This doesn't mean your loved one isn't responsible for repairing harm later. It means that "if they loved me they would stop" is, biologically, the wrong frame. The dependence is loud and ugly, and it does not erase who they are.
 
 The next several sections walk through the specific patterns families see, the dishonesty, the disappearing and secrecy, the financial side, and the broken promises around quitting. The point isn't to catalog grievances; it's to give you a picture concrete enough that you can tell what's the dependence and what's the person, and to stop wondering whether what you're seeing is normal. It is.
 
-## What the dishonesty pattern usually looks like
+## The dishonesty pattern
 
 Lying about use is one of the most consistent things families report, and it's where the gap between the person you know and the person in dependence shows up most plainly. The pattern typically includes:
 
@@ -28,7 +28,7 @@ Lying about use is one of the most consistent things families report, and it's w
 
 The lying isn't strategic the way it looks from the outside. It's protective of access, the dependence treats anyone who might interrupt use as a threat, and the brain produces whatever explanation, denial, or counterattack will end the interruption fastest. The same person, sober and a year out, will often be horrified at the lying patterns they ran.
 
-## What the disappearing and secrecy pattern usually looks like
+## Disappearing and secrecy
 
 A second pattern that hits families hard: the person becomes harder to find, harder to reach, and increasingly compartmentalized. The shape:
 
@@ -41,7 +41,7 @@ A second pattern that hits families hard: the person becomes harder to find, har
 
 Same mechanism as the dishonesty pattern: the dependence prioritizes uninterrupted access to use. Privacy that used to be normal-amount-of-privacy starts being load-bearing for the use itself. The shrinking world isn't disinterest in you; it's the brain economizing time and attention around the substance.
 
-## What the financial pattern usually looks like
+## The financial pattern
 
 The financial side is the one most families can document, because the receipts exist whether the person admits to them or not. The pattern typically includes:
 
@@ -53,7 +53,7 @@ The financial side is the one most families can document, because the receipts e
 
 Same root cause: **dependence rewires priorities.** The substance becomes a daily survival need, and the brain produces increasingly creative justifications for spending on it. Knowing this doesn't mean you have to fund the use (see [Boundaries Without Punishment](/for-loved-ones/boundaries)), but it helps to understand what you're seeing.
 
-## What the broken-promises pattern usually looks like
+## Broken promises
 
 Most families have heard "I'm done" or "I'm tapering" or "this is the last time" more than once. That repetition isn't proof your loved one is lying to you on purpose. The pattern usually includes:
 
@@ -64,7 +64,7 @@ Most families have heard "I'm done" or "I'm tapering" or "this is the last time"
 
 The promise was sincere when it was made. The dependence is what unmakes it. This matters because it changes what you do with the next promise: you don't punish them for breaking it (they were going to break it; the dependence does that), and you also don't believe it without seeing evidence behind it. The [Boundaries](/for-loved-ones/boundaries) page and the CRAFT section in [How to Talk](/for-loved-ones/how-to-talk) cover the practical version of how to navigate this without pretending things are fine or burning the relationship down.
 
-## What withdrawal looks like
+## The shape of withdrawal
 
 Withdrawal from [7-OH](/compounds/7-oh) and kratom synthetics is opioid-like. The most common symptoms:
 

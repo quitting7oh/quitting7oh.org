@@ -10,7 +10,7 @@ You're here because you're thinking about using. Not because you wanted
 to, because the urge crept up and now it's loud.
 
 **That feeling has a name.** The community calls it **the "fuck its."**
-It's a real, known craving state, and it doesn't mean you're failing.
+It's a known craving state, and it doesn't mean you're failing.
 You're here, reading this. That counts.
 
 ## One thing first
@@ -42,7 +42,7 @@ numbers, Poison Control, DV Hotline, Childhelp, on
 [Crisis Hotlines](/resources/crisis-hotlines) or the Crisis button
 in the corner of any page.
 
-## What this feeling is
+## Naming the feeling
 
 The "fuck its" aren't the same as an early-withdrawal craving. Early
 cravings feel physical, your body is loud, you know what it wants,
@@ -83,7 +83,7 @@ In order. **Real humans first. Digital community is the fallback.**
    from the next room. Walk in.
 2. **A neighbor or friend you can physically get to**, drive over,
    walk over, show up.
-3. **A meeting, today** —
+3. **A meeting, today.**
    [SMART Recovery meetings](https://meetings.smartrecovery.org/meetings/)
    (online + in-person, no 12-step framework if that's not your thing)
    or [NA](https://www.na.org/meetingsearch/) (in-person + online).
@@ -171,7 +171,7 @@ so the don't-mix and
 [Never Use Alone](https://neverusealone.com) routing is in front
 of you before you need it.
 
-## Why you might be feeling this right now
+## When cravings tend to spike
 
 Cravings cluster predictably:
 

@@ -24,7 +24,7 @@ Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is t
 
 [Mitragynine is a partial mu-opioid receptor agonist that, unlike morphine, does not activate the β-arrestin-2 respiratory depression pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/), and its withdrawal profile is generally milder than full agonist withdrawal. [Mitragynine has a long plasma half-life of 24+ hours](https://en.wikipedia.org/wiki/Mitragynine), which helps with tapering: blood levels stay relatively stable between doses.
 
-## Why strain matters
+## Strain selection
 Kratom strains vary in their mitragynine-to-7-OH ratio based on leaf maturity at harvest:
 
 - **Red vein** comes from the most mature leaves and has [higher 7-OH content](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom). More sedating, more opioid-like effects. **Most useful in early taper** when you're stepping down from concentrated 7-OH.

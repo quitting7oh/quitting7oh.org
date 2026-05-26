@@ -1,6 +1,6 @@
 ---
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
-description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what actually helps, labeled by evidence level."
+description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what helps, labeled by evidence level."
 category: "post-acute"
 last_updated: "2026-05-25"
 sort: 1
@@ -16,12 +16,12 @@ lingering blahness here and there but generally good. **Both are
 normal.** This page is to help you understand what's happening either
 way.
 
-If what you're feeling right now is *more* than fine —
+If what you're feeling right now is *more* than fine,
 clear, optimistic, energized, almost euphoric, that's the
 [pink cloud](/post-acute/pink-cloud), and it has its own page on
 how to use the window and what tends to come after.
 
-## What PAWS actually is
+## PAWS: definition and scope
 
 PAWS, **post-acute withdrawal syndrome**, is the cluster of
 psychological, mood, sleep, and cognitive symptoms that can persist
@@ -48,7 +48,7 @@ appear to influence it:
 - Genetics, baseline mental health, sleep quality, support system
 - Lifestyle: nutrition, exercise, stress, connection
 
-**The honest range:** some people feel close to normal within 2 to 4
+**The range:** some people feel close to normal within 2 to 4
 weeks of acute ending. Some have lingering low-grade symptoms for
 months. Most are somewhere in between. None of those outcomes is
 wrong. Don't compare your timeline to someone else's.
@@ -86,8 +86,8 @@ You may have some, all, or none of these:
 - **Sleep disruption.** Trouble falling asleep, broken sleep, vivid
   dreams, fatigue that sleep doesn't fix. See
   [Sleep Recovery](/post-acute/sleep-recovery) for the focused page.
-- **Anhedonia and depression.** Things that used to feel good —
-  food, music, sex, hobbies, feel muted or empty. See
+- **Anhedonia and depression.** Things that used to feel good
+  (food, music, sex, hobbies) feel muted or empty. See
   [Depression and Anhedonia](/post-acute/depression-and-anhedonia)
   for the focused page on these symptoms, or
   [Dopamine Recovery](/post-acute/dopamine-recovery) for the
@@ -113,7 +113,7 @@ mostly like yourself, **that's a real outcome and it's becoming more
 common as people use better tools earlier in recovery.** This page is
 for the people who do hit rough patches; if you're not, enjoy it.
 
-## Why this happens (briefly)
+## The neurobiology, briefly
 
 Chronic opioid exposure produces measurable changes in the brain
 that take time to unwind:
@@ -160,7 +160,7 @@ When a wave hits, recognize it for what it is, ride it out, and trust
 that the next window is coming. Don't make big life decisions in a
 wave.
 
-## What's normal vs. what's concerning
+## Normal vs. concerning
 
 Use this to calibrate.
 
@@ -190,11 +190,11 @@ Use this to calibrate.
 Crisis numbers live on [Crisis Hotlines](/resources/crisis-hotlines)
 and in the **🆘 Crisis** button on every page.
 
-## What helps
+## Interventions
 
 Interventions cluster into three tiers, evidence-based,
-clinically used, and community-discussed, plus a "what to avoid"
-list. This page gives the overview; the focused pages own the detail.
+clinically used, and community-discussed, plus a list of things to
+avoid. This page gives the overview; the focused pages own the detail.
 
 ### Evidence-based
 
@@ -231,9 +231,9 @@ is the primary page. For getting a prescriber, see
 
 ### Community-discussed (limited evidence)
 
-Supplements that come up in recovery forums for PAWS symptoms —
+Supplements that come up in recovery forums for PAWS symptoms include
 magnesium, L-tyrosine, omega-3, vitamin D, B-complex, NAC,
-L-theanine, glycine, ashwagandha, rhodiola, and others. Evidence is
+L-theanine, glycine, ashwagandha, and rhodiola. Evidence is
 limited for all of these in the post-opioid recovery context
 specifically. Most are low-risk but several have real interaction
 profiles (L-tyrosine with MAOIs, ashwagandha with hyperthyroidism,
@@ -243,7 +243,7 @@ serotonergic interactions with SSRIs).
 the primary page, full breakdown by symptom, the interaction
 profiles, and the practical "don't stack everything at once" guidance.
 
-### What to avoid
+### Things to avoid
 
 - **Stimulant misuse to push through anhedonia.** Adderall without
   a prescription, high-dose caffeine, energy-drink cycles. Pushes
@@ -285,7 +285,7 @@ when your acute withdrawal from 7-OH ended. If you taper off bupe at
 week 8 of your recovery, expect PAWS-style symptoms in the weeks
 after, not "I'm 8 weeks clean and should be over this by now."
 
-### Some symptoms people attribute to PAWS are actually bupe
+### Some symptoms people attribute to PAWS are bupe side effects
 
 While on bupe, you may experience:
 
@@ -309,7 +309,7 @@ flat, blunted, or "fine but not really", that's likely the
 medication, not unhealing brain chemistry. Talk to your prescriber
 about whether your dose is higher than it needs to be.
 
-### What bupe doesn't address
+### Symptoms bupe doesn't address
 
 Suboxone covers the opioid receptor side of things. It does **not**
 address:
@@ -340,7 +340,7 @@ for *after* you've fully tapered off bupe and waited the full
 washout period (typically 7 to 14 days). See
 [Low-Dose Naltrexone](/other-tools/naltrexone-low-dose).
 
-### The honest framing
+### The trade-off, plainly
 
 For most people, bupe is a powerful tool that gets them off 7-OH
 safely with minimal acute suffering. The trade-off is that **the

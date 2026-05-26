@@ -36,7 +36,7 @@ SR-17018 (also called SR-17) is a biased mu-opioid agonist developed at Scripps 
 
 If 50 mg × 3 isn't enough even after increasing, or you're coming off stacked synthetics rather than 7-OH alone, ask on the [Discord](https://discord.gg/quitting7oh) or [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) before improvising. Community experience there is ahead of anything published.
 
-## Why these doses
+## Dose rationale
 
 There is no clinical dosing protocol for SR-17 in humans. The 50 mg × 3 starting point sits inside the range reported on [Bluelight](https://www.bluelight.org/community/threads/sr-17018-rc-opioid-detoxes.942039/) and [community guides on sr17018.org](https://sr17018.org/tapering): allergy-test dose under 10 mg, opioid-tolerant starting doses commonly 50 to 150 mg total daily, split across multiple administrations.
 
@@ -60,7 +60,7 @@ This is the hard part of using SR-17.
 
 - **No FDA oversight, no pharmaceutical-grade QC.** SR-17 is sold by [chemical suppliers operating outside pharmaceutical standards](https://www.concreteconfessionalblog.com/post/sr-17018-great-promise-a-warning).
 - **Demand a third-party COA.** Reputable research-chemical vendors provide HPLC or NMR analysis. Less reputable ones provide nothing or fake certificates.
-- **Contamination risk is real.** Designer opioids in the same chemical family have appeared mislabeled or as adulterants. Brorphine specifically [carries severe respiratory-depression risk despite producing little euphoria](https://en.wikipedia.org/wiki/SR-17018) — the failure mode you don't want.
+- **Contamination risk is real.** Designer opioids in the same chemical family have appeared mislabeled or as adulterants. Brorphine specifically [carries severe respiratory-depression risk despite producing little euphoria](https://en.wikipedia.org/wiki/SR-17018). That's the failure mode you don't want.
 - **Batch-to-batch variability.** Without lab equipment, you're trusting the vendor's stated concentration. Some readers have reported significant variability across batches.
 
 ## MGM-15 and the other synthetics
@@ -86,7 +86,7 @@ Practical reality:
 
 This isn't legal advice.
 
-## Honest tradeoffs
+## Tradeoffs
 
 **In favor:**
 
@@ -112,7 +112,7 @@ If you're going to use it, **plan the post-SR phase as carefully as the SR phase
 - Severe chest pain or irregular heartbeat
 - Any thoughts of self-harm or suicide. Call or text **988**.
 
-## Why people choose SR-17 (the pharmacology)
+## Pharmacology: why people choose SR-17
 
 SR-17 is a [biased partial agonist](https://en.wikipedia.org/wiki/SR-17018) at the mu-opioid receptor with strong selectivity for G-protein signaling over β-arrestin2 recruitment. The G-protein-vs-β-arrestin distinction matters because the analgesic and reward effects of opioids run primarily through G-protein signaling, while many of the worst side effects (respiratory depression, severe withdrawal, fast tolerance buildup) involve β-arrestin signaling. Compounds biased toward G-protein signaling deliver the helpful effects with fewer of the harmful ones, in theory.
 

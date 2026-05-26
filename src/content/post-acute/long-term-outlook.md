@@ -1,6 +1,6 @@
 ---
 title: "Long-Term Outlook"
-description: "What recovery from 7-OH dependence actually looks like, honest about how hard it is, honest about relapse, honest that the compound is new enough that the long-arc picture borrows from the broader opioid-recovery literature, and honest that the people who got there did it one day at a time."
+description: "What recovery from 7-OH dependence looks like, plainly stated: how hard it is, how relapse fits, why the long-arc picture borrows from the broader opioid-recovery literature, and the reality that the people who got there did it one day at a time."
 category: "post-acute"
 last_updated: "2026-05-25"
 sort: 8
@@ -12,7 +12,7 @@ the one to read first.*
 
 Do you remember the day you knew it had to stop? The day you looked
 in the mirror and thought *holy fuck, what happened to me.* Or
-maybe you couldn't look at all. Maybe you just kept your eyes down
+maybe you couldn't look at all. Maybe you kept your eyes down
 and reached for the bottle anyway.
 
 The opposite of that day is possible.
@@ -32,7 +32,7 @@ literature and labeling clearly.
 What follows isn't the inspirational-poster version. It's the one
 that earns the second mirror.
 
-## How bad this actually is
+## The severity, plainly
 
 7-OH dependence is severe. This isn't kratom-leaf-habit territory.
 The concentrated synthetic, and the stacked products built around
@@ -66,8 +66,8 @@ Addiction](https://onlinelibrary.wiley.com/doi/10.1111/add.16728)
 documents the rapid emergence of semi-synthetic 7-OH consumer
 products and characterizes them as de facto opioids with unknown
 human-safety profiles. There is no controlled human clinical
-literature specifically describing 7-OH's compulsive-use pattern —
-the community observation is ahead of the published clinical
+literature specifically describing 7-OH's compulsive-use pattern.
+The community observation is ahead of the published clinical
 science.
 
 You're not weak for not being able to white-knuckle this. The
@@ -78,18 +78,18 @@ the property that made you keep using it.
 
 Most people who recover from substance dependence don't do it in
 one straight line. That's not a moral failing or a sign that
-treatment doesn't work. It's the actual shape of the thing.
+treatment doesn't work. It's the shape of the thing.
 
 NIDA frames it this way: [relapse rates for substance use disorders
 run 40 to 60%](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery),
 similar to relapse rates for other chronic medical conditions like
 diabetes, hypertension, and asthma. **Nobody calls a person with
 diabetes "weak" when their blood sugar slips.** They adjust the
-treatment plan. The chronic-disease model is the honest one for
-opioid dependence too.
+treatment plan. The chronic-disease model fits opioid dependence
+too.
 
-In the first weeks and months specifically, relapse rates are
-higher than that average, the early window is the highest-risk
+In the first weeks and months, relapse rates are
+higher than that average. The early window is the highest-risk
 stretch. People in this community know this from inside it. The
 fuck-its hit at week 3 and week 6 and month 4 and they hit harder
 than they should.
@@ -108,16 +108,16 @@ If you slipped recently and you're reading this:
 practical "what now" content, and
 [Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)
 covers why withdrawal can return fast after a re-use. The neurobiology
-of recovery doesn't reset to zero just because you used once or twice
+of recovery doesn't reset to zero because you used once or twice
 or twenty times. The receptors that were rebuilding are still
 rebuilding. The work that got you the abstinence in the first place
 is still in you.
 
-## What we actually know about long-term outcomes
+## Long-term outcomes, source-checked
 
-The honest scientific picture, source-checked:
+The scientific picture:
 
-- **Long-term remission is real and increases over time.** The
+- **Long-term remission happens and increases over time.** The
   [Recovery Research Institute review of 28 longitudinal opioid use
   disorder studies](https://www.recoveryanswers.org/research-post/28-longitudinal-studies-on-outcomes-for-opioid-use-disorder-patients/)
   finds sustained-remission rates climbing across years, with
@@ -217,8 +217,9 @@ back at you.
 
 The people in this community who are a year out, and the broader
 opioid-recovery community with decades of experience coming off
-heroin, fentanyl, prescription opioids before this compound existed
-— did exactly this. They did not have some quality you don't have.
+heroin, fentanyl, and prescription opioids before this compound
+existed, did exactly this. They did not have some quality you
+don't have.
 They did not figure out a trick. They showed up the day after the
 day they wanted to use, and then they did it again. And again. And
 then suddenly they were further out than they'd been in years.

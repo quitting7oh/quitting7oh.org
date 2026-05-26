@@ -1,5 +1,5 @@
 ---
-title: "For You — Start Here"
+title: "For You: Start Here"
 description: "Practical resources for the person in recovery, treatment, work protections, mutual aid, and sober living. Meets you wherever you are."
 category: "for-you"
 last_updated: "2026-05-25"
@@ -18,7 +18,7 @@ This section is the practical-resources version. The rest of this site covers wh
 
 **This is not a script.** Different people land in different combinations of treatment, MAT, mutual aid, and self-management. None of those paths is "the right one" in general; the right one is the one you'll use.
 
-## What's in this section
+## Section overview
 
 - **[At-Home Treatment](/for-you/at-home-treatment)**: the path this site is built around: the four community-validated approaches (cold turkey with helper meds, leaf taper, Suboxone, SR-17), the tools to have on hand, and when at-home isn't the right fit.
 - **[Rehabilitation Centers](/for-you/rehabilitation-centers)**: detox, residential, PHP, IOP, and outpatient, plus how insurance parity works under [MHPAEA](https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/mental-health-and-substance-use-disorder-parity), free and low-cost options, and what to expect when you call.

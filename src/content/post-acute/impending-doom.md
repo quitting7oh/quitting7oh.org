@@ -14,17 +14,17 @@ be reasoned with.
 
 It's a recognized symptom of acute withdrawal and PAWS, not
 something you're imagining, not a sign you're losing it. Plenty of
-people in this community have hit it. **It's awful. It does end** —
-though for some it ends in an hour, and for others it sits as a
-low-grade background dread that doesn't fully lift for days or
-weeks. Both shapes are real; this page covers both.
+people in this community have hit it. **It's awful. It does end.**
+For some it ends in an hour, and for others it sits as a low-grade
+background dread that doesn't fully lift for days or weeks. This
+page covers both shapes.
 
 The actionable stuff is first, those techniques are what to reach
-for in a wave. If yours is the sustained kind that isn't really
+for in a wave. If yours is the sustained kind that isn't
 wave-shaped, skip down to
 [When it doesn't pass quickly](#when-it-doesnt-pass-quickly--the-sustained-version).
 
-## What to do in the next ten minutes
+## Immediate interventions (next 10 minutes)
 
 These are interventions you can do *now*, alone, without a
 prescription. They don't fix the underlying neurobiology, they take
@@ -35,10 +35,10 @@ the edge off the wave.
 Splash cold water on your face. Hold an ice pack to your forehead and
 cheeks. Get in a cold shower if you can manage it. This activates the
 [mammalian diving response, which produces robust vagal activation
-and slows the heart](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.14183) —
-a meta-analysis of the literature confirms the effect is real and
-moderate-to-large. It's the fastest physiological intervention you
-have access to.
+and slows the heart](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.14183).
+A meta-analysis of the literature confirms a moderate-to-large
+effect. It's the fastest physiological intervention you have access
+to.
 
 ### 2. Slow your breathing
 
@@ -63,7 +63,7 @@ long exhales is enough to start.
 
 Out loud, ideally. "This is impending doom. It's a withdrawal symptom.
 It's going to pass." Naming an emotional state, [putting it into
-words](https://journals.sagepub.com/doi/10.1111/j.1467-9280.2007.01916.x) —
+words](https://journals.sagepub.com/doi/10.1111/j.1467-9280.2007.01916.x),
 measurably reduces amygdala activity and increases prefrontal
 regulation, per Lieberman's foundational fMRI work. "Name it to tame
 it" is one of the few pop-psychology slogans with real neuroscience
@@ -107,7 +107,7 @@ If you've decided to use to make this stop,
 [Never Use Alone](https://neverusealone.com) (**1-800-484-3731**)
 stays on the call with you and sends EMS if you stop responding.
 
-## What it actually is
+## The neurobiology
 
 The biology, briefly, for when you're not in the middle of a wave.
 
@@ -133,8 +133,8 @@ systems are out of balance at once:
   contributes to the "wired but exhausted" and brain-zap quality
   that people in this community describe.
 
-In sum: your body is in a state that mimics genuine catastrophe —
-elevated heart rate, racing thoughts, cortisol surges, sympathetic
+In sum: your body is in a state that mimics genuine catastrophe.
+Elevated heart rate, racing thoughts, cortisol surges, sympathetic
 overdrive, without any external catastrophe to attach it to. The
 brain finds something to attach the feeling to (the future, your
 health, your relationships, the world) because that's what brains
@@ -147,7 +147,7 @@ This is also why impending doom often hits at predictable times:
 nervous system), or **after stress** (already-frayed regulation
 gives way).
 
-## What helps over time
+## Longer-term changes that help
 
 The general non-medication baseline-movers, sleep, exercise, CBT,
 social contact, regular meals, sit on the umbrella
@@ -192,7 +192,7 @@ What people who've been in the sustained version say has helped:
   caffeine, after stress) and when it's lighter. Patterns help
   you stop attributing the doom to whatever's in front of you when
   it spikes.
-- **Don't catastrophize the symptom itself.** "This is just my
+- **Don't catastrophize the symptom itself.** "This is my
   life now" is a depressive overlay on top of impending doom, not
   the doom itself. If that thought is loud, see
   [Depression and Anhedonia](/post-acute/depression-and-anhedonia)
@@ -210,7 +210,7 @@ What people who've been in the sustained version say has helped:
 
 The sustained version is the same neurobiology as the wave version,
 stretched out over a longer window. The endpoint is the same; the
-path there is just slower.
+path there is slower.
 
 ## Pharmacological options
 
@@ -267,7 +267,7 @@ A normal impending-doom presentation in withdrawal or PAWS:
 
 A bad impending-doom wave is awful and almost always passes within
 hours. A wave that includes suicidal ideation is a separate medical
-issue and needs prompt help. The two can co-occur, opioid PAWS does
+issue and needs prompt help. The two can co-occur. Opioid PAWS does
 include elevated suicidal-ideation risk, especially in the first
 months, and you don't have to be sure which one you're having to
 make the call.

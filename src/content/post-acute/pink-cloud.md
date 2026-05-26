@@ -12,7 +12,7 @@ After the worst of acute withdrawal, some people find themselves in a stretch wh
 
 It's real. It's normal. And it's a window, not just to enjoy, but to use.
 
-## What it is
+## The experience
 
 Sudden optimism. Sometimes outright euphoria. Energy that feels almost surprising. Gratitude. A sense that things are clicking, that the obstacles you've been staring at are smaller than they looked. Some people describe it as the first time they've felt good in years.
 
@@ -50,7 +50,7 @@ A list of things people in early recovery sometimes regret committing to during 
 
 None of these is a rule. They're what other people have learned the hard way.
 
-## Why it happens
+## Hypothesized mechanisms
 
 Several reasonable hypotheses. None of them is a settled explanation:
 
@@ -62,7 +62,7 @@ Several reasonable hypotheses. None of them is a settled explanation:
 
 These probably contribute together. The pink cloud doesn't have a clean clinical literature behind it; it's community vocabulary for a recognizable experience, and the mechanisms are educated guesses.
 
-## When it happens, how long it lasts, what comes after
+## Timing, duration, and the fade
 
 The community describes the pink cloud appearing between the end of acute withdrawal (a week or two in) and a couple of months into recovery. Duration varies: days for some, weeks for many, months for a minority. Some experience it more than once. **There is no peer-reviewed timeline.** Anything specific you see, "typically three to four weeks", is community observation framed as data.
 
@@ -74,7 +74,7 @@ And, the part that matters: **the routines, relationships, physical setup, and r
 
 If the come-down hits harder than expected, [Long-Term Outlook](/post-acute/long-term-outlook) is the page on how this looks over months. The short version: you stack days. Good days don't mean you're done. Bad days don't mean you're back at zero. Both are weather.
 
-## What if you didn't get one
+## If you didn't get one
 
 Not everyone gets a pink cloud. Some people feel steadily okay through early recovery without the euphoric stretch. Some feel rough the whole time and then start feeling normal without any particular high point. Whatever you're getting is fine, the absence of a pink cloud doesn't predict a worse recovery, and there's no data to suggest it does. Recovery is just moving through you differently.
 

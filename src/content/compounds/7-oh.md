@@ -16,15 +16,15 @@ alkaloid" framing implies, the practical reality is that 7-OH binds the
 mu-opioid receptor, produces opioid-class dependence, and goes through
 opioid-class withdrawal when you stop.
 
-The good news, if there is good news: **7-OH's pharmacology is actually
+The good news, if there is good news: **7-OH's pharmacology is
 favorable for coming off it.** Short half-life, mu-dominant, fast
 clearance, the same things that make it easy to get hooked also make
 it tapereable in days rather than weeks once you commit to stopping.
 
-## What it is
+## Overview
 
 **7-hydroxymitragynine** is one of the natural alkaloids of the kratom
-plant (*Mitragyna speciosa*), where it appears in **trace amounts** —
+plant (*Mitragyna speciosa*), where it appears in **trace amounts**:
 typically well under 1% of total leaf alkaloid content. Mitragynine,
 the main alkaloid, dominates leaf at 40-66%. So 7-OH-as-it-exists-in-leaf
 is a minor character.
@@ -40,7 +40,7 @@ obscures this scale difference; the dependence reality doesn't.
 
 - **Mu-opioid receptor:** at the human µ-receptor, [7-OH binds with
   K<sub>i</sub> around 78 nM and acts as a partial agonist](https://pmc.ncbi.nlm.nih.gov/articles/PMC7923387/)
-  (Hiranita et al. 2022, CHO-hMOR). Morphine actually binds tighter in
+  (Hiranita et al. 2022, CHO-hMOR). Morphine binds tighter in
   the same assay (K<sub>i</sub> ~4 nM), but it's a full agonist with
   higher E<sub>max</sub>. The "13× more potent than morphine" claim
   that circulates in secondary sources is from rodent antinociception
@@ -71,7 +71,7 @@ users redose every 3–6 hours during waking hours, and many wake up at
 night needing a dose. That redosing cadence is the most visible
 behavioral signature of a 7-OH habit.
 
-## How it differs from kratom leaf
+## 7-OH vs. kratom leaf
 
 Calling 7-OH "kratom" is technically true and practically misleading.
 The differences that matter:
@@ -89,14 +89,14 @@ The differences that matter:
 | **Bupe-induction profile** | Straightforward | Straightforward (12-18 h) |
 
 The shorthand: **kratom leaf is to 7-OH roughly what poppy tea is to
-heroin**, same plant family, vastly different concentration and
+heroin**. Same plant family, vastly different concentration and
 delivery. The pharmacology that makes 7-OH attractive (faster onset,
 stronger effect, smaller dose to carry around) is the same pharmacology
 that makes dependence form quickly.
 
 This is also why [tapering off concentrated 7-OH using plain leaf](/other-tools/tapering-with-leaf)
-is a real, planned protocol used by some people in this community —
-the leaf delivers vastly lower concentrations of the same family of
+is a planned protocol used by some people in this community. The
+leaf delivers vastly lower concentrations of the same family of
 alkaloids, so stepping down is a meaningful taper rather than a switch.
 
 ## Withdrawal profile
@@ -138,7 +138,7 @@ for why this overlay makes bupe alone feel insufficient for some
 people, and [Helper Medications](/other-tools/helper-meds-info) for
 what addresses the non-opioid side.
 
-## Why 7-OH is actually tapereable
+## Tapereability, mechanistically
 
 Counter-intuitively, the same pharmacology that makes 7-OH addictive is
 what makes coming off it relatively clean:
@@ -224,7 +224,7 @@ which don't survive the pharmacology:
   Trace mitragynine appears in some research contexts, but no
   concentrated 7-OH product has FDA approval as of this writing.
 
-## What to do if you're trying to stop
+## If you're trying to stop
 
 See [Paths Off 7-OH](/start-here/paths-off) for the six ranked paths this community has used, in the order to try them. The [Withdrawal Help](/start-here/withdrawal-help) page covers what to do hour-by-hour once you've picked one.
 

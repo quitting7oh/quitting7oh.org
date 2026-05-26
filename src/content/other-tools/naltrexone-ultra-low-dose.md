@@ -1,12 +1,12 @@
 ---
 title: "Ultra-Low-Dose Naltrexone (ULDN)"
-description: "Naltrexone at microgram-range doses taken alongside opioids, an investigational concept with thin and aging clinical evidence. What it is, what's been tried, why it isn't standard of care."
+description: "Naltrexone at microgram-range doses taken alongside opioids, an investigational concept with thin and aging clinical evidence. Overview, what's been tried, why it isn't standard of care."
 category: "other-tools"
 last_updated: "2026-05-25"
 sort: 10
 ---
 
-> **Honest framing up front.** ULDN is **investigational**, not
+> **Framing up front.** ULDN is **investigational**, not
 > standard of care. The clinical evidence is thin, mostly from the
 > mid-2000s, and never translated into an approved product. The
 > mechanism papers most often cited to explain why it should work
@@ -21,8 +21,8 @@ sort: 10
 > the protocol sometimes attracts.
 
 ULDN is the same molecule as [normal-dose naltrexone](/other-tools/naltrexone-normal-dose)
-used at doses **orders of magnitude smaller than [LDN](/other-tools/naltrexone-low-dose)**
-— typically in the microgram range rather than the milligram range.
+used at doses **orders of magnitude smaller than [LDN](/other-tools/naltrexone-low-dose)**,
+typically in the microgram range rather than the milligram range.
 At those doses it is hypothesized to behave differently again,
 selectively blocking one mode of opioid-receptor signaling while
 leaving the analgesic mode intact, and it has been studied
@@ -48,7 +48,7 @@ precipitate withdrawal. If you take a ULDN-sized dose (μg range)
 while opioid-free, you will probably feel nothing. Same molecule,
 very different doses, very different intended use.
 
-## What it is, and what the evidence actually shows
+## Overview and clinical evidence
 
 The most-cited clinical reports of ULDN-with-opioid all come from
 the mid-2000s pain-medicine literature:
@@ -62,7 +62,7 @@ the mid-2000s pain-medicine literature:
   morphine** at 10 μg and 100 μg twice daily; 100 μg BID showed the
   greatest analgesic improvement but the trial was underpowered
   (p=0.07).
-- **[Webster et al., *J Pain* 2006](https://pubmed.ncbi.nlm.nih.gov/17157780/)** —
+- **[Webster et al., *J Pain* 2006](https://pubmed.ncbi.nlm.nih.gov/17157780/)**,
   Phase III trial of "Oxytrex" (oxycodone combined with 1 μg
   naltrexone per tablet, 2–4 μg/day total) in 719 chronic low-back
   pain patients; reported about 55% less physical dependence
@@ -79,8 +79,8 @@ design.
 
 The mechanism story for ULDN has a real problem. The two
 [PLOS ONE papers from the Wang & Burns group (2008 and 2009)](https://pubmed.ncbi.nlm.nih.gov/18253501/)
-that proposed the **filamin A binding hypothesis**, the most
-specific and frequently-cited explanation for ULDN's selectivity —
+that proposed the **filamin A binding hypothesis** (the most
+specific and frequently-cited explanation for ULDN's selectivity)
 were [retracted by the journal in March 2022](https://pubmed.ncbi.nlm.nih.gov/35353861/)
 over data-integrity concerns. Content elsewhere that still presents
 the filamin A mechanism as established is citing retracted
@@ -169,7 +169,7 @@ Putting the framing in one box:
   whatever opioid you're on make this a tool that requires a
   prescriber.
 
-## What ULDN is not
+## Boundaries: what ULDN is not
 
 - **Not [LDN](/other-tools/naltrexone-low-dose).** Three orders of
   magnitude smaller, opposite timing relative to opioids,

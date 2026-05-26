@@ -11,8 +11,8 @@ sort: 4
 
 > **This is for 7-OH dependence only.** If you've been on MGM-15, MIT-A, pseudo, or stacked compounds, **these schedules will not work for you** and you'll get hurt trying. Long-acting synthetics and high-affinity binders need longer tapers because of their pharmacology, not because of medical conservatism. See the relevant compound page for the right approach.
 
-## Why this works for 7-OH (and not for the heavier synthetics)
-[7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken just long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
+## Pharmacology: 7-OH vs. the heavier synthetics
+[7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
 
 This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks)). Same medication, different use case, different outcome.
 
@@ -96,7 +96,7 @@ Use ChatGPT, Gemini, or Claude to generate your own custom taper plan based on t
 - You can take time off from responsibilities
 - You're at a lower starting dose (1 to 2 mg)
 
-## What to expect during and after
+## Taper timeline and expectations
 
 **During the taper itself:** mild to moderate withdrawal symptoms in the gaps between doses, especially as doses get smaller. Restlessness, sleep disruption, mild GI upset, low mood, irritability. The bupe is taking the edge off, not eliminating symptoms.
 

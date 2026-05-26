@@ -14,10 +14,10 @@ sort: 2
 > vs. solo, broad state coverage vs. specialty kratom content).
 > Information was verified directly from each provider's site,
 > Trustpilot, BBB, app-store listings, and court/regulatory filings
-> on **2026-05-24**. Prices, states, and insurance lists change —
-> always re-check on the provider's own site before booking.
+> on **2026-05-24**. Prices, states, and insurance lists change.
+> Always re-check on the provider's own site before booking.
 
-## Why telehealth at all
+## The case for telehealth
 
 **Buprenorphine is one of several options** people in this community
 use to come off [7-OH](/compounds/7-oh) and kratom synthetics, others
@@ -220,7 +220,7 @@ A definitive, current list could not be confirmed from primary sources.
 
 **Treatment model.** Telemedicine MAT (buprenorphine), plus intensive
 outpatient (IOP), telepsychiatry, and an eating-disorder program
-(Joint Commission accredited for the eating-disorder line as of 2015 —
+(Joint Commission accredited for the eating-disorder line as of 2015;
 current accreditation status not re-verified). Counseling, case
 management, and drug screening are bundled into the MAT program.
 
@@ -252,9 +252,9 @@ state-by-state Medicaid plan lists were not published.
 
 **Kratom / 7-OH.** **None found** on any reviewed Bright Heart page.
 
-**Notable issues.** A **putative class action** —
-*N. v. Bright Heart Health, Inc.*, case no. 3:24-cv-02112,
-N.D. Cal., filed April 8, 2024, is pending. Specific allegations and
+**Notable issues.** A **putative class action**
+(*N. v. Bright Heart Health, Inc.*, case no. 3:24-cv-02112,
+N.D. Cal., filed April 8, 2024) is pending. Specific allegations and
 status are not publicly visible without PACER. Source:
 [Law360 case summary](https://www.law360.com/cases/661478b9c1356c00b17e22de)
 (accessed 2026-05-24).
@@ -410,8 +410,8 @@ state-by-state. ([Insurance page](https://joingroups.com/insurance/).)
 - Employee-side Glassdoor mentions 2026 layoffs and "lack of strategy
   and direction", relevant only as context for organizational stability.
 
-**Kratom / 7-OH.** One blog post —
-[Can You Take Kratom With Suboxone?](https://joingroups.com/can-you-take-kratom-with-suboxone-explaining-potential-dangers/) —
+**Kratom / 7-OH.** One blog post,
+[Can You Take Kratom With Suboxone?](https://joingroups.com/can-you-take-kratom-with-suboxone-explaining-potential-dangers/),
 which notes Suboxone has been used to treat kratom withdrawal but
 does not advertise kratom or 7-OH as treated conditions. No 7-OH
 content.
@@ -575,8 +575,8 @@ but no state-by-state matrix published.
 **Kratom / 7-OH.** **Yes, explicit.** Lists "Kratom & 7-OH recovery"
 as a service. Published an
 [educational/positioning page](https://www.pursuecare.com/understanding-the-emerging-risks-of-7-oh-mitragynine/)
-on 7-OH stating their teams are **"developing specific protocols"** —
-forward-looking, not an established protocol yet.
+on 7-OH stating their teams are **"developing specific protocols"**.
+That's forward-looking, not an established protocol yet.
 
 **Notable issues.** The BBB pattern of refill delays during provider
 transitions is significant for an MOUD program where a missed refill
@@ -614,7 +614,7 @@ comfort meds** (clonidine, gabapentin, hydroxyzine, trazodone, etc.).
 > their QuickMD visits. This is **provider discretion**, not a
 > published QuickMD policy: some clinicians on the platform will write
 > these readily, others won't or will want you established first.
-> Worth asking. **Benzodiazepines are off-limits, no exceptions** —
+> Worth asking. **Benzodiazepines are off-limits, no exceptions.**
 > QuickMD's FAQ explicitly excludes them ("QuickMD does not prescribe
 > controlled substances or high-risk medications, including:
 > Barbiturates, Narcotics, Benzodiazepines"). Asking will slow the
@@ -764,7 +764,7 @@ If your loved one is the one calling rather than you, the
 [For Loved Ones](/for-loved-ones/start-here) section has a parallel
 list framed for their angle.
 
-## How we researched this
+## Research methodology
 
 For every provider on this page:
 
@@ -797,8 +797,8 @@ For every provider on this page:
 - Bright Heart Health's site sits behind Imperva; we could only verify
   some of their pages through cached/indexed snippets.
 
-If you spot a figure that's wrong or stale, please [tell us](/about/contributing) —
-this page is meant to be re-verified periodically, and the access
+If you spot a figure that's wrong or stale, please [tell us](/about/contributing).
+This page is meant to be re-verified periodically, and the access
 date next to every claim is there so you can spot when something
 needs to be checked again.
 

@@ -17,10 +17,10 @@ MP is named in state-level scheduling actions targeting mitragynine-derived semi
 
 # 7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)
 
-## What it is
+## Overview
 MP is a skeletal rearrangement product of [7-OH](/compounds/7-oh). The indolenine core of [7-OH](/compounds/7-oh) gets restructured into a spiro-pseudoindoxyl scaffold, making it chemically and pharmacologically distinct from its parent compound. Also called VM1502 or "Compound 3" in research literature, and sometimes "7-pseudo," "pseudoindoxyl," or "mit-pseudo" in community discussion.
 
-## Where it came from
+## Origin and market context
 MP was originally identified as a research target because of its unusual receptor profile, it's been studied as a template for developing opioids with reduced side effects. It started showing up in U.S. consumer products in 2024–2025, sold as its own thing or as part of "enhanced" products.
 
 **Important:** lab analyses of products marketed as "7-OH" have repeatedly found MP present alongside the labeled 7-OH, mitragynine in varying concentrations. There's also evidence that 7-OH converts to MP metabolically in human plasma. 

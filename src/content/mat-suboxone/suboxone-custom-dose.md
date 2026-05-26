@@ -9,7 +9,7 @@ Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5
 
 This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-info).
 
-## What you need
+## Supplies
 - **Bupe film** (any strength, but 8 mg films give you the most flexibility)
 - **Sharp X-Acto knife** (or fresh single-edge razor blade). A dull blade tears the film, which makes uneven pieces.
 - **Cutting surface** that won't dull the blade. A self-healing cutting mat is ideal. A clean ceramic plate or glass cutting board works. Avoid cardboard, paper, or wood (fibers contaminate the film).
@@ -34,7 +34,7 @@ Films are rectangular and the medication is uniformly distributed across the fil
 
 For most rapid-taper schedules, an 8 mg film cut into eighths gives you 1 mg doses, and into sixteenths gives you 0.5 mg doses. A 2 mg film cut into eighths gives you 0.25 mg doses for the bottom of the taper.
 
-## How to cut accurately
+## Cutting accurately
 
 1. **Measure the film.** Most Suboxone films are roughly 22 x 13 mm but check yours. Mark the midpoints with light pencil dots on the cutting mat next to the film, not on the film itself.
 2. **For halves:** cut once down the middle of the long axis. You now have two equal pieces.
@@ -82,12 +82,12 @@ When you're tapering below 0.5 mg, cutting tablets into ever-smaller pieces beco
 
 This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-info).
 
-## Why this works
+## The principle
 [Buprenorphine HCl is soluble in water at approximately 17 mg/mL at room temperature](https://www.uspharmacist.com/article/buprenorphine-2-mgml-sublingual-drops). At taper doses, you're working with concentrations far below saturation, so the bupe goes fully into solution. Once dissolved evenly, every milliliter of the solution contains a proportional fraction of the original dose. Drinking 1/8 of the volume = 1/8 of the dose.
 
 **This works for Subutex (buprenorphine-only tablets) and is the cleanest option.** It also works for Suboxone tablets and films, but the naloxone is also water-soluble and comes along for the ride. For taper purposes, that's fine.
 
-## What you need
+## Supplies
 - **Subutex tablet** (or Suboxone tablet/film if Subutex isn't available)
 - **Oral syringe** with 1 mL precision marks. Pharmacies sell these for under $5; baby/pediatric medication syringes work. **A kitchen measuring spoon is not accurate enough for this.**
 - **Small clean glass or shot glass** with measurement marks (or use the syringe to measure water in)
@@ -110,7 +110,7 @@ Dissolve a tablet in a known volume of water, then drink a fraction.
 
 **Pick a volume that makes your target dose come out to a whole or half mL.** Doses you can't measure cleanly aren't worth pursuing.
 
-## How to do it
+## The procedure
 
 1. **Place the tablet in the glass.** Don't crush it. The tablet will dissolve on its own.
 2. **Add the measured water.** Use the syringe to draw the exact volume.
@@ -134,12 +134,12 @@ If you absolutely have to make ahead (e.g., traveling that day), **make it that 
 - **Saving leftover solution for later.** Stability is the issue here, not waste. Make fresh each time.
 - **Using grapefruit juice or other acidic liquids "for absorption."** Bupe is metabolized by CYP3A4, and grapefruit can raise levels unpredictably. Stick with water.
 
-## When this is most useful
+## Best use cases
 - **Bottom of a taper.** Below 0.5 mg, liquid titration is more accurate than cutting.
 - **Fine-grained drops.** When you want to step down by 0.05 to 0.1 mg increments rather than 0.25.
 - **Subutex specifically.** Subutex tablets are harder to cut accurately than films, so dissolving them is often the better path.
 
-## When to skip this and just cut
+## When to skip liquid titration and cut instead
 - **Above 0.5 mg per dose, cutting films is faster, easier, and accurate enough.** Liquid titration is for the very bottom of a taper, not for the whole thing.
 - **If you're inconsistent with technique.** If you sometimes use a syringe and sometimes eyeball it, you're getting inconsistent doses, which makes the taper worse than just cutting.
 

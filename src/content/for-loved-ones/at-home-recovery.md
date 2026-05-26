@@ -34,7 +34,7 @@ that helps, what tends to backfire, and when higher-intensity care
 is the right call instead. At-home recovery is the path this site
 is built around, usually with a telehealth prescriber in the loop
 and the community as backup. The
-[When higher-intensity care is the right call](#when-higher-intensity-care-is-the-right-call)
+[Where higher-intensity care fits](#where-higher-intensity-care-fits)
 section at the bottom covers the situations where at-home isn't a
 fit.
 
@@ -43,7 +43,7 @@ bottom), the
 [Rehabilitation Centers](/for-loved-ones/rehabilitation-centers) page
 covers detox, residential, PHP, IOP, and how to navigate insurance.
 
-## What they're probably doing
+## The at-home paths
 
 The community-documented at-home paths (the [companion page for
 them](/for-you/at-home-treatment) has the full version):
@@ -67,7 +67,7 @@ what's worked or not worked before, and what they're willing to
 commit to. Your job isn't to second-guess the path, it's to
 support the attempt.
 
-## What this looks like day-to-day
+## Day-to-day shape
 
 The first 72 hours are the worst. Expect:
 
@@ -83,7 +83,7 @@ swings continue. By week 2 the acute phase is mostly over, though
 [post-acute symptoms (PAWS)](/post-acute/what-is-paws) can persist
 for weeks to months.
 
-## What helps
+## Things that help
 
 - **Be present without managing.** Be in the house if they want you
   there. Quiet. Not actively coaching or checking in every hour.
@@ -104,7 +104,7 @@ for weeks to months.
   combinations can be dangerous. Narcan is essentially harmless if
   given when not needed, see [Safety](/for-loved-ones/safety).
 
-## What tends to backfire
+## Things that backfire
 
 - **"Are you sure you should be doing this without a doctor?"**: Many at-home plans involve a telehealth prescriber. Even when they
   don't, second-guessing the path mid-attempt tends to push people
@@ -112,7 +112,7 @@ for weeks to months.
 - **Checking on them constantly.** Doors closed when they want them
   closed. They will reach out if they need you.
 - **Trying to manage their medication.** Their relationship with
-  what they're taking, Subs, SR-17, leaf, supplements, helper meds —
+  what they're taking (Subs, SR-17, leaf, supplements, helper meds)
   is theirs to manage. You can help with logistics; you can't run
   the protocol.
 - **Treating the at-home path as inadequate.** Pushing for
@@ -121,7 +121,7 @@ for weeks to months.
   path with real tools; mid-stop escalation usually destabilizes
   the attempt rather than rescuing it.
 
-## When higher-intensity care is the right call
+## Where higher-intensity care fits
 
 At-home doesn't fit every situation:
 

@@ -1,6 +1,6 @@
 ---
 title: "Low-Dose Naltrexone (LDN)"
-description: "Naltrexone at a small fraction of the standard dose, used off-label for chronic pain, autoimmune conditions, and increasingly as an adjunct in addiction recovery once acute withdrawal is over. What it is, what the evidence does and doesn't show, and the safety caveats."
+description: "Naltrexone at a small fraction of the standard dose, used off-label for chronic pain, autoimmune conditions, and increasingly as an adjunct in addiction recovery once acute withdrawal is over. Overview, evidence, and the safety caveats."
 category: "other-tools"
 last_updated: "2026-05-25"
 sort: 9
@@ -22,7 +22,7 @@ the [parent overview](/other-tools/naltrexone) for the comparison
 across normal-dose, LDN, and
 [ULDN](/other-tools/naltrexone-ultra-low-dose).
 
-## What it is
+## Overview
 
 A [2018 narrative review (Toljan & Vrooman, *Med Sci*)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6313374/)
 defines the LDN dose range as **1 to 5 mg per day**, with the most
@@ -64,14 +64,14 @@ mechanism as settled (or that present LDN's mechanism as
 
 ## Evidence base by condition
 
-The published clinical evidence is real but limited. Pattern: pilot
+The published clinical evidence exists but is limited. Pattern: pilot
 trials, small RCTs, and case series, mostly from single groups,
 with large multi-site replication still lacking.
 
 **Fibromyalgia.** Two small trials from the Younger lab, a
 [pilot (n=10, *Pain Med* 2009)](https://pubmed.ncbi.nlm.nih.gov/19453963/)
-and a [crossover RCT (n=31, *Arthritis Rheum* 2013)](https://pubmed.ncbi.nlm.nih.gov/23359310/)
-— showed 28.8% vs. 18.0% pain reduction (p=0.016) with 4.5 mg/day
+and a [crossover RCT (n=31, *Arthritis Rheum* 2013)](https://pubmed.ncbi.nlm.nih.gov/23359310/),
+showed 28.8% vs. 18.0% pain reduction (p=0.016) with 4.5 mg/day
 plus improvements in mood and life satisfaction. These are the
 strongest LDN trials in the literature, and they are still small
 single-group studies awaiting replication.
@@ -90,8 +90,8 @@ showed mental-health quality-of-life improvements but high dropout
 limited statistical power.
 
 **Opioid detox enhancement.** One RCT, [Mannelli et al.
-(*Am J Addict* 2009)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3190236/)
-— added very-low-dose naltrexone (0.125–0.25 mg) to a methadone
+(*Am J Addict* 2009)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3190236/),
+added very-low-dose naltrexone (0.125–0.25 mg) to a methadone
 taper and reported attenuated withdrawal and significantly higher
 early abstinence rates at one week post-discharge. **This is one
 trial.** It's encouraging and it's the closest peer-reviewed data
@@ -102,9 +102,9 @@ base.
 clinical literature. Anecdotal use is common in recovery
 communities; clinicians prescribing it for this population are
 extrapolating from the OUD literature above. That should be named
-honestly rather than dressed up as 7-OH-specific evidence.
+plainly rather than dressed up as 7-OH-specific evidence.
 
-## How it's typically used in recovery contexts
+## Typical use in recovery contexts
 
 Clinical practice, what prescribers using LDN for post-acute
 recovery do, descriptively:
@@ -132,7 +132,7 @@ sits with a clinician who knows your situation.
 ## Side effects
 
 LDN's side-effect profile is generally mild, much milder than
-full-dose naltrexone, but it is real:
+full-dose naltrexone, but present:
 
 - **Vivid dreams and sleep disruption** in the first one to two
   weeks, often resolving with continued use or a switch to morning
@@ -164,7 +164,7 @@ The opioid-free windows on the
 are the right starting reference. LDN initiation still belongs
 with a clinician, not as DIY.
 
-## What LDN is not
+## Boundaries: what LDN is not
 
 - **Not a withdrawal medication.** It will make withdrawal worse,
   not better, if started while opioids are still active. See

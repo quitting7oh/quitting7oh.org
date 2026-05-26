@@ -65,7 +65,7 @@ To find help filing in your area:
 - **[National Domestic Violence Hotline](https://www.thehotline.org)**: 1-800-799-7233 (text "START" to 88788). Will connect you with local DV resources and advocates.
 - **[WomensLaw.org](https://www.womenslaw.org)**: state-by-state guides on protective orders, despite the name they help all genders.
 
-## Where to get free or low-cost legal help
+## Free and low-cost legal help
 
 You don't need to hire a private family law attorney to navigate this in most cases. There's a real free-legal-help infrastructure in the US, mostly underused.
 
@@ -76,7 +76,7 @@ You don't need to hire a private family law attorney to navigate this in most ca
 - **Domestic violence advocates at courthouses**: many courthouses have free advocates specifically for protective order filings. Often the fastest help available.
 - **State bar lawyer referral services**: most state bars have a referral service that offers a low-cost (often $35–$50) initial consultation with a private attorney.
 
-## Honest notes
+## A few hard truths
 
 **Making someone leave is one of the hardest things you can do.** It often comes with a lot of grief, doubt, and second-guessing. The grief is real and deserves space. The doubt is normal and doesn't mean you're making the wrong call. The second-guessing is what therapy and [support groups](/for-loved-ones/support-groups) are partly for.
 

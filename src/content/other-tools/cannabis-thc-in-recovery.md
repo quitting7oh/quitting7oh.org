@@ -1,6 +1,6 @@
 ---
 title: "Cannabis and THC in Recovery"
-description: "Honest, sourced two-sided treatment of cannabis and THC use during acute withdrawal and PAWS from 7-OH and kratom, benefits, harms, the cannabinoid landscape, and how to think about the decision."
+description: "Sourced two-sided treatment of cannabis and THC use during acute withdrawal and PAWS from 7-OH and kratom: benefits, harms, the cannabinoid landscape, and how to think about the decision."
 category: "other-tools"
 last_updated: "2026-05-25"
 sort: 11
@@ -33,7 +33,7 @@ sort: 11
 > mostly around drug interactions if you're on bupe or another
 > medication CBD can affect.
 
-## What cannabis is doing, pharmacologically
+## Cannabis pharmacology
 
 The human body has an **endocannabinoid system**, receptors (CB1 and
 CB2), endogenous lipids that bind them (anandamide and 2-AG), and the
@@ -86,8 +86,9 @@ Non-psychoactive at typical doses. Marketed for sleep, anxiety, and
 pain. Evidence is mixed: strong for specific seizure
 disorders (Epidiolex, the FDA-approved cannabidiol formulation, is
 indicated for Lennox-Gastaut, Dravet, and tuberous sclerosis complex
-seizures —
-[Drugs@FDA application 210365](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210365);
+seizures, per
+[Drugs@FDA application 210365](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210365)
+and the
 [Epidiolex prescribing info](https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/210365lbl.pdf)),
 thinner for the wellness claims most consumers buy it for. Two
 considerations matter specifically for a recovery audience:
@@ -113,7 +114,7 @@ The label is not a reliable guide to what's in the bottle.
 
 Psychoactive cannabinoids that exploit a regulatory gap between hemp
 (federally legal under the 2018 Farm Bill) and marijuana (federally
-controlled). Sold widely in smoke shops, gas stations, and online —
+controlled). Sold widely in smoke shops, gas stations, and online,
 often in the same retail channels that sold concentrated 7-OH.
 
 Two specific concerns for a recovery audience:
@@ -167,7 +168,7 @@ events in 2018
 Mentioned here only to distinguish them from the plant-derived
 products above.
 
-## What some people find helpful
+## Documented benefits
 
 For each benefit, the evidence sits in a specific population, a
 specific cannabinoid, and a specific use pattern. Aggregating
@@ -215,8 +216,8 @@ cannabis-based medicines in adults with chronic pain
 ([National Academies, 2017](https://nap.nationalacademies.org/catalog/24625/the-health-effects-of-cannabis-and-cannabinoids-the-current-state)).
 A 2018 Cochrane review on cannabis-based medicines for chronic
 neuropathic pain concluded benefits may be outweighed by harms
-([Mücke et al., *Cochrane* 2018](https://pubmed.ncbi.nlm.nih.gov/29513392/)) —
-a notable caveat. Acute withdrawal-associated body aches and
+([Mücke et al., *Cochrane* 2018](https://pubmed.ncbi.nlm.nih.gov/29513392/)).
+A notable caveat. Acute withdrawal-associated body aches and
 restless legs have not been studied as their own indication.
 
 **Craving (CBD, single trial).** A 2019 randomized trial in
@@ -237,10 +238,10 @@ extrapolated from broader harm-reduction frameworks. The trade-off
 people in this position are making is "lower-risk substance over
 higher-risk substance," not "cannabis use is harmless."
 
-## What can backfire
+## Documented harms
 
-**Cannabis use disorder is real and the risk is non-trivial for this
-audience.** Among ever-users of cannabis, lifetime risk of developing
+**Cannabis use disorder is documented and the risk is non-trivial for
+this audience.** Among ever-users of cannabis, lifetime risk of developing
 cannabis dependence is roughly 9% in the general population, higher
 in those who start in adolescence and higher in people with prior
 substance use disorder history
@@ -253,7 +254,7 @@ The DSM-5 cannabis use disorder criteria are the same 11-item set
 used for any substance, with the same mild/moderate/severe thresholds
 ([Hasin et al., *Am J Psychiatry* 2013](https://pubmed.ncbi.nlm.nih.gov/23903334/)).
 For someone in recovery from one substance, the addiction-substitution
-risk is a real concern, not a moralistic one.
+risk is a substantive concern, not a moralistic one.
 
 **Sleep architecture suffers with chronic use.** Acute THC reduces
 sleep latency, but regular use suppresses REM sleep, develops
@@ -264,7 +265,7 @@ and vivid dreams on cessation
 This matters because sleep is already disrupted in early recovery
 (see [Sleep Recovery](/post-acute/sleep-recovery)). Trading
 sleep-architecture recovery from one substance for sleep-architecture
-disruption from another is a real trade-off.
+disruption from another is a meaningful trade-off.
 
 **Cognitive effects with regular use.** Regular cannabis use is
 associated with deficits in attention, memory, and executive function,
@@ -388,7 +389,7 @@ people you'd normally tell, using to manage withdrawal from previous
 use. If two or three of those are true, the cost-benefit has shifted
 ([Hasin et al., 2013, DSM-5 criteria](https://pubmed.ncbi.nlm.nih.gov/23903334/)).
 
-## Who to talk to
+## Who to consult
 
 For most readers, this is community ground, not clinic ground. The
 people most useful to talk to are the ones who know your situation

@@ -32,7 +32,7 @@ The principle: you're picking the less-bad window, not the perfect one. If you w
 
 It's also worth saying directly: if there is no opening, they're never reachable, never present, never not in one phase of the cycle or the other, that's information too, and it usually means the conversation isn't the move right now. The CRAFT framework below is built precisely for that case: change what you can change about your own behavior and your environment, and let the changes (not the conversation) do the work.
 
-## How to phrase it
+## Phrasing that lands
 
 A few principles that consistently land better:
 
@@ -42,7 +42,7 @@ A few principles that consistently land better:
 - **Curiosity over interrogation.** "What's going on for you lately?" opens the door. "Are you using again?" closes it.
 - **Listen more than you talk.** Ask what they want, for themselves, from you. Their answer matters more than yours.
 
-## What tends to backfire
+## What backfires
 
 - **Lectures and information dumps.** They already know it's bad for them. They are not going to be argued into stopping.
 - **Ultimatums you won't enforce.** Each empty threat teaches them that consequences aren't real. Save the ultimatum for one you'll carry out.
@@ -71,7 +71,7 @@ The core ideas:
 
 CRAFT isn't a magic formula or a substitute for your own support. It's a framework for being effective in situations where the obvious instincts (lecturing, rescuing) tend to backfire.
 
-### Where to learn CRAFT more deeply
+### Learning CRAFT more deeply
 
 - **[Allies in Recovery](https://www.alliesinrecovery.net)**: structured CRAFT learning, video modules, an online community of trained CRAFT family members. Subscription-based; some scholarship options.
 - **[SMART Recovery Family & Friends](https://smartrecovery.org/family)**: free meetings (in-person and online) built on CRAFT and other evidence-based approaches.

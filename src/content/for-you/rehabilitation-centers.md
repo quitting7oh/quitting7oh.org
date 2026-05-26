@@ -20,9 +20,9 @@ family is at
 
 When at-home is **not** the right fit:
 
-- Polysubstance use, especially with alcohol or benzodiazepines —
-  combined withdrawal can be medically dangerous and benzo withdrawal
-  in particular can be fatal without management
+- Polysubstance use, especially with alcohol or benzodiazepines.
+  Combined withdrawal can be medically dangerous and benzo withdrawal
+  in particular can be fatal without management.
 - A home environment that's tied to the use
 - Repeated at-home attempts that haven't held
 - Severe co-occurring mental health issues that need higher-intensity
@@ -45,7 +45,7 @@ clearly indicated when at-home withdrawal isn't working or isn't safe
 to attempt (the polysubstance case above).
 
 > **If you're using 7-OH or opioids along with any other substance
->, alcohol, benzodiazepines, gabapentinoids, other depressants —
+>, alcohol, benzodiazepines, gabapentinoids, other depressants,
 > please don't come off without medical supervision.** Combined
 > withdrawal can be medically dangerous. Benzo withdrawal in
 > particular can be fatal without medical management. Call
@@ -103,7 +103,7 @@ just disagreeing with your prescriber.
 > **[MAT & Your Professional License](/for-you/mat-and-your-job)**
 > before choosing a medication or disclosing to a regulator.
 
-## How to find a program
+## Finding a program
 
 A few tools to start with:
 
@@ -112,7 +112,7 @@ A few tools to start with:
 - **Your existing healthcare providers**: primary care doctor, therapist, gynecologist, anyone who knows you. They can write referrals and often have specific local recommendations that the directories won't surface.
 - **For telehealth-only [Suboxone](/mat-suboxone/suboxone-info) induction**: see the [Telehealth Providers comparison](/resources/telehealth). Several options let you do a video appointment and have a prescription the same day, no in-person visit required. The lowest activation-energy starting point if MAT is your direction.
 
-## How to pay
+## Paying for treatment
 
 This is the part most people get stuck on. The headline: there are more paths than the bills make it look like.
 
@@ -146,7 +146,7 @@ Every state has block-grant-funded SUD treatment for the uninsured. Wait times a
 - **[Federally Qualified Health Centers (FQHCs)](https://findahealthcenter.hrsa.gov)**: primary care clinics that often offer MAT and outpatient SUD treatment on a sliding scale.
 - **University-affiliated training clinics**: psychology, social work, medical school clinics; very low cost, supervised trainees.
 
-## What to expect when you call
+## The intake call
 
 The intake conversation is usually 15–30 minutes. They'll ask:
 
@@ -172,7 +172,7 @@ If the first program isn't a fit (capacity, insurance issues, distance, philosop
 
 **"What if I relapse and waste it?"** Relapse during or after treatment is part of the population-level pattern for opioid dependence. Treatment programs know this. A relapse is information about what was missing from the treatment plan, not evidence that you "wasted" anything.
 
-## What to be skeptical of
+## Red flags to watch for
 
 - **Aggressive marketing**: programs that find you via Google ads or unsolicited calls after you've searched online often work on commission models rather than outcomes.
 - **"Luxury rehab" pricing without accreditation**: look for **CARF** ([carf.org](https://www.carf.org)) or **Joint Commission** ([jointcommission.org](https://www.jointcommission.org)) accreditation. Their absence is a real red flag for a residential program.

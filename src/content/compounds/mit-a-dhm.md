@@ -17,10 +17,10 @@ Because the published literature is sparse, most of what's known about MIT-A/DHM
 
 # MIT-A / DHM (Dihydromitragynine)
 
-## What it is
+## Overview
 MIT-A, sold and discussed as **DHM (dihydromitragynine)**, is a semi-synthetic compound, the 1,2-dihydro reduction product of mitragynine itself, *not* of [7-OH](/compounds/7-oh). It is **not** the same as [MGM-15](/compounds/mgm15) (which is the dihydro form of [7-OH](/compounds/7-oh) and is also sometimes called "DHM" in academic papers, naming in this space is a mess, so when in doubt, ask).
 
-## Where it came from
+## Origin and market context
 Appeared in the U.S. market in 2025 as part of the wave of mitragynine-derived semi-synthetics being sold in tablet, gummy, and chewable form alongside 7-OH products, often through the same retailers and smoke shops.
 
 ## Pharmacology
@@ -34,7 +34,7 @@ Like [MGM-15](/compounds/mgm15), MIT-A is a 1,2-dihydro reduction product, and t
 - Effects and receptor occupancy persist far longer than people expect coming from 7-OH.
 - Withdrawal onset is **delayed**, often 24+ hours after last dose rather than the same-day rebound 7-OH users are used to.
 - Redosing on a 7-OH schedule causes accumulation. People underestimate how much is on board.
-## Why Suboxone is tricky with MIT-A, same logic as MGM-15
+## Suboxone induction with MIT-A: same issues as MGM-15
 The same two issues that complicate Suboxone induction off MGM-15 apply here:
 
 **1. Precipitated withdrawal risk runs longer than the standard 12–24 hour window.**

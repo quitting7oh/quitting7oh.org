@@ -16,7 +16,7 @@ You're not making it up. Two of the most consistent symptoms people report in th
 
 The two often co-occur. Depression that comes with anhedonia is common; pure anhedonia without depressed mood is also common. You can have both, either, or neither. See [Dopamine Recovery](/post-acute/dopamine-recovery) for the neurobiology under the anhedonia side.
 
-## Tools that help
+## Tools and interventions
 
 - **Bupropion when anhedonia is the leading symptom.** Norepinephrine-dopamine reuptake inhibitor, more directly relevant to the dopaminergic flatness than the serotonergic SSRI/SNRI mechanism. SSRIs remain first-line for classical depressed-mood presentations; bupropion is often the better fit when "I can't feel anything" is the dominant experience. Full pharmacology and clinical context on [Helper Medications](/other-tools/helper-meds-info).
 - **Behavioral activation.** Do the things even when they don't feel good. The reward response often returns *after* the activity, not in anticipation of it. "Wait until you feel like it" is the trap.
@@ -57,7 +57,7 @@ The shape of post-acute depression and anhedonia follows the broader [PAWS](/pos
 
 Variance is the rule. Some readers are mostly back to a normal emotional baseline within a couple of months. Some take longer. Neither outcome means recovery isn't happening.
 
-## How common this is
+## Prevalence
 
 Common enough that you should expect some version of one or the other and not be alarmed when it shows up.
 
@@ -67,7 +67,7 @@ A [2020 review of anhedonia in chronic opioid use](https://www.ncbi.nlm.nih.gov/
 
 If you're past acute and you feel flat or low, you're in normal company. The system is rebalancing on its own timeline.
 
-## Why this happens
+## The neurobiology
 
 - **Reward-system downregulation.** Chronic mu-opioid activity suppresses both the endogenous endorphin system and the dopaminergic reward circuit. When you stop, both are underactive while they recover. The subjective experience is reduced pleasure response, anhedonia, and often a flattened mood baseline.
 - **HPA-axis dysregulation.** [Chronic opioid use suppresses the stress-response system](https://pmc.ncbi.nlm.nih.gov/articles/PMC10003084/); the disrupted cortisol patterns after cessation contribute to mood instability, low energy, and the anxious-depression picture in early PAWS.
@@ -76,7 +76,7 @@ If you're past acute and you feel flat or low, you're in normal company. The sys
 
 This is the system rebuilding what it outsourced. The discomfort is real, time-limited, and part of a process that ends.
 
-## What recovery looks like
+## The recovery arc
 
 For most readers, post-acute depression and anhedonia are a phase, not a permanent state. The dopamine system rebalances. The endorphin system comes back online. Sleep normalizes. Mood follows.
 
