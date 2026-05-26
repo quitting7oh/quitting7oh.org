@@ -3,7 +3,7 @@ title: "Where the Site Stands"
 description: "On responsible kratom and 7-OH use, the site's recovery focus, and why the site doesn't take a position on bans."
 category: "about"
 last_updated: "2026-05-25"
-sort: 4
+sort: 5
 ---
 
 ## Who the site is for

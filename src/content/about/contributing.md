@@ -3,7 +3,7 @@ title: "Contributing & Feedback"
 description: "How to suggest corrections, propose changes, or reach the team, via GitHub PR, Discord, subreddit modmail, or email."
 category: "about"
 last_updated: "2026-05-25"
-sort: 3
+sort: 4
 ---
 
 This site is open source and community-maintained. If you have something to add, correct, or push back on, here's how.

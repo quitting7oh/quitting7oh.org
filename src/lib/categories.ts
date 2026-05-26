@@ -95,7 +95,7 @@ export const CATEGORIES = [
   },
   {
     slug: 'about',
-    title: 'About This Site',
+    title: 'Site & Community',
     blurb: 'What this site is, who runs it, how to contribute or send feedback.',
     Icon: Info,
     section: 'reference',

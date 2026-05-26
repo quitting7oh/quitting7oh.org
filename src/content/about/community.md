@@ -3,14 +3,14 @@ title: "The Community"
 description: "The Discord and subreddit, how the project started, and the people currently running it."
 category: "about"
 last_updated: "2026-05-25"
-sort: 2
+sort: 3
 ---
 
 This site is reference material. The **community** is where the live conversation happens. If you want to ask a question, share where you are in the process, or just sit in a channel with people who get it at 3 a.m., that's what these are for.
 
 Both spaces are run by the same community. You don't have to join either to use this site, but if you're going through this, the people on the other side of those links have been where you are.
 
-## 💬 Discord
+## Discord
 
 **Join: [discord.gg/quitting7oh](https://discord.gg/quitting7oh)**
 
@@ -25,7 +25,7 @@ What you'll find:
 
 Anonymity is normal. You don't need to use your real name. You don't need to introduce yourself to participate. Lurking is allowed and encouraged until you're ready to post.
 
-## 📖 Subreddit
+## Subreddit
 
 **Join: [r/quitting7oh](https://www.reddit.com/r/quitting7oh/)**
 

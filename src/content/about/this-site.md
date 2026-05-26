@@ -6,7 +6,7 @@ last_updated: "2026-05-25"
 sort: 1
 ---
 
-quitting7oh.org is a community-compiled reference for getting off [7-OH](/compounds/7-oh), kratom synthetics, and the opioid dependence they produce. It grew out of conversations in our [Discord and subreddit](/about/community), pulling together what people in our community have learned the hard way, and organizing it so the next person doesn't have to scroll through hundreds of forum posts to find the one paragraph that answers their question.
+quitting7oh.org is a community-compiled reference for getting off [7-OH](/compounds/7-oh), kratom synthetics, and the opioid dependence they produce. It grew out of conversations in our [Discord and subreddit](/about/community), pulling together what people in our community have learned the hard way, and organizing it so the next person doesn't have to scroll through hundreds of reddit posts to find the one paragraph that answers their question.
 
 ## Who this is for
 
@@ -21,14 +21,11 @@ The site is meant to be the resource we wished we'd had, calm, organized, no mar
 
 ## The AI disclaimer
 
-**Content on this site was compiled and edited with substantial AI assistance.** Here's the actual process, because vagueness about this isn't useful to anyone:
+**Most of the writing on this site went through an LLM.** The source material is lived experience from this community: the maintainers and moderators have direct experience using and withdrawing from [7-OH](/compounds/7-oh) and kratom synthetics, on top of a year of helping others through the same. AI was used as a writing tool inside a structured ruleset published in [CLAUDE.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/CLAUDE.md). Every factual claim was verified against a primary source before publishing, and every page was read by at least one community member who has lived through this.
 
-1. **The source material is human.** Hundreds of people in our [Discord and subreddit](/about/community), people who have lived through 7-OH dependence, kratom-synthetic dependence, the withdrawal, the medical-system fumbling around these compounds, and the recovery, have written tens of thousands of posts about what worked, what didn't, what they wish they'd known. That body of lived experience is the foundation of every page on this site.
-2. **AI was used as a writing tool, with guard rails.** Those compiled experiences were turned into organized, fact-checkable prose with the help of AI. We don't pretend otherwise. The guard rails, the rules about sourcing, tone, what claims need peer-reviewed citations, what framing is forbidden, are written down in [`CLAUDE.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CLAUDE.md) in the public repo. You can read exactly what AI was told to do and not do.
-3. **Every factual claim was verified against a primary source before publishing.** Doses, half-lives, receptor binding values, hotline numbers, legal claims, telehealth-provider details, all of it is cited to peer-reviewed literature, FDA/DEA documents, or the provider's own current website, with access dates. Vendor sites and blogs don't count as sources for chemistry. AI hallucinated numbers don't survive verification.
-4. **Humans review and stand behind every page.** The community members who lived through this read these pages, push back where the framing is off, and own the result. The AI didn't decide what goes here. The community did.
+The full walkthrough of the process, the guardrails, the hard limits, and the anti-AI-writing-pattern ruleset is on **[How AI Was Used](/about/how-ai-was-used)**.
 
-We're not perfect, and AI introduces its own failure modes. If you find content that's:
+AI introduces its own failure modes. If you find content that's:
 
 - **Wrong**: factually incorrect, out of date, missing context that changes the meaning
 - **Harmful**: recommends something dangerous, or fails to warn about something it should
@@ -36,7 +33,7 @@ We're not perfect, and AI introduces its own failure modes. If you find content 
 
 please open an issue or pull request on [GitHub](https://github.com/quitting7oh/quitting7oh.org), or reach out via any of the channels on [Contributing & Feedback](/about/contributing). We want to know.
 
-**If you're philosophically opposed to AI-assisted writing, this site isn't for you, and that's fine.** Plenty of other recovery resources exist that were written entirely by hand. We chose this approach because it let us organize and present a lot of detailed, compound-specific information that didn't exist anywhere in this form before, and that gap was hurting people in our community. The trade-off was deliberate.
+**If you're philosophically opposed to AI-assisted writing, this site isn't the resource for you.** Plenty of other recovery resources exist that were written entirely by hand. We chose this approach because it let us organize and present detailed, compound-specific information that didn't exist anywhere in this form before, and that gap was hurting people in our community. The trade-off was deliberate.
 
 ## What this site is not
 
