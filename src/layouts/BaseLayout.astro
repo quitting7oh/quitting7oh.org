@@ -2,7 +2,6 @@
 import '~/styles/global.css';
 import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
-import { BetaBanner } from '~/components/BetaBanner';
 import { BackToTop } from '~/components/BackToTop';
 import { CrisisButton } from '~/components/CrisisButton';
 import { Footer } from '~/components/Footer';
@@ -50,7 +49,6 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
   </head>
   <body class="min-h-screen">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <BetaBanner client:load />
     <Header />
     <slot />
     <Footer client:idle />
