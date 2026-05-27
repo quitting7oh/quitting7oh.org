@@ -48,14 +48,14 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">
             <p className="font-semibold text-foreground">AI disclaimer</p>
             <p className="mt-2">
-              AI was used as an augment to help write this, guided by a
-              detailed, guard-railed instruction set built for accuracy
-              and voice — not unsupervised slop. The source is community
-              members who've come off 7-OH and kratom derivatives.
+              AI helped write this under a strict instruction set tuned
+              for accuracy and voice. It's not unsupervised slop. The
+              source material is community members who've come off 7-OH
+              and kratom derivatives.
             </p>
             <p className="mt-2">
-              We understand the AI hate, and frankly don't care. You're
-              not who we're targeting — you can move on.{' '}
+              We understand the AI hate, and don't care. You're not who
+              we're targeting; you can move on.{' '}
               <a
                 href="/about/this-site#the-ai-disclaimer"
                 className="text-primary underline underline-offset-2 hover:opacity-80"

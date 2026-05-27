@@ -2,21 +2,32 @@
 title: "Tapering Off 7-OH"
 description: "What tapering off concentrated 7-OH looks like: the early dose-halving stretch, the low-dose plateau where most self-managed tapers stall, the jump-off, and what helps at each stage."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-05-27"
 sort: 3
 ---
 
-Tapering off 7-OH is a path people take. It works. People do it.
+Tapering off 7-OH means stepping your daily dose down on a schedule until you can stop. The trade-off vs cold turkey: a longer stretch of feeling moderately bad instead of a shorter, sharper crash.
 
-What it looks like in practice is different from cold turkey in a specific way. Cold turkey is acutely brutal for a short stretch. Tapering is a longer stretch of feeling moderately bad most of the time, with sharper cuts at the end. The peaks are lower; the duration is longer.
+## What to know before you start
 
-The discipline part is real. The substance you're trying to quit is the one you have to keep dosing on a schedule, on a falling schedule. The pull doesn't go away because you've decided to taper. People who've done both tapers and cold turkey often describe the redosing discipline during a taper as harder than the symptoms themselves. Both [taper and cold turkey](/start-here/paths-off) are valid paths. This page is for people who've chosen taper, or who are weighing the choice and want to know what a taper actually involves.
+- **The hardest part is usually the redose discipline, not the symptoms.** You stay on a daily schedule of the thing you're quitting, and the schedule keeps going down. People who've done both tapers and cold turkey often describe the discipline during a taper as harder than the acute crash.
+- **The first half goes faster than people expect.** Halving from a high starting dose (1000 mg → 500 mg, 500 → 250) is felt but rarely produces severe withdrawal. The body still has plenty of 7-OH on board, so the receptor system absorbs the change.
+- **The hard part lives at the bottom, roughly 50 to 200 mg/day.** Cuts that took a few days at the top take a week here. The "constantly half in withdrawal" stretch the community describes happens at this plateau, not at the top. Most self-managed 7-OH tapers stall in this range.
+- **Most tapers end with a jump-off, not a taper to zero.** At some low dose, the taper stops and the remaining withdrawal gets ridden out. This is the common endpoint, not a sign the taper failed. The receptors still have to clear, and you will feel that no matter how low you got. The peak is softer than cold turkey from full dose; it isn't gone.
+- **There's more than one endpoint.** Jump-off, transition to [kratom leaf](/other-tools/tapering-with-leaf) for the final stretch, transition to [Suboxone](/mat-suboxone/suboxone-info), or transition to [SR-17](/other-tools/sr17018-info). Each is covered below.
 
-> **Reference, not advice.** Numbers and patterns on this page come from community observation in the [Discord](https://discord.gg/quitting7oh) and the [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) and r/quittingkratom subreddits, plus extrapolation from the broader opioid-use-disorder taper literature. Published clinical research on 7-OH-specific tapering is essentially absent. This page describes what tapering looks like; it does not provide a schedule for you to follow. For the medication-supported paths, see [Suboxone](/mat-suboxone/suboxone-info) (bupe bridge), [SR-17](/other-tools/sr17018-info) (the community-validated non-prescription alternative), or [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf) (kratom-leaf step-down).
+| Phase | Community-observed range (per day) | What it tends to feel like |
+| --- | --- | --- |
+| Early cuts (high-dose) | ~500 to 1000+ mg | Halving every few days, surprisingly tolerable |
+| Middle range | ~200 to 500 mg | Manageable cuts of 25–50%, symptoms in the gaps |
+| Lower-dose plateau | ~50 to 200 mg | Each cut disproportionately harder; the grind |
+| Jump-off and acute | from below ~50 mg | Days of acute symptoms, then [post-acute](/post-acute/what-is-paws) |
 
-## The shape of a 7-OH taper, in practice
+The numbers are community observation, not clinical thresholds. Starting dose, duration of use, polysubstance history, and the specific products used all shift where the plateau lands.
 
-The community-observed pattern, with appropriate variance around starting dose and individual factors, runs in four roughly recognizable phases.
+> **Reference, not advice.** Numbers and patterns on this page come from community observation in the [Discord](https://discord.gg/quitting7oh) and the [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) and r/quittingkratom subreddits, plus extrapolation from the broader opioid-use-disorder taper literature. Published clinical research on 7-OH-specific tapering is essentially absent. This page describes what tapering looks like; it does not provide a schedule for you to follow. For medication-supported paths, see [Suboxone](/mat-suboxone/suboxone-info) (bupe bridge), [SR-17](/other-tools/sr17018-info) (the community-validated non-prescription alternative), or [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf) (kratom-leaf step-down).
+
+## The four phases in more detail
 
 **The early cuts (high-dose starting point).** People starting from heavy daily 7-OH use, often described in the community as 500 mg/day and up, sometimes well above 1000 mg/day in stacked or extended use, typically find the first cuts surprisingly tolerable. The community-reported approach is halving: drop the dose by roughly half, hold for a few days while the body settles, then halve again. The cuts at this stage are felt but rarely produce severe withdrawal. The body is still getting substantial 7-OH exposure; the relative drop is large in numbers but the receptor system still has enough on board to absorb the change.
 
@@ -24,16 +35,7 @@ The community-observed pattern, with appropriate variance around starting dose a
 
 **The lower-dose plateau.** Community observation lands the threshold somewhere in the rough range of 50 to 200 mg/day, with significant variance person to person. Below that range, each cut starts to feel disproportionately harder. The pattern shifts: smaller cuts produce noticeable symptoms, the time between successful cuts gets longer, and the steady downward progress turns into a slow, uncomfortable grind. Some people stall here for weeks or months. The "constantly feeling like you're half in withdrawal" stretch the community describes lives at this plateau.
 
-**The jump-off.** At some low dose, most self-managed 7-OH tapers end with a jump-off rather than a continued microgram-by-microgram step-down. The person stops the taper and accepts the remaining withdrawal hit. This is, according to consistent community observation, the most common endpoint of a self-managed 7-OH taper. The withdrawal that follows is less severe at peak than cold turkey from full dose, since the receptor system has already started adapting downward during the taper. PAWS still follows on a roughly normal arc. Jumping off is not a failure of the taper. It is the end of the taper. The reduced exposure during the taper still counts toward the overall recovery arc.
-
-| Phase | Community-observed range (per day) | What it tends to feel like |
-| --- | --- | --- |
-| Early cuts (high-dose) | ~500 to 1000+ mg | Halving the dose every few days, surprisingly tolerable |
-| Middle range | ~200 to 500 mg | Manageable cuts of 25–50%, symptoms in the gaps |
-| Lower-dose plateau | ~50 to 200 mg | Each cut disproportionately harder; the grind |
-| Jump-off and acute | from below ~50 mg | Days of acute symptoms, then [post-acute](/post-acute/what-is-paws) |
-
-The numbers in this table are community observation, not clinical thresholds. Individual experience varies. Starting dose, duration of use, polysubstance history, and the specific products used all shift where the plateau lands for any given person.
+**The jump-off.** At some low dose, most self-managed 7-OH tapers end with a jump-off rather than a continued microgram-by-microgram step-down. The person stops the taper and accepts the remaining withdrawal hit. This is the most common endpoint of a self-managed 7-OH taper. The withdrawal that follows is less severe at peak than cold turkey from full dose, since the receptor system has already started adapting downward during the taper. PAWS still follows on a roughly normal arc. Jumping off is the end of the taper, not a sign it failed. The reduced exposure during the taper still counts toward the overall recovery arc.
 
 ## Why the lower doses are disproportionately hard
 
