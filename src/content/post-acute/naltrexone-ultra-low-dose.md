@@ -2,7 +2,7 @@
 title: "Ultra-Low-Dose Naltrexone (ULDN)"
 description: "Naltrexone at microgram-range doses taken alongside opioids, an investigational concept with thin and aging clinical evidence. Overview, what's been tried, why it isn't standard of care."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-05-27"
 sort: 12
 ---
 
@@ -59,7 +59,7 @@ the mid-2000s pain-medicine literature:
   potentiated analgesia.
 - **[Hamann & Sloan, *J Opioid Manag* 2007](https://pubmed.ncbi.nlm.nih.gov/18027539/)**
  , small pilot RCT (n=15) of ULDN combined with **intrathecal
-  morphine** at 10 μg and 100 μg twice daily; 100 μg BID showed the
+  morphine** at 10 μg and 100 μg twice daily; the 100 μg twice-daily arm showed the
   greatest analgesic improvement but the trial was underpowered
   (p=0.07).
 - **[Webster et al., *J Pain* 2006](https://pubmed.ncbi.nlm.nih.gov/17157780/)**,

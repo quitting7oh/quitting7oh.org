@@ -136,6 +136,7 @@ export const PINNED_PAGES: { href: string; title: string }[] = [
   { href: '/other-tools/helper-meds-info', title: 'Helper Medications' },
   { href: '/other-tools/tapering-with-leaf', title: 'Tapering with Kratom' },
   { href: '/mat-suboxone/suboxone-info', title: 'Suboxone' },
+  { href: '/start-here/thinking-about-using', title: 'Thinking about using?' },
 ];
 
 /** Sub-groupings inside long categories. Each entry maps a group name
