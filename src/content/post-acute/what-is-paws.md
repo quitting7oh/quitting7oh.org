@@ -2,7 +2,7 @@
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what helps, labeled by evidence level."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-05-30"
 sort: 1
 ---
 
@@ -242,6 +242,8 @@ serotonergic interactions with SSRIs).
 **[Vitamins & Supplements](/other-tools/vitamins-supplements)** is
 the primary page, full breakdown by symptom, the interaction
 profiles, and the practical "don't stack everything at once" guidance.
+
+Peptides (Selank for anxiety, Semax for cognition, DSIP for sleep) come up in PAWS contexts and are covered honestly on **[Peptides for Opioid Withdrawal](/other-tools/peptides-info)**: what the evidence supports per peptide, the supply-chain and injection-safety considerations, and how the cost compares to evidence-based alternatives. None have been studied specifically for PAWS.
 
 ### Things to avoid
 

@@ -103,6 +103,7 @@ The decision is rarely abstract. Most people pick the path that fits the week th
 - **[Helper Medications](/other-tools/helper-meds-info)** and **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what reduces symptom burden during the taper
 - **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)**: the protocol and evidence on the megadose vit-C approach
 - **[NAD+ IV Therapy](/other-tools/nad-iv-therapy)**: the much pricier infusion-clinic route some readers ask about, with the published evidence honestly characterized
+- **[Peptides for Opioid Withdrawal](/other-tools/peptides-info)**: BPC-157, Selank, Semax, DSIP, TB-500, with evidence labeled per peptide and the supply-chain safety reality
 - **[Telehealth Providers](/resources/telehealth)**: clinicians experienced with kratom and 7-OH dependence
 - **[Thinking About Using?](/start-here/thinking-about-using)**: for the "fuck its" that surface during the lower-dose plateau
 - **[What is PAWS](/post-acute/what-is-paws)** and **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: the post-jump-off arc

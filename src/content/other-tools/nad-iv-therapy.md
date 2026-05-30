@@ -142,6 +142,7 @@ For drug-interaction questions about your other medications, a prescriber is the
 ## Further reading
 
 - **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)**: a far cheaper adjunct with older and stronger preliminary literature
+- **[Peptides for Opioid Withdrawal](/other-tools/peptides-info)**: BPC-157, Selank, Semax, DSIP, TB-500; what the evidence supports per peptide and the supply-chain safety reality
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: supplement stack background and sourcing notes
 - **[Helper Medications](/other-tools/helper-meds-info)**: prescription comfort meds with established evidence
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: community taper patterns and what tends to help
