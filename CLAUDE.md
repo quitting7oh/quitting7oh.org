@@ -106,6 +106,32 @@ Skip the bump for:
 If you're unsure, bump it. A slightly-too-fresh date is more honest than
 a stale one.
 
+### Keep category blurbs in sync with content
+
+The homepage "Browse by topic" section reads its descriptions from the
+`blurb` strings on each category in `src/lib/categories.ts`. When adding
+a substantive new page, moving a page between categories, or removing one,
+check whether the parent category's blurb still represents the section's
+contents accurately and update it in the same commit.
+
+This applies to:
+
+- New top-level pages that materially expand what a section covers
+  (a new adjunct, a new compound, a new post-acute topic)
+- Page moves between categories (both the old and new category's blurb
+  may need updating)
+- Page removals where the blurb names a thing that no longer exists
+
+Skip the update for:
+
+- Minor content edits inside an existing page that don't change what
+  the section covers
+- Sort renumbering, frontmatter-only changes, or other metadata edits
+
+The blurb is a one-line scannable summary, not an exhaustive list.
+Representative examples are fine; pick the entries that best convey
+what the section is about. Keep it punchy.
+
 ### Verify on Cloudflare before stacking commits
 
 This site deploys to Cloudflare Pages on every push to `main`. CF has

@@ -120,41 +120,47 @@ const hotPaths = [
       </div>
     </section>
 
-    {/* Community: Discord + Reddit + about-link, single compact row */}
+    {/* Community: Reddit (first per house preference) + Discord, as
+        proper cards mirroring the hot-list pattern. About-link sits
+        below as a small text link. */}
     <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
       <h2 class="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
         Live community
       </h2>
-      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
-        <a
-          href="https://discord.gg/quitting7oh"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group inline-flex items-center gap-2 text-foreground hover:text-accent-700 dark:hover:text-accent-300"
-        >
-          <MessageCircle class="h-4 w-4 shrink-0 text-accent-700 dark:text-accent-300" aria-hidden="true" />
-          <span class="font-semibold">Discord</span>
-          <span class="text-muted-foreground">— real-time</span>
-        </a>
-        <span class="text-muted-foreground/60" aria-hidden="true">·</span>
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <a
           href="https://www.reddit.com/r/quitting7oh/"
           target="_blank"
           rel="noopener noreferrer"
-          class="group inline-flex items-center gap-2 text-foreground hover:text-accent-700 dark:hover:text-accent-300"
+          class="group flex items-start gap-3 rounded-lg border border-border bg-card px-4 py-3 transition hover:border-accent-400 hover:bg-accent-50/40 dark:hover:border-accent-500 dark:hover:bg-accent-950/30"
         >
-          <BookOpen class="h-4 w-4 shrink-0 text-accent-700 dark:text-accent-300" aria-hidden="true" />
-          <span class="font-semibold">r/quitting7oh</span>
-          <span class="text-muted-foreground">— good for stories</span>
+          <BookOpen class="mt-0.5 h-5 w-5 shrink-0 text-accent-700 dark:text-accent-300" aria-hidden="true" />
+          <span class="flex-1">
+            <span class="block font-semibold text-foreground">r/quitting7oh</span>
+            <span class="block text-sm text-muted-foreground">Searchable archive, stories, longform threads →</span>
+          </span>
         </a>
-        <span class="text-muted-foreground/60" aria-hidden="true">·</span>
+        <a
+          href="https://discord.gg/quitting7oh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-start gap-3 rounded-lg border border-border bg-card px-4 py-3 transition hover:border-accent-400 hover:bg-accent-50/40 dark:hover:border-accent-500 dark:hover:bg-accent-950/30"
+        >
+          <MessageCircle class="mt-0.5 h-5 w-5 shrink-0 text-accent-700 dark:text-accent-300" aria-hidden="true" />
+          <span class="flex-1">
+            <span class="block font-semibold text-foreground">Discord</span>
+            <span class="block text-sm text-muted-foreground">Real-time chat, live meetings, peers right now →</span>
+          </span>
+        </a>
+      </div>
+      <p class="mt-3 text-sm">
         <a
           href="/about/community"
           class="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
         >
           About the community <span aria-hidden="true">→</span>
         </a>
-      </div>
+      </p>
     </section>
 
     {/* Browse by topic: denser list, no chunky cards. Two columns on

@@ -3,7 +3,7 @@ title: "Normal-Dose Naltrexone (Oral and Vivitrol)"
 description: "Full-dose naltrexone, oral 50 mg daily and Vivitrol 380 mg monthly injection, for sustained abstinence after detox. The page with the unmissable precipitated-withdrawal safety note."
 category: "post-acute"
 last_updated: "2026-05-25"
-sort: 10
+sort: 11
 ---
 
 > **SAFETY, read before anything else on this page.**

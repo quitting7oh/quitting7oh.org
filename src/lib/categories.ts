@@ -61,14 +61,14 @@ export const CATEGORIES = [
   {
     slug: 'other-tools',
     title: 'Adjuncts & Supplements',
-    blurb: 'Helper meds, supplements, quit-kit stacks, SR-17, naltrexone (normal, low, ultra-low), tapering with leaf.',
+    blurb: 'Helper meds, supplements, quit-kit stacks, SR-17, NAD+ IV, peptides, tapering with leaf.',
     Icon: Wrench,
     section: 'recovery',
   },
   {
     slug: 'post-acute',
     title: 'Post-Acute',
-    blurb: 'PAWS, sleep recovery, dopamine recovery, cravings, hormones.',
+    blurb: 'PAWS, sleep recovery, dopamine recovery, endocrine recovery, naltrexone.',
     Icon: Sprout,
     section: 'recovery',
   },
@@ -166,7 +166,7 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
   ],
   'post-acute': [
     { name: 'The map', slugs: ['what-is-paws'] },
-    { name: 'Specific symptoms', slugs: ['pink-cloud', 'dopamine-recovery', 'depression-and-anhedonia', 'impending-doom', 'sleep-recovery'] },
+    { name: 'Specific symptoms', slugs: ['pink-cloud', 'dopamine-recovery', 'depression-and-anhedonia', 'impending-doom', 'sleep-recovery', 'endocrine-recovery'] },
     { name: 'Naltrexone', slugs: ['naltrexone', 'naltrexone-normal-dose', 'naltrexone-low-dose', 'naltrexone-ultra-low-dose'] },
     { name: 'Long view', slugs: ['kindling', 'long-term-outlook'] },
   ],

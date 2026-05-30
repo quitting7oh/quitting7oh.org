@@ -107,6 +107,15 @@ You may have some, all, or none of these:
   before feel huge.
 - **Physical symptoms.** Lingering muscle tension, occasional
   restless legs.
+- **Hormonal / endocrine effects.** Low libido, sexual dysfunction,
+  menstrual cycle changes, body composition shifts, persistent fatigue
+  that overlaps with the other PAWS symptoms but tracks the body's
+  hormone systems specifically. Chronic opioid-receptor activation
+  suppresses the HPG and HPA axes; recovery generally happens but
+  takes weeks to months. See
+  [Endocrine Recovery After 7-OH and Kratom](/post-acute/endocrine-recovery)
+  for the full picture, testing options, and what to expect for both
+  men and women.
 
 If you're getting good sleep, your mood is steady, and you feel
 mostly like yourself, **that's a real outcome and it's becoming more

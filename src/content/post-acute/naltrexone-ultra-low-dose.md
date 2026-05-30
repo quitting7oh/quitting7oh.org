@@ -3,7 +3,7 @@ title: "Ultra-Low-Dose Naltrexone (ULDN)"
 description: "Naltrexone at microgram-range doses taken alongside opioids, an investigational concept with thin and aging clinical evidence. Overview, what's been tried, why it isn't standard of care."
 category: "post-acute"
 last_updated: "2026-05-27"
-sort: 12
+sort: 13
 ---
 
 > **Framing up front.** ULDN is **investigational**, not

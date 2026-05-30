@@ -2,8 +2,8 @@
 title: "Long-Term Outlook"
 description: "What recovery from 7-OH dependence looks like, plainly stated: how hard it is, how relapse fits, why the long-arc picture borrows from the broader opioid-recovery literature, and the reality that the people who got there did it one day at a time."
 category: "post-acute"
-last_updated: "2026-05-25"
-sort: 8
+last_updated: "2026-05-30"
+sort: 9
 ---
 
 *This page is for after the wave passes. If a craving is loud right
@@ -170,7 +170,10 @@ The functional version, what you'll notice:
   for the focused page, or
   [Dopamine Recovery](/post-acute/dopamine-recovery) for the
   deeper mechanism.
-- **Sex returns.** Libido takes a while. It comes back.
+- **Sex returns.** Libido takes a while. It comes back. The
+  hormone-system recovery behind this gets its own coverage on
+  [Endocrine Recovery After 7-OH and Kratom](/post-acute/endocrine-recovery),
+  including testing options and what's specific to men and women.
 - **Mood stabilizes.** The wild swings get smaller. The bad days
   get rarer.
 - **Cognitive fog clears.** Memory, focus, processing speed.

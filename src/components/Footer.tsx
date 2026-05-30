@@ -6,8 +6,9 @@ export function Footer() {
   return (
     <footer className="mt-16 border-t border-border bg-muted/50">
       <div className="mx-auto max-w-[88rem] px-4 py-10 sm:px-6 lg:px-8">
-        {/* Top row: site title, medical disclaimer, contribute */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        {/* Top row: site title, medical disclaimer, community, contribute.
+            4-col on desktop, 2x2 on tablet, stacked on mobile. */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="text-sm font-semibold text-foreground">
               {SITE.title}.org
@@ -24,6 +25,34 @@ export function Footer() {
               clinician familiar with your situation. If you are in immediate
               crisis, call or text 988 (US) or your local emergency number.
             </p>
+          </div>
+          <div className="text-sm text-muted-foreground">
+            <p className="font-semibold text-foreground">Community</p>
+            <p className="mt-2">
+              Real people, going through the same thing:
+            </p>
+            <ul className="mt-2 space-y-1">
+              <li>
+                <a
+                  href="https://www.reddit.com/r/quitting7oh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-2 hover:opacity-80"
+                >
+                  reddit.com/r/quitting7oh
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.gg/quitting7oh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-2 hover:opacity-80"
+                >
+                  discord.gg/quitting7oh
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="text-sm text-muted-foreground">
             <p className="font-semibold text-foreground">Contribute</p>
