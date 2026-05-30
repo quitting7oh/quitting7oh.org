@@ -160,7 +160,7 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'For yourself', slugs: ['taking-care-of-yourself', 'support-groups'] },
   ],
   'other-tools': [
-    { name: 'Helper meds & supplements', slugs: ['helper-meds-info', 'vitamins-supplements', 'quitkit-info', 'mega-vit-c-info'] },
+    { name: 'Helper meds & supplements', slugs: ['helper-meds-info', 'vitamins-supplements', 'quitkit-info', 'mega-vit-c-info', 'nad-iv-therapy'] },
     { name: 'Bridges off the synthetics', slugs: ['tapering-with-leaf', 'sr17018-info'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
   ],

@@ -2,7 +2,7 @@
 title: "Mega-Dose Vitamin C"
 description: "High-dose vitamin C as a withdrawal adjunct: the protocol, the brands, the cautions."
 category: "other-tools"
-last_updated: "2026-05-25"
+last_updated: "2026-05-30"
 sort: 4
 ---
 
@@ -92,4 +92,4 @@ No single confirmed pathway. The plausible candidates:
 
 The "vitamin C occupies opioid receptors" hypothesis from the 1960s doesn't hold up under modern receptor pharmacology. Don't expect this to "block" opioid use the way naltrexone does.
 
-See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the broader supplement context.
+See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the broader supplement context, and [NAD+ IV Therapy](/other-tools/nad-iv-therapy) for the much pricier infusion-clinic adjunct readers sometimes ask about alongside vitamin C.

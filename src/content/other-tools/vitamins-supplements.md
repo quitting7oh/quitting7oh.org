@@ -2,7 +2,7 @@
 title: "Vitamins & Supplements"
 description: "A community-tested supplement stack for opioid withdrawal and PAWS, what to start with, what to skip."
 category: "other-tools"
-last_updated: "2026-05-25"
+last_updated: "2026-05-30"
 sort: 2
 ---
 
@@ -46,6 +46,7 @@ brands, and the *why* behind each one.
 | Muscle cramps | **Calcium** + magnesium |
 | Nausea | **Ginger** or peppermint |
 | Low immunity / energy | **Zinc** 15–30 mg with food (short-term) |
+| Body aches / inflammation | **Black seed oil** ~500 mg/day (thin evidence) |
 
 ### Avoid these
 
@@ -263,6 +264,8 @@ Don't take long-term at high doses (depletes copper).
 **Calcium** with magnesium for muscle cramps if magnesium alone isn't
 enough.
 
+**Black seed oil (*Nigella sativa* / thymoquinone)** is a traditional remedy with thin direct evidence in opioid withdrawal. One small uncontrolled 2008 study in 35 opioid-dependent patients at 500 mg/day reported reduced withdrawal symptoms ([Sangi et al., *J Ayub Med Coll Abbottabad*](https://pubmed.ncbi.nlm.nih.gov/19385474/)). Rodent data on thymoquinone (the active constituent) show attenuated morphine tolerance and dependence ([Adnan et al. review, *Iran J Basic Med Sci* 2020](https://pubmed.ncbi.nlm.nih.gov/32774804/)). No human RCT has been published. The anti-inflammatory and antioxidant mechanisms overlap with the rationale for high-dose vitamin C in withdrawal. Community-discussed adjunct, not foundational; if you try it, pick a cold-pressed product with third-party testing for thymoquinone content (the active compound varies widely between brands).
+
 ## Avoid
 
 - **The compound that put you here**: [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo,
@@ -290,6 +293,12 @@ Don't start everything at once. You won't know what's helping, what's
 not, and what's causing side effects. Start with foundational
 supplements (magnesium, vitamin C, B-complex, D, electrolytes,
 omega-3) for a week, then add symptom-specific ones one at a time.
+
+## Related pages on this site
+
+- **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)** — the high-dose vitamin C protocol referenced above
+- **[NAD+ IV Therapy](/other-tools/nad-iv-therapy)** — what the much-pricier NAD+ infusion route involves, and what the evidence supports
+- **[Helper Medications](/other-tools/helper-meds-info)** — prescription comfort meds (clonidine, gabapentin, etc.)
 
 ## Further reading
 

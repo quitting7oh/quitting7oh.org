@@ -2,7 +2,7 @@
 title: "Tapering Off 7-OH"
 description: "What tapering off concentrated 7-OH looks like: the early dose-halving stretch, the low-dose plateau where most self-managed tapers stall, the jump-off, and what helps at each stage."
 category: "for-you"
-last_updated: "2026-05-27"
+last_updated: "2026-05-30"
 sort: 3
 ---
 
@@ -102,6 +102,7 @@ The decision is rarely abstract. Most people pick the path that fits the week th
 - **[Suboxone](/mat-suboxone/suboxone-info)**, **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**, and **[SR-17](/other-tools/sr17018-info)**: the medication-supported paths
 - **[Helper Medications](/other-tools/helper-meds-info)** and **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what reduces symptom burden during the taper
 - **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)**: the protocol and evidence on the megadose vit-C approach
+- **[NAD+ IV Therapy](/other-tools/nad-iv-therapy)**: the much pricier infusion-clinic route some readers ask about, with the published evidence honestly characterized
 - **[Telehealth Providers](/resources/telehealth)**: clinicians experienced with kratom and 7-OH dependence
 - **[Thinking About Using?](/start-here/thinking-about-using)**: for the "fuck its" that surface during the lower-dose plateau
 - **[What is PAWS](/post-acute/what-is-paws)** and **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: the post-jump-off arc
