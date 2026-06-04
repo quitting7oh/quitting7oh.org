@@ -46,7 +46,7 @@ FMLA leave can be **intermittent**, taken in chunks rather than all at once. Thi
 
 - IOP three evenings a week → intermittent FMLA, leave the office at 4 instead of 5.
 - Weekly therapy appointments → covered intermittent.
-- Monthly [Sublocade](/mat-suboxone/sublocade-brixadi-info) injection appointments → covered.
+- Monthly [Sublocade](/mat-suboxone/sublocade-brixadi) injection appointments → covered.
 - A residential month followed by IOP for two months → continuous FMLA for the residential, intermittent for the IOP, all within the 12-week annual entitlement.
 
 You and your employer work out the schedule. The employer has some flexibility on how you arrange it (they can sometimes require you to use intermittent leave at non-disruptive times if alternatives exist), but they must accommodate the medical need.
@@ -78,7 +78,7 @@ The **[ADA](https://www.ada.gov)** is separate from FMLA and provides different 
 
 **For people currently using illegally:** the ADA does **not** protect current illegal drug use. This is the major carve-out. "Currently using" is a specific term in the case law, generally meaning use that is recent and ongoing.
 
-**For people on legally prescribed medications including MAT:** the ADA does protect you. An employer who discovers you're on prescribed [buprenorphine](/mat-suboxone/suboxone-info) and fires you on that basis is on legally shaky ground. The same is true for methadone (when prescribed at a licensed clinic) and other prescription medications used in recovery.
+**For people on legally prescribed medications including MAT:** the ADA does protect you. An employer who discovers you're on prescribed [buprenorphine](/mat-suboxone/suboxone-for-7oh) and fires you on that basis is on legally shaky ground. The same is true for methadone (when prescribed at a licensed clinic) and other prescription medications used in recovery.
 
 ### Reasonable accommodations
 

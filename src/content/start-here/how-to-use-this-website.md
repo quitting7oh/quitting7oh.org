@@ -25,12 +25,12 @@ next move matters more than the rest of this site. Go here first.
 
 Hour-by-hour timeline, what to do in the next sixty minutes, what to
 avoid, when to go to the ER, and the real paths out, tough it out,
-step down to [kratom leaf](/other-tools/tapering-with-leaf),
-[Suboxone](/mat-suboxone/suboxone-info), or
-[SR-17](/other-tools/sr17018-info).
+step down to [kratom leaf](/other-tools/tapering-with-kratom-leaf),
+[Suboxone](/mat-suboxone/suboxone-for-7oh), or
+[SR-17](/other-tools/sr-17).
 
-- **[Withdrawal Help](/start-here/withdrawal-help)**: the main page for this.
-- **[Helper Medications](/other-tools/helper-meds-info)**: clonidine,
+- **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: the main page for this.
+- **[Helper Medications](/other-tools/helper-meds)**: clonidine,
   gabapentin, trazodone, baclofen, and others. A same-day telehealth
   appointment can get most of these.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: magnesium, electrolytes, NAC, melatonin, the rest of the OTC stack
@@ -64,11 +64,11 @@ You're not in withdrawal yet but you want to be ready. Read about your
 options before you stop, not while you're sweating it out, they all
 exist with real pros and cons.
 
-- **[Suboxone](/mat-suboxone/suboxone-info)**: one widely-used path,
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)**: one widely-used path,
   with the community's low-and-slow induction approach.
-- **[SR-17](/other-tools/sr17018-info)**: a non-prescription option
+- **[SR-17](/other-tools/sr-17)**: a non-prescription option
   some people have used to bridge off 7-OH and related synthetics.
-- **[Tapering with Leaf Kratom](/other-tools/tapering-with-leaf)**: a gentler taper that works for some people coming off lower doses.
+- **[Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
 - **[Telehealth Providers](/resources/telehealth)**: a fact-checked
   comparison if you need a prescriber.
@@ -80,7 +80,7 @@ what you're on and what stopping looks like.
 
 - **[7-OH](/compounds/7-oh)**: what the compound is, why dependence
   builds so fast, and what makes it different from traditional opioids.
-- **[Withdrawal Help](/start-here/withdrawal-help)**: read this *before*
+- **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: read this *before*
   you stop. Knowing what's coming changes how the first 72 hours feel.
 - **[Telehealth Providers](/resources/telehealth)**: so you know who
   to call when you decide.

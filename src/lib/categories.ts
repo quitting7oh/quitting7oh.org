@@ -130,12 +130,12 @@ export function getCategorySection(slug: string): CategorySection | undefined {
  *  back to / to find the high-traffic destinations again. Keep this list
  *  short (6 max) — these are shortcuts, not a nav tree. */
 export const PINNED_PAGES: { href: string; title: string }[] = [
-  { href: '/start-here/withdrawal-help', title: 'In active withdrawal' },
+  { href: '/start-here/7-oh-withdrawal-help', title: 'In active withdrawal' },
   { href: '/other-tools/vitamins-supplements', title: 'Vitamins & Supplements' },
-  { href: '/other-tools/mega-vit-c-info', title: 'Mega-Dose Vitamin C' },
-  { href: '/other-tools/helper-meds-info', title: 'Helper Medications' },
-  { href: '/other-tools/tapering-with-leaf', title: 'Tapering with Kratom' },
-  { href: '/mat-suboxone/suboxone-info', title: 'Suboxone' },
+  { href: '/other-tools/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C' },
+  { href: '/other-tools/helper-meds', title: 'Helper Medications' },
+  { href: '/other-tools/tapering-with-kratom-leaf', title: 'Tapering with Kratom' },
+  { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone' },
   { href: '/start-here/thinking-about-using', title: 'Thinking about using?' },
 ];
 
@@ -148,9 +148,9 @@ export const PINNED_PAGES: { href: string; title: string }[] = [
  *  pages to a grouped category. */
 export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]> = {
   'mat-suboxone': [
-    { name: 'Getting on bupe', slugs: ['suboxone-info', 'suboxone-cows', 'suboxone-bernese-method'] },
+    { name: 'Getting on bupe', slugs: ['suboxone-for-7oh', 'suboxone-cows', 'suboxone-bernese-method'] },
     { name: 'Coming off', slugs: ['suboxone-rapid-taper', 'suboxone-custom-dose'] },
-    { name: 'Long-term', slugs: ['sublocade-brixadi-info', 'suboxone-risks'] },
+    { name: 'Long-term', slugs: ['sublocade-brixadi', 'suboxone-risks'] },
     { name: 'Troubleshooting', slugs: ['suboxone-isnt-working'] },
   ],
   'for-loved-ones': [
@@ -160,8 +160,8 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'For yourself', slugs: ['taking-care-of-yourself', 'support-groups'] },
   ],
   'other-tools': [
-    { name: 'Helper meds & supplements', slugs: ['helper-meds-info', 'vitamins-supplements', 'quitkit-info', 'mega-vit-c-info', 'nad-iv-therapy', 'peptides-info'] },
-    { name: 'Bridges off the synthetics', slugs: ['tapering-with-leaf', 'sr17018-info'] },
+    { name: 'Helper meds & supplements', slugs: ['helper-meds', 'vitamins-supplements', 'quit-kit', 'mega-dose-vitamin-c', 'nad-iv-therapy', 'peptides-for-withdrawal'] },
+    { name: 'Bridges off the synthetics', slugs: ['tapering-with-kratom-leaf', 'sr-17'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
   ],
   'post-acute': [

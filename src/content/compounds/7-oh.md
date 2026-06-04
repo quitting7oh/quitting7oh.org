@@ -94,7 +94,7 @@ delivery. The pharmacology that makes 7-OH attractive (faster onset,
 stronger effect, smaller dose to carry around) is the same pharmacology
 that makes dependence form quickly.
 
-This is also why [tapering off concentrated 7-OH using plain leaf](/other-tools/tapering-with-leaf)
+This is also why [tapering off concentrated 7-OH using plain leaf](/other-tools/tapering-with-kratom-leaf)
 is a planned protocol used by some people in this community. The
 leaf delivers vastly lower concentrations of the same family of
 alkaloids, so stepping down is a meaningful taper rather than a switch.
@@ -135,7 +135,7 @@ wired-but-exhausted feeling, autonomic instability) looks a lot like
 SSRI/SNRI discontinuation because the same receptor families are
 involved. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
 for why this overlay makes bupe alone feel insufficient for some
-people, and [Helper Medications](/other-tools/helper-meds-info) for
+people, and [Helper Medications](/other-tools/helper-meds) for
 what addresses the non-opioid side.
 
 ## Tapereability, mechanistically
@@ -163,7 +163,7 @@ This is why the rapid-taper protocol in
 so many people coming off 7-OH alone, and why this community leans
 toward short Suboxone tapers rather than indefinite maintenance for
 this population specifically. See
-[Suboxone](/mat-suboxone/suboxone-info) for the full overview,
+[Suboxone](/mat-suboxone/suboxone-for-7oh) for the full overview,
 including the receptor-occupancy reason we start at low Suboxone doses
 rather than the clinical-default 16-24 mg.
 
@@ -226,7 +226,7 @@ which don't survive the pharmacology:
 
 ## If you're trying to stop
 
-See [Paths Off 7-OH](/start-here/paths-off) for the six ranked paths this community has used, in the order to try them. The [Withdrawal Help](/start-here/withdrawal-help) page covers what to do hour-by-hour once you've picked one.
+See [Paths Off 7-OH](/start-here/how-to-quit-7-oh) for the six ranked paths this community has used, in the order to try them. The [Withdrawal Help](/start-here/7-oh-withdrawal-help) page covers what to do hour-by-hour once you've picked one.
 
 Whichever path you take, **don't try to navigate it without at least
 one other person knowing**. The Discord and subreddit linked at
@@ -247,7 +247,7 @@ position end up.
 
 > **Reminder:** 7-OH walks and talks like an opioid. Treat it as one, both in terms of
 > not underestimating dependence development and in terms of using
-> opioid-recovery tools (MAT, [SR-17](/other-tools/sr17018-info),
+> opioid-recovery tools (MAT, [SR-17](/other-tools/sr-17),
 > helper meds, structured tapers) when coming off. The community here
 > is built around people who have done this; you are not the first
 > person to try.

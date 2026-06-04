@@ -2,7 +2,7 @@
 title: "Peptides for Opioid Withdrawal"
 description: "Peptides used as adjuncts in 7-OH and opioid recovery: BPC-157, Selank, Semax, DSIP, TB-500, and others. What's offered, what the evidence supports, and the safety considerations specific to injectable products from unregulated supply."
 category: "other-tools"
-last_updated: "2026-05-30"
+last_updated: "2026-06-04"
 sort: 8
 ---
 
@@ -167,10 +167,10 @@ The risks here are different from other community-discussed adjuncts because the
 
 For opioid-receptor dependence, including from 7-OH and the kratom synthetics, several paths have substantially stronger evidence than the peptides discussed here:
 
-- **[Suboxone](/mat-suboxone/suboxone-info)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth), with decades of clinical evidence and standard pharmacy-supply quality
-- **[SR-17](/other-tools/sr17018-info)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
-- **[Tapering with kratom leaf](/other-tools/tapering-with-leaf)** and cold turkey with **[helper medications](/other-tools/helper-meds-info)** are the non-MAT options
-- For specific PAWS symptoms, evidence-based prescription options include SSRIs for mood, bupropion for motivation, trazodone or doxepin for sleep, and clonidine and gabapentin for acute and post-acute symptoms; see [Helper Medications](/other-tools/helper-meds-info)
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth), with decades of clinical evidence and standard pharmacy-supply quality
+- **[SR-17](/other-tools/sr-17)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
+- **[Tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf)** and cold turkey with **[helper medications](/other-tools/helper-meds)** are the non-MAT options
+- For specific PAWS symptoms, evidence-based prescription options include SSRIs for mood, bupropion for motivation, trazodone or doxepin for sleep, and clonidine and gabapentin for acute and post-acute symptoms; see [Helper Medications](/other-tools/helper-meds)
 
 None of these are exclusive with peptide use. The major medical decision for someone in withdrawal or PAWS rarely turns on "peptides or nothing."
 
@@ -180,7 +180,7 @@ The evidence picture varies enormously by peptide. DSIP has the strongest direct
 
 Source quality matters more here than for almost any other category of adjunct on this site, and those risks aren't theoretical. A reader considering peptides deserves the full picture: what evidence exists for the specific peptide, where it's sourced, what the safety trade-offs look like, and how the cost compares to the evidence-based alternatives above.
 
-For other adjuncts in this category, see [NAD+ IV Therapy](/other-tools/nad-iv-therapy) and [Mega-Dose Vitamin C](/other-tools/mega-vit-c-info).
+For other adjuncts in this category, see [NAD+ IV Therapy](/other-tools/nad-iv-therapy) and [Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c).
 
 ## Talking it through
 
@@ -191,9 +191,9 @@ For the choice itself, the most useful conversation is usually with someone in t
 ## Further reading
 
 - **[NAD+ IV Therapy](/other-tools/nad-iv-therapy)**: the other major investigational adjunct in this space, with similar evidence-gap and cost realities
-- **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)**: a much cheaper adjunct with older preliminary literature
+- **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)**: a much cheaper adjunct with older preliminary literature
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: supplement-stack background and the broader landscape
-- **[Helper Medications](/other-tools/helper-meds-info)**: prescription comfort meds with established evidence
+- **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
 - **[What is PAWS](/post-acute/what-is-paws)**: the broader symptom picture and other approaches
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: community taper patterns
 - **[Telehealth Providers](/resources/telehealth)**: addiction-medicine telehealth options

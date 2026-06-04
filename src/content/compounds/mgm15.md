@@ -41,7 +41,7 @@ Community knowledge on MGM-15 is ahead of the published literature. Share what's
 
 ## SR-17 as the other community-validated path
 
-[SR-17](/other-tools/sr17018-info) is the second MAT-equivalent option the community has converged on for getting off the synthetics, and it applies to MGM-15. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above. There's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol and dose ranges community members have used for long-acting compounds like MGM-15. It also documents the unknowns. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-info) carries the clinical safety net. Both are legitimate paths; pick based on your situation.
+[SR-17](/other-tools/sr-17) is the second MAT-equivalent option the community has converged on for getting off the synthetics, and it applies to MGM-15. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above. There's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol and dose ranges community members have used for long-acting compounds like MGM-15. It also documents the unknowns. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) carries the clinical safety net. Both are legitimate paths; pick based on your situation.
 
 ## General risks
 

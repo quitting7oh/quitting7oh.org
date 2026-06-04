@@ -75,7 +75,7 @@ Additionally:
 
 - [findtreatment.gov](https://findtreatment.gov), federal treatment
   locator searchable by zip, insurance, and substance.
-- [Withdrawal Help](/start-here/withdrawal-help), our own page for
+- [Withdrawal Help](/start-here/7-oh-withdrawal-help), our own page for
   what to do this hour if you're in active withdrawal.
 - [At-Home Treatment](/for-you/at-home-treatment), the at-home path
   this site is built around, including the four community-validated

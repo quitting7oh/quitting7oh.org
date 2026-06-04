@@ -174,8 +174,8 @@ Putting the framing in one box:
 - **Not [LDN](/post-acute/naltrexone-low-dose).** Three orders of
   magnitude smaller, opposite timing relative to opioids,
   different intended use.
-- **Not a substitute for [MAT](/mat-suboxone/suboxone-info) or
-  [SR-17](/other-tools/sr17018-info).** It's a theoretical adjunct
+- **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh) or
+  [SR-17](/other-tools/sr-17).** It's a theoretical adjunct
   to opioid agonist therapy, not a substitute for it.
 - **Not a substitute for a real taper plan.** Even where the
   pharmacology might help smooth the bottom of a Suboxone taper,

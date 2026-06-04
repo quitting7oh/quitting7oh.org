@@ -91,7 +91,7 @@ Not Indivior. Not any other Suboxone manufacturer. Not any pharma company at all
 
 **Nobody endorses us.**
 
-We don't represent any company. We don't have a relationship with any company. When we mention a [telehealth provider like QuickMD or Bicycle Health or Boulder Care](/resources/telehealth), or buprenorphine, or [generic clonidine that costs a penny a pill](/other-tools/helper-meds-info), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine, a 50-year-old off-patent medication selling for pennies, slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
+We don't represent any company. We don't have a relationship with any company. When we mention a [telehealth provider like QuickMD or Bicycle Health or Boulder Care](/resources/telehealth), or buprenorphine, or [generic clonidine that costs a penny a pill](/other-tools/helper-meds), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine, a 50-year-old off-patent medication selling for pennies, slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
 
 **What we do, every day:**
 
@@ -101,12 +101,12 @@ We don't represent any company. We don't have a relationship with any company. W
 
 **And here's the kicker, we cover every approach.** We don't push one path because we don't have one to push. People in our community have gotten off 7-OH via:
 
-- [SR-17018](/other-tools/sr17018-info), a biased agonist research chemical with its own caveats
+- [SR-17018](/other-tools/sr-17), a biased agonist research chemical with its own caveats
 - Straight tapers on the substance itself, slow and careful
-- Tapers using kratom leaf as a bridge ([this works for some](/other-tools/tapering-with-leaf), doesn't for others)
+- Tapers using kratom leaf as a bridge ([this works for some](/other-tools/tapering-with-kratom-leaf), doesn't for others)
 - Switching to [MIT-A or DHM](/compounds/mit-a-dhm) temporarily as a step down
-- Cold turkey, with [helper meds](/other-tools/helper-meds-info) and a lot of suffering
-- Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi-info)
+- Cold turkey, with [helper meds](/other-tools/helper-meds) and a lot of suffering
+- Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi)
 - Inpatient detox when polysubstance use makes that necessary
 
 If we were "pushing" any one of these, the other six pages on the site wouldn't exist. Take a look around. Count the protocols. The whole point of this resource is that people get off this stuff in different ways and you should have access to the full menu, not just the option a Reddit account with three hours of posting history insists is the only "natural" way.

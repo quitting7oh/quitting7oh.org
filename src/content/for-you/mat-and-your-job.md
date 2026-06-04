@@ -6,7 +6,7 @@ last_updated: "2026-05-25"
 sort: 6
 ---
 
-> **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-info) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator, or starting MAT while holding any of the credentials below, talk to a labor lawyer or licensure attorney who knows your specific field.**
+> **Read this before disclosing MAT use to a regulator or starting MAT in a regulated profession.** For most jobs, your medication is between you and your prescriber. For a small but important set of professions, federal or state regulators treat [buprenorphine](/mat-suboxone/suboxone-for-7oh) and methadone as licensure issues that can affect your ability to do your job. This page is an overview, not legal advice. **Before disclosing to a federal or state regulator, or starting MAT while holding any of the credentials below, talk to a labor lawyer or licensure attorney who knows your specific field.**
 
 This page is general information, not legal or medical advice. Rules change. Verify with the current regulator and a qualified attorney before making decisions.
 
@@ -16,7 +16,7 @@ For the vast majority of jobs, your prescriptions are protected medical informat
 
 In a typical workplace:
 
-- Your employer does not know you take [Suboxone](/mat-suboxone/suboxone-info) unless you tell them.
+- Your employer does not know you take [Suboxone](/mat-suboxone/suboxone-for-7oh) unless you tell them.
 - A pre-employment drug test that's positive for buprenorphine should be cleared through the Medical Review Officer (MRO) with your prescription documentation.
 - The ADA generally protects people in recovery and on prescribed MAT from employment discrimination.
 - Your manager doesn't get to ask why you're taking medication.
@@ -108,7 +108,7 @@ If you're applying for or hold a clearance, work with a security clearance attor
 
 Patterns that come up in the community:
 
-1. **Get the regulatory analysis before starting MAT, not after.** If you're a pilot, CDL driver, or LEO considering [buprenorphine](/mat-suboxone/suboxone-info), the order of operations matters a lot. Talking to a labor or licensure attorney before you start medication may change the medication choice or the timing of any required disclosure.
+1. **Get the regulatory analysis before starting MAT, not after.** If you're a pilot, CDL driver, or LEO considering [buprenorphine](/mat-suboxone/suboxone-for-7oh), the order of operations matters a lot. Talking to a labor or licensure attorney before you start medication may change the medication choice or the timing of any required disclosure.
 2. **Use specialty programs where they exist.** HIMS for pilots, state PHPs for healthcare workers, union-sponsored peer assistance programs in many trades. These programs are designed for your situation and often produce better outcomes than going it alone.
 3. **Document everything.** Dated notes from prescribers, written employer policies you've been given, conversations with HR. If a credentialing dispute arises later, the paper trail matters.
 4. **Get the right kind of lawyer.** A general employment lawyer may not know FAA medical rules or state nursing board procedures. Pay for a specialist consult upfront, it often saves the licensure.

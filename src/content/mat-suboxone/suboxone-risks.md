@@ -22,9 +22,9 @@ produces opioid withdrawal. Long-term use changes how you feel
 emotionally and physically.
 
 Suboxone is one widely-used path off 7-OH and kratom synthetics, not
-the only one. [SR-17](/other-tools/sr17018-info),
-[tapering with kratom leaf](/other-tools/tapering-with-leaf), and cold
-turkey with [helper meds](/other-tools/helper-meds-info) are the other
+the only one. [SR-17](/other-tools/sr-17),
+[tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf), and cold
+turkey with [helper meds](/other-tools/helper-meds) are the other
 community-documented options. This page is specifically about the
 trade-offs of staying on Suboxone past the rapid-taper window, and,
 toward the bottom, about a newer exit path (the long-acting
@@ -166,7 +166,7 @@ administration, prescriber willingness, cost), all covered in detail
 on the dedicated page.
 
 → **[Sublocade & Brixadi, including the single-shot exit
-strategy](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone)**
+strategy](/mat-suboxone/sublocade-brixadi#using-a-single-shot-as-an-exit-from-long-term-suboxone)**
 
 ## Sources
 

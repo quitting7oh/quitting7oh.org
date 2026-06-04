@@ -2,7 +2,7 @@
 title: "Quit Kit & QuitK"
 description: "Honest review of two commercial supplement stacks marketed for kratom and opioid withdrawal, what's in them, what they cost, and what to know before buying."
 category: "other-tools"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 3
 ---
 > **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** If you're on a prescribed medication (Suboxone, LDN, antidepressants, etc.), check interactions for any new supplement with your pharmacist or prescriber, that's the narrow ask they can help with. Otherwise this is community ground; **#vitamins-supplements** is the chat channel for what's worked.
@@ -61,4 +61,4 @@ If you can afford it and convenience matters more than cost, the commercial kits
 
 If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper**, see **[Vitamins & Supplements](/other-tools/vitamins-supplements)** for the full per-supplement guide.
 
-Either way: supplements help, but they're not the main event. Sleep, hydration, lifestyle, and (for some) medical support like [Suboxone](/mat-suboxone/suboxone-info) or [SR-17](/other-tools/sr17018-info) do the heaviest lifting. Don't let any commercial product convince you it's the difference between success and failure, it isn't.
+Either way: supplements help, but they're not the main event. Sleep, hydration, lifestyle, and (for some) medical support like [Suboxone](/mat-suboxone/suboxone-for-7oh) or [SR-17](/other-tools/sr-17) do the heaviest lifting. Don't let any commercial product convince you it's the difference between success and failure, it isn't.

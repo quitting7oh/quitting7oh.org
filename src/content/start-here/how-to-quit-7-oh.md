@@ -2,7 +2,7 @@
 title: "Paths Off 7-OH"
 description: "Six ways people come off 7-OH and related synthetics, in the order this community would try them."
 category: "start-here"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 5
 ---
 
@@ -24,7 +24,7 @@ Fits: short use, lower doses, strong support around you, a clear stretch of noth
 
 Doesn't fit: longer-term extended use, high tolerance, daily responsibilities you can't drop, prior unsuccessful cold-turkey attempts.
 
-See [Withdrawal Help](/start-here/withdrawal-help) for the timeline and symptom map.
+See [Withdrawal Help](/start-here/7-oh-withdrawal-help) for the timeline and symptom map.
 
 ### 2. Kratom leaf taper
 
@@ -36,7 +36,7 @@ Fits: stable supply of leaf, ability to weigh doses, patience for a multi-week w
 
 Doesn't fit: severe withdrawal that breaks through a leaf swap, no access to clean leaf, no time for a slow taper.
 
-See [Tapering with leaf](/other-tools/tapering-with-leaf).
+See [Tapering with leaf](/other-tools/tapering-with-kratom-leaf).
 
 ### 3. Helper medications
 
@@ -46,7 +46,7 @@ Fits: moderate withdrawal, prescriber or telehealth access, willingness to take 
 
 Doesn't fit: severe withdrawal where helpers don't touch the floor.
 
-See [Helper Medications](/other-tools/helper-meds-info).
+See [Helper Medications](/other-tools/helper-meds).
 
 ### 4. Helper meds plus a kratom leaf taper
 
@@ -62,7 +62,7 @@ Buprenorphine. A long-acting partial mu agonist. A correct induction removes mos
 
 Fits: high-dose synthetics, long use, multiple failed lower-rung attempts, severe withdrawal that broke through everything else, situations where you cannot be out of commission for a week.
 
-See [Suboxone](/mat-suboxone/suboxone-info).
+See [Suboxone](/mat-suboxone/suboxone-for-7oh).
 
 ### 6. SR-17, with helpers if needed
 
@@ -70,7 +70,7 @@ SR-17018. A biased mu agonist with a long duration of action. Sidesteps the bupr
 
 Fits: Suboxone isn't accessible, prior bupe induction failed, dual-receptor compounds like MGM-15 in the picture, or you want the long-acting MAT option that doesn't risk precipitated withdrawal during induction.
 
-See [SR-17018](/other-tools/sr17018-info).
+See [SR-17018](/other-tools/sr-17).
 
 **Rungs 5 and 6 are equivalent.** Pick based on access, prior experience, and which prescriber relationship you have.
 
@@ -87,5 +87,5 @@ You can move between rungs in either direction. Some people start cold turkey, h
 ## Out of scope
 
 - Dosing for any of the medications above. Each path has its own page.
-- Suboxone induction timing or COWS/SOWS gating. See [Suboxone induction](/mat-suboxone/suboxone-info).
+- Suboxone induction timing or COWS/SOWS gating. See [Suboxone induction](/mat-suboxone/suboxone-for-7oh).
 - Post-acute recovery. See [Post-Acute](/post-acute) once you're through the first weeks.

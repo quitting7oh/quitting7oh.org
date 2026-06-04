@@ -74,7 +74,7 @@ and a longer PAWS tail. Supplements aren't a substitute for time, sleep,
 food, hydration, and (when appropriate) MAT, but they can take some
 of the edge off.
 
-> **Don't want to assemble it yourself?** Pre-packaged commercial kits like [Quit Kit & QuitK](/other-tools/quitkit-info) bundle many of these supplements into morning/night packs. More expensive than building it yourself, but the convenience matters in early withdrawal.
+> **Don't want to assemble it yourself?** Pre-packaged commercial kits like [Quit Kit & QuitK](/other-tools/quit-kit) bundle many of these supplements into morning/night packs. More expensive than building it yourself, but the convenience matters in early withdrawal.
 
 > **A note on the Amazon links below.** Products linked throughout the deep dives are **starting points** at the doses recommended, well-reviewed brands at fair prices, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip Amazon entirely; the supplements matter, not where you get them.
 
@@ -122,7 +122,7 @@ C, but the GI tolerance and absorption tradeoff is significant for
 people in heavy withdrawal. Look for brands with real phospholipid
 encapsulation, not just "liposomal" on the label as marketing.
 
-For the full protocol, dose, preload, timing, and verified product links to LivOn / Quicksilver / Aurora and the cheaper sodium-ascorbate route, see **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)**.
+For the full protocol, dose, preload, timing, and verified product links to LivOn / Quicksilver / Aurora and the cheaper sodium-ascorbate route, see **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)**.
 
 **Electrolytes & hydration.** Withdrawal involves a lot of fluid loss
 (sweating, GI symptoms). Plain water isn't always enough. LMNT, Liquid
@@ -296,9 +296,9 @@ omega-3) for a week, then add symptom-specific ones one at a time.
 
 ## Related pages on this site
 
-- **[Mega-Dose Vitamin C](/other-tools/mega-vit-c-info)** — the high-dose vitamin C protocol referenced above
+- **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)** — the high-dose vitamin C protocol referenced above
 - **[NAD+ IV Therapy](/other-tools/nad-iv-therapy)** — what the much-pricier NAD+ infusion route involves, and what the evidence supports
-- **[Helper Medications](/other-tools/helper-meds-info)** — prescription comfort meds (clonidine, gabapentin, etc.)
+- **[Helper Medications](/other-tools/helper-meds)** — prescription comfort meds (clonidine, gabapentin, etc.)
 
 ## Further reading
 

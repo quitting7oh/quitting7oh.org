@@ -17,7 +17,7 @@ This is different from the standard MAT model, where bupe is taken for months or
 ## The schedules
 
 All schedules assume:
-- Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) & [Suboxone](/mat-suboxone/suboxone-info))
+- Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) & [Suboxone](/mat-suboxone/suboxone-for-7oh))
 - You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
 
@@ -79,7 +79,7 @@ All schedules assume:
 
 ### Starting at 8 mg
 
-> **8 mg is a high starting dose for 7-OH dependence.** Double-check you weren't also on MGM-15, MIT-A, pseudo, or stacked compounds; that's the more common cause of an 8 mg induction. Beyond that: 8 mg is a lot of bupe, and some readers find the 5-to-10-day schedules harder to ride out than at lower starting doses. The 14- and 21-day options exist for those cases. **The trade-off:** the longer the taper, the more bupe exposure, and the higher the risk that Suboxone withdrawal becomes its own problem on top of whatever brought you here. If 14 or 21 days starts feeling comfortable rather than hard, [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi-info) is a cleaner exit than a long daily-dose taper.
+> **8 mg is a high starting dose for 7-OH dependence.** Double-check you weren't also on MGM-15, MIT-A, pseudo, or stacked compounds; that's the more common cause of an 8 mg induction. Beyond that: 8 mg is a lot of bupe, and some readers find the 5-to-10-day schedules harder to ride out than at lower starting doses. The 14- and 21-day options exist for those cases. **The trade-off:** the longer the taper, the more bupe exposure, and the higher the risk that Suboxone withdrawal becomes its own problem on top of whatever brought you here. If 14 or 21 days starts feeling comfortable rather than hard, [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi) is a cleaner exit than a long daily-dose taper.
 
 <details class="my-3">
 <summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 8 mg taper schedule (5/7/10/14/21-day options)</summary>
@@ -132,7 +132,7 @@ All math checks: an 8 mg strip in 80 mL gives 0.1 mg/mL, so 1 mL = 0.1 mg. Each 
 
 **Some readers go even lower before jumping.** [Reddit-based research on bupe tapering documented community-reported successful final doses as low as 0.063 mg](https://www.biorxiv.org/content/10.1101/871608.full.pdf), and individual reports run lower still, down to around 0.018 mg/day or under, by using progressively larger dilutions. There's no clinical evidence that going below 0.05 mg materially changes outcomes; some readers find the very-low tail helpful, some find it unnecessary. If 0.02 mg on day +3 still feels too high to jump from, dilute further (an 8 mg strip in 440 mL of water gives roughly 0.018 mg per mL) and add a day or two.
 
-If you've worked the tail down this way and still can't get clear of the jump, that's a signal a rapid taper isn't the right tool for your specific situation. The next option to consider is [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi-info), the long-acting buprenorphine injections. The injection releases bupe slowly over weeks; the bupe then leaves your system on its own pharmacokinetic timeline rather than on a daily-dosing schedule you're trying to enforce. This is closer to standard MAT than a rapid taper is. For the reader who genuinely cannot get past the bottom of a rapid taper, that's the safer path than spiraling back to 7-OH or escalating to a higher bupe dose.
+If you've worked the tail down this way and still can't get clear of the jump, that's a signal a rapid taper isn't the right tool for your specific situation. The next option to consider is [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi), the long-acting buprenorphine injections. The injection releases bupe slowly over weeks; the bupe then leaves your system on its own pharmacokinetic timeline rather than on a daily-dosing schedule you're trying to enforce. This is closer to standard MAT than a rapid taper is. For the reader who genuinely cannot get past the bottom of a rapid taper, that's the safer path than spiraling back to 7-OH or escalating to a higher bupe dose.
 
 ## Choosing the right schedule
 
@@ -160,7 +160,7 @@ If you've worked the tail down this way and still can't get clear of the jump, t
 ## Harm reduction layer (use ALL of these, not optional)
 
 - **Hydration and electrolytes.** LMNT, Liquid IV, coconut water, or salt + lemon in water. Sweating and GI symptoms drain you fast.
-- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/other-tools/helper-meds-info) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth) for prescribers who will work with you on adjuncts.
+- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/other-tools/helper-meds) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth) for prescribers who will work with you on adjuncts.
 - **OTC support.** Loperamide for diarrhea (labeled doses only, do not exceed), ibuprofen for body aches, ginger for nausea.
 - **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
 - **A check-in person.** Someone who knows what you're doing and will check on you daily, especially days 3 to 7 after the last dose.

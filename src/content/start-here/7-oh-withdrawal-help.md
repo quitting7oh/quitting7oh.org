@@ -2,7 +2,7 @@
 title: "You're in Withdrawal Right Now"
 description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
 category: "start-here"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 4
 ---
 
@@ -107,14 +107,14 @@ require a different approach. Talk to a prescriber.
 
 You don't have to white-knuckle this. What you can reach for in the next few hours, roughly in order of how fast you can have them on hand:
 
-- **[Kratom leaf or mitragynine concentrate](/other-tools/tapering-with-leaf).** If you already have leaf, or can get it locally today, reaching for plain [kratom leaf](/compounds/kratom-leaf) (or a mitragynine concentrate if leaf isn't available) to take the edge off is a legitimate harm-reduction step-down. It doesn't undo the work of getting off the synthetics. Leaf is much lower-potency than 7-OH.
-- **[Pharmacy-shelf supplements](/other-tools/vitamins-supplements).** Magnesium glycinate for restless legs and sleep, electrolyte powder (LMNT, Liquid IV, Pedialyte) for hydration, melatonin (1 to 3 mg) for sleep, vitamin C, NAC. Available at any drugstore today. The [Quit Kit-style pre-packaged stacks](/other-tools/quitkit-info) are an option if you don't want to source individually.
-- **[Prescription helper medications](/other-tools/helper-meds-info)** via [same-day telehealth](/resources/telehealth). Clonidine, gabapentin, trazodone, baclofen, ondansetron, and others can take the edge off specific symptoms. A telehealth visit can get most of these in your hands the same day.
-- **[Suboxone](/mat-suboxone/suboxone-info)** via same-day [telehealth](/resources/telehealth). A correct induction can drop withdrawal to near zero within hours. The prescription is same-day in most US states, but you have to wait until your [COWS score is ≥ 12](/mat-suboxone/suboxone-cows) before the first dose (typically 12 to 24 hours into withdrawal, longer for the long-acting synthetics). Going earlier causes precipitated withdrawal.
+- **[Kratom leaf or mitragynine concentrate](/other-tools/tapering-with-kratom-leaf).** If you already have leaf, or can get it locally today, reaching for plain [kratom leaf](/compounds/kratom-leaf) (or a mitragynine concentrate if leaf isn't available) to take the edge off is a legitimate harm-reduction step-down. It doesn't undo the work of getting off the synthetics. Leaf is much lower-potency than 7-OH.
+- **[Pharmacy-shelf supplements](/other-tools/vitamins-supplements).** Magnesium glycinate for restless legs and sleep, electrolyte powder (LMNT, Liquid IV, Pedialyte) for hydration, melatonin (1 to 3 mg) for sleep, vitamin C, NAC. Available at any drugstore today. The [Quit Kit-style pre-packaged stacks](/other-tools/quit-kit) are an option if you don't want to source individually.
+- **[Prescription helper medications](/other-tools/helper-meds)** via [same-day telehealth](/resources/telehealth). Clonidine, gabapentin, trazodone, baclofen, ondansetron, and others can take the edge off specific symptoms. A telehealth visit can get most of these in your hands the same day.
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** via same-day [telehealth](/resources/telehealth). A correct induction can drop withdrawal to near zero within hours. The prescription is same-day in most US states, but you have to wait until your [COWS score is ≥ 12](/mat-suboxone/suboxone-cows) before the first dose (typically 12 to 24 hours into withdrawal, longer for the long-acting synthetics). Going earlier causes precipitated withdrawal.
 
 ## Options from here
 
-These are short-term tools. The longer-term decision is which path off you want to take. The [Paths Off 7-OH](/start-here/paths-off) page covers the six paths the community has used, ranked by how the harm-reduction logic shakes out. If you're tapering the 7-OH dose itself rather than switching off, [Tapering Off 7-OH](/for-you/tapering-7oh) covers what that looks like.
+These are short-term tools. The longer-term decision is which path off you want to take. The [Paths Off 7-OH](/start-here/how-to-quit-7-oh) page covers the six paths the community has used, ranked by how the harm-reduction logic shakes out. If you're tapering the 7-OH dose itself rather than switching off, [Tapering Off 7-OH](/for-you/tapering-7oh) covers what that looks like.
 
 ## When to go to the ER
 
@@ -212,7 +212,7 @@ add for sleep specifically), see
 
 Helper meds that work for sleep (prescription, ask a provider):
 trazodone, doxepin, gabapentin. See
-[Helper Medications](/other-tools/helper-meds-info) for the full
+[Helper Medications](/other-tools/helper-meds) for the full
 menu (including the meds with restless-legs caveats).
 
 ## Food
@@ -249,11 +249,11 @@ A few things people who've been here wish someone had told them:
 ## When you can, read these next
 
 - **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark for the "fuck its" moments. They'll come.
-- **[Helper Medications](/other-tools/helper-meds-info)**: what
+- **[Helper Medications](/other-tools/helper-meds)**: what
   to ask a prescriber for
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
  , what's worth buying, what isn't
-- **[Suboxone](/mat-suboxone/suboxone-info)**: the MAT path,
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)**: the MAT path,
   if you're considering it
 - **[What is PAWS](/post-acute/what-is-paws)**: what comes after the
   worst is over

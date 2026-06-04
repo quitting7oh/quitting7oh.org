@@ -7,7 +7,7 @@ sort: 5
 ---
 Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5 mg, 4/1 mg, 8/2 mg, 12/3 mg). When you're tapering, especially at the lower end, you need fractional doses that don't exist as a manufactured product. Cutting films into smaller pieces is how the bupe community has handled this for years. Done carefully, it's accurate enough to taper by 0.25 mg increments.
 
-This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-info).
+This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-for-7oh).
 
 ## Supplies
 - **Bupe film** (any strength, but 8 mg films give you the most flexibility)

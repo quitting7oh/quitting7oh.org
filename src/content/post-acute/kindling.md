@@ -164,7 +164,7 @@ reasonable moment to get one.
 ## Where to read next
 
 - **[Thinking About Using?](/start-here/thinking-about-using)**: the in-the-moment page if a craving is loud right now
-- **[Withdrawal Help](/start-here/withdrawal-help)**: acute-withdrawal protocol if you're heading back through it
+- **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: acute-withdrawal protocol if you're heading back through it
 - **[What is PAWS](/post-acute/what-is-paws)**: the persistent neuroadaptations this page is partly about
 - **[Long-Term Outlook](/post-acute/long-term-outlook)**: the stack-the-days framing on relapse and recovery
 - **[Telehealth Providers](/resources/telehealth)**: prescribers who work with kratom and 7-OH

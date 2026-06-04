@@ -33,7 +33,7 @@ This section is the practical-resources version. The rest of this site covers wh
 This site has substantial MAT content already. If medication-assisted treatment is something you're considering or already on, that's the place to start, not this section:
 
 - **[MAT / Suboxone](/mat-suboxone)**: overview, induction, [COWS/SOWS timing](/mat-suboxone/suboxone-cows), low-and-slow community approach, [tapers](/mat-suboxone/suboxone-rapid-taper), [what to do when bupe doesn't fully cover you](/mat-suboxone/suboxone-isnt-working).
-- **[Telehealth Providers](/resources/telehealth)**: a fact-checked comparison of telehealth options that prescribe [Suboxone](/mat-suboxone/suboxone-info) without an in-person visit.
+- **[Telehealth Providers](/resources/telehealth)**: a fact-checked comparison of telehealth options that prescribe [Suboxone](/mat-suboxone/suboxone-for-7oh) without an in-person visit.
 
 The community's experience with [7-OH](/compounds/7-oh) and kratom synthetics specifically often differs from the standard clinical playbook (lower starting doses for bupe, attention to the long-acting synthetics, the polysubstance picture). Those pages are worth reading even if you've already been through general addiction-medicine guidance.
 
@@ -51,4 +51,4 @@ You're not the first person to be where you are. Real-time conversation often he
 - **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline)**: 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
 - **911**: for immediate danger
 
-If you're in active withdrawal and looking for what to do right now, the **[Withdrawal Help](/start-here/withdrawal-help)** page is the more relevant starting point than this section.
+If you're in active withdrawal and looking for what to do right now, the **[Withdrawal Help](/start-here/7-oh-withdrawal-help)** page is the more relevant starting point than this section.

@@ -229,12 +229,12 @@ nausea, single-med coverage), **buspirone** (anxiety without
 dependence),
 **[low-dose naltrexone](/post-acute/naltrexone-low-dose)** (post-acute only, can't combine with bupe),
 and continued **MAT**, buprenorphine via the [Sublocade single-shot
-exit](/mat-suboxone/sublocade-brixadi-info#using-a-single-shot-as-an-exit-from-long-term-suboxone),
-or [SR-17](/other-tools/sr17018-info) as the second
+exit](/mat-suboxone/sublocade-brixadi#using-a-single-shot-as-an-exit-from-long-term-suboxone),
+or [SR-17](/other-tools/sr-17) as the second
 community-validated medication-assisted path off the synthetics.
 
 For what each does, when it's used, dosing context, and the
-interaction profile: **[Helper Medications](/other-tools/helper-meds-info)**
+interaction profile: **[Helper Medications](/other-tools/helper-meds)**
 is the primary page. For getting a prescriber, see
 **[Telehealth Providers](/resources/telehealth)**.
 
@@ -252,7 +252,7 @@ serotonergic interactions with SSRIs).
 the primary page, full breakdown by symptom, the interaction
 profiles, and the practical "don't stack everything at once" guidance.
 
-Peptides (Selank for anxiety, Semax for cognition, DSIP for sleep) come up in PAWS contexts and are covered honestly on **[Peptides for Opioid Withdrawal](/other-tools/peptides-info)**: what the evidence supports per peptide, the supply-chain and injection-safety considerations, and how the cost compares to evidence-based alternatives. None have been studied specifically for PAWS.
+Peptides (Selank for anxiety, Semax for cognition, DSIP for sleep) come up in PAWS contexts and are covered honestly on **[Peptides for Opioid Withdrawal](/other-tools/peptides-for-withdrawal)**: what the evidence supports per peptide, the supply-chain and injection-safety considerations, and how the cost compares to evidence-based alternatives. None have been studied specifically for PAWS.
 
 ### Things to avoid
 

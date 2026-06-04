@@ -54,7 +54,7 @@ Weekly or biweekly individual therapy, often with a recovery group component. Wh
 
 MAT is not a separate level, it's a medication-based approach that
 can be combined with any of the above. Most rehabilitation centers
-offer **[Suboxone](/mat-suboxone/suboxone-info)** as part of detox or
+offer **[Suboxone](/mat-suboxone/suboxone-for-7oh)** as part of detox or
 ongoing treatment. **Methadone** is more tightly regulated (typically
 daily clinic visits) and is generally delivered through dedicated
 methadone clinics rather than residential programs. Both are
@@ -62,8 +62,8 @@ legitimate; the right one depends on the specific situation.
 
 For the medication details, community-validated induction protocol,
 rapid-taper structure, long-term risks, and the other
-community-documented paths like [SR-17](/other-tools/sr17018-info) and
-[tapering with kratom leaf](/other-tools/tapering-with-leaf), see
+community-documented paths like [SR-17](/other-tools/sr-17) and
+[tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf), see
 **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)**
 or the [MAT / Suboxone section](/mat-suboxone). Many clinicians have
 not encountered [7-OH](/compounds/7-oh) dependence specifically and

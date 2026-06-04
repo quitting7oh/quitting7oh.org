@@ -15,7 +15,7 @@ The dopamine system handles motivation, reward learning, and the felt sense of "
 - **Novelty.** New places, new people, new routines. The novelty-detection system is partly dopaminergic, and chronically-the-same environments tend to deepen the flatness.
 - **Time.** Most of the recovery curve is the system rebalancing on its own. There is no documented shortcut.
 
-For prescribed medications relevant to flat mood (bupropion specifically), see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) and [Helper Medications](/other-tools/helper-meds-info). For supplements the community discusses for the dopamine picture (L-tyrosine, mucuna pruriens, NAC, with real caveats), see [Vitamins & Supplements](/other-tools/vitamins-supplements).
+For prescribed medications relevant to flat mood (bupropion specifically), see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) and [Helper Medications](/other-tools/helper-meds). For supplements the community discusses for the dopamine picture (L-tyrosine, mucuna pruriens, NAC, with real caveats), see [Vitamins & Supplements](/other-tools/vitamins-supplements).
 
 ## What the timeline looks like
 

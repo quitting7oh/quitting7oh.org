@@ -2,12 +2,12 @@
 title: "Suboxone (Buprenorphine/Naloxone)"
 description: "Suboxone for coming off 7-OH and kratom synthetics. Induction, low-and-slow dosing, short-taper schedules, and the receptor pharmacology behind the approach."
 category: "mat-suboxone"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 2
 ---
 > **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues separate from whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
 
-Suboxone is one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr17018-info). [Tapering with kratom leaf](/other-tools/tapering-with-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds-info) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
+Suboxone is one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr-17). [Tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
 
 **Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
 
@@ -44,7 +44,7 @@ If you've been on the long-acting compounds and your COWS isn't climbing past 24
 
 ## Coverage gaps with bupe
 
-**The serotonergic and adrenergic piece.** Kratom's minor alkaloids (paynantheine, speciogynine, corynantheidine, and others) bind serotonin and adrenergic receptors **directly** ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)). That's direct receptor agonism or antagonism. Suboxone is opioid-receptor medication. It doesn't reach the serotonergic-adrenergic load that drives the wired, anxious, can't-sleep part of withdrawal. Adjuncts like clonidine, gabapentin, lofexidine, and short-term sleep support can fill that gap (see [Helper Medications](/other-tools/helper-meds-info)).
+**The serotonergic and adrenergic piece.** Kratom's minor alkaloids (paynantheine, speciogynine, corynantheidine, and others) bind serotonin and adrenergic receptors **directly** ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)). That's direct receptor agonism or antagonism. Suboxone is opioid-receptor medication. It doesn't reach the serotonergic-adrenergic load that drives the wired, anxious, can't-sleep part of withdrawal. Adjuncts like clonidine, gabapentin, lofexidine, and short-term sleep support can fill that gap (see [Helper Medications](/other-tools/helper-meds)).
 
 For more on bupe failure modes, see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
 
@@ -105,7 +105,7 @@ Things that help during the taper:
 
 - The supplements and adjuncts in [Vitamins & Supplements](/other-tools/vitamins-supplements) can take the edge off the lower-dose portions.
 - Keep your COWS awareness up. Tracking symptoms during a taper helps you decide when to drop and when to hold.
-- Don't redose the compound that brought you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo, or stacked synthetics). That restarts the cycle. Planned kratom-leaf tapering is a separate protocol. See [Tapering with Leaf Kratom](/other-tools/tapering-with-leaf).
+- Don't redose the compound that brought you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo, or stacked synthetics). That restarts the cycle. Planned kratom-leaf tapering is a separate protocol. See [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf).
 
 ## About taper duration
 
@@ -152,7 +152,7 @@ Short tapers don't work for everyone here. People coming off long-acting synthet
 **If long-term maintenance fits your situation better, you have options:**
 
 - **Continue maintenance.** Stable life, full functioning, no taper urgency. Maintenance is a treatment outcome on its own terms.
-- **Switch to a long-acting injection.** [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi-info) (extended-release buprenorphine, monthly) get you off the daily sublingual ritual and the per-day decision-making. For some people, that ritual was the unstable part.
+- **Switch to a long-acting injection.** [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi) (extended-release buprenorphine, monthly) get you off the daily sublingual ritual and the per-day decision-making. For some people, that ritual was the unstable part.
 - **Plan a slow taper when *you're* ready.** Months or years from now, on your timeline. The taper protocols on this site still apply; they take longer when starting from higher doses.
 
 **There is no shame in any of these.** The shame framing around long-term MAT is a holdover from less-informed treatment culture. It doesn't reflect what the medication does, or what stable maintenance looks like.

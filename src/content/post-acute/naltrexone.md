@@ -15,7 +15,7 @@ sort: 10
 > Read that page's safety section before considering naltrexone in
 > any form.
 
-Naltrexone is a **mu-opioid receptor antagonist**: it occupies the same receptors that opioids bind to, without activating them. It's one of three FDA-approved medications for opioid use disorder, alongside [buprenorphine](/mat-suboxone/suboxone-info) (partial mu agonist) and methadone (full mu agonist), and the three are not formally ranked ([ASAM 2020](https://www.asam.org/docs/default-source/practice-support/guidelines-and-consensus-docs/asam-national-practice-guideline-pocketguide.pdf), [SAMHSA TIP 63](https://library.samhsa.gov/sites/default/files/pep21-02-01-002.pdf)).
+Naltrexone is a **mu-opioid receptor antagonist**: it occupies the same receptors that opioids bind to, without activating them. It's one of three FDA-approved medications for opioid use disorder, alongside [buprenorphine](/mat-suboxone/suboxone-for-7oh) (partial mu agonist) and methadone (full mu agonist), and the three are not formally ranked ([ASAM 2020](https://www.asam.org/docs/default-source/practice-support/guidelines-and-consensus-docs/asam-national-practice-guideline-pocketguide.pdf), [SAMHSA TIP 63](https://library.samhsa.gov/sites/default/files/pep21-02-01-002.pdf)).
 
 Three protocols use the same molecule at doses that span **three orders of magnitude** for three different purposes. Don't mix them up.
 
@@ -53,13 +53,13 @@ ULDN column is investigational, the mechanism literature has issues
 
 - During active opioid use, full-dose naltrexone causes immediate,
   severe precipitated withdrawal.
-- During a buprenorphine ([Suboxone](/mat-suboxone/suboxone-info))
+- During a buprenorphine ([Suboxone](/mat-suboxone/suboxone-for-7oh))
   or methadone taper, same problem, with longer-acting
   consequences.
 - As a substitute for a structured taper, naltrexone is a
   post-abstinence tool, not a quitting tool. For the four
   community-validated paths off 7-OH and synthetics, see
-  [Withdrawal Help](/start-here/withdrawal-help).
+  [Withdrawal Help](/start-here/7-oh-withdrawal-help).
 - In ULDN form, as a routine recovery intervention, it's
   investigational and the evidence base is thin.
 

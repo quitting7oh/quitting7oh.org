@@ -2,14 +2,14 @@
 title: "Tapering with Leaf Kratom"
 description: "Using kratom leaf to bridge off concentrated 7-OH and synthetics, when it works, when it doesn't."
 category: "other-tools"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 5
 ---
 For some users in this community, **plain kratom leaf powder can be used as a taper tool** to come off [7-OH](/compounds/7-oh) and other concentrated kratom-derived products. The reasoning is straightforward: [7-OH](/compounds/7-oh) is one of the alkaloids naturally present in kratom leaf, just at far lower concentrations than in concentrated products. Tapering down to leaf is essentially reducing your alkaloid exposure to a fraction of what concentrated products deliver, and then tapering off the leaf itself.
 
 The other taper-shaped path is tapering the concentrated 7-OH dose directly without switching to anything. See [Tapering Off 7-OH](/for-you/tapering-7oh) for that one, including where it stalls and what the jump-off looks like.
 
-**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [Suboxone](/mat-suboxone/suboxone-info)) or SR-17018 to bridge through. **The two paths covered here:**
+**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [Suboxone](/mat-suboxone/suboxone-for-7oh)) or SR-17018 to bridge through. **The two paths covered here:**
 
 - **Under ~100 mg [7-OH](/compounds/7-oh) equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
@@ -113,4 +113,4 @@ What to look for:
 - [Chemical composition of kratom (Nature)](https://www.nature.com/articles/s41598-020-76119-w)
 - [Red Kratom Guide](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom)
 - [Mitragyna alkaloid breakdown](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/)
-- See also: [Suboxone](/mat-suboxone/suboxone-info), [Vitamins & Supplements](/other-tools/vitamins-supplements), [Telehealth Providers](/resources/telehealth)
+- See also: [Suboxone](/mat-suboxone/suboxone-for-7oh), [Vitamins & Supplements](/other-tools/vitamins-supplements), [Telehealth Providers](/resources/telehealth)

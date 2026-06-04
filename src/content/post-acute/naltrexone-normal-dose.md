@@ -17,7 +17,7 @@ sort: 11
 > "Opioids" here includes [7-OH](/compounds/7-oh), kratom and the
 > kratom synthetics ([MGM-15](/compounds/mgm15),
 > [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)),
-> [buprenorphine](/mat-suboxone/suboxone-info) (Suboxone, Subutex,
+> [buprenorphine](/mat-suboxone/suboxone-for-7oh) (Suboxone, Subutex,
 > Sublocade), methadone, and any prescription opioid.
 >
 > **Required opioid-free windows before initiation:** at least
@@ -210,7 +210,7 @@ quitting tool. It's for **after** acute withdrawal is over, as a
 relapse-prevention scaffold for someone who has decided to stay
 opioid-free.
 
-For the actual quitting process, see [Withdrawal Help](/start-here/withdrawal-help)
+For the actual quitting process, see [Withdrawal Help](/start-here/7-oh-withdrawal-help)
 for the four community-documented paths off 7-OH and the synthetics.
 For the post-acute symptoms naltrexone doesn't directly address,
 see [What is PAWS](/post-acute/what-is-paws) and

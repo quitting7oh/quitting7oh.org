@@ -18,7 +18,7 @@ The two often co-occur. Depression that comes with anhedonia is common; pure anh
 
 ## Tools and interventions
 
-- **Bupropion when anhedonia is the leading symptom.** Norepinephrine-dopamine reuptake inhibitor, more directly relevant to the dopaminergic flatness than the serotonergic SSRI/SNRI mechanism. SSRIs remain first-line for classical depressed-mood presentations; bupropion is often the better fit when "I can't feel anything" is the dominant experience. Full pharmacology and clinical context on [Helper Medications](/other-tools/helper-meds-info).
+- **Bupropion when anhedonia is the leading symptom.** Norepinephrine-dopamine reuptake inhibitor, more directly relevant to the dopaminergic flatness than the serotonergic SSRI/SNRI mechanism. SSRIs remain first-line for classical depressed-mood presentations; bupropion is often the better fit when "I can't feel anything" is the dominant experience. Full pharmacology and clinical context on [Helper Medications](/other-tools/helper-meds).
 - **Behavioral activation.** Do the things even when they don't feel good. The reward response often returns *after* the activity, not in anticipation of it. "Wait until you feel like it" is the trap.
 - **Mirtazapine as single-med coverage.** A [2023 review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10509332/) proposed it as a "one-stop strategy" for several recovery-cluster symptoms (depression, anxiety, insomnia, nausea) in one medication.
 - **Low-dose naltrexone for post-acute specifically.** Some readers use it to support endogenous endorphin recovery, which is part of the underlying picture for both depression and anhedonia. Cannot be taken while on Suboxone. See [Low-Dose Naltrexone](/post-acute/naltrexone-low-dose).

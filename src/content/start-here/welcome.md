@@ -71,7 +71,7 @@ thinking about using, in PAWS, planning to quit, helping someone else,
 or just trying to understand what any of this is).
 
 If you're in active withdrawal right now and don't want to read
-anything else: **[Withdrawal Help](/start-here/withdrawal-help)** is the
+anything else: **[Withdrawal Help](/start-here/7-oh-withdrawal-help)** is the
 single most useful page for the next hour.
 
 ## Find the community

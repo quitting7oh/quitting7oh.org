@@ -2,13 +2,13 @@
 title: "Mega-Dose Vitamin C"
 description: "High-dose vitamin C as a withdrawal adjunct: the protocol, the brands, the cautions."
 category: "other-tools"
-last_updated: "2026-05-30"
+last_updated: "2026-06-04"
 sort: 4
 ---
 
 > **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, hemochromatosis (iron overload), or are taking an iron supplement. High-dose vitamin C interacts with these conditions and the conversation has to happen.
 
-Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-info), [SR-17](/other-tools/sr17018-info), [tapering with leaf](/other-tools/tapering-with-leaf), cold turkey with [helper meds](/other-tools/helper-meds-info), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
+Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-for-7oh), [SR-17](/other-tools/sr-17), [tapering with leaf](/other-tools/tapering-with-kratom-leaf), cold turkey with [helper meds](/other-tools/helper-meds), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
 
 ## The protocol
 
@@ -50,7 +50,7 @@ We have no affiliate relationship with any of these vendors. Substitute brands y
 ## Pair it with
 
 - **Vitamin E.** The 2000 Evangelou study used C + E together as antioxidants (~5 mg E per kg body weight per day).
-- **Magnesium glycinate.** For restless legs, sleep, and anxiety. See [Helper Medications](/other-tools/helper-meds-info).
+- **Magnesium glycinate.** For restless legs, sleep, and anxiety. See [Helper Medications](/other-tools/helper-meds).
 - **Electrolytes.** Megadosing increases urination; replace what you lose.
 - **The rest of the supplement stack.** L-tyrosine, NAC, B-complex, omega-3. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
 

@@ -176,7 +176,7 @@ of you before you need it.
 Cravings cluster predictably:
 
 - **Acute withdrawal** (week 1), your brain wants the thing it
-  adapted to. See [Withdrawal Help](/start-here/withdrawal-help).
+  adapted to. See [Withdrawal Help](/start-here/7-oh-withdrawal-help).
 - **Sub-acute (weeks 2–4)**: sleep is broken, mood swings, anhedonia
   starting to lift but not gone. Highest-risk window for many people.
 - **[PAWS](/post-acute/what-is-paws), months 1–6**: waves less

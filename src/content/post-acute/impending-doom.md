@@ -223,11 +223,11 @@ anxiety / impending-doom picture include:
 - **Benzodiazepines**: effective short-term with real caveats (dependence, cross-tolerance with bupe is a documented overdose pattern)
 - **Buprenorphine or other MAT**: addresses the underlying
   receptor-system dysregulation. See [MAT / Suboxone](/mat-suboxone)
-  and [SR-17](/other-tools/sr17018-info) as the two
+  and [SR-17](/other-tools/sr-17) as the two
   community-validated medication-assisted paths off the synthetics
 
 For what each does, when it's used, the caveats, and the
-interactions: **[Helper Medications](/other-tools/helper-meds-info)**
+interactions: **[Helper Medications](/other-tools/helper-meds)**
 is the primary page. For getting a prescriber, see
 **[Telehealth Providers](/resources/telehealth)**.
 

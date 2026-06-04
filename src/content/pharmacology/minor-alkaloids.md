@@ -8,7 +8,7 @@ sort: 1
 
 This is a deeper, more academic reference. **If you're in active
 withdrawal, this is not the page for you**, head to
-[Withdrawal Help](/start-here/withdrawal-help) instead. This page is
+[Withdrawal Help](/start-here/7-oh-withdrawal-help) instead. This page is
 for people trying to understand *why* kratom feels the way it does,
 why withdrawal is harder than its raw opioid story suggests, and why
 some of the lesser-known leaf alkaloids matter.
@@ -114,12 +114,12 @@ which is part of why:
 
 - Withdrawal symptoms include a wired-anxiety, brain-zap quality
   that pure-opioid models don't predict
-- [Suboxone](/mat-suboxone/suboxone-info) (a pure µ-opioid
+- [Suboxone](/mat-suboxone/suboxone-for-7oh) (a pure µ-opioid
   intervention) covers the opioid receptor side but doesn't lift the
   serotonergic/adrenergic side, see
   [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
 - Adjuncts like clonidine (α-2 agonist, see
-  [Helper Medications](/other-tools/helper-meds-info)) target the
+  [Helper Medications](/other-tools/helper-meds)) target the
   adrenergic component specifically
 
 The clinical takeaway is on the recovery pages; the pharmacology

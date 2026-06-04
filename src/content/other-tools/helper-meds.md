@@ -2,7 +2,7 @@
 title: "Helper Medications"
 description: "Prescription adjuncts that take the edge off, clonidine, gabapentin, hydroxyzine, trazodone, baclofen."
 category: "other-tools"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 1
 ---
 > **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
@@ -171,4 +171,4 @@ Common starter combos:
 - **Adding for muscle pain:** plus baclofen or tizanidine
 - **Adding for post-acute mood:** Wellbutrin (after the acute phase ends)
 
-Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/tapering-with-leaf), [Suboxone](/mat-suboxone/suboxone-info), or [SR-17](/other-tools/sr17018-info). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
+Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/tapering-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/other-tools/sr-17). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.

@@ -208,7 +208,7 @@ evidence for cannabinoids in chemotherapy-induced nausea
 Withdrawal nausea has not been studied directly, but the antiemetic
 mechanism is well-characterized. For most people, prescribed
 ondansetron is a cleaner first-line option, see
-[Helper Medications](/other-tools/helper-meds-info).
+[Helper Medications](/other-tools/helper-meds).
 
 **Chronic pain (cannabis-based medicines).** The National Academies'
 2017 consolidated review concluded there is substantial evidence for
@@ -428,7 +428,7 @@ more useful than cannabis: [Sleep Recovery](/post-acute/sleep-recovery),
 [Depression and Anhedonia](/post-acute/depression-and-anhedonia),
 [Impending Doom](/post-acute/impending-doom), and the
 prescription-adjunct options on
-[Helper Medications](/other-tools/helper-meds-info), those *are*
+[Helper Medications](/other-tools/helper-meds), those *are*
 things a prescriber will actively help with, and several of them
 target the same symptoms cannabis sometimes gets used for, without
 the addiction-substitution risk.

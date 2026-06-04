@@ -166,5 +166,5 @@ The endocrine picture and the PAWS picture share substantial symptom overlap: lo
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the focused page on mood symptoms and clinical interventions
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep architecture and what helps
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: endocrine recovery often begins during taper, not after
-- **[Helper Medications](/other-tools/helper-meds-info)**: prescription comfort meds with established evidence
+- **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
 - **[Telehealth Providers](/resources/telehealth)**: clinicians who can order endocrine testing and arrange specialty referrals
