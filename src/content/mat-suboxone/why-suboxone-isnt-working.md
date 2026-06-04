@@ -62,7 +62,7 @@ Most people in this community are coming off 7-OH, but if you've also been on **
 
 **Pseudo ([mitragynine pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl))** [binds the mu receptor tighter than buprenorphine itself does](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Even when bupe is on board, displacement and stabilization can be incomplete in a way that doesn't happen with 7-OH.
 
-**[MIT-A/DHM](/compounds/mit-a-dihydromitragynine)** is long-acting and the literature is thin. Treat it like [MGM-15](/compounds/mgm15) in terms of needing more time and potentially higher stabilization doses.
+**Products marketed as [MIT-A or DHM](/compounds/mit-a-dihydromitragynine)** contain [MGM-15](/compounds/mgm15) mixed with concentrated mitragynine. Treat induction the same as for [MGM-15](/compounds/mgm15): longer washout, potentially higher stabilization doses, and expect the first 2–3 days to be the hardest because bupe doesn't fully cover MGM-15's delta-receptor contribution.
 
 If any of these were in the mix, **be honest with your prescriber about what you've used.** Most providers haven't heard of these compounds, and if they're running the standard kratom playbook on someone who's been on a long-acting full mu/delta agonist, of course bupe isn't going to feel right.
 

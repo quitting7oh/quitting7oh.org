@@ -16,6 +16,69 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-04
 
+### MIT-A / DHM page rewrite + MGM-15 chemistry corrections
+
+The MIT-A / DHM compound page (currently at
+`/compounds/mit-a-dihydromitragynine`) was wrong on the underlying
+chemistry. It framed "DHM" as 1,2-dihydromitragynine (a reduction
+of mitragynine itself) and as a distinct compound from
+[MGM-15](/compounds/mgm15). The forensic-chemistry literature
+(CFSRE monograph, UNODC substance detail, Matsumoto 2014) is
+consistent: **DHM is the same compound as MGM-15** —
+dihydro-7-hydroxymitragynine, a reduction product of 7-OH, not of
+mitragynine. The page has been rewritten end-to-end to correct
+this and to document what's actually in products sold under those
+labels.
+
+Eight beats: TL;DR with the correction up front, community
+reports (effect comparisons, dose patterns, withdrawal severity,
+inter-product and batch variability, COA references, geographic
+concentration), the chemistry (selective NaBH₄ reduction of 7-OH
+gives MGM-15; selective reduction of mitragynine doesn't give a
+clean product), how standard GC-MS testing thermally reverts
+MGM-15 to mitragynine and misses it, the regulatory landscape
+(Florida 400-ppm 7-OH threshold; Louisiana; Ohio explicitly
+naming dihydro-7-hydroxy mitragynine in December 2025), marketing
+patterns, open questions and limits, and what this means for a
+reader being sold one of these products.
+
+Sourcing combined Playwright-driven Reddit research (~50
+substantive threads across r/quitting7oh, r/Kratom_7OH,
+r/Quittingfeelfree, r/quittingkratom, r/Life_After_7oh,
+r/7ohbuddies, r/recoverywithoutAA, and several smaller subs) for
+the empirical side, and peer-reviewed chemistry + the CFSRE
+forensic-chemistry monograph for the technical and analytical
+side. Community reports independently confirm the GC-MS reversion
+pattern, the geographic concentration in 7-OH ban states, and the
+"marketed as MIT but feels like 7-OH" effect-vs-label dispute
+that the chemistry hypothesis predicts.
+
+**Same commit also corrected four factual errors on the
+[MGM-15 page](/compounds/mgm15)** that the chemistry-verification
+agent caught against Matsumoto et al. 2014:
+
+- MGM-16 fluorine position: noted as 10-fluoro per natural-product
+  numbering with the 9-fluoro IUPAC convention referenced
+  (previously only 9-fluoro)
+- MGM-15 receptor Ki: corrected to ~6.4 nM MOR and ~16 nM DOR
+  (previously listed as ~28 nM and ~59 nM with no source)
+- 240×-morphine potency: attributed to MGM-16 only (previously
+  implicitly attributed to MGM-15 in places)
+- 15-hour half-life claim: removed (no traceable primary source;
+  community-reported 9–15 hour duration noted as anecdotal until
+  human PK is published)
+
+Also: the [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working)
+MIT-A subsection updated to reflect that "MIT-A or DHM" products
+contain MGM-15 plus mitragynine, with induction guidance pointing
+at the MGM-15 page.
+
+**Slug note (flagged to user, not changed in this commit):** the
+current slug `/compounds/mit-a-dihydromitragynine` encodes the
+wrong chemistry into the URL. Possible follow-up rename to
+`/compounds/mit-a-dhm` (matches what users search) with 301
+redirects.
+
 ### Community routing: only our resources for calls-to-action
 
 New CLAUDE.md rule: when telling readers where to go for community
