@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "prebuild": "npm run sync:changelog",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
+    "sync:changelog": "node scripts/sync-site-changelog.mjs",
     "link:compounds": "node scripts/link-compounds.mjs",
     "link:compounds:dry": "node scripts/link-compounds.mjs --dry-run",
     "lint:md": "markdownlint-cli2 \"src/content/**/*.md\" \"src/content/**/*.mdx\""

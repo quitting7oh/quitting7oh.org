@@ -2,14 +2,12 @@
 title: "Suboxone Rapid Taper"
 description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
 category: "mat-suboxone"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 4
 ---
-> **Note: Suboxone is one path off 7-OH, not the default starting point.** If your use is in the range where lighter tools work, consider those before committing to a bupe induction: [tapering with leaf](/other-tools/tapering-with-leaf), [cold turkey with helper meds](/other-tools/helper-meds-info), or [SR-17](/other-tools/sr17018-info). This page is for when you've decided Subs is the right tool.
+These schedules go faster than what a prescriber will typically suggest. They're built on community experience with hundreds of successful rapid tapers from 7-OH, where 5-to-10-day bupe courses at low-to-moderate doses have not produced meaningful bupe dependence. Most prescribers won't sign off on these timelines; you're choosing a community-developed approach over standard clinical practice.
 
-> **This post describes rapid taper schedules used by this community for 7-OH dependence. These schedules deliberately go faster than standard medical guidance.** They reflect community experience with hundreds of successful rapid tapers from 7-OH, where short bupe courses (5 to 10 days) at low-to-moderate doses have not produced meaningful bupe dependence in our population. **This is not how a prescriber will typically run a taper, and most prescribers won't sign off on these timelines.** If you're considering this, you're choosing a community-developed approach over standard clinical practice. Make sure you understand what you're choosing.
-
-> **This is for 7-OH dependence only.** If you've been on MGM-15, MIT-A, pseudo, or stacked compounds, **these schedules will not work for you** and you'll get hurt trying. Long-acting synthetics and high-affinity binders need longer tapers because of their pharmacology, not because of medical conservatism. See the relevant compound page for the right approach.
+**On [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo), or stacked compounds?** Induction timing and bupe coverage both differ from straight 7-OH: COWS/SOWS takes longer to climb (36 to 72 hours rather than 14 to 24), and the delta-opioid activity of some of these compounds means bupe may not fully cover withdrawal symptoms. Read [Why Suboxone Might Not Be Working: long-acting synthetics or stacked compounds](/mat-suboxone/suboxone-isnt-working#if-youve-been-on-long-acting-synthetics-or-stacked-compounds) before applying the schedules below.
 
 ## Pharmacology: 7-OH vs. the heavier synthetics
 [7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
@@ -23,9 +21,14 @@ All schedules assume:
 - You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
 
+**Most prescriptions come as 8 mg strips.** Cutting an 8 mg strip into eighths gives 1 mg pieces and into sixteenths gives 0.5 mg, but accuracy starts to suffer below that. Two options for the small-dose days: ask your prescriber for **2 mg strips** (they exist; you have to ask), or use [volumetric dosing](/mat-suboxone/suboxone-custom-dose#volumetric-dosing-films-and-tablets) for the lower-dose days (dissolve a strip in a measured volume of water and dose by syringe). At small doses, volumetric is more accurate than scissor-cutting.
+
 *All doses in mg. Each row is one day; each column is a schedule option. A dash means that schedule has already ended, no more doses.*
 
 ### Starting at 2 mg
+
+<details class="my-3">
+<summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 2 mg taper schedule (5-day)</summary>
 
 | Day | 5-day |
 |---|---|
@@ -35,7 +38,12 @@ All schedules assume:
 | 4 | 0.5 |
 | 5 | 0.25 |
 
+</details>
+
 ### Starting at 4 mg
+
+<details class="my-3">
+<summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 4 mg taper schedule (5-day or 7-day)</summary>
 
 | Day | 5-day | 7-day |
 |---|---|---|
@@ -47,7 +55,12 @@ All schedules assume:
 | 6 | — | 0.5 |
 | 7 | — | 0.25 |
 
+</details>
+
 ### Starting at 6 mg
+
+<details class="my-3">
+<summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 6 mg taper schedule (5/7/10-day options)</summary>
 
 | Day | 5-day | 7-day | 10-day |
 |---|---|---|---|
@@ -62,24 +75,64 @@ All schedules assume:
 | 9 | — | — | 0.5 |
 | 10 | — | — | 0.25 |
 
+</details>
+
 ### Starting at 8 mg
 
-> If you ended up at 8 mg, **double-check that 7-OH alone is what you were on.** This dose is on the higher end for pure 7-OH dependence and may indicate underlying use of MGM-15, MIT-A, pseudo, or stacked compounds.
+> **8 mg is a high starting dose for 7-OH dependence.** Double-check you weren't also on MGM-15, MIT-A, pseudo, or stacked compounds; that's the more common cause of an 8 mg induction. Beyond that: 8 mg is a lot of bupe, and some readers find the 5-to-10-day schedules harder to ride out than at lower starting doses. The 14- and 21-day options exist for those cases. **The trade-off:** the longer the taper, the more bupe exposure, and the higher the risk that Suboxone withdrawal becomes its own problem on top of whatever brought you here. If 14 or 21 days starts feeling comfortable rather than hard, [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi-info) is a cleaner exit than a long daily-dose taper.
 
-| Day | 5-day | 7-day | 10-day |
-|---|---|---|---|
-| 1 | 8 | 8 | 8 |
-| 2 | 5 | 8 | 6 |
-| 3 | 3 | 6 | 5 |
-| 4 | 1.5 | 4 | 4 |
-| 5 | 0.5 | 2 | 3 |
-| 6 | — | 1 | 2 |
-| 7 | — | 0.5 | 1 |
-| 8 | — | — | 0.5 |
+<details class="my-3">
+<summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 8 mg taper schedule (5/7/10/14/21-day options)</summary>
+
+| Day | 5-day | 7-day | 10-day | 14-day | 21-day |
+|---|---|---|---|---|---|
+| 1 | 8 | 8 | 8 | 8 | 8 |
+| 2 | 5 | 8 | 6 | 8 | 8 |
+| 3 | 3 | 6 | 5 | 7 | 8 |
+| 4 | 1.5 | 4 | 4 | 6 | 7 |
+| 5 | 0.5 | 2 | 3 | 6 | 7 |
+| 6 | — | 1 | 2 | 5 | 6 |
+| 7 | — | 0.5 | 1 | 4 | 6 |
+| 8 | — | — | 0.5 | 4 | 5 |
+| 9 | — | — | — | 3 | 5 |
+| 10 | — | — | — | 2 | 4 |
+| 11 | — | — | — | 1.5 | 4 |
+| 12 | — | — | — | 1 | 3 |
+| 13 | — | — | — | 0.5 | 3 |
+| 14 | — | — | — | 0.25 | 2 |
+| 15 | — | — | — | — | 1.5 |
+| 16 | — | — | — | — | 1 |
+| 17 | — | — | — | — | 0.75 |
+| 18 | — | — | — | — | 0.5 |
+| 19 | — | — | — | — | 0.5 |
+| 20 | — | — | — | — | 0.25 |
+| 21 | — | — | — | — | 0.25 |
+
+</details>
+
+All schedules end at 0.25 mg on their final day, where the [bottom-of-the-taper extension](#the-bottom-of-the-taper) takes over if you want to soften the jump further.
 
 ### Starting at more than 8 mg
 
 Use ChatGPT, Gemini, or Claude to generate your own custom taper plan based on the patterns above.
+
+## The bottom of the taper
+
+Some people land their last 0.25 mg dose, expect to walk away, and instead get caught by the jump. The absolute drop from 0.25 mg to zero is small but represents a meaningful change in receptor occupancy, and a fraction of people in this community report that jumping straight from 0.25 mg produces symptoms harder than expected.
+
+If that's you, extending the tail for a few more days at sub-0.25 mg doses can soften the jump. With [volumetric dosing](/mat-suboxone/suboxone-custom-dose#volumetric-dosing-films-and-tablets) (dissolving a strip in water and drawing a measured fraction with an oral syringe), you can target doses well below the scissor-cut floor of 0.125 mg. A practical three-day tail, sized to the 8 mg strips most prescriptions come as:
+
+| Tail day | Target dose | Volumetric mix (one 8 mg strip) |
+|---|---|---|
+| +1 | 0.1 mg | dissolve in 80 mL water → draw 1 mL |
+| +2 | 0.05 mg | dissolve in 160 mL water → draw 1 mL |
+| +3 | 0.02 mg | dissolve in 400 mL water → draw 1 mL |
+
+All math checks: an 8 mg strip in 80 mL gives 0.1 mg/mL, so 1 mL = 0.1 mg. Each row uses a fresh strip dissolved in water (or water + propylene glycol if you want to mix once and dose from one solution across days; see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose#volumetric-dosing-films-and-tablets) for the stability details). If you got 2 mg strips, scale every water volume down to a quarter (20 mL, 40 mL, 100 mL). Same concentrations, less wasted material per dose.
+
+**Some readers go even lower before jumping.** [Reddit-based research on bupe tapering documented community-reported successful final doses as low as 0.063 mg](https://www.biorxiv.org/content/10.1101/871608.full.pdf), and individual reports run lower still, down to around 0.018 mg/day or under, by using progressively larger dilutions. There's no clinical evidence that going below 0.05 mg materially changes outcomes; some readers find the very-low tail helpful, some find it unnecessary. If 0.02 mg on day +3 still feels too high to jump from, dilute further (an 8 mg strip in 440 mL of water gives roughly 0.018 mg per mL) and add a day or two.
+
+If you've worked the tail down this way and still can't get clear of the jump, that's a signal a rapid taper isn't the right tool for your specific situation. The next option to consider is [Sublocade or Brixadi](/mat-suboxone/sublocade-brixadi-info), the long-acting buprenorphine injections. The injection releases bupe slowly over weeks; the bupe then leaves your system on its own pharmacokinetic timeline rather than on a daily-dosing schedule you're trying to enforce. This is closer to standard MAT than a rapid taper is. For the reader who genuinely cannot get past the bottom of a rapid taper, that's the safer path than spiraling back to 7-OH or escalating to a higher bupe dose.
 
 ## Choosing the right schedule
 
@@ -130,4 +183,4 @@ How to stabilize: take enough bupe to make you feel okay (usually somewhere betw
 - Inability to keep down any fluids for 24+ hours
 - Symptoms that feel unmanageable
 
-> **Final reminder:** This community has run hundreds of rapid tapers from 7-OH successfully. That doesn't mean every individual case goes smoothly, and it doesn't mean a prescriber would sign off on these schedules. You're choosing a community-developed approach. The schedules above represent collective experience, not clinical recommendations. If anything goes wrong, you have to be willing to slow down, stabilize, or seek help.
+> **Final reminder.** These schedules are community-developed, not clinical recommendations. If anything goes wrong, be willing to slow down, stabilize, or get help.

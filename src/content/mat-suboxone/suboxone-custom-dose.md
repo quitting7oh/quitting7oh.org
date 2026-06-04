@@ -2,7 +2,7 @@
 title: "Custom Suboxone Dosing"
 description: "Liquid titration for doses below 0.5 mg, when pill cuts can't get you low enough to finish a taper."
 category: "mat-suboxone"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 5
 ---
 Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5 mg, 4/1 mg, 8/2 mg, 12/3 mg). When you're tapering, especially at the lower end, you need fractional doses that don't exist as a manufactured product. Cutting films into smaller pieces is how the bupe community has handled this for years. Done carefully, it's accurate enough to taper by 0.25 mg increments.
@@ -73,74 +73,80 @@ For most rapid-taper schedules, an 8 mg film cut into eighths gives you 1 mg dos
 ## Alternative methods
 
 - **Tabs (not films).** Generic buprenorphine-naloxone tablets can be split with a pill cutter for halves, but quartering tablets accurately is hard because they crumble. Films cut more reliably than tablets do.
-- **Dissolving in water.** Some people dissolve a film in a measured amount of water and dose by volume. This is technically possible (bupe is water-soluble), but the suspension isn't stable for long, and it's harder to get accurate doses than with cutting. Most people find cutting is simpler.
+- **Dissolving in water (volumetric dosing).** For doses below 0.5 mg, dissolving a strip or tablet and dosing by volume is more accurate than cutting and is the community standard for the bottom of a taper. Full section below.
 - **Asking your prescriber for lower-strength films.** 2 mg films exist and are the cleanest way to do small doses without cutting. If you're going to be on small doses for more than a week or two, it's worth asking for a 2 mg prescription instead of cutting an 8 mg film into thirty-seconds.
 
-# Liquid Titration: Dissolving Subutex for Custom Doses
+## Volumetric dosing (films and tablets)
 
-When you're tapering below 0.5 mg, cutting tablets into ever-smaller pieces becomes difficult. Subutex tablets crumble more than films do, and quartering them is hard enough, eighths and sixteenths is unreliable. **Liquid titration solves this by dissolving a known dose in a known volume of water, then drinking a measured fraction of it.** Done carefully, you can dose accurately down to 0.063 mg or smaller, which is what the bottom of a real taper requires. [Reddit-based research on bupe tapering found that community-reported successful final doses were as low as 0.063 mg, much smaller than what published clinical taper schedules typically describe](https://www.biorxiv.org/content/10.1101/871608.full.pdf).
+Below 0.5 mg, cutting into ever-smaller pieces gets unreliable. Tablets crumble; film fragments below a sixteenth are hard to handle. Volumetric dosing solves this by **dissolving a measured amount of bupe in a measured volume of water, then drawing a measured fraction with an oral syringe.** Done with reasonable technique, it's accurate enough to land doses no scissors can hit. [Reddit-based research on bupe tapering documented community-reported successful final doses as low as 0.063 mg](https://www.biorxiv.org/content/10.1101/871608.full.pdf), well below what published clinical taper schedules typically describe.
 
-This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-info).
+The technique works for **both Suboxone films and Subutex / Suboxone tablets.** Tablets fall apart in water within a few minutes; films take longer to disperse and benefit from swirling. Subutex tablets are the slightly preferred format among prescribers who teach this method because the dissolution is cleaner, but films are widely used in community practice with reported success ([r/suboxone volumetric dosing thread](https://www.reddit.com/r/suboxone/comments/eo5dv5/tapering_volumetric_dosing_why_dont_more_people/)). Either format is workable.
 
-## The principle
-[Buprenorphine HCl is soluble in water at approximately 17 mg/mL at room temperature](https://www.uspharmacist.com/article/buprenorphine-2-mgml-sublingual-drops). At taper doses, you're working with concentrations far below saturation, so the bupe goes fully into solution. Once dissolved evenly, every milliliter of the solution contains a proportional fraction of the original dose. Drinking 1/8 of the volume = 1/8 of the dose.
+### The pharmacology
 
-**This works for Subutex (buprenorphine-only tablets) and is the cleanest option.** It also works for Suboxone tablets and films, but the naloxone is also water-soluble and comes along for the ride. For taper purposes, that's fine.
+[Buprenorphine HCl is soluble in water at approximately 17 mg/mL at room temperature](https://www.uspharmacist.com/article/buprenorphine-2-mgml-sublingual-drops). At taper concentrations you're working with amounts orders of magnitude below saturation, so the bupe goes fully into solution. Once dissolved evenly, every milliliter contains a proportional fraction of the original dose. Draw 1/8 of the volume → get 1/8 of the dose.
 
-## Supplies
-- **Subutex tablet** (or Suboxone tablet/film if Subutex isn't available)
-- **Oral syringe** with 1 mL precision marks. Pharmacies sell these for under $5; baby/pediatric medication syringes work. **A kitchen measuring spoon is not accurate enough for this.**
-- **Small clean glass or shot glass** with measurement marks (or use the syringe to measure water in)
-- **Distilled or filtered water at room temperature.** Tap water works in a pinch but minerals and chlorine can affect taste and possibly stability.
-- **A timer or watch.** Dissolution takes a few minutes.
+Naloxone (in Suboxone films and tablets) is also water-soluble and dissolves alongside the bupe. For taper purposes that's fine; the naloxone-to-bupe ratio in solution is the same as in the original product.
 
-## The math
-Dissolve a tablet in a known volume of water, then drink a fraction.
+### Materials
 
-**Easy example: 2 mg Subutex tablet dissolved in 8 mL water = 0.25 mg per mL.**
-- Want 1 mg? Drink 4 mL.
-- Want 0.5 mg? Drink 2 mL.
-- Want 0.25 mg? Drink 1 mL.
-- Want 0.125 mg? Drink 0.5 mL.
+- **An oral syringe with 0.1 mL or finer marks.** 1 mL syringes work for most doses; 0.5 mL syringes have finer precision but are less common. Pharmacies sell these for under $5; baby/pediatric medication syringes work. **A kitchen measuring spoon is not accurate enough; don't use one.**
+- **A small glass bottle or mixing vessel with mL markings.** A graduated cylinder, a small amber glass bottle, or a clean shot glass with marks all work. The syringe itself can also measure water into the vessel.
+- **Distilled or filtered water at room temperature.** Tap water works in a pinch; chlorine and minerals can affect taste and possibly stability.
+- **Optional: USP-grade propylene glycol (PG)** at roughly a 3:1 water-to-PG ratio if you want a solution that holds for more than 24 hours. PG is the solvent compounding pharmacies use for stable bupe oral liquids.
+- **Refrigeration** for any solution you're keeping past a few hours.
 
-**For very small doses: 2 mg tablet dissolved in 16 mL water = 0.125 mg per mL.**
-- Want 0.25 mg? Drink 2 mL.
-- Want 0.125 mg? Drink 1 mL.
-- Want 0.063 mg? Drink 0.5 mL.
+What to avoid: **plastic for long-term storage.** [Diluted bupe in glass vials retained over 90% concentration after 180 days, while plastic syringes dropped to 17% at room temperature and 72% refrigerated](https://pmc.ncbi.nlm.nih.gov/articles/PMC5517336/). Plastic is fine for the syringe you're dosing with; it's not fine for the bottle you're storing solution in.
 
-**Pick a volume that makes your target dose come out to a whole or half mL.** Doses you can't measure cleanly aren't worth pursuing.
+### Validated math
 
-## The procedure
+Pick a dissolved amount and a water volume that make your target dose come out to at least 0.5 mL on the syringe. The 8 mg rows come first because that's what most prescriptions come as; 2 mg rows underneath are the same concentrations scaled down, for readers who asked for and got the smaller strength.
 
-1. **Place the tablet in the glass.** Don't crush it. The tablet will dissolve on its own.
-2. **Add the measured water.** Use the syringe to draw the exact volume.
-3. **Wait 3 to 5 minutes for the tablet to dissolve.** Stir gently with a clean spoon. Some tablets have inactive binders that don't fully dissolve and leave a slight cloudiness or residue. **The bupe is dissolved, the cloudiness is filler.** This is normal.
-4. **Mix it well right before drawing your dose.** Any residue can settle, so swirl or stir before measuring.
-5. **Draw your target volume into the syringe.** Hold it at eye level and check the meniscus.
-6. **Squirt the dose under your tongue.** Hold it there for 5 to 10 minutes without swallowing. Bupe is absorbed sublingually; swallowing it dramatically reduces effectiveness.
-7. **Discard the rest of the solution.** Do not save it for later (see storage section).
+| Bupe dissolved | Water | Concentration | What 1 mL gives | What 0.5 mL gives |
+|---|---|---|---|---|
+| 8 mg (1 strip / tablet) | 80 mL | 0.1 mg/mL | 0.1 mg | 0.05 mg |
+| 8 mg | 160 mL | 0.05 mg/mL | 0.05 mg | 0.025 mg |
+| 8 mg | 400 mL | 0.02 mg/mL | 0.02 mg | 0.01 mg |
+| 2 mg (1 strip / tablet) | 8 mL | 0.25 mg/mL | 0.25 mg | 0.125 mg |
+| 2 mg | 16 mL | 0.125 mg/mL | 0.125 mg | 0.063 mg |
+| 2 mg | 40 mL | 0.05 mg/mL | 0.05 mg | 0.025 mg |
 
-## Storage and stability
-**Make a fresh solution each dose.** Don't make a big batch in the morning and dose from it throughout the day. Bupe in solution is less stable than in tablet form, and you can't verify it's still at the expected concentration after sitting around. The water can also pick up microbial contamination over hours at room temperature.
+All values verified by simple arithmetic (dose ÷ volume = concentration; concentration × draw volume = delivered dose). The [TripSit volumetric calculator](https://volume.tripsit.me/) does the same math for any starting amount and target dose; community guidance often points there.
 
-If you absolutely have to make ahead (e.g., traveling that day), **make it that morning, keep it covered and refrigerated, use it within the same day, and discard anything left at the end of the day.**
+### Making the solution
 
-## Common mistakes
+1. **Put the strip or tablet in the dry bottle first.** This keeps a film from floating on the surface and sticking to itself; a tablet sinks and starts dissolving when water is added.
+2. **Add the measured water** using the syringe to draw exact volume.
+3. **For tablets:** wait 5 to 10 minutes; the tablet falls apart and the bupe dissolves. Some tablets have inactive binders that leave cloudiness; the bupe is dissolved, the cloudiness is filler.
+4. **For films:** the film softens within a minute or two and starts dispersing; give it 10 to 15 minutes total with gentle swirling. Some film material may remain visible at the end; this is the polymer matrix, not the bupe.
+5. **Swirl gently before drawing each dose.** Settled material at the bottom means the top of the solution is slightly more dilute than the bottom.
 
-- **Using a measuring spoon instead of a syringe.** Kitchen spoons are not accurate to 1 mL. The actual variance can be 30% or more. Use an oral syringe.
-- **Dissolving in too little water.** If your target dose is 0.125 mg and you dissolve a 2 mg tablet in 2 mL, you'd need to draw 0.125 mL to dose, which is below the precision of most syringes. Use enough water that your target volume is at least 0.5 mL.
-- **Not mixing before drawing.** Settled residue means the top of the solution is slightly less concentrated than the bottom. Swirl every time before drawing.
-- **Drinking the dose instead of holding it under the tongue.** Bupe absorption from the GI tract is poor. Treat liquid bupe like sublingual tablets: under the tongue, hold, don't swallow until it's been there for several minutes.
-- **Saving leftover solution for later.** Stability is the issue here, not waste. Make fresh each time.
-- **Using grapefruit juice or other acidic liquids "for absorption."** Bupe is metabolized by CYP3A4, and grapefruit can raise levels unpredictably. Stick with water.
+### Dosing
 
-## Best use cases
-- **Bottom of a taper.** Below 0.5 mg, liquid titration is more accurate than cutting.
-- **Fine-grained drops.** When you want to step down by 0.05 to 0.1 mg increments rather than 0.25.
-- **Subutex specifically.** Subutex tablets are harder to cut accurately than films, so dissolving them is often the better path.
+1. **Draw your target volume into the syringe.** Hold it at eye level; check the meniscus.
+2. **Eject any air bubble.** Squirt it back into the bottle and redraw.
+3. **Squirt the dose under your tongue.** Angle slightly so it pools under the tongue rather than hitting the tongue surface directly.
+4. **Hold it there for 10 to 15 minutes without swallowing.** Liquid bupe has a shorter contact-with-mucosa window than a dissolving film or tablet; longer hold helps absorption.
+5. **Avoid swallowing the saliva** during the hold. The GI tract absorbs bupe poorly (around 15% bioavailability vs roughly 30% sublingual).
 
-## When to skip liquid titration and cut instead
-- **Above 0.5 mg per dose, cutting films is faster, easier, and accurate enough.** Liquid titration is for the very bottom of a taper, not for the whole thing.
-- **If you're inconsistent with technique.** If you sometimes use a syringe and sometimes eyeball it, you're getting inconsistent doses, which makes the taper worse than just cutting.
+### Storage and stability
 
-> **Reminder:** Some bupe-taper guides specifically advise against liquid titration because of the variability it introduces. They're not wrong: poor technique makes this less accurate than cutting. Done carefully with a real syringe and consistent practice, it's accurate enough to land doses no other method can hit. If you're going to do this, do it right.
+- **Water-only solutions:** make fresh each dose, or at most refrigerate for 24 hours and discard.
+- **Water + PG (3:1) solutions:** can hold for up to a week refrigerated; stability past a few days is not well-characterized in community use.
+- **Always glass for storage, not plastic** (per the PMC stability data above).
+- **Label the bottle** with the bupe amount, water volume, the resulting mg/mL, and the date prepared.
+- **Refrigerate** any stored solution. Keep it out of sunlight.
+
+### Bioavailability caveat
+
+Some users report that volumetric doses don't hold them as long as the same dose taken as a sublingual strip or tablet ([dissenting r/suboxone thread](https://www.reddit.com/r/suboxone/comments/fdznh0/volumetric_dosing_is_pretty_much_worthless/)). The hypothesis: the liquid washes around the mouth and a fraction is partly swallowed, where GI bupe absorption is poor. Sublingual hold time matters more for liquid than for an intact strip. If volumetric doses feel materially shorter-acting than the equivalent cut piece, that's a known limitation, not a sign you're doing it wrong. Longer hold (15+ minutes) and minimizing saliva swallowing are the first technique adjustments to try.
+
+### Cutting vs volumetric
+
+- **Above 0.5 mg per dose:** cutting is faster, requires no preparation, and is accurate enough.
+- **Below 0.5 mg per dose:** volumetric is more precise; cutting accuracy drops as pieces get small.
+- **Very bottom of a taper (below 0.125 mg):** volumetric is the only realistic option.
+- **Subutex tablets specifically:** tablets cut poorly (crumble); volumetric is usually the better path even at moderate doses.
+- **Inconsistent technique:** if you'll sometimes eyeball the syringe or use kitchen measures, the resulting doses are worse than cutting. Pick one method and stick with it.
+
+> **Reminder:** Some bupe-taper guides specifically advise against volumetric dosing because of the variability poor technique introduces. They're describing real failure modes: kitchen-spoon measurement, no swirling, plastic storage, swallowing the dose. Done with a real oral syringe, consistent technique, glass storage, and adequate sublingual hold time, this method is accurate enough to land doses no other method can hit. If you're going to do this, do it right.
