@@ -137,7 +137,7 @@ Restrictions on standalone 7-OH at the U.S. state level in 2025 drove the market
 
 Two related naming conventions appear on products:
 
-- **MIT-A** reads as "mitragynine plus an A-something," consistent with a mixed-composition product.
+- **MIT-A** is marketed as "mitragynine plus Advanced Alkaloids" or close variants. The "Advanced Alkaloids" framing is wellness-style branding that tells the reader nothing about what's actually in the product. In the products that have been tested, the unnamed alkaloid content includes MGM-15.
 - **DHM** borrows from the technical name (dihydro-7-hydroxymitragynine) while obscuring that the named compound is functionally a reduced 7-OH rather than a reduced mitragynine.
 
 Some vendors use one name; some use the other; some use both or combine them. The naming variation appears vendor-side; the underlying chemistry is the same MGM-15 plus mitragynine. Direct community testing references, label-vs-effect disputes ("the label says MIT but it feels like 7-OH"), and forensic detections converge on this picture.
