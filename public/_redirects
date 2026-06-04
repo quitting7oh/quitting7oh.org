@@ -8,15 +8,16 @@
 /resources/quickmd-info  /resources/telehealth#quickmd  301
 
 # 2026-06-04: Batch 1 SEO slug renames per docs/seo-suggestions.md.
-# Drop the -info suffix where it was internal-doc shorthand, and add
-# primary keywords where slugs were missing them.
-/other-tools/helper-meds-info        /other-tools/helper-meds                   301
-/other-tools/mega-vit-c-info         /other-tools/mega-dose-vitamin-c           301
-/other-tools/quitkit-info            /other-tools/quit-kit                      301
-/other-tools/sr17018-info            /other-tools/sr-17                         301
-/other-tools/peptides-info           /other-tools/peptides-for-withdrawal       301
-/mat-suboxone/suboxone-info          /mat-suboxone/suboxone-for-7oh             301
-/mat-suboxone/sublocade-brixadi-info /mat-suboxone/sublocade-brixadi            301
-/other-tools/tapering-with-leaf      /other-tools/tapering-with-kratom-leaf     301
-/start-here/withdrawal-help          /start-here/7-oh-withdrawal-help           301
-/start-here/paths-off                /start-here/how-to-quit-7-oh               301
+# Destinations have a trailing slash so the redirect lands directly on
+# the canonical URL — CF Pages otherwise auto-308s no-trailing-slash to
+# trailing-slash, costing an extra hop.
+/other-tools/helper-meds-info        /other-tools/helper-meds/                   301
+/other-tools/mega-vit-c-info         /other-tools/mega-dose-vitamin-c/           301
+/other-tools/quitkit-info            /other-tools/quit-kit/                      301
+/other-tools/sr17018-info            /other-tools/sr-17/                         301
+/other-tools/peptides-info           /other-tools/peptides-for-withdrawal/       301
+/mat-suboxone/suboxone-info          /mat-suboxone/suboxone-for-7oh/             301
+/mat-suboxone/sublocade-brixadi-info /mat-suboxone/sublocade-brixadi/            301
+/other-tools/tapering-with-leaf      /other-tools/tapering-with-kratom-leaf/     301
+/start-here/withdrawal-help          /start-here/7-oh-withdrawal-help/           301
+/start-here/paths-off                /start-here/how-to-quit-7-oh/               301
