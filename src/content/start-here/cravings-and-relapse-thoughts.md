@@ -235,7 +235,7 @@ covers why it happens and what it means.
 > is **combinations**: mixing with **alcohol, benzodiazepines,
 > gabapentinoids, or other depressants**. That's what kills people.
 > Other kratom-derived synthetics
-> ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine),
+> ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
 > [pseudo](/compounds/mitragynine-pseudoindoxyl)) are more potent on their own and carry
 > more risk solo.
 >

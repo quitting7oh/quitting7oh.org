@@ -9,7 +9,7 @@ sort: 2
 
 Suboxone is one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr-17). [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
 
-**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
+**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
 
 **Two things to know before you sit down with a prescriber:**
 
@@ -37,10 +37,10 @@ Half-life suggests when COWS will climb into induction range. The score itself i
 
 - **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Community members hit COWS ≥ 12 in the 12 to 18 hour range.
 - **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Reaching induction-ready COWS takes 36 to 72 hours.
-- **[MIT-A/DHM](/compounds/mit-a-dihydromitragynine):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
+- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
 - **Pseudo (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
-If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were on. Many providers haven't heard of [MGM-15](/compounds/mgm15), pseudo, or [MIT-A](/compounds/mit-a-dihydromitragynine). If they default to the standard short-acting-opioid playbook for these compounds, induction can fail.
+If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were on. Many providers haven't heard of [MGM-15](/compounds/mgm15), pseudo, or [MIT-A](/compounds/mit-a-dhm). If they default to the standard short-acting-opioid playbook for these compounds, induction can fail.
 
 ## Coverage gaps with bupe
 
@@ -68,7 +68,7 @@ This community uses a **low-and-slow induction** approach. The point is to find 
 
 Community members coming off 7-OH land in the 2 to 8 mg range using this approach. People coming off the long-acting synthetics may need more. The standard clinical protocol starts at 4 mg, which is more than this community needs and harder to taper down from.
 
-> **Standard induction not working, or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days, no withdrawal wait. Worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), [MIT-A](/compounds/mit-a-dihydromitragynine)) or for anyone who's tried standard induction and gotten precipitated withdrawal.
+> **Standard induction not working, or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days, no withdrawal wait. Worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), [MIT-A](/compounds/mit-a-dhm)) or for anyone who's tried standard induction and gotten precipitated withdrawal.
 
 ## The receptor-occupancy case for low doses
 
@@ -105,7 +105,7 @@ Things that help during the taper:
 
 - The supplements and adjuncts in [Vitamins & Supplements](/other-tools/vitamins-supplements) can take the edge off the lower-dose portions.
 - Keep your COWS awareness up. Tracking symptoms during a taper helps you decide when to drop and when to hold.
-- Don't redose the compound that brought you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine), pseudo, or stacked synthetics). That restarts the cycle. Planned kratom-leaf tapering is a separate protocol. See [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf).
+- Don't redose the compound that brought you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo, or stacked synthetics). That restarts the cycle. Planned kratom-leaf tapering is a separate protocol. See [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf).
 
 ## About taper duration
 
@@ -132,7 +132,7 @@ If your prescriber is pushing a longer schedule than makes sense for your dose, 
 
 ## Common things to ask your prescriber
 
-- Are you familiar with kratom-derivative dependence specifically? (7-OH, MGM-15, pseudo, [MIT-A](/compounds/mit-a-dihydromitragynine))
+- Are you familiar with kratom-derivative dependence specifically? (7-OH, MGM-15, pseudo, [MIT-A](/compounds/mit-a-dhm))
 - Are you open to a low-and-slow induction starting at 2 mg?
 - Will you let me time the first dose by COWS rather than by hours since last use?
 - What's your protocol for longer-half-life opioids if I've been on those?

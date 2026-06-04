@@ -29,7 +29,7 @@ morphine as a reference from a different alkaloid family.
 | **Mitragynine** | Indole alkaloid (kratom leaf) | Parent compound. The other six on this page are all modifications of this molecule. See [Kratom Leaf](/compounds/kratom-leaf) for the lay overview and the alkaloid-content profile. |
 | **7-Hydroxymitragynine (7-OH)** | Mitragynine + –OH at C-7 | The active metabolite of mitragynine in the body. Concentrated as a standalone product. See [7-OH](/compounds/7-oh). |
 | **7-Acetoxymitragynine** | 7-OH with the C-7 hydroxyl converted to an acetate ester | A prodrug, hydrolyzes back to 7-OH in the body. |
-| **Dihydro-mitragynine (DHM)** | Mitragynine with the side-chain C=C bond saturated (+H₂) | Often sold as DHM or [MIT-A](/compounds/mit-a-dihydromitragynine). |
+| **Dihydro-mitragynine (DHM)** | Mitragynine with the side-chain C=C bond saturated (+H₂) | Often sold as DHM or [MIT-A](/compounds/mit-a-dhm). |
 | **Dihydro-7-hydroxymitragynine (MGM-15)** | 7-OH with the indolenine C=N bond saturated (+H₂) | High-affinity semi-synthetic; one of the most potent kratom-derived compounds in widely-circulating products. See [MGM-15](/compounds/mgm15). Further modification (notably the 9-fluoro analog **[MGM-16](/compounds/mgm16)**) produces compounds more potent still in the published literature, though MGM-16 itself is not documented in any US consumer product as of this writing. |
 | **Pseudoindoxyl mitragynine** | Mitragynine after oxidative rearrangement of the indole core to an indoxyl | See [pseudo](/compounds/mitragynine-pseudoindoxyl). |
 
@@ -69,7 +69,7 @@ value.
 | **7-Acetoxymitragynine** | Not formally established (hydrolyzes to 7-OH in vivo) | Moderate–high *(effective)* |
 | **Morphine** | ≈ 1.0 nM | High (reference) |
 | **Pseudoindoxyl mitragynine ([pseudo](/compounds/mitragynine-pseudoindoxyl))** | ≈ 0.2–1 nM | Moderate–high |
-| **Dihydro-mitragynine ([DHM / MIT-A](/compounds/mit-a-dihydromitragynine))** | ≈ 10–30 nM | Moderate |
+| **Dihydro-mitragynine ([DHM / MIT-A](/compounds/mit-a-dhm))** | ≈ 10–30 nM | Moderate |
 | **Mitragynine** | ≈ 80–200 nM | Low–moderate |
 
 Two notes worth holding when reading this table:
@@ -139,5 +139,5 @@ spectrum; read it as the slice with reliable data.
  , visual structures for everything on this page
 - **[Compounds](/compounds)**: the clinical / lay overviews per
   compound: [7-OH](/compounds/7-oh),
-  [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine),
+  [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm),
   [pseudo](/compounds/mitragynine-pseudoindoxyl), [kratom leaf](/compounds/kratom-leaf)

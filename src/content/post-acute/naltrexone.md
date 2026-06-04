@@ -72,7 +72,7 @@ base. That extrapolation is reasonable, 7-OH is a mu-opioid agonist
 — but it should be named honestly.
 
 The longer-acting kratom synthetics ([MGM-15](/compounds/mgm15),
-[MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl)) probably
+[MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)) probably
 require longer abstinence windows before naltrexone initiation than
 the standard short-acting-opioid guidance suggests. A prescriber
 experienced with this population is more likely to err on the side of

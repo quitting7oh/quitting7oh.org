@@ -73,11 +73,16 @@ MIT-A subsection updated to reflect that "MIT-A or DHM" products
 contain MGM-15 plus mitragynine, with induction guidance pointing
 at the MGM-15 page.
 
-**Slug note (flagged to user, not changed in this commit):** the
-current slug `/compounds/mit-a-dihydromitragynine` encodes the
-wrong chemistry into the URL. Possible follow-up rename to
-`/compounds/mit-a-dhm` (matches what users search) with 301
-redirects.
+**Slug rename executed:** the page moved from
+`/compounds/mit-a-dihydromitragynine` to `/compounds/mit-a-dhm`.
+The old slug encoded the wrong chemistry into the URL (since
+DHM is dihydro-7-hydroxymitragynine, not dihydromitragynine). The
+new slug matches what users actually search for. 301 redirects
+added for both no-trailing-slash and trailing-slash variants of
+the old slug; the previous Batch 2 redirect (which pointed
+`/mit-a-dhm` at the wrong-chemistry slug) was reversed.
+Internal cross-references swept; `check-redirects.sh` pair
+updated.
 
 **Follow-up correction:** the Marketing section's MIT-A bullet
 originally guessed at what "-A" stands for. Vendors actually

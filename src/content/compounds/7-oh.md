@@ -184,13 +184,13 @@ rather than the clinical-default 16-24 mg.
 - **Stacked products**: combinations of 7-OH, mitragynine,
   [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl), and sometimes
   [MGM-15](/compounds/mgm15) or
-  [MIT-A/DHM](/compounds/mit-a-dihydromitragynine). The label may say "kratom
+  [MIT-A/DHM](/compounds/mit-a-dhm). The label may say "kratom
   extract" and tell you nothing about what's in it.
 - **Raw 7-OH powder**: less common in retail; more common in
   enthusiast communities. Tends to be the most concentrated form.
 
 **If you're not sure what you've been on, that's important to figure
-out before induction**, the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine),
+out before induction**, the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
 [pseudo](/compounds/mitragynine-pseudoindoxyl)) have different timelines and different induction-window
 requirements. See the half-life table in
 [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide).

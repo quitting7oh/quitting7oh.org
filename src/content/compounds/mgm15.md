@@ -7,7 +7,7 @@ sort: 3
 ---
 ## What it is
 
-MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). It is the 1,2-dihydro version of [7-OH](/compounds/7-oh). Academic papers also call it "Dihydro-7-Hydroxy Mitragynine" or "DH7OH MG"; the forensic-chemistry monographs use "Dihydro-7-Hydroxy Mitragynine." **Products sold in U.S. consumer markets as "DHM" or "MIT-A" are the same compound**, often blended with concentrated mitragynine. See [MIT-A and DHM Products](/compounds/mit-a-dihydromitragynine) for what's actually in those products and how standard GC-MS testing misses MGM-15.
+MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). It is the 1,2-dihydro version of [7-OH](/compounds/7-oh). Academic papers also call it "Dihydro-7-Hydroxy Mitragynine" or "DH7OH MG"; the forensic-chemistry monographs use "Dihydro-7-Hydroxy Mitragynine." **Products sold in U.S. consumer markets as "DHM" or "MIT-A" are the same compound**, often blended with concentrated mitragynine. See [MIT-A and DHM Products](/compounds/mit-a-dhm) for what's actually in those products and how standard GC-MS testing misses MGM-15.
 
 ## Where it came from
 

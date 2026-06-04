@@ -109,7 +109,7 @@ Half-life tells you roughly **when** your withdrawal score is likely to climb to
 
 - **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Most users reach induction-ready withdrawal in the 12 to 18 hour range.
 - **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Often takes 36 to 72 hours to reach induction-ready scores.
-- **[MIT-A/DHM](/compounds/mit-a-dihydromitragynine):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
+- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
 - **[Pseudo](/compounds/mitragynine-pseudoindoxyl) (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
 If you've been on the long-acting compounds and your score isn't climbing past 24 hours, that's the half-life. Wait it out. The clock isn't the gate, but the half-life is why some people wait longer than others.

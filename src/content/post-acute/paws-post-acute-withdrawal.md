@@ -75,7 +75,7 @@ you're not, ignore this.
 
 **Most people coming off [7-OH](/compounds/7-oh) alone do not have
 prolonged PAWS.** People who were on stacked synthetics, [MGM-15](/compounds/mgm15),
-[MIT-A](/compounds/mit-a-dihydromitragynine), or [pseudo](/compounds/mitragynine-pseudoindoxyl) for
+[MIT-A](/compounds/mit-a-dhm), or [pseudo](/compounds/mitragynine-pseudoindoxyl) for
 extended periods are more likely to. Your specific situation matters
 more than averages.
 

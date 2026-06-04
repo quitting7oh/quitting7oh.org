@@ -57,7 +57,7 @@ PAIRS="
 /post-acute/impending-doom|/post-acute/impending-doom-anxiety
 /start-here/thinking-about-using|/start-here/cravings-and-relapse-thoughts
 /compounds/pseudo|/compounds/mitragynine-pseudoindoxyl
-/compounds/mit-a-dhm|/compounds/mit-a-dihydromitragynine
+/compounds/mit-a-dihydromitragynine|/compounds/mit-a-dhm
 /pharmacology/minor-alkaloids|/pharmacology/kratom-minor-alkaloids
 /resources/telehealth|/resources/telehealth-for-suboxone
 /mat-suboxone/suboxone-cows|/mat-suboxone/sows-cows-induction-guide

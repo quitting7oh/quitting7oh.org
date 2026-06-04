@@ -16,7 +16,7 @@ sort: 11
 >
 > "Opioids" here includes [7-OH](/compounds/7-oh), kratom and the
 > kratom synthetics ([MGM-15](/compounds/mgm15),
-> [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl)),
+> [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)),
 > [buprenorphine](/mat-suboxone/suboxone-for-7oh) (Suboxone, Subutex,
 > Sublocade), methadone, and any prescription opioid.
 >
@@ -117,7 +117,7 @@ but it remains on the label and some inpatient programs still use it.
 peer-reviewed guidance on the exact abstinence window. Clinicians
 working with this population extrapolate from the OUD literature,
 often using longer windows for the longer-acting synthetics
-([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine),
+([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
 [pseudo](/compounds/mitragynine-pseudoindoxyl)) out of caution. If you're considering
 this, find a prescriber familiar with these compounds (see
 [Telehealth Providers](/resources/telehealth-for-suboxone) for the fact-checked

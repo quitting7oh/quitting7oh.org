@@ -61,7 +61,7 @@ Do these things, in this order:
 
 **Don't:**
 
-- Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine),
+- Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm),
   [pseudo](/compounds/mitragynine-pseudoindoxyl), or any stacked synthetic). Even a "small" dose resets your
   timeline.
 - Don't take benzodiazepines (Xanax, Klonopin, Ativan) "to take the
@@ -86,10 +86,10 @@ If you've been on **[7-OH](/compounds/7-oh) alone** (the most common short-actin
 | **Days 3–5** | Symptoms start lifting. Sleep returns in pieces. You feel drained but human. |
 | **Week 2 onward** | Acute is mostly over. Welcome to [post-acute (PAWS)](/post-acute/paws-post-acute-withdrawal), which is its own thing but much easier than this. |
 
-If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine), or a stacked product**, the
+If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), or a stacked product**, the
 timeline runs longer, peak symptoms can be 48–96 hours out instead of
 24–72, and the tail is longer. The shape is the same, just stretched.
-See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dihydromitragynine).
+See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dhm).
 
 A note on **"brain zaps" and a wired-but-exhausted feeling** at the
 peak: kratom's [minor alkaloids](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)

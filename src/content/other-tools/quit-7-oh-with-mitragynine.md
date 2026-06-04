@@ -69,7 +69,7 @@ Roughly ranked by how often each appears in community reports.
 
 - Products labeled "mitragynine" with disclosed 7-OH in the fine print (one example: tablets at 60 mg 7-OH plus 20 mg mitragynine each, marketed as mitragynine-dominant).
 - Lab-tested products containing 7-OH at levels not stated on the label.
-- Tablets labeled with obscure codes (MIT-A, DHM, prop blends) that turn out to be [MGM-15](/compounds/mgm15) or [MIT-A/DHM](/compounds/mit-a-dihydromitragynine), longer-acting synthetics harder to come off than 7-OH. These appear especially in states where 7-OH has been restricted and vendors are routing around the rules.
+- Tablets labeled with obscure codes (MIT-A, DHM, prop blends) that turn out to be [MGM-15](/compounds/mgm15) or [MIT-A/DHM](/compounds/mit-a-dhm), longer-acting synthetics harder to come off than 7-OH. These appear especially in states where 7-OH has been restricted and vendors are routing around the rules.
 - The processing pipeline that produces 7-OH starts from mitragynine extract; the vendor selling you "concentrated mitragynine" may be the same operation supplying the 7-OH market upstream.
 
 Without independent lab verification, the protocol can be a continuation of 7-OH dosing under a different label, or a transition onto a worse-positioned synthetic.
