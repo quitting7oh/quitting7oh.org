@@ -50,7 +50,7 @@ PAWS, the months-long stretch of anxiety, sleep disruption, cognitive fog, anhed
 - **DSIP / Emideltide** for sleep disturbance, one of the most persistent PAWS symptoms.
 - **Epitalon** is sometimes discussed for sleep and circadian restoration; evidence is very limited.
 
-**No peptide has been studied specifically for PAWS in opioid recovery populations.** The PAWS uses are extrapolated from the peptide's effects in related indications (Selank for general anxiety, Semax for post-stroke cognition, DSIP for sleep). Community practice with theoretical basis, not PAWS-specific clinical evidence. See [What is PAWS](/post-acute/what-is-paws) for the broader symptom picture. BPC-157 and TB-500 sit closer to acute-withdrawal and general-recovery use than the neuropsychiatric symptom profile that defines PAWS.
+**No peptide has been studied specifically for PAWS in opioid recovery populations.** The PAWS uses are extrapolated from the peptide's effects in related indications (Selank for general anxiety, Semax for post-stroke cognition, DSIP for sleep). Community practice with theoretical basis, not PAWS-specific clinical evidence. See [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the broader symptom picture. BPC-157 and TB-500 sit closer to acute-withdrawal and general-recovery use than the neuropsychiatric symptom profile that defines PAWS.
 
 ## Doses commonly discussed
 
@@ -167,7 +167,7 @@ The risks here are different from other community-discussed adjuncts because the
 
 For opioid-receptor dependence, including from 7-OH and the kratom synthetics, several paths have substantially stronger evidence than the peptides discussed here:
 
-- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth), with decades of clinical evidence and standard pharmacy-supply quality
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth-for-suboxone), with decades of clinical evidence and standard pharmacy-supply quality
 - **[SR-17](/other-tools/sr-17)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
 - **[Tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf)** and cold turkey with **[helper medications](/other-tools/helper-meds)** are the non-MAT options
 - For specific PAWS symptoms, evidence-based prescription options include SSRIs for mood, bupropion for motivation, trazodone or doxepin for sleep, and clonidine and gabapentin for acute and post-acute symptoms; see [Helper Medications](/other-tools/helper-meds)
@@ -194,6 +194,6 @@ For the choice itself, the most useful conversation is usually with someone in t
 - **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)**: a much cheaper adjunct with older preliminary literature
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: supplement-stack background and the broader landscape
 - **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
-- **[What is PAWS](/post-acute/what-is-paws)**: the broader symptom picture and other approaches
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the broader symptom picture and other approaches
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: community taper patterns
-- **[Telehealth Providers](/resources/telehealth)**: addiction-medicine telehealth options
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: addiction-medicine telehealth options

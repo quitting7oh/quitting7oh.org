@@ -2,7 +2,7 @@
 title: "Impending Doom"
 description: "The specific terror that hits in withdrawal and PAWS, that something catastrophic is about to happen, that you might die, that the world is ending. What it is, what to do in the next ten minutes, and when it's more than a withdrawal symptom."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 5
 ---
 
@@ -151,7 +151,7 @@ gives way).
 
 The general non-medication baseline-movers, sleep, exercise, CBT,
 social contact, regular meals, sit on the umbrella
-**[PAWS page](/post-acute/what-is-paws)**. Two things specific to
+**[PAWS page](/post-acute/paws-post-acute-withdrawal)**. Two things specific to
 the impending-doom symptom:
 
 - **Cut caffeine first.** Caffeine reliably amplifies anxiety in a
@@ -229,7 +229,7 @@ anxiety / impending-doom picture include:
 For what each does, when it's used, the caveats, and the
 interactions: **[Helper Medications](/other-tools/helper-meds)**
 is the primary page. For getting a prescriber, see
-**[Telehealth Providers](/resources/telehealth)**.
+**[Telehealth Providers](/resources/telehealth-for-suboxone)**.
 
 ## When it's more than impending doom
 
@@ -274,7 +274,7 @@ make the call.
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the larger picture
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the larger picture
   this symptom sits inside.
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: for the flat-mood / can't-feel-anything side of the same
   post-acute picture.
@@ -282,6 +282,6 @@ make the call.
   deeper neurobiology.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep
   disruption is one of the biggest drivers of recurring waves.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: if the wave is showing up as a craving, not just dread.
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: if the wave is showing up as a craving, not just dread.
 - **[Crisis Hotlines](/resources/crisis-hotlines)**: for
   bookmarking.

@@ -2,14 +2,14 @@
 title: "SOWS & COWS Guide"
 description: "Timing your first Suboxone dose by your withdrawal score, not the clock. SOWS is the self-scoring tool for inducting at home; COWS is the clinician version."
 category: "mat-suboxone"
-last_updated: "2026-05-28"
+last_updated: "2026-06-04"
 sort: 1
 ---
 The single most important thing about Suboxone induction is **timing it by your withdrawal score, not by the clock**. Two scoring tools exist for this. **SOWS** (Subjective Opiate Withdrawal Scale) is the one you score yourself, and it's the right tool if you're inducting at home alone, which most people in this community are. **COWS** (Clinical Opiate Withdrawal Scale) is the clinician version, scored by a prescriber or nurse, often on a video call. Both measure the same underlying thing: are you in enough withdrawal that bupe won't precipitate worse withdrawal?
 
 **The rule: don't induct until SOWS ≥ 17 (or COWS ≥ 12), regardless of how many hours it's been.** If you hit 24 hours and your SOWS is still at 10, you're not ready. If you hit 14 hours and your SOWS is solidly past 17, you probably are. The score decides.
 
-> **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the withdrawal-score gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway, especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo), or after a prior precipitated-withdrawal attempt, read the Bernese page; the scoring on this page is for the standard wait-then-induct approach.
+> **One exception: the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) doesn't use the withdrawal-score gate.** It starts tiny doses of bup while you keep taking your opioid, gradually shifting receptor occupancy over 5–10 days. If you're considering that pathway, especially for long-acting synthetics like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/mitragynine-pseudoindoxyl), or after a prior precipitated-withdrawal attempt, read the Bernese page; the scoring on this page is for the standard wait-then-induct approach.
 
 ## SOWS vs COWS: which one you'll use
 
@@ -18,7 +18,7 @@ The single most important thing about Suboxone induction is **timing it by your 
 | **SOWS** | Subjective Opiate Withdrawal Scale | The patient (you) | 16 | 0–64 | Inducting at home, solo, on your own timeline |
 | **COWS** | Clinical Opiate Withdrawal Scale | A clinician (ideally) | 11 | 0–48 | Induction in a clinical/telehealth setting |
 
-**SOWS is the one to use if you're inducting solo at home** (common with [telehealth-only providers](/resources/telehealth)). It's purely subjective: you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed, so you can't accidentally mis-score the observable signs you have no way to measure alone. Score yourself, write it down with a timestamp, and re-score every hour. The [WHO Annex 10 SOWS form (PDF)](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) and the [SAMHSA TIP 40 SOWS table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/) are the canonical published versions.
+**SOWS is the one to use if you're inducting solo at home** (common with [telehealth-only providers](/resources/telehealth-for-suboxone)). It's purely subjective: you rate how strongly you're feeling each of 16 symptoms (anxiety, yawning, sweating, runny eyes/nose, goosebumps, shakiness, hot/cold flashes, bone/muscle aches, restlessness, nausea, vomiting urge, muscle twitching, stomach cramps, craving). Each item is 0–4. No external observation needed, so you can't accidentally mis-score the observable signs you have no way to measure alone. Score yourself, write it down with a timestamp, and re-score every hour. The [WHO Annex 10 SOWS form (PDF)](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) and the [SAMHSA TIP 40 SOWS table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/) are the canonical published versions.
 
 **COWS is the clinical tool a prescriber or nurse will score** if you're on a video call. It mixes things you can self-report (yawning, anxiety, GI upset) with **observable signs** someone else should ideally measure: resting pulse, pupil size, blood pressure trends, gooseflesh on visual inspection. Some are doable solo with a pulse oximeter or wearable; some aren't. Know what they're looking at. The [NIDA COWS form (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf) is the official version.
 
@@ -109,8 +109,8 @@ Half-life tells you roughly **when** your withdrawal score is likely to climb to
 
 - **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Most users reach induction-ready withdrawal in the 12 to 18 hour range.
 - **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Often takes 36 to 72 hours to reach induction-ready scores.
-- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
-- **[Pseudo](/compounds/pseudo) (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
+- **[MIT-A/DHM](/compounds/mit-a-dihydromitragynine):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
+- **[Pseudo](/compounds/mitragynine-pseudoindoxyl) (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
 If you've been on the long-acting compounds and your score isn't climbing past 24 hours, that's the half-life. Wait it out. The clock isn't the gate, but the half-life is why some people wait longer than others.
 

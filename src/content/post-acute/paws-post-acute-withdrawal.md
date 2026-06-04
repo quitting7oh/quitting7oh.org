@@ -2,7 +2,7 @@
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what helps, labeled by evidence level."
 category: "post-acute"
-last_updated: "2026-05-30"
+last_updated: "2026-06-04"
 sort: 1
 ---
 
@@ -44,7 +44,7 @@ appear to influence it:
 
 - How long you were using and at what dose
 - Which compound ([7-OH](/compounds/7-oh) alone vs. stacked synthetics
-  like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/pseudo))
+  like [MGM-15](/compounds/mgm15) or [pseudo](/compounds/mitragynine-pseudoindoxyl))
 - Genetics, baseline mental health, sleep quality, support system
 - Lifestyle: nutrition, exercise, stress, connection
 
@@ -75,7 +75,7 @@ you're not, ignore this.
 
 **Most people coming off [7-OH](/compounds/7-oh) alone do not have
 prolonged PAWS.** People who were on stacked synthetics, [MGM-15](/compounds/mgm15),
-[MIT-A](/compounds/mit-a-dhm), or [pseudo](/compounds/pseudo) for
+[MIT-A](/compounds/mit-a-dihydromitragynine), or [pseudo](/compounds/mitragynine-pseudoindoxyl) for
 extended periods are more likely to. Your specific situation matters
 more than averages.
 
@@ -95,13 +95,13 @@ You may have some, all, or none of these:
 - **Mood swings.** Sometimes within hours.
 - **Anxiety.** Often free-floating, not attached to anything specific.
   The acute "something terrible is about to happen" version of this is
-  covered separately at [Impending Doom](/post-acute/impending-doom).
+  covered separately at [Impending Doom](/post-acute/impending-doom-anxiety).
 - **Cognitive fog.** Memory glitches, slower processing, trouble
   focusing.
 - **Low motivation and energy.**
 - **Cravings.** Often triggered by stress, environments, or seemingly
   nothing. If a craving is loud right now,
-  [Thinking About Using?](/start-here/thinking-about-using) is the
+  [Thinking About Using?](/start-here/cravings-and-relapse-thoughts) is the
   page to read.
 - **Stress sensitivity.** Things that wouldn't have rattled you
   before feel huge.
@@ -150,7 +150,7 @@ real, time-limited, and part of a process that ends.
 Those persistent adaptations are also why a return to use can re-trigger
 withdrawal faster than your first quit did. For the picture of how
 re-exposure interacts with the unfinished healing, see
-**[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**.
+**[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)**.
 
 ## Windows and waves
 
@@ -236,7 +236,7 @@ community-validated medication-assisted path off the synthetics.
 For what each does, when it's used, dosing context, and the
 interaction profile: **[Helper Medications](/other-tools/helper-meds)**
 is the primary page. For getting a prescriber, see
-**[Telehealth Providers](/resources/telehealth)**.
+**[Telehealth Providers](/resources/telehealth-for-suboxone)**.
 
 ### Community-discussed (limited evidence)
 
@@ -312,7 +312,7 @@ not necessarily PAWS. The distinction matters because **the fix is
 different.** If it's PAWS, time and lifestyle interventions help. If
 it's bupe-related, lowering the dose or completing the taper is what
 helps. See
-[Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks) for the
+[Long-Term Suboxone Risks](/mat-suboxone/long-term-suboxone-risks) for the
 deeper dive.
 
 If you've been on bupe for months and you're feeling consistently
@@ -331,7 +331,7 @@ address:
   [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)).
   The wired anxiety, brain zaps, and broken sleep that don't lift on
   bupe are usually this. See
-  [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
+  [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 - The dopamine/reward system rebuild, see
   [Dopamine Recovery](/post-acute/dopamine-recovery).
 - The behavioral and habit patterns.
@@ -387,13 +387,13 @@ connections you maintain, all of it adds up.
   pop-neuroscience.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is the
   longest tail; the focused page.
-- **[Impending Doom](/post-acute/impending-doom)**: the specific
+- **[Impending Doom](/post-acute/impending-doom-anxiety)**: the specific
   terror that hits in withdrawal and PAWS, and what to do with it.
-- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: what happens if you use again after a stretch off.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: what
+- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)**: what happens if you use again after a stretch off.
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: what
   recovery looks like over the coming months.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark for craving moments.
-- **[Telehealth Providers](/resources/telehealth)**: for the
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: bookmark for craving moments.
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: for the
   SSRI / SNRI / bupropion / buspirone / Suboxone / Sublocade items
   in the clinically-used list. LDN sits outside standard OUD
   telehealth; see the [LDN page](/post-acute/naltrexone-low-dose)

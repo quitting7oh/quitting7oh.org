@@ -202,7 +202,7 @@ Putting the framing in one box:
 - **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)**
  , for the actual bottom-of-taper approach that has community
   validation.
-- **[Telehealth Providers](/resources/telehealth)**: most general
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: most general
   OUD telehealth platforms will not prescribe ULDN; this is mostly
   pain-medicine and integrative-medicine territory. Use the
   comparison only if you've already confirmed the specific

@@ -25,7 +25,7 @@ The two often co-occur. Depression that comes with anhedonia is common; pure anh
 - **Affect labeling.** Naming the state ("I'm depressed right now," "this is the flat feeling") measurably reduces amygdala activity ([Lieberman et al., 2007](https://journals.sagepub.com/doi/10.1111/j.1467-9280.2007.01916.x)). Saying it out loud counts.
 - **Don't isolate, especially with anhedonia.** The trap of anhedonia is that the things that help (exercise, social contact, doing things) all feel pointless before you do them. Do them anyway.
 
-The general 3-tier intervention framework for PAWS (evidence-based: exercise, sleep, CBT, social contact, morning sunlight; clinically used: the prescription list; community-discussed: the supplement list) lives on the [PAWS page](/post-acute/what-is-paws). For supplements specifically (L-tyrosine, omega-3, NAC, SAM-e, St. John's Wort, with interaction caveats), see [Vitamins & Supplements](/other-tools/vitamins-supplements).
+The general 3-tier intervention framework for PAWS (evidence-based: exercise, sleep, CBT, social contact, morning sunlight; clinically used: the prescription list; community-discussed: the supplement list) lives on the [PAWS page](/post-acute/paws-post-acute-withdrawal). For supplements specifically (L-tyrosine, omega-3, NAC, SAM-e, St. John's Wort, with interaction caveats), see [Vitamins & Supplements](/other-tools/vitamins-supplements).
 
 ## When to call for help
 
@@ -44,16 +44,16 @@ The general 3-tier intervention framework for PAWS (evidence-based: exercise, sl
 
 Suicidal thinking in post-opioid recovery is a documented elevated risk, especially in the first months. It's a neurobiological symptom of receptor recalibration, and it's treatable. The [988](https://988lifeline.org) operators have heard "I'm in opioid recovery and I'm having dark thoughts" thousands of times. Calling is the right move, not a failure.
 
-If a craving is part of what's pushing you toward the edge, see also [Thinking About Using?](/start-here/thinking-about-using).
+If a craving is part of what's pushing you toward the edge, see also [Thinking About Using?](/start-here/cravings-and-relapse-thoughts).
 
 ## Timeline
 
-The shape of post-acute depression and anhedonia follows the broader [PAWS](/post-acute/what-is-paws) timeline:
+The shape of post-acute depression and anhedonia follows the broader [PAWS](/post-acute/paws-post-acute-withdrawal) timeline:
 
 - **Weeks 2 to 6:** if it's going to show up, this is usually when. The flat-mood window often starts as the acute-withdrawal adrenaline of just-quit fades.
 - **Weeks 6 to 12:** symptoms cycle. Good days and bad days mixed. The people who hit walls tend to hit them in this window.
 - **Months 3 to 6:** for most, both symptoms become less frequent and less severe. Pleasure starts coming back in small doses.
-- **Beyond 6 months:** for people with longer or more intense use histories, residual flatness or depressed mood can persist longer. The broader opioid-recovery literature documents arcs that extend past a year for some, and since [7-OH-specific cohorts are too young](/post-acute/long-term-outlook) for our own data yet, that range is the closest reference.
+- **Beyond 6 months:** for people with longer or more intense use histories, residual flatness or depressed mood can persist longer. The broader opioid-recovery literature documents arcs that extend past a year for some, and since [7-OH-specific cohorts are too young](/post-acute/7-oh-recovery-timeline) for our own data yet, that range is the closest reference.
 
 Variance is the rule. Some readers are mostly back to a normal emotional baseline within a couple of months. Some take longer. Neither outcome means recovery isn't happening.
 
@@ -86,10 +86,10 @@ For some readers, depression that surfaces in recovery turns out to be a primary
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the broader post-acute picture.
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the broader post-acute picture.
 - **[Dopamine Recovery](/post-acute/dopamine-recovery)**: the neurobiology underneath anhedonia.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is load-bearing for mood recovery.
-- **[Impending Doom](/post-acute/impending-doom)**: the acute-anxiety side of post-acute.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: what recovery looks like over the coming months.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: if depression and craving are stacking up.
-- **[Telehealth Providers](/resources/telehealth)**: for any clinically-used intervention above.
+- **[Impending Doom](/post-acute/impending-doom-anxiety)**: the acute-anxiety side of post-acute.
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: what recovery looks like over the coming months.
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: if depression and craving are stacking up.
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: for any clinically-used intervention above.

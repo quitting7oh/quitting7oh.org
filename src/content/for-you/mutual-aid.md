@@ -151,10 +151,10 @@ Practical heuristics for picking what to try first:
 
 ## On this community
 
-The [quitting7oh Discord and subreddit](/about/community) complement (not replace) any of the above. The Discord is a 24/7 chat infrastructure, not scheduled meetings, it pairs well with attending live meetings somewhere. The pattern that tends to work for many people is **one or two regular meetings somewhere + the Discord/subreddit for the in-between hours**.
+The [quitting7oh Discord and subreddit](/about/the-community) complement (not replace) any of the above. The Discord is a 24/7 chat infrastructure, not scheduled meetings, it pairs well with attending live meetings somewhere. The pattern that tends to work for many people is **one or two regular meetings somewhere + the Discord/subreddit for the in-between hours**.
 
 ## Where to read next
 
 - **[Meeting Schedules](/resources/meeting-schedules)**: full schedules for both kratom-specific fellowships (Kratom Anonymous and Quitting Kratom Support / TIAWO) with day, time, format, and join links
 - **[Sober Living Homes](/for-you/sober-living)**: when meetings need to be supplemented with a different living environment
-- **[Community](/about/community)**: about the Discord and subreddit
+- **[Community](/about/the-community)**: about the Discord and subreddit

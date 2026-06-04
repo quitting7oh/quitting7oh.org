@@ -35,7 +35,7 @@ This page assumes you're using **liposomal vitamin C** from a reputable vendor (
 - No need to set overnight alarms; resume on waking
 - Severe stretches may take more (some readers run 15 to 30 grams per day; cost climbs fast)
 
-**Tapering off vitamin C:** once acute symptoms ease (typically days 5 to 7), step down to 1 to 3 grams per day. Hold at that maintenance level for a few weeks into [post-acute](/post-acute/what-is-paws).
+**Tapering off vitamin C:** once acute symptoms ease (typically days 5 to 7), step down to 1 to 3 grams per day. Hold at that maintenance level for a few weeks into [post-acute](/post-acute/paws-post-acute-withdrawal).
 
 ## Reputable brands
 

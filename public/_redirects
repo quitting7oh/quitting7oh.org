@@ -3,9 +3,9 @@
 # /old-path  /new-path  301
 
 # 2026-05-24: replaced single-provider QuickMD page with the
-# multi-provider /resources/telehealth comparison. Old URL keeps
-# working via a 301 to the QuickMD section anchor.
-/resources/quickmd-info  /resources/telehealth#quickmd  301
+# multi-provider /resources/telehealth-for-suboxone comparison. Old
+# URL keeps working via a 301 to the QuickMD section anchor.
+/resources/quickmd-info  /resources/telehealth-for-suboxone/#quickmd  301
 
 # 2026-06-04: Batch 1 SEO slug renames per docs/seo-suggestions.md.
 # Destinations have a trailing slash so the redirect lands directly on
@@ -21,3 +21,21 @@
 /other-tools/tapering-with-leaf      /other-tools/tapering-with-kratom-leaf/     301
 /start-here/withdrawal-help          /start-here/7-oh-withdrawal-help/           301
 /start-here/paths-off                /start-here/how-to-quit-7-oh/               301
+
+# 2026-06-04: Batch 2 SEO slug renames per docs/seo-suggestions.md.
+# Medium-risk renames (12) plus three judgment-call renames.
+/post-acute/what-is-paws             /post-acute/paws-post-acute-withdrawal/     301
+/post-acute/kindling                 /post-acute/kindling-and-relapse/           301
+/post-acute/long-term-outlook        /post-acute/7-oh-recovery-timeline/         301
+/post-acute/impending-doom           /post-acute/impending-doom-anxiety/         301
+/start-here/thinking-about-using     /start-here/cravings-and-relapse-thoughts/  301
+/compounds/pseudo                    /compounds/mitragynine-pseudoindoxyl/       301
+/compounds/mit-a-dhm                 /compounds/mit-a-dihydromitragynine/        301
+/pharmacology/minor-alkaloids        /pharmacology/kratom-minor-alkaloids/       301
+/resources/telehealth                /resources/telehealth-for-suboxone/         301
+/mat-suboxone/suboxone-cows          /mat-suboxone/sows-cows-induction-guide/    301
+/mat-suboxone/suboxone-isnt-working  /mat-suboxone/why-suboxone-isnt-working/    301
+/mat-suboxone/suboxone-risks         /mat-suboxone/long-term-suboxone-risks/     301
+/about/community                     /about/the-community/                       301
+/for-you/start-here                  /for-you/welcome/                           301
+/for-loved-ones/start-here           /for-loved-ones/welcome/                    301

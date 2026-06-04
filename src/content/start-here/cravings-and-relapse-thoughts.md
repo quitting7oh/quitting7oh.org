@@ -2,7 +2,7 @@
 title: "Thinking About Using? (The Fuck Its)"
 description: "You're considering using again right now. Here's the one thing to do first, the people to call, and what to know about post-abstinence tolerance."
 category: "start-here"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 6
 ---
 
@@ -68,7 +68,7 @@ the thing.
 They spike when a few specific things stack up, usually some
 combination of **HALT** (hungry, angry, lonely, tired) plus a
 conditioned trigger (a smell, a place, a time of day, a stressful
-conversation), often in a [PAWS](/post-acute/what-is-paws) wave.
+conversation), often in a [PAWS](/post-acute/paws-post-acute-withdrawal) wave.
 
 **The reframe to keep in your back pocket:** if a thought about using
 shows up suddenly *and* feels uncharacteristically reasonable,
@@ -159,7 +159,7 @@ next wave wins. The longer version needs a different toolkit.
   [anhedonia](/post-acute/depression-and-anhedonia) or
   [sleep disruption](/post-acute/sleep-recovery) that's feeding the
   craving. If you don't have a prescriber, see
-  [Telehealth Providers](/resources/telehealth).
+  [Telehealth Providers](/resources/telehealth-for-suboxone).
 
 If you've been loud for many hours and none of this is catching,
 prepare for a possible slip rather than pretending you won't have
@@ -179,7 +179,7 @@ Cravings cluster predictably:
   adapted to. See [Withdrawal Help](/start-here/7-oh-withdrawal-help).
 - **Sub-acute (weeks 2–4)**: sleep is broken, mood swings, anhedonia
   starting to lift but not gone. Highest-risk window for many people.
-- **[PAWS](/post-acute/what-is-paws), months 1–6**: waves less
+- **[PAWS](/post-acute/paws-post-acute-withdrawal), months 1–6**: waves less
   constant, can hit harder;
   [anhedonia](/post-acute/depression-and-anhedonia) and conditioned
   triggers do most of the work.
@@ -188,7 +188,7 @@ Cravings cluster predictably:
   of it talk you into anything.
 
 If you're on bupe and the wired/anxious/sleep-broken part isn't
-lifting, see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
+lifting, see [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 
 ## Some perspective, carefully
 
@@ -215,7 +215,7 @@ A few things that are documented, with sources:
   not from a real study.
 - **What does reduce relapse risk: staying in contact with people.**
   Peer support, regular check-ins, [meetings](https://meetings.smartrecovery.org/meetings/),
-  a [Telehealth prescriber](/resources/telehealth) who knows you,
+  a [Telehealth prescriber](/resources/telehealth-for-suboxone) who knows you,
   family who knows what's going on. The specific number on "how much"
   varies by study, but the direction is consistent.
 
@@ -227,7 +227,7 @@ the first place. The neurobiology of recovery doesn't reset to zero.
 
 If withdrawal symptoms are returning faster than you expected, within
 hours, by morning, that's a documented pattern, not a sign you're
-back at day one. **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**
+back at day one. **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)**
 covers why it happens and what it means.
 
 **The one safety thing to know:**
@@ -236,8 +236,8 @@ covers why it happens and what it means.
 > is **combinations**: mixing with **alcohol, benzodiazepines,
 > gabapentinoids, or other depressants**. That's what kills people.
 > Other kratom-derived synthetics
-> ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
-> [pseudo](/compounds/pseudo)) are more potent on their own and carry
+> ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine),
+> [pseudo](/compounds/mitragynine-pseudoindoxyl)) are more potent on their own and carry
 > more risk solo.
 >
 > Keep [naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
@@ -248,7 +248,7 @@ covers why it happens and what it means.
 
 Next step that makes sense: get back in touch with your prescriber,
 return to your taper plan, or, if you didn't have one, see the
-[Telehealth Providers](/resources/telehealth) page for getting a
+[Telehealth Providers](/resources/telehealth-for-suboxone) page for getting a
 prescriber who works with kratom and 7-OH cases.
 
 ## Save this page

@@ -57,7 +57,7 @@ obscures this scale difference; the dependence reality doesn't.
 - **Receptor selectivity:** mu-dominant. Little meaningful activity at
   κ or δ receptors at typical doses, and far less of the serotonergic
   and adrenergic activity that leaf carries via its other minor
-  alkaloids (see [Minor Alkaloids](/pharmacology/minor-alkaloids)).
+  alkaloids (see [Minor Alkaloids](/pharmacology/kratom-minor-alkaloids)).
 
 ### Plasma half-life
 
@@ -110,7 +110,7 @@ compressed into days because of the short half-life:
 | **12-24 hours** | Symptoms climb, diarrhea, chills, goosebumps, insomnia, cravings |
 | **24-72 hours** | **Peak**, body aches, restless legs, no sleep, profound discomfort |
 | **Days 3-5** | Symptoms start lifting; sleep returns in fragments |
-| **Week 2 onward** | Acute mostly done; welcome to [PAWS](/post-acute/what-is-paws) |
+| **Week 2 onward** | Acute mostly done; welcome to [PAWS](/post-acute/paws-post-acute-withdrawal) |
 
 The peak is awful but **time-limited**. Most people are
 through the worst by day 5, into "functional but drained" by day 7,
@@ -133,7 +133,7 @@ This is **direct receptor activity**, not SSRI/SNRI-style reuptake
 inhibition, but the resulting withdrawal symptom picture (brain zaps,
 wired-but-exhausted feeling, autonomic instability) looks a lot like
 SSRI/SNRI discontinuation because the same receptor families are
-involved. See [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
+involved. See [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working)
 for why this overlay makes bupe alone feel insufficient for some
 people, and [Helper Medications](/other-tools/helper-meds) for
 what addresses the non-opioid side.
@@ -150,7 +150,7 @@ what makes coming off it relatively clean:
   (buprenorphine) substitutes cleanly. There's no delta-receptor
   component left dangling (unlike [MGM-15](/compounds/mgm15)) and no
   unusually-tight binding that fights bupe induction (unlike
-  [pseudo](/compounds/pseudo)).
+  [pseudo](/compounds/mitragynine-pseudoindoxyl)).
 - **Predictable bupe-induction window**: COWS ≥ 12 usually arrives
   12-18 hours after last dose, which fits well into a same-day
   telehealth Suboxone appointment.
@@ -176,24 +176,24 @@ rather than the clinical-default 16-24 mg.
   format.
 - **Liquid shots**: 1-2 oz bottles labeled by mg or by "potency",
   often inconsistent between batches.
-- **"[Pseudo](/compounds/pseudo)" tablets and shots**: these are
-  [mitragynine pseudoindoxyl (MP)](/compounds/pseudo), a different
+- **"[Pseudo](/compounds/mitragynine-pseudoindoxyl)" tablets and shots**: these are
+  [mitragynine pseudoindoxyl (MP)](/compounds/mitragynine-pseudoindoxyl), a different
   compound that binds even tighter than buprenorphine. Sometimes
   labeled or co-marketed with 7-OH; the pharmacology is different
   enough that you need to know which you've been on.
 - **Stacked products**: combinations of 7-OH, mitragynine,
-  [pseudoindoxyl](/compounds/pseudo), and sometimes
+  [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl), and sometimes
   [MGM-15](/compounds/mgm15) or
-  [MIT-A/DHM](/compounds/mit-a-dhm). The label may say "kratom
+  [MIT-A/DHM](/compounds/mit-a-dihydromitragynine). The label may say "kratom
   extract" and tell you nothing about what's in it.
 - **Raw 7-OH powder**: less common in retail; more common in
   enthusiast communities. Tends to be the most concentrated form.
 
 **If you're not sure what you've been on, that's important to figure
-out before induction**, the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
-[pseudo](/compounds/pseudo)) have different timelines and different induction-window
+out before induction**, the long-acting compounds ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine),
+[pseudo](/compounds/mitragynine-pseudoindoxyl)) have different timelines and different induction-window
 requirements. See the half-life table in
-[COWS & SOWS Guide](/mat-suboxone/suboxone-cows).
+[COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide).
 
 ## Marketing claims to be skeptical of
 
@@ -219,7 +219,7 @@ which don't survive the pharmacology:
   alkaloids, and are frequently combined by users with alcohol, benzos,
   or other depressants, any of which restores respiratory-depression
   risk. Get Narcan. See
-  [For Loved Ones](/for-loved-ones/start-here) for more.
+  [For Loved Ones](/for-loved-ones/welcome) for more.
 - *"FDA approved" / "Doctor recommended"*, almost always not true.
   Trace mitragynine appears in some research contexts, but no
   concentrated 7-OH product has FDA approval as of this writing.
@@ -230,7 +230,7 @@ See [Paths Off 7-OH](/start-here/how-to-quit-7-oh) for the six ranked paths this
 
 Whichever path you take, **don't try to navigate it without at least
 one other person knowing**. The Discord and subreddit linked at
-[Community](/about/community) are where most people in this
+[Community](/about/the-community) are where most people in this
 position end up.
 
 ## Further reading

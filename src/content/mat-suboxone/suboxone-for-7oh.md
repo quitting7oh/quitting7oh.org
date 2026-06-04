@@ -9,7 +9,7 @@ sort: 2
 
 Suboxone is one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr-17). [Tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
 
-**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
+**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
 
 **Two things to know before you sit down with a prescriber:**
 
@@ -29,7 +29,7 @@ Subutex is the buprenorphine-only version, used for pregnant patients, those wit
 
 ## Use COWS or SOWS to time induction
 
-**Use your withdrawal score, not the clock.** Don't induct until **COWS ≥ 12** (or **SOWS ≥ 17**), regardless of how many hours it's been. The full scoring rubrics and self-scoring tips are on the [COWS & SOWS Guide](/mat-suboxone/suboxone-cows). Read it before you induct.
+**Use your withdrawal score, not the clock.** Don't induct until **COWS ≥ 12** (or **SOWS ≥ 17**), regardless of how many hours it's been. The full scoring rubrics and self-scoring tips are on the [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide). Read it before you induct.
 
 ## Half-lives as context
 
@@ -37,22 +37,22 @@ Half-life suggests when COWS will climb into induction range. The score itself i
 
 - **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Community members hit COWS ≥ 12 in the 12 to 18 hour range.
 - **[MGM-15](/compounds/mgm15):** ~15 hour half-life. Reaching induction-ready COWS takes 36 to 72 hours.
-- **[MIT-A/DHM](/compounds/mit-a-dhm):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
+- **[MIT-A/DHM](/compounds/mit-a-dihydromitragynine):** also long-acting. Similar timeline to [MGM-15](/compounds/mgm15).
 - **Pseudo (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
-If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were on. Many providers haven't heard of [MGM-15](/compounds/mgm15), pseudo, or [MIT-A](/compounds/mit-a-dhm). If they default to the standard short-acting-opioid playbook for these compounds, induction can fail.
+If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were on. Many providers haven't heard of [MGM-15](/compounds/mgm15), pseudo, or [MIT-A](/compounds/mit-a-dihydromitragynine). If they default to the standard short-acting-opioid playbook for these compounds, induction can fail.
 
 ## Coverage gaps with bupe
 
 **The serotonergic and adrenergic piece.** Kratom's minor alkaloids (paynantheine, speciogynine, corynantheidine, and others) bind serotonin and adrenergic receptors **directly** ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)). That's direct receptor agonism or antagonism. Suboxone is opioid-receptor medication. It doesn't reach the serotonergic-adrenergic load that drives the wired, anxious, can't-sleep part of withdrawal. Adjuncts like clonidine, gabapentin, lofexidine, and short-term sleep support can fill that gap (see [Helper Medications](/other-tools/helper-meds)).
 
-For more on bupe failure modes, see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
+For more on bupe failure modes, see [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 
 ## Induction the low-and-slow way
 
 This community uses a **low-and-slow induction** approach. The point is to find the minimum effective dose. Lower starting doses leave less to taper through later, which matters when the goal is a short taper.
 
-1. Wait until **COWS ≥ 12 (or SOWS ≥ 17)**. See the [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) for the scoring rubrics.
+1. Wait until **COWS ≥ 12 (or SOWS ≥ 17)**. See the [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide) for the scoring rubrics.
 2. **Start with 2 mg buprenorphine sublingually.** Wait 2 hours. Reassess how you feel.
 3. If you still feel withdrawal symptoms: add another 1 mg. Wait an hour. Reassess.
 4. Repeat 1 mg increases hourly until you feel fine.
@@ -61,14 +61,14 @@ This community uses a **low-and-slow induction** approach. The point is to find 
 
 **Notes on this protocol:**
 
-- **If you're worried about precipitated withdrawal, start at 1 mg instead of 2 mg.** Same protocol otherwise: wait, reassess, titrate up in 1 mg increments. Longer ramp, softer landing if your [COWS](/mat-suboxone/suboxone-cows) was borderline.
+- **If you're worried about precipitated withdrawal, start at 1 mg instead of 2 mg.** Same protocol otherwise: wait, reassess, titrate up in 1 mg increments. Longer ramp, softer landing if your [COWS](/mat-suboxone/sows-cows-induction-guide) was borderline.
 - **If symptoms get worse after the first dose, stop and wait it out.** That's the signature of precipitated withdrawal. It's uncomfortable, and it passes within a couple of hours for most people. Don't keep dosing through it. Once the worst has eased, you can re-attempt induction.
 - **Be patient with the 2-hour window on the first dose.** Bupe takes time to take effect. If you're at hour 1 with no relief, the first 2 mg isn't done working yet. You *can* add 1 mg early if symptoms are intolerable, but waiting closer to the full 2 hours gives the most honest signal of whether you need more.
-- **If you're in deep precipitated withdrawal and waiting it out isn't easing it.** Emerging evidence suggests *more* buprenorphine can resolve PWD. The mechanism is full receptor occupancy: PWD happens when bupe displaces residual full agonist while bupe-activation hasn't yet stabilized signaling. Higher bupe doses fill more receptors and let bupe's partial-agonist effect take over. A 2025 case report ([Laxton, *Cureus*](https://pmc.ncbi.nlm.nih.gov/articles/PMC11993309/)) describes three sequential 8 mg doses (24 mg total over 24 hours) resolving PWD after standard supportive care had failed. The author notes "growing evidence in the literature that withdrawals precipitated by buprenorphine can and should be treated with increased doses of buprenorphine." **Proceed with serious caution.** This is an ED-level intervention in the published case literature. It requires more bupe than most people have at home. Don't attempt it without clinical guidance. If you're in deep PWD, calling your prescriber (see [Telehealth Providers](/resources/telehealth)) or going to an ER is the right move. This note exists so you know there's a path on the other side of that call.
+- **If you're in deep precipitated withdrawal and waiting it out isn't easing it.** Emerging evidence suggests *more* buprenorphine can resolve PWD. The mechanism is full receptor occupancy: PWD happens when bupe displaces residual full agonist while bupe-activation hasn't yet stabilized signaling. Higher bupe doses fill more receptors and let bupe's partial-agonist effect take over. A 2025 case report ([Laxton, *Cureus*](https://pmc.ncbi.nlm.nih.gov/articles/PMC11993309/)) describes three sequential 8 mg doses (24 mg total over 24 hours) resolving PWD after standard supportive care had failed. The author notes "growing evidence in the literature that withdrawals precipitated by buprenorphine can and should be treated with increased doses of buprenorphine." **Proceed with serious caution.** This is an ED-level intervention in the published case literature. It requires more bupe than most people have at home. Don't attempt it without clinical guidance. If you're in deep PWD, calling your prescriber (see [Telehealth Providers](/resources/telehealth-for-suboxone)) or going to an ER is the right move. This note exists so you know there's a path on the other side of that call.
 
 Community members coming off 7-OH land in the 2 to 8 mg range using this approach. People coming off the long-acting synthetics may need more. The standard clinical protocol starts at 4 mg, which is more than this community needs and harder to taper down from.
 
-> **Standard induction not working, or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days, no withdrawal wait. Worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm)) or for anyone who's tried standard induction and gotten precipitated withdrawal.
+> **Standard induction not working, or worried it won't?** The [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is an alternative pathway. You start tiny doses of bup (0.2–0.5 mg) **while continuing your opioid**, and titrate up over 5–10 days, no withdrawal wait. Worth considering for long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), [MIT-A](/compounds/mit-a-dihydromitragynine)) or for anyone who's tried standard induction and gotten precipitated withdrawal.
 
 ## The receptor-occupancy case for low doses
 
@@ -105,7 +105,7 @@ Things that help during the taper:
 
 - The supplements and adjuncts in [Vitamins & Supplements](/other-tools/vitamins-supplements) can take the edge off the lower-dose portions.
 - Keep your COWS awareness up. Tracking symptoms during a taper helps you decide when to drop and when to hold.
-- Don't redose the compound that brought you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo, or stacked synthetics). That restarts the cycle. Planned kratom-leaf tapering is a separate protocol. See [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf).
+- Don't redose the compound that brought you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine), pseudo, or stacked synthetics). That restarts the cycle. Planned kratom-leaf tapering is a separate protocol. See [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf).
 
 ## About taper duration
 
@@ -127,12 +127,12 @@ If your prescriber is pushing a longer schedule than makes sense for your dose, 
 
 - [SAMHSA's buprenorphine practitioner locator](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)
 - [SAMHSA's national helpline](https://www.samhsa.gov/find-help/national-helpline) (1-800-662-HELP)
-- [Telehealth Providers](/resources/telehealth): fact-checked comparison of the major options (QuickMD, Bicycle Health, Ophelia, Workit Health, Boulder Care, and others) with current prices, states served, and which ones explicitly handle kratom or 7-OH.
+- [Telehealth Providers](/resources/telehealth-for-suboxone): fact-checked comparison of the major options (QuickMD, Bicycle Health, Ophelia, Workit Health, Boulder Care, and others) with current prices, states served, and which ones explicitly handle kratom or 7-OH.
 - [As of 2023, the X-waiver requirement was eliminated](https://www.samhsa.gov/medications-substance-use-disorders/become-buprenorphine-waivered-practitioner). Any provider with a DEA license can prescribe buprenorphine. Primary care doctors who haven't prescribed it in the past now can.
 
 ## Common things to ask your prescriber
 
-- Are you familiar with kratom-derivative dependence specifically? (7-OH, MGM-15, pseudo, [MIT-A](/compounds/mit-a-dhm))
+- Are you familiar with kratom-derivative dependence specifically? (7-OH, MGM-15, pseudo, [MIT-A](/compounds/mit-a-dihydromitragynine))
 - Are you open to a low-and-slow induction starting at 2 mg?
 - Will you let me time the first dose by COWS rather than by hours since last use?
 - What's your protocol for longer-half-life opioids if I've been on those?
@@ -161,13 +161,13 @@ Short tapers don't work for everyone here. People coming off long-acting synthet
 
 ## Further reading
 
-- [COWS & SOWS Guide](/mat-suboxone/suboxone-cows)
-- [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks)
-- [Telehealth Providers](/resources/telehealth): comparison of options that prescribe Suboxone online
+- [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide)
+- [Long-Term Suboxone Risks](/mat-suboxone/long-term-suboxone-risks)
+- [Telehealth Providers](/resources/telehealth-for-suboxone): comparison of options that prescribe Suboxone online
 - [NIDA Clinical Opiate Withdrawal Scale (PDF)](https://nida.nih.gov/sites/default/files/ClinicalOpiateWithdrawalScale.pdf)
 - [Emergency Care BC: COWS-based Suboxone induction protocol](https://emergencycarebc.ca/clinical_resource/clinical-summary/clinical-opiate-withdrawal-scale-treatment/)
 - [SAMHSA: Find a buprenorphine practitioner](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)
-- See also: [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for the deeper dive on common failure modes
+- See also: [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working) for the deeper dive on common failure modes
 - For long-term Suboxone maintenance discussion: [r/suboxone](https://www.reddit.com/r/suboxone/)
 
 > **Reminder:** Suboxone is an effective medication. The induction and taper approach this community uses differs from some standard clinical protocols, and works best when your prescriber is on board with the goal: a short taper, low-and-slow induction, and COWS-based timing. If something isn't working, that's a conversation with your prescriber. Don't stop on your own or redose the synthetic that brought you here.

@@ -14,7 +14,7 @@ sort: 11
 >
 > **TL;DR:**
 > - Cannabis has documented short-term benefits for some symptoms common
-> in withdrawal and [PAWS](/post-acute/what-is-paws) (nausea, sleep
+> in withdrawal and [PAWS](/post-acute/paws-post-acute-withdrawal) (nausea, sleep
 > onset, anxiety at low doses, appetite), and clear downsides with
 > chronic use, including cannabis use disorder (more likely in people
 > with prior substance use history).
@@ -426,7 +426,7 @@ sets you up to feel dismissed.
 For symptoms specifically, the site has focused pages that may be
 more useful than cannabis: [Sleep Recovery](/post-acute/sleep-recovery),
 [Depression and Anhedonia](/post-acute/depression-and-anhedonia),
-[Impending Doom](/post-acute/impending-doom), and the
+[Impending Doom](/post-acute/impending-doom-anxiety), and the
 prescription-adjunct options on
 [Helper Medications](/other-tools/helper-meds), those *are*
 things a prescriber will actively help with, and several of them

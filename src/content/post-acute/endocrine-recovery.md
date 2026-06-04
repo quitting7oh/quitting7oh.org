@@ -26,7 +26,7 @@ A list of post-acute symptoms that are commonly endocrine in origin and that man
 - Low libido or loss of sexual interest
 - Erectile dysfunction in men; reduced arousal, lubrication difficulty, or pain with intercourse in women
 - Persistent fatigue beyond what early recovery accounts for
-- Low motivation and flat mood that overlap with, but aren't fully explained by, [PAWS](/post-acute/what-is-paws)
+- Low motivation and flat mood that overlap with, but aren't fully explained by, [PAWS](/post-acute/paws-post-acute-withdrawal)
 - Loss of muscle mass, increased body fat, softer body composition
 - Menstrual cycle changes: irregular, absent, or returning differently than before use
 - Fertility concerns, either now or anticipated
@@ -34,7 +34,7 @@ A list of post-acute symptoms that are commonly endocrine in origin and that man
 - Brain fog with a hormonal component
 - Hormone-related mood swings, sometimes PMS-like or PMDD-like even for readers who didn't experience these before
 
-Several of these overlap with [PAWS symptoms](/post-acute/what-is-paws); the endocrine picture and the PAWS picture are connected, not separate. Readers who recognize their experience on this list are not imagining a connection.
+Several of these overlap with [PAWS symptoms](/post-acute/paws-post-acute-withdrawal); the endocrine picture and the PAWS picture are connected, not separate. Readers who recognize their experience on this list are not imagining a connection.
 
 ## The physiology behind it
 
@@ -71,7 +71,7 @@ A practical workup. The labs typically ordered when endocrine effects are suspec
 
 **Testing timing matters.** Hormone measurements taken during acute withdrawal or in the first weeks of recovery capture a transient state, not the underlying picture. The Endocrine Society's [2018 guideline on testosterone therapy in men (Bhasin et al.)](https://academic.oup.com/jcem/article/103/5/1715/4939465) emphasizes two morning fasting measurements before diagnosis, noting that 30% of men with an initial low testosterone have a normal repeat measurement. For women, the [ASRM 2021 fertility evaluation committee opinion](https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/) specifies cycle days 2 to 4 for baseline FSH and estradiol.
 
-Where to access testing: primary care, endocrinology, women's health and men's health specialists, some [telehealth providers](/resources/telehealth). Insurance coverage varies. Direct-pay lab options exist for readers without coverage.
+Where to access testing: primary care, endocrinology, women's health and men's health specialists, some [telehealth providers](/resources/telehealth-for-suboxone). Insurance coverage varies. Direct-pay lab options exist for readers without coverage.
 
 ## Recovery dynamics
 
@@ -152,19 +152,19 @@ The clinical literature on women is thinner than on men but is genuinely substan
 
 **Testing notes specific to women.** Cycle-day timing matters because hormone levels vary across the menstrual cycle. ASRM specifies days 2 to 4 for baseline FSH and estradiol. Mid-luteal progesterone (about a week before expected next menses) confirms recent ovulation if > 3 ng/mL. Random-day testing gives much less useful information. Prolactin elevation is more clinically significant in women than men because it can affect both libido and menstrual function directly.
 
-**Finding the right kind of clinician.** Generic primary care often defaults to "rule out pregnancy and prescribe birth control" without addressing the broader endocrine picture. Better fits: reproductive endocrinologists for fertility and persistent cycle issues, Menopause Society clinicians for perimenopausal women, women's-health specialists with substance-use experience, and some [telehealth providers](/resources/telehealth) who have explicitly handled kratom or 7-OH recovery.
+**Finding the right kind of clinician.** Generic primary care often defaults to "rule out pregnancy and prescribe birth control" without addressing the broader endocrine picture. Better fits: reproductive endocrinologists for fertility and persistent cycle issues, Menopause Society clinicians for perimenopausal women, women's-health specialists with substance-use experience, and some [telehealth providers](/resources/telehealth-for-suboxone) who have explicitly handled kratom or 7-OH recovery.
 
 ## The PAWS connection
 
-The endocrine picture and the PAWS picture share substantial symptom overlap: low mood, fatigue, anhedonia, sleep disturbance, low libido. They are not separate conditions; they are connected, and recovery of both often runs together. Readers experiencing what they thought was "just PAWS" may benefit from getting endocrine testing as well, particularly if specific symptoms (libido, cycle disruption, body composition) have not improved with time. See [What is PAWS](/post-acute/what-is-paws) for the broader symptom and timeline picture.
+The endocrine picture and the PAWS picture share substantial symptom overlap: low mood, fatigue, anhedonia, sleep disturbance, low libido. They are not separate conditions; they are connected, and recovery of both often runs together. Readers experiencing what they thought was "just PAWS" may benefit from getting endocrine testing as well, particularly if specific symptoms (libido, cycle disruption, body composition) have not improved with time. See [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the broader symptom and timeline picture.
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the broader symptom picture, the timeline, the neurobiology, and what else helps
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: the multi-year recovery arc and what the literature actually shows
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the broader symptom picture, the timeline, the neurobiology, and what else helps
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: the multi-year recovery arc and what the literature actually shows
 - **[Dopamine Recovery](/post-acute/dopamine-recovery)**: reward-system recovery, which overlaps with the motivation and libido picture
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the focused page on mood symptoms and clinical interventions
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep architecture and what helps
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: endocrine recovery often begins during taper, not after
 - **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
-- **[Telehealth Providers](/resources/telehealth)**: clinicians who can order endocrine testing and arrange specialty referrals
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: clinicians who can order endocrine testing and arrange specialty referrals

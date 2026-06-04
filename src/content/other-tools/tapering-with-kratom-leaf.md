@@ -14,7 +14,7 @@ The other taper-shaped path is tapering the concentrated 7-OH dose directly with
 - **Under ~100 mg [7-OH](/compounds/7-oh) equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
 
-**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure [pseudo](/compounds/pseudo) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound page for the right approach.
+**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), or pure [pseudo](/compounds/mitragynine-pseudoindoxyl) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound page for the right approach.
 
 ## The pharmacology of why leaf works
 Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is the dominant alkaloid (up to 66% of total alkaloid content in Thai varieties), with 7-OH as a minor constituent (up to 2% of total alkaloid content)](https://en.wikipedia.org/wiki/Mitragynine). [Total alkaloid concentration in dried leaves ranges from 0.5 to 1.5%](https://en.wikipedia.org/wiki/Mitragynine).
@@ -60,12 +60,12 @@ For users at lower daily 7-OH doses, **leaf alone is often enough to manage the 
 
 For users at moderate-to-higher 7-OH doses, **leaf alone often isn't enough to fully cover the transition**, but **leaf + appropriate adjuncts can be**. The leaf does the opioid receptor coverage; the helper meds handle the serotonergic and adrenergic symptoms, sleep, and physical symptoms that leaf doesn't address.
 
-This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working) for the receptor-level explanation), just with leaf doing the opioid coverage instead of bupe.
+This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working) for the receptor-level explanation), just with leaf doing the opioid coverage instead of bupe.
 
 **Helper meds that pair well with leaf tapering:**
 
 - **Clonidine**: alpha-2 agonist, takes the edge off noradrenergic symptoms (sweating, anxiety, restlessness, fast heart rate). The single most useful adjunct for this approach.
-- **Gabapentin**: anxiety, restless legs, sleep, brain zaps. effective. See the [Telehealth Providers comparison](/resources/telehealth) for prescribers comfortable adding adjuncts.
+- **Gabapentin**: anxiety, restless legs, sleep, brain zaps. effective. See the [Telehealth Providers comparison](/resources/telehealth-for-suboxone) for prescribers comfortable adding adjuncts.
 - **Trazodone**: sleep specifically. Non-addictive.
 - **Baclofen**: muscle relaxant, helps with body tension and aches.
 - **Magnesium glycinate** (OTC), restless legs, anxiety, sleep cluster.
@@ -113,4 +113,4 @@ What to look for:
 - [Chemical composition of kratom (Nature)](https://www.nature.com/articles/s41598-020-76119-w)
 - [Red Kratom Guide](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom)
 - [Mitragyna alkaloid breakdown](https://www.kratomscience.com/mitragyna-speciosa-kratom-alkaloids-effects/)
-- See also: [Suboxone](/mat-suboxone/suboxone-for-7oh), [Vitamins & Supplements](/other-tools/vitamins-supplements), [Telehealth Providers](/resources/telehealth)
+- See also: [Suboxone](/mat-suboxone/suboxone-for-7oh), [Vitamins & Supplements](/other-tools/vitamins-supplements), [Telehealth Providers](/resources/telehealth-for-suboxone)

@@ -60,10 +60,10 @@ That's the neurobiology behind "nothing feels good anymore." Receptors that norm
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the broader post-acute picture.
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the broader post-acute picture.
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the symptom-focused page on the flat-mood and can't-feel-pleasure side of recovery.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is load-bearing for dopamine recovery.
-- **[Impending Doom](/post-acute/impending-doom)**: the acute-anxiety side of post-acute.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: what recovery looks like over the coming months.
+- **[Impending Doom](/post-acute/impending-doom-anxiety)**: the acute-anxiety side of post-acute.
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: what recovery looks like over the coming months.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: the practical breakdown of community-discussed supplements.
-- **[Telehealth Providers](/resources/telehealth)**: for bupropion, SSRI/SNRI, and Suboxone routing.
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: for bupropion, SSRI/SNRI, and Suboxone routing.

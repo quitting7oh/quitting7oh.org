@@ -18,8 +18,8 @@ If any of those words are new: **[kratom](/compounds/kratom-leaf)** is a
 Southeast Asian plant whose leaves contain mu-opioid-active alkaloids.
 **[7-hydroxymitragynine (7-OH)](/compounds/7-oh)** is one of those
 alkaloids, concentrated, isolated, and sold as tablets or "shots."
-Those concentrated synthetics, 7-OH, [pseudo](/compounds/pseudo),
-[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), and the
+Those concentrated synthetics, 7-OH, [pseudo](/compounds/mitragynine-pseudoindoxyl),
+[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine), and the
 products built around them, are what this site is mostly about.
 
 ## About this site
@@ -84,7 +84,7 @@ For real-time help, live conversation, and the people behind the writing:
   searchable, slower, good for stories and questions you want to keep
   around
 
-See **[Community](/about/community)** for more on which to use when.
+See **[Community](/about/the-community)** for more on which to use when.
 
 ## One more thing
 

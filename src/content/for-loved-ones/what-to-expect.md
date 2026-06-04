@@ -78,7 +78,7 @@ Withdrawal from [7-OH](/compounds/7-oh) and kratom synthetics is opioid-like. Th
 - Goosebumps and chills
 - Intense, overwhelming cravings
 
-**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) can stretch this out, withdrawal may take longer to start and longer to peak. For the day-by-day shape and what to do if they're in acute crisis right now, see [Withdrawal Help](/start-here/7-oh-withdrawal-help).
+**Timeline:** acute symptoms typically peak around day 3–5 after the last dose and ease over 1–2 weeks. The longer-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl)) can stretch this out, withdrawal may take longer to start and longer to peak. For the day-by-day shape and what to do if they're in acute crisis right now, see [Withdrawal Help](/start-here/7-oh-withdrawal-help).
 
 This is miserable. It's not "the flu." It's why people keep using even when they desperately want to stop.
 
@@ -86,7 +86,7 @@ This is miserable. It's not "the flu." It's why people keep using even when they
 
 ## PAWS, the part most families don't expect
 
-[Post-acute withdrawal syndrome](/post-acute/what-is-paws) is the long tail of opioid recovery, and almost nobody warns families about it. After the acute withdrawal eases, the brain is still recalibrating from months or years of having its receptors flooded daily. That recalibration takes **months**, sometimes a year or more. During that time, your loved one may experience:
+[Post-acute withdrawal syndrome](/post-acute/paws-post-acute-withdrawal) is the long tail of opioid recovery, and almost nobody warns families about it. After the acute withdrawal eases, the brain is still recalibrating from months or years of having its receptors flooded daily. That recalibration takes **months**, sometimes a year or more. During that time, your loved one may experience:
 
 - Mood swings and emotional dysregulation
 - Anhedonia (inability to feel pleasure or interest in things they used to enjoy), see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the focused page
@@ -98,13 +98,13 @@ This is miserable. It's not "the flu." It's why people keep using even when they
 
 **Here's the part to brace for: your loved one may seem emotionally worse for a while *after* getting clean, before they get better.** This is normal, the brain healing on its own slow timeline, not a failure or impending relapse.
 
-The community's full page on this, [What is PAWS](/post-acute/what-is-paws), has more detail and is worth reading. Knowing PAWS is real and has a shape makes it easier to ride out without panic.
+The community's full page on this, [What is PAWS](/post-acute/paws-post-acute-withdrawal), has more detail and is worth reading. Knowing PAWS is real and has a shape makes it easier to ride out without panic.
 
 ## Relapse is common, and is information, not the end
 
 Most people don't get sober on the first try. Most don't get sober on the third try. Relapse, especially in the first year, is part of the population-level pattern for opioid dependence, and that's true even with the best treatment.
 
-A relapse tells you something. Maybe the support structure wasn't enough yet. Maybe a specific trigger wasn't addressed. Maybe the taper was too fast. Maybe [PAWS](/post-acute/what-is-paws) hit a level they couldn't ride out without help. The useful question after a relapse is "what does this tell us about what's missing," not "are they hopeless." They're not hopeless. They just learned something.
+A relapse tells you something. Maybe the support structure wasn't enough yet. Maybe a specific trigger wasn't addressed. Maybe the taper was too fast. Maybe [PAWS](/post-acute/paws-post-acute-withdrawal) hit a level they couldn't ride out without help. The useful question after a relapse is "what does this tell us about what's missing," not "are they hopeless." They're not hopeless. They just learned something.
 
 ## You cannot force readiness
 

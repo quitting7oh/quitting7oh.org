@@ -45,6 +45,21 @@ PAIRS="
 /other-tools/tapering-with-leaf|/other-tools/tapering-with-kratom-leaf
 /start-here/withdrawal-help|/start-here/7-oh-withdrawal-help
 /start-here/paths-off|/start-here/how-to-quit-7-oh
+/post-acute/what-is-paws|/post-acute/paws-post-acute-withdrawal
+/post-acute/kindling|/post-acute/kindling-and-relapse
+/post-acute/long-term-outlook|/post-acute/7-oh-recovery-timeline
+/post-acute/impending-doom|/post-acute/impending-doom-anxiety
+/start-here/thinking-about-using|/start-here/cravings-and-relapse-thoughts
+/compounds/pseudo|/compounds/mitragynine-pseudoindoxyl
+/compounds/mit-a-dhm|/compounds/mit-a-dihydromitragynine
+/pharmacology/minor-alkaloids|/pharmacology/kratom-minor-alkaloids
+/resources/telehealth|/resources/telehealth-for-suboxone
+/mat-suboxone/suboxone-cows|/mat-suboxone/sows-cows-induction-guide
+/mat-suboxone/suboxone-isnt-working|/mat-suboxone/why-suboxone-isnt-working
+/mat-suboxone/suboxone-risks|/mat-suboxone/long-term-suboxone-risks
+/about/community|/about/the-community
+/for-you/start-here|/for-you/welcome
+/for-loved-ones/start-here|/for-loved-ones/welcome
 "
 
 echo "Base: $BASE"

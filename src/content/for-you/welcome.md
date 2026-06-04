@@ -2,7 +2,7 @@
 title: "For You: Start Here"
 description: "Practical resources for the person in recovery, treatment, work protections, mutual aid, and sober living. Meets you wherever you are."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 1
 ---
 
@@ -32,8 +32,8 @@ This section is the practical-resources version. The rest of this site covers wh
 
 This site has substantial MAT content already. If medication-assisted treatment is something you're considering or already on, that's the place to start, not this section:
 
-- **[MAT / Suboxone](/mat-suboxone)**: overview, induction, [COWS/SOWS timing](/mat-suboxone/suboxone-cows), low-and-slow community approach, [tapers](/mat-suboxone/suboxone-rapid-taper), [what to do when bupe doesn't fully cover you](/mat-suboxone/suboxone-isnt-working).
-- **[Telehealth Providers](/resources/telehealth)**: a fact-checked comparison of telehealth options that prescribe [Suboxone](/mat-suboxone/suboxone-for-7oh) without an in-person visit.
+- **[MAT / Suboxone](/mat-suboxone)**: overview, induction, [COWS/SOWS timing](/mat-suboxone/sows-cows-induction-guide), low-and-slow community approach, [tapers](/mat-suboxone/suboxone-rapid-taper), [what to do when bupe doesn't fully cover you](/mat-suboxone/why-suboxone-isnt-working).
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: a fact-checked comparison of telehealth options that prescribe [Suboxone](/mat-suboxone/suboxone-for-7oh) without an in-person visit.
 
 The community's experience with [7-OH](/compounds/7-oh) and kratom synthetics specifically often differs from the standard clinical playbook (lower starting doses for bupe, attention to the long-acting synthetics, the polysubstance picture). Those pages are worth reading even if you've already been through general addiction-medicine guidance.
 
@@ -43,7 +43,7 @@ You're not the first person to be where you are. Real-time conversation often he
 
 - **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh), active, real-time, includes a `#sos` channel for the hardest moments.
 - **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh), slower, searchable, good for reading how others handled what you're going through.
-- See **[Community](/about/community)** for which to use when.
+- See **[Community](/about/the-community)** for which to use when.
 
 ## If you're in crisis right now
 

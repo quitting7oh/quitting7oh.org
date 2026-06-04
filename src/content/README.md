@@ -5,7 +5,7 @@ category. The filename (without the `.md` extension) is the URL slug.
 
 ```
 src/content/start-here/welcome.md   →   quitting7oh.org/start-here/welcome
-src/content/resources/telehealth.md  →   quitting7oh.org/resources/telehealth
+src/content/resources/telehealth-for-suboxone.md  →   quitting7oh.org/resources/telehealth-for-suboxone
 ```
 
 ## Adding a new page in 5 steps

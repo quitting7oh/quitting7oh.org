@@ -21,7 +21,7 @@ Tapering off 7-OH means stepping your daily dose down on a schedule until you ca
 | Early cuts (high-dose) | ~500 to 1000+ mg | Halving every few days, surprisingly tolerable |
 | Middle range | ~200 to 500 mg | Manageable cuts of 25–50%, symptoms in the gaps |
 | Lower-dose plateau | ~50 to 200 mg | Each cut disproportionately harder; the grind |
-| Jump-off and acute | from below ~50 mg | Days of acute symptoms, then [post-acute](/post-acute/what-is-paws) |
+| Jump-off and acute | from below ~50 mg | Days of acute symptoms, then [post-acute](/post-acute/paws-post-acute-withdrawal) |
 
 The numbers are community observation, not clinical thresholds. Starting dose, duration of use, polysubstance history, and the specific products used all shift where the plateau lands.
 
@@ -45,7 +45,7 @@ The pattern is consistent enough across community reports to deserve a mechanism
 
 **Neuroadaptation has had time to settle into the new state.** By the time someone reaches the lower-dose plateau, weeks of falling exposure have given the brain time to recalibrate toward a baseline that the remaining 7-OH dose is still actively suppressing. Cutting from that lower dose pulls the rug on a system that has reorganized itself around the dose. The same logic shows up in the broader buprenorphine and methadone taper literature: the last fraction of the dose is consistently described as the hardest part of the taper, regardless of starting point.
 
-**Cravings and conditioned responses don't necessarily fade in step with the dose.** The dosing schedule, the location, the time of day, the sensory cues, all of these have been paired with the substance for weeks or months. Conditioned cravings can intensify in the late taper rather than fade, especially when the brain has had time to anticipate each cut. See [Thinking About Using?](/start-here/thinking-about-using) for the "fuck its" pattern that often surfaces in this stretch.
+**Cravings and conditioned responses don't necessarily fade in step with the dose.** The dosing schedule, the location, the time of day, the sensory cues, all of these have been paired with the substance for weeks or months. Conditioned cravings can intensify in the late taper rather than fade, especially when the brain has had time to anticipate each cut. See [Thinking About Using?](/start-here/cravings-and-relapse-thoughts) for the "fuck its" pattern that often surfaces in this stretch.
 
 These are hypotheses, not established 7-OH-specific findings. The OUD literature supports the general shape; 7-OH-specific replication is not yet in the published record.
 
@@ -61,9 +61,9 @@ The reader chooses based on what's accessible. Clinical support and community ap
 
 **Cannabis.** Some people use cannabis during a taper, particularly for sleep, anxiety, and nausea. See [Cannabis and THC in Recovery](/other-tools/cannabis-thc-in-recovery) for the trade-offs and the community-discussed limits.
 
-**Community support.** [r/quittingkratom](https://www.reddit.com/r/quittingkratom/), [r/quitting7oh](https://www.reddit.com/r/quitting7oh/), and the [Discord](https://discord.gg/quitting7oh) are how most people get through this. Accountability, pattern-matching with peers in the same phase, and the simple fact of someone knowing what you're doing make a measurable difference. See [The Community](/about/community) for what each space is best at.
+**Community support.** [r/quittingkratom](https://www.reddit.com/r/quittingkratom/), [r/quitting7oh](https://www.reddit.com/r/quitting7oh/), and the [Discord](https://discord.gg/quitting7oh) are how most people get through this. Accountability, pattern-matching with peers in the same phase, and the simple fact of someone knowing what you're doing make a measurable difference. See [The Community](/about/the-community) for what each space is best at.
 
-**Clinical support.** Available to readers who want it. [Telehealth providers](/resources/telehealth) experienced with kratom and 7-OH dependence can prescribe [comfort medications](/other-tools/helper-meds), clonidine, gabapentin, hydroxyzine (with the [restless-legs caveat](/other-tools/helper-meds)), trazodone, anti-emetics, sleep medications, that meaningfully reduce the symptom burden at the lower-dose plateau especially. Many people taper successfully without clinical support; many find that adding it at the plateau is what gets them through. Both work.
+**Clinical support.** Available to readers who want it. [Telehealth providers](/resources/telehealth-for-suboxone) experienced with kratom and 7-OH dependence can prescribe [comfort medications](/other-tools/helper-meds), clonidine, gabapentin, hydroxyzine (with the [restless-legs caveat](/other-tools/helper-meds)), trazodone, anti-emetics, sleep medications, that meaningfully reduce the symptom burden at the lower-dose plateau especially. Many people taper successfully without clinical support; many find that adding it at the plateau is what gets them through. Both work.
 
 **Buprenorphine transition.** Switching from concentrated 7-OH to [buprenorphine](/mat-suboxone/suboxone-for-7oh) and tapering the bupe draws on the established OUD taper literature. Requires a prescriber. The [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) protocol covers the 5-to-10-day version this community uses for short-acting 7-OH specifically.
 
@@ -75,7 +75,7 @@ The reader chooses based on what's accessible. Clinical support and community ap
 
 Most self-managed 7-OH tapers don't end with a clean tapered-to-zero. They end with a transition to one of a few endpoints. None of these is morally or practically superior to the others. The reader picks based on what fits their situation.
 
-**Jumping off.** The most common endpoint. At some low dose, the taper stops and the remaining withdrawal gets ridden out. The acute that follows tends to peak softer than cold turkey from full dose, since receptor adaptation has already started moving downward during the taper. **The receptors still have to clear, though, and you will feel that no matter how low you tapered to.** The 7-OH on your receptors has to come off and the body has to readjust to running without it. Tapering reduces the height of the peak; it doesn't eliminate it. The [post-acute](/post-acute/what-is-paws) tail still happens but starts from a lower baseline. Jumping off is the end of the taper, not a sign the taper failed.
+**Jumping off.** The most common endpoint. At some low dose, the taper stops and the remaining withdrawal gets ridden out. The acute that follows tends to peak softer than cold turkey from full dose, since receptor adaptation has already started moving downward during the taper. **The receptors still have to clear, though, and you will feel that no matter how low you tapered to.** The 7-OH on your receptors has to come off and the body has to readjust to running without it. Tapering reduces the height of the peak; it doesn't eliminate it. The [post-acute](/post-acute/paws-post-acute-withdrawal) tail still happens but starts from a lower baseline. Jumping off is the end of the taper, not a sign the taper failed.
 
 **Transitioning to kratom leaf or mitragynine extract.** Switch from concentrated 7-OH to plain [kratom leaf](/compounds/kratom-leaf) for the final stretch, then jump off the leaf. The leaf carries dramatically less 7-OH and a different alkaloid balance, so this can ease the discontinuation. People who go this route report that jumping off leaf feels different from jumping off concentrated 7-OH, the floor is lower and the acute is shorter. See [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf) for the protocol.
 
@@ -83,7 +83,7 @@ Most self-managed 7-OH tapers don't end with a clean tapered-to-zero. They end w
 
 **Stalling at a low dose for weeks or months.** Some people reach the lower-dose plateau and stay there for an extended stretch before completing the transition off. This isn't a maintenance state, and it shouldn't be confused with the finish line. Recovery from 7-OH means abstinence; staying low-dose indefinitely is still using. There is harm-reduction value in the meantime: less drug going in, less money flowing to the substance, and a broken pattern of daily dose-chasing. That counts, but it's a waypoint, not an endpoint. The choice from here is which of the actual endpoints (jump-off, leaf transition, or bupe transition) makes sense to take next.
 
-For whatever endpoint, [Withdrawal Help](/start-here/7-oh-withdrawal-help) covers what to expect after the jump-off itself, and [Thinking About Using?](/start-here/thinking-about-using) covers the craving spikes that often accompany these transitions. [Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling) covers what happens if a re-exposure interrupts the late-taper stretch.
+For whatever endpoint, [Withdrawal Help](/start-here/7-oh-withdrawal-help) covers what to expect after the jump-off itself, and [Thinking About Using?](/start-here/cravings-and-relapse-thoughts) covers the craving spikes that often accompany these transitions. [Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse) covers what happens if a re-exposure interrupts the late-taper stretch.
 
 ## Cold turkey vs. taper
 
@@ -104,6 +104,6 @@ The decision is rarely abstract. Most people pick the path that fits the week th
 - **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)**: the protocol and evidence on the megadose vit-C approach
 - **[NAD+ IV Therapy](/other-tools/nad-iv-therapy)**: the much pricier infusion-clinic route some readers ask about, with the published evidence honestly characterized
 - **[Peptides for Opioid Withdrawal](/other-tools/peptides-for-withdrawal)**: BPC-157, Selank, Semax, DSIP, TB-500, with evidence labeled per peptide and the supply-chain safety reality
-- **[Telehealth Providers](/resources/telehealth)**: clinicians experienced with kratom and 7-OH dependence
-- **[Thinking About Using?](/start-here/thinking-about-using)**: for the "fuck its" that surface during the lower-dose plateau
-- **[What is PAWS](/post-acute/what-is-paws)** and **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: the post-jump-off arc
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: clinicians experienced with kratom and 7-OH dependence
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: for the "fuck its" that surface during the lower-dose plateau
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)** and **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)**: the post-jump-off arc

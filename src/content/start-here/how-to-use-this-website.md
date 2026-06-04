@@ -15,7 +15,7 @@ page that's written for it.
 A craving wave, a planned slip, the "fuck its", whatever the shape, the
 next move matters more than the rest of this site. Go here first.
 
-- **[Thinking About Using? (The Fuck Its)](/start-here/thinking-about-using)**: what to
+- **[Thinking About Using? (The Fuck Its)](/start-here/cravings-and-relapse-thoughts)**: what to
   do in the next ten minutes, who to call, what to know about
   post-abstinence tolerance.
 - **[Crisis Hotlines](/resources/crisis-hotlines)**: 988, SAMHSA,
@@ -35,7 +35,7 @@ step down to [kratom leaf](/other-tools/tapering-with-kratom-leaf),
   appointment can get most of these.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: magnesium, electrolytes, NAC, melatonin, the rest of the OTC stack
   that takes the edge off.
-- **[Impending Doom](/post-acute/impending-doom)**: if the wave
+- **[Impending Doom](/post-acute/impending-doom-anxiety)**: if the wave
   hitting you is the panicky "something terrible is about to happen"
   feeling specifically.
 
@@ -45,9 +45,9 @@ If it's been weeks or months and you're still flat, sleepless, or
 foggy, that's almost always **post-acute withdrawal syndrome (PAWS)**.
 It's real, it's known, and it has its own playbook. If a wave of
 panicky dread is what's hitting,
-[Impending Doom](/post-acute/impending-doom) is the more focused page.
+[Impending Doom](/post-acute/impending-doom-anxiety) is the more focused page.
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the shape of it,
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the shape of it,
   the timeline, what helps (by evidence level).
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: for the flat-mood, can't-feel-anything, and post-acute depression
   picture.
@@ -55,7 +55,7 @@ panicky dread is what's hitting,
   deeper neurobiology underneath the anhedonia.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: if sleep is
   the part that hasn't come back.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: what
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: what
   recovery looks like over the coming months.
 
 ## I've decided to quit and I'm planning
@@ -70,7 +70,7 @@ exist with real pros and cons.
   some people have used to bridge off 7-OH and related synthetics.
 - **[Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
-- **[Telehealth Providers](/resources/telehealth)**: a fact-checked
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: a fact-checked
   comparison if you need a prescriber.
 
 ## I'm using and thinking about stopping
@@ -82,7 +82,7 @@ what you're on and what stopping looks like.
   builds so fast, and what makes it different from traditional opioids.
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: read this *before*
   you stop. Knowing what's coming changes how the first 72 hours feel.
-- **[Telehealth Providers](/resources/telehealth)**: so you know who
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: so you know who
   to call when you decide.
 
 ## I don't really know what any of this is
@@ -103,10 +103,10 @@ mentioned it, or you found this page from a search. Start with the
 Family, partner, friend. There's a whole section written for you, by
 people who've been on both sides of this.
 
-- **[For Loved Ones, Start Here](/for-loved-ones/start-here)**: the
+- **[For Loved Ones, Start Here](/for-loved-ones/welcome)**: the
   one to read first.
 - **[For Loved Ones, What to Expect](/for-loved-ones/what-to-expect)**: the shape of dependence, withdrawal, and recovery from outside it.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: so
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: so
   you know the language and the signs.
 
 ## I'm not sure this site is for me

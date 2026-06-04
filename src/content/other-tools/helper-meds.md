@@ -5,7 +5,7 @@ category: "other-tools"
 last_updated: "2026-06-04"
 sort: 1
 ---
-> **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
+> **This is a reference, not a prescription.** All of these require a doctor. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) lists telehealth options with notes on which providers will work with you on adjuncts. **#helper-meds** is the chat channel for discussing your experiences with these meds.
 
 The compounds we deal with here ([7-OH](/compounds/7-oh) and the synthetics) hit your opioid receptors *and* serotonin, adrenergic, GABA, and other systems. Kratom's minor alkaloids bind 5-HT₁ₐ, 5-HT₂ᵦ, α-1, and α-2 receptors **directly** as agonists or antagonists ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/); [Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/)), not via the reuptake-inhibition mechanism that SSRIs and SNRIs use. Suboxone covers the opioid side. Helper meds cover everything else.
 
@@ -74,7 +74,7 @@ The good news: the two most effective tools are cheap and over the counter.
 
 **Pregabalin (Lyrica)** is similar but more potent, faster-acting, and has a higher abuse profile. Less commonly prescribed in MAT contexts but works for the same symptoms.
 
-Provider attitudes vary. Some prescribers hand it out readily; others want you more established before adding it. The [Telehealth Providers comparison](/resources/telehealth) flags which platforms community members have had success with for adjuncts.
+Provider attitudes vary. Some prescribers hand it out readily; others want you more established before adding it. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) flags which platforms community members have had success with for adjuncts.
 
 ## Baclofen and muscle relaxants
 
@@ -155,7 +155,7 @@ Benzos (Xanax, Klonopin, Valium, Ativan, Librium) are highly effective for the a
 
 ## How to get these
 
-Most are non-controlled and easy to prescribe. The [Telehealth Providers comparison](/resources/telehealth) covers options that work with kratom/7-OH cases. Standard primary care doctors will prescribe most of these readily; bring research if needed.
+Most are non-controlled and easy to prescribe. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) covers options that work with kratom/7-OH cases. Standard primary care doctors will prescribe most of these readily; bring research if needed.
 
 For MAT contexts (Suboxone), your bupe prescriber is usually the right person to add helper meds to your protocol. They already know your situation.
 
@@ -171,4 +171,4 @@ Common starter combos:
 - **Adding for muscle pain:** plus baclofen or tizanidine
 - **Adding for post-acute mood:** Wellbutrin (after the acute phase ends)
 
-Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/tapering-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/other-tools/sr-17). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/what-is-paws) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
+Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/tapering-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/other-tools/sr-17). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.

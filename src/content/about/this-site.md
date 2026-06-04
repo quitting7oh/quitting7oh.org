@@ -6,7 +6,7 @@ last_updated: "2026-05-25"
 sort: 1
 ---
 
-quitting7oh.org is a community-compiled reference for getting off [7-OH](/compounds/7-oh), kratom synthetics, and the opioid dependence they produce. It grew out of conversations in our [Discord and subreddit](/about/community), pulling together what people in our community have learned the hard way, and organizing it so the next person doesn't have to scroll through hundreds of reddit posts to find the one paragraph that answers their question.
+quitting7oh.org is a community-compiled reference for getting off [7-OH](/compounds/7-oh), kratom synthetics, and the opioid dependence they produce. It grew out of conversations in our [Discord and subreddit](/about/the-community), pulling together what people in our community have learned the hard way, and organizing it so the next person doesn't have to scroll through hundreds of reddit posts to find the one paragraph that answers their question.
 
 ## Who this is for
 
@@ -39,12 +39,12 @@ please open an issue or pull request on [GitHub](https://github.com/quitting7oh/
 
 - **Not medical advice.** Everything here is community-compiled information. It's a starting point for your own research and a conversation with a qualified clinician, not a substitute for one.
 - **Not a treatment program.** We don't prescribe, monitor anyone's taper, or run a clinic.
-- **Not the active community.** The site is reference material. The live conversation happens in the [Discord and subreddit](/about/community).
+- **Not the active community.** The site is reference material. The live conversation happens in the [Discord and subreddit](/about/the-community).
 - **Not affiliated with any vendor, treatment facility, or pharmacy.** No ads, no sponsorships, no monetization of any kind. If a page mentions a specific telehealth provider or supplement, it's because community members have used it, not because anyone is paying us to mention it.
 
 ## Where to go from here
 
 - **[Start Here](/start-here/welcome)**: if you came looking for actual recovery information rather than meta-content about the site.
-- **[The Community](/about/community)**: about the Discord and subreddit, the history of how this project started, and the current mod and admin teams.
+- **[The Community](/about/the-community)**: about the Discord and subreddit, the history of how this project started, and the current mod and admin teams.
 - **[Contributing & Feedback](/about/contributing)**: how to suggest corrections, propose changes, or reach the team.
 - **[Where the Site Stands](/about/where-we-stand)**: for readers from the broader kratom community, responsible users, or anyone wondering whether the site is part of a ban-related campaign. (It isn't.)

@@ -2,7 +2,7 @@
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
 description: "Mitragynine pseudoindoxyl (MP), receptor affinity, why bupe induction is harder, what to watch for."
 category: "compounds"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 6
 ---
 ## General risks

@@ -2,7 +2,7 @@
 title: "The Community"
 description: "The Discord and subreddit, how the project started, and the people currently running it."
 category: "about"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 3
 ---
 
@@ -21,7 +21,7 @@ What you'll find:
 - **Live support.** Someone is usually around, day or night.
 - **Topic channels** mirroring the categories on this site. The locked reference channels (like `#suboxone-info` or `#what-is-paws`) are what this site indexes; the unlocked discussion channels (`#sos`, `#daily-check-in`, `#paws-support`) are where conversation happens.
 - **A `#sos` channel** for the hardest moments. Post one word. People will see it.
-- **Compound-specific channels** for [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), [MIT-A](/compounds/mit-a-dhm), and kratom leaf, in case your situation needs more specific input than the general channels cover.
+- **Compound-specific channels** for [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), [MIT-A](/compounds/mit-a-dihydromitragynine), and kratom leaf, in case your situation needs more specific input than the general channels cover.
 
 Anonymity is normal. You don't need to use your real name. You don't need to introduce yourself to participate. Lurking is allowed and encouraged until you're ready to post.
 
@@ -91,7 +91,7 @@ Not Indivior. Not any other Suboxone manufacturer. Not any pharma company at all
 
 **Nobody endorses us.**
 
-We don't represent any company. We don't have a relationship with any company. When we mention a [telehealth provider like QuickMD or Bicycle Health or Boulder Care](/resources/telehealth), or buprenorphine, or [generic clonidine that costs a penny a pill](/other-tools/helper-meds), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine, a 50-year-old off-patent medication selling for pennies, slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
+We don't represent any company. We don't have a relationship with any company. When we mention a [telehealth provider like QuickMD or Bicycle Health or Boulder Care](/resources/telehealth-for-suboxone), or buprenorphine, or [generic clonidine that costs a penny a pill](/other-tools/helper-meds), it's because people in this community have used those things to come off [7-OH](/compounds/7-oh) and they worked. Does the generic manufacturer of clonidine, a 50-year-old off-patent medication selling for pennies, slip us a kickback? Get the fuck out of here with that. Nobody pays anyone to recommend clonidine. We recommend it because it works.
 
 **What we do, every day:**
 
@@ -104,7 +104,7 @@ We don't represent any company. We don't have a relationship with any company. W
 - [SR-17018](/other-tools/sr-17), a biased agonist research chemical with its own caveats
 - Straight tapers on the substance itself, slow and careful
 - Tapers using kratom leaf as a bridge ([this works for some](/other-tools/tapering-with-kratom-leaf), doesn't for others)
-- Switching to [MIT-A or DHM](/compounds/mit-a-dhm) temporarily as a step down
+- Switching to [MIT-A or DHM](/compounds/mit-a-dihydromitragynine) temporarily as a step down
 - Cold turkey, with [helper meds](/other-tools/helper-meds) and a lot of suffering
 - Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi)
 - Inpatient detox when polysubstance use makes that necessary

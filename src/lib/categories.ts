@@ -136,7 +136,7 @@ export const PINNED_PAGES: { href: string; title: string }[] = [
   { href: '/other-tools/helper-meds', title: 'Helper Medications' },
   { href: '/other-tools/tapering-with-kratom-leaf', title: 'Tapering with Kratom' },
   { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone' },
-  { href: '/start-here/thinking-about-using', title: 'Thinking about using?' },
+  { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?' },
 ];
 
 /** Sub-groupings inside long categories. Each entry maps a group name
@@ -148,13 +148,13 @@ export const PINNED_PAGES: { href: string; title: string }[] = [
  *  pages to a grouped category. */
 export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]> = {
   'mat-suboxone': [
-    { name: 'Getting on bupe', slugs: ['suboxone-for-7oh', 'suboxone-cows', 'suboxone-bernese-method'] },
+    { name: 'Getting on bupe', slugs: ['suboxone-for-7oh', 'sows-cows-induction-guide', 'suboxone-bernese-method'] },
     { name: 'Coming off', slugs: ['suboxone-rapid-taper', 'suboxone-custom-dose'] },
-    { name: 'Long-term', slugs: ['sublocade-brixadi', 'suboxone-risks'] },
-    { name: 'Troubleshooting', slugs: ['suboxone-isnt-working'] },
+    { name: 'Long-term', slugs: ['sublocade-brixadi', 'long-term-suboxone-risks'] },
+    { name: 'Troubleshooting', slugs: ['why-suboxone-isnt-working'] },
   ],
   'for-loved-ones': [
-    { name: 'Orientation', slugs: ['start-here', 'what-to-expect', 'how-to-talk'] },
+    { name: 'Orientation', slugs: ['welcome', 'what-to-expect', 'how-to-talk'] },
     { name: 'Boundaries & safety', slugs: ['boundaries', 'safety', 'asking-them-to-leave'] },
     { name: 'Day-to-day', slugs: ['at-home-recovery', 'rehabilitation-centers', 'fmla-workplace'] },
     { name: 'For yourself', slugs: ['taking-care-of-yourself', 'support-groups'] },
@@ -165,10 +165,10 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
   ],
   'post-acute': [
-    { name: 'The map', slugs: ['what-is-paws'] },
-    { name: 'Specific symptoms', slugs: ['pink-cloud', 'dopamine-recovery', 'depression-and-anhedonia', 'impending-doom', 'sleep-recovery', 'endocrine-recovery'] },
+    { name: 'The map', slugs: ['paws-post-acute-withdrawal'] },
+    { name: 'Specific symptoms', slugs: ['pink-cloud', 'dopamine-recovery', 'depression-and-anhedonia', 'impending-doom-anxiety', 'sleep-recovery', 'endocrine-recovery'] },
     { name: 'Naltrexone', slugs: ['naltrexone', 'naltrexone-normal-dose', 'naltrexone-low-dose', 'naltrexone-ultra-low-dose'] },
-    { name: 'Long view', slugs: ['kindling', 'long-term-outlook'] },
+    { name: 'Long view', slugs: ['kindling-and-relapse', '7-oh-recovery-timeline'] },
   ],
 };
 

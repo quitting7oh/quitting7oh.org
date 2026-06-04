@@ -16,7 +16,7 @@ sort: 11
 >
 > "Opioids" here includes [7-OH](/compounds/7-oh), kratom and the
 > kratom synthetics ([MGM-15](/compounds/mgm15),
-> [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)),
+> [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl)),
 > [buprenorphine](/mat-suboxone/suboxone-for-7oh) (Suboxone, Subutex,
 > Sublocade), methadone, and any prescription opioid.
 >
@@ -117,10 +117,10 @@ but it remains on the label and some inpatient programs still use it.
 peer-reviewed guidance on the exact abstinence window. Clinicians
 working with this population extrapolate from the OUD literature,
 often using longer windows for the longer-acting synthetics
-([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
-[pseudo](/compounds/pseudo)) out of caution. If you're considering
+([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine),
+[pseudo](/compounds/mitragynine-pseudoindoxyl)) out of caution. If you're considering
 this, find a prescriber familiar with these compounds (see
-[Telehealth Providers](/resources/telehealth) for the fact-checked
+[Telehealth Providers](/resources/telehealth-for-suboxone) for the fact-checked
 comparison).
 
 ## Evidence base
@@ -190,7 +190,7 @@ If you stop naltrexone and there's any chance you'll use opioids
 again, known craving pattern, prior relapse history, environmental
 risk, **keep [naloxone (Narcan)](https://www.cdc.gov/stop-overdose/caring/naloxone.html)
 in the house**, tell someone you're with, and read
-[Thinking About Using?](/start-here/thinking-about-using) so the
+[Thinking About Using?](/start-here/cravings-and-relapse-thoughts) so the
 information is in your head before the moment.
 
 ## For 7-OH dependence specifically
@@ -213,10 +213,10 @@ opioid-free.
 For the actual quitting process, see [Withdrawal Help](/start-here/7-oh-withdrawal-help)
 for the four community-documented paths off 7-OH and the synthetics.
 For the post-acute symptoms naltrexone doesn't directly address,
-see [What is PAWS](/post-acute/what-is-paws) and
+see [What is PAWS](/post-acute/paws-post-acute-withdrawal) and
 [Depression and Anhedonia](/post-acute/depression-and-anhedonia).
 
-For finding a prescriber, [Telehealth Providers](/resources/telehealth)
+For finding a prescriber, [Telehealth Providers](/resources/telehealth-for-suboxone)
 lists the fact-checked options with kratom and 7-OH experience.
 
 ## Where to read next
@@ -225,6 +225,6 @@ lists the fact-checked options with kratom and 7-OH experience.
   page comparing all three protocols.
 - **[Low-Dose Naltrexone (LDN)](/post-acute/naltrexone-low-dose)**: for the off-label, post-acute use case.
 - **[Ultra-Low-Dose Naltrexone (ULDN)](/post-acute/naltrexone-ultra-low-dose)**: the investigational tier.
-- **[Telehealth Providers](/resources/telehealth)**: for finding a
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: for finding a
   prescriber.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark this if you're on naltrexone and craving hits.
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: bookmark this if you're on naltrexone and craving hits.

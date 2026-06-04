@@ -49,7 +49,7 @@ The community-documented at-home paths (the [companion page for
 them](/for-you/at-home-treatment) has the full version):
 
 - **Suboxone as a structured rapid taper**: typically 5 to 10 days,
-  often arranged through a [telehealth prescriber](/resources/telehealth)
+  often arranged through a [telehealth prescriber](/resources/telehealth-for-suboxone)
   with no in-person visit needed. Cuts most of the acute withdrawal.
 - **[SR-17](/other-tools/sr-17)**: a non-prescription option
   some people use to bridge off the synthetics.
@@ -80,7 +80,7 @@ The first 72 hours are the worst. Expect:
 
 By days 4-7 the physical symptoms ease. Sleep is still broken. Mood
 swings continue. By week 2 the acute phase is mostly over, though
-[post-acute symptoms (PAWS)](/post-acute/what-is-paws) can persist
+[post-acute symptoms (PAWS)](/post-acute/paws-post-acute-withdrawal) can persist
 for weeks to months.
 
 ## Things that help

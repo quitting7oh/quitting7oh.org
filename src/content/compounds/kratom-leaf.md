@@ -91,13 +91,13 @@ compounds. The major ones, by concentration:
   diastereomers (slightly different 3D arrangements of the same
   atoms) with their own receptor activity, especially at serotonin
   and adrenergic receptors. Background context lives on the
-  [Kratom's Minor Alkaloids](/pharmacology/minor-alkaloids) page.
+  [Kratom's Minor Alkaloids](/pharmacology/kratom-minor-alkaloids) page.
 - **7-Hydroxymitragynine**: the alkaloid this site is named around.
   Present in *very small* amounts in fresh leaf; somewhat more in
   dried/aged leaf because mitragynine oxidizes to 7-OH over time.
 - **Mitraphylline, [rhynchophylline](/compounds/cats-claw), and
   others**, trace alkaloids with limited or non-opioid activity.
-- **Mitragynine [pseudoindoxyl](/compounds/pseudo)**: not typically
+- **Mitragynine [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl)**: not typically
   present in fresh leaf in meaningful amounts but produced as a
   degradation product and now appears as a synthetic in some
   designer-drug products.
@@ -288,7 +288,7 @@ that exists. Known caveats:
   encountered these compounds and won't have a substantive taper
   conversation. The narrow asks where a prescriber helps
   are adjunct meds (clonidine, gabapentin) and lab work. The
-  [Telehealth Providers](/resources/telehealth) comparison flags
+  [Telehealth Providers](/resources/telehealth-for-suboxone) comparison flags
   options with specific kratom/7-OH experience if you want adjunct
   support alongside a leaf taper.
 
@@ -329,5 +329,5 @@ and DEA primary sources before relying on anything specific.
 > [SR-17](/other-tools/sr-17), or toughing it out with
 > [helper meds](/other-tools/helper-meds)). For finding a
 > prescriber for Suboxone or helper meds, see
-> [Telehealth Providers](/resources/telehealth). SR-17 is
+> [Telehealth Providers](/resources/telehealth-for-suboxone). SR-17 is
 > off-prescription; community ground.

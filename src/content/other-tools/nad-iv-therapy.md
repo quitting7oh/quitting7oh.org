@@ -117,7 +117,7 @@ Something in the package may help some people. The price tag attaches to the who
 
 For opioid-receptor dependence, including from 7-OH and the kratom synthetics, several paths have stronger evidence than IV NAD+ does:
 
-- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth) at a small fraction of the cost of an NAD+ course, with decades of clinical evidence behind it
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth-for-suboxone) at a small fraction of the cost of an NAD+ course, with decades of clinical evidence behind it
 - **[SR-17](/other-tools/sr-17)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
 - **[Tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf)** and cold turkey with **[helper medications](/other-tools/helper-meds)** are the non-MAT options
 
@@ -147,4 +147,4 @@ For drug-interaction questions about your other medications, a prescriber is the
 - **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: community taper patterns and what tends to help
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: what to actually do during acute withdrawal
-- **[Telehealth Providers](/resources/telehealth)**: addiction-medicine telehealth options
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: addiction-medicine telehealth options

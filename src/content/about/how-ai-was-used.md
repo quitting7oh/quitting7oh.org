@@ -54,4 +54,4 @@ The LLM did not decide what goes on this site. The community did. The LLM was th
 
 If you're skeptical of AI-assisted content, that skepticism is warranted in general. Most of it is bad. The bar we tried to clear: would a person in withdrawal at 3 a.m., reading this page, find something useful, accurate, and grounded that they couldn't have found elsewhere? When we couldn't answer yes, the page didn't ship.
 
-See also: [About This Site](/about/this-site), [The Community](/about/community), [Where the Site Stands](/about/where-we-stand), [Contributing & Feedback](/about/contributing).
+See also: [About This Site](/about/this-site), [The Community](/about/the-community), [Where the Site Stands](/about/where-we-stand), [Contributing & Feedback](/about/contributing).

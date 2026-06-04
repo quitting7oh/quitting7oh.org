@@ -179,5 +179,5 @@ community sometimes uses.
 - **[Chemical Structures (Appendix)](/pharmacology/chemical-structures)**
  , 2D skeletal-formula diagrams for the related compounds (MGM-16
   is not yet in the appendix)
-- **[Telehealth Providers](/resources/telehealth)**: for finding a
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: for finding a
   prescriber experienced with kratom and 7-OH dependence

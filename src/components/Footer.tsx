@@ -105,7 +105,7 @@ export function Footer() {
             <a href="/sitemap" className="hover:text-foreground">
               Site map
             </a>
-            <a href="/about/community" className="hover:text-foreground">
+            <a href="/about/the-community" className="hover:text-foreground">
               Community
             </a>
             <a href={SITE.repo} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">

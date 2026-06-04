@@ -19,7 +19,7 @@ withdrawal feels like.
 
 If this is a re-entry to withdrawal after a stretch off, and symptoms
 seem to be hitting faster than they did the first time, see
-[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)
+[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)
 for why that happens.
 
 ## You are not alone, talk to someone
@@ -34,7 +34,7 @@ right now. You don't need to introduce yourself. You can just post:
  , slower, but searchable. Read what others have done. Post your own
   question when you're ready.
 
-See [Community](/about/community) for more on which to use.
+See [Community](/about/the-community) for more on which to use.
 
 ## In the next hour
 
@@ -61,8 +61,8 @@ Do these things, in this order:
 
 **Don't:**
 
-- Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm),
-  [pseudo](/compounds/pseudo), or any stacked synthetic). Even a "small" dose resets your
+- Don't redose the compound that put you here ([7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine),
+  [pseudo](/compounds/mitragynine-pseudoindoxyl), or any stacked synthetic). Even a "small" dose resets your
   timeline.
 - Don't take benzodiazepines (Xanax, Klonopin, Ativan) "to take the
   edge off" unless they're already prescribed to you for this. Mixing
@@ -84,12 +84,12 @@ If you've been on **[7-OH](/compounds/7-oh) alone** (the most common short-actin
 | **12–24 hours** | Symptoms climb. Diarrhea, chills/sweats, goosebumps, insomnia, strong cravings. |
 | **24–72 hours** | **Peak.** Worst body aches, restless legs, can't sit still. Sleep is broken or absent. |
 | **Days 3–5** | Symptoms start lifting. Sleep returns in pieces. You feel drained but human. |
-| **Week 2 onward** | Acute is mostly over. Welcome to [post-acute (PAWS)](/post-acute/what-is-paws), which is its own thing but much easier than this. |
+| **Week 2 onward** | Acute is mostly over. Welcome to [post-acute (PAWS)](/post-acute/paws-post-acute-withdrawal), which is its own thing but much easier than this. |
 
-If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), or a stacked product**, the
+If you've been on **[MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dihydromitragynine), or a stacked product**, the
 timeline runs longer, peak symptoms can be 48–96 hours out instead of
 24–72, and the tail is longer. The shape is the same, just stretched.
-See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dhm).
+See [MGM-15](/compounds/mgm15) and [MIT-A / DHM](/compounds/mit-a-dihydromitragynine).
 
 A note on **"brain zaps" and a wired-but-exhausted feeling** at the
 peak: kratom's [minor alkaloids](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)
@@ -100,7 +100,7 @@ rest of the acute phase.
 
 If you've been on **pseudo**, the dynamics are different, pseudo binds
 to the receptor tighter than buprenorphine itself. See
-[Pseudoindoxyl](/compounds/pseudo). Suboxone induction is harder and may
+[Pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl). Suboxone induction is harder and may
 require a different approach. Talk to a prescriber.
 
 ## Reaching for relief right now
@@ -109,8 +109,8 @@ You don't have to white-knuckle this. What you can reach for in the next few hou
 
 - **[Kratom leaf or mitragynine concentrate](/other-tools/tapering-with-kratom-leaf).** If you already have leaf, or can get it locally today, reaching for plain [kratom leaf](/compounds/kratom-leaf) (or a mitragynine concentrate if leaf isn't available) to take the edge off is a legitimate harm-reduction step-down. It doesn't undo the work of getting off the synthetics. Leaf is much lower-potency than 7-OH.
 - **[Pharmacy-shelf supplements](/other-tools/vitamins-supplements).** Magnesium glycinate for restless legs and sleep, electrolyte powder (LMNT, Liquid IV, Pedialyte) for hydration, melatonin (1 to 3 mg) for sleep, vitamin C, NAC. Available at any drugstore today. The [Quit Kit-style pre-packaged stacks](/other-tools/quit-kit) are an option if you don't want to source individually.
-- **[Prescription helper medications](/other-tools/helper-meds)** via [same-day telehealth](/resources/telehealth). Clonidine, gabapentin, trazodone, baclofen, ondansetron, and others can take the edge off specific symptoms. A telehealth visit can get most of these in your hands the same day.
-- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** via same-day [telehealth](/resources/telehealth). A correct induction can drop withdrawal to near zero within hours. The prescription is same-day in most US states, but you have to wait until your [COWS score is ≥ 12](/mat-suboxone/suboxone-cows) before the first dose (typically 12 to 24 hours into withdrawal, longer for the long-acting synthetics). Going earlier causes precipitated withdrawal.
+- **[Prescription helper medications](/other-tools/helper-meds)** via [same-day telehealth](/resources/telehealth-for-suboxone). Clonidine, gabapentin, trazodone, baclofen, ondansetron, and others can take the edge off specific symptoms. A telehealth visit can get most of these in your hands the same day.
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** via same-day [telehealth](/resources/telehealth-for-suboxone). A correct induction can drop withdrawal to near zero within hours. The prescription is same-day in most US states, but you have to wait until your [COWS score is ≥ 12](/mat-suboxone/sows-cows-induction-guide) before the first dose (typically 12 to 24 hours into withdrawal, longer for the long-acting synthetics). Going earlier causes precipitated withdrawal.
 
 ## Options from here
 
@@ -173,7 +173,7 @@ If you encounter that:
   advice. AMA discharges are documented but you don't get arrested
   or charged.
 - **A bad ER experience doesn't mean medical care won't help you**: it means *that* ER wasn't the right fit. A
-  [telehealth Suboxone appointment](/resources/telehealth) is often a
+  [telehealth Suboxone appointment](/resources/telehealth-for-suboxone) is often a
   better path than a second ER visit if you're not in a true emergency.
 
 If you're in an emergency from the red-flag list above, go anyway.
@@ -248,13 +248,13 @@ A few things people who've been here wish someone had told them:
 
 ## When you can, read these next
 
-- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark for the "fuck its" moments. They'll come.
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: bookmark for the "fuck its" moments. They'll come.
 - **[Helper Medications](/other-tools/helper-meds)**: what
   to ask a prescriber for
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**
  , what's worth buying, what isn't
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)**: the MAT path,
   if you're considering it
-- **[What is PAWS](/post-acute/what-is-paws)**: what comes after the
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: what comes after the
   worst is over
-- **[Community](/about/community)**: Discord and subreddit
+- **[Community](/about/the-community)**: Discord and subreddit

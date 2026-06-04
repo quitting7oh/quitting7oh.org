@@ -160,13 +160,13 @@ Category renames (e.g., `/other-tools/` → `/adjuncts/`) are the biggest workfl
 
 If you want to phase the work rather than do everything in one push:
 
-**Batch 1: quick wins (10 renames, all low risk).**
+**Batch 1: quick wins (10 renames, all low risk).** ✅ Shipped 2026-06-04.
 
 Drop the `-info` suffix from helper-meds, mega-vit-c, quitkit, sr17018, peptides, sublocade-brixadi, suboxone-info. Rename tapering-with-leaf → tapering-with-kratom-leaf. Rename withdrawal-help → 7-oh-withdrawal-help. Rename paths-off → how-to-quit-7-oh.
 
-**Batch 2: moderate-impact renames.**
+**Batch 2: moderate-impact renames.** ✅ Shipped 2026-06-04.
 
-The "judgment calls" table plus the medium-risk renames (what-is-paws, kindling, long-term-outlook, etc.).
+Twelve medium-risk renames (what-is-paws, kindling, long-term-outlook, impending-doom, thinking-about-using, pseudo, mit-a-dhm, minor-alkaloids, telehealth, suboxone-cows, suboxone-isnt-working, suboxone-risks) plus three judgment-call renames (about/community → the-community, for-you/start-here → welcome, for-loved-ones/start-here → welcome). The remaining judgment calls (pink-cloud, sleep-recovery, this-site) were left alone — `(keep)` directions in the table.
 
 **Batch 3: category rename, if you decide to do it.**
 

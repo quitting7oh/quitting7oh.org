@@ -105,4 +105,4 @@ CRAFT is not a substitute for peer support; it's a skill set you can bring into 
 
 - **[How to Talk to Your Loved One](/for-loved-ones/how-to-talk)**: for the in-the-moment skills CRAFT teaches
 - **[Taking Care of Yourself](/for-loved-ones/taking-care-of-yourself)**: for what support groups complement
-- **[Start Here](/for-loved-ones/start-here)**: back to the section hub
+- **[Start Here](/for-loved-ones/welcome)**: back to the section hub

@@ -7,17 +7,17 @@ sort: 4
 ---
 These schedules go faster than what a prescriber will typically suggest. They're built on community experience with hundreds of successful rapid tapers from 7-OH, where 5-to-10-day bupe courses at low-to-moderate doses have not produced meaningful bupe dependence. Most prescribers won't sign off on these timelines; you're choosing a community-developed approach over standard clinical practice.
 
-**On [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo), or stacked compounds?** Induction timing and bupe coverage both differ from straight 7-OH: COWS/SOWS takes longer to climb (36 to 72 hours rather than 14 to 24), and the delta-opioid activity of some of these compounds means bupe may not fully cover withdrawal symptoms. Read [Why Suboxone Might Not Be Working: long-acting synthetics or stacked compounds](/mat-suboxone/suboxone-isnt-working#if-youve-been-on-long-acting-synthetics-or-stacked-compounds) before applying the schedules below.
+**On [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl), or stacked compounds?** Induction timing and bupe coverage both differ from straight 7-OH: COWS/SOWS takes longer to climb (36 to 72 hours rather than 14 to 24), and the delta-opioid activity of some of these compounds means bupe may not fully cover withdrawal symptoms. Read [Why Suboxone Might Not Be Working: long-acting synthetics or stacked compounds](/mat-suboxone/why-suboxone-isnt-working#if-youve-been-on-long-acting-synthetics-or-stacked-compounds) before applying the schedules below.
 
 ## Pharmacology: 7-OH vs. the heavier synthetics
 [7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
 
-This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [Long-Term Suboxone Risks](/mat-suboxone/suboxone-risks)). Same medication, different use case, different outcome.
+This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [Long-Term Suboxone Risks](/mat-suboxone/long-term-suboxone-risks)). Same medication, different use case, different outcome.
 
 ## The schedules
 
 All schedules assume:
-- Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/suboxone-cows) & [Suboxone](/mat-suboxone/suboxone-for-7oh))
+- Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide) & [Suboxone](/mat-suboxone/suboxone-for-7oh))
 - You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
 
@@ -160,7 +160,7 @@ If you've worked the tail down this way and still can't get clear of the jump, t
 ## Harm reduction layer (use ALL of these, not optional)
 
 - **Hydration and electrolytes.** LMNT, Liquid IV, coconut water, or salt + lemon in water. Sweating and GI symptoms drain you fast.
-- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/other-tools/helper-meds) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth) for prescribers who will work with you on adjuncts.
+- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/other-tools/helper-meds) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth-for-suboxone) for prescribers who will work with you on adjuncts.
 - **OTC support.** Loperamide for diarrhea (labeled doses only, do not exceed), ibuprofen for body aches, ginger for nausea.
 - **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
 - **A check-in person.** Someone who knows what you're doing and will check on you daily, especially days 3 to 7 after the last dose.

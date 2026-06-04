@@ -28,7 +28,7 @@ A sober living home, by design, puts you in a house with other people in early r
 
 People in early recovery (you included) are often:
 
-- **Sleep-disrupted, irritable, and mood-volatile.** [PAWS](/post-acute/what-is-paws) is real, and a houseful of people in different stages of it produces a real amount of friction.
+- **Sleep-disrupted, irritable, and mood-volatile.** [PAWS](/post-acute/paws-post-acute-withdrawal) is real, and a houseful of people in different stages of it produces a real amount of friction.
 - **Not at peak self-care.** Messes, food left in the sink, laundry piles, late-night noise. Early recovery doesn't leave a lot of bandwidth for household tidiness, and "everyone here is going through it" can become its own excuse.
 - **Going through their own stuff.** Interpersonal conflict, family crises, relapse close-calls, sometimes mental health crises. You'll be sharing space with all of it.
 - **Sometimes actively using or close to it.** Even with drug testing, some residents relapse. A house that handles that well (clear eviction process, supportive of the person leaving, no using residue lingering in the environment) is very different from a house where it festers.

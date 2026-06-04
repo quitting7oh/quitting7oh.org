@@ -7,7 +7,7 @@ sort: 3
 ---
 ## What it is
 
-MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). It's the 1,2-dihydro version of [7-OH](/compounds/7-oh). Academic papers also call it "DiHydro-[7-OH](/compounds/7-oh)-Mitragynine" or "DH-[7OH](/compounds/7-oh)-MIT". It's a different molecule from [dihydromitragynine](/compounds/mit-a-dhm) (DHM), which sells under "[MIT-A](/compounds/mit-a-dhm)".
+MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). It's the 1,2-dihydro version of [7-OH](/compounds/7-oh). Academic papers also call it "DiHydro-[7-OH](/compounds/7-oh)-Mitragynine" or "DH-[7OH](/compounds/7-oh)-MIT". It's a different molecule from [dihydromitragynine](/compounds/mit-a-dihydromitragynine) (DHM), which sells under "[MIT-A](/compounds/mit-a-dihydromitragynine)".
 
 ## Where it came from
 
@@ -27,7 +27,7 @@ MGM-15 has a half-life of **around 15 hours**. 7-OH is short-acting (a few hours
 
 ## Suboxone is tricky with MGM-15
 
-**1. Your withdrawal score just takes longer to climb.** The site gates Suboxone induction on your [SOWS or COWS score](/mat-suboxone/suboxone-cows), not the clock. If you're inducting at home, SOWS is the self-scored tool; wait until SOWS ≥ 17 (or COWS ≥ 12) regardless of how many hours it's been. That's what protects you from inducting before your receptors have cleared enough. MGM-15's 15-hour half-life means hitting the threshold takes longer than with 7-OH. Plan for closer to 36 to 72 hours past the last dose, not the 14 to 24 a 7-OH wait runs.
+**1. Your withdrawal score just takes longer to climb.** The site gates Suboxone induction on your [SOWS or COWS score](/mat-suboxone/sows-cows-induction-guide), not the clock. If you're inducting at home, SOWS is the self-scored tool; wait until SOWS ≥ 17 (or COWS ≥ 12) regardless of how many hours it's been. That's what protects you from inducting before your receptors have cleared enough. MGM-15's 15-hour half-life means hitting the threshold takes longer than with 7-OH. Plan for closer to 36 to 72 hours past the last dose, not the 14 to 24 a 7-OH wait runs.
 
 **2. Micro-induction ([Bernese method](/mat-suboxone/suboxone-bernese-method)) gets messier with MGM-15.** Micro-induction starts tiny bupe doses while you keep taking your opioid, no withdrawal wait. With MGM-15's high MOR affinity, even 1 to 2 mg bupe doses can displace enough MGM-15 to trigger precipitated withdrawal. Community members have reported micro-induction attempts where every time the bupe dose reached 1 to 2 mg, PWD set in and the process became intolerable.
 

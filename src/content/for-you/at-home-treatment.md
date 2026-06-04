@@ -49,7 +49,7 @@ The [Paths Off 7-OH](/start-here/how-to-quit-7-oh) page covers the six paths thi
 
 ## Telehealth changed what at-home MAT looks like
 
-If you're on the Suboxone path, [telehealth providers](/resources/telehealth)
+If you're on the Suboxone path, [telehealth providers](/resources/telehealth-for-suboxone)
 have changed what at-home treatment looks like. Several do video
 appointments and have a prescription at your pharmacy the same day,
 no in-person visit required. The Telehealth Providers comparison
@@ -102,14 +102,14 @@ expect when you call.
 Once you're through the first few weeks, the work shifts to PAWS,
 sleep recovery, and rebuilding.
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the post-acute
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the post-acute
   withdrawal shape, weeks to months out.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is the
   longest tail.
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)**: Kratom
   Anonymous, NA, SMART Recovery, and others. Free, peer-based,
   complementary to whatever path you took.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark this. Cravings come back.
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: bookmark this. Cravings come back.
 
 ## Where to read next
 
@@ -117,6 +117,6 @@ sleep recovery, and rebuilding.
   if you're in acute right now.
 - **[MAT / Suboxone](/mat-suboxone)**: full pharmacology and
   protocol if Suboxone is your direction.
-- **[Telehealth Providers](/resources/telehealth)**: the
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: the
   fact-checked provider comparison.
 - **[Rehabilitation Centers](/for-you/rehabilitation-centers)**: if at-home isn't the right fit for your situation.

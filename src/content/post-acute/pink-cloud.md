@@ -46,7 +46,7 @@ A list of things people in early recovery sometimes regret committing to during 
 - **Don't sign anything you can't easily walk back.** New leases, contracts, financial commitments, business deals. Wait until you're past this and your judgment has had a chance to stabilize.
 - **Don't make major life decisions impulsively.** Quitting the job because you've decided to start the business. Starting the business. Getting married. Ending the relationship. Moving cities. Having a kid. Major tattoos. None of these are off-limits forever. They should not be decided in the pink cloud.
 - **Don't drop medications, therapy, or recovery practices because you feel fine.** This is the most common pink-cloud regret. The cloud convinces a lot of people they don't need the supports they do. Keep them. The supports are part of why you feel fine.
-- **Don't decide you can use again "in moderation."** This is the most dangerous version of pink-cloud thinking. If this thought has shown up, that's a signal to read **[Thinking About Using?](/start-here/thinking-about-using)** and reach out, not to act on it.
+- **Don't decide you can use again "in moderation."** This is the most dangerous version of pink-cloud thinking. If this thought has shown up, that's a signal to read **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)** and reach out, not to act on it.
 
 None of these is a rule. They're what other people have learned the hard way.
 
@@ -66,13 +66,13 @@ These probably contribute together. The pink cloud doesn't have a clean clinical
 
 The community describes the pink cloud appearing between the end of acute withdrawal (a week or two in) and a couple of months into recovery. Duration varies: days for some, weeks for many, months for a minority. Some experience it more than once. **There is no peer-reviewed timeline.** Anything specific you see, "typically three to four weeks", is community observation framed as data.
 
-When the cloud fades, and for most people it does, what comes next is often a stretch of [PAWS](/post-acute/what-is-paws) reality: flatter mood, returning anxiety, cravings, the "is this it" feeling. Tiebout, in the 1955 essay, called this the descent from the cloud. **It isn't relapse. It isn't failure. It's the early-recovery emotional baseline normalizing.** The euphoric overshoot ends; what's left is the actual ground-state of recovery, which is harder than the cloud but isn't bad.
+When the cloud fades, and for most people it does, what comes next is often a stretch of [PAWS](/post-acute/paws-post-acute-withdrawal) reality: flatter mood, returning anxiety, cravings, the "is this it" feeling. Tiebout, in the 1955 essay, called this the descent from the cloud. **It isn't relapse. It isn't failure. It's the early-recovery emotional baseline normalizing.** The euphoric overshoot ends; what's left is the actual ground-state of recovery, which is harder than the cloud but isn't bad.
 
-The fade can also bring [impending doom](/post-acute/impending-doom) waves back, or louder cravings, the [fuck-its](/start-here/thinking-about-using). Those are recognized post-acute patterns, not signs anything has gone wrong.
+The fade can also bring [impending doom](/post-acute/impending-doom-anxiety) waves back, or louder cravings, the [fuck-its](/start-here/cravings-and-relapse-thoughts). Those are recognized post-acute patterns, not signs anything has gone wrong.
 
 And, the part that matters: **the routines, relationships, physical setup, and recovery practices you built during the cloud are still there.** They didn't fade with the mood. They're what you lean on now. The fade isn't the loss of everything; it's the return of harder work with better tools.
 
-If the come-down hits harder than expected, [Long-Term Outlook](/post-acute/long-term-outlook) is the page on how this looks over months. The short version: you stack days. Good days don't mean you're done. Bad days don't mean you're back at zero. Both are weather.
+If the come-down hits harder than expected, [Long-Term Outlook](/post-acute/7-oh-recovery-timeline) is the page on how this looks over months. The short version: you stack days. Good days don't mean you're done. Bad days don't mean you're back at zero. Both are weather.
 
 ## If you didn't get one
 
@@ -80,9 +80,9 @@ Not everyone gets a pink cloud. Some people feel steadily okay through early rec
 
 ## Where to read next
 
-- **[What is PAWS](/post-acute/what-is-paws)**: the broader post-acute picture.
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: the longer arc.
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the broader post-acute picture.
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: the longer arc.
 - **[Dopamine Recovery](/post-acute/dopamine-recovery)**: the reward-system rebuild.
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: if the fade has brought flat mood.
-- **[Impending Doom](/post-acute/impending-doom)**: for the acute-anxiety waves that can return as the cloud fades.
-- **[Thinking About Using?](/start-here/thinking-about-using)**: bookmark for craving moments.
+- **[Impending Doom](/post-acute/impending-doom-anxiety)**: for the acute-anxiety waves that can return as the cloud fades.
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: bookmark for craving moments.

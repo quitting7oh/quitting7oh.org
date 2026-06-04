@@ -46,7 +46,7 @@ ULDN column is investigational, the mechanism literature has issues
 - For **alcohol use disorder**, where the evidence base is stronger
   than for OUD specifically.
 - Off-label, in **low-dose (LDN)** form, for ongoing
-  [post-acute symptoms](/post-acute/what-is-paws) once you're past
+  [post-acute symptoms](/post-acute/paws-post-acute-withdrawal) once you're past
   acute withdrawal and fully opioid-free.
 
 **Not generally considered (or not yet):**
@@ -72,11 +72,11 @@ base. That extrapolation is reasonable, 7-OH is a mu-opioid agonist
 — but it should be named honestly.
 
 The longer-acting kratom synthetics ([MGM-15](/compounds/mgm15),
-[MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/pseudo)) probably
+[MIT-A](/compounds/mit-a-dihydromitragynine), [pseudo](/compounds/mitragynine-pseudoindoxyl)) probably
 require longer abstinence windows before naltrexone initiation than
 the standard short-acting-opioid guidance suggests. A prescriber
 experienced with this population is more likely to err on the side of
-caution. See [Telehealth Providers](/resources/telehealth) for the
+caution. See [Telehealth Providers](/resources/telehealth-for-suboxone) for the
 fact-checked comparison of options with kratom experience.
 
 ## Where to read next
@@ -88,7 +88,7 @@ fact-checked comparison of options with kratom experience.
   you're fully opioid-free.
 - **[Ultra-Low-Dose Naltrexone (ULDN)](/post-acute/naltrexone-ultra-low-dose)**: the investigational tier. Honest framing about how thin the
   evidence is.
-- **[Telehealth Providers](/resources/telehealth)**: primarily for
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: primarily for
   normal-dose naltrexone (FDA-approved and routinely prescribed by
   OUD telehealth). LDN and ULDN are mostly outside standard OUD
   telehealth, the [LDN page](/post-acute/naltrexone-low-dose)

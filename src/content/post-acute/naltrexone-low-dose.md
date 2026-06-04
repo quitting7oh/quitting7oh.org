@@ -191,7 +191,7 @@ with a clinician, not as DIY.
   unmissable precipitated-withdrawal safety content.
 - **[Ultra-Low-Dose Naltrexone (ULDN)](/post-acute/naltrexone-ultra-low-dose)**
  , the investigational microgram tier.
-- **[What is PAWS](/post-acute/what-is-paws)** and
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)** and
   **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**
  , the post-acute symptoms LDN is often discussed for.
 - **[LDN Research Trust](https://ldnresearchtrust.org/)**: the

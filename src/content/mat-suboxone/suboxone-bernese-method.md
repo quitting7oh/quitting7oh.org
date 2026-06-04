@@ -6,7 +6,7 @@ last_updated: "2026-05-27"
 sort: 3
 ---
 
-The **Bernese method** (also called **micro-induction**) is a way of starting Suboxone that doesn't require waiting in withdrawal. Instead of stopping your [7-OH](/compounds/7-oh) (or product containing [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or [pseudo](/compounds/pseudo)) and holding through escalating symptoms before your first dose, you take tiny pieces of a Suboxone strip *while continuing your normal dose*, and step the buprenorphine up over 7 days. The 7-OH product gets dropped only once enough buprenorphine (the active ingredient in Suboxone) has built up to bridge through.
+The **Bernese method** (also called **micro-induction**) is a way of starting Suboxone that doesn't require waiting in withdrawal. Instead of stopping your [7-OH](/compounds/7-oh) (or product containing [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), or [pseudo](/compounds/mitragynine-pseudoindoxyl)) and holding through escalating symptoms before your first dose, you take tiny pieces of a Suboxone strip *while continuing your normal dose*, and step the buprenorphine up over 7 days. The 7-OH product gets dropped only once enough buprenorphine (the active ingredient in Suboxone) has built up to bridge through.
 
 A note on terms used below: **sublingual** means **under the tongue** (how Suboxone strips dissolve), **buprenorphine** is the active drug in a Suboxone strip, and the community shorthand for it is **bup**.
 
@@ -14,12 +14,12 @@ A note on terms used below: **sublingual** means **under the tongue** (how Subox
 
 Micro-induction is the alternative when the standard "wait for withdrawal symptoms to climb before your first dose" approach has a higher failure rate or isn't tolerable. The strongest fits:
 
-- **You've been on long-acting kratom synthetics** ([MGM-15](/compounds/mgm15) at ~15-hour half-life, [pseudo](/compounds/pseudo), or [MIT-A/DHM](/compounds/mit-a-dhm)). The wait stretches to 36–72+ hours and the standard approach has a documented higher failure rate.
+- **You've been on long-acting kratom synthetics** ([MGM-15](/compounds/mgm15) at ~15-hour half-life, [pseudo](/compounds/mitragynine-pseudoindoxyl), or [MIT-A/DHM](/compounds/mit-a-dihydromitragynine)). The wait stretches to 36–72+ hours and the standard approach has a documented higher failure rate.
 - **You've tried standard induction and gotten precipitated withdrawal.** Even with the right timing, the receptor switch-over can be too sharp.
 - **You're on a stacked product** where you don't know which compound (or combination) you're coming off.
 - **You can't tolerate the wait.** Life, work, prior trauma around active withdrawal, severe baseline symptoms.
 
-For most [7-OH](/compounds/7-oh)-alone users (short half-life, clears fast), the standard induction is faster, has decades of evidence behind it, and works. Micro-induction is for the specific cases above. The standard approach is covered on [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh), with the timing tool on [COWS & SOWS Guide](/mat-suboxone/suboxone-cows). [SR-17](/other-tools/sr-17) is another option entirely if Suboxone isn't right for you.
+For most [7-OH](/compounds/7-oh)-alone users (short half-life, clears fast), the standard induction is faster, has decades of evidence behind it, and works. Micro-induction is for the specific cases above. The standard approach is covered on [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh), with the timing tool on [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide). [SR-17](/other-tools/sr-17) is another option entirely if Suboxone isn't right for you.
 
 ## How to do it
 
@@ -65,7 +65,7 @@ Modern variants compress the 29-day schedule substantially; the BC 7-day above i
 
 | | **Standard induction** | **Bernese (micro-induction)** |
 |---|---|---|
-| **Wait in withdrawal?** | Yes, until [COWS](/mat-suboxone/suboxone-cows) ≥ 12 (or SOWS ≥ 17) | No, you keep your 7-OH (or other synthetic) going |
+| **Wait in withdrawal?** | Yes, until [COWS](/mat-suboxone/sows-cows-induction-guide) ≥ 12 (or SOWS ≥ 17) | No, you keep your 7-OH (or other synthetic) going |
 | **First buprenorphine dose** | 2 mg under the tongue | 0.2–0.5 mg under the tongue (or a transdermal patch) |
 | **Time to full coverage** | Hours, same day if induction succeeds | 5–10 days |
 | **Precipitated withdrawal risk** | Real if timed early | Very low |
@@ -109,7 +109,7 @@ For the right person micro-induction works, but plan for the support structure t
 - [Kiyokawa et al. 2023 (home induction for kratom use disorder, n=2)](https://academic.oup.com/fampra/article/40/4/596/7232451), standard COWS-gated home induction starting at 2/0.5 mg. Both patients abstinent at 2 years. Not micro-induction.
 - A [mitragynine pseudoindoxyl case in *Psychoactives* 2026](https://www.mdpi.com/2813-1851/5/1/7), opposite end of the spectrum, **macro-dose** induction at 32 mg day 1.
 
-If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/pseudo), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
+If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
 
 **A handful of people in this community have used micro-induction successfully for 7-OH, MGM-15, and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked, community knowledge here is ahead of the published literature.
 
@@ -128,7 +128,7 @@ Some people want their prescriber to know the specific schedule, either as a bac
 - **A reference to the guideline body that recognizes it.** [The ASAM 2020 National Practice Guideline focused update](https://www.asam.org/quality-care/clinical-guidelines/national-practice-guideline) explicitly recognizes low-dose initiation (0.25–2 mg sublingual or 5–20 mcg/hr transdermal) as an option. The [BC Centre on Substance Use](https://www.bccsu.ca/) has a patient resource specifically on this method. Knowing these exist helps if your prescriber's first reaction is "I've never done that."
 - **A willingness to be honest about what you're using.** Micro-induction requires you to keep taking your 7-OH (or other synthetic) during the overlap. If your prescriber needs to know what compound and what dose you're continuing, telling them is part of the deal.
 
-If your current prescriber isn't comfortable with the protocol, the [Telehealth Providers](/resources/telehealth) comparison flags which providers have specifically mentioned kratom or 7-OH experience.
+If your current prescriber isn't comfortable with the protocol, the [Telehealth Providers](/resources/telehealth-for-suboxone) comparison flags which providers have specifically mentioned kratom or 7-OH experience.
 
 ## When to skip micro-induction
 
@@ -159,9 +159,9 @@ For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone
 ## Where to read next
 
 - **[Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh)**: the standard COWS-gated induction approach, the community's low-and-slow dosing rationale, and the receptor-occupancy data
-- **[COWS & SOWS Guide](/mat-suboxone/suboxone-cows)**: the timing tool for standard induction (not needed for micro-induction)
-- **[Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)**: once you've stabilized, the serotonergic/adrenergic gap and what fills it
+- **[COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide)**: the timing tool for standard induction (not needed for micro-induction)
+- **[Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working)**: once you've stabilized, the serotonergic/adrenergic gap and what fills it
 - **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)**: the practical mechanics of cutting films to micro-induction doses (0.25, 0.5, 1 mg)
 - **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**: what happens after you've stabilized, regardless of which induction method got you there
-- **[Telehealth Providers](/resources/telehealth)**: prescriber comparison; flags which providers explicitly handle kratom/7-OH
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: prescriber comparison; flags which providers explicitly handle kratom/7-OH
 - **[SR-17](/other-tools/sr-17)**: the other community-discussed pathway off the synthetics, if Suboxone isn't the right fit

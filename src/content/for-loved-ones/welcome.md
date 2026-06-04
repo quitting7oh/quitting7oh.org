@@ -2,7 +2,7 @@
 title: "For Loved Ones — Start Here"
 description: "If you love someone who's using 7-OH, kratom synthetics, or stacked products, this is where to start. Calm reference for the people walking alongside someone in recovery."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 1
 ---
 
@@ -39,7 +39,7 @@ The pages in this section walk through, in roughly the order most families need 
 
 ## What these products actually are (the short version)
 
-Your loved one isn't taking a supplement. [7-hydroxymitragynine (7-OH)](/compounds/7-oh) is a potent mu-opioid receptor agonist, the same receptor family as prescription opioids. The newer synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/pseudo)) are even more potent, and most don't show up on standard drug tests. Withdrawal looks like opioid withdrawal because biochemically, that's what it is.
+Your loved one isn't taking a supplement. [7-hydroxymitragynine (7-OH)](/compounds/7-oh) is a potent mu-opioid receptor agonist, the same receptor family as prescription opioids. The newer synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dihydromitragynine), [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl)) are even more potent, and most don't show up on standard drug tests. Withdrawal looks like opioid withdrawal because biochemically, that's what it is.
 
 The person you love is not gone. They're trapped in a pattern that's hard to break, and harder when no one in their life understands what they're fighting. The brain chemistry does recover. People in this community have come back from this.
 

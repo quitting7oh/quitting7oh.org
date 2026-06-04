@@ -2,7 +2,7 @@
 title: "Telehealth Providers for Suboxone (Comparison)"
 description: "Neutral, fact-checked comparison of telehealth providers that prescribe buprenorphine for opioid use disorder, including those who explicitly treat kratom and 7-OH dependence."
 category: "resources"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 2
 ---
 
@@ -761,7 +761,7 @@ treats OUD seriously should be able to answer them quickly.
    in the last two years.)
 
 If your loved one is the one calling rather than you, the
-[For Loved Ones](/for-loved-ones/start-here) section has a parallel
+[For Loved Ones](/for-loved-ones/welcome) section has a parallel
 list framed for their angle.
 
 ## Research methodology

@@ -2,12 +2,12 @@
 title: "Will One Use Bring Withdrawal Back? (Kindling)"
 description: "What happens if you use again after a stretch off, why withdrawal can come back fast, what the opioid literature shows, what this community reports about 7-OH, and what to do if you've already used."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 8
 ---
 
 > **If you're about to use right now**, read [Thinking About
-> Using?](/start-here/thinking-about-using) first. That page has the
+> Using?](/start-here/cravings-and-relapse-thoughts) first. That page has the
 > in-the-moment reach-out ladder and crisis lines. This page is for
 > the underlying question: *if I do use again, what happens?*
 
@@ -95,13 +95,13 @@ use once. You're using on top of a brain that's still partially
 adapted.
 
 **The clock that gets reset is bigger than acute withdrawal.** The
-[PAWS adaptations](/post-acute/what-is-paws) interact with re-use. A
+[PAWS adaptations](/post-acute/paws-post-acute-withdrawal) interact with re-use. A
 slip that costs you a few days of acute can also re-trigger the
 slower stuff (sleep, mood, anhedonia) that you'd been climbing out
 of.
 
 **Days stacked aren't erased.** The framing on
-[Long-Term Outlook](/post-acute/long-term-outlook) applies here too:
+[Long-Term Outlook](/post-acute/7-oh-recovery-timeline) applies here too:
 the receptors that were rebuilding are still partially rebuilt. The
 work that got you to whatever stretch you had is still in you.
 Recovery isn't binary, and a slip isn't a reset to day one. It's also
@@ -127,10 +127,10 @@ to zero because you used once or twice or twenty times. The days that
 got you here are still in you. The next decision matters more than
 the last one.
 
-[Thinking About Using?](/start-here/thinking-about-using) has the
+[Thinking About Using?](/start-here/cravings-and-relapse-thoughts) has the
 in-the-moment reach-out ladder. If you want to restart Suboxone or
 get back on helper meds, [Telehealth
-Providers](/resources/telehealth) is the prescriber comparison. If
+Providers](/resources/telehealth-for-suboxone) is the prescriber comparison. If
 you were tapering, return to the plan. If you weren't, this is a
 reasonable moment to get one.
 
@@ -163,8 +163,8 @@ reasonable moment to get one.
 
 ## Where to read next
 
-- **[Thinking About Using?](/start-here/thinking-about-using)**: the in-the-moment page if a craving is loud right now
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: the in-the-moment page if a craving is loud right now
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: acute-withdrawal protocol if you're heading back through it
-- **[What is PAWS](/post-acute/what-is-paws)**: the persistent neuroadaptations this page is partly about
-- **[Long-Term Outlook](/post-acute/long-term-outlook)**: the stack-the-days framing on relapse and recovery
-- **[Telehealth Providers](/resources/telehealth)**: prescribers who work with kratom and 7-OH
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the persistent neuroadaptations this page is partly about
+- **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: the stack-the-days framing on relapse and recovery
+- **[Telehealth Providers](/resources/telehealth-for-suboxone)**: prescribers who work with kratom and 7-OH

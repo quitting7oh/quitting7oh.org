@@ -2,7 +2,7 @@
 title: "Kratom's Minor Alkaloids"
 description: "Mitragynine is the headline alkaloid, but kratom leaf contains 40+ others. This page covers the six better-studied 'minor' alkaloids and their activity across the µ-opioid, serotonergic, and adrenergic systems."
 category: "pharmacology"
-last_updated: "2026-05-25"
+last_updated: "2026-06-04"
 sort: 1
 ---
 
@@ -21,7 +21,7 @@ mitragynine, and they hit three different receptor systems —
 (α-1 / α-2). The serotonergic and adrenergic activity is part of why
 withdrawal off concentrated kratom products doesn't fully respond to
 a pure-opioid medication like Suboxone, see
-[Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working).
+[Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 
 ## The seven alkaloids at a glance
 
@@ -117,7 +117,7 @@ which is part of why:
 - [Suboxone](/mat-suboxone/suboxone-for-7oh) (a pure µ-opioid
   intervention) covers the opioid receptor side but doesn't lift the
   serotonergic/adrenergic side, see
-  [Why Suboxone Might Not Be Working](/mat-suboxone/suboxone-isnt-working)
+  [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working)
 - Adjuncts like clonidine (α-2 agonist, see
   [Helper Medications](/other-tools/helper-meds)) target the
   adrenergic component specifically

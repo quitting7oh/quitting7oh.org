@@ -2,12 +2,12 @@
 title: "Long-Term Outlook"
 description: "What recovery from 7-OH dependence looks like, plainly stated: how hard it is, how relapse fits, why the long-arc picture borrows from the broader opioid-recovery literature, and the reality that the people who got there did it one day at a time."
 category: "post-acute"
-last_updated: "2026-05-30"
+last_updated: "2026-06-04"
 sort: 9
 ---
 
 *This page is for after the wave passes. If a craving is loud right
-now, [Thinking About Using?](/start-here/thinking-about-using) is
+now, [Thinking About Using?](/start-here/cravings-and-relapse-thoughts) is
 the one to read first.*
 
 Do you remember the day you knew it had to stop? The day you looked
@@ -104,9 +104,9 @@ lucky. They're people who kept showing up.
 The line that matters is not "did you slip" but "did you come back."
 
 If you slipped recently and you're reading this:
-[Thinking About Using?](/start-here/thinking-about-using) has the
+[Thinking About Using?](/start-here/cravings-and-relapse-thoughts) has the
 practical "what now" content, and
-[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)
+[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)
 covers why withdrawal can return fast after a re-use. The neurobiology
 of recovery doesn't reset to zero because you used once or twice
 or twenty times. The receptors that were rebuilding are still
@@ -245,16 +245,16 @@ Keep going.
 
 ## Where to read next
 
-- **[Thinking About Using?](/start-here/thinking-about-using)**: if a craving is loud right now, that's the page.
-- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling)**: the focused page on what happens if you use again after a stretch off.
-- **[What is PAWS](/post-acute/what-is-paws)**: the broader
+- **[Thinking About Using?](/start-here/cravings-and-relapse-thoughts)**: if a craving is loud right now, that's the page.
+- **[Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse)**: the focused page on what happens if you use again after a stretch off.
+- **[What is PAWS](/post-acute/paws-post-acute-withdrawal)**: the broader
   post-acute picture.
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the focused page on the flat-mood side of post-acute.
 - **[Dopamine Recovery](/post-acute/dopamine-recovery)**: what's
   happening when joy comes back.
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: the longest
   tail of recovery.
-- **[Impending Doom](/post-acute/impending-doom)**: for the
+- **[Impending Doom](/post-acute/impending-doom-anxiety)**: for the
   acute-anxiety waves that hit on the way.
 - **[Mutual Aid & Recovery Groups](/for-you/mutual-aid)**: Kratom Anonymous and others. The people who are doing what
   this page is about.
