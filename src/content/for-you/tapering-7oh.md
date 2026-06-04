@@ -14,7 +14,7 @@ Tapering off 7-OH means stepping your daily dose down on a schedule until you ca
 - **The first half goes faster than people expect.** Halving from a high starting dose (1000 mg → 500 mg, 500 → 250) is felt but rarely produces severe withdrawal. The body still has plenty of 7-OH on board, so the receptor system absorbs the change.
 - **The hard part lives at the bottom, roughly 50 to 200 mg/day.** Cuts that took a few days at the top take a week here. The "constantly half in withdrawal" stretch the community describes happens at this plateau, not at the top. Most self-managed 7-OH tapers stall in this range.
 - **Most tapers end with a jump-off, not a taper to zero.** At some low dose, the taper stops and the remaining withdrawal gets ridden out. This is the common endpoint, not a sign the taper failed. The receptors still have to clear, and you will feel that no matter how low you got. The peak is softer than cold turkey from full dose; it isn't gone.
-- **There's more than one endpoint.** Jump-off, transition to [kratom leaf](/other-tools/tapering-with-kratom-leaf) for the final stretch, transition to [Suboxone](/mat-suboxone/suboxone-for-7oh), or transition to [SR-17](/other-tools/sr-17). Each is covered below.
+- **There's more than one endpoint.** Jump-off, transition to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) for the final stretch, transition to [Suboxone](/mat-suboxone/suboxone-for-7oh), or transition to [SR-17](/other-tools/sr-17). Each is covered below.
 
 | Phase | Community-observed range (per day) | What it tends to feel like |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ Tapering off 7-OH means stepping your daily dose down on a schedule until you ca
 
 The numbers are community observation, not clinical thresholds. Starting dose, duration of use, polysubstance history, and the specific products used all shift where the plateau lands.
 
-> **Reference, not advice.** Numbers and patterns on this page come from community observation in the [Discord](https://discord.gg/quitting7oh) and the [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) and r/quittingkratom subreddits, plus extrapolation from the broader opioid-use-disorder taper literature. Published clinical research on 7-OH-specific tapering is essentially absent. This page describes what tapering looks like; it does not provide a schedule for you to follow. For medication-supported paths, see [Suboxone](/mat-suboxone/suboxone-for-7oh) (bupe bridge), [SR-17](/other-tools/sr-17) (the community-validated non-prescription alternative), or [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf) (kratom-leaf step-down).
+> **Reference, not advice.** Numbers and patterns on this page come from community observation in the [Discord](https://discord.gg/quitting7oh) and the [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) and r/quittingkratom subreddits, plus extrapolation from the broader opioid-use-disorder taper literature. Published clinical research on 7-OH-specific tapering is essentially absent. This page describes what tapering looks like; it does not provide a schedule for you to follow. For medication-supported paths, see [Suboxone](/mat-suboxone/suboxone-for-7oh) (bupe bridge), [SR-17](/other-tools/sr-17) (the community-validated non-prescription alternative), or [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) (kratom-leaf step-down).
 
 ## The four phases in more detail
 
@@ -69,7 +69,7 @@ The reader chooses based on what's accessible. Clinical support and community ap
 
 **SR-17 transition.** [SR-17](/other-tools/sr-17) is the community-validated non-prescription bridge. Pharmacologically a biased mu-agonist with a long duration of action; used as a substitute the same way bupe is, with the trade-offs of thinner clinical literature and gray-market sourcing. Sidesteps the precipitated-withdrawal problem that the standard bupe induction can produce. The [SR-17 page](/other-tools/sr-17) covers the protocol and the caveats.
 
-**Kratom leaf or mitragynine extract as a step-down.** Plain [kratom leaf](/compounds/kratom-leaf) carries a much lower 7-OH load and a different alkaloid profile than concentrated 7-OH products. Some people transition to leaf for the lower portion of the taper and jump off the leaf rather than the concentrated product. [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf) covers the protocol.
+**Kratom leaf or mitragynine extract as a step-down.** Plain [kratom leaf](/compounds/kratom-leaf) carries a much lower 7-OH load and a different alkaloid profile than concentrated 7-OH products. Some people transition to leaf for the lower portion of the taper and jump off the leaf rather than the concentrated product. [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) covers that protocol. The closely related path of stepping down to a concentrated mitragynine extract product is covered on [Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine), along with the product-contamination concerns specific to that route.
 
 ## Ending the taper
 
@@ -77,7 +77,7 @@ Most self-managed 7-OH tapers don't end with a clean tapered-to-zero. They end w
 
 **Jumping off.** The most common endpoint. At some low dose, the taper stops and the remaining withdrawal gets ridden out. The acute that follows tends to peak softer than cold turkey from full dose, since receptor adaptation has already started moving downward during the taper. **The receptors still have to clear, though, and you will feel that no matter how low you tapered to.** The 7-OH on your receptors has to come off and the body has to readjust to running without it. Tapering reduces the height of the peak; it doesn't eliminate it. The [post-acute](/post-acute/paws-post-acute-withdrawal) tail still happens but starts from a lower baseline. Jumping off is the end of the taper, not a sign the taper failed.
 
-**Transitioning to kratom leaf or mitragynine extract.** Switch from concentrated 7-OH to plain [kratom leaf](/compounds/kratom-leaf) for the final stretch, then jump off the leaf. The leaf carries dramatically less 7-OH and a different alkaloid balance, so this can ease the discontinuation. People who go this route report that jumping off leaf feels different from jumping off concentrated 7-OH, the floor is lower and the acute is shorter. See [Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf) for the protocol.
+**Transitioning to kratom leaf or mitragynine extract.** Switch from concentrated 7-OH to plain [kratom leaf](/compounds/kratom-leaf) for the final stretch, then jump off the leaf. The leaf carries dramatically less 7-OH and a different alkaloid balance, so this can ease the discontinuation. People who go this route report that jumping off leaf feels different from jumping off concentrated 7-OH, the floor is lower and the acute is shorter. See [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) for the protocol. The parallel route using a concentrated mitragynine extract instead of plain leaf is covered on [Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine).
 
 **Transitioning to buprenorphine or SR-17.** Switch to [Suboxone](/mat-suboxone/suboxone-for-7oh) for the final stretch and run the [rapid taper](/mat-suboxone/suboxone-rapid-taper) under a prescriber's care, or switch to [SR-17](/other-tools/sr-17) and run that protocol. Bupe draws on the OUD taper literature and has the most published evidence behind it; SR-17 is the community-validated non-prescription equivalent, with thinner clinical literature and gray-market sourcing. Both are medication-assisted endpoints; pick based on access, prescriber relationship, and prior experience.
 
@@ -98,7 +98,7 @@ The decision is rarely abstract. Most people pick the path that fits the week th
 ## Where to read next
 
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: what the acute phase looks like after the jump-off or after cold turkey
-- **[Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf)**: the leaf-step-down path in detail
+- **[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf)**: the leaf-step-down path in detail
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)**, **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**, and **[SR-17](/other-tools/sr-17)**: the medication-supported paths
 - **[Helper Medications](/other-tools/helper-meds)** and **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what reduces symptom burden during the taper
 - **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)**: the protocol and evidence on the megadose vit-C approach

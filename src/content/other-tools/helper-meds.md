@@ -171,4 +171,4 @@ Common starter combos:
 - **Adding for muscle pain:** plus baclofen or tizanidine
 - **Adding for post-acute mood:** Wellbutrin (after the acute phase ends)
 
-Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/tapering-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/other-tools/sr-17). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.
+Helper meds pair with any of the community-validated quitting paths: cold-turkey, [tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/other-tools/sr-17). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture, and post in **#helper-meds** to ask about specific protocols and share what worked.

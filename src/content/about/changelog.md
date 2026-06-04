@@ -16,6 +16,90 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-04
 
+### New page: Quit 7-OH with Concentrated Mitragynine
+
+New page at `/other-tools/quit-7-oh-with-mitragynine` covering the
+mitragynine-extract step-down as a documented community path off
+concentrated 7-OH. The page sits alongside [Quit 7-OH with Kratom
+Leaf](/other-tools/quit-7-oh-with-kratom-leaf) in the "Bridges off
+the synthetics" sidebar group.
+
+Sourcing was unusual for the site: clinical literature on this
+specific substitution doesn't exist, so the page is built on
+primary-source community research (Playwright-driven Reddit
+scraping across r/Quittingfeelfree, r/quittingkratom,
+r/Life_After_7oh, r/Kratom_7OH, r/7ohbuddies, and adjacent
+partial-mu-agonist recovery subs for methodology cross-check) plus
+peer-reviewed mitragynine and 7-OH pharmacology (Kruegel 2016,
+Obeng 2021, Hill 2022, Huestis 2024, Singh 2014, Berthold 2022).
+Eight beats: how this differs from the other taper paths, the
+receptor-profile logic, what community reports describe (dose
+ranges, stabilization, taper structure, total duration, outcomes,
+predictors), risks specific to this path with the contamination
+concern foregrounded, sourcing in categories with no brand or
+vendor names, comparison to the other paths, clinician handoff,
+and an honest closing. The page explicitly surfaces the
+counter-position from r/Life_After_7oh that substitution paths
+aren't legitimate, alongside the r/Quittingfeelfree and
+r/7ohbuddies endorsements, without picking a side.
+
+### SEO-focused slug renames: tapering-with-* → quit-7-oh-with-*
+
+The two bridge pages renamed to lead with the search behavior the
+audience actually types ("quit 7-oh with kratom leaf") instead of
+the internal site framing ("tapering with leaf"). The bridge IS
+the quit strategy; the taper of the bridge is the second half.
+
+| Old | New |
+|---|---|
+| `/other-tools/tapering-with-kratom-leaf` | `/other-tools/quit-7-oh-with-kratom-leaf` |
+
+The mitragynine page is brand new and ships at the new slug
+directly. 301 redirects added for both no-trailing-slash and
+trailing-slash variants of the leaf-taper old URL. The pre-Batch-1
+`/other-tools/tapering-with-leaf` redirect updated to point at the
+new slug directly (one hop instead of two). Titles updated to
+match the new slug pattern: "Quit 7-OH with Kratom Leaf" and
+"Quit 7-OH with Concentrated Mitragynine". `check-redirects.sh`
+pair list extended; the leaf-rename ships at 26 total verified
+pairs (52 with trailing-slash variants).
+
+### SEO slug renames (Batch 2)
+
+Fifteen more slug renames from `docs/seo-suggestions.md` Batch 2: the
+twelve medium-risk renames in the "Recommended renames" table plus
+three judgment-call renames. Same workflow as Batch 1: 301 redirects
+added to `public/_redirects` with trailing-slash destinations,
+internal-link sweep across content, components, pages, and
+`src/lib/categories.ts`.
+
+| Old | New |
+|---|---|
+| `/post-acute/what-is-paws` | `/post-acute/paws-post-acute-withdrawal` |
+| `/post-acute/kindling` | `/post-acute/kindling-and-relapse` |
+| `/post-acute/long-term-outlook` | `/post-acute/7-oh-recovery-timeline` |
+| `/post-acute/impending-doom` | `/post-acute/impending-doom-anxiety` |
+| `/start-here/thinking-about-using` | `/start-here/cravings-and-relapse-thoughts` |
+| `/compounds/pseudo` | `/compounds/mitragynine-pseudoindoxyl` |
+| `/compounds/mit-a-dhm` | `/compounds/mit-a-dihydromitragynine` |
+| `/pharmacology/minor-alkaloids` | `/pharmacology/kratom-minor-alkaloids` |
+| `/resources/telehealth` | `/resources/telehealth-for-suboxone` |
+| `/mat-suboxone/suboxone-cows` | `/mat-suboxone/sows-cows-induction-guide` |
+| `/mat-suboxone/suboxone-isnt-working` | `/mat-suboxone/why-suboxone-isnt-working` |
+| `/mat-suboxone/suboxone-risks` | `/mat-suboxone/long-term-suboxone-risks` |
+| `/about/community` | `/about/the-community` |
+| `/for-you/start-here` | `/for-you/welcome` |
+| `/for-loved-ones/start-here` | `/for-loved-ones/welcome` |
+
+The three judgment-call renames: `/about/community` → `the-community`
+matches the page title; the two `start-here` slugs in `/for-you/` and
+`/for-loved-ones/` were colliding conceptually with `/start-here/` as
+a category, and renaming both to `welcome` resolves that ambiguity for
+crawlers while staying consistent with `/start-here/welcome`. The
+QuickMD redirect destination updated alongside the telehealth rename
+so it lands on the new URL in one hop. `scripts/check-redirects.sh`
+extended to cover all 25 Batch 1+2 pairs.
+
 ### SEO slug renames (Batch 1)
 
 Ten slug renames from `docs/seo-suggestions.md` Batch 1, all low risk

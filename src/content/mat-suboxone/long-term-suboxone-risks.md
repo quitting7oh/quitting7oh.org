@@ -23,7 +23,7 @@ emotionally and physically.
 
 Suboxone is one widely-used path off 7-OH and kratom synthetics, not
 the only one. [SR-17](/other-tools/sr-17),
-[tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf), and cold
+[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf), and cold
 turkey with [helper meds](/other-tools/helper-meds) are the other
 community-documented options. This page is specifically about the
 trade-offs of staying on Suboxone past the rapid-taper window, and,

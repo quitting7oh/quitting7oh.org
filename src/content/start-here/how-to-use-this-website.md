@@ -25,7 +25,7 @@ next move matters more than the rest of this site. Go here first.
 
 Hour-by-hour timeline, what to do in the next sixty minutes, what to
 avoid, when to go to the ER, and the real paths out, tough it out,
-step down to [kratom leaf](/other-tools/tapering-with-kratom-leaf),
+step down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf),
 [Suboxone](/mat-suboxone/suboxone-for-7oh), or
 [SR-17](/other-tools/sr-17).
 
@@ -68,7 +68,7 @@ exist with real pros and cons.
   with the community's low-and-slow induction approach.
 - **[SR-17](/other-tools/sr-17)**: a non-prescription option
   some people have used to bridge off 7-OH and related synthetics.
-- **[Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
+- **[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: a fact-checked
   comparison if you need a prescriber.

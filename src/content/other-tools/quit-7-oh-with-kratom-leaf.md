@@ -1,6 +1,6 @@
 ---
-title: "Tapering with Leaf Kratom"
-description: "Using kratom leaf to bridge off concentrated 7-OH and synthetics, when it works, when it doesn't."
+title: "Quit 7-OH with Kratom Leaf"
+description: "Using plain kratom leaf as a bridge off concentrated 7-OH and other kratom synthetics, when it works, when it doesn't, and how to taper the leaf afterward."
 category: "other-tools"
 last_updated: "2026-06-04"
 sort: 5

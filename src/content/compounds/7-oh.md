@@ -94,7 +94,7 @@ delivery. The pharmacology that makes 7-OH attractive (faster onset,
 stronger effect, smaller dose to carry around) is the same pharmacology
 that makes dependence form quickly.
 
-This is also why [tapering off concentrated 7-OH using plain leaf](/other-tools/tapering-with-kratom-leaf)
+This is also why [tapering off concentrated 7-OH using plain leaf](/other-tools/quit-7-oh-with-kratom-leaf)
 is a planned protocol used by some people in this community. The
 leaf delivers vastly lower concentrations of the same family of
 alkaloids, so stepping down is a meaningful taper rather than a switch.

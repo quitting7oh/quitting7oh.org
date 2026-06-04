@@ -47,7 +47,8 @@ PAIRS="
 /other-tools/peptides-info|/other-tools/peptides-for-withdrawal
 /mat-suboxone/suboxone-info|/mat-suboxone/suboxone-for-7oh
 /mat-suboxone/sublocade-brixadi-info|/mat-suboxone/sublocade-brixadi
-/other-tools/tapering-with-leaf|/other-tools/tapering-with-kratom-leaf
+/other-tools/tapering-with-leaf|/other-tools/quit-7-oh-with-kratom-leaf
+/other-tools/tapering-with-kratom-leaf|/other-tools/quit-7-oh-with-kratom-leaf
 /start-here/withdrawal-help|/start-here/7-oh-withdrawal-help
 /start-here/paths-off|/start-here/how-to-quit-7-oh
 /post-acute/what-is-paws|/post-acute/paws-post-acute-withdrawal

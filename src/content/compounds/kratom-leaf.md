@@ -293,9 +293,13 @@ that exists. Known caveats:
   support alongside a leaf taper.
 
 If you're considering this approach in detail, the
-[Tapering with Leaf Kratom](/other-tools/tapering-with-kratom-leaf) page
+[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) page
 covers the practical structure and limitations the community has
-documented.
+documented. The closely related approach of using a concentrated
+mitragynine extract product instead of plain leaf is covered on
+[Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine),
+along with the product-contamination concerns specific to that
+route.
 
 ## Regulatory status (as of 2026-05-24)
 

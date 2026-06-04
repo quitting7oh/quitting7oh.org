@@ -22,7 +22,7 @@ sort: 2
 **Buprenorphine is one of several options** people in this community
 use to come off [7-OH](/compounds/7-oh) and kratom synthetics, others
 include [SR-17](/other-tools/sr-17),
-[tapering with leaf kratom](/other-tools/tapering-with-kratom-leaf), and
+[tapering with leaf kratom](/other-tools/quit-7-oh-with-kratom-leaf), and
 cold-turkey with [helper meds](/other-tools/helper-meds). This
 page is specifically about telehealth providers that handle the
 **buprenorphine** path ([Suboxone] is buprenorphine + naloxone;

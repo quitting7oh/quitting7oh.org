@@ -63,7 +63,7 @@ legitimate; the right one depends on the specific situation.
 For the medication details, community-validated induction protocol,
 rapid-taper structure, long-term risks, and the other
 community-documented paths like [SR-17](/other-tools/sr-17) and
-[tapering with kratom leaf](/other-tools/tapering-with-kratom-leaf), see
+[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf), see
 **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)**
 or the [MAT / Suboxone section](/mat-suboxone). Many clinicians have
 not encountered [7-OH](/compounds/7-oh) dependence specifically and

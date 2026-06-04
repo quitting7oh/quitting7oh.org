@@ -53,7 +53,7 @@ them](/for-you/at-home-treatment) has the full version):
   with no in-person visit needed. Cuts most of the acute withdrawal.
 - **[SR-17](/other-tools/sr-17)**: a non-prescription option
   some people use to bridge off the synthetics.
-- **Stepping down to [kratom leaf](/other-tools/tapering-with-kratom-leaf)**
+- **Stepping down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)**
  , substituting lower-concentration leaf for concentrated 7-OH,
   then tapering the leaf.
 - **Cold turkey with [helper medications](/other-tools/helper-meds)

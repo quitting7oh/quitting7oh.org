@@ -103,7 +103,7 @@ We don't represent any company. We don't have a relationship with any company. W
 
 - [SR-17018](/other-tools/sr-17), a biased agonist research chemical with its own caveats
 - Straight tapers on the substance itself, slow and careful
-- Tapers using kratom leaf as a bridge ([this works for some](/other-tools/tapering-with-kratom-leaf), doesn't for others)
+- Tapers using kratom leaf as a bridge ([this works for some](/other-tools/quit-7-oh-with-kratom-leaf), doesn't for others)
 - Switching to [MIT-A or DHM](/compounds/mit-a-dihydromitragynine) temporarily as a step down
 - Cold turkey, with [helper meds](/other-tools/helper-meds) and a lot of suffering
 - Yes, MAT and Suboxone and [Sublocade](/mat-suboxone/sublocade-brixadi)

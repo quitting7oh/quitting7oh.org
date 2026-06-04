@@ -30,13 +30,13 @@ See [Withdrawal Help](/start-here/7-oh-withdrawal-help) for the timeline and sym
 
 Swap 7-OH for plain kratom leaf, then step the leaf down to zero over days or weeks. Leaf gives the receptors mitragynine at much lower potency while you wean.
 
-Plain leaf is preferred over concentrated mitragynine products. Concentrates work but introduce a stronger compound than necessary; use them only if leaf isn't available or isn't enough.
+Plain leaf is preferred over concentrated mitragynine products. Concentrates work but introduce a stronger compound than necessary; use them only if leaf isn't available or isn't enough. The concentrated-mitragynine path is documented separately on [Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine), including the product-contamination concerns specific to that route.
 
 Fits: stable supply of leaf, ability to weigh doses, patience for a multi-week wean.
 
 Doesn't fit: severe withdrawal that breaks through a leaf swap, no access to clean leaf, no time for a slow taper.
 
-See [Tapering with leaf](/other-tools/tapering-with-kratom-leaf).
+See [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf).
 
 ### 3. Helper medications
 

@@ -27,8 +27,8 @@
 /mat-suboxone/suboxone-info/          /mat-suboxone/suboxone-for-7oh/             301
 /mat-suboxone/sublocade-brixadi-info  /mat-suboxone/sublocade-brixadi/            301
 /mat-suboxone/sublocade-brixadi-info/ /mat-suboxone/sublocade-brixadi/            301
-/other-tools/tapering-with-leaf       /other-tools/tapering-with-kratom-leaf/     301
-/other-tools/tapering-with-leaf/      /other-tools/tapering-with-kratom-leaf/     301
+/other-tools/tapering-with-leaf       /other-tools/quit-7-oh-with-kratom-leaf/    301
+/other-tools/tapering-with-leaf/      /other-tools/quit-7-oh-with-kratom-leaf/    301
 /start-here/withdrawal-help           /start-here/7-oh-withdrawal-help/           301
 /start-here/withdrawal-help/          /start-here/7-oh-withdrawal-help/           301
 /start-here/paths-off                 /start-here/how-to-quit-7-oh/               301
@@ -67,3 +67,11 @@
 /for-you/start-here/                  /for-you/welcome/                           301
 /for-loved-ones/start-here            /for-loved-ones/welcome/                    301
 /for-loved-ones/start-here/           /for-loved-ones/welcome/                    301
+
+# 2026-06-04: SEO-focused rename of the leaf-taper page from
+# "tapering-with-X" to "quit-7-oh-with-X". The bridge IS the quit
+# strategy; the taper of the bridge is the second half. The new
+# pattern targets the actual search behavior ("quit 7-oh with
+# kratom leaf") instead of the internal site framing.
+/other-tools/tapering-with-kratom-leaf   /other-tools/quit-7-oh-with-kratom-leaf/  301
+/other-tools/tapering-with-kratom-leaf/  /other-tools/quit-7-oh-with-kratom-leaf/  301

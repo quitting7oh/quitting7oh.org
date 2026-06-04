@@ -134,7 +134,7 @@ export const PINNED_PAGES: { href: string; title: string }[] = [
   { href: '/other-tools/vitamins-supplements', title: 'Vitamins & Supplements' },
   { href: '/other-tools/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C' },
   { href: '/other-tools/helper-meds', title: 'Helper Medications' },
-  { href: '/other-tools/tapering-with-kratom-leaf', title: 'Tapering with Kratom' },
+  { href: '/other-tools/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom' },
   { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone' },
   { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?' },
 ];
@@ -161,7 +161,7 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
   ],
   'other-tools': [
     { name: 'Helper meds & supplements', slugs: ['helper-meds', 'vitamins-supplements', 'quit-kit', 'mega-dose-vitamin-c', 'nad-iv-therapy', 'peptides-for-withdrawal'] },
-    { name: 'Bridges off the synthetics', slugs: ['tapering-with-kratom-leaf', 'sr-17'] },
+    { name: 'Other ways off 7-OH', slugs: ['quit-7-oh-with-kratom-leaf', 'quit-7-oh-with-mitragynine', 'sr-17'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
   ],
   'post-acute': [
