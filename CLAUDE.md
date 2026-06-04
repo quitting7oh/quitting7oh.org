@@ -783,6 +783,42 @@ When writing taper, induction, or dosing guidance:
   say so plainly. Don't default to taper in situations where it
   doesn't fit.
 
+### Community routing: only our resources for calls-to-action
+
+The site is the [Discord](https://discord.gg/quitting7oh) and
+[r/quitting7oh](https://www.reddit.com/r/quitting7oh/) community's
+public reference. When telling readers where to go for community
+support, those are the only addresses we name.
+
+There are two distinct contexts for naming a community space, and
+the rule is different in each:
+
+- **Routing / call-to-action context.** "Go here for the live
+  conversation," "talk to peers," "post in #channel," "ask in the
+  subreddit." Use ONLY our resources: the Discord and
+  r/quitting7oh. Pointing readers to other subs as if they were
+  our destinations is wrong. Those communities have their own
+  rules, their own moderation, and their own posture, and we
+  don't speak for them. Routing readers there in a "where to find
+  help" voice misrepresents that.
+- **Sourcing / attribution context.** "Numbers come from threads
+  in X." "The pattern is documented across r/X and r/Y." That's
+  factual citation, and other subs are named accurately. **When
+  we do name other subs in sourcing, our resources (r/quitting7oh
+  and the Discord) go first in the list,** so the reader's eye
+  lands on us before the third-party citations.
+
+The line between routing and sourcing: if the sentence is telling
+the reader where to go, it's routing (our resources only). If the
+sentence is describing where data came from, it's sourcing (other
+subs OK, but ours first).
+
+This rule applies to subreddits, Discord servers, Slacks, forums,
+or any other community space the page might mention. If the
+audience is "people looking for the live conversation," route only
+to ours. If the audience is "someone reading our sourcing trail,"
+list everyone honestly, with ours first.
+
 ### Only route to a clinician or telehealth for things a clinician will actually do
 
 A "talk to a clinician" or "see [Telehealth Providers]" handoff is

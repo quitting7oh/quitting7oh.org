@@ -16,6 +16,53 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-04
 
+### Community routing: only our resources for calls-to-action
+
+New CLAUDE.md rule: when telling readers where to go for community
+support, name only the [Discord](https://discord.gg/quitting7oh)
+and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). Other
+subs can be named accurately in sourcing context, but ours go
+first in that list. The line between routing (only ours) and
+sourcing (others OK, ours first) is the distinction the rule
+turns on.
+
+Audit pass identified two existing violations and fixed both:
+
+- The reach-out ladder on [Thinking About Using?](/start-here/cravings-and-relapse-thoughts)
+  listed `r/quittingkratom` alongside r/quitting7oh as a routing
+  destination. r/quittingkratom removed; routing now goes to
+  Discord + r/quitting7oh only.
+- The "Community support" item on [Tapering Off 7-OH](/for-you/tapering-7oh)
+  led with `r/quittingkratom`, then r/quitting7oh and the Discord,
+  in a routing voice. Rewritten to route to Discord +
+  r/quitting7oh only.
+
+The mitragynine page itself was rebuilt to follow the rule in
+both routing and sourcing contexts (Discord + r/quitting7oh as
+the only routing destinations; r/quitting7oh first in the two
+sourcing lists that name other subs).
+
+### Mitragynine page restructure: lead with the playbook; drop leaf-bridge bullet
+
+The new page restructured so the practical "how this path works"
+content lands first. The "Three step-down paths" orientation
+section dropped (the TL;DR already routes to alternates inline).
+The "Bringing in a clinician" section's closing community-routing
+paragraph rewritten to point only at our resources. "Closing"
+section removed (restating the takeaway is slop).
+
+The "Bridge doses" section in "The path in practice" had a
+kratom-leaf-powder bullet that didn't belong on a page scoped to
+concentrated mitragynine. Plain-leaf use lives on its own page
+([Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf));
+the mitragynine page now lists two on-topic categories:
+mitragynine-dominant extract tablets and shots, and "enhanced"
+kratom (leaf concentrated to ~10% mitragynine). The
+dose-equivalence paragraph rewritten around the extract dose
+ranges in the corpus, since the leaf-based equivalence was the
+only specific dose ratio the community articulates and it's not
+this page's substance.
+
 ### New page: Quit 7-OH with Concentrated Mitragynine
 
 New page at `/other-tools/quit-7-oh-with-mitragynine` covering the

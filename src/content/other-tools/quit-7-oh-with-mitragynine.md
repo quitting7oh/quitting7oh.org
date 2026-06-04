@@ -38,7 +38,7 @@ sort: 6
 
 ## The path in practice
 
-The shape community reports converge on. Numbers come from substantive threads (10+ comments, on-topic content) across r/Quittingfeelfree, r/quittingkratom, r/Life_After_7oh, r/Kratom_7OH, r/7ohbuddies, r/quitting7oh, and several smaller recovery subs, 2024–2026. None of it is clinical guidance.
+The shape community reports converge on. Numbers come from substantive threads (10+ comments, on-topic content) across r/quitting7oh, r/Quittingfeelfree, r/quittingkratom, r/Life_After_7oh, r/Kratom_7OH, r/7ohbuddies, and several smaller recovery subs, 2024–2026. None of it is clinical guidance.
 
 ### Starting 7-OH doses
 
@@ -46,13 +46,12 @@ Attempted mitragynine step-downs span the full dependence range, with the larges
 
 ### Bridge doses on the mitragynine side
 
-Three product categories appear most:
+Two concentrated product categories appear most:
 
-- **Kratom-leaf powder as the bridge** (functionally a leaf taper, often discussed in the same threads). 5–15 g/day across four to six dosings; heavy users sometimes start at 15–30 g/day. A widely circulated schedule: 30 → 15 → 10 → 5 → 5 → 0 capsules across six days.
-- **Mitragynine-dominant extract tablets and shots.** Per-dose mitragynine content clusters at 50–100 mg, dosed every few hours. The most explicit account in the corpus describes 80 mg shots used as a 72-hour bridge with megadose vitamin C and trazodone.
-- **"Enhanced" kratom (leaf concentrated to ~10% mitragynine).** 5–7 g every three hours during stabilization, then descending.
+- **Mitragynine-dominant extract tablets and shots.** Per-dose mitragynine content clusters at 50–100 mg, dosed every few hours. The most explicit account in the corpus describes 80 mg shots used as a 72-hour bridge from a ~200 mg/day 7-OH habit, paired with megadose vitamin C and trazodone.
+- **"Enhanced" kratom (leaf concentrated to ~10% mitragynine).** 5–7 g every three hours during stabilization, then descending. Same molecule, sourced from leaf rather than from isolation.
 
-A rough equivalence the community articulates: ~30 mg of 7-OH is substituted by about 6 capsules (~3 g) of standard kratom powder. The equivalence breaks at the heavy end (one 250–300 mg/day account reports 200 mg of pure-mitragynine tablets failing to cover withdrawal). The recurring consensus: mitragynine handles the physical symptoms better than the cravings.
+No clean dose equivalence between 7-OH and concentrated mitragynine exists in the corpus. The 50–100 mg mitragynine per dose range works for many readers in the 100–300 mg/day 7-OH band; at the heavy end the math breaks (one 250–300 mg/day account reports 200 mg of pure-mitragynine tablets failing to cover withdrawal). The recurring consensus: mitragynine handles the physical symptoms better than the cravings.
 
 ### Stabilization, taper, and total duration
 
@@ -79,7 +78,7 @@ Without independent lab verification, the protocol can be a continuation of 7-OH
 
 **Continuing to redose 7-OH "for hard moments."** The bridge assumes a clean break on day one. Taking a 7-OH dose every few days when cravings spike resets receptor adaptation and defeats the step-down. Dozens of accounts document this; it's the canonical addiction-discipline failure for this approach.
 
-**Mitragynine alone is often insufficient above ~500 mg/day of 7-OH.** Multiple heavy-dose accounts report that mitragynine extracts and leaf powder don't cover withdrawal, and the reader ends up adding [SR-17](/other-tools/sr-17), [Suboxone](/mat-suboxone/suboxone-for-7oh), or aggressive [comfort medications](/other-tools/helper-meds) to keep the bridge functional.
+**Mitragynine alone is often insufficient above ~500 mg/day of 7-OH.** Multiple heavy-dose accounts report that mitragynine extracts don't cover withdrawal, and the reader ends up adding [SR-17](/other-tools/sr-17), [Suboxone](/mat-suboxone/suboxone-for-7oh), or aggressive [comfort medications](/other-tools/helper-meds) to keep the bridge functional.
 
 **Polysubstance bridge stacking obscures dose tracking.** Combining mitragynine extract with kratom leaf with helper meds with leftover 7-OH "as needed" produces a regimen that can't be tapered cleanly. Single-vehicle dosing makes the schedule tractable.
 
@@ -144,7 +143,7 @@ Most readers on this path do it without clinicians, and the site respects that. 
 - **Symptoms that aren't manageable at the bridge dose.** Higher mitragynine doses don't always solve this; sometimes the receptor load needs a medication path entirely. See [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 - **Concurrent mental-health symptoms getting worse.** Depression, anxiety, or sleep disruption warranting clinical care exists separately from the addiction-medicine path.
 
-For the path-shape questions (am I doing this right, should I cut faster, when do I jump), the corpus lives in the recovery communities. The [Discord](https://discord.gg/quitting7oh) and the r/Quittingfeelfree, r/quittingkratom, and r/Life_After_7oh subreddits are where the day-to-day discussion happens.
+For the path-shape questions (am I doing this right, should I cut faster, when do I jump), the live discussion happens in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). Post there. Real people, real time.
 
 ## Further reading
 
@@ -169,4 +168,4 @@ Pharmacology:
 - [Singh et al., *Drug Alcohol Depend* 2014](https://pubmed.ncbi.nlm.nih.gov/24698080/): kratom dependence and withdrawal in regular users
 - [Berthold et al., 2022](https://pubmed.ncbi.nlm.nih.gov/34759012/): 7-OH contribution to oral mitragynine effects
 
-Community sourcing: aggregated from substantive threads (≥10 comments) across r/Quittingfeelfree, r/quittingkratom, r/Life_After_7oh, r/Kratom_7OH, r/7ohbuddies, r/quitting7oh, r/LifeAfterAlkaloids, and r/recoverywithoutAA, 2024–2026.
+Community sourcing: aggregated from substantive threads (≥10 comments) across r/quitting7oh, r/Quittingfeelfree, r/quittingkratom, r/Life_After_7oh, r/Kratom_7OH, r/7ohbuddies, r/LifeAfterAlkaloids, and r/recoverywithoutAA, 2024–2026.

@@ -93,11 +93,10 @@ In order. **Real humans first. Digital community is the fallback.**
 6. **Text a human who knows you**, if a call is impossible
    right now.
 7. **Online community**, the
-   [Discord](https://discord.gg/quitting7oh) `#sos` channel, the
-   [r/quittingkratom](https://www.reddit.com/r/quittingkratom/) and
-   [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) subreddits.
-   These are real people, but they're the **fallback**, not the first
-   move, async text in a feed doesn't substitute for a voice.
+   [Discord](https://discord.gg/quitting7oh) `#sos` channel and
+   [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). These are
+   real people, but they're the **fallback**, not the first move,
+   async text in a feed doesn't substitute for a voice.
 
 ## While you wait
 

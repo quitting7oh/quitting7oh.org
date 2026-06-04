@@ -2,7 +2,7 @@
 title: "Tapering Off 7-OH"
 description: "What tapering off concentrated 7-OH looks like: the early dose-halving stretch, the low-dose plateau where most self-managed tapers stall, the jump-off, and what helps at each stage."
 category: "for-you"
-last_updated: "2026-05-30"
+last_updated: "2026-06-04"
 sort: 3
 ---
 
@@ -61,7 +61,7 @@ The reader chooses based on what's accessible. Clinical support and community ap
 
 **Cannabis.** Some people use cannabis during a taper, particularly for sleep, anxiety, and nausea. See [Cannabis and THC in Recovery](/other-tools/cannabis-thc-in-recovery) for the trade-offs and the community-discussed limits.
 
-**Community support.** [r/quittingkratom](https://www.reddit.com/r/quittingkratom/), [r/quitting7oh](https://www.reddit.com/r/quitting7oh/), and the [Discord](https://discord.gg/quitting7oh) are how most people get through this. Accountability, pattern-matching with peers in the same phase, and the simple fact of someone knowing what you're doing make a measurable difference. See [The Community](/about/the-community) for what each space is best at.
+**Community support.** The [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are how most people get through this. Accountability, pattern-matching with peers in the same phase, and the simple fact of someone knowing what you're doing make a measurable difference. See [The Community](/about/the-community) for more on each space.
 
 **Clinical support.** Available to readers who want it. [Telehealth providers](/resources/telehealth-for-suboxone) experienced with kratom and 7-OH dependence can prescribe [comfort medications](/other-tools/helper-meds), clonidine, gabapentin, hydroxyzine (with the [restless-legs caveat](/other-tools/helper-meds)), trazodone, anti-emetics, sleep medications, that meaningfully reduce the symptom burden at the lower-dose plateau especially. Many people taper successfully without clinical support; many find that adding it at the plateau is what gets them through. Both work.
 
