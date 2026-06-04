@@ -1,5 +1,5 @@
 ---
-title: "Suboxone (Buprenorphine/Naloxone)"
+title: "Suboxone"
 description: "Suboxone for coming off 7-OH and kratom synthetics. Induction, low-and-slow dosing, short-taper schedules, and the receptor pharmacology behind the approach."
 category: "mat-suboxone"
 last_updated: "2026-06-04"
@@ -7,7 +7,7 @@ sort: 2
 ---
 > **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues separate from whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
 
-Suboxone is one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr-17). [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
+Suboxone is the brand name for **buprenorphine/naloxone**, one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr-17). [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
 
 **Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
 
