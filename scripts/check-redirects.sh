@@ -34,6 +34,11 @@ BASE="${1:-https://quitting7oh.org}"
 BASE="${BASE%/}"
 
 # One pair per line: old | new
+#
+# Each pair is auto-tested in both no-trailing-slash and
+# trailing-slash form, since CF Pages' _redirects file treats /foo
+# and /foo/ as different keys and (worse) will serve a stale cached
+# /foo/ page if the trailing-slash variant isn't explicitly listed.
 PAIRS="
 /other-tools/helper-meds-info|/other-tools/helper-meds
 /other-tools/mega-vit-c-info|/other-tools/mega-dose-vitamin-c
@@ -74,19 +79,14 @@ failed_lines=()
 # Strip trailing slash from a path for canonical comparison.
 norm() { printf '%s' "${1%/}"; }
 
-while IFS='|' read -r old new; do
-  [ -z "$old" ] && continue
+check_one() {
+  old="$1"
+  new="$2"
 
-  # First hop: should be 301 from old.
   first_code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 "$BASE$old" || echo "000")
-
-  # Follow the redirect chain and capture the final URL + final status.
-  # %{url_effective} gives the URL where curl ended up.
-  # %{http_code} after -L gives the final response code.
   final_url=$(curl -sL -o /dev/null -w '%{url_effective}' --max-time 20 "$BASE$old" || echo "")
   final_code=$(curl -sL -o /dev/null -w '%{http_code}' --max-time 20 "$BASE$old" || echo "000")
 
-  # Strip base + trailing slash from the final URL for comparison.
   final_path="${final_url#$BASE}"
   final_path_canonical=$(norm "$final_path")
   expected_canonical=$(norm "$new")
@@ -112,6 +112,12 @@ while IFS='|' read -r old new; do
   fi
 
   printf '%-44s  %-6s  %-6s  %s\n' "$old" "$status" "$final_code" "$notes"
+}
+
+while IFS='|' read -r old new; do
+  [ -z "$old" ] && continue
+  check_one "$old" "$new"
+  check_one "$old/" "$new"
 done <<EOF
 $PAIRS
 EOF
