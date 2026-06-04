@@ -79,6 +79,13 @@ wrong chemistry into the URL. Possible follow-up rename to
 `/compounds/mit-a-dhm` (matches what users search) with 301
 redirects.
 
+**Follow-up correction:** the Marketing section's MIT-A bullet
+originally guessed at what "-A" stands for. Vendors actually
+market it as "Advanced Alkaloids" (wellness-style branding that
+papers over the actual composition). Corrected to name the
+marketing claim accurately and note that the unnamed alkaloid
+content includes MGM-15 in the products that have been tested.
+
 ### Community routing: only our resources for calls-to-action
 
 New CLAUDE.md rule: when telling readers where to go for community
