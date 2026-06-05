@@ -2,7 +2,7 @@
 title: "Suboxone Rapid Taper"
 description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
 category: "mat-suboxone"
-last_updated: "2026-06-04"
+last_updated: "2026-06-05"
 sort: 4
 ---
 These schedules go faster than what a prescriber will typically suggest. They're built on community experience with hundreds of successful rapid tapers from 7-OH, where 5-to-10-day bupe courses at low-to-moderate doses have not produced meaningful bupe dependence. Most prescribers won't sign off on these timelines; you're choosing a community-developed approach over standard clinical practice.
@@ -37,6 +37,7 @@ All schedules assume:
 | 3 | 1 |
 | 4 | 0.5 |
 | 5 | 0.25 |
+| **Total bupe** | **5.25 mg** |
 
 </details>
 
@@ -54,6 +55,7 @@ All schedules assume:
 | 5 | 0.25 | 1 |
 | 6 | — | 0.5 |
 | 7 | — | 0.25 |
+| **Total bupe** | **7.75 mg** | **14.75 mg** |
 
 </details>
 
@@ -74,6 +76,7 @@ All schedules assume:
 | 8 | — | — | 1 |
 | 9 | — | — | 0.5 |
 | 10 | — | — | 0.25 |
+| **Total bupe** | **13.5 mg** | **22.5 mg** | **32.75 mg** |
 
 </details>
 
@@ -107,6 +110,7 @@ All schedules assume:
 | 19 | — | — | — | — | 0.5 |
 | 20 | — | — | — | — | 0.25 |
 | 21 | — | — | — | — | 0.25 |
+| **Total bupe** | **18 mg** | **29.5 mg** | **29.5 mg** | **56.25 mg** | **80.75 mg** |
 
 </details>
 
@@ -127,6 +131,7 @@ If that's you, extending the tail for a few more days at sub-0.25 mg doses can s
 | +1 | 0.1 mg | dissolve in 80 mL water → draw 1 mL |
 | +2 | 0.05 mg | dissolve in 160 mL water → draw 1 mL |
 | +3 | 0.02 mg | dissolve in 400 mL water → draw 1 mL |
+| **Total tail bupe** | **0.17 mg** | (on top of whichever schedule above) |
 
 All math checks: an 8 mg strip in 80 mL gives 0.1 mg/mL, so 1 mL = 0.1 mg. Each row uses a fresh strip dissolved in water (or water + propylene glycol if you want to mix once and dose from one solution across days; see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose#volumetric-dosing-films-and-tablets) for the stability details). If you got 2 mg strips, scale every water volume down to a quarter (20 mL, 40 mL, 100 mL). Same concentrations, less wasted material per dose.
 
