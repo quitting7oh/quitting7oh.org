@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-04"
+last_updated: "2026-06-06"
 sort: 6
 ---
 
@@ -13,6 +13,41 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-06-05
+
+### Rapid taper: total-bupe-required per schedule + every schedule lands at 0.25 mg
+
+Each of the five taper-schedule tables on
+[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) (2 mg,
+4 mg, 6 mg, 8 mg, and the bottom-of-the-taper tail) now has a
+"Total bupe" row so the reader can see at a glance how much
+medication the taper calls for. Math verified independently for
+every schedule.
+
+Same pass surfaced an inconsistency: the prose said "all schedules
+end at 0.25 mg" but five schedules ended at 0.5 mg. Fixed:
+
+- 6 mg / 5-day: day 5 changed 0.5 → 0.25 (total 13.25 mg)
+- 6 mg / 7-day: day 7 changed 0.5 → 0.25 (total 22.25 mg)
+- 8 mg / 5-day: day 5 changed 0.5 → 0.25 (total 17.75 mg)
+- 8 mg / 7-day: day 7 changed 0.5 → 0.25 (total 29.25 mg)
+- 8 mg / 10-day: previously a mislabeled 8-day schedule ending
+  at 0.5 mg. Rebuilt to actually run 10 days, top-loaded like the
+  14-day: 8, 8, 6, 5, 4, 3, 2, 1, 0.5, 0.25 (total 37.75 mg).
+
+The final-day 1 → 0.25 step on the squeezed 5- and 7-day schedules
+is steep; the bottom-of-the-taper tail (0.1 → 0.05 → 0.02) is the
+soft-landing tool for readers who find it sharp.
+
+### Suboxone page title shortened so the sidebar highlight fits
+
+"Suboxone (Buprenorphine/Naloxone)" was wrapping to two lines in
+the sidebar; the active-page highlight didn't fit the second
+line cleanly. Shortened the title to "Suboxone" so it sits on
+one line like its siblings. Added "Suboxone is the brand name
+for buprenorphine/naloxone" inline in the opening sentence so
+new readers still get the disambiguation.
 
 ## 2026-06-04
 
