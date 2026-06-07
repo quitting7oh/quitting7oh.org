@@ -112,6 +112,41 @@ Reworked the taper calculator after first-round feedback:
   explicit "taper-all-the-way-off" step. The chart and table
   both extend cleanly to zero.
 
+- **SR-17 has its own duration presets.** The community-validated
+  SR-17 course range is 5 to 14 days, much shorter than the
+  21-day-to-three-month range that fits 7-OH, MGM-15, pseudo, and
+  leaf. SR-17 now shows 5 days · 10 days · 14 days · Custom. The
+  earlier auto-emitted "100 → 75 → 50 → 25 → jump" community
+  pattern is gone; SR-17 now runs the same percentage math as the
+  rest, scaled to the reader's chosen duration.
+
+- **Tablet / capsule size input** for non-bupe substances. The
+  field starts blank; the reader optionally fills in the size of
+  each tablet, capsule, or dose unit they actually have. A
+  placeholder shows the typical value (7-OH 15 mg, MGM-15 / MIT-A
+  10 mg, pseudo 5 mg, kratom capsule 0.5 g, SR-17 25 mg) without
+  pre-filling. When a size is set, each per-dose value in the
+  schedule table shows a ❓ icon; hovering reveals the equivalent
+  in tablets / capsules rounded to the nearest quarter (e.g.
+  `1¼ tablets (15 mg per tablet)`). Mirrors the bupe
+  strip-equivalents tooltip already on bupe rows. The form's
+  caveat names that real tablets vary in content between products
+  and batches. Capsules and powder open and can be poured out, so
+  quarter precision applies to both.
+
+- **`7-OH (concentrated)` → `7-OH`** in the substance dropdown.
+  The (concentrated) parenthetical was redundant on a site whose
+  entire audience is here for the concentrated synthetic; it just
+  added visual noise to the most-picked option.
+
+- **Substance-aware default duration.** 7-OH, MGM-15 / MIT-A,
+  pseudo, and leaf now default to 1 month (30 days) instead of 2
+  months. Bupe still defaults to 14 days (the most-used Suboxone
+  Rapid Taper column); SR-17 defaults to 10 days (middle of its
+  5–14 day range). Switching substances resets duration to the new
+  substance's default, matching how per-dose, times-per-day,
+  jump-off, and tablet size already reset.
+
 ### New page: Taper Calculator
 
 New page at [`/resources/taper-calculator`](/resources/taper-calculator)

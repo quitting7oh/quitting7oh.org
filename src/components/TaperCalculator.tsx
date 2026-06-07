@@ -45,6 +45,12 @@ interface SubstanceConfig {
   defaultDosesPerDay: number;
   /** Default per-dose for the jump-off step (taken once daily, by convention). */
   defaultJumpOff: number;
+  /** Default tablet / capsule size for the substance. null for bupe (its
+   *  per-dose tooltip uses the strip-size pattern instead). */
+  defaultTabletSize: number | null;
+  /** Singular noun for the form factor — "tablet" for pills, "capsule" for
+   *  encapsulated leaf or SR-17 powder. */
+  tabletUnitName: string;
   /** Caveat / note shown under the form for this substance. */
   note: string;
   related: { label: string; href: string }[];
@@ -52,12 +58,14 @@ interface SubstanceConfig {
 
 const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
   '7oh': {
-    label: '7-OH (concentrated)',
+    label: '7-OH',
     unit: 'mg',
     stepUnit: 'day',
     defaultPerDose: 15,
     defaultDosesPerDay: 4,
     defaultJumpOff: 5,
+    defaultTabletSize: 15,
+    tabletUnitName: 'tablet',
     note: 'Community-observed taper patterns for concentrated 7-OH cluster around halving for the first half, then progressively slower steps. Most self-managed 7-OH tapers end with a jump-off at some low dose rather than a clean taper to zero. The calculator drops doses-per-day as the total falls; per-dose stays in a tolerable range.',
     related: [
       { label: 'Tapering Off 7-OH', href: '/for-you/tapering-7oh' },
@@ -71,6 +79,8 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     defaultPerDose: 8,
     defaultDosesPerDay: 1,
     defaultJumpOff: 0.25,
+    defaultTabletSize: null,
+    tabletUnitName: 'strip',
     note: 'Established short-taper schedules from the Suboxone Rapid Taper page are used when the start dose and duration match (2, 4, 6, or 8 mg with 5/7/10/14/21-day options). For other start doses or durations, the calculator generates a daily percentage taper. Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses.',
     related: [
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
@@ -84,6 +94,8 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     defaultPerDose: 10,
     defaultDosesPerDay: 3,
     defaultJumpOff: 2,
+    defaultTabletSize: 10,
+    tabletUnitName: 'tablet',
     note: 'MGM-15 is long-acting (community-reported 9–15 hour duration; no published human PK). MIT-A and DHM are the same compound. There is no clean community-standard schedule. The calculator runs percentage math from the chosen duration. Withdrawal hits harder than 7-OH and Suboxone induction needs a longer washout.',
     related: [
       { label: 'MIT-A and DHM Products', href: '/compounds/mit-a-dhm' },
@@ -99,6 +111,8 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     defaultPerDose: 7,
     defaultDosesPerDay: 3,
     defaultJumpOff: 1,
+    defaultTabletSize: 5,
+    tabletUnitName: 'tablet',
     note: 'Pseudoindoxyl binds the mu receptor tighter than buprenorphine itself. Published human pharmacology is thin and community schedules are not standardized. Treat the output as a directional plan, not a prescription. Suboxone induction may be incomplete; SR-17 is the other community-validated path off.',
     related: [
       { label: 'Pseudo (mitragynine pseudoindoxyl)', href: '/compounds/mitragynine-pseudoindoxyl' },
@@ -113,6 +127,8 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     defaultPerDose: 4,
     defaultDosesPerDay: 4,
     defaultJumpOff: 1,
+    defaultTabletSize: 0.5,
+    tabletUnitName: 'capsule',
     note: 'Leaf alkaloid content varies between strains, batches, and vendors. Grams are an approximation of dose. Most community leaf tapers end with a jump-off at 1–2 g/day rather than tapering to zero.',
     related: [
       { label: 'Quit 7-OH with Kratom Leaf', href: '/other-tools/quit-7-oh-with-kratom-leaf' },
@@ -125,7 +141,9 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     defaultPerDose: 50,
     defaultDosesPerDay: 3,
     defaultJumpOff: 25,
-    note: 'The community SR-17 protocol is short by design (10–14 days total course; 4-day descending taper from 100 mg/day at the published 50 × 3 dosing). Picking "Community protocol" emits the published 100 → 75 → 50 → 25 → jump pattern scaled to your dose. The custom-percentage option exists for readers running a non-standard course.',
+    defaultTabletSize: 25,
+    tabletUnitName: 'tablet',
+    note: 'SR-17 protocols in the community are short by design (5 to 14 days total). The calculator runs percentage math from your chosen duration. SR-17 is more often sold as a liquid solution than as tablets; the tablet-equivalent breakdown is approximate.',
     related: [
       { label: 'SR-17', href: '/other-tools/sr-17' },
     ],
@@ -169,18 +187,54 @@ const LONG_DURATION_LABELS: Record<Difficulty, string> = {
   custom: 'Custom duration',
 };
 
+/** SR-17 presets mirror the community-reported course range (5–14 days).
+ *  The 'super-hard' slot is hidden from the SR-17 dropdown but kept here
+ *  so the Difficulty-keyed Records stay total. */
+const SR17_DURATION_DAYS: Record<Exclude<Difficulty, 'custom'>, number> = {
+  easier: 14,
+  clinician: 10,
+  harder: 5,
+  'super-hard': 5,
+};
+
+const SR17_DURATION_LABELS: Record<Difficulty, string> = {
+  easier: '14 days',
+  clinician: '10 days',
+  harder: '5 days',
+  'super-hard': '5 days',
+  custom: 'Custom duration',
+};
+
 function difficultyDaysFor(
   substance: SubstanceKey,
   difficulty: Exclude<Difficulty, 'custom'>,
 ): number {
-  return substance === 'bupe'
-    ? BUPE_DURATION_DAYS[difficulty]
-    : LONG_DURATION_DAYS[difficulty];
+  if (substance === 'bupe') return BUPE_DURATION_DAYS[difficulty];
+  if (substance === 'sr17') return SR17_DURATION_DAYS[difficulty];
+  return LONG_DURATION_DAYS[difficulty];
 }
 
 function difficultyLabelsFor(substance: SubstanceKey): Record<Difficulty, string> {
-  return substance === 'bupe' ? BUPE_DURATION_LABELS : LONG_DURATION_LABELS;
+  if (substance === 'bupe') return BUPE_DURATION_LABELS;
+  if (substance === 'sr17') return SR17_DURATION_LABELS;
+  return LONG_DURATION_LABELS;
 }
+
+/** Default duration preset per substance.
+ *   - 7-OH, MGM-15 / MIT-A, pseudo, leaf → 'harder' (1 month / 30 days),
+ *     matching what the community converges on for the kratom-derived
+ *     synthetics and plain leaf.
+ *   - bupe → 'clinician' (14 days), the most-used column on the
+ *     Suboxone Rapid Taper page.
+ *   - SR-17 → 'clinician' (10 days), the middle of the 5–14 day range. */
+const DEFAULT_DIFFICULTY: Record<SubstanceKey, Difficulty> = {
+  '7oh': 'harder',
+  bupe: 'clinician',
+  mgm: 'harder',
+  pseudo: 'harder',
+  leaf: 'harder',
+  sr17: 'clinician',
+};
 
 /* ───────────────────────── Bupe established schedules ───────────────────────── */
 
@@ -230,22 +284,6 @@ function extendBupeTailToJumpOff(jumpOff: number): number[] {
   return tail;
 }
 
-/* ───────────────────────── SR-17 community protocol ───────────────────────── */
-
-function sr17CommunityTotals(totalStart: number, jumpOffTotal: number): number[] {
-  // Published 4-day descending pattern (100 → 75 → 50 → 25 → jump) scaled to
-  // the reader's total daily dose. Each step is one day.
-  const totals: number[] = [];
-  let total = totalStart;
-  const cut = totalStart / 4;
-  while (total > jumpOffTotal) {
-    totals.push(total);
-    total -= cut;
-  }
-  totals.push(jumpOffTotal);
-  return totals;
-}
-
 /* ───────────────────────── Schedule generator ───────────────────────── */
 
 interface ScheduleStep {
@@ -254,11 +292,7 @@ interface ScheduleStep {
   totalDaily: number;
 }
 
-type ScheduleSource =
-  | 'bupe-established'
-  | 'bupe-percent'
-  | 'sr17-protocol'
-  | 'percent';
+type ScheduleSource = 'bupe-established' | 'bupe-percent' | 'percent';
 
 interface ScheduleResult {
   steps: ScheduleStep[];
@@ -423,16 +457,6 @@ function generateSchedule(
     };
   }
 
-  if (substance === 'sr17' && difficulty !== 'custom') {
-    const totals = sr17CommunityTotals(totalStart, effectiveJumpOff);
-    const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
-    return {
-      steps,
-      source: 'sr17-protocol',
-      totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
-    };
-  }
-
   const pct = pctFromDuration(totalStart, effectiveJumpOff, days);
   const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, pct);
   const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
@@ -459,7 +483,12 @@ export function TaperCalculator() {
   const [perDose, setPerDose] = useState<number>(cfg.defaultPerDose);
   const [dosesPerDay, setDosesPerDay] = useState<number>(cfg.defaultDosesPerDay);
   const [jumpOff, setJumpOff] = useState<number>(cfg.defaultJumpOff);
-  const [difficulty, setDifficulty] = useState<Difficulty>('clinician');
+  /** Tablet / capsule size — used for the per-dose-in-tablets tooltip on
+   *  non-bupe rows. Bupe uses the strip-equivalents pattern instead.
+   *  Blank by default; reader fills in the size of their actual product
+   *  (or leaves it blank to skip the tooltip). */
+  const [tabletSize, setTabletSize] = useState<number>(0);
+  const [difficulty, setDifficulty] = useState<Difficulty>(DEFAULT_DIFFICULTY[substance]);
   /** Custom mode source of truth: total taper duration in days. */
   const [customDays, setCustomDays] = useState<number>(14);
   const [copied, setCopied] = useState<boolean>(false);
@@ -497,9 +526,8 @@ export function TaperCalculator() {
     setPerDose(SUBSTANCES[next].defaultPerDose);
     setDosesPerDay(SUBSTANCES[next].defaultDosesPerDay);
     setJumpOff(SUBSTANCES[next].defaultJumpOff);
-    if (next === 'sr17' && difficulty !== 'clinician' && difficulty !== 'custom') {
-      setDifficulty('clinician');
-    }
+    setTabletSize(0);
+    setDifficulty(DEFAULT_DIFFICULTY[next]);
   };
 
   const handleCopyPrompt = async () => {
@@ -618,6 +646,32 @@ export function TaperCalculator() {
           />
         </div>
 
+        {cfg.defaultTabletSize !== null && (
+          <div className="sm:col-span-2">
+            <Label htmlFor="tablet-size">
+              {cfg.tabletUnitName.charAt(0).toUpperCase() + cfg.tabletUnitName.slice(1)} size ({cfg.unit} per {cfg.tabletUnitName})
+            </Label>
+            <Input
+              id="tablet-size"
+              type="number"
+              inputMode="decimal"
+              min={0}
+              step="any"
+              value={tabletSize || ''}
+              onChange={(e) => setTabletSize(parseFloat(e.target.value) || 0)}
+              placeholder={
+                cfg.defaultTabletSize !== null
+                  ? `e.g. ${cfg.defaultTabletSize}`
+                  : undefined
+              }
+              className="mt-1.5 sm:w-48"
+            />
+            <p className="mt-1 text-xs text-muted-foreground">
+              Optional. Fill in the size of the {cfg.tabletUnitName} you actually have. When set, the schedule table shows each per-dose as a {cfg.tabletUnitName} count (down to quarters). Real {cfg.tabletUnitName}s vary in content between products and batches. Treat the breakdown as a measuring guide, not an exact dose.
+            </p>
+          </div>
+        )}
+
         <div className="sm:col-span-2 rounded-md bg-muted/40 px-3 py-2 text-sm">
           <span className="text-muted-foreground">Total daily:</span>{' '}
           <span className="font-semibold text-foreground">
@@ -655,16 +709,13 @@ export function TaperCalculator() {
             <SelectContent>
               {(Object.entries(difficultyLabelsFor(substance)) as [Difficulty, string][]).map(
                 ([key, label]) => {
-                  if (substance === 'sr17' && key !== 'clinician' && key !== 'custom') {
-                    return null;
-                  }
-                  const displayLabel =
-                    substance === 'sr17' && key === 'clinician'
-                      ? 'Community protocol (10–14 days)'
-                      : label;
+                  // SR-17 menu is 14 / 10 / 5 days + custom — the
+                  // 'super-hard' slot is a Difficulty-Record placeholder
+                  // and shouldn't render as a separate UI option.
+                  if (substance === 'sr17' && key === 'super-hard') return null;
                   return (
                     <SelectItem key={key} value={key}>
-                      {displayLabel}
+                      {label}
                     </SelectItem>
                   );
                 },
@@ -858,6 +909,30 @@ export function TaperCalculator() {
                                   {bupeStripEquivalents(s.perDose)}
                                 </TooltipContent>
                               </Tooltip>
+                            ) : cfg.defaultTabletSize !== null && tabletSize > 0 ? (
+                              <Tooltip>
+                                <TooltipTrigger asChild>
+                                  <button
+                                    type="button"
+                                    className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                                    aria-label={`${s.perDose} ${cfg.unit} — show ${cfg.tabletUnitName} count`}
+                                  >
+                                    <span>{s.perDose}</span>
+                                    <HelpCircle
+                                      className="h-3.5 w-3.5 text-muted-foreground print:hidden"
+                                      aria-hidden="true"
+                                    />
+                                  </button>
+                                </TooltipTrigger>
+                                <TooltipContent side="right" className="max-w-xs">
+                                  {tabletEquivalents(
+                                    s.perDose,
+                                    tabletSize,
+                                    cfg.unit,
+                                    cfg.tabletUnitName,
+                                  )}
+                                </TooltipContent>
+                              </Tooltip>
                             ) : (
                               s.perDose
                             )}
@@ -972,8 +1047,6 @@ function sourceLabel(source: ScheduleSource): string {
       return 'Established schedule';
     case 'bupe-percent':
       return 'Percentage taper';
-    case 'sr17-protocol':
-      return 'Community protocol';
     case 'percent':
       return 'Percentage taper';
   }
@@ -1000,6 +1073,36 @@ function bupeStripEquivalents(perDose: number): string {
     return 'Below 1/16 of even a 2 mg strip — volumetric dosing recommended.';
   }
   return lines.join(' · ');
+}
+
+/** For non-bupe substances with a tablet/capsule size set, render the
+ *  per-dose as a tablet count rounded to the nearest quarter. Capsules
+ *  open and powder can be poured out, so quarters apply to both pills
+ *  and capsules. Returns a short sentence the tooltip can display. */
+function tabletEquivalents(
+  perDose: number,
+  tabletSize: number,
+  unit: string,
+  tabletUnitName: string,
+): string {
+  if (!Number.isFinite(tabletSize) || tabletSize <= 0) {
+    return `Enter a ${tabletUnitName} size above to see the breakdown.`;
+  }
+  if (perDose <= 0) return `0 ${tabletUnitName}s`;
+  const raw = perDose / tabletSize;
+  const quarters = Math.round(raw * 4) / 4;
+  if (quarters < 0.25) {
+    return `Less than ¼ ${tabletUnitName} (${tabletSize} ${unit} per ${tabletUnitName}). Measure by weight or volume at this dose.`;
+  }
+  const whole = Math.floor(quarters);
+  const frac = quarters - whole;
+  const fracText = frac === 0.25 ? '¼' : frac === 0.5 ? '½' : frac === 0.75 ? '¾' : '';
+  let number = '';
+  if (whole === 0) number = fracText;
+  else if (frac === 0) number = `${whole}`;
+  else number = `${whole}${fracText}`;
+  const noun = quarters === 1 ? tabletUnitName : `${tabletUnitName}s`;
+  return `${number} ${noun} (${tabletSize} ${unit} per ${tabletUnitName})`;
 }
 
 function escHtml(s: string): string {

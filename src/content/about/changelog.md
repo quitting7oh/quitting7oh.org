@@ -100,6 +100,61 @@ Reworked the taper calculator after first-round feedback:
   later-funnel concern. Dropdown order matches: 7-OH first, then
   bupe.
 
+- **Duration presets are now substance-aware.** Bupe keeps the
+  5 / 10 / 14 / 21 day presets that line up with the published
+  Suboxone Rapid Taper columns. Everything else (7-OH, MGM-15 /
+  MIT-A / DHM, pseudo, leaf, SR-17 custom) starts at 21 days and
+  stretches into months: 21 days · 1 month · 2 months · 3 months.
+  Backend math still operates in days (`pct = 1 − (jumpOff /
+  totalStart)^(1/days)`); the labels read in months for the
+  longer presets because that's how readers think about a taper
+  that runs that long.
+
+- **Jump-off can be 0.** Setting the jump-off to 0 was previously
+  rejected because multiplicative % math can't reach zero in
+  finite steps and the schedule came out empty. Fixed by running
+  the percentage curve to a substance-aware floor (0.02 mg for
+  bupe — the smallest documented volumetric tail value; 2% of
+  the starting total or 0.5 units, whichever is larger, for other
+  substances) and then appending a single 0-dose day as the
+  explicit "taper-all-the-way-off" step. The chart and table
+  both extend cleanly to zero.
+
+- **SR-17 has its own duration presets.** The community-validated
+  SR-17 course range is 5 to 14 days, much shorter than the
+  21-day-to-three-month range that fits 7-OH, MGM-15, pseudo, and
+  leaf. SR-17 now shows 5 days · 10 days · 14 days · Custom. The
+  earlier auto-emitted "100 → 75 → 50 → 25 → jump" community
+  pattern is gone; SR-17 now runs the same percentage math as the
+  rest, scaled to the reader's chosen duration.
+
+- **Tablet / capsule size input** for non-bupe substances. The
+  field starts blank; the reader optionally fills in the size of
+  each tablet, capsule, or dose unit they actually have. A
+  placeholder shows the typical value (7-OH 15 mg, MGM-15 / MIT-A
+  10 mg, pseudo 5 mg, kratom capsule 0.5 g, SR-17 25 mg) without
+  pre-filling. When a size is set, each per-dose value in the
+  schedule table shows a ❓ icon; hovering reveals the equivalent
+  in tablets / capsules rounded to the nearest quarter (e.g.
+  `1¼ tablets (15 mg per tablet)`). Mirrors the bupe
+  strip-equivalents tooltip already on bupe rows. The form's
+  caveat names that real tablets vary in content between products
+  and batches. Capsules and powder open and can be poured out, so
+  quarter precision applies to both.
+
+- **`7-OH (concentrated)` → `7-OH`** in the substance dropdown.
+  The (concentrated) parenthetical was redundant on a site whose
+  entire audience is here for the concentrated synthetic; it just
+  added visual noise to the most-picked option.
+
+- **Substance-aware default duration.** 7-OH, MGM-15 / MIT-A,
+  pseudo, and leaf now default to 1 month (30 days) instead of 2
+  months. Bupe still defaults to 14 days (the most-used Suboxone
+  Rapid Taper column); SR-17 defaults to 10 days (middle of its
+  5–14 day range). Switching substances resets duration to the new
+  substance's default, matching how per-dose, times-per-day,
+  jump-off, and tablet size already reset.
+
 ### New page: Taper Calculator
 
 New page at [`/resources/taper-calculator`](/resources/taper-calculator)
