@@ -43,6 +43,20 @@ and pushing status dots out of position. Fixed by adding
 / `list-none` / `block` overrides on the avatar and list
 elements.
 
+### Zinc theme: prose links now distinguishable from body text
+
+The zinc theme variant is monochrome by design: `--foreground` is
+`240 10% 8%` and `--primary` is `240 8% 18%`, both desaturated
+and only a hair apart in lightness. Prose links inherit
+`text-decoration-color: var(--primary)` and so were rendering
+the same shade as body text — essentially invisible as links.
+Added a zinc-only override that gives prose anchors (excluding
+the `#` heading anchors) a muted-blue tint
+(`hsl(220 55% 38%)` light, `hsl(220 70% 72%)` dark). The rest of
+the zinc palette (buttons, sidebar primary, anything else using
+`--primary`) is unchanged — the zinc aesthetic stays monochrome
+where it should.
+
 ### Discord live presence: homepage online-count badge + community page widget embed
 
 The Discord card on the homepage now shows a live "N online"

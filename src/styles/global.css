@@ -692,6 +692,26 @@
   .prose-recovery :where(a):hover {
     text-decoration-color: hsl(var(--primary));
   }
+
+  /* Zinc is monochrome by design — `--primary` (240 8% 18%) sits
+   * almost on top of `--foreground` (240 10% 8%), so prose links
+   * end up blending with body text. Give just the prose links a
+   * muted-blue tint to distinguish them. Heading anchors are
+   * excluded so the `#` markers stay muted-foreground. */
+  :root[data-theme='zinc'] .prose-recovery :where(a):not(.heading-anchor) {
+    color: hsl(220 55% 38%);
+    text-decoration-color: hsl(220 55% 38% / 0.5);
+  }
+  :root[data-theme='zinc'] .prose-recovery :where(a):not(.heading-anchor):hover {
+    text-decoration-color: hsl(220 55% 38%);
+  }
+  .dark[data-theme='zinc'] .prose-recovery :where(a):not(.heading-anchor) {
+    color: hsl(220 70% 72%);
+    text-decoration-color: hsl(220 70% 72% / 0.5);
+  }
+  .dark[data-theme='zinc'] .prose-recovery :where(a):not(.heading-anchor):hover {
+    text-decoration-color: hsl(220 70% 72%);
+  }
   .prose-recovery :where(code):not(pre code) {
     @apply rounded px-1 py-0.5 font-mono text-[0.9em];
     background-color: hsl(var(--muted));
