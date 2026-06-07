@@ -45,12 +45,35 @@ Reworked the taper calculator after first-round feedback:
   updates the duration. The duration is the source of truth for
   the math.
 
-- **Per-dose values round to the nearest 0.5** for everyday-sized
-  doses (≥ 1 unit) so the math is practical at the counter —
-  fewer "take 13.7 mg" outputs. Sub-1-unit doses (bupe 0.25 →
-  0.05 mg in the volumetric tail) preserve precision via the
-  finer `roundDose` ladder. Total daily is recomputed from the
-  rounded per-dose × N so the numbers actually multiply out.
+- **Per-dose values round to the nearest 0.25** throughout the
+  practical range so no day asks for a hard-to-measure dose like
+  13.847 mg or 0.996 mg. Sub-0.25 doses (the bupe volumetric tail
+  0.1 / 0.05 / 0.02 mg) preserve precision via the finer
+  `roundDose` ladder. Total daily is recomputed from the rounded
+  per-dose × N so the numbers actually multiply out.
+
+- **Copy AI prompt** button copies a self-contained ChatGPT /
+  Claude prompt to the clipboard. The prompt embeds the reader's
+  plan (substance, doses, schedule, total medication) and asks
+  the LLM to help personalize it by asking the reader about their
+  context (history, polysubstance use, support, etc.). Explicit
+  caveats included: community-derived, not clinical, flag
+  anything dangerous.
+
+- **Save as PDF** button triggers `window.print()`. Print-specific
+  styles strip the form, action buttons, and substance note;
+  show a print-only header with the plan summary and the
+  generated-on date; render only the schedule curve and table.
+  Reader picks "Save as PDF" as the print destination in their
+  browser's print dialog.
+
+- **Bupe per-dose tooltip**: hovering over a bupe per-dose value
+  in the schedule table shows which /16-strip pieces it equals
+  across all three commercial Suboxone strip sizes (8 / 4 / 2 mg).
+  Math validates: a 1/16 piece is 0.5 mg from an 8 mg strip,
+  0.25 mg from a 4 mg strip, 0.125 mg from a 2 mg strip. Doses
+  that don't snap to clean /16ths get a "volumetric dosing
+  recommended" hint instead.
 
 - **Dose-count transitions are called out loudly** in the
   schedule table. When the calculator drops doses-per-day (e.g.

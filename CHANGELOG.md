@@ -52,12 +52,17 @@ Reworked the taper calculator after first-round feedback:
   caveats included: community-derived, not clinical, flag
   anything dangerous.
 
-- **Save as PDF** button triggers `window.print()`. Print-specific
-  styles strip the form, action buttons, and substance note;
-  show a print-only header with the plan summary and the
-  generated-on date; render only the schedule curve and table.
-  Reader picks "Save as PDF" as the print destination in their
-  browser's print dialog.
+- **Save as PDF** opens a self-contained printable view in a popup
+  window — separate from the site's layout chrome (header,
+  sidebar, footer, theme picker, crisis button) — and auto-
+  triggers the print dialog. The popup carries its own minimal
+  styles tuned for paper (system font, light grey accents, page-
+  break-avoiding rows, half-inch margins). Reader picks "Save as
+  PDF" as the destination. The popup closes itself after the
+  print dialog is dismissed. If popups are blocked, the calculator
+  falls back to printing the current page with its
+  `print:hidden` Tailwind classes — not as clean but still
+  works.
 
 - **Bupe per-dose tooltip**: hovering over a bupe per-dose value
   in the schedule table shows which /16-strip pieces it equals

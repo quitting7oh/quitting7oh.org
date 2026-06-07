@@ -468,7 +468,17 @@ export function TaperCalculator() {
   };
 
   const handlePrint = () => {
-    window.print();
+    const html = buildPrintHTML(cfg, perDose, dosesPerDay, jumpOff, result);
+    const win = window.open('', '_blank');
+    if (!win) {
+      // Popup blocked. Fall back to printing the current page (uses the
+      // print:hidden Tailwind classes — not as clean, but it works).
+      window.print();
+      return;
+    }
+    win.document.open();
+    win.document.write(html);
+    win.document.close();
   };
 
   /** Edit the % directly; recompute the duration that produces it. */
@@ -841,9 +851,10 @@ export function TaperCalculator() {
             <p className="basis-full text-xs text-muted-foreground">
               The AI prompt copies your taper plan to your clipboard so
               you can paste it into ChatGPT, Claude, or similar and ask
-              for a personalized refinement. "Save as PDF" uses your
-              browser's print dialog — pick "Save as PDF" as the
-              destination.
+              for a personalized refinement. "Save as PDF" opens a clean
+              printable view in a new window — pick "Save as PDF" as the
+              destination in the print dialog. (If the popup is blocked,
+              your browser may print the current page instead.)
             </p>
           </div>
         </>
@@ -920,6 +931,200 @@ function bupeStripEquivalents(perDose: number): string {
     return 'Below 1/16 of even a 2 mg strip — volumetric dosing recommended.';
   }
   return lines.join(' · ');
+}
+
+function escHtml(s: string): string {
+  return s.replace(
+    /[&<>"']/g,
+    (c) =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+      })[c]!,
+  );
+}
+
+/** Build a self-contained HTML document for the print view. Opened in a
+ *  popup window, isolated from the site's layout chrome (header, footer,
+ *  sidebar, theme picker, etc.) so the resulting PDF is clean. */
+function buildPrintHTML(
+  cfg: SubstanceConfig,
+  perDose: number,
+  dosesPerDay: number,
+  jumpOff: number,
+  result: ScheduleResult,
+): string {
+  const unit = cfg.unit;
+  const today = new Date().toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  const tableRows = result.steps
+    .map((s, i) => {
+      const prevN = i > 0 ? result.steps[i - 1].dosesPerDay : null;
+      const isTransition = prevN !== null && prevN !== s.dosesPerDay;
+      const isLast = i === result.steps.length - 1;
+      const transitionRow = isTransition
+        ? `<tr class="transition-callout"><td colspan="4">↓ Drop dosing to ${s.dosesPerDay}×/day starting Day ${i + 1}</td></tr>`
+        : '';
+      const rowClass = isTransition
+        ? 'transition'
+        : isLast
+          ? 'jump-off'
+          : '';
+      const dayLabel = isLast
+        ? `${i + 1} <span class="muted">(jump-off)</span>`
+        : `${i + 1}`;
+      return `${transitionRow}<tr class="${rowClass}"><td>${dayLabel}</td><td>${s.perDose}</td><td>${s.dosesPerDay}</td><td>${s.totalDaily}</td></tr>`;
+    })
+    .join('');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Taper Schedule — ${escHtml(cfg.label)}</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #111;
+    background: #fff;
+    margin: 0;
+    padding: 2rem;
+    max-width: 7.5in;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.45;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 0.35rem; }
+  .subtitle { color: #444; margin: 0 0 0.25rem; font-size: 0.95rem; }
+  .generated { color: #666; font-size: 0.8rem; margin: 0 0 1.5rem; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 0.85rem;
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+  .stat-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666;
+    margin-bottom: 0.2rem;
+  }
+  .stat-value { font-size: 1rem; font-weight: 600; }
+  h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #444;
+    margin: 0 0 0.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  thead th {
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 2px solid #333;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+  }
+  tbody td {
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  tbody tr.transition td { background: #fff8e1; font-weight: 600; }
+  tbody tr.transition-callout td {
+    background: #fef3c7;
+    border-top: 2px solid #f59e0b;
+    border-bottom: 2px solid #f59e0b;
+    font-weight: 700;
+    color: #78350f;
+  }
+  tbody tr.jump-off td { font-weight: 600; }
+  .muted { color: #666; font-weight: 400; }
+  .footer {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .footer strong { color: #111; }
+  @media print {
+    body { padding: 0.5in; max-width: none; }
+    @page { margin: 0.5in; }
+    tbody tr { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<h1>Taper Schedule</h1>
+<p class="subtitle"><strong>${escHtml(cfg.label)}</strong> · ${roundDose(perDose)} ${escHtml(unit)} × ${dosesPerDay}/day → jump-off at ${roundDose(jumpOff)} ${escHtml(unit)} over ${result.steps.length} days</p>
+<p class="generated">Generated by quitting7oh.org · ${escHtml(today)}</p>
+
+<div class="stats">
+  <div>
+    <div class="stat-label">Total duration</div>
+    <div class="stat-value">${result.steps.length} day${result.steps.length === 1 ? '' : 's'}</div>
+  </div>
+  <div>
+    <div class="stat-label">Total medication</div>
+    <div class="stat-value">${result.totalMedication} ${escHtml(unit)}</div>
+  </div>
+  <div>
+    <div class="stat-label">Approach</div>
+    <div class="stat-value">${escHtml(sourceLabel(result.source))}</div>
+  </div>
+</div>
+
+<h2>Schedule</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Per dose (${escHtml(unit)})</th>
+      <th>Times / day</th>
+      <th>Total daily (${escHtml(unit)})</th>
+    </tr>
+  </thead>
+  <tbody>${tableRows}</tbody>
+</table>
+
+<p class="footer">
+  <strong>Reference, not a prescription.</strong> This schedule is community-derived from
+  quitting7oh.org and is not clinical guidance. For buprenorphine, see a prescriber. For
+  the kratom-derived synthetics, the live community discussion on the Discord and at
+  r/quitting7oh is genuinely ahead of the published clinical literature for path-shape
+  questions.
+</p>
+
+<script>
+  // Wait for layout, then print. Close the popup once the dialog is dismissed.
+  window.addEventListener('load', function () {
+    window.focus();
+    setTimeout(function () { window.print(); }, 100);
+  });
+  window.addEventListener('afterprint', function () { window.close(); });
+</script>
+</body>
+</html>`;
 }
 
 /** Build the AI-prompt text the reader copies into ChatGPT / Claude / etc.
