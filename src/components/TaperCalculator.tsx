@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import {
   Select,
   SelectContent,
@@ -252,23 +252,35 @@ function percentTotalsSchedule(start: number, jumpOff: number, pct: number): num
 }
 
 function buildSteps(totals: number[], totalStart: number, n0: number): ScheduleStep[] {
-  return totals.map((total, i) => {
-    // Final step is the explicit jump-off dose — convention: taken once.
+  return totals.map((rawTotal, i) => {
+    // Final step is the explicit jump-off dose — convention: taken once,
+    // and we preserve the reader's exact input rather than snapping to 0.5.
     const isLast = i === totals.length - 1;
-    const n = isLast ? 1 : dosesPerDayFor(total, totalStart, n0);
+    const n = isLast ? 1 : dosesPerDayFor(rawTotal, totalStart, n0);
+    const perDose = isLast ? roundDose(rawTotal) : roundPerDose(rawTotal / n);
     return {
-      totalDaily: roundDose(total),
+      totalDaily: roundDose(perDose * n),
       dosesPerDay: n,
-      perDose: roundDose(total / n),
+      perDose,
     };
   });
 }
 
+/** General-purpose rounding: keep more precision the smaller the number. */
 function roundDose(x: number): number {
   if (x >= 10) return Math.round(x * 10) / 10;
   if (x >= 1) return Math.round(x * 100) / 100;
   if (x >= 0.1) return Math.round(x * 1000) / 1000;
   return Math.round(x * 10000) / 10000;
+}
+
+/** Per-dose rounding: snap to the nearest 0.5 for everyday-sized doses
+ *  (≥ 1 unit) so the math is practical at the counter — fewer "take
+ *  13.7 mg" outputs. For sub-1-unit doses (e.g. bupe 0.25 → 0.05 mg
+ *  in the volumetric tail), preserve precision via roundDose. */
+function roundPerDose(x: number): number {
+  if (x >= 1) return Math.round(x * 2) / 2;
+  return roundDose(x);
 }
 
 function round2(x: number): number {
@@ -662,14 +674,48 @@ export function TaperCalculator() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
-                  {result.steps.map((s, i) => (
-                    <tr key={i}>
-                      <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
-                      <td className="py-2 pr-4 text-foreground">{s.perDose}</td>
-                      <td className="py-2 pr-4 text-foreground">{s.dosesPerDay}</td>
-                      <td className="py-2 font-medium text-foreground">{s.totalDaily}</td>
-                    </tr>
-                  ))}
+                  {result.steps.map((s, i) => {
+                    const prevN = i > 0 ? result.steps[i - 1].dosesPerDay : null;
+                    const isTransition = prevN !== null && prevN !== s.dosesPerDay;
+                    return (
+                      <Fragment key={i}>
+                        {isTransition && (
+                          <tr className="border-y-2 border-amber-500 bg-amber-500/15 dark:bg-amber-400/15">
+                            <td
+                              colSpan={4}
+                              className="px-2 py-2 text-sm font-bold text-amber-900 dark:text-amber-100"
+                            >
+                              <span className="mr-2 text-base" aria-hidden="true">
+                                ↓
+                              </span>
+                              Drop dosing to <span className="underline">{s.dosesPerDay}×/day</span>{' '}
+                              starting Day {i + 1}
+                            </td>
+                          </tr>
+                        )}
+                        <tr
+                          className={
+                            isTransition
+                              ? 'bg-amber-50/50 dark:bg-amber-950/20'
+                              : ''
+                          }
+                        >
+                          <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
+                          <td className="py-2 pr-4 text-foreground">{s.perDose}</td>
+                          <td
+                            className={
+                              isTransition
+                                ? 'py-2 pr-4 font-bold text-amber-900 dark:text-amber-100'
+                                : 'py-2 pr-4 text-foreground'
+                            }
+                          >
+                            {s.dosesPerDay}
+                          </td>
+                          <td className="py-2 font-medium text-foreground">{s.totalDaily}</td>
+                        </tr>
+                      </Fragment>
+                    );
+                  })}
                   <tr className="border-t-2 border-border">
                     <td
                       className="py-2 pr-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground"
