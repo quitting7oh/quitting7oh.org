@@ -95,6 +95,11 @@ Reworked the taper calculator after first-round feedback:
   below it. The in-form substance notes already cover the
   substance-specific framing the intro was repeating.
 
+- **Default substance is 7-OH**, not bupe. The audience landing
+  on quitting7oh.org is overwhelmingly there for 7-OH; bupe is a
+  later-funnel concern. Dropdown order matches: 7-OH first, then
+  bupe.
+
 ### New page: Taper Calculator
 
 New page at [`/resources/taper-calculator`](/resources/taper-calculator)

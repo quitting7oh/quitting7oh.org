@@ -92,6 +92,26 @@ Reworked the taper calculator after first-round feedback:
   later-funnel concern. Dropdown order matches: 7-OH first, then
   bupe.
 
+- **Duration presets are now substance-aware.** Bupe keeps the
+  5 / 10 / 14 / 21 day presets that line up with the published
+  Suboxone Rapid Taper columns. Everything else (7-OH, MGM-15 /
+  MIT-A / DHM, pseudo, leaf, SR-17 custom) starts at 21 days and
+  stretches into months: 21 days · 1 month · 2 months · 3 months.
+  Backend math still operates in days (`pct = 1 − (jumpOff /
+  totalStart)^(1/days)`); the labels read in months for the
+  longer presets because that's how readers think about a taper
+  that runs that long.
+
+- **Jump-off can be 0.** Setting the jump-off to 0 was previously
+  rejected because multiplicative % math can't reach zero in
+  finite steps and the schedule came out empty. Fixed by running
+  the percentage curve to a substance-aware floor (0.02 mg for
+  bupe — the smallest documented volumetric tail value; 2% of
+  the starting total or 0.5 units, whichever is larger, for other
+  substances) and then appending a single 0-dose day as the
+  explicit "taper-all-the-way-off" step. The chart and table
+  both extend cleanly to zero.
+
 ### New page: Taper Calculator
 
 New page at [`/resources/taper-calculator`](/resources/taper-calculator)

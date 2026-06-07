@@ -132,7 +132,17 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
   },
 };
 
-const DIFFICULTY_LABELS: Record<Difficulty, string> = {
+/** Bupe presets line up with the published 5 / 7 / 10 / 14 / 21-day
+ *  columns on the Suboxone Rapid Taper page so the established schedules
+ *  fire when the start dose matches. */
+const BUPE_DURATION_DAYS: Record<Exclude<Difficulty, 'custom'>, number> = {
+  easier: 21,
+  clinician: 14,
+  harder: 10,
+  'super-hard': 5,
+};
+
+const BUPE_DURATION_LABELS: Record<Difficulty, string> = {
   easier: '21 days',
   clinician: '14 days',
   harder: '10 days',
@@ -140,18 +150,37 @@ const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   custom: 'Custom duration',
 };
 
-/** Difficulty → total taper duration in days. The named presets line up
- *  with the 5 / 7 / 10 / 14 / 21-day columns on the Suboxone Rapid Taper
- *  page so that, for matching bupe start doses, the difficulty maps cleanly
- *  to a published schedule. For other substances or non-matching bupe doses,
- *  the calculator derives the per-day percentage from the chosen duration:
- *  pct = 1 − (jumpOff / totalStart)^(1/days). */
-const DIFFICULTY_DAYS: Record<Exclude<Difficulty, 'custom'>, number> = {
-  easier: 21,
-  clinician: 14,
-  harder: 10,
-  'super-hard': 5,
+/** Non-bupe presets start at 21 days and stretch into months. The math
+ *  backend still operates in days; the labels read in months for the
+ *  longer ones because that's how most readers think about a taper that
+ *  runs that long. */
+const LONG_DURATION_DAYS: Record<Exclude<Difficulty, 'custom'>, number> = {
+  easier: 90,
+  clinician: 60,
+  harder: 30,
+  'super-hard': 21,
 };
+
+const LONG_DURATION_LABELS: Record<Difficulty, string> = {
+  easier: '3 months',
+  clinician: '2 months',
+  harder: '1 month',
+  'super-hard': '21 days',
+  custom: 'Custom duration',
+};
+
+function difficultyDaysFor(
+  substance: SubstanceKey,
+  difficulty: Exclude<Difficulty, 'custom'>,
+): number {
+  return substance === 'bupe'
+    ? BUPE_DURATION_DAYS[difficulty]
+    : LONG_DURATION_DAYS[difficulty];
+}
+
+function difficultyLabelsFor(substance: SubstanceKey): Record<Difficulty, string> {
+  return substance === 'bupe' ? BUPE_DURATION_LABELS : LONG_DURATION_LABELS;
+}
 
 /* ───────────────────────── Bupe established schedules ───────────────────────── */
 
@@ -317,11 +346,11 @@ function generateSchedule(
     !Number.isFinite(jumpOff) ||
     perDose <= 0 ||
     dosesPerDay <= 0 ||
-    jumpOff <= 0
+    jumpOff < 0
   ) {
     return { steps: [], source: 'percent', totalMedication: 0 };
   }
-  if (jumpOff >= totalStart) {
+  if (jumpOff > 0 && jumpOff >= totalStart) {
     return {
       steps: [{ totalDaily: totalStart, perDose, dosesPerDay: n0 }],
       source: 'percent',
@@ -329,10 +358,28 @@ function generateSchedule(
     };
   }
 
+  // jumpOff = 0 means "taper all the way down to zero." Multiplicative %
+  // math can't reach zero in finite steps, so we run the curve to a small
+  // practical floor and then append a single 0-dose day as the explicit
+  // jump-off step. The floor is substance-aware: bupe goes down to the
+  // documented volumetric tail (0.02 mg); other substances use a 2% fraction
+  // of the starting total with a 0.5-unit floor.
+  const wantsAbsoluteZero = jumpOff === 0;
+  const effectiveJumpOff = wantsAbsoluteZero
+    ? substance === 'bupe'
+      ? 0.02
+      : Math.max(0.5, totalStart * 0.02)
+    : jumpOff;
+
   const days =
     difficulty === 'custom'
       ? Math.max(1, Math.round(customDays))
-      : DIFFICULTY_DAYS[difficulty as Exclude<Difficulty, 'custom'>];
+      : difficultyDaysFor(substance, difficulty as Exclude<Difficulty, 'custom'>);
+
+  function withZeroIfRequested(steps: ScheduleStep[]): ScheduleStep[] {
+    if (!wantsAbsoluteZero) return steps;
+    return [...steps, { totalDaily: 0, dosesPerDay: 1, perDose: 0 }];
+  }
 
   if (substance === 'bupe') {
     // Bupe established schedules assume 1×/day sublingual. Try (start, days)
@@ -341,33 +388,34 @@ function generateSchedule(
       const main = BUPE_SCHEDULES[totalStart][days];
       let mainTrimmed = main;
       let tail: number[] = [];
-      if (jumpOff > 0.25) {
+      if (effectiveJumpOff > 0.25) {
         mainTrimmed = [];
         for (const d of main) {
-          if (d <= jumpOff) {
-            mainTrimmed.push(jumpOff);
+          if (d <= effectiveJumpOff) {
+            mainTrimmed.push(effectiveJumpOff);
             break;
           }
           mainTrimmed.push(d);
         }
       } else {
-        tail = extendBupeTailToJumpOff(jumpOff);
+        tail = extendBupeTailToJumpOff(effectiveJumpOff);
       }
       const totals = [...mainTrimmed, ...tail];
-      const steps: ScheduleStep[] = totals.map((d) => ({
+      const baseSteps: ScheduleStep[] = totals.map((d) => ({
         totalDaily: d,
         dosesPerDay: 1,
         perDose: d,
       }));
+      const steps = withZeroIfRequested(baseSteps);
       return {
         steps,
         source: 'bupe-established',
         totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
       };
     }
-    const pct = pctFromDuration(totalStart, jumpOff, days);
-    const totals = percentTotalsSchedule(totalStart, jumpOff, pct);
-    const steps = buildSteps(totals, totalStart, n0);
+    const pct = pctFromDuration(totalStart, effectiveJumpOff, days);
+    const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, pct);
+    const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
     return {
       steps,
       source: 'bupe-percent',
@@ -376,8 +424,8 @@ function generateSchedule(
   }
 
   if (substance === 'sr17' && difficulty !== 'custom') {
-    const totals = sr17CommunityTotals(totalStart, jumpOff);
-    const steps = buildSteps(totals, totalStart, n0);
+    const totals = sr17CommunityTotals(totalStart, effectiveJumpOff);
+    const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
     return {
       steps,
       source: 'sr17-protocol',
@@ -385,9 +433,9 @@ function generateSchedule(
     };
   }
 
-  const pct = pctFromDuration(totalStart, jumpOff, days);
-  const totals = percentTotalsSchedule(totalStart, jumpOff, pct);
-  const steps = buildSteps(totals, totalStart, n0);
+  const pct = pctFromDuration(totalStart, effectiveJumpOff, days);
+  const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, pct);
+  const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
   return {
     steps,
     source: 'percent',
@@ -425,15 +473,24 @@ export function TaperCalculator() {
 
   const totalDaily = useMemo(() => perDose * dosesPerDay, [perDose, dosesPerDay]);
 
+  /** When jump-off is 0, the % math is undefined (log(0) = −∞). We use a
+   *  substance-aware floor as the "effective" jump-off for the bidirectional
+   *  custom-mode math, mirroring the rule in generateSchedule. */
+  const effectiveJumpForUI = useMemo(() => {
+    if (jumpOff > 0) return jumpOff;
+    if (substance === 'bupe') return 0.02;
+    return Math.max(0.5, totalDaily * 0.02);
+  }, [jumpOff, substance, totalDaily]);
+
   /** Custom mode derived display: the per-day percentage cut that descends
    *  from totalDaily to jumpOff over customDays days. Updates live whenever
    *  the dose, jump-off, or duration change. */
   const customPctDisplay = useMemo(() => {
-    if (totalDaily <= jumpOff || customDays <= 0) return 0;
-    const ratio = jumpOff / totalDaily;
+    if (totalDaily <= effectiveJumpForUI || customDays <= 0) return 0;
+    const ratio = effectiveJumpForUI / totalDaily;
     const pct = (1 - Math.pow(ratio, 1 / customDays)) * 100;
     return Number.isFinite(pct) ? Math.round(pct * 10) / 10 : 0;
-  }, [totalDaily, jumpOff, customDays]);
+  }, [totalDaily, effectiveJumpForUI, customDays]);
 
   const handleSubstanceChange = (next: SubstanceKey) => {
     setSubstance(next);
@@ -488,8 +545,8 @@ export function TaperCalculator() {
   /** Edit the % directly; recompute the duration that produces it. */
   const handleCustomPctChange = (newPct: number) => {
     if (!Number.isFinite(newPct) || newPct <= 0 || newPct >= 100) return;
-    if (totalDaily <= jumpOff) return;
-    const ratio = jumpOff / totalDaily;
+    if (totalDaily <= effectiveJumpForUI) return;
+    const ratio = effectiveJumpForUI / totalDaily;
     const days = Math.log(ratio) / Math.log(1 - newPct / 100);
     if (Number.isFinite(days) && days >= 1) {
       setCustomDays(Math.max(1, Math.round(days)));
@@ -596,7 +653,7 @@ export function TaperCalculator() {
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {(Object.entries(DIFFICULTY_LABELS) as [Difficulty, string][]).map(
+              {(Object.entries(difficultyLabelsFor(substance)) as [Difficulty, string][]).map(
                 ([key, label]) => {
                   if (substance === 'sr17' && key !== 'clinician' && key !== 'custom') {
                     return null;
