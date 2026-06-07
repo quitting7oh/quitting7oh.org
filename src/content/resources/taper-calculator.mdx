@@ -1,0 +1,38 @@
+---
+title: "Taper Calculator"
+description: "Enter your current dose and chosen speed; the calculator generates a step-by-step schedule for buprenorphine, 7-OH, MGM-15/MIT-A, pseudo, kratom leaf, and SR-17. Established schedules where they exist, percentage math where they don't."
+category: "resources"
+last_updated: "2026-06-06"
+sort: 4
+---
+
+import { TaperCalculator } from '~/components/TaperCalculator';
+
+Enter your starting dose, the dose you want to land on before jumping off, and the speed you're aiming for. The calculator generates a step-by-step schedule with a chart and a table.
+
+For **buprenorphine**, the calculator uses the established short-taper schedules from [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) where the starting dose matches a published schedule (2, 4, 6, or 8 mg). For starting doses or speeds we don't have an established schedule for, the calculator falls back to weekly percentage math.
+
+For **SR-17**, picking "Community protocol" emits the [published 4-day descending pattern](/other-tools/sr-17) (100 → 75 → 50 → 25 → jump, scaled to your daily dose). The custom-percentage option exists for non-standard courses.
+
+For **7-OH, MGM-15/MIT-A/DHM, pseudo, and kratom leaf**, the calculator runs weekly percentage math at the chosen speed. Community-observed dose ranges and patterns live on the compound pages linked under the form; the calculator's job is to produce a workable schedule from a percentage target, not to replace the deeper context those pages cover.
+
+<TaperCalculator client:load />
+
+> **Reference, not advice.** This page is a calculator, not a prescription. The schedules above are starting points for a plan, not a substitute for a prescriber or for the lived knowledge in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). For buprenorphine, a prescriber is the right address. For the kratom-derived synthetics ([7-OH](/compounds/7-oh), [MGM-15 / MIT-A / DHM](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)), the community is genuinely ahead of the published clinical literature and is the right address for the path-shape questions.
+
+## What "Clinician recommended" means here
+
+The CDC starting-point for an opioid taper is **10% of the current dose per week** — a percentage cut, not a fixed absolute amount. That's why this page leads with percentage math: cutting 10% of 100 mg is 10 mg, but cutting 10% of 20 mg is 2 mg, so the steps get smaller and gentler as you get lower without you having to design that yourself. The four speed options on the form (Easier 5%, Clinician 10%, Harder 20%, Super Hard Mode 50%) sit on the same axis: same math, different aggressiveness.
+
+For **buprenorphine specifically**, the community-validated short tapers documented on [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) move faster than the CDC 10%/week framing because they're built around bupe's 28-to-37-hour half-life and the short-acting profile of the compounds people in this community are coming off. A 5-day rapid taper isn't "10% per week" math; it's a different protocol. The calculator picks the established schedule when the starting dose and difficulty map to one, and falls through to percentage math otherwise.
+
+## What the calculator won't do
+
+- **Take into account your medical history.** Cardiovascular conditions, mental-health history, concurrent medications, and polysubstance use all change what a workable taper looks like. The calculator can't know about any of it.
+- **Account for varying alkaloid content.** Kratom leaf in grams is an approximation. Concentrated 7-OH products vary in actual content per tablet. The calculator works with the number you enter; the number you enter is only as good as the product testing you have.
+- **Replace a check-in person.** Most rapid tapers and community step-downs go better with someone knowing what you're doing.
+- **Tell you when to abort.** If symptoms become unmanageable, the right move is to stabilize at a higher dose for a day or two and restart on a slower schedule. The [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) page covers the abort-and-stabilize discipline.
+
+## Crisis and emergency
+
+If you're in crisis or symptoms are unmanageable, **988** (Suicide & Crisis Lifeline) and your prescriber are the right addresses. See [Crisis Hotlines](/resources/crisis-hotlines) for the full list.
