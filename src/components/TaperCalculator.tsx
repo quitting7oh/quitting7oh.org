@@ -1236,7 +1236,7 @@ function tabletEquivalents(
   // Below ¼ tablet — even rounding up to ¼ would significantly overshoot,
   // so route the reader to volumetric or weighed measuring instead.
   if (raw < 0.25) {
-    return `Less than ¼ ${tabletUnitName} (${tabletNote}). Measure by weight or volume at this dose.`;
+    return `Less than ¼ ${tabletUnitName} (${tabletNote}). Measure by weight or volume at this dose, or use a ${tabletUnitName} with a lower per-${tabletUnitName} dose.`;
   }
 
   const lower = Math.floor(raw * 4) / 4;
