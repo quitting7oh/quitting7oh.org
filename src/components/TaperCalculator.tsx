@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import { Copy, Check, Printer } from 'lucide-react';
+import { Copy, Check, HelpCircle, Printer } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -778,9 +778,17 @@ export function TaperCalculator() {
                             {substance === 'bupe' ? (
                               <Tooltip>
                                 <TooltipTrigger asChild>
-                                  <span className="cursor-help underline decoration-dotted decoration-muted-foreground/60 underline-offset-2 print:no-underline">
-                                    {s.perDose}
-                                  </span>
+                                  <button
+                                    type="button"
+                                    className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                                    aria-label={`${s.perDose} mg — show strip equivalents`}
+                                  >
+                                    <span>{s.perDose}</span>
+                                    <HelpCircle
+                                      className="h-3.5 w-3.5 text-muted-foreground print:hidden"
+                                      aria-hidden="true"
+                                    />
+                                  </button>
                                 </TooltipTrigger>
                                 <TooltipContent
                                   side="right"
