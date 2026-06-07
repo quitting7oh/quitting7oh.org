@@ -52,7 +52,7 @@ function applyMode(mode: Mode) {
 
 function applyVariant(variant: Variant) {
   const root = document.documentElement;
-  if (variant === 'zinc') {
+  if (variant === 'stone') {
     delete root.dataset.theme;
   } else {
     root.dataset.theme = variant;
@@ -68,18 +68,18 @@ function readInitialMode(): Mode {
 }
 
 function readInitialVariant(): Variant {
-  if (typeof document === 'undefined') return 'zinc';
+  if (typeof document === 'undefined') return 'stone';
   const fromDom = document.documentElement.dataset.theme as Variant | undefined;
   if (fromDom) return fromDom;
   const fromStorage = localStorage.getItem(STORAGE_VARIANT) as Variant | null;
-  return fromStorage || 'zinc';
+  return fromStorage || 'stone';
 }
 
 export function ThemePicker() {
   // Start with safe defaults to avoid hydration mismatch; the useEffect
   // below syncs to whatever the pre-paint script set on the DOM.
   const [mode, setMode] = React.useState<Mode>('system');
-  const [variant, setVariant] = React.useState<Variant>('zinc');
+  const [variant, setVariant] = React.useState<Variant>('stone');
 
   React.useEffect(() => {
     setMode(readInitialMode());
@@ -107,7 +107,7 @@ export function ThemePicker() {
   const handleVariantChange = (next: string) => {
     const v = next as Variant;
     setVariant(v);
-    if (v === 'zinc') localStorage.removeItem(STORAGE_VARIANT);
+    if (v === 'stone') localStorage.removeItem(STORAGE_VARIANT);
     else localStorage.setItem(STORAGE_VARIANT, v);
     applyVariant(v);
   };

@@ -6,7 +6,7 @@
 //   - variant : 'accent-teal' | 'zinc' | 'slate' | 'stone' |
 //               'neutral' | 'rose' | 'blue' | 'green'             (key: 'theme-variant')
 //
-// Defaults: mode=system, variant=zinc (the absence of localStorage
+// Defaults: mode=system, variant=stone (the absence of localStorage
 // values implies the defaults; we don't write defaults to localStorage so
 // it's easy to tell "user picked this" from "user hasn't picked anything").
 ---
@@ -24,8 +24,8 @@
       else root.classList.remove('dark');
       root.dataset.themeMode = mode;
 
-      var variant = storedVariant || 'zinc';
-      if (variant === 'zinc') {
+      var variant = storedVariant || 'stone';
+      if (variant === 'stone') {
         // Default; no attribute needed (the :root rule covers it).
         delete root.dataset.theme;
       } else {

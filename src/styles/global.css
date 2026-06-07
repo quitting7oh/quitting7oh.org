@@ -72,7 +72,8 @@
    Each defines a full palette in light mode (default) and dark mode
    (when .dark is also present on <html>).
 
-   Default: accent-teal (the site's original brand color).
+   Default: stone (warm neutral). The bare :root rule (no data-theme
+   attribute) shares its block with :root[data-theme='stone'].
    Switching variant = setting a data-theme="<name>" attribute on <html>.
    ---------------------------------------------------------------------- */
 @layer base {
@@ -148,7 +149,6 @@
   }
 
   /* ---------- zinc (default, cool neutral, h=240, low sat) ---------- */
-  :root,
   :root[data-theme='zinc'] {
     --background: 240 10% 94%;
     --foreground: 240 10% 8%;
@@ -179,7 +179,6 @@
     --sidebar-border: 240 5% 84%;
     --sidebar-ring: 240 8% 30%;
   }
-  .dark,
   .dark[data-theme='zinc'] {
     --background: 240 8% 5%;
     --foreground: 0 0% 96%;
@@ -271,6 +270,7 @@
   }
 
   /* ---------- stone (warm beige, h=35) ---------- */
+  :root,
   :root[data-theme='stone'] {
     --background: 35 38% 94%;
     --foreground: 30 25% 12%;
@@ -300,6 +300,7 @@
     --sidebar-border: 35 25% 84%;
     --sidebar-ring: 30 50% 35%;
   }
+  .dark,
   .dark[data-theme='stone'] {
     --background: 30 25% 6%;
     --foreground: 35 15% 96%;

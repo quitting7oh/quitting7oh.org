@@ -43,6 +43,25 @@ and pushing status dots out of position. Fixed by adding
 / `list-none` / `block` overrides on the avatar and list
 elements.
 
+### Default theme variant: zinc → stone
+
+Switched the default theme variant from zinc (the cool grey
+monochrome) to stone (the warm neutral). The site now opens in
+stone for any visitor without a `theme-variant` localStorage
+entry. Existing readers who explicitly picked a variant are
+unaffected.
+
+What changed:
+- The bare `:root { … }` and `.dark { … }` blocks now share their
+  declarations with `[data-theme='stone']`. Zinc moved to a
+  scoped `[data-theme='zinc']`-only block.
+- `ThemeScript.astro` and `ThemePicker.tsx` defaults swapped from
+  `'zinc'` to `'stone'`. The "no localStorage entry = the
+  default" convention is preserved (picking stone removes the
+  storage key; picking anything else writes it).
+- The zinc-only prose-link tint from the previous entry still
+  fires when the reader explicitly picks zinc.
+
 ### Zinc theme: prose links now distinguishable from body text
 
 The zinc theme variant is monochrome by design: `--foreground` is
