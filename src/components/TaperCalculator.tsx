@@ -1164,9 +1164,14 @@ function bupeStripEquivalents(perDose: number): string {
 }
 
 /** For non-bupe substances with a tablet/capsule size set, render the
- *  per-dose as a tablet count rounded to the nearest quarter. Capsules
- *  open and powder can be poured out, so quarters apply to both pills
- *  and capsules. Returns a short sentence the tooltip can display. */
+ *  per-dose as quarter-tablet counts and the mg each measure actually
+ *  delivers. When the target dose snaps cleanly to a quarter (e.g.
+ *  ½ tablet of 50 mg = 25 mg), one line. When it falls between two
+ *  adjacent quarters (e.g. 94.5 mg on a 50 mg tablet → 1¾ = 87.5 mg
+ *  or 2 = 100 mg), both options are shown with their actual mg so the
+ *  reader can pick whether to under- or over-shoot. Sub-¼ doses route
+ *  to volumetric measuring. Capsules and powder open and can be poured
+ *  out, so quarters apply to both pills and capsules. */
 function tabletEquivalents(
   perDose: number,
   tabletSize: number,
@@ -1178,19 +1183,34 @@ function tabletEquivalents(
   }
   if (perDose <= 0) return `0 ${tabletUnitName}s`;
   const raw = perDose / tabletSize;
-  const quarters = Math.round(raw * 4) / 4;
-  if (quarters < 0.25) {
-    return `Less than ¼ ${tabletUnitName} (${tabletSize} ${unit} per ${tabletUnitName}). Measure by weight or volume at this dose.`;
+  const tabletNote = `${tabletSize} ${unit} per ${tabletUnitName}`;
+
+  // Below ¼ tablet — even rounding up to ¼ would significantly overshoot,
+  // so route the reader to volumetric or weighed measuring instead.
+  if (raw < 0.25) {
+    return `Less than ¼ ${tabletUnitName} (${tabletNote}). Measure by weight or volume at this dose.`;
   }
-  const whole = Math.floor(quarters);
-  const frac = quarters - whole;
-  const fracText = frac === 0.25 ? '¼' : frac === 0.5 ? '½' : frac === 0.75 ? '¾' : '';
-  let number = '';
-  if (whole === 0) number = fracText;
-  else if (frac === 0) number = `${whole}`;
-  else number = `${whole}${fracText}`;
-  const noun = quarters === 1 ? tabletUnitName : `${tabletUnitName}s`;
-  return `${number} ${noun} (${tabletSize} ${unit} per ${tabletUnitName})`;
+
+  const lower = Math.floor(raw * 4) / 4;
+  const upper = Math.ceil(raw * 4) / 4;
+
+  const line = (q: number) => {
+    const whole = Math.floor(q);
+    const frac = q - whole;
+    const fracText = frac === 0.25 ? '¼' : frac === 0.5 ? '½' : frac === 0.75 ? '¾' : '';
+    const number =
+      whole === 0 ? fracText : frac === 0 ? `${whole}` : `${whole}${fracText}`;
+    // ≤ 1 reads as singular ("¼ tablet", "1 tablet"); > 1 plural.
+    const noun = q <= 1 ? tabletUnitName : `${tabletUnitName}s`;
+    // roundPerDose keeps the 0.25-grid so ¾ × 15 reads as 11.25 instead
+    // of roundDose's 0.1-grid 11.3.
+    return `${number} ${noun} = ${roundPerDose(q * tabletSize)} ${unit}`;
+  };
+
+  if (lower === upper) {
+    return `${line(lower)} (${tabletNote})`;
+  }
+  return `${line(lower)} or ${line(upper)} (${tabletNote})`;
 }
 
 function escHtml(s: string): string {
