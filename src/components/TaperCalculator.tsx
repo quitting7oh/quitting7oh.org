@@ -1055,12 +1055,40 @@ function sourceLabel(source: ScheduleSource): string {
   }
 }
 
+function gcd(a: number, b: number): number {
+  return b === 0 ? a : gcd(b, a % b);
+}
+
+/** Format an integer-/16ths count against a commercial strip size as a
+ *  reduced, plain-language fraction. 4/16 → "1/4", 2/16 → "1/8", 8/16 →
+ *  "1/2", etc. Mixed numbers handle multi-strip doses (e.g. 6 mg on a
+ *  4 mg strip = 24/16 = "1 1/2 strips of 4 mg"). */
+function formatStripFraction(sixteenths: number, strip: number): string {
+  const article = strip === 8 ? 'an' : 'a';
+  if (sixteenths === 16) {
+    return `a full ${strip} mg strip`;
+  }
+  if (sixteenths > 16) {
+    const whole = Math.floor(sixteenths / 16);
+    const remainder = sixteenths - whole * 16;
+    if (remainder === 0) {
+      return `${whole} strips of ${strip} mg`;
+    }
+    const g = gcd(remainder, 16);
+    return `${whole} ${remainder / g}/${16 / g} strips of ${strip} mg`;
+  }
+  const g = gcd(sixteenths, 16);
+  return `${sixteenths / g}/${16 / g} of ${article} ${strip} mg strip`;
+}
+
 /** For a given bupe per-dose, return the clean integer-/16ths equivalents
  *  across the three commercial Suboxone strip sizes (8 / 4 / 2 mg). A
  *  per-dose snaps cleanly to /16ths of a strip when (perDose × 16 / strip)
  *  lands on a whole number. The 8 mg strip has the biggest /16 piece
  *  (0.5 mg); the 2 mg strip the smallest (0.125 mg). Doses below 0.125 mg
- *  don't snap to any commercial /16 — those need volumetric dosing. */
+ *  don't snap to any commercial /16 — those need volumetric dosing.
+ *  Fractions are reduced (4/16 → 1/4, 6/16 → 3/8, etc.) so readers don't
+ *  have to do the math themselves at the tablet edge. */
 function bupeStripEquivalents(perDose: number): string {
   const strips = [8, 4, 2];
   const lines: string[] = [];
@@ -1068,12 +1096,11 @@ function bupeStripEquivalents(perDose: number): string {
     const sixteenths = (perDose / strip) * 16;
     const rounded = Math.round(sixteenths);
     if (rounded >= 1 && Math.abs(sixteenths - rounded) < 1e-6) {
-      const article = strip === 8 ? 'an' : 'a';
-      lines.push(`${rounded}/16 of ${article} ${strip} mg strip`);
+      lines.push(formatStripFraction(rounded, strip));
     }
   }
   if (lines.length === 0) {
-    return 'Below 1/16 of even a 2 mg strip — volumetric dosing recommended.';
+    return 'Below 1/16 of even a 2 mg strip. Volumetric dosing recommended.';
   }
   return lines.join(' · ');
 }
