@@ -51,19 +51,6 @@ interface SubstanceConfig {
 }
 
 const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
-  bupe: {
-    label: 'Buprenorphine (Suboxone)',
-    unit: 'mg',
-    stepUnit: 'day',
-    defaultPerDose: 8,
-    defaultDosesPerDay: 1,
-    defaultJumpOff: 0.25,
-    note: 'Established short-taper schedules from the Suboxone Rapid Taper page are used when the start dose and duration match (2, 4, 6, or 8 mg with 5/7/10/14/21-day options). For other start doses or durations, the calculator generates a daily percentage taper. Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses.',
-    related: [
-      { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
-      { label: 'Custom Suboxone Dosing', href: '/mat-suboxone/suboxone-custom-dose' },
-    ],
-  },
   '7oh': {
     label: '7-OH (concentrated)',
     unit: 'mg',
@@ -75,6 +62,19 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     related: [
       { label: 'Tapering Off 7-OH', href: '/for-you/tapering-7oh' },
       { label: 'SR-17 as the other community-validated path', href: '/other-tools/sr-17' },
+    ],
+  },
+  bupe: {
+    label: 'Buprenorphine (Suboxone)',
+    unit: 'mg',
+    stepUnit: 'day',
+    defaultPerDose: 8,
+    defaultDosesPerDay: 1,
+    defaultJumpOff: 0.25,
+    note: 'Established short-taper schedules from the Suboxone Rapid Taper page are used when the start dose and duration match (2, 4, 6, or 8 mg with 5/7/10/14/21-day options). For other start doses or durations, the calculator generates a daily percentage taper. Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses.',
+    related: [
+      { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
+      { label: 'Custom Suboxone Dosing', href: '/mat-suboxone/suboxone-custom-dose' },
     ],
   },
   mgm: {
@@ -405,7 +405,7 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function TaperCalculator() {
-  const [substance, setSubstance] = useState<SubstanceKey>('bupe');
+  const [substance, setSubstance] = useState<SubstanceKey>('7oh');
   const cfg = SUBSTANCES[substance];
 
   const [perDose, setPerDose] = useState<number>(cfg.defaultPerDose);
