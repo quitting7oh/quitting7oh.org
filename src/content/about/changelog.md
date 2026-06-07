@@ -45,6 +45,24 @@ Reworked the taper calculator after first-round feedback:
   updates the duration. The duration is the source of truth for
   the math.
 
+- **Per-dose values round to the nearest 0.5** for everyday-sized
+  doses (≥ 1 unit) so the math is practical at the counter —
+  fewer "take 13.7 mg" outputs. Sub-1-unit doses (bupe 0.25 →
+  0.05 mg in the volumetric tail) preserve precision via the
+  finer `roundDose` ladder. Total daily is recomputed from the
+  rounded per-dose × N so the numbers actually multiply out.
+
+- **Dose-count transitions are called out loudly** in the
+  schedule table. When the calculator drops doses-per-day (e.g.
+  4×/day → 3×/day), an amber-bordered banner row above the
+  transition reads "↓ Drop dosing to N×/day starting Day X" and
+  the times-per-day cell on that row is bold.
+
+- **Page intro stripped.** The calculator is the first thing on
+  `/resources/taper-calculator` now; the explanatory prose moved
+  below it. The in-form substance notes already cover the
+  substance-specific framing the intro was repeating.
+
 ### New page: Taper Calculator
 
 New page at [`/resources/taper-calculator`](/resources/taper-calculator)
