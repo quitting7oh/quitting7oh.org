@@ -16,6 +16,35 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-06
 
+### Taper Calculator: per-dose × times-per-day model, days everywhere, duration-driven custom mode
+
+Reworked the taper calculator after first-round feedback:
+
+- **Dose input split** into per-dose × times-per-day, with a live
+  "Total daily" display. Schedule output now shows per-dose,
+  times-per-day, and total daily on each row. As the total
+  descends, the calculator drops doses-per-day proportionally
+  (`ceil(N0 × T / T0)`) so per-dose stays in a tolerable range
+  instead of grinding down to fractions of a tablet.
+- **Step unit is now days for every substance.** The previous
+  weekly math produced 30-week schedules for 20 mg/day
+  dependencies, which doesn't match how anyone in this community
+  actually tapers. If a reader wants a multi-week taper, they
+  enter the duration in days (14, 21, 60, etc.).
+- **Duration presets** of 5, 10, 14, and 21 days, plus a Custom
+  duration option. The values line up with the columns on the
+  Suboxone Rapid Taper page so the bupe established schedules
+  fire when the start dose matches. For other substances or
+  non-matching bupe doses, the per-day percentage is derived from
+  the duration: `pct = 1 − (jumpOff / totalStart)^(1/days)`. The
+  preset labels show only the day count (no "easier" or
+  "harder" wording) so the calculator doesn't editorialize on
+  which duration is right.
+- **Custom mode** now has bidirectional duration ↔ percentage
+  inputs. Editing days updates the displayed %; editing the %
+  updates the duration. The duration is the source of truth for
+  the math.
+
 ### New page: Taper Calculator
 
 New page at [`/resources/taper-calculator`](/resources/taper-calculator)

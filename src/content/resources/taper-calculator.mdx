@@ -20,11 +20,13 @@ For **7-OH, MGM-15/MIT-A/DHM, pseudo, and kratom leaf**, the calculator runs wee
 
 > **Reference, not advice.** This page is a calculator, not a prescription. The schedules above are starting points for a plan, not a substitute for a prescriber or for the lived knowledge in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). For buprenorphine, a prescriber is the right address. For the kratom-derived synthetics ([7-OH](/compounds/7-oh), [MGM-15 / MIT-A / DHM](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)), the community is genuinely ahead of the published clinical literature and is the right address for the path-shape questions.
 
-## What "Clinician recommended" means here
+## How the math works
 
-The CDC starting-point for an opioid taper is **10% of the current dose per week** — a percentage cut, not a fixed absolute amount. That's why this page leads with percentage math: cutting 10% of 100 mg is 10 mg, but cutting 10% of 20 mg is 2 mg, so the steps get smaller and gentler as you get lower without you having to design that yourself. The four speed options on the form (Easier 5%, Clinician 10%, Harder 20%, Super Hard Mode 50%) sit on the same axis: same math, different aggressiveness.
+The percentage math is a daily cut. Each day the calculator reduces the previous day's total by the same percentage, so the absolute step gets smaller as you get lower — cutting 10% of 100 mg is 10 mg; cutting 10% of 20 mg is 2 mg. The duration presets (5 / 10 / 14 / 21 days) and the custom duration all describe the same shape: how many days to descend from your starting dose to your jump-off. The per-day percentage is derived: `pct = 1 − (jumpOff / totalStart)^(1/days)`.
 
-For **buprenorphine specifically**, the community-validated short tapers documented on [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) move faster than the CDC 10%/week framing because they're built around bupe's 28-to-37-hour half-life and the short-acting profile of the compounds people in this community are coming off. A 5-day rapid taper isn't "10% per week" math; it's a different protocol. The calculator picks the established schedule when the starting dose and difficulty map to one, and falls through to percentage math otherwise.
+As the total drops, the calculator reduces the number of doses per day proportionally (`ceil(N0 × T / T0)`) so the per-dose amount stays in a tolerable range instead of shrinking to fractions of a tablet.
+
+For **buprenorphine specifically**, the community-validated short tapers documented on [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) are built around bupe's 28-to-37-hour half-life and the short-acting profile of the compounds people in this community are coming off. A 5-day rapid taper isn't simple percentage math; it's a hand-tuned schedule. The calculator picks the established schedule when the starting dose and duration match a published row, and falls through to percentage math otherwise.
 
 ## What the calculator won't do
 

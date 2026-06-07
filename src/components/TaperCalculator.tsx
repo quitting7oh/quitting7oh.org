@@ -33,11 +33,12 @@ interface SubstanceConfig {
   unit: string;
   /** Day | Week — what each row in the output represents. */
   stepUnit: 'day' | 'week';
-  defaultStart: number;
+  defaultPerDose: number;
+  defaultDosesPerDay: number;
+  /** Default per-dose for the jump-off step (taken once daily, by convention). */
   defaultJumpOff: number;
   /** Caveat / note shown under the form for this substance. */
   note: string;
-  /** Optional inline links shown alongside the note. */
   related: { label: string; href: string }[];
 }
 
@@ -46,9 +47,10 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     label: 'Buprenorphine (Suboxone)',
     unit: 'mg',
     stepUnit: 'day',
-    defaultStart: 8,
+    defaultPerDose: 8,
+    defaultDosesPerDay: 1,
     defaultJumpOff: 0.25,
-    note: 'Established short-taper schedules from the Suboxone Rapid Taper page are used when the starting dose matches (2, 4, 6, or 8 mg). For other starting doses or custom speeds, the calculator generates a weekly percentage taper. Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses.',
+    note: 'Established short-taper schedules from the Suboxone Rapid Taper page are used when the start dose and duration match (2, 4, 6, or 8 mg with 5/7/10/14/21-day options). For other start doses or durations, the calculator generates a daily percentage taper. Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses.',
     related: [
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
       { label: 'Custom Suboxone Dosing', href: '/mat-suboxone/suboxone-custom-dose' },
@@ -57,10 +59,11 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
   '7oh': {
     label: '7-OH (concentrated)',
     unit: 'mg',
-    stepUnit: 'week',
-    defaultStart: 120,
+    stepUnit: 'day',
+    defaultPerDose: 15,
+    defaultDosesPerDay: 4,
     defaultJumpOff: 5,
-    note: 'Community-observed taper patterns for concentrated 7-OH cluster around halving for the first half, then progressively slower steps. Most self-managed 7-OH tapers end with a jump-off at some low dose rather than a clean taper to zero.',
+    note: 'Community-observed taper patterns for concentrated 7-OH cluster around halving for the first half, then progressively slower steps. Most self-managed 7-OH tapers end with a jump-off at some low dose rather than a clean taper to zero. The calculator drops doses-per-day as the total falls; per-dose stays in a tolerable range.',
     related: [
       { label: 'Tapering Off 7-OH', href: '/for-you/tapering-7oh' },
       { label: 'SR-17 as the other community-validated path', href: '/other-tools/sr-17' },
@@ -69,10 +72,11 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
   mgm: {
     label: 'MGM-15 / MIT-A / DHM products',
     unit: 'mg',
-    stepUnit: 'week',
-    defaultStart: 30,
+    stepUnit: 'day',
+    defaultPerDose: 10,
+    defaultDosesPerDay: 3,
     defaultJumpOff: 2,
-    note: 'MGM-15 is long-acting (community-reported 9–15 hour duration; no published human PK). MIT-A and DHM are the same compound. There is no clean community-standard schedule. The calculator runs percentage math from the chosen speed. Withdrawal hits harder than 7-OH and Suboxone induction needs a longer washout.',
+    note: 'MGM-15 is long-acting (community-reported 9–15 hour duration; no published human PK). MIT-A and DHM are the same compound. There is no clean community-standard schedule. The calculator runs percentage math from the chosen duration. Withdrawal hits harder than 7-OH and Suboxone induction needs a longer washout.',
     related: [
       { label: 'MIT-A and DHM Products', href: '/compounds/mit-a-dhm' },
       { label: 'MGM-15', href: '/compounds/mgm15' },
@@ -83,10 +87,11 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
   pseudo: {
     label: 'Pseudo (mitragynine pseudoindoxyl)',
     unit: 'mg',
-    stepUnit: 'week',
-    defaultStart: 20,
+    stepUnit: 'day',
+    defaultPerDose: 7,
+    defaultDosesPerDay: 3,
     defaultJumpOff: 1,
-    note: 'Pseudoindoxyl binds the mu receptor tighter than buprenorphine itself. The published human pharmacology is thin and community schedules are not standardized. Treat the output as a directional plan, not a prescription. Suboxone induction may be incomplete; SR-17 is the other community-validated path off.',
+    note: 'Pseudoindoxyl binds the mu receptor tighter than buprenorphine itself. Published human pharmacology is thin and community schedules are not standardized. Treat the output as a directional plan, not a prescription. Suboxone induction may be incomplete; SR-17 is the other community-validated path off.',
     related: [
       { label: 'Pseudo (mitragynine pseudoindoxyl)', href: '/compounds/mitragynine-pseudoindoxyl' },
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
@@ -96,8 +101,9 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
   leaf: {
     label: 'Kratom leaf (plain powder)',
     unit: 'g',
-    stepUnit: 'week',
-    defaultStart: 15,
+    stepUnit: 'day',
+    defaultPerDose: 4,
+    defaultDosesPerDay: 4,
     defaultJumpOff: 1,
     note: 'Leaf alkaloid content varies between strains, batches, and vendors. Grams are an approximation of dose. Most community leaf tapers end with a jump-off at 1–2 g/day rather than tapering to zero.',
     related: [
@@ -108,42 +114,41 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     label: 'SR-17 (SR-17018)',
     unit: 'mg',
     stepUnit: 'day',
-    defaultStart: 100,
+    defaultPerDose: 50,
+    defaultDosesPerDay: 3,
     defaultJumpOff: 25,
-    note: 'The community SR-17 protocol is short by design (10–14 days total course; 4-day descending taper from 100 mg/day). Picking "Community protocol" emits the published 100 → 75 → 50 → 25 → jump pattern. The custom-percentage option exists for readers running a non-standard course.',
+    note: 'The community SR-17 protocol is short by design (10–14 days total course; 4-day descending taper from 100 mg/day at the published 50 × 3 dosing). Picking "Community protocol" emits the published 100 → 75 → 50 → 25 → jump pattern scaled to your dose. The custom-percentage option exists for readers running a non-standard course.',
     related: [
       { label: 'SR-17', href: '/other-tools/sr-17' },
     ],
   },
 };
 
-/* ───────────────────────── Difficulty mapping ───────────────────────── */
-
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
-  easier: 'Easier (5% per week)',
-  clinician: 'Clinician recommended (10% per week, CDC default)',
-  harder: 'Harder (20% per week)',
-  'super-hard': 'Super hard mode (50% per step)',
-  custom: 'Custom: I\'ll set my own percentage',
+  easier: '21 days',
+  clinician: '14 days',
+  harder: '10 days',
+  'super-hard': '5 days',
+  custom: 'Custom duration',
 };
 
-const DIFFICULTY_PCT: Record<Exclude<Difficulty, 'custom'>, number> = {
-  easier: 5,
-  clinician: 10,
-  harder: 20,
-  'super-hard': 50,
+/** Difficulty → total taper duration in days. The named presets line up
+ *  with the 5 / 7 / 10 / 14 / 21-day columns on the Suboxone Rapid Taper
+ *  page so that, for matching bupe start doses, the difficulty maps cleanly
+ *  to a published schedule. For other substances or non-matching bupe doses,
+ *  the calculator derives the per-day percentage from the chosen duration:
+ *  pct = 1 − (jumpOff / totalStart)^(1/days). */
+const DIFFICULTY_DAYS: Record<Exclude<Difficulty, 'custom'>, number> = {
+  easier: 21,
+  clinician: 14,
+  harder: 10,
+  'super-hard': 5,
 };
 
 /* ───────────────────────── Bupe established schedules ───────────────────────── */
 
-/** Established short-taper schedules from /mat-suboxone/suboxone-rapid-taper.
- *  Outer key = starting dose (mg). Inner key = total schedule length (days).
- *  All schedules end at 0.25 mg on the final day; the calculator extends the
- *  tail with volumetric sub-0.25 mg doses if the reader sets jump-off lower. */
 const BUPE_SCHEDULES: Record<number, Record<number, number[]>> = {
-  2: {
-    5: [2, 1.5, 1, 0.5, 0.25],
-  },
+  2: { 5: [2, 1.5, 1, 0.5, 0.25] },
   4: {
     5: [4, 2, 1, 0.5, 0.25],
     7: [4, 4, 3, 2, 1, 0.5, 0.25],
@@ -162,30 +167,15 @@ const BUPE_SCHEDULES: Record<number, Record<number, number[]>> = {
   },
 };
 
-/** Pick the bupe schedule length that maps to the chosen difficulty for a
- *  given starting dose. Returns null if no established schedule exists for
- *  that (dose, difficulty) combo. */
-function bupeLengthForDifficulty(start: number, difficulty: Difficulty): number | null {
-  const lengths = BUPE_SCHEDULES[start];
-  if (!lengths) return null;
-  const available = Object.keys(lengths).map(Number).sort((a, b) => a - b);
-  if (available.length === 0) return null;
-  switch (difficulty) {
-    case 'super-hard':
-      return available[0];
-    case 'harder':
-      return available[1] ?? available[0];
-    case 'clinician':
-      return available[2] ?? available[available.length - 1];
-    case 'easier':
-      return available[available.length - 1];
-    case 'custom':
-      return null;
-  }
+/** Convert a target duration (in days) to the equivalent per-day percentage
+ *  cut that will descend from totalStart to jumpOff in exactly that many
+ *  days. Inverse: log(jumpOff / totalStart) / log(1 - pct/100) = days. */
+function pctFromDuration(totalStart: number, jumpOff: number, days: number): number {
+  if (totalStart <= jumpOff || days <= 0) return 0;
+  const ratio = jumpOff / totalStart;
+  return (1 - Math.pow(ratio, 1 / days)) * 100;
 }
 
-/** Sub-0.25 mg volumetric tail published on the Suboxone Rapid Taper page.
- *  Used to extend bupe schedules when the reader sets a jump-off < 0.25. */
 const BUPE_SUB025_TAIL: number[] = [0.1, 0.05, 0.02];
 
 function extendBupeTailToJumpOff(jumpOff: number): number[] {
@@ -193,153 +183,198 @@ function extendBupeTailToJumpOff(jumpOff: number): number[] {
   const tail: number[] = [];
   for (const dose of BUPE_SUB025_TAIL) {
     if (jumpOff > dose) {
-      // Reader's jump-off lands between this row and the previous one.
-      // Append the jump-off itself and stop.
       tail.push(jumpOff);
       return tail;
     }
     tail.push(dose);
     if (dose === jumpOff) return tail;
   }
-  // Below 0.02; append the requested jump-off as the final step.
   if (jumpOff < BUPE_SUB025_TAIL[BUPE_SUB025_TAIL.length - 1]) tail.push(jumpOff);
   return tail;
 }
 
 /* ───────────────────────── SR-17 community protocol ───────────────────────── */
 
-/** SR-17 taper phase published on /other-tools/sr-17 (assumes 100 mg/day
- *  maintenance dose, descends by 25 mg/day). Scales linearly to the
- *  reader's actual daily dose. */
-function sr17CommunityProtocol(start: number, jumpOff: number): number[] {
-  const schedule: number[] = [];
-  let dose = start;
-  const cutAmount = start / 4; // 25 mg/day cut at the published 100 mg start
-  while (dose > jumpOff) {
-    schedule.push(round(dose));
-    dose -= cutAmount;
+function sr17CommunityTotals(totalStart: number, jumpOffTotal: number): number[] {
+  // Published 4-day descending pattern (100 → 75 → 50 → 25 → jump) scaled to
+  // the reader's total daily dose. Each step is one day.
+  const totals: number[] = [];
+  let total = totalStart;
+  const cut = totalStart / 4;
+  while (total > jumpOffTotal) {
+    totals.push(total);
+    total -= cut;
   }
-  schedule.push(round(jumpOff));
-  return schedule;
-}
-
-/* ───────────────────────── Generic % math ───────────────────────── */
-
-function percentSchedule(start: number, jumpOff: number, pctPerStep: number): number[] {
-  if (start <= jumpOff) return [round(start)];
-  const schedule: number[] = [round(start)];
-  let dose = start;
-  // Safety: cap at 200 steps so a pathological input doesn't lock the UI.
-  for (let i = 0; i < 200; i++) {
-    dose = dose * (1 - pctPerStep / 100);
-    if (dose <= jumpOff) break;
-    schedule.push(round(dose));
-  }
-  schedule.push(round(jumpOff));
-  return schedule;
-}
-
-/* ───────────────────────── Rounding ───────────────────────── */
-
-function round(x: number): number {
-  // Two significant figures for doses ≥ 0.1, three for smaller numbers.
-  if (x >= 1) return Math.round(x * 10) / 10;
-  if (x >= 0.1) return Math.round(x * 100) / 100;
-  return Math.round(x * 1000) / 1000;
+  totals.push(jumpOffTotal);
+  return totals;
 }
 
 /* ───────────────────────── Schedule generator ───────────────────────── */
 
-interface ScheduleResult {
-  doses: number[];
-  /** Per-row source so the table can label each row with units (day/week). */
-  source: 'bupe-established' | 'bupe-percent' | 'sr17-protocol' | 'percent';
-  /** Total amount of substance the schedule will dose. */
-  total: number;
+interface ScheduleStep {
+  perDose: number;
+  dosesPerDay: number;
+  totalDaily: number;
 }
 
-function generateSchedule(
-  substance: SubstanceKey,
-  start: number,
-  jumpOff: number,
-  difficulty: Difficulty,
-  customPct: number,
-): ScheduleResult {
-  // Guardrails — invalid input returns an empty schedule.
-  if (!Number.isFinite(start) || !Number.isFinite(jumpOff) || start <= 0 || jumpOff <= 0) {
-    return { doses: [], source: 'percent', total: 0 };
-  }
-  if (jumpOff >= start) {
-    return { doses: [round(start)], source: 'percent', total: round(start) };
-  }
+type ScheduleSource =
+  | 'bupe-established'
+  | 'bupe-percent'
+  | 'sr17-protocol'
+  | 'percent';
 
-  const pct =
-    difficulty === 'custom'
-      ? customPct
-      : DIFFICULTY_PCT[difficulty as Exclude<Difficulty, 'custom'>];
+interface ScheduleResult {
+  steps: ScheduleStep[];
+  source: ScheduleSource;
+  totalMedication: number;
+}
 
-  // Bupe: prefer established schedule when start dose + difficulty maps to one.
-  if (substance === 'bupe') {
-    const len = bupeLengthForDifficulty(start, difficulty);
-    if (len) {
-      const main = BUPE_SCHEDULES[start][len];
-      // If jump-off > 0.25, truncate the main schedule at the day before
-      // dose drops below jump-off, then append the jump-off.
-      if (jumpOff > 0.25) {
-        const truncated: number[] = [];
-        for (const d of main) {
-          if (d <= jumpOff) {
-            truncated.push(jumpOff);
-            break;
-          }
-          truncated.push(d);
-        }
-        const total = truncated.reduce((a, b) => a + b, 0);
-        return { doses: truncated, source: 'bupe-established', total: round2(total) };
-      }
-      // Standard or extended tail.
-      const tail = extendBupeTailToJumpOff(jumpOff);
-      const doses = [...main, ...tail];
-      const total = doses.reduce((a, b) => a + b, 0);
-      return { doses, source: 'bupe-established', total: round2(total) };
-    }
-    // No established schedule for this (dose, difficulty). Fall through to %.
-    const doses = percentSchedule(start, jumpOff, pct);
+/** Given a total daily target at step i, compute a reasonable doses-per-day
+ *  by scaling proportionally to the starting frequency. Floors at 1. */
+function dosesPerDayFor(total: number, totalStart: number, n0: number): number {
+  if (n0 <= 1) return 1;
+  if (total <= 0) return 1;
+  const scaled = Math.ceil((n0 * total) / totalStart);
+  return Math.max(1, Math.min(n0, scaled));
+}
+
+function percentTotalsSchedule(start: number, jumpOff: number, pct: number): number[] {
+  if (start <= jumpOff) return [start];
+  const totals: number[] = [start];
+  let dose = start;
+  for (let i = 0; i < 200; i++) {
+    dose = dose * (1 - pct / 100);
+    if (dose <= jumpOff) break;
+    totals.push(dose);
+  }
+  totals.push(jumpOff);
+  return totals;
+}
+
+function buildSteps(totals: number[], totalStart: number, n0: number): ScheduleStep[] {
+  return totals.map((total, i) => {
+    // Final step is the explicit jump-off dose — convention: taken once.
+    const isLast = i === totals.length - 1;
+    const n = isLast ? 1 : dosesPerDayFor(total, totalStart, n0);
     return {
-      doses,
-      source: 'bupe-percent',
-      total: round2(doses.reduce((a, b) => a + b, 0)),
+      totalDaily: roundDose(total),
+      dosesPerDay: n,
+      perDose: roundDose(total / n),
     };
-  }
+  });
+}
 
-  // SR-17: community protocol when not on custom.
-  if (substance === 'sr17' && difficulty !== 'custom') {
-    const doses = sr17CommunityProtocol(start, jumpOff);
-    return {
-      doses,
-      source: 'sr17-protocol',
-      total: round2(doses.reduce((a, b) => a + b, 0)),
-    };
-  }
-
-  // Everything else: percentage math.
-  const doses = percentSchedule(start, jumpOff, pct);
-  return {
-    doses,
-    source: 'percent',
-    total: round2(doses.reduce((a, b) => a + b, 0)),
-  };
+function roundDose(x: number): number {
+  if (x >= 10) return Math.round(x * 10) / 10;
+  if (x >= 1) return Math.round(x * 100) / 100;
+  if (x >= 0.1) return Math.round(x * 1000) / 1000;
+  return Math.round(x * 10000) / 10000;
 }
 
 function round2(x: number): number {
   return Math.round(x * 100) / 100;
 }
 
+function generateSchedule(
+  substance: SubstanceKey,
+  perDose: number,
+  dosesPerDay: number,
+  jumpOff: number,
+  difficulty: Difficulty,
+  customDays: number,
+): ScheduleResult {
+  const totalStart = perDose * dosesPerDay;
+  const n0 = Math.max(1, Math.round(dosesPerDay));
+
+  if (
+    !Number.isFinite(perDose) ||
+    !Number.isFinite(dosesPerDay) ||
+    !Number.isFinite(jumpOff) ||
+    perDose <= 0 ||
+    dosesPerDay <= 0 ||
+    jumpOff <= 0
+  ) {
+    return { steps: [], source: 'percent', totalMedication: 0 };
+  }
+  if (jumpOff >= totalStart) {
+    return {
+      steps: [{ totalDaily: totalStart, perDose, dosesPerDay: n0 }],
+      source: 'percent',
+      totalMedication: round2(totalStart),
+    };
+  }
+
+  const days =
+    difficulty === 'custom'
+      ? Math.max(1, Math.round(customDays))
+      : DIFFICULTY_DAYS[difficulty as Exclude<Difficulty, 'custom'>];
+
+  if (substance === 'bupe') {
+    // Bupe established schedules assume 1×/day sublingual. Try (start, days)
+    // against the published table first; fall through to % math otherwise.
+    if (BUPE_SCHEDULES[totalStart]?.[days]) {
+      const main = BUPE_SCHEDULES[totalStart][days];
+      let mainTrimmed = main;
+      let tail: number[] = [];
+      if (jumpOff > 0.25) {
+        mainTrimmed = [];
+        for (const d of main) {
+          if (d <= jumpOff) {
+            mainTrimmed.push(jumpOff);
+            break;
+          }
+          mainTrimmed.push(d);
+        }
+      } else {
+        tail = extendBupeTailToJumpOff(jumpOff);
+      }
+      const totals = [...mainTrimmed, ...tail];
+      const steps: ScheduleStep[] = totals.map((d) => ({
+        totalDaily: d,
+        dosesPerDay: 1,
+        perDose: d,
+      }));
+      return {
+        steps,
+        source: 'bupe-established',
+        totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
+      };
+    }
+    const pct = pctFromDuration(totalStart, jumpOff, days);
+    const totals = percentTotalsSchedule(totalStart, jumpOff, pct);
+    const steps = buildSteps(totals, totalStart, n0);
+    return {
+      steps,
+      source: 'bupe-percent',
+      totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
+    };
+  }
+
+  if (substance === 'sr17' && difficulty !== 'custom') {
+    const totals = sr17CommunityTotals(totalStart, jumpOff);
+    const steps = buildSteps(totals, totalStart, n0);
+    return {
+      steps,
+      source: 'sr17-protocol',
+      totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
+    };
+  }
+
+  const pct = pctFromDuration(totalStart, jumpOff, days);
+  const totals = percentTotalsSchedule(totalStart, jumpOff, pct);
+  const steps = buildSteps(totals, totalStart, n0);
+  return {
+    steps,
+    source: 'percent',
+    totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
+  };
+}
+
 /* ───────────────────────── Component ───────────────────────── */
 
 const chartConfig = {
-  dose: {
-    label: 'Dose',
+  totalDaily: {
+    label: 'Total daily',
     color: 'hsl(var(--primary))',
   },
 } satisfies ChartConfig;
@@ -348,38 +383,57 @@ export function TaperCalculator() {
   const [substance, setSubstance] = useState<SubstanceKey>('bupe');
   const cfg = SUBSTANCES[substance];
 
-  const [startDose, setStartDose] = useState<number>(cfg.defaultStart);
+  const [perDose, setPerDose] = useState<number>(cfg.defaultPerDose);
+  const [dosesPerDay, setDosesPerDay] = useState<number>(cfg.defaultDosesPerDay);
   const [jumpOff, setJumpOff] = useState<number>(cfg.defaultJumpOff);
   const [difficulty, setDifficulty] = useState<Difficulty>('clinician');
-  const [customPct, setCustomPct] = useState<number>(10);
+  /** Custom mode source of truth: total taper duration in days. */
+  const [customDays, setCustomDays] = useState<number>(14);
 
-  // When substance changes, snap dose/jump-off to that substance's defaults.
-  // Snap difficulty to 'clinician' when switching to SR-17 since the 5/20/50
-  // options are hidden for that substance.
+  const totalDaily = useMemo(() => perDose * dosesPerDay, [perDose, dosesPerDay]);
+
+  /** Custom mode derived display: the per-day percentage cut that descends
+   *  from totalDaily to jumpOff over customDays days. Updates live whenever
+   *  the dose, jump-off, or duration change. */
+  const customPctDisplay = useMemo(() => {
+    if (totalDaily <= jumpOff || customDays <= 0) return 0;
+    const ratio = jumpOff / totalDaily;
+    const pct = (1 - Math.pow(ratio, 1 / customDays)) * 100;
+    return Number.isFinite(pct) ? Math.round(pct * 10) / 10 : 0;
+  }, [totalDaily, jumpOff, customDays]);
+
   const handleSubstanceChange = (next: SubstanceKey) => {
     setSubstance(next);
-    setStartDose(SUBSTANCES[next].defaultStart);
+    setPerDose(SUBSTANCES[next].defaultPerDose);
+    setDosesPerDay(SUBSTANCES[next].defaultDosesPerDay);
     setJumpOff(SUBSTANCES[next].defaultJumpOff);
     if (next === 'sr17' && difficulty !== 'clinician' && difficulty !== 'custom') {
       setDifficulty('clinician');
     }
   };
 
+  /** Edit the % directly; recompute the duration that produces it. */
+  const handleCustomPctChange = (newPct: number) => {
+    if (!Number.isFinite(newPct) || newPct <= 0 || newPct >= 100) return;
+    if (totalDaily <= jumpOff) return;
+    const ratio = jumpOff / totalDaily;
+    const days = Math.log(ratio) / Math.log(1 - newPct / 100);
+    if (Number.isFinite(days) && days >= 1) {
+      setCustomDays(Math.max(1, Math.round(days)));
+    }
+  };
+
   const result = useMemo(
-    () => generateSchedule(substance, startDose, jumpOff, difficulty, customPct),
-    [substance, startDose, jumpOff, difficulty, customPct],
+    () => generateSchedule(substance, perDose, dosesPerDay, jumpOff, difficulty, customDays),
+    [substance, perDose, dosesPerDay, jumpOff, difficulty, customDays],
   );
 
-  const stepLabel = cfg.stepUnit === 'day' ? 'Day' : 'Week';
-  const totalSteps = result.doses.length;
-  const totalDuration =
-    totalSteps > 0
-      ? `${totalSteps} ${cfg.stepUnit}${totalSteps === 1 ? '' : 's'}`
-      : '—';
+  const totalSteps = result.steps.length;
+  const totalDuration = totalSteps > 0 ? `${totalSteps} day${totalSteps === 1 ? '' : 's'}` : '—';
 
-  const chartData = result.doses.map((dose, i) => ({
+  const chartData = result.steps.map((s, i) => ({
     step: i + 1,
-    dose,
+    totalDaily: s.totalDaily,
   }));
 
   return (
@@ -405,17 +459,43 @@ export function TaperCalculator() {
         </div>
 
         <div>
-          <Label htmlFor="start">Current dose per day ({cfg.unit})</Label>
+          <Label htmlFor="per-dose">Per-dose amount ({cfg.unit})</Label>
           <Input
-            id="start"
+            id="per-dose"
             type="number"
             inputMode="decimal"
             min={0}
             step="any"
-            value={startDose}
-            onChange={(e) => setStartDose(parseFloat(e.target.value) || 0)}
+            value={perDose}
+            onChange={(e) => setPerDose(parseFloat(e.target.value) || 0)}
             className="mt-1.5"
           />
+        </div>
+
+        <div>
+          <Label htmlFor="doses-per-day">Times per day</Label>
+          <Input
+            id="doses-per-day"
+            type="number"
+            inputMode="numeric"
+            min={1}
+            max={12}
+            step={1}
+            value={dosesPerDay}
+            onChange={(e) => setDosesPerDay(parseInt(e.target.value, 10) || 1)}
+            className="mt-1.5"
+          />
+        </div>
+
+        <div className="sm:col-span-2 rounded-md bg-muted/40 px-3 py-2 text-sm">
+          <span className="text-muted-foreground">Total daily:</span>{' '}
+          <span className="font-semibold text-foreground">
+            {roundDose(totalDaily)} {cfg.unit}
+          </span>
+          <span className="text-muted-foreground">
+            {' '}
+            ({roundDose(perDose)} × {dosesPerDay})
+          </span>
         </div>
 
         <div>
@@ -431,12 +511,12 @@ export function TaperCalculator() {
             className="mt-1.5"
           />
           <p className="mt-1 text-xs text-muted-foreground">
-            The dose your taper lands on before stopping completely.
+            Final dose (taken once) before stopping completely.
           </p>
         </div>
 
-        <div className={difficulty === 'custom' ? '' : 'sm:col-span-2'}>
-          <Label htmlFor="difficulty">Taper speed</Label>
+        <div>
+          <Label htmlFor="difficulty">Taper duration</Label>
           <Select value={difficulty} onValueChange={(v) => setDifficulty(v as Difficulty)}>
             <SelectTrigger id="difficulty" className="mt-1.5">
               <SelectValue />
@@ -444,9 +524,6 @@ export function TaperCalculator() {
             <SelectContent>
               {(Object.entries(DIFFICULTY_LABELS) as [Difficulty, string][]).map(
                 ([key, label]) => {
-                  // SR-17 is a 10-day bridge by design; the weekly 5/10/20/50
-                  // options don't fit. Show only "Community protocol" and
-                  // "Custom" for SR-17.
                   if (substance === 'sr17' && key !== 'clinician' && key !== 'custom') {
                     return null;
                   }
@@ -466,39 +543,65 @@ export function TaperCalculator() {
         </div>
 
         {difficulty === 'custom' && (
-          <div>
-            <Label htmlFor="custom-pct">Custom percentage per week</Label>
-            <div className="mt-1.5 flex items-center gap-2">
-              <Input
-                id="custom-pct"
-                type="number"
-                inputMode="decimal"
-                min={0.1}
-                max={75}
-                step="0.5"
-                value={customPct}
-                onChange={(e) => setCustomPct(parseFloat(e.target.value) || 0)}
-                className="w-24"
-              />
-              <span className="text-sm text-muted-foreground">% per step</span>
+          <div className="sm:col-span-2 grid gap-4 rounded-md bg-muted/40 p-3 sm:grid-cols-2">
+            <div>
+              <Label htmlFor="custom-days">Total duration</Label>
+              <div className="mt-1.5 flex items-center gap-2">
+                <Input
+                  id="custom-days"
+                  type="number"
+                  inputMode="numeric"
+                  min={1}
+                  max={365}
+                  step={1}
+                  value={customDays || ''}
+                  onChange={(e) =>
+                    setCustomDays(Math.max(1, parseInt(e.target.value, 10) || 1))
+                  }
+                  className="w-24"
+                />
+                <span className="text-sm text-muted-foreground">days</span>
+              </div>
+              <p className="mt-1 text-xs text-muted-foreground">
+                e.g. 14, 21, 60. Editing either field updates the other.
+              </p>
+            </div>
+            <div>
+              <Label htmlFor="custom-pct">Percentage per day</Label>
+              <div className="mt-1.5 flex items-center gap-2">
+                <Input
+                  id="custom-pct"
+                  type="number"
+                  inputMode="decimal"
+                  min={0.1}
+                  max={75}
+                  step="0.5"
+                  value={customPctDisplay || ''}
+                  onChange={(e) => handleCustomPctChange(parseFloat(e.target.value) || 0)}
+                  className="w-24"
+                />
+                <span className="text-sm text-muted-foreground">% per day</span>
+              </div>
             </div>
           </div>
         )}
       </div>
 
-      {/* Output summary */}
-      {result.doses.length > 0 ? (
+      {/* Output */}
+      {result.steps.length > 0 ? (
         <>
           <div className="grid gap-4 rounded-lg border border-border bg-muted/30 p-4 sm:grid-cols-3">
             <Stat label="Total duration" value={totalDuration} />
-            <Stat label="Total medication" value={`${result.total} ${cfg.unit}`} />
+            <Stat
+              label="Total medication"
+              value={`${result.totalMedication} ${cfg.unit}`}
+            />
             <Stat label="Approach" value={sourceLabel(result.source)} />
           </div>
 
-          {/* Chart */}
           <div className="rounded-lg border border-border bg-card p-4">
             <h3 className="mb-3 text-sm font-semibold text-foreground">
-              Schedule curve
+              Schedule curve (total daily)
             </h3>
             <ChartContainer config={chartConfig} className="h-[280px] w-full">
               <ResponsiveContainer width="100%" height="100%">
@@ -513,7 +616,7 @@ export function TaperCalculator() {
                   <XAxis
                     dataKey="step"
                     label={{
-                      value: stepLabel,
+                      value: 'Day',
                       position: 'insideBottom',
                       offset: -2,
                       fill: 'hsl(var(--muted-foreground))',
@@ -534,7 +637,7 @@ export function TaperCalculator() {
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Area
                     type="stepAfter"
-                    dataKey="dose"
+                    dataKey="totalDaily"
                     stroke="hsl(var(--primary))"
                     strokeWidth={2}
                     fill="url(#taperFill)"
@@ -544,7 +647,6 @@ export function TaperCalculator() {
             </ChartContainer>
           </div>
 
-          {/* Table */}
           <div className="rounded-lg border border-border bg-card p-4">
             <h3 className="mb-3 text-sm font-semibold text-foreground">
               Schedule table
@@ -553,23 +655,30 @@ export function TaperCalculator() {
               <table className="w-full text-sm">
                 <thead className="sticky top-0 bg-card text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   <tr>
-                    <th className="py-2 pr-4">{stepLabel}</th>
-                    <th className="py-2">Dose ({cfg.unit})</th>
+                    <th className="py-2 pr-4">Day</th>
+                    <th className="py-2 pr-4">Per dose ({cfg.unit})</th>
+                    <th className="py-2 pr-4">Times/day</th>
+                    <th className="py-2">Total daily ({cfg.unit})</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
-                  {result.doses.map((dose, i) => (
+                  {result.steps.map((s, i) => (
                     <tr key={i}>
                       <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
-                      <td className="py-2 font-medium text-foreground">{dose}</td>
+                      <td className="py-2 pr-4 text-foreground">{s.perDose}</td>
+                      <td className="py-2 pr-4 text-foreground">{s.dosesPerDay}</td>
+                      <td className="py-2 font-medium text-foreground">{s.totalDaily}</td>
                     </tr>
                   ))}
                   <tr className="border-t-2 border-border">
-                    <td className="py-2 pr-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                      Total
+                    <td
+                      className="py-2 pr-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                      colSpan={3}
+                    >
+                      Total medication
                     </td>
                     <td className="py-2 font-semibold text-foreground">
-                      {result.total} {cfg.unit}
+                      {result.totalMedication} {cfg.unit}
                     </td>
                   </tr>
                 </tbody>
@@ -579,11 +688,11 @@ export function TaperCalculator() {
         </>
       ) : (
         <div className="rounded-lg border border-border bg-card p-4 text-sm text-muted-foreground">
-          Enter a starting dose larger than the jump-off dose to see a schedule.
+          Enter a per-dose amount and times-per-day larger than the jump-off
+          dose to see a schedule.
         </div>
       )}
 
-      {/* Substance-specific note */}
       <div className="rounded-lg border border-border bg-muted/30 p-4">
         <p className="text-sm text-foreground">{cfg.note}</p>
         {cfg.related.length > 0 && (
@@ -615,7 +724,7 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-function sourceLabel(source: ScheduleResult['source']): string {
+function sourceLabel(source: ScheduleSource): string {
   switch (source) {
     case 'bupe-established':
       return 'Established schedule';
