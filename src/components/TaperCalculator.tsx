@@ -904,7 +904,7 @@ export function TaperCalculator() {
                                 </TooltipTrigger>
                                 <TooltipContent
                                   side="right"
-                                  className="max-w-xs"
+                                  className="max-w-xs text-base leading-snug"
                                 >
                                   {bupeStripEquivalents(s.perDose)}
                                 </TooltipContent>
@@ -924,7 +924,10 @@ export function TaperCalculator() {
                                     />
                                   </button>
                                 </TooltipTrigger>
-                                <TooltipContent side="right" className="max-w-xs">
+                                <TooltipContent
+                                  side="right"
+                                  className="max-w-xs text-base leading-snug"
+                                >
                                   {tabletEquivalents(
                                     s.perDose,
                                     tabletSize,
