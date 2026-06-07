@@ -14,7 +14,7 @@ import { TaperCalculator } from '~/components/TaperCalculator';
 
 ## How the math works
 
-The percentage math is a daily cut. Each day the calculator reduces the previous day's total by the same percentage, so the absolute step gets smaller as you get lower — cutting 10% of 100 mg is 10 mg; cutting 10% of 20 mg is 2 mg. The duration presets (5 / 10 / 14 / 21 days) and the custom duration all describe the same shape: how many days to descend from your starting dose to your jump-off. The per-day percentage is derived: `pct = 1 − (jumpOff / totalStart)^(1/days)`.
+The percentage math is a daily cut. Each day the calculator reduces the previous day's total by the same percentage, so the absolute step gets smaller as you get lower — cutting 10% of 100 mg is 10 mg; cutting 10% of 20 mg is 2 mg. The duration presets and the custom duration all describe the same shape: how many days to descend from your starting dose to your jump-off. An N-day taper has N entries and N − 1 cuts (day 1 is the starting dose, day N is the jump-off), so the per-day percentage is `pct = 1 − (jumpOff / totalStart)^(1/(N−1))`.
 
 As the total drops, the calculator reduces the number of doses per day proportionally (`ceil(N0 × T / T0)`) so the per-dose amount stays in a tolerable range instead of shrinking to fractions of a tablet.
 

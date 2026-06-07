@@ -11,11 +11,10 @@ import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
 import { Button } from '~/components/ui/button';
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '~/components/ui/tooltip';
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '~/components/ui/popover';
 import {
   Area,
   AreaChart,
@@ -259,12 +258,13 @@ const BUPE_SCHEDULES: Record<number, Record<number, number[]>> = {
 };
 
 /** Convert a target duration (in days) to the equivalent per-day percentage
- *  cut that will descend from totalStart to jumpOff in exactly that many
- *  days. Inverse: log(jumpOff / totalStart) / log(1 - pct/100) = days. */
+ *  cut. An N-day taper has N entries but N−1 cuts: day 1 is the starting
+ *  dose, day N is the jump-off. So pct = 1 − (jumpOff/totalStart)^(1/(N−1))
+ *  is the multiplicative cut applied each day from day 1 to day N. */
 function pctFromDuration(totalStart: number, jumpOff: number, days: number): number {
-  if (totalStart <= jumpOff || days <= 0) return 0;
+  if (totalStart <= jumpOff || days <= 1) return 0;
   const ratio = jumpOff / totalStart;
-  return (1 - Math.pow(ratio, 1 / days)) * 100;
+  return (1 - Math.pow(ratio, 1 / (days - 1))) * 100;
 }
 
 const BUPE_SUB025_TAIL: number[] = [0.1, 0.05, 0.02];
@@ -309,14 +309,19 @@ function dosesPerDayFor(total: number, totalStart: number, n0: number): number {
   return Math.max(1, Math.min(n0, scaled));
 }
 
-function percentTotalsSchedule(start: number, jumpOff: number, pct: number): number[] {
+/** Build a `days`-entry total-daily schedule descending from start to
+ *  jumpOff. Uses the closed-form `start · ratio^(k/(days−1))` instead of
+ *  iterating multiplication; that avoids the off-by-one FP-overshoot bug
+ *  where a 30-day preset rendered as 32 days because the final iteration's
+ *  rounded dose was slightly > jumpOff. Day 1 = start, day N = jumpOff. */
+function percentTotalsSchedule(start: number, jumpOff: number, days: number): number[] {
   if (start <= jumpOff) return [start];
+  if (days <= 1) return [jumpOff];
+  if (days === 2) return [start, jumpOff];
+  const ratio = jumpOff / start;
   const totals: number[] = [start];
-  let dose = start;
-  for (let i = 0; i < 200; i++) {
-    dose = dose * (1 - pct / 100);
-    if (dose <= jumpOff) break;
-    totals.push(dose);
+  for (let k = 1; k < days - 1; k++) {
+    totals.push(start * Math.pow(ratio, k / (days - 1)));
   }
   totals.push(jumpOff);
   return totals;
@@ -447,8 +452,8 @@ function generateSchedule(
         totalMedication: round2(steps.reduce((a, s) => a + s.totalDaily, 0)),
       };
     }
-    const pct = pctFromDuration(totalStart, effectiveJumpOff, days);
-    const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, pct);
+    const descendDays = wantsAbsoluteZero ? Math.max(2, days - 1) : days;
+    const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, descendDays);
     const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
     return {
       steps,
@@ -457,8 +462,8 @@ function generateSchedule(
     };
   }
 
-  const pct = pctFromDuration(totalStart, effectiveJumpOff, days);
-  const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, pct);
+  const descendDays = wantsAbsoluteZero ? Math.max(2, days - 1) : days;
+  const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, descendDays);
   const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
   return {
     steps,
@@ -512,12 +517,14 @@ export function TaperCalculator() {
   }, [jumpOff, substance, totalDaily]);
 
   /** Custom mode derived display: the per-day percentage cut that descends
-   *  from totalDaily to jumpOff over customDays days. Updates live whenever
-   *  the dose, jump-off, or duration change. */
+   *  from totalDaily to jumpOff over customDays days. An N-day taper has
+   *  N entries and N−1 cuts (day 1 = start, day N = jump-off), so the
+   *  exponent is 1/(N−1). Updates live whenever dose, jump-off, or
+   *  duration change. */
   const customPctDisplay = useMemo(() => {
-    if (totalDaily <= effectiveJumpForUI || customDays <= 0) return 0;
+    if (totalDaily <= effectiveJumpForUI || customDays <= 1) return 0;
     const ratio = effectiveJumpForUI / totalDaily;
-    const pct = (1 - Math.pow(ratio, 1 / customDays)) * 100;
+    const pct = (1 - Math.pow(ratio, 1 / (customDays - 1))) * 100;
     return Number.isFinite(pct) ? Math.round(pct * 10) / 10 : 0;
   }, [totalDaily, effectiveJumpForUI, customDays]);
 
@@ -570,12 +577,13 @@ export function TaperCalculator() {
     win.document.close();
   };
 
-  /** Edit the % directly; recompute the duration that produces it. */
+  /** Edit the % directly; recompute the duration that produces it. Solve
+   *  pct = 1 − ratio^(1/(N−1)) for N: N = log(ratio)/log(1−pct/100) + 1. */
   const handleCustomPctChange = (newPct: number) => {
     if (!Number.isFinite(newPct) || newPct <= 0 || newPct >= 100) return;
     if (totalDaily <= effectiveJumpForUI) return;
     const ratio = effectiveJumpForUI / totalDaily;
-    const days = Math.log(ratio) / Math.log(1 - newPct / 100);
+    const days = Math.log(ratio) / Math.log(1 - newPct / 100) + 1;
     if (Number.isFinite(days) && days >= 1) {
       setCustomDays(Math.max(1, Math.round(days)));
     }
@@ -595,7 +603,6 @@ export function TaperCalculator() {
   }));
 
   return (
-    <TooltipProvider delayDuration={150}>
     <div className="not-prose my-6 space-y-6">
       {/* Form */}
       <div className="grid gap-4 rounded-lg border border-border bg-card p-4 sm:grid-cols-2 print:hidden">
@@ -888,8 +895,8 @@ export function TaperCalculator() {
                           <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
                           <td className="py-2 pr-4 text-foreground">
                             {substance === 'bupe' ? (
-                              <Tooltip>
-                                <TooltipTrigger asChild>
+                              <Popover>
+                                <PopoverTrigger asChild>
                                   <button
                                     type="button"
                                     className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
@@ -901,17 +908,17 @@ export function TaperCalculator() {
                                       aria-hidden="true"
                                     />
                                   </button>
-                                </TooltipTrigger>
-                                <TooltipContent
+                                </PopoverTrigger>
+                                <PopoverContent
                                   side="right"
-                                  className="max-w-xs text-base leading-snug"
+                                  className="w-auto max-w-xs text-base leading-snug"
                                 >
                                   {bupeStripEquivalents(s.perDose)}
-                                </TooltipContent>
-                              </Tooltip>
+                                </PopoverContent>
+                              </Popover>
                             ) : cfg.defaultTabletSize !== null && tabletSize > 0 ? (
-                              <Tooltip>
-                                <TooltipTrigger asChild>
+                              <Popover>
+                                <PopoverTrigger asChild>
                                   <button
                                     type="button"
                                     className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
@@ -923,10 +930,10 @@ export function TaperCalculator() {
                                       aria-hidden="true"
                                     />
                                   </button>
-                                </TooltipTrigger>
-                                <TooltipContent
+                                </PopoverTrigger>
+                                <PopoverContent
                                   side="right"
-                                  className="max-w-xs text-base leading-snug"
+                                  className="w-auto max-w-xs text-base leading-snug"
                                 >
                                   {tabletEquivalents(
                                     s.perDose,
@@ -934,8 +941,8 @@ export function TaperCalculator() {
                                     cfg.unit,
                                     cfg.tabletUnitName,
                                   )}
-                                </TooltipContent>
-                              </Tooltip>
+                                </PopoverContent>
+                              </Popover>
                             ) : (
                               s.perDose
                             )}
@@ -1029,7 +1036,6 @@ export function TaperCalculator() {
         )}
       </div>
     </div>
-    </TooltipProvider>
   );
 }
 
