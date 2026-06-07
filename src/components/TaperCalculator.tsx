@@ -16,6 +16,12 @@ import {
   PopoverTrigger,
 } from '~/components/ui/popover';
 import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '~/components/ui/tooltip';
+import {
   Area,
   AreaChart,
   CartesianGrid,
@@ -472,6 +478,79 @@ function generateSchedule(
   };
 }
 
+/* ───────────────────────── Per-dose hint (hover/tap hybrid) ───────────────────────── */
+
+/** True if the device's primary input supports actual hover (mouse,
+ *  trackpad with hover-fine pointer). Touch-only devices return false.
+ *  Default true keeps SSR/first-render render consistent with desktop;
+ *  the effect corrects on mount before any user interaction. */
+function useHasHover(): boolean {
+  const [hasHover, setHasHover] = useState(true);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+    const mql = window.matchMedia('(hover: hover) and (pointer: fine)');
+    setHasHover(mql.matches);
+    const handler = (e: MediaQueryListEvent) => setHasHover(e.matches);
+    mql.addEventListener('change', handler);
+    return () => mql.removeEventListener('change', handler);
+  }, []);
+  return hasHover;
+}
+
+/** Per-dose detail trigger: shows a ❓ next to the dose. On hover-capable
+ *  devices the detail content opens on hover (shadcn Tooltip); on touch
+ *  devices it opens on tap (shadcn Popover). Same trigger affordance and
+ *  body in both modes. */
+function PerDoseHint({
+  hasHover,
+  perDose,
+  ariaLabel,
+  content,
+}: {
+  hasHover: boolean;
+  perDose: number;
+  ariaLabel: string;
+  content: string;
+}) {
+  const trigger = (
+    <button
+      type="button"
+      className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+      aria-label={ariaLabel}
+    >
+      <span>{perDose}</span>
+      <HelpCircle
+        className="h-3.5 w-3.5 text-muted-foreground print:hidden"
+        aria-hidden="true"
+      />
+    </button>
+  );
+  if (hasHover) {
+    return (
+      <Tooltip>
+        <TooltipTrigger asChild>{trigger}</TooltipTrigger>
+        <TooltipContent
+          side="right"
+          className="max-w-xs text-base leading-snug"
+        >
+          {content}
+        </TooltipContent>
+      </Tooltip>
+    );
+  }
+  return (
+    <Popover>
+      <PopoverTrigger asChild>{trigger}</PopoverTrigger>
+      <PopoverContent
+        side="right"
+        className="w-auto max-w-xs text-base leading-snug"
+      >
+        {content}
+      </PopoverContent>
+    </Popover>
+  );
+}
+
 /* ───────────────────────── Component ───────────────────────── */
 
 const chartConfig = {
@@ -494,6 +573,7 @@ export function TaperCalculator() {
    *  (or leaves it blank to skip the tooltip). */
   const [tabletSize, setTabletSize] = useState<number>(0);
   const [difficulty, setDifficulty] = useState<Difficulty>(DEFAULT_DIFFICULTY[substance]);
+  const hasHover = useHasHover();
   /** Custom mode source of truth: total taper duration in days. */
   const [customDays, setCustomDays] = useState<number>(14);
   const [copied, setCopied] = useState<boolean>(false);
@@ -603,6 +683,7 @@ export function TaperCalculator() {
   }));
 
   return (
+    <TooltipProvider delayDuration={150}>
     <div className="not-prose my-6 space-y-6">
       {/* Form */}
       <div className="grid gap-4 rounded-lg border border-border bg-card p-4 sm:grid-cols-2 print:hidden">
@@ -895,54 +976,24 @@ export function TaperCalculator() {
                           <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
                           <td className="py-2 pr-4 text-foreground">
                             {substance === 'bupe' ? (
-                              <Popover>
-                                <PopoverTrigger asChild>
-                                  <button
-                                    type="button"
-                                    className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                                    aria-label={`${s.perDose} mg — show strip equivalents`}
-                                  >
-                                    <span>{s.perDose}</span>
-                                    <HelpCircle
-                                      className="h-3.5 w-3.5 text-muted-foreground print:hidden"
-                                      aria-hidden="true"
-                                    />
-                                  </button>
-                                </PopoverTrigger>
-                                <PopoverContent
-                                  side="right"
-                                  className="w-auto max-w-xs text-base leading-snug"
-                                >
-                                  {bupeStripEquivalents(s.perDose)}
-                                </PopoverContent>
-                              </Popover>
+                              <PerDoseHint
+                                hasHover={hasHover}
+                                perDose={s.perDose}
+                                ariaLabel={`${s.perDose} mg — show strip equivalents`}
+                                content={bupeStripEquivalents(s.perDose)}
+                              />
                             ) : cfg.defaultTabletSize !== null && tabletSize > 0 ? (
-                              <Popover>
-                                <PopoverTrigger asChild>
-                                  <button
-                                    type="button"
-                                    className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                                    aria-label={`${s.perDose} ${cfg.unit} — show ${cfg.tabletUnitName} count`}
-                                  >
-                                    <span>{s.perDose}</span>
-                                    <HelpCircle
-                                      className="h-3.5 w-3.5 text-muted-foreground print:hidden"
-                                      aria-hidden="true"
-                                    />
-                                  </button>
-                                </PopoverTrigger>
-                                <PopoverContent
-                                  side="right"
-                                  className="w-auto max-w-xs text-base leading-snug"
-                                >
-                                  {tabletEquivalents(
-                                    s.perDose,
-                                    tabletSize,
-                                    cfg.unit,
-                                    cfg.tabletUnitName,
-                                  )}
-                                </PopoverContent>
-                              </Popover>
+                              <PerDoseHint
+                                hasHover={hasHover}
+                                perDose={s.perDose}
+                                ariaLabel={`${s.perDose} ${cfg.unit} — show ${cfg.tabletUnitName} count`}
+                                content={tabletEquivalents(
+                                  s.perDose,
+                                  tabletSize,
+                                  cfg.unit,
+                                  cfg.tabletUnitName,
+                                )}
+                              />
                             ) : (
                               s.perDose
                             )}
@@ -1036,6 +1087,7 @@ export function TaperCalculator() {
         )}
       </div>
     </div>
+    </TooltipProvider>
   );
 }
 
