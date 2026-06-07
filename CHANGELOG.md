@@ -42,7 +42,9 @@ Reworked the taper calculator after first-round feedback:
   13.847 mg or 0.996 mg. Sub-0.25 doses (the bupe volumetric tail
   0.1 / 0.05 / 0.02 mg) preserve precision via the finer
   `roundDose` ladder. Total daily is recomputed from the rounded
-  per-dose × N so the numbers actually multiply out.
+  per-dose × N so the numbers actually multiply out — and uses
+  the same 0.25 grid as per-dose, so 11.75 × 3 reads as 35.25
+  instead of being rounded to 35.3 by the 0.1-grid branch.
 
 - **Copy AI prompt** button copies a self-contained ChatGPT /
   Claude prompt to the clipboard. The prompt embeds the reader's

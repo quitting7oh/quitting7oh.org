@@ -262,12 +262,16 @@ function percentTotalsSchedule(start: number, jumpOff: number, pct: number): num
 function buildSteps(totals: number[], totalStart: number, n0: number): ScheduleStep[] {
   return totals.map((rawTotal, i) => {
     // Final step is the explicit jump-off dose — convention: taken once,
-    // and we preserve the reader's exact input rather than snapping to 0.5.
+    // and we preserve the reader's exact input rather than snapping to 0.25.
     const isLast = i === totals.length - 1;
     const n = isLast ? 1 : dosesPerDayFor(rawTotal, totalStart, n0);
     const perDose = isLast ? roundDose(rawTotal) : roundPerDose(rawTotal / n);
+    // Total daily uses the same 0.25 grid as per-dose since it's just
+    // perDose × N. Routing through roundDose's 0.1-grid branch turned
+    // 35.25 into 35.3 (11.75 × 3 rounded up). Use roundPerDose so the
+    // displayed total matches what the multiplication actually gives.
     return {
-      totalDaily: roundDose(perDose * n),
+      totalDaily: roundPerDose(perDose * n),
       dosesPerDay: n,
       perDose,
     };

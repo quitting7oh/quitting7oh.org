@@ -50,7 +50,9 @@ Reworked the taper calculator after first-round feedback:
   13.847 mg or 0.996 mg. Sub-0.25 doses (the bupe volumetric tail
   0.1 / 0.05 / 0.02 mg) preserve precision via the finer
   `roundDose` ladder. Total daily is recomputed from the rounded
-  per-dose × N so the numbers actually multiply out.
+  per-dose × N so the numbers actually multiply out — and uses
+  the same 0.25 grid as per-dose, so 11.75 × 3 reads as 35.25
+  instead of being rounded to 35.3 by the 0.1-grid branch.
 
 - **Copy AI prompt** button copies a self-contained ChatGPT /
   Claude prompt to the clipboard. The prompt embeds the reader's
@@ -72,13 +74,15 @@ Reworked the taper calculator after first-round feedback:
   `print:hidden` Tailwind classes — not as clean but still
   works.
 
-- **Bupe per-dose tooltip**: hovering over a bupe per-dose value
-  in the schedule table shows which /16-strip pieces it equals
-  across all three commercial Suboxone strip sizes (8 / 4 / 2 mg).
-  Math validates: a 1/16 piece is 0.5 mg from an 8 mg strip,
-  0.25 mg from a 4 mg strip, 0.125 mg from a 2 mg strip. Doses
-  that don't snap to clean /16ths get a "volumetric dosing
-  recommended" hint instead.
+- **Bupe per-dose tooltip**: each bupe per-dose value in the
+  schedule table shows a small ❓ icon next to the dose. Hovering
+  (or tapping on mobile) opens a tooltip listing which /16-strip
+  pieces the dose equals across all three commercial Suboxone
+  strip sizes (8 / 4 / 2 mg). Math validates: a 1/16 piece is
+  0.5 mg from an 8 mg strip, 0.25 mg from a 4 mg strip, 0.125 mg
+  from a 2 mg strip. Doses that don't snap to clean /16ths get a
+  "volumetric dosing recommended" hint instead. The ❓ icon is
+  hidden in print.
 
 - **Dose-count transitions are called out loudly** in the
   schedule table. When the calculator drops doses-per-day (e.g.
