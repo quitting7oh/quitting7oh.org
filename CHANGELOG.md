@@ -35,6 +35,14 @@ Followups:
 - The community page converted from `.md` to `.mdx` so it can
   import the React component. URL unchanged.
 
+**Followup:** the first render of the widget leaked
+prose-recovery typography styles (margins on `img`, bullets and
+padding on `ul`/`li`) into the component, blowing up the spacing
+and pushing status dots out of position. Fixed by adding
+`not-prose` to the component's outermost div plus explicit `m-0`
+/ `list-none` / `block` overrides on the avatar and list
+elements.
+
 ### Discord live presence: homepage online-count badge + community page widget embed
 
 The Discord card on the homepage now shows a live "N online"

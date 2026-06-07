@@ -51,7 +51,7 @@ export function DiscordCard() {
 
   if (errored) {
     return (
-      <div className="my-4 max-w-sm rounded-lg border border-border bg-card p-4">
+      <div className="not-prose my-4 max-w-sm rounded-lg border border-border bg-card p-4">
         <a
           href={INVITE_URL}
           target="_blank"
@@ -68,14 +68,14 @@ export function DiscordCard() {
   if (!data) {
     return (
       <div
-        className="my-4 h-[28rem] w-full max-w-sm animate-pulse rounded-lg border border-border bg-muted/30"
+        className="not-prose my-4 h-[28rem] w-full max-w-sm animate-pulse rounded-lg border border-border bg-muted/30"
         aria-label="Loading Discord widget"
       />
     );
   }
 
   return (
-    <div className="my-4 flex w-full max-w-sm flex-col overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+    <div className="not-prose my-4 flex w-full max-w-sm flex-col overflow-hidden rounded-lg border border-border bg-card shadow-sm">
       {/* Header: server name + live online count */}
       <div className="flex items-center justify-between gap-3 border-b border-border bg-muted/30 px-4 py-3">
         <div className="flex items-center gap-2">
@@ -96,18 +96,18 @@ export function DiscordCard() {
         <div className="px-4 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
           Members online
         </div>
-        <ul className="max-h-72 space-y-0.5 overflow-y-auto px-2 pb-2">
+        <ul className="m-0 max-h-72 list-none space-y-0.5 overflow-y-auto p-0 px-2 pb-2">
           {data.members.map((m) => (
             <li
               key={m.id}
-              className="flex items-center gap-2 rounded px-2 py-1.5 hover:bg-muted/40"
+              className="m-0 flex items-center gap-2 rounded px-2 py-1.5 hover:bg-muted/40"
             >
               <div className="relative shrink-0">
                 <img
                   src={m.avatar_url}
                   alt=""
                   loading="lazy"
-                  className="h-6 w-6 rounded-full bg-muted"
+                  className="m-0 block h-8 w-8 rounded-full bg-muted"
                 />
                 <span
                   className={`absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-card ${
@@ -129,7 +129,7 @@ export function DiscordCard() {
         href={INVITE_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="block border-t border-border bg-emerald-600 px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-emerald-700 dark:bg-emerald-500 dark:text-emerald-950 dark:hover:bg-emerald-400"
+        className="block border-t border-border bg-emerald-600 px-4 py-3 text-center text-sm font-semibold text-white no-underline transition hover:bg-emerald-700 dark:bg-emerald-500 dark:text-emerald-950 dark:hover:bg-emerald-400"
       >
         Join the Discord →
       </a>
