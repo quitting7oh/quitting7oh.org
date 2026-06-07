@@ -2,6 +2,7 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { NextMeeting } from '~/components/NextMeeting';
 import { AppSidebar } from '~/components/AppSidebar';
+import { DiscordOnlineCount } from '~/components/DiscordOnlineCount';
 import { CATEGORIES, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getCollection } from 'astro:content';
@@ -148,7 +149,9 @@ const hotPaths = [
         >
           <MessageCircle class="mt-0.5 h-5 w-5 shrink-0 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
           <span class="flex-1">
-            <span class="block font-semibold text-emerald-900 dark:text-emerald-100">Discord</span>
+            <span class="block font-semibold text-emerald-900 dark:text-emerald-100">
+              Discord<DiscordOnlineCount client:idle />
+            </span>
             <span class="block text-sm text-emerald-800/80 dark:text-emerald-200/80">Real-time chat, live meetings, peers right now →</span>
           </span>
         </a>

@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-06"
+last_updated: "2026-06-07"
 sort: 6
 ---
 
@@ -13,6 +13,28 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-06-06
+
+### Discord live presence: homepage online-count badge + community page widget embed
+
+The Discord card on the homepage now shows a live "N online"
+badge next to the "Discord" label, with a small pulsing green
+dot. Implemented as a small React island
+(`src/components/DiscordOnlineCount.tsx`) hydrated `client:idle`,
+fetching `discord.com/api/guilds/{id}/widget.json` from the
+client. Renders nothing on fetch failure (rate limit, offline,
+widget disabled) so the static card never shows an error. The
+"you're not alone, N people are here right now" signal at the
+moment of need was the rationale.
+
+The full Discord widget iframe is now embedded on
+[The Community](/about/the-community) under the Discord section,
+so visitors can see the server membership preview, the live
+online count, and the "Join Server" button without leaving the
+page. 350×500 iframe with `max-width: 100%` so it shrinks on
+narrow screens, `loading="lazy"` so it doesn't block initial
+paint, and the same sandbox attributes Discord recommends.
 
 ## 2026-06-05
 

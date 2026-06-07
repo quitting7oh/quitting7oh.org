@@ -2,7 +2,7 @@
 title: "The Community"
 description: "The Discord and subreddit, how the project started, and the people currently running it."
 category: "about"
-last_updated: "2026-06-04"
+last_updated: "2026-06-06"
 sort: 3
 ---
 
@@ -13,6 +13,20 @@ Both spaces are run by the same community. You don't have to join either to use 
 ## Discord
 
 **Join: [discord.gg/quitting7oh](https://discord.gg/quitting7oh)**
+
+<div class="my-4 flex justify-center">
+  <iframe
+    src="https://discord.com/widget?id=1366097989382307901&theme=dark"
+    width="350"
+    height="500"
+    style="max-width: 100%; border: 0; border-radius: 0.5rem;"
+    allowtransparency="true"
+    frameborder="0"
+    loading="lazy"
+    title="quitting7oh Discord server widget"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+  ></iframe>
+</div>
 
 The Discord is the real-time core of the community. It's where most of the content on this site came from in the first place, channels for active withdrawal, MAT/Suboxone questions, supplement stacks, PAWS, day-to-day check-ins, and one-on-one support.
 
