@@ -946,3 +946,36 @@ npm run build                  # full build + Pagefind index
 npm run preview                # serve dist/ locally to test search
 npm run link:compounds         # auto-link compound mentions
 ```
+
+### Lockfile maintenance: always use npm 10.9.2
+
+CF Pages builds with **Node 22.16.0 / npm 10.9.2**, pinned via
+`engines` and `packageManager` in `package.json`. Local devs on newer
+npm versions can regenerate or mutate the lockfile in ways that look
+fine locally but break CF.
+
+The trap: **npm 11 prunes optional peer dep entries** (`@emnapi/core`,
+`@emnapi/runtime`, anything marked `optional: true, peer: true`) from
+the lockfile. **npm 10.9.2 expects them present** and fails `npm ci`
+with `Missing: @emnapi/runtime@x.y.z from lock file`. This has bitten
+us — a `npx shadcn add <component>` invocation on npm 11 pruned those
+entries and the next push broke CF.
+
+Whenever you run a command that mutates `package-lock.json`
+(`npm install`, `npm ci`, `npx shadcn add`, `npm update`, anything),
+use npm 10.9.2 explicitly:
+
+```sh
+npx -y npm@10.9.2 install --no-audit --no-fund        # add/update deps
+npx -y npm@10.9.2 ci --no-audit --no-fund             # verify lockfile is in sync
+npx -y npm@10.9.2 install --package-lock-only         # update lockfile only
+```
+
+Verifying with `npm ci` on the local npm version is **not enough** —
+it has to be npm 10.9.2. If you regenerated the lockfile, before
+pushing always run `npx -y npm@10.9.2 ci` to confirm it'll resolve
+the same way on CF.
+
+If a build does fail on CF, the symptom is `npm error code EUSAGE` /
+`Missing: X from lock file` in the CF deploy log. Fix: regenerate the
+lockfile with npm 10.9.2 as above, commit, push.

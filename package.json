@@ -44,5 +44,10 @@
     "@vitejs/plugin-react": "^6.0.2",
     "markdownlint-cli2": "^0.14.0",
     "typescript": "^5.5.0"
-  }
+  },
+  "engines": {
+    "node": ">=22.16.0",
+    "npm": ">=10.9.2"
+  },
+  "packageManager": "npm@10.9.2"
 }
