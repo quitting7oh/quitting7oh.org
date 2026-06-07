@@ -14,6 +14,44 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-06-07
+
+### Taper Calculator: 7-OH stays ≥ 2×/day, tooltip refinements
+
+- **7-OH keeps at least 2 daily doses throughout the taper.** 7-OH's
+  short half-life (community-reported ~3–5 hours) means dropping
+  to once-daily mid-taper creates long inter-dose withdrawal
+  valleys. The calculator now floors doses-per-day at 2 for 7-OH
+  whenever the reader started at 2 or more times daily. Other
+  substances unchanged (configurable per substance via
+  SubstanceConfig's `minDosesPerDay`).
+- **Absolute-zero stop day renders as "Stop. Taper complete."**
+  Picking jump-off = 0 appends a final 0-dose day. The previous
+  render showed it as "0 mg × 1/day = 0 mg/day" — and with the
+  new 7-OH 2× floor, it also fired a misleading "Drop dosing to
+  1×/day starting Day N" callout. Replaced with a single green
+  "Stop. Taper complete." row. Same fix applied to the printable
+  PDF (green-tinted stop row) and the AI prompt
+  ("Day N: stop (taper complete)").
+- **Per-dose hint uses hover on desktop, tap on mobile.** The
+  earlier swap to Popover for mobile support lost the desktop
+  hover affordance — clicks felt wrong for a quick hint. Now
+  detects `(hover: hover) and (pointer: fine)` and renders shadcn
+  Tooltip on hover-capable devices, shadcn Popover on touch. Same
+  ❓ icon and body content in both modes.
+- **Tablet tooltip shows actual mg, not just count.** Closest-
+  quarter rounding was misleading: for a 94.5 mg target on a 50 mg
+  tablet, "2 tablets" implies 100 mg, not 94.5. When the dose
+  doesn't snap cleanly to a quarter, the tooltip now shows both
+  adjacent quarter-tablet options with the mg each delivers —
+  e.g. "1¾ tablets = 87.5 mg or 2 tablets = 100 mg (50 mg per
+  tablet)". Reader picks whether to under- or over-shoot.
+  Fractional counts ≤ 1 read singular ("¼ tablet"), > 1 plural.
+- **Schedule table grows vertically** instead of capping at
+  `max-h-80` with internal scroll. A 30-day or 90-day taper now
+  expands in line with page scroll instead of trapping the reader
+  in a nested scroll context.
+
 ## 2026-06-06
 
 ### Taper Calculator bug fixes: schedule length, mobile tooltips, fraction reduction

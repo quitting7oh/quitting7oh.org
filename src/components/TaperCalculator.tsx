@@ -48,7 +48,13 @@ interface SubstanceConfig {
   stepUnit: 'day' | 'week';
   defaultPerDose: number;
   defaultDosesPerDay: number;
-  /** Default per-dose for the jump-off step (taken once daily, by convention). */
+  /** Floor on doses-per-day as the schedule descends. For short half-life
+   *  substances (7-OH especially, community-reported ~3–5 hours), dropping
+   *  to once-daily mid-taper creates long inter-dose withdrawal valleys.
+   *  The floor is capped at the reader's entered times-per-day — we don't
+   *  force more doses than they started with. */
+  minDosesPerDay: number;
+  /** Default per-dose for the jump-off step. */
   defaultJumpOff: number;
   /** Default tablet / capsule size for the substance. null for bupe (its
    *  per-dose tooltip uses the strip-size pattern instead). */
@@ -68,6 +74,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     stepUnit: 'day',
     defaultPerDose: 15,
     defaultDosesPerDay: 4,
+    minDosesPerDay: 2,
     defaultJumpOff: 5,
     defaultTabletSize: 15,
     tabletUnitName: 'tablet',
@@ -83,6 +90,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     stepUnit: 'day',
     defaultPerDose: 8,
     defaultDosesPerDay: 1,
+    minDosesPerDay: 1,
     defaultJumpOff: 0.25,
     defaultTabletSize: null,
     tabletUnitName: 'strip',
@@ -98,6 +106,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     stepUnit: 'day',
     defaultPerDose: 10,
     defaultDosesPerDay: 3,
+    minDosesPerDay: 1,
     defaultJumpOff: 2,
     defaultTabletSize: 10,
     tabletUnitName: 'tablet',
@@ -115,6 +124,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     stepUnit: 'day',
     defaultPerDose: 7,
     defaultDosesPerDay: 3,
+    minDosesPerDay: 1,
     defaultJumpOff: 1,
     defaultTabletSize: 5,
     tabletUnitName: 'tablet',
@@ -131,6 +141,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     stepUnit: 'day',
     defaultPerDose: 4,
     defaultDosesPerDay: 4,
+    minDosesPerDay: 1,
     defaultJumpOff: 1,
     defaultTabletSize: 0.5,
     tabletUnitName: 'capsule',
@@ -145,6 +156,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     stepUnit: 'day',
     defaultPerDose: 50,
     defaultDosesPerDay: 3,
+    minDosesPerDay: 1,
     defaultJumpOff: 25,
     defaultTabletSize: 25,
     tabletUnitName: 'tablet',
@@ -307,12 +319,20 @@ interface ScheduleResult {
 }
 
 /** Given a total daily target at step i, compute a reasonable doses-per-day
- *  by scaling proportionally to the starting frequency. Floors at 1. */
-function dosesPerDayFor(total: number, totalStart: number, n0: number): number {
+ *  by scaling proportionally to the starting frequency. Floors at the
+ *  substance-specific minimum (or 1 if minDoses is below 1), capped at
+ *  the reader's starting times-per-day so we never invent extra doses. */
+function dosesPerDayFor(
+  total: number,
+  totalStart: number,
+  n0: number,
+  minDoses: number,
+): number {
+  const floor = Math.min(n0, Math.max(1, minDoses));
   if (n0 <= 1) return 1;
-  if (total <= 0) return 1;
+  if (total <= 0) return floor;
   const scaled = Math.ceil((n0 * total) / totalStart);
-  return Math.max(1, Math.min(n0, scaled));
+  return Math.max(floor, Math.min(n0, scaled));
 }
 
 /** Build a `days`-entry total-daily schedule descending from start to
@@ -333,13 +353,22 @@ function percentTotalsSchedule(start: number, jumpOff: number, days: number): nu
   return totals;
 }
 
-function buildSteps(totals: number[], totalStart: number, n0: number): ScheduleStep[] {
+function buildSteps(
+  totals: number[],
+  totalStart: number,
+  n0: number,
+  minDoses: number,
+): ScheduleStep[] {
+  const floor = Math.min(n0, Math.max(1, minDoses));
   return totals.map((rawTotal, i) => {
-    // Final step is the explicit jump-off dose — convention: taken once,
-    // and we preserve the reader's exact input rather than snapping to 0.25.
+    // Final step is the jump-off dose. Use the substance floor so
+    // short-half-life substances (7-OH) split the jump-off into
+    // multiple doses instead of one big terminal dose. When the floor
+    // is 1, preserve the reader's exact input rather than snapping to
+    // the 0.25 grid (so a 0.25 mg bupe jump-off stays 0.25 mg).
     const isLast = i === totals.length - 1;
-    const n = isLast ? 1 : dosesPerDayFor(rawTotal, totalStart, n0);
-    const perDose = isLast ? roundDose(rawTotal) : roundPerDose(rawTotal / n);
+    const n = isLast ? floor : dosesPerDayFor(rawTotal, totalStart, n0, minDoses);
+    const perDose = isLast && n === 1 ? roundDose(rawTotal) : roundPerDose(rawTotal / n);
     // Total daily uses the same 0.25 grid as per-dose since it's just
     // perDose × N. Routing through roundDose's 0.1-grid branch turned
     // 35.25 into 35.3 (11.75 × 3 rounded up). Use roundPerDose so the
@@ -384,6 +413,7 @@ function generateSchedule(
 ): ScheduleResult {
   const totalStart = perDose * dosesPerDay;
   const n0 = Math.max(1, Math.round(dosesPerDay));
+  const minDoses = SUBSTANCES[substance].minDosesPerDay;
 
   if (
     !Number.isFinite(perDose) ||
@@ -460,7 +490,7 @@ function generateSchedule(
     }
     const descendDays = wantsAbsoluteZero ? Math.max(2, days - 1) : days;
     const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, descendDays);
-    const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
+    const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0, minDoses));
     return {
       steps,
       source: 'bupe-percent',
@@ -470,7 +500,7 @@ function generateSchedule(
 
   const descendDays = wantsAbsoluteZero ? Math.max(2, days - 1) : days;
   const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, descendDays);
-  const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0));
+  const steps = withZeroIfRequested(buildSteps(totals, totalStart, n0, minDoses));
   return {
     steps,
     source: 'percent',
@@ -949,7 +979,25 @@ export function TaperCalculator() {
                 <tbody className="divide-y divide-border">
                   {result.steps.map((s, i) => {
                     const prevN = i > 0 ? result.steps[i - 1].dosesPerDay : null;
-                    const isTransition = prevN !== null && prevN !== s.dosesPerDay;
+                    const isStopDay = s.totalDaily === 0;
+                    // Suppress the "drop dosing to N×/day" callout above
+                    // the stop day — there's no dose to drop to, the
+                    // schedule is ending.
+                    const isTransition =
+                      !isStopDay && prevN !== null && prevN !== s.dosesPerDay;
+                    if (isStopDay) {
+                      return (
+                        <tr key={i} className="border-y-2 border-emerald-500/60 bg-emerald-500/10 dark:bg-emerald-400/10">
+                          <td className="py-2 pr-4 font-semibold text-foreground">{i + 1}</td>
+                          <td
+                            colSpan={3}
+                            className="py-2 text-sm font-semibold text-foreground"
+                          >
+                            Stop. Taper complete.
+                          </td>
+                        </tr>
+                      );
+                    }
                     return (
                       <Fragment key={i}>
                         {isTransition && (
@@ -1247,8 +1295,15 @@ function buildPrintHTML(
   const tableRows = result.steps
     .map((s, i) => {
       const prevN = i > 0 ? result.steps[i - 1].dosesPerDay : null;
-      const isTransition = prevN !== null && prevN !== s.dosesPerDay;
+      const isStopDay = s.totalDaily === 0;
+      // Suppress transition callout above the stop day — there's no
+      // dose to drop to, the schedule is ending.
+      const isTransition =
+        !isStopDay && prevN !== null && prevN !== s.dosesPerDay;
       const isLast = i === result.steps.length - 1;
+      if (isStopDay) {
+        return `<tr class="stop-day"><td>${i + 1}</td><td colspan="3"><strong>Stop. Taper complete.</strong></td></tr>`;
+      }
       const transitionRow = isTransition
         ? `<tr class="transition-callout"><td colspan="4">↓ Drop dosing to ${s.dosesPerDay}×/day starting Day ${i + 1}</td></tr>`
         : '';
@@ -1337,6 +1392,13 @@ function buildPrintHTML(
     color: #78350f;
   }
   tbody tr.jump-off td { font-weight: 600; }
+  tbody tr.stop-day td {
+    background: #ecfdf5;
+    border-top: 2px solid #10b981;
+    border-bottom: 2px solid #10b981;
+    font-weight: 600;
+    color: #064e3b;
+  }
   .muted { color: #666; font-weight: 400; }
   .footer {
     margin-top: 1.5rem;
@@ -1421,6 +1483,10 @@ function buildPromptText(
   const scheduleLines = result.steps
     .map((s, i) => {
       const day = i + 1;
+      const isStopDay = s.totalDaily === 0;
+      if (isStopDay) {
+        return `Day ${day}: stop (taper complete)`;
+      }
       const isLast = i === result.steps.length - 1;
       const marker = isLast ? ' (jump-off)' : '';
       return `Day ${day}: ${s.perDose} ${unit} × ${s.dosesPerDay}/day = ${s.totalDaily} ${unit}/day${marker}`;
