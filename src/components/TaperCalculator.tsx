@@ -848,9 +848,9 @@ export function TaperCalculator() {
             <h3 className="mb-3 text-sm font-semibold text-foreground">
               Schedule table
             </h3>
-            <div className="max-h-80 overflow-y-auto">
+            <div>
               <table className="w-full text-sm">
-                <thead className="sticky top-0 bg-card text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                <thead className="bg-card text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   <tr>
                     <th className="py-2 pr-4">Day</th>
                     <th className="py-2 pr-4">Per dose ({cfg.unit})</th>
