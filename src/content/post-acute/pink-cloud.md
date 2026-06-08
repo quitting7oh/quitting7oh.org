@@ -1,8 +1,8 @@
 ---
 title: "The Pink Cloud"
-description: "The early-recovery stretch of unexpected well-being some people hit after acute withdrawal, what it is, how to use the window, what not to commit to, and what tends to come after."
+description: "The early-recovery stretch of unexpected well-being some people hit after acute withdrawal — what it is, how to use the window, and what comes next."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 2
 ---
 

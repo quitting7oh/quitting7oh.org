@@ -1,8 +1,8 @@
 ---
 title: "When They're Recovering at Home"
-description: "What at-home recovery from 7-OH and kratom synthetics looks like from outside it, the tools they may be using, what helps and what backfires, and when to push for higher-intensity care."
+description: "What at-home recovery from 7-OH and kratom-derived synthetics looks like from outside, the tools your loved one is using, and when to push for higher-intensity care."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 7
 ---
 

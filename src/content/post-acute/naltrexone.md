@@ -1,8 +1,8 @@
 ---
 title: "Naltrexone (Overview)"
-description: "A mu-opioid antagonist used in three very different dose tiers, normal-dose for sustained abstinence after detox, low-dose (LDN) for off-label PAWS support, and ultra-low-dose (ULDN) as an investigational adjunct. What each one is, and which page to read next."
+description: "Naltrexone in three dose tiers — normal-dose for abstinence after detox, low-dose (LDN) for PAWS, and ultra-low-dose (ULDN) as an investigational adjunct."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 10
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Impending Doom"
-description: "The specific terror that hits in withdrawal and PAWS, that something catastrophic is about to happen, that you might die, that the world is ending. What it is, what to do in the next ten minutes, and when it's more than a withdrawal symptom."
+description: "The specific terror that hits in withdrawal and PAWS — feeling like something catastrophic is about to happen. What it is, what to do right now, when it's more than withdrawal."
 category: "post-acute"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 5
 ---
 

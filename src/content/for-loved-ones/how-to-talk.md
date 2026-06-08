@@ -1,8 +1,8 @@
 ---
 title: "How to Talk to Your Loved One"
-description: "When to bring it up, how to say it, and what tends to land vs. backfire. Includes a primer on CRAFT, the evidence-based framework that outperforms both Al-Anon and confrontational interventions for getting a loved one into treatment."
+description: "When to bring it up, how to say it, and a primer on CRAFT — the evidence-based framework that outperforms Al-Anon and confrontational interventions for getting a loved one into treatment."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 3
 ---
 

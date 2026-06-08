@@ -1,8 +1,8 @@
 ---
 title: "Cannabis and THC in Recovery"
-description: "Sourced two-sided treatment of cannabis and THC use during acute withdrawal and PAWS from 7-OH and kratom: benefits, harms, the cannabinoid landscape, and how to think about the decision."
+description: "Cannabis and THC during acute withdrawal and PAWS from 7-OH and kratom — benefits, harms, the cannabinoid landscape, and how to think about the call."
 category: "other-tools"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 11
 ---
 

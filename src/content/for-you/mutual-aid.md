@@ -1,8 +1,8 @@
 ---
 title: "Mutual Aid & Recovery Groups"
-description: "Free peer support groups for the person in recovery, Kratom Anonymous (the most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others. Try more than one."
+description: "Free peer support groups for the person in recovery: Kratom Anonymous (most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 7
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Low-Dose Naltrexone (LDN)"
-description: "Naltrexone at a small fraction of the standard dose, used off-label for chronic pain, autoimmune conditions, and increasingly as an adjunct in addiction recovery once acute withdrawal is over. Overview, evidence, and the safety caveats."
+description: "Low-dose naltrexone (LDN) at a small fraction of the standard dose — off-label for chronic pain, autoimmune conditions, and as a post-acute adjunct. Evidence and caveats."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 12
 ---
 

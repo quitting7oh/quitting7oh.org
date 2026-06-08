@@ -1,8 +1,8 @@
 ---
 title: "Vitamins & Supplements"
-description: "A community-tested supplement stack for opioid withdrawal and PAWS, what to start with, what to skip."
+description: "A community-tested supplement stack for 7-OH and kratom-synthetic withdrawal and PAWS — what to start with, what to skip."
 category: "other-tools"
-last_updated: "2026-05-30"
+last_updated: "2026-06-08"
 sort: 2
 ---
 

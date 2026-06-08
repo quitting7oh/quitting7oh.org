@@ -1,8 +1,8 @@
 ---
 title: "MGM-15"
-description: "A long-acting opioid derived from 7-OH. What the long half-life means for tapering and Suboxone induction."
+description: "MGM-15 (dihydro-7-hydroxymitragynine, also sold as MIT-A and DHM), the long-acting reduced 7-OH. Pharmacology, taper plan, Suboxone induction notes."
 category: "compounds"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 3
 ---
 ## What it is

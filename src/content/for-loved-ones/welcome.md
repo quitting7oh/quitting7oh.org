@@ -1,8 +1,8 @@
 ---
 title: "For Loved Ones — Start Here"
-description: "If you love someone who's using 7-OH, kratom synthetics, or stacked products, this is where to start. Calm reference for the people walking alongside someone in recovery."
+description: "If you love someone using 7-OH, MGM-15, or kratom-derived synthetics, this is where to start — a calm reference for the family side of recovery."
 category: "for-loved-ones"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 1
 ---
 

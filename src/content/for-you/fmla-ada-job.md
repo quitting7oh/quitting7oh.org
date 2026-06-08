@@ -1,8 +1,8 @@
 ---
 title: "FMLA, ADA & Your Job"
-description: "Federal job-protected leave for your own treatment, ADA protections for people in recovery, what HR actually sees, and how to use EAPs without your manager finding out."
+description: "Federal job-protected leave for your own treatment, ADA protections in recovery, what HR actually sees, and how to use EAPs without your manager finding out."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 5
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "NAD+ IV Therapy"
-description: "NAD+ infusions in the context of 7-OH and opioid recovery: what's offered, what it costs, what the published evidence supports, and how it stacks up against options with stronger backing."
+description: "NAD+ infusions for 7-OH and kratom recovery — what's offered, what it costs, what the published evidence supports, and where it falls short."
 category: "other-tools"
-last_updated: "2026-05-30"
+last_updated: "2026-06-08"
 sort: 7
 ---
 

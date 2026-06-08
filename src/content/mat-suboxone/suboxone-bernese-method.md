@@ -1,8 +1,8 @@
 ---
 title: "Bernese Method (Micro-Induction)"
-description: "Low-dose buprenorphine induction with overlapping full-agonist use: overview, the original Bernese protocol, the modern variants, and where it fits for kratom-derivative dependence."
+description: "The Bernese Method — low-dose Suboxone induction with overlapping full-agonist use. Original protocol, modern variants, and where it fits for kratom synthetics."
 category: "mat-suboxone"
-last_updated: "2026-05-27"
+last_updated: "2026-06-08"
 sort: 3
 ---
 

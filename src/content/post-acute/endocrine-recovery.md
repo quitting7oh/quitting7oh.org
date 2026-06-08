@@ -1,8 +1,8 @@
 ---
 title: "Endocrine Recovery After 7-OH and Kratom"
-description: "Chronic opioid-receptor compounds suppress the body's hormone systems. The page covers what readers may experience months into recovery, what testing looks like, what recovery actually involves, and what's specific to men and to women."
+description: "7-OH and kratom synthetics suppress the hormone systems chronically. What you may experience months in, the testing workup, the recovery picture, and what's specific to men and to women."
 category: "post-acute"
-last_updated: "2026-05-30"
+last_updated: "2026-06-08"
 sort: 7
 ---
 

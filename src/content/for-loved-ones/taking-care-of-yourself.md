@@ -1,8 +1,8 @@
 ---
 title: "Taking Care of Yourself"
-description: "The unglamorous basics that keep you standing through a long process. Therapy, support groups, sleep, the hypervigilance trap, and why it's okay to be happy while they're still suffering."
+description: "The unglamorous basics that keep you standing — therapy, support groups, sleep, the hypervigilance trap, and why it's okay to be happy while your loved one isn't."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 10
 ---
 

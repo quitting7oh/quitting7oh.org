@@ -1,8 +1,8 @@
 ---
 title: "Rehabilitation Centers"
-description: "Detox, residential, PHP, IOP, and outpatient, from the family's perspective. How to navigate insurance, parity law, free and low-cost paths, and how to spot predatory treatment marketing."
+description: "Detox, residential, PHP, IOP, and outpatient, from the family's perspective — insurance, parity law, free paths, and how to spot predatory treatment marketing."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 8
 ---
 

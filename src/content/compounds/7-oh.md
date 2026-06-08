@@ -1,8 +1,8 @@
 ---
 title: "7-OH (7-Hydroxymitragynine)"
-description: "Concentrated 7-hydroxymitragynine, how it differs from kratom leaf, why dependence builds fast, and what makes it tapereable."
+description: "Concentrated 7-hydroxymitragynine, how it differs from kratom leaf, why dependence builds fast, and what makes it taperable."
 category: "compounds"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 2
 ---
 

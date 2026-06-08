@@ -1,8 +1,8 @@
 ---
 title: "Quit 7-OH with Concentrated Mitragynine"
-description: "Using concentrated mitragynine extracts as a bridge from concentrated 7-OH to abstinence: doses, timelines, the contamination concern, and how this compares to the other paths off."
+description: "Concentrated mitragynine extracts as a bridge from 7-OH to abstinence — doses, timelines, the contamination concern, and how it compares to the other paths off."
 category: "other-tools"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 6
 ---
 

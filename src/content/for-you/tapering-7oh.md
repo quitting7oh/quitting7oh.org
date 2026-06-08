@@ -1,8 +1,8 @@
 ---
 title: "Tapering Off 7-OH"
-description: "What tapering off concentrated 7-OH looks like: the early dose-halving stretch, the low-dose plateau where most self-managed tapers stall, the jump-off, and what helps at each stage."
+description: "What a 7-OH taper actually looks like — the early dose-halving stretch, the low-dose plateau where most tapers stall, the jump-off, and what helps at each stage."
 category: "for-you"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 3
 ---
 

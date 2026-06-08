@@ -1,8 +1,8 @@
 ---
 title: "MIT-A and DHM Products"
-description: "Products marketed as MIT-A or DHM contain MGM-15, a reduced derivative of 7-OH that standard GC-MS testing reverts to mitragynine and misses entirely. The chemistry, the COAs, and what users actually report."
+description: "Products marketed as MIT-A or DHM contain MGM-15, a reduced 7-OH derivative that standard GC-MS testing reverts to mitragynine and misses entirely. Chemistry, COAs, and user reports."
 category: "compounds"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 5
 ---
 

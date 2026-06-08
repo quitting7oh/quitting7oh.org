@@ -1,8 +1,8 @@
 ---
 title: "Kratom's Minor Alkaloids"
-description: "Mitragynine is the headline alkaloid, but kratom leaf contains 40+ others. This page covers the six better-studied 'minor' alkaloids and their activity across the µ-opioid, serotonergic, and adrenergic systems."
+description: "Kratom leaf contains 40+ alkaloids beyond mitragynine. The six better-studied minor alkaloids and their activity across µ-opioid, serotonergic, and adrenergic systems."
 category: "pharmacology"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 1
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "What You Should Know About Long-Term Suboxone"
-description: "Long-term effects, dependence, hormone changes, and the realities of tapering off Suboxone, including the long-acting injectables some people are now using to exit."
+description: "Long-term Suboxone effects, dependence, hormone changes, and tapering off — including the long-acting injectables some people use to exit."
 category: "mat-suboxone"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 8
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Safety: You and Your Kids Come First"
-description: "If you or your children are in danger, your safety is not negotiable. Recognizing escalation, safety planning, mandatory reporters, the crisis hotlines, and how to use naloxone (Narcan)."
+description: "If you or your children are in danger: recognizing escalation, safety planning, mandatory reporters, the crisis hotlines, and how to use naloxone (Narcan)."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 5
 ---
 

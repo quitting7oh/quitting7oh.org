@@ -1,8 +1,8 @@
 ---
 title: "Welcome"
-description: "What this site is, who it's for, and where to go next."
+description: "Start here — what quitting7oh.org is, who it's for, and the page most likely to help where you are right now."
 category: "start-here"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 1
 ---
 

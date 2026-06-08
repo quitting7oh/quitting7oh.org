@@ -1,8 +1,8 @@
 ---
 title: "Contributing & Feedback"
-description: "How to suggest corrections, propose changes, or reach the team, via GitHub PR, Discord, subreddit modmail, or email."
+description: "Suggest corrections, propose changes, or reach the maintainers — via GitHub PR, Discord, subreddit modmail, or email."
 category: "about"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 4
 ---
 

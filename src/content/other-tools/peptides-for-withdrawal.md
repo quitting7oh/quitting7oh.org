@@ -1,8 +1,8 @@
 ---
 title: "Peptides for Opioid Withdrawal"
-description: "Peptides used as adjuncts in 7-OH and opioid recovery: BPC-157, Selank, Semax, DSIP, TB-500, and others. What's offered, what the evidence supports, and the safety considerations specific to injectable products from unregulated supply."
+description: "Peptides used as adjuncts in 7-OH and kratom-synthetic recovery — BPC-157, Selank, Semax, DSIP, TB-500 — the evidence and the unregulated-supply safety concerns."
 category: "other-tools"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 8
 ---
 

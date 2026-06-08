@@ -1,8 +1,8 @@
 ---
 title: "Mega-Dose Vitamin C"
-description: "High-dose vitamin C as a withdrawal adjunct: the protocol, the brands, the cautions."
+description: "High-dose vitamin C as a 7-OH and kratom-synthetic withdrawal adjunct: the community protocol, brands, and the cautions to know."
 category: "other-tools"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 4
 ---
 

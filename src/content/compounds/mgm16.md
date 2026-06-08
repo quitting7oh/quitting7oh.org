@@ -1,8 +1,8 @@
 ---
 title: "MGM-16"
-description: "The fluorinated analog of MGM-15, a 2014 medicinal-chemistry compound that's been discussed in scheduling proceedings but, as of this writing, has not been documented in any US consumer product. What's published, what isn't, and what it means."
+description: "The fluorinated analog of MGM-15, a 2014 medicinal-chemistry compound named in scheduling proceedings but not documented in any US consumer product to date."
 category: "compounds"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 4
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "MAT & Your Professional License"
-description: "Most jobs have no business in your medical records, but a handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare roles) treat MAT use as a licensure issue. What to check before you disclose or start."
+description: "A handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare) treat MAT use as a licensure issue. What to check before you start."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 6
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "How AI Was Used"
-description: "The guardrails, the ruleset in CLAUDE.md, the mandatory link verification, the human review at the end. Explained in detail."
+description: "How AI helped write this site under a strict ruleset: the CLAUDE.md guardrails, the mandatory link verification, and the human review at the end."
 category: "about"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 2
 ---
 

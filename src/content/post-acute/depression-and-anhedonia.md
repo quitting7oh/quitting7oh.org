@@ -1,8 +1,8 @@
 ---
 title: "Depression and Anhedonia"
-description: "The depression and the can't-feel-anything that show up in the weeks and months after coming off 7-OH and kratom synthetics. The treatment-relevant distinction, what helps, and when to call for help."
+description: "The depression and anhedonia that show up in the weeks and months after coming off 7-OH and kratom synthetics — the distinction, what helps, when to escalate."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 4
 ---
 

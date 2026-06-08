@@ -1,8 +1,8 @@
 ---
 title: "Long-Term Outlook"
-description: "What recovery from 7-OH dependence looks like, plainly stated: how hard it is, how relapse fits, why the long-arc picture borrows from the broader opioid-recovery literature, and the reality that the people who got there did it one day at a time."
+description: "What recovery from 7-OH dependence actually looks like — how hard it is, how relapse fits, and why the long-arc picture borrows from OUD literature."
 category: "post-acute"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 9
 ---
 

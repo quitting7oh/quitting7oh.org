@@ -1,8 +1,8 @@
 ---
 title: "Sleep Recovery: The Long Road Back to Real Sleep"
-description: "Sleep recovery after opioid use, what's normal, what helps, and how long it actually takes."
+description: "Sleep recovery after coming off 7-OH and kratom synthetics — what's normal, what helps, and how long it actually takes."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 6
 ---
 Sleep disruption is the most universal complaint in opioid recovery. Almost everyone coming off [7-OH](/compounds/7-oh) and kratom synthetics goes through it, and it doesn't resolve on the timeline most people expect. The good news: sleep does come back. The harder news: it takes longer than you want, and it's not linear.

@@ -1,8 +1,8 @@
 ---
 title: "Will One Use Bring Withdrawal Back? (Kindling)"
-description: "What happens if you use again after a stretch off, why withdrawal can come back fast, what the opioid literature shows, what this community reports about 7-OH, and what to do if you've already used."
+description: "What happens if you use again after a stretch off — why withdrawal can come back fast, what the OUD literature shows, what this community reports about 7-OH."
 category: "post-acute"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 8
 ---
 

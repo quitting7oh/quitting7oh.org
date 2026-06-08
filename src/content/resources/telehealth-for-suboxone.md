@@ -1,8 +1,8 @@
 ---
 title: "Telehealth Providers for Suboxone (Comparison)"
-description: "Neutral, fact-checked comparison of telehealth providers that prescribe buprenorphine for opioid use disorder, including those who explicitly treat kratom and 7-OH dependence."
+description: "Side-by-side comparison of telehealth providers that prescribe Suboxone for kratom and 7-OH dependence — pricing, scope, and what they'll work with."
 category: "resources"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 2
 ---
 

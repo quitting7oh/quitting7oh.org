@@ -1,8 +1,8 @@
 ---
 title: "Boundaries Without Punishment"
-description: "A boundary is what you will do, not what they must do. How to set limits that protect your life without trying to control theirs, and how to follow through without it becoming cruelty."
+description: "How to set limits that protect your life without trying to control your loved one's — what a boundary actually is, and how to follow through without becoming cruel."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 4
 ---
 

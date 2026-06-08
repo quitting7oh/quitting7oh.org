@@ -1,6 +1,6 @@
 ---
 title: "Helper Medications"
-description: "Prescription adjuncts that take the edge off: clonidine, gabapentin, hydroxyzine, trazodone, baclofen."
+description: "Helper medications for 7-OH and kratom-synthetic withdrawal — clonidine, gabapentin, baclofen, trazodone, ondansetron — with symptom-by-symptom dosing."
 category: "other-tools"
 last_updated: "2026-06-08"
 sort: 1

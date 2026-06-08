@@ -1,8 +1,8 @@
 ---
 title: "What to Expect: Addiction, Withdrawal & the Long Road of Recovery"
-description: "Dependence on 7-OH and kratom synthetics as it looks from the outside, what withdrawal does to the brain and body, and the long PAWS tail almost nobody warns families about."
+description: "Dependence on 7-OH and kratom-derived synthetics as it looks from outside, what withdrawal does to the brain and body, and the long PAWS tail families don't get warned about."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 2
 ---
 

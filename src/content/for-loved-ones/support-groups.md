@@ -1,8 +1,8 @@
 ---
 title: "Support Groups for Family & Friends"
-description: "Peer support groups specifically for people with a loved one in addiction, Nar-Anon, SMART Recovery Family & Friends, Learn to Cope, the kratom-specific options, and others."
+description: "Peer support groups for people with a loved one in addiction: Nar-Anon, SMART Recovery Family & Friends, Learn to Cope, the kratom-specific options, and others."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 11
 ---
 

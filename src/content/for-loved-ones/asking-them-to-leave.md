@@ -1,8 +1,8 @@
 ---
 title: "Asking Them to Leave the House"
-description: "When someone needs to leave the home and won't go: the legal landscape, what you can and can't do without a court, when to use protective orders, and where to get free legal help."
+description: "When the person you love needs to leave the home and won't go: the legal landscape, protective orders, and where to find free legal help."
 category: "for-loved-ones"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 6
 ---
 
