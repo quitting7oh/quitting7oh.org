@@ -16,6 +16,42 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-08
 
+### Helper Medications rewrite: quick-reference table, cluster ordering, slop pass
+
+- Above-the-fold restructure: page now opens with a single-table
+  "Quick reference" — symptom cluster → medication → typical dose —
+  covering clonidine, gabapentin, baclofen, trazodone, ondansetron,
+  loperamide, PEG/docusate, NSAIDs/acetaminophen, and bupropion. A
+  reader can take that table to a prescriber without reading the rest
+  of the page.
+- Deep-dive sections reordered into clusters: autonomic (clonidine) →
+  GABA/wired (gabapentin, baclofen + muscle relaxants) → sleep
+  (trazodone, doxepin, mirtazapine, hydroxyzine, melatonin) → GI
+  (anti-nausea, loperamide, constipation) → OTC body aches → post-
+  acute (bupropion, SSRIs/SNRIs, buspirone) → the benzo conversation.
+- Clonidine section expanded to name real alternatives in the
+  sympathetic family: lofexidine (existing), guanfacine (longer-
+  acting alpha-2A agonist), and propranolol (beta-blocker, narrower
+  but overlapping coverage). The page previously left clonidine as if
+  it were the only option.
+- Verbiage pass per the stop-slop ruleset: dropped "(the workhorse)"
+  from clonidine's heading, the "Why prescribers like it / Why
+  prescribers say no / Why they work / When they do get prescribed"
+  Wh-headers (replaced with flat prose or "Trade-offs"), the "Bottom
+  line" performance-signposting header, "deserves its own callout"
+  (mirtazapine), "worth asking" (mirtazapine), "real tools, not
+  extras" ("X is real" tic), "is a real adjunct" (magnesium), "rare
+  but real" (baclofen seizure caveat), "the realistic alternatives"
+  (benzos antithesis ladder), and "The catch:" (bupropion).
+- Discord channel references removed (#helper-meds was named twice).
+  Project rule routes Discord traffic to the server in general, not
+  to named channels.
+- Diphenhydramine warning relocated from a bottom-of-page bullet into
+  the sleep section, where it belongs alongside hydroxyzine's RLS
+  caveat. Double-period typo fixed. Duplicate Tizanidine bullet at
+  the bottom removed.
+- Frontmatter `description` comma-splice fixed; `last_updated` bumped.
+
 ### OG / Twitter card image with the brand lockup
 
 - New `public/og-image.png` (1200×630) carries the Lift Cup mark and
