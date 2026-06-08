@@ -49,7 +49,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" widt
   </g>
   <text x="${WORDMARK_X}" y="${WORDMARK_BASELINE}"
         font-family="Fraunces" font-weight="700" font-size="${WORDMARK_SIZE}"
-        letter-spacing="-2" fill="${FG}">quitting<tspan fill="${PRIMARY}">7</tspan>oh<tspan dx="6" font-family="Inter" font-size="${TLD_SIZE}" font-weight="600" fill="${MUTED}">.org</tspan></text>
+        letter-spacing="-2" fill="${FG}">quitting<tspan dx="7" fill="${PRIMARY}">7</tspan><tspan dx="-2">oh</tspan><tspan dx="6" font-family="Inter" font-size="${TLD_SIZE}" font-weight="600" fill="${MUTED}">.org</tspan></text>
   <text x="${WORDMARK_X}" y="${TAGLINE_BASELINE}"
         font-family="Inter" font-weight="500" font-size="${TAGLINE_SIZE}"
         fill="${MUTED}">Community recovery information.</text>

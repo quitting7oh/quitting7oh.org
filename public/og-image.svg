@@ -7,7 +7,7 @@
   </g>
   <text x="400" y="340"
         font-family="Fraunces" font-weight="700" font-size="108"
-        letter-spacing="-2" fill="#261f17">quitting<tspan fill="#604020">7</tspan>oh<tspan dx="6" font-family="Inter" font-size="50" font-weight="600" fill="#756657">.org</tspan></text>
+        letter-spacing="-2" fill="#261f17">quitting<tspan dx="7" fill="#604020">7</tspan><tspan dx="-2">oh</tspan><tspan dx="6" font-family="Inter" font-size="50" font-weight="600" fill="#756657">.org</tspan></text>
   <text x="400" y="430"
         font-family="Inter" font-weight="500" font-size="28"
         fill="#756657">Community recovery information.</text>
