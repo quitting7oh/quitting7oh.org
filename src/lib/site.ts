@@ -3,7 +3,7 @@ export const SITE = {
   domain: 'quitting7oh.org',
   url: 'https://quitting7oh.org',
   description:
-    'Community recovery information for people quitting 7-OH, kratom synthetics, and related opioid dependence.',
+    'Recovery information for people coming off 7-OH, MGM-15, and kratom-derived synthetics — taper plans, MAT options, helper meds, PAWS guides.',
   // Repo used for the "View source on GitHub" links. Readers can hit the
   // pencil icon themselves on GitHub if they want to propose a PR.
   repo: 'https://github.com/quitting7oh/quitting7oh.org',
