@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f6f1ea"/>
+  <g transform="translate(180, 180) scale(3.5)">
+    <path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="#261f17" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M32 37 V14" stroke="#604020" stroke-width="8" stroke-linecap="round"/>
+    <path d="M23 24 L32 11 L41 24" stroke="#604020" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <text x="400" y="340"
+        font-family="Fraunces" font-weight="700" font-size="108"
+        letter-spacing="-2" fill="#261f17">quitting<tspan fill="#604020">7</tspan>oh<tspan dx="6" font-family="Inter" font-size="50" font-weight="600" fill="#756657">.org</tspan></text>
+  <text x="400" y="430"
+        font-family="Inter" font-weight="500" font-size="28"
+        fill="#756657">Community recovery information.</text>
+</svg>

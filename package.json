@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "sync:changelog": "node scripts/sync-site-changelog.mjs",
+    "build:og": "node scripts/build-og-image.mjs",
     "link:compounds": "node scripts/link-compounds.mjs",
     "link:compounds:dry": "node scripts/link-compounds.mjs --dry-run",
     "lint:md": "markdownlint-cli2 \"src/content/**/*.md\" \"src/content/**/*.mdx\""
@@ -40,6 +41,7 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",

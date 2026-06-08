@@ -16,6 +16,22 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-08
 
+### OG / Twitter card image with the brand lockup
+
+- New `public/og-image.png` (1200×630) carries the Lift Cup mark and
+  `quitting7oh.org` wordmark in Fraunces 700, set against the stone-
+  light brand background, with a short tagline below. The wordmark
+  is rendered as genuine Fraunces — vendored Fraunces and Inter TTFs
+  under `scripts/og-fonts/` give the rasterizer real glyph data, so
+  embeds don't fall back to Georgia.
+- BaseLayout `<head>` adds `og:image`, the `og:image:width/height/
+  type/alt` quartet, `twitter:image`, and bumps `twitter:card` from
+  `summary` to `summary_large_image`. Replaces the earlier
+  "intentionally no og:image" choice now that the brand is in place.
+- New `scripts/build-og-image.mjs` (`npm run build:og`) rebuilds the
+  image from inline SVG using `@resvg/resvg-js`. Re-run when the
+  brand design changes.
+
 ### Brand: Lift Cup logo + per-theme favicon system
 
 - **New `<Logo>` component** at `src/components/Logo.astro` renders the
