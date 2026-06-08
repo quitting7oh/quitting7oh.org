@@ -30,10 +30,10 @@ const MUTED = '#756657';
 
 // Lockup layout. Mark + wordmark sit on a baseline near the canvas
 // vertical centre, with the tagline below.
-const MARK_X = 180;
+const MARK_X = 130;            // was 180; shift left to centre the lockup
 const MARK_Y = 180;
 const MARK_SCALE = 3.5;        // 64 → 224
-const WORDMARK_X = 400;        // tucked close to the mark
+const WORDMARK_X = 350;        // was 400; matched shift
 const WORDMARK_BASELINE = 340;
 const WORDMARK_SIZE = 108;
 const TLD_SIZE = 50;
