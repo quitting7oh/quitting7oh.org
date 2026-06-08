@@ -2,11 +2,11 @@
 title: "About This Site"
 description: "What quitting7oh.org is, who it's for, the AI disclaimer, and where to go from here."
 category: "about"
-last_updated: "2026-05-25"
+last_updated: "2026-06-08"
 sort: 1
 ---
 
-quitting7oh.org is a community-compiled reference for getting off [7-OH](/compounds/7-oh), kratom synthetics, and the opioid dependence they produce. It grew out of conversations in our [Discord and subreddit](/about/the-community), pulling together what people in our community have learned the hard way, and organizing it so the next person doesn't have to scroll through hundreds of reddit posts to find the one paragraph that answers their question.
+quitting7oh.org is a community-compiled reference for getting off [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), and other kratom-derived synthetics. It grew out of conversations in our [Discord and subreddit](/about/the-community), pulling together what people in our community have learned the hard way, and organizing it so the next person doesn't have to scroll through hundreds of reddit posts to find the one paragraph that answers their question.
 
 ## Who this is for
 
