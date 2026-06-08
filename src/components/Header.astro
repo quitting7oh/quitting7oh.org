@@ -1,7 +1,7 @@
 ---
 import { ThemePicker } from './ThemePicker';
 import { SearchBox } from './SearchBox';
-import { SITE } from '~/lib/site';
+import Logo from './Logo.astro';
 ---
 
 <header
@@ -21,13 +21,8 @@ import { SITE } from '~/lib/site';
       </svg>
     </button>
 
-    <a
-      href="/"
-      class="flex items-center gap-2 text-base font-semibold tracking-tight text-foreground"
-    >
-      <span class="inline-block h-2.5 w-2.5 rounded-full bg-primary" aria-hidden="true"></span>
-      <span>{SITE.title}<span class="text-muted-foreground">.org</span></span>
-    </a>
+    {/* Mark scales 28px → 40px from mobile to ~2xl; wordmark tracks. */}
+    <Logo size="clamp(1.75rem, 0.8rem + 2vw, 2.5rem)" />
 
     <div class="ml-auto flex items-center gap-3">
       <div class="hidden sm:block">

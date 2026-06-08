@@ -4,8 +4,14 @@ import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
 import { BackToTop } from '~/components/BackToTop';
 import { CrisisButton } from '~/components/CrisisButton';
-import { Footer } from '~/components/Footer';
+import Footer from '~/components/Footer.astro';
 import { SITE } from '~/lib/site';
+
+// Default theme is 'stone' (see ThemeScript.astro); the static favicon refs
+// and the initial theme-color use stone's light-mode values. theme-sync.js
+// swaps them on the fly when data-theme or .dark changes.
+const DEFAULT_THEME = 'stone';
+const DEFAULT_THEME_COLOR_LIGHT = '#604020';
 
 interface Props {
   title?: string;
@@ -28,7 +34,13 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {/* Favicons / app icons. Static refs use the default theme (stone);
+        theme-sync.js below repoints the SVG favicon and theme-color when
+        the active data-theme or .dark class changes. */}
+    <link rel="icon" href={`/favicons/${DEFAULT_THEME}/favicon.ico`} sizes="any" />
+    <link rel="icon" type="image/svg+xml" href={`/favicons/${DEFAULT_THEME}/favicon.svg`} />
+    <link rel="apple-touch-icon" href={`/favicons/${DEFAULT_THEME}/apple-touch-icon.png`} />
+    <link rel="manifest" href={`/favicons/${DEFAULT_THEME}/site.webmanifest`} />
     {/* Open Graph (Discord, LinkedIn, Slack, Facebook). Intentionally
         no og:image — readers in withdrawal don't need a big banner
         every time a page is shared. Discord, Slack, and Twitter fall
@@ -42,16 +54,21 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
-    {/* Discord pulls this for the accent strip on the left edge of the embed. */}
-    <meta name="theme-color" content="#0d9488" />
+    {/* Default to stone-light primary; theme-sync.js rewrites this on the
+        fly to match the active theme + mode. Discord reads this for the
+        accent strip on the left edge of the embed. */}
+    <meta name="theme-color" content={DEFAULT_THEME_COLOR_LIGHT} />
     <meta name="robots" content="index,follow" />
     <ThemeScript />
+    {/* Runs after ThemeScript so the favicon/theme-color are already aligned
+        on first paint — no flash of the wrong icon. */}
+    <script src="/favicons/theme-sync.js" is:inline></script>
   </head>
   <body class="min-h-screen">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <Header />
     <slot />
-    <Footer client:idle />
+    <Footer />
     <BackToTop client:load />
     <CrisisButton client:load />
   </body>

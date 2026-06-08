@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lift Cup — logo + wordmark system</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{font-family:Archivo,sans-serif;background:#15110a;color:#f1ebdd;padding:44px 28px 80px;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto}
+h1{font-family:Fraunces,serif;font-weight:900;font-size:40px;letter-spacing:-.02em;margin-bottom:6px}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:22px;margin:42px 0 16px;padding-bottom:8px;border-bottom:1px solid #34301f}
+h3{font-family:Fraunces,serif;font-weight:600;font-size:15px;color:#cfc7b3;margin-bottom:10px;letter-spacing:.02em}
+.intro{color:#b9b09a;font-size:14px;margin-bottom:8px;max-width:66ch}
+.intro code{font-family:'JetBrains Mono',monospace;color:#7fcdb4;font-size:.85em}
+
+/* lockup */
+.lockup{display:inline-flex;align-items:center;gap:.5em}
+.mk svg{display:block}
+.wm{font-family:Fraunces,serif;font-weight:600;letter-spacing:-.01em;line-height:1;color:var(--foreground)}
+.wm b{font-weight:600;color:var(--primary)}
+.wm i{font-family:Archivo,sans-serif;font-style:normal;font-weight:500;font-size:.45em;color:var(--muted-foreground);margin-left:.04em}
+
+/* hero */
+.hero{--background:#eef7f5;--foreground:#0f1a17;--primary:#1d7260;--muted-foreground:#526f69;
+  background:var(--background);border-radius:16px;padding:46px;display:flex;justify-content:center;border:1px solid #34301f}
+.hero .wm{font-size:0} /* override below */
+
+/* anatomy / token table */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.cols{grid-template-columns:1fr}}
+.card{background:#1c1809;border:1px solid #34301f;border-radius:14px;padding:22px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td,th{text-align:left;padding:9px 10px;border-bottom:1px solid #2a2615;vertical-align:top}
+th{font-family:Fraunces,serif;font-weight:600;color:#cfc7b3}
+td code,.tok{font-family:'JetBrains Mono',monospace;font-size:12px;color:#7fcdb4}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:middle;border:1px solid rgba(255,255,255,.15)}
+pre{background:#0f0c06;border:1px solid #34301f;border-radius:12px;padding:18px;overflow:auto;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.65;color:#d7d0bd}
+pre .c{color:#7d7459}
+.note{font-size:12.5px;color:#9a937e;margin-top:10px;line-height:1.6}
+
+/* themes grid */
+.t{margin-bottom:24px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:680px){.pair{grid-template-columns:1fr}}
+.panel{border-radius:14px;padding:24px;border:1px solid rgba(128,128,128,.22);display:flex;flex-direction:column;gap:18px;min-height:128px;justify-content:space-between}
+.meta{display:flex;align-items:center;justify-content:space-between;font-size:11px;opacity:.85}
+.mode{text-transform:uppercase;letter-spacing:.14em}
+.meta code{font-family:'JetBrains Mono',monospace}
+</style></head><body><div class="wrap">
+
+<h1>Lift Cup — logo &amp; wordmark</h1>
+<p class="intro">The complete lockup: mark plus the <code>quitting7oh.org</code> wordmark, colored entirely from your theme tokens. Everything below recolors itself across all 8 themes, light and dark.</p>
+
+<div class="hero" style="margin-top:22px">
+  <span class="lockup">
+    <span class="mk"><svg viewBox="0 0 64 64" width="64" height="64" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="wm" style="font-size:40px">quitting<b>7</b>oh<i>.org</i></span>
+  </span>
+</div>
+
+<h2>Anatomy &amp; token mapping</h2>
+<div class="cols">
+  <div class="card">
+    <table>
+      <tr><th>Element</th><th>Token</th></tr>
+      <tr><td><span class="swatch" style="background:#0f1a17"></span>Cup (the half-link)</td><td class="tok">--foreground</td></tr>
+      <tr><td><span class="swatch" style="background:#1d7260"></span>Arrow (shaft + head)</td><td class="tok">--primary</td></tr>
+      <tr><td><span class="swatch" style="background:#0f1a17"></span>Wordmark "quitting…oh"</td><td class="tok">--foreground</td></tr>
+      <tr><td><span class="swatch" style="background:#1d7260"></span>The "7"</td><td class="tok">--primary</td></tr>
+      <tr><td><span class="swatch" style="background:#526f69"></span>".org" suffix</td><td class="tok">--muted-foreground</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <table>
+      <tr><th>Type</th><th>Spec</th></tr>
+      <tr><td>Wordmark face</td><td>Fraunces, weight 600 <span class="tok">(display serif)</span></td></tr>
+      <tr><td>Wordmark size</td><td>1.5rem default · scale freely</td></tr>
+      <tr><td>Letter-spacing</td><td class="tok">-0.01em</td></tr>
+      <tr><td>".org" face</td><td>body sans, weight 500, 0.45em</td></tr>
+      <tr><td>Mark size</td><td>1.7em (tracks wordmark) or fixed px</td></tr>
+      <tr><td>Gap (mark→text)</td><td class="tok">0.5em</td></tr>
+    </table>
+  </div>
+</div>
+
+<h2>Drop-in code</h2>
+<div class="card">
+  <pre><span class="c">&lt;!-- markup --&gt;</span>
+&lt;a class="logo-link" href="/" aria-label="quitting7oh.org"&gt;
+  &lt;!-- inline so the SVG inherits theme CSS variables --&gt;
+  &lt;svg class="logo-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"&gt;
+    &lt;path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/&gt;
+    &lt;path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/&gt;
+    &lt;path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/&gt;
+  &lt;/svg&gt;
+  &lt;span class="logo-wm"&gt;quitting&lt;b&gt;7&lt;/b&gt;oh&lt;i&gt;.org&lt;/i&gt;&lt;/span&gt;
+&lt;/a&gt;</pre>
+  <pre style="margin-top:14px"><span class="c">/* styles */</span>
+/* font: load Fraunces (display) + keep your body font for .org */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap');
+
+.logo-link   { display:inline-flex; align-items:center; gap:.55em; text-decoration:none; }
+.logo-mark   { width:1.7em; height:1.7em; flex:none; }      /* scales with font-size */
+
+.logo-wm     { font-family:'Fraunces', Georgia, serif;
+               font-weight:600; font-size:1.5rem; letter-spacing:-.01em;
+               line-height:1; color:var(--foreground); }
+.logo-wm b   { font-weight:600; color:var(--primary); }     /* the 7 */
+.logo-wm i   { font-family: var(--font-sans, system-ui, sans-serif);
+               font-style:normal; font-weight:500; font-size:.45em;
+               color:var(--muted-foreground); margin-left:.05em; }</pre>
+  <p class="note">Inline the SVG (don't use <code style="color:#7fcdb4">&lt;img&gt;</code>) so it can read the theme variables. The mark and wordmark both inherit <code style="color:#7fcdb4">--foreground</code> / <code style="color:#7fcdb4">--primary</code> from whatever <code style="color:#7fcdb4">data-theme</code> + mode is active, so a single component covers all 16 states.</p>
+</div>
+
+<h2>Every theme, light &amp; dark</h2>
+<section class="t"><h3>accent-teal</h3><div class="pair"><div class="panel" style="--background:#eef7f5;--foreground:#0f1a17;--primary:#1d7260;--muted-foreground:#526f69;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #1d7260</code></div></div><div class="panel" style="--background:#09110f;--foreground:#f3f6f6;--primary:#53c6ad;--muted-foreground:#98b3ad;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #53c6ad</code></div></div></div></section><section class="t"><h3>zinc</h3><div class="pair"><div class="panel" style="--background:#eeeef1;--foreground:#121216;--primary:#2a2a32;--muted-foreground:#61616b;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #2a2a32</code></div></div><div class="panel" style="--background:#0c0c0e;--foreground:#f5f5f5;--primary:#f0f0f0;--muted-foreground:#a1a1aa;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #f0f0f0</code></div></div></div></section><section class="t"><h3>slate</h3><div class="pair"><div class="panel" style="--background:#eaeff5;--foreground:#121821;--primary:#1f3451;--muted-foreground:#546378;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #1f3451</code></div></div><div class="panel" style="--background:#0a0e15;--foreground:#f3f5f6;--primary:#94b2db;--muted-foreground:#94a3b8;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #94b2db</code></div></div></div></section><section class="t"><h3>stone</h3><div class="pair"><div class="panel" style="--background:#f6f1ea;--foreground:#261f17;--primary:#604020;--muted-foreground:#756657;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #604020</code></div></div><div class="panel" style="--background:#130f0b;--foreground:#f6f5f3;--primary:#d5b890;--muted-foreground:#b3a698;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #d5b890</code></div></div></div></section><section class="t"><h3>neutral</h3><div class="pair"><div class="panel" style="--background:#f2f2f2;--foreground:#1a1a1a;--primary:#262626;--muted-foreground:#6b6b6b;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #262626</code></div></div><div class="panel" style="--background:#0d0d0d;--foreground:#f5f5f5;--primary:#ebebeb;--muted-foreground:#a6a6a6;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #ebebeb</code></div></div></div></section><section class="t"><h3>rose</h3><div class="pair"><div class="panel" style="--background:#f8edef;--foreground:#30171d;--primary:#d61f49;--muted-foreground:#815660;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #d61f49</code></div></div><div class="panel" style="--background:#150a0c;--foreground:#f7f3f4;--primary:#e64c70;--muted-foreground:#b8949c;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #e64c70</code></div></div></div></section><section class="t"><h3>blue</h3><div class="pair"><div class="panel" style="--background:#edf0f8;--foreground:#151b28;--primary:#195ae6;--muted-foreground:#566381;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #195ae6</code></div></div><div class="panel" style="--background:#0a0d15;--foreground:#f3f4f6;--primary:#5588f6;--muted-foreground:#949fb8;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #5588f6</code></div></div></div></section><section class="t"><h3>green</h3><div class="pair"><div class="panel" style="--background:#eef7f1;--foreground:#122117;--primary:#1d8743;--muted-foreground:#547861;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">light</span><code>--primary #1d8743</code></div></div><div class="panel" style="--background:#08110c;--foreground:#f3f6f4;--primary:#2dd269;--muted-foreground:#94b8a1;background:var(--background);color:var(--foreground)"><span class="lockup"><span class="mk"><svg viewBox="0 0 64 64" width="56" height="56" fill="none" role="img" aria-label="quitting7oh.org"><path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--foreground)" stroke-width="8" stroke-linecap="round"/><path d="M32 37 V14" stroke="var(--primary)" stroke-width="8" stroke-linecap="round"/><path d="M23 24 L32 11 L41 24" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="wm" style="font-size:28px">quitting<b>7</b>oh<i>.org</i></span></span><div class="meta"><span class="mode">dark</span><code>--primary #2dd269</code></div></div></div></section>
+
+</div></body></html>

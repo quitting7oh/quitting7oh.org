@@ -4,8 +4,10 @@
 /* Class-based dark mode (user override via toggle). */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Self-hosted Inter (variable). */
+/* Self-hosted Inter (variable, body) + Fraunces (variable, display).
+   Fontsource ships with font-display: swap, so neither blocks first paint. */
 @import '@fontsource-variable/inter/index.css';
+@import '@fontsource-variable/fraunces/index.css';
 
 /* ---------- Theme tokens ---------- */
 @theme {
@@ -13,6 +15,7 @@
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
 
   /* Brand accent: muted teal — warm enough for recovery, not corporate.
      Kept as-is for backwards compatibility with existing components.

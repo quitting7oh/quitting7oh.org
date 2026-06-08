@@ -1,0 +1,104 @@
+---
+import Logo from './Logo.astro';
+import { SITE } from '~/lib/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-16 border-t border-border bg-muted/50">
+  <div class="mx-auto max-w-[88rem] px-4 py-10 sm:px-6 lg:px-8">
+    {/* Top row: site title, medical disclaimer, community, contribute. */}
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <Logo size="clamp(1.5rem, 0.7rem + 1.6vw, 2rem)" />
+        <p class="mt-3 text-sm text-muted-foreground">
+          {SITE.description}
+        </p>
+      </div>
+      <div class="text-sm text-muted-foreground">
+        <p class="font-semibold text-foreground">Medical disclaimer</p>
+        <p class="mt-2">
+          This is community-compiled information, not medical advice.
+          Nothing here is a substitute for a conversation with a qualified
+          clinician familiar with your situation. If you are in immediate
+          crisis, call or text 988 (US) or your local emergency number.
+        </p>
+      </div>
+      <div class="text-sm text-muted-foreground">
+        <p class="font-semibold text-foreground">Community</p>
+        <p class="mt-2">Real people, going through the same thing:</p>
+        <ul class="mt-2 space-y-1">
+          <li>
+            <a
+              href="https://www.reddit.com/r/quitting7oh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary underline underline-offset-2 hover:opacity-80"
+            >
+              reddit.com/r/quitting7oh
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://discord.gg/quitting7oh"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary underline underline-offset-2 hover:opacity-80"
+            >
+              discord.gg/quitting7oh
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-sm text-muted-foreground">
+        <p class="font-semibold text-foreground">Contribute</p>
+        <p class="mt-2">
+          This site is community-maintained. Open an issue or pull request on{' '}
+          <a
+            href={SITE.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary underline underline-offset-2 hover:opacity-80"
+          >
+            GitHub
+          </a>{' '}
+          to suggest a correction or addition.
+        </p>
+      </div>
+    </div>
+
+    {/* AI disclaimer */}
+    <div class="mt-10 border-t border-border pt-8">
+      <div class="text-sm text-muted-foreground">
+        <p class="font-semibold text-foreground">AI disclaimer</p>
+        <p class="mt-2">
+          AI helped write this under a strict instruction set tuned for
+          accuracy and voice. It's not unsupervised slop. The source material
+          is community members who've come off 7-OH and kratom derivatives.
+        </p>
+        <p class="mt-2">
+          We understand the AI hate, and don't care. You're not who we're
+          targeting; you can move on.{' '}
+          <a
+            href="/about/this-site#the-ai-disclaimer"
+            class="text-primary underline underline-offset-2 hover:opacity-80"
+          >
+            Full disclaimer →
+          </a>
+        </p>
+      </div>
+    </div>
+
+    {/* Bottom row: copyright + nav */}
+    <div class="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
+      <p>
+        © {year} {SITE.title}.org · No accounts, no tracking, no monetization.
+      </p>
+      <nav aria-label="Site footer" class="flex flex-wrap gap-x-4 gap-y-1">
+        <a href="/sitemap" class="hover:text-foreground">Site map</a>
+        <a href="/about/the-community" class="hover:text-foreground">Community</a>
+        <a href={SITE.repo} target="_blank" rel="noopener noreferrer" class="hover:text-foreground">GitHub</a>
+      </nav>
+    </div>
+  </div>
+</footer>

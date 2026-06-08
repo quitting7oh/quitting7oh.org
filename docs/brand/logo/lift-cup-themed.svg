@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="var(--logo-cup, var(--foreground, #243b40))" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M32 37 V14" stroke="var(--logo-arrow, var(--primary, #dd8a35))" stroke-width="8" stroke-linecap="round"/>
+  <path d="M23 24 L32 11 L41 24" stroke="var(--logo-arrow, var(--primary, #dd8a35))" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

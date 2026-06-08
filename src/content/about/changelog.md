@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-07"
+last_updated: "2026-06-08"
 sort: 6
 ---
 
@@ -13,6 +13,46 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-06-08
+
+### Brand: Lift Cup logo + per-theme favicon system
+
+- **New `<Logo>` component** at `src/components/Logo.astro` renders the
+  Lift Cup mark plus the `quitting7oh.org` wordmark as an inline SVG so
+  the strokes inherit theme variables. Cup uses `hsl(var(--foreground))`,
+  arrow uses `hsl(var(--primary))`, the `7` uses `hsl(var(--primary))`,
+  the `.org` suffix uses `hsl(var(--muted-foreground))`. One component
+  covers all 16 theme + light/dark states; no logo hex anywhere.
+- **Header dot replaced with the lockup.** The previous header brand was
+  a 2.5px primary-colored dot followed by plain text; it's gone. The
+  footer's brand column header was plain text too; it now uses the same
+  Logo at a smaller size for visual consistency.
+- **Footer converted from React to Astro** as part of the swap. The
+  component had no interactivity, so dropping `client:idle` also skips
+  a hydration pass.
+- **Fraunces (variable) added** via `@fontsource-variable/fraunces` for
+  the wordmark, alongside Inter. Self-hosted, no Google Fonts. New
+  `--font-display` token in `global.css`.
+- **Favicons reorganized** under `public/favicons/<theme>/` with one
+  folder per theme (`accent-teal`, `zinc`, `slate`, `stone`, `neutral`,
+  `rose`, `blue`, `green`). Each carries `favicon.svg`, `favicon.ico`,
+  `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`,
+  `icon-maskable-512.png`, and `site.webmanifest`. The old single-color
+  `public/favicon.svg` was removed.
+- **BaseLayout head** now references the default-theme (`stone`) versions
+  of the SVG favicon, ICO, apple-touch-icon, manifest, and a `theme-color`
+  meta starting at stone-light's primary (`#604020`). The old hardcoded
+  `#0d9488` is gone.
+- **theme-sync.js** runs after the inline ThemeScript and repoints the
+  SVG favicon and `theme-color` meta whenever `data-theme` or the `.dark`
+  class changes. Fixed the script's default fallback to `stone` (was
+  `accent-teal`), since the project's default omits the `data-theme`
+  attribute entirely.
+- **Reference assets moved** out of `public/` into `docs/brand/`:
+  `THEME-ICONS-README.md`, `theme-coverage.html`, and the standalone logo
+  SVGs. Nothing on the live site renders those; they're for design
+  reference and shouldn't ship as public URLs.
 
 ## 2026-06-07
 

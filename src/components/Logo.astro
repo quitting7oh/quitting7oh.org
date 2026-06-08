@@ -1,0 +1,112 @@
+---
+// Lift Cup logo + wordmark lockup.
+//
+// The SVG is inlined so its strokes can read CSS variables from whichever
+// data-theme + light/dark combination is active — that's how a single
+// component covers all 16 theme states without ever hardcoding a hex.
+//
+// Token mapping (matches docs/brand/theme-coverage.html):
+//   cup         → var(--foreground)
+//   arrow       → var(--primary)
+//   wordmark    → var(--foreground)
+//   the "7"     → var(--primary)
+//   ".org"      → var(--muted-foreground)
+//
+// `size` controls mark dimension. The wordmark font-size is derived so
+// the mark sits at 1.7em of the text — passing one prop scales both.
+
+interface Props {
+  /** Mark dimension as a CSS length. Wordmark text scales with it. */
+  size?: string;
+  /** When false, render mark only (used for tight spaces). */
+  wordmark?: boolean;
+  /** Optional class on the outer link. */
+  class?: string;
+}
+
+const { size = '1.75rem', wordmark = true, class: className } = Astro.props;
+---
+
+<a
+  href="/"
+  aria-label="quitting7oh.org"
+  class:list={['logo-link', className]}
+  style={`--logo-mark-size: ${size};`}
+>
+  <svg
+    class="logo-mark"
+    viewBox="0 0 64 64"
+    fill="none"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path
+      d="M20 33 V39 a12 12 0 0 0 24 0 V33"
+      stroke="hsl(var(--foreground))"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <path
+      d="M32 37 V14"
+      stroke="hsl(var(--primary))"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <path
+      d="M23 24 L32 11 L41 24"
+      stroke="hsl(var(--primary))"
+      stroke-width="8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+  {wordmark && (
+    <span class="logo-wm" aria-hidden="true">
+      quitting<span class="logo-wm-seven">7</span>oh<span class="logo-wm-tld">.org</span>
+    </span>
+  )}
+</a>
+
+<style>
+  .logo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    line-height: 1;
+    color: hsl(var(--foreground));
+  }
+
+  .logo-mark {
+    width: var(--logo-mark-size);
+    height: var(--logo-mark-size);
+    flex: none;
+    display: block;
+  }
+
+  .logo-wm {
+    font-family: var(--font-display);
+    font-weight: 600;
+    /* Wordmark text scales so the mark sits at ~1.7em of it. */
+    font-size: calc(var(--logo-mark-size) / 1.7);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    color: hsl(var(--foreground));
+  }
+
+  .logo-wm-seven {
+    color: hsl(var(--primary));
+  }
+
+  .logo-wm-tld {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.45em;
+    color: hsl(var(--muted-foreground));
+    margin-left: 0.05em;
+  }
+
+  .logo-link:hover .logo-wm-seven {
+    opacity: 0.85;
+  }
+</style>
