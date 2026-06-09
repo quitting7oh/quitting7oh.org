@@ -16,6 +16,33 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-09
 
+### SOWS partial-score early exit
+
+- The SOWS calculator's partial-score message now short-circuits
+  when the running sum has already crossed the at-home induction
+  floor (17) or threshold (21). Each SOWS item is 0–4 (never
+  subtracts), so a partial sum past the floor means the final
+  score will also be past it; the remaining items can only raise
+  it. Before, any partial state read "Score so far: X. Y items
+  left," which implied the reader should keep scoring when the
+  right message was "no need to finish."
+- Partial sum ≥ 21 → "Past the threshold — no need to keep scoring."
+- Partial sum 17–20 → "Probably in the induction window."
+- Partial sum < 17 → unchanged "Score so far: X. Y items left."
+- Result-panel border tone tracks the ready flag (primary tint
+  when ready), so the visual cue matches the copy.
+
+### Standalone tools on the human-facing /sitemap
+
+- The `/sitemap` page only iterated the docs content collection,
+  so top-level pages in `src/pages/` (notably the new
+  `/next-kratom-support-meeting` landing) weren't visible to
+  readers scanning by eye. The XML sitemap at
+  `/sitemap-index.xml` already caught them via `@astrojs/sitemap`.
+- Adds a curated "Standalone tools" section after the categories
+  that lists hand-picked top-level pages worth surfacing. Total-
+  pages counter in the header updated to include them.
+
 ### Rolling meetings page at /next-kratom-support-meeting
 
 - New shareable landing page that opens with a featured "Next up"
