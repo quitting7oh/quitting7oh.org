@@ -20,7 +20,21 @@ const sections = CATEGORIES.map((cat) => ({
     }),
 }));
 
-const totalPages = docs.length;
+/** Top-level pages that don't live in the docs content collection but
+ *  are publicly linked and worth surfacing on the human-facing sitemap.
+ *  Keep this list curated — the XML sitemap at /sitemap-index.xml
+ *  catches every generated page automatically; this is for the people
+ *  scanning /sitemap by eye. */
+const STANDALONE_PAGES: { href: string; title: string; description: string }[] = [
+  {
+    href: '/next-kratom-support-meeting',
+    title: 'Next kratom support meeting',
+    description:
+      'Rolling 3-day schedule for Kratom Anonymous and TIAWO meetings — featured "Next up" card, live countdowns, one click to join.',
+  },
+];
+
+const totalPages = docs.length + STANDALONE_PAGES.length;
 ---
 
 <BaseLayout
@@ -89,6 +103,39 @@ const totalPages = docs.length;
         </section>
       ))}
     </div>
+
+    {STANDALONE_PAGES.length > 0 && (
+      <section aria-labelledby="cat-standalone" class="mt-12">
+        <div class="flex items-center gap-3">
+          <h2 id="cat-standalone" class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Standalone tools
+          </h2>
+          <span class="text-sm text-zinc-400 dark:text-zinc-500">
+            ({STANDALONE_PAGES.length} {STANDALONE_PAGES.length === 1 ? 'page' : 'pages'})
+          </span>
+        </div>
+        <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          Live, shareable landing pages that don't belong to a category — designed to be linked directly.
+        </p>
+        <ul class="mt-4 divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+          {STANDALONE_PAGES.map((item) => (
+            <li class="py-3">
+              <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <a
+                  href={item.href}
+                  class="font-medium text-zinc-900 hover:text-accent-700 dark:text-zinc-50 dark:hover:text-accent-300"
+                >
+                  {item.title}
+                </a>
+              </div>
+              <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                {item.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <footer class="mt-16 border-t border-zinc-200 pt-6 text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-500">
       <p>
