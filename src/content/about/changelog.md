@@ -80,6 +80,15 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   specific meeting is named — the finders are the destinations.
 - Added to the human-facing
   [`/sitemap`](src/pages/sitemap.astro) under "Standalone tools".
+- **Filter-chip counts reflect what's actually visible.** Initial
+  build showed the build-time dataset count on each chip (e.g.
+  LGBTIA+ "9"), which was misleading: most meetings aren't in the
+  ~36-hour viewer window of the four panes, so clicking the chip
+  could yield only 2 visible meetings out of the 9 advertised.
+  Chip counts now reflect the visible set (live + soon + today +
+  tomorrow), so the number on the chip matches what you see when
+  you click it. Tags with no current visible meetings are hidden
+  unless already active (so they don't disappear under your cursor).
 
 ### Virtual NA meeting finder at /virtual-na-meetings-now
 

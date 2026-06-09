@@ -379,20 +379,50 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     return () => clearInterval(t);
   }, []);
 
+  // Counts that reflect what's actually visible across the four panes
+  // (live / soon / today / tomorrow). The build-time counts in the
+  // bundle describe the whole dataset of ~445 meetings, but at any
+  // given moment only meetings whose next occurrence falls inside the
+  // ~36-hour viewer window classify into a pane. Showing the dataset
+  // count on the chip is misleading: a tag with "9" total can yield 2
+  // when the rest are on Sat/Sun/Mon, etc.
+  //
+  // These counts ignore other active filters — they represent "if
+  // you picked just this chip, how many would you see right now?"
+  // Faceted-search systems often show counts that respect other
+  // filters too; that's more sophisticated and can confuse more than
+  // help. The simple version here is honest about the time-window cap.
+  const visibleCounts = React.useMemo(() => {
+    const programs: Record<string, number> = {};
+    const audiences: Record<string, number> = {};
+    const languages: Record<string, number> = {};
+    if (!now) return { programs, audiences, languages };
+    for (const m of bundle.meetings) {
+      const occ = buildOccurrence(m);
+      if (!occ) continue;
+      const b = classify(occ, now);
+      if (b === null) continue; // outside all four panes
+      programs[m.program] = (programs[m.program] || 0) + 1;
+      for (const a of m.audiences) audiences[a] = (audiences[a] || 0) + 1;
+      for (const l of m.languages) languages[l] = (languages[l] || 0) + 1;
+    }
+    return { programs, audiences, languages };
+  }, [now, bundle.meetings]);
+
   const programChips = React.useMemo(
     () =>
       Object.entries(bundle.program_counts)
         .sort((a, b) => b[1] - a[1])
-        .map(([name, count]) => ({ name, count })),
-    [bundle.program_counts],
+        .map(([name]) => ({ name, count: visibleCounts.programs[name] ?? 0 })),
+    [bundle.program_counts, visibleCounts.programs],
   );
 
   const languageChips = React.useMemo(
     () =>
       Object.entries(bundle.language_counts)
         .sort((a, b) => b[1] - a[1])
-        .map(([name, count]) => ({ name, count })),
-    [bundle.language_counts],
+        .map(([name]) => ({ name, count: visibleCounts.languages[name] ?? 0 })),
+    [bundle.language_counts, visibleCounts.languages],
   );
 
   const buckets = React.useMemo(() => {
@@ -503,7 +533,10 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
           <span className="self-center text-xs font-medium text-muted-foreground">Audience:</span>
           {visibleAudienceChips.map((name) => {
             const active = filterState.audiences.has(name);
-            const count = bundle.audience_counts[name] ?? 0;
+            const count = visibleCounts.audiences[name] ?? 0;
+            // Hide chips with no current visible meetings unless already
+            // active. Tags like "BIPOC" or "Teens" can flicker in and out
+            // as the day progresses — that's the honest signal.
             if (count === 0 && !active) return null;
             return (
               <button
