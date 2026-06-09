@@ -56,6 +56,25 @@ function guidanceFor(score: number, answered: number): Guidance {
     };
   }
   if (answered < ITEMS.length) {
+    // SOWS items only add to the total (never subtract), so a partial sum
+    // that's already past the induction floor (17) or threshold (21) is
+    // enough to act on — finishing the remaining items can only raise it.
+    if (score >= 21) {
+      return {
+        headline: 'Past the threshold — no need to keep scoring.',
+        body:
+          "Your partial score is already past the at-home induction window. The remaining items can only raise it. If you've been waiting for the right moment, this is it.",
+        ready: 'yes',
+      };
+    }
+    if (score >= 17) {
+      return {
+        headline: 'Probably in the induction window.',
+        body:
+          'Your partial score has already crossed the at-home induction floor (SOWS ≥ 17). Finishing the survey can only raise it further. If your prescriber is on board, this is when the standard approach says to consider your first dose.',
+        ready: 'yes',
+      };
+    }
     const left = ITEMS.length - answered;
     return {
       headline: `Score so far: ${score}.`,
