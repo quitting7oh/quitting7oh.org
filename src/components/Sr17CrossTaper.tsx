@@ -190,6 +190,16 @@ function generateSr17Protocol(inputs: Sr17Inputs): Sr17Result {
   }
 
   // ── Phase 4: SR taper down to jump-off ──────────────────────────────
+  // hasExplicitJumpOff tracks whether the reader chose a non-zero final
+  // SR dose. When true, the user's jump-off value is appended as the
+  // final row (and labelled "Jump-off"). When false (jumpOff = 0), the
+  // last natural taper day becomes the end of the SR taper and the next
+  // row is Stop — no zero-dose "jump-off" placeholder.
+  const hasExplicitJumpOff = inputs.srJumpOff > 0;
+  // Custom-pct halves toward 0 asymptotically; floor at 0.5 mg so the
+  // schedule doesn't grind through 200 sub-mg rows when jumpOff is 0.
+  const ptcFloor = hasExplicitJumpOff ? inputs.srJumpOff : 0.5;
+
   let srTotals: number[];
   if (inputs.srTaperMode === 'standard') {
     // Page protocol: 100 → 75 → 50 → 25 → jump.
@@ -200,7 +210,7 @@ function generateSr17Protocol(inputs: Sr17Inputs): Sr17Result {
       srTotals.push(cur);
       cur -= 25;
     }
-    srTotals.push(inputs.srJumpOff);
+    if (hasExplicitJumpOff) srTotals.push(inputs.srJumpOff);
   } else if (inputs.srTaperMode === 'custom-mg') {
     const cut = Math.max(1, inputs.srTaperMg);
     srTotals = [];
@@ -209,25 +219,37 @@ function generateSr17Protocol(inputs: Sr17Inputs): Sr17Result {
       srTotals.push(roundSrMg(cur));
       cur -= cut;
     }
-    srTotals.push(inputs.srJumpOff);
+    if (hasExplicitJumpOff) srTotals.push(inputs.srJumpOff);
   } else {
     // custom-pct
     const pct = Math.min(0.95, Math.max(0.01, inputs.srTaperPct / 100));
     srTotals = [];
     let cur = preloadTotal * (1 - pct);
     let i = 0;
-    while (cur > inputs.srJumpOff && i < 200) {
+    while (cur > ptcFloor && i < 200) {
       srTotals.push(roundSrMg(cur));
       cur = cur * (1 - pct);
       i++;
     }
-    srTotals.push(inputs.srJumpOff);
+    if (hasExplicitJumpOff) srTotals.push(inputs.srJumpOff);
   }
 
   for (let i = 0; i < srTotals.length; i++) {
     const total = srTotals[i];
-    const isJump = i === srTotals.length - 1;
-    const dosesPerDay = isJump ? 1 : inputs.preloadDosesPerDay;
+    // Only label as jump-off when the reader chose an explicit non-zero
+    // final dose. Otherwise the last SR-taper row is just the last day
+    // before the stop row, no special label.
+    const isJump = hasExplicitJumpOff && i === srTotals.length - 1;
+    // Drop doses-per-day proportionally as the total falls so the
+    // per-dose mg stays sensible instead of shrinking to fractional
+    // doses three times a day. The jump-off floors at a single dose so
+    // the "final dose before stopping" row reads clearly.
+    const dosesPerDay = isJump
+      ? 1
+      : Math.max(
+          1,
+          Math.ceil((inputs.preloadDosesPerDay * total) / preloadTotal),
+        );
     const perDose = total / dosesPerDay;
     days.push({
       day: dayN++,
@@ -239,7 +261,9 @@ function generateSr17Protocol(inputs: Sr17Inputs): Sr17Result {
       ohPerDose: 0,
       ohDosesPerDay: 0,
       ohTotal: 0,
-      note: isJump ? 'Last SR-17 dose before stopping completely.' : '',
+      note: isJump
+        ? `Final SR-17 dose: ${roundSrMg(total)} mg × 1. Stop after this dose.`
+        : '',
     });
   }
 
@@ -646,10 +670,17 @@ interface OutputProps {
   result: Sr17Result;
   onPrint: () => void;
   onCopyPrompt: () => void;
-  copied: boolean;
+  onCopySchedule: () => void;
+  copied: 'prompt' | 'schedule' | null;
 }
 
-function Output({ result, onPrint, onCopyPrompt, copied }: OutputProps) {
+function Output({
+  result,
+  onPrint,
+  onCopyPrompt,
+  onCopySchedule,
+  copied,
+}: OutputProps) {
   const totalSrUsed = roundSrMg(
     result.days.reduce((a, d) => a + d.srTotal, 0),
   );
@@ -718,17 +749,25 @@ function Output({ result, onPrint, onCopyPrompt, copied }: OutputProps) {
           </table>
         </div>
         <p className="mt-3 text-xs text-muted-foreground">
-          SR-17 doses are spaced every 6–8 hours. The 7-OH doses on
-          cross-taper days use the same per-day frequency you entered above.
+          The 7-OH doses on cross-taper days use the same per-day frequency
+          you entered above.
         </p>
       </div>
 
       <div className="flex flex-wrap gap-2 print:hidden">
-        <Button type="button" variant="outline" onClick={onPrint}>
-          <Printer className="mr-2 h-4 w-4" /> Save as PDF
+        <Button type="button" variant="outline" onClick={onCopySchedule}>
+          {copied === 'schedule' ? (
+            <>
+              <Check className="mr-2 h-4 w-4" /> Copied
+            </>
+          ) : (
+            <>
+              <Copy className="mr-2 h-4 w-4" /> Copy schedule
+            </>
+          )}
         </Button>
         <Button type="button" variant="outline" onClick={onCopyPrompt}>
-          {copied ? (
+          {copied === 'prompt' ? (
             <>
               <Check className="mr-2 h-4 w-4" /> Copied
             </>
@@ -738,6 +777,14 @@ function Output({ result, onPrint, onCopyPrompt, copied }: OutputProps) {
             </>
           )}
         </Button>
+        <Button type="button" variant="outline" onClick={onPrint}>
+          <Printer className="mr-2 h-4 w-4" /> Save as PDF
+        </Button>
+        <p className="basis-full text-xs text-muted-foreground">
+          "Copy schedule" puts the day-by-day plan on your clipboard as
+          plain text. "Copy AI prompt" wraps it in scaffolding for an LLM
+          to refine. "Save as PDF" opens a printable view in a new window.
+        </p>
       </div>
     </>
   );
@@ -808,6 +855,58 @@ function buildPrintHTML(inputs: Sr17Inputs, result: Sr17Result): string {
 </body></html>`;
 }
 
+/* ──────────────────── Plain-text schedule ──────────────────── */
+
+/** Day-by-day SR-17 cross-taper schedule as a plain-text block:
+ *  plan summary, per-day lines, generated-by stamp. No AI scaffolding —
+ *  drop straight into a journal, Notes app, email, or message. */
+function buildScheduleText(inputs: Sr17Inputs, result: Sr17Result): string {
+  const today = new Date().toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  const ohTotal = roundSrMg(inputs.ohPerDose * inputs.ohDosesPerDay);
+  const preloadTotal = roundSrMg(
+    inputs.preloadPerDose * inputs.preloadDosesPerDay,
+  );
+  const totalSr = roundSrMg(result.days.reduce((a, d) => a + d.srTotal, 0));
+
+  const dayLines = result.days
+    .map((d) => {
+      const sr =
+        d.srTotal > 0
+          ? d.srDosesPerDay === 1
+            ? `SR-17 ${roundSrMg(d.srTotal)}mg × 1`
+            : `SR-17 ${roundSrMg(d.srTotal)}mg/day in ${d.srDosesPerDay} doses (~${roundSrMg(d.srPerDose)}mg each)`
+          : 'SR-17 stop';
+      const oh =
+        d.ohTotal > 0
+          ? `7-OH ${roundSrMg(d.ohPerDose)}mg × ${d.ohDosesPerDay} = ${roundSrMg(d.ohTotal)}mg/day`
+          : '7-OH stopped';
+      return `Day ${d.day} (${d.phaseLabel}): ${sr}; ${oh}${d.note ? '. ' + d.note : ''}`;
+    })
+    .join('\n');
+
+  return `SR-17 cross-taper schedule
+
+Plan:
+- 7-OH starting dose: ${roundSrMg(inputs.ohPerDose)} mg × ${inputs.ohDosesPerDay}/day = ${ohTotal} mg/day
+- Allergy test: ${inputs.includeAllergyTest ? 'yes (Day 0, ~10 mg)' : 'skipping (previously tested)'}
+- Preload: ${inputs.preloadDays} day(s), SR-17 ${roundSrMg(inputs.preloadPerDose)} mg × ${inputs.preloadDosesPerDay}/day = ${preloadTotal} mg/day
+- 7-OH cross-taper: ${inputs.crossTaperMode === 'standard' ? 'standard (cut in half, then stop)' : `custom — ${inputs.crossTaperDays} even cuts to zero`}
+- Hold: ${inputs.holdDays} day(s) on SR-17 at ${preloadTotal} mg/day
+- SR taper: ${inputs.srTaperMode === 'standard' ? 'standard step-down (100 → 75 → 50 → 25 → jump)' : inputs.srTaperMode === 'custom-mg' ? `custom — ${inputs.srTaperMg} mg/day cuts` : `custom — ${inputs.srTaperPct}%/day cuts`}
+- Jump-off: ${inputs.srJumpOff > 0 ? `${inputs.srJumpOff} mg (final SR-17 dose before stopping)` : 'none (taper ends at the last natural row)'}
+- Total runway: ${result.totalDurationDays} days
+- Total SR-17 across the taper: ${totalSr} mg
+
+Day-by-day:
+${dayLines}
+
+Generated by quitting7oh.org · ${today}`;
+}
+
 /* ──────────────────────── AI prompt ──────────────────────── */
 
 function buildPromptText(inputs: Sr17Inputs, result: Sr17Result): string {
@@ -873,7 +972,7 @@ const DEFAULTS: Sr17Inputs = {
   ohPerDose: 15,
   ohDosesPerDay: 3,
   includeAllergyTest: true,
-  preloadDays: 1,
+  preloadDays: 3,
   preloadPerDose: 50,
   preloadDosesPerDay: 3,
   crossTaperMode: 'standard',
@@ -887,7 +986,7 @@ const DEFAULTS: Sr17Inputs = {
 
 export function Sr17CrossTaper() {
   const [inputs, setInputs] = useState<Sr17Inputs>(DEFAULTS);
-  const [copied, setCopied] = useState<boolean>(false);
+  const [copied, setCopied] = useState<'prompt' | 'schedule' | null>(null);
   const [hydrated, setHydrated] = useState<boolean>(false);
 
   // Load saved inputs from localStorage on mount. Validate that every
@@ -938,7 +1037,7 @@ export function Sr17CrossTaper() {
   // Clear "Copied!" confirmation after 2 seconds.
   useEffect(() => {
     if (!copied) return;
-    const t = setTimeout(() => setCopied(false), 2000);
+    const t = setTimeout(() => setCopied(null), 2000);
     return () => clearTimeout(t);
   }, [copied]);
 
@@ -951,11 +1050,10 @@ export function Sr17CrossTaper() {
     setInputs(DEFAULTS);
   };
 
-  const handleCopyPrompt = async () => {
-    const text = buildPromptText(inputs, result);
+  const copyToClipboard = async (text: string, which: 'prompt' | 'schedule') => {
     try {
       await navigator.clipboard.writeText(text);
-      setCopied(true);
+      setCopied(which);
     } catch {
       const ta = document.createElement('textarea');
       ta.value = text;
@@ -965,11 +1063,17 @@ export function Sr17CrossTaper() {
       ta.select();
       try {
         document.execCommand('copy');
-        setCopied(true);
+        setCopied(which);
       } catch {}
       document.body.removeChild(ta);
     }
   };
+
+  const handleCopyPrompt = () =>
+    copyToClipboard(buildPromptText(inputs, result), 'prompt');
+
+  const handleCopySchedule = () =>
+    copyToClipboard(buildScheduleText(inputs, result), 'schedule');
 
   const handlePrint = () => {
     const html = buildPrintHTML(inputs, result);
@@ -1006,6 +1110,7 @@ export function Sr17CrossTaper() {
         result={result}
         onPrint={handlePrint}
         onCopyPrompt={handleCopyPrompt}
+        onCopySchedule={handleCopySchedule}
         copied={copied}
       />
     </div>

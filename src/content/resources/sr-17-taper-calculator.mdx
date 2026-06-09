@@ -3,7 +3,7 @@ title: "SR-17 Cross-Taper Calculator"
 description: "Day-by-day schedule for the SR-17 cross-taper protocol: preload, 7-OH cross-taper, hold, then SR taper down to a jump-off. Configurable per phase."
 category: "resources"
 last_updated: "2026-06-09"
-sort: 7
+sort: 8
 ---
 
 import { Sr17CrossTaper } from '~/components/Sr17CrossTaper';
@@ -22,11 +22,11 @@ The SR-17 protocol is a **cross-taper**, not a single-substance taper. The calcu
 4. **Phase 3 · Hold.** SR-17 only, at the preload total.
 5. **Phase 4 · SR-17 taper down.** SR steps down to your jump-off, then stop.
 
-Defaults match the standard schedule documented on the [SR-17 page](/other-tools/sr-17): 1-day preload at 50 mg × 3 = 150 mg/day, standard cross-taper, 4-day hold, standard step-down (100 → 75 → 50 → 25 → jump). Most readers run somewhere in the 10–14 day total range.
+Defaults: a 3-day preload at 50 mg × 3 = 150 mg/day, standard cross-taper, 4-day hold, standard step-down (100 → 75 → 50 → 25 → jump). The [SR-17 page](/other-tools/sr-17) documents the protocol with a 1-day preload as the textbook version; the calculator defaults to 3 days because most readers coming through here are on synthetics or stacks where the longer runway tends to work better. Drop it back to 1 for pure short-acting 7-OH, raise it further for harder cases.
 
-## When to extend the preload
+## When to extend the preload further
 
-The protocol is calibrated for pure 7-OH. If you're on a longer-acting compound — [MGM-15 / MIT-A](/compounds/mit-a-dhm) or [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl) — or stacking multiple, extend the preload (set Preload days to 2–3). The synthetics run longer in the body, and a 1-day preload may not have enough SR on board by the time you start cutting 7-OH.
+The 3-day default is the calculator's middle-ground choice. Push it higher (4–5 days) if you're stacking multiple compounds, coming off a high-dose [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl) habit, or have a history of rough transitions where SR didn't have enough time to settle before the 7-OH cuts started. Drop it back to 1 day if you're on pure short-acting 7-OH and want the textbook-fast version on the [SR-17 page](/other-tools/sr-17).
 
 ## What the calculator doesn't do
 

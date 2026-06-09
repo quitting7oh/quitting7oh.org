@@ -592,7 +592,9 @@ export function TaperCalculator({
   const hasHover = useHasHover();
   /** Custom mode source of truth: total taper duration in days. */
   const [customDays, setCustomDays] = useState<number>(14);
-  const [copied, setCopied] = useState<boolean>(false);
+  /** Which copy button last fired, so the "Copied" confirmation lands on
+   *  the button the user actually clicked. */
+  const [copied, setCopied] = useState<'prompt' | 'schedule' | null>(null);
 
   // ── localStorage persistence ─────────────────────────────────────────
   // All form inputs survive a refresh. Stored as a single JSON blob with
@@ -662,7 +664,7 @@ export function TaperCalculator({
   // Clear "Copied!" confirmation after 2 seconds.
   useEffect(() => {
     if (!copied) return;
-    const t = setTimeout(() => setCopied(false), 2000);
+    const t = setTimeout(() => setCopied(null), 2000);
     return () => clearTimeout(t);
   }, [copied]);
 
@@ -698,14 +700,14 @@ export function TaperCalculator({
     setDifficulty(DEFAULT_DIFFICULTY[next]);
   };
 
-  const handleCopyPrompt = async () => {
-    const text = buildPromptText(cfg, perDose, dosesPerDay, jumpOff, result);
+  /** Shared clipboard write with the legacy execCommand fallback for
+   *  insecure contexts. `which` tags the source button so the inline
+   *  "Copied" confirmation lands on the right one. */
+  const copyToClipboard = async (text: string, which: 'prompt' | 'schedule') => {
     try {
       await navigator.clipboard.writeText(text);
-      setCopied(true);
+      setCopied(which);
     } catch {
-      // Clipboard API blocked (older browsers, insecure context). Fall back
-      // to creating a hidden textarea and using execCommand('copy').
       const ta = document.createElement('textarea');
       ta.value = text;
       ta.style.position = 'fixed';
@@ -714,15 +716,25 @@ export function TaperCalculator({
       ta.select();
       try {
         document.execCommand('copy');
-        setCopied(true);
+        setCopied(which);
       } catch {
-        // Give up; the user can still see the prompt in the DOM if we
-        // expose it elsewhere. For now, the lack of confirmation is the
-        // signal that something went wrong.
+        // Give up; lack of confirmation signals the failure.
       }
       document.body.removeChild(ta);
     }
   };
+
+  const handleCopyPrompt = () =>
+    copyToClipboard(
+      buildPromptText(cfg, perDose, dosesPerDay, jumpOff, result),
+      'prompt',
+    );
+
+  const handleCopySchedule = () =>
+    copyToClipboard(
+      buildScheduleText(cfg, perDose, dosesPerDay, jumpOff, result),
+      'schedule',
+    );
 
   const handlePrint = () => {
     const html = buildPrintHTML(cfg, perDose, dosesPerDay, jumpOff, result);
@@ -1143,10 +1155,28 @@ export function TaperCalculator({
             <Button
               type="button"
               variant="outline"
+              onClick={handleCopySchedule}
+              aria-live="polite"
+            >
+              {copied === 'schedule' ? (
+                <>
+                  <Check className="h-4 w-4" aria-hidden="true" />
+                  Copied
+                </>
+              ) : (
+                <>
+                  <Copy className="h-4 w-4" aria-hidden="true" />
+                  Copy schedule
+                </>
+              )}
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
               onClick={handleCopyPrompt}
               aria-live="polite"
             >
-              {copied ? (
+              {copied === 'prompt' ? (
                 <>
                   <Check className="h-4 w-4" aria-hidden="true" />
                   Copied
@@ -1163,12 +1193,14 @@ export function TaperCalculator({
               Save as PDF
             </Button>
             <p className="basis-full text-xs text-muted-foreground">
-              The AI prompt copies your taper plan to your clipboard so
-              you can paste it into ChatGPT, Claude, or similar and ask
-              for a personalized refinement. "Save as PDF" opens a clean
-              printable view in a new window — pick "Save as PDF" as the
-              destination in the print dialog. (If the popup is blocked,
-              your browser may print the current page instead.)
+              "Copy schedule" puts the day-by-day plan on your clipboard as
+              plain text — drop it into a journal, Notes app, or message.
+              "Copy AI prompt" wraps the same plan in scaffolding for
+              ChatGPT, Claude, or similar so you can ask for a personalized
+              refinement. "Save as PDF" opens a clean printable view in a
+              new window — pick "Save as PDF" as the destination in the
+              print dialog. (If the popup is blocked, your browser may
+              print the current page instead.)
             </p>
           </div>
         </>
@@ -1532,6 +1564,52 @@ function buildPrintHTML(
 
 /** Build the AI-prompt text the reader copies into ChatGPT / Claude / etc.
  *  The reader fills in the bracketed CONTEXT section themselves. */
+/** Day-by-day taper schedule as a plain-text block: plan summary,
+ *  per-day lines, generated-by stamp. No AI scaffolding — drop straight
+ *  into a journal, Notes app, email, or message. */
+function buildScheduleText(
+  cfg: SubstanceConfig,
+  perDose: number,
+  dosesPerDay: number,
+  jumpOff: number,
+  result: ScheduleResult,
+): string {
+  const unit = cfg.unit;
+  const totalDaily = roundDose(perDose * dosesPerDay);
+  const durationDays = result.steps.length;
+  const today = new Date().toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  const scheduleLines = result.steps
+    .map((s, i) => {
+      const day = i + 1;
+      const isStopDay = s.totalDaily === 0;
+      if (isStopDay) {
+        return `Day ${day}: stop (taper complete)`;
+      }
+      const isLast = i === result.steps.length - 1;
+      const marker = isLast ? ' (jump-off)' : '';
+      return `Day ${day}: ${s.perDose} ${unit} × ${s.dosesPerDay}/day = ${s.totalDaily} ${unit}/day${marker}`;
+    })
+    .join('\n');
+
+  return `Taper schedule — ${cfg.label}
+
+Plan:
+- Starting dose: ${perDose} ${unit} × ${dosesPerDay}/day = ${totalDaily} ${unit}/day
+- Jump-off dose: ${jumpOff} ${unit}
+- Duration: ${durationDays} day${durationDays === 1 ? '' : 's'}
+- Total medication: ${result.totalMedication} ${unit}
+- Approach: ${sourceLabel(result.source)}
+
+Day-by-day:
+${scheduleLines}
+
+Generated by quitting7oh.org · ${today}`;
+}
+
 function buildPromptText(
   cfg: SubstanceConfig,
   perDose: number,
