@@ -25,11 +25,11 @@ The other taper-shaped path is tapering the concentrated 7-OH dose directly with
 Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is the dominant alkaloid (up to 66% of total alkaloid content in Thai varieties), with 7-OH as a minor constituent (up to 2% of total alkaloid content)](https://en.wikipedia.org/wiki/Mitragynine). [Total alkaloid concentration in dried leaves ranges from 0.5 to 1.5%](https://en.wikipedia.org/wiki/Mitragynine).
 
 **Practical translation:**
-- A typical 1 gram dose of leaf powder contains roughly [10 to 18 mg of mitragynine and 0 to 0.04% 7-OH (around 0.5 to 4 mg per gram)](https://www.nature.com/articles/s41598-020-76119-w) depending on the strain and batch.
+- A typical 1 gram dose of leaf powder contains roughly [10 to 18 mg of mitragynine and trace amounts of 7-OH (typically well under 1 mg per gram; leaf 7-OH content is reported up to about 0.04% by dry weight)](https://www.nature.com/articles/s41598-020-76119-w) depending on the strain and batch.
 - A 5 gram dose delivers around 50 to 90 mg mitragynine and a few mg of 7-OH at most.
 - Compared to concentrated 7-OH products (which can deliver 30+ mg of pure 7-OH per dose), leaf is dramatically less potent on the 7-OH dimension specifically.
 
-[Mitragynine is a partial mu-opioid receptor agonist that, unlike morphine, does not activate the β-arrestin-2 respiratory depression pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/), and its withdrawal profile is generally milder than full agonist withdrawal. [Mitragynine has a long plasma half-life of 24+ hours](https://en.wikipedia.org/wiki/Mitragynine), which helps with tapering: blood levels stay relatively stable between doses.
+[Mitragynine is a partial mu-opioid receptor agonist that, unlike morphine, does not activate the β-arrestin-2 respiratory depression pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/), and its withdrawal profile is generally milder than full agonist withdrawal. Mitragynine has a long human plasma half-life of [roughly 7 to 39 hours in single-dose studies, longer with repeated dosing](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/) (Huestis et al., 2024), which helps with tapering: blood levels stay relatively stable between doses.
 
 ## Strain selection
 Kratom strains vary in their mitragynine-to-7-OH ratio based on leaf maturity at harvest:
@@ -76,7 +76,7 @@ This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be
 - **Magnesium glycinate** (OTC), restless legs, anxiety, sleep cluster.
 - **L-theanine** (OTC), calming without sedation.
 
-**Avoid hydroxyzine for users with significant RLS symptoms.** [First-generation antihistamines have been associated with worsening restless legs syndrome](https://pubmed.ncbi.nlm.nih.gov/15165526/), and RLS is a common symptom in this population.
+**Avoid hydroxyzine for users with significant RLS symptoms.** [First-generation antihistamines have been associated with worsening restless legs syndrome](https://pubmed.ncbi.nlm.nih.gov/27448465/), and RLS is a common symptom in this population.
 
 See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full supplement protocol.
 

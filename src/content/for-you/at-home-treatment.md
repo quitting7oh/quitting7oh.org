@@ -70,7 +70,7 @@ community. It isn't the right fit for every situation:
   Combined withdrawal can be medically dangerous. Benzo withdrawal
   in particular can be fatal without medical management. If this is
   you, supervised detox is not optional, call
-  [SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at
+  [SAMHSA](https://www.samhsa.gov/find-help/helplines/national-helpline) at
   **1-800-662-4357** or use [findtreatment.gov](https://findtreatment.gov).
 - **A home environment that's part of the problem.** If the people
   or places at home are tied to your use, removing yourself from

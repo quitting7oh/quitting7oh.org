@@ -32,7 +32,7 @@ Treatment is organized as a stepped continuum, roughly from highest-intensity to
 
 Supervised withdrawal with medical support. For [7-OH](/compounds/7-oh) and kratom-synthetic dependence, detox handles the worst of the acute withdrawal, vomiting, dehydration, the most dangerous parts of insomnia and anxiety, and stabilizes the person before further treatment. Detox alone is not treatment; it's a bridge from active use to the next step.
 
-> **Detox is essential when there's polysubstance use.** If your loved one is using 7-OH or opioids along with alcohol, benzodiazepines, or other depressants, supervised detox is not optional, combined withdrawal can be medically dangerous (benzo withdrawal in particular can be fatal without management). Call **[SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at 1-800-662-4357** for supervised options, or visit [findtreatment.gov](https://findtreatment.gov).
+> **Detox is essential when there's polysubstance use.** If your loved one is using 7-OH or opioids along with alcohol, benzodiazepines, or other depressants, supervised detox is not optional, combined withdrawal can be medically dangerous (benzo withdrawal in particular can be fatal without management). Call **[SAMHSA](https://www.samhsa.gov/find-help/helplines/national-helpline) at 1-800-662-4357** for supervised options, or visit [findtreatment.gov](https://findtreatment.gov).
 
 ### Residential / inpatient (typically 28–90 days)
 
@@ -116,7 +116,7 @@ The [VA](https://www.va.gov/health-care/health-needs-conditions/substance-use-pr
 ### The SAMHSA tools
 
 - **[findtreatment.gov](https://findtreatment.gov)**: official SAMHSA treatment locator. Searchable by zip code, filterable by insurance, level of care, MAT availability, and special populations.
-- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline): 1-800-662-4357**: free, confidential, 24/7. Real humans who will give referrals based on zip and insurance. This is the single most useful phone number on this page.
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline): 1-800-662-4357**: free, confidential, 24/7. Real humans who will give referrals based on zip and insurance. This is the single most useful phone number on this page.
 
 ## Spotting predatory programs
 

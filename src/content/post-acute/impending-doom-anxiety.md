@@ -2,7 +2,7 @@
 title: "Impending Doom"
 description: "The specific terror that hits in withdrawal and PAWS — feeling like something catastrophic is about to happen. What it is, what to do right now, when it's more than withdrawal."
 category: "post-acute"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 5
 ---
 
@@ -218,7 +218,7 @@ Categorically, the medications a prescriber might use for the acute
 anxiety / impending-doom picture include:
 
 - **SSRIs / SNRIs**: longer-term, take weeks to work, not for acute waves
-- **Hydroxyzine**: non-controlled, [Cochrane evidence for GAD](https://www.cochrane.org/evidence/CD006815_hydroxyzine-generalised-anxiety-disorder). First-gen antihistamine, so [worsens restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/), skip if RLS is part of your picture.
+- **Hydroxyzine**: non-controlled, [Cochrane evidence for GAD](https://www.cochrane.org/evidence/CD006815_hydroxyzine-generalised-anxiety-disorder). First-gen antihistamine, so [worsens restless legs](https://pubmed.ncbi.nlm.nih.gov/27448465/), skip if RLS is part of your picture.
 - **Propranolol**: beta-blocker, targets the [physical symptoms specifically](https://pmc.ncbi.nlm.nih.gov/articles/PMC9456064/)
 - **Benzodiazepines**: effective short-term with real caveats (dependence, cross-tolerance with bupe is a documented overdose pattern)
 - **Buprenorphine or other MAT**: addresses the underlying

@@ -129,7 +129,7 @@ At-home doesn't fit every situation:
   Combined withdrawal can be medically dangerous; benzo withdrawal
   in particular can be fatal without management. **This needs
   supervised detox.** Call
-  [SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at
+  [SAMHSA](https://www.samhsa.gov/find-help/helplines/national-helpline) at
   **1-800-662-4357** or visit [findtreatment.gov](https://findtreatment.gov).
 - **A home environment that's part of the problem.** If the home or
   social environment is tied to their use, residential may be the

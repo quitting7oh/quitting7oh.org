@@ -14,7 +14,7 @@ A note on terms used below: **sublingual** means **under the tongue** (how Subox
 
 Micro-induction is the alternative when the standard "wait for withdrawal symptoms to climb before your first dose" approach has a higher failure rate or isn't tolerable. The strongest fits:
 
-- **You've been on long-acting kratom synthetics** ([MGM-15](/compounds/mgm15) at ~15-hour half-life, [pseudo](/compounds/mitragynine-pseudoindoxyl), or MIT-A/DHM). The wait stretches to 36–72+ hours and the standard approach has a documented higher failure rate.
+- **You've been on long-acting kratom synthetics** ([MGM-15](/compounds/mgm15) at community-reported 9–15 hour duration, [pseudo](/compounds/mitragynine-pseudoindoxyl), or MIT-A/DHM). The wait stretches to 36–72+ hours and the standard approach has a documented higher failure rate.
 - **You've tried standard induction and gotten precipitated withdrawal.** Even with the right timing, the receptor switch-over can be too sharp.
 - **You're on a stacked product** where you don't know which compound (or combination) you're coming off.
 - **You can't tolerate the wait.** Life, work, prior trauma around active withdrawal, severe baseline symptoms.
@@ -44,8 +44,8 @@ Each dose is a small fraction of a standard 2 mg or 8 mg Suboxone strip, cut by 
 The BC 7-day above is the most commonly used schedule. These are alternatives a prescriber may suggest in specific situations:
 
 - **4-day accelerated**: 0.5 mg four times daily rising to 8 mg three times daily by day 4. Faster, higher dropout in outpatient data.
-- **Transdermal start**: a Butrans 20 mcg/hr buprenorphine patch for the first ~7 days, then a transition to strips under the tongue. Useful if cutting and dosing small strip pieces several times a day isn't workable ([Hess et al. 2022, n=7](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/); 5 of 7 succeeded).
-- **8-hour rapid home variant**: 1 mg of buprenorphine/naloxone (an eighth of a 2 mg strip) hourly for 8 hours after a ≥24-hour wait, then a standard 8 mg twice-daily dose ([Vu et al., n=9](https://pmc.ncbi.nlm.nih.gov/articles/PMC12590818/); 7 of 9 succeeded). Closer to standard induction with smaller increments.
+- **Transdermal start**: a Butrans 20 mcg/hr buprenorphine patch for the first ~7 days, then a transition to strips under the tongue. Useful if cutting and dosing small strip pieces several times a day isn't workable ([Menard & Jhawar 2022, n=7](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/); 5 of 7 succeeded).
+- **8-hour rapid home variant**: 1 mg of buprenorphine/naloxone (an eighth of a 2 mg strip) hourly for 8 hours after a ≥24-hour wait, then a standard 8 mg twice-daily dose ([Alexander & Woford 2025, n=9](https://pmc.ncbi.nlm.nih.gov/articles/PMC12590818/); 7 of 9 succeeded). Closer to standard induction with smaller increments.
 
 ### The original Hammig schedule (29-day, historical)
 
@@ -93,7 +93,7 @@ That's the mechanism. It's well-supported pharmacologically; what's less well-te
 
 Since then:
 
-- **A registered controlled trial** ([Sandhu et al. 2021, Vancouver General Hospital, n=50 inpatients](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/)) compared rapid micro-induction vs. standard induction. Protocol registered; results have been slow to publish.
+- **A registered controlled trial** ([Wong et al. 2021, Vancouver General Hospital, n=50 inpatients, NCT04234191](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/)) compared rapid micro-induction vs. standard induction. Protocol registered; results have been slow to publish.
 - **Inpatient cohort** ([Button et al. 2022, n=72 attempts](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/)) showed 73.5% completion. 18% discontinued early, most commonly for inadequate pain control or preference for methadone.
 - **Outpatient cohort** ([Suen et al. 2024, n=175 attempts in the fentanyl era](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/)) showed **34% completion**, 38% for the 4-day, 28% for the 7-day. 28-day buprenorphine retention was 21% (4-day) and 18% (7-day).
 
@@ -123,7 +123,7 @@ What that changes: you're not asking a prescriber to bless a custom schedule, yo
 
 Some people want their prescriber to know the specific schedule, either as a backstop if something goes sideways, or because the intake conversation centers on the standard "wait for COWS" approach and you want to discuss something different. Most primary-care prescribers haven't trained on micro-induction; telehealth prescribers vary. The conversation goes better if you bring:
 
-- **A specific reason.** "I've been on a long-acting kratom synthetic with a ~15 hour half-life, and I'm concerned about a precipitated-withdrawal failure on standard induction" lands differently than "I read about this online."
+- **A specific reason.** "I've been on a long-acting kratom synthetic with a community-reported 9–15 hour duration, and I'm concerned about a precipitated-withdrawal failure on standard induction" lands differently than "I read about this online."
 - **A specific protocol you're willing to discuss.** Pointing at the [BC 7-day schedule](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/) or the [original Hammig 2016 paper](https://pubmed.ncbi.nlm.nih.gov/27499655/) gives them something concrete to engage with, rather than putting them in the position of designing a novel protocol on the fly.
 - **A reference to the guideline body that recognizes it.** [The ASAM 2020 National Practice Guideline focused update](https://www.asam.org/quality-care/clinical-guidelines/national-practice-guideline) explicitly recognizes low-dose initiation (0.25–2 mg sublingual or 5–20 mcg/hr transdermal) as an option. The [BC Centre on Substance Use](https://www.bccsu.ca/) has a patient resource specifically on this method. Knowing these exist helps if your prescriber's first reaction is "I've never done that."
 - **A willingness to be honest about what you're using.** Micro-induction requires you to keep taking your 7-OH (or other synthetic) during the overlap. If your prescriber needs to know what compound and what dose you're continuing, telling them is part of the deal.
@@ -145,10 +145,10 @@ For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone
 - [De Aquino JP, Parida S, Sofuoglu M. *Clin Drug Investig* 2021 (PMC8020374)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8020374/), pharmacology of micro-induction, receptor-occupancy data
 - [Ahmed S, Bhivandkar S, Lonergan BB, Suzuki J. *Drug Alcohol Depend* 2020, systematic review of micro-induction studies](https://www.sciencedirect.com/science/article/abs/pii/S0306460320308698)
 - [Klaire S, Zivanovic R, Barbic SP, et al. *Am J Addict* 2019 (PMID 30901127)](https://pubmed.ncbi.nlm.nih.gov/30901127/), rapid micro-induction case series
-- [Sandhu R et al. 2021 RCT protocol (PMC7881636)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/), registered comparison of rapid micro-induction vs. standard
+- [Wong et al. 2021 RCT protocol (PMC7881636)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881636/), registered comparison of rapid micro-induction vs. standard
 - [Button D, Hartley J, Robbins J, et al. *J Addict Med* 2022 (PMC8595358)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8595358/), hospitalized cohort, n=72
 - [Suen LW, Joshi N, Coffin PO, et al. *J Addict Med* 2024 (PMC11762237)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762237/), largest outpatient cohort to date, 4-day vs. 7-day comparison
-- [Hess M et al. *J Addict Med* 2022 (PMC9317019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/), transdermal buprenorphine micro-induction
+- [Menard & Jhawar 2022 (PMC9317019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9317019/), transdermal buprenorphine micro-induction
 - [BC Pharmacy Association, microdosing/Bernese method tables](https://www.bcpharmacy.ca/tablet/fall-18/microdosing-buprenorphine-induction-bernese-method)
 - [ASAM 2020 National Practice Guideline focused update](https://www.asam.org/quality-care/clinical-guidelines/national-practice-guideline), recognizes low-dose buprenorphine induction as an option
 - [Hendler R et al. *J Addict Med* 2026 (PMID 41875249)](https://pubmed.ncbi.nlm.nih.gov/41875249/), 7-HMG use disorder case (methadone-mediated, not Bernese)

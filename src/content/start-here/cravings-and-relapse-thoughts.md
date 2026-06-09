@@ -208,10 +208,10 @@ A few things that are documented, with sources:
   treatment needs to be adjusted or resumed.**
 - **Kratom-specific relapse data barely exists.** The 2023 scientific
   expert forum on kratom withdrawal
-  ([Smith et al., *Drug Alcohol Depend Rep* 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10311168/))
-  explicitly flags this as a research gap. Anything specific you've
-  seen ("X% of kratom users relapse in Y days") is almost certainly
-  not from a real study.
+  ([Henningfield et al., *Drug Alcohol Depend Rep* 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10311168/))
+  calls for more research on behavioral interventions and individual
+  differences. Anything specific you've seen ("X% of kratom users
+  relapse in Y days") is almost certainly not from a real study.
 - **What does reduce relapse risk: staying in contact with people.**
   Peer support, regular check-ins, [meetings](https://meetings.smartrecovery.org/meetings/),
   a [Telehealth prescriber](/resources/telehealth-for-suboxone) who knows you,

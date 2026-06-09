@@ -72,7 +72,7 @@ story.
 
 | Alkaloid | µ-opioid | Serotonergic (5-HT) | Adrenergic (α) |
 |---|---|---|---|
-| **Mitragynine** | Partial agonist (low efficacy) | Low 5-HT₁ₐ affinity | Moderate, α-1 & α-2 |
+| **Mitragynine** | Partial agonist (low efficacy) | Low 5-HT₁ₐ affinity | Weak (micromolar) across α-1 & α-2 |
 | **Paynantheine** | Weak antagonist | **High 5-HT₁ₐ**, mediates analgesia | Weak / not established |
 | **Speciogynine** | Weak antagonist | **High 5-HT₁ₐ**, mediates analgesia | Moderate, α-2 |
 | **Speciociliatine** | Partial agonist (higher affinity) | Low | Weak α-2 binding |

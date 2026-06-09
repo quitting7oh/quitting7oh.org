@@ -201,7 +201,7 @@ just brutal. Things that help:
 **Avoid OTC antihistamine sleep aids**, Benadryl (diphenhydramine),
 Unisom (doxylamine), ZzzQuil, and any "PM" formulation (Tylenol PM,
 Advil PM, etc.) that's diphenhydramine underneath the brand name.
-[First-generation antihistamines worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/),
+[First-generation antihistamines worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/27448465/),
 and restless legs is one of the loudest symptoms in opioid
 withdrawal. You'll feel like you slept worse, not better.
 

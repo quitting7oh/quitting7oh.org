@@ -893,7 +893,7 @@ site before booking. Err toward community.
 Hydroxyzine (Atarax, Vistaril) is a non-controlled first-generation
 antihistamine that's otherwise a useful adjunct for anxiety and
 sleep. The problem: first-gen antihistamines worsen restless legs
-([Yang et al., *Sleep Med* 2005](https://pubmed.ncbi.nlm.nih.gov/15165526/)),
+([Garcia-Borreguero et al., IRLSSG/EURLSSG task force, *Sleep Med* 2016](https://pubmed.ncbi.nlm.nih.gov/27448465/)),
 and restless legs is one of the loudest symptoms in opioid
 withdrawal. For a large fraction of our audience, hydroxyzine will
 make the worst symptom worse. Recommending it without flagging that

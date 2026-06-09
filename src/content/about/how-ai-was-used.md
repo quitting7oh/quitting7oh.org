@@ -2,7 +2,7 @@
 title: "How AI Was Used"
 description: "How AI helped write this site under a strict ruleset: the CLAUDE.md guardrails, the mandatory link verification, and the human review at the end."
 category: "about"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 2
 ---
 
@@ -14,7 +14,7 @@ What we did instead: ~40 hours writing rules for the LLM to operate inside, ~80 
 
 ## The ruleset is public
 
-The full set of constraints the LLM operates under lives in [CLAUDE.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/CLAUDE.md) in the public repo. It's a working document of about 700 lines. Anyone can read exactly what the model was told to do, and not to do.
+The full set of constraints the LLM operates under lives in [CLAUDE.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/CLAUDE.md) in the public repo. It's a working document of about 1,000 lines. Anyone can read exactly what the model was told to do, and not to do.
 
 A representative sample of what's in there:
 

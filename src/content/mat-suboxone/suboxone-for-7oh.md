@@ -9,7 +9,7 @@ sort: 2
 
 Suboxone is the brand name for **buprenorphine/naloxone**, one medication for coming off opioid dependence, and the route many people in this community have taken. The other community-validated medication-assisted path is [SR-17](/other-tools/sr-17). [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold-turkey with [helper meds](/other-tools/helper-meds) are the non-MAT paths. This page covers Suboxone: induction, dosing, taper plans, and the challenges of using bupe to come off the synthetic mitragynine derivatives.
 
-**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short plasma half-life (~100 minutes), is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
+**Important up front:** this site focuses on **short-term tapers**. The goal is using Suboxone as a structured tool to get from dependence to off opioids entirely. **Long-term Suboxone maintenance is also a valid choice and saves lives** (see [Long-term maintenance](#long-term-maintenance) further down). This community leans short-taper for pharmacological reasons: [7-OH](/compounds/7-oh) has a short half-life, is mu-dominant, and clears the body fast. Receptor adaptation from [7-OH](/compounds/7-oh) is less entrenched than from long-acting full agonists, so a brief structured bupe course bridges through acute withdrawal for a large portion of this community. People coming off the long-acting synthetics ([MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl)) or off longer-term extended use are in a different situation; longer protocols or long-term maintenance may be the right fit, though not always.
 
 **Two things to know before you sit down with a prescriber:**
 
@@ -41,9 +41,9 @@ Subutex is the buprenorphine-only version, used for pregnant patients, those wit
 
 Half-life suggests when COWS will climb into induction range. The score itself is what decides if you're ready.
 
-- **[7-OH](/compounds/7-oh) alone:** plasma half-life ~100 minutes. Community members hit COWS ≥ 12 in the 12 to 18 hour range.
-- **[MGM-15](/compounds/mgm15)** (also sold as **MIT-A** or **DHM**)**:** ~15 hour half-life. Reaching induction-ready COWS takes 36 to 72 hours.
-- **Pseudo (MP):** binds [tighter than buprenorphine itself](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
+- **[7-OH](/compounds/7-oh) alone:** short half-life (community-observed effect duration roughly 90 minutes to a couple of hours; no direct human PK published, see [7-OH compound page](/compounds/7-oh#plasma-half-life)). Community members hit COWS ≥ 12 in the 12 to 18 hour range.
+- **[MGM-15](/compounds/mgm15)** (also sold as **MIT-A** or **DHM**)**:** community-reported effective duration roughly 9–15 hours per dose (no published human PK; see [MGM-15 page](/compounds/mgm15)). Reaching induction-ready COWS takes 36 to 72 hours.
+- **Pseudo (MP):** binds [tighter than buprenorphine itself](https://pubmed.ncbi.nlm.nih.gov/27556704/) (Varadi 2016 reports MP Kᵢ ≈ 0.8 nM vs bupe ~1.5 nM). Receptor occupancy can outlast plasma levels. Closer to fentanyl-induction territory than standard kratom-induction.
 
 If you've been on the long-acting compounds and your COWS isn't climbing past 24 hours, that's the half-life. Wait it out. Be honest with your prescriber about what you were on. Many providers haven't heard of [MGM-15](/compounds/mgm15), pseudo, or MIT-A. If they default to the standard short-acting-opioid playbook for these compounds, induction can fail.
 
@@ -81,14 +81,13 @@ Buprenorphine binding to mu-opioid receptors **doesn't scale linearly with dose*
 
 | Daily dose | Mu-receptor occupancy |
 | ---------- | --------------------- |
-| **2 mg** | ~50–60% |
-| **4 mg** | ~70–80% |
-| **8 mg** | ~85–90% |
-| **16 mg** | ~92% |
-| **24 mg** | ~94% |
-| **32 mg** | ~95% |
+| **2 mg** | ~41% |
+| **4 mg** | ~60% |
+| **8 mg** | ~74% |
+| **16 mg** | ~80% |
+| **32 mg** | ~84% |
 
-The curve flattens past 8 mg. ([Greenwald et al. 2003, Brody et al. 2014](https://pubmed.ncbi.nlm.nih.gov/12660736/), and follow-up imaging studies.)
+The curve flattens past 8 mg. (De Aquino et al. summarizing Greenwald and follow-up PET imaging studies.)
 
 In practice:
 
@@ -131,7 +130,7 @@ If your prescriber is pushing a longer schedule than makes sense for your dose, 
 ## Finding a Suboxone prescriber
 
 - [SAMHSA's buprenorphine practitioner locator](https://www.samhsa.gov/medications-substance-use-disorders/find-prescriber)
-- [SAMHSA's national helpline](https://www.samhsa.gov/find-help/national-helpline) (1-800-662-HELP)
+- [SAMHSA's national helpline](https://www.samhsa.gov/find-help/helplines/national-helpline) (1-800-662-HELP)
 - [Telehealth Providers](/resources/telehealth-for-suboxone): fact-checked comparison of the major options (QuickMD, Bicycle Health, Ophelia, Workit Health, Boulder Care, and others) with current prices, states served, and which ones explicitly handle kratom or 7-OH.
 - [As of 2023, the X-waiver requirement was eliminated](https://www.samhsa.gov/medications-substance-use-disorders/become-buprenorphine-waivered-practitioner). Any provider with a DEA license can prescribe buprenorphine. Primary care doctors who haven't prescribed it in the past now can.
 

@@ -2,7 +2,7 @@
 title: "Helper Medications"
 description: "Helper medications for 7-OH and kratom-synthetic withdrawal — clonidine, gabapentin, baclofen, trazodone, ondansetron — with symptom-by-symptom dosing."
 category: "other-tools"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 1
 ---
 > **This is a reference, not a prescription.** Each of these requires a doctor. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) lists telehealth options that will work with you on adjuncts.
@@ -84,7 +84,7 @@ Insomnia is often the worst part of withdrawal, and sleep matters more than peop
 
 **[Trazodone](https://my.clevelandclinic.org/health/diseases/opioid-withdrawal)** is the most prescribed sleep med in MAT contexts. Non-addictive, non-controlled, helps both falling asleep and staying asleep. Typical dose: 50–150 mg at bedtime. Side effects: morning grogginess, occasional priapism (rare, but if it happens, stop and see a doctor).
 
-**Hydroxyzine (Atarax/Vistaril)** is a non-controlled antihistamine for anxiety and sleep. As a first-generation antihistamine it can [worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/). If you have RLS, skip it and use trazodone or doxepin instead.
+**Hydroxyzine (Atarax/Vistaril)** is a non-controlled antihistamine for anxiety and sleep. As a first-generation antihistamine it can [worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/27448465/). If you have RLS, skip it and use trazodone or doxepin instead.
 
 **Doxepin** at low doses (3–6 mg) is FDA-approved for insomnia. Tricyclic antidepressant chemistry, but at sleep doses it's mostly antihistaminic. Useful when trazodone doesn't work.
 
@@ -102,7 +102,7 @@ Nausea and vomiting are common during withdrawal and dehydrating. Don't tough it
 
 **[Ondansetron (Zofran)](https://www.medcentral.com/pain/chronic/evaluation-antiemetic-pharmacotherapy-setting-opioid-withdrawal)** is usually first-line. 5-HT3 receptor antagonist, well-tolerated, available as an orally-disintegrating tablet. Typical dose: 4 mg every 8 hours as needed. Some research suggests [ondansetron may reduce overall withdrawal severity](https://clinicaltrials.gov/study/NCT00695864), not just nausea. Side effects are mild (occasional headache, constipation).
 
-**Promethazine (Phenergan)** is older but effective, with the bonus of significant sedation if nausea is keeping you awake. It's a first-generation antihistamine that can [worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/15165526/), and the injectable form carries an [FDA black box warning](https://pubmed.ncbi.nlm.nih.gov/26125161/). The oral version is fine for most people; if you have RLS symptoms, ondansetron is the better choice.
+**Promethazine (Phenergan)** is older but effective, with the bonus of significant sedation if nausea is keeping you awake. It's a first-generation antihistamine that can [worsen restless legs](https://pubmed.ncbi.nlm.nih.gov/27448465/), and the injectable form carries an [FDA black box warning](https://pubmed.ncbi.nlm.nih.gov/26125161/). The oral version is fine for most people; if you have RLS symptoms, ondansetron is the better choice.
 
 **Metoclopramide (Reglan)** and **prochlorperazine (Compazine)** are alternatives if the first two don't work. All four are non-controlled and easy to prescribe.
 

@@ -38,7 +38,7 @@ for finding treatment, if you call once in your whole search, this
 is the call.
 
 - **Call:** [1-800-662-4357](tel:18006624357)
-- **Web:** [samhsa.gov/find-help/national-helpline](https://www.samhsa.gov/find-help/national-helpline)
+- **Web:** [samhsa.gov/find-help/helplines/national-helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)
 
 ## National Domestic Violence Hotline
 

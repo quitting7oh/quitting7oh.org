@@ -2,7 +2,7 @@
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
 description: "Mitragynine pseudoindoxyl (MP), receptor affinity, why bupe induction is harder, what to watch for."
 category: "compounds"
-last_updated: "2026-06-04"
+last_updated: "2026-06-09"
 sort: 6
 ---
 ## General risks
@@ -27,14 +27,14 @@ MP was originally identified as a research target because of its unusual recepto
 
 ## Pharmacology
 - **Mu-opioid receptor agonist + delta-opioid receptor antagonist.** This dual profile is what makes MP pharmacologically unusual, most opioids don't have this combination.
-- **Extremely high MOR affinity: 0.087 nM**, compared to mitragynine at 7.24 nM and 7-OH at 13.5 nM. Lower number = tighter binding. MP binds MOR tighter than most clinical opioids do, including buprenorphine.
+- **Very high MOR affinity: Kᵢ ≈ 0.8 nM** ([Varadi et al., *J Med Chem* 2016](https://pubmed.ncbi.nlm.nih.gov/27556704/)), compared to mitragynine at roughly 160–240 nM ([Obeng et al., *J Med Chem* 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/); Hiranita 2022) and 7-OH at roughly 7–15 nM. Lower number = tighter binding. MP binds MOR tighter than most clinical opioids do, including buprenorphine.
 - In animal studies, the mu-agonist + delta-antagonist combination has been associated with reduced tolerance, reduced respiratory depression, and reduced reward compared to morphine. **These findings are rodent data and don't reliably translate to humans taking unregulated isolates at unknown doses.**
 
 ## Half-life
 Direct half-life data for MP itself is thin, most published pharmacology focuses on receptor activity rather than human pharmacokinetics. Reports indicate it's similar to 7oh (a few hours).
 ## Suboxone considerations
 **MP binds MOR tighter than buprenorphine does.**
-MP's MOR affinity (~0.087 nM) is stronger than buprenorphine's (~1.5 nM). In fentanyl-to-bupe transitions, this kind of affinity mismatch is part of why those inductions are notoriously difficult, the higher-affinity drug doesn't budge easily, and bupe struggles to fully take over. The same logic applies here:
+MP's MOR affinity (~0.8 nM) is stronger than buprenorphine's (~1.5 nM). In fentanyl-to-bupe transitions, this kind of affinity mismatch is part of why those inductions are notoriously difficult, the higher-affinity drug doesn't budge easily, and bupe struggles to fully take over. The same logic applies here:
 
 - Standard 12–24 hour washout windows may not be enough, receptor occupancy can outlast plasma levels when affinity is this high.
 - Precipitated withdrawal during induction is a real risk if MP is still bound when bupe arrives.

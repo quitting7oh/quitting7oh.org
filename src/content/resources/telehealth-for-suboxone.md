@@ -85,7 +85,7 @@ states follow. Realistic options as of 2026-05-24:
   consumer signup.
 
 If neither fits, the local-clinic path through
-[SAMHSA's helpline](https://www.samhsa.gov/find-help/national-helpline)
+[SAMHSA's helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)
 (1-800-662-4357) is usually the next-best route.
 
 ---
@@ -124,9 +124,9 @@ Shield, Cigna, Medicare named on the homepage. Per-state subpages
 list Medicaid coverage where applicable.
 
 **Reviews & complaints.**
-- **BBB:** rated **F**, 1.43 / 5 across 23 customer reviews,
-  [profile](https://www.bbb.org/us/ca/san-francisco/profile/rehabilitation/bicycle-health-inc-1116-933344) (accessed 2026-05-24).
-  BBB notes "Failure to respond to 5 complaint(s) filed against
+- **BBB:** rated **F**, 1.43 / 5 across 23 customer reviews
+  (BBB profile URL no longer resolves; data accessed 2026-05-24).
+  BBB noted "Failure to respond to 5 complaint(s) filed against
   business." Themes across reviews and complaints: surprise billing,
   balances escalating over short periods, mandatory group sessions
   disputed by patients, insurance coverage stopping without

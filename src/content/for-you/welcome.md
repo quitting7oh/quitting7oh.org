@@ -48,7 +48,7 @@ You're not the first person to be where you are. Real-time conversation often he
 ## If you're in crisis right now
 
 - **[988 Suicide & Crisis Lifeline](https://988lifeline.org)**: call or text 988 (24/7)
-- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline)**: 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)**: 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
 - **911**: for immediate danger
 
 If you're in active withdrawal and looking for what to do right now, the **[Withdrawal Help](/start-here/7-oh-withdrawal-help)** page is the more relevant starting point than this section.

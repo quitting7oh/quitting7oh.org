@@ -2,7 +2,7 @@
 title: "Kratom Leaf & Mitragynine"
 description: "Kratom basics, what mitragynine does in the body, how it relates to 7-OH, and why concentrated 7-OH products are not the same thing as leaf."
 category: "compounds"
-last_updated: "2026-05-25"
+last_updated: "2026-06-09"
 sort: 1
 ---
 
@@ -140,9 +140,11 @@ contributes to its lower respiratory-depression risk at equivalent
 mu-receptor occupancy.
 
 **Other targets.** Mitragynine has weak kappa-opioid activity and
-essentially no delta-opioid activity (Frontiers 2026). It also binds
-α-1 and α-2 adrenergic receptors at moderate strength
-([Obeng et al., *Eur J Pharmacol* 2024](https://pubmed.ncbi.nlm.nih.gov/39111419/))
+essentially no delta-opioid activity (Frontiers 2026). It binds
+α-1 and α-2 adrenergic receptors weakly (Kᵢ low-micromolar;
+[Obeng et al., *J Med Chem* 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/)
+reports α-1A 1.34 µM, α-1B 4.77 µM, α-1D 5.48 µM, α-2A 4.72 µM,
+α-2B 9.29 µM, α-2C 2.32 µM)
 and acts as a low-efficacy α-2A agonist *in vivo* in rats, the same
 receptor that clonidine acts on. The minor alkaloids paynantheine and
 speciogynine bind serotonin (5-HT₁ₐ) receptors at low-nanomolar
@@ -211,8 +213,9 @@ explains, is contested in the literature.**
 - [Kruegel et al., *ACS Cent Sci* 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6598159/)
   argues from mouse data that brain 7-OH levels after mitragynine
   dosing are "sufficient to explain most or all of the opioid-
-  receptor-mediated activity," proposing mitragynine is best
-  thought of as a **prodrug**.
+  receptor-mediated activity," consistent with mitragynine acting
+  largely through its conversion to 7-OH (a **prodrug-like** picture,
+  though Kruegel doesn't use that term).
 - A direct rebuttal in mice
   ([Maxwell et al., *DMD* 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8969138/))
   reports brain 7-OH from mitragynine dosing is 4-fold lower than
@@ -314,7 +317,7 @@ route.
   not completed rulemaking as of 2026-05-24.
 - **State actions:** Louisiana placed mitragynine and 7-OH in state
   Schedule I effective Aug 1, 2025. Ohio enacted an emergency rule
-  Dec 16, 2025 banning kratom-related products except pure-mitragynine
+  Dec 12, 2025 banning kratom-related products except pure-mitragynine
   vegetation, pending permanent rulemaking
   ([governor's office](https://governor.ohio.gov/media/news-and-media/governor-dewine-updates-request-to-board-of-pharmacy-to-schedule-kratom-compounds-as-illegal-drugs)).
   Several other states have enacted narrower 7-OH restrictions

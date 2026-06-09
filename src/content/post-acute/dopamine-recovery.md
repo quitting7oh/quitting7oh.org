@@ -2,7 +2,7 @@
 title: "Dopamine Recovery"
 description: "Flat motivation and anhedonia in the months after 7-OH and kratom synthetics: what helps, the realistic timeline, and the pseudoscience to skip."
 category: "post-acute"
-last_updated: "2026-05-25"
+last_updated: "2026-06-09"
 sort: 3
 ---
 
@@ -19,11 +19,11 @@ For prescribed medications relevant to flat mood (bupropion specifically), see [
 
 ## What the timeline looks like
 
-PET imaging studies of opioid- and stimulant-dependent populations tracked through recovery show partial dopamine-system recovery over **weeks to months**, with significant individual variation and no clean threshold day ([Volkow et al., review](https://pmc.ncbi.nlm.nih.gov/articles/PMC3760378/)). The receptors come back. The signaling normalizes. Motivation returns. Not on a schedule, but it returns.
+PET imaging studies of opioid- and stimulant-dependent populations tracked through recovery show partial dopamine-system recovery over **weeks to months**, with significant individual variation and no clean threshold day ([Cosgrove, *Imaging Receptor Changes in Human Drug Abusers*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3760378/)). The receptors come back. The signaling normalizes. Motivation returns. Not on a schedule, but it returns.
 
 ## Recovery is rebalancing, not refilling
 
-When the literature talks about "dopamine recovery," what's measurable is **changes in receptor availability and signaling on PET imaging over time post-abstinence**. The Volkow group and others tracked this in opioid- and stimulant-dependent populations and saw slow, partial recovery toward baseline with substantial individual variation.
+When the literature talks about "dopamine recovery," what's measurable is **changes in receptor availability and signaling on PET imaging over time post-abstinence**. Imaging groups (Cosgrove and others) tracked this in opioid- and stimulant-dependent populations and saw slow, partial recovery toward baseline with substantial individual variation.
 
 What dopamine recovery is **not**:
 

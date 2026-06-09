@@ -2,7 +2,7 @@
 title: "MAT & Your Professional License"
 description: "A handful of regulated professions (CDL, pilots, ATC, law enforcement, armed security, some healthcare) treat MAT use as a licensure issue. What to check before you start."
 category: "for-you"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 6
 ---
 
@@ -43,7 +43,7 @@ The [FAA](https://www.faa.gov) issues first-, second-, and third-class airman me
 
 **Buprenorphine and methadone:** Both require special issuance review at minimum; routine medical certification is not available while on these medications under typical circumstances.
 
-**HIMS, Human Intervention Motivation Study:** The FAA's [HIMS program](https://www.himsprogram.com) is an industry-wide structured program for pilots in recovery from substance use disorder. It is the recognized path back to flying for many pilots after SUD diagnosis, including some on MAT under specific protocols. ATC has analogous programs through the FAA Drug and Alcohol Program.
+**HIMS, Human Intervention Motivational Study:** The FAA's [HIMS program](https://www.himsprogram.com) is an industry-wide structured program for pilots in recovery from substance use disorder. It is the recognized path back to flying for many pilots after SUD diagnosis, including some on MAT under specific protocols. ATC has analogous programs through the FAA Drug and Alcohol Program.
 
 **What to know:**
 

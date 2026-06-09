@@ -81,7 +81,7 @@ a compound actually does:
   - **Partial agonists** activate the receptor at less than the
     maximum, no matter how much you take. This is the **ceiling
     effect**. Buprenorphine is the textbook example: very high
-    µ-affinity (~1 nM, similar to morphine), but its maximum
+    µ-affinity (~0.2 nM, tighter than morphine), but its maximum
     receptor activation sits well below morphine's. That's why
     bupe can be safer in overdose despite binding so tightly.
     **All of the kratom-derived compounds on this page — mitragynine,
@@ -120,11 +120,11 @@ value.
 
 | Compound | Kᵢ (µ-opioid) | Source |
 |---|---|---|
-| **Pseudoindoxyl mitragynine ([pseudo](/compounds/mitragynine-pseudoindoxyl))** | ≈ 0.2–1 nM | Varadi et al. 2016 |
+| **Pseudoindoxyl mitragynine ([pseudo](/compounds/mitragynine-pseudoindoxyl))** | ≈ 0.8 nM | [Varadi et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27556704/) (MOR-1) |
 | **Morphine** | ≈ 1 nM | reference (classical literature) |
 | **Dihydro-7-hydroxymitragynine ([MGM-15](/compounds/mgm15))** | 6.4 nM | [Matsumoto et al. 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/) (guinea pig brain, [³H]DAMGO displacement) |
-| **[7-Hydroxymitragynine](/compounds/7-oh)** | ≈ 13–47 nM | Kruegel et al. 2019; Matsumoto et al. 2004 |
-| **Mitragynine** | ≈ 7–230 nM | Kruegel et al. 2019 (hMOR, ~7 nM); older guinea pig brain assays report 80–230 nM |
+| **[7-Hydroxymitragynine](/compounds/7-oh)** | ≈ 7–47 nM | [Obeng et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/) (hMOR, ~7 nM); Matsumoto et al. 2004 (guinea pig brain, 37–47 nM) |
+| **Mitragynine** | ≈ 160–240 nM | [Obeng et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/) (hMOR, 161 nM); older guinea pig brain assays report 80–230 nM. Kruegel et al. 2019 reports functional EC₅₀ 339 nM at hMOR, not Kᵢ. |
 | **7-Acetoxymitragynine** | Not formally established | hydrolyzes to 7-OH in vivo |
 
 **Potency rankings vary by what's measured.** Receptor binding
@@ -141,10 +141,12 @@ modification of mitragynine. The dominant chemistry pattern of the
 kratom synthetic market is: **start with mitragynine; add an –OH
 at C-7 (or convert to its ester); optionally further modify to
 extend the duration or shift the receptor profile; sell the result**.
-MGM-15 (the dihydro reduction of 7-OH) extends the duration through
-delta-receptor activity and a longer plasma half-life; pseudoindoxyl
-(the indoxyl rearrangement) carries the highest µ-affinity of any
-kratom-derived compound characterized so far. Both sit on top of the
+MGM-15 (the dihydro reduction of 7-OH) is a µ/δ dual agonist
+([Matsumoto et al. 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/)
+report MOR Kᵢ 6.4 nM, DOR Kᵢ 16 nM) and is reported as longer-acting
+in community use, though human plasma PK isn't formally published;
+pseudoindoxyl (the indoxyl rearrangement) carries the highest µ-affinity
+of any kratom-derived compound characterized so far. Both sit on top of the
 mitragynine → 7-OH step.
 
 This is part of why the concentrated synthetic products are
@@ -162,7 +164,8 @@ scaffold, they're the ones with characterized µ-opioid affinity
 data and clinical exposure. More aggressively modified analogs
 exist (the 9-fluoro analog [MGM-16](/compounds/mgm16) is the
 most-discussed example, reported at approximately 240× the
-potency of morphine in a mouse tail-flick antinociception assay).
+potency of morphine orally and ~71× subcutaneously in mouse
+tail-flick antinociception assays per Matsumoto et al. 2014).
 They aren't ranked here because the receptor-binding literature
 for them is thinner. Don't read this table as the complete
 spectrum; read it as the slice with reliable data.

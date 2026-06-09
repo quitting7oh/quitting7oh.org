@@ -48,7 +48,7 @@ The person you love is not gone. They're trapped in a pattern that's hard to bre
 ## If you or your loved one is in crisis right now
 
 - **[988 Suicide & Crisis Lifeline](https://988lifeline.org)**: call or text 988 (24/7)
-- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline)**: 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline)**: 1-800-662-4357 (free, confidential, 24/7 treatment referrals)
 - **[National Domestic Violence Hotline](https://www.thehotline.org)**: 1-800-799-7233 or text "START" to 88788 (24/7)
 - **[Childhelp National Child Abuse Hotline](https://www.childhelphotline.org)**: 1-800-422-4453 (24/7)
 - **911**: for immediate danger or suspected overdose

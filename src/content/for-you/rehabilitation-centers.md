@@ -49,7 +49,7 @@ to attempt (the polysubstance case above).
 > please don't come off without medical supervision.** Combined
 > withdrawal can be medically dangerous. Benzo withdrawal in
 > particular can be fatal without medical management. Call
-> **[SAMHSA](https://www.samhsa.gov/find-help/national-helpline) at
+> **[SAMHSA](https://www.samhsa.gov/find-help/helplines/national-helpline) at
 > 1-800-662-4357** or visit [findtreatment.gov](https://findtreatment.gov)
 > for supervised options.
 
@@ -108,7 +108,7 @@ just disagreeing with your prescriber.
 A few tools to start with:
 
 - **[findtreatment.gov](https://findtreatment.gov)**: official SAMHSA treatment locator. Filter by insurance, level of care, MAT availability, and special needs (women-only, LGBTQ+ affirming, specific languages, veterans-focused, etc.). The most useful single resource on this page.
-- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline), 1-800-662-4357.** Free, confidential, 24/7. Real humans give referrals based on your zip and insurance. If you call once in your whole search, this is the call.
+- **[SAMHSA National Helpline](https://www.samhsa.gov/find-help/helplines/national-helpline), 1-800-662-4357.** Free, confidential, 24/7. Real humans give referrals based on your zip and insurance. If you call once in your whole search, this is the call.
 - **Your existing healthcare providers**: primary care doctor, therapist, gynecologist, anyone who knows you. They can write referrals and often have specific local recommendations that the directories won't surface.
 - **For telehealth-only [Suboxone](/mat-suboxone/suboxone-for-7oh) induction**: see the [Telehealth Providers comparison](/resources/telehealth-for-suboxone). Several options let you do a video appointment and have a prescription the same day, no in-person visit required. The lowest activation-energy starting point if MAT is your direction.
 
@@ -168,7 +168,7 @@ If the first program isn't a fit (capacity, insurance issues, distance, philosop
 
 **"They'll take my kids."** Treatment programs are not mandated reporters in the same way schools and pediatricians are; their job is treating you. If there are active child safety concerns separate from your treatment, that's a separate conversation, but engaging in treatment voluntarily for your own substance use is generally not itself something that triggers CPS involvement, and CPS systems, when they do get involved, treat "parent who is seeking treatment" very differently from "parent who is not."
 
-**"I can't afford it."** Read the payment section above. You have more options than you think. The [SAMHSA helpline](https://www.samhsa.gov/find-help/national-helpline) (1-800-662-4357) is specifically designed for this conversation.
+**"I can't afford it."** Read the payment section above. You have more options than you think. The [SAMHSA helpline](https://www.samhsa.gov/find-help/helplines/national-helpline) (1-800-662-4357) is specifically designed for this conversation.
 
 **"What if I relapse and waste it?"** Relapse during or after treatment is part of the population-level pattern for opioid dependence. Treatment programs know this. A relapse is information about what was missing from the treatment plan, not evidence that you "wasted" anything.
 

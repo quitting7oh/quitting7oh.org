@@ -2,7 +2,7 @@
 title: "Cannabis and THC in Recovery"
 description: "Cannabis and THC during acute withdrawal and PAWS from 7-OH and kratom — benefits, harms, the cannabinoid landscape, and how to think about the call."
 category: "other-tools"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 11
 ---
 
@@ -302,8 +302,8 @@ and resolves with cessation
 If you're a chronic heavy user and your nausea is worsening, it
 belongs on the differential.
 
-**Vape cart safety.** The 2019-2020 EVALI outbreak (more than 2,800
-hospitalizations, 68 deaths) was traced primarily to vitamin E
+**Vape cart safety.** The 2019-2020 EVALI outbreak (around 2,800
+hospitalizations, 68 deaths per the CDC's final tallies) was traced primarily to vitamin E
 acetate contamination in THC-containing vape cartridges from
 unregulated sources
 ([CDC MMWR, 2020](https://www.cdc.gov/mmwr/volumes/69/wr/mm6903e2.htm)).

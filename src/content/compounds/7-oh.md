@@ -61,10 +61,20 @@ obscures this scale difference; the dependence reality doesn't.
 
 ### Plasma half-life
 
-**Roughly 100 minutes** (about 1 hour 40 minutes). This is short by
-opioid standards, close to immediate-release oxycodone, much shorter
-than [MGM-15](/compounds/mgm15)'s ~15-hour half-life or methadone's
-24+ hours.
+**Short.** No direct human PK study of standalone 7-OH has been
+published. The community-observed effect duration is roughly 90
+minutes to a couple of hours, which fits the typical 3–6 hour
+redosing cadence. Published clinical PK reports the 7-OH metabolite
+(formed in the body after oral mitragynine) at a median ~4 hours
+single-dose and ~9 hours with repeated dosing
+([Tanna et al., 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/)).
+Direct beagle-dog PK of 7-OH reports an elimination half-life of
+3.6 ± 0.5 hours (Fan et al., 2020). The "~100 minutes" figure that
+circulates in community discussion describes effect duration, not a
+formally measured human plasma half-life.
+
+7-OH is short by opioid standards, much shorter than
+[MGM-15](/compounds/mgm15) or methadone's 24+ hours.
 
 The dosing pattern follows from the half-life: most habitual 7-OH
 users redose every 3–6 hours during waking hours, and many wake up at
@@ -126,8 +136,10 @@ other minor alkaloids, or undisclosed compounds. Two of those minor
 alkaloids, paynantheine and speciogynine, bind 5-HT<sub>1A</sub> and
 5-HT<sub>2B</sub> receptors at low-nanomolar affinity
 ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)),
-and corynantheidine plus mitragynine bind α-1 and α-2 adrenergic
-receptors directly ([Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/);
+and corynantheidine binds α-1 and α-2 adrenergic receptors directly
+(corynantheidine α-1D Kᵢ 41.7 nM is selective and tight; mitragynine
+itself binds these receptors only weakly, at micromolar affinity;
+[Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/);
 [Obeng et al., *Eur J Pharmacol* 2024](https://pubmed.ncbi.nlm.nih.gov/39111419/)).
 This is **direct receptor activity**, not SSRI/SNRI-style reuptake
 inhibition, but the resulting withdrawal symptom picture (brain zaps,

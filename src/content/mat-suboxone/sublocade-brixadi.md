@@ -2,7 +2,7 @@
 title: "Sublocade & Brixadi: Long-Acting Buprenorphine Injections"
 description: "Sublocade and Brixadi — long-acting buprenorphine injections for maintenance, the long discontinuation tail, and the single-shot exit strategy."
 category: "mat-suboxone"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 6
 ---
 
@@ -98,11 +98,12 @@ into a multi-month glide.
 
 ### Evidence so far
 
-- A small [case series (Kazim et al., PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
-  reported on patients on low-dose sublingual buprenorphine who were
-  transitioned to a single 100 mg dose of Sublocade and then ceased
-  treatment without eliciting opioid withdrawal symptoms. Small N,
-  short series, but the outcome was clean exit.
+- A small [observational case series (Hayes & Mills et al. 2025, n=15)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
+  characterized withdrawal from long-acting injectable buprenorphine
+  in patients discontinuing treatment. Some patients had mild or
+  manageable courses; others had longer-tailed symptoms. The single-
+  injection-then-stop pattern is documented in this and adjacent
+  literature; cases are still small.
 - Larger [Reddit-based qualitative research (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12064969/)
   found mixed results, some patients had relatively mild withdrawal
   due to the gradual decline; others reported protracted symptoms that
@@ -152,8 +153,9 @@ years.
 - **The withdrawal tail varies.** Outcomes range from mild and gradual
   to moderately rough at the 1-to-2-month mark. The literature is
   thin, be ready for either.
-- **Cost.** A single Sublocade or Brixadi injection runs **$1,500 to
-  $1,900 list price.** Insurance often covers it as MAT, but if your
+- **Cost.** A single Sublocade or Brixadi injection runs roughly
+  **$2,100 to $2,200 list price** (per drugs.com / GoodRx / Indivior
+  savings page, 2024–2026). Insurance often covers it as MAT, but if your
   insurer has stopped considering you appropriate for MAT (because
   you're stable), getting a single dose specifically for taper
   purposes can be a coverage fight worth budgeting time for.
@@ -201,7 +203,7 @@ years.
 - Can I switch back to oral bupe later if needed?
 
 ## Cost and access notes
-Both medications are expensive without insurance coverage. Sublocade list price is around $1,500 to $1,900 per monthly injection. Brixadi pricing varies by dose. Most insurance plans cover one or both as part of MAT, but prior authorization is common. Manufacturer assistance programs exist for patients who qualify.
+Both medications are expensive without insurance coverage. Sublocade list price runs roughly $2,100 to $2,200 per monthly injection. Brixadi pricing varies by dose. Most insurance plans cover one or both as part of MAT, but prior authorization is common. Manufacturer assistance programs exist for patients who qualify.
 
 Both medications must be administered by a healthcare provider; you can't take them home.
 
@@ -211,7 +213,7 @@ Both medications must be administered by a healthcare provider; you can't take t
 - [Brixadi prescribing information](https://www.brixadihcp.com/dosing-and-administration/)
 - [Sublocade FDA package insert (2025)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/209819s031lbl.pdf)
 - [Medscape: Sublocade/Brixadi comparison](https://reference.medscape.com/drug/sublocade-brixadi-buprenorphine-long-acting-injection-1000211)
-- [Single-dose Sublocade for taper purposes, case series (Kazim et al., PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
+- [Withdrawal from long-acting injectable buprenorphine, observational case series (Hayes & Mills et al. 2025, PMC12018199)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12018199/)
 - [Reddit-based research on stopping extended-release buprenorphine (PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12064969/)
 
 > **Reminder:** This is informational content. Long-acting buprenorphine decisions should be made with a prescriber familiar with your specific situation, especially given the multi-month commitment these injections involve. The community here is mostly oriented toward shorter-term tapers, so if you're considering long-term maintenance, additional resources like [r/suboxone](https://www.reddit.com/r/suboxone/) may be more useful.

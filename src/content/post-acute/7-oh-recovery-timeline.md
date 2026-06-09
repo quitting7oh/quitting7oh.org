@@ -2,7 +2,7 @@
 title: "Long-Term Outlook"
 description: "What recovery from 7-OH dependence actually looks like — how hard it is, how relapse fits, and why the long-arc picture borrows from OUD literature."
 category: "post-acute"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 9
 ---
 
@@ -82,9 +82,9 @@ treatment doesn't work. It's the shape of the thing.
 
 NIDA frames it this way: [relapse rates for substance use disorders
 run 40 to 60%](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery),
-similar to relapse rates for other chronic medical conditions like
-diabetes, hypertension, and asthma. **Nobody calls a person with
-diabetes "weak" when their blood sugar slips.** They adjust the
+in the same ballpark as relapse rates for other chronic medical
+conditions like hypertension and asthma (both 50–70% per NIDA).
+**Nobody calls a person with diabetes "weak" when their blood sugar slips.** They adjust the
 treatment plan. The chronic-disease model fits opioid dependence
 too.
 
@@ -154,7 +154,7 @@ The receptors come back. The signaling normalizes. The HPA axis
 renormalizes. The sleep architecture reassembles. The dopamine
 system rebalances. Endorphin production rebuilds. These aren't
 promises, they're what the imaging and clinical literature
-consistently shows ([Volkow et al., PET imaging in addiction](https://pmc.ncbi.nlm.nih.gov/articles/PMC3760378/);
+consistently shows ([Cosgrove, *Imaging Receptor Changes in Human Drug Abusers*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3760378/);
 [opioid receptor adaptation review](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2025.1597922/full);
 [sleep recovery in opioid dependence](https://pubmed.ncbi.nlm.nih.gov/25462136/);
 [HPA axis recovery review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10003084/)).

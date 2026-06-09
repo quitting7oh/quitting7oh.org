@@ -2,7 +2,7 @@
 title: "Endocrine Recovery After 7-OH and Kratom"
 description: "7-OH and kratom synthetics suppress the hormone systems chronically. What you may experience months in, the testing workup, the recovery picture, and what's specific to men and to women."
 category: "post-acute"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 7
 ---
 
@@ -136,7 +136,7 @@ The clinical literature on women is thinner than on men but is genuinely substan
 
 **Cycle recovery after cessation.** This is a literature gap and the page says so directly. No dedicated study has tracked menstrual cycle recovery after opioid cessation in women. Tremonti's 20-year cohort doesn't break out women's cycle data; Schmittner reports during-methadone restoration, not post-cessation. The reasonable read from related work and clinical experience: cycles generally return over weeks to months after cessation, often irregular for a stretch before stabilizing. Variables affecting timeline include duration of use, dose, age, baseline cycle pattern, and overall health. Cycles that have not returned within several months warrant clinical evaluation.
 
-**Libido and sexual function in women.** The [Zamboni et al. 2019 study](https://pubmed.ncbi.nlm.nih.gov/31156404/) of 258 women on opioid maintenance treatment (methadone or buprenorphine) found 56.6% had sexual dysfunction by the Arizona Sexual Experience Scale. Methadone users had greater arousal difficulty than buprenorphine users. The study did not measure hormone levels, so the link is symptomatic rather than mechanism-proven. Pain during intercourse, reduced arousal, decreased lubrication, and difficulty reaching orgasm can occur during use and persist into recovery; these are treatable in clinical contexts when they don't resolve on their own. As with men, the relationship between hormonal recovery and felt sexual function is real but not 1:1; some women report heightened sensitivity early in recovery, before settling toward a new baseline.
+**Libido and sexual function in women.** The [Zamboni et al. 2019 study](https://pubmed.ncbi.nlm.nih.gov/31156404/) of 258 women on opioid maintenance treatment (methadone or buprenorphine) found 56.6% had sexual dysfunction by the Arizona Sexual Experience Scale, with no significant difference between methadone and buprenorphine groups overall. The study did not measure hormone levels, so the link is symptomatic rather than mechanism-proven. Pain during intercourse, reduced arousal, decreased lubrication, and difficulty reaching orgasm can occur during use and persist into recovery; these are treatable in clinical contexts when they don't resolve on their own. As with men, the relationship between hormonal recovery and felt sexual function is real but not 1:1; some women report heightened sensitivity early in recovery, before settling toward a new baseline.
 
 **Hormone-related mood symptoms during recovery.** As estrogen and progesterone cycling restarts, PMS-like or PMDD-like symptoms can emerge or intensify, sometimes more strongly than the reader experienced pre-use. This tracks hormone fluctuations, not psychology, and usually stabilizes as cycles regularize. Persistent or severe cyclical mood symptoms warrant clinical evaluation; effective treatments exist.
 
