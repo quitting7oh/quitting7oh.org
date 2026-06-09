@@ -49,10 +49,12 @@ by [MGM-15](/compounds/mgm15).
 ## Structural modifications and µ-opioid binding
 
 Each modification in the table below is a single-step change from
-either mitragynine or 7-OH. The largest µ-opioid affinity jump
-comes from **adding an –OH group at C-7** (mitragynine → 7-OH).
-Further saturating the indolenine C=N bond on 7-OH gives MGM-15,
-the tightest-binding kratom-derived compound in the table.
+either mitragynine or 7-OH. The two modifications with the largest
+published affinity effects are **hydroxylation at C-7** (mitragynine
+→ 7-OH, the metabolite that mediates most of mitragynine's opioid
+activity in vivo) and **the oxidative indole-to-indoxyl rearrangement**
+that produces pseudoindoxyl, which carries the highest µ-opioid
+affinity of the kratom-derived compounds on this page.
 
 | Modification | Starts from | Produces | What it does |
 |---|---|---|---|
@@ -116,14 +118,14 @@ species, methodology, and laboratory; ranges below reflect the
 range across published studies rather than a single canonical
 value.
 
-| Compound | Kᵢ (µ-opioid) | Affinity tier |
+| Compound | Kᵢ (µ-opioid) | Source |
 |---|---|---|
-| **Dihydro-7-hydroxymitragynine ([MGM-15](/compounds/mgm15))** | ≈ 0.03–0.2 nM | Very high |
-| **[7-Hydroxymitragynine](/compounds/7-oh)** | ≈ 0.2–0.6 nM | Very high |
-| **7-Acetoxymitragynine** | Not formally established (hydrolyzes to 7-OH in vivo) | Moderate–high *(effective)* |
-| **Morphine** | ≈ 1.0 nM | High (reference) |
-| **Pseudoindoxyl mitragynine ([pseudo](/compounds/mitragynine-pseudoindoxyl))** | ≈ 0.2–1 nM | Moderate–high |
-| **Mitragynine** | ≈ 80–200 nM | Low–moderate |
+| **Pseudoindoxyl mitragynine ([pseudo](/compounds/mitragynine-pseudoindoxyl))** | ≈ 0.2–1 nM | Varadi et al. 2016 |
+| **Morphine** | ≈ 1 nM | reference (classical literature) |
+| **Dihydro-7-hydroxymitragynine ([MGM-15](/compounds/mgm15))** | 6.4 nM | [Matsumoto et al. 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/) (guinea pig brain, [³H]DAMGO displacement) |
+| **[7-Hydroxymitragynine](/compounds/7-oh)** | ≈ 13–47 nM | Kruegel et al. 2019; Matsumoto et al. 2004 |
+| **Mitragynine** | ≈ 7–230 nM | Kruegel et al. 2019 (hMOR, ~7 nM); older guinea pig brain assays report 80–230 nM |
+| **7-Acetoxymitragynine** | Not formally established | hydrolyzes to 7-OH in vivo |
 
 **Potency rankings vary by what's measured.** Receptor binding
 studies, isolated-tissue analgesia, behavioral models, and human
@@ -137,18 +139,21 @@ for what affinity does and doesn't tell you.
 Every compound on this page except morphine is a one- or two-step
 modification of mitragynine. The dominant chemistry pattern of the
 kratom synthetic market is: **start with mitragynine; add an –OH
-at C-7 (or convert to its ester); optionally saturate a double
-bond; sell the result**. Each step roughly increases µ-opioid
-receptor affinity, and the most potent compound on the list
-([MGM-15](/compounds/mgm15)) is the cumulative result of both
-modifications.
+at C-7 (or convert to its ester); optionally further modify to
+extend the duration or shift the receptor profile; sell the result**.
+MGM-15 (the dihydro reduction of 7-OH) extends the duration through
+delta-receptor activity and a longer plasma half-life; pseudoindoxyl
+(the indoxyl rearrangement) carries the highest µ-affinity of any
+kratom-derived compound characterized so far. Both sit on top of the
+mitragynine → 7-OH step.
 
 This is part of why the concentrated synthetic products are
 qualitatively different from leaf kratom in dependence formation
-speed and withdrawal severity. The mitragynine in leaf has Kᵢ in
-the 80-200 nM range; concentrating to 7-OH drops Kᵢ by roughly
-1000-fold (to ~0.2–0.6 nM). The clinical and lay implications are
-on the [Compounds](/compounds) section pages; this page is the
+speed and withdrawal severity. The mitragynine in leaf reaches the
+µ receptor in the body primarily through its conversion to 7-OH;
+concentrated 7-OH delivers the active compound directly, at doses
+the leaf can't produce. The clinical and lay implications are on
+the [Compounds](/compounds) section pages; this page is the
 structural-pharmacology counterpart.
 
 **A note on this list's scope.** The six compounds above aren't
