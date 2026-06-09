@@ -2,11 +2,15 @@
 title: "Tapering Off 7-OH"
 description: "What a 7-OH taper actually looks like — the early dose-halving stretch, the low-dose plateau where most tapers stall, the jump-off, and what helps at each stage."
 category: "for-you"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 3
 ---
 
 Tapering off 7-OH means stepping your daily dose down on a schedule until you can stop. The trade-off vs cold turkey: a longer stretch of feeling moderately bad instead of a shorter, sharper crash.
+
+> 📊 **Want a day-by-day schedule from your current dose?**
+> The [7-OH Taper Calculator](/resources/7-oh-taper-calculator) builds the
+> stepdown plan, including the lower-dose plateau where most tapers stall.
 
 ## What to know before you start
 

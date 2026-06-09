@@ -2,7 +2,7 @@
 title: "Quit 7-OH with Kratom Leaf"
 description: "Using plain kratom leaf as a bridge off concentrated 7-OH and other kratom synthetics, when it works, when it doesn't, and how to taper the leaf afterward."
 category: "other-tools"
-last_updated: "2026-06-04"
+last_updated: "2026-06-09"
 sort: 5
 ---
 For some users in this community, **plain kratom leaf powder can be used as a taper tool** to come off [7-OH](/compounds/7-oh) and other concentrated kratom-derived products. The reasoning is straightforward: [7-OH](/compounds/7-oh) is one of the alkaloids naturally present in kratom leaf, just at far lower concentrations than in concentrated products. Tapering down to leaf is essentially reducing your alkaloid exposure to a fraction of what concentrated products deliver, and then tapering off the leaf itself.
@@ -15,6 +15,11 @@ The other taper-shaped path is tapering the concentrated 7-OH dose directly with
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
 
 **Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure [pseudo](/compounds/mitragynine-pseudoindoxyl) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound page for the right approach.
+
+> 📊 **Want a day-by-day taper schedule?**
+> The [Kratom Leaf Taper Calculator](/resources/kratom-leaf-taper-calculator)
+> builds the bridge-then-step-down plan from your current 7-OH dose to a
+> kratom-leaf finish.
 
 ## The pharmacology of why leaf works
 Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is the dominant alkaloid (up to 66% of total alkaloid content in Thai varieties), with 7-OH as a minor constituent (up to 2% of total alkaloid content)](https://en.wikipedia.org/wiki/Mitragynine). [Total alkaloid concentration in dried leaves ranges from 0.5 to 1.5%](https://en.wikipedia.org/wiki/Mitragynine).

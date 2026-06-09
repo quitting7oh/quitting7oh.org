@@ -16,6 +16,26 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-09
 
+### Calculator callouts on the path master pages
+
+- Every taper calculator now has a prominent callout on its
+  corresponding path master page, placed right above the first H2
+  so a reader arriving on the master from search or a referral
+  doesn't have to know the calculator exists to find it.
+- Added on:
+  - [`/for-you/tapering-7oh`](src/content/for-you/tapering-7oh.md) → 7-OH Taper Calculator
+  - [`/mat-suboxone/suboxone-for-7oh`](src/content/mat-suboxone/suboxone-for-7oh.md) → Suboxone Taper Calculator
+  - [`/mat-suboxone/suboxone-rapid-taper`](src/content/mat-suboxone/suboxone-rapid-taper.md) → Suboxone Taper Calculator (framed as "doesn't see a taper plan that fits your situation? — build a custom one")
+  - [`/other-tools/sr-17`](src/content/other-tools/sr-17.md) → SR-17 Cross-Taper Calculator
+  - [`/other-tools/quit-7-oh-with-kratom-leaf`](src/content/other-tools/quit-7-oh-with-kratom-leaf.md) → Kratom Leaf Taper Calculator
+- Same callout pattern across all five: blockquote with a chart
+  emoji, an intent-matching CTA ("Want a day-by-day schedule…"),
+  one-sentence description of what the calculator builds, and a
+  single link out. Rapid-taper page uses the "doesn't fit your
+  situation" framing rather than the default "want a schedule"
+  framing, since readers landing on rapid-taper already know they
+  want a schedule and need a way to deviate from the templates.
+
 ### Pharmacology page reflects DHM/MIT-A relabeling
 
 - Updated [`/pharmacology/morphine-vs-kratom`](src/content/pharmacology/morphine-vs-kratom.md)

@@ -2,7 +2,7 @@
 title: "Suboxone"
 description: "Suboxone for coming off 7-OH and kratom synthetics. Induction, low-and-slow dosing, short-taper schedules, and the receptor pharmacology behind the approach."
 category: "mat-suboxone"
-last_updated: "2026-06-04"
+last_updated: "2026-06-09"
 sort: 2
 ---
 > **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues separate from whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.
@@ -17,6 +17,12 @@ Suboxone is the brand name for **buprenorphine/naloxone**, one medication for co
 2. **The "14-day taper" figure isn't a deadline.** For [7-OH](/compounds/7-oh)-focused tapers in this community, expect **5–14 days** depending on your day-1 dose. A few extra days at the bottom is normal pacing. See [About taper duration](#about-taper-duration).
 
 Both of these are conversations you can have with your prescriber. Bringing the receptor-occupancy data and the realistic-timeline numbers into that conversation works better than disagreeing without specifics.
+
+> 📊 **Want a day-by-day taper schedule?**
+> The [Suboxone Taper Calculator](/resources/suboxone-taper-calculator)
+> builds one from your current dose and target endpoint, at any pace from
+> rapid to slow. For the rapid-taper protocol specifically, see
+> [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper).
 
 ## The medication
 

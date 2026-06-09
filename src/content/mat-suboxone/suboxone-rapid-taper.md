@@ -2,12 +2,18 @@
 title: "Suboxone Rapid Taper"
 description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
 category: "mat-suboxone"
-last_updated: "2026-06-05"
+last_updated: "2026-06-09"
 sort: 4
 ---
 These schedules go faster than what a prescriber will typically suggest. They're built on community experience with hundreds of successful rapid tapers from 7-OH, where 5-to-10-day bupe courses at low-to-moderate doses have not produced meaningful bupe dependence. Most prescribers won't sign off on these timelines; you're choosing a community-developed approach over standard clinical practice.
 
 **On [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl), or stacked compounds?** Induction timing and bupe coverage both differ from straight 7-OH: COWS/SOWS takes longer to climb (36 to 72 hours rather than 14 to 24), and the delta-opioid activity of some of these compounds means bupe may not fully cover withdrawal symptoms. Read [Why Suboxone Might Not Be Working: long-acting synthetics or stacked compounds](/mat-suboxone/why-suboxone-isnt-working#if-youve-been-on-long-acting-synthetics-or-stacked-compounds) before applying the schedules below.
+
+> 📊 **Don't see a taper plan that fits your situation?**
+> The schedules below are templates. If your current dose, urgency, or
+> tolerance don't match, the [Suboxone Taper Calculator](/resources/suboxone-taper-calculator)
+> builds a custom schedule from your starting point — slower, faster,
+> or somewhere between the protocols here.
 
 ## Pharmacology: 7-OH vs. the heavier synthetics
 [7-OH](/compounds/7-oh) has a short plasma half-life (around 100 minutes) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
