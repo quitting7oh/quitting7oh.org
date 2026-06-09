@@ -316,6 +316,56 @@ export function findDisplayMeeting(now: Date = new Date()): DisplayMeeting | nul
   return candidates[0];
 }
 
+/** Find all meeting occurrences whose end is in the future and whose
+ *  start is no later than `now + maxDays * 24h`. Used by the dedicated
+ *  /next-kratom-support-meeting landing page to render a rolling
+ *  schedule (current + upcoming) as a stack of cards.
+ *
+ *  Algorithm: walk every meeting's day-of-week list, materialise
+ *  occurrences within the probe window, keep the ones that haven't
+ *  ended yet, sort by start time, cap at `maxCount`. */
+export function findUpcomingMeetings(
+  now: Date = new Date(),
+  maxDays: number = 3,
+  maxCount: number = 60,
+): DisplayMeeting[] {
+  const cutoffMs = now.getTime() + maxDays * 24 * 60 * 60 * 1000;
+  const probeDate = etToday(now);
+  const out: DisplayMeeting[] = [];
+  for (const m of MEETINGS) {
+    const durationMs =
+      (m.durationMinutes ?? FELLOWSHIPS[m.fellowship].defaultDurationMin) *
+      60_000;
+    // -1 catches a meeting that started late yesterday ET and is still
+    // running into "today" from the viewer's perspective. +maxDays+1
+    // catches the early-morning slots on the trailing edge of the window.
+    for (let offset = -1; offset <= maxDays + 1; offset++) {
+      const dayET = addDays(probeDate.y, probeDate.m, probeDate.d, offset);
+      if (!m.daysOfWeek.includes(dayET.dow)) continue;
+      const startMs = etWallClockToUTC(
+        dayET.y,
+        dayET.m,
+        dayET.d,
+        m.hourET,
+        m.minuteET,
+      );
+      const endMs = startMs + durationMs;
+      // Skip already-ended occurrences.
+      if (endMs <= now.getTime()) continue;
+      // Skip occurrences that start after the cap.
+      if (startMs > cutoffMs) continue;
+      out.push({
+        meeting: m,
+        start: new Date(startMs),
+        end: new Date(endMs),
+        status: classifyStatus(new Date(startMs), now),
+      });
+    }
+  }
+  out.sort((a, b) => a.start.getTime() - b.start.getTime());
+  return out.slice(0, maxCount);
+}
+
 /** Find the next meeting whose start is strictly after `afterTime`.
  *  Used by the widget to surface a "next up" line when the primary
  *  meeting is currently live or just started, so a reader mid-meeting

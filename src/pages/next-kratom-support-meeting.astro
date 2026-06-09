@@ -1,0 +1,64 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { UpcomingMeetings } from '~/components/UpcomingMeetings';
+
+const title = 'Next kratom support meeting';
+const description =
+  'Live virtual meeting schedule for Kratom Anonymous and There Is A Way Out (TIAWO) — see the next meeting, when it starts in your time, and join from any device. Free, no signup.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main
+    id="main-content"
+    class="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:py-16"
+  >
+    <header class="mb-12 sm:mb-16">
+      <h1 class="m-0 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        Next kratom support meeting
+      </h1>
+      <p class="mt-3 max-w-3xl text-base text-muted-foreground sm:text-lg">
+        Live virtual meetings every day from
+        <a
+          href="https://www.kratom-anonymous.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          Kratom Anonymous
+        </a>
+        and
+        <a
+          href="https://kratomquitters.com/meetings"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          There Is A Way Out
+        </a>. Free, no signup, no account. Show up from wherever you are.
+        Times below are in your local timezone.
+      </p>
+    </header>
+
+    <UpcomingMeetings client:load />
+
+    <footer class="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">
+      <p>
+        Looking for the full weekly grid? See the{' '}
+        <a
+          href="/resources/meeting-schedules"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          complete meeting schedule
+        </a>. Not what you're looking for? The{' '}
+        <a
+          href="/for-you/mutual-aid"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          mutual aid page
+        </a>{' '}
+        covers NA, SMART Recovery, and other groups that aren't
+        kratom-specific.
+      </p>
+    </footer>
+  </main>
+</BaseLayout>

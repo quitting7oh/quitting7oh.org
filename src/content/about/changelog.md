@@ -16,6 +16,24 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-09
 
+### Rolling meetings page at /next-kratom-support-meeting
+
+- New shareable landing page that opens with a featured "Next up"
+  card (Kratom Anonymous or There Is A Way Out, whichever is the
+  next live or upcoming meeting) and then a 3-day rolling grid of
+  compact cards grouped by day. Each card has a local-time stamp,
+  live countdown, fellowship + format, platform (Zoom / Google
+  Meet), and is itself a click-target to the join URL.
+- Featured card swaps its badge depending on status: "Next up"
+  while the meeting is still future, then "Starting soon" → "Live
+  now" as the clock turns over. Updates on a 30-second tick.
+- New `findUpcomingMeetings()` helper in `src/data/meetings.ts`
+  enumerates recurring meeting occurrences within an N-day window;
+  reuses the existing ET→local-time DST math.
+- Page uses BaseLayout directly (no sidebar, no DocLayout) to match
+  the homepage's stripped framing — the intent is a clean, share-
+  able link target.
+
 ### Taper calculator follow-ups
 
 - **SR preload defaults to 3 days** instead of 1. The 1-day textbook
