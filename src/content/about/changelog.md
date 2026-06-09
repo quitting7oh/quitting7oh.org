@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 6
 ---
 
@@ -15,6 +15,35 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-06-08
+
+### SOWS calculator on the SOWS/COWS induction-guide page
+
+- New interactive SOWS calculator at the top of
+  `mat-suboxone/sows-cows-induction-guide`. 16 items, each scored
+  0–4 by tapping a button. The page sums the total, names the
+  severity bucket, and prints a light-language induction-readiness
+  hint ("Probably too early", "Getting close, but probably not yet",
+  "Probably in the induction window", "Past the threshold — no
+  need to wait longer", "Severe range") so a reader inducting solo
+  at home can see where they are without doing the arithmetic.
+- **Log line** appears once all 16 items are scored: a single
+  pastable string with the score, severity bucket, and current
+  date/time, plus a "Copy to clipboard" button. Re-scoring later
+  updates the timestamp so users can log each observation as the
+  trajectory climbs.
+- **Collapsed by default** with a callout-style trigger header
+  ("SOWS calculator — Drop down to take your score", calculator
+  icon, primary-tinted background, primary-colored chevron) so the
+  surrounding prose stays scannable and the calculator reads as
+  the primary action when you want it.
+- Per-button labels (None / A little / Moderate / A lot / Extreme)
+  sit underneath each number column. Variable-width labels would
+  have made the buttons look uneven if placed inside them; the
+  under-button layout keeps the buttons uniform and the labels
+  always-visible without scroll-back to the top legend.
+- Page renamed from `.md` to `.mdx` to host the React island. The
+  existing hand-score item list is kept below for offline / printed
+  use; that section's heading is now "Self-scoring SOWS (by hand)".
 
 ### Peptides page title + two body-prose framing leaks
 

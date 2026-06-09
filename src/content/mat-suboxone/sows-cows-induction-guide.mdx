@@ -2,9 +2,13 @@
 title: "SOWS & COWS Guide"
 description: "Timing your first Suboxone dose by your withdrawal score, not the clock. SOWS is the self-scoring tool for inducting at home; COWS is the clinician version."
 category: "mat-suboxone"
-last_updated: "2026-06-04"
+last_updated: "2026-06-08"
 sort: 1
 ---
+import { SowsCalculator } from '~/components/SowsCalculator';
+
+<SowsCalculator client:load />
+
 The single most important thing about Suboxone induction is **timing it by your withdrawal score, not by the clock**. Two scoring tools exist for this. **SOWS** (Subjective Opiate Withdrawal Scale) is the one you score yourself, and it's the right tool if you're inducting at home alone, which most people in this community are. **COWS** (Clinical Opiate Withdrawal Scale) is the clinician version, scored by a prescriber or nurse, often on a video call. Both measure the same underlying thing: are you in enough withdrawal that bupe won't precipitate worse withdrawal?
 
 **The rule: don't induct until SOWS ≥ 17 (or COWS ≥ 12), regardless of how many hours it's been.** If you hit 24 hours and your SOWS is still at 10, you're not ready. If you hit 14 hours and your SOWS is solidly past 17, you probably are. The score decides.
@@ -30,9 +34,9 @@ The two are correlated but not identical. Sometimes SOWS catches the subjective 
 - COWS ≥ 12 (moderate withdrawal), roughly equivalent, the clinical standard
 - Some prescribers want COWS ≥ 13 or higher for the long-acting compounds; ask yours
 
-## Self-scoring SOWS
+## Self-scoring SOWS (by hand)
 
-SOWS is 16 items, each scored **0 (not at all) to 4 (extremely)**. Add them up for your total (range 0–64). Re-score every 60–90 minutes during induction so you can see the trajectory, not just a single snapshot. The official forms are the [WHO Annex 10 PDF](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) (a clean printable version) and the [SAMHSA TIP 40 HTML table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/). Below is a quick-reference of the items.
+The calculator at the top of the page does the math for you. If you'd rather score by hand, the items are listed below. The official forms are the [WHO Annex 10 PDF](https://www.ncbi.nlm.nih.gov/books/NBK143183/bin/annex10-fm2.pdf) (clean printable version) and the [SAMHSA TIP 40 HTML table](https://www.ncbi.nlm.nih.gov/books/NBK64244/table/A72917/).
 
 The items:
 
