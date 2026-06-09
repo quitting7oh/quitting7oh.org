@@ -1,0 +1,83 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { VirtualNaMeetings, type MeetingsBundle } from '~/components/VirtualNaMeetings';
+import bundleJson from '~/data/na-meetings.generated.json';
+
+// The JSON import is typed loosely by Astro's bundler; assert into our
+// component's expected shape. The build script is the single writer.
+const bundle = bundleJson as unknown as MeetingsBundle;
+
+const title = 'Find a virtual NA meeting happening now';
+const description =
+  'Third-party viewer over the public Narcotics Anonymous virtual meeting list — US, English-language meetings sorted into your local timezone, with one-click Zoom join. Data from na.org, used with permission. Not affiliated with NA.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main
+    id="main-content"
+    class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:py-16"
+  >
+    <header class="mb-12 sm:mb-16">
+      <h1 class="m-0 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        Find a virtual NA meeting happening now
+      </h1>
+
+      <div class="mt-4 max-w-none rounded-md border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+        <p class="m-0">
+          This page is a third-party viewer over the
+          <a
+            href="https://na.org/meetingsearch/virtual-meeting-search/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+          >Narcotics Anonymous<sup>®</sup> public virtual meeting list</a>,
+          sorted into your local timezone.
+          <strong class="font-semibold text-foreground">
+            quitting7oh.org is not affiliated with Narcotics Anonymous
+            World Services or any NA<sup>®</sup> group.
+          </strong>
+          Meeting data is © Narcotics Anonymous World Services, Inc., used
+          with permission and refreshed weekly.
+        </p>
+      </div>
+
+      <p class="mt-4 max-w-none text-base text-muted-foreground sm:text-lg">
+        NA is a 12-step fellowship for people recovering from drug
+        addiction. Meetings are free, anonymous, and require no
+        registration. The featured card below is the 24/7 always-on room;
+        beneath it are four panes — live now, starting soon, later today,
+        and tomorrow — in your timezone.
+      </p>
+
+      <p class="mt-4 max-w-none text-sm text-muted-foreground">
+        Each meeting is either <strong class="font-semibold text-foreground">open</strong>
+        (anyone interested in NA can attend — newcomers, family, the
+        curious) or <strong class="font-semibold text-foreground">closed</strong>
+        (limited to those who think they may have a problem with drugs —
+        "for addicts only," in NA's own words). The cards below are
+        tagged; the filter bar can narrow to either type.
+      </p>
+    </header>
+
+    <VirtualNaMeetings bundle={bundle} client:load />
+
+    <footer class="mt-16 border-t border-border pt-6 text-sm text-muted-foreground">
+      <p>
+        Looking for kratom-specific peer support instead? See the
+        <a
+          href="/next-kratom-support-meeting"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          next kratom support meeting
+        </a>. The
+        <a
+          href="/for-you/mutual-aid"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          mutual aid page
+        </a>{' '}
+        covers NA, SMART Recovery, and other fellowships in context.
+      </p>
+    </footer>
+  </main>
+</BaseLayout>

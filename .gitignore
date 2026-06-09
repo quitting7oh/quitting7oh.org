@@ -26,3 +26,8 @@ yarn-error.log*
 
 # Pagefind output (regenerated each build)
 public/pagefind/
+
+# Raw NA-meeting dumps from exploration scripts (regenerable). The
+# build-time src/data/na-meetings.generated.json is the file the page
+# actually uses — that one IS committed.
+scripts/data/

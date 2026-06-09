@@ -129,6 +129,14 @@ function MeetingCard({ display, now }: CardProps) {
   const showNextUp =
     nextUp !== null &&
     nextUp.start.getTime() - end.getTime() <= MAX_NEXT_UP_WINDOW_MS;
+  // When the next kratom meeting is more than 15 min away (status
+  // 'future'), nothing kratom-specific is currently in session — but
+  // NA's virtual list always has something live. Surface the finder
+  // for readers who need a meeting now, without naming any specific
+  // NA meeting (there are thousands and we don't endorse any one of
+  // them).
+  const showNaPointer = status === 'future';
+
   return (
     <div className="flex flex-col gap-4 rounded-lg border-2 border-sky-300 bg-sky-50 p-5 shadow-sm dark:border-sky-800/70 dark:bg-sky-950/30">
       {/* Framing line — orients the reader on what this widget is and
@@ -136,6 +144,25 @@ function MeetingCard({ display, now }: CardProps) {
       <p className="m-0 text-sm text-foreground/90">
         Need to talk to people who get it? Free virtual meetings every day. No signup, no fee. Show up from wherever you are.
       </p>
+
+      {showNaPointer && (
+        <div className="rounded-md border border-sky-200/70 bg-sky-100/50 px-3 py-2 text-sm dark:border-sky-900/70 dark:bg-sky-900/30">
+          <span className="font-medium text-foreground">
+            Need a meeting right now?
+          </span>{' '}
+          <span className="text-foreground/80">
+            The kratom-specific meeting below starts later. There's a
+            virtual NA meeting happening every hour —
+          </span>{' '}
+          <a
+            href="/virtual-na-meetings-now"
+            className="font-medium text-foreground underline underline-offset-2 hover:text-sky-700 dark:hover:text-sky-300"
+          >
+            find one live
+          </a>
+          .
+        </div>
+      )}
 
       <div className="flex items-start justify-between gap-3">
         <div className="flex flex-col gap-1">

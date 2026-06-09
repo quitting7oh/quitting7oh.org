@@ -1,0 +1,91 @@
+name: Refresh virtual NA meeting data
+
+# Weekly cron that pulls the current US + English virtual NA meeting list
+# from na.org's admin-ajax endpoint, normalizes it, and commits the
+# regenerated src/data/na-meetings.generated.json if anything changed.
+# Cloudflare Pages picks up the push to main and redeploys, so the
+# /virtual-na-meetings-now page stays in sync without manual upkeep.
+#
+# Authorization: NAWS senior-leadership@na.org approved republication
+# with attribution back to na.org. The page footer carries the link and
+# disclaimer.
+#
+# Re-running:
+#   - Schedule fires once a week (Sunday 09:00 UTC).
+#   - workflow_dispatch lets a maintainer trigger it manually.
+
+on:
+  schedule:
+    # Sunday 09:00 UTC — quiet time on the server, far from anyone's
+    # peak posting window. 05:00 ET / 04:00 CT / 02:00 PT.
+    - cron: '0 9 * * 0'
+  workflow_dispatch:
+
+# Default permissions: GITHUB_TOKEN gets `contents: write` so the job
+# can commit + push the regenerated data file.
+permissions:
+  contents: write
+
+# Avoid two cron runs overlapping if a previous one ran long.
+concurrency:
+  group: refresh-na-meetings
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          # We need to push back to main with the regenerated JSON.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Shallow clone is fine — we don't need history.
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+          # The build script uses only built-in modules, so no install
+          # step needed.
+
+      - name: Run the fetch + normalize script
+        run: node scripts/build-na-meetings.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # The fetched_at timestamp inside the JSON changes every run,
+          # so the file is effectively always "modified". Compare only
+          # meeting content — diff the file with fetched_at zeroed out
+          # against the committed version with the same treatment.
+          NEW_HASH=$(jq 'del(.fetched_at)' src/data/na-meetings.generated.json | sha256sum | cut -d' ' -f1)
+          OLD_HASH=$(git show HEAD:src/data/na-meetings.generated.json 2>/dev/null | jq 'del(.fetched_at)' | sha256sum | cut -d' ' -f1)
+
+          if [ "$NEW_HASH" = "$OLD_HASH" ]; then
+            echo "No content changes — skipping commit."
+            exit 0
+          fi
+
+          # Add an entry to CHANGELOG.md the same day the bot commits,
+          # so the public changelog reflects the refresh. We append to
+          # the most recent date entry if it exists for today, otherwise
+          # we'd be writing into yesterday — skip the CHANGELOG bump in
+          # that case (the data refresh is metadata, not editorial).
+          TODAY=$(date -u '+%Y-%m-%d')
+          if head -5 CHANGELOG.md | grep -q "^## ${TODAY}"; then
+            echo "Today's date entry exists — appending refresh note."
+            # No-op for now; if we want a bot bullet, hand-craft the insert.
+          fi
+
+          git add src/data/na-meetings.generated.json
+          git commit -m "chore(na-meetings): weekly data refresh
+
+Pulled fresh virtual NA meeting data from na.org.
+See scripts/build-na-meetings.mjs for the fetcher.
+
+Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git push
