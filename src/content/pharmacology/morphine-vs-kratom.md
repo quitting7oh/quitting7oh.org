@@ -75,13 +75,21 @@ a compound actually does:
   what the receptor does *once* the molecule is bound. Three
   patterns:
   - **Full agonists** activate the receptor maximally. Morphine,
-    fentanyl, and 7-OH at sufficient doses behave this way at µ.
+    fentanyl, and oxycodone behave this way at µ.
   - **Partial agonists** activate the receptor at less than the
     maximum, no matter how much you take. This is the **ceiling
     effect**. Buprenorphine is the textbook example: very high
     µ-affinity (~1 nM, similar to morphine), but its maximum
     receptor activation sits well below morphine's. That's why
     bupe can be safer in overdose despite binding so tightly.
+    **All of the kratom-derived compounds on this page — mitragynine,
+    7-OH, MGM-15, pseudoindoxyl — are partial µ agonists in the
+    published receptor-pharmacology work.** Their differences in
+    effect come from differing affinity (how much receptor
+    occupancy they get at a given dose) and differing partial-
+    activity ceilings (how much activation that occupancy
+    produces), not from one being a full agonist and another being
+    partial.
   - **Antagonists** bind without activating, and block agonists.
     Naloxone (Narcan) is the canonical µ antagonist; naltrexone
     is longer-acting.
