@@ -3,7 +3,6 @@ import {
   ExternalLink,
   Search,
   Filter as FilterIcon,
-  ChevronDown,
   Copy as CopyIcon,
   Check as CheckIcon,
   Info,
@@ -371,8 +370,6 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     languages: new Set(),
     search: '',
   });
-  const [showAllAudiences, setShowAllAudiences] = React.useState(false);
-
   React.useEffect(() => {
     setNow(new Date());
     const t = setInterval(() => setNow(new Date()), TICK_MS);
@@ -417,12 +414,19 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     [bundle.program_counts, visibleCounts.programs],
   );
 
+  // Russian intentionally excluded from the language filter list —
+  // even when meetings carry the tag they're not useful for this
+  // site's audience. The Russian-tagged meetings still show up in the
+  // panes if they also match other selected filters.
+  const HIDDEN_LANGUAGES = React.useMemo(() => new Set(['Russian']), []);
+
   const languageChips = React.useMemo(
     () =>
       Object.entries(bundle.language_counts)
+        .filter(([name]) => !HIDDEN_LANGUAGES.has(name))
         .sort((a, b) => b[1] - a[1])
         .map(([name]) => ({ name, count: visibleCounts.languages[name] ?? 0 })),
-    [bundle.language_counts, visibleCounts.languages],
+    [bundle.language_counts, visibleCounts.languages, HIDDEN_LANGUAGES],
   );
 
   const buckets = React.useMemo(() => {
@@ -469,9 +473,10 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     filterState.languages.size > 0 ||
     filterState.search.trim().length > 0;
 
-  const visibleAudienceChips = showAllAudiences
-    ? AUDIENCE_CHIPS
-    : AUDIENCE_CHIPS.slice(0, 5);
+  // Audience chips show every option SMART exposes — zero-count chips
+  // hide themselves below, so the row stays clean without a Show-all
+  // toggle. The full list is short enough to fit.
+  const visibleAudienceChips = AUDIENCE_CHIPS;
 
   return (
     <div className="space-y-10">
@@ -559,15 +564,6 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
               </button>
             );
           })}
-          {!showAllAudiences && AUDIENCE_CHIPS.length > 5 && (
-            <button
-              type="button"
-              onClick={() => setShowAllAudiences(true)}
-              className="rounded-full border border-dashed border-border px-3 py-1 text-xs font-medium text-muted-foreground hover:border-foreground/40 hover:text-foreground"
-            >
-              <ChevronDown className="inline h-3 w-3" aria-hidden="true" /> Show all
-            </button>
-          )}
         </div>
 
         {languageChips.length > 1 && (
