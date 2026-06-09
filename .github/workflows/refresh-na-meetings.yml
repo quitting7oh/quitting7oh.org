@@ -82,10 +82,8 @@ jobs:
           fi
 
           git add src/data/na-meetings.generated.json
-          git commit -m "chore(na-meetings): weekly data refresh
-
-Pulled fresh virtual NA meeting data from na.org.
-See scripts/build-na-meetings.mjs for the fetcher.
-
-Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git commit -m "chore(na-meetings): weekly data refresh" \
+                     -m "Pulled fresh virtual NA meeting data from na.org." \
+                     -m "See scripts/build-na-meetings.mjs for the fetcher." \
+                     -m "Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           git push
