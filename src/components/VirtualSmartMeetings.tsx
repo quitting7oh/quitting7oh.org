@@ -11,7 +11,13 @@ import { cn } from '~/lib/utils';
 
 const TICK_MS = 60_000;
 const LIVE_WINDOW_MIN = 60;
-const SOON_WINDOW_MIN = 60;
+// SMART's Pathminder gateway opens the meeting room 15 minutes before
+// the scheduled start. Clicking Join before that window bounces back
+// to the meeting's detail page. Match the "Starting soon" window to
+// when the link is actually functional so the Join button never
+// disappoints — anything 15-60 min out lives in "Later today" until
+// it's joinable.
+const SOON_WINDOW_MIN = 15;
 const MAX_ROWS_PER_PANE = 60;
 const ASSUMED_DURATION_MIN = 90; // SMART meetings run ~90 min by published schedule
 
@@ -485,11 +491,12 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
           the actual room during the active window. */}
       <div className="rounded-md border border-border bg-muted/30 p-3 text-xs text-muted-foreground">
         <Info className="-mt-0.5 mr-1.5 inline h-3.5 w-3.5" aria-hidden="true" />
-        SMART Recovery routes every join through its own gateway. We
-        show a one-click <strong className="font-semibold text-foreground">Join Online</strong>{' '}
-        button only when a meeting is currently happening or starting in
-        the next hour — outside that window the gateway can't open the
-        room, so we link to the meeting's full page on
+        SMART Recovery routes every join through its own gateway, which
+        opens 15 minutes before the meeting starts. We show a one-click{' '}
+        <strong className="font-semibold text-foreground">Join Online</strong>{' '}
+        button only inside that window (15 minutes before through an
+        hour after start). Outside it, the gateway can't open the room,
+        so we link to the meeting's full page on
         meetings.smartrecovery.org instead.
       </div>
 
@@ -627,7 +634,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
           />
           <Pane
             title="Starting soon"
-            description={`Meetings beginning in the next ${SOON_WINDOW_MIN} minutes — Join Online is active.`}
+            description="Meetings beginning in the next 15 minutes — SMART's gateway has opened, so Join Online works."
             occurrences={buckets.soon}
             bucket="soon"
             now={now}
