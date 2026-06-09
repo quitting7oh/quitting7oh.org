@@ -1,0 +1,91 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { VirtualSmartMeetings, type SmartMeetingsBundle } from '~/components/VirtualSmartMeetings';
+import bundleJson from '~/data/smart-meetings.generated.json';
+
+const bundle = bundleJson as unknown as SmartMeetingsBundle;
+
+const title = 'Find a virtual SMART Recovery meeting happening now';
+const description =
+  'Third-party viewer over the public SMART Recovery online meeting list — see what is live or starting in your local timezone. Data from meetings.smartrecovery.org, used with permission. Not affiliated with SMART Recovery.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main
+    id="main-content"
+    class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:py-16"
+  >
+    <header class="mb-12 sm:mb-16">
+      <h1 class="m-0 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        Find a virtual SMART Recovery meeting happening now
+      </h1>
+
+      <div class="mt-4 max-w-none rounded-md border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+        <p class="m-0">
+          This page is a third-party viewer over the
+          <a
+            href="https://meetings.smartrecovery.org/meetings/?meetingType=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+          >public SMART Recovery online meeting list</a>,
+          sorted into your local timezone.
+          <strong class="font-semibold text-foreground">
+            quitting7oh.org is not affiliated with SMART Recovery.
+          </strong>
+          Meeting data is © SMART Recovery, used with permission and
+          refreshed daily.
+        </p>
+      </div>
+
+      <p class="mt-4 max-w-none text-base text-muted-foreground sm:text-lg">
+        SMART Recovery is a 4-Point self-empowerment program (motivation,
+        coping with urges, managing thoughts and feelings, balanced
+        living) — not a 12-step fellowship. Meetings are free, facilitated
+        by trained volunteers, and open to anyone working on a behavior
+        they want to change. Four panes below — live now, starting soon,
+        later today, and tomorrow — in your timezone.
+      </p>
+
+      <p class="mt-3 max-w-none text-sm text-muted-foreground">
+        SMART routes all meeting joins through their own gateway
+        (Pathminder / Pathcheck). For meetings happening right now or
+        starting in the next hour, the
+        <strong class="font-semibold text-foreground">Join Online</strong>
+        button takes you through SMART's gateway directly into the room.
+        For meetings later today or tomorrow, the link goes to the
+        meeting's page on meetings.smartrecovery.org — that's SMART's
+        choice, not ours, and respects how they want readers to
+        encounter their meetings.
+      </p>
+    </header>
+
+    <VirtualSmartMeetings bundle={bundle} client:load />
+
+    <footer class="mt-16 border-t border-border pt-6 text-sm text-muted-foreground">
+      <p>
+        Looking for NA instead? See
+        <a
+          href="/virtual-na-meetings-now"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          Find a virtual NA meeting happening now
+        </a>.
+        Looking for kratom-specific peer support? See the
+        <a
+          href="/next-kratom-support-meeting"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          next kratom support meeting
+        </a>. The
+        <a
+          href="/for-you/mutual-aid"
+          class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          mutual aid page
+        </a>{' '}
+        covers NA, SMART Recovery, and other fellowships in context.
+      </p>
+    </footer>
+  </main>
+</BaseLayout>

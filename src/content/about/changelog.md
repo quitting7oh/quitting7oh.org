@@ -16,6 +16,71 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-09
 
+### Virtual SMART Recovery meeting finder at /virtual-smart-meetings-now
+
+- New shareable landing page at
+  [`/virtual-smart-meetings-now`](src/pages/virtual-smart-meetings-now.astro):
+  a third-party viewer over the public SMART Recovery online meeting
+  list, sorted into the reader's local timezone. Same four-pane
+  structure as the NA page — Live now, Starting soon, Later today,
+  Tomorrow — and the same filter pattern: program chips (4-Point
+  Recovery dominates with 383; Family & Friends 58; Successful Life
+  Skills 4), audience chips (Adults Welcome 410; LGBTQIA+ 9; Women
+  7; Military, Veterans & First Responders 7; Teens, Young Adults,
+  BIPOC), language chips, and a free-text search across facilitator
+  + host city + host state. Copy button per card.
+- **Pathminder behavior, surfaced honestly.** SMART routes every
+  meeting join through their own gateway (Pathminder / Pathcheck)
+  which only redirects to the actual Zoom/Meet room during the
+  meeting's active join window. For live or starting-soon meetings
+  the
+  <strong>Join Online</strong> button on each card links directly
+  to the Pathminder URL — one click, gateway handles the room.
+  For meetings later today or tomorrow, the link instead goes to
+  the meeting's page on meetings.smartrecovery.org since the
+  gateway wouldn't open a room outside the window. A note above
+  the panes explains this so readers aren't surprised.
+- **Framing and trademark respect.** The page leads with a callout
+  that quitting7oh.org is not affiliated with SMART Recovery,
+  attributes meeting data to © SMART Recovery, and routes
+  update reports back to SMART's own meeting search.
+- **Data pipeline.** A new build script at
+  [`scripts/build-smart-meetings.mjs`](scripts/build-smart-meetings.mjs)
+  scrapes the SMART listing UI with multi-city union coverage
+  (Houston, LA, NYC, Kansas City at 1000-mi radius each) because a
+  single-city search misses meetings hosted outside its radius.
+  Across the four cities: 886 raw row appearances, 462 unique
+  meeting IDs after dedup, 445 verified online meetings after
+  per-meeting detail-page validation (drops 17 that had no
+  Pathminder URL — most were in-person meetings that slipped
+  through the meetingType=1 filter).
+- **Triple-check that meetings are actually online.** The pipeline
+  filters by SMART's own `meetingType=1` URL parameter, additionally
+  validates that each listing row carries the `<i class="fas
+  fa-video">` icon + "Online" text, and finally requires a
+  Pathminder URL on the detail page. Any row that fails all three
+  is dropped.
+- **Audience-aware split.** SMART's audience field can encode
+  multiple tags like "BIPOC, Young Adults (18-30)" or include a
+  tag that contains its own comma (`Military, Veterans & First
+  Responders`). The parser does longest-match against the known
+  set from SMART's own form dropdown so the tag with the literal
+  comma stays intact.
+- **Daily refresh.** A new cron at
+  [`.github/workflows/refresh-smart-meetings.yml`](.github/workflows/refresh-smart-meetings.yml)
+  runs every morning at 09:30 UTC (just after the NA refresh). Daily
+  not weekly because SMART's listing exposes each meeting's next
+  occurrence as a specific UTC timestamp, not a recurring template
+  — weekly would leave "next meeting at 7 PM today" stamps stale
+  for days.
+- **Homepage hook updated.** The
+  [`NextMeeting`](src/components/NextMeeting.tsx) card now points
+  readers at both the NA finder and the SMART finder when no
+  kratom-specific meeting is in session, instead of just NA. No
+  specific meeting is named — the finders are the destinations.
+- Added to the human-facing
+  [`/sitemap`](src/pages/sitemap.astro) under "Standalone tools".
+
 ### Virtual NA meeting finder at /virtual-na-meetings-now
 
 - New shareable landing page at
@@ -104,16 +169,19 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   phone meetings for decades and this is legitimate recovery
   infrastructure.
 - **Platform filter.** A new chip row in the filter bar lists every
-  detected platform with its count (Zoom 3,788 · Phone 93 · Online
-  meeting 39 · Google Meet 11 · GoToMeeting 4 · Microsoft Teams 3 ·
-  Discord 3 · FreeConferenceCall 2 · Facebook 2 · Jitsi 1). The
-  semantics are OR — selecting multiple chips shows meetings on any
-  of them — because a meeting is on one platform, so AND would be
-  empty. Detection upgraded in
-  [`scripts/build-na-meetings.mjs`](scripts/build-na-meetings.mjs):
+  detected platform with its count. Zoom (3,788), Phone Call (93),
+  and Google Meet (11) are visible by default; the rest sit behind
+  a "Show all" toggle, matching the meeting-type chip pattern (Online
+  meeting 39, GoToMeeting 4, Microsoft Teams 3, Discord 3,
+  FreeConferenceCall 2, Facebook 2, Jitsi 1). The semantics are OR —
+  selecting multiple chips shows meetings on any of them — because a
+  meeting is on one platform, so AND would be empty. Detection
+  upgraded in [`scripts/build-na-meetings.mjs`](scripts/build-na-meetings.mjs):
   GoToMeeting, FreeConferenceCall, Microsoft Teams Live, Discord,
   Jitsi all now recognized; previously they fell into the
-  "Online meeting" catch-all.
+  "Online meeting" catch-all. The phone-dial-in platform is labeled
+  "Phone Call" everywhere — chip, card body, copy snippet — for
+  unambiguous reading.
 - **Copy meeting details.** Every meeting card and the 24/7 featured
   card now have a Copy button that puts a plaintext snippet on the
   clipboard:

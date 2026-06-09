@@ -1,0 +1,85 @@
+name: Refresh virtual SMART Recovery meeting data
+
+# Daily cron that pulls the SMART Recovery online meeting list from
+# meetings.smartrecovery.org. SMART's listing exposes each meeting's
+# next occurrence as a specific UTC timestamp (rather than a recurring
+# template), so the data drifts faster than NA's — a weekly refresh
+# would leave stale "next meeting at 7 PM" timestamps for half a week.
+# Daily is the honest cadence.
+#
+# Each refresh: multi-city listing scrape (~50 GETs), then per-meeting
+# detail page (~500 GETs) for the Pathminder URL. ~3-4 minutes per run
+# at polite spacing.
+#
+# Authorization: SMART Recovery senior leadership approved republication
+# with attribution. The page footer carries the disclaimer.
+#
+# Re-running:
+#   - Schedule fires daily at 09:30 UTC (just after NA's 09:00).
+#   - workflow_dispatch lets a maintainer trigger it manually.
+
+on:
+  schedule:
+    # Daily 09:30 UTC — quiet time, after the NA refresh. 05:30 ET /
+    # 04:30 CT / 02:30 PT.
+    - cron: '30 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-smart-meetings
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+
+      - name: Run the fetch + normalize script
+        run: node scripts/build-smart-meetings.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # The fetched_at and per-meeting utcStart values shift every
+          # run by definition (utcStart = "next occurrence" is computed
+          # by SMART at request time). Compare content with both fields
+          # neutralized to detect material schedule changes vs. routine
+          # tick-forward.
+          NEW_HASH=$(jq '.meetings | map(del(.utcStart)) | sort_by(.id)' src/data/smart-meetings.generated.json | sha256sum | cut -d' ' -f1)
+          OLD_HASH=$(git show HEAD:src/data/smart-meetings.generated.json 2>/dev/null | jq '.meetings | map(del(.utcStart)) | sort_by(.id)' | sha256sum | cut -d' ' -f1)
+
+          # Commit when:
+          # 1) The set of meetings or their metadata changed (NEW_HASH ≠ OLD_HASH), OR
+          # 2) It's been more than 24h since last update (so utcStart values stay fresh)
+          LAST_COMMIT_EPOCH=$(git log -1 --pretty=%ct -- src/data/smart-meetings.generated.json 2>/dev/null || echo 0)
+          NOW_EPOCH=$(date -u +%s)
+          STALE=$(( NOW_EPOCH - LAST_COMMIT_EPOCH > 24*3600 ))
+
+          if [ "$NEW_HASH" = "$OLD_HASH" ] && [ "$STALE" = "0" ]; then
+            echo "No meaningful changes and last refresh was <24h ago — skipping."
+            exit 0
+          fi
+
+          git add src/data/smart-meetings.generated.json
+          git commit -m "chore(smart-meetings): daily data refresh
+
+Pulled fresh SMART Recovery online meeting data.
+See scripts/build-smart-meetings.mjs for the fetcher.
+
+Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git push

@@ -151,14 +151,21 @@ function MeetingCard({ display, now }: CardProps) {
             Need a meeting right now?
           </span>{' '}
           <span className="text-foreground/80">
-            The kratom-specific meeting below starts later. There's a
-            virtual NA meeting happening every hour —
+            The kratom-specific meeting below starts later. Broader
+            recovery fellowships have something going on every hour —
           </span>{' '}
           <a
             href="/virtual-na-meetings-now"
             className="font-medium text-foreground underline underline-offset-2 hover:text-sky-700 dark:hover:text-sky-300"
           >
-            find one live
+            find a live NA meeting
+          </a>
+          {' '}or{' '}
+          <a
+            href="/virtual-smart-meetings-now"
+            className="font-medium text-foreground underline underline-offset-2 hover:text-sky-700 dark:hover:text-sky-300"
+          >
+            a live SMART Recovery meeting
           </a>
           .
         </div>
