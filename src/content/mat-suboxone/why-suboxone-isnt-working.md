@@ -2,7 +2,7 @@
 title: "Why Suboxone Might Not Be Working: Read This First"
 description: "Why bupe sometimes doesn't cover you: serotonergic and adrenergic symptoms, the dose-ceiling question, long-acting compounds."
 category: "mat-suboxone"
-last_updated: "2026-06-04"
+last_updated: "2026-06-09"
 sort: 7
 ---
 If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are well-understood reasons it can feel inadequate, especially coming off [7-OH](/compounds/7-oh) and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is different in several ways, and the medication needs to be used a little differently to fully cover what's happening.
@@ -56,13 +56,13 @@ If you're at 2 mg and you're still feeling withdrawal symptoms throughout the da
 **The practical takeaway:** if you're struggling on bupe, before assuming the medication isn't working, check whether you're at a dose that covers you. Track when symptoms return relative to dosing. If they're returning hours before your next dose, talk to your prescriber about either a higher dose or splitting your daily dose into two smaller doses (morning and evening) to keep blood levels more stable.
 
 ## If you've been on long-acting synthetics or stacked compounds
-Most people in this community are coming off 7-OH, but if you've also been on **[MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or [pseudo](/compounds/mitragynine-pseudoindoxyl)**, the picture changes meaningfully:
+Most people in this community are coming off 7-OH, but if you've also been on **[MGM-15](/compounds/mgm15), or [pseudo](/compounds/mitragynine-pseudoindoxyl)**, the picture changes meaningfully:
 
 **[MGM-15](/compounds/mgm15)** is a [dual mu/delta receptor agonist](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Buprenorphine is essentially mu-only and is a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off [MGM-15](/compounds/mgm15). This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. That's pharmacology, not your imagination. See [MGM-15](/compounds/mgm15) for the full breakdown, and [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader treatment picture for these symptoms.
 
 **Pseudo ([mitragynine pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl))** [binds the mu receptor tighter than buprenorphine itself does](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full). Even when bupe is on board, displacement and stabilization can be incomplete in a way that doesn't happen with 7-OH.
 
-**Products marketed as [MIT-A or DHM](/compounds/mit-a-dhm)** contain [MGM-15](/compounds/mgm15) mixed with concentrated mitragynine. Treat induction the same as for [MGM-15](/compounds/mgm15): longer washout, potentially higher stabilization doses, and expect the first 2–3 days to be the hardest because bupe doesn't fully cover MGM-15's delta-receptor contribution.
+**Products marketed as MIT-A or DHM** contain [MGM-15](/compounds/mgm15) mixed with concentrated mitragynine. Treat induction the same as for [MGM-15](/compounds/mgm15): longer washout, potentially higher stabilization doses, and expect the first 2–3 days to be the hardest because bupe doesn't fully cover MGM-15's delta-receptor contribution.
 
 If any of these were in the mix, **be honest with your prescriber about what you've used.** Most providers haven't heard of these compounds, and if they're running the standard kratom playbook on someone who's been on a long-acting full mu/delta agonist, of course bupe isn't going to feel right.
 
@@ -73,7 +73,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 ## Steps to take right now if Suboxone isn't working
 1. **Check the serotonergic/adrenergic piece first.** If you have any of the symptoms in the list above, that's where the problem is. Get clonidine, gabapentin, or trazodone added (see [Helper Medications](/other-tools/helper-meds) for the full menu, including the meds with RLS caveats).
 2. **Check your dose.** Are you covered, or parked too low? If symptoms return before your next dose, your dose is too low or you need to split it.
-3. **Be honest about what you were on.** If MGM-15, [MIT-A](/compounds/mit-a-dhm), or pseudo were in the mix, the playbook changes.
+3. **Be honest about what you were on.** If MGM-15, or pseudo were in the mix, the playbook changes.
 4. **Don't bail in the first 1-2 days.** This is when most people quit, because it's when bupe feels least like what their body was used to and the non-opioid symptoms are at their worst. Your dose may not be dialed in yet, your adjuncts may not be in your system yet. Push through to day 2 or 3 with the right dose and adjuncts in place.
 5. **Don't redose your old compound to take the edge off.** That's how this restarts.
 6. **Talk to the community.** People in our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) have lived through what you're going through with these specific compounds.

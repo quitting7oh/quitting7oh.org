@@ -2,7 +2,7 @@
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what helps, labeled by evidence level."
 category: "post-acute"
-last_updated: "2026-06-04"
+last_updated: "2026-06-09"
 sort: 1
 ---
 
@@ -75,7 +75,7 @@ you're not, ignore this.
 
 **Most people coming off [7-OH](/compounds/7-oh) alone do not have
 prolonged PAWS.** People who were on stacked synthetics, [MGM-15](/compounds/mgm15),
-[MIT-A](/compounds/mit-a-dhm), or [pseudo](/compounds/mitragynine-pseudoindoxyl) for
+MIT-A, or [pseudo](/compounds/mitragynine-pseudoindoxyl) for
 extended periods are more likely to. Your specific situation matters
 more than averages.
 

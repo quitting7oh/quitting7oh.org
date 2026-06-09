@@ -2,7 +2,7 @@
 title: "Thinking About Using? (The Fuck Its)"
 description: "You're considering using again right now. Here's the one thing to do first, the people to call, and what to know about post-abstinence tolerance."
 category: "start-here"
-last_updated: "2026-06-04"
+last_updated: "2026-06-09"
 sort: 6
 ---
 
@@ -235,7 +235,7 @@ covers why it happens and what it means.
 > is **combinations**: mixing with **alcohol, benzodiazepines,
 > gabapentinoids, or other depressants**. That's what kills people.
 > Other kratom-derived synthetics
-> ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm),
+> ([MGM-15](/compounds/mgm15),
 > [pseudo](/compounds/mitragynine-pseudoindoxyl)) are more potent on their own and carry
 > more risk solo.
 >

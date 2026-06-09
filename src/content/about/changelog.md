@@ -36,6 +36,53 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   framing, since readers landing on rapid-taper already know they
   want a schedule and need a way to deviate from the templates.
 
+### Full DHM/MIT-A cascade: merge into MGM-15 page, stub the old, sweep the references
+
+- **`/compounds/mgm15` rewritten as the canonical page** for the
+  compound that's sold under all three labels (MGM-15, MIT-A, DHM).
+  Folded in the unique content from the old `/compounds/mit-a-dhm`
+  page: the chemistry of how MGM-15 is made (NaBH₄ reduction of
+  7-OH) and why "reducing mitragynine" wouldn't give a clean product;
+  the GC-MS reversion problem that lets vendors publish "non-detect
+  7-OH" COAs on products containing MGM-15; the regulatory landscape
+  (Florida's 400 ppm 7-OH gap, Ohio explicitly scheduling
+  dihydro-7-hydroxy mitragynine, Louisiana scheduling both
+  mitragynine and 7-OH); dose patterns (10 mg MGM-15 ≈ 30–40 mg 7-OH);
+  the "harder to come off than 7-OH" community pattern; and a
+  practical "for the reader being sold one of these products"
+  section.
+- **`/compounds/mit-a-dhm` converted to a stub** that explains the
+  labels point at MGM-15, names the chemistry confusion the original
+  page perpetuated, and pushes readers to `/compounds/mgm15` for
+  everything.
+- **Cascade across 27 content files.** Replaced
+  `[MIT-A](/compounds/mit-a-dhm)` and similar patterns where MIT-A
+  was being treated as a distinct compound: dropped from compound
+  lists (MGM-15 covers it), converted standalone links to bare
+  market-label text where the framing was already "products sold
+  as MIT-A", and pointed any remaining `/compounds/mit-a-dhm` link
+  at `/compounds/mgm15`. Manual cleanup of redundant bullets that
+  said "MIT-A/DHM: also long-acting. Similar timeline to MGM-15"
+  (which now reads as a compound being similar to itself). Files
+  touched: most of `mat-suboxone/*`, `start-here/*`, `compounds/*`,
+  `for-loved-ones/*`, `other-tools/*`, `post-acute/*`, and the
+  calculator pages.
+- **Removed the dihydro-mitragynine structure from
+  [`/pharmacology/chemical-structures`](src/content/pharmacology/chemical-structures.mdx)**.
+  The structure was an illustration of a compound that doesn't
+  appear in characterized commercial products — diagramming it
+  in the synthetic-derivatives row was misleading.
+- **Affinity is not activity** — new dedicated section on
+  [`/pharmacology/morphine-vs-kratom`](src/content/pharmacology/morphine-vs-kratom.md)
+  placed right before the binding-affinity ranking table. Reframes
+  affinity, activity (full / partial agonist / antagonist, ceiling
+  effects), and exposure as three independent things that combine
+  to drive what a compound does in practice — so a reader sees what
+  the Kᵢ numbers tell them and what they don't (buprenorphine and
+  morphine have similar µ-affinities but very different ceilings).
+  Replaced the briefer caveat below the table with a pointer to
+  this section.
+
 ### Pharmacology page reflects DHM/MIT-A relabeling
 
 - Updated [`/pharmacology/morphine-vs-kratom`](src/content/pharmacology/morphine-vs-kratom.md)

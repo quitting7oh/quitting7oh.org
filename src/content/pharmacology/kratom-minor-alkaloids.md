@@ -2,7 +2,7 @@
 title: "Kratom's Minor Alkaloids"
 description: "Kratom leaf contains 40+ alkaloids beyond mitragynine. The six better-studied minor alkaloids and their activity across µ-opioid, serotonergic, and adrenergic systems."
 category: "pharmacology"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 1
 ---
 
@@ -152,4 +152,5 @@ behind it is on this one.
  , visual structures for the seven alkaloids above and the
   modified derivatives
 - **[Compounds](/compounds)**: clinical / lay overviews of each
-  named compound (7-OH, MGM-15, MIT-A/DHM, pseudo, cat's claw, kratom leaf)
+  named compound (7-OH, MGM-15 — which also covers what's sold as
+  MIT-A and DHM — pseudo, cat's claw, kratom leaf)

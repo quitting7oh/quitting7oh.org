@@ -2,11 +2,11 @@
 title: "Bernese Method (Micro-Induction)"
 description: "The Bernese Method — low-dose Suboxone induction with overlapping full-agonist use. Original protocol, modern variants, and where it fits for kratom synthetics."
 category: "mat-suboxone"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 3
 ---
 
-The **Bernese method** (also called **micro-induction**) is a way of starting Suboxone that doesn't require waiting in withdrawal. Instead of stopping your [7-OH](/compounds/7-oh) (or product containing [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or [pseudo](/compounds/mitragynine-pseudoindoxyl)) and holding through escalating symptoms before your first dose, you take tiny pieces of a Suboxone strip *while continuing your normal dose*, and step the buprenorphine up over 7 days. The 7-OH product gets dropped only once enough buprenorphine (the active ingredient in Suboxone) has built up to bridge through.
+The **Bernese method** (also called **micro-induction**) is a way of starting Suboxone that doesn't require waiting in withdrawal. Instead of stopping your [7-OH](/compounds/7-oh) (or product containing [MGM-15](/compounds/mgm15), or [pseudo](/compounds/mitragynine-pseudoindoxyl)) and holding through escalating symptoms before your first dose, you take tiny pieces of a Suboxone strip *while continuing your normal dose*, and step the buprenorphine up over 7 days. The 7-OH product gets dropped only once enough buprenorphine (the active ingredient in Suboxone) has built up to bridge through.
 
 A note on terms used below: **sublingual** means **under the tongue** (how Suboxone strips dissolve), **buprenorphine** is the active drug in a Suboxone strip, and the community shorthand for it is **bup**.
 
@@ -14,7 +14,7 @@ A note on terms used below: **sublingual** means **under the tongue** (how Subox
 
 Micro-induction is the alternative when the standard "wait for withdrawal symptoms to climb before your first dose" approach has a higher failure rate or isn't tolerable. The strongest fits:
 
-- **You've been on long-acting kratom synthetics** ([MGM-15](/compounds/mgm15) at ~15-hour half-life, [pseudo](/compounds/mitragynine-pseudoindoxyl), or [MIT-A/DHM](/compounds/mit-a-dhm)). The wait stretches to 36–72+ hours and the standard approach has a documented higher failure rate.
+- **You've been on long-acting kratom synthetics** ([MGM-15](/compounds/mgm15) at ~15-hour half-life, [pseudo](/compounds/mitragynine-pseudoindoxyl), or MIT-A/DHM). The wait stretches to 36–72+ hours and the standard approach has a documented higher failure rate.
 - **You've tried standard induction and gotten precipitated withdrawal.** Even with the right timing, the receptor switch-over can be too sharp.
 - **You're on a stacked product** where you don't know which compound (or combination) you're coming off.
 - **You can't tolerate the wait.** Life, work, prior trauma around active withdrawal, severe baseline symptoms.

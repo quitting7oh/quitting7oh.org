@@ -2,7 +2,7 @@
 title: "Safety: You and Your Kids Come First"
 description: "If you or your children are in danger: recognizing escalation, safety planning, mandatory reporters, the crisis hotlines, and how to use naloxone (Narcan)."
 category: "for-loved-ones"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 5
 ---
 
@@ -74,7 +74,7 @@ You may read online that [7-OH](/compounds/7-oh) and kratom-derived products "do
 
 - **Many products are mixed.** Stacked synthetics, adulterants, or contaminants behave very differently from pure mitragynine.
 - **Combinations are dangerous.** Mixing with alcohol, benzodiazepines, gabapentinoids, or other depressants can produce respiratory depression even when the kratom product alone might not.
-- **The semi-synthetics are different.** [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl) are more potent and less-studied than mitragynine. The "no respiratory depression" claim doesn't reliably extend to them.
+- **The semi-synthetics are different.** [MGM-15](/compounds/mgm15), and [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl) are more potent and less-studied than mitragynine. The "no respiratory depression" claim doesn't reliably extend to them.
 - **Naloxone is essentially harmless if given to someone who didn't need it.** Worst case: mild withdrawal symptoms for a few minutes. That is not a real downside.
 
 **As one paramedic put it: no EMT has ever been upset at someone for using Narcan.** If your person is unresponsive, breathing slowly, or you can't wake them: give the Narcan and call 911. You don't need to be sure it's an opioid overdose. You don't need to second-guess. **Use it.**
@@ -96,7 +96,7 @@ Carrying naloxone is not a vote of no confidence in their recovery. It's a piece
 
 Things that should raise your concern level:
 
-- **New compounds entering the picture**, especially the synthetics ([MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl)) or fentanyl-contaminated street drugs.
+- **New compounds entering the picture**, especially the synthetics ([MGM-15](/compounds/mgm15), [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl)) or fentanyl-contaminated street drugs.
 - **Combining with alcohol, benzos, or other depressants**: this is the overdose pattern.
 - **Increasing isolation**, especially withdrawing from people who would notice they're using.
 - **Sudden financial emergencies**, missing money, items disappearing.

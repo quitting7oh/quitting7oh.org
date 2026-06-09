@@ -7,7 +7,7 @@ sort: 4
 ---
 These schedules go faster than what a prescriber will typically suggest. They're built on community experience with hundreds of successful rapid tapers from 7-OH, where 5-to-10-day bupe courses at low-to-moderate doses have not produced meaningful bupe dependence. Most prescribers won't sign off on these timelines; you're choosing a community-developed approach over standard clinical practice.
 
-**On [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl), or stacked compounds?** Induction timing and bupe coverage both differ from straight 7-OH: COWS/SOWS takes longer to climb (36 to 72 hours rather than 14 to 24), and the delta-opioid activity of some of these compounds means bupe may not fully cover withdrawal symptoms. Read [Why Suboxone Might Not Be Working: long-acting synthetics or stacked compounds](/mat-suboxone/why-suboxone-isnt-working#if-youve-been-on-long-acting-synthetics-or-stacked-compounds) before applying the schedules below.
+**On [MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), or stacked compounds?** Induction timing and bupe coverage both differ from straight 7-OH: COWS/SOWS takes longer to climb (36 to 72 hours rather than 14 to 24), and the delta-opioid activity of some of these compounds means bupe may not fully cover withdrawal symptoms. Read [Why Suboxone Might Not Be Working: long-acting synthetics or stacked compounds](/mat-suboxone/why-suboxone-isnt-working#if-youve-been-on-long-acting-synthetics-or-stacked-compounds) before applying the schedules below.
 
 > 📊 **Don't see a taper plan that fits your situation?**
 > The schedules below are templates. If your current dose, urgency, or

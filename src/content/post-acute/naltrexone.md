@@ -2,7 +2,7 @@
 title: "Naltrexone (Overview)"
 description: "Naltrexone in three dose tiers — normal-dose for abstinence after detox, low-dose (LDN) for PAWS, and ultra-low-dose (ULDN) as an investigational adjunct."
 category: "post-acute"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 10
 ---
 
@@ -72,7 +72,7 @@ base. That extrapolation is reasonable, 7-OH is a mu-opioid agonist
 — but it should be named honestly.
 
 The longer-acting kratom synthetics ([MGM-15](/compounds/mgm15),
-[MIT-A](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)) probably
+MIT-A, [pseudo](/compounds/mitragynine-pseudoindoxyl)) probably
 require longer abstinence windows before naltrexone initiation than
 the standard short-acting-opioid guidance suggests. A prescriber
 experienced with this population is more likely to err on the side of

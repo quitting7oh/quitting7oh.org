@@ -2,7 +2,7 @@
 title: "Vitamins & Supplements"
 description: "A community-tested supplement stack for 7-OH and kratom-synthetic withdrawal and PAWS — what to start with, what to skip."
 category: "other-tools"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 2
 ---
 
@@ -50,7 +50,7 @@ brands, and the *why* behind each one.
 
 ### Avoid these
 
-- **The compound that put you here**: [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo,
+- **The compound that put you here**: [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), pseudo,
   or any stacked synthetic kratom product. "Just a little" restarts the
   cycle.
 - **Phenibut**: itself addictive with brutal withdrawal.
@@ -67,7 +67,7 @@ brands, and the *why* behind each one.
 
 ---
 
-The compounds we're recovering from ([7-OH](/compounds/7-oh), [pseudo](/compounds/mitragynine-pseudoindoxyl), [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), and
+The compounds we're recovering from ([7-OH](/compounds/7-oh), [pseudo](/compounds/mitragynine-pseudoindoxyl), [MGM-15](/compounds/mgm15), and
 similar synthetics) hit the body harder than leaf kratom, and the recovery
 process tends to involve more nutrient depletion, more sleep disruption,
 and a longer PAWS tail. Supplements aren't a substitute for time, sleep,
@@ -268,7 +268,7 @@ enough.
 
 ## Avoid
 
-- **The compound that put you here**: [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), [MIT-A/DHM](/compounds/mit-a-dhm), pseudo,
+- **The compound that put you here**: [7-OH](/compounds/7-oh), [MGM-15](/compounds/mgm15), pseudo,
   or any stacked synthetic kratom product. "Just a little" restarts
   the cycle.
 - **Phenibut.** Itself addictive with brutal withdrawal. Avoid.

@@ -14,7 +14,7 @@ The other taper-shaped path is tapering the concentrated 7-OH dose directly with
 - **Under ~100 mg [7-OH](/compounds/7-oh) equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
 
-**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), [MIT-A](/compounds/mit-a-dhm), or pure [pseudo](/compounds/mitragynine-pseudoindoxyl) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound page for the right approach.
+**Above 500 mg/day or if you've also been on [MGM-15](/compounds/mgm15), or pure [pseudo](/compounds/mitragynine-pseudoindoxyl) products, leaf tapering is unlikely to be sufficient.** See the appropriate compound page for the right approach.
 
 > 📊 **Want a day-by-day taper schedule?**
 > The [Kratom Leaf Taper Calculator](/resources/kratom-leaf-taper-calculator)

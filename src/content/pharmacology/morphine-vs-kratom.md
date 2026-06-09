@@ -61,6 +61,45 @@ the tightest-binding kratom-derived compound in the table.
 | **Acetylation** of 7-OH | 7-Hydroxymitragynine | 7-Acetoxymitragynine | Ester caps the 7-OH; prodrug hydrolyzes back to 7-OH in vivo |
 | **Oxidative rearrangement** (indole → indoxyl) | Mitragynine | Pseudoindoxyl mitragynine | Carbonyl H-bond acceptor; planar indoxyl core; moderate-to-high affinity |
 
+## Affinity is not activity (read this before the table)
+
+Receptor binding affinity (Kᵢ) gets cited as if it's the whole
+pharmacology story. It isn't. Three independent things drive what
+a compound actually does:
+
+- **Affinity** is how tightly the molecule sticks to the receptor.
+  A low Kᵢ means it binds at low concentrations and stays bound;
+  a high Kᵢ means weaker binding. The Kᵢ values in the table
+  below are all µ-opioid affinities.
+- **Activity** (also called intrinsic activity or efficacy) is
+  what the receptor does *once* the molecule is bound. Three
+  patterns:
+  - **Full agonists** activate the receptor maximally. Morphine,
+    fentanyl, and 7-OH at sufficient doses behave this way at µ.
+  - **Partial agonists** activate the receptor at less than the
+    maximum, no matter how much you take. This is the **ceiling
+    effect**. Buprenorphine is the textbook example: very high
+    µ-affinity (~1 nM, similar to morphine), but its maximum
+    receptor activation sits well below morphine's. That's why
+    bupe can be safer in overdose despite binding so tightly.
+  - **Antagonists** bind without activating, and block agonists.
+    Naloxone (Narcan) is the canonical µ antagonist; naltrexone
+    is longer-acting.
+- **Exposure** is how much of the molecule actually reaches the
+  receptor, which depends on dose, pharmacokinetics (half-life,
+  absorption), and route of administration.
+
+**The combination is what matters in real life.** A low-Kᵢ partial
+agonist (buprenorphine, mitragynine) can produce less effect than a
+moderate-Kᵢ full agonist (morphine). A "very high affinity" compound
+dosed at micrograms produces very different real-world receptor
+occupancy than a "moderate affinity" compound dosed at milligrams.
+
+The table below shows column 1: affinity. It does not show columns
+2 or 3. Read it as "how tightly each compound binds µ," then come
+back here when interpreting what that means for effect at typical
+doses.
+
 ## µ-opioid receptor binding affinity ranking
 
 Compounds ranked by reported µ-opioid receptor binding affinity
@@ -78,18 +117,12 @@ value.
 | **Pseudoindoxyl mitragynine ([pseudo](/compounds/mitragynine-pseudoindoxyl))** | ≈ 0.2–1 nM | Moderate–high |
 | **Mitragynine** | ≈ 80–200 nM | Low–moderate |
 
-Two notes worth holding when reading this table:
-
-- **Binding affinity is not the same as effect at typical use
-  doses.** Affinity tells you how tightly the molecule binds the
-  receptor, not the agonist efficacy, not the pharmacokinetics, not
-  what dose people take. A "very high affinity" compound
-  used at micrograms is producing very different real-world
-  exposure than a "moderate affinity" compound used at milligrams.
-- **Potency rankings vary by what's measured.** Receptor binding
-  studies, isolated-tissue analgesia, behavioral models, and human
-  reports don't always order the same way. The table above
-  reflects receptor-binding affinity specifically.
+**Potency rankings vary by what's measured.** Receptor binding
+studies, isolated-tissue analgesia, behavioral models, and human
+reports don't always order the same way. The table above reflects
+receptor-binding affinity specifically. See [Affinity is not
+activity](#affinity-is-not-activity-read-this-before-the-table) above
+for what affinity does and doesn't tell you.
 
 ## Implications for the kratom synthetic landscape
 
