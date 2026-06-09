@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-09T05:04:49.275Z",
+  "fetched_at": "2026-06-09T17:41:03.483Z",
   "source": "https://meetings.smartrecovery.org/meetings/",
   "attribution": "Data from meetings.smartrecovery.org, used with SMART Recovery permission. Not affiliated with SMART Recovery.",
   "search_cities": [
@@ -20,160 +20,40 @@
     },
     "New York, NY": {
       "pages": 13,
-      "rows": 315
+      "rows": 316
     },
     "Kansas City, MO": {
       "pages": 12,
-      "rows": 287
+      "rows": 288
     }
   },
-  "total": 445,
+  "total": 446,
   "program_counts": {
-    "4-Point Recovery": 383,
     "Family & Friends": 58,
+    "4-Point Recovery": 384,
     "Successful Life Skills": 4
   },
   "audience_counts": {
-    "Adults Welcome": 410,
+    "Adults Welcome": 412,
     "LGBTQIA+": 9,
     "Military, Veterans & First Responders": 7,
     "Men": 1,
     "Family & Friends Only": 2,
+    "BIPOC": 2,
     "Young Adults (18-30)": 4,
     "Women": 7,
-    "BIPOC": 2,
-    "Teens (13-17)": 4
+    "Teens (13-17)": 3
   },
   "language_counts": {
-    "English": 435,
+    "English": 436,
     "Spanish": 8,
     "Russian": 2
   },
   "meetings": [
     {
-      "id": "9158",
-      "name": "4-Point Recovery — TJ Trent",
-      "facilitator": "TJ Trent",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T12:30:00+00:00",
-      "hostCity": "Killeen",
-      "hostState": "Texas",
-      "titleLocation": "Killeen, Texas",
-      "schedule": "Every Tuesday, 12:30 PM to 1:30 PM",
-      "passcode": "07978322",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4K7P4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9158/"
-    },
-    {
-      "id": "5283",
-      "name": "4-Point Recovery — Craig, Chris S",
-      "facilitator": "Craig, Chris S",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T12:30:00+00:00",
-      "hostCity": "New Orleans",
-      "hostState": "Louisiana",
-      "titleLocation": "New Orleans, Louisiana",
-      "schedule": "Every Tuesday, 12:30 PM to 1:30 PM",
-      "passcode": "04747048",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T6M9R5",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5283/"
-    },
-    {
-      "id": "8574",
-      "name": "4-Point Recovery — William",
-      "facilitator": "William",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T14:00:00+00:00",
-      "hostCity": "Temple",
-      "hostState": "Texas",
-      "titleLocation": "Temple, Texas",
-      "schedule": "Every Tuesday, 2:00 PM to 3:30 PM",
-      "passcode": "64339151",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/J9G9M9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8574/"
-    },
-    {
-      "id": "5987",
-      "name": "4-Point Recovery — Maria Kroener \"MK\"",
-      "facilitator": "Maria Kroener \"MK\"",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T14:00:00+00:00",
-      "hostCity": "Joliet",
-      "hostState": "Illinois",
-      "titleLocation": "Joliet, Illinois",
-      "schedule": "Every Tuesday, 2:00 PM to 3:30 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/J7Z8S7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5987/"
-    },
-    {
-      "id": "9200",
-      "name": "4-Point Recovery — Ruth Perez",
-      "facilitator": "Ruth Perez",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "Spanish"
-      ],
-      "utcStart": "2026-06-09T15:00:00+00:00",
-      "hostCity": "Tampa",
-      "hostState": "Florida",
-      "titleLocation": "Tampa, Florida",
-      "schedule": "Every Tuesday, 3:00 PM to 4:00 PM",
-      "passcode": "06548461",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/H8C7Q4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9200/"
-    },
-    {
-      "id": "6553",
-      "name": "4-Point Recovery — Donnis",
-      "facilitator": "Donnis",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T15:00:00+00:00",
-      "hostCity": "Swansea",
-      "hostState": "Illinois",
-      "titleLocation": "Swansea, Illinois",
-      "schedule": "Every Tuesday, 3:00 PM to 4:00 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G4G4Y9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6553/"
-    },
-    {
-      "id": "9189",
-      "name": "Family & Friends — Taylor Santioni",
-      "facilitator": "Taylor Santioni",
+      "id": "5134",
+      "name": "Family & Friends — Bonnie Kimpling, Jules",
+      "facilitator": "Bonnie Kimpling, Jules",
       "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
@@ -181,14 +61,14 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-09T15:00:00+00:00",
-      "hostCity": "Jacksonville",
-      "hostState": "Florida",
-      "titleLocation": "Jacksonville, Florida",
-      "schedule": "Every Tuesday, 3:00 PM to 4:00 PM",
-      "passcode": "07740473",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q8T9G3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9189/"
+      "utcStart": "2026-06-09T17:00:00+00:00",
+      "hostCity": "Chicago",
+      "hostState": "Illinois",
+      "titleLocation": "Chicago, Illinois",
+      "schedule": "Every Tuesday, 5:00 PM to 6:00 PM",
+      "passcode": "20045944",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/M9F7B8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5134/"
     },
     {
       "id": "8588",
@@ -211,24 +91,44 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8588/"
     },
     {
-      "id": "5134",
-      "name": "Family & Friends — Bonnie Kimpling, Jules",
-      "facilitator": "Bonnie Kimpling, Jules",
-      "program": "Family & Friends",
+      "id": "9114",
+      "name": "4-Point Recovery — Stephanie",
+      "facilitator": "Stephanie",
+      "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
       ],
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-09T17:00:00+00:00",
-      "hostCity": "Chicago",
-      "hostState": "Illinois",
-      "titleLocation": "Chicago, Illinois",
-      "schedule": "Every Tuesday, 5:00 PM to 6:00 PM",
-      "passcode": "20045944",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/M9F7B8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5134/"
+      "utcStart": "2026-06-09T18:00:00+00:00",
+      "hostCity": "Denver",
+      "hostState": "Colorado",
+      "titleLocation": "Denver, Colorado",
+      "schedule": "Every Tuesday, 6:00 PM to 7:00 PM",
+      "passcode": "16465436",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T3F8N7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9114/"
+    },
+    {
+      "id": "5911",
+      "name": "4-Point Recovery — Cameron Hayes, Tasha Longbine",
+      "facilitator": "Cameron Hayes, Tasha Longbine",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T18:00:00+00:00",
+      "hostCity": "Lincoln",
+      "hostState": "Nebraska",
+      "titleLocation": "Lincoln, Nebraska",
+      "schedule": "Every Tuesday, 6:00 PM to 7:00 PM",
+      "passcode": "51576478",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/D2S4R4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5911/"
     },
     {
       "id": "5504",
@@ -251,26 +151,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5504/"
     },
     {
-      "id": "9114",
-      "name": "4-Point Recovery — Stephanie",
-      "facilitator": "Stephanie",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T18:00:00+00:00",
-      "hostCity": "Denver",
-      "hostState": "Colorado",
-      "titleLocation": "Denver, Colorado",
-      "schedule": "Every Tuesday, 6:00 PM to 7:00 PM",
-      "passcode": "16465436",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T3F8N7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9114/"
-    },
-    {
       "id": "9149",
       "name": "Family & Friends — Heather U., Tressa J",
       "facilitator": "Heather U., Tressa J",
@@ -289,26 +169,6 @@
       "passcode": "49725603",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/E7E4R9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9149/"
-    },
-    {
-      "id": "5911",
-      "name": "4-Point Recovery — Cameron Hayes, Tasha Longbine",
-      "facilitator": "Cameron Hayes, Tasha Longbine",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T18:00:00+00:00",
-      "hostCity": "Lincoln",
-      "hostState": "Nebraska",
-      "titleLocation": "Lincoln, Nebraska",
-      "schedule": "Every Tuesday, 6:00 PM to 7:00 PM",
-      "passcode": "51576478",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/D2S4R4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5911/"
     },
     {
       "id": "9118",
@@ -371,10 +231,10 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9119/"
     },
     {
-      "id": "7436",
-      "name": "4-Point Recovery — Chris Brasse",
-      "facilitator": "Chris Brasse",
-      "program": "4-Point Recovery",
+      "id": "4830",
+      "name": "Family & Friends — Genia, Heather",
+      "facilitator": "Genia, Heather",
+      "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
       ],
@@ -382,13 +242,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T22:30:00+00:00",
-      "hostCity": "Orlando",
-      "hostState": "Florida",
-      "titleLocation": "Orlando, Florida",
-      "schedule": "Every Tuesday, 10:30 PM to 12:00 AM",
-      "passcode": "08210529",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q5Q9W4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7436/"
+      "hostCity": "Lexington",
+      "hostState": "Kentucky",
+      "titleLocation": "Lexington, Kentucky",
+      "schedule": "Every Tuesday, 10:30 PM to 11:30 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/V7U4E5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4830/"
     },
     {
       "id": "7152",
@@ -411,10 +271,10 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7152/"
     },
     {
-      "id": "4830",
-      "name": "Family & Friends — Genia, Heather",
-      "facilitator": "Genia, Heather",
-      "program": "Family & Friends",
+      "id": "7436",
+      "name": "4-Point Recovery — Chris Brasse",
+      "facilitator": "Chris Brasse",
+      "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
       ],
@@ -422,13 +282,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T22:30:00+00:00",
-      "hostCity": "Lexington",
-      "hostState": "Kentucky",
-      "titleLocation": "Lexington, Kentucky",
-      "schedule": "Every Tuesday, 10:30 PM to 11:30 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/V7U4E5",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4830/"
+      "hostCity": "Orlando",
+      "hostState": "Florida",
+      "titleLocation": "Orlando, Florida",
+      "schedule": "Every Tuesday, 10:30 PM to 12:00 AM",
+      "passcode": "08210529",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q5Q9W4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7436/"
     },
     {
       "id": "9339",
@@ -471,6 +331,46 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/3231/"
     },
     {
+      "id": "1283",
+      "name": "4-Point Recovery — Joe Gerstein, Ledy",
+      "facilitator": "Joe Gerstein, Ledy",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T23:00:00+00:00",
+      "hostCity": "Miami Beach",
+      "hostState": "Florida",
+      "titleLocation": "Miami Beach, Florida",
+      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
+      "passcode": "04478386",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G9U9V3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/1283/"
+    },
+    {
+      "id": "6806",
+      "name": "Family & Friends — Kevin M., Cassandra Toppi, Maya Prejbisz",
+      "facilitator": "Kevin M., Cassandra Toppi, Maya Prejbisz",
+      "program": "Family & Friends",
+      "audiences": [
+        "Family & Friends Only"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T23:00:00+00:00",
+      "hostCity": "Kevin M.",
+      "hostState": "Cassandra Toppi",
+      "titleLocation": "Cumberland, Indiana",
+      "schedule": "Every Tuesday, 11:00 PM to 1:00 AM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q7F4U8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6806/"
+    },
+    {
       "id": "8354",
       "name": "4-Point Recovery — Eboni Jewel Sears, Brad, Lara",
       "facilitator": "Eboni Jewel Sears, Brad, Lara",
@@ -511,9 +411,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5793/"
     },
     {
-      "id": "1283",
-      "name": "4-Point Recovery — Joe Gerstein, Ledy",
-      "facilitator": "Joe Gerstein, Ledy",
+      "id": "2910",
+      "name": "4-Point Recovery — Mark Wronkiewicz, Whit D., James J, Steve Hosmer",
+      "facilitator": "Mark Wronkiewicz, Whit D., James J, Steve Hosmer",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -522,33 +422,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Miami Beach",
-      "hostState": "Florida",
-      "titleLocation": "Miami Beach, Florida",
+      "hostCity": "Arlington Heights",
+      "hostState": "Illinois",
+      "titleLocation": "Arlington Heights, Illinois",
       "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "04478386",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G9U9V3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/1283/"
-    },
-    {
-      "id": "6806",
-      "name": "Family & Friends — Kevin M., Cassandra Toppi, Maya Prejbisz",
-      "facilitator": "Kevin M., Cassandra Toppi, Maya Prejbisz",
-      "program": "Family & Friends",
-      "audiences": [
-        "Family & Friends Only"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Kevin M.",
-      "hostState": "Cassandra Toppi",
-      "titleLocation": "Cumberland, Indiana",
-      "schedule": "Every Tuesday, 11:00 PM to 1:00 AM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q7F4U8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6806/"
+      "passcode": "55343646",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T2V2W7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/2910/"
     },
     {
       "id": "4727",
@@ -691,6 +571,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5135/"
     },
     {
+      "id": "9256",
+      "name": "4-Point Recovery — Bernard G",
+      "facilitator": "Bernard G",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T18:00:00+00:00",
+      "hostCity": "Lancaster",
+      "hostState": "Texas",
+      "titleLocation": "Lancaster, Texas",
+      "schedule": "Every Wednesday, 6:00 PM to 7:30 PM",
+      "passcode": "35838926",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/H9J9C7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9256/"
+    },
+    {
       "id": "9111",
       "name": "4-Point Recovery — Elisa",
       "facilitator": "Elisa",
@@ -731,26 +631,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7030/"
     },
     {
-      "id": "9256",
-      "name": "4-Point Recovery — Bernard G",
-      "facilitator": "Bernard G",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T18:00:00+00:00",
-      "hostCity": "Lancaster",
-      "hostState": "Texas",
-      "titleLocation": "Lancaster, Texas",
-      "schedule": "Every Wednesday, 6:00 PM to 7:30 PM",
-      "passcode": "35838926",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/H9J9C7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9256/"
-    },
-    {
       "id": "9335",
       "name": "4-Point Recovery — Evan Huber",
       "facilitator": "Evan Huber",
@@ -771,26 +651,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9335/"
     },
     {
-      "id": "7974",
-      "name": "4-Point Recovery — John H, Keith H",
-      "facilitator": "John H, Keith H",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T21:00:00+00:00",
-      "hostCity": "South Bend",
-      "hostState": "Indiana",
-      "titleLocation": "South Bend, Indiana",
-      "schedule": "Every Wednesday, 9:00 PM to 10:00 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/N9X4K3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7974/"
-    },
-    {
       "id": "8059",
       "name": "4-Point Recovery — Stephanie",
       "facilitator": "Stephanie",
@@ -809,6 +669,26 @@
       "passcode": "49381141",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/Y2W2Z5",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8059/"
+    },
+    {
+      "id": "7974",
+      "name": "4-Point Recovery — John H, Keith H",
+      "facilitator": "John H, Keith H",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T21:00:00+00:00",
+      "hostCity": "South Bend",
+      "hostState": "Indiana",
+      "titleLocation": "South Bend, Indiana",
+      "schedule": "Every Wednesday, 9:00 PM to 10:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/N9X4K3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7974/"
     },
     {
       "id": "8965",
@@ -891,26 +771,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4623/"
     },
     {
-      "id": "1986",
-      "name": "4-Point Recovery — Scott Reasoner, Jess Ott",
-      "facilitator": "Scott Reasoner, Jess Ott",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T22:00:00+00:00",
-      "hostCity": "Indianapolis",
-      "hostState": "Indiana",
-      "titleLocation": "Indianapolis, Indiana",
-      "schedule": "Every Wednesday, 10:00 PM to 11:30 PM",
-      "passcode": "14860428",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y9E4A3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/1986/"
-    },
-    {
       "id": "6688",
       "name": "4-Point Recovery — Mich F, Ledy",
       "facilitator": "Mich F, Ledy",
@@ -929,6 +789,26 @@
       "passcode": "",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/J8G5N7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/6688/"
+    },
+    {
+      "id": "1986",
+      "name": "4-Point Recovery — Scott Reasoner, Jess Ott",
+      "facilitator": "Scott Reasoner, Jess Ott",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T22:00:00+00:00",
+      "hostCity": "Indianapolis",
+      "hostState": "Indiana",
+      "titleLocation": "Indianapolis, Indiana",
+      "schedule": "Every Wednesday, 10:00 PM to 11:30 PM",
+      "passcode": "14860428",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y9E4A3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/1986/"
     },
     {
       "id": "4498",
@@ -969,6 +849,27 @@
       "passcode": "60178692",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/K7G2J8",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8343/"
+    },
+    {
+      "id": "7425",
+      "name": "4-Point Recovery — Markita Renee, Leonard Murphy",
+      "facilitator": "Markita Renee, Leonard Murphy",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "BIPOC",
+        "Young Adults (18-30)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Markita Renee",
+      "hostState": "Leonard Murphy",
+      "titleLocation": "Vernon, Connecticut",
+      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/E8T7Q3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7425/"
     },
     {
       "id": "6634",
@@ -1051,46 +952,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8581/"
     },
     {
-      "id": "8302",
-      "name": "4-Point Recovery — Ava Burre, Brad J, Andrea Luker",
-      "facilitator": "Ava Burre, Brad J, Andrea Luker",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T00:00:00+00:00",
-      "hostCity": "Overland Park",
-      "hostState": "Kansas",
-      "titleLocation": "Overland Park, Kansas",
-      "schedule": "Every Thursday, 12:00 AM to 1:30 AM",
-      "passcode": "05187091",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/K2N9E8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8302/"
-    },
-    {
-      "id": "6454",
-      "name": "4-Point Recovery — Thomas",
-      "facilitator": "Thomas",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Young Adults (18-30)"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T00:00:00+00:00",
-      "hostCity": "Chicago",
-      "hostState": "Illinois",
-      "titleLocation": "Chicago, Illinois",
-      "schedule": "Every Thursday, 12:00 AM to 1:30 AM",
-      "passcode": "97938751",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/S4V8M7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6454/"
-    },
-    {
       "id": "9246",
       "name": "4-Point Recovery — Brettney, Liz Robey",
       "facilitator": "Brettney, Liz Robey",
@@ -1109,26 +970,6 @@
       "passcode": "75359768",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/B3J3P7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9246/"
-    },
-    {
-      "id": "2419",
-      "name": "4-Point Recovery — John David Balla",
-      "facilitator": "John David Balla",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T00:00:00+00:00",
-      "hostCity": "Hinsdale",
-      "hostState": "Illinois",
-      "titleLocation": "Hinsdale, Illinois",
-      "schedule": "Every Thursday, 12:00 AM to 1:30 AM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q2G8S5",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/2419/"
     },
     {
       "id": "5725",
@@ -1151,9 +992,29 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5725/"
     },
     {
-      "id": "4285",
-      "name": "4-Point Recovery — Paul Caluscos",
-      "facilitator": "Paul Caluscos",
+      "id": "6454",
+      "name": "4-Point Recovery — Thomas",
+      "facilitator": "Thomas",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Young Adults (18-30)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T00:00:00+00:00",
+      "hostCity": "Chicago",
+      "hostState": "Illinois",
+      "titleLocation": "Chicago, Illinois",
+      "schedule": "Every Thursday, 12:00 AM to 1:30 AM",
+      "passcode": "97938751",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/S4V8M7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6454/"
+    },
+    {
+      "id": "2419",
+      "name": "4-Point Recovery — John David Balla",
+      "facilitator": "John David Balla",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -1161,14 +1022,14 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-11T17:00:00+00:00",
-      "hostCity": "Houston",
-      "hostState": "Texas",
-      "titleLocation": "Houston, Texas",
-      "schedule": "Every Thursday, 5:00 PM to 6:00 PM",
+      "utcStart": "2026-06-11T00:00:00+00:00",
+      "hostCity": "Hinsdale",
+      "hostState": "Illinois",
+      "titleLocation": "Hinsdale, Illinois",
+      "schedule": "Every Thursday, 12:00 AM to 1:30 AM",
       "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G6M4M9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4285/"
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q2G8S5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/2419/"
     },
     {
       "id": "5136",
@@ -1191,6 +1052,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5136/"
     },
     {
+      "id": "4285",
+      "name": "4-Point Recovery — Paul Caluscos",
+      "facilitator": "Paul Caluscos",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T17:00:00+00:00",
+      "hostCity": "Houston",
+      "hostState": "Texas",
+      "titleLocation": "Houston, Texas",
+      "schedule": "Every Thursday, 5:00 PM to 6:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G6M4M9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4285/"
+    },
+    {
       "id": "9217",
       "name": "4-Point Recovery — Chloe S.",
       "facilitator": "Chloe S.",
@@ -1211,26 +1092,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9217/"
     },
     {
-      "id": "4824",
-      "name": "4-Point Recovery — Marvette Flasher",
-      "facilitator": "Marvette Flasher",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T20:00:00+00:00",
-      "hostCity": "Asheville",
-      "hostState": "North Carolina",
-      "titleLocation": "Asheville, North Carolina",
-      "schedule": "Every Thursday, 8:00 PM to 9:00 PM",
-      "passcode": "49996001",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/C5C7Z8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4824/"
-    },
-    {
       "id": "9315",
       "name": "4-Point Recovery — Denise Sealander",
       "facilitator": "Denise Sealander",
@@ -1249,6 +1110,26 @@
       "passcode": "44450803",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/R9Q3E6",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9315/"
+    },
+    {
+      "id": "4824",
+      "name": "4-Point Recovery — Marvette Flasher",
+      "facilitator": "Marvette Flasher",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T20:00:00+00:00",
+      "hostCity": "Asheville",
+      "hostState": "North Carolina",
+      "titleLocation": "Asheville, North Carolina",
+      "schedule": "Every Thursday, 8:00 PM to 9:00 PM",
+      "passcode": "49996001",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/C5C7Z8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4824/"
     },
     {
       "id": "7740",
@@ -1411,6 +1292,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/578/"
     },
     {
+      "id": "6231",
+      "name": "4-Point Recovery — Scott Dudgeon",
+      "facilitator": "Scott Dudgeon",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T23:00:00+00:00",
+      "hostCity": "Louisville",
+      "hostState": "Kentucky",
+      "titleLocation": "Louisville, Kentucky",
+      "schedule": "Every Thursday, 11:00 PM to 12:00 AM",
+      "passcode": "26744374",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Z8Q3E6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6231/"
+    },
+    {
       "id": "1768",
       "name": "4-Point Recovery — Alan",
       "facilitator": "Alan",
@@ -1449,26 +1350,6 @@
       "passcode": "58629641",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/J8G6W4",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9051/"
-    },
-    {
-      "id": "6231",
-      "name": "4-Point Recovery — Scott Dudgeon",
-      "facilitator": "Scott Dudgeon",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T23:00:00+00:00",
-      "hostCity": "Louisville",
-      "hostState": "Kentucky",
-      "titleLocation": "Louisville, Kentucky",
-      "schedule": "Every Thursday, 11:00 PM to 12:00 AM",
-      "passcode": "26744374",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Z8Q3E6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6231/"
     },
     {
       "id": "3560",
@@ -1851,26 +1732,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9127/"
     },
     {
-      "id": "8765",
-      "name": "4-Point Recovery — Jim M.",
-      "facilitator": "Jim M.",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-12T23:30:00+00:00",
-      "hostCity": "Bushnell",
-      "hostState": "Florida",
-      "titleLocation": "Bushnell, Florida",
-      "schedule": "Every Friday, 11:30 PM to 1:00 AM",
-      "passcode": "54470185",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/F8Z5E3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8765/"
-    },
-    {
       "id": "5447",
       "name": "4-Point Recovery — Joe Wusnack, Barbara, Chris S, Christopher Toomey",
       "facilitator": "Joe Wusnack, Barbara, Chris S, Christopher Toomey",
@@ -1891,9 +1752,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5447/"
     },
     {
-      "id": "7768",
-      "name": "4-Point Recovery — Steve Hosmer, Amy Alderson",
-      "facilitator": "Steve Hosmer, Amy Alderson",
+      "id": "8765",
+      "name": "4-Point Recovery — Jim M.",
+      "facilitator": "Jim M.",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -1901,14 +1762,14 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-13T00:00:00+00:00",
-      "hostCity": "Arlington Heights",
-      "hostState": "Illinois",
-      "titleLocation": "Arlington Heights, Illinois",
-      "schedule": "Every Saturday, 12:00 AM to 1:30 AM",
-      "passcode": "60128043",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/V8M6Z8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7768/"
+      "utcStart": "2026-06-12T23:30:00+00:00",
+      "hostCity": "Bushnell",
+      "hostState": "Florida",
+      "titleLocation": "Bushnell, Florida",
+      "schedule": "Every Friday, 11:30 PM to 1:00 AM",
+      "passcode": "54470185",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/F8Z5E3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8765/"
     },
     {
       "id": "8137",
@@ -1929,6 +1790,26 @@
       "passcode": "52718593",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/G3T8Z3",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8137/"
+    },
+    {
+      "id": "7768",
+      "name": "4-Point Recovery — Steve Hosmer, Amy Alderson",
+      "facilitator": "Steve Hosmer, Amy Alderson",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-13T00:00:00+00:00",
+      "hostCity": "Arlington Heights",
+      "hostState": "Illinois",
+      "titleLocation": "Arlington Heights, Illinois",
+      "schedule": "Every Saturday, 12:00 AM to 1:30 AM",
+      "passcode": "60128043",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/V8M6Z8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7768/"
     },
     {
       "id": "8976",
@@ -2011,26 +1892,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4571/"
     },
     {
-      "id": "8236",
-      "name": "4-Point Recovery — Blake, Danielle",
-      "facilitator": "Blake, Danielle",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-13T14:00:00+00:00",
-      "hostCity": "Addison",
-      "hostState": "Illinois",
-      "titleLocation": "Addison, Illinois",
-      "schedule": "Every Saturday, 2:00 PM to 3:00 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/V4C3V2",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8236/"
-    },
-    {
       "id": "4697",
       "name": "4-Point Recovery — Doug Tschann, John Capesius, Juneal Colburn, Paige Malloy",
       "facilitator": "Doug Tschann, John Capesius, Juneal Colburn, Paige Malloy",
@@ -2049,6 +1910,26 @@
       "passcode": "02975078",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/S4P9H8",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4697/"
+    },
+    {
+      "id": "8236",
+      "name": "4-Point Recovery — Blake, Danielle",
+      "facilitator": "Blake, Danielle",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-13T14:00:00+00:00",
+      "hostCity": "Addison",
+      "hostState": "Illinois",
+      "titleLocation": "Addison, Illinois",
+      "schedule": "Every Saturday, 2:00 PM to 3:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/V4C3V2",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8236/"
     },
     {
       "id": "7602",
@@ -2151,6 +2032,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7026/"
     },
     {
+      "id": "6403",
+      "name": "4-Point Recovery — Scout Fraser",
+      "facilitator": "Scout Fraser",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "LGBTQIA+"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-13T15:00:00+00:00",
+      "hostCity": "St. Louis",
+      "hostState": "Missouri",
+      "titleLocation": "St. Louis, Missouri",
+      "schedule": "Every Saturday, 3:00 PM to 4:30 PM",
+      "passcode": "72061556",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/F5B6K6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6403/"
+    },
+    {
       "id": "7302",
       "name": "Family & Friends — Kathy, Annabelle W, Cassandra Toppi",
       "facilitator": "Kathy, Annabelle W, Cassandra Toppi",
@@ -2171,24 +2072,24 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7302/"
     },
     {
-      "id": "6403",
-      "name": "4-Point Recovery — Scout Fraser",
-      "facilitator": "Scout Fraser",
+      "id": "5612",
+      "name": "4-Point Recovery — Daryl Pass",
+      "facilitator": "Daryl Pass",
       "program": "4-Point Recovery",
       "audiences": [
-        "LGBTQIA+"
+        "Adults Welcome"
       ],
       "languages": [
         "English"
       ],
       "utcStart": "2026-06-13T15:00:00+00:00",
-      "hostCity": "St. Louis",
-      "hostState": "Missouri",
-      "titleLocation": "St. Louis, Missouri",
+      "hostCity": "Schaumburg",
+      "hostState": "Illinois",
+      "titleLocation": "Schaumburg, Illinois",
       "schedule": "Every Saturday, 3:00 PM to 4:30 PM",
-      "passcode": "72061556",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/F5B6K6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6403/"
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/R2B7P6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5612/"
     },
     {
       "id": "4121",
@@ -2229,26 +2130,6 @@
       "passcode": "52798382",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/G9Z9K7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4143/"
-    },
-    {
-      "id": "5612",
-      "name": "4-Point Recovery — Daryl Pass",
-      "facilitator": "Daryl Pass",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-13T15:00:00+00:00",
-      "hostCity": "Schaumburg",
-      "hostState": "Illinois",
-      "titleLocation": "Schaumburg, Illinois",
-      "schedule": "Every Saturday, 3:00 PM to 4:30 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/R2B7P6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5612/"
     },
     {
       "id": "7345",
@@ -2371,26 +2252,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7189/"
     },
     {
-      "id": "7523",
-      "name": "4-Point Recovery — Connor, Brandon S.",
-      "facilitator": "Connor, Brandon S.",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Young Adults (18-30)"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-14T15:00:00+00:00",
-      "hostCity": "Chicago",
-      "hostState": "Illinois",
-      "titleLocation": "Chicago, Illinois",
-      "schedule": "Every Sunday, 3:00 PM to 4:00 PM",
-      "passcode": "11354920",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/A4V9D8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7523/"
-    },
-    {
       "id": "3228",
       "name": "4-Point Recovery — Jonathan Schulz",
       "facilitator": "Jonathan Schulz",
@@ -2429,6 +2290,26 @@
       "passcode": "64304345",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/U4R7N7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9072/"
+    },
+    {
+      "id": "7523",
+      "name": "4-Point Recovery — Connor, Brandon S.",
+      "facilitator": "Connor, Brandon S.",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Young Adults (18-30)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-14T15:00:00+00:00",
+      "hostCity": "Chicago",
+      "hostState": "Illinois",
+      "titleLocation": "Chicago, Illinois",
+      "schedule": "Every Sunday, 3:00 PM to 4:00 PM",
+      "passcode": "11354920",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/A4V9D8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7523/"
     },
     {
       "id": "6709",
@@ -2851,26 +2732,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7071/"
     },
     {
-      "id": "9026",
-      "name": "Successful Life Skills — Brettney T.",
-      "facilitator": "Brettney T.",
-      "program": "Successful Life Skills",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-15T22:00:00+00:00",
-      "hostCity": "Bowling Green",
-      "hostState": "Kentucky",
-      "titleLocation": "Bowling Green, Kentucky",
-      "schedule": "Every Monday, 10:00 PM to 11:00 PM",
-      "passcode": "62882866",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/R6C6V3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9026/"
-    },
-    {
       "id": "2730",
       "name": "4-Point Recovery — Scott Reasoner, Jess Ott",
       "facilitator": "Scott Reasoner, Jess Ott",
@@ -2889,6 +2750,26 @@
       "passcode": "89415463",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/W7S4F4",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/2730/"
+    },
+    {
+      "id": "9026",
+      "name": "Successful Life Skills — Brettney T.",
+      "facilitator": "Brettney T.",
+      "program": "Successful Life Skills",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-15T22:00:00+00:00",
+      "hostCity": "Bowling Green",
+      "hostState": "Kentucky",
+      "titleLocation": "Bowling Green, Kentucky",
+      "schedule": "Every Monday, 10:00 PM to 11:00 PM",
+      "passcode": "62882866",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/R6C6V3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9026/"
     },
     {
       "id": "1402",
@@ -2911,9 +2792,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/1402/"
     },
     {
-      "id": "3431",
-      "name": "4-Point Recovery — Karen DeLong, Kevin Kasberg",
-      "facilitator": "Karen DeLong, Kevin Kasberg",
+      "id": "5744",
+      "name": "4-Point Recovery — Suzanne Waller, Dee",
+      "facilitator": "Suzanne Waller, Dee",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -2922,13 +2803,13 @@
         "English"
       ],
       "utcStart": "2026-06-15T22:00:00+00:00",
-      "hostCity": "Worthington",
+      "hostCity": "Cincinnati",
       "hostState": "Ohio",
-      "titleLocation": "Worthington, Ohio",
-      "schedule": "Every Monday, 10:00 PM to 11:00 PM",
-      "passcode": "28279489",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/K4Z4T8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/3431/"
+      "titleLocation": "Cincinnati, Ohio",
+      "schedule": "Every Monday, 10:00 PM to 11:30 PM",
+      "passcode": "18664113",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/N6A9J4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5744/"
     },
     {
       "id": "7603",
@@ -2951,6 +2832,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7603/"
     },
     {
+      "id": "3431",
+      "name": "4-Point Recovery — Karen DeLong, Kevin Kasberg",
+      "facilitator": "Karen DeLong, Kevin Kasberg",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-15T22:00:00+00:00",
+      "hostCity": "Worthington",
+      "hostState": "Ohio",
+      "titleLocation": "Worthington, Ohio",
+      "schedule": "Every Monday, 10:00 PM to 11:00 PM",
+      "passcode": "28279489",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/K4Z4T8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/3431/"
+    },
+    {
       "id": "6933",
       "name": "4-Point Recovery — Gerardo Matamoros",
       "facilitator": "Gerardo Matamoros",
@@ -2971,9 +2872,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/6933/"
     },
     {
-      "id": "5744",
-      "name": "4-Point Recovery — Suzanne Waller, Dee",
-      "facilitator": "Suzanne Waller, Dee",
+      "id": "8708",
+      "name": "4-Point Recovery — Morgan",
+      "facilitator": "Morgan",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -2981,14 +2882,14 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-15T22:00:00+00:00",
-      "hostCity": "Cincinnati",
-      "hostState": "Ohio",
-      "titleLocation": "Cincinnati, Ohio",
-      "schedule": "Every Monday, 10:00 PM to 11:30 PM",
-      "passcode": "18664113",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/N6A9J4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5744/"
+      "utcStart": "2026-06-15T22:30:00+00:00",
+      "hostCity": "Madison",
+      "hostState": "Wisconsin",
+      "titleLocation": "Madison, Wisconsin",
+      "schedule": "Every Monday, 10:30 PM to 12:00 AM",
+      "passcode": "46657817",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4S4U2",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8708/"
     },
     {
       "id": "8080",
@@ -3011,9 +2912,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8080/"
     },
     {
-      "id": "8708",
-      "name": "4-Point Recovery — Morgan",
-      "facilitator": "Morgan",
+      "id": "3246",
+      "name": "4-Point Recovery — Lee, Val, Leo, Jess, Toni",
+      "facilitator": "Lee, Val, Leo, Jess, Toni",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -3021,14 +2922,14 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-15T22:30:00+00:00",
-      "hostCity": "Madison",
-      "hostState": "Wisconsin",
-      "titleLocation": "Madison, Wisconsin",
-      "schedule": "Every Monday, 10:30 PM to 12:00 AM",
-      "passcode": "46657817",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4S4U2",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8708/"
+      "utcStart": "2026-06-15T23:00:00+00:00",
+      "hostCity": "Duluth",
+      "hostState": "Georgia",
+      "titleLocation": "Duluth, Georgia",
+      "schedule": "Every Monday, 11:00 PM to 1:00 AM",
+      "passcode": "10971839",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/F3G6X4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/3246/"
     },
     {
       "id": "8440",
@@ -3069,26 +2970,6 @@
       "passcode": "16708131",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/J5P7N3",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4496/"
-    },
-    {
-      "id": "3246",
-      "name": "4-Point Recovery — Lee, Val, Leo, Jess, Toni",
-      "facilitator": "Lee, Val, Leo, Jess, Toni",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-15T23:00:00+00:00",
-      "hostCity": "Duluth",
-      "hostState": "Georgia",
-      "titleLocation": "Duluth, Georgia",
-      "schedule": "Every Monday, 11:00 PM to 1:00 AM",
-      "passcode": "10971839",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/F3G6X4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/3246/"
     },
     {
       "id": "3983",
@@ -3191,26 +3072,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/2321/"
     },
     {
-      "id": "6383",
-      "name": "4-Point Recovery — Brad J, Ava Burre, Andrea Luker",
-      "facilitator": "Brad J, Ava Burre, Andrea Luker",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-16T00:00:00+00:00",
-      "hostCity": "Overland Park",
-      "hostState": "Kansas",
-      "titleLocation": "Overland Park, Kansas",
-      "schedule": "Every Tuesday, 12:00 AM to 1:30 AM",
-      "passcode": "66043845",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/F5E5U4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6383/"
-    },
-    {
       "id": "8531",
       "name": "4-Point Recovery — Monica A, Amy Alderson",
       "facilitator": "Monica A, Amy Alderson",
@@ -3251,6 +3112,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8841/"
     },
     {
+      "id": "6383",
+      "name": "4-Point Recovery — Brad J, Ava Burre, Andrea Luker",
+      "facilitator": "Brad J, Ava Burre, Andrea Luker",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T00:00:00+00:00",
+      "hostCity": "Overland Park",
+      "hostState": "Kansas",
+      "titleLocation": "Overland Park, Kansas",
+      "schedule": "Every Tuesday, 12:00 AM to 1:30 AM",
+      "passcode": "66043845",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/F5E5U4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6383/"
+    },
+    {
       "id": "8621",
       "name": "4-Point Recovery — Zoel Lopez",
       "facilitator": "Zoel Lopez",
@@ -3289,6 +3170,146 @@
       "passcode": "",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/P8D6N7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8053/"
+    },
+    {
+      "id": "5283",
+      "name": "4-Point Recovery — Craig, Chris S",
+      "facilitator": "Craig, Chris S",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T12:30:00+00:00",
+      "hostCity": "New Orleans",
+      "hostState": "Louisiana",
+      "titleLocation": "New Orleans, Louisiana",
+      "schedule": "Every Tuesday, 12:30 PM to 1:30 PM",
+      "passcode": "04747048",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T6M9R5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5283/"
+    },
+    {
+      "id": "9158",
+      "name": "4-Point Recovery — TJ Trent",
+      "facilitator": "TJ Trent",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T12:30:00+00:00",
+      "hostCity": "Killeen",
+      "hostState": "Texas",
+      "titleLocation": "Killeen, Texas",
+      "schedule": "Every Tuesday, 12:30 PM to 1:30 PM",
+      "passcode": "07978322",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4K7P4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9158/"
+    },
+    {
+      "id": "8574",
+      "name": "4-Point Recovery — William",
+      "facilitator": "William",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T14:00:00+00:00",
+      "hostCity": "Temple",
+      "hostState": "Texas",
+      "titleLocation": "Temple, Texas",
+      "schedule": "Every Tuesday, 2:00 PM to 3:30 PM",
+      "passcode": "64339151",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/J9G9M9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8574/"
+    },
+    {
+      "id": "5987",
+      "name": "4-Point Recovery — Maria Kroener \"MK\"",
+      "facilitator": "Maria Kroener \"MK\"",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T14:00:00+00:00",
+      "hostCity": "Joliet",
+      "hostState": "Illinois",
+      "titleLocation": "Joliet, Illinois",
+      "schedule": "Every Tuesday, 2:00 PM to 3:30 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/J7Z8S7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5987/"
+    },
+    {
+      "id": "6553",
+      "name": "4-Point Recovery — Donnis",
+      "facilitator": "Donnis",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T15:00:00+00:00",
+      "hostCity": "Swansea",
+      "hostState": "Illinois",
+      "titleLocation": "Swansea, Illinois",
+      "schedule": "Every Tuesday, 3:00 PM to 4:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G4G4Y9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6553/"
+    },
+    {
+      "id": "9189",
+      "name": "Family & Friends — Taylor Santioni",
+      "facilitator": "Taylor Santioni",
+      "program": "Family & Friends",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T15:00:00+00:00",
+      "hostCity": "Jacksonville",
+      "hostState": "Florida",
+      "titleLocation": "Jacksonville, Florida",
+      "schedule": "Every Tuesday, 3:00 PM to 4:00 PM",
+      "passcode": "07740473",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q8T9G3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9189/"
+    },
+    {
+      "id": "9200",
+      "name": "4-Point Recovery — Ruth Perez",
+      "facilitator": "Ruth Perez",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "Spanish"
+      ],
+      "utcStart": "2026-06-16T15:00:00+00:00",
+      "hostCity": "Tampa",
+      "hostState": "Florida",
+      "titleLocation": "Tampa, Florida",
+      "schedule": "Every Tuesday, 3:00 PM to 4:00 PM",
+      "passcode": "06548461",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/H8C7Q4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9200/"
     },
     {
       "id": "8266",
@@ -3529,27 +3550,6 @@
       "passcode": "",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/G8F7E3",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8318/"
-    },
-    {
-      "id": "7425",
-      "name": "4-Point Recovery — Markita Renee, Leonard Murphy",
-      "facilitator": "Markita Renee, Leonard Murphy",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "BIPOC",
-        "Young Adults (18-30)"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T23:00:00+00:00",
-      "hostCity": "Markita Renee",
-      "hostState": "Leonard Murphy",
-      "titleLocation": "Vernon, Connecticut",
-      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/E8T7Q3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7425/"
     },
     {
       "id": "7867",
@@ -4832,126 +4832,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8384/"
     },
     {
-      "id": "7168",
-      "name": "4-Point Recovery — Carey",
-      "facilitator": "Carey",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T11:30:00+00:00",
-      "hostCity": "Cumberland",
-      "hostState": "Maryland",
-      "titleLocation": "Cumberland, Maryland",
-      "schedule": "Every Tuesday, 11:30 AM to 12:30 PM",
-      "passcode": "36639282",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/A6G8J6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7168/"
-    },
-    {
-      "id": "8129",
-      "name": "4-Point Recovery — Leigh, Noni",
-      "facilitator": "Leigh, Noni",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T12:30:00+00:00",
-      "hostCity": "Naugatuck",
-      "hostState": "Connecticut",
-      "titleLocation": "Naugatuck, Connecticut",
-      "schedule": "Every Tuesday, 12:30 PM to 2:00 PM",
-      "passcode": "30318082",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/K7K4C7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8129/"
-    },
-    {
-      "id": "6712",
-      "name": "4-Point Recovery — Kristen",
-      "facilitator": "Kristen",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T13:00:00+00:00",
-      "hostCity": "Farmington",
-      "hostState": "Maine",
-      "titleLocation": "Farmington, Maine",
-      "schedule": "Every Tuesday, 1:00 PM to 2:00 PM",
-      "passcode": "33260717",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G5G8C8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6712/"
-    },
-    {
-      "id": "6380",
-      "name": "4-Point Recovery — Mark Swiecki, Jonathon Maxgay",
-      "facilitator": "Mark Swiecki, Jonathon Maxgay",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T13:30:00+00:00",
-      "hostCity": "Troy",
-      "hostState": "Michigan",
-      "titleLocation": "Troy, Michigan",
-      "schedule": "Every Tuesday, 1:30 PM to 3:00 PM",
-      "passcode": "770539",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/A3V9A9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6380/"
-    },
-    {
-      "id": "7269",
-      "name": "4-Point Recovery — Danielle",
-      "facilitator": "Danielle",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T16:00:00+00:00",
-      "hostCity": "New York",
-      "hostState": "New York",
-      "titleLocation": "New York, New York",
-      "schedule": "Every Tuesday, 4:00 PM to 5:00 PM",
-      "passcode": "86088526",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/V4T2A7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7269/"
-    },
-    {
-      "id": "4987",
-      "name": "4-Point Recovery — Nina, Jessica, Jenni K, Logan Bradley, Peter",
-      "facilitator": "Nina, Jessica, Jenni K, Logan Bradley, Peter",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T16:00:00+00:00",
-      "hostCity": "Charlottesville",
-      "hostState": "Virginia",
-      "titleLocation": "Charlottesville, Virginia",
-      "schedule": "Every Tuesday, 4:00 PM to 5:00 PM",
-      "passcode": "19082985",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/U3K2Q9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4987/"
-    },
-    {
       "id": "7360",
       "name": "4-Point Recovery — Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
       "facilitator": "Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
@@ -5012,6 +4892,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8279/"
     },
     {
+      "id": "8471",
+      "name": "4-Point Recovery — Angie",
+      "facilitator": "Angie",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T19:00:00+00:00",
+      "hostCity": "Buffalo",
+      "hostState": "New York",
+      "titleLocation": "Buffalo, New York",
+      "schedule": "Every Tuesday, 7:00 PM to 8:00 PM",
+      "passcode": "44300618",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/W2K4H7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8471/"
+    },
+    {
       "id": "8712",
       "name": "4-Point Recovery — Adria",
       "facilitator": "Adria",
@@ -5050,26 +4950,6 @@
       "passcode": "58142122",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/H9M8E2",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/6329/"
-    },
-    {
-      "id": "8471",
-      "name": "4-Point Recovery — Angie",
-      "facilitator": "Angie",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T19:00:00+00:00",
-      "hostCity": "Buffalo",
-      "hostState": "New York",
-      "titleLocation": "Buffalo, New York",
-      "schedule": "Every Tuesday, 7:00 PM to 8:00 PM",
-      "passcode": "44300618",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/W2K4H7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8471/"
     },
     {
       "id": "6844",
@@ -5172,10 +5052,10 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8687/"
     },
     {
-      "id": "6097",
-      "name": "4-Point Recovery — Emily Tompkins",
-      "facilitator": "Emily Tompkins",
-      "program": "4-Point Recovery",
+      "id": "9213",
+      "name": "Family & Friends — Amanda L Martin, Jennifer H, Lucy Jo Tuttle",
+      "facilitator": "Amanda L Martin, Jennifer H, Lucy Jo Tuttle",
+      "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
       ],
@@ -5183,13 +5063,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T22:00:00+00:00",
-      "hostCity": "Richmond",
-      "hostState": "Virginia",
-      "titleLocation": "Richmond, Virginia",
-      "schedule": "Every Tuesday, 10:00 PM to 11:00 PM",
-      "passcode": "45195977",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/H8C7M8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6097/"
+      "hostCity": "Lowville",
+      "hostState": "New York",
+      "titleLocation": "Lowville, New York",
+      "schedule": "Every Tuesday, 10:00 PM to 11:30 PM",
+      "passcode": "52284263",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/J3M4B9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9213/"
     },
     {
       "id": "8671",
@@ -5212,10 +5092,10 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8671/"
     },
     {
-      "id": "9213",
-      "name": "Family & Friends — Amanda L Martin, Jennifer H, Lucy Jo Tuttle",
-      "facilitator": "Amanda L Martin, Jennifer H, Lucy Jo Tuttle",
-      "program": "Family & Friends",
+      "id": "6097",
+      "name": "4-Point Recovery — Emily Tompkins",
+      "facilitator": "Emily Tompkins",
+      "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
       ],
@@ -5223,13 +5103,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T22:00:00+00:00",
-      "hostCity": "Lowville",
-      "hostState": "New York",
-      "titleLocation": "Lowville, New York",
-      "schedule": "Every Tuesday, 10:00 PM to 11:30 PM",
-      "passcode": "52284263",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/J3M4B9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9213/"
+      "hostCity": "Richmond",
+      "hostState": "Virginia",
+      "titleLocation": "Richmond, Virginia",
+      "schedule": "Every Tuesday, 10:00 PM to 11:00 PM",
+      "passcode": "45195977",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/H8C7M8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6097/"
     },
     {
       "id": "8921",
@@ -5252,6 +5132,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8921/"
     },
     {
+      "id": "8110",
+      "name": "4-Point Recovery — Rachel Boyle",
+      "facilitator": "Rachel Boyle",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T22:30:00+00:00",
+      "hostCity": "Royal Oak",
+      "hostState": "Michigan",
+      "titleLocation": "Royal Oak, Michigan",
+      "schedule": "Every Tuesday, 10:30 PM to 11:30 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/D9E4P7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8110/"
+    },
+    {
       "id": "3882",
       "name": "4-Point Recovery — Chuck R.",
       "facilitator": "Chuck R.",
@@ -5270,26 +5170,6 @@
       "passcode": "62916689",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/B2Q7S6",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/3882/"
-    },
-    {
-      "id": "9014",
-      "name": "Family & Friends — Karen Bernetti, Sharon",
-      "facilitator": "Karen Bernetti, Sharon",
-      "program": "Family & Friends",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T22:30:00+00:00",
-      "hostCity": "Wallingford",
-      "hostState": "Connecticut",
-      "titleLocation": "Wallingford, Connecticut",
-      "schedule": "Every Tuesday, 10:30 PM to 12:00 AM",
-      "passcode": "45158505",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/C7F9M3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9014/"
     },
     {
       "id": "172",
@@ -5312,10 +5192,10 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/172/"
     },
     {
-      "id": "8110",
-      "name": "4-Point Recovery — Rachel Boyle",
-      "facilitator": "Rachel Boyle",
-      "program": "4-Point Recovery",
+      "id": "9014",
+      "name": "Family & Friends — Karen Bernetti, Sharon",
+      "facilitator": "Karen Bernetti, Sharon",
+      "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
       ],
@@ -5323,53 +5203,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T22:30:00+00:00",
-      "hostCity": "Royal Oak",
-      "hostState": "Michigan",
-      "titleLocation": "Royal Oak, Michigan",
-      "schedule": "Every Tuesday, 10:30 PM to 11:30 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/D9E4P7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8110/"
-    },
-    {
-      "id": "6594",
-      "name": "4-Point Recovery — Matteo Giles",
-      "facilitator": "Matteo Giles",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T22:30:00+00:00",
-      "hostCity": "Flemington",
-      "hostState": "New Jersey",
-      "titleLocation": "Flemington, New Jersey",
+      "hostCity": "Wallingford",
+      "hostState": "Connecticut",
+      "titleLocation": "Wallingford, Connecticut",
       "schedule": "Every Tuesday, 10:30 PM to 12:00 AM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/X2B2Q6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6594/"
-    },
-    {
-      "id": "102",
-      "name": "4-Point Recovery — Tim E., Andrew",
-      "facilitator": "Tim E., Andrew",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Salem",
-      "hostState": "Massachusetts",
-      "titleLocation": "Salem, Massachusetts",
-      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "12430291",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/W4U2G4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/102/"
+      "passcode": "45158505",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/C7F9M3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9014/"
     },
     {
       "id": "2177",
@@ -5392,9 +5232,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/2177/"
     },
     {
-      "id": "8306",
-      "name": "4-Point Recovery — Ana",
-      "facilitator": "Ana",
+      "id": "823",
+      "name": "4-Point Recovery — Phil Mattson, Doug Libassi",
+      "facilitator": "Phil Mattson, Doug Libassi",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -5403,53 +5243,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Wallingford",
-      "hostState": "Connecticut",
-      "titleLocation": "Wallingford, Connecticut",
-      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "82985728",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/S8E4W3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8306/"
-    },
-    {
-      "id": "98",
-      "name": "4-Point Recovery — Jeremy Kindall, Kevin Lyons",
-      "facilitator": "Jeremy Kindall, Kevin Lyons",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Boston",
+      "hostCity": "Arlington",
       "hostState": "Massachusetts",
-      "titleLocation": "Boston, Massachusetts",
-      "schedule": "Every Tuesday, 11:00 PM to 1:00 AM",
-      "passcode": "65146368",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4T2M4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/98/"
-    },
-    {
-      "id": "2910",
-      "name": "4-Point Recovery — Mark Wronkiewicz, Whit D., James J, Steve Hosmer",
-      "facilitator": "Mark Wronkiewicz, Whit D., James J, Steve Hosmer",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Arlington Heights",
-      "hostState": "Illinois",
-      "titleLocation": "Arlington Heights, Illinois",
+      "titleLocation": "Arlington, Massachusetts",
       "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "55343646",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T2V2W7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/2910/"
+      "passcode": "49331182",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/E8M7U3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/823/"
     },
     {
       "id": "3677",
@@ -5472,29 +5272,29 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/3677/"
     },
     {
-      "id": "823",
-      "name": "4-Point Recovery — Phil Mattson, Doug Libassi",
-      "facilitator": "Phil Mattson, Doug Libassi",
+      "id": "7533",
+      "name": "4-Point Recovery — Matt M",
+      "facilitator": "Matt M",
       "program": "4-Point Recovery",
       "audiences": [
-        "Adults Welcome"
+        "LGBTQIA+"
       ],
       "languages": [
         "English"
       ],
       "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Arlington",
-      "hostState": "Massachusetts",
-      "titleLocation": "Arlington, Massachusetts",
+      "hostCity": "Wilmington",
+      "hostState": "North Carolina",
+      "titleLocation": "Wilmington, North Carolina",
       "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "49331182",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/E8M7U3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/823/"
+      "passcode": "14354672",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T7W6G5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7533/"
     },
     {
-      "id": "473",
-      "name": "4-Point Recovery — Rebecca Heller, Shaak, Tyler, Angie",
-      "facilitator": "Rebecca Heller, Shaak, Tyler, Angie",
+      "id": "98",
+      "name": "4-Point Recovery — Jeremy Kindall, Kevin Lyons",
+      "facilitator": "Jeremy Kindall, Kevin Lyons",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -5503,13 +5303,13 @@
         "English"
       ],
       "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "New York",
-      "hostState": "New York",
-      "titleLocation": "New York, New York",
-      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "84940160",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/F9V3K3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/473/"
+      "hostCity": "Boston",
+      "hostState": "Massachusetts",
+      "titleLocation": "Boston, Massachusetts",
+      "schedule": "Every Tuesday, 11:00 PM to 1:00 AM",
+      "passcode": "65146368",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4T2M4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/98/"
     },
     {
       "id": "2832",
@@ -5532,29 +5332,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/2832/"
     },
     {
-      "id": "7533",
-      "name": "4-Point Recovery — Matt M",
-      "facilitator": "Matt M",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "LGBTQIA+"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-09T23:00:00+00:00",
-      "hostCity": "Wilmington",
-      "hostState": "North Carolina",
-      "titleLocation": "Wilmington, North Carolina",
-      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
-      "passcode": "14354672",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T7W6G5",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7533/"
-    },
-    {
-      "id": "3105",
-      "name": "4-Point Recovery — Brian Nelson, Liz Hill",
-      "facilitator": "Brian Nelson, Liz Hill",
+      "id": "473",
+      "name": "4-Point Recovery — Rebecca Heller, Shaak, Tyler, Angie",
+      "facilitator": "Rebecca Heller, Shaak, Tyler, Angie",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -5562,14 +5342,54 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-09T23:30:00+00:00",
-      "hostCity": "Plymouth",
-      "hostState": "Michigan",
-      "titleLocation": "Plymouth, Michigan",
-      "schedule": "Every Tuesday, 11:30 PM to 1:00 AM",
-      "passcode": "16900280",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T2W7Z4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/3105/"
+      "utcStart": "2026-06-09T23:00:00+00:00",
+      "hostCity": "New York",
+      "hostState": "New York",
+      "titleLocation": "New York, New York",
+      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
+      "passcode": "84940160",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/F9V3K3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/473/"
+    },
+    {
+      "id": "102",
+      "name": "4-Point Recovery — Tim E., Andrew",
+      "facilitator": "Tim E., Andrew",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T23:00:00+00:00",
+      "hostCity": "Salem",
+      "hostState": "Massachusetts",
+      "titleLocation": "Salem, Massachusetts",
+      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
+      "passcode": "12430291",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/W4U2G4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/102/"
+    },
+    {
+      "id": "8306",
+      "name": "4-Point Recovery — Ana",
+      "facilitator": "Ana",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T23:00:00+00:00",
+      "hostCity": "Wallingford",
+      "hostState": "Connecticut",
+      "titleLocation": "Wallingford, Connecticut",
+      "schedule": "Every Tuesday, 11:00 PM to 12:30 AM",
+      "passcode": "82985728",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/S8E4W3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8306/"
     },
     {
       "id": "101",
@@ -5610,6 +5430,26 @@
       "passcode": "42553967",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/D7F8Y4",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/2228/"
+    },
+    {
+      "id": "3105",
+      "name": "4-Point Recovery — Brian Nelson, Liz Hill",
+      "facilitator": "Brian Nelson, Liz Hill",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-09T23:30:00+00:00",
+      "hostCity": "Plymouth",
+      "hostState": "Michigan",
+      "titleLocation": "Plymouth, Michigan",
+      "schedule": "Every Tuesday, 11:30 PM to 1:00 AM",
+      "passcode": "16900280",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T2W7Z4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/3105/"
     },
     {
       "id": "1027",
@@ -5792,26 +5632,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9005/"
     },
     {
-      "id": "8745",
-      "name": "4-Point Recovery — Rob Martin, Harry E. Simmons, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
-      "facilitator": "Rob Martin, Harry E. Simmons, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Military, Veterans & First Responders"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T16:00:00+00:00",
-      "hostCity": "Richmond",
-      "hostState": "Virginia",
-      "titleLocation": "Richmond, Virginia",
-      "schedule": "Every Wednesday, 4:00 PM to 5:00 PM",
-      "passcode": "84531588",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/K9F4N6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8745/"
-    },
-    {
       "id": "523",
       "name": "4-Point Recovery — Frank Gallagher, Jaime Robles, Ken Bunker",
       "facilitator": "Frank Gallagher, Jaime Robles, Ken Bunker",
@@ -5852,24 +5672,24 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8213/"
     },
     {
-      "id": "9027",
-      "name": "Family & Friends — Carla K.",
-      "facilitator": "Carla K.",
-      "program": "Family & Friends",
+      "id": "8745",
+      "name": "4-Point Recovery — Rob Martin, Harry E. Simmons, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
+      "facilitator": "Rob Martin, Harry E. Simmons, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
+      "program": "4-Point Recovery",
       "audiences": [
-        "Adults Welcome"
+        "Military, Veterans & First Responders"
       ],
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-10T17:00:00+00:00",
-      "hostCity": "Buffalo",
-      "hostState": "New York",
-      "titleLocation": "Buffalo, New York",
-      "schedule": "Second and fourth Wednesday of each month, 5:00 PM to 6:00 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/V6C6T9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9027/"
+      "utcStart": "2026-06-10T16:00:00+00:00",
+      "hostCity": "Richmond",
+      "hostState": "Virginia",
+      "titleLocation": "Richmond, Virginia",
+      "schedule": "Every Wednesday, 4:00 PM to 5:00 PM",
+      "passcode": "84531588",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/K9F4N6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8745/"
     },
     {
       "id": "7420",
@@ -5912,6 +5732,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8722/"
     },
     {
+      "id": "9027",
+      "name": "Family & Friends — Carla K.",
+      "facilitator": "Carla K.",
+      "program": "Family & Friends",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T17:00:00+00:00",
+      "hostCity": "Buffalo",
+      "hostState": "New York",
+      "titleLocation": "Buffalo, New York",
+      "schedule": "Second and fourth Wednesday of each month, 5:00 PM to 6:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/V6C6T9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9027/"
+    },
+    {
       "id": "7421",
       "name": "Family & Friends — Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
       "facilitator": "Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
@@ -5950,6 +5790,26 @@
       "passcode": "",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/C4D8F9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4871/"
+    },
+    {
+      "id": "8939",
+      "name": "4-Point Recovery — Christopher R.",
+      "facilitator": "Christopher R.",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T19:00:00+00:00",
+      "hostCity": "Hartford",
+      "hostState": "Connecticut",
+      "titleLocation": "Hartford, Connecticut",
+      "schedule": "Every Wednesday, 7:00 PM to 8:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/A4Y3G9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8939/"
     },
     {
       "id": "8934",
@@ -6012,6 +5872,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/6881/"
     },
     {
+      "id": "7406",
+      "name": "4-Point Recovery — Alexandra, Wendy",
+      "facilitator": "Alexandra, Wendy",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Women"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T21:00:00+00:00",
+      "hostCity": "New York",
+      "hostState": "New York",
+      "titleLocation": "New York, New York",
+      "schedule": "Second Wednesday of each month, 9:00 PM to 10:00 PM",
+      "passcode": "60905225",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/M7E7W3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7406/"
+    },
+    {
       "id": "9052",
       "name": "4-Point Recovery — Joshua",
       "facilitator": "Joshua",
@@ -6030,26 +5910,6 @@
       "passcode": "53606347",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/T7G8N9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9052/"
-    },
-    {
-      "id": "2021",
-      "name": "4-Point Recovery — Diana Rein, John Turner",
-      "facilitator": "Diana Rein, John Turner",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T21:00:00+00:00",
-      "hostCity": "Easton",
-      "hostState": "Maryland",
-      "titleLocation": "Easton, Maryland",
-      "schedule": "Every Wednesday, 9:00 PM to 10:00 PM",
-      "passcode": "25373577",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/X7R4A7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/2021/"
     },
     {
       "id": "8044",
@@ -6092,24 +5952,24 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8696/"
     },
     {
-      "id": "7406",
-      "name": "4-Point Recovery — Alexandra, Wendy",
-      "facilitator": "Alexandra, Wendy",
+      "id": "2021",
+      "name": "4-Point Recovery — Diana Rein, John Turner",
+      "facilitator": "Diana Rein, John Turner",
       "program": "4-Point Recovery",
       "audiences": [
-        "Women"
+        "Adults Welcome"
       ],
       "languages": [
         "English"
       ],
       "utcStart": "2026-06-10T21:00:00+00:00",
-      "hostCity": "New York",
-      "hostState": "New York",
-      "titleLocation": "New York, New York",
-      "schedule": "Second Wednesday of each month, 9:00 PM to 10:00 PM",
-      "passcode": "60905225",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/M7E7W3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7406/"
+      "hostCity": "Easton",
+      "hostState": "Maryland",
+      "titleLocation": "Easton, Maryland",
+      "schedule": "Every Wednesday, 9:00 PM to 10:00 PM",
+      "passcode": "25373577",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/X7R4A7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/2021/"
     },
     {
       "id": "8518",
@@ -6132,9 +5992,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8518/"
     },
     {
-      "id": "5859",
-      "name": "4-Point Recovery — Abigail",
-      "facilitator": "Abigail",
+      "id": "2347",
+      "name": "4-Point Recovery — Liyan M.",
+      "facilitator": "Liyan M.",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -6143,33 +6003,13 @@
         "English"
       ],
       "utcStart": "2026-06-10T22:00:00+00:00",
-      "hostCity": "Ionia",
-      "hostState": "Michigan",
-      "titleLocation": "Ionia, Michigan",
+      "hostCity": "New Haven",
+      "hostState": "Connecticut",
+      "titleLocation": "New Haven, Connecticut",
       "schedule": "Every Wednesday, 10:00 PM to 11:00 PM",
-      "passcode": "90981479",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/S7Q6R9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5859/"
-    },
-    {
-      "id": "5651",
-      "name": "4-Point Recovery — Jim Hughes",
-      "facilitator": "Jim Hughes",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T22:00:00+00:00",
-      "hostCity": "Bernardsville",
-      "hostState": "New Jersey",
-      "titleLocation": "Bernardsville, New Jersey",
-      "schedule": "Every Wednesday, 10:00 PM to 11:00 PM",
-      "passcode": "80020215",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/N4N6V9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5651/"
+      "passcode": "97269151",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/C4X2U8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/2347/"
     },
     {
       "id": "4368",
@@ -6192,6 +6032,46 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4368/"
     },
     {
+      "id": "5651",
+      "name": "4-Point Recovery — Jim Hughes",
+      "facilitator": "Jim Hughes",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T22:00:00+00:00",
+      "hostCity": "Bernardsville",
+      "hostState": "New Jersey",
+      "titleLocation": "Bernardsville, New Jersey",
+      "schedule": "Every Wednesday, 10:00 PM to 11:00 PM",
+      "passcode": "80020215",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/N4N6V9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5651/"
+    },
+    {
+      "id": "5859",
+      "name": "4-Point Recovery — Abigail",
+      "facilitator": "Abigail",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T22:00:00+00:00",
+      "hostCity": "Ionia",
+      "hostState": "Michigan",
+      "titleLocation": "Ionia, Michigan",
+      "schedule": "Every Wednesday, 10:00 PM to 11:00 PM",
+      "passcode": "90981479",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/S7Q6R9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5859/"
+    },
+    {
       "id": "4129",
       "name": "4-Point Recovery — Mark Swiecki, Ron",
       "facilitator": "Mark Swiecki, Ron",
@@ -6210,26 +6090,6 @@
       "passcode": "94153480",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/N6W3F2",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4129/"
-    },
-    {
-      "id": "2347",
-      "name": "4-Point Recovery — Liyan M.",
-      "facilitator": "Liyan M.",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T22:00:00+00:00",
-      "hostCity": "New Haven",
-      "hostState": "Connecticut",
-      "titleLocation": "New Haven, Connecticut",
-      "schedule": "Every Wednesday, 10:00 PM to 11:00 PM",
-      "passcode": "97269151",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/C4X2U8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/2347/"
     },
     {
       "id": "6864",
@@ -6272,66 +6132,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/957/"
     },
     {
-      "id": "630",
-      "name": "4-Point Recovery — Pete Goldberg, Mo Christiano she/her, James G, Anne Cappelletti",
-      "facilitator": "Pete Goldberg, Mo Christiano she/her, James G, Anne Cappelletti",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T23:00:00+00:00",
-      "hostCity": "Durham",
-      "hostState": "North Carolina",
-      "titleLocation": "Durham, North Carolina",
-      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
-      "passcode": "38295271",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Z9K5G4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/630/"
-    },
-    {
-      "id": "362",
-      "name": "4-Point Recovery — Patrick Truman",
-      "facilitator": "Patrick Truman",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T23:00:00+00:00",
-      "hostCity": "Gaithersburg",
-      "hostState": "Maryland",
-      "titleLocation": "Gaithersburg, Maryland",
-      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
-      "passcode": "24818028",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/W9H8V9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/362/"
-    },
-    {
-      "id": "6821",
-      "name": "4-Point Recovery — Liyan M.",
-      "facilitator": "Liyan M.",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T23:00:00+00:00",
-      "hostCity": "Hamden",
-      "hostState": "Connecticut",
-      "titleLocation": "Hamden, Connecticut",
-      "schedule": "Every Wednesday, 11:00 PM to 12:00 AM",
-      "passcode": "15095168",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T3Q6N2",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6821/"
-    },
-    {
       "id": "4796",
       "name": "4-Point Recovery — James, Savannah",
       "facilitator": "James, Savannah",
@@ -6352,6 +6152,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4796/"
     },
     {
+      "id": "8849",
+      "name": "4-Point Recovery — Amber, Paul",
+      "facilitator": "Amber, Paul",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Sheboygan",
+      "hostState": "Wisconsin",
+      "titleLocation": "Sheboygan, Wisconsin",
+      "schedule": "Every Wednesday, 11:00 PM to 12:00 AM",
+      "passcode": "48194771",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/D8D5D4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8849/"
+    },
+    {
       "id": "4651",
       "name": "4-Point Recovery — Alex C, Sara D",
       "facilitator": "Alex C, Sara D",
@@ -6370,6 +6190,26 @@
       "passcode": "77777729",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/G9X8J7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4651/"
+    },
+    {
+      "id": "8385",
+      "name": "4-Point Recovery — Joely",
+      "facilitator": "Joely",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Young Adults (18-30)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Easthampton",
+      "hostState": "Massachusetts",
+      "titleLocation": "Easthampton, Massachusetts",
+      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T3V3S8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8385/"
     },
     {
       "id": "1002",
@@ -6412,46 +6252,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/1016/"
     },
     {
-      "id": "8385",
-      "name": "4-Point Recovery — Joely",
-      "facilitator": "Joely",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Young Adults (18-30)"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T23:00:00+00:00",
-      "hostCity": "Easthampton",
-      "hostState": "Massachusetts",
-      "titleLocation": "Easthampton, Massachusetts",
-      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T3V3S8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8385/"
-    },
-    {
-      "id": "8849",
-      "name": "4-Point Recovery — Amber, Paul",
-      "facilitator": "Amber, Paul",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-10T23:00:00+00:00",
-      "hostCity": "Sheboygan",
-      "hostState": "Wisconsin",
-      "titleLocation": "Sheboygan, Wisconsin",
-      "schedule": "Every Wednesday, 11:00 PM to 12:00 AM",
-      "passcode": "48194771",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/D8D5D4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8849/"
-    },
-    {
       "id": "658",
       "name": "4-Point Recovery — Tyler Hutchison",
       "facilitator": "Tyler Hutchison",
@@ -6470,6 +6270,66 @@
       "passcode": "10879973",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/B9V3Z6",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/658/"
+    },
+    {
+      "id": "6821",
+      "name": "4-Point Recovery — Liyan M.",
+      "facilitator": "Liyan M.",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Hamden",
+      "hostState": "Connecticut",
+      "titleLocation": "Hamden, Connecticut",
+      "schedule": "Every Wednesday, 11:00 PM to 12:00 AM",
+      "passcode": "15095168",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T3Q6N2",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6821/"
+    },
+    {
+      "id": "630",
+      "name": "4-Point Recovery — Pete Goldberg, Mo Christiano she/her, James G, Anne Cappelletti",
+      "facilitator": "Pete Goldberg, Mo Christiano she/her, James G, Anne Cappelletti",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Durham",
+      "hostState": "North Carolina",
+      "titleLocation": "Durham, North Carolina",
+      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
+      "passcode": "38295271",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Z9K5G4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/630/"
+    },
+    {
+      "id": "2033",
+      "name": "4-Point Recovery — Bert",
+      "facilitator": "Bert",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Burlington",
+      "hostState": "Massachusetts",
+      "titleLocation": "Burlington, Massachusetts",
+      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
+      "passcode": "24068308",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/B7Q6R5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/2033/"
     },
     {
       "id": "6446",
@@ -6592,26 +6452,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5675/"
     },
     {
-      "id": "6074",
-      "name": "Family & Friends — Tina Thomas",
-      "facilitator": "Tina Thomas",
-      "program": "Family & Friends",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T16:00:00+00:00",
-      "hostCity": "Bethlehem",
-      "hostState": "Pennsylvania",
-      "titleLocation": "Bethlehem, Pennsylvania",
-      "schedule": "Every Thursday, 4:00 PM to 5:00 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q7Y8X9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6074/"
-    },
-    {
       "id": "6674",
       "name": "4-Point Recovery — Carey",
       "facilitator": "Carey",
@@ -6652,26 +6492,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8860/"
     },
     {
-      "id": "6095",
-      "name": "4-Point Recovery — Rob Martin, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
-      "facilitator": "Rob Martin, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T16:00:00+00:00",
-      "hostCity": "Richmond",
-      "hostState": "Virginia",
-      "titleLocation": "Richmond, Virginia",
-      "schedule": "Every Thursday, 4:00 PM to 5:00 PM",
-      "passcode": "55359021",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T7J4B6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6095/"
-    },
-    {
       "id": "7270",
       "name": "4-Point Recovery — Michler Bishop, Danielle, Starr",
       "facilitator": "Michler Bishop, Danielle, Starr",
@@ -6692,6 +6512,46 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7270/"
     },
     {
+      "id": "6074",
+      "name": "Family & Friends — Tina Thomas",
+      "facilitator": "Tina Thomas",
+      "program": "Family & Friends",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T16:00:00+00:00",
+      "hostCity": "Bethlehem",
+      "hostState": "Pennsylvania",
+      "titleLocation": "Bethlehem, Pennsylvania",
+      "schedule": "Every Thursday, 4:00 PM to 5:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Q7Y8X9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6074/"
+    },
+    {
+      "id": "6095",
+      "name": "4-Point Recovery — Rob Martin, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
+      "facilitator": "Rob Martin, Archie, Corey, William L. McNeil Sr, Shannon Wright, Brian Hayes",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T16:00:00+00:00",
+      "hostCity": "Richmond",
+      "hostState": "Virginia",
+      "titleLocation": "Richmond, Virginia",
+      "schedule": "Every Thursday, 4:00 PM to 5:00 PM",
+      "passcode": "55359021",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T7J4B6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6095/"
+    },
+    {
       "id": "7655",
       "name": "4-Point Recovery — Bert Munger",
       "facilitator": "Bert Munger",
@@ -6710,26 +6570,6 @@
       "passcode": "31702077",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/E5D8A9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7655/"
-    },
-    {
-      "id": "9233",
-      "name": "4-Point Recovery — Christopher Zito",
-      "facilitator": "Christopher Zito",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Teens (13-17)"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T20:00:00+00:00",
-      "hostCity": "Franklin Township",
-      "hostState": "New Jersey",
-      "titleLocation": "Franklin Township, New Jersey",
-      "schedule": "Every Thursday, 8:00 PM to 9:00 PM",
-      "passcode": "84368153",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/X4A7C8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9233/"
     },
     {
       "id": "9003",
@@ -6772,26 +6612,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8923/"
     },
     {
-      "id": "8403",
-      "name": "4-Point Recovery — Jessica Cole, Jason Pfeil",
-      "facilitator": "Jessica Cole, Jason Pfeil",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T21:30:00+00:00",
-      "hostCity": "Lapeer",
-      "hostState": "Michigan",
-      "titleLocation": "Lapeer, Michigan",
-      "schedule": "Every Thursday, 9:30 PM to 10:30 PM",
-      "passcode": "78697208",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/W5B3S9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8403/"
-    },
-    {
       "id": "105",
       "name": "4-Point Recovery — Eli Moreta-Feliz",
       "facilitator": "Eli Moreta-Feliz",
@@ -6810,6 +6630,26 @@
       "passcode": "22373040",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/H4G2X2",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/105/"
+    },
+    {
+      "id": "8403",
+      "name": "4-Point Recovery — Jessica Cole, Jason Pfeil",
+      "facilitator": "Jessica Cole, Jason Pfeil",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T21:30:00+00:00",
+      "hostCity": "Lapeer",
+      "hostState": "Michigan",
+      "titleLocation": "Lapeer, Michigan",
+      "schedule": "Every Thursday, 9:30 PM to 10:30 PM",
+      "passcode": "78697208",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/W5B3S9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8403/"
     },
     {
       "id": "9196",
@@ -6852,26 +6692,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8672/"
     },
     {
-      "id": "1330",
-      "name": "4-Point Recovery — Laura Bullen, Aaron Adkins",
-      "facilitator": "Laura Bullen, Aaron Adkins",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T22:30:00+00:00",
-      "hostCity": "Washington",
-      "hostState": "District of Columbia",
-      "titleLocation": "Washington, District of Columbia",
-      "schedule": "Every Thursday, 10:30 PM to 12:00 AM",
-      "passcode": "05496112",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/A9V5A4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/1330/"
-    },
-    {
       "id": "5706",
       "name": "Family & Friends — Laura F., Jen T, Samantha T.",
       "facilitator": "Laura F., Jen T, Samantha T.",
@@ -6890,6 +6710,26 @@
       "passcode": "25603017",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/J6N5Q5",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5706/"
+    },
+    {
+      "id": "1330",
+      "name": "4-Point Recovery — Laura Bullen, Aaron Adkins",
+      "facilitator": "Laura Bullen, Aaron Adkins",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T22:30:00+00:00",
+      "hostCity": "Washington",
+      "hostState": "District of Columbia",
+      "titleLocation": "Washington, District of Columbia",
+      "schedule": "Every Thursday, 10:30 PM to 12:00 AM",
+      "passcode": "05496112",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/A9V5A4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/1330/"
     },
     {
       "id": "1947",
@@ -6912,26 +6752,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/1947/"
     },
     {
-      "id": "8022",
-      "name": "Family & Friends — Donny Phillips, Cindy Kauffman",
-      "facilitator": "Donny Phillips, Cindy Kauffman",
-      "program": "Family & Friends",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-11T23:00:00+00:00",
-      "hostCity": "Richmond",
-      "hostState": "Virginia",
-      "titleLocation": "Richmond, Virginia",
-      "schedule": "Every Thursday, 11:00 PM to 12:30 AM",
-      "passcode": "51200953",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y3D9T6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8022/"
-    },
-    {
       "id": "6381",
       "name": "4-Point Recovery — Mark Swiecki, Jonathon Maxgay",
       "facilitator": "Mark Swiecki, Jonathon Maxgay",
@@ -6952,24 +6772,24 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/6381/"
     },
     {
-      "id": "9268",
-      "name": "4-Point Recovery — Rosana P",
-      "facilitator": "Rosana P",
-      "program": "4-Point Recovery",
+      "id": "8022",
+      "name": "Family & Friends — Donny Phillips, Cindy Kauffman",
+      "facilitator": "Donny Phillips, Cindy Kauffman",
+      "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
       ],
       "languages": [
-        "Spanish"
+        "English"
       ],
       "utcStart": "2026-06-11T23:00:00+00:00",
-      "hostCity": "Meriden",
-      "hostState": "Connecticut",
-      "titleLocation": "Meriden, Connecticut",
-      "schedule": "Every Thursday, 11:00 PM to 12:00 AM",
-      "passcode": "71532475",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4W8W8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9268/"
+      "hostCity": "Richmond",
+      "hostState": "Virginia",
+      "titleLocation": "Richmond, Virginia",
+      "schedule": "Every Thursday, 11:00 PM to 12:30 AM",
+      "passcode": "51200953",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y3D9T6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8022/"
     },
     {
       "id": "103",
@@ -6990,6 +6810,26 @@
       "passcode": "30458106",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/Q8U5R3",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/103/"
+    },
+    {
+      "id": "9268",
+      "name": "4-Point Recovery — Rosana P",
+      "facilitator": "Rosana P",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "Spanish"
+      ],
+      "utcStart": "2026-06-11T23:00:00+00:00",
+      "hostCity": "Meriden",
+      "hostState": "Connecticut",
+      "titleLocation": "Meriden, Connecticut",
+      "schedule": "Every Thursday, 11:00 PM to 12:00 AM",
+      "passcode": "71532475",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y4W8W8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9268/"
     },
     {
       "id": "149",
@@ -7032,26 +6872,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7919/"
     },
     {
-      "id": "7257",
-      "name": "Family & Friends — Cassandra Toppi, Annabelle W",
-      "facilitator": "Cassandra Toppi, Annabelle W",
-      "program": "Family & Friends",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-12T00:30:00+00:00",
-      "hostCity": "Cassandra Toppi",
-      "hostState": "Annabelle W",
-      "titleLocation": ", New York",
-      "schedule": "Every Friday, 12:30 AM to 2:00 AM",
-      "passcode": "30279959",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/P7Z8U4",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7257/"
-    },
-    {
       "id": "9151",
       "name": "4-Point Recovery — Michael",
       "facilitator": "Michael",
@@ -7070,6 +6890,26 @@
       "passcode": "80190830",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/K3T6G7",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9151/"
+    },
+    {
+      "id": "7257",
+      "name": "Family & Friends — Cassandra Toppi, Annabelle W",
+      "facilitator": "Cassandra Toppi, Annabelle W",
+      "program": "Family & Friends",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-12T00:30:00+00:00",
+      "hostCity": "Cassandra Toppi",
+      "hostState": "Annabelle W",
+      "titleLocation": ", New York",
+      "schedule": "Every Friday, 12:30 AM to 2:00 AM",
+      "passcode": "30279959",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/P7Z8U4",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7257/"
     },
     {
       "id": "8522",
@@ -7212,6 +7052,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/6866/"
     },
     {
+      "id": "8810",
+      "name": "4-Point Recovery — Angela",
+      "facilitator": "Angela",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-12T16:00:00+00:00",
+      "hostCity": "Parma",
+      "hostState": "Ohio",
+      "titleLocation": "Parma, Ohio",
+      "schedule": "Every Friday, 4:00 PM to 5:00 PM",
+      "passcode": "",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/T8Y5F9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8810/"
+    },
+    {
       "id": "9179",
       "name": "4-Point Recovery — Mylee",
       "facilitator": "Mylee",
@@ -7232,24 +7092,24 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9179/"
     },
     {
-      "id": "8810",
-      "name": "4-Point Recovery — Angela",
-      "facilitator": "Angela",
-      "program": "4-Point Recovery",
+      "id": "7448",
+      "name": "Family & Friends — Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
+      "facilitator": "Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
+      "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
       ],
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-12T16:00:00+00:00",
-      "hostCity": "Parma",
-      "hostState": "Ohio",
-      "titleLocation": "Parma, Ohio",
-      "schedule": "Every Friday, 4:00 PM to 5:00 PM",
-      "passcode": "",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/T8Y5F9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8810/"
+      "utcStart": "2026-06-12T17:00:00+00:00",
+      "hostCity": "Harrisville",
+      "hostState": "West Virginia",
+      "titleLocation": "Harrisville, West Virginia",
+      "schedule": "Every Friday, 5:00 PM to 6:00 PM",
+      "passcode": "26141151",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/D4B7X5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7448/"
     },
     {
       "id": "9093",
@@ -7290,26 +7150,6 @@
       "passcode": "74290466",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/N3E3V9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8914/"
-    },
-    {
-      "id": "7448",
-      "name": "Family & Friends — Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
-      "facilitator": "Jocelyn, Elizabeth, Jess, Ian, Craig R, Mo",
-      "program": "Family & Friends",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-12T17:00:00+00:00",
-      "hostCity": "Harrisville",
-      "hostState": "West Virginia",
-      "titleLocation": "Harrisville, West Virginia",
-      "schedule": "Every Friday, 5:00 PM to 6:00 PM",
-      "passcode": "26141151",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/D4B7X5",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7448/"
     },
     {
       "id": "7572",
@@ -7412,26 +7252,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7654/"
     },
     {
-      "id": "9261",
-      "name": "4-Point Recovery — edward conrad",
-      "facilitator": "edward conrad",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-12T22:00:00+00:00",
-      "hostCity": "Elizabeth City",
-      "hostState": "North Carolina",
-      "titleLocation": "Elizabeth City, North Carolina",
-      "schedule": "Every Friday, 10:00 PM to 11:00 PM",
-      "passcode": "07607160",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/V9K9X6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/9261/"
-    },
-    {
       "id": "4223",
       "name": "4-Point Recovery — Matt Robert",
       "facilitator": "Matt Robert",
@@ -7452,6 +7272,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4223/"
     },
     {
+      "id": "9261",
+      "name": "4-Point Recovery — edward conrad",
+      "facilitator": "edward conrad",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-12T22:00:00+00:00",
+      "hostCity": "Elizabeth City",
+      "hostState": "North Carolina",
+      "titleLocation": "Elizabeth City, North Carolina",
+      "schedule": "Every Friday, 10:00 PM to 11:00 PM",
+      "passcode": "07607160",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/V9K9X6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9261/"
+    },
+    {
       "id": "173",
       "name": "4-Point Recovery — Duane Gabor, Fran R",
       "facilitator": "Duane Gabor, Fran R",
@@ -7470,6 +7310,26 @@
       "passcode": "65750635",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/B3D5K8",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/173/"
+    },
+    {
+      "id": "4248",
+      "name": "4-Point Recovery — Carol Siddall, Richard Siddall, Lynde M",
+      "facilitator": "Carol Siddall, Richard Siddall, Lynde M",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-12T23:00:00+00:00",
+      "hostCity": "Southbury",
+      "hostState": "Connecticut",
+      "titleLocation": "Southbury, Connecticut",
+      "schedule": "Every Friday, 11:00 PM to 12:30 AM",
+      "passcode": "92644161",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y8V8Z6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4248/"
     },
     {
       "id": "6257",
@@ -7530,26 +7390,6 @@
       "passcode": "81062730",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/Q4H4J6",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/107/"
-    },
-    {
-      "id": "4248",
-      "name": "4-Point Recovery — Carol Siddall, Richard Siddall, Lynde M",
-      "facilitator": "Carol Siddall, Richard Siddall, Lynde M",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-12T23:00:00+00:00",
-      "hostCity": "Southbury",
-      "hostState": "Connecticut",
-      "titleLocation": "Southbury, Connecticut",
-      "schedule": "Every Friday, 11:00 PM to 12:30 AM",
-      "passcode": "92644161",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/Y8V8Z6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4248/"
     },
     {
       "id": "8386",
@@ -7632,9 +7472,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4063/"
     },
     {
-      "id": "2933",
-      "name": "4-Point Recovery — Richard Siddall, Carol Siddall, Liyan M.",
-      "facilitator": "Richard Siddall, Carol Siddall, Liyan M.",
+      "id": "524",
+      "name": "4-Point Recovery — Patrick Truman",
+      "facilitator": "Patrick Truman",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -7643,13 +7483,13 @@
         "English"
       ],
       "utcStart": "2026-06-13T14:00:00+00:00",
-      "hostCity": "New Haven",
-      "hostState": "Connecticut",
-      "titleLocation": "New Haven, Connecticut",
+      "hostCity": "Washington",
+      "hostState": "District of Columbia",
+      "titleLocation": "Washington, District of Columbia",
       "schedule": "Every Saturday, 2:00 PM to 3:30 PM",
-      "passcode": "04430754",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/M7B3C3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/2933/"
+      "passcode": "90099447",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/S8X6S8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/524/"
     },
     {
       "id": "6893",
@@ -7692,26 +7532,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/747/"
     },
     {
-      "id": "524",
-      "name": "4-Point Recovery — Patrick Truman",
-      "facilitator": "Patrick Truman",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-13T14:00:00+00:00",
-      "hostCity": "Washington",
-      "hostState": "District of Columbia",
-      "titleLocation": "Washington, District of Columbia",
-      "schedule": "Every Saturday, 2:00 PM to 3:30 PM",
-      "passcode": "90099447",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/S8X6S8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/524/"
-    },
-    {
       "id": "8363",
       "name": "4-Point Recovery — Liz Hill, Regina Nock",
       "facilitator": "Liz Hill, Regina Nock",
@@ -7750,6 +7570,26 @@
       "passcode": "64115568",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/M4H4S3",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/290/"
+    },
+    {
+      "id": "2933",
+      "name": "4-Point Recovery — Richard Siddall, Carol Siddall, Liyan M.",
+      "facilitator": "Richard Siddall, Carol Siddall, Liyan M.",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-13T14:00:00+00:00",
+      "hostCity": "New Haven",
+      "hostState": "Connecticut",
+      "titleLocation": "New Haven, Connecticut",
+      "schedule": "Every Saturday, 2:00 PM to 3:30 PM",
+      "passcode": "04430754",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/M7B3C3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/2933/"
     },
     {
       "id": "5062",
@@ -7810,6 +7650,26 @@
       "passcode": "25004950",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/R3Q6M6",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/3043/"
+    },
+    {
+      "id": "9181",
+      "name": "4-Point Recovery — Holly",
+      "facilitator": "Holly",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-13T16:30:00+00:00",
+      "hostCity": "Antigo",
+      "hostState": "Wisconsin",
+      "titleLocation": "Antigo, Wisconsin",
+      "schedule": "Every Saturday, 4:30 PM to 6:30 PM",
+      "passcode": "98259247",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/M7F8X3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/9181/"
     },
     {
       "id": "1413",
@@ -7892,26 +7752,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5089/"
     },
     {
-      "id": "6917",
-      "name": "4-Point Recovery — Andrew Garr",
-      "facilitator": "Andrew Garr",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-13T23:00:00+00:00",
-      "hostCity": "Menomonie",
-      "hostState": "Wisconsin",
-      "titleLocation": "Menomonie, Wisconsin",
-      "schedule": "Every Saturday, 11:00 PM to 1:00 AM",
-      "passcode": "37450103",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/P7E9S7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6917/"
-    },
-    {
       "id": "5295",
       "name": "4-Point Recovery — Will Gargan",
       "facilitator": "Will Gargan",
@@ -7930,6 +7770,26 @@
       "passcode": "11622589",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/N7S3J8",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5295/"
+    },
+    {
+      "id": "6917",
+      "name": "4-Point Recovery — Andrew Garr",
+      "facilitator": "Andrew Garr",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-13T23:00:00+00:00",
+      "hostCity": "Menomonie",
+      "hostState": "Wisconsin",
+      "titleLocation": "Menomonie, Wisconsin",
+      "schedule": "Every Saturday, 11:00 PM to 1:00 AM",
+      "passcode": "37450103",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/P7E9S7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6917/"
     },
     {
       "id": "7524",
@@ -8072,26 +7932,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9055/"
     },
     {
-      "id": "6032",
-      "name": "4-Point Recovery — Seth Schroeder",
-      "facilitator": "Seth Schroeder",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-14T19:00:00+00:00",
-      "hostCity": "Leesburg",
-      "hostState": "Virginia",
-      "titleLocation": "Leesburg, Virginia",
-      "schedule": "Every Sunday, 7:00 PM to 8:30 PM",
-      "passcode": "82007044",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/K9A9Z6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6032/"
-    },
-    {
       "id": "4286",
       "name": "4-Point Recovery — Alex C, Patrice T, Joe Martin",
       "facilitator": "Alex C, Patrice T, Joe Martin",
@@ -8110,6 +7950,26 @@
       "passcode": "16802436",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/H6N7S5",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4286/"
+    },
+    {
+      "id": "6032",
+      "name": "4-Point Recovery — Seth Schroeder",
+      "facilitator": "Seth Schroeder",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-14T19:00:00+00:00",
+      "hostCity": "Leesburg",
+      "hostState": "Virginia",
+      "titleLocation": "Leesburg, Virginia",
+      "schedule": "Every Sunday, 7:00 PM to 8:30 PM",
+      "passcode": "82007044",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/K9A9Z6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6032/"
     },
     {
       "id": "1868",
@@ -8272,6 +8132,26 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7261/"
     },
     {
+      "id": "5109",
+      "name": "4-Point Recovery — Bernie Q",
+      "facilitator": "Bernie Q",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-15T15:00:00+00:00",
+      "hostCity": "Cranston",
+      "hostState": "Rhode Island",
+      "titleLocation": "Cranston, Rhode Island",
+      "schedule": "Every Monday, 3:00 PM to 4:30 PM",
+      "passcode": "32449361",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/W9F4Z9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/5109/"
+    },
+    {
       "id": "8869",
       "name": "4-Point Recovery — Holly",
       "facilitator": "Holly",
@@ -8312,9 +8192,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/8086/"
     },
     {
-      "id": "5109",
-      "name": "4-Point Recovery — Bernie Q",
-      "facilitator": "Bernie Q",
+      "id": "7777",
+      "name": "4-Point Recovery — Megan R",
+      "facilitator": "Megan R",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -8322,14 +8202,14 @@
       "languages": [
         "English"
       ],
-      "utcStart": "2026-06-15T15:00:00+00:00",
-      "hostCity": "Cranston",
-      "hostState": "Rhode Island",
-      "titleLocation": "Cranston, Rhode Island",
-      "schedule": "Every Monday, 3:00 PM to 4:30 PM",
-      "passcode": "32449361",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/W9F4Z9",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/5109/"
+      "utcStart": "2026-06-15T16:00:00+00:00",
+      "hostCity": "Town of Rockingham",
+      "hostState": "Vermont",
+      "titleLocation": "Town of Rockingham, Vermont",
+      "schedule": "Every Monday, 4:00 PM to 5:00 PM",
+      "passcode": "35184684",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G5J8Y2",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7777/"
     },
     {
       "id": "4771",
@@ -8350,26 +8230,6 @@
       "passcode": "40092124",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/H4Y4M9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4771/"
-    },
-    {
-      "id": "7777",
-      "name": "4-Point Recovery — Megan R",
-      "facilitator": "Megan R",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-15T16:00:00+00:00",
-      "hostCity": "Town of Rockingham",
-      "hostState": "Vermont",
-      "titleLocation": "Town of Rockingham, Vermont",
-      "schedule": "Every Monday, 4:00 PM to 5:00 PM",
-      "passcode": "35184684",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G5J8Y2",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/7777/"
     },
     {
       "id": "7445",
@@ -8532,9 +8392,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/1111/"
     },
     {
-      "id": "8898",
-      "name": "Family & Friends — Laura Stewart Webb, Riley",
-      "facilitator": "Laura Stewart Webb, Riley",
+      "id": "4158",
+      "name": "Family & Friends — Martha Gordon",
+      "facilitator": "Martha Gordon",
       "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
@@ -8543,13 +8403,13 @@
         "English"
       ],
       "utcStart": "2026-06-15T22:30:00+00:00",
-      "hostCity": "Lexington Park",
-      "hostState": "Maryland",
-      "titleLocation": "Lexington Park, Maryland",
-      "schedule": "Every Monday, 10:30 PM to 11:30 PM",
-      "passcode": "23760437",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/J6D3C8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8898/"
+      "hostCity": "Wellfleet",
+      "hostState": "Massachusetts",
+      "titleLocation": "Wellfleet, Massachusetts",
+      "schedule": "Every Monday, 10:30 PM to 12:00 AM",
+      "passcode": "04370115",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/P8K2T5",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4158/"
     },
     {
       "id": "4626",
@@ -8572,9 +8432,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4626/"
     },
     {
-      "id": "4158",
-      "name": "Family & Friends — Martha Gordon",
-      "facilitator": "Martha Gordon",
+      "id": "8898",
+      "name": "Family & Friends — Laura Stewart Webb, Riley",
+      "facilitator": "Laura Stewart Webb, Riley",
       "program": "Family & Friends",
       "audiences": [
         "Adults Welcome"
@@ -8583,13 +8443,53 @@
         "English"
       ],
       "utcStart": "2026-06-15T22:30:00+00:00",
+      "hostCity": "Lexington Park",
+      "hostState": "Maryland",
+      "titleLocation": "Lexington Park, Maryland",
+      "schedule": "Every Monday, 10:30 PM to 11:30 PM",
+      "passcode": "23760437",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/J6D3C8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8898/"
+    },
+    {
+      "id": "641",
+      "name": "4-Point Recovery — Jeff, Ben, Ed, Ann",
+      "facilitator": "Jeff, Ben, Ed, Ann",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-15T23:00:00+00:00",
+      "hostCity": "Concord",
+      "hostState": "Massachusetts",
+      "titleLocation": "Concord, Massachusetts",
+      "schedule": "Every Monday, 11:00 PM to 12:30 AM",
+      "passcode": "70171195",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/E5Z2E7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/641/"
+    },
+    {
+      "id": "4165",
+      "name": "4-Point Recovery — Eric, Louis Hasbrouck",
+      "facilitator": "Eric, Louis Hasbrouck",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-15T23:00:00+00:00",
       "hostCity": "Wellfleet",
       "hostState": "Massachusetts",
       "titleLocation": "Wellfleet, Massachusetts",
-      "schedule": "Every Monday, 10:30 PM to 12:00 AM",
-      "passcode": "04370115",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/P8K2T5",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4158/"
+      "schedule": "Every Monday, 11:00 PM to 12:30 AM",
+      "passcode": "77612418",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/N8R5B6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4165/"
     },
     {
       "id": "4333",
@@ -8606,7 +8506,7 @@
       "hostCity": "Rochester",
       "hostState": "New York",
       "titleLocation": "Rochester, New York",
-      "schedule": "First and third Monday of each month, 11:00 PM to 12:00 AM",
+      "schedule": "First, third, and last Monday of each month, 11:00 PM to 12:00 AM",
       "passcode": "15234209",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/V6V8B9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/4333/"
@@ -8652,9 +8552,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/5113/"
     },
     {
-      "id": "4165",
-      "name": "4-Point Recovery — Eric, Louis Hasbrouck",
-      "facilitator": "Eric, Louis Hasbrouck",
+      "id": "1209",
+      "name": "4-Point Recovery — Jean Clark, Lisa Goodkind",
+      "facilitator": "Jean Clark, Lisa Goodkind",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -8663,33 +8563,13 @@
         "English"
       ],
       "utcStart": "2026-06-15T23:00:00+00:00",
-      "hostCity": "Wellfleet",
-      "hostState": "Massachusetts",
-      "titleLocation": "Wellfleet, Massachusetts",
+      "hostCity": "Potomac",
+      "hostState": "Maryland",
+      "titleLocation": "Potomac, Maryland",
       "schedule": "Every Monday, 11:00 PM to 12:30 AM",
-      "passcode": "77612418",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/N8R5B6",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/4165/"
-    },
-    {
-      "id": "641",
-      "name": "4-Point Recovery — Jeff, Ben, Ed, Ann",
-      "facilitator": "Jeff, Ben, Ed, Ann",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-15T23:00:00+00:00",
-      "hostCity": "Concord",
-      "hostState": "Massachusetts",
-      "titleLocation": "Concord, Massachusetts",
-      "schedule": "Every Monday, 11:00 PM to 12:30 AM",
-      "passcode": "70171195",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/E5Z2E7",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/641/"
+      "passcode": "075263",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G5Y5E3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/1209/"
     },
     {
       "id": "9011",
@@ -8712,26 +8592,6 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/9011/"
     },
     {
-      "id": "1209",
-      "name": "4-Point Recovery — Jean Clark, Lisa Goodkind",
-      "facilitator": "Jean Clark, Lisa Goodkind",
-      "program": "4-Point Recovery",
-      "audiences": [
-        "Adults Welcome"
-      ],
-      "languages": [
-        "English"
-      ],
-      "utcStart": "2026-06-15T23:00:00+00:00",
-      "hostCity": "Potomac",
-      "hostState": "Maryland",
-      "titleLocation": "Potomac, Maryland",
-      "schedule": "Every Monday, 11:00 PM to 12:30 AM",
-      "passcode": "075263",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G5Y5E3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/1209/"
-    },
-    {
       "id": "2153",
       "name": "4-Point Recovery — Andy Huffman",
       "facilitator": "Andy Huffman",
@@ -8752,9 +8612,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/2153/"
     },
     {
-      "id": "6251",
-      "name": "4-Point Recovery — David Boynton, Andrew",
-      "facilitator": "David Boynton, Andrew",
+      "id": "8688",
+      "name": "4-Point Recovery — Alvin N.",
+      "facilitator": "Alvin N.",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -8763,13 +8623,13 @@
         "English"
       ],
       "utcStart": "2026-06-15T23:30:00+00:00",
-      "hostCity": "Newton",
-      "hostState": "New Jersey",
-      "titleLocation": "Newton, New Jersey",
+      "hostCity": "Scranton",
+      "hostState": "Pennsylvania",
+      "titleLocation": "Scranton, Pennsylvania",
       "schedule": "Every Monday, 11:30 PM to 12:30 AM",
-      "passcode": "90519243",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/K3G2S3",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/6251/"
+      "passcode": "71490200",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G6X2Y8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8688/"
     },
     {
       "id": "94",
@@ -8792,9 +8652,9 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/94/"
     },
     {
-      "id": "8688",
-      "name": "4-Point Recovery — Alvin N.",
-      "facilitator": "Alvin N.",
+      "id": "6251",
+      "name": "4-Point Recovery — David Boynton, Andrew",
+      "facilitator": "David Boynton, Andrew",
       "program": "4-Point Recovery",
       "audiences": [
         "Adults Welcome"
@@ -8803,13 +8663,13 @@
         "English"
       ],
       "utcStart": "2026-06-15T23:30:00+00:00",
-      "hostCity": "Scranton",
-      "hostState": "Pennsylvania",
-      "titleLocation": "Scranton, Pennsylvania",
+      "hostCity": "Newton",
+      "hostState": "New Jersey",
+      "titleLocation": "Newton, New Jersey",
       "schedule": "Every Monday, 11:30 PM to 12:30 AM",
-      "passcode": "71490200",
-      "pathminderUrl": "https://instance-us.pathcheck.net/j/G6X2Y8",
-      "detailUrl": "https://meetings.smartrecovery.org/meetings/8688/"
+      "passcode": "90519243",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/K3G2S3",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6251/"
     },
     {
       "id": "6581",
@@ -8852,6 +8712,126 @@
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7631/"
     },
     {
+      "id": "7168",
+      "name": "4-Point Recovery — Carey",
+      "facilitator": "Carey",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T11:30:00+00:00",
+      "hostCity": "Cumberland",
+      "hostState": "Maryland",
+      "titleLocation": "Cumberland, Maryland",
+      "schedule": "Every Tuesday, 11:30 AM to 12:30 PM",
+      "passcode": "36639282",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/A6G8J6",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7168/"
+    },
+    {
+      "id": "8129",
+      "name": "4-Point Recovery — Leigh, Noni",
+      "facilitator": "Leigh, Noni",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T12:30:00+00:00",
+      "hostCity": "Naugatuck",
+      "hostState": "Connecticut",
+      "titleLocation": "Naugatuck, Connecticut",
+      "schedule": "Every Tuesday, 12:30 PM to 2:00 PM",
+      "passcode": "30318082",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/K7K4C7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8129/"
+    },
+    {
+      "id": "6712",
+      "name": "4-Point Recovery — Kristen",
+      "facilitator": "Kristen",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T13:00:00+00:00",
+      "hostCity": "Farmington",
+      "hostState": "Maine",
+      "titleLocation": "Farmington, Maine",
+      "schedule": "Every Tuesday, 1:00 PM to 2:00 PM",
+      "passcode": "33260717",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/G5G8C8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6712/"
+    },
+    {
+      "id": "6380",
+      "name": "4-Point Recovery — Mark Swiecki, Jonathon Maxgay",
+      "facilitator": "Mark Swiecki, Jonathon Maxgay",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T13:30:00+00:00",
+      "hostCity": "Troy",
+      "hostState": "Michigan",
+      "titleLocation": "Troy, Michigan",
+      "schedule": "Every Tuesday, 1:30 PM to 3:00 PM",
+      "passcode": "770539",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/A3V9A9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/6380/"
+    },
+    {
+      "id": "4987",
+      "name": "4-Point Recovery — Nina, Jessica, Jenni K, Logan Bradley, Peter",
+      "facilitator": "Nina, Jessica, Jenni K, Logan Bradley, Peter",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T16:00:00+00:00",
+      "hostCity": "Charlottesville",
+      "hostState": "Virginia",
+      "titleLocation": "Charlottesville, Virginia",
+      "schedule": "Every Tuesday, 4:00 PM to 5:00 PM",
+      "passcode": "19082985",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/U3K2Q9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/4987/"
+    },
+    {
+      "id": "7269",
+      "name": "4-Point Recovery — Danielle",
+      "facilitator": "Danielle",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-16T16:00:00+00:00",
+      "hostCity": "New York",
+      "hostState": "New York",
+      "titleLocation": "New York, New York",
+      "schedule": "Every Tuesday, 4:00 PM to 5:00 PM",
+      "passcode": "86088526",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/V4T2A7",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/7269/"
+    },
+    {
       "id": "7778",
       "name": "Family & Friends — Nathan",
       "facilitator": "Nathan",
@@ -8870,6 +8850,46 @@
       "passcode": "04727452",
       "pathminderUrl": "https://instance-us.pathcheck.net/j/E5S5J9",
       "detailUrl": "https://meetings.smartrecovery.org/meetings/7778/"
+    },
+    {
+      "id": "362",
+      "name": "4-Point Recovery — Patrick Truman",
+      "facilitator": "Patrick Truman",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-10T23:00:00+00:00",
+      "hostCity": "Gaithersburg",
+      "hostState": "Maryland",
+      "titleLocation": "Gaithersburg, Maryland",
+      "schedule": "Every Wednesday, 11:00 PM to 12:30 AM",
+      "passcode": "24818028",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/W9H8V9",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/362/"
+    },
+    {
+      "id": "8302",
+      "name": "4-Point Recovery — Ava Burre, Brad J, Andrea Luker",
+      "facilitator": "Ava Burre, Brad J, Andrea Luker",
+      "program": "4-Point Recovery",
+      "audiences": [
+        "Adults Welcome"
+      ],
+      "languages": [
+        "English"
+      ],
+      "utcStart": "2026-06-11T00:00:00+00:00",
+      "hostCity": "Overland Park",
+      "hostState": "Kansas",
+      "titleLocation": "Overland Park, Kansas",
+      "schedule": "Every Thursday, 12:00 AM to 1:30 AM",
+      "passcode": "05187091",
+      "pathminderUrl": "https://instance-us.pathcheck.net/j/K2N9E8",
+      "detailUrl": "https://meetings.smartrecovery.org/meetings/8302/"
     },
     {
       "id": "7186",
