@@ -906,9 +906,19 @@ _Audited by: about agent._
 
 **`how-ai-was-used.md` (line 17)** describes CLAUDE.md as "a working document of about 700 lines." The current file is **981 lines** on both disk and GitHub. The page itself notes "vagueness about AI use is part of the problem" — concrete numbers should be accurate. Update to "about 1,000 lines" or "nearly 1,000 lines."
 
-### Reddit-side claims are unverifiable from this environment
+### Reddit-side claims — Playwright re-verification
 
-All Reddit URLs (`/r/quitting7oh`, the two stepdown posts, the transfer post, the seven user profiles) return HTTP 200, but Reddit's anti-bot wall blocks JSON content extraction. The URLs returning 200 is consistent with the resources existing; tight verification would require Reddit access or an authenticated client.
+Re-ran the Reddit URLs in a headless Chromium browser (Playwright) to get past the JSON anti-bot wall. Results:
+
+| Claim | Site says | Reddit says | Status |
+|---|---|---|---|
+| Subreddit creation date | "August 2024" | **Jul 16, 2024** (per the about page) | ❌ Off by ~3 weeks; should read "July 2024" |
+| Transfer post `1gmmhdh` ("I'm taking ownership of this sub") | "November 2024" | **November 8, 2024** | ✅ Verified |
+| Stepdown post `1t0u0jo` ("Passing the admin torch") | "May 2026" | **2026-05-01** | ✅ Verified |
+| Stepdown post `1reegp9` ("Due to discords new dystopian policies…") | "May 2026" | **2026-02-25** | ⚠️ Off — this post is from February 2026, not May. It's about Discord policy changes, not the stepdown event. Linking it as part of "In May 2026, Fly stepped down" conflates two different posts |
+| Fly active in r/quitting7oh | implied | **FlyAdventurous6231 username confirmed across multiple posts** | ✅ Verified |
+| TheTimeIsHours created subreddit | "created in August 2024 by /u/TheTimeIsHours" | Unknown — Reddit blocks the mod-history page (403) and user profile pages are age-gated | 🔍 Still unverifiable |
+| Mod team (cartmancakes, Icy-Muffin7572, AnointedDread, TheirTimeWasHours, drjinglesMD) | listed | Reddit's mod list page returns 403 even via headless browser | 🔍 Still unverifiable |
 
 ### Discord claims are partially verifiable
 
@@ -973,7 +983,7 @@ The underlying claim (first-gen antihistamines worsen RLS) is well-supported by 
 - **Mitragynine "leaf 0.04% 7-OH = 0.5-4 mg/gram"** math is wrong — 0.04% of 1 g is 0.4 mg, not up to 4.
 - **CLAUDE.md says "about 700 lines"** in `how-ai-was-used.md`; actually 981 lines.
 - **HIMS acronym is "Motivational"** not "Motivation" (single letter typo on `mat-and-your-job.md`).
-- **Reddit-side claims about /r/quitting7oh history** unverifiable from this environment (bot-block); URLs return 200 consistent with resources existing.
+- **Reddit-side claims, after Playwright re-verification:** subreddit creation date is **Jul 16, 2024**, not August 2024 (off by ~3 weeks). The "May 2026 stepdown" framing on `about/the-community.mdx` line 65 conflates two separate posts — `1t0u0jo` is the actual stepdown post from May 1, 2026, but `1reegp9` is from February 25, 2026 and is about Discord policy changes, not the stepdown itself. Should be split into two distinct events with their correct dates. TheTimeIsHours as original creator and the current mod team remain unverifiable — Reddit's mod-history page returns 403 even in a headless browser.
 
 ### Pages with the most issues (recommended audit priority)
 
