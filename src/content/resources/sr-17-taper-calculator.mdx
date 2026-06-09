@@ -1,0 +1,43 @@
+---
+title: "SR-17 Cross-Taper Calculator"
+description: "Day-by-day schedule for the SR-17 cross-taper protocol: preload, 7-OH cross-taper, hold, then SR taper down to a jump-off. Configurable per phase."
+category: "resources"
+last_updated: "2026-06-09"
+sort: 7
+---
+
+import { Sr17CrossTaper } from '~/components/Sr17CrossTaper';
+
+<Sr17CrossTaper client:load />
+
+> **SR-17 has never been studied in humans.** All efficacy and safety data is rodent. The community protocol below is documented in detail on the [SR-17 page](/other-tools/sr-17); this calculator just does the day-by-day math from your inputs. SR-17 is still a mu-opioid agonist, it produces its own dependence and withdrawal, and the sourcing realities are real. Read the full page before committing to the protocol.
+
+## What this calculator builds
+
+The SR-17 protocol is a **cross-taper**, not a single-substance taper. The calculator generates four sequential phases plus an optional allergy-test day:
+
+1. **Phase 0 · Allergy test** (~10 mg SR-17, wait several hours).
+2. **Phase 1 · Preload.** SR-17 ramps to full dose while 7-OH (or MGM-15 / MIT-A / pseudo) stays unchanged.
+3. **Phase 2 · 7-OH cross-taper.** 7-OH drops to zero — standard is cut-in-half then stop (2 days), custom is N equal cuts.
+4. **Phase 3 · Hold.** SR-17 only, at the preload total.
+5. **Phase 4 · SR-17 taper down.** SR steps down to your jump-off, then stop.
+
+Defaults match the standard schedule documented on the [SR-17 page](/other-tools/sr-17): 1-day preload at 50 mg × 3 = 150 mg/day, standard cross-taper, 4-day hold, standard step-down (100 → 75 → 50 → 25 → jump). Most readers run somewhere in the 10–14 day total range.
+
+## When to extend the preload
+
+The protocol is calibrated for pure 7-OH. If you're on a longer-acting compound — [MGM-15 / MIT-A](/compounds/mit-a-dhm) or [pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl) — or stacking multiple, extend the preload (set Preload days to 2–3). The synthetics run longer in the body, and a 1-day preload may not have enough SR on board by the time you start cutting 7-OH.
+
+## What the calculator doesn't do
+
+- It doesn't source SR-17 for you. The [SR-17 page](/other-tools/sr-17) covers what to look for and avoid.
+- It doesn't decide whether SR-17 is the right path. [Suboxone](/mat-suboxone/suboxone-for-7oh) is the other community-validated path off the synthetics; the trade-offs are different.
+- It doesn't model interactions with alcohol, benzodiazepines, or other depressants. Don't combine. Keep naloxone (Narcan) on hand throughout.
+- It doesn't replace community sense-checking. Bring your plan to the [Discord](https://discord.gg/quitting7oh) before committing.
+
+## See also
+
+- [SR-17](/other-tools/sr-17) — the full protocol page, pharmacology, sourcing, legal status
+- [Other taper calculators on this site](/resources/taper-calculator)
+- [Helper Medications](/other-tools/helper-meds) — what to pair with the post-SR phase
+- [What is PAWS?](/post-acute/paws-post-acute-withdrawal) — the post-SR tail

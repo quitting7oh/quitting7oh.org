@@ -1,0 +1,31 @@
+---
+title: "Kratom Leaf Taper Calculator"
+description: "Day-by-day kratom leaf taper schedule in grams, with a configurable jump-off so the taper ends at a tolerable low dose rather than crashing to zero."
+category: "resources"
+last_updated: "2026-06-09"
+sort: 6
+---
+
+import { TaperCalculator } from '~/components/TaperCalculator';
+
+<TaperCalculator substances={['leaf']} storageSuffix="leaf" client:load />
+
+> **Reference, not advice.** Leaf alkaloid content varies between strains, batches, and vendors, so grams are an approximation of dose. This calculator gives you the shape of the taper; the lived knowledge of what tapering leaf actually feels like lives in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/), plus the dedicated page on [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf).
+
+## Why leaf tapers usually end at 1–2 g/day, not zero
+
+The community's experience with leaf is that the final drop from a low daily dose to zero is the hard part. Most self-managed leaf tapers jump off at 1–2 g/day rather than tapering all the way down. This calculator defaults to a 1 g/day jump-off; adjust based on where you actually find the cliff.
+
+If you're tapering leaf as a bridge off concentrated [7-OH](/compounds/7-oh) or one of the [synthetics](/compounds/mit-a-dhm), the leaf section is the *back half* of the plan — you've already done the harder front-end transition from the concentrate to plain leaf, and now you're descending leaf itself.
+
+## The math
+
+Each day is a percentage cut from the previous day. The duration presets and the custom duration all describe the same shape: how many days to descend from your starting dose to your jump-off. An N-day taper has N entries and N − 1 cuts (day 1 = starting dose, day N = jump-off), so the per-day percentage is `pct = 1 − (jumpOff / totalStart)^(1/(N−1))`.
+
+The calculator drops the number of doses per day as the total falls so the per-capsule (or per-toss-and-wash) amount stays in a tolerable range instead of becoming a fraction of a capsule.
+
+## See also
+
+- [Other taper calculators on this site](/resources/taper-calculator)
+- [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) — the full bridge protocol
+- [Kratom Leaf & Mitragynine](/compounds/kratom-leaf) — what leaf is, how it's different from 7-OH

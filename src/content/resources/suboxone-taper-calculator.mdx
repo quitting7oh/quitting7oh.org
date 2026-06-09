@@ -1,0 +1,32 @@
+---
+title: "Suboxone Taper Calculator"
+description: "Day-by-day buprenorphine taper schedule with the published 5/7/10/14/21-day rapid-taper columns built in, plus custom-duration math for non-standard start doses."
+category: "resources"
+last_updated: "2026-06-09"
+sort: 5
+---
+
+import { TaperCalculator } from '~/components/TaperCalculator';
+
+<TaperCalculator substances={['bupe']} storageSuffix="bupe" client:load />
+
+> **Reference, not advice.** Buprenorphine is a prescribed medication; tapering it is a conversation with your prescriber, not a unilateral decision. The schedule below is a starting point for that conversation. The community side — what tapering actually feels like, what helps, when to slow down — lives in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/).
+
+## How this calculator handles buprenorphine
+
+When your start dose matches one of the published 5 / 7 / 10 / 14 / 21-day columns from the [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) page (2, 4, 6, or 8 mg start), the calculator returns the established schedule exactly. For other start doses or durations, it generates a daily percentage taper from your starting total to your jump-off.
+
+Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses (0.1, 0.05, 0.02 mg) using the same math as [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose) — useful when a standard short taper isn't slow enough at the bottom.
+
+## Where bupe tapers tend to go sideways
+
+- **The bottom matters more than the top.** Drops from 2 mg → 1 mg → 0.5 mg are where people get hit. Going slower in this range is usually the right call.
+- **Anhedonia and PAWS often peak after the taper ends**, not during it. See [Depression and Anhedonia](/post-acute/depression-and-anhedonia) and [What is PAWS?](/post-acute/paws-post-acute-withdrawal).
+- **Long-acting injectables (Sublocade, Brixadi)** have their own discontinuation pattern that this calculator doesn't model. See [Sublocade & Brixadi](/mat-suboxone/sublocade-brixadi).
+- **Bupe tapers off a kratom-synthetic baseline** can behave differently from bupe tapers after classical opioids. The community discussion of that lives at [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
+
+## See also
+
+- [Other taper calculators on this site](/resources/taper-calculator)
+- [Telehealth Providers for Suboxone](/resources/telehealth-for-suboxone) — comparison of providers who will work with kratom and 7-OH cases
+- [Long-Term Suboxone Risks](/mat-suboxone/long-term-suboxone-risks) — what you're tapering off of, in context

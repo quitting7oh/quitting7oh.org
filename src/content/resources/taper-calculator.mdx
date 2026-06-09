@@ -1,30 +1,36 @@
 ---
-title: "Taper Calculator"
-description: "A taper calculator for buprenorphine, 7-OH, MGM-15/MIT-A, pseudoindoxyl, kratom leaf, and SR-17 — enter a dose and speed, get a day-by-day schedule."
+title: "Taper Calculators"
+description: "Day-by-day taper calculators for 7-OH and kratom synthetics, buprenorphine, kratom leaf, and the SR-17 cross-taper. Pick the one that matches your path."
 category: "resources"
-last_updated: "2026-06-08"
+last_updated: "2026-06-09"
 sort: 4
 ---
 
-import { TaperCalculator } from '~/components/TaperCalculator';
+Four calculators, one per path. Pick the one that matches your situation.
 
-<TaperCalculator client:load />
+## The four calculators
 
-> **Reference, not advice.** This page is a calculator, not a prescription. The schedules above are starting points for a plan, not a substitute for a prescriber or for the lived knowledge in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). For buprenorphine, a prescriber is the right address. For the kratom-derived synthetics ([7-OH](/compounds/7-oh), [MGM-15 / MIT-A / DHM](/compounds/mit-a-dhm), [pseudo](/compounds/mitragynine-pseudoindoxyl)), the community is genuinely ahead of the published clinical literature and is the right address for the path-shape questions.
+### [7-OH / MGM-15 / pseudoindoxyl](/resources/7-oh-taper-calculator)
 
-## How the math works
+The kratom-derived synthetics share the same percentage-taper math, so they live in one calculator with a substance picker. Defaults differ per compound — 7-OH runs short and ends at a low jump-off; MGM-15 / MIT-A and pseudoindoxyl need slower runways because of longer half-lives.
 
-The percentage math is a daily cut. Each day the calculator reduces the previous day's total by the same percentage, so the absolute step gets smaller as you get lower — cutting 10% of 100 mg is 10 mg; cutting 10% of 20 mg is 2 mg. The duration presets and the custom duration all describe the same shape: how many days to descend from your starting dose to your jump-off. An N-day taper has N entries and N − 1 cuts (day 1 is the starting dose, day N is the jump-off), so the per-day percentage is `pct = 1 − (jumpOff / totalStart)^(1/(N−1))`.
+### [Buprenorphine (Suboxone)](/resources/suboxone-taper-calculator)
 
-As the total drops, the calculator reduces the number of doses per day proportionally (`ceil(N0 × T / T0)`) so the per-dose amount stays in a tolerable range instead of shrinking to fractions of a tablet.
+Buprenorphine taper, with the published 5 / 7 / 10 / 14 / 21-day rapid-taper schedules from [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) built in. Falls back to percentage math for non-standard start doses, and extends the tail with volumetric sub-0.25 mg doses when the jump-off is set lower.
 
-For **buprenorphine specifically**, the community-validated short tapers documented on [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) are built around bupe's 28-to-37-hour half-life and the short-acting profile of the compounds people in this community are coming off. A 5-day rapid taper isn't simple percentage math; it's a hand-tuned schedule. The calculator picks the established schedule when the starting dose and duration match a published row, and falls through to percentage math otherwise.
+### [Kratom leaf](/resources/kratom-leaf-taper-calculator)
 
-## What the calculator won't do
+Kratom leaf taper in grams. Defaults to a 1 g/day jump-off rather than zero — the cliff between "low dose" and "no dose" is where most self-managed leaf tapers struggle, and ending at a tolerable low number tends to work better than crashing to zero. Adjust based on where you actually find that cliff.
 
-- **Take into account your medical history.** Cardiovascular conditions, mental-health history, concurrent medications, and polysubstance use all change what a workable taper looks like. The calculator can't know about any of it.
-- **Account for varying alkaloid content.** Kratom leaf in grams is an approximation. Concentrated 7-OH products vary in actual content per tablet. The calculator works with the number you enter; the number you enter is only as good as the product testing you have.
-- **Replace a check-in person.** Most rapid tapers and community step-downs go better with someone knowing what you're doing.
+### [SR-17 cross-taper](/resources/sr-17-taper-calculator)
+
+The SR-17 protocol is structurally different from the rest — it's a **cross-taper**, not a single-substance taper. You preload SR while staying on 7-OH (or MGM-15 / MIT-A / pseudo), step the 7-OH to zero with SR carrying you, hold on SR-only, then taper the SR down. The calculator has four configurable phases plus an optional allergy-test day. See the [SR-17 page](/other-tools/sr-17) for the full protocol before running the math.
+
+## What the calculators don't do
+
+- **Take your medical history into account.** Cardiovascular conditions, mental-health history, concurrent medications, and polysubstance use all change what a workable taper looks like. The calculator can't know about any of it.
+- **Account for varying alkaloid content.** Kratom leaf in grams is an approximation. Concentrated 7-OH products vary in actual content per tablet. The output is only as good as the product testing you have.
+- **Replace a check-in person.** Most rapid tapers and community step-downs go better with someone knowing what you're doing — sponsor, peer, or someone who can reach you.
 - **Tell you when to abort.** If symptoms become unmanageable, the right move is to stabilize at a higher dose for a day or two and restart on a slower schedule. The [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) page covers the abort-and-stabilize discipline.
 
 ## Crisis and emergency

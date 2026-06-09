@@ -36,9 +36,15 @@ import {
   type ChartConfig,
 } from '~/components/ui/chart';
 
+/* ─── localStorage persistence ─── */
+// Bump STORAGE_VERSION when adding/removing/renaming persisted fields so
+// stale blobs are discarded instead of corrupting the calculator state.
+const STORAGE_KEY = 'taper-calculator-v1';
+const STORAGE_VERSION = 1;
+
 /* ───────────────────────── Substance config ───────────────────────── */
 
-type SubstanceKey = 'bupe' | '7oh' | 'mgm' | 'pseudo' | 'leaf' | 'sr17';
+type SubstanceKey = 'bupe' | '7oh' | 'mgm' | 'pseudo' | 'leaf';
 type Difficulty = 'easier' | 'clinician' | 'harder' | 'super-hard' | 'custom';
 
 interface SubstanceConfig {
@@ -150,21 +156,6 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
       { label: 'Quit 7-OH with Kratom Leaf', href: '/other-tools/quit-7-oh-with-kratom-leaf' },
     ],
   },
-  sr17: {
-    label: 'SR-17 (SR-17018)',
-    unit: 'mg',
-    stepUnit: 'day',
-    defaultPerDose: 50,
-    defaultDosesPerDay: 3,
-    minDosesPerDay: 1,
-    defaultJumpOff: 25,
-    defaultTabletSize: 25,
-    tabletUnitName: 'tablet',
-    note: 'SR-17 protocols in the community are short by design (5 to 14 days total). The calculator runs percentage math from your chosen duration. SR-17 is more often sold as a liquid solution than as tablets; the tablet-equivalent breakdown is approximate.',
-    related: [
-      { label: 'SR-17', href: '/other-tools/sr-17' },
-    ],
-  },
 };
 
 /** Bupe presets line up with the published 5 / 7 / 10 / 14 / 21-day
@@ -204,36 +195,16 @@ const LONG_DURATION_LABELS: Record<Difficulty, string> = {
   custom: 'Custom duration',
 };
 
-/** SR-17 presets mirror the community-reported course range (5–14 days).
- *  The 'super-hard' slot is hidden from the SR-17 dropdown but kept here
- *  so the Difficulty-keyed Records stay total. */
-const SR17_DURATION_DAYS: Record<Exclude<Difficulty, 'custom'>, number> = {
-  easier: 14,
-  clinician: 10,
-  harder: 5,
-  'super-hard': 5,
-};
-
-const SR17_DURATION_LABELS: Record<Difficulty, string> = {
-  easier: '14 days',
-  clinician: '10 days',
-  harder: '5 days',
-  'super-hard': '5 days',
-  custom: 'Custom duration',
-};
-
 function difficultyDaysFor(
   substance: SubstanceKey,
   difficulty: Exclude<Difficulty, 'custom'>,
 ): number {
   if (substance === 'bupe') return BUPE_DURATION_DAYS[difficulty];
-  if (substance === 'sr17') return SR17_DURATION_DAYS[difficulty];
   return LONG_DURATION_DAYS[difficulty];
 }
 
 function difficultyLabelsFor(substance: SubstanceKey): Record<Difficulty, string> {
   if (substance === 'bupe') return BUPE_DURATION_LABELS;
-  if (substance === 'sr17') return SR17_DURATION_LABELS;
   return LONG_DURATION_LABELS;
 }
 
@@ -242,15 +213,13 @@ function difficultyLabelsFor(substance: SubstanceKey): Record<Difficulty, string
  *     matching what the community converges on for the kratom-derived
  *     synthetics and plain leaf.
  *   - bupe → 'clinician' (14 days), the most-used column on the
- *     Suboxone Rapid Taper page.
- *   - SR-17 → 'clinician' (10 days), the middle of the 5–14 day range. */
+ *     Suboxone Rapid Taper page. */
 const DEFAULT_DIFFICULTY: Record<SubstanceKey, Difficulty> = {
   '7oh': 'harder',
   bupe: 'clinician',
   mgm: 'harder',
   pseudo: 'harder',
   leaf: 'harder',
-  sr17: 'clinician',
 };
 
 /* ───────────────────────── Bupe established schedules ───────────────────────── */
@@ -590,8 +559,25 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function TaperCalculator() {
-  const [substance, setSubstance] = useState<SubstanceKey>('7oh');
+interface TaperCalculatorProps {
+  /** Substances offered in the dropdown. When the list has a single
+   *  entry the dropdown is hidden and the form opens directly. Default
+   *  preserves the historical all-substances behaviour for any existing
+   *  consumer that doesn't pass the prop. */
+  substances?: SubstanceKey[];
+  /** Per-calculator localStorage suffix so multiple instances on
+   *  different pages don't overwrite each other's saved inputs. */
+  storageSuffix?: string;
+}
+
+const ALL_SUBSTANCES: SubstanceKey[] = ['7oh', 'mgm', 'pseudo', 'bupe', 'leaf'];
+
+export function TaperCalculator({
+  substances = ALL_SUBSTANCES,
+  storageSuffix = 'all',
+}: TaperCalculatorProps = {}) {
+  const storageKey = `${STORAGE_KEY}-${storageSuffix}`;
+  const [substance, setSubstance] = useState<SubstanceKey>(substances[0]);
   const cfg = SUBSTANCES[substance];
 
   const [perDose, setPerDose] = useState<number>(cfg.defaultPerDose);
@@ -607,6 +593,71 @@ export function TaperCalculator() {
   /** Custom mode source of truth: total taper duration in days. */
   const [customDays, setCustomDays] = useState<number>(14);
   const [copied, setCopied] = useState<boolean>(false);
+
+  // ── localStorage persistence ─────────────────────────────────────────
+  // All form inputs survive a refresh. Stored as a single JSON blob with
+  // a version stamp so future schema changes can be detected and
+  // discarded rather than crashing the calculator with stale fields.
+  // `hydrated` gates the save-effect: we don't want the initial-defaults
+  // pass to overwrite a saved blob before the load-effect has had a
+  // chance to apply it.
+  const [hydrated, setHydrated] = useState<boolean>(false);
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (raw) {
+        const d = JSON.parse(raw);
+        if (d && d.v === STORAGE_VERSION) {
+          if (d.substance && SUBSTANCES[d.substance as SubstanceKey]) setSubstance(d.substance);
+          if (typeof d.perDose === 'number') setPerDose(d.perDose);
+          if (typeof d.dosesPerDay === 'number') setDosesPerDay(d.dosesPerDay);
+          if (typeof d.jumpOff === 'number') setJumpOff(d.jumpOff);
+          if (typeof d.tabletSize === 'number') setTabletSize(d.tabletSize);
+          if (d.difficulty) setDifficulty(d.difficulty);
+          if (typeof d.customDays === 'number') setCustomDays(d.customDays);
+        }
+      }
+    } catch {
+      // Bad JSON, blocked storage, etc. — fall back to defaults.
+    }
+    setHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    try {
+      const blob = JSON.stringify({
+        v: STORAGE_VERSION,
+        substance,
+        perDose,
+        dosesPerDay,
+        jumpOff,
+        tabletSize,
+        difficulty,
+        customDays,
+      });
+      localStorage.setItem(storageKey, blob);
+    } catch {
+      // Quota exceeded, blocked storage — silently skip.
+    }
+  }, [
+    hydrated,
+    substance, perDose, dosesPerDay, jumpOff, tabletSize, difficulty, customDays,
+  ]);
+
+  const handleResetAll = () => {
+    try {
+      localStorage.removeItem(storageKey);
+    } catch {}
+    const first = substances[0];
+    setSubstance(first);
+    setPerDose(SUBSTANCES[first].defaultPerDose);
+    setDosesPerDay(SUBSTANCES[first].defaultDosesPerDay);
+    setJumpOff(SUBSTANCES[first].defaultJumpOff);
+    setTabletSize(0);
+    setDifficulty(DEFAULT_DIFFICULTY[first]);
+    setCustomDays(14);
+  };
 
   // Clear "Copied!" confirmation after 2 seconds.
   useEffect(() => {
@@ -708,32 +759,46 @@ export function TaperCalculator() {
   const totalDuration = totalSteps > 0 ? `${totalSteps} day${totalSteps === 1 ? '' : 's'}` : '—';
 
   const chartData = result.steps.map((s, i) => ({
-    step: i + 1,
-    totalDaily: s.totalDaily,
-  }));
+        step: i + 1,
+        totalDaily: s.totalDaily,
+      }));
 
   return (
     <TooltipProvider delayDuration={150}>
     <div className="not-prose my-6 space-y-6">
       {/* Form */}
       <div className="grid gap-4 rounded-lg border border-border bg-card p-4 sm:grid-cols-2 print:hidden">
-        <div className="sm:col-span-2">
-          <Label htmlFor="substance">What are you tapering?</Label>
-          <Select value={substance} onValueChange={(v) => handleSubstanceChange(v as SubstanceKey)}>
-            <SelectTrigger id="substance" className="mt-1.5">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {(Object.entries(SUBSTANCES) as [SubstanceKey, SubstanceConfig][]).map(
-                ([key, c]) => (
-                  <SelectItem key={key} value={key}>
-                    {c.label}
-                  </SelectItem>
-                ),
-              )}
-            </SelectContent>
-          </Select>
+        <div className="sm:col-span-2 flex items-start justify-between gap-3">
+          <div className="flex-1">
+            {substances.length > 1 && (
+              <Label htmlFor="substance">What are you tapering?</Label>
+            )}
+          </div>
+          <button
+            type="button"
+            onClick={handleResetAll}
+            className="text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
+            title="Clear saved settings and reset all inputs to defaults"
+          >
+            Reset form
+          </button>
         </div>
+        {substances.length > 1 && (
+          <div className="sm:col-span-2 -mt-3">
+            <Select value={substance} onValueChange={(v) => handleSubstanceChange(v as SubstanceKey)}>
+              <SelectTrigger id="substance" className="mt-1.5">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {substances.map((key) => (
+                  <SelectItem key={key} value={key}>
+                    {SUBSTANCES[key].label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        )}
 
         <div>
           <Label htmlFor="per-dose">Per-dose amount ({cfg.unit})</Label>
@@ -827,10 +892,6 @@ export function TaperCalculator() {
             <SelectContent>
               {(Object.entries(difficultyLabelsFor(substance)) as [Difficulty, string][]).map(
                 ([key, label]) => {
-                  // SR-17 menu is 14 / 10 / 5 days + custom — the
-                  // 'super-hard' slot is a Difficulty-Record placeholder
-                  // and shouldn't render as a separate UI option.
-                  if (substance === 'sr17' && key === 'super-hard') return null;
                   return (
                     <SelectItem key={key} value={key}>
                       {label}
@@ -1526,3 +1587,4 @@ IMPORTANT:
 - Flag anything that looks dangerous given my context
 - Be honest about uncertainty; the published clinical literature on these compounds is thin`;
 }
+
