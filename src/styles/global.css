@@ -632,7 +632,7 @@
   /* Anchor links from heading slugs. The visible "#" is a CSS pseudo-element
      so it never appears as DOM text (would otherwise leak into Astro's TOC). */
   .heading-anchor {
-    @apply opacity-0 ml-2 text-muted-foreground no-underline transition-opacity;
+    @apply relative opacity-0 ml-2 text-muted-foreground no-underline transition-opacity;
   }
   .heading-anchor::before {
     content: '#';
@@ -642,6 +642,23 @@
   h4:hover .heading-anchor,
   .heading-anchor:focus-visible {
     @apply opacity-100;
+  }
+  /* Click feedback for the copy-link behavior (script in DocLayout).
+     Plain CSS for the positioning — Tailwind transform utilities have
+     historically composed badly on CF builds. */
+  .heading-anchor[data-copied] {
+    @apply opacity-100;
+  }
+  .heading-anchor[data-copied]::after {
+    content: 'Copied';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    letter-spacing: normal;
+    @apply rounded bg-foreground px-1.5 py-0.5 text-xs font-medium text-background;
   }
 }
 

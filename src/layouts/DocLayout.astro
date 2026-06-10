@@ -60,6 +60,7 @@ const { prev, next } = await getPrevNext(currentPath);
             ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
             { label: title },
           ]}
+          sharePath={currentPath}
         />
         <h1 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           {title}
@@ -99,5 +100,43 @@ const { prev, next } = await getPrevNext(currentPath);
         </aside>
       )}
     </main>
+    <div id="copy-announce" aria-live="polite" class="sr-only"></div>
   </SidebarShell>
 </BaseLayout>
+
+<script>
+  // Heading anchors copy the section URL instead of navigating. The hash
+  // still lands in the address bar (replaceState, no scroll jump) so the
+  // copied link matches what the reader sees.
+  const live = document.getElementById('copy-announce');
+  const timers = new WeakMap<Element, number>();
+
+  document.addEventListener('click', (event) => {
+    // Modified clicks (new tab, etc.) keep normal anchor behavior.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const target = event.target instanceof Element ? event.target : null;
+    const anchor = target?.closest('a.heading-anchor');
+    if (!(anchor instanceof HTMLAnchorElement)) return;
+    event.preventDefault();
+    const url = new URL(anchor.getAttribute('href') ?? '', window.location.href);
+    navigator.clipboard
+      .writeText(url.href)
+      .then(() => {
+        history.replaceState(null, '', url.hash);
+        anchor.setAttribute('data-copied', '');
+        if (live) live.textContent = 'Link copied to clipboard';
+        window.clearTimeout(timers.get(anchor));
+        timers.set(
+          anchor,
+          window.setTimeout(() => {
+            anchor.removeAttribute('data-copied');
+            if (live) live.textContent = '';
+          }, 1600),
+        );
+      })
+      .catch(() => {
+        // Clipboard unavailable: fall back to plain anchor navigation.
+        window.location.hash = url.hash;
+      });
+  });
+</script>

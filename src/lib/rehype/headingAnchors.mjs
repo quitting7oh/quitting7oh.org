@@ -33,7 +33,8 @@ export default function rehypeHeadingAnchors() {
         properties: {
           href: `#${id}`,
           className: ['heading-anchor'],
-          'aria-label': 'Link to this section',
+          'aria-label': 'Copy link to this section',
+          title: 'Copy link to this section',
         },
         children: [],
       });
