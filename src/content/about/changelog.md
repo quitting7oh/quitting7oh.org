@@ -16,6 +16,20 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-06-09
 
+### Typography refresh: IBM Plex Sans + Fraunces
+
+- **Body font is now IBM Plex Sans** (variable, self-hosted via
+  Fontsource), replacing Inter. Slightly warmer, better x-height, and
+  holds up in dense tables; the Inter-specific `cv` feature settings
+  went with it.
+- **Content headings are now Fraunces**, the display serif that was
+  already shipped but only used in the logo. Applies to article
+  prose headings (H1–H4), page titles, and the sitemap section
+  headings at weight 600. Small UI headings (sidebar labels,
+  calculator panels, crisis dialog) stay on the sans.
+- Picked from a ten-font contact sheet (`docs/font-contact-sheet.html`)
+  rendered on the site's own light/dark palettes.
+
 ### Desktop navigation upgrades
 
 - **Scroll-spy in the right-rail TOC.** The "On this page" rail now
