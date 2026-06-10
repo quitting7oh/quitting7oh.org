@@ -110,7 +110,7 @@ What to look for:
 - **Trying this at higher daily doses.** If you're at 500+ mg/day, leaf is unlikely to cover you adequately. Look at Suboxone or SR-17018 instead.
 
 ## If leaf isn't working
-**That's not failure, it just means you need a different tool.** Suboxone, SR-17018, or a clinical taper plan may be a better fit. Post in **#kratom-leaf** to talk through options. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
+**That's not failure, it just means you need a different tool.** Suboxone, SR-17018, or a clinical taper plan may be a better fit. Post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) to talk through options with people who've faced the same call. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
 
 ## Sources
 - [Mitragynine, Wikipedia](https://en.wikipedia.org/wiki/Mitragynine)

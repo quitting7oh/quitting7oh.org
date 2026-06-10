@@ -500,6 +500,14 @@ Other changes that came with the split:
   applies to MGM-15 / MIT-A / pseudo too; the helper text calls
   out that synthetics may need a longer preload.
 
+### Legacy Discord channel callout
+
+- `quit-7-oh-with-kratom-leaf.md` "If leaf isn't working" section
+  pointed readers at `#kratom-leaf`, a leftover from when content
+  routed to specific Discord channels by name. Replaced with the
+  standard pattern: post in the Discord or subreddit to talk
+  through options.
+
 ## 2026-06-08
 
 ### SOWS calculator on the SOWS/COWS induction-guide page
