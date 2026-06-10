@@ -1,0 +1,36 @@
+---
+/**
+ * Horizontal "On this page" anchor bar for wide-layout pages, which
+ * hide the right-rail TOC to give the content the full container.
+ * H2 only — subsections would crowd a single row.
+ */
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+const sections = headings.filter((h) => h.depth === 2);
+---
+
+{
+  sections.length > 1 && (
+    <nav
+      aria-label="Table of contents"
+      class="mt-6 flex flex-wrap items-baseline gap-x-5 gap-y-2 border-y border-border py-3 text-sm"
+    >
+      <span class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        On this page
+      </span>
+      {sections.map((h) => (
+        <a
+          href={`#${h.slug}`}
+          class="text-muted-foreground transition hover:text-foreground"
+        >
+          {h.text}
+        </a>
+      ))}
+    </nav>
+  )
+}

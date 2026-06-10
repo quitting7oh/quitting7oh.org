@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import { SidebarShell } from '~/components/SidebarShell';
 import { Toc } from '~/components/Toc';
 import { TocMobile } from '~/components/TocMobile';
+import TocWide from '~/components/TocWide.astro';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
@@ -71,6 +72,7 @@ const { prev, next } = await getPrevNext(currentPath);
         )}
 
         {!wide && <div class="mt-6"><TocMobile headings={headings} client:load /></div>}
+        {wide && <TocWide headings={headings} />}
 
         <article class:list={[
           'prose-recovery dark:prose-invert mt-8',

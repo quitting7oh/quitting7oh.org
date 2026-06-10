@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-09"
+last_updated: "2026-06-10"
 sort: 6
 ---
 
@@ -15,6 +15,21 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-06-09
+
+### Desktop TOC upgrades
+
+- **Scroll-spy in the right-rail TOC.** The "On this page" rail now
+  highlights the section currently in view (left border + foreground
+  text on the active link, `aria-current="location"` for screen
+  readers). Tracking uses a rAF-throttled scroll listener against the
+  same 5rem header offset the heading anchors use, with a
+  bottom-of-page case so the last section activates even when its
+  heading can't reach the reading line.
+- **Anchor bar for wide pages.** Pages with `wide: true` hide the
+  right-rail TOC and previously offered no in-page navigation. They
+  now get a horizontal H2 anchor bar under the title
+  (`TocWide.astro`, static markup, no hydration). Currently applies
+  to `pharmacology/chemical-structures`.
 
 ### Source-anchored audit fixes across the site
 
@@ -507,6 +522,14 @@ Other changes that came with the split:
   config-panel labels, print PDF, AI prompt. The protocol math
   applies to MGM-15 / MIT-A / pseudo too; the helper text calls
   out that synthetics may need a longer preload.
+
+### Legacy Discord channel callout
+
+- `quit-7-oh-with-kratom-leaf.md` "If leaf isn't working" section
+  pointed readers at `#kratom-leaf`, a leftover from when content
+  routed to specific Discord channels by name. Replaced with the
+  standard pattern: post in the Discord or subreddit to talk
+  through options.
 
 ## 2026-06-08
 
