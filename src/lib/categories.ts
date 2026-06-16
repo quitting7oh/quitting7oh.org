@@ -89,7 +89,7 @@ export const CATEGORIES = [
   {
     slug: 'resources',
     title: 'Resources',
-    blurb: 'Telehealth providers, meetings, taper calculator, finding help.',
+    blurb: 'Telehealth, recovery coaching, meetings, calculators, finding help.',
     Icon: Link2,
     section: 'reference',
   },

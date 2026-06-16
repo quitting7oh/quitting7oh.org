@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-10"
+last_updated: "2026-06-16"
 sort: 6
 ---
 
@@ -13,6 +13,26 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-06-16
+
+### Recovery coaching resource (You Are Accountable)
+
+- **New page: [Recovery Coaching](src/content/resources/recovery-coaching.md)**
+  in resources (`sort: 3`). Explains what peer recovery coaching is,
+  what it costs, and how to weigh a paid service, with You Are
+  Accountable as the first listed entry. Follows the telehealth-comparison
+  model: neutral, every claim cited and dated, the company's own stats
+  labeled as unaudited claims, and a "questions to ask before you sign
+  up" checklist.
+- **Holds the no-ads line.** The page opens with a disclosure that no
+  money changes hands and that a service appears only because community
+  members can use it, keeping the welcome page's no-sponsorship promise
+  intact. Free community options (Discord, r/quitting7oh, mutual aid,
+  meetings) are named first, with paid coaching framed as an optional
+  add-on. Scholarships are mentioned softly: limited slots, ask the
+  company directly.
+- Resources category blurb updated to name recovery coaching.
 
 ## 2026-06-09
 
