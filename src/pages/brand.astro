@@ -1,19 +1,16 @@
 ---
-import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Logo from '~/components/Logo.astro';
 import { Callout } from '~/components/Callout';
 import { BrandThemeControl } from '~/components/BrandThemeControl';
 import { CopyBlock } from '~/components/CopyBlock';
 import { buttonVariants } from '~/components/ui/button';
-
 // The paste-able AI agent context is maintained as a single file so the
-// page and the repo copy never drift.
-const agentContext = readFileSync(
-  fileURLToPath(new URL('../../docs/brand/agent-context.md', import.meta.url)),
-  'utf-8',
-);
+// page and the repo copy never drift. Imported with Vite's `?raw` so the
+// contents are inlined at build time — no runtime file read, which keeps
+// it working in the Docker build (where most of docs/ is excluded) as
+// well as on Cloudflare. The one file is whitelisted in .dockerignore.
+import agentContext from '../../docs/brand/agent-context.md?raw';
 
 // Live semantic swatches — these recolor with the active theme variant.
 const fills = [
