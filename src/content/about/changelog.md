@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-16"
+last_updated: "2026-06-20"
 sort: 6
 ---
 
@@ -13,6 +13,23 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-06-19
+
+### Brand & style guide
+
+- **New page: [`/brand`](src/pages/brand.astro)** — a live, theme-aware
+  brand showcase: the Lift Cup logo and its color mapping, the semantic
+  color tokens (which recolor with the active theme), all 8 variants in
+  light and dark, the Fraunces + IBM Plex Sans type system and scale,
+  component specimens (buttons, callouts, cards, inputs, focus rings),
+  shape/surface rules, voice, and links to the downloadable assets.
+  Standalone page on `BaseLayout` (wide, full container), built from the
+  real `Logo`, `Callout`, and `buttonVariants` so the specimens stay
+  truthful. For anyone building an app or companion tool on the brand.
+- **New doc: [`docs/brand/style-guide.md`](docs/brand/style-guide.md)** —
+  the written companion (exact HSL/hex tokens, font specs, logo usage),
+  GitHub-linkable, cross-referencing the existing logo SVGs and favicons.
 
 ## 2026-06-16
 

@@ -1,0 +1,384 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Logo from '~/components/Logo.astro';
+import { Callout } from '~/components/Callout';
+import { buttonVariants } from '~/components/ui/button';
+
+// Live semantic swatches — these recolor with the active theme variant.
+const fills = [
+  { bg: 'bg-background', fg: 'text-foreground', token: 'background', role: 'Page background' },
+  { bg: 'bg-card', fg: 'text-card-foreground', token: 'card', role: 'Cards, raised surfaces' },
+  { bg: 'bg-foreground', fg: 'text-background', token: 'foreground', role: 'Primary text' },
+  { bg: 'bg-primary', fg: 'text-primary-foreground', token: 'primary', role: 'Actions, links, the “7”' },
+  { bg: 'bg-secondary', fg: 'text-secondary-foreground', token: 'secondary', role: 'Secondary surface' },
+  { bg: 'bg-muted', fg: 'text-muted-foreground', token: 'muted', role: 'Subtle fill / hint text' },
+  { bg: 'bg-accent', fg: 'text-accent-foreground', token: 'accent', role: 'Hover / highlight' },
+  { bg: 'bg-destructive', fg: 'text-white', token: 'destructive', role: 'Errors, destructive actions' },
+];
+
+// The 8 selectable variants (hardcoded hex so all show at once, theme-independent).
+// bg / fg / primary per mode. Stone is the default.
+const variants = [
+  { name: 'stone', label: 'Stone', def: true, light: ['#f6f1ea', '#261f17', '#604020'], dark: ['#130f0b', '#f6f5f3', '#d5b890'] },
+  { name: 'accent-teal', label: 'Accent Teal', light: ['#eef7f5', '#0f1a17', '#1d7260'], dark: ['#09110f', '#f3f6f6', '#53c6ad'] },
+  { name: 'zinc', label: 'Zinc', light: ['#eeeef1', '#121216', '#2a2a32'], dark: ['#0c0c0e', '#f5f5f5', '#f0f0f0'] },
+  { name: 'slate', label: 'Slate', light: ['#eaeff5', '#121821', '#1f3451'], dark: ['#0a0e15', '#f3f5f6', '#94b2db'] },
+  { name: 'neutral', label: 'Neutral', light: ['#f2f2f2', '#1a1a1a', '#262626'], dark: ['#0d0d0d', '#f5f5f5', '#ebebeb'] },
+  { name: 'rose', label: 'Rose', light: ['#f8edef', '#30171d', '#d61f49'], dark: ['#150a0c', '#f7f3f4', '#e64c70'] },
+  { name: 'blue', label: 'Blue', light: ['#edf0f8', '#151b28', '#195ae6'], dark: ['#0a0d15', '#f3f4f6', '#5588f6'] },
+  { name: 'green', label: 'Green', light: ['#eef7f1', '#122117', '#1d8743'], dark: ['#08110c', '#f3f6f4', '#2dd269'] },
+];
+
+const typeScale = [
+  { label: 'Page title', cls: 'font-display text-4xl font-semibold tracking-tight', sample: 'Getting off 7-OH', meta: 'Fraunces 600 · text-4xl' },
+  { label: 'Section', cls: 'font-display text-3xl font-semibold tracking-tight', sample: 'The first year', meta: 'Fraunces 600 · text-3xl' },
+  { label: 'Subsection', cls: 'font-display text-xl font-semibold', sample: 'What recovery coaching is', meta: 'Fraunces 600 · text-xl' },
+  { label: 'Body', cls: 'text-base', sample: 'Short declarative sentences. Concrete details. Quiet authority.', meta: 'IBM Plex Sans 400 · 1rem · line-height 1.7' },
+  { label: 'Small / hint', cls: 'text-sm text-muted-foreground', sample: 'Last updated June 2026 · community-compiled', meta: 'IBM Plex Sans 400 · text-sm · muted' },
+];
+
+const btn = (variant: string) => buttonVariants({ variant: variant as any });
+const buttonSpecimens = ['default', 'secondary', 'outline', 'ghost', 'destructive', 'link'];
+
+const SECTION = 'mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8';
+const KICKER = 'text-xs font-semibold uppercase tracking-wider text-muted-foreground';
+const H2 = 'mt-2 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl';
+
+const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/brand';
+---
+
+<BaseLayout
+  title="Brand & Style Guide"
+  description="The visual identity of quitting7oh.org — logo, colors, typography, and components. A live, theme-aware reference for building on the brand."
+>
+  <main id="main-content">
+    <!-- Hero -->
+    <section class={`${SECTION} pt-12 pb-10 sm:pt-16`}>
+      <p class={KICKER}>Brand &amp; style guide</p>
+      <div class="mt-5 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <h1 class="font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+            The look &amp; feel of <span class="text-primary">quitting7oh</span>
+          </h1>
+          <p class="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            Everything you need to build something that feels like part of the
+            site: the logo, the color system, the type, and the components. Pulled
+            straight from the live codebase, so matching what's here matches the site.
+          </p>
+          <p class="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-sm text-muted-foreground">
+            <span class="inline-block h-2 w-2 rounded-full bg-primary"></span>
+            This page is live — switch themes with the picker, top right, and watch it recolor.
+          </p>
+        </div>
+        <div class="shrink-0">
+          <Logo size="clamp(2.5rem, 1.5rem + 3vw, 4rem)" />
+        </div>
+      </div>
+
+      <!-- in-page nav -->
+      <nav class="mt-10 flex flex-wrap gap-2 text-sm">
+        {[
+          ['#logo', 'Logo'],
+          ['#color', 'Color'],
+          ['#type', 'Typography'],
+          ['#components', 'Components'],
+          ['#shape', 'Shape & focus'],
+          ['#voice', 'Voice'],
+          ['#assets', 'Assets'],
+        ].map(([href, label]) => (
+          <a
+            href={href}
+            class="rounded-full border border-border bg-card px-3 py-1 text-muted-foreground transition hover:border-primary hover:text-foreground"
+          >{label}</a>
+        ))}
+      </nav>
+    </section>
+
+    <!-- Logo -->
+    <section id="logo" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>01 — Logo</p>
+      <h2 class={H2}>The Lift Cup</h2>
+      <p class="mt-3 max-w-2xl text-muted-foreground">
+        A coffee cup with an arrow rising out of it: the daily ritual, plus
+        moving upward. Two strokes carry the color — the cup is
+        <span class="font-medium text-foreground">foreground</span>, the arrow is
+        <span class="font-medium text-primary">primary</span>.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-8">
+          <Logo size="2.75rem" />
+          <span class="text-xs text-muted-foreground">Primary lockup</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-8">
+          <Logo wordmark={false} size="3.25rem" />
+          <span class="text-xs text-muted-foreground">Mark only</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border p-8" style="background:#130f0b">
+          <svg viewBox="0 0 64 64" fill="none" class="h-14 w-14" aria-hidden="true">
+            <path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="#f6f5f3" stroke-width="8" stroke-linecap="round" />
+            <path d="M32 37 V14" stroke="#d5b890" stroke-width="8" stroke-linecap="round" />
+            <path d="M23 24 L32 11 L41 24" stroke="#d5b890" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="text-xs" style="color:#b3a698">On dark surfaces</span>
+        </div>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div class="rounded-xl border border-border bg-card p-6">
+          <p class="font-display text-lg font-semibold text-foreground">Wordmark</p>
+          <p class="mt-2 text-sm text-muted-foreground">
+            <span class="font-medium text-foreground">Fraunces 600</span> for
+            <code class="rounded bg-muted px-1 py-0.5 text-xs">quitting</code> and
+            <code class="rounded bg-muted px-1 py-0.5 text-xs">oh</code>; the
+            <span class="font-medium text-primary">7</span> in primary; the
+            <code class="rounded bg-muted px-1 py-0.5 text-xs">.org</code> smaller,
+            in IBM Plex Sans 500, muted-foreground.
+          </p>
+        </div>
+        <div class="rounded-xl border border-border bg-card p-6">
+          <p class="font-display text-lg font-semibold text-foreground">Don't</p>
+          <ul class="mt-2 space-y-1 text-sm text-muted-foreground">
+            <li>· Don't recolor outside the cup/arrow mapping.</li>
+            <li>· Don't stretch the square mark or rotate it.</li>
+            <li>· Don't add gradients, shadows, or outlines.</li>
+            <li>· Below ~20px, drop the wordmark and show the mark alone.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color -->
+    <section id="color" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>02 — Color</p>
+      <h2 class={H2}>Semantic tokens</h2>
+      <p class="mt-3 max-w-2xl text-muted-foreground">
+        Style by role, not by hex. These swatches are the live tokens for the
+        theme you're viewing right now — change the theme and they all move together.
+      </p>
+
+      <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        {fills.map((s) => (
+          <div>
+            <div class:list={['flex h-24 items-end rounded-lg border border-border p-2.5', s.bg]}>
+              <span class:list={['text-xs font-medium', s.fg]}>{s.token}</span>
+            </div>
+            <p class="mt-1.5 text-xs text-muted-foreground">{s.role}</p>
+          </div>
+        ))}
+      </div>
+
+      <h3 class="mt-12 font-display text-xl font-semibold text-foreground">The 8 variants</h3>
+      <p class="mt-2 max-w-2xl text-muted-foreground">
+        Readers can switch the whole site between these. <span class="font-medium text-foreground">Stone</span>
+        is the default. Background, text, and primary shown for light and dark.
+      </p>
+
+      <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        {variants.map((v) => (
+          <div class="overflow-hidden rounded-xl border border-border">
+            <div class="grid grid-cols-2">
+              {[v.light, v.dark].map((set, i) => (
+                <div class="flex h-24 flex-col justify-between p-3" style={`background:${set[0]}`}>
+                  <span class="font-display text-lg font-semibold" style={`color:${set[1]}`}>Aa</span>
+                  <div class="flex items-center gap-1.5">
+                    <span class="h-3 w-3 rounded-full" style={`background:${set[2]}`}></span>
+                    <span class="text-[10px] uppercase tracking-wide" style={`color:${set[1]};opacity:.6`}>{i === 0 ? 'light' : 'dark'}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div class="flex items-center justify-between bg-card px-3 py-2">
+              <span class="text-sm font-medium text-foreground">{v.label}</span>
+              {v.def && <span class="rounded-full bg-primary px-1.5 py-0.5 text-[10px] font-medium text-primary-foreground">default</span>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section id="type" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>03 — Typography</p>
+      <h2 class={H2}>Two families</h2>
+      <p class="mt-3 max-w-2xl text-muted-foreground">
+        Serif headings over sans body — the most recognizable part of the type
+        signature. Both are free, variable, and self-hosted via Fontsource.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div class="rounded-xl border border-border bg-card p-8">
+          <div class="font-display text-7xl font-semibold leading-none text-foreground">Aa</div>
+          <p class="mt-4 font-display text-xl font-semibold text-foreground">Fraunces</p>
+          <p class="mt-1 text-sm text-muted-foreground">Display / headings · weight 600 · the logo wordmark</p>
+          <p class="mt-3 font-display text-lg text-foreground">The quiet authority of a calm reference.</p>
+        </div>
+        <div class="rounded-xl border border-border bg-card p-8">
+          <div class="text-7xl font-semibold leading-none text-foreground">Aa</div>
+          <p class="mt-4 font-display text-xl font-semibold text-foreground">IBM Plex Sans</p>
+          <p class="mt-1 text-sm text-muted-foreground">Body / UI · the default everywhere · line-height 1.7</p>
+          <p class="mt-3 text-base leading-relaxed text-foreground">
+            Short declarative sentences. Concrete details. The voice of someone
+            who knows the material and trusts the reader to follow.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 divide-y divide-border rounded-xl border border-border bg-card">
+        {typeScale.map((t) => (
+          <div class="flex flex-col gap-2 p-5 sm:flex-row sm:items-baseline sm:gap-8">
+            <div class="w-40 shrink-0">
+              <p class="text-sm font-medium text-foreground">{t.label}</p>
+              <p class="text-xs text-muted-foreground">{t.meta}</p>
+            </div>
+            <p class:list={[t.cls, 'text-foreground']}>{t.sample}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Components -->
+    <section id="components" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>04 — Components</p>
+      <h2 class={H2}>Building blocks</h2>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <!-- Buttons -->
+        <div class="rounded-xl border border-border bg-card p-6">
+          <p class="font-display text-lg font-semibold text-foreground">Buttons</p>
+          <p class="mt-1 text-sm text-muted-foreground">8px radius. Primary carries the brand color.</p>
+          <div class="mt-4 flex flex-wrap items-center gap-3">
+            {buttonSpecimens.map((v) => (
+              <span class={btn(v)}>{v}</span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="rounded-xl border border-border bg-card p-6">
+          <p class="font-display text-lg font-semibold text-foreground">Card</p>
+          <p class="mt-1 text-sm text-muted-foreground">Surfaces lift with <code class="rounded bg-muted px-1 py-0.5 text-xs">card</code>, separated by borders, not shadows.</p>
+          <div class="mt-4 rounded-lg border border-border bg-background p-4">
+            <p class="font-display font-semibold text-foreground">A nested surface</p>
+            <p class="mt-1 text-sm text-muted-foreground">Background inside card, bordered. Calm and flat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Callouts -->
+      <div class="mt-6 rounded-xl border border-border bg-card p-6">
+        <p class="font-display text-lg font-semibold text-foreground">Callouts</p>
+        <p class="mt-1 text-sm text-muted-foreground">Three tones, fixed colors (independent of theme), 4px left border, Lucide icons.</p>
+        <div class="mt-2 grid grid-cols-1 gap-4 lg:grid-cols-3">
+          <Callout type="info" client:visible>Neutral context the reader should notice.</Callout>
+          <Callout type="warning" client:visible>Something to be careful about.</Callout>
+          <Callout type="medical" client:visible>Safety and medical-territory framing.</Callout>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="mt-6 rounded-xl border border-border bg-card p-6">
+        <p class="font-display text-lg font-semibold text-foreground">Inputs &amp; focus</p>
+        <div class="mt-4 flex flex-wrap items-center gap-4">
+          <input
+            type="text"
+            placeholder="Text input"
+            class="h-9 w-56 rounded-md border border-input bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          />
+          <span class="inline-flex h-9 items-center rounded-md px-3 text-sm ring-2 ring-ring ring-offset-2 ring-offset-background text-foreground">Focus ring (always on)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shape & focus -->
+    <section id="shape" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>05 — Shape &amp; surfaces</p>
+      <h2 class={H2}>Rounded, flat, layered</h2>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div class="rounded-xl border border-border bg-card p-6">
+          <p class="font-display text-lg font-semibold text-foreground">Radius</p>
+          <p class="mt-1 text-sm text-muted-foreground">Base 8px, with 6px and 4px steps.</p>
+          <div class="mt-4 flex items-end gap-4">
+            {[['rounded-sm', '4px'], ['rounded-md', '6px'], ['rounded-lg', '8px']].map(([cls, px]) => (
+              <div class="text-center">
+                <div class:list={['h-16 w-16 border border-border bg-accent', cls]}></div>
+                <p class="mt-2 text-xs text-muted-foreground">{px}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="rounded-xl border border-border bg-card p-6">
+          <p class="font-display text-lg font-semibold text-foreground">Surface layers</p>
+          <p class="mt-1 text-sm text-muted-foreground">background → card → muted, each a small step.</p>
+          <div class="mt-4 space-y-2">
+            <div class="rounded-lg bg-background p-3 text-sm text-foreground">background</div>
+            <div class="rounded-lg bg-card p-3 text-sm text-foreground">card</div>
+            <div class="rounded-lg bg-muted p-3 text-sm text-muted-foreground">muted</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voice -->
+    <section id="voice" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>06 — Voice &amp; tone</p>
+      <h2 class={H2}>How it should read</h2>
+      <div class="prose-recovery dark:prose-invert mt-6 max-w-3xl">
+        <p>
+          The audience is people in recovery, often reading mid-withdrawal at
+          3 a.m. The whole job of the brand is to feel calm, plain, and
+          trustworthy.
+        </p>
+        <ul>
+          <li><strong>Calm and factual.</strong> No marketing language, no hype, no urgency tricks, no judgment.</li>
+          <li><strong>Plain words.</strong> Short sentences. Say the thing directly.</li>
+          <li><strong>Meet people where they are.</strong> No shame, no gatekeeping, no assuming readiness.</li>
+          <li><strong>No dark patterns.</strong> No ads, no growth hacks, no manipulative retention.</li>
+        </ul>
+        <p>
+          When in doubt, do less. If a sentence sounds like an executive summary,
+          rewrite it as something a person would actually say.
+        </p>
+      </div>
+    </section>
+
+    <!-- Assets -->
+    <section id="assets" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>07 — Assets &amp; downloads</p>
+      <h2 class={H2}>Where everything lives</h2>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {[
+          ['Full written guide', 'docs/brand/style-guide.md', `${repoBrand}/style-guide.md`],
+          ['Logo — themed SVG', 'docs/brand/logo/lift-cup-themed.svg', `${repoBrand}/logo/lift-cup-themed.svg`],
+          ['Logo — mono SVG', 'docs/brand/logo/lift-cup-mono.svg', `${repoBrand}/logo/lift-cup-mono.svg`],
+          ['Favicons & app icons', 'public/favicons/<theme>/', 'https://github.com/quitting7oh/quitting7oh.org/tree/main/public/favicons'],
+          ['Color tokens (source)', 'src/styles/global.css', 'https://github.com/quitting7oh/quitting7oh.org/blob/main/src/styles/global.css'],
+          ['Icon details', 'docs/brand/THEME-ICONS-README.md', `${repoBrand}/THEME-ICONS-README.md`],
+        ].map(([title, path, href]) => (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex flex-col rounded-xl border border-border bg-card p-5 transition hover:border-primary"
+          >
+            <span class="font-medium text-foreground group-hover:text-primary">{title} ↗</span>
+            <code class="mt-1 text-xs text-muted-foreground">{path}</code>
+          </a>
+        ))}
+      </div>
+
+      <div class="mt-10 rounded-xl border border-border bg-muted/50 p-6">
+        <p class="font-display text-lg font-semibold text-foreground">Minimum to look on-brand</p>
+        <ol class="mt-3 list-decimal space-y-1.5 pl-5 text-sm text-muted-foreground">
+          <li><span class="text-foreground">Fonts:</span> Fraunces for titles (600), IBM Plex Sans for everything else.</li>
+          <li><span class="text-foreground">Colors:</span> use the stone light + dark sets — page = background, text = foreground, actions = primary.</li>
+          <li><span class="text-foreground">Logo:</span> the Lift Cup, cup in foreground, arrow in primary.</li>
+          <li><span class="text-foreground">Corners:</span> 8px. Borders over shadows. Always keep a visible focus ring.</li>
+          <li><span class="text-foreground">Tone:</span> calm, plain, no marketing. When unsure, do less.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
