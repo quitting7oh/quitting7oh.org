@@ -14,6 +14,20 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-06-20
+
+### Veterinary gabapentin on the helper-meds page
+
+- Added a **Veterinary gabapentin (no prescription needed)** subsection
+  to [Helper Medications](src/content/other-tools/helper-meds.md): vet
+  gabapentin is the same molecule in the same manufacturer packaging and
+  standard strengths, a no-prescription route the community uses. Framed
+  with the existing dosing/taper cautions, the opioid+benzo+alcohol
+  respiratory warning, a "legality varies by state" note, and a pointer
+  back to telehealth as the simpler path. Two verified vendor callouts:
+  Dog & Cat Stuff and Pet Pharm Canada (both confirmed live, in
+  manufacturer packaging, purchasable).
+
 ## 2026-06-19
 
 ### Brand & style guide

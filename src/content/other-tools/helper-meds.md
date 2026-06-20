@@ -2,7 +2,7 @@
 title: "Helper Medications"
 description: "Helper medications for 7-OH and kratom-synthetic withdrawal — clonidine, gabapentin, baclofen, trazodone, ondansetron — with symptom-by-symptom dosing."
 category: "other-tools"
-last_updated: "2026-06-09"
+last_updated: "2026-06-20"
 sort: 1
 ---
 > **This is a reference, not a prescription.** Each of these requires a doctor. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) lists telehealth options that will work with you on adjuncts.
@@ -62,6 +62,23 @@ Gabapentin has its own withdrawal if used long-term and stopped abruptly. Taper 
 **Pregabalin (Lyrica)** is similar but more potent, faster-acting, and has a higher abuse profile. Less commonly prescribed in this context but works for the same symptoms.
 
 Provider attitudes vary. Some hand gabapentin out readily; others want you more established before adding it. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) flags which platforms have worked for adjuncts.
+
+### Veterinary gabapentin (no prescription needed)
+
+Gabapentin sold for dogs and cats is the same molecule as the human drug. There is no animal-specific version of it. Some veterinary pharmacies ship it in sealed manufacturer packaging, in the standard strengths (100, 300, 600, and 800 mg) and the same capsules and tablets a regular pharmacy hands out. For people who can't get a prescriber to add gabapentin, or who want to skip the appointment, this is a route the community uses.
+
+A few specifics:
+
+- **Choose plain capsules or tablets over flavored liquid.** Compounded veterinary suspensions can carry unknown fillers and inconsistent strength. Sealed manufacturer capsules and tablets are a known quantity.
+- **The dosing and cautions above apply unchanged.** Start low, titrate, and taper when you're done. Don't stack gabapentin with opioids, benzodiazepines, or alcohol without medical supervision; the combination slows breathing and carries overdose risk.
+- **Legality varies by state.** Gabapentin isn't federally controlled, but several U.S. states schedule it or track it through prescription-monitoring programs. Buying it for personal use is off-label, and the decision is yours.
+- A prescriber is still the simplest path. Gabapentin is one of the medications telehealth platforms add most readily ([Telehealth Providers](/resources/telehealth-for-suboxone)); the veterinary route is for when that isn't an option.
+
+Two vendors that ship manufacturer-packaged gabapentin for animal use:
+
+> **[Dog & Cat Stuff](https://dogandcatstuff.com/product/gabapentin-100ct-and-500ct-bottles-100mg-300mg-600mg-800mg/)** — gabapentin in 100- and 500-count bottles, 100/300/600/800 mg, capsules and tablets.
+
+> **[Pet Pharm Canada](https://petpharmcanada.com/product/gabapentin-100ct-and-500ct-bottles-100mg-300mg-600mg-800mg/)** — the same manufacturer-packaged strengths and bottle sizes.
 
 ## Baclofen and muscle relaxants
 
