@@ -20,16 +20,30 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 - **New page: [`/brand`](src/pages/brand.astro)** — a live, theme-aware
   brand showcase: the Lift Cup logo and its color mapping, the semantic
-  color tokens (which recolor with the active theme), all 8 variants in
-  light and dark, the Fraunces + IBM Plex Sans type system and scale,
-  component specimens (buttons, callouts, cards, inputs, focus rings),
-  shape/surface rules, voice, and links to the downloadable assets.
-  Standalone page on `BaseLayout` (wide, full container), built from the
-  real `Logo`, `Callout`, and `buttonVariants` so the specimens stay
-  truthful. For anyone building an app or companion tool on the brand.
+  color tokens, all 8 variants in light and dark, the Fraunces + IBM Plex
+  Sans type system and scale, component specimens (buttons, callouts,
+  cards, inputs, focus rings), shape/surface rules, voice, and links to
+  the downloadable assets. Standalone page on `BaseLayout` (wide, full
+  container), built from the real `Logo`, `Callout`, and `buttonVariants`
+  so the specimens stay truthful. For anyone building an app or companion
+  tool on the brand.
+- **In-page theme switcher.** A sticky theme bar (8 color swatches +
+  light/dark/system toggle) and a clickable variant catalog let you
+  recolor the whole page from the page itself, not just the header. Both
+  share the header picker's storage keys and apply logic and stay in sync
+  via a `MutationObserver`; the on-dark logo preview recolors to the
+  active variant's dark palette. New `BrandThemeControl` island; `Logo`
+  gained a `link={false}` option so the on-page specimens aren't
+  homepage links.
 - **New doc: [`docs/brand/style-guide.md`](docs/brand/style-guide.md)** —
   the written companion (exact HSL/hex tokens, font specs, logo usage),
   GitHub-linkable, cross-referencing the existing logo SVGs and favicons.
+- **AI agent context for downstream builds.** A copy-pasteable block on
+  `/brand` (and [`docs/brand/agent-context.md`](docs/brand/agent-context.md))
+  that someone can drop into their own project's `AGENTS.md`/`CLAUDE.md`
+  so an AI agent matches the brand. It links the rendered guide, the repo
+  tokens/logo, and tells the agent to scrape with Playwright if it can't
+  fetch directly. The page reads the file at build so the two never drift.
 
 ## 2026-06-16
 

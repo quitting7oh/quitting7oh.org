@@ -20,16 +20,20 @@ interface Props {
   size?: string;
   /** When false, render mark only (used for tight spaces). */
   wordmark?: boolean;
-  /** Optional class on the outer link. */
+  /** When false, render as a non-link <span> (e.g. logo specimens on the
+   *  brand page). Defaults to a link to the homepage. */
+  link?: boolean;
+  /** Optional class on the outer element. */
   class?: string;
 }
 
-const { size = '1.75rem', wordmark = true, class: className } = Astro.props;
+const { size = '1.75rem', wordmark = true, link = true, class: className } = Astro.props;
+const Tag = link ? 'a' : 'span';
 ---
 
-<a
-  href="/"
-  aria-label="quitting7oh.org"
+<Tag
+  href={link ? '/' : undefined}
+  aria-label={link ? 'quitting7oh.org' : undefined}
   class:list={['logo-link', className]}
   style={`--logo-mark-size: ${size};`}
 >
@@ -65,7 +69,7 @@ const { size = '1.75rem', wordmark = true, class: className } = Astro.props;
       quitting<span class="logo-wm-seven">7</span>oh<span class="logo-wm-tld">.org</span>
     </span>
   )}
-</a>
+</Tag>
 
 <style>
   .logo-link {

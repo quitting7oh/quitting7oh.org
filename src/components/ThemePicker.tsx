@@ -82,8 +82,19 @@ export function ThemePicker() {
   const [variant, setVariant] = React.useState<Variant>('stone');
 
   React.useEffect(() => {
-    setMode(readInitialMode());
-    setVariant(readInitialVariant());
+    const sync = () => {
+      setMode(readInitialMode());
+      setVariant(readInitialVariant());
+    };
+    sync();
+
+    // Reflect theme changes made elsewhere (e.g. the in-page control on
+    // /brand) so this picker's selection stays accurate.
+    const obs = new MutationObserver(sync);
+    obs.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class', 'data-theme', 'data-theme-mode'],
+    });
 
     // Live OS-theme updates while in 'system' mode.
     const mql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -93,7 +104,10 @@ export function ThemePicker() {
       }
     };
     mql.addEventListener('change', handler);
-    return () => mql.removeEventListener('change', handler);
+    return () => {
+      obs.disconnect();
+      mql.removeEventListener('change', handler);
+    };
   }, []);
 
   const handleModeChange = (next: string) => {

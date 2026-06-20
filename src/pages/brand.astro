@@ -1,8 +1,19 @@
 ---
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Logo from '~/components/Logo.astro';
 import { Callout } from '~/components/Callout';
+import { BrandThemeControl } from '~/components/BrandThemeControl';
+import { CopyBlock } from '~/components/CopyBlock';
 import { buttonVariants } from '~/components/ui/button';
+
+// The paste-able AI agent context is maintained as a single file so the
+// page and the repo copy never drift.
+const agentContext = readFileSync(
+  fileURLToPath(new URL('../../docs/brand/agent-context.md', import.meta.url)),
+  'utf-8',
+);
 
 // Live semantic swatches — these recolor with the active theme variant.
 const fills = [
@@ -14,19 +25,6 @@ const fills = [
   { bg: 'bg-muted', fg: 'text-muted-foreground', token: 'muted', role: 'Subtle fill / hint text' },
   { bg: 'bg-accent', fg: 'text-accent-foreground', token: 'accent', role: 'Hover / highlight' },
   { bg: 'bg-destructive', fg: 'text-white', token: 'destructive', role: 'Errors, destructive actions' },
-];
-
-// The 8 selectable variants (hardcoded hex so all show at once, theme-independent).
-// bg / fg / primary per mode. Stone is the default.
-const variants = [
-  { name: 'stone', label: 'Stone', def: true, light: ['#f6f1ea', '#261f17', '#604020'], dark: ['#130f0b', '#f6f5f3', '#d5b890'] },
-  { name: 'accent-teal', label: 'Accent Teal', light: ['#eef7f5', '#0f1a17', '#1d7260'], dark: ['#09110f', '#f3f6f6', '#53c6ad'] },
-  { name: 'zinc', label: 'Zinc', light: ['#eeeef1', '#121216', '#2a2a32'], dark: ['#0c0c0e', '#f5f5f5', '#f0f0f0'] },
-  { name: 'slate', label: 'Slate', light: ['#eaeff5', '#121821', '#1f3451'], dark: ['#0a0e15', '#f3f5f6', '#94b2db'] },
-  { name: 'neutral', label: 'Neutral', light: ['#f2f2f2', '#1a1a1a', '#262626'], dark: ['#0d0d0d', '#f5f5f5', '#ebebeb'] },
-  { name: 'rose', label: 'Rose', light: ['#f8edef', '#30171d', '#d61f49'], dark: ['#150a0c', '#f7f3f4', '#e64c70'] },
-  { name: 'blue', label: 'Blue', light: ['#edf0f8', '#151b28', '#195ae6'], dark: ['#0a0d15', '#f3f4f6', '#5588f6'] },
-  { name: 'green', label: 'Green', light: ['#eef7f1', '#122117', '#1d8743'], dark: ['#08110c', '#f3f6f4', '#2dd269'] },
 ];
 
 const typeScale = [
@@ -65,13 +63,9 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
             site: the logo, the color system, the type, and the components. Pulled
             straight from the live codebase, so matching what's here matches the site.
           </p>
-          <p class="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-sm text-muted-foreground">
-            <span class="inline-block h-2 w-2 rounded-full bg-primary"></span>
-            This page is live — switch themes with the picker, top right, and watch it recolor.
-          </p>
         </div>
         <div class="shrink-0">
-          <Logo size="clamp(2.5rem, 1.5rem + 3vw, 4rem)" />
+          <Logo link={false} size="clamp(2.5rem, 1.5rem + 3vw, 4rem)" />
         </div>
       </div>
 
@@ -85,6 +79,7 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
           ['#shape', 'Shape & focus'],
           ['#voice', 'Voice'],
           ['#assets', 'Assets'],
+          ['#agent', 'AI agent'],
         ].map(([href, label]) => (
           <a
             href={href}
@@ -93,6 +88,11 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
         ))}
       </nav>
     </section>
+
+    <!-- Live theme switcher — sticky so you can recolor while scrolling -->
+    <div class="sticky top-20 z-20 mx-auto mb-4 max-w-[88rem] px-4 sm:px-6 lg:px-8">
+      <BrandThemeControl client:load layout="bar" />
+    </div>
 
     <!-- Logo -->
     <section id="logo" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
@@ -107,21 +107,14 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
 
       <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
         <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-8">
-          <Logo size="2.75rem" />
+          <Logo link={false} size="2.75rem" />
           <span class="text-xs text-muted-foreground">Primary lockup</span>
         </div>
         <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-8">
-          <Logo wordmark={false} size="3.25rem" />
+          <Logo link={false} wordmark={false} size="3.25rem" />
           <span class="text-xs text-muted-foreground">Mark only</span>
         </div>
-        <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border p-8" style="background:#130f0b">
-          <svg viewBox="0 0 64 64" fill="none" class="h-14 w-14" aria-hidden="true">
-            <path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="#f6f5f3" stroke-width="8" stroke-linecap="round" />
-            <path d="M32 37 V14" stroke="#d5b890" stroke-width="8" stroke-linecap="round" />
-            <path d="M23 24 L32 11 L41 24" stroke="#d5b890" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-          <span class="text-xs" style="color:#b3a698">On dark surfaces</span>
-        </div>
+        <BrandThemeControl client:load layout="logo-dark" />
       </div>
 
       <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -171,29 +164,12 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
       <h3 class="mt-12 font-display text-xl font-semibold text-foreground">The 8 variants</h3>
       <p class="mt-2 max-w-2xl text-muted-foreground">
         Readers can switch the whole site between these. <span class="font-medium text-foreground">Stone</span>
-        is the default. Background, text, and primary shown for light and dark.
+        is the default. Each card shows the variant's background, text, and primary in light and dark —
+        <span class="font-medium text-foreground">click one to recolor this page</span>.
       </p>
 
-      <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        {variants.map((v) => (
-          <div class="overflow-hidden rounded-xl border border-border">
-            <div class="grid grid-cols-2">
-              {[v.light, v.dark].map((set, i) => (
-                <div class="flex h-24 flex-col justify-between p-3" style={`background:${set[0]}`}>
-                  <span class="font-display text-lg font-semibold" style={`color:${set[1]}`}>Aa</span>
-                  <div class="flex items-center gap-1.5">
-                    <span class="h-3 w-3 rounded-full" style={`background:${set[2]}`}></span>
-                    <span class="text-[10px] uppercase tracking-wide" style={`color:${set[1]};opacity:.6`}>{i === 0 ? 'light' : 'dark'}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div class="flex items-center justify-between bg-card px-3 py-2">
-              <span class="text-sm font-medium text-foreground">{v.label}</span>
-              {v.def && <span class="rounded-full bg-primary px-1.5 py-0.5 text-[10px] font-medium text-primary-foreground">default</span>}
-            </div>
-          </div>
-        ))}
+      <div class="mt-6">
+        <BrandThemeControl client:load layout="grid" />
       </div>
     </section>
 
@@ -351,6 +327,7 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
       <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {[
           ['Full written guide', 'docs/brand/style-guide.md', `${repoBrand}/style-guide.md`],
+          ['AI agent context', 'docs/brand/agent-context.md', `${repoBrand}/agent-context.md`],
           ['Logo — themed SVG', 'docs/brand/logo/lift-cup-themed.svg', `${repoBrand}/logo/lift-cup-themed.svg`],
           ['Logo — mono SVG', 'docs/brand/logo/lift-cup-mono.svg', `${repoBrand}/logo/lift-cup-mono.svg`],
           ['Favicons & app icons', 'public/favicons/<theme>/', 'https://github.com/quitting7oh/quitting7oh.org/tree/main/public/favicons'],
@@ -379,6 +356,32 @@ const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs
           <li><span class="text-foreground">Tone:</span> calm, plain, no marketing. When unsure, do less.</li>
         </ol>
       </div>
+    </section>
+
+    <!-- Build with an AI agent -->
+    <section id="agent" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
+      <p class={KICKER}>08 — Build with an AI agent</p>
+      <h2 class={H2}>Hand this to your coding agent</h2>
+      <p class="mt-3 max-w-2xl text-muted-foreground">
+        Building an app or companion tool? Drop this context into your project —
+        as <code class="rounded bg-muted px-1 py-0.5 text-xs">AGENTS.md</code>,
+        <code class="rounded bg-muted px-1 py-0.5 text-xs">CLAUDE.md</code>, or
+        your agent's rules file — so your AI agent matches the brand. It points
+        at this guide and the repo, and tells the agent to scrape with a headless
+        browser (Playwright) if it can't fetch them directly.
+      </p>
+      <div class="mt-6 max-w-3xl">
+        <CopyBlock client:load text={agentContext} filename="AGENTS.md" />
+      </div>
+      <p class="mt-3 text-sm text-muted-foreground">
+        Maintained in the repo at{' '}
+        <a
+          href="https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/brand/agent-context.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary underline underline-offset-2 hover:opacity-80"
+        ><code>docs/brand/agent-context.md</code></a>.
+      </p>
     </section>
   </main>
 </BaseLayout>
