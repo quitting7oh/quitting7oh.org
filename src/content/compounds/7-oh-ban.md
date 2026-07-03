@@ -11,13 +11,13 @@ sort: 0
 
 ## When is this getting banned?
 
-**Nothing is banned yet.** Here is the clock:
+**Nothing is banned yet.**
 
 | Date | What happens |
 | --- | --- |
 | **July 1, 2026** | DEA signed and filed two notices of intent to temporarily schedule [7-OH](/compounds/7-oh) and three related compounds. HHS and FDA announced their support the same day. |
 | **July 6, 2026** | The notices publish in the Federal Register. This starts the legally required 30-day waiting period. |
-| **July 31, 2026** | Deadline to submit public comments on the 7-OH threshold (see [the comment window](#the-public-comment-window) below). |
+| **July 31, 2026** | Deadline to submit public comments on the 7-OH threshold (see [the comment window](#public-comments-close-july-31) below). |
 | **August 5, 2026** | The earliest date the ban can take effect. Federal law requires at least 30 days between publication of the notice and the scheduling order. |
 
 After August 5, DEA can issue the temporary scheduling order at any
@@ -27,11 +27,11 @@ Register on or after August 5, 2026," and that DEA intends to issue it
 effect the day the order publishes**, with no additional grace period,
 and lasts two years, extendable by one more.
 
-Practical translation: if you use 7-OH tablets, shots, or other
-concentrated products, you probably have about a month of legal retail
-supply left, and no guarantee of more notice than that.
+If you use 7-OH tablets, shots, or other concentrated products, you
+have roughly a month of legal retail supply left, and no guarantee of
+more notice than that.
 
-## The July 1 filings
+## Two notices, filed July 1
 
 The [DEA announced](https://www.dea.gov/press-releases/2026/07/01/dea-temporarily-schedule-7-oh-and-related-substances-protect-public)
 that it sent two Notices of Intent to the Federal Register on
@@ -50,11 +50,10 @@ July 28, 2025 scientific review, and its Assistant Secretary for Health
 formally advised DEA in early 2026 that it had no objection to either
 placement.
 
-## The threshold: it's a concentration limit, not a total ban
+## A concentration limit, not a total ban
 
-The 7-OH notice does not schedule every molecule of 7-OH. It schedules
-7-OH **above a specified limit**, adapted from the HHS recommendation.
-A product is covered if it is:
+The 7-OH notice schedules 7-OH **above a specified limit**, adapted
+from the HHS recommendation. A product is covered if it is:
 
 - **(A)** botanical kratom material containing **more than 0.050% 7-OH
   on a dry weight basis**, or
@@ -63,10 +62,10 @@ A product is covered if it is:
   at **more than 0.050%** by weight or volume, **or more than 1.00
   milligram of 7-OH in the article**.
 
-Read the 1 mg line again, because it does the real work: a typical
-commercial tablet contains 5–30 mg of 7-OH. Every tablet, shot,
-gummy, and sublingual strip on the shelf lands far above the limit.
-For anyone using concentrated products, this functions as a ban.
+A typical commercial tablet contains 5–30 mg of 7-OH, well past the
+1 mg cap. Practically everything sold as 7-OH (tablets, shots,
+gummies, sublingual strips) is covered. If you use concentrated
+products, this is a ban.
 
 **Plain kratom leaf and leaf products below the threshold stay
 federally legal.** In its natural form, 7-OH occurs only
@@ -79,7 +78,7 @@ Arkansas, Florida, Indiana, Kentucky, Louisiana, Ohio, Vermont, and
 Wisconsin) already prohibit 7-OH, and the federal order does not
 override stricter state rules.
 
-## The other three compounds
+## Pseudo, MGM-15, and MGM-16: scheduled outright
 
 The second notice puts three compounds fully into Schedule I, at any
 concentration:
@@ -95,7 +94,7 @@ None of the three occurs naturally in the kratom plant. HHS confirmed
 there are no approved or investigational drug applications for any of
 them, so nothing blocks Schedule I placement.
 
-## The law behind the 30 days
+## Emergency scheduling under § 811(h)
 
 Both notices rest on the temporary ("emergency") scheduling provision
 of the Controlled Substances Act,
@@ -125,7 +124,7 @@ Once the order takes effect, manufacture, distribution, sale, and
 **possession** of covered products become subject to the criminal,
 civil, and administrative provisions of the CSA.
 
-## The public comment window
+## Public comments close July 31
 
 Alongside DEA's notices, the HHS Office of the Assistant Secretary for
 Health opened a
@@ -156,16 +155,14 @@ To comment: once the notice publishes on July 6, go to
 goes live with publication; before July 6 the search returns nothing.)
 
 This RFI is the only formal comment channel. DEA's own notices are not
-open for comment — the temporary scheduling law works by order, not by
+open for comment: the temporary scheduling law works by order, not by
 the usual notice-and-comment rulemaking.
 
 ## If you're using 7-OH right now
 
-The regulatory clock creates a practical problem that has nothing to
-do with politics: **supply is going to disappear on a schedule you
-don't control.** Running out abruptly means unplanned cold-turkey
-withdrawal. If you're dependent, the month of notice is the plan-making
-window.
+**Supply is going to disappear on a schedule you don't control.**
+Running out abruptly means unplanned cold-turkey withdrawal. If you're
+dependent, the month of notice is the planning window.
 
 The paths off are the same ones this site has always documented:
 

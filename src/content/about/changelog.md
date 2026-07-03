@@ -36,6 +36,10 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   new page on every page. Dismissible, persisted in localStorage under
   a dated key so a future re-announcement can reset it; hides itself on
   the ban page.
+- **Editorial pass on the ban page** after review: broke up the run of
+  same-shape "The X" section headers and cut performative-emphasis
+  phrasing ("Read the 1 mg line again...", "Practical translation:",
+  "Here is the clock") in favor of direct statements.
 - **Stale federal-status text updated** on the
   [7-OH](src/content/compounds/7-oh.md),
   [kratom leaf](src/content/compounds/kratom-leaf.md),
