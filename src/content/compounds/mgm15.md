@@ -2,7 +2,7 @@
 title: "MGM-15"
 description: "MGM-15 (dihydro-7-hydroxymitragynine), the long-acting reduced 7-OH. The same compound sold under the labels MIT-A and (mislabeled) DHM. Chemistry, the COA-testing problem, regulatory landscape, taper plan, Suboxone induction notes."
 category: "compounds"
-last_updated: "2026-06-09"
+last_updated: "2026-07-03"
 sort: 3
 ---
 
@@ -78,7 +78,7 @@ Restrictions on standalone 7-OH at the U.S. state level in 2025 drove the market
 - **Ohio.** OAC 4729:9-1-01.1 (effective [Dec 12, 2025 per Gov. DeWine announcement](https://governor.ohio.gov/media/news-and-media/governor-dewine-updates-request-to-board-of-pharmacy-to-schedule-kratom-compounds-as-illegal-drugs)) explicitly names "7-hydroxymitragynine; Mitragynine pseudoindoxyl; **Dihydro-7-hydroxy mitragynine**; and 7-acetoxymitragynine." Ohio is the only state rule located that names MGM-15 by chemical name.
 - **Tennessee, Mississippi, South Carolina, and other states** have variously restricted 7-OH. MIT-A and DHM market presence concentrates in these jurisdictions.
 - **Older kratom-ban states** (AL, AR, IN, RI, VT, WI) have broad bans that presumptively capture MGM-15 as a kratom-derived compound.
-- **Federal.** The FDA recommended scheduling 7-OH in July 2025. DEA has not acted as of mid-2026. No federal scheduling of MGM-15 specifically.
+- **Federal.** On July 1, 2026, DEA filed a notice of intent to temporarily place MGM-15, mitragynine pseudoindoxyl, and MGM-16 in Schedule I (Docket DEA-1644). The earliest the order can take effect is August 5, 2026. See [The Federal 7-OH Ban](/compounds/7-oh-ban) for dates and process.
 
 **The regulatory-niche pattern.** The geographic concentration of MIT-A and DHM products in Florida specifically, where the rule names 7-OH only and the 400 ppm threshold creates space for a product that reads as "mitragynine plus trace 7-OH" on GC-MS, is the clearest example of a regulatory gap filling. Ohio's December 2025 rule, naming dihydro-7-hydroxy mitragynine by name, started closing it. The pattern is observable; producer intent is consistent with the evidence without being directly proven.
 

@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-06-20"
+last_updated: "2026-07-03"
 sort: 6
 ---
 
@@ -13,6 +13,38 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-07-03
+
+### Federal scheduling action: new page + site-wide banner
+
+- **New page: [The Federal 7-OH Ban](src/content/compounds/7-oh-ban.md)**
+  (`/compounds/7-oh-ban`) covering DEA's July 1, 2026 notices of intent
+  to temporarily schedule 7-OH above a 0.05% / 1 mg threshold (Docket
+  DEA-1570) and to place mitragynine pseudoindoxyl, MGM-15, and MGM-16
+  fully in Schedule I (Docket DEA-1644). Leads with the date question
+  readers actually have (nothing banned yet; Federal Register
+  publication July 6; earliest effective date August 5, 2026, per the
+  30-day requirement in 21 U.S.C. § 811(h)), then the threshold
+  mechanics, the HHS OASH public-comment window (Docket
+  HHS-OASH-2026-0232, due July 31), what Schedule I means in practice,
+  and a planning section routing to the site's documented paths off.
+  All dates and quotes verified against the Federal Register full
+  texts and the DEA/HHS press releases.
+- **New site-wide banner** ([SchedulingBanner.tsx](src/components/SchedulingBanner.tsx),
+  mounted in `BaseLayout.astro`): one-line announcement linking to the
+  new page on every page. Dismissible, persisted in localStorage under
+  a dated key so a future re-announcement can reset it; hides itself on
+  the ban page.
+- **Stale federal-status text updated** on the
+  [7-OH](src/content/compounds/7-oh.md),
+  [kratom leaf](src/content/compounds/kratom-leaf.md),
+  [MGM-15](src/content/compounds/mgm15.md),
+  [MGM-16](src/content/compounds/mgm16.md), and
+  [pseudo](src/content/compounds/mitragynine-pseudoindoxyl.md) pages
+  ("DEA has not acted as of mid-2026" and similar), each now pointing
+  at the ban page. Compounds category blurb mentions the scheduling
+  action.
 
 ## 2026-06-20
 

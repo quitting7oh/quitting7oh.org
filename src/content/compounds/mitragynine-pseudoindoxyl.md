@@ -2,7 +2,7 @@
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
 description: "Mitragynine pseudoindoxyl (MP), receptor affinity, why bupe induction is harder, what to watch for."
 category: "compounds"
-last_updated: "2026-06-09"
+last_updated: "2026-07-03"
 sort: 6
 ---
 ## General risks
@@ -13,7 +13,7 @@ sort: 6
 - Products labeled MP, [7-OH](/compounds/7-oh), or "pseudoindoxyl kratom" frequently contain a mix of compounds. **What's on the label is not necessarily what's in the bottle.**
 
 ## Legal status
-MP is named in state-level scheduling actions targeting mitragynine-derived semi-synthetics. The FDA's July 2025 recommendation to schedule [7-OH](/compounds/7-oh) would likely sweep MP under analog enforcement at the federal level.
+MP is named in state-level scheduling actions targeting mitragynine-derived semi-synthetics. On July 1, 2026, DEA filed a notice of intent to temporarily place MP in Schedule I by name, alongside MGM-15 and MGM-16 (Docket DEA-1644). The earliest the order can take effect is August 5, 2026. See [The Federal 7-OH Ban](/compounds/7-oh-ban) for dates and process.
 
 # 7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)
 

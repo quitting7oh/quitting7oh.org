@@ -2,7 +2,7 @@
 title: "MGM-16"
 description: "The fluorinated analog of MGM-15, a 2014 medicinal-chemistry compound named in scheduling proceedings but not documented in any US consumer product to date."
 category: "compounds"
-last_updated: "2026-06-08"
+last_updated: "2026-07-03"
 sort: 4
 ---
 
@@ -133,9 +133,11 @@ community sometimes uses.
 
 ## Regulatory status
 
-- **Federal (US):** no DEA scheduling specific to MGM-16. The FDA's
-  July 2025 scheduling recommendation to the DEA covers 7-OH; it
-  does not name MGM-16.
+- **Federal (US):** on July 1, 2026, DEA filed a notice of intent to
+  temporarily place MGM-16 in Schedule I by name, alongside MGM-15 and
+  mitragynine pseudoindoxyl (Docket DEA-1644). The earliest the order
+  can take effect is August 5, 2026. See
+  [The Federal 7-OH Ban](/compounds/7-oh-ban) for dates and process.
 - **Ohio:** covered generically under the
   [Ohio Admin Code 4729:9-1-01.1 "mitragynine-related compounds"
   Schedule I rule](https://www.pharmacy.ohio.gov/documents/pubs/special/kratom/classification%20of%20mitragynine-related%20compounds%20as%20schedule%20i%20controlled%20substances.pdf)

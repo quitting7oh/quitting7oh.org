@@ -75,7 +75,7 @@ export const CATEGORIES = [
   {
     slug: 'compounds',
     title: 'Compounds',
-    blurb: '7-OH, pseudo, MGM-15, MIT-A, mitragynine, cat’s claw.',
+    blurb: '7-OH, pseudo, MGM-15, MIT-A, mitragynine, cat’s claw, and the federal scheduling action.',
     Icon: TestTube,
     section: 'reference',
   },

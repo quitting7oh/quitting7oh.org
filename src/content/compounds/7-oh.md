@@ -2,12 +2,18 @@
 title: "7-OH (7-Hydroxymitragynine)"
 description: "Concentrated 7-hydroxymitragynine, how it differs from kratom leaf, why dependence builds fast, and what makes it taperable."
 category: "compounds"
-last_updated: "2026-06-09"
+last_updated: "2026-07-03"
 sort: 2
 ---
 
 > **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language before the pharmacology below.
+
+> **Regulatory news:** on July 1, 2026, DEA filed notice of intent to
+> temporarily place 7-OH above a 0.05% / 1 mg threshold in Schedule I.
+> The earliest the order can take effect is August 5, 2026. Dates,
+> scope, and the public comment window:
+> [The Federal 7-OH Ban](/compounds/7-oh-ban).
 
 7-OH is the compound this site is named after, and the compound most
 people here are trying to get off of. **It walks and talks like an opioid.**
