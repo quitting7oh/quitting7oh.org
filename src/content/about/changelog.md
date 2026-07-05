@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-07-03"
+last_updated: "2026-07-05"
 sort: 6
 ---
 
@@ -13,6 +13,24 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-07-04
+
+### Leaf-alongside-Suboxone correction
+
+- Fixed a factual error on [Paths Off 7-OH](src/content/start-here/how-to-quit-7-oh.md):
+  the "Moving between rungs" list claimed leaf alongside Suboxone is
+  "uncommon and unnecessary; bupe already covers the receptors." Bupe
+  covers the mu side only; the community commonly recommends a small
+  amount of leaf when minor-alkaloid withdrawal (adrenergic and
+  serotonergic) breaks through. Rewritten to say that, with a link to
+  the minor-alkaloids page.
+- Same list, next line: the naltrexone warning linked
+  `/other-tools/low-dose-naltrexone`, a path that soft-404s to the
+  homepage shell (the naltrexone pages live under `post-acute/`).
+  Re-pointed to [Naltrexone](src/content/post-acute/naltrexone.md) and
+  added `_redirects` bridges for the two old naltrexone paths so stale
+  inbound links land on the right pages.
 
 ## 2026-07-03
 

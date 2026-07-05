@@ -2,7 +2,7 @@
 title: "Paths Off 7-OH"
 description: "Six ways people come off 7-OH and related synthetics, in the order this community would try them."
 category: "start-here"
-last_updated: "2026-06-04"
+last_updated: "2026-07-04"
 sort: 5
 ---
 
@@ -81,8 +81,8 @@ See [SR-17018](/other-tools/sr-17).
 You can move between rungs in either direction. Some people start cold turkey, hit the wall on day three, and induct on Suboxone. Others stabilize on Suboxone and wind down to a leaf taper later.
 
 - Helpers work alongside any other rung. Adding clonidine to a Suboxone induction is routine.
-- Kratom leaf alongside Suboxone is uncommon and unnecessary; bupe already covers the receptors.
-- Never combine [naltrexone](/other-tools/low-dose-naltrexone) (LDN, ULDN, Vivitrol) with active opioid use. Naltrexone is for after the acute phase. Taking it with opioids on board will precipitate withdrawal.
+- Kratom leaf alongside Suboxone has a place. Bupe covers the mu-opioid side, but 7-OH dependence also involves the [minor alkaloids](/pharmacology/kratom-minor-alkaloids), whose adrenergic and serotonergic activity bupe doesn't touch. A small amount of leaf is a common community fix when that side of withdrawal breaks through.
+- Never combine [naltrexone](/post-acute/naltrexone) (LDN, ULDN, Vivitrol) with active opioid use. Naltrexone is for after the acute phase. Taking it with opioids on board will precipitate withdrawal.
 
 ## Out of scope
 

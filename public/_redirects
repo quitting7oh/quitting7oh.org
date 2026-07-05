@@ -75,3 +75,11 @@
 # kratom leaf") instead of the internal site framing.
 /other-tools/tapering-with-kratom-leaf   /other-tools/quit-7-oh-with-kratom-leaf/  301
 /other-tools/tapering-with-kratom-leaf/  /other-tools/quit-7-oh-with-kratom-leaf/  301
+
+# 2026-07-04: old naltrexone paths (pages moved from other-tools/ to
+# post-acute/ in an earlier restructure; these were never bridged and
+# soft-404'd to the homepage shell).
+/other-tools/low-dose-naltrexone         /post-acute/naltrexone-low-dose/          301
+/other-tools/low-dose-naltrexone/        /post-acute/naltrexone-low-dose/          301
+/other-tools/ultra-low-dose-naltrexone   /post-acute/naltrexone-ultra-low-dose/    301
+/other-tools/ultra-low-dose-naltrexone/  /post-acute/naltrexone-ultra-low-dose/    301
