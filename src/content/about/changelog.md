@@ -14,6 +14,29 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-07-05
+
+### Corynoxine B added to the Cat\'s Claw page
+
+- **[Cat's Claw](src/content/compounds/cats-claw.md)** now covers
+  **corynoxine B**, the mu-opioid-active oxindole alkaloid being
+  reported in the newer "Cat's Claw" product lines. New section
+  explains why it works as a regulatory-evasion ingredient: it's a
+  real kratom/*Uncaria* alkaloid, it's opioid-active (mu partial
+  agonist, Ki ≈ 118 nM, per the 2026 Frontiers receptor study already
+  cited on the page), and it is **not** named in any of the July 2026
+  DEA scheduling notices, so a corynoxine-B product can sit under the
+  7-OH threshold and still deliver opioid effects. Cross-linked to
+  [The Federal 7-OH Ban](src/content/compounds/7-oh-ban.md).
+- Corrected the "real cat's claw isn't psychoactive" framing: the same
+  Frontiers study found mitraphylline and rhynchophylline (the
+  marketing-cover alkaloids) inactive at opioid receptors but
+  corynoxine B active, so the page now draws that distinction instead
+  of implying the whole alkaloid class is inert. Reconciled the
+  clinical-implications and "if you're already taking one" sections
+  (corynoxine B is natural, not synthetic) and added a wayfinder to
+  the quit/withdrawal pages.
+
 ## 2026-07-04
 
 ### Leaf-alongside-Suboxone correction
