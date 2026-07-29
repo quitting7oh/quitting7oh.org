@@ -6,7 +6,7 @@ import { DiscordOnlineCount } from '~/components/DiscordOnlineCount';
 import { CATEGORIES, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getCollection } from 'astro:content';
-import { LifeBuoy, HelpCircle, Signpost, Users, MessageCircle, BookOpen } from 'lucide-react';
+import { LifeBuoy, Pill, Signpost, Users, MessageCircle, BookOpen } from 'lucide-react';
 
 const docs = await getCollection('docs', (d) => !d.data.draft);
 const sidebarCategories = await getSidebarCategories();
@@ -38,10 +38,10 @@ const hotPaths = [
     tone: 'neutral',
   },
   {
-    href: '/start-here/what-is-7-oh',
-    Icon: HelpCircle,
-    title: 'What the hell is 7-OH?',
-    sub: '60-second explainer',
+    href: '/other-tools/vitamins-supplements',
+    Icon: Pill,
+    title: 'Vitamins & supplements',
+    sub: 'The community-tested stack',
     tone: 'neutral',
   },
 ];
