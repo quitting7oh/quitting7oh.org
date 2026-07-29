@@ -152,8 +152,11 @@ export const MEETINGS: Meeting[] = [
   { fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 12, minuteET: 0, format: 'Midday', ...KQS_ROOMS.main },
   { fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 20, minuteET: 0, format: 'Evening', ...KQS_ROOMS.main },
 
-  // Tue/Thu/Sun late evening.
-  { fellowship: 'KQS', daysOfWeek: [2, 4, 0], hourET: 21, minuteET: 15, format: 'Late evening', ...KQS_ROOMS.main },
+  // Mon/Wed/Fri afternoon.
+  { fellowship: 'KQS', daysOfWeek: [1, 3, 5], hourET: 16, minuteET: 0, format: 'Afternoon', ...KQS_ROOMS.main },
+
+  // Tue/Thu/Fri/Sun late evening.
+  { fellowship: 'KQS', daysOfWeek: [2, 4, 5, 0], hourET: 21, minuteET: 15, format: 'Late evening', ...KQS_ROOMS.main },
 
   // Sunday gendered meetings, separate Google Meet rooms.
   { fellowship: 'KQS', daysOfWeek: [0], hourET: 11, minuteET: 0, format: "Men's meeting", ...KQS_ROOMS.mens },

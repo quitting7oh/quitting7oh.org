@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-07-05"
+last_updated: "2026-07-29"
 sort: 6
 ---
 
@@ -13,6 +13,30 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-07-29
+
+### TIAWO schedule update
+
+- TIAWO (kratomquitters.com) added an **Afternoon meeting: 4:00 PM ET
+  Mon/Wed/Fri** in the shared Google Meet room, and extended the 9:15
+  PM ET late-evening slot to include **Friday** (now Tue/Thu/Fri/Sun).
+  Updated the schedule source of truth (`src/data/meetings.ts`, which
+  drives the homepage next-meeting widget, the
+  [Meeting Schedules](src/content/resources/meeting-schedules.mdx)
+  tables, and the next-meeting landing page) plus the prose slot lists
+  on Meeting Schedules and
+  [Mutual Aid](src/content/for-you/mutual-aid.md). Verified against
+  the live kratomquitters.com/meetings page.
+
+### Homepage quick-link swap
+
+- The fourth "Start here" card on the homepage now points to
+  **[Vitamins & Supplements](src/content/other-tools/vitamins-supplements.md)**
+  ("The community-tested stack") instead of the "What the hell is
+  7-OH?" explainer. The what-is-7-OH page is unchanged and still
+  linked from the Start Here section; the supplement stack is a
+  more-used destination for returning readers.
 
 ## 2026-07-05
 
