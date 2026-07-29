@@ -213,7 +213,7 @@ function MeetingCard({ display, now }: CardProps) {
           <ExternalLink className="h-3.5 w-3.5" aria-hidden={true} />
         </a>
         <a
-          href="/resources/meeting-schedules"
+          href="/next-kratom-support-meeting"
           className="inline-flex items-center rounded-md border border-sky-300 bg-background px-3 py-1.5 text-sm font-medium text-foreground hover:bg-sky-100/50 dark:border-sky-800 dark:hover:bg-sky-950/40"
         >
           All meetings
