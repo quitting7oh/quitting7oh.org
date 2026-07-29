@@ -26,7 +26,11 @@ const REPO_ROOT = join(__dirname, '..');
 const OUT_PATH = join(REPO_ROOT, 'src', 'data', 'smart-meetings.generated.json');
 
 const BASE = 'https://meetings.smartrecovery.org';
-const SOURCE_URL = `${BASE}/meetings/?meetingType=1`;
+// finder_form=true is required as of 2026-07: without it the server
+// bounces location searches to a reset_search page with zero rows.
+// With it, the server geocodes the city and redirects to a
+// coords:lat,lng location that returns real listings.
+const SOURCE_URL = `${BASE}/meetings/?meetingType=1&finder_form=true`;
 const UA =
   'quitting7oh.org meeting collector (+https://quitting7oh.org; authorized by SMART Recovery)';
 
@@ -68,7 +72,9 @@ function splitListingRows(html) {
   return out;
 }
 
-const RE_HREF = /data-href="\/meetings\/(\d+)\/"/;
+// Rows were `<div data-href="/meetings/123/">` until mid-2026, now
+// `<a href="/meetings/123/?fromlist=true">`. Accept both.
+const RE_HREF = /(?:data-href|href)="\/meetings\/(\d+)\//;
 const RE_UTC = /class="meeting-time"\s+data-utc="([^"]+)"/;
 const RE_ONLINE_ICON = /class="fas fa-video meetingtypeicon"/;
 // The listing shows the meeting's program as `<strong>4-Point Recovery</strong>`
@@ -386,10 +392,29 @@ async function main() {
   const { meetings: rawListings, cityCounts } = await fetchAllListings();
   console.log(`  union of all cities: ${rawListings.length} unique meeting IDs`);
 
+  // An empty scrape means the site changed its markup or search flow,
+  // not that every SMART meeting vanished. Fail loudly so the cron run
+  // goes red instead of committing a zero-meeting dataset over good data.
+  if (rawListings.length === 0) {
+    throw new Error(
+      'Scrape returned 0 meetings across all search cities — refusing to overwrite existing data. ' +
+        'The listing markup or search flow has probably changed.',
+    );
+  }
+
   console.log('Fetching detail pages for Pathminder URLs…');
   const enriched = await fetchAllDetails(rawListings);
   console.log(`  with Pathminder URL: ${enriched.length}`);
   console.log(`  dropped (no online join): ${rawListings.length - enriched.length}`);
+
+  // Same protection as above, one stage later: listings parsed but no
+  // detail page yielded a join URL means the detail markup changed.
+  if (enriched.length === 0) {
+    throw new Error(
+      `All ${rawListings.length} detail pages failed to yield a Pathminder URL — refusing to overwrite existing data. ` +
+        'The detail-page markup has probably changed.',
+    );
+  }
 
   const normalized = enriched.map(normalize);
 
