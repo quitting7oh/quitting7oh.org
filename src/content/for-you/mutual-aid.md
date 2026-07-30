@@ -29,7 +29,7 @@ This is the single most directly applicable mutual aid for this site's audience.
 
 The full schedule with Zoom links is at **[Meeting Schedules](/resources/meeting-schedules)**.
 
-### Quitting Kratom Support (KQS / TIAWO, "There Is A Way Out")
+### Quitting Kratom Support - There Is A Way Out (TIAWO)
 
 **Website:** [kratomquitters.com](https://kratomquitters.com)
 
@@ -37,7 +37,7 @@ A peer-led, **non-12-step** virtual community focused on kratom and 7-OH recover
 
 If 12-step language is a bad fit but you still want a kratom-specific peer support community, this is the natural complement (or alternative) to KA.
 
-The full schedule with Google Meet links is at **[Meeting Schedules](/resources/meeting-schedules#quitting-kratom-support-kqs--tiawo--full-schedule)**.
+The full schedule with Google Meet links is at **[Meeting Schedules](/resources/meeting-schedules#quitting-kratom-support---there-is-a-way-out-tiawo-full-schedule)**.
 
 ## Opioid-relevant fellowships
 
@@ -139,7 +139,7 @@ HAMS is included here for completeness and because some people aren't ready for 
 
 Practical heuristics for picking what to try first:
 
-- **Want kratom-specific:** Kratom Anonymous (12-step) or Quitting Kratom Support / TIAWO (non-12-step).
+- **Want kratom-specific:** Kratom Anonymous (12-step) or Quitting Kratom Support - There Is A Way Out (non-12-step).
 - **Want opioid-specific:** [Heroin Anonymous](https://heroinanonymous.org), or NA's opioid-focused meetings.
 - **Want secular and skill-based:** SMART Recovery or LifeRing.
 - **Want mindfulness or Buddhist framing:** Refuge Recovery or Recovery Dharma.
@@ -155,6 +155,6 @@ The [quitting7oh Discord and subreddit](/about/the-community) complement (not re
 
 ## Where to read next
 
-- **[Meeting Schedules](/resources/meeting-schedules)**: full schedules for both kratom-specific fellowships (Kratom Anonymous and Quitting Kratom Support / TIAWO) with day, time, format, and join links
+- **[Meeting Schedules](/resources/meeting-schedules)**: full schedules for both kratom-specific fellowships (Kratom Anonymous and Quitting Kratom Support - There Is A Way Out) with day, time, format, and join links
 - **[Sober Living Homes](/for-you/sober-living)**: when meetings need to be supplemented with a different living environment
 - **[Community](/about/the-community)**: about the Discord and subreddit

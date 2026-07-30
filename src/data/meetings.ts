@@ -69,11 +69,11 @@ export const FELLOWSHIPS: Record<Fellowship, FellowshipMeta> = {
   },
   KQS: {
     id: 'KQS',
-    name: 'There Is A Way Out (TIAWO)',
+    name: 'Quitting Kratom Support - There Is A Way Out (TIAWO)',
     shortName: 'TIAWO',
     framework: 'non-12-step',
     tagline:
-      'There Is A Way Out (TIAWO), also published as "Quitting Kratom Support", is a volunteer-led non-12-step virtual community focused on kratom and 7-OH recovery. Meetings run on Google Meet and are open to both people in recovery and their loved ones.',
+      'Quitting Kratom Support - There Is A Way Out (TIAWO) is a volunteer-led non-12-step virtual community focused on kratom and 7-OH recovery. Meetings run on Google Meet and are open to both people in recovery and their loved ones.',
     sourceUrl: 'https://kratomquitters.com/meetings',
     defaultDurationMin: 60,
   },
