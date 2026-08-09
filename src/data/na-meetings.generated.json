@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-02T10:24:55.005Z",
+  "fetched_at": "2026-08-09T09:28:23.279Z",
   "source": "https://na.org/meetingsearch/virtual-meeting-search/",
   "attribution": "Data from na.org, used with NAWS permission. Not affiliated with Narcotics Anonymous.",
   "filters": {
@@ -7,27 +7,27 @@
     "language": "English"
   },
   "raw_per_day_counts": {
-    "Sunday": 974,
+    "Sunday": 975,
     "Monday": 1080,
     "Tuesday": 997,
     "Wednesday": 1059,
-    "Thursday": 1008,
+    "Thursday": 1009,
     "Friday": 973,
-    "Saturday": 941
+    "Saturday": 943
   },
-  "raw_total": 7032,
-  "filtered_total": 4081,
+  "raw_total": 7036,
+  "filtered_total": 4080,
   "tag_counts": {
-    "Format Varies": 653,
+    "Format Varies": 652,
     "Topic/Discussion": 139,
     "Concepts Study": 17,
     "Guiding Principles Study": 33,
     "Step/Tradition": 61,
-    "Discussion": 1026,
+    "Discussion": 1024,
     "Hybrid Meeting": 717,
     "Just For Today Study": 557,
     "Topic": 234,
-    "Newcomer": 338,
+    "Newcomer": 339,
     "Women": 171,
     "Meditation": 81,
     "Young People": 28,
@@ -57,7 +57,7 @@
     "Restricted Access": 2
   },
   "platform_counts": {
-    "Zoom": 3754,
+    "Zoom": 3753,
     "Online meeting": 43,
     "Phone Call": 90,
     "Google Meet": 11,
@@ -115,7 +115,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2948",
+      "id": "ID-ROW-2947",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -134,7 +134,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4242",
+      "id": "ID-ROW-4247",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -156,7 +156,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1363",
+      "id": "ID-ROW-1362",
       "name": "Greater Than Ourselves Group",
       "formatTags": [
         "Concepts Study",
@@ -179,7 +179,7 @@
       "city": "Huntington"
     },
     {
-      "id": "ID-ROW-6486",
+      "id": "ID-ROW-6494",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -323,7 +323,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-895",
+      "id": "ID-ROW-894",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -366,7 +366,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-2374",
+      "id": "ID-ROW-2373",
       "name": "Grupo Solo no Puedo per Juntas Si",
       "formatTags": [
         "Women"
@@ -387,7 +387,7 @@
       "city": "Desert Hot Springs"
     },
     {
-      "id": "ID-ROW-2691",
+      "id": "ID-ROW-2690",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -602,7 +602,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5341",
+      "id": "ID-ROW-5338",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Newcomer",
@@ -625,7 +625,7 @@
       "city": "Orlando"
     },
     {
-      "id": "ID-ROW-5383",
+      "id": "ID-ROW-5386",
       "name": "Restless Spirits Men's Group",
       "formatTags": [
         "Discussion",
@@ -690,7 +690,7 @@
       "city": "Toms River"
     },
     {
-      "id": "ID-ROW-5902",
+      "id": "ID-ROW-5906",
       "name": "Spiritually Speaking Group",
       "formatTags": [
         "Literature Study"
@@ -1053,7 +1053,7 @@
       "city": "New Brunswick"
     },
     {
-      "id": "ID-ROW-903",
+      "id": "ID-ROW-902",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -1119,7 +1119,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3425",
+      "id": "ID-ROW-3427",
       "name": "Let Them Be Group",
       "formatTags": [
         "Discussion",
@@ -1182,7 +1182,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-4587",
+      "id": "ID-ROW-4588",
       "name": "No Name Group",
       "formatTags": [
         "Speaker"
@@ -1243,7 +1243,7 @@
       "city": "Tampa"
     },
     {
-      "id": "ID-ROW-6529",
+      "id": "ID-ROW-6533",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -1286,7 +1286,7 @@
       "city": "Keene"
     },
     {
-      "id": "ID-ROW-549",
+      "id": "ID-ROW-548",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion",
@@ -1327,7 +1327,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-955",
+      "id": "ID-ROW-954",
       "name": "Easy Does it Group",
       "formatTags": [
         "Format Varies",
@@ -1452,7 +1452,7 @@
       "city": "South Lake Tahoe"
     },
     {
-      "id": "ID-ROW-3000",
+      "id": "ID-ROW-2995",
       "name": "It's A We Program Group",
       "formatTags": [
         "It Works Study"
@@ -1883,7 +1883,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6130",
+      "id": "ID-ROW-6134",
       "name": "Sunday Wakeup Group",
       "formatTags": [
         "Newcomer",
@@ -2008,7 +2008,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-266",
+      "id": "ID-ROW-263",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -2117,7 +2117,7 @@
       "city": "Vallejo"
     },
     {
-      "id": "ID-ROW-1180",
+      "id": "ID-ROW-1179",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -2579,7 +2579,7 @@
       "city": "Greenbelt"
     },
     {
-      "id": "ID-ROW-1139",
+      "id": "ID-ROW-1138",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -2944,7 +2944,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5881",
+      "id": "ID-ROW-5885",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -3339,7 +3339,7 @@
       "city": "Smyrna"
     },
     {
-      "id": "ID-ROW-3094",
+      "id": "ID-ROW-3093",
       "name": "Just for Sunday Group",
       "formatTags": [
         "Discussion"
@@ -3558,7 +3558,7 @@
       "city": "Orlando"
     },
     {
-      "id": "ID-ROW-527",
+      "id": "ID-ROW-526",
       "name": "Carrying the Message Group",
       "formatTags": [
         "Format Varies"
@@ -3769,7 +3769,7 @@
       "city": "Columbus"
     },
     {
-      "id": "ID-ROW-6862",
+      "id": "ID-ROW-6866",
       "name": "Without Gods Group",
       "formatTags": [
         "Format Varies"
@@ -3898,7 +3898,7 @@
       "city": "Kansas City"
     },
     {
-      "id": "ID-ROW-494",
+      "id": "ID-ROW-493",
       "name": "Cambria New Attitude Group",
       "formatTags": [
         "Discussion",
@@ -4285,7 +4285,7 @@
       "city": "Gaithersburg"
     },
     {
-      "id": "ID-ROW-5282",
+      "id": "ID-ROW-5283",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Basic Text Study",
@@ -4309,7 +4309,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5290",
+      "id": "ID-ROW-5291",
       "name": "Recovery is Possible Step Working Group",
       "formatTags": [
         "Discussion",
@@ -4375,7 +4375,7 @@
       "city": "Atlantic City"
     },
     {
-      "id": "ID-ROW-5921",
+      "id": "ID-ROW-5925",
       "name": "Spiritual Principles at Noon",
       "formatTags": [
         "Format Varies"
@@ -4462,7 +4462,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-6262",
+      "id": "ID-ROW-6266",
       "name": "There Seems to be This Alternative Group",
       "formatTags": [
         "Just For Today Study"
@@ -4570,7 +4570,7 @@
       "city": "South Miami"
     },
     {
-      "id": "ID-ROW-5746",
+      "id": "ID-ROW-5750",
       "name": "Silver Lining Group",
       "formatTags": [
         "Just For Today Study",
@@ -4592,7 +4592,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5856",
+      "id": "ID-ROW-5860",
       "name": "Spirit of Our Traditions Group",
       "formatTags": [
         "Guiding Principles Study",
@@ -4636,7 +4636,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-610",
+      "id": "ID-ROW-609",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Closed",
@@ -4699,7 +4699,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-5381",
+      "id": "ID-ROW-5384",
       "name": "Renegades of NA Group",
       "formatTags": [
         "Topic/Discussion"
@@ -4741,7 +4741,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6302",
+      "id": "ID-ROW-6306",
       "name": "Tire Barn Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -4785,7 +4785,7 @@
       "city": "Tampa"
     },
     {
-      "id": "ID-ROW-6986",
+      "id": "ID-ROW-6990",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -4995,7 +4995,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5229",
+      "id": "ID-ROW-5230",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Children Welcome",
@@ -5019,7 +5019,7 @@
       "city": "Dallas/Ft Worth"
     },
     {
-      "id": "ID-ROW-5859",
+      "id": "ID-ROW-5863",
       "name": "Spirit Of Tradition Meeting",
       "formatTags": [
         "Speaker/Discussion"
@@ -5127,7 +5127,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-6757",
+      "id": "ID-ROW-6764",
       "name": "We Do Recover Online Group",
       "formatTags": [
         "Discussion",
@@ -5285,7 +5285,7 @@
       "city": "Manhattan"
     },
     {
-      "id": "ID-ROW-5136",
+      "id": "ID-ROW-5137",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -5407,7 +5407,7 @@
       "city": "Detroit"
     },
     {
-      "id": "ID-ROW-6080",
+      "id": "ID-ROW-6084",
       "name": "Strong Women of NA Group",
       "formatTags": [
         "Basic Text Study",
@@ -5433,7 +5433,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-6225",
+      "id": "ID-ROW-6229",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -5499,7 +5499,7 @@
       "city": "Kailua-Kona"
     },
     {
-      "id": "ID-ROW-6234",
+      "id": "ID-ROW-6238",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -5584,7 +5584,7 @@
       "city": "Houston"
     },
     {
-      "id": "ID-ROW-957",
+      "id": "ID-ROW-956",
       "name": "Easy Does It Group",
       "formatTags": [
         "Format Varies",
@@ -5607,7 +5607,7 @@
       "city": "Craig"
     },
     {
-      "id": "ID-ROW-1034",
+      "id": "ID-ROW-1033",
       "name": "Everything Under the Sun Group",
       "formatTags": [
         "Literature Study",
@@ -5756,7 +5756,7 @@
       "city": "Saint Louis"
     },
     {
-      "id": "ID-ROW-5027",
+      "id": "ID-ROW-5028",
       "name": "Progress Not Perfection Group",
       "formatTags": [
         "Format Varies"
@@ -5843,7 +5843,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6072",
+      "id": "ID-ROW-6076",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -5949,7 +5949,7 @@
       "city": "Rochester"
     },
     {
-      "id": "ID-ROW-922",
+      "id": "ID-ROW-921",
       "name": "East End Group",
       "formatTags": [],
       "closed": "Open",
@@ -5968,7 +5968,7 @@
       "city": "Sag Amagansett"
     },
     {
-      "id": "ID-ROW-1086",
+      "id": "ID-ROW-1085",
       "name": "Finding Our Place Group",
       "formatTags": [
         "Format Varies",
@@ -5991,7 +5991,7 @@
       "city": "Johnson City"
     },
     {
-      "id": "ID-ROW-1239",
+      "id": "ID-ROW-1238",
       "name": "From Boys to Men Group",
       "formatTags": [
         "Basic Text Study",
@@ -6096,7 +6096,7 @@
       "city": "Austin"
     },
     {
-      "id": "ID-ROW-4468",
+      "id": "ID-ROW-4469",
       "name": "New Journey Group",
       "formatTags": [
         "Basic Text Study"
@@ -6288,7 +6288,7 @@
       "city": "Frazier Park"
     },
     {
-      "id": "ID-ROW-376",
+      "id": "ID-ROW-375",
       "name": "Better Every Day Group",
       "formatTags": [
         "Format Varies",
@@ -6395,7 +6395,7 @@
       "city": "Nederland"
     },
     {
-      "id": "ID-ROW-1281",
+      "id": "ID-ROW-1280",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -6484,7 +6484,7 @@
       "city": "Queens"
     },
     {
-      "id": "ID-ROW-2903",
+      "id": "ID-ROW-2902",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -6784,7 +6784,7 @@
       "city": "Winston-Salem"
     },
     {
-      "id": "ID-ROW-4558",
+      "id": "ID-ROW-4559",
       "name": "No Matter What Meeting",
       "formatTags": [
         "Spiritual Principle a Day Study"
@@ -6891,7 +6891,7 @@
       "city": "Minneapolis"
     },
     {
-      "id": "ID-ROW-4930",
+      "id": "ID-ROW-4931",
       "name": "Peace of Recovery Group",
       "formatTags": [],
       "closed": "Closed",
@@ -6993,7 +6993,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5454",
+      "id": "ID-ROW-5457",
       "name": "Rising in Recovery Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -7014,7 +7014,7 @@
       "city": "Tyler"
     },
     {
-      "id": "ID-ROW-5636",
+      "id": "ID-ROW-5640",
       "name": "Self Care Sunday Group",
       "formatTags": [
         "Discussion",
@@ -7207,7 +7207,7 @@
       "city": "Santa Cruz"
     },
     {
-      "id": "ID-ROW-6316",
+      "id": "ID-ROW-6320",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -7228,7 +7228,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6373",
+      "id": "ID-ROW-6377",
       "name": "Topic of Cancer Group",
       "formatTags": [
         "Format Varies"
@@ -7274,7 +7274,7 @@
       "city": "Colorado Springs"
     },
     {
-      "id": "ID-ROW-6503",
+      "id": "ID-ROW-6507",
       "name": "Unity Virtual Group",
       "formatTags": [
         "Discussion"
@@ -7357,7 +7357,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-6932",
+      "id": "ID-ROW-6936",
       "name": "Women of Worth Group",
       "formatTags": [
         "Spiritual Principle a Day Study",
@@ -7489,7 +7489,7 @@
       "city": "Berkeley"
     },
     {
-      "id": "ID-ROW-1057",
+      "id": "ID-ROW-1056",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -7561,7 +7561,7 @@
       "city": "Harlem"
     },
     {
-      "id": "ID-ROW-2841",
+      "id": "ID-ROW-2840",
       "name": "Hope Rising Group",
       "formatTags": [
         "Basic Text Study",
@@ -7584,7 +7584,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3019",
+      "id": "ID-ROW-3018",
       "name": "It Works! Group",
       "formatTags": [
         "Concepts Study",
@@ -7667,7 +7667,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5019",
+      "id": "ID-ROW-5020",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -7689,7 +7689,7 @@
       "city": "Denver"
     },
     {
-      "id": "ID-ROW-5334",
+      "id": "ID-ROW-5345",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -7731,7 +7731,7 @@
       "city": "Torrance"
     },
     {
-      "id": "ID-ROW-5798",
+      "id": "ID-ROW-5802",
       "name": "Solution Seekers Group",
       "formatTags": [
         "Literature Study",
@@ -7926,7 +7926,7 @@
       "city": "Ellsworth"
     },
     {
-      "id": "ID-ROW-253",
+      "id": "ID-ROW-250",
       "name": "Atheists Recover Too Group",
       "formatTags": [
         "Secular"
@@ -7947,7 +7947,7 @@
       "city": "Santa Cruz"
     },
     {
-      "id": "ID-ROW-254",
+      "id": "ID-ROW-251",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -8052,7 +8052,7 @@
       "city": "Saint Augustine"
     },
     {
-      "id": "ID-ROW-609",
+      "id": "ID-ROW-608",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -8090,7 +8090,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-691",
+      "id": "ID-ROW-690",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Format Varies"
@@ -8221,7 +8221,7 @@
       "city": "Athens"
     },
     {
-      "id": "ID-ROW-1369",
+      "id": "ID-ROW-1368",
       "name": "Green Mountain Men Group",
       "formatTags": [
         "Men"
@@ -8576,7 +8576,7 @@
       "city": "Pikeville"
     },
     {
-      "id": "ID-ROW-4364",
+      "id": "ID-ROW-4365",
       "name": "Never Alone Deaf Online Group",
       "formatTags": [
         "Discussion"
@@ -8706,7 +8706,7 @@
       "city": "Paradise"
     },
     {
-      "id": "ID-ROW-5025",
+      "id": "ID-ROW-5026",
       "name": "Progressive Recovery Group",
       "formatTags": [],
       "closed": "Open",
@@ -8791,7 +8791,7 @@
       "city": "Providence"
     },
     {
-      "id": "ID-ROW-5289",
+      "id": "ID-ROW-5290",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -9031,7 +9031,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5897",
+      "id": "ID-ROW-5901",
       "name": "Spiritual Journey Women's NA Meeting",
       "formatTags": [
         "Discussion",
@@ -9199,7 +9199,7 @@
       "city": "Queens"
     },
     {
-      "id": "ID-ROW-6103",
+      "id": "ID-ROW-6107",
       "name": "Sunday Funday Group",
       "formatTags": [
         "Speaker/Discussion"
@@ -9282,7 +9282,7 @@
       "city": "Portland"
     },
     {
-      "id": "ID-ROW-6124",
+      "id": "ID-ROW-6128",
       "name": "Sunday Second Chance Group",
       "formatTags": [],
       "closed": "Closed",
@@ -9404,7 +9404,7 @@
       "city": "Cambridge"
     },
     {
-      "id": "ID-ROW-6369",
+      "id": "ID-ROW-6373",
       "name": "Together We Stand Group",
       "formatTags": [
         "Discussion"
@@ -9551,7 +9551,7 @@
       "city": "Prescott"
     },
     {
-      "id": "ID-ROW-6974",
+      "id": "ID-ROW-6973",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Speaker/Discussion"
@@ -9731,7 +9731,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-831",
+      "id": "ID-ROW-830",
       "name": "Discussion Participation Group",
       "formatTags": [],
       "closed": "Open",
@@ -9868,7 +9868,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4533",
+      "id": "ID-ROW-4534",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -9929,7 +9929,7 @@
       "city": "Port Allegany"
     },
     {
-      "id": "ID-ROW-5106",
+      "id": "ID-ROW-5107",
       "name": "Quarantine in Recovery",
       "formatTags": [
         "Newcomer"
@@ -9950,7 +9950,7 @@
       "city": "Aurora"
     },
     {
-      "id": "ID-ROW-5850",
+      "id": "ID-ROW-5854",
       "name": "Spin Wheel of Serenity Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -10019,7 +10019,7 @@
       "city": "Littleton"
     },
     {
-      "id": "ID-ROW-6191",
+      "id": "ID-ROW-6195",
       "name": "Terminally Unique Group",
       "formatTags": [
         "LGBTQ+"
@@ -10083,7 +10083,7 @@
       "city": "Meriden"
     },
     {
-      "id": "ID-ROW-269",
+      "id": "ID-ROW-266",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -10212,7 +10212,7 @@
       "city": "Hollywood"
     },
     {
-      "id": "ID-ROW-696",
+      "id": "ID-ROW-695",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Format Varies",
@@ -10235,7 +10235,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-701",
+      "id": "ID-ROW-700",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Discussion",
@@ -10511,7 +10511,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4721",
+      "id": "ID-ROW-4722",
       "name": "NUTS Group",
       "formatTags": [
         "It Works Study",
@@ -10574,7 +10574,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6105",
+      "id": "ID-ROW-6109",
       "name": "Sunday Literature Study Group",
       "formatTags": [
         "Literature Study"
@@ -10617,7 +10617,7 @@
       "city": "Pompano Beach"
     },
     {
-      "id": "ID-ROW-6192",
+      "id": "ID-ROW-6196",
       "name": "Terminally Unique Group",
       "formatTags": [
         "Format Varies",
@@ -10661,7 +10661,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-6260",
+      "id": "ID-ROW-6264",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Format Varies"
@@ -10682,7 +10682,7 @@
       "city": "Tyler"
     },
     {
-      "id": "ID-ROW-6278",
+      "id": "ID-ROW-6282",
       "name": "The With Group",
       "formatTags": [],
       "closed": "Closed",
@@ -10768,7 +10768,7 @@
       "city": "Fort Lauderdale"
     },
     {
-      "id": "ID-ROW-5110",
+      "id": "ID-ROW-5111",
       "name": "Quarantine Your Addiction Group",
       "formatTags": [
         "Basic Text Study"
@@ -10833,7 +10833,7 @@
       "city": "Hillsboro"
     },
     {
-      "id": "ID-ROW-2929",
+      "id": "ID-ROW-2928",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study"
@@ -10963,7 +10963,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4456",
+      "id": "ID-ROW-4457",
       "name": "New Frontiers Group",
       "formatTags": [
         "Discussion",
@@ -11048,7 +11048,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5182",
+      "id": "ID-ROW-5183",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "Topic"
@@ -11069,7 +11069,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-5223",
+      "id": "ID-ROW-5224",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -11170,7 +11170,7 @@
       "city": "Everett"
     },
     {
-      "id": "ID-ROW-4233",
+      "id": "ID-ROW-4234",
       "name": "NA Means Necessary",
       "formatTags": [],
       "closed": "Open",
@@ -11189,7 +11189,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1314",
+      "id": "ID-ROW-1313",
       "name": "God's Chose One Meeting",
       "formatTags": [],
       "closed": "Closed",
@@ -11372,7 +11372,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6993",
+      "id": "ID-ROW-6997",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -11500,7 +11500,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2954",
+      "id": "ID-ROW-2953",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -11519,7 +11519,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4241",
+      "id": "ID-ROW-4246",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -11541,7 +11541,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6485",
+      "id": "ID-ROW-6493",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -11560,7 +11560,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-532",
+      "id": "ID-ROW-531",
       "name": "Catch Your Breath Group",
       "formatTags": [
         "Literature Study",
@@ -11620,7 +11620,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-2685",
+      "id": "ID-ROW-2684",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -11857,7 +11857,7 @@
       "city": "Madison"
     },
     {
-      "id": "ID-ROW-894",
+      "id": "ID-ROW-893",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -12069,7 +12069,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-3501",
+      "id": "ID-ROW-3502",
       "name": "Message of Hope Group",
       "formatTags": [
         "Just For Today Study",
@@ -12173,7 +12173,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5340",
+      "id": "ID-ROW-5337",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Just For Today Study",
@@ -12244,7 +12244,7 @@
       "city": "Toms River"
     },
     {
-      "id": "ID-ROW-5837",
+      "id": "ID-ROW-5841",
       "name": "SPAD Group",
       "formatTags": [
         "Discussion",
@@ -12269,7 +12269,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5868",
+      "id": "ID-ROW-5872",
       "name": "Spiritual Awakening Group",
       "formatTags": [
         "Topic"
@@ -12633,7 +12633,7 @@
       "city": "Lake Havasu City"
     },
     {
-      "id": "ID-ROW-5599",
+      "id": "ID-ROW-5603",
       "name": "Recovery Tools Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -12676,7 +12676,7 @@
       "city": "Naples"
     },
     {
-      "id": "ID-ROW-902",
+      "id": "ID-ROW-901",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -12740,7 +12740,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3424",
+      "id": "ID-ROW-3426",
       "name": "Let Them Be Group",
       "formatTags": [
         "Discussion",
@@ -12868,7 +12868,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6528",
+      "id": "ID-ROW-6532",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -12908,7 +12908,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-545",
+      "id": "ID-ROW-544",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion"
@@ -12950,7 +12950,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-954",
+      "id": "ID-ROW-953",
       "name": "Easy Does it Group",
       "formatTags": [
         "Format Varies",
@@ -13411,7 +13411,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-1179",
+      "id": "ID-ROW-1178",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -13560,7 +13560,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1138",
+      "id": "ID-ROW-1137",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -13622,7 +13622,7 @@
       "city": "Green Bay"
     },
     {
-      "id": "ID-ROW-3018",
+      "id": "ID-ROW-3017",
       "name": "It Works, How and Why Group",
       "formatTags": [
         "It Works Study"
@@ -13879,7 +13879,7 @@
       "city": "Hollywood"
     },
     {
-      "id": "ID-ROW-5214",
+      "id": "ID-ROW-5215",
       "name": "Recovery at 10am Group",
       "formatTags": [
         "Format Varies"
@@ -13957,7 +13957,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5861",
+      "id": "ID-ROW-5865",
       "name": "Spirit of Unity (Chicago) Group",
       "formatTags": [
         "Meditation",
@@ -13980,7 +13980,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-5880",
+      "id": "ID-ROW-5884",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -14029,7 +14029,7 @@
       "city": "Boston"
     },
     {
-      "id": "ID-ROW-6798",
+      "id": "ID-ROW-6802",
       "name": "We Still Need Help Group",
       "formatTags": [
         "Format Varies",
@@ -14116,7 +14116,7 @@
       "city": "Williamsport"
     },
     {
-      "id": "ID-ROW-526",
+      "id": "ID-ROW-525",
       "name": "Carrying the Message Group",
       "formatTags": [
         "It Works Study"
@@ -14194,7 +14194,7 @@
       "city": "Niagara Falls"
     },
     {
-      "id": "ID-ROW-268",
+      "id": "ID-ROW-265",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -14264,7 +14264,7 @@
       "city": "Watervliet"
     },
     {
-      "id": "ID-ROW-106",
+      "id": "ID-ROW-103",
       "name": "Agape Group",
       "formatTags": [
         "Discussion"
@@ -14395,7 +14395,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-538",
+      "id": "ID-ROW-537",
       "name": "Celebrate Today Group",
       "formatTags": [
         "Speaker"
@@ -14561,7 +14561,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-2391",
+      "id": "ID-ROW-2390",
       "name": "Grupo Solo Por Hoy",
       "formatTags": [
         "Hybrid Meeting",
@@ -14711,7 +14711,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-2796",
+      "id": "ID-ROW-2789",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Spiritual Principle a Day Study"
@@ -15281,7 +15281,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-4868",
+      "id": "ID-ROW-4869",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -15342,7 +15342,7 @@
       "city": "Charlotte"
     },
     {
-      "id": "ID-ROW-5086",
+      "id": "ID-ROW-5087",
       "name": "Quarantine Basics Group",
       "formatTags": [
         "Literature Study"
@@ -15584,7 +15584,7 @@
       "city": "Portland"
     },
     {
-      "id": "ID-ROW-6599",
+      "id": "ID-ROW-6603",
       "name": "Virtual Never Alone Group",
       "formatTags": [],
       "closed": "Open",
@@ -15625,7 +15625,7 @@
       "city": "Nederland"
     },
     {
-      "id": "ID-ROW-6963",
+      "id": "ID-ROW-6967",
       "name": "WTF Meeting",
       "formatTags": [
         "Discussion",
@@ -15740,7 +15740,7 @@
       "city": "Islip Terrace"
     },
     {
-      "id": "ID-ROW-5745",
+      "id": "ID-ROW-5749",
       "name": "Silver Lining Group",
       "formatTags": [
         "Just For Today Study",
@@ -15781,7 +15781,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-2992",
+      "id": "ID-ROW-2991",
       "name": "It's a Hard Knock Life Group",
       "formatTags": [
         "Topic/Discussion"
@@ -15825,7 +15825,7 @@
       "city": "Lawrenceville"
     },
     {
-      "id": "ID-ROW-5626",
+      "id": "ID-ROW-5630",
       "name": "Secular QT's Group",
       "formatTags": [
         "Format Varies",
@@ -15890,7 +15890,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6985",
+      "id": "ID-ROW-6989",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -16038,7 +16038,7 @@
       "city": "Ringoes"
     },
     {
-      "id": "ID-ROW-5228",
+      "id": "ID-ROW-5229",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Children Welcome",
@@ -16083,7 +16083,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6588",
+      "id": "ID-ROW-6592",
       "name": "Virtual Hope at Two Group",
       "formatTags": [
         "Newcomer"
@@ -16150,7 +16150,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-2884",
+      "id": "ID-ROW-2883",
       "name": "Humboldt 2 Hawaii Group",
       "formatTags": [
         "Format Varies"
@@ -16255,7 +16255,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5135",
+      "id": "ID-ROW-5136",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -16278,7 +16278,7 @@
       "city": "Huntsville"
     },
     {
-      "id": "ID-ROW-5900",
+      "id": "ID-ROW-5904",
       "name": "Spiritually Connected Group",
       "formatTags": [
         "Spiritual Principle a Day Study"
@@ -16299,7 +16299,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-2961",
+      "id": "ID-ROW-2960",
       "name": "In Times of Illness Meeting",
       "formatTags": [
         "Discussion"
@@ -16363,7 +16363,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-5012",
+      "id": "ID-ROW-5010",
       "name": "Principles Before Personalities Group",
       "formatTags": [],
       "closed": "Closed",
@@ -16382,7 +16382,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-5660",
+      "id": "ID-ROW-5664",
       "name": "Serenity at 4:00 PM Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -16401,7 +16401,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6224",
+      "id": "ID-ROW-6228",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -16448,7 +16448,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6233",
+      "id": "ID-ROW-6237",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -16509,7 +16509,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-1098",
+      "id": "ID-ROW-1097",
       "name": "Five O'Clock Wind Down Group",
       "formatTags": [
         "Discussion"
@@ -16530,7 +16530,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1271",
+      "id": "ID-ROW-1270",
       "name": "Get Real Group",
       "formatTags": [
         "Discussion",
@@ -16552,7 +16552,7 @@
       "city": "Cincinnati"
     },
     {
-      "id": "ID-ROW-2824",
+      "id": "ID-ROW-2823",
       "name": "Hope Not Dope Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -16720,7 +16720,7 @@
       "city": "Harrisburg"
     },
     {
-      "id": "ID-ROW-5501",
+      "id": "ID-ROW-5504",
       "name": "Rush Hour Online Group",
       "formatTags": [
         "Discussion",
@@ -16764,7 +16764,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-6071",
+      "id": "ID-ROW-6075",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -16829,7 +16829,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-2836",
+      "id": "ID-ROW-2835",
       "name": "Hope on the Horizon Meeting",
       "formatTags": [
         "Living Clean Study"
@@ -16850,7 +16850,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-2720",
+      "id": "ID-ROW-2719",
       "name": "Heavy Dirty Souls Group",
       "formatTags": [],
       "closed": "Closed",
@@ -16891,7 +16891,7 @@
       "city": "Casa Grande"
     },
     {
-      "id": "ID-ROW-4375",
+      "id": "ID-ROW-4376",
       "name": "Never Alone Group",
       "formatTags": [
         "Discussion",
@@ -16973,7 +16973,7 @@
       "city": "Steamboat Springs"
     },
     {
-      "id": "ID-ROW-6395",
+      "id": "ID-ROW-6399",
       "name": "Transitioning Into Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -17193,7 +17193,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-1280",
+      "id": "ID-ROW-1279",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -17257,7 +17257,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-2909",
+      "id": "ID-ROW-2908",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -17562,7 +17562,7 @@
       "city": "Fairfield"
     },
     {
-      "id": "ID-ROW-4196",
+      "id": "ID-ROW-4197",
       "name": "NA East Group",
       "formatTags": [],
       "closed": "Open",
@@ -17667,7 +17667,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-5091",
+      "id": "ID-ROW-5092",
       "name": "Quarantined California Group",
       "formatTags": [
         "Discussion",
@@ -17691,7 +17691,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5160",
+      "id": "ID-ROW-5161",
       "name": "Reading Is Fundamental, Application Is Essential Group",
       "formatTags": [
         "Speaker",
@@ -17867,7 +17867,7 @@
       "city": "Pacifica"
     },
     {
-      "id": "ID-ROW-5804",
+      "id": "ID-ROW-5808",
       "name": "Somewhere I Belong Group",
       "formatTags": [
         "Basic Text Study"
@@ -17910,7 +17910,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-5858",
+      "id": "ID-ROW-5862",
       "name": "Spirit Of Tradition Meeting",
       "formatTags": [
         "Basic Text Study"
@@ -17931,7 +17931,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5935",
+      "id": "ID-ROW-5939",
       "name": "Spiritual Squares Group",
       "formatTags": [
         "Discussion"
@@ -18054,7 +18054,7 @@
       "city": "Searcy"
     },
     {
-      "id": "ID-ROW-6315",
+      "id": "ID-ROW-6319",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -18247,7 +18247,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1056",
+      "id": "ID-ROW-1055",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -18319,7 +18319,7 @@
       "city": "Harlem"
     },
     {
-      "id": "ID-ROW-2840",
+      "id": "ID-ROW-2839",
       "name": "Hope Rising Group",
       "formatTags": [
         "Newcomer",
@@ -18658,7 +18658,7 @@
       "city": "Pleasantville"
     },
     {
-      "id": "ID-ROW-5015",
+      "id": "ID-ROW-5016",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -18705,7 +18705,7 @@
       "city": "Zionsville"
     },
     {
-      "id": "ID-ROW-5333",
+      "id": "ID-ROW-5344",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -18747,7 +18747,7 @@
       "city": "Sahuarita"
     },
     {
-      "id": "ID-ROW-5796",
+      "id": "ID-ROW-5800",
       "name": "Solution Seekers Group",
       "formatTags": [
         "Basic Text Study",
@@ -18903,7 +18903,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6598",
+      "id": "ID-ROW-6602",
       "name": "Virtual Monday",
       "formatTags": [
         "Concepts Study",
@@ -19119,7 +19119,7 @@
       "city": "Van Nuys"
     },
     {
-      "id": "ID-ROW-260",
+      "id": "ID-ROW-257",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -19207,7 +19207,7 @@
       "city": "Sacramento"
     },
     {
-      "id": "ID-ROW-608",
+      "id": "ID-ROW-607",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -19247,7 +19247,7 @@
       "city": "Philadelphia"
     },
     {
-      "id": "ID-ROW-661",
+      "id": "ID-ROW-660",
       "name": "Come As You Are Group",
       "formatTags": [
         "Discussion",
@@ -19270,7 +19270,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-774",
+      "id": "ID-ROW-773",
       "name": "Daily Struggle 931 Group",
       "formatTags": [],
       "closed": "Open",
@@ -19356,7 +19356,7 @@
       "city": "Lapwai"
     },
     {
-      "id": "ID-ROW-1070",
+      "id": "ID-ROW-1069",
       "name": "Feel the Love Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -19377,7 +19377,7 @@
       "city": "Kalamazoo"
     },
     {
-      "id": "ID-ROW-1102",
+      "id": "ID-ROW-1101",
       "name": "Flipside Recovery Group",
       "formatTags": [
         "Discussion",
@@ -19594,7 +19594,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3016",
+      "id": "ID-ROW-3015",
       "name": "It Gets Better Group",
       "formatTags": [],
       "closed": "Closed",
@@ -20284,7 +20284,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4218",
+      "id": "ID-ROW-4219",
       "name": "NA in PJ's Group",
       "formatTags": [
         "Discussion",
@@ -20505,7 +20505,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-4875",
+      "id": "ID-ROW-4876",
       "name": "Our Primary Purpose Group",
       "formatTags": [
         "Speaker/Discussion"
@@ -20820,7 +20820,7 @@
       "city": "Vallejo"
     },
     {
-      "id": "ID-ROW-5288",
+      "id": "ID-ROW-5289",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -20841,7 +20841,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5304",
+      "id": "ID-ROW-5303",
       "name": "Recovery Nation Group",
       "formatTags": [
         "Discussion",
@@ -20863,7 +20863,7 @@
       "city": "Kemmerer"
     },
     {
-      "id": "ID-ROW-5370",
+      "id": "ID-ROW-5373",
       "name": "Relapse",
       "formatTags": [],
       "closed": "Open",
@@ -20924,7 +20924,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-5452",
+      "id": "ID-ROW-5455",
       "name": "Rise Up Group",
       "formatTags": [
         "Literature Study"
@@ -21081,7 +21081,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-5772",
+      "id": "ID-ROW-5776",
       "name": "Sisters in Recovery Online Meeting",
       "formatTags": [
         "Format Varies",
@@ -21147,7 +21147,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5845",
+      "id": "ID-ROW-5849",
       "name": "Speaker Group",
       "formatTags": [
         "Newcomer"
@@ -21334,7 +21334,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6279",
+      "id": "ID-ROW-6283",
       "name": "The Womens Journey Continues Group",
       "formatTags": [],
       "closed": "Closed",
@@ -21353,7 +21353,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6371",
+      "id": "ID-ROW-6375",
       "name": "Tons Belief Seattle Group",
       "formatTags": [
         "Format Varies"
@@ -21441,7 +21441,7 @@
       "city": "Cody"
     },
     {
-      "id": "ID-ROW-6604",
+      "id": "ID-ROW-6608",
       "name": "Virtual Text Group",
       "formatTags": [],
       "closed": "Closed",
@@ -21640,7 +21640,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-6973",
+      "id": "ID-ROW-6972",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Literature Study"
@@ -21684,7 +21684,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6791",
+      "id": "ID-ROW-6795",
       "name": "We Overcome Group",
       "formatTags": [],
       "closed": "Open",
@@ -21922,7 +21922,7 @@
       "city": "Danbury"
     },
     {
-      "id": "ID-ROW-458",
+      "id": "ID-ROW-457",
       "name": "Brothers & Sisters Lit Study Group",
       "formatTags": [],
       "closed": "Closed",
@@ -22067,7 +22067,7 @@
       "city": "San Antonio"
     },
     {
-      "id": "ID-ROW-2795",
+      "id": "ID-ROW-2788",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Step/Tradition"
@@ -22261,7 +22261,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4532",
+      "id": "ID-ROW-4533",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -22387,7 +22387,7 @@
       "city": "Hayward"
     },
     {
-      "id": "ID-ROW-5175",
+      "id": "ID-ROW-5176",
       "name": "Recover With Pride Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -22410,7 +22410,7 @@
       "city": "Olympia"
     },
     {
-      "id": "ID-ROW-5276",
+      "id": "ID-ROW-5277",
       "name": "Recovery in the South Group",
       "formatTags": [
         "Format Varies"
@@ -22454,7 +22454,7 @@
       "city": "Carmel"
     },
     {
-      "id": "ID-ROW-5623",
+      "id": "ID-ROW-5627",
       "name": "Second Chance Online Group",
       "formatTags": [
         "Just For Today Study",
@@ -22653,7 +22653,7 @@
       "city": "Hasbrouck Heights"
     },
     {
-      "id": "ID-ROW-6890",
+      "id": "ID-ROW-6894",
       "name": "Women's Online Group",
       "formatTags": [],
       "closed": "Closed",
@@ -22672,7 +22672,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-6965",
+      "id": "ID-ROW-6969",
       "name": "WTS or Die Group",
       "formatTags": [
         "Step Working Guides Study"
@@ -22714,7 +22714,7 @@
       "city": "Houston"
     },
     {
-      "id": "ID-ROW-267",
+      "id": "ID-ROW-264",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -23313,7 +23313,7 @@
       "city": "New Iberia"
     },
     {
-      "id": "ID-ROW-5278",
+      "id": "ID-ROW-5279",
       "name": "Recovery In Virtual Reality Group",
       "formatTags": [
         "Basic Text Study",
@@ -23383,7 +23383,7 @@
       "city": "South Miami"
     },
     {
-      "id": "ID-ROW-5705",
+      "id": "ID-ROW-5709",
       "name": "She's Breaking the Chains",
       "formatTags": [
         "Discussion",
@@ -23429,7 +23429,7 @@
       "city": "Lake Wales"
     },
     {
-      "id": "ID-ROW-5857",
+      "id": "ID-ROW-5861",
       "name": "Spirit of Sponsorship Group",
       "formatTags": [
         "Discussion",
@@ -23585,7 +23585,7 @@
       "city": "West Palm Beach"
     },
     {
-      "id": "ID-ROW-6259",
+      "id": "ID-ROW-6263",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Format Varies"
@@ -23694,7 +23694,7 @@
       "city": "Fort Lauderdale"
     },
     {
-      "id": "ID-ROW-5109",
+      "id": "ID-ROW-5110",
       "name": "Quarantine Your Addiction Group",
       "formatTags": [
         "Step/Tradition"
@@ -23737,7 +23737,7 @@
       "city": "Manassas"
     },
     {
-      "id": "ID-ROW-2928",
+      "id": "ID-ROW-2927",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study"
@@ -23823,7 +23823,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5838",
+      "id": "ID-ROW-5842",
       "name": "SPAD Monday Group",
       "formatTags": [
         "Topic"
@@ -23994,7 +23994,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5181",
+      "id": "ID-ROW-5182",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "Basic Text Study"
@@ -24118,7 +24118,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1313",
+      "id": "ID-ROW-1312",
       "name": "God's Chose One Meeting",
       "formatTags": [
         "Topic"
@@ -24139,7 +24139,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-920",
+      "id": "ID-ROW-919",
       "name": "Early Risers After Dark Group",
       "formatTags": [],
       "closed": "Closed",
@@ -24326,7 +24326,7 @@
       "city": "Mesa"
     },
     {
-      "id": "ID-ROW-6992",
+      "id": "ID-ROW-6996",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -24433,7 +24433,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-4516",
+      "id": "ID-ROW-4517",
       "name": "NY Night Owls Group",
       "formatTags": [
         "Speaker"
@@ -24475,7 +24475,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2953",
+      "id": "ID-ROW-2952",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -24494,7 +24494,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4240",
+      "id": "ID-ROW-4245",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -24516,7 +24516,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1347",
+      "id": "ID-ROW-1346",
       "name": "Grace for Today Group",
       "formatTags": [
         "Just For Today Study",
@@ -24540,7 +24540,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6484",
+      "id": "ID-ROW-6492",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -24597,7 +24597,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-2690",
+      "id": "ID-ROW-2689",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -24663,7 +24663,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6237",
+      "id": "ID-ROW-6241",
       "name": "The Meditation Group",
       "formatTags": [
         "Just For Today Study",
@@ -24836,7 +24836,7 @@
       "city": "Oceanside"
     },
     {
-      "id": "ID-ROW-893",
+      "id": "ID-ROW-892",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -25110,7 +25110,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5339",
+      "id": "ID-ROW-5336",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Newcomer",
@@ -25544,7 +25544,7 @@
       "city": "Lake Havasu City"
     },
     {
-      "id": "ID-ROW-5598",
+      "id": "ID-ROW-5602",
       "name": "Recovery Tools Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -25585,7 +25585,7 @@
       "city": "Naples"
     },
     {
-      "id": "ID-ROW-901",
+      "id": "ID-ROW-900",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -25670,7 +25670,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3423",
+      "id": "ID-ROW-3425",
       "name": "Let Them Be Group",
       "formatTags": [
         "Basic Text Study",
@@ -25796,7 +25796,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6527",
+      "id": "ID-ROW-6531",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -25836,7 +25836,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-544",
+      "id": "ID-ROW-543",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion"
@@ -25857,7 +25857,7 @@
       "city": "Lompoc"
     },
     {
-      "id": "ID-ROW-953",
+      "id": "ID-ROW-952",
       "name": "Easy Does it Group",
       "formatTags": [
         "Format Varies",
@@ -26304,7 +26304,7 @@
       "city": "Yucaipa"
     },
     {
-      "id": "ID-ROW-1178",
+      "id": "ID-ROW-1177",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -26477,7 +26477,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1137",
+      "id": "ID-ROW-1136",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -26791,7 +26791,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5862",
+      "id": "ID-ROW-5866",
       "name": "Spirit of Unity (Chicago) Group",
       "formatTags": [
         "Basic Text Study",
@@ -26814,7 +26814,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-5879",
+      "id": "ID-ROW-5883",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -26863,7 +26863,7 @@
       "city": "Boston"
     },
     {
-      "id": "ID-ROW-6795",
+      "id": "ID-ROW-6799",
       "name": "We Still Need Help Group",
       "formatTags": [
         "Format Varies",
@@ -26949,7 +26949,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-525",
+      "id": "ID-ROW-524",
       "name": "Carrying the Message Group",
       "formatTags": [
         "Discussion"
@@ -27119,7 +27119,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-104",
+      "id": "ID-ROW-101",
       "name": "Agape Group",
       "formatTags": [
         "Discussion"
@@ -27227,7 +27227,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-542",
+      "id": "ID-ROW-541",
       "name": "Celebrate Today Group",
       "formatTags": [
         "Speaker"
@@ -27327,7 +27327,7 @@
       "city": "Cary"
     },
     {
-      "id": "ID-ROW-1152",
+      "id": "ID-ROW-1151",
       "name": "Together We Grow Group",
       "formatTags": [
         "Basic Text Study",
@@ -27431,7 +27431,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-2700",
+      "id": "ID-ROW-2699",
       "name": "Hard Knocks Group",
       "formatTags": [
         "Discussion"
@@ -27540,7 +27540,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-2794",
+      "id": "ID-ROW-2795",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Spiritual Principle a Day Study"
@@ -27585,7 +27585,7 @@
       "city": "Coatesville"
     },
     {
-      "id": "ID-ROW-2958",
+      "id": "ID-ROW-2957",
       "name": "In Times of Illness",
       "formatTags": [
         "Literature Study"
@@ -28093,7 +28093,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-4867",
+      "id": "ID-ROW-4868",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -28370,7 +28370,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6729",
+      "id": "ID-ROW-6733",
       "name": "Wecovery Group",
       "formatTags": [
         "Just For Today Study"
@@ -28524,7 +28524,7 @@
       "city": "Islip Terrace"
     },
     {
-      "id": "ID-ROW-5744",
+      "id": "ID-ROW-5748",
       "name": "Silver Lining Group",
       "formatTags": [
         "Just For Today Study",
@@ -28657,7 +28657,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6984",
+      "id": "ID-ROW-6988",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -28762,7 +28762,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-5232",
+      "id": "ID-ROW-5233",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Candlelight",
@@ -28807,7 +28807,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6585",
+      "id": "ID-ROW-6589",
       "name": "Virtual Hope at Two Group",
       "formatTags": [
         "Newcomer"
@@ -28851,7 +28851,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-381",
+      "id": "ID-ROW-380",
       "name": "Better Together Online Group",
       "formatTags": [
         "Topic"
@@ -28937,7 +28937,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5133",
+      "id": "ID-ROW-5134",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+"
@@ -28958,7 +28958,7 @@
       "city": "Huntsville"
     },
     {
-      "id": "ID-ROW-5899",
+      "id": "ID-ROW-5903",
       "name": "Spiritually Connected Group",
       "formatTags": [
         "Format Varies",
@@ -29000,7 +29000,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-5011",
+      "id": "ID-ROW-5009",
       "name": "Principles Before Personalities Group",
       "formatTags": [],
       "closed": "Closed",
@@ -29019,7 +29019,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-6082",
+      "id": "ID-ROW-6086",
       "name": "Strong Women of NA Group",
       "formatTags": [
         "Discussion",
@@ -29045,7 +29045,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-6223",
+      "id": "ID-ROW-6227",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -29092,7 +29092,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6232",
+      "id": "ID-ROW-6236",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -29134,7 +29134,7 @@
       "city": "New Haven"
     },
     {
-      "id": "ID-ROW-240",
+      "id": "ID-ROW-237",
       "name": "A Secular Meeting of NA International Group",
       "formatTags": [
         "Secular",
@@ -29175,7 +29175,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-1097",
+      "id": "ID-ROW-1096",
       "name": "Five O'Clock Wind Down Group",
       "formatTags": [
         "Discussion"
@@ -29279,7 +29279,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-5502",
+      "id": "ID-ROW-5505",
       "name": "Rush Hour Online Group",
       "formatTags": [
         "Discussion",
@@ -29301,7 +29301,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6070",
+      "id": "ID-ROW-6074",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -29345,7 +29345,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-2838",
+      "id": "ID-ROW-2837",
       "name": "Hope on the Horizon Meeting",
       "formatTags": [
         "Questions & Answers"
@@ -29430,7 +29430,7 @@
       "city": "Telluride"
     },
     {
-      "id": "ID-ROW-2893",
+      "id": "ID-ROW-2892",
       "name": "Hybrid Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -29497,7 +29497,7 @@
       "city": "Richmond"
     },
     {
-      "id": "ID-ROW-4374",
+      "id": "ID-ROW-4375",
       "name": "Never Alone Group",
       "formatTags": [
         "Discussion",
@@ -29663,7 +29663,7 @@
       "city": "Madison"
     },
     {
-      "id": "ID-ROW-6955",
+      "id": "ID-ROW-6959",
       "name": "Write to Recover Group",
       "formatTags": [
         "Discussion",
@@ -29708,7 +29708,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-383",
+      "id": "ID-ROW-382",
       "name": "Better Together Online Group",
       "formatTags": [
         "Just For Today Study",
@@ -29800,7 +29800,7 @@
       "city": "Fort Lauderdale"
     },
     {
-      "id": "ID-ROW-956",
+      "id": "ID-ROW-955",
       "name": "Easy Does It Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -29845,7 +29845,7 @@
       "city": "Oklahoma City"
     },
     {
-      "id": "ID-ROW-1279",
+      "id": "ID-ROW-1278",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -29890,7 +29890,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-2908",
+      "id": "ID-ROW-2907",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -30014,7 +30014,7 @@
       "city": "Los Gatos"
     },
     {
-      "id": "ID-ROW-4197",
+      "id": "ID-ROW-4198",
       "name": "NA East Group",
       "formatTags": [],
       "closed": "Open",
@@ -30098,7 +30098,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4866",
+      "id": "ID-ROW-4867",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -30158,7 +30158,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-5090",
+      "id": "ID-ROW-5091",
       "name": "Quarantined California Group",
       "formatTags": [
         "Discussion",
@@ -30269,7 +30269,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5803",
+      "id": "ID-ROW-5807",
       "name": "Somewhere I Belong Group",
       "formatTags": [
         "Literature Study",
@@ -30357,7 +30357,7 @@
       "city": "Santa Cruz"
     },
     {
-      "id": "ID-ROW-6242",
+      "id": "ID-ROW-6246",
       "name": "The Meditation Group",
       "formatTags": [
         "IP Study",
@@ -30381,7 +30381,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6313",
+      "id": "ID-ROW-6317",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -30402,7 +30402,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6409",
+      "id": "ID-ROW-6413",
       "name": "Tuesday After Work Group",
       "formatTags": [
         "Just For Today Study",
@@ -30491,7 +30491,7 @@
       "city": "Walnut Creek"
     },
     {
-      "id": "ID-ROW-6811",
+      "id": "ID-ROW-6815",
       "name": "What's the 411 Group",
       "formatTags": [
         "Just For Today Study",
@@ -30659,7 +30659,7 @@
       "city": "Ferndale"
     },
     {
-      "id": "ID-ROW-1055",
+      "id": "ID-ROW-1054",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -30984,7 +30984,7 @@
       "city": "Philadelphia"
     },
     {
-      "id": "ID-ROW-5018",
+      "id": "ID-ROW-5019",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -31098,7 +31098,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-5332",
+      "id": "ID-ROW-5343",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -31138,7 +31138,7 @@
       "city": "Simi Valley"
     },
     {
-      "id": "ID-ROW-5795",
+      "id": "ID-ROW-5799",
       "name": "Solution Seekers Group",
       "formatTags": [
         "Literature Study"
@@ -31332,7 +31332,7 @@
       "city": "Baton Rouge"
     },
     {
-      "id": "ID-ROW-6583",
+      "id": "ID-ROW-6587",
       "name": "Virtual Flatbook Group",
       "formatTags": [
         "Speaker",
@@ -31535,7 +31535,7 @@
       "city": "Ellsworth"
     },
     {
-      "id": "ID-ROW-259",
+      "id": "ID-ROW-256",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Speaker"
@@ -31648,7 +31648,7 @@
       "city": "Sacramento"
     },
     {
-      "id": "ID-ROW-607",
+      "id": "ID-ROW-606",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -31819,7 +31819,7 @@
       "city": "Hightstown"
     },
     {
-      "id": "ID-ROW-1125",
+      "id": "ID-ROW-1124",
       "name": "Free & Clean Group",
       "formatTags": [
         "Topic"
@@ -31840,7 +31840,7 @@
       "city": "Monticello"
     },
     {
-      "id": "ID-ROW-1127",
+      "id": "ID-ROW-1126",
       "name": "Free and Clean Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -31863,7 +31863,7 @@
       "city": "Monticello"
     },
     {
-      "id": "ID-ROW-1283",
+      "id": "ID-ROW-1282",
       "name": "Gift of Desperation (GOD) Group",
       "formatTags": [
         "Discussion",
@@ -31994,7 +31994,7 @@
       "city": "Buena Park"
     },
     {
-      "id": "ID-ROW-2965",
+      "id": "ID-ROW-2964",
       "name": "Into Action Group",
       "formatTags": [
         "Discussion"
@@ -32418,7 +32418,7 @@
       "city": "Tifton"
     },
     {
-      "id": "ID-ROW-4432",
+      "id": "ID-ROW-4433",
       "name": "Newcomers Group",
       "formatTags": [
         "Literature Study"
@@ -32542,7 +32542,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4704",
+      "id": "ID-ROW-4705",
       "name": "Not Just Another NA Women's Oriented Group",
       "formatTags": [
         "Literature Study",
@@ -32584,7 +32584,7 @@
       "city": "Decatur"
     },
     {
-      "id": "ID-ROW-4874",
+      "id": "ID-ROW-4875",
       "name": "Our Primary Purpose Group",
       "formatTags": [
         "Living Clean Study"
@@ -32627,7 +32627,7 @@
       "city": "New York City"
     },
     {
-      "id": "ID-ROW-4889",
+      "id": "ID-ROW-4890",
       "name": "Out of the Darkness Group",
       "formatTags": [
         "Format Varies",
@@ -32825,7 +32825,7 @@
       "city": "Manhattan"
     },
     {
-      "id": "ID-ROW-5252",
+      "id": "ID-ROW-5253",
       "name": "Recovery First Group",
       "formatTags": [
         "Basic Text Study",
@@ -32870,7 +32870,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-5287",
+      "id": "ID-ROW-5288",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -32978,7 +32978,7 @@
       "city": "Grants Pass"
     },
     {
-      "id": "ID-ROW-5668",
+      "id": "ID-ROW-5672",
       "name": "Serenity at 7 Group",
       "formatTags": [],
       "closed": "Closed",
@@ -32997,7 +32997,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-5706",
+      "id": "ID-ROW-5710",
       "name": "She Do Recover Group",
       "formatTags": [
         "Children Welcome",
@@ -33151,7 +33151,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5844",
+      "id": "ID-ROW-5848",
       "name": "Speaker Group",
       "formatTags": [
         "Newcomer"
@@ -33172,7 +33172,7 @@
       "city": "Annapolis"
     },
     {
-      "id": "ID-ROW-5898",
+      "id": "ID-ROW-5902",
       "name": "Spiritual Journey Women's NA Meeting",
       "formatTags": [
         "Women"
@@ -33341,7 +33341,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6218",
+      "id": "ID-ROW-6222",
       "name": "The Last Stop Group",
       "formatTags": [],
       "closed": "Closed",
@@ -33385,7 +33385,7 @@
       "city": "Saint Petersburg"
     },
     {
-      "id": "ID-ROW-6261",
+      "id": "ID-ROW-6265",
       "name": "There Seems to be This Alternative Group",
       "formatTags": [
         "Newcomer"
@@ -33473,7 +33473,7 @@
       "city": "North Hollywood"
     },
     {
-      "id": "ID-ROW-6421",
+      "id": "ID-ROW-6425",
       "name": "Tuesday Online Principles Group",
       "formatTags": [
         "Literature Study"
@@ -33674,7 +33674,7 @@
       "city": "Sarasota"
     },
     {
-      "id": "ID-ROW-6972",
+      "id": "ID-ROW-6978",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Step/Tradition"
@@ -33695,7 +33695,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6976",
+      "id": "ID-ROW-6980",
       "name": "You're Worth Saving Group",
       "formatTags": [
         "Questions & Answers",
@@ -33717,7 +33717,7 @@
       "city": "Mount Vernon"
     },
     {
-      "id": "ID-ROW-6977",
+      "id": "ID-ROW-6981",
       "name": "You are Always Welcome Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -33783,7 +33783,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6790",
+      "id": "ID-ROW-6794",
       "name": "We Overcome Group",
       "formatTags": [],
       "closed": "Open",
@@ -33929,7 +33929,7 @@
       "city": "El Cajon"
     },
     {
-      "id": "ID-ROW-559",
+      "id": "ID-ROW-558",
       "name": "Chairs to Squares Group",
       "formatTags": [
         "Discussion",
@@ -34100,7 +34100,7 @@
       "city": "Orange"
     },
     {
-      "id": "ID-ROW-2793",
+      "id": "ID-ROW-2794",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Literature Study"
@@ -34121,7 +34121,7 @@
       "city": "Houston"
     },
     {
-      "id": "ID-ROW-2879",
+      "id": "ID-ROW-2878",
       "name": "Hugs Not Drugs Group",
       "formatTags": [],
       "closed": "Closed",
@@ -34336,7 +34336,7 @@
       "city": "Bellport"
     },
     {
-      "id": "ID-ROW-4531",
+      "id": "ID-ROW-4532",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -34598,7 +34598,7 @@
       "city": "Walnut Creek"
     },
     {
-      "id": "ID-ROW-6957",
+      "id": "ID-ROW-6961",
       "name": "Writing on the Steps Group",
       "formatTags": [
         "Step Study"
@@ -34640,7 +34640,7 @@
       "city": "Houston"
     },
     {
-      "id": "ID-ROW-265",
+      "id": "ID-ROW-262",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -34702,7 +34702,7 @@
       "city": "Gaithersburg"
     },
     {
-      "id": "ID-ROW-588",
+      "id": "ID-ROW-587",
       "name": "Circle of Hope Group",
       "formatTags": [
         "Format Varies",
@@ -35168,7 +35168,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4975",
+      "id": "ID-ROW-4976",
       "name": "Power Greater Than Self Group",
       "formatTags": [
         "Just For Today Study",
@@ -35318,7 +35318,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-6258",
+      "id": "ID-ROW-6262",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Basic Text Study"
@@ -35339,7 +35339,7 @@
       "city": "Tyler"
     },
     {
-      "id": "ID-ROW-6397",
+      "id": "ID-ROW-6401",
       "name": "Trans Recovery Group",
       "formatTags": [
         "Format Varies",
@@ -35406,7 +35406,7 @@
       "city": "Decatur"
     },
     {
-      "id": "ID-ROW-6996",
+      "id": "ID-ROW-7000",
       "name": "Youngtimers Group",
       "formatTags": [
         "Newcomer",
@@ -35429,7 +35429,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-5108",
+      "id": "ID-ROW-5109",
       "name": "Quarantine Your Addiction Group",
       "formatTags": [
         "Living Clean Study"
@@ -35514,7 +35514,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-2927",
+      "id": "ID-ROW-2926",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study"
@@ -35796,7 +35796,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5179",
+      "id": "ID-ROW-5180",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "Guiding Principles Study"
@@ -35817,7 +35817,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-5227",
+      "id": "ID-ROW-5228",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -35939,7 +35939,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1312",
+      "id": "ID-ROW-1311",
       "name": "God's Chose One Meeting",
       "formatTags": [
         "Topic"
@@ -35960,7 +35960,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4452",
+      "id": "ID-ROW-4453",
       "name": "New Day in NA",
       "formatTags": [
         "Discussion",
@@ -36124,7 +36124,7 @@
       "city": "Mesa"
     },
     {
-      "id": "ID-ROW-6277",
+      "id": "ID-ROW-6281",
       "name": "The With Group",
       "formatTags": [],
       "closed": "Closed",
@@ -36165,7 +36165,7 @@
       "city": "Fort Lauderdale"
     },
     {
-      "id": "ID-ROW-6990",
+      "id": "ID-ROW-6994",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -36314,7 +36314,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2952",
+      "id": "ID-ROW-2951",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -36333,7 +36333,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4246",
+      "id": "ID-ROW-4244",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -36355,7 +36355,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1346",
+      "id": "ID-ROW-1345",
       "name": "Grace for Today Group",
       "formatTags": [
         "Just For Today Study",
@@ -36379,7 +36379,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6490",
+      "id": "ID-ROW-6491",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -36398,7 +36398,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-531",
+      "id": "ID-ROW-530",
       "name": "Catch Your Breath Group",
       "formatTags": [
         "Literature Study",
@@ -36458,7 +36458,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-2689",
+      "id": "ID-ROW-2688",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -36717,7 +36717,7 @@
       "city": "Madison"
     },
     {
-      "id": "ID-ROW-892",
+      "id": "ID-ROW-891",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -36738,7 +36738,7 @@
       "city": "Ocala"
     },
     {
-      "id": "ID-ROW-896",
+      "id": "ID-ROW-895",
       "name": "Early Cup of Recovery Group",
       "formatTags": [
         "Discussion"
@@ -36969,7 +36969,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-3500",
+      "id": "ID-ROW-3501",
       "name": "Message of Hope Group",
       "formatTags": [
         "Newcomer",
@@ -37074,7 +37074,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5338",
+      "id": "ID-ROW-5335",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Just For Today Study",
@@ -37140,7 +37140,7 @@
       "city": "Toms River"
     },
     {
-      "id": "ID-ROW-5867",
+      "id": "ID-ROW-5871",
       "name": "Spiritual Awakening Group",
       "formatTags": [
         "Topic"
@@ -37524,7 +37524,7 @@
       "city": "Lake Havasu City"
     },
     {
-      "id": "ID-ROW-5597",
+      "id": "ID-ROW-5601",
       "name": "Recovery Tools Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -37565,7 +37565,7 @@
       "city": "Naples"
     },
     {
-      "id": "ID-ROW-900",
+      "id": "ID-ROW-899",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -37629,7 +37629,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3422",
+      "id": "ID-ROW-3424",
       "name": "Let Them Be Group",
       "formatTags": [
         "Discussion",
@@ -37753,7 +37753,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6526",
+      "id": "ID-ROW-6530",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -37793,7 +37793,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-543",
+      "id": "ID-ROW-542",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion"
@@ -37814,7 +37814,7 @@
       "city": "Lompoc"
     },
     {
-      "id": "ID-ROW-952",
+      "id": "ID-ROW-951",
       "name": "Easy Does it Group",
       "formatTags": [
         "Format Varies",
@@ -38234,7 +38234,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-1176",
+      "id": "ID-ROW-1175",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -38405,7 +38405,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1136",
+      "id": "ID-ROW-1135",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -38721,7 +38721,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5863",
+      "id": "ID-ROW-5867",
       "name": "Spirit of Unity (Chicago) Group",
       "formatTags": [
         "Format Varies",
@@ -38743,7 +38743,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-5878",
+      "id": "ID-ROW-5882",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -38793,7 +38793,7 @@
       "city": "Boston"
     },
     {
-      "id": "ID-ROW-6775",
+      "id": "ID-ROW-6779",
       "name": "Welcome Newcomers Group",
       "formatTags": [],
       "closed": "Open",
@@ -38812,7 +38812,7 @@
       "city": "Allegan"
     },
     {
-      "id": "ID-ROW-6794",
+      "id": "ID-ROW-6798",
       "name": "We Still Need Help Group",
       "formatTags": [
         "Format Varies",
@@ -38899,7 +38899,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-524",
+      "id": "ID-ROW-523",
       "name": "Carrying the Message Group",
       "formatTags": [
         "Just For Today Study"
@@ -38920,7 +38920,7 @@
       "city": "Martinsburg"
     },
     {
-      "id": "ID-ROW-670",
+      "id": "ID-ROW-669",
       "name": "Compassionate Recovery",
       "formatTags": [
         "Basic Text Study",
@@ -39131,7 +39131,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-108",
+      "id": "ID-ROW-105",
       "name": "Agape Group",
       "formatTags": [
         "Discussion"
@@ -39262,7 +39262,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-541",
+      "id": "ID-ROW-540",
       "name": "Celebrate Today Group",
       "formatTags": [
         "Speaker"
@@ -39343,7 +39343,7 @@
       "city": "Richardson"
     },
     {
-      "id": "ID-ROW-1151",
+      "id": "ID-ROW-1150",
       "name": "Together We Grow Group",
       "formatTags": [
         "Discussion",
@@ -39553,7 +39553,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-2792",
+      "id": "ID-ROW-2793",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Just For Today Study"
@@ -40190,7 +40190,7 @@
       "city": "Concord"
     },
     {
-      "id": "ID-ROW-4865",
+      "id": "ID-ROW-4866",
       "name": "Our Primary Purpose Group",
       "formatTags": [
         "Newcomer"
@@ -40273,7 +40273,7 @@
       "city": "Charlotte"
     },
     {
-      "id": "ID-ROW-5085",
+      "id": "ID-ROW-5086",
       "name": "Quarantine Basics Group",
       "formatTags": [
         "Literature Study"
@@ -40599,7 +40599,7 @@
       "city": "Fond Du Lac"
     },
     {
-      "id": "ID-ROW-6728",
+      "id": "ID-ROW-6732",
       "name": "Wecovery Group",
       "formatTags": [],
       "closed": "Open",
@@ -40618,7 +40618,7 @@
       "city": "Topeka"
     },
     {
-      "id": "ID-ROW-6731",
+      "id": "ID-ROW-6735",
       "name": "Wecovery Group",
       "formatTags": [
         "Step Working Guides Study"
@@ -40660,7 +40660,7 @@
       "city": "Las Cruces"
     },
     {
-      "id": "ID-ROW-6962",
+      "id": "ID-ROW-6966",
       "name": "WTF Meeting",
       "formatTags": [
         "Discussion",
@@ -40775,7 +40775,7 @@
       "city": "Islip Terrace"
     },
     {
-      "id": "ID-ROW-5743",
+      "id": "ID-ROW-5747",
       "name": "Silver Lining Group",
       "formatTags": [
         "Basic Text Study",
@@ -40818,7 +40818,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-224",
+      "id": "ID-ROW-221",
       "name": "Another Secular Group",
       "formatTags": [
         "Format Varies",
@@ -40844,7 +40844,7 @@
       "city": "Charles Town"
     },
     {
-      "id": "ID-ROW-2971",
+      "id": "ID-ROW-2970",
       "name": "I Qualify Group",
       "formatTags": [],
       "closed": "Open",
@@ -40928,7 +40928,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6983",
+      "id": "ID-ROW-6987",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -41052,7 +41052,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5225",
+      "id": "ID-ROW-5226",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Candlelight",
@@ -41119,7 +41119,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6587",
+      "id": "ID-ROW-6591",
       "name": "Virtual Hope at Two Group",
       "formatTags": [
         "Newcomer"
@@ -41186,7 +41186,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-2883",
+      "id": "ID-ROW-2882",
       "name": "Humboldt 2 Hawaii Group",
       "formatTags": [
         "Format Varies",
@@ -41295,7 +41295,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5132",
+      "id": "ID-ROW-5133",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -41358,7 +41358,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5010",
+      "id": "ID-ROW-5013",
       "name": "Principles Before Personalities Group",
       "formatTags": [],
       "closed": "Closed",
@@ -41377,7 +41377,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-6081",
+      "id": "ID-ROW-6085",
       "name": "Strong Women of NA Group",
       "formatTags": [
         "Format Varies",
@@ -41403,7 +41403,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-6222",
+      "id": "ID-ROW-6226",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -41472,7 +41472,7 @@
       "city": "Encinitas"
     },
     {
-      "id": "ID-ROW-6231",
+      "id": "ID-ROW-6235",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -41535,7 +41535,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-1096",
+      "id": "ID-ROW-1095",
       "name": "Five O'Clock Wind Down Group",
       "formatTags": [
         "Discussion"
@@ -41556,7 +41556,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3004",
+      "id": "ID-ROW-3003",
       "name": "It's A We Program Group",
       "formatTags": [
         "Format Varies",
@@ -41661,7 +41661,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-5451",
+      "id": "ID-ROW-5454",
       "name": "Rise Up Group",
       "formatTags": [
         "Literature Study"
@@ -41682,7 +41682,7 @@
       "city": "Honolulu"
     },
     {
-      "id": "ID-ROW-5500",
+      "id": "ID-ROW-5503",
       "name": "Rush Hour Online Group",
       "formatTags": [
         "Discussion"
@@ -41703,7 +41703,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6069",
+      "id": "ID-ROW-6073",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -41768,7 +41768,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-6738",
+      "id": "ID-ROW-6742",
       "name": "Wednesday Men's Group",
       "formatTags": [
         "Discussion",
@@ -41791,7 +41791,7 @@
       "city": "Prescott"
     },
     {
-      "id": "ID-ROW-2837",
+      "id": "ID-ROW-2836",
       "name": "Hope on the Horizon Meeting",
       "formatTags": [
         "Living Clean Study"
@@ -41833,7 +41833,7 @@
       "city": "Casa Grande"
     },
     {
-      "id": "ID-ROW-4373",
+      "id": "ID-ROW-4374",
       "name": "Never Alone Group",
       "formatTags": [
         "Discussion",
@@ -41893,7 +41893,7 @@
       "city": "Portland"
     },
     {
-      "id": "ID-ROW-4547",
+      "id": "ID-ROW-4548",
       "name": "No Matter What Group",
       "formatTags": [
         "Living Clean Study"
@@ -42002,7 +42002,7 @@
       "city": "Frazier Park"
     },
     {
-      "id": "ID-ROW-354",
+      "id": "ID-ROW-353",
       "name": "Begin Again Group",
       "formatTags": [
         "Basic Text Study",
@@ -42028,7 +42028,7 @@
       "city": "Portland"
     },
     {
-      "id": "ID-ROW-375",
+      "id": "ID-ROW-374",
       "name": "Better Every Day Group",
       "formatTags": [
         "Format Varies",
@@ -42112,7 +42112,7 @@
       "city": "Charlotte"
     },
     {
-      "id": "ID-ROW-1278",
+      "id": "ID-ROW-1277",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -42157,7 +42157,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-2907",
+      "id": "ID-ROW-2906",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -42195,7 +42195,7 @@
       "city": "Culver City"
     },
     {
-      "id": "ID-ROW-2959",
+      "id": "ID-ROW-2958",
       "name": "In Times of Illness Group",
       "formatTags": [],
       "closed": "Open",
@@ -42365,7 +42365,7 @@
       "city": "Charles Town"
     },
     {
-      "id": "ID-ROW-4199",
+      "id": "ID-ROW-4200",
       "name": "NA East Group",
       "formatTags": [],
       "closed": "Open",
@@ -42403,7 +42403,7 @@
       "city": "Durham"
     },
     {
-      "id": "ID-ROW-4376",
+      "id": "ID-ROW-4377",
       "name": "Never Alone Group",
       "formatTags": [
         "Format Varies",
@@ -42448,7 +42448,7 @@
       "city": "Oakland"
     },
     {
-      "id": "ID-ROW-4760",
+      "id": "ID-ROW-4761",
       "name": "Old School Recovery Group",
       "formatTags": [
         "Speaker"
@@ -42469,7 +42469,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5089",
+      "id": "ID-ROW-5090",
       "name": "Quarantined California Group",
       "formatTags": [
         "Discussion",
@@ -42554,7 +42554,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5802",
+      "id": "ID-ROW-5806",
       "name": "Somewhere I Belong Group",
       "formatTags": [
         "Living Clean Study"
@@ -42639,7 +42639,7 @@
       "city": "Santa Cruz"
     },
     {
-      "id": "ID-ROW-6312",
+      "id": "ID-ROW-6316",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -42679,7 +42679,7 @@
       "city": "Pueblo"
     },
     {
-      "id": "ID-ROW-6818",
+      "id": "ID-ROW-6822",
       "name": "What a Wonderful Life",
       "formatTags": [
         "Speaker/Discussion"
@@ -42788,7 +42788,7 @@
       "city": "East Los Angeles"
     },
     {
-      "id": "ID-ROW-727",
+      "id": "ID-ROW-726",
       "name": "Courage To Change Group",
       "formatTags": [
         "Discussion",
@@ -42810,7 +42810,7 @@
       "city": "Hoover"
     },
     {
-      "id": "ID-ROW-1054",
+      "id": "ID-ROW-1053",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -43027,7 +43027,7 @@
       "city": "Conway"
     },
     {
-      "id": "ID-ROW-5013",
+      "id": "ID-ROW-5014",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -43049,7 +43049,7 @@
       "city": "Denver"
     },
     {
-      "id": "ID-ROW-5331",
+      "id": "ID-ROW-5342",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -43112,7 +43112,7 @@
       "city": "San Mateo"
     },
     {
-      "id": "ID-ROW-5770",
+      "id": "ID-ROW-5774",
       "name": "Sisters in Recovery Group",
       "formatTags": [
         "Format Varies",
@@ -43134,7 +43134,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5794",
+      "id": "ID-ROW-5798",
       "name": "Solution Seekers Group",
       "formatTags": [],
       "closed": "Open",
@@ -43307,7 +43307,7 @@
       "city": "Olympia"
     },
     {
-      "id": "ID-ROW-6916",
+      "id": "ID-ROW-6920",
       "name": "Women Do Recover Springfield Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -43395,7 +43395,7 @@
       "city": "Madison"
     },
     {
-      "id": "ID-ROW-6734",
+      "id": "ID-ROW-6738",
       "name": "Wednesday's Wild Women Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -43546,7 +43546,7 @@
       "city": "Newark"
     },
     {
-      "id": "ID-ROW-258",
+      "id": "ID-ROW-255",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Basic Text Study",
@@ -43634,7 +43634,7 @@
       "city": "Carmel"
     },
     {
-      "id": "ID-ROW-431",
+      "id": "ID-ROW-430",
       "name": "Bridgeport Virtual Group",
       "formatTags": [
         "Newcomer"
@@ -43677,7 +43677,7 @@
       "city": "Belmont"
     },
     {
-      "id": "ID-ROW-606",
+      "id": "ID-ROW-605",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -43782,7 +43782,7 @@
       "city": "Bennington"
     },
     {
-      "id": "ID-ROW-695",
+      "id": "ID-ROW-694",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Format Varies"
@@ -43912,7 +43912,7 @@
       "city": "Alameda"
     },
     {
-      "id": "ID-ROW-1350",
+      "id": "ID-ROW-1349",
       "name": "Grand Marais Wednesday Night Group",
       "formatTags": [
         "Basic Text Study",
@@ -44064,7 +44064,7 @@
       "city": "Reno"
     },
     {
-      "id": "ID-ROW-2896",
+      "id": "ID-ROW-2895",
       "name": "I Can't, We Can (San Diego) Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -44106,7 +44106,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3003",
+      "id": "ID-ROW-3002",
       "name": "It's A We Program Group",
       "formatTags": [
         "Discussion",
@@ -44584,7 +44584,7 @@
       "city": "Fredrick"
     },
     {
-      "id": "ID-ROW-4217",
+      "id": "ID-ROW-4218",
       "name": "NA in PJ's Group",
       "formatTags": [
         "Discussion",
@@ -44761,7 +44761,7 @@
       "city": "Scottsdale"
     },
     {
-      "id": "ID-ROW-4873",
+      "id": "ID-ROW-4874",
       "name": "Our Primary Purpose Group",
       "formatTags": [
         "Format Varies"
@@ -44919,7 +44919,7 @@
       "city": "Indio"
     },
     {
-      "id": "ID-ROW-5172",
+      "id": "ID-ROW-5173",
       "name": "Recovering Step Sisters Group",
       "formatTags": [],
       "closed": "Closed",
@@ -45001,7 +45001,7 @@
       "city": "Newark"
     },
     {
-      "id": "ID-ROW-5286",
+      "id": "ID-ROW-5287",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -45022,7 +45022,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5303",
+      "id": "ID-ROW-5305",
       "name": "Recovery Nation Group",
       "formatTags": [
         "Discussion",
@@ -45216,7 +45216,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5843",
+      "id": "ID-ROW-5847",
       "name": "Speaker Group",
       "formatTags": [
         "Newcomer"
@@ -45281,7 +45281,6 @@
       "id": "G00011758-223178-226518",
       "name": "Spiritual Connection Group",
       "formatTags": [
-        "Hybrid Meeting",
         "Living Clean Study"
       ],
       "closed": "Closed",
@@ -45511,7 +45510,7 @@
       "city": "Steamboat Springs"
     },
     {
-      "id": "ID-ROW-6368",
+      "id": "ID-ROW-6372",
       "name": "Together We Stand Group",
       "formatTags": [
         "Topic/Discussion"
@@ -45670,7 +45669,7 @@
       "city": "Lawrenceville"
     },
     {
-      "id": "ID-ROW-6567",
+      "id": "ID-ROW-6571",
       "name": "Vigilance Club Group",
       "formatTags": [],
       "closed": "Open",
@@ -45713,7 +45712,7 @@
       "city": "Van Nuys"
     },
     {
-      "id": "ID-ROW-6677",
+      "id": "ID-ROW-6681",
       "name": "We, Not I Group",
       "formatTags": [],
       "closed": "Closed",
@@ -45732,7 +45731,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6679",
+      "id": "ID-ROW-6683",
       "name": "We're Still Here Group",
       "formatTags": [
         "Discussion",
@@ -45800,7 +45799,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6742",
+      "id": "ID-ROW-6746",
       "name": "Wednesday Night Recovery",
       "formatTags": [],
       "closed": "Closed",
@@ -46001,7 +46000,7 @@
       "city": "Cincinnati"
     },
     {
-      "id": "ID-ROW-6938",
+      "id": "ID-ROW-6942",
       "name": "Women With Choices Group",
       "formatTags": [
         "Format Varies",
@@ -46071,7 +46070,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6971",
+      "id": "ID-ROW-6977",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Topic/Discussion"
@@ -46136,7 +46135,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6788",
+      "id": "ID-ROW-6792",
       "name": "We Overcome Group",
       "formatTags": [],
       "closed": "Open",
@@ -46155,7 +46154,7 @@
       "city": "Ventura"
     },
     {
-      "id": "ID-ROW-5455",
+      "id": "ID-ROW-5458",
       "name": "Rising in Recovery Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -46282,7 +46281,7 @@
       "city": "Detroit"
     },
     {
-      "id": "ID-ROW-447",
+      "id": "ID-ROW-446",
       "name": "Brother's & Sister's Speaker Group",
       "formatTags": [
         "Speaker"
@@ -46370,7 +46369,7 @@
       "city": "Minneapolis"
     },
     {
-      "id": "ID-ROW-1017",
+      "id": "ID-ROW-1016",
       "name": "Esperanza Today Group",
       "formatTags": [
         "Format Varies",
@@ -46392,7 +46391,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-1129",
+      "id": "ID-ROW-1128",
       "name": "Free Birds",
       "formatTags": [
         "Format Varies"
@@ -46434,7 +46433,7 @@
       "city": "Pittsburgh"
     },
     {
-      "id": "ID-ROW-2645",
+      "id": "ID-ROW-2644",
       "name": "Grupo Vivir Limpios",
       "formatTags": [
         "Hybrid Meeting"
@@ -46477,7 +46476,7 @@
       "city": "Hyde Park"
     },
     {
-      "id": "ID-ROW-2791",
+      "id": "ID-ROW-2792",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Concepts Study"
@@ -46815,7 +46814,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4530",
+      "id": "ID-ROW-4531",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -47016,7 +47015,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6393",
+      "id": "ID-ROW-6397",
       "name": "Transformers Group",
       "formatTags": [
         "Discussion",
@@ -47080,7 +47079,7 @@
       "city": "Kennewick"
     },
     {
-      "id": "ID-ROW-6745",
+      "id": "ID-ROW-6749",
       "name": "Wednesday Women Warriors Group",
       "formatTags": [
         "Literature Study"
@@ -47188,7 +47187,7 @@
       "city": "Green Bay"
     },
     {
-      "id": "ID-ROW-264",
+      "id": "ID-ROW-261",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -47274,7 +47273,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-700",
+      "id": "ID-ROW-699",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Discussion",
@@ -47447,7 +47446,7 @@
       "city": "Irving"
     },
     {
-      "id": "ID-ROW-1209",
+      "id": "ID-ROW-1208",
       "name": "Fresh Start Group",
       "formatTags": [
         "Discussion"
@@ -47704,7 +47703,7 @@
       "city": "Vallejo"
     },
     {
-      "id": "ID-ROW-5277",
+      "id": "ID-ROW-5278",
       "name": "Recovery In Virtual Reality Group",
       "formatTags": [
         "Discussion",
@@ -47750,7 +47749,7 @@
       "city": "Bradenton"
     },
     {
-      "id": "ID-ROW-5704",
+      "id": "ID-ROW-5708",
       "name": "She's Breaking the Chains",
       "formatTags": [
         "Discussion",
@@ -47905,7 +47904,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-6257",
+      "id": "ID-ROW-6261",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Format Varies"
@@ -47926,7 +47925,7 @@
       "city": "Tyler"
     },
     {
-      "id": "ID-ROW-6441",
+      "id": "ID-ROW-6445",
       "name": "TWORG Group",
       "formatTags": [
         "Format Varies",
@@ -48052,7 +48051,7 @@
       "city": "Pittsburgh"
     },
     {
-      "id": "ID-ROW-5107",
+      "id": "ID-ROW-5108",
       "name": "Quarantine Your Addiction Group",
       "formatTags": [
         "Topic"
@@ -48094,7 +48093,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-2926",
+      "id": "ID-ROW-2925",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study",
@@ -48116,7 +48115,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-6392",
+      "id": "ID-ROW-6396",
       "name": "Transformers Group",
       "formatTags": [
         "Format Varies",
@@ -48268,7 +48267,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-4455",
+      "id": "ID-ROW-4456",
       "name": "New Frontiers Group",
       "formatTags": [
         "Discussion",
@@ -48353,7 +48352,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5178",
+      "id": "ID-ROW-5179",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "Meditation"
@@ -48499,7 +48498,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1311",
+      "id": "ID-ROW-1310",
       "name": "God's Chose One Meeting",
       "formatTags": [
         "Topic"
@@ -48729,7 +48728,7 @@
       "city": "Mesa"
     },
     {
-      "id": "ID-ROW-6991",
+      "id": "ID-ROW-6995",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -48837,7 +48836,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-4515",
+      "id": "ID-ROW-4516",
       "name": "NY Night Owls Group",
       "formatTags": [
         "Basic Text Study"
@@ -48879,7 +48878,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2951",
+      "id": "ID-ROW-2950",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -48898,7 +48897,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4245",
+      "id": "ID-ROW-4243",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -48920,7 +48919,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6489",
+      "id": "ID-ROW-6490",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -48996,7 +48995,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-2688",
+      "id": "ID-ROW-2687",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -49062,7 +49061,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6239",
+      "id": "ID-ROW-6243",
       "name": "The Meditation Group",
       "formatTags": [
         "Just For Today Study",
@@ -49236,7 +49235,7 @@
       "city": "Oceanside"
     },
     {
-      "id": "ID-ROW-891",
+      "id": "ID-ROW-890",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -49529,7 +49528,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5337",
+      "id": "ID-ROW-5334",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Newcomer",
@@ -49960,7 +49959,7 @@
       "city": "Lake Havasu City"
     },
     {
-      "id": "ID-ROW-5596",
+      "id": "ID-ROW-5600",
       "name": "Recovery Tools Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -50001,7 +50000,7 @@
       "city": "Naples"
     },
     {
-      "id": "ID-ROW-899",
+      "id": "ID-ROW-898",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -50065,7 +50064,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3421",
+      "id": "ID-ROW-3423",
       "name": "Let Them Be Group",
       "formatTags": [
         "Discussion",
@@ -50108,6 +50107,27 @@
       "city": "Tucson"
     },
     {
+      "id": "OLM989-330461-233780",
+      "name": "NA'maste Clean Group",
+      "formatTags": [
+        "Newcomer"
+      ],
+      "closed": "Open",
+      "day": 4,
+      "hour": 8,
+      "minute": 30,
+      "timezone": "US/Eastern",
+      "platform": "Zoom",
+      "joinUrl": "https://us02web.zoom.us/j/6572046389?pwd=just4today",
+      "rawLink": "",
+      "passcode": "just4today",
+      "hasEmbeddedPasscode": true,
+      "roomNumber": "657 204 6389",
+      "notes": "",
+      "state": "New Hampshire",
+      "city": "Plymouth"
+    },
+    {
       "id": "DLOLM219-323893-230761",
       "name": "No Matter What Online Group",
       "formatTags": [],
@@ -50148,7 +50168,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6525",
+      "id": "ID-ROW-6529",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -50188,7 +50208,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-547",
+      "id": "ID-ROW-546",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion",
@@ -50210,7 +50230,7 @@
       "city": "Lompoc"
     },
     {
-      "id": "ID-ROW-951",
+      "id": "ID-ROW-950",
       "name": "Easy Does it Group",
       "formatTags": [
         "Format Varies",
@@ -50651,7 +50671,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-1175",
+      "id": "ID-ROW-1174",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -50776,7 +50796,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1135",
+      "id": "ID-ROW-1134",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -50819,7 +50839,7 @@
       "city": "Queens"
     },
     {
-      "id": "ID-ROW-1356",
+      "id": "ID-ROW-1355",
       "name": "Grateful in Recovery Group",
       "formatTags": [
         "Format Varies"
@@ -51136,7 +51156,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5864",
+      "id": "ID-ROW-5868",
       "name": "Spirit of Unity (Chicago) Group",
       "formatTags": [
         "Format Varies",
@@ -51158,7 +51178,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-5877",
+      "id": "ID-ROW-5881",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -51207,7 +51227,7 @@
       "city": "Boston"
     },
     {
-      "id": "ID-ROW-6797",
+      "id": "ID-ROW-6801",
       "name": "We Still Need Help Group",
       "formatTags": [
         "Format Varies",
@@ -51313,7 +51333,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-523",
+      "id": "ID-ROW-522",
       "name": "Carrying the Message Group",
       "formatTags": [
         "Speaker"
@@ -51334,7 +51354,7 @@
       "city": "Martinsburg"
     },
     {
-      "id": "ID-ROW-669",
+      "id": "ID-ROW-668",
       "name": "Compassionate Recovery",
       "formatTags": [
         "Basic Text Study",
@@ -51440,7 +51460,7 @@
       "city": "Ferndale"
     },
     {
-      "id": "ID-ROW-6953",
+      "id": "ID-ROW-6957",
       "name": "Worldwide Step Study Group",
       "formatTags": [
         "Discussion",
@@ -51552,7 +51572,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-105",
+      "id": "ID-ROW-102",
       "name": "Agape Group",
       "formatTags": [
         "Discussion"
@@ -51659,7 +51679,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-540",
+      "id": "ID-ROW-539",
       "name": "Celebrate Today Group",
       "formatTags": [
         "Speaker"
@@ -51840,7 +51860,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-2699",
+      "id": "ID-ROW-2698",
       "name": "Hard Knocks Group",
       "formatTags": [
         "Discussion"
@@ -51949,7 +51969,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-2790",
+      "id": "ID-ROW-2791",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Just For Today Study"
@@ -52480,7 +52500,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-4864",
+      "id": "ID-ROW-4865",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -52675,7 +52695,7 @@
       "city": "Stamford"
     },
     {
-      "id": "ID-ROW-5906",
+      "id": "ID-ROW-5910",
       "name": "Spiritual Principal of the Day Group",
       "formatTags": [],
       "closed": "Closed",
@@ -52760,7 +52780,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6286",
+      "id": "ID-ROW-6290",
       "name": "Thursday Noon Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -52912,7 +52932,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-5236",
+      "id": "ID-ROW-5240",
       "name": "Recovery Can Happen Group",
       "formatTags": [
         "Basic Text Study",
@@ -52936,7 +52956,7 @@
       "city": "Islip Terrace"
     },
     {
-      "id": "ID-ROW-5742",
+      "id": "ID-ROW-5746",
       "name": "Silver Lining Group",
       "formatTags": [
         "Just For Today Study",
@@ -52981,7 +53001,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-2970",
+      "id": "ID-ROW-2969",
       "name": "I Qualify Group",
       "formatTags": [],
       "closed": "Open",
@@ -53040,7 +53060,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5625",
+      "id": "ID-ROW-5629",
       "name": "Secular QT's Group",
       "formatTags": [
         "Format Varies",
@@ -53104,7 +53124,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6982",
+      "id": "ID-ROW-6986",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -53230,7 +53250,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-5226",
+      "id": "ID-ROW-5227",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Candlelight",
@@ -53276,7 +53296,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6586",
+      "id": "ID-ROW-6590",
       "name": "Virtual Hope at Two Group",
       "formatTags": [
         "Newcomer"
@@ -53297,7 +53317,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-4698",
+      "id": "ID-ROW-4699",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -53323,7 +53343,7 @@
       "city": "Ponca City"
     },
     {
-      "id": "ID-ROW-6760",
+      "id": "ID-ROW-6767",
       "name": "We Do Recover Online Group",
       "formatTags": [
         "Discussion",
@@ -53346,7 +53366,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-382",
+      "id": "ID-ROW-381",
       "name": "Better Together Online Group",
       "formatTags": [
         "Discussion",
@@ -53368,7 +53388,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-2823",
+      "id": "ID-ROW-2822",
       "name": "Hope Not Dope (Louisville) Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -53474,7 +53494,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5131",
+      "id": "ID-ROW-5132",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -53539,7 +53559,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-5009",
+      "id": "ID-ROW-5012",
       "name": "Principles Before Personalities Group",
       "formatTags": [],
       "closed": "Closed",
@@ -53558,7 +53578,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-6221",
+      "id": "ID-ROW-6225",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -53624,7 +53644,7 @@
       "city": "Nashville"
     },
     {
-      "id": "ID-ROW-6230",
+      "id": "ID-ROW-6234",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -53666,7 +53686,7 @@
       "city": "New Haven"
     },
     {
-      "id": "ID-ROW-1095",
+      "id": "ID-ROW-1094",
       "name": "Five O'Clock Wind Down Group",
       "formatTags": [
         "Discussion"
@@ -53791,7 +53811,7 @@
       "city": "Harrisburg"
     },
     {
-      "id": "ID-ROW-5499",
+      "id": "ID-ROW-5502",
       "name": "Rush Hour Online Group",
       "formatTags": [
         "Living Clean Study"
@@ -53812,7 +53832,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6068",
+      "id": "ID-ROW-6072",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -53856,7 +53876,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-6898",
+      "id": "ID-ROW-6902",
       "name": "Women's Virtual Group",
       "formatTags": [
         "Newcomer",
@@ -53989,7 +54009,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-4372",
+      "id": "ID-ROW-4373",
       "name": "Never Alone Group",
       "formatTags": [
         "Discussion",
@@ -54200,7 +54220,7 @@
       "city": "Waukesha"
     },
     {
-      "id": "ID-ROW-380",
+      "id": "ID-ROW-379",
       "name": "Better Together Online Group",
       "formatTags": [
         "Just For Today Study",
@@ -54291,7 +54311,7 @@
       "city": "Fort Lauderdale"
     },
     {
-      "id": "ID-ROW-755",
+      "id": "ID-ROW-754",
       "name": "Dad's Place Group",
       "formatTags": [
         "Format Varies"
@@ -54334,7 +54354,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1277",
+      "id": "ID-ROW-1276",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -54425,7 +54445,7 @@
       "city": "Leominster"
     },
     {
-      "id": "ID-ROW-2906",
+      "id": "ID-ROW-2905",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -54575,7 +54595,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4198",
+      "id": "ID-ROW-4199",
       "name": "NA East Group",
       "formatTags": [],
       "closed": "Open",
@@ -54637,7 +54657,7 @@
       "city": "Winston-Salem"
     },
     {
-      "id": "ID-ROW-4478",
+      "id": "ID-ROW-4479",
       "name": "New Life Group",
       "formatTags": [
         "Basic Text Study",
@@ -54706,7 +54726,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4720",
+      "id": "ID-ROW-4721",
       "name": "NUTS Group",
       "formatTags": [
         "Speaker",
@@ -54749,7 +54769,7 @@
       "city": "Hollywood"
     },
     {
-      "id": "ID-ROW-4869",
+      "id": "ID-ROW-4870",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -54812,7 +54832,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-5088",
+      "id": "ID-ROW-5089",
       "name": "Quarantined California Group",
       "formatTags": [
         "Discussion",
@@ -54963,7 +54983,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5521",
+      "id": "ID-ROW-5524",
       "name": "San Diego Music Group",
       "formatTags": [
         "Speaker/Discussion",
@@ -55007,7 +55027,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-5801",
+      "id": "ID-ROW-5805",
       "name": "Somewhere I Belong Group",
       "formatTags": [
         "Step Working Guides Study"
@@ -55090,7 +55110,7 @@
       "city": "Santa Cruz"
     },
     {
-      "id": "ID-ROW-6241",
+      "id": "ID-ROW-6245",
       "name": "The Meditation Group",
       "formatTags": [
         "IP Study",
@@ -55135,7 +55155,7 @@
       "city": "Searcy"
     },
     {
-      "id": "ID-ROW-6311",
+      "id": "ID-ROW-6315",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -55194,7 +55214,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-6925",
+      "id": "ID-ROW-6929",
       "name": "Women in Recovery Group",
       "formatTags": [
         "Discussion",
@@ -55262,7 +55282,7 @@
       "city": "Anchorage"
     },
     {
-      "id": "ID-ROW-4792",
+      "id": "ID-ROW-4793",
       "name": "One to Another Group",
       "formatTags": [
         "Discussion"
@@ -55385,7 +55405,7 @@
       "city": "Greensboro"
     },
     {
-      "id": "ID-ROW-702",
+      "id": "ID-ROW-701",
       "name": "Convent Avenue Group",
       "formatTags": [
         "Format Varies"
@@ -55476,7 +55496,7 @@
       "city": "Kamuela"
     },
     {
-      "id": "ID-ROW-1053",
+      "id": "ID-ROW-1052",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -55638,7 +55658,7 @@
       "city": "Elizabeth"
     },
     {
-      "id": "ID-ROW-2968",
+      "id": "ID-ROW-2967",
       "name": "IP/Step Understanding Group",
       "formatTags": [
         "Step Study"
@@ -55939,7 +55959,7 @@
       "city": "Freeport"
     },
     {
-      "id": "ID-ROW-5017",
+      "id": "ID-ROW-5018",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -56007,7 +56027,7 @@
       "city": "Columbia"
     },
     {
-      "id": "ID-ROW-5330",
+      "id": "ID-ROW-5341",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -56047,7 +56067,7 @@
       "city": "Manhattan"
     },
     {
-      "id": "ID-ROW-5793",
+      "id": "ID-ROW-5797",
       "name": "Solution Seekers Group",
       "formatTags": [
         "Literature Study"
@@ -56218,7 +56238,7 @@
       "city": "Thomasville"
     },
     {
-      "id": "ID-ROW-6880",
+      "id": "ID-ROW-6884",
       "name": "Women's Group",
       "formatTags": [
         "Women"
@@ -56388,7 +56408,7 @@
       "city": "Burlington"
     },
     {
-      "id": "ID-ROW-257",
+      "id": "ID-ROW-254",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -56455,7 +56475,7 @@
       "city": "Sacramento"
     },
     {
-      "id": "ID-ROW-432",
+      "id": "ID-ROW-431",
       "name": "Bridges to Recovery Group",
       "formatTags": [
         "Basic Text Study",
@@ -56496,7 +56516,7 @@
       "city": "Clarkesville"
     },
     {
-      "id": "ID-ROW-605",
+      "id": "ID-ROW-604",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -56557,7 +56577,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-694",
+      "id": "ID-ROW-693",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Format Varies"
@@ -56790,7 +56810,7 @@
       "city": "Decatur"
     },
     {
-      "id": "ID-ROW-2810",
+      "id": "ID-ROW-2809",
       "name": "Hope in Claremont Group",
       "formatTags": [
         "Format Varies",
@@ -56897,7 +56917,7 @@
       "city": "Warminster"
     },
     {
-      "id": "ID-ROW-2881",
+      "id": "ID-ROW-2880",
       "name": "Hugs Not Drugs Group",
       "formatTags": [
         "Children Welcome",
@@ -57340,7 +57360,7 @@
       "city": "Springville"
     },
     {
-      "id": "ID-ROW-4366",
+      "id": "ID-ROW-4367",
       "name": "Never Alone Deaf Online Group",
       "formatTags": [
         "Literature Study"
@@ -57581,7 +57601,7 @@
       "city": "Cincinnati"
     },
     {
-      "id": "ID-ROW-5285",
+      "id": "ID-ROW-5286",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -57862,7 +57882,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5842",
+      "id": "ID-ROW-5846",
       "name": "Speaker Group",
       "formatTags": [
         "Newcomer"
@@ -57883,7 +57903,7 @@
       "city": "Annapolis"
     },
     {
-      "id": "ID-ROW-5896",
+      "id": "ID-ROW-5900",
       "name": "Spiritual Journey Women's NA Meeting",
       "formatTags": [
         "Women"
@@ -58065,7 +58085,7 @@
       "city": "Amarillo"
     },
     {
-      "id": "ID-ROW-6515",
+      "id": "ID-ROW-6519",
       "name": "Unspoken Truth Group",
       "formatTags": [
         "LGBTQ+"
@@ -58086,7 +58106,7 @@
       "city": "Jacksonville"
     },
     {
-      "id": "ID-ROW-6597",
+      "id": "ID-ROW-6601",
       "name": "Virtual Meeting Thursday Night Group",
       "formatTags": [],
       "closed": "Open",
@@ -58174,7 +58194,7 @@
       "city": "Prineville"
     },
     {
-      "id": "ID-ROW-6831",
+      "id": "ID-ROW-6835",
       "name": "Why Not Today",
       "formatTags": [
         "Basic Text Study",
@@ -58330,7 +58350,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-6970",
+      "id": "ID-ROW-6976",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Step/Tradition"
@@ -58351,7 +58371,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6975",
+      "id": "ID-ROW-6979",
       "name": "You're Worth Saving Group",
       "formatTags": [
         "Concepts Study",
@@ -58419,27 +58439,6 @@
       "city": "Atlanta"
     },
     {
-      "id": "OLM883-329049-232984",
-      "name": "Achin' for Recovery",
-      "formatTags": [
-        "Format Varies"
-      ],
-      "closed": "Open",
-      "day": 4,
-      "hour": 19,
-      "minute": 30,
-      "timezone": "US/Eastern",
-      "platform": "Zoom",
-      "joinUrl": "https://us02web.zoom.us/j/4731912126?pwd=12steps",
-      "rawLink": "",
-      "passcode": "12steps",
-      "hasEmbeddedPasscode": true,
-      "roomNumber": "473 191 2126",
-      "notes": "",
-      "state": "South Carolina",
-      "city": "Aiken"
-    },
-    {
       "id": "OLM896-329164-233008",
       "name": "Alive In Brooklyn",
       "formatTags": [
@@ -58503,7 +58502,7 @@
       "city": "Waterloo"
     },
     {
-      "id": "ID-ROW-558",
+      "id": "ID-ROW-557",
       "name": "Chairs to Squares Group",
       "formatTags": [
         "Discussion",
@@ -58616,7 +58615,7 @@
       "city": "Hightstown"
     },
     {
-      "id": "ID-ROW-2789",
+      "id": "ID-ROW-2790",
       "name": "Hope For The Hopeless Group",
       "formatTags": [
         "Literature Study",
@@ -58874,7 +58873,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4529",
+      "id": "ID-ROW-4530",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -59274,7 +59273,7 @@
       "city": "Ridley Park"
     },
     {
-      "id": "ID-ROW-6956",
+      "id": "ID-ROW-6960",
       "name": "Writing on the Steps Group",
       "formatTags": [
         "Step Study"
@@ -59318,7 +59317,7 @@
       "city": "Lawrenceville"
     },
     {
-      "id": "ID-ROW-263",
+      "id": "ID-ROW-260",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -59403,7 +59402,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-699",
+      "id": "ID-ROW-698",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Discussion",
@@ -59749,7 +59748,7 @@
       "city": "Honolulu"
     },
     {
-      "id": "ID-ROW-4434",
+      "id": "ID-ROW-4435",
       "name": "Newcomers Group",
       "formatTags": [
         "Discussion"
@@ -59770,7 +59769,7 @@
       "city": "Pilot Mountain"
     },
     {
-      "id": "ID-ROW-4500",
+      "id": "ID-ROW-4501",
       "name": "New Way of Life Group",
       "formatTags": [
         "Basic Text Study",
@@ -59838,7 +59837,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4974",
+      "id": "ID-ROW-4975",
       "name": "Power Greater Than Self Group",
       "formatTags": [
         "Basic Text Study",
@@ -59862,7 +59861,7 @@
       "city": "Louisville"
     },
     {
-      "id": "ID-ROW-5165",
+      "id": "ID-ROW-5166",
       "name": "Real Recovery Meeting",
       "formatTags": [
         "Just For Today Study",
@@ -59884,7 +59883,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5373",
+      "id": "ID-ROW-5376",
       "name": "Relationships in Recovery Group",
       "formatTags": [
         "Just For Today Study",
@@ -59989,7 +59988,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-6256",
+      "id": "ID-ROW-6260",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Guiding Principles Study"
@@ -60053,7 +60052,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-6398",
+      "id": "ID-ROW-6402",
       "name": "Trans Recovery Group",
       "formatTags": [
         "Format Varies",
@@ -60097,7 +60096,7 @@
       "city": "Portland"
     },
     {
-      "id": "ID-ROW-6810",
+      "id": "ID-ROW-6814",
       "name": "What's the 411 Group",
       "formatTags": [
         "Literature Study",
@@ -60141,7 +60140,7 @@
       "city": "Wilmington"
     },
     {
-      "id": "ID-ROW-5112",
+      "id": "ID-ROW-5113",
       "name": "Quarantine Your Addiction Group",
       "formatTags": [
         "Step Working Guides Study"
@@ -60162,7 +60161,7 @@
       "city": "Center Moriches"
     },
     {
-      "id": "ID-ROW-6786",
+      "id": "ID-ROW-6790",
       "name": "We Overcome Group",
       "formatTags": [],
       "closed": "Open",
@@ -60181,7 +60180,7 @@
       "city": "Ventura"
     },
     {
-      "id": "ID-ROW-6236",
+      "id": "ID-ROW-6240",
       "name": "The Masks Must Go Group",
       "formatTags": [
         "Format Varies",
@@ -60203,7 +60202,7 @@
       "city": "Tampa"
     },
     {
-      "id": "ID-ROW-2925",
+      "id": "ID-ROW-2924",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study"
@@ -60502,7 +60501,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5180",
+      "id": "ID-ROW-5181",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "IP Study"
@@ -60523,7 +60522,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-5231",
+      "id": "ID-ROW-5232",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -60584,7 +60583,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-6502",
+      "id": "ID-ROW-6506",
       "name": "Unity Through Uncertainty Group",
       "formatTags": [],
       "closed": "Closed",
@@ -60643,7 +60642,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1310",
+      "id": "ID-ROW-1309",
       "name": "God's Chose One Meeting",
       "formatTags": [
         "Topic"
@@ -60664,7 +60663,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4697",
+      "id": "ID-ROW-4698",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -60877,7 +60876,7 @@
       "city": "Mesa"
     },
     {
-      "id": "ID-ROW-6989",
+      "id": "ID-ROW-6993",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -61047,7 +61046,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2950",
+      "id": "ID-ROW-2949",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -61066,7 +61065,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4244",
+      "id": "ID-ROW-4242",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -61088,7 +61087,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6487",
+      "id": "ID-ROW-6488",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -61107,7 +61106,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-533",
+      "id": "ID-ROW-532",
       "name": "Catch Your Breath Group",
       "formatTags": [
         "Literature Study",
@@ -61167,7 +61166,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-2687",
+      "id": "ID-ROW-2686",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -61403,7 +61402,7 @@
       "city": "Madison"
     },
     {
-      "id": "ID-ROW-890",
+      "id": "ID-ROW-889",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -61614,7 +61613,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-3499",
+      "id": "ID-ROW-3500",
       "name": "Message of Hope Group",
       "formatTags": [
         "Living Clean Study",
@@ -61718,7 +61717,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5336",
+      "id": "ID-ROW-5333",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Newcomer",
@@ -61784,7 +61783,7 @@
       "city": "Toms River"
     },
     {
-      "id": "ID-ROW-5866",
+      "id": "ID-ROW-5870",
       "name": "Spirit of Unity (Chicago) Group",
       "formatTags": [
         "Discussion",
@@ -61806,7 +61805,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-5870",
+      "id": "ID-ROW-5874",
       "name": "Spiritual Awakening Group",
       "formatTags": [
         "Speaker"
@@ -62170,7 +62169,7 @@
       "city": "Lake Havasu City"
     },
     {
-      "id": "ID-ROW-5595",
+      "id": "ID-ROW-5599",
       "name": "Recovery Tools Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -62214,7 +62213,7 @@
       "city": "Naples"
     },
     {
-      "id": "ID-ROW-898",
+      "id": "ID-ROW-897",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -62297,7 +62296,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3428",
+      "id": "ID-ROW-3422",
       "name": "Let Them Be Group",
       "formatTags": [
         "Discussion",
@@ -62421,7 +62420,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6524",
+      "id": "ID-ROW-6528",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -62482,7 +62481,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-546",
+      "id": "ID-ROW-545",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion"
@@ -62503,7 +62502,7 @@
       "city": "Lompoc"
     },
     {
-      "id": "ID-ROW-950",
+      "id": "ID-ROW-949",
       "name": "Easy Does it Group",
       "formatTags": [
         "Format Varies",
@@ -62612,7 +62611,7 @@
       "city": "Sacramento"
     },
     {
-      "id": "ID-ROW-3002",
+      "id": "ID-ROW-3001",
       "name": "It's A We Program Group",
       "formatTags": [
         "Literature Study",
@@ -62825,7 +62824,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-4453",
+      "id": "ID-ROW-4454",
       "name": "New Direction Group",
       "formatTags": [
         "Newcomer"
@@ -62929,27 +62928,6 @@
       "city": "Long Beach"
     },
     {
-      "id": "DL00259413-325207-220139",
-      "name": "Addicts in the Attic Group",
-      "formatTags": [
-        "Discussion"
-      ],
-      "closed": "Open",
-      "day": 5,
-      "hour": 9,
-      "minute": 30,
-      "timezone": "US/Pacific",
-      "platform": "Zoom",
-      "joinUrl": "https://zoom.us/j/87096210567?pwd=987654",
-      "rawLink": "https://zoom.us/j/87096210567?pwd=987654",
-      "passcode": "987654",
-      "hasEmbeddedPasscode": true,
-      "roomNumber": "870 9621 0567",
-      "notes": "No court cards signed",
-      "state": "California",
-      "city": "Yucaipa"
-    },
-    {
       "id": "OLM557-326649-231791",
       "name": "A Spiritual Awakening",
       "formatTags": [],
@@ -62969,7 +62947,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-1177",
+      "id": "ID-ROW-1176",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -63176,7 +63154,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-1134",
+      "id": "ID-ROW-1133",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -63491,7 +63469,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5865",
+      "id": "ID-ROW-5869",
       "name": "Spirit of Unity (Chicago) Group",
       "formatTags": [
         "Discussion",
@@ -63514,7 +63492,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-5876",
+      "id": "ID-ROW-5880",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -63541,7 +63519,7 @@
       "city": "Indianapolis"
     },
     {
-      "id": "ID-ROW-6796",
+      "id": "ID-ROW-6800",
       "name": "We Still Need Help Group",
       "formatTags": [
         "Format Varies",
@@ -63650,7 +63628,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-522",
+      "id": "ID-ROW-521",
       "name": "Carrying the Message Group",
       "formatTags": [
         "Step Working Guides Study"
@@ -63796,7 +63774,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-107",
+      "id": "ID-ROW-104",
       "name": "Agape Group",
       "formatTags": [
         "Discussion"
@@ -63904,7 +63882,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-539",
+      "id": "ID-ROW-538",
       "name": "Celebrate Today Group",
       "formatTags": [
         "Speaker"
@@ -64700,7 +64678,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-4863",
+      "id": "ID-ROW-4864",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -64760,7 +64738,7 @@
       "city": "Charlotte"
     },
     {
-      "id": "ID-ROW-5084",
+      "id": "ID-ROW-5085",
       "name": "Quarantine Basics Group",
       "formatTags": [
         "Just For Today Study"
@@ -64998,7 +64976,7 @@
       "city": "Fond Du Lac"
     },
     {
-      "id": "ID-ROW-6727",
+      "id": "ID-ROW-6731",
       "name": "Wecovery Group",
       "formatTags": [],
       "closed": "Open",
@@ -65017,7 +64995,7 @@
       "city": "Topeka"
     },
     {
-      "id": "ID-ROW-6730",
+      "id": "ID-ROW-6734",
       "name": "Wecovery Group",
       "formatTags": [
         "Just For Today Study"
@@ -65059,7 +65037,7 @@
       "city": "New Brunswick"
     },
     {
-      "id": "ID-ROW-6964",
+      "id": "ID-ROW-6968",
       "name": "WTF Meeting",
       "formatTags": [
         "Discussion",
@@ -65190,7 +65168,7 @@
       "city": "Detroit"
     },
     {
-      "id": "ID-ROW-5235",
+      "id": "ID-ROW-5236",
       "name": "Recovery Can Happen Group",
       "formatTags": [
         "Basic Text Study",
@@ -65214,7 +65192,7 @@
       "city": "Islip Terrace"
     },
     {
-      "id": "ID-ROW-5741",
+      "id": "ID-ROW-5745",
       "name": "Silver Lining Group",
       "formatTags": [
         "Discussion",
@@ -65258,7 +65236,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-2969",
+      "id": "ID-ROW-2968",
       "name": "I Qualify Group",
       "formatTags": [],
       "closed": "Open",
@@ -65341,7 +65319,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6981",
+      "id": "ID-ROW-6985",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -65487,7 +65465,7 @@
       "city": "Ringoes"
     },
     {
-      "id": "ID-ROW-4696",
+      "id": "ID-ROW-4697",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -65513,7 +65491,7 @@
       "city": "Ponca City"
     },
     {
-      "id": "ID-ROW-5230",
+      "id": "ID-ROW-5231",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Candlelight",
@@ -65559,7 +65537,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6584",
+      "id": "ID-ROW-6588",
       "name": "Virtual Hope at Two Group",
       "formatTags": [
         "Newcomer"
@@ -65603,7 +65581,7 @@
       "city": "Daytona Beach"
     },
     {
-      "id": "ID-ROW-6759",
+      "id": "ID-ROW-6766",
       "name": "We Do Recover Online Group",
       "formatTags": [
         "Discussion",
@@ -65647,7 +65625,7 @@
       "city": "Asheville"
     },
     {
-      "id": "ID-ROW-2882",
+      "id": "ID-ROW-2881",
       "name": "Humboldt 2 Hawaii Group",
       "formatTags": [
         "Format Varies",
@@ -65761,7 +65739,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-6399",
+      "id": "ID-ROW-6403",
       "name": "Transworld: Global Recovery Group",
       "formatTags": [
         "Format Varies",
@@ -65804,7 +65782,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5130",
+      "id": "ID-ROW-5131",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -65846,7 +65824,7 @@
       "city": "Los Angeles"
     },
     {
-      "id": "ID-ROW-5008",
+      "id": "ID-ROW-5011",
       "name": "Principles Before Personalities Group",
       "formatTags": [],
       "closed": "Closed",
@@ -65865,7 +65843,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-6220",
+      "id": "ID-ROW-6224",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -65935,7 +65913,7 @@
       "city": "Los Gatos"
     },
     {
-      "id": "ID-ROW-6229",
+      "id": "ID-ROW-6233",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -65999,7 +65977,7 @@
       "city": "New Haven"
     },
     {
-      "id": "ID-ROW-179",
+      "id": "ID-ROW-176",
       "name": "All Nations SCOY Black Sheep Recovery Group",
       "formatTags": [
         "Hybrid Meeting"
@@ -66039,7 +66017,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-1094",
+      "id": "ID-ROW-1093",
       "name": "Five O'Clock Wind Down Group",
       "formatTags": [
         "Discussion"
@@ -66122,7 +66100,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-4520",
+      "id": "ID-ROW-4521",
       "name": "No Addict Left Behind Group",
       "formatTags": [
         "Hybrid Meeting",
@@ -66163,7 +66141,7 @@
       "city": "Detroit"
     },
     {
-      "id": "ID-ROW-5450",
+      "id": "ID-ROW-5453",
       "name": "Rise Up Group",
       "formatTags": [
         "Literature Study"
@@ -66184,7 +66162,7 @@
       "city": "Honolulu"
     },
     {
-      "id": "ID-ROW-5498",
+      "id": "ID-ROW-5501",
       "name": "Rush Hour Online Group",
       "formatTags": [
         "Discussion"
@@ -66205,7 +66183,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-5627",
+      "id": "ID-ROW-5631",
       "name": "Secular Speaker Group",
       "formatTags": [
         "Format Varies",
@@ -66227,7 +66205,7 @@
       "city": "Vista"
     },
     {
-      "id": "ID-ROW-5860",
+      "id": "ID-ROW-5864",
       "name": "Spirit Of Tradition Meeting",
       "formatTags": [],
       "closed": "Closed",
@@ -66246,7 +66224,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6067",
+      "id": "ID-ROW-6071",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -66397,7 +66375,7 @@
       "city": "Casa Grande"
     },
     {
-      "id": "ID-ROW-4371",
+      "id": "ID-ROW-4372",
       "name": "Never Alone Group",
       "formatTags": [
         "Discussion",
@@ -66587,7 +66565,7 @@
       "city": "San Francisco"
     },
     {
-      "id": "ID-ROW-374",
+      "id": "ID-ROW-373",
       "name": "Better Every Day Group",
       "formatTags": [
         "Format Varies",
@@ -66677,7 +66655,7 @@
       "city": "Fredericktown"
     },
     {
-      "id": "ID-ROW-713",
+      "id": "ID-ROW-712",
       "name": "Country Steppin Group",
       "formatTags": [
         "Format Varies",
@@ -66762,7 +66740,7 @@
       "city": "Selma"
     },
     {
-      "id": "ID-ROW-1221",
+      "id": "ID-ROW-1220",
       "name": "Friday Kokomo Virtual Group",
       "formatTags": [
         "Format Varies",
@@ -66807,7 +66785,7 @@
       "city": "Arlington"
     },
     {
-      "id": "ID-ROW-1276",
+      "id": "ID-ROW-1275",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -66852,7 +66830,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-2684",
+      "id": "ID-ROW-2683",
       "name": "Hana Group",
       "formatTags": [
         "Discussion",
@@ -66874,7 +66852,7 @@
       "city": "Hana"
     },
     {
-      "id": "ID-ROW-2719",
+      "id": "ID-ROW-2718",
       "name": "Heavy Dirty Souls Group",
       "formatTags": [],
       "closed": "Closed",
@@ -66893,7 +66871,7 @@
       "city": "Port Charlotte"
     },
     {
-      "id": "ID-ROW-2905",
+      "id": "ID-ROW-2904",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -67064,7 +67042,7 @@
       "city": "Las Vegas"
     },
     {
-      "id": "ID-ROW-4195",
+      "id": "ID-ROW-4196",
       "name": "NA East Group",
       "formatTags": [],
       "closed": "Open",
@@ -67123,7 +67101,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4769",
+      "id": "ID-ROW-4770",
       "name": "One is Too Many Group",
       "formatTags": [
         "Format Varies",
@@ -67147,7 +67125,7 @@
       "city": "Burney"
     },
     {
-      "id": "ID-ROW-4985",
+      "id": "ID-ROW-4986",
       "name": "Poz Group",
       "formatTags": [
         "Discussion",
@@ -67192,7 +67170,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-5087",
+      "id": "ID-ROW-5088",
       "name": "Quarantined California Group",
       "formatTags": [
         "Living Clean Study"
@@ -67297,7 +67275,7 @@
       "city": "Sunderland"
     },
     {
-      "id": "ID-ROW-5492",
+      "id": "ID-ROW-5495",
       "name": "Room for Growth Group",
       "formatTags": [],
       "closed": "Closed",
@@ -67316,7 +67294,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5800",
+      "id": "ID-ROW-5804",
       "name": "Somewhere I Belong Group",
       "formatTags": [
         "Format Varies",
@@ -67382,7 +67360,7 @@
       "city": "Santa Cruz"
     },
     {
-      "id": "ID-ROW-6314",
+      "id": "ID-ROW-6318",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -67425,7 +67403,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6605",
+      "id": "ID-ROW-6609",
       "name": "Vision of Hope",
       "formatTags": [
         "Discussion",
@@ -67590,7 +67568,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-1001",
+      "id": "ID-ROW-1000",
       "name": "Elevator is Broken Group",
       "formatTags": [
         "Discussion",
@@ -67612,7 +67590,7 @@
       "city": "Frankfort"
     },
     {
-      "id": "ID-ROW-1052",
+      "id": "ID-ROW-1051",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -67824,7 +67802,7 @@
       "city": "Conway"
     },
     {
-      "id": "ID-ROW-5014",
+      "id": "ID-ROW-5015",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -67868,7 +67846,7 @@
       "city": "Jersey City"
     },
     {
-      "id": "ID-ROW-5342",
+      "id": "ID-ROW-5339",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -67927,7 +67905,7 @@
       "city": "Waterloo"
     },
     {
-      "id": "ID-ROW-5792",
+      "id": "ID-ROW-5796",
       "name": "Solution Seekers Group",
       "formatTags": [],
       "closed": "Open",
@@ -67990,7 +67968,7 @@
       "city": "Fairmont"
     },
     {
-      "id": "ID-ROW-6499",
+      "id": "ID-ROW-6503",
       "name": "Unity is a Must Group",
       "formatTags": [
         "Women"
@@ -68184,7 +68162,7 @@
       "city": "Ellsworth"
     },
     {
-      "id": "ID-ROW-256",
+      "id": "ID-ROW-253",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -68207,7 +68185,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-604",
+      "id": "ID-ROW-603",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -68226,7 +68204,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-693",
+      "id": "ID-ROW-692",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Format Varies"
@@ -68531,7 +68509,7 @@
       "city": "Charleston"
     },
     {
-      "id": "ID-ROW-1357",
+      "id": "ID-ROW-1356",
       "name": "Grateful in Recovery Group",
       "formatTags": [
         "Format Varies"
@@ -69016,7 +68994,7 @@
       "city": "Dallas"
     },
     {
-      "id": "ID-ROW-4672",
+      "id": "ID-ROW-4673",
       "name": "Northside LGBTQ+ Group",
       "formatTags": [
         "LGBTQ+"
@@ -69230,7 +69208,7 @@
       "city": "Charlotte"
     },
     {
-      "id": "ID-ROW-5284",
+      "id": "ID-ROW-5285",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -69401,7 +69379,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5841",
+      "id": "ID-ROW-5845",
       "name": "Speaker Group",
       "formatTags": [
         "Newcomer"
@@ -69546,7 +69524,7 @@
       "city": "New Brunswick"
     },
     {
-      "id": "ID-ROW-6367",
+      "id": "ID-ROW-6371",
       "name": "Together We Stand Group",
       "formatTags": [
         "Basic Text Study"
@@ -69653,7 +69631,7 @@
       "city": "Philadelphia"
     },
     {
-      "id": "ID-ROW-6769",
+      "id": "ID-ROW-6773",
       "name": "We Fight as One Group",
       "formatTags": [
         "Speaker/Discussion",
@@ -69675,7 +69653,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6824",
+      "id": "ID-ROW-6828",
       "name": "Where You Are At Group",
       "formatTags": [
         "Step Study"
@@ -69765,7 +69743,7 @@
       "city": "Berkeley"
     },
     {
-      "id": "ID-ROW-6931",
+      "id": "ID-ROW-6935",
       "name": "Women of Woodbridge Group (WOW)",
       "formatTags": [
         "Format Varies",
@@ -69828,7 +69806,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-6969",
+      "id": "ID-ROW-6975",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Living Clean Study"
@@ -69894,7 +69872,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6787",
+      "id": "ID-ROW-6791",
       "name": "We Overcome Group",
       "formatTags": [],
       "closed": "Open",
@@ -70260,7 +70238,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4534",
+      "id": "ID-ROW-4535",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -70395,7 +70373,7 @@
       "city": "Rosemead"
     },
     {
-      "id": "ID-ROW-6275",
+      "id": "ID-ROW-6279",
       "name": "The Virtual Place to Be Group",
       "formatTags": [
         "Format Varies",
@@ -70484,7 +70462,7 @@
       "city": "Houston"
     },
     {
-      "id": "ID-ROW-262",
+      "id": "ID-ROW-259",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -70546,7 +70524,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-587",
+      "id": "ID-ROW-586",
       "name": "Circle of Hope Group",
       "formatTags": [
         "Format Varies",
@@ -70610,7 +70588,7 @@
       "city": "Bel Air"
     },
     {
-      "id": "ID-ROW-698",
+      "id": "ID-ROW-697",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Discussion",
@@ -70943,7 +70921,7 @@
       "city": "Queens"
     },
     {
-      "id": "ID-ROW-3426",
+      "id": "ID-ROW-3428",
       "name": "Let Them Be Group",
       "formatTags": [
         "Closed On Holidays",
@@ -71094,7 +71072,7 @@
       "city": "Kahlua"
     },
     {
-      "id": "ID-ROW-4433",
+      "id": "ID-ROW-4434",
       "name": "Newcomers Group",
       "formatTags": [
         "Topic"
@@ -71179,7 +71157,7 @@
       "city": "Oakdale"
     },
     {
-      "id": "ID-ROW-4763",
+      "id": "ID-ROW-4764",
       "name": "One Day at a Time Group",
       "formatTags": [
         "Just For Today Study",
@@ -71267,7 +71245,7 @@
       "city": "Crystal River"
     },
     {
-      "id": "ID-ROW-5703",
+      "id": "ID-ROW-5707",
       "name": "She's Breaking the Chains",
       "formatTags": [
         "Discussion",
@@ -71312,7 +71290,7 @@
       "city": "Pearl River"
     },
     {
-      "id": "ID-ROW-5901",
+      "id": "ID-ROW-5905",
       "name": "Spiritually Refreshed Meeting",
       "formatTags": [
         "It Works Study",
@@ -71379,7 +71357,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-6255",
+      "id": "ID-ROW-6259",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Format Varies"
@@ -71400,7 +71378,7 @@
       "city": "Tyler"
     },
     {
-      "id": "ID-ROW-6401",
+      "id": "ID-ROW-6405",
       "name": "Triple Twelve Group",
       "formatTags": [
         "Concepts Study",
@@ -71490,7 +71468,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-5111",
+      "id": "ID-ROW-5112",
       "name": "Quarantine Your Addiction Group",
       "formatTags": [
         "Just For Today Study"
@@ -71577,7 +71555,7 @@
       "city": "Sacramento"
     },
     {
-      "id": "ID-ROW-2924",
+      "id": "ID-ROW-2923",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study"
@@ -71811,7 +71789,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5177",
+      "id": "ID-ROW-5178",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "Step Working Guides Study"
@@ -71832,7 +71810,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-5212",
+      "id": "ID-ROW-5213",
       "name": "Recovery After Dark Group",
       "formatTags": [],
       "closed": "Closed",
@@ -71933,7 +71911,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1309",
+      "id": "ID-ROW-1308",
       "name": "God's Chose One Meeting",
       "formatTags": [
         "Topic"
@@ -72225,7 +72203,7 @@
       "city": "Everett"
     },
     {
-      "id": "ID-ROW-6988",
+      "id": "ID-ROW-6992",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -72418,7 +72396,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-4514",
+      "id": "ID-ROW-4515",
       "name": "NY Night Owls Group",
       "formatTags": [
         "Topic"
@@ -72460,7 +72438,7 @@
       "city": "Tom Rivers"
     },
     {
-      "id": "ID-ROW-6276",
+      "id": "ID-ROW-6280",
       "name": "The With Group",
       "formatTags": [],
       "closed": "Closed",
@@ -72500,7 +72478,7 @@
       "city": "Tom Rivers"
     },
     {
-      "id": "ID-ROW-6276",
+      "id": "ID-ROW-6280",
       "name": "The With Group",
       "formatTags": [],
       "closed": "Closed",
@@ -72540,7 +72518,7 @@
       "city": "Lewisville"
     },
     {
-      "id": "ID-ROW-2949",
+      "id": "ID-ROW-2948",
       "name": "International Online Marathon Meeting",
       "formatTags": [],
       "closed": "Open",
@@ -72559,7 +72537,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4243",
+      "id": "ID-ROW-4241",
       "name": "NAmeless Group",
       "formatTags": [
         "Format Varies",
@@ -72581,7 +72559,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6488",
+      "id": "ID-ROW-6489",
       "name": "Unity in Action Group",
       "formatTags": [],
       "closed": "Closed",
@@ -72619,7 +72597,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-6238",
+      "id": "ID-ROW-6242",
       "name": "The Meditation Group",
       "formatTags": [
         "Just For Today Study",
@@ -72708,7 +72686,7 @@
       "city": "Lawrence"
     },
     {
-      "id": "ID-ROW-733",
+      "id": "ID-ROW-732",
       "name": "Creative Solutions Meeting",
       "formatTags": [
         "Discussion",
@@ -72750,7 +72728,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-889",
+      "id": "ID-ROW-888",
       "name": "Early Birds Recovery Group",
       "formatTags": [
         "Newcomer"
@@ -72838,7 +72816,7 @@
       "city": "Missoula"
     },
     {
-      "id": "ID-ROW-2686",
+      "id": "ID-ROW-2685",
       "name": "Hanahou Group",
       "formatTags": [
         "Format Varies",
@@ -72945,7 +72923,7 @@
       "city": "New Orleans"
     },
     {
-      "id": "ID-ROW-3502",
+      "id": "ID-ROW-3499",
       "name": "Message of Hope Group",
       "formatTags": [
         "Literature Study",
@@ -73072,7 +73050,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5335",
+      "id": "ID-ROW-5332",
       "name": "Recovery Warriors Group",
       "formatTags": [
         "Newcomer",
@@ -73181,7 +73159,7 @@
       "city": "Toms River"
     },
     {
-      "id": "ID-ROW-5869",
+      "id": "ID-ROW-5873",
       "name": "Spiritual Awakening Group",
       "formatTags": [
         "Spiritual Principle a Day Study"
@@ -73721,7 +73699,7 @@
       "city": "Indianapolis"
     },
     {
-      "id": "ID-ROW-897",
+      "id": "ID-ROW-896",
       "name": "Early Just for Today Check",
       "formatTags": [
         "Just For Today Study"
@@ -73787,7 +73765,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3427",
+      "id": "ID-ROW-3421",
       "name": "Let Them Be Group",
       "formatTags": [
         "Discussion",
@@ -73894,7 +73872,7 @@
       "city": "Hampstead"
     },
     {
-      "id": "ID-ROW-6523",
+      "id": "ID-ROW-6527",
       "name": "Upstate NY Morning Wake Up Group",
       "formatTags": [],
       "closed": "Closed",
@@ -73913,7 +73891,7 @@
       "city": "Schenectady"
     },
     {
-      "id": "ID-ROW-548",
+      "id": "ID-ROW-547",
       "name": "Central Coast Breakfast Club",
       "formatTags": [
         "Discussion",
@@ -74068,7 +74046,7 @@
       "city": "Deland"
     },
     {
-      "id": "ID-ROW-3001",
+      "id": "ID-ROW-3000",
       "name": "It's A We Program Group",
       "formatTags": [
         "Speaker"
@@ -74261,7 +74239,7 @@
       "city": "Plymouth"
     },
     {
-      "id": "ID-ROW-4695",
+      "id": "ID-ROW-4696",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -74330,7 +74308,7 @@
       "city": "Philadelphia"
     },
     {
-      "id": "ID-ROW-5490",
+      "id": "ID-ROW-5493",
       "name": "Roll Up Your Sleeves Group",
       "formatTags": [
         "Concepts Study",
@@ -74506,27 +74484,6 @@
       "city": "Napa"
     },
     {
-      "id": "DL00259413-325208-220139",
-      "name": "Addicts in the Attic Group",
-      "formatTags": [
-        "Discussion"
-      ],
-      "closed": "Open",
-      "day": 6,
-      "hour": 9,
-      "minute": 30,
-      "timezone": "US/Pacific",
-      "platform": "Zoom",
-      "joinUrl": "https://zoom.us/j/87096210567?pwd=987654",
-      "rawLink": "https://zoom.us/j/87096210567?pwd=987654",
-      "passcode": "987654",
-      "hasEmbeddedPasscode": true,
-      "roomNumber": "870 9621 0567",
-      "notes": "No court cards signed",
-      "state": "California",
-      "city": "Yucaipa"
-    },
-    {
       "id": "OLM557-333534-231791",
       "name": "A Spiritual Awakening",
       "formatTags": [],
@@ -74590,7 +74547,7 @@
       "city": "Napa"
     },
     {
-      "id": "ID-ROW-1174",
+      "id": "ID-ROW-1173",
       "name": "Freedom Through Unity Meeting",
       "formatTags": [
         "Just For Today Study"
@@ -74611,7 +74568,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-3051",
+      "id": "ID-ROW-3050",
       "name": "JFT Park Group",
       "formatTags": [
         "Children Welcome",
@@ -74768,7 +74725,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-5550",
+      "id": "ID-ROW-5553",
       "name": "Saturday Moring Wake",
       "formatTags": [
         "Basic Text Study",
@@ -74973,7 +74930,7 @@
       "city": "Columbus"
     },
     {
-      "id": "ID-ROW-1101",
+      "id": "ID-ROW-1100",
       "name": "Flipside Recovery Group",
       "formatTags": [
         "Discussion",
@@ -74995,7 +74952,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-1133",
+      "id": "ID-ROW-1132",
       "name": "Freedom Fighters Group",
       "formatTags": [],
       "closed": "Open",
@@ -75039,7 +74996,7 @@
       "city": "North Fort Myers"
     },
     {
-      "id": "ID-ROW-2672",
+      "id": "ID-ROW-2671",
       "name": "Guiding Principles Literature Study Group",
       "formatTags": [
         "Literature Study"
@@ -75524,7 +75481,7 @@
       "city": "Wilmington"
     },
     {
-      "id": "ID-ROW-5548",
+      "id": "ID-ROW-5551",
       "name": "Saturday Men's Stag Virtual Group",
       "formatTags": [
         "Discussion",
@@ -75698,7 +75655,7 @@
       "city": "Fort Myers"
     },
     {
-      "id": "ID-ROW-5875",
+      "id": "ID-ROW-5879",
       "name": "Spiritual Awakenings Group",
       "formatTags": [
         "Discussion",
@@ -75725,7 +75682,7 @@
       "city": "Indianapolis"
     },
     {
-      "id": "ID-ROW-6025",
+      "id": "ID-ROW-6029",
       "name": "Stepping Up Group",
       "formatTags": [
         "Discussion",
@@ -76300,7 +76257,7 @@
       "city": "San Francisco"
     },
     {
-      "id": "ID-ROW-521",
+      "id": "ID-ROW-520",
       "name": "Carrying the Message Group",
       "formatTags": [
         "Discussion"
@@ -76321,7 +76278,7 @@
       "city": "Martinsburg"
     },
     {
-      "id": "ID-ROW-668",
+      "id": "ID-ROW-667",
       "name": "Compassionate Recovery",
       "formatTags": [
         "Basic Text Study",
@@ -76408,7 +76365,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-3024",
+      "id": "ID-ROW-3023",
       "name": "It Works How & Why Group",
       "formatTags": [
         "It Works Study"
@@ -76429,7 +76386,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-3076",
+      "id": "ID-ROW-3075",
       "name": "Just 4 Chicks Group",
       "formatTags": [
         "Women"
@@ -76538,7 +76495,7 @@
       "city": "Pawling"
     },
     {
-      "id": "ID-ROW-5557",
+      "id": "ID-ROW-5560",
       "name": "Saturday Morning Recovery Group",
       "formatTags": [],
       "closed": "Closed",
@@ -76597,7 +76554,7 @@
       "city": "Gaithersburg"
     },
     {
-      "id": "ID-ROW-6466",
+      "id": "ID-ROW-6470",
       "name": "United Twisted Sisters Group",
       "formatTags": [
         "Women"
@@ -76776,7 +76733,7 @@
       "city": "Mocksville"
     },
     {
-      "id": "ID-ROW-126",
+      "id": "ID-ROW-123",
       "name": "Alcohol is a Drug Group",
       "formatTags": [
         "Discussion",
@@ -76952,7 +76909,7 @@
       "city": "Lexington"
     },
     {
-      "id": "ID-ROW-726",
+      "id": "ID-ROW-725",
       "name": "Courage To Change Group",
       "formatTags": [
         "Discussion",
@@ -77034,7 +76991,7 @@
       "city": "Richardson"
     },
     {
-      "id": "ID-ROW-1155",
+      "id": "ID-ROW-1154",
       "name": "Freedom Group",
       "formatTags": [
         "Discussion"
@@ -77476,7 +77433,7 @@
       "city": "Atlanta"
     },
     {
-      "id": "ID-ROW-4862",
+      "id": "ID-ROW-4863",
       "name": "Our Primary Purpose Group",
       "formatTags": [],
       "closed": "Open",
@@ -77841,7 +77798,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6895",
+      "id": "ID-ROW-6899",
       "name": "Women's Secular Recovery Group",
       "formatTags": [
         "Format Varies",
@@ -77929,7 +77886,7 @@
       "city": "South Miami"
     },
     {
-      "id": "ID-ROW-5740",
+      "id": "ID-ROW-5744",
       "name": "Silver Lining Group",
       "formatTags": [
         "Just For Today Study",
@@ -78056,7 +78013,7 @@
       "city": "Brooklyn"
     },
     {
-      "id": "ID-ROW-5382",
+      "id": "ID-ROW-5385",
       "name": "Renegades of NA Group",
       "formatTags": [
         "Topic/Discussion"
@@ -78077,7 +78034,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5453",
+      "id": "ID-ROW-5456",
       "name": "Rise Up Group",
       "formatTags": [
         "Literature Study"
@@ -78098,7 +78055,7 @@
       "city": "Honolulu"
     },
     {
-      "id": "ID-ROW-5848",
+      "id": "ID-ROW-5852",
       "name": "Spectrum of Recovery Group",
       "formatTags": [],
       "closed": "Closed",
@@ -78117,7 +78074,7 @@
       "city": "Davie"
     },
     {
-      "id": "ID-ROW-6980",
+      "id": "ID-ROW-6984",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
@@ -78138,7 +78095,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-109",
+      "id": "ID-ROW-106",
       "name": "Agape Group",
       "formatTags": [
         "Discussion",
@@ -78326,7 +78283,7 @@
       "city": "Newburgh"
     },
     {
-      "id": "ID-ROW-4694",
+      "id": "ID-ROW-4695",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -78352,7 +78309,7 @@
       "city": "Ponca City"
     },
     {
-      "id": "ID-ROW-5224",
+      "id": "ID-ROW-5225",
       "name": "Recovery At Work Online Meeting",
       "formatTags": [
         "Candlelight",
@@ -78436,7 +78393,7 @@
       "city": "Tampa"
     },
     {
-      "id": "ID-ROW-5343",
+      "id": "ID-ROW-5346",
       "name": "Recovery with Intention Group",
       "formatTags": [
         "Format Varies"
@@ -78457,7 +78414,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6758",
+      "id": "ID-ROW-6765",
       "name": "We Do Recover Online Group",
       "formatTags": [
         "Discussion",
@@ -78588,7 +78545,7 @@
       "city": "North Hollywood"
     },
     {
-      "id": "ID-ROW-6400",
+      "id": "ID-ROW-6404",
       "name": "Transworld: Global Recovery Group",
       "formatTags": [],
       "closed": "Open",
@@ -78607,7 +78564,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5134",
+      "id": "ID-ROW-5135",
       "name": "Rainbow Rocket Recovery Group",
       "formatTags": [
         "LGBTQ+",
@@ -78698,7 +78655,7 @@
       "city": "Albuquerque"
     },
     {
-      "id": "ID-ROW-6219",
+      "id": "ID-ROW-6223",
       "name": "The Last Stop Group",
       "formatTags": [
         "Discussion",
@@ -78724,7 +78681,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-6423",
+      "id": "ID-ROW-6427",
       "name": "Turn It Over VR Group",
       "formatTags": [],
       "closed": "Closed",
@@ -78765,7 +78722,28 @@
       "city": "Saint Louis"
     },
     {
-      "id": "ID-ROW-6228",
+      "id": "G00237177-279992-189555",
+      "name": "Recovery Room Group",
+      "formatTags": [
+        "Hybrid Meeting"
+      ],
+      "closed": "Open",
+      "day": 6,
+      "hour": 16,
+      "minute": 30,
+      "timezone": "US/Eastern",
+      "platform": "Zoom",
+      "joinUrl": "https://us02web.zoom.us/j/116165661?pwd=Q1NiQjFaQVQzTmhoSktLM3lpTS9JUT09",
+      "rawLink": "https://us02web.zoom.us/j/116165661?pwd=Q1NiQjFaQVQzTmhoSktLM3lpTS9JUT09",
+      "passcode": "Pass",
+      "hasEmbeddedPasscode": true,
+      "roomNumber": "116 165 661",
+      "notes": "",
+      "state": "New York",
+      "city": "Queens"
+    },
+    {
+      "id": "ID-ROW-6232",
       "name": "The Lie is Dead Group",
       "formatTags": [
         "Format Varies"
@@ -78848,7 +78826,7 @@
       "city": "Riverside"
     },
     {
-      "id": "ID-ROW-1093",
+      "id": "ID-ROW-1092",
       "name": "Five O'Clock Wind Down Group",
       "formatTags": [
         "Discussion"
@@ -78931,7 +78909,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-4693",
+      "id": "ID-ROW-4694",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -78976,7 +78954,7 @@
       "city": "Detroit"
     },
     {
-      "id": "ID-ROW-5244",
+      "id": "ID-ROW-5245",
       "name": "Recovery Comes First Virtual Women's Meeting",
       "formatTags": [
         "Women"
@@ -78997,7 +78975,7 @@
       "city": "Brookkyn"
     },
     {
-      "id": "ID-ROW-6066",
+      "id": "ID-ROW-6070",
       "name": "Straight Outta Chaos Group",
       "formatTags": [
         "Discussion",
@@ -79210,7 +79188,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-379",
+      "id": "ID-ROW-378",
       "name": "Better Together Online Group",
       "formatTags": [
         "Just For Today Study",
@@ -79278,7 +79256,7 @@
       "city": "Fort Lauderdale"
     },
     {
-      "id": "ID-ROW-772",
+      "id": "ID-ROW-771",
       "name": "Daily Reprieve Group",
       "formatTags": [
         "Topic"
@@ -79321,7 +79299,7 @@
       "city": "Morgantown"
     },
     {
-      "id": "ID-ROW-1275",
+      "id": "ID-ROW-1274",
       "name": "Get Ya Some NA Love Group",
       "formatTags": [
         "Format Varies",
@@ -79388,7 +79366,7 @@
       "city": "Hartford"
     },
     {
-      "id": "ID-ROW-2904",
+      "id": "ID-ROW-2903",
       "name": "If You Still Feel Like You Don't Belong Group",
       "formatTags": [],
       "closed": "Closed",
@@ -79814,7 +79792,7 @@
       "city": "Dover"
     },
     {
-      "id": "ID-ROW-5799",
+      "id": "ID-ROW-5803",
       "name": "Somewhere I Belong Group",
       "formatTags": [
         "Speaker"
@@ -79894,7 +79872,7 @@
       "city": "East Orange"
     },
     {
-      "id": "ID-ROW-6240",
+      "id": "ID-ROW-6244",
       "name": "The Meditation Group",
       "formatTags": [
         "IP Study",
@@ -79939,7 +79917,7 @@
       "city": "Searcy"
     },
     {
-      "id": "ID-ROW-6310",
+      "id": "ID-ROW-6314",
       "name": "Today You Never Have to Use Again Group",
       "formatTags": [
         "Format Varies"
@@ -80107,7 +80085,7 @@
       "city": "Costa Mesa"
     },
     {
-      "id": "ID-ROW-1051",
+      "id": "ID-ROW-1050",
       "name": "WTF Walk Thru Fear Group",
       "formatTags": [
         "Discussion",
@@ -80255,7 +80233,7 @@
       "city": "Oro Valley"
     },
     {
-      "id": "ID-ROW-5016",
+      "id": "ID-ROW-5017",
       "name": "Principles to Freedom",
       "formatTags": [
         "Discussion",
@@ -80277,7 +80255,7 @@
       "city": "Denver"
     },
     {
-      "id": "ID-ROW-5329",
+      "id": "ID-ROW-5340",
       "name": "Recovery Warriors Group",
       "formatTags": [],
       "closed": "Closed",
@@ -80318,7 +80296,7 @@
       "city": "Delray Beach"
     },
     {
-      "id": "ID-ROW-5791",
+      "id": "ID-ROW-5795",
       "name": "Solution Seekers Group",
       "formatTags": [],
       "closed": "Open",
@@ -80379,7 +80357,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-6408",
+      "id": "ID-ROW-6412",
       "name": "Trust the Process Group",
       "formatTags": [
         "Format Varies",
@@ -80465,7 +80443,7 @@
       "city": "Washington"
     },
     {
-      "id": "ID-ROW-255",
+      "id": "ID-ROW-252",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Discussion",
@@ -80511,7 +80489,7 @@
       "city": "Joppa"
     },
     {
-      "id": "ID-ROW-603",
+      "id": "ID-ROW-602",
       "name": "Clean & Serene Group",
       "formatTags": [],
       "closed": "Open",
@@ -80530,7 +80508,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-692",
+      "id": "ID-ROW-691",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Format Varies"
@@ -80551,7 +80529,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-773",
+      "id": "ID-ROW-772",
       "name": "Daily Struggle 931 Group",
       "formatTags": [],
       "closed": "Closed",
@@ -80679,7 +80657,7 @@
       "city": "Charleroi"
     },
     {
-      "id": "ID-ROW-2367",
+      "id": "ID-ROW-2366",
       "name": "Grupo Solo no Puedo per Juntas Si",
       "formatTags": [],
       "closed": "Closed",
@@ -80865,7 +80843,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-4216",
+      "id": "ID-ROW-4217",
       "name": "NA in PJ's Group",
       "formatTags": [
         "Discussion",
@@ -80889,7 +80867,7 @@
       "city": "San Diego"
     },
     {
-      "id": "ID-ROW-4365",
+      "id": "ID-ROW-4366",
       "name": "Never Alone Deaf Online Group",
       "formatTags": [
         "Discussion",
@@ -80997,7 +80975,7 @@
       "city": "Mesa"
     },
     {
-      "id": "ID-ROW-5283",
+      "id": "ID-ROW-5284",
       "name": "Recovery is Possible Group",
       "formatTags": [
         "Format Varies"
@@ -81018,7 +80996,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5302",
+      "id": "ID-ROW-5304",
       "name": "Recovery Nation Group",
       "formatTags": [
         "Discussion",
@@ -81123,7 +81101,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-5542",
+      "id": "ID-ROW-5545",
       "name": "Saturday at Swatara Group",
       "formatTags": [
         "Discussion"
@@ -81277,7 +81255,7 @@
       "city": "Seattle"
     },
     {
-      "id": "ID-ROW-5583",
+      "id": "ID-ROW-5587",
       "name": "Saturday Speaker Group",
       "formatTags": [
         "Speaker/Discussion"
@@ -81364,7 +81342,7 @@
       "city": "Sonoma"
     },
     {
-      "id": "ID-ROW-5846",
+      "id": "ID-ROW-5850",
       "name": "Speaker Group",
       "formatTags": [
         "Newcomer"
@@ -81492,7 +81470,7 @@
       "city": "Monroe"
     },
     {
-      "id": "ID-ROW-6823",
+      "id": "ID-ROW-6827",
       "name": "Where You Are At Group",
       "formatTags": [
         "Step Study"
@@ -81577,7 +81555,7 @@
       "city": "Madison"
     },
     {
-      "id": "ID-ROW-6968",
+      "id": "ID-ROW-6974",
       "name": "Yellow Submarine Group",
       "formatTags": [
         "Topic"
@@ -81644,7 +81622,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-6789",
+      "id": "ID-ROW-6793",
       "name": "We Overcome Group",
       "formatTags": [],
       "closed": "Open",
@@ -81791,7 +81769,7 @@
       "city": "Toms River"
     },
     {
-      "id": "ID-ROW-2644",
+      "id": "ID-ROW-2643",
       "name": "Grupo Vivir Limpios",
       "formatTags": [
         "Hybrid Meeting",
@@ -81937,7 +81915,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-4528",
+      "id": "ID-ROW-4529",
       "name": "No Matter What/Intimate Connection Group",
       "formatTags": [],
       "closed": "Open",
@@ -82059,7 +82037,7 @@
       "city": "Vidalia"
     },
     {
-      "id": "ID-ROW-6391",
+      "id": "ID-ROW-6395",
       "name": "Transformative Recovery Group",
       "formatTags": [
         "Format Varies",
@@ -82082,7 +82060,7 @@
       "city": "Chicago"
     },
     {
-      "id": "ID-ROW-6435",
+      "id": "ID-ROW-6439",
       "name": "Twelve Steps to Freedom Group",
       "formatTags": [
         "Basic Text Study",
@@ -82149,7 +82127,7 @@
       "city": "Westbury"
     },
     {
-      "id": "ID-ROW-7013",
+      "id": "ID-ROW-7017",
       "name": "Zoom Miracles Group",
       "formatTags": [],
       "closed": "Closed",
@@ -82210,7 +82188,7 @@
       "city": "Philadelphia"
     },
     {
-      "id": "ID-ROW-261",
+      "id": "ID-ROW-258",
       "name": "Atmosphere of Wecovery Group",
       "formatTags": [
         "Format Varies"
@@ -82341,7 +82319,7 @@
       "city": ""
     },
     {
-      "id": "ID-ROW-697",
+      "id": "ID-ROW-696",
       "name": "Conscious Contact Group",
       "formatTags": [
         "Speaker"
@@ -82569,7 +82547,7 @@
       "city": "Buffalo"
     },
     {
-      "id": "ID-ROW-2900",
+      "id": "ID-ROW-2899",
       "name": "I Can't We Can Group",
       "formatTags": [
         "Discussion",
@@ -82682,7 +82660,7 @@
       "city": "Charlotte"
     },
     {
-      "id": "ID-ROW-4527",
+      "id": "ID-ROW-4528",
       "name": "No Matter What",
       "formatTags": [
         "Newcomer"
@@ -82724,7 +82702,7 @@
       "city": "Tampa"
     },
     {
-      "id": "ID-ROW-4573",
+      "id": "ID-ROW-4574",
       "name": "No Matter What Online Group",
       "formatTags": [],
       "closed": "Closed",
@@ -83050,7 +83028,7 @@
       "city": "Baltimore"
     },
     {
-      "id": "ID-ROW-6254",
+      "id": "ID-ROW-6258",
       "name": "There Seems To Be This Alternative",
       "formatTags": [
         "Topic"
@@ -83093,7 +83071,7 @@
       "city": "Sacramento"
     },
     {
-      "id": "ID-ROW-2923",
+      "id": "ID-ROW-2922",
       "name": "In Spirit",
       "formatTags": [
         "Literature Study"
@@ -83287,7 +83265,7 @@
       "city": "Sarasota"
     },
     {
-      "id": "ID-ROW-4692",
+      "id": "ID-ROW-4693",
       "name": "Nothin Changes if Nothin Changes Group",
       "formatTags": [
         "Basic Text Study",
@@ -83375,7 +83353,7 @@
       "city": "Huntsville"
     },
     {
-      "id": "ID-ROW-5176",
+      "id": "ID-ROW-5177",
       "name": "Recovery @ 9pm meeting",
       "formatTags": [
         "Living Clean Study"
@@ -83396,7 +83374,7 @@
       "city": "Camden"
     },
     {
-      "id": "ID-ROW-5211",
+      "id": "ID-ROW-5212",
       "name": "Recovery After Dark Group",
       "formatTags": [],
       "closed": "Closed",
@@ -83415,7 +83393,7 @@
       "city": "New York"
     },
     {
-      "id": "ID-ROW-5295",
+      "id": "ID-ROW-5296",
       "name": "Recovery Mamas Group",
       "formatTags": [
         "LGBTQ+",
@@ -83520,7 +83498,7 @@
       "city": "Spokane"
     },
     {
-      "id": "ID-ROW-1308",
+      "id": "ID-ROW-1307",
       "name": "God's Chose One Meeting",
       "formatTags": [
         "Topic"
@@ -83687,7 +83665,7 @@
       "city": "Oklahoma City"
     },
     {
-      "id": "ID-ROW-4665",
+      "id": "ID-ROW-4666",
       "name": "Northside Group",
       "formatTags": [],
       "closed": "Open",
@@ -83751,7 +83729,7 @@
       "city": "Everett"
     },
     {
-      "id": "ID-ROW-6987",
+      "id": "ID-ROW-6991",
       "name": "You Are Worth It Meeting",
       "formatTags": [
         "Discussion"
