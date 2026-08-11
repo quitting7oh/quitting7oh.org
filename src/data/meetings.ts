@@ -29,8 +29,12 @@ export interface FellowshipMeta {
   framework: '12-step' | 'non-12-step';
   /** Brief framing displayed alongside the table. */
   tagline: string;
-  /** Authoritative source URL. */
+  /** Authoritative source URL for the schedule data. */
   sourceUrl: string;
+  /** The organization's front door — where a reader goes to learn who
+   *  runs these meetings. May differ from sourceUrl (which can point
+   *  at a schedule subpage). */
+  orgUrl: string;
   /** Default meeting duration. Both KA and TIAWO run ~1 hour meetings. */
   defaultDurationMin: number;
 }
@@ -81,6 +85,7 @@ export const FELLOWSHIPS: Record<Fellowship, FellowshipMeta> = {
     tagline:
       'Kratom Anonymous (KA) is a 12-step fellowship focused specifically on kratom, kratom extracts, and 7-OH addiction. Multiple daily virtual meetings on Zoom; the same room is reused for a given time slot and the format rotates between Discussion and Step.',
     sourceUrl: 'https://www.kratom-anonymous.org',
+    orgUrl: 'https://www.kratom-anonymous.org',
     defaultDurationMin: 60,
   },
   KQS: {
@@ -91,6 +96,7 @@ export const FELLOWSHIPS: Record<Fellowship, FellowshipMeta> = {
     tagline:
       'Quitting Kratom Support - There Is A Way Out (TIAWO) is a volunteer-led non-12-step virtual community focused on kratom and 7-OH recovery. Meetings run on Google Meet and are open to both people in recovery and their loved ones.',
     sourceUrl: 'https://kratomquitters.com/meetings',
+    orgUrl: 'https://kratomquitters.com',
     defaultDurationMin: 60,
   },
 };

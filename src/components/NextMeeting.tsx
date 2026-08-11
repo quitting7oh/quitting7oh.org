@@ -211,6 +211,18 @@ function MeetingCard({ display, now }: CardProps) {
           <div className="text-xs text-muted-foreground">
             {fellowship.framework} fellowship · {platform}
           </div>
+          <div className="text-xs text-muted-foreground">
+            Hosted by{' '}
+            <a
+              href={fellowship.orgUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-medium text-foreground underline underline-offset-2 hover:text-sky-700 dark:hover:text-sky-300"
+            >
+              {fellowship.name}
+              <ExternalLink className="h-3 w-3" aria-hidden={true} />
+            </a>
+          </div>
           <div className="mt-1 text-sm text-muted-foreground">
             {formatLocalDay(start, now)} at {formatLocalTime(start)} your time
           </div>

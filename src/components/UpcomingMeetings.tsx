@@ -166,6 +166,19 @@ function FeaturedCard({ display, now }: CardProps) {
         <span>{platform}</span>
       </div>
 
+      <div className="mt-2 text-sm text-muted-foreground">
+        Hosted by{' '}
+        <a
+          href={fellowship.orgUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 font-medium text-foreground underline underline-offset-2 hover:text-primary"
+        >
+          {fellowship.name}
+          <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+        </a>
+      </div>
+
       <div className="mt-5">
         <a
           href={meeting.joinUrl}
