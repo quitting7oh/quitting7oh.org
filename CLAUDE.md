@@ -209,33 +209,23 @@ Skip for:
 - Frontmatter-only edits (sort, last_updated)
 - Pure typo fixes
 
-### Verify on Cloudflare before stacking commits
-
-This site deploys to Cloudflare Pages on every push to `main`. CF has
-historically been the place where bugs that look fine locally surface
-(e.g., Tailwind transform composition issues, stale Function bindings).
-
-When making non-trivial changes:
-
-1. Push a single focused commit.
-2. Wait for the CF deploy to finish (~60-90s).
-3. Verify with `curl -sI https://quitting7oh.org/ | head -5` — should be
-   `HTTP/1.1 200 OK` with `cf-cache-status: HIT` or `MISS` (never `DYNAMIC`
-   for a static page).
-4. Only then move to the next change.
-
-If a deploy returns 500 with `cf-cache-status: DYNAMIC` and empty body,
-that's the signature of CF routing through a Pages Function (a
-serverless function) that errors or doesn't exist. **Do not** add a
-`public/_routes.json` to "disable" Functions — its presence makes CF
-treat the project as a Functions project and produces exactly the bug
-you're trying to fix. Roll back instead.
-
 ## Deployment
 
 The site is on Cloudflare Pages, git-deployed from `main`. There is
 also a Docker / GHCR / self-hosted path documented in [docs/deploying.md](docs/deploying.md)
 for an alternative deployment.
+
+Don't verify deploys after pushing — no polling production, no
+headless-browser checks of the live site, no retrigger commits. Push,
+report, done. If a deploy looks wrong, the user checks the CF Pages
+dashboard.
+
+If a deploy ever returns 500 with `cf-cache-status: DYNAMIC` and an
+empty body, that's the signature of CF routing through a Pages
+Function that errors or doesn't exist. **Do not** add a
+`public/_routes.json` to "disable" Functions — its presence makes CF
+treat the project as a Functions project and produces exactly the bug
+you're trying to fix. Roll back instead.
 
 The site is pure static — no Astro SSR adapter, no Pages Functions, no
 Workers. `output: 'static'` is set in `astro.config.mjs`. Keep it that
