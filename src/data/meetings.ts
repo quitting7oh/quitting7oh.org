@@ -121,6 +121,9 @@ const KQS_ROOMS = {
   womens: {
     joinUrl: 'https://meet.google.com/sbo-hibj-uwv',
   },
+  lgbtq: {
+    joinUrl: 'https://meet.google.com/grt-ftpa-xud',
+  },
 } as const;
 
 export const MEETINGS: Meeting[] = [
@@ -155,12 +158,16 @@ export const MEETINGS: Meeting[] = [
   // Mon/Wed/Fri afternoon.
   { fellowship: 'KQS', daysOfWeek: [1, 3, 5], hourET: 16, minuteET: 0, format: 'Afternoon', ...KQS_ROOMS.main },
 
+  // Tuesday newcomers meeting.
+  { fellowship: 'KQS', daysOfWeek: [2], hourET: 16, minuteET: 0, format: 'Newcomers', ...KQS_ROOMS.main },
+
   // Tue/Thu/Fri/Sun late evening.
   { fellowship: 'KQS', daysOfWeek: [2, 4, 5, 0], hourET: 21, minuteET: 15, format: 'Late evening', ...KQS_ROOMS.main },
 
-  // Sunday gendered meetings, separate Google Meet rooms.
+  // Sunday identity-based meetings, separate Google Meet rooms.
   { fellowship: 'KQS', daysOfWeek: [0], hourET: 11, minuteET: 0, format: "Men's meeting", ...KQS_ROOMS.mens },
   { fellowship: 'KQS', daysOfWeek: [0], hourET: 13, minuteET: 30, format: "Women's meeting", ...KQS_ROOMS.womens },
+  { fellowship: 'KQS', daysOfWeek: [0], hourET: 16, minuteET: 0, format: 'LGBTQ+ meeting', ...KQS_ROOMS.lgbtq },
 ];
 
 // ─── Platform / URL helpers ──────────────────────────────────────────────

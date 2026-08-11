@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-07-29"
+last_updated: "2026-08-11"
 sort: 6
 ---
 
@@ -13,6 +13,19 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-08-11
+
+### TIAWO schedule update
+
+- TIAWO added two meetings to its roster, both confirmed against the
+  day-by-day schedule on the kratomquitters.com homepage: a
+  **Newcomers meeting, 4:00 PM ET Tuesdays** in the shared Google
+  Meet room, and an **LGBTQ+ meeting, 4:00 PM ET Sundays** in its
+  own room. Both added to [the meeting data](src/data/meetings.ts)
+  (which feeds the [Meeting Schedules](src/content/resources/meeting-schedules.mdx)
+  tables and the homepage next-meeting widget) and to the TIAWO
+  entry on [Mutual Aid](src/content/for-you/mutual-aid.md).
 
 ## 2026-07-29
 

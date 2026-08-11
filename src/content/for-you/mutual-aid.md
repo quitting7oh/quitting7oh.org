@@ -2,7 +2,7 @@
 title: "Mutual Aid & Recovery Groups"
 description: "Free peer support groups for the person in recovery: Kratom Anonymous (most directly applicable), NA, Heroin Anonymous, SMART, Refuge Recovery, The Phoenix, and others."
 category: "for-you"
-last_updated: "2026-07-29"
+last_updated: "2026-08-11"
 sort: 7
 ---
 
@@ -33,7 +33,7 @@ The full schedule with Zoom links is at **[Meeting Schedules](/resources/meeting
 
 **Website:** [kratomquitters.com](https://kratomquitters.com)
 
-A peer-led, **non-12-step** virtual community focused on kratom and 7-OH recovery. Daily online meetings hosted by volunteers (8 AM, 12 PM, and 8 PM ET, plus a 4 PM ET afternoon slot on Mon/Wed/Fri, a 9:15 PM ET late-evening slot on Tues/Thurs/Fri/Sun, and Sunday men's and women's meetings), plus a 24/7 chat infrastructure. Welcomes both people in recovery and their loved ones, which is unusual.
+A peer-led, **non-12-step** virtual community focused on kratom and 7-OH recovery. Daily online meetings hosted by volunteers (8 AM, 12 PM, and 8 PM ET, plus a 4 PM ET afternoon slot on Mon/Wed/Fri, a 4 PM ET newcomers meeting on Tuesdays, a 9:15 PM ET late-evening slot on Tues/Thurs/Fri/Sun, and Sunday men's, women's, and LGBTQ+ meetings), plus a 24/7 chat infrastructure. Welcomes both people in recovery and their loved ones, which is unusual.
 
 If 12-step language is a bad fit but you still want a kratom-specific peer support community, this is the natural complement (or alternative) to KA.
 
