@@ -3,6 +3,7 @@ import { Calendar, ExternalLink } from 'lucide-react';
 import {
   findDisplayMeeting,
   findNextStartingAfter,
+  isNewMeeting,
   FELLOWSHIPS,
   platformFromUrl,
   type DisplayMeeting,
@@ -52,6 +53,11 @@ function formatLocalTime(date: Date): string {
     minute: '2-digit',
   });
 }
+
+/** Pill for meetings the fellowship recently added to its roster.
+ *  Same tone as the next-meeting page's New badge. */
+const NEW_PILL =
+  'bg-violet-700 text-violet-50 dark:bg-violet-300 dark:text-violet-950';
 
 const STATUS_BADGE: Record<MeetingStatus, { label: string; tone: 'neutral' | 'amber' | 'green' }> = {
   future: { label: 'Next meeting', tone: 'neutral' },
@@ -182,6 +188,16 @@ function MeetingCard({ display, now }: CardProps) {
             >
               {badge.label}
             </span>
+            {isNewMeeting(meeting, now) && (
+              <span
+                className={cn(
+                  'inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-sm',
+                  NEW_PILL,
+                )}
+              >
+                New
+              </span>
+            )}
             <span className="text-xs font-medium text-foreground/70">
               {statusDetail(status, start, end, now)}
             </span>

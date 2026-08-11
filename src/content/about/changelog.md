@@ -22,7 +22,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   an `addedOn` date. The [next-meeting page](src/pages/next-kratom-support-meeting.astro)
   badges those meetings with a violet "New" pill — on the featured
   card and in the compact grid — for 30 days after that date, then
-  the badge expires on its own with no cleanup edit. The two TIAWO
+  the badge expires on its own with no cleanup edit. The homepage
+  next-meeting widget carries the same pill. The two TIAWO
   additions below are the first to carry it.
 
 ### TIAWO schedule update
