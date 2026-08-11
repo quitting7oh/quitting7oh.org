@@ -3,7 +3,7 @@ import { Megaphone, X } from 'lucide-react';
 
 /** Bump this suffix if the banner's message changes materially and it
  *  should reappear for readers who dismissed the old one. */
-const DISMISS_KEY = 'scheduling-banner-dismissed-2026-07';
+const DISMISS_KEY = 'scheduling-banner-dismissed-2026-08';
 
 const PAGE_URL = '/compounds/7-oh-ban';
 
@@ -46,12 +46,11 @@ export function SchedulingBanner() {
           aria-hidden="true"
         />
         <span className="font-semibold">
-          DEA has filed notice to schedule 7-OH, pseudo, MGM-15, and
-          MGM-16.
+          As of August 11, the DEA has not yet banned 7-OH.
         </span>{' '}
         <span className="opacity-90">
-          Earliest ban date: August 5, 2026. What's happening and what it
-          means&nbsp;&rarr;
+          The ban could take effect at any time. What's happening and what
+          it means&nbsp;&rarr;
         </span>
       </a>
       <button
