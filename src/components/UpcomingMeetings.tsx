@@ -201,13 +201,11 @@ function CompactCard({ display, now }: CardProps) {
   const platform = platformFromUrl(meeting.joinUrl);
   const tone = STATUS_TONES[status];
 
+  // The Join link is stretched over the whole card (after:inset-0), so
+  // the card stays tap-anywhere-to-join; the org link sits above it on
+  // its own z layer.
   return (
-    <a
-      href={meeting.joinUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex flex-col gap-2 rounded-lg border border-border bg-card p-4 transition hover:border-primary/50 hover:bg-accent/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-    >
+    <div className="group relative flex flex-col gap-2 rounded-lg border border-border bg-card p-4 transition hover:border-primary/50 hover:bg-accent/40 focus-within:ring-2 focus-within:ring-ring">
       <div className="flex items-center justify-between gap-2">
         <span className="text-sm font-semibold tabular-nums text-foreground">
           {formatLocalTime(start)}
@@ -237,7 +235,15 @@ function CompactCard({ display, now }: CardProps) {
       </div>
 
       <div className="text-sm font-medium text-foreground">
-        {fellowship.shortName} — {meeting.format}
+        <a
+          href={fellowship.orgUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative z-10 underline decoration-muted-foreground/40 underline-offset-2 hover:text-primary hover:decoration-primary"
+        >
+          {fellowship.shortName}
+        </a>{' '}
+        — {meeting.format}
         {meeting.note && (
           <span className="ml-1 text-xs font-normal text-muted-foreground">
             ({meeting.note})
@@ -251,11 +257,16 @@ function CompactCard({ display, now }: CardProps) {
         <span>{platform}</span>
       </div>
 
-      <div className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-foreground/80 group-hover:text-primary">
+      <a
+        href={meeting.joinUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-foreground/80 focus-visible:outline-none group-hover:text-primary after:absolute after:inset-0 after:content-['']"
+      >
         Join
         <ExternalLink className="h-3 w-3" aria-hidden="true" />
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }
 

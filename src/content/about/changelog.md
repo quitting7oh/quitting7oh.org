@@ -35,6 +35,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   who runs a meeting before joining it. Backed by a new `orgUrl`
   field on the fellowship metadata — distinct from `sourceUrl`,
   which stays pointed at the schedule data source.
+- The compact cards in the next-meeting page's day grid link the
+  fellowship name (TIAWO, Kratom Anonymous) to the org's site too.
+  Each card used to be a single join-URL anchor; the join link is
+  now stretched over the card instead, so tapping anywhere still
+  joins the meeting while the org name stays independently
+  clickable.
 
 ### "New" badges on the next-meeting page
 
