@@ -16,6 +16,15 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-08-11
 
+### "New" badges on the next-meeting page
+
+- Meetings in [the meeting data](src/data/meetings.ts) can now carry
+  an `addedOn` date. The [next-meeting page](src/pages/next-kratom-support-meeting.astro)
+  badges those meetings with a violet "New" pill — on the featured
+  card and in the compact grid — for 30 days after that date, then
+  the badge expires on its own with no cleanup edit. The two TIAWO
+  additions below are the first to carry it.
+
 ### TIAWO schedule update
 
 - TIAWO added two meetings to its roster, both confirmed against the

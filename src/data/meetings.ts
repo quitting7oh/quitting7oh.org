@@ -54,6 +54,22 @@ export interface Meeting {
   durationMinutes?: number;
   /** Optional note shown beside the format (e.g. "Grow Recovery"). */
   note?: string;
+  /** Date the fellowship added this meeting to its roster (YYYY-MM-DD).
+   *  Drives the "New" badge on the next-meeting page; the badge
+   *  auto-expires NEW_MEETING_WINDOW_DAYS after this date, so stale
+   *  entries need no cleanup. */
+  addedOn?: string;
+}
+
+/** How long a meeting keeps its "New" badge after being added. */
+const NEW_MEETING_WINDOW_DAYS = 30;
+
+/** Whether a meeting was added recently enough to call out as new. */
+export function isNewMeeting(meeting: Meeting, now: Date): boolean {
+  if (!meeting.addedOn) return false;
+  const added = new Date(`${meeting.addedOn}T00:00:00`);
+  const ageMs = now.getTime() - added.getTime();
+  return ageMs >= 0 && ageMs < NEW_MEETING_WINDOW_DAYS * 24 * 60 * 60 * 1000;
 }
 
 export const FELLOWSHIPS: Record<Fellowship, FellowshipMeta> = {
@@ -159,7 +175,7 @@ export const MEETINGS: Meeting[] = [
   { fellowship: 'KQS', daysOfWeek: [1, 3, 5], hourET: 16, minuteET: 0, format: 'Afternoon', ...KQS_ROOMS.main },
 
   // Tuesday newcomers meeting.
-  { fellowship: 'KQS', daysOfWeek: [2], hourET: 16, minuteET: 0, format: 'Newcomers', ...KQS_ROOMS.main },
+  { fellowship: 'KQS', daysOfWeek: [2], hourET: 16, minuteET: 0, format: 'Newcomers', addedOn: '2026-08-11', ...KQS_ROOMS.main },
 
   // Tue/Thu/Fri/Sun late evening.
   { fellowship: 'KQS', daysOfWeek: [2, 4, 5, 0], hourET: 21, minuteET: 15, format: 'Late evening', ...KQS_ROOMS.main },
@@ -167,7 +183,7 @@ export const MEETINGS: Meeting[] = [
   // Sunday identity-based meetings, separate Google Meet rooms.
   { fellowship: 'KQS', daysOfWeek: [0], hourET: 11, minuteET: 0, format: "Men's meeting", ...KQS_ROOMS.mens },
   { fellowship: 'KQS', daysOfWeek: [0], hourET: 13, minuteET: 30, format: "Women's meeting", ...KQS_ROOMS.womens },
-  { fellowship: 'KQS', daysOfWeek: [0], hourET: 16, minuteET: 0, format: 'LGBTQ+ meeting', ...KQS_ROOMS.lgbtq },
+  { fellowship: 'KQS', daysOfWeek: [0], hourET: 16, minuteET: 0, format: 'LGBTQ+ meeting', addedOn: '2026-08-11', ...KQS_ROOMS.lgbtq },
 ];
 
 // ─── Platform / URL helpers ──────────────────────────────────────────────

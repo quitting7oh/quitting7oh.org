@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Calendar, Clock, ExternalLink } from 'lucide-react';
 import {
   findUpcomingMeetings,
+  isNewMeeting,
   FELLOWSHIPS,
   platformFromUrl,
   type DisplayMeeting,
@@ -75,6 +76,12 @@ function statusDetail(
   }
 }
 
+/** Pill for meetings the fellowship recently added to its roster.
+ *  Distinct hue from every status tone so it reads as "new on the
+ *  schedule", not a meeting state. */
+const NEW_PILL =
+  'bg-violet-700 text-violet-50 dark:bg-violet-300 dark:text-violet-950';
+
 const STATUS_TONES: Record<
   MeetingStatus,
   { label: string; pill: string }
@@ -124,6 +131,16 @@ function FeaturedCard({ display, now }: CardProps) {
         >
           {pillLabel}
         </span>
+        {isNewMeeting(meeting, now) && (
+          <span
+            className={cn(
+              'inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-sm',
+              NEW_PILL,
+            )}
+          >
+            New meeting
+          </span>
+        )}
         <span className="text-sm font-medium text-foreground/80">
           {statusDetail(status, start, end, now)}
         </span>
@@ -182,16 +199,28 @@ function CompactCard({ display, now }: CardProps) {
         <span className="text-sm font-semibold tabular-nums text-foreground">
           {formatLocalTime(start)}
         </span>
-        {status !== 'future' && (
-          <span
-            className={cn(
-              'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
-              tone.pill,
-            )}
-          >
-            {tone.label}
-          </span>
-        )}
+        <span className="flex items-center gap-1.5">
+          {isNewMeeting(meeting, now) && (
+            <span
+              className={cn(
+                'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                NEW_PILL,
+              )}
+            >
+              New
+            </span>
+          )}
+          {status !== 'future' && (
+            <span
+              className={cn(
+                'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                tone.pill,
+              )}
+            >
+              {tone.label}
+            </span>
+          )}
+        </span>
       </div>
 
       <div className="text-sm font-medium text-foreground">
