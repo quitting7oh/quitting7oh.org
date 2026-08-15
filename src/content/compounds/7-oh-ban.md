@@ -2,34 +2,39 @@
 title: "The Federal 7-OH Ban: Dates, Scope, What It Means"
 description: "DEA has filed notice to place 7-OH above a threshold, pseudo, MGM-15, and MGM-16 in Schedule I. The dates, the legal process, the public comment window, and what to do if you're still using."
 category: "compounds"
-last_updated: "2026-07-03"
+last_updated: "2026-08-14"
 sort: 0
 ---
 
-> **Last verified against primary sources on July 3, 2026.** This page
+> **Last verified against primary sources on August 14, 2026.** This page
 > tracks a live regulatory action; we'll update it as things move.
 
-## When is this getting banned?
+## Status: not banned yet
 
-**Nothing is banned yet.**
+**As of August 14, 2026, nothing is banned.** DEA has not issued the
+scheduling order. The 30-day waiting period expired on August 5, so
+the order can now publish on any business day, and it takes effect
+the day it publishes.
 
-| Date | What happens |
+| Date | What happened |
 | --- | --- |
 | **July 1, 2026** | DEA signed and filed two notices of intent to temporarily schedule [7-OH](/compounds/7-oh) and three related compounds. HHS and FDA announced their support the same day. |
-| **July 6, 2026** | The notices publish in the Federal Register. This starts the legally required 30-day waiting period. |
-| **July 31, 2026** | Deadline to submit public comments on the 7-OH threshold (see [the comment window](#public-comments-close-july-31) below). |
-| **August 5, 2026** | The earliest date the ban can take effect. Federal law requires at least 30 days between publication of the notice and the scheduling order. |
+| **July 6, 2026** | The notices published in the Federal Register, starting the legally required 30-day waiting period. |
+| **July 31, 2026** | The public comment window on the 7-OH threshold closed with **32,145 comments** submitted (see [the comment window](#public-comments-closed-july-31) below). |
+| **August 5, 2026** | The earliest date the ban could take effect. It passed with no order issued. |
+| **August 14, 2026** | Latest check against the Federal Register: still no scheduling order. The ban is not in effect. |
 
-After August 5, DEA can issue the temporary scheduling order at any
-time. Both notices state the order "will be published in the Federal
+Both notices state the order "will be published in the Federal
 Register on or after August 5, 2026," and that DEA intends to issue it
-"as soon as possible after the expiration of 30 days." **The ban takes
-effect the day the order publishes**, with no additional grace period,
-and lasts two years, extendable by one more.
+"as soon as possible after the expiration of 30 days." That window is
+open now. **The ban takes effect the day the order publishes**, with
+no additional grace period, and lasts two years, extendable by one
+more.
 
-If you use 7-OH tablets, shots, or other concentrated products, you
-have roughly a month of legal retail supply left, and no guarantee of
-more notice than that.
+If you use 7-OH tablets, shots, or other concentrated products, the
+remaining legal retail window has no schedule. It could close this
+week or drag on for months, and the only notice you'll get is the
+order itself appearing in the Federal Register.
 
 ## Two notices, filed July 1
 
@@ -124,15 +129,19 @@ Once the order takes effect, manufacture, distribution, sale, and
 **possession** of covered products become subject to the criminal,
 civil, and administrative provisions of the CSA.
 
-## Public comments close July 31
+## Public comments: closed July 31
 
 Alongside DEA's notices, the HHS Office of the Assistant Secretary for
-Health opened a
+Health ran a
 [Request for Information](https://www.federalregister.gov/documents/2026/07/06/2026-13608/temporary-placement-of-7-hydroxymitragynine-above-a-specified-threshold-in-schedule-i-request-for)
 (Docket No. **HHS-OASH-2026-0232**) seeking public comment on the
-7-OH threshold. Comments are due **July 31, 2026**.
+7-OH threshold. The window closed **July 31, 2026**, with **32,145
+comments submitted**. As of August 14,
+[the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
+shows 25,611 of them processed and posted; the rest are still moving
+through review.
 
-The scope is narrow. OASH is asking two questions only:
+The scope was narrow. OASH asked two questions only:
 
 1. Is there scientific data supporting the proposed threshold or an
    alternative one? In the docket's words: what concentration or
@@ -141,28 +150,23 @@ The scope is narrow. OASH is asking two questions only:
 2. Is there data supporting a different way of measuring the
    threshold?
 
-OASH says explicitly that it is **not** taking comments on permanent
+OASH said explicitly that it was **not** taking comments on permanent
 scheduling, on the general safety or usefulness of kratom products, or
-on whether the ban should happen at all. Comments about personal
-experience with 7-OH dependence or recovery are outside the docket's
-stated scope; data about concentrations and measurement is inside it.
-After the comment period closes, HHS forwards the submissions to the
-Attorney General for consideration before the order issues.
+on whether the ban should happen at all. With the window closed, HHS
+forwards the submissions to the Attorney General for consideration
+before the order issues.
 
-To comment: once the notice publishes on July 6, go to
-[regulations.gov](https://www.regulations.gov), search for docket
-**HHS-OASH-2026-0232**, and use the Comment button. (The docket page
-goes live with publication; before July 6 the search returns nothing.)
-
-This RFI is the only formal comment channel. DEA's own notices are not
-open for comment: the temporary scheduling law works by order, not by
-the usual notice-and-comment rulemaking.
+This RFI was the only formal comment channel. DEA's own notices were
+not open for comment: the temporary scheduling law works by order, not
+by the usual notice-and-comment rulemaking.
 
 ## If you're using 7-OH right now
 
 **Supply is going to disappear on a schedule you don't control.**
-Running out abruptly means unplanned cold-turkey withdrawal. If you're
-dependent, the month of notice is the planning window.
+Running out abruptly means unplanned cold-turkey withdrawal. The
+notice window has already run out: the order can publish any day now,
+so if you're dependent, the planning has to happen on supply you
+already have.
 
 The paths off are the same ones this site has always documented:
 
@@ -185,11 +189,11 @@ A few cautions specific to a ban deadline:
 - **Don't compress a taper into a panic.** A rushed, steep taper
   fails more often than a planned one. If you can't finish a taper
   before supply dries up, a bridge (leaf, Suboxone, SR-17) is a
-  decision to make now, not in August.
+  decision to make now, not the day the order publishes.
 - **Stockpiling has a legal cliff.** Once the order takes effect,
   possession of covered products is a federal crime. What you do with
-  that fact is your call; we want you to know it before August, not
-  after.
+  that fact is your call; we want you to know it before the order
+  lands, not after.
 - **Post-ban street supply is a different product.** When retail
   channels close, what replaces them has no labeling at all. Lab
   analyses have already found undisclosed compounds like pseudo in

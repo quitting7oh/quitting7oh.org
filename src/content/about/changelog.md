@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-11"
+last_updated: "2026-08-15"
 sort: 6
 ---
 
@@ -13,6 +13,21 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-08-14
+
+### Ban page re-verified: comment window closed, still no order
+
+- Re-verified [the ban page](src/content/compounds/7-oh-ban.md)
+  against the Federal Register (no scheduling order has published;
+  nothing is banned as of August 14) and rewrote the stale
+  pre-August-5 framing. The timeline now records the July 31 close
+  of the HHS comment window (**32,145 comments**; 25,611 processed
+  on the docket as of August 14) and the August 5 earliest-effective
+  date passing without an order. "Roughly a month of legal retail
+  supply" became the accurate version: the order can publish any
+  business day, effective on publication. Comment-section prose
+  moved to past tense and the how-to-comment instructions came out.
 
 ## 2026-08-11
 
