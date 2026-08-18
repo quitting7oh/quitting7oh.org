@@ -96,7 +96,7 @@ export function Toc({ headings }: Props) {
       </p>
       <ul
         ref={listRef}
-        className="max-h-[calc(100vh-10rem)] space-y-1.5 overflow-y-auto overscroll-contain border-l border-border"
+        className="scrollbar-none max-h-[calc(100vh-10rem)] space-y-1.5 overflow-y-auto overscroll-contain border-l border-border"
       >
         {filtered.map((h) => (
           <li key={h.slug}>

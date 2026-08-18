@@ -25,7 +25,9 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   off-screen. The list in [Toc.tsx](src/components/Toc.tsx) now caps
   at the viewport height and scrolls internally, and it follows the
   reader — when the active entry leaves the list's visible band, the
-  list re-centers it (scrolling only itself, never the page).
+  list re-centers it (scrolling only itself, never the page). The
+  scrollbar is hidden (new `scrollbar-none` utility in global.css);
+  wheel, touch, and keyboard scrolling all still work.
 
 ### Daily automated ban-status re-verification
 
