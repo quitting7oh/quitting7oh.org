@@ -38,6 +38,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Build the site ON THE RUNNER, not inside the image. The dist/
+      # is pure static output, identical for every architecture, and
+      # running Node's JIT inside the QEMU-emulated arm64 container
+      # caused intermittent SIGILL ("Illegal instruction") crashes.
+      # The image build below uses the runtime-prebuilt target, which
+      # only copies files — no emulated JavaScript execution.
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+          cache: npm
+
+      - name: Build the site
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
@@ -81,6 +98,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
+          # Copies the runner-built dist/ instead of building in-image.
+          target: runtime-prebuilt
           # Multi-arch so the same image works on amd64 servers and arm64
           # (Hetzner ampere, Oracle Ampere A1, Raspberry Pi, M-series VMs).
           platforms: linux/amd64,linux/arm64
