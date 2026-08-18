@@ -14,23 +14,32 @@ name: Update 7-OH ban status
 #
 # Re-running:
 #   - The Federal Register publishes at 8:45 AM ET, with special
-#     filings at 11:15 AM and 4:15 PM ET. One run follows each slot.
-#     Crons are UTC with no DST awareness, so the times below are
-#     anchored to EST (UTC-5): in winter they land ~45 min after each
-#     slot, in summer ~1h45m after. Always after, never before.
-#   - Only the day's first run commits; the later two are pure
+#     filings at 11:15 AM and 4:15 PM ET. A run is scheduled 4
+#     minutes after each slot. GitHub's cron is best-effort (starts
+#     routinely lag 3-15 min), so real notification latency is
+#     roughly 5-20 minutes past publication.
+#   - Cron is UTC with no DST awareness, so each slot gets BOTH its
+#     EDT and EST anchor (six crons). The wrong-season run of each
+#     pair lands an hour off target and hits the script's
+#     verification-only no-op; the right-season one lands 4 minutes
+#     after the slot. Extra runs cost nothing and can still catch a
+#     late-indexed document.
+#   - Only the day's first run commits; every later run is pure
 #     verification (the script exits before rewriting when the date
 #     is already current, and only goes red if something published).
 #   - workflow_dispatch lets a maintainer trigger it manually.
 
 on:
   schedule:
-    # After the 8:45 AM ET main publication (9:30 AM EST / 10:30 AM EDT)
-    - cron: '30 14 * * *'
-    # After the 11:15 AM ET special filing (12:00 PM EST / 1:00 PM EDT)
-    - cron: '0 17 * * *'
-    # After the 4:15 PM ET special filing (5:00 PM EST / 6:00 PM EDT)
-    - cron: '0 22 * * *'
+    # 8:45 AM ET main publication + 4 min (EDT / EST anchors)
+    - cron: '49 12 * * *'
+    - cron: '49 13 * * *'
+    # 11:15 AM ET special filing + 4 min (EDT / EST anchors)
+    - cron: '19 15 * * *'
+    - cron: '19 16 * * *'
+    # 4:15 PM ET special filing + 4 min (EDT / EST anchors)
+    - cron: '19 20 * * *'
+    - cron: '19 21 * * *'
   workflow_dispatch:
 
 permissions:
