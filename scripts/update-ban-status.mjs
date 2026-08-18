@@ -68,6 +68,16 @@ if (newDocs.length > 0) {
 }
 console.log(`Federal Register: no new documents since ${NOTICE_DATE}. Not banned as of ${monthDayYear}.`);
 
+// The workflow runs after each of the Federal Register's publication
+// slots (8:45 AM, 11:15 AM, 4:15 PM ET). Only the day's first run
+// rewrites anything; later runs are pure verification so the page
+// doesn't churn with count-only commits.
+const currentBanner = fs.readFileSync('src/components/SchedulingBanner.tsx', 'utf8');
+if (currentBanner.includes(`As of ${monthDay}, the DEA has not yet banned 7-OH.`)) {
+  console.log(`Already current for ${monthDayYear}; verification-only run, no rewrites.`);
+  process.exit(0);
+}
+
 // ── 2. Docket processed-comment count (non-fatal) ────────────────────
 let processedCount = null;
 const apiKey = process.env.REGSGOV_API_KEY;

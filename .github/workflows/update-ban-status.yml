@@ -13,14 +13,24 @@ name: Update 7-OH ban status
 # new Federal Register document.
 #
 # Re-running:
-#   - Schedule fires daily at 16:00 UTC — noon ET during daylight
-#     time, 11 AM ET in winter. The Federal Register publishes by
-#     ~8:45 AM ET, so either way the morning's documents are visible.
+#   - The Federal Register publishes at 8:45 AM ET, with special
+#     filings at 11:15 AM and 4:15 PM ET. One run follows each slot.
+#     Crons are UTC with no DST awareness, so the times below are
+#     anchored to EST (UTC-5): in winter they land ~45 min after each
+#     slot, in summer ~1h45m after. Always after, never before.
+#   - Only the day's first run commits; the later two are pure
+#     verification (the script exits before rewriting when the date
+#     is already current, and only goes red if something published).
 #   - workflow_dispatch lets a maintainer trigger it manually.
 
 on:
   schedule:
-    - cron: '0 16 * * *'
+    # After the 8:45 AM ET main publication (9:30 AM EST / 10:30 AM EDT)
+    - cron: '30 14 * * *'
+    # After the 11:15 AM ET special filing (12:00 PM EST / 1:00 PM EDT)
+    - cron: '0 17 * * *'
+    # After the 4:15 PM ET special filing (5:00 PM EST / 6:00 PM EDT)
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 permissions:
