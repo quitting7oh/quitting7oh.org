@@ -1,0 +1,72 @@
+name: Update 7-OH ban status
+
+# Daily re-verification of the ban page and site banner. The script
+# checks the Federal Register for any new 7-hydroxymitragynine
+# document; if none has published, it bumps the "as of" dates and
+# refreshes the docket's processed-comment count, and this workflow
+# commits the result (CF Pages deploys on push).
+#
+# If a scheduling order HAS published, the script exits non-zero
+# WITHOUT touching the files: the page keeps its last verified date,
+# the run goes red, and a human rewrites the page. Stale-but-true
+# beats fresh-but-false; never let a cron claim "not banned" past a
+# new Federal Register document.
+#
+# Re-running:
+#   - Schedule fires daily at 16:00 UTC — noon ET during daylight
+#     time, 11 AM ET in winter. The Federal Register publishes by
+#     ~8:45 AM ET, so either way the morning's documents are visible.
+#   - workflow_dispatch lets a maintainer trigger it manually.
+
+on:
+  schedule:
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ban-status
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+
+      - name: Re-verify and update
+        env:
+          REGSGOV_API_KEY: ${{ secrets.REGSGOV_API_KEY }}
+        run: node scripts/update-ban-status.mjs
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes (already updated today) — skipping."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add src/components/SchedulingBanner.tsx src/content/compounds/7-oh-ban.md
+          git commit -m "content(ban): daily status re-verify" \
+                     -m "Federal Register checked: no scheduling order. As-of dates bumped; docket count refreshed." \
+                     -m "See scripts/update-ban-status.mjs." \
+                     -m "Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+
+          # The meeting-data crons push to main too; rebase over
+          # anything that landed while this job ran.
+          git pull --rebase origin main
+          git push

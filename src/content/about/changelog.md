@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-15"
+last_updated: "2026-08-18"
 sort: 6
 ---
 
@@ -13,6 +13,23 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-08-18
+
+### Daily automated ban-status re-verification
+
+- The by-hand routine of re-verifying the ban status became a cron:
+  [`update-ban-status.yml`](.github/workflows/update-ban-status.yml)
+  runs [`scripts/update-ban-status.mjs`](scripts/update-ban-status.mjs)
+  daily at 16:00 UTC. The script checks the Federal Register for any
+  new 7-hydroxymitragynine document; when nothing has published it
+  bumps the as-of dates on the [banner](src/components/SchedulingBanner.tsx)
+  and [ban page](src/content/compounds/7-oh-ban.md) and refreshes the
+  docket's processed-comment count from the regulations.gov API. If a
+  scheduling order ever does publish, the script refuses to touch the
+  files and the run goes red, so a human rewrites the page instead of
+  a cron claiming "not banned" past a real order. Same fail-closed
+  posture as the smart-meetings scraper.
 
 ## 2026-08-14
 
