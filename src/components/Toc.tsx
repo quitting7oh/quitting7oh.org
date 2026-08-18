@@ -66,6 +66,27 @@ export function Toc({ headings }: Props) {
   // Only H2 and H3 — H1 is the page title.
   const filtered = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
   const active = useActiveSlug(filtered.map((h) => h.slug));
+  const listRef = React.useRef<HTMLUListElement>(null);
+
+  // On long pages the list scrolls internally; keep the active entry
+  // inside its visible band as the reader moves through the page.
+  // Scroll the list only, never the window.
+  React.useEffect(() => {
+    const list = listRef.current;
+    if (!list || !active || list.scrollHeight <= list.clientHeight) return;
+    const link = list.querySelector(`a[href="#${CSS.escape(active)}"]`);
+    if (!(link instanceof HTMLElement)) return;
+    const listRect = list.getBoundingClientRect();
+    const linkRect = link.getBoundingClientRect();
+    if (linkRect.top < listRect.top || linkRect.bottom > listRect.bottom) {
+      list.scrollTop +=
+        linkRect.top -
+        listRect.top -
+        listRect.height / 2 +
+        linkRect.height / 2;
+    }
+  }, [active]);
+
   if (filtered.length === 0) return null;
 
   return (
@@ -73,7 +94,10 @@ export function Toc({ headings }: Props) {
       <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
         On this page
       </p>
-      <ul className="space-y-1.5 border-l border-border">
+      <ul
+        ref={listRef}
+        className="max-h-[calc(100vh-10rem)] space-y-1.5 overflow-y-auto overscroll-contain border-l border-border"
+      >
         {filtered.map((h) => (
           <li key={h.slug}>
             <a
