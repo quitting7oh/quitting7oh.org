@@ -66,7 +66,9 @@ On phones, the page has one reading column, an expandable contents list, and a
 full-height guide drawer. Wide screens gain a 17rem guide index and a 15rem
 contents rail around the reading column. The contents rail caps its height to
 the viewport, hides its scrollbar, and follows the active heading inside its
-own scroll area.
+own scroll area. Anchor landings and active-section tracking use the same
+header offset; the tracker also adjusts near the end of a page so short final
+sections are not skipped.
 
 Wide data tables stay tables. Their containing card scrolls on the horizontal
 axis, keeps the day column visible, and uses tabular numerals. Calculators use

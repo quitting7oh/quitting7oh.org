@@ -6,6 +6,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '~/components/ui/collapsible';
+import { useActiveSlug } from '~/components/Toc';
 import { cn } from '~/lib/utils';
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
 export function TocMobile({ headings }: Props) {
   // Match the right-rail TOC: H2 and H3 only.
   const filtered = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+  const active = useActiveSlug(filtered.map((h) => h.slug));
   const [open, setOpen] = React.useState(false);
   if (filtered.length === 0) return null;
 
@@ -50,9 +52,11 @@ export function TocMobile({ headings }: Props) {
               <li key={h.slug}>
                 <a
                   href={`#${h.slug}`}
+                  aria-current={active === h.slug ? 'location' : undefined}
                   className={cn(
                     '-ml-px block border-l-2 border-transparent pl-3 leading-snug text-foreground transition-colors hover:border-primary hover:text-primary',
                     h.depth === 3 && 'pl-6 text-muted-foreground',
+                    active === h.slug && 'border-primary font-bold text-primary',
                   )}
                 >
                   {h.text}

@@ -18,6 +18,10 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Redesign follow-up
 
+- Fixed table-of-contents landings that were applying two competing header
+  offsets. Active-section tracking now shares the document anchor offset,
+  follows short adjacent sections, stabilizes hash links after early layout
+  shifts, and marks the active entry in the mobile contents list.
 - Rebuilt long-form hierarchy: larger ruled H2 sections, sans-serif H3
   subsection bands, stronger opening paragraphs, and a shorter text measure
   inside the wider table-and-tool column.

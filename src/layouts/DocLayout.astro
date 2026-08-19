@@ -148,3 +148,83 @@ const { prev, next } = await getPrevNext(currentPath);
       });
   });
 </script>
+
+<script>
+  // A URL hash is positioned before client islands finish hydrating. The
+  // scheduling notice and other early islands can add height above the target
+  // afterward, leaving the requested section partly adrift. Re-align headings
+  // briefly while the page settles, but stop immediately if the reader starts
+  // navigating on their own.
+  let hashAlignmentRun = 0;
+
+  const currentHeading = () => {
+    if (!window.location.hash) return null;
+    let id = window.location.hash.slice(1);
+    try {
+      id = decodeURIComponent(id);
+    } catch {
+      return null;
+    }
+    const target = document.getElementById(id);
+    return target?.matches('h2, h3, h4, h5, h6') ? target : null;
+  };
+
+  const anchorOffset = () => {
+    const value = Number.parseFloat(
+      window.getComputedStyle(document.documentElement).scrollPaddingTop,
+    );
+    return Number.isFinite(value) ? value : 104;
+  };
+
+  const alignCurrentHeading = () => {
+    const target = currentHeading();
+    if (!target) return;
+    const delta = target.getBoundingClientRect().top - anchorOffset();
+    if (Math.abs(delta) < 1) return;
+
+    // Temporarily bypass the document's smooth-scroll rule. Repeated smooth
+    // corrections would queue animations while the page is still settling.
+    const root = document.documentElement;
+    const previousBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, window.scrollY + delta);
+    root.style.scrollBehavior = previousBehavior;
+  };
+
+  const stabilizeHeadingHash = () => {
+    if (!currentHeading()) return;
+    const run = ++hashAlignmentRun;
+    const cancel = () => {
+      if (hashAlignmentRun === run) hashAlignmentRun += 1;
+      cleanup();
+    };
+    const cleanup = () => {
+      window.removeEventListener('wheel', cancel);
+      window.removeEventListener('touchstart', cancel);
+      window.removeEventListener('pointerdown', cancel);
+      window.removeEventListener('keydown', cancel);
+    };
+    const align = () => {
+      if (hashAlignmentRun === run) alignCurrentHeading();
+    };
+
+    window.addEventListener('wheel', cancel, { passive: true });
+    window.addEventListener('touchstart', cancel, { passive: true });
+    window.addEventListener('pointerdown', cancel, { passive: true });
+    window.addEventListener('keydown', cancel);
+
+    window.requestAnimationFrame(() => {
+      align();
+      window.requestAnimationFrame(align);
+    });
+    window.setTimeout(align, 120);
+    window.setTimeout(align, 360);
+    window.setTimeout(() => {
+      align();
+      cleanup();
+    }, 760);
+  };
+
+  window.addEventListener('hashchange', stabilizeHeadingHash);
+  stabilizeHeadingHash();
+</script>
