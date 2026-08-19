@@ -2,16 +2,16 @@
 title: "The Federal 7-OH Ban: Dates, Scope, What It Means"
 description: "DEA has filed notice to place 7-OH above a threshold, pseudo, MGM-15, and MGM-16 in Schedule I. The dates, the legal process, the public comment window, and what to do if you're still using."
 category: "compounds"
-last_updated: "2026-08-18"
+last_updated: "2026-08-19"
 sort: 0
 ---
 
-> **Last verified against primary sources on August 18, 2026.** This page
+> **Last verified against primary sources on August 19, 2026.** This page
 > tracks a live regulatory action; we'll update it as things move.
 
 ## Status: not banned yet
 
-**As of August 18, 2026, nothing is banned.** DEA has not issued the
+**As of August 19, 2026, nothing is banned.** DEA has not issued the
 scheduling order. The 30-day waiting period expired on August 5, so
 the order can now publish on any business day, and it takes effect
 the day it publishes.
@@ -22,7 +22,7 @@ the day it publishes.
 | **July 6, 2026** | The notices published in the Federal Register, starting the legally required 30-day waiting period. |
 | **July 31, 2026** | The public comment window on the 7-OH threshold closed with **32,145 comments** submitted (see [the comment window](#public-comments-closed-july-31) below). |
 | **August 5, 2026** | The earliest date the ban could take effect. It passed with no order issued. |
-| **August 18, 2026** | Latest check against the Federal Register: still no scheduling order. The ban is not in effect. |
+| **August 19, 2026** | Latest check against the Federal Register: still no scheduling order. The ban is not in effect. |
 
 Both notices state the order "will be published in the Federal
 Register on or after August 5, 2026," and that DEA intends to issue it
@@ -136,7 +136,7 @@ Health ran a
 [Request for Information](https://www.federalregister.gov/documents/2026/07/06/2026-13608/temporary-placement-of-7-hydroxymitragynine-above-a-specified-threshold-in-schedule-i-request-for)
 (Docket No. **HHS-OASH-2026-0232**) seeking public comment on the
 7-OH threshold. The window closed **July 31, 2026**, with **32,145
-comments submitted**. As of August 18,
+comments submitted**. As of August 19,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
 shows 26,545 of them processed and posted; the rest are still moving
 through review.
