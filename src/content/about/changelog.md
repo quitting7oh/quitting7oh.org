@@ -18,6 +18,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Redesign follow-up
 
+- Rebuilt long-form hierarchy: larger ruled H2 sections, sans-serif H3
+  subsection bands, stronger opening paragraphs, and a shorter text measure
+  inside the wider table-and-tool column.
+- Replaced mulberry with a muted laurel-green identity in light and dark mode.
+  Amber remains reserved for urgency, while live status uses a brighter leaf
+  green.
 - Expanded article pages to a 48rem reading measure, aligned page headers with
   the article column, removed the first-heading gap, and fixed a variable-font
   override that forced all weights to 400.

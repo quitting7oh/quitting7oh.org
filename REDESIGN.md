@@ -22,12 +22,14 @@ repeating each category description.
   small sizes.
 - **Newsreader Variable** handles titles and section headings. Its moderate
   contrast adds warmth without turning the site into a magazine layout.
-- The reading column tops out at 48rem. Body copy is 17px on larger screens
-  and 16px on phones, with a 1.72 line height. Dose and schedule data use
-  tabular numerals.
+- The article column tops out at 48rem so tables and tools have room, while
+  paragraphs and lists stop at 43rem. Body copy is 17px on larger screens and
+  16px on phones, with a 1.72 line height. Dose and schedule data use tabular
+  numerals.
 - Content-page titles run from 2.1rem to 2.5rem. Article section headings stay
-  near 1.55rem. The larger display scale is reserved for the homepage.
-- Lists use familiar disc and decimal markers with restrained mulberry color.
+  near 1.9rem; 1.16rem sans-serif subsection bands create a second, clearly
+  different level. The larger display scale is reserved for the homepage.
+- Lists use familiar disc and decimal markers with restrained laurel color.
   The first pass's ring bullets and zero-padded counters were removed because
   they drew attention away from the text.
 
@@ -43,11 +45,11 @@ surface and contrast values.
 | --- | --- | --- | --- |
 | Page | `hsl(43 38% 97%)` | `hsl(22 14% 8%)` | Reading background |
 | Ink | `hsl(22 16% 14%)` | `hsl(42 28% 92%)` | Body and headings |
-| Mulberry | `hsl(345 38% 35%)` | `hsl(348 52% 72%)` | Links, navigation, ordinary action |
+| Laurel | `hsl(145 29% 32%)` | `hsl(143 35% 69%)` | Links, navigation, ordinary action |
 | Amber | `hsl(35 88% 46%)` | `hsl(38 90% 58%)` | Crisis and time-sensitive status |
-| Sage | `hsl(132 28% 34%)` | `hsl(132 36% 58%)` | Live meetings and available support |
+| Leaf | `hsl(104 35% 34%)` | `hsl(104 43% 61%)` | Live meetings and available support |
 
-Mulberry carries navigation and ordinary actions. Amber identifies urgency in
+Laurel carries navigation and ordinary actions. Amber identifies urgency in
 the banner, floating crisis control, and high-risk callouts.
 
 ## Space and layout

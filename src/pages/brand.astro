@@ -8,16 +8,17 @@ import agentContext from '../../docs/brand/agent-context.md?raw';
 const swatches = [
   { name: 'Paper', role: 'Reading background', className: 'bg-background text-foreground' },
   { name: 'Ink', role: 'Text and dark fields', className: 'bg-foreground text-background' },
-  { name: 'Mulberry', role: 'Links and primary actions', className: 'bg-primary text-primary-foreground' },
-  { name: 'Dust', role: 'Selected and supporting surfaces', className: 'bg-accent text-accent-foreground' },
+  { name: 'Laurel', role: 'Links and primary actions', className: 'bg-primary text-primary-foreground' },
+  { name: 'Mist', role: 'Selected and supporting surfaces', className: 'bg-accent text-accent-foreground' },
   { name: 'Amber', role: 'Urgent and time-sensitive states', className: 'bg-signal text-signal-foreground' },
-  { name: 'Sage', role: 'Live and positive states', className: 'bg-success text-success-foreground' },
+  { name: 'Leaf', role: 'Live and positive states', className: 'bg-success text-success-foreground' },
 ];
 
 const scale = [
   ['Display', 'font-display text-[3.6rem] font-medium leading-[1.04] tracking-[-0.022em]', 'Quitting 7-OH'],
   ['Page title', 'font-display text-[2.5rem] font-semibold leading-[1.08] tracking-[-0.018em]', 'Withdrawal help'],
-  ['Section', 'font-display text-[1.55rem] font-semibold leading-[1.25]', 'The first hour'],
+  ['Section', 'font-display text-[1.9rem] font-semibold leading-[1.18]', 'The first hour'],
+  ['Subsection', 'text-[1.16rem] font-bold leading-[1.32]', 'Cold turkey'],
   ['Body', 'text-base leading-[1.7]', 'Long-form text uses measured line height, a narrow column, and a highly distinguishable sans serif.'],
   ['Interface', 'text-sm font-bold', 'Find a meeting'],
 ];
@@ -111,7 +112,7 @@ const scale = [
             </div>
           </div>
           <Callout type="warning" title="Safety information stays visually separate">
-            Amber identifies urgency and risk. Mulberry stays reserved for navigation and ordinary actions, so the two are never confused.
+            Amber identifies urgency and risk. Laurel stays reserved for navigation and ordinary actions, so the two are never confused.
           </Callout>
           <div class="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
             <div class="bg-card p-5"><p class="eyebrow !text-muted-foreground">Duration</p><p class="mt-2 font-display text-2xl font-semibold">21 days</p></div>
