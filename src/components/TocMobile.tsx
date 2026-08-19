@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type { MarkdownHeading } from 'astro';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ListTree } from 'lucide-react';
 import {
   Collapsible,
   CollapsibleContent,
@@ -22,14 +22,14 @@ export function TocMobile({ headings }: Props) {
     <Collapsible
       open={open}
       onOpenChange={setOpen}
-      className="mb-6 rounded-md border border-border bg-muted/50 xl:hidden"
+      className="rounded-xl border border-border bg-background/65 xl:hidden"
     >
-      <CollapsibleTrigger className="flex w-full cursor-pointer items-center justify-between gap-2 px-3.5 py-2.5 text-xs font-semibold uppercase tracking-wider text-foreground hover:text-foreground/80">
+      <CollapsibleTrigger className="flex min-h-12 w-full cursor-pointer items-center justify-between gap-2 px-4 py-3 text-sm font-bold text-foreground hover:bg-accent">
         <span className="flex items-center gap-2">
-          <span aria-hidden="true">📑</span>
+          <ListTree className="size-4 text-primary" aria-hidden="true" />
           <span>On this page</span>
-          <span className="font-normal lowercase tracking-normal text-muted-foreground">
-            {`${filtered.length} ${filtered.length === 1 ? 'heading' : 'headings'}`}
+          <span className="font-normal text-muted-foreground">
+            {filtered.length}
           </span>
         </span>
         <ChevronDown
@@ -43,16 +43,16 @@ export function TocMobile({ headings }: Props) {
       <CollapsibleContent>
         <nav
           aria-label="Table of contents"
-          className="border-t border-border px-3.5 py-3 text-sm"
+          className="border-t border-border px-4 py-4 text-sm"
         >
-          <ul className="space-y-1.5">
+          <ul className="space-y-2 border-l border-border">
             {filtered.map((h) => (
               <li key={h.slug}>
                 <a
                   href={`#${h.slug}`}
                   className={cn(
-                    'block text-foreground transition hover:text-primary',
-                    h.depth === 3 && 'pl-4 text-muted-foreground',
+                    '-ml-px block border-l-2 border-transparent pl-3 leading-snug text-foreground transition-colors hover:border-primary hover:text-primary',
+                    h.depth === 3 && 'pl-6 text-muted-foreground',
                   )}
                 >
                   {h.text}

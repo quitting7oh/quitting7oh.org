@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Info, AlertTriangle, Stethoscope } from 'lucide-react';
-import { Alert, AlertTitle, AlertDescription } from '~/components/ui/alert';
+import { AlertTriangle, Info, Stethoscope } from 'lucide-react';
 import { cn } from '~/lib/utils';
 
 type CalloutType = 'info' | 'warning' | 'medical';
@@ -11,38 +10,35 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const defaultTitles: Record<CalloutType, string> = {
-  info: 'Note',
-  warning: 'Warning',
-  medical: 'Not medical advice',
-};
-
-const tone: Record<CalloutType, { wrapper: string; icon: React.ElementType }> = {
+const styles = {
   info: {
-    wrapper:
-      'border-sky-500 bg-sky-50 text-sky-900 [&>svg]:text-sky-600 dark:border-sky-400 dark:bg-sky-950/40 dark:text-sky-50 dark:[&>svg]:text-sky-300',
-    icon: Info,
+    Icon: Info,
+    title: 'Note',
+    className: 'border-primary/25 border-l-primary bg-muted/55 text-foreground [&_.callout-icon]:text-primary',
   },
   warning: {
-    wrapper:
-      'border-amber-500 bg-amber-50 text-amber-900 [&>svg]:text-amber-600 dark:border-amber-400 dark:bg-amber-950/40 dark:text-amber-50 dark:[&>svg]:text-amber-300',
-    icon: AlertTriangle,
+    Icon: AlertTriangle,
+    title: 'Safety note',
+    className: 'border-signal/35 border-l-signal bg-signal/8 text-foreground [&_.callout-icon]:text-signal',
   },
   medical: {
-    wrapper:
-      'border-rose-500 bg-rose-50 text-rose-900 [&>svg]:text-rose-600 dark:border-rose-400 dark:bg-rose-950/40 dark:text-rose-50 dark:[&>svg]:text-rose-300',
-    icon: Stethoscope,
+    Icon: Stethoscope,
+    title: 'Medical context',
+    className: 'border-destructive/30 border-l-destructive bg-destructive/6 text-foreground [&_.callout-icon]:text-destructive',
   },
-};
+} as const;
 
 export function Callout({ type = 'info', title, children }: Props) {
-  const { wrapper, icon: Icon } = tone[type];
-  const resolvedTitle = title ?? defaultTitles[type];
+  const { Icon, title: fallback, className } = styles[type];
   return (
-    <Alert className={cn('my-6 border-l-4', wrapper)}>
-      <Icon className="h-4 w-4" />
-      <AlertTitle>{resolvedTitle}</AlertTitle>
-      <AlertDescription>{children}</AlertDescription>
-    </Alert>
+    <aside className={cn('not-prose my-7 grid grid-cols-[auto_minmax(0,1fr)] gap-3 rounded-lg border border-l-4 px-4 py-3.5', className)}>
+      <span className="callout-icon inline-flex size-6 items-center justify-center">
+        <Icon className="size-4" aria-hidden="true" />
+      </span>
+      <div className="min-w-0">
+        <p className="text-sm font-bold">{title ?? fallback}</p>
+        <div className="mt-1 text-sm leading-[1.65] text-muted-foreground">{children}</div>
+      </div>
+    </aside>
   );
 }

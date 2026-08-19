@@ -120,7 +120,7 @@ export function CrisisButton() {
     <Sheet>
       <div className="fixed bottom-6 left-6 z-20 sm:bottom-8 sm:left-8">
         <SheetTrigger
-          className="inline-flex h-11 items-center gap-2 rounded-full border-2 border-amber-500 bg-amber-50 pl-4 pr-10 text-sm font-semibold text-amber-900 shadow-lg transition hover:bg-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 dark:border-amber-400 dark:bg-amber-950/70 dark:text-amber-100 dark:hover:bg-amber-950"
+          className="inline-flex h-12 items-center gap-2 rounded-xl border border-signal/70 bg-signal pl-4 pr-11 text-sm font-bold text-signal-foreground shadow-lg transition-colors hover:bg-signal/90"
           aria-label="Open crisis resources"
         >
           <LifeBuoy className="h-4 w-4" aria-hidden="true" />
@@ -132,25 +132,26 @@ export function CrisisButton() {
           type="button"
           onClick={dismissForSession}
           aria-label="Hide crisis button"
-          className="absolute right-1 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-amber-900/70 hover:bg-amber-200/80 hover:text-amber-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:text-amber-100/70 dark:hover:bg-amber-900 dark:hover:text-amber-50"
+          className="absolute right-1.5 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg text-signal-foreground/65 hover:bg-signal-foreground/10 hover:text-signal-foreground"
         >
           <X className="h-4 w-4" />
         </button>
       </div>
       <SheetContent
         side="right"
-        className="w-full overflow-y-auto sm:max-w-md"
+        className="w-full overflow-y-auto border-l border-border bg-background p-0 sm:max-w-md"
       >
-        <SheetHeader className="border-b border-border">
-          <SheetTitle className="text-xl">Crisis resources</SheetTitle>
+        <SheetHeader className="border-b border-border bg-signal/10 p-6 pr-12">
+          <div className="mb-2 inline-flex size-10 items-center justify-center rounded-full bg-signal text-signal-foreground"><LifeBuoy className="size-5" aria-hidden="true" /></div>
+          <SheetTitle className="font-display text-3xl font-semibold tracking-tight">Crisis resources</SheetTitle>
           <SheetDescription>
             If you or someone you love needs help right now. These lines
             are staffed 24/7 unless noted.
           </SheetDescription>
         </SheetHeader>
-        <ul className="space-y-5 px-4 pb-6">
+        <ul className="divide-y divide-border px-5 pb-6">
           {HOTLINES.map((h) => (
-            <li key={h.name} className="space-y-2">
+            <li key={h.name} className="space-y-2 py-5">
               <h3 className="text-base font-semibold text-foreground">
                 {h.name}
               </h3>
@@ -158,7 +159,7 @@ export function CrisisButton() {
               <div className="flex flex-wrap items-center gap-2">
                 <a
                   href={`tel:${h.tel}`}
-                  className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+                  className="inline-flex min-h-10 items-center gap-1.5 rounded-lg bg-primary px-3 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"
                 >
                   <Phone className="h-3.5 w-3.5" aria-hidden="true" />
                   {h.display}
@@ -166,7 +167,7 @@ export function CrisisButton() {
                 {h.sms && (
                   <a
                     href={h.sms.href}
-                    className="inline-flex items-center gap-1.5 rounded-md border border-border bg-background px-3 py-1.5 text-sm font-medium text-foreground hover:bg-accent"
+                    className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-2 text-sm font-bold text-foreground hover:bg-accent"
                   >
                     <MessageSquare className="h-3.5 w-3.5" aria-hidden="true" />
                     {h.sms.display}

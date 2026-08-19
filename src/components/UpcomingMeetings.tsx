@@ -79,8 +79,7 @@ function statusDetail(
 /** Pill for meetings the fellowship recently added to its roster.
  *  Distinct hue from every status tone so it reads as "new on the
  *  schedule", not a meeting state. */
-const NEW_PILL =
-  'bg-violet-700 text-violet-50 dark:bg-violet-300 dark:text-violet-950';
+const NEW_PILL = 'border border-primary/35 bg-accent text-accent-foreground';
 
 const STATUS_TONES: Record<
   MeetingStatus,
@@ -88,19 +87,19 @@ const STATUS_TONES: Record<
 > = {
   future: {
     label: 'Upcoming',
-    pill: 'bg-sky-700 text-sky-50 dark:bg-sky-300 dark:text-sky-950',
+    pill: 'bg-primary text-primary-foreground',
   },
   'starting-soon': {
     label: 'Starting soon',
-    pill: 'bg-amber-500 text-white dark:bg-amber-400 dark:text-amber-950',
+    pill: 'bg-signal text-signal-foreground',
   },
   'meeting-starting': {
     label: 'Meeting starting',
-    pill: 'bg-emerald-600 text-white dark:bg-emerald-400 dark:text-emerald-950',
+    pill: 'bg-success text-success-foreground',
   },
   'live-now': {
     label: 'Live now',
-    pill: 'bg-emerald-600 text-white dark:bg-emerald-400 dark:text-emerald-950',
+    pill: 'bg-success text-success-foreground',
   },
 };
 
@@ -121,11 +120,11 @@ function FeaturedCard({ display, now }: CardProps) {
   const pillLabel = status === 'future' ? 'Next up' : tone.label;
 
   return (
-    <div className="rounded-xl border-2 border-sky-300 bg-sky-50 p-6 shadow-sm dark:border-sky-800/70 dark:bg-sky-950/30 sm:p-8">
+    <div className="overflow-hidden rounded-2xl border border-border border-t-4 border-t-primary bg-card p-6 shadow-sm sm:p-8">
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <span
           className={cn(
-            'inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-sm',
+            'inline-flex items-center rounded-md px-3 py-1 text-xs font-bold uppercase tracking-[0.1em]',
             tone.pill,
           )}
         >
@@ -134,7 +133,7 @@ function FeaturedCard({ display, now }: CardProps) {
         {isNewMeeting(meeting, now) && (
           <span
             className={cn(
-              'inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-sm',
+              'inline-flex items-center rounded-md px-3 py-1 text-xs font-bold uppercase tracking-[0.1em]',
               NEW_PILL,
             )}
           >
@@ -146,7 +145,7 @@ function FeaturedCard({ display, now }: CardProps) {
         </span>
       </div>
 
-      <h2 className="m-0 text-2xl font-semibold text-foreground sm:text-3xl">
+      <h2 className="m-0 font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
         {fellowship.shortName} — {meeting.format}
         {meeting.note && (
           <span className="ml-2 text-base font-normal text-muted-foreground">
@@ -184,7 +183,7 @@ function FeaturedCard({ display, now }: CardProps) {
           href={meeting.joinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-4 py-2 text-base font-medium text-background hover:opacity-90"
+          className="inline-flex min-h-12 items-center gap-1.5 rounded-xl bg-primary px-5 py-3 text-base font-bold text-primary-foreground hover:bg-primary/90"
         >
           Join in {platform}
           <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -205,7 +204,7 @@ function CompactCard({ display, now }: CardProps) {
   // the card stays tap-anywhere-to-join; the org link sits above it on
   // its own z layer.
   return (
-    <div className="group relative flex flex-col gap-2 rounded-lg border border-border bg-card p-4 transition hover:border-primary/50 hover:bg-accent/40 focus-within:ring-2 focus-within:ring-ring">
+    <div className="group relative flex flex-col gap-2 rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary hover:bg-accent focus-within:ring-2 focus-within:ring-ring">
       <div className="flex items-center justify-between gap-2">
         <span className="text-sm font-semibold tabular-nums text-foreground">
           {formatLocalTime(start)}
@@ -214,7 +213,7 @@ function CompactCard({ display, now }: CardProps) {
           {isNewMeeting(meeting, now) && (
             <span
               className={cn(
-                'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                'inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
                 NEW_PILL,
               )}
             >
@@ -224,7 +223,7 @@ function CompactCard({ display, now }: CardProps) {
           {status !== 'future' && (
             <span
               className={cn(
-                'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                'inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
                 tone.pill,
               )}
             >
@@ -346,7 +345,7 @@ export function UpcomingMeetings() {
         <div className="space-y-16">
           {grouped.map((group) => (
             <section key={group.key}>
-              <h3 className="mb-5 border-b border-border pb-2 text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+              <h3 className="mb-5 border-b border-border pb-3 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
                 {group.label}
               </h3>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -302,9 +302,9 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
   const ohTotal = inputs.ohPerDose * inputs.ohDosesPerDay;
   const preloadTotal = inputs.preloadPerDose * inputs.preloadDosesPerDay;
   return (
-    <div className="space-y-5 rounded-lg border border-border bg-card p-4 print:hidden">
+    <div className="space-y-6 rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6 print:hidden">
       {/* Safety callout */}
-      <div className="rounded-md border-l-4 border-amber-500 bg-amber-50 p-3 text-sm dark:border-amber-400 dark:bg-amber-950/30">
+      <div className="rounded-xl border border-signal/45 border-l-4 border-l-signal bg-signal/10 p-4 text-sm">
         <p className="font-semibold text-foreground">
           Stacked opioid exposure during preload and cross-taper.
         </p>
@@ -353,7 +353,7 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
             />
           </div>
         </div>
-        <div className="mt-2 rounded-md bg-muted/40 px-3 py-1.5 text-xs">
+        <div className="mt-2 rounded-lg border border-border bg-muted/40 px-3 py-2 text-xs">
           <span className="text-muted-foreground">Current total daily:</span>{' '}
           <span className="font-semibold text-foreground">
             {roundSrMg(ohTotal)} mg
@@ -452,7 +452,7 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
             />
           </div>
         </div>
-        <div className="mt-2 rounded-md bg-muted/40 px-3 py-1.5 text-xs">
+        <div className="mt-2 rounded-lg border border-border bg-muted/40 px-3 py-2 text-xs">
           <span className="text-muted-foreground">Preload daily SR:</span>{' '}
           <span className="font-semibold text-foreground">
             {roundSrMg(preloadTotal)} mg
@@ -643,9 +643,9 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
 function phaseRowClass(phase: Sr17Phase): string {
   switch (phase) {
     case 'allergy-test':
-      return 'bg-amber-500/10';
+      return 'bg-signal/10';
     case 'stop':
-      return 'border-y-2 border-emerald-500/60 bg-emerald-500/10 dark:bg-emerald-400/10';
+      return 'border-y-2 border-success/60 bg-success/10';
     case 'jump-off':
       return 'bg-primary/10';
     default:
@@ -655,11 +655,11 @@ function phaseRowClass(phase: Sr17Phase): string {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div>
-      <div className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+    <div className="bg-card p-4 sm:p-5">
+      <div className="text-[0.68rem] font-bold uppercase tracking-[0.1em] text-muted-foreground">
         {label}
       </div>
-      <div className="mt-0.5 text-base font-semibold text-foreground">
+      <div className="mt-1.5 font-display text-xl font-semibold text-foreground">
         {value}
       </div>
     </div>
@@ -686,7 +686,7 @@ function Output({
   );
   return (
     <>
-      <div className="grid gap-4 rounded-lg border border-border bg-muted/30 p-4 sm:grid-cols-3">
+      <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
         <Stat
           label="Total duration"
           value={`${result.totalDurationDays} day${result.totalDurationDays === 1 ? '' : 's'}`}
@@ -695,13 +695,13 @@ function Output({
         <Stat label="Protocol" value="SR-17 cross-taper" />
       </div>
 
-      <div className="rounded-lg border border-border bg-card p-4">
-        <h3 className="mb-3 text-sm font-semibold text-foreground">
+      <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+        <h3 className="border-b border-border bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
           Day-by-day schedule
         </h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="bg-card text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        <div className="overflow-x-auto px-5 pb-2">
+          <table className="w-full min-w-[48rem] text-sm">
+            <thead className="bg-muted/55 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">
               <tr>
                 <th className="py-2 pr-3">Day</th>
                 <th className="py-2 pr-3">Phase</th>

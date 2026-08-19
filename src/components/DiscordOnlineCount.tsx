@@ -31,9 +31,9 @@ export function DiscordOnlineCount() {
   if (count === null || count <= 0) return null;
 
   return (
-    <span className="ml-1 inline-flex items-center gap-1 align-middle text-xs font-normal text-emerald-700 dark:text-emerald-300">
+    <span className="ml-1 inline-flex items-center gap-1 align-middle text-xs font-semibold text-success">
       <span
-        className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-500 dark:bg-emerald-400"
+        className="inline-block h-2 w-2 animate-pulse rounded-full bg-success"
         aria-hidden="true"
       />
       {count} online

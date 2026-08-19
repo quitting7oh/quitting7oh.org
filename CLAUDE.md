@@ -238,19 +238,17 @@ The site is the source of truth. Edit pages directly under
 front-matter and conventions. The original Discord-export ingest
 pipeline has been retired; do not reintroduce it.
 
-## UI components: shadcn/ui + React
+## UI components: Astro first, React islands
 
-All user-facing components are **React** built on **shadcn/ui** (Radix
-primitives + Tailwind). Astro renders the markup and content collection
-shell; React handles every interactive component as an island.
+Astro renders the page shell and static components. React handles controls
+that need browser state, such as search, theme selection, calculators, and
+the mobile drawer. The interface uses a small set of custom Radix primitives
+instead of the generated shadcn component layer.
 
 Conventions:
 
-- New components go in `src/components/` (top level) and import shadcn
-  primitives from `~/components/ui/`.
-- Add a new shadcn primitive with `npx shadcn@latest add <name>` — it
-  drops the source into `src/components/ui/<name>.tsx`, which you can
-  edit freely.
+- New components go in `src/components/`. Put reusable Radix wrappers in
+  `src/components/ui/` and style them with the Field Guide tokens.
 - Mount React components from `.astro` files with the appropriate
   hydration directive:
   - `client:load` — needs to be interactive immediately (theme picker,
@@ -260,27 +258,22 @@ Conventions:
   - `client:visible` — below-the-fold-only components.
 - Use semantic theme tokens (`bg-background`, `text-foreground`,
   `text-primary`, `text-muted-foreground`, `border-border`, etc.) rather
-  than hardcoded zinc/teal scales. The theme picker switches between 8
-  variants by setting `data-theme` on `<html>`; only semantic tokens
-  follow the variant.
-- The `--color-accent-*` (hex) scale is preserved for backward
-  compatibility but new code should use semantic tokens.
+  than hardcoded color scales. Mulberry handles ordinary action and
+  navigation, amber signals urgency, and sage marks live or available
+  support.
 
 Theme picker state:
 
-- `theme` localStorage key → mode (`system` | `light` | `dark`)
-- `theme-variant` localStorage key → variant (`accent-teal` | `zinc` |
-  `slate` | `stone` | `neutral` | `rose` | `blue` | `green`)
-- `ThemeScript.astro` is the inline pre-paint script — it applies both
-  values to `<html>` before first render so there's no flash.
+- `theme` localStorage key stores `system`, `light`, or `dark`.
+- `ThemeScript.astro` applies the mode to `<html>` before first paint.
 
 Layout:
 
-- `BaseLayout.astro` provides the HTML shell + Header + BetaBanner +
-  Footer + BackToTop.
-- `DocLayout.astro` wraps in `SidebarShell` which provides the centered
-  flex container with the sidebar (Sheet on mobile, plain `<aside>` on
-  desktop) and the main content area.
+- `BaseLayout.astro` provides the HTML shell, Header, SchedulingBanner,
+  Footer, and BackToTop.
+- `DocLayout.astro` keeps the static reading column outside React and mounts
+  `AppSidebar` as an island. The guide index becomes a sheet on mobile; the
+  table of contents scrolls independently on wide screens.
 - The Astro hamburger in `Header.astro` dispatches a `'toggle-sidebar'`
   window event that `AppSidebar.tsx` listens for to open the mobile
   drawer.
@@ -937,35 +930,9 @@ npm run preview                # serve dist/ locally to test search
 npm run link:compounds         # auto-link compound mentions
 ```
 
-### Lockfile maintenance: always use npm 10.9.2
+### Lockfile maintenance
 
-CF Pages builds with **Node 22.16.0 / npm 10.9.2**, pinned via
-`engines` and `packageManager` in `package.json`. Local devs on newer
-npm versions can regenerate or mutate the lockfile in ways that look
-fine locally but break CF.
-
-The trap: **npm 11 prunes optional peer dep entries** (`@emnapi/core`,
-`@emnapi/runtime`, anything marked `optional: true, peer: true`) from
-the lockfile. **npm 10.9.2 expects them present** and fails `npm ci`
-with `Missing: @emnapi/runtime@x.y.z from lock file`. This has bitten
-us — a `npx shadcn add <component>` invocation on npm 11 pruned those
-entries and the next push broke CF.
-
-Whenever you run a command that mutates `package-lock.json`
-(`npm install`, `npm ci`, `npx shadcn add`, `npm update`, anything),
-use npm 10.9.2 explicitly:
-
-```sh
-npx -y npm@10.9.2 install --no-audit --no-fund        # add/update deps
-npx -y npm@10.9.2 ci --no-audit --no-fund             # verify lockfile is in sync
-npx -y npm@10.9.2 install --package-lock-only         # update lockfile only
-```
-
-Verifying with `npm ci` on the local npm version is **not enough** —
-it has to be npm 10.9.2. If you regenerated the lockfile, before
-pushing always run `npx -y npm@10.9.2 ci` to confirm it'll resolve
-the same way on CF.
-
-If a build does fail on CF, the symptom is `npm error code EUSAGE` /
-`Missing: X from lock file` in the CF deploy log. Fix: regenerate the
-lockfile with npm 10.9.2 as above, commit, push.
+The project tracks the current npm release in `packageManager` and the
+minimum compatible Node release in `engines`. Use those versions when
+regenerating `package-lock.json`, and verify the result with a clean
+`npm ci` before committing dependency changes.

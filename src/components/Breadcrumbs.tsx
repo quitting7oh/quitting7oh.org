@@ -1,13 +1,5 @@
 import * as React from 'react';
 import { Check, Copy } from 'lucide-react';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '~/components/ui/breadcrumb';
 
 export interface Crumb {
   label: string;
@@ -16,20 +8,18 @@ export interface Crumb {
 
 interface Props {
   crumbs: Crumb[];
-  /** Pathname of the current page. When set, the current-page crumb
-   *  becomes a link that copies the page URL to the clipboard. */
   sharePath?: string;
 }
 
-function ShareCrumb({ path, label }: { path: string; label: string }) {
+export function Breadcrumbs({ crumbs, sharePath }: Props) {
   const [copied, setCopied] = React.useState(false);
   const timer = React.useRef<number | undefined>(undefined);
+  const all = [{ label: 'Home', href: '/' }, ...crumbs];
 
-  const onClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    // Modified clicks (new tab, etc.) keep normal anchor behavior.
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  const copy = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    navigator.clipboard.writeText(window.location.origin + path).then(() => {
+    if (!sharePath) return;
+    void navigator.clipboard.writeText(window.location.origin + sharePath).then(() => {
       setCopied(true);
       const live = document.getElementById('copy-announce');
       if (live) live.textContent = 'Page link copied to clipboard';
@@ -42,54 +32,34 @@ function ShareCrumb({ path, label }: { path: string; label: string }) {
   };
 
   return (
-    <span className="relative">
-      <a
-        href={path}
-        aria-current="page"
-        aria-label="Copy a link to this page"
-        title="Copy link to this page"
-        onClick={onClick}
-        className="inline-flex items-center gap-1 font-normal text-foreground transition hover:text-primary"
-      >
-        {label}
-        {copied ? (
-          <Check className="h-3 w-3 text-primary" aria-hidden="true" />
-        ) : (
-          <Copy className="h-3 w-3 text-muted-foreground" aria-hidden="true" />
-        )}
-      </a>
-      {copied && (
-        <span className="absolute bottom-full left-1/2 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-foreground px-1.5 py-0.5 text-[10px] font-medium normal-case tracking-normal text-background">
-          Copied
-        </span>
-      )}
-    </span>
-  );
-}
-
-export function Breadcrumbs({ crumbs, sharePath }: Props) {
-  const all: Crumb[] = [{ label: 'Home', href: '/' }, ...crumbs];
-  return (
-    <Breadcrumb className="mb-4">
-      <BreadcrumbList className="text-xs font-semibold uppercase tracking-wider">
-        {all.map((c, i) => {
-          const isLast = i === all.length - 1;
+    <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-muted-foreground">
+      <ol className="flex min-w-0 flex-wrap items-center gap-1.5">
+        {all.map((crumb, index) => {
+          const last = index === all.length - 1;
           return (
-            <React.Fragment key={`${c.label}-${i}`}>
-              <BreadcrumbItem>
-                {c.href && !isLast ? (
-                  <BreadcrumbLink href={c.href}>{c.label}</BreadcrumbLink>
-                ) : isLast && sharePath ? (
-                  <ShareCrumb path={sharePath} label={c.label} />
+            <React.Fragment key={`${crumb.label}-${index}`}>
+              <li className={last ? 'truncate font-bold text-foreground' : undefined}>
+                {crumb.href && !last ? (
+                  <a href={crumb.href} className="hover:text-primary hover:underline">{crumb.label}</a>
                 ) : (
-                  <BreadcrumbPage>{c.label}</BreadcrumbPage>
+                  <span aria-current={last ? 'page' : undefined}>{crumb.label}</span>
                 )}
-              </BreadcrumbItem>
-              {!isLast && <BreadcrumbSeparator>›</BreadcrumbSeparator>}
+              </li>
+              {!last && <li aria-hidden="true" className="text-border">/</li>}
             </React.Fragment>
           );
         })}
-      </BreadcrumbList>
-    </Breadcrumb>
+      </ol>
+      {sharePath && (
+        <button
+          type="button"
+          onClick={copy}
+          className="ml-auto inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-border bg-background text-muted-foreground hover:border-primary hover:text-primary"
+          aria-label="Copy a link to this page"
+        >
+          {copied ? <Check className="size-3.5" aria-hidden="true" /> : <Copy className="size-3.5" aria-hidden="true" />}
+        </button>
+      )}
+    </nav>
   );
 }

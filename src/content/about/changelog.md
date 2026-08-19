@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-18"
+last_updated: "2026-08-19"
 sort: 6
 ---
 
@@ -15,6 +15,26 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-08-18
+
+### Field Guide visual redesign
+
+- Rebuilt the entire user-facing interface on the experimental redesign branch.
+  The new system pairs Atkinson Hyperlegible Next with Newsreader and uses warm
+  paper, graphite, mulberry, amber, and sage tokens in light and dark modes.
+- Reworked the homepage, guide index, reading shell, active contents rail,
+  search dialog, mobile drawer, meeting tools, calculators, crisis controls,
+  tables, callouts, navigation, and footer. Existing routes, content, dose math,
+  meeting data, Pagefind search, theme behavior, and banner dismissal remain in
+  place.
+- Tightened the second visual pass against the live site's reading proportions:
+  16px body copy, 1.7 line height, smaller page and section headings, familiar
+  list markers, a shorter homepage index and meeting card, and a tonal footer.
+- Moved the static toolchain to Astro 7.2.3, Vite 8.2.1, Tailwind CSS 4.3.3,
+  React 19.2.8, TypeScript 7.0.2, Node 26, and npm 12. Astro now uses its current
+  Markdown processor API for heading anchors and external-link attributes.
+- Added `REDESIGN.md` and a light and dark screenshot set at phone and desktop
+  sizes. The design record covers tokens, type, layout, components, motion,
+  dependency choices, preserved behavior, and verification.
 
 ### Docker publish: stop running Node under QEMU
 

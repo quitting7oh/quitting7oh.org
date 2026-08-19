@@ -274,9 +274,9 @@ function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
   }
 
   return (
-    <div className="rounded-xl border-2 border-emerald-400 bg-emerald-50 p-6 shadow-sm dark:border-emerald-700/70 dark:bg-emerald-950/30 sm:p-8">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="inline-flex items-center gap-1 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-sm dark:bg-emerald-400 dark:text-emerald-950">
+    <div className="field-card border-success/45 bg-success/8 p-6 sm:p-8">
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-success px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-success-foreground">
           <Star className="h-3 w-3" aria-hidden="true" />
           Always available
         </span>
@@ -284,7 +284,7 @@ function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
           24/7 — join any time
         </span>
       </div>
-      <h2 className="m-0 text-2xl font-semibold text-foreground sm:text-3xl">
+      <h2 className="m-0 font-display text-3xl font-medium tracking-[-0.02em] text-foreground sm:text-4xl">
         {meeting.name}
       </h2>
       {meeting.notes && (
@@ -300,7 +300,7 @@ function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
           href={meeting.joinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-4 py-2 text-base font-medium text-background hover:opacity-90"
+          className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-primary px-5 py-2 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
         >
           Join the 24/7 room
           <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -308,7 +308,7 @@ function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
         <button
           type="button"
           onClick={handleCopy}
-          className="inline-flex items-center gap-1.5 rounded-md border border-emerald-300 bg-background px-3 py-2 text-sm font-medium text-foreground hover:bg-emerald-100/40 dark:border-emerald-800 dark:hover:bg-emerald-950/40"
+          className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-success/40 bg-background px-4 py-2 text-sm font-semibold text-foreground transition hover:bg-success/10"
           aria-label="Copy meeting details to clipboard"
         >
           {copied ? (
@@ -350,7 +350,7 @@ function MeetingCard({
   }
 
   return (
-    <li className="rounded-lg border border-border bg-card p-4 transition hover:border-primary/40">
+    <li className="field-card border-l-4 border-l-primary/45 p-4 transition hover:border-primary/55">
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
         <span className="font-semibold tabular-nums text-foreground">
           {formatLocalTime(start)}
@@ -359,7 +359,7 @@ function MeetingCard({
           {formatRelative(start, now)}
         </span>
         {isLive && (
-          <span className="inline-flex items-center rounded-full bg-emerald-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white dark:bg-emerald-400 dark:text-emerald-950">
+          <span className="inline-flex items-center rounded-full bg-success px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-success-foreground">
             Live now
           </span>
         )}
@@ -367,8 +367,8 @@ function MeetingCard({
           className={cn(
             'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
             meeting.closed === 'Open'
-              ? 'bg-sky-200 text-sky-900 dark:bg-sky-900 dark:text-sky-100'
-              : 'bg-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200',
+              ? 'bg-accent text-accent-foreground'
+              : 'bg-muted text-muted-foreground',
           )}
         >
           {meeting.closed}
@@ -406,7 +406,7 @@ function MeetingCard({
             href={meeting.joinUrl}
             target={meeting.platform === 'Phone Call' ? undefined : '_blank'}
             rel={meeting.platform === 'Phone Call' ? undefined : 'noopener noreferrer'}
-            className="inline-flex items-center gap-1 rounded-md bg-foreground px-3 py-1.5 text-xs font-medium text-background hover:opacity-90"
+            className="inline-flex min-h-9 items-center gap-1 rounded-full bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
           >
             {meeting.platform === 'Phone Call' ? `Call ${meeting.roomNumber}` : `Join ${meeting.platform}`}
             {meeting.platform === 'Phone Call' ? (
@@ -437,7 +437,7 @@ function MeetingCard({
         <button
           type="button"
           onClick={handleCopy}
-          className="ml-auto inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-xs font-medium text-foreground hover:bg-muted/40"
+          className="ml-auto inline-flex min-h-9 items-center gap-1 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground transition hover:bg-muted"
           aria-label="Copy meeting details to clipboard"
           title="Copy meeting details"
         >
@@ -476,14 +476,14 @@ function Pane({
 
   return (
     <section>
-      <header className="mb-4 border-b border-border pb-2">
-        <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+      <header className="mb-4 flex flex-col gap-1 border-b border-border pb-3 sm:flex-row sm:items-end sm:justify-between">
+        <h3 className="font-display text-2xl font-medium tracking-[-0.02em] text-foreground sm:text-3xl">
           {title}{' '}
           <span className="font-normal text-muted-foreground">
             ({occurrences.length.toLocaleString()})
           </span>
         </h3>
-        <p className="mt-1 text-sm text-muted-foreground">{description}</p>
+        <p className="max-w-md text-sm text-muted-foreground sm:text-right">{description}</p>
       </header>
       {occurrences.length === 0 ? (
         <p className="text-sm italic text-muted-foreground">
@@ -613,7 +613,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
       {bundle.featured && <FeaturedCard meeting={bundle.featured} />}
 
       {/* Filter bar */}
-      <div className="rounded-lg border border-border bg-card p-4">
+      <div className="field-card p-4 sm:p-5">
         <div className="flex items-center gap-2">
           <FilterIcon className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden="true" />
           <span className="text-sm font-medium text-foreground">Filter meetings</span>
@@ -638,7 +638,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
                 type="button"
                 onClick={() => toggleTag(tag)}
                 className={cn(
-                  'rounded-full border px-3 py-1 text-xs font-medium transition',
+                  'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
                   active
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -667,7 +667,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
               type="button"
               onClick={() => setOpenClosed(v)}
               className={cn(
-                'rounded-md border px-2.5 py-1 text-xs font-medium capitalize transition',
+                'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold capitalize transition',
                 filterState.openClosed === v
                   ? 'border-foreground bg-foreground text-background'
                   : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -728,7 +728,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
               placeholder="Search by group name, city, or state…"
               value={filterState.search}
               onChange={(e) => setFilterState((prev) => ({ ...prev, search: e.target.value }))}
-              className="w-full rounded-md border border-border bg-background py-2 pl-9 pr-3 text-sm placeholder:text-muted-foreground focus:border-foreground/40 focus:outline-none"
+              className="min-h-11 w-full rounded-xl border border-input bg-background py-2 pl-9 pr-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none"
               aria-label="Search meetings"
             />
           </label>
@@ -774,7 +774,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
       )}
 
       {/* Footer / attribution */}
-      <footer className="rounded-lg border border-border bg-muted/30 p-4 text-xs text-muted-foreground">
+      <footer className="rounded-xl border border-border bg-muted/45 p-4 text-xs leading-relaxed text-muted-foreground sm:p-5">
         <p className="m-0">
           Meeting data © Narcotics Anonymous World Services, Inc., pulled
           weekly from{' '}

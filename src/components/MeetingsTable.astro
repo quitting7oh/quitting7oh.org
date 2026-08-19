@@ -88,24 +88,28 @@ const zoomLookup = (() => {
 ---
 
 {variant === 'zoom-lookup' && (
-  <div class="overflow-x-auto">
-    <table>
-      <thead>
+  <div class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="border-b border-border bg-muted/45 px-4 py-3">
+      <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Kratom Anonymous · room lookup</p>
+    </div>
+    <div class="overflow-x-auto">
+    <table class="w-full min-w-[36rem] border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-[0.7rem] uppercase tracking-[0.08em] text-muted-foreground">
         <tr>
-          <th>Shortlink</th>
-          <th>Zoom URL</th>
+          <th class="px-4 py-3">Shortlink</th>
+          <th class="px-4 py-3">Zoom URL</th>
         </tr>
       </thead>
       <tbody>
         {zoomLookup.map((r) => (
-          <tr>
-            <td>
-              <a href={r.shortLink} target="_blank" rel="noopener noreferrer">
+          <tr class="border-t border-border first:border-t-0 hover:bg-accent/35">
+            <td class="px-4 py-3 font-bold">
+              <a class="text-primary underline decoration-primary/30 underline-offset-4" href={r.shortLink} target="_blank" rel="noopener noreferrer">
                 {shortLinkLabel(r.shortLink)}
               </a>
             </td>
-            <td>
-              <a href={r.joinUrl} target="_blank" rel="noopener noreferrer">
+            <td class="px-4 py-3 font-mono text-xs">
+              <a class="text-primary underline decoration-primary/30 underline-offset-4" href={r.joinUrl} target="_blank" rel="noopener noreferrer">
                 {shortLinkLabel(r.joinUrl)}
               </a>
             </td>
@@ -113,46 +117,52 @@ const zoomLookup = (() => {
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}
 
 {variant === 'schedule' && fellowship === 'KA' && (
-  <div class="overflow-x-auto">
-    <table>
-      <thead>
+  <div class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="flex items-center justify-between gap-3 border-b border-border bg-muted/45 px-4 py-3">
+      <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">{meta.shortName} · weekly schedule</p>
+      <span class="text-xs text-muted-foreground">ET / PT</span>
+    </div>
+    <div class="overflow-x-auto">
+    <table class="w-full min-w-[50rem] border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-[0.7rem] uppercase tracking-[0.08em] text-muted-foreground">
         <tr>
-          <th>Day</th>
-          <th>Time (ET / PT)</th>
-          <th>Format</th>
-          <th>Shortlink</th>
-          <th>Zoom Room</th>
+          <th class="sticky left-0 z-10 bg-muted px-4 py-3">Day</th>
+          <th class="px-4 py-3">Time (ET / PT)</th>
+          <th class="px-4 py-3">Format</th>
+          <th class="px-4 py-3">Shortlink</th>
+          <th class="px-4 py-3">Zoom room</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((m) => (
-          <tr>
-            <td>
+          <tr class="border-t border-border hover:bg-accent/35">
+            <td class="sticky left-0 bg-card px-4 py-3 group-hover:bg-accent">
               <strong>{formatDayCell(m.daysOfWeek)}</strong>
               {m.note && <em class="ml-1">({m.note})</em>}
             </td>
-            <td>
+            <td class="whitespace-nowrap px-4 py-3 text-muted-foreground">
               {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
             </td>
-            <td>{m.format}</td>
-            <td>
+            <td class="px-4 py-3 font-bold">{m.format}</td>
+            <td class="px-4 py-3">
               {m.shortLink ? (
-                <a href={m.shortLink} target="_blank" rel="noopener noreferrer">
+                <a class="font-bold text-primary underline decoration-primary/30 underline-offset-4" href={m.shortLink} target="_blank" rel="noopener noreferrer">
                   {shortLinkLabel(m.shortLink)}
                 </a>
               ) : (
                 '—'
               )}
             </td>
-            <td>
+            <td class="px-4 py-3">
               {m.room ? (
                 m.room
               ) : (
-                <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
+                <a class="font-bold text-primary underline decoration-primary/30 underline-offset-4" href={m.joinUrl} target="_blank" rel="noopener noreferrer">
                   {shortLinkLabel(m.joinUrl)}
                 </a>
               )}
@@ -161,38 +171,45 @@ const zoomLookup = (() => {
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}
 
 {variant === 'schedule' && fellowship === 'KQS' && (
-  <div class="overflow-x-auto">
-    <table>
-      <thead>
+  <div class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="flex items-center justify-between gap-3 border-b border-border bg-muted/45 px-4 py-3">
+      <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">{meta.shortName} · weekly schedule</p>
+      <span class="text-xs text-muted-foreground">ET / PT</span>
+    </div>
+    <div class="overflow-x-auto">
+    <table class="w-full min-w-[42rem] border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-[0.7rem] uppercase tracking-[0.08em] text-muted-foreground">
         <tr>
-          <th>Day</th>
-          <th>Time (ET / PT)</th>
-          <th>Meeting</th>
-          <th>Join</th>
+          <th class="sticky left-0 z-10 bg-muted px-4 py-3">Day</th>
+          <th class="px-4 py-3">Time (ET / PT)</th>
+          <th class="px-4 py-3">Meeting</th>
+          <th class="px-4 py-3">Join</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((m) => (
-          <tr>
-            <td>
+          <tr class="border-t border-border hover:bg-accent/35">
+            <td class="sticky left-0 bg-card px-4 py-3">
               <strong>{formatDayCell(m.daysOfWeek)}</strong>
             </td>
-            <td>
+            <td class="whitespace-nowrap px-4 py-3 text-muted-foreground">
               {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
             </td>
-            <td>{m.format}</td>
-            <td>
+            <td class="px-4 py-3 font-bold">{m.format}</td>
+            <td class="px-4 py-3">
               <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
-                {shortLinkLabel(m.joinUrl)}
+                <span class="inline-flex min-h-10 items-center rounded-lg bg-primary px-3 py-2 text-xs font-bold text-primary-foreground">Join meeting ↗</span>
               </a>
             </td>
           </tr>
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}

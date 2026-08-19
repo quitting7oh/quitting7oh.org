@@ -139,7 +139,7 @@ VPS or don't want one.
    → **Connect to Git**. Select this repo.
 3. Set the **build command** to `npm run build` and the **build output
    directory** to `dist`.
-4. Set environment variable `NODE_VERSION=22` (Cloudflare sometimes defaults
+4. Set environment variable `NODE_VERSION=26` (Cloudflare sometimes defaults
    to older Node).
 5. Deploy. Subsequent commits to `main` deploy automatically.
 

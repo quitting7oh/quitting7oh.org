@@ -1,46 +1,38 @@
 import * as React from 'react';
-import { Search } from 'lucide-react';
-import { Input } from '~/components/ui/input';
-import { Skeleton } from '~/components/ui/skeleton';
+import { ArrowRight, Search, X } from 'lucide-react';
+import { Dialog as DialogPrimitive } from 'radix-ui';
 import { cn } from '~/lib/utils';
 
 type PagefindResult = {
-  id: string;
   data: () => Promise<{
     url: string;
     excerpt: string;
-    meta: { title: string; [k: string]: string };
+    meta: { title: string; [key: string]: string };
     filters?: Record<string, string[]>;
   }>;
 };
 
 type Pagefind = {
-  search: (q: string) => Promise<{ results: PagefindResult[] }>;
+  search: (query: string) => Promise<{ results: PagefindResult[] }>;
 };
 
-type ResolvedResult = Awaited<ReturnType<PagefindResult['data']>>;
-
+type SearchResult = Awaited<ReturnType<PagefindResult['data']>>;
 let pagefindPromise: Promise<Pagefind | null> | null = null;
 
-function loadPagefind(): Promise<Pagefind | null> {
-  if (pagefindPromise) return pagefindPromise;
-  pagefindPromise = (async () => {
-    try {
-      const url = window.location.origin + '/pagefind/pagefind.js';
-      const pf = (await import(/* @vite-ignore */ url)) as Pagefind;
-      return pf;
-    } catch {
-      return null;
-    }
-  })();
+function getPagefind() {
+  if (!pagefindPromise) {
+    pagefindPromise = import(/* @vite-ignore */ `${window.location.origin}/pagefind/pagefind.js`)
+      .then((module) => module as Pagefind)
+      .catch(() => null);
+  }
   return pagefindPromise;
 }
 
-function useDebouncedValue<T>(value: T, delay = 150): T {
+function useDebouncedValue(value: string, delay = 130) {
   const [debounced, setDebounced] = React.useState(value);
   React.useEffect(() => {
-    const t = window.setTimeout(() => setDebounced(value), delay);
-    return () => window.clearTimeout(t);
+    const timer = window.setTimeout(() => setDebounced(value), delay);
+    return () => window.clearTimeout(timer);
   }, [value, delay]);
   return debounced;
 }
@@ -51,179 +43,194 @@ interface Props {
 }
 
 export function SearchBox({ variant = 'header', placeholder }: Props) {
-  const inputRef = React.useRef<HTMLInputElement>(null);
-  const wrapperRef = React.useRef<HTMLDivElement>(null);
-  const [query, setQuery] = React.useState('');
-  const [results, setResults] = React.useState<ResolvedResult[]>([]);
-  // The query string the current `results` were computed from. Used to
-  // detect when results are stale relative to what the user has typed,
-  // so we can show a skeleton instead of a misleading "No results."
-  const [resultsFor, setResultsFor] = React.useState('');
-  const [pagefindAvailable, setPagefindAvailable] = React.useState<boolean | null>(null);
   const [open, setOpen] = React.useState(false);
-  const debouncedQuery = useDebouncedValue(query, 150);
+  const [query, setQuery] = React.useState('');
+  const [results, setResults] = React.useState<SearchResult[]>([]);
+  const [resolvedQuery, setResolvedQuery] = React.useState('');
+  const [available, setAvailable] = React.useState<boolean | null>(null);
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const inputRef = React.useRef<HTMLInputElement>(null);
+  const debounced = useDebouncedValue(query);
+  const isHero = variant === 'hero';
 
-  // Focus input on ⌘/Ctrl+K from anywhere.
   React.useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault();
-        inputRef.current?.focus();
+    const onShortcut = (event: KeyboardEvent) => {
+      if (event.key.toLowerCase() === 'k' && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        setOpen(true);
       }
     };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
+    window.addEventListener('keydown', onShortcut);
+    return () => window.removeEventListener('keydown', onShortcut);
   }, []);
 
-  // Close results on outside click.
   React.useEffect(() => {
-    if (!open) return;
-    const handler = (e: MouseEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
-  }, [open]);
-
-  // Run search when the debounced query changes.
-  React.useEffect(() => {
-    const trimmed = debouncedQuery.trim();
+    const trimmed = debounced.trim();
     if (!trimmed) {
       setResults([]);
-      setResultsFor('');
+      setResolvedQuery('');
+      setActiveIndex(0);
       return;
     }
     let cancelled = false;
-    (async () => {
-      const pf = await loadPagefind();
+    void (async () => {
+      const pagefind = await getPagefind();
       if (cancelled) return;
-      if (!pf) {
-        setPagefindAvailable(false);
-        setResults([]);
-        setResultsFor(trimmed);
+      if (!pagefind) {
+        setAvailable(false);
+        setResolvedQuery(trimmed);
         return;
       }
-      setPagefindAvailable(true);
-      const { results: hits } = await pf.search(trimmed);
-      const top = await Promise.all(hits.slice(0, 8).map((r) => r.data()));
+      setAvailable(true);
+      const response = await pagefind.search(trimmed);
+      const loaded = await Promise.all(response.results.slice(0, 8).map((result) => result.data()));
+      const next = loaded.map((result) => ({
+        ...result,
+        url: result.url === '/' ? '/' : result.url.replace(/\/+$/, ''),
+      }));
       if (cancelled) return;
-      setResults(top);
-      setResultsFor(trimmed);
+      setResults(next);
+      setResolvedQuery(trimmed);
+      setActiveIndex(0);
     })();
     return () => {
       cancelled = true;
     };
-  }, [debouncedQuery]);
+  }, [debounced]);
 
-  const isHero = variant === 'hero';
-  const ph = placeholder ?? 'Search the site…';
-  const trimmedQuery = query.trim();
-  const showDropdown =
-    open && (trimmedQuery.length > 0 || pagefindAvailable === false);
-  // Search is in flight whenever what the user has typed doesn't match
-  // the query that produced the current results. Covers the debounce
-  // window, the Pagefind dynamic import, and the search itself.
-  const searching =
-    trimmedQuery.length > 0 &&
-    trimmedQuery !== resultsFor &&
-    pagefindAvailable !== false;
+  const searching = query.trim().length > 0 && query.trim() !== resolvedQuery && available !== false;
+
+  const navigate = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'ArrowDown' && results.length) {
+      event.preventDefault();
+      setActiveIndex((index) => (index + 1) % results.length);
+    }
+    if (event.key === 'ArrowUp' && results.length) {
+      event.preventDefault();
+      setActiveIndex((index) => (index - 1 + results.length) % results.length);
+    }
+    if (event.key === 'Enter' && results[activeIndex]) {
+      event.preventDefault();
+      window.location.href = results[activeIndex].url;
+    }
+  };
 
   return (
-    <div
-      ref={wrapperRef}
-      className={cn(
-        'relative',
-        isHero ? 'w-full max-w-2xl' : 'w-full max-w-xs',
-      )}
-    >
-      <Search
-        className={cn(
-          'pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground',
-          isHero ? 'h-5 w-5' : 'h-4 w-4',
-        )}
-        aria-hidden="true"
-      />
-      <Input
-        ref={inputRef}
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onFocus={() => {
-          setOpen(true);
-          loadPagefind();
-        }}
-        onKeyDown={(e) => {
-          if (e.key === 'Escape') {
-            inputRef.current?.blur();
-            setOpen(false);
-          }
-        }}
-        placeholder={ph}
-        autoComplete="off"
-        className={cn(
-          'pl-9',
-          isHero ? 'h-12 text-base pl-11' : 'h-9',
-        )}
-        aria-label="Search the site"
-      />
-      {showDropdown && (
-        <div
-          className="absolute left-0 right-0 top-full z-50 mt-2 max-h-96 overflow-y-auto rounded-md border border-border bg-popover text-popover-foreground shadow-lg"
-          role="listbox"
-        >
-          {pagefindAvailable === false ? (
-            <p className="p-4 text-sm text-muted-foreground">
-              Search is only available on the deployed site. To test locally,
-              run{' '}
-              <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">
-                npm run build &amp;&amp; npm run preview
-              </code>
-              .
-            </p>
-          ) : searching ? (
-            <ul className="divide-y divide-border" aria-busy="true" aria-label="Searching…">
-              {Array.from({ length: 4 }).map((_, i) => (
-                <li key={i} className="space-y-2 p-3">
-                  <Skeleton className="h-3 w-20" />
-                  <Skeleton className="h-4 w-3/4" />
-                  <Skeleton className="h-3 w-full" />
-                </li>
-              ))}
-            </ul>
-          ) : results.length === 0 ? (
-            <p className="p-4 text-sm text-muted-foreground">No results.</p>
-          ) : (
-            <ul className="divide-y divide-border">
-              {results.map((r) => {
-                const category = r.filters?.category?.[0] ?? '';
-                return (
-                  <li key={r.url}>
-                    <a
-                      href={r.url}
-                      className="block p-3 transition hover:bg-accent hover:text-accent-foreground"
-                    >
-                      {category && (
-                        <div className="text-xs uppercase tracking-wide text-primary">
-                          {category}
-                        </div>
-                      )}
-                      <div className="text-sm font-medium">
-                        {r.meta.title || r.url}
-                      </div>
-                      <div
-                        className="mt-1 text-xs text-muted-foreground"
-                        dangerouslySetInnerHTML={{ __html: r.excerpt }}
-                      />
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+    <DialogPrimitive.Root open={open} onOpenChange={setOpen}>
+      <DialogPrimitive.Trigger asChild>
+        <button
+          type="button"
+          className={cn(
+            'group inline-flex items-center border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent',
+            isHero
+              ? 'h-14 w-full justify-between rounded-xl px-4 text-left shadow-sm sm:px-5'
+              : 'size-10 justify-center rounded-full xl:h-10 xl:w-auto xl:gap-2 xl:px-4',
           )}
-        </div>
-      )}
-    </div>
+          aria-label="Search the site"
+        >
+          <span className={cn('flex items-center', isHero ? 'gap-3' : 'xl:gap-2')}>
+            <Search className={cn('shrink-0 text-primary', isHero ? 'size-5' : 'size-[1.05rem]')} aria-hidden="true" />
+            <span className={cn(isHero ? 'text-base text-muted-foreground' : 'hidden text-sm font-bold xl:inline')}>
+              {placeholder ?? 'Search the guide'}
+            </span>
+          </span>
+          {isHero && <span className="hidden rounded-md border border-border bg-muted px-2 py-1 text-xs text-muted-foreground sm:inline">⌘ K</span>}
+        </button>
+      </DialogPrimitive.Trigger>
+
+      <DialogPrimitive.Portal>
+        <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-foreground/40 backdrop-blur-[2px] data-[state=closed]:opacity-0 data-[state=open]:opacity-100" />
+        <DialogPrimitive.Content
+          className="fixed left-1/2 top-[8vh] z-50 flex max-h-[84vh] w-[calc(100%-1.5rem)] max-w-2xl -translate-x-1/2 flex-col overflow-hidden rounded-2xl border border-border bg-popover shadow-2xl sm:top-[12vh]"
+          onOpenAutoFocus={(event) => {
+            event.preventDefault();
+            window.setTimeout(() => inputRef.current?.focus(), 0);
+          }}
+        >
+          <DialogPrimitive.Title className="sr-only">Search quitting7oh.org</DialogPrimitive.Title>
+          <DialogPrimitive.Description className="sr-only">
+            Search all guides, calculators, compounds, and resources.
+          </DialogPrimitive.Description>
+
+          <div className="flex items-center gap-3 border-b border-border px-4 sm:px-5">
+            <Search className="size-5 shrink-0 text-primary" aria-hidden="true" />
+            <input
+              ref={inputRef}
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              onKeyDown={navigate}
+              placeholder="What do you need help with?"
+              autoComplete="off"
+              aria-label="Search all pages"
+              aria-controls="site-search-results"
+              aria-activedescendant={results[activeIndex] ? `search-result-${activeIndex}` : undefined}
+              className="h-16 min-w-0 flex-1 bg-transparent text-lg text-foreground outline-none placeholder:text-muted-foreground sm:h-[4.5rem] sm:text-xl"
+            />
+            <DialogPrimitive.Close asChild>
+              <button type="button" className="inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Close search">
+                <X className="size-4" />
+              </button>
+            </DialogPrimitive.Close>
+          </div>
+
+          <div id="site-search-results" className="min-h-32 overflow-y-auto" role="listbox" aria-label="Search results">
+            {!query.trim() ? (
+              <div className="px-5 py-8 text-sm text-muted-foreground">
+                Search treatment paths, symptoms, medicines, meetings, or a compound name.
+              </div>
+            ) : available === false ? (
+              <div className="px-5 py-8 text-sm text-muted-foreground">
+                The search index is created by the production build. Use the preview server to test it locally.
+              </div>
+            ) : searching ? (
+              <div className="space-y-3 px-5 py-6" aria-live="polite">
+                <div className="h-3 w-28 animate-pulse rounded bg-muted" />
+                <div className="h-5 w-3/4 animate-pulse rounded bg-muted" />
+                <div className="h-3 w-full animate-pulse rounded bg-muted" />
+              </div>
+            ) : results.length === 0 ? (
+              <div className="px-5 py-8 text-sm text-muted-foreground">No pages matched “{resolvedQuery}”.</div>
+            ) : (
+              <ul className="divide-y divide-border">
+                {results.map((result, index) => {
+                  const category = result.filters?.category?.[0];
+                  return (
+                    <li key={result.url}>
+                      <a
+                        id={`search-result-${index}`}
+                        href={result.url}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          window.location.href = result.url;
+                        }}
+                        role="option"
+                        aria-selected={index === activeIndex}
+                        onMouseMove={() => setActiveIndex(index)}
+                        className={cn(
+                          'group flex items-start gap-3 px-4 py-4 sm:px-5',
+                          index === activeIndex && 'bg-accent',
+                        )}
+                      >
+                        <div className="min-w-0 flex-1">
+                          {category && <div className="eyebrow mb-1">{category}</div>}
+                          <div className="font-bold text-foreground">{result.meta.title || result.url}</div>
+                          <div className="mt-1 line-clamp-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: result.excerpt }} />
+                        </div>
+                        <ArrowRight className="mt-1 size-4 shrink-0 text-primary opacity-0 transition-opacity group-hover:opacity-100 group-aria-selected:opacity-100" aria-hidden="true" />
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+          <div className="hidden items-center justify-between border-t border-border bg-muted/50 px-5 py-2.5 text-xs text-muted-foreground sm:flex">
+            <span>↑ ↓ to move · Enter to open</span>
+            <span>Esc to close</span>
+          </div>
+        </DialogPrimitive.Content>
+      </DialogPrimitive.Portal>
+    </DialogPrimitive.Root>
   );
 }

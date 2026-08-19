@@ -8,12 +8,6 @@ import { SchedulingBanner } from '~/components/SchedulingBanner';
 import Footer from '~/components/Footer.astro';
 import { SITE } from '~/lib/site';
 
-// Default theme is 'stone' (see ThemeScript.astro); the static favicon refs
-// and the initial theme-color use stone's light-mode values. theme-sync.js
-// swaps them on the fly when data-theme or .dark changes.
-const DEFAULT_THEME = 'stone';
-const DEFAULT_THEME_COLOR_LIGHT = '#604020';
-
 interface Props {
   title?: string;
   description?: string;
@@ -35,13 +29,11 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    {/* Favicons / app icons. Static refs use the default theme (stone);
-        theme-sync.js below repoints the SVG favicon and theme-color when
-        the active data-theme or .dark class changes. */}
-    <link rel="icon" href={`/favicons/${DEFAULT_THEME}/favicon.ico`} sizes="any" />
-    <link rel="icon" type="image/svg+xml" href={`/favicons/${DEFAULT_THEME}/favicon.svg`} />
-    <link rel="apple-touch-icon" href={`/favicons/${DEFAULT_THEME}/apple-touch-icon.png`} />
-    <link rel="manifest" href={`/favicons/${DEFAULT_THEME}/site.webmanifest`} />
+    <ThemeScript />
+    <link rel="icon" href="/favicons/rose/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/rose/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicons/rose/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicons/rose/site.webmanifest" />
     {/* Open Graph (Discord, LinkedIn, Slack, Facebook). The brand-
         anchored og-image carries the Lift Cup lockup + wordmark on
         the stone-light background — generated once by
@@ -62,23 +54,17 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE.url}/og-image.png`} />
     <meta name="twitter:image:alt" content="quitting7oh.org — recovery information for 7-OH, MGM-15, and kratom-derived synthetics" />
-    {/* Default to stone-light primary; theme-sync.js rewrites this on the
-        fly to match the active theme + mode. Discord reads this for the
-        accent strip on the left edge of the embed. */}
-    <meta name="theme-color" content={DEFAULT_THEME_COLOR_LIGHT} />
+    <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#191512" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content="index,follow" />
-    <ThemeScript />
-    {/* Runs after ThemeScript so the favicon/theme-color are already aligned
-        on first paint — no flash of the wrong icon. */}
-    <script src="/favicons/theme-sync.js" is:inline></script>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen overflow-x-hidden">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <SchedulingBanner client:load />
     <Header />
     <slot />
     <Footer />
-    <BackToTop client:load />
+    <BackToTop client:idle />
     <CrisisButton client:load />
   </body>
 </html>

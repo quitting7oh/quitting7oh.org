@@ -779,7 +779,7 @@ export function TaperCalculator({
     <TooltipProvider delayDuration={150}>
     <div className="not-prose my-6 space-y-6">
       {/* Form */}
-      <div className="grid gap-4 rounded-lg border border-border bg-card p-4 sm:grid-cols-2 print:hidden">
+      <div className="grid gap-5 rounded-2xl border border-border bg-card p-5 shadow-sm sm:grid-cols-2 sm:p-6 print:hidden">
         <div className="sm:col-span-2 flex items-start justify-between gap-3">
           <div className="flex-1">
             {substances.length > 1 && (
@@ -867,7 +867,7 @@ export function TaperCalculator({
           </div>
         )}
 
-        <div className="sm:col-span-2 rounded-md bg-muted/40 px-3 py-2 text-sm">
+        <div className="sm:col-span-2 rounded-lg border border-border bg-muted/45 px-4 py-3 text-sm">
           <span className="text-muted-foreground">Total daily:</span>{' '}
           <span className="font-semibold text-foreground">
             {roundDose(totalDaily)} {cfg.unit}
@@ -916,7 +916,7 @@ export function TaperCalculator({
         </div>
 
         {difficulty === 'custom' && (
-          <div className="sm:col-span-2 grid gap-4 rounded-md bg-muted/40 p-3 sm:grid-cols-2">
+          <div className="sm:col-span-2 grid gap-4 rounded-xl border border-border bg-muted/40 p-4 sm:grid-cols-2">
             <div>
               <Label htmlFor="custom-days">Total duration</Label>
               <div className="mt-1.5 flex items-center gap-2">
@@ -978,7 +978,7 @@ export function TaperCalculator({
             </p>
           </div>
 
-          <div className="grid gap-4 rounded-lg border border-border bg-muted/30 p-4 sm:grid-cols-3">
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
             <Stat label="Total duration" value={totalDuration} />
             <Stat
               label="Total medication"
@@ -987,8 +987,8 @@ export function TaperCalculator({
             <Stat label="Approach" value={sourceLabel(result.source)} />
           </div>
 
-          <div className="rounded-lg border border-border bg-card p-4">
-            <h3 className="mb-3 text-sm font-semibold text-foreground">
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+            <h3 className="mb-4 font-display text-xl font-semibold text-foreground">
               Schedule curve (total daily)
             </h3>
             <ChartContainer config={chartConfig} className="h-[280px] w-full">
@@ -1035,13 +1035,13 @@ export function TaperCalculator({
             </ChartContainer>
           </div>
 
-          <div className="rounded-lg border border-border bg-card p-4">
-            <h3 className="mb-3 text-sm font-semibold text-foreground">
+          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+            <h3 className="border-b border-border bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
               Schedule table
             </h3>
-            <div>
-              <table className="w-full text-sm">
-                <thead className="bg-card text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[40rem] text-sm">
+                <thead className="bg-muted/60 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">
                   <tr>
                     <th className="py-2 pr-4">Day</th>
                     <th className="py-2 pr-4">Per dose ({cfg.unit})</th>
@@ -1060,7 +1060,7 @@ export function TaperCalculator({
                       !isStopDay && prevN !== null && prevN !== s.dosesPerDay;
                     if (isStopDay) {
                       return (
-                        <tr key={i} className="border-y-2 border-emerald-500/60 bg-emerald-500/10 dark:bg-emerald-400/10">
+                        <tr key={i} className="border-y-2 border-success/60 bg-success/10">
                           <td className="py-2 pr-4 font-semibold text-foreground">{i + 1}</td>
                           <td
                             colSpan={3}
@@ -1074,10 +1074,10 @@ export function TaperCalculator({
                     return (
                       <Fragment key={i}>
                         {isTransition && (
-                          <tr className="border-y-2 border-amber-500 bg-amber-500/15 dark:bg-amber-400/15">
+                          <tr className="border-y-2 border-signal bg-signal/12">
                             <td
                               colSpan={4}
-                              className="px-2 py-2 text-sm font-bold text-amber-900 dark:text-amber-100"
+                              className="px-3 py-2 text-sm font-bold text-foreground"
                             >
                               <span className="mr-2 text-base" aria-hidden="true">
                                 ↓
@@ -1090,7 +1090,7 @@ export function TaperCalculator({
                         <tr
                           className={
                             isTransition
-                              ? 'bg-amber-50/50 dark:bg-amber-950/20'
+                              ? 'bg-signal/7'
                               : ''
                           }
                         >
@@ -1122,7 +1122,7 @@ export function TaperCalculator({
                           <td
                             className={
                               isTransition
-                                ? 'py-2 pr-4 font-bold text-amber-900 dark:text-amber-100'
+                                ? 'py-2 pr-4 font-bold text-foreground'
                                 : 'py-2 pr-4 text-foreground'
                             }
                           >
@@ -1205,13 +1205,13 @@ export function TaperCalculator({
           </div>
         </>
       ) : (
-        <div className="rounded-lg border border-border bg-card p-4 text-sm text-muted-foreground">
+        <div className="rounded-xl border border-border bg-card p-5 text-sm text-muted-foreground">
           Enter a per-dose amount and times-per-day larger than the jump-off
           dose to see a schedule.
         </div>
       )}
 
-      <div className="rounded-lg border border-border bg-muted/30 p-4 print:hidden">
+      <div className="rounded-xl border border-border bg-muted/40 p-5 print:hidden">
         <p className="text-sm text-foreground">{cfg.note}</p>
         {cfg.related.length > 0 && (
           <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-sm">
@@ -1234,11 +1234,11 @@ export function TaperCalculator({
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div>
-      <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+    <div className="bg-card p-4 sm:p-5">
+      <div className="text-[0.68rem] font-bold uppercase tracking-[0.1em] text-muted-foreground">
         {label}
       </div>
-      <div className="mt-1 text-lg font-semibold text-foreground">{value}</div>
+      <div className="mt-1.5 font-display text-xl font-semibold text-foreground">{value}</div>
     </div>
   );
 }
@@ -1665,4 +1665,3 @@ IMPORTANT:
 - Flag anything that looks dangerous given my context
 - Be honest about uncertainty; the published clinical literature on these compounds is thin`;
 }
-

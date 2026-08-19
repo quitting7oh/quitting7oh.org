@@ -19,16 +19,16 @@ interface DiscordWidget {
 }
 
 const STATUS_COLOR: Record<string, string> = {
-  online: 'bg-emerald-500',
-  idle: 'bg-amber-500',
-  dnd: 'bg-rose-500',
-  offline: 'bg-zinc-400',
+  online: 'bg-success',
+  idle: 'bg-signal',
+  dnd: 'bg-destructive',
+  offline: 'bg-muted-foreground',
 };
 
 /** Custom Discord widget for /about/the-community. Pulls live data
  *  from Discord's widget JSON endpoint (CORS allowed for our origin)
  *  and renders a styled card that follows the site's theme tokens,
- *  so the 8 color variants and light/dark modes all match. No iframe,
+ *  so the light and dark reading themes match. No iframe,
  *  no Discord JS, just one fetch + a render. */
 export function DiscordCard() {
   const [data, setData] = useState<DiscordWidget | null>(null);
@@ -51,12 +51,12 @@ export function DiscordCard() {
 
   if (errored) {
     return (
-      <div className="not-prose my-4 max-w-sm rounded-lg border border-border bg-card p-4">
+      <div className="not-prose field-card my-5 max-w-md p-5">
         <a
           href={INVITE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 font-semibold text-foreground hover:text-primary"
+          className="flex min-h-11 items-center gap-3 font-bold text-primary hover:text-primary/80"
         >
           <MessageCircle className="h-5 w-5 text-primary" aria-hidden="true" />
           Join the Discord →
@@ -68,23 +68,23 @@ export function DiscordCard() {
   if (!data) {
     return (
       <div
-        className="not-prose my-4 h-[28rem] w-full max-w-sm animate-pulse rounded-lg border border-border bg-muted/30"
+        className="not-prose field-card my-5 h-[28rem] w-full max-w-md animate-pulse bg-muted/35"
         aria-label="Loading Discord widget"
       />
     );
   }
 
   return (
-    <div className="not-prose my-4 flex w-full max-w-sm flex-col overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+    <div className="not-prose field-card my-5 flex w-full max-w-md flex-col overflow-hidden">
       {/* Header: server name + live online count */}
-      <div className="flex items-center justify-between gap-3 border-b border-border bg-muted/30 px-4 py-3">
+      <div className="flex items-center justify-between gap-3 border-b border-border bg-accent/60 px-5 py-4">
         <div className="flex items-center gap-2">
           <MessageCircle className="h-5 w-5 text-primary" aria-hidden="true" />
-          <span className="font-semibold text-foreground">quitting7oh</span>
+          <span className="font-display text-xl font-medium text-foreground">quitting7oh</span>
         </div>
         <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
           <span
-            className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-500"
+            className="inline-block h-2 w-2 animate-pulse rounded-full bg-success"
             aria-hidden="true"
           />
           <span>{data.presence_count} online</span>
@@ -93,14 +93,14 @@ export function DiscordCard() {
 
       {/* Member list: avatars + names + status dots */}
       <div className="flex flex-col">
-        <div className="px-4 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        <div className="px-5 pt-4 pb-2 text-[0.7rem] font-bold uppercase tracking-[0.13em] text-muted-foreground">
           Members online
         </div>
         <ul className="m-0 max-h-72 list-none space-y-0.5 overflow-y-auto p-0 px-2 pb-2">
           {data.members.map((m) => (
             <li
               key={m.id}
-              className="m-0 flex items-center gap-2 rounded px-2 py-1.5 hover:bg-muted/40"
+              className="m-0 flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-muted/60"
             >
               <div className="relative shrink-0">
                 <img
@@ -129,7 +129,7 @@ export function DiscordCard() {
         href={INVITE_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="block border-t border-border bg-emerald-600 px-4 py-3 text-center text-sm font-semibold text-white no-underline transition hover:bg-emerald-700 dark:bg-emerald-500 dark:text-emerald-950 dark:hover:bg-emerald-400"
+        className="block border-t border-primary/30 bg-primary px-5 py-3.5 text-center text-sm font-bold text-primary-foreground no-underline transition hover:bg-primary/90"
       >
         Join the Discord →
       </a>

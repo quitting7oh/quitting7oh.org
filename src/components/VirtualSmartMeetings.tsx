@@ -222,7 +222,7 @@ function MeetingCard({
   }
 
   return (
-    <li className="rounded-lg border border-border bg-card p-4 transition hover:border-primary/40">
+    <li className="field-card border-l-4 border-l-primary/45 p-4 transition hover:border-primary/55">
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
         <span className="font-semibold tabular-nums text-foreground">
           {formatLocalTime(start)}
@@ -231,7 +231,7 @@ function MeetingCard({
           {formatRelative(start, now)}
         </span>
         {isLive && (
-          <span className="inline-flex items-center rounded-full bg-emerald-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white dark:bg-emerald-400 dark:text-emerald-950">
+          <span className="inline-flex items-center rounded-full bg-success px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-success-foreground">
             Live now
           </span>
         )}
@@ -267,7 +267,7 @@ function MeetingCard({
             href={meeting.pathminderUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 rounded-md bg-foreground px-3 py-1.5 text-xs font-medium text-background hover:opacity-90"
+            className="inline-flex min-h-9 items-center gap-1 rounded-full bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
             title="Opens SMART's join gateway; redirects to the meeting room"
           >
             Join Online
@@ -278,7 +278,7 @@ function MeetingCard({
             href={meeting.detailUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground hover:bg-muted/40"
+            className="inline-flex min-h-9 items-center gap-1 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-foreground transition hover:bg-muted"
           >
             View on SMART Recovery
             <ExternalLink className="h-3 w-3" aria-hidden="true" />
@@ -297,7 +297,7 @@ function MeetingCard({
         <button
           type="button"
           onClick={handleCopy}
-          className="ml-auto inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-xs font-medium text-foreground hover:bg-muted/40"
+          className="ml-auto inline-flex min-h-9 items-center gap-1 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground transition hover:bg-muted"
           aria-label="Copy meeting details to clipboard"
           title="Copy meeting details"
         >
@@ -335,14 +335,14 @@ function Pane({
   const hidden = Math.max(0, occurrences.length - shown.length);
   return (
     <section>
-      <header className="mb-4 border-b border-border pb-2">
-        <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+      <header className="mb-4 flex flex-col gap-1 border-b border-border pb-3 sm:flex-row sm:items-end sm:justify-between">
+        <h3 className="font-display text-2xl font-medium tracking-[-0.02em] text-foreground sm:text-3xl">
           {title}{' '}
           <span className="font-normal text-muted-foreground">
             ({occurrences.length.toLocaleString()})
           </span>
         </h3>
-        <p className="mt-1 text-sm text-muted-foreground">{description}</p>
+        <p className="max-w-md text-sm text-muted-foreground sm:text-right">{description}</p>
       </header>
       {occurrences.length === 0 ? (
         <p className="text-sm italic text-muted-foreground">
@@ -489,7 +489,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
       {/* SMART's gateway behavior note — the Join button only appears on
           live/soon meetings because the Pathminder URL only redirects to
           the actual room during the active window. */}
-      <div className="rounded-md border border-border bg-muted/30 p-3 text-xs text-muted-foreground">
+      <div className="rounded-xl border border-signal/40 bg-signal/10 p-4 text-sm leading-relaxed text-foreground">
         <Info className="-mt-0.5 mr-1.5 inline h-3.5 w-3.5" aria-hidden="true" />
         SMART Recovery routes every join through its own gateway, which
         opens 15 minutes before the meeting starts. We show a one-click{' '}
@@ -501,7 +501,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
       </div>
 
       {/* Filter bar */}
-      <div className="rounded-lg border border-border bg-card p-4">
+      <div className="field-card p-4 sm:p-5">
         <div className="flex items-center gap-2">
           <FilterIcon className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden="true" />
           <span className="text-sm font-medium text-foreground">Filter meetings</span>
@@ -526,7 +526,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
                 type="button"
                 onClick={() => toggleSet('programs', name)}
                 className={cn(
-                  'rounded-full border px-3 py-1 text-xs font-medium transition',
+                  'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
                   active
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -556,7 +556,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
                 type="button"
                 onClick={() => toggleSet('audiences', name)}
                 className={cn(
-                  'rounded-full border px-3 py-1 text-xs font-medium transition',
+                  'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
                   active
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -584,7 +584,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
                   type="button"
                   onClick={() => toggleSet('languages', name)}
                   className={cn(
-                    'rounded-full border px-3 py-1 text-xs font-medium transition',
+                    'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
                     active
                       ? 'border-foreground bg-foreground text-background'
                       : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -611,7 +611,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
               placeholder="Search by facilitator or host city…"
               value={filterState.search}
               onChange={(e) => setFilterState((prev) => ({ ...prev, search: e.target.value }))}
-              className="w-full rounded-md border border-border bg-background py-2 pl-9 pr-3 text-sm placeholder:text-muted-foreground focus:border-foreground/40 focus:outline-none"
+              className="min-h-11 w-full rounded-xl border border-input bg-background py-2 pl-9 pr-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none"
               aria-label="Search meetings"
             />
           </label>
@@ -656,7 +656,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
         </div>
       )}
 
-      <footer className="rounded-lg border border-border bg-muted/30 p-4 text-xs text-muted-foreground">
+      <footer className="rounded-xl border border-border bg-muted/45 p-4 text-xs leading-relaxed text-muted-foreground sm:p-5">
         <p className="m-0">
           Meeting data © SMART Recovery, pulled daily from{' '}
           <a

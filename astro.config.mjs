@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import { unified } from '@astrojs/markdown-remark';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
@@ -11,7 +12,11 @@ import rehypeHeadingAnchors from './src/lib/rehype/headingAnchors.mjs';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://quitting7oh.org',
+  output: 'static',
   trailingSlash: 'never',
+  build: {
+    inlineStylesheets: 'always',
+  },
   integrations: [mdx(), react(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
@@ -24,8 +29,10 @@ export default defineConfig({
       },
       wrap: true,
     },
-    smartypants: true,
-    gfm: true,
-    rehypePlugins: [rehypeSlug, rehypeHeadingAnchors, rehypeExternalLinks],
+    processor: unified({
+      smartypants: true,
+      gfm: true,
+      rehypePlugins: [rehypeSlug, rehypeHeadingAnchors, rehypeExternalLinks],
+    }),
   },
 });

@@ -13,7 +13,7 @@
 #      the image assembly runs no JavaScript at all.
 
 # -------- Stage 1: build the static site (default path only) --------
-FROM node:22-alpine AS builder
+FROM node:26-alpine AS builder
 
 WORKDIR /build
 

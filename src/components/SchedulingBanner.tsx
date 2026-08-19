@@ -36,19 +36,19 @@ export function SchedulingBanner() {
   if (hidden) return null;
 
   return (
-    <div className="relative border-b border-primary/20 bg-primary text-primary-foreground">
+    <div className="relative border-b border-signal/35 bg-signal/12 text-foreground">
       <a
         href={PAGE_URL}
-        className="block px-4 py-2.5 pr-12 text-center text-sm leading-snug hover:underline sm:px-12"
+        className="block px-4 py-2.5 pr-12 text-center text-sm leading-snug hover:bg-signal/8 sm:px-12"
       >
         <Megaphone
-          className="mr-1.5 inline-block h-4 w-4 -translate-y-px"
+          className="mr-1.5 inline-block h-4 w-4 -translate-y-px text-signal"
           aria-hidden="true"
         />
         <span className="font-semibold">
           As of August 18, the DEA has not yet banned 7-OH.
         </span>{' '}
-        <span className="opacity-90">
+        <span className="text-muted-foreground">
           The ban could take effect at any time. What's happening and what
           it means&nbsp;&rarr;
         </span>
@@ -57,7 +57,7 @@ export function SchedulingBanner() {
         type="button"
         onClick={dismiss}
         aria-label="Dismiss announcement"
-        className="absolute right-2 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground"
+        className="absolute right-2 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground hover:bg-signal/15 hover:text-foreground"
       >
         <X className="h-4 w-4" />
       </button>

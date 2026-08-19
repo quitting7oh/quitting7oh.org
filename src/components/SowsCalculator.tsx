@@ -144,11 +144,11 @@ function ScoreButton({
       aria-label={ariaLabel}
       onClick={onClick}
       className={cn(
-        'flex h-11 w-full items-center justify-center rounded-md border text-sm font-semibold tabular-nums transition',
+        'flex h-11 w-full items-center justify-center rounded-lg border text-sm font-bold tabular-nums transition-colors',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
         selected
-          ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary/40'
-          : 'border-border bg-background text-foreground hover:bg-accent/40 hover:border-primary/40',
+          ? 'border-primary bg-primary text-primary-foreground ring-1 ring-primary/30'
+          : 'border-border bg-background text-foreground hover:border-primary hover:bg-accent',
       )}
     >
       {value}
@@ -249,23 +249,23 @@ export function SowsCalculator() {
     <Collapsible
       open={open}
       onOpenChange={setOpen}
-      className="not-prose my-6 rounded-lg border border-border bg-card text-card-foreground"
+      className="not-prose my-7 overflow-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-sm"
     >
       <CollapsibleTrigger
         className={cn(
-          'flex w-full cursor-pointer items-center justify-between gap-3 p-5 text-left',
+          'flex w-full cursor-pointer items-center justify-between gap-3 p-5 text-left sm:p-6',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0',
           'transition-colors',
           open
             ? 'border-b border-border hover:bg-accent/30'
-            : 'rounded-lg bg-primary/5 hover:bg-primary/10',
+            : 'bg-accent/60 hover:bg-accent',
         )}
         aria-label={open ? 'Collapse SOWS calculator' : 'Open SOWS calculator'}
       >
         <div className="flex min-w-0 flex-1 items-center gap-3">
           <div
             className={cn(
-              'shrink-0 rounded-md p-2 transition-colors',
+              'shrink-0 rounded-xl p-2.5 transition-colors',
               open
                 ? 'text-muted-foreground'
                 : 'bg-primary/15 text-primary',
@@ -274,7 +274,7 @@ export function SowsCalculator() {
             <Calculator className="h-5 w-5" aria-hidden="true" />
           </div>
           <div className="min-w-0">
-            <div className="text-base font-semibold text-foreground">
+            <div className="font-display text-xl font-semibold text-foreground">
               SOWS calculator
             </div>
             <div
@@ -296,7 +296,7 @@ export function SowsCalculator() {
         />
       </CollapsibleTrigger>
       <CollapsibleContent>
-      <div className="border-b border-border p-5">
+      <div className="border-b border-border bg-muted/25 p-5 sm:px-6">
         <p className="text-sm text-muted-foreground">
           Rate each symptom on a 0–4 scale.{' '}
           <span className="text-foreground">0</span> = not at all,{' '}
@@ -351,10 +351,10 @@ export function SowsCalculator() {
         ))}
       </ol>
 
-      <div className={`m-5 rounded-md border ${resultBorder} bg-muted/40 p-4`}>
+      <div className={`m-5 rounded-xl border ${resultBorder} bg-muted/40 p-5`}>
         <div className="flex items-baseline justify-between gap-3">
           <div>
-            <div className="text-3xl font-semibold tabular-nums text-foreground">
+            <div className="font-display text-4xl font-semibold tabular-nums text-foreground">
               {total}{' '}
               <span className="text-base font-normal text-muted-foreground">
                 / 64
@@ -383,7 +383,7 @@ export function SowsCalculator() {
       </div>
 
       {logLine && (
-        <div className="mx-5 mb-5 rounded-md border border-border bg-background p-4">
+        <div className="mx-5 mb-5 rounded-xl border border-border bg-background p-4">
           <div className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
             Log line
           </div>
@@ -394,7 +394,7 @@ export function SowsCalculator() {
             <button
               type="button"
               onClick={copyLogLine}
-              className="rounded-md border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground transition hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="rounded-lg border border-border bg-background px-3 py-2 text-xs font-bold text-foreground transition-colors hover:border-primary hover:bg-accent"
             >
               {copyState === 'copied'
                 ? 'Copied'

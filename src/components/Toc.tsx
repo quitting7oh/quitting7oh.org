@@ -91,12 +91,12 @@ export function Toc({ headings }: Props) {
 
   return (
     <nav aria-label="Table of contents" className="text-sm">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+      <p className="eyebrow mb-4 !text-muted-foreground">
         On this page
       </p>
       <ul
         ref={listRef}
-        className="scrollbar-none max-h-[calc(100vh-10rem)] space-y-1.5 overflow-y-auto overscroll-contain border-l border-border"
+        className="scrollbar-none max-h-[calc(100vh-11rem)] space-y-0.5 overflow-y-auto overscroll-contain border-l border-border py-1"
       >
         {filtered.map((h) => (
           <li key={h.slug}>
@@ -104,9 +104,9 @@ export function Toc({ headings }: Props) {
               href={`#${h.slug}`}
               aria-current={active === h.slug ? 'location' : undefined}
               className={cn(
-                '-ml-px block border-l border-transparent pl-3 text-muted-foreground transition hover:border-primary hover:text-foreground',
-                h.depth === 3 && 'pl-6 text-muted-foreground/80',
-                active === h.slug && 'border-primary font-medium text-foreground',
+                'relative -ml-px block border-l-2 border-transparent py-1.5 pl-3 text-[0.8rem] leading-snug text-muted-foreground transition-colors hover:text-foreground',
+                h.depth === 3 && 'pl-6 text-muted-foreground/75',
+                active === h.slug && 'border-primary font-bold text-primary',
               )}
             >
               {h.text}
