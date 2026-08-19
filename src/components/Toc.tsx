@@ -104,13 +104,13 @@ export function Toc({ headings }: Props) {
   if (filtered.length === 0) return null;
 
   return (
-    <nav aria-label="Table of contents" className="text-sm">
-      <p className="eyebrow mb-4 !text-muted-foreground">
+    <nav aria-label="Table of contents" className="rounded-2xl bg-muted/45 p-3.5 text-sm">
+      <p className="eyebrow mb-2.5 px-2 !text-muted-foreground">
         On this page
       </p>
       <ul
         ref={listRef}
-        className="scrollbar-none max-h-[calc(100vh-11rem)] space-y-0.5 overflow-y-auto overscroll-contain border-l border-border py-1"
+        className="scrollbar-none max-h-[calc(100vh-12rem)] space-y-0.5 overflow-y-auto overscroll-contain"
       >
         {filtered.map((h) => (
           <li key={h.slug}>
@@ -118,9 +118,9 @@ export function Toc({ headings }: Props) {
               href={`#${h.slug}`}
               aria-current={active === h.slug ? 'location' : undefined}
               className={cn(
-                'relative -ml-px block border-l-2 border-transparent py-1.5 pl-3 text-[0.8rem] leading-snug text-muted-foreground transition-colors hover:text-foreground',
-                h.depth === 3 && 'pl-6 text-muted-foreground/75',
-                active === h.slug && 'border-primary font-bold text-primary',
+                'block rounded-lg px-2 py-1.5 text-[0.8rem] leading-snug text-muted-foreground transition-colors hover:bg-background/60 hover:text-foreground',
+                h.depth === 3 && 'pl-5 text-muted-foreground/75',
+                active === h.slug && 'bg-primary/11 font-bold text-primary shadow-sm shadow-primary/5',
               )}
             >
               {h.text}

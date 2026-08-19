@@ -36,7 +36,7 @@ export function SchedulingBanner() {
   if (hidden) return null;
 
   return (
-    <div className="relative border-b border-signal/35 bg-signal/12 text-foreground">
+    <div className="relative bg-signal/12 text-foreground">
       <a
         href={PAGE_URL}
         className="block px-4 py-2.5 pr-12 text-center text-sm leading-snug hover:bg-signal/8 sm:px-12"

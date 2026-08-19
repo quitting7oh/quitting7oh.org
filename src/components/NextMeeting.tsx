@@ -115,7 +115,7 @@ function LiveMeetingAlternatives({ standalone = false }: { standalone?: boolean 
     <div
       className={cn(
         'flex flex-col gap-2.5 text-sm sm:flex-row sm:items-center sm:justify-between',
-        standalone ? 'field-card p-5 sm:p-6' : 'border-t border-border pt-3.5',
+        standalone ? 'field-card p-5 sm:p-6' : 'rounded-xl bg-muted/45 px-3 py-2.5',
       )}
     >
       <span className="font-medium text-foreground/80">

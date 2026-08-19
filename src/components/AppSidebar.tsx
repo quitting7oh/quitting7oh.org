@@ -40,9 +40,9 @@ function PageLink({ item, currentPath }: { item: SidebarItem; currentPath: strin
         href={item.href}
         aria-current={active ? 'page' : undefined}
         className={cn(
-          'relative block rounded-lg py-1.5 pl-3 pr-2 text-[0.86rem] leading-snug transition-colors',
+          'block rounded-lg px-3 py-1.5 text-[0.86rem] leading-snug transition-colors',
           active
-            ? 'bg-sidebar-accent font-bold text-sidebar-accent-foreground before:absolute before:bottom-2 before:left-0 before:top-2 before:w-0.5 before:rounded-full before:bg-primary'
+            ? 'bg-primary/12 font-bold text-primary shadow-sm shadow-primary/5'
             : 'text-sidebar-foreground/72 hover:bg-sidebar-accent/60 hover:text-sidebar-foreground',
         )}
       >
@@ -67,7 +67,7 @@ function Navigation({ categories, pinned, currentPath }: Props) {
         </div>
       </div>
 
-      <section className="mb-5 border-b border-sidebar-border pb-5">
+      <section className="mb-7">
         <h2 className="mb-2 flex items-center gap-2 px-2 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
           <Pin className="size-3" aria-hidden="true" />
           Most used
@@ -90,11 +90,11 @@ function Navigation({ categories, pinned, currentPath }: Props) {
           return (
             <React.Fragment key={category.slug}>
               {beginsReference && (
-                <p className="mb-2 mt-5 border-t border-sidebar-border px-2 pt-5 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+                <p className="mb-2 mt-7 px-2 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
                   Reference library
                 </p>
               )}
-              <section className={cn('rounded-xl', current && 'bg-sidebar-accent/35')}>
+              <section className={cn('rounded-xl', current && 'bg-sidebar-accent/55 shadow-sm shadow-primary/5')}>
                 <div className="flex items-center gap-1.5 p-1">
                   <button
                     type="button"
@@ -174,7 +174,7 @@ export function AppSidebar(props: Props) {
   if (mobile) {
     return (
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="w-[min(88vw,21rem)] gap-0 border-r border-sidebar-border bg-sidebar p-0 shadow-2xl">
+        <SheetContent side="left" className="w-[min(88vw,21rem)] gap-0 border-0 bg-sidebar p-0 shadow-2xl">
           <SheetHeader className="sr-only"><SheetTitle>Guide navigation</SheetTitle></SheetHeader>
           <div ref={mobileRef} className="h-full overflow-y-auto overscroll-contain pt-4">
             <Navigation {...props} />
@@ -185,7 +185,7 @@ export function AppSidebar(props: Props) {
   }
 
   return (
-    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 border-r border-sidebar-border bg-sidebar lg:block">
+    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 bg-sidebar/72 lg:block">
       <div ref={desktopRef} className="scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-y-auto overscroll-contain">
         <Navigation {...props} />
       </div>

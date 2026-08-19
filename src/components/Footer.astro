@@ -5,7 +5,7 @@ import { SITE } from '~/lib/site';
 const year = new Date().getFullYear();
 ---
 
-<footer class="border-t border-border bg-muted/30 text-foreground">
+<footer class="bg-muted/45 text-foreground">
   <div class="mx-auto max-w-[94rem] px-4 py-9 sm:px-6 sm:py-11 lg:px-8">
     <div class="grid gap-8 lg:grid-cols-[1.25fr_0.8fr_0.95fr] lg:gap-12">
       <div class="max-w-md">
@@ -41,7 +41,7 @@ const year = new Date().getFullYear();
       </div>
     </div>
 
-    <div class="mt-8 flex flex-col gap-2 border-t border-border pt-4 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+    <div class="mt-8 flex flex-col gap-2 rounded-xl bg-background/45 px-4 py-3 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
       <p>© {year} {SITE.title}.org</p>
       <p>No accounts. No tracking. No monetization.</p>
     </div>

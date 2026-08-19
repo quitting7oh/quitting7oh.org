@@ -247,11 +247,11 @@
   }
 
   .field-card {
-    border: 1px solid hsl(var(--border));
     border-radius: 0.9rem;
     background: hsl(var(--card));
-    box-shadow: 0 1px 0 hsl(var(--foreground) / 0.03),
-      0 12px 30px hsl(var(--foreground) / 0.035);
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.045),
+      0 14px 34px hsl(var(--foreground) / 0.035),
+      inset 0 0 0 1px hsl(var(--foreground) / 0.035);
   }
 
   .quiet-grid {
@@ -293,25 +293,43 @@
 
   .prose-recovery > h2 {
     margin: 3.4rem 0 1.15rem;
-    border-top: 1px solid hsl(var(--border));
-    padding-top: 1.15rem;
+    padding-top: 1rem;
     font-size: clamp(1.7rem, 1.62rem + 0.35vw, 1.92rem);
     line-height: 1.18;
+  }
+
+  .prose-recovery > h2::before {
+    content: '';
+    display: block;
+    width: 2.4rem;
+    height: 0.22rem;
+    margin-bottom: 0.85rem;
+    border-radius: 999px;
+    background: hsl(var(--primary));
+    opacity: 0.72;
   }
 
   .prose-recovery > h3 {
     max-width: 43rem;
     margin: 2.65rem 0 1rem;
-    border-left: 0.25rem solid hsl(var(--primary));
-    border-radius: 0 0.55rem 0.55rem 0;
-    background: hsl(var(--accent) / 0.68);
-    padding: 0.72rem 0.9rem 0.76rem;
+    padding: 0;
     color: hsl(var(--foreground));
     font-family: var(--font-sans);
     font-size: 1.16rem;
     font-weight: 760;
     letter-spacing: -0.005em;
     line-height: 1.32;
+  }
+
+  .prose-recovery > h3::before {
+    content: '';
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-right: 0.65rem;
+    border-radius: 0.18rem;
+    background: hsl(var(--primary) / 0.72);
+    vertical-align: 0.08em;
   }
 
   .prose-recovery > h4 {
@@ -327,8 +345,11 @@
 
   .prose-recovery > h2:first-child {
     margin-top: 0;
-    border-top: 0;
     padding-top: 0;
+  }
+
+  .prose-recovery > h2:first-child::before {
+    display: none;
   }
 
   .prose-recovery > p {
@@ -423,9 +444,11 @@
     max-width: 46rem;
     margin: 1.4rem 0;
     border: 0;
-    border-left: 0.3rem solid hsl(var(--primary));
-    background: hsl(var(--muted) / 0.55);
-    padding: 0.75rem 0.9rem;
+    border-radius: 0.9rem;
+    background: hsl(var(--muted) / 0.72);
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.045),
+      inset 0 0 0 1px hsl(var(--foreground) / 0.035);
+    padding: 0.85rem 1rem;
     color: hsl(var(--foreground));
     font-style: normal;
     font-weight: 470;
@@ -527,24 +550,22 @@
   .callout-info,
   .callout-medical {
     margin: 1.75rem 0;
-    border: 1px solid hsl(var(--border));
-    border-left-width: 0.35rem;
-    border-radius: 0.7rem;
+    border: 0;
+    border-radius: 0.9rem;
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.045),
+      inset 0 0 0 1px hsl(var(--foreground) / 0.035);
     padding: 1rem 1.1rem;
   }
 
   .callout-warning {
-    border-left-color: hsl(var(--signal));
     background: hsl(var(--signal) / 0.09);
   }
 
   .callout-info {
-    border-left-color: hsl(var(--primary));
     background: hsl(var(--accent));
   }
 
   .callout-medical {
-    border-left-color: hsl(var(--destructive));
     background: hsl(var(--destructive) / 0.075);
   }
 

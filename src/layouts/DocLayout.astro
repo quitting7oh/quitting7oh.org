@@ -46,7 +46,7 @@ const { prev, next } = await getPrevNext(currentPath);
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class="mx-auto flex max-w-[94rem] items-stretch lg:border-x lg:border-border">
+  <div class="mx-auto flex max-w-[96rem] items-stretch">
     <AppSidebar
       client:load
       categories={sidebarCategories}
@@ -54,10 +54,9 @@ const { prev, next } = await getPrevNext(currentPath);
       currentPath={currentPath}
     />
     <main id="main-content" class="min-w-0 flex-1">
-      <header class="border-b border-border bg-card">
-        <div class:list={['grid min-w-0', !wide && 'xl:grid-cols-[minmax(0,1fr)_14rem]']}>
-          <div class="min-w-0 px-4 py-7 sm:px-8 sm:py-8 lg:px-8 lg:py-7">
-            <div class:list={['mx-auto', wide ? 'max-w-6xl' : 'max-w-[48rem]']}>
+      <header class="bg-card/55">
+        <div class="min-w-0 px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-8">
+          <div class:list={['mx-auto', wide ? 'max-w-6xl' : 'max-w-[50rem]']}>
               <Breadcrumbs
                 client:idle
                 crumbs={[
@@ -67,7 +66,7 @@ const { prev, next } = await getPrevNext(currentPath);
                 sharePath={currentPath}
               />
               {cat && <p class="eyebrow mt-4">{cat.title} · Field note</p>}
-              <h1 class="mt-2.5 font-display text-[clamp(2.1rem,3.2vw,2.5rem)] font-semibold leading-[1.08] tracking-[-0.018em] text-foreground">
+              <h1 class="mt-2.5 font-display text-[clamp(2.05rem,3vw,2.4rem)] font-semibold leading-[1.08] tracking-[-0.018em] text-foreground">
                 {title}
               </h1>
               {description && (
@@ -75,22 +74,20 @@ const { prev, next } = await getPrevNext(currentPath);
               )}
               {!wide && <div class="mt-6 xl:hidden"><TocMobile headings={headings} client:idle /></div>}
               {wide && <TocWide headings={headings} />}
-            </div>
           </div>
-          {!wide && <div class="hidden border-l border-border bg-muted/20 xl:block" aria-hidden="true"></div>}
         </div>
       </header>
 
-      <div class:list={['grid min-w-0', !wide && 'xl:grid-cols-[minmax(0,1fr)_14rem]']}>
-        <div class="min-w-0 px-4 py-7 sm:px-8 sm:py-8 lg:px-8 lg:py-8">
-          <div class:list={['mx-auto min-w-0', wide ? 'max-w-6xl' : 'max-w-[48rem]']}>
+      <div class:list={['grid min-w-0', !wide && 'xl:grid-cols-[minmax(0,1fr)_15rem]']}>
+        <div class="min-w-0 px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-9">
+          <div class:list={['mx-auto min-w-0', wide ? 'max-w-6xl' : 'max-w-[50rem]']}>
             <article class="prose-recovery dark:prose-invert" data-pagefind-body>
               <slot />
             </article>
 
             <Pagination prev={prev} next={next} />
 
-            <div class="mt-12 flex flex-col gap-3 border-t border-border pt-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+            <div class="mt-12 flex flex-col gap-3 rounded-xl bg-muted/55 px-4 py-3.5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
               {updatedStr && <span>Updated <time datetime={lastUpdated?.toISOString()}>{updatedStr}</time></span>}
               <a href={sourceUrl} target="_blank" rel="noopener noreferrer" class="font-bold text-primary underline decoration-primary/35 underline-offset-4 hover:decoration-primary">
                 Read or suggest an edit on GitHub ↗
@@ -100,7 +97,7 @@ const { prev, next } = await getPrevNext(currentPath);
         </div>
 
         {!wide && (
-          <aside class="hidden border-l border-border bg-muted/25 px-4 py-8 xl:block">
+          <aside class="hidden px-4 py-8 xl:block">
             <div class="sticky top-[6.5rem]">
               <Toc headings={headings} client:idle />
             </div>

@@ -6,9 +6,11 @@ easy to scan.
 
 ## Design intent
 
-Fine rules, numbered section markers, paper-like surfaces, and an editorial
-serif separate navigation from article text. Large tap targets and direct
-labels shorten the path to withdrawal help and meetings.
+Tonal paper surfaces, compact section markers, generous reading measure, and an
+editorial serif separate navigation from article text. Hard framing is reserved
+for controls and data tables; page structure comes from spacing and grouped
+surfaces. Large tap targets and direct labels shorten the path to withdrawal
+help and meetings.
 
 The homepage starts with withdrawal help and a comparison of quitting options.
 Search and the next meeting appear in the opening view. A compact topic index
@@ -22,13 +24,14 @@ repeating each category description.
   small sizes.
 - **Newsreader Variable** handles titles and section headings. Its moderate
   contrast adds warmth without turning the site into a magazine layout.
-- The article column tops out at 48rem so tables and tools have room, while
+- The article column tops out at 50rem so tables and tools have room, while
   paragraphs and lists stop at 43rem. Body copy is 17px on larger screens and
   16px on phones, with a 1.72 line height. Dose and schedule data use tabular
   numerals.
-- Content-page titles run from 2.1rem to 2.5rem. Article section headings stay
-  near 1.9rem; 1.16rem sans-serif subsection bands create a second, clearly
-  different level. The larger display scale is reserved for the homepage.
+- Content-page titles run from 2.05rem to 2.4rem. Article section headings stay
+  near 1.9rem and use a short clay marker; 1.16rem sans-serif subsections use a
+  compact square marker to create a second, clearly different level. The larger
+  display scale is reserved for the homepage.
 - Lists use familiar disc and decimal markers with restrained burnt-clay color.
   The first pass's ring bullets and zero-padded counters were removed because
   they drew attention away from the text.
@@ -55,8 +58,8 @@ the banner, floating crisis control, and high-risk callouts.
 ## Space and layout
 
 Spacing follows a four-pixel base with larger editorial jumps between reading
-sections. Controls have a minimum height of 44px. Cards use a small radius and
-a one-pixel rule instead of deep shadows.
+sections. Controls have a minimum height of 44px. Cards use a moderate radius,
+tonal contrast, and shallow shadows rather than visible layout rules.
 
 Page headers use short vertical padding and share the reading column's measure.
 The footer uses a tonal paper surface in both themes instead of reversing to a
@@ -73,9 +76,9 @@ sections are not skipped.
 Wide data tables stay tables. Their containing card scrolls on the horizontal
 axis, keeps the day column visible, and uses tabular numerals. Calculators use
 the same field, summary, chart, and schedule treatments as the meeting tools.
-Callouts use a wider 46rem measure than paragraph text and tighter internal
-list rhythm, allowing dense summaries to stay compact without shrinking body
-type.
+Callouts use a wider 46rem measure than paragraph text, borderless tinted
+surfaces, and tighter internal list rhythm, allowing dense summaries to stay
+compact without shrinking body type.
 
 ## Components
 
@@ -134,9 +137,10 @@ subsets used by the interface.
 
 The committed files under `docs/redesign-shots/` cover the homepage, a long
 content page, and meeting schedules at mobile and desktop sizes in both color
-modes. The browse-through also covers a compound page, the changelog, a taper
-calculator, search navigation, appearance switching, the guide drawer, and
-390px horizontal overflow.
+modes. The browse-through also covers a compound page, the changelog, every
+taper calculator, SOWS scoring, persistence and reset behavior, copy/export
+actions, search navigation, appearance switching, the guide drawer, and 390px
+horizontal overflow.
 
 The final mobile Lighthouse run on `/other-tools/helper-meds` scored 95 for
 performance and 100 for accessibility. It recorded a 2.3 second Largest

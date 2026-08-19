@@ -302,9 +302,9 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
   const ohTotal = inputs.ohPerDose * inputs.ohDosesPerDay;
   const preloadTotal = inputs.preloadPerDose * inputs.preloadDosesPerDay;
   return (
-    <div className="space-y-6 rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6 print:hidden">
+    <div className="space-y-6 rounded-2xl bg-muted/45 p-5 shadow-sm sm:p-6 print:hidden">
       {/* Safety callout */}
-      <div className="rounded-xl border border-signal/45 border-l-4 border-l-signal bg-signal/10 p-4 text-sm">
+      <div className="rounded-xl bg-signal/10 p-4 text-sm shadow-sm">
         <p className="font-semibold text-foreground">
           Stacked opioid exposure during preload and cross-taper.
         </p>
@@ -655,7 +655,7 @@ function phaseRowClass(phase: Sr17Phase): string {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="bg-card p-4 sm:p-5">
+    <div className="rounded-xl bg-card p-4 shadow-sm sm:p-5">
       <div className="text-[0.68rem] font-bold uppercase tracking-[0.1em] text-muted-foreground">
         {label}
       </div>
@@ -686,7 +686,7 @@ function Output({
   );
   return (
     <>
-      <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
+      <div className="grid gap-2 sm:grid-cols-3">
         <Stat
           label="Total duration"
           value={`${result.totalDurationDays} day${result.totalDurationDays === 1 ? '' : 's'}`}
@@ -695,8 +695,8 @@ function Output({
         <Stat label="Protocol" value="SR-17 cross-taper" />
       </div>
 
-      <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-        <h3 className="border-b border-border bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
+      <div className="field-card overflow-hidden">
+        <h3 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
           Day-by-day schedule
         </h3>
         <div className="overflow-x-auto px-5 pb-2">

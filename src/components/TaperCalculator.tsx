@@ -779,7 +779,7 @@ export function TaperCalculator({
     <TooltipProvider delayDuration={150}>
     <div className="not-prose my-6 space-y-6">
       {/* Form */}
-      <div className="grid gap-5 rounded-2xl border border-border bg-card p-5 shadow-sm sm:grid-cols-2 sm:p-6 print:hidden">
+      <div className="grid gap-5 rounded-2xl bg-muted/45 p-5 shadow-sm sm:grid-cols-2 sm:p-6 print:hidden">
         <div className="sm:col-span-2 flex items-start justify-between gap-3">
           <div className="flex-1">
             {substances.length > 1 && (
@@ -867,7 +867,7 @@ export function TaperCalculator({
           </div>
         )}
 
-        <div className="sm:col-span-2 rounded-lg border border-border bg-muted/45 px-4 py-3 text-sm">
+        <div className="sm:col-span-2 rounded-xl bg-background/60 px-4 py-3 text-sm shadow-sm">
           <span className="text-muted-foreground">Total daily:</span>{' '}
           <span className="font-semibold text-foreground">
             {roundDose(totalDaily)} {cfg.unit}
@@ -916,7 +916,7 @@ export function TaperCalculator({
         </div>
 
         {difficulty === 'custom' && (
-          <div className="sm:col-span-2 grid gap-4 rounded-xl border border-border bg-muted/40 p-4 sm:grid-cols-2">
+          <div className="sm:col-span-2 grid gap-4 rounded-xl bg-background/55 p-4 shadow-sm sm:grid-cols-2">
             <div>
               <Label htmlFor="custom-days">Total duration</Label>
               <div className="mt-1.5 flex items-center gap-2">
@@ -978,7 +978,7 @@ export function TaperCalculator({
             </p>
           </div>
 
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
+          <div className="grid gap-2 sm:grid-cols-3">
             <Stat label="Total duration" value={totalDuration} />
             <Stat
               label="Total medication"
@@ -987,7 +987,7 @@ export function TaperCalculator({
             <Stat label="Approach" value={sourceLabel(result.source)} />
           </div>
 
-          <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+          <div className="field-card p-5 sm:p-6">
             <h3 className="mb-4 font-display text-xl font-semibold text-foreground">
               Schedule curve (total daily)
             </h3>
@@ -1035,8 +1035,8 @@ export function TaperCalculator({
             </ChartContainer>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-            <h3 className="border-b border-border bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
+          <div className="field-card overflow-hidden">
+            <h3 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
               Schedule table
             </h3>
             <div className="overflow-x-auto">
@@ -1234,7 +1234,7 @@ export function TaperCalculator({
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="bg-card p-4 sm:p-5">
+    <div className="rounded-xl bg-card p-4 shadow-sm sm:p-5">
       <div className="text-[0.68rem] font-bold uppercase tracking-[0.1em] text-muted-foreground">
         {label}
       </div>

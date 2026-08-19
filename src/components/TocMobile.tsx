@@ -24,7 +24,7 @@ export function TocMobile({ headings }: Props) {
     <Collapsible
       open={open}
       onOpenChange={setOpen}
-      className="rounded-xl border border-border bg-background/65 xl:hidden"
+      className="rounded-xl bg-muted/55 shadow-sm xl:hidden"
     >
       <CollapsibleTrigger className="flex min-h-12 w-full cursor-pointer items-center justify-between gap-2 px-4 py-3 text-sm font-bold text-foreground hover:bg-accent">
         <span className="flex items-center gap-2">
@@ -45,18 +45,18 @@ export function TocMobile({ headings }: Props) {
       <CollapsibleContent>
         <nav
           aria-label="Table of contents"
-          className="border-t border-border px-4 py-4 text-sm"
+          className="px-3 pb-4 text-sm"
         >
-          <ul className="space-y-2 border-l border-border">
+          <ul className="space-y-1">
             {filtered.map((h) => (
               <li key={h.slug}>
                 <a
                   href={`#${h.slug}`}
                   aria-current={active === h.slug ? 'location' : undefined}
                   className={cn(
-                    '-ml-px block border-l-2 border-transparent pl-3 leading-snug text-foreground transition-colors hover:border-primary hover:text-primary',
+                    'block rounded-lg px-3 py-2 leading-snug text-foreground transition-colors hover:bg-background/65 hover:text-primary',
                     h.depth === 3 && 'pl-6 text-muted-foreground',
-                    active === h.slug && 'border-primary font-bold text-primary',
+                    active === h.slug && 'bg-primary/11 font-bold text-primary',
                   )}
                 >
                   {h.text}
