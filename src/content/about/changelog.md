@@ -18,6 +18,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Redesign follow-up
 
+- Expanded article pages to a 48rem reading measure, aligned page headers with
+  the article column, removed the first-heading gap, and fixed a variable-font
+  override that forced all weights to 400.
+- Renamed the homepage meeting block to "7OH/Kratom support meeting" and added
+  live NA and SMART Recovery links whenever no kratom-specific meeting is live.
 - Added a Discord invite beside the meeting action in the desktop header. It
   shows the current online count when Discord's widget API is available.
 - Replaced slogan-like homepage and brand-guide copy with direct labels and

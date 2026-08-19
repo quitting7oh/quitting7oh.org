@@ -96,7 +96,7 @@
     --secondary: 38 24% 91%;
     --secondary-foreground: 22 15% 18%;
     --muted: 40 25% 93%;
-    --muted-foreground: 24 9% 40%;
+    --muted-foreground: 24 10% 36%;
     --accent: 344 31% 92%;
     --accent-foreground: 344 37% 28%;
     --destructive: 2 62% 43%;
@@ -136,7 +136,7 @@
     --secondary: 22 12% 17%;
     --secondary-foreground: 42 22% 88%;
     --muted: 22 11% 16%;
-    --muted-foreground: 28 10% 66%;
+    --muted-foreground: 30 11% 72%;
     --accent: 344 22% 20%;
     --accent-foreground: 348 48% 82%;
     --destructive: 3 55% 48%;
@@ -183,7 +183,7 @@
     font-family: var(--font-sans);
     font-size: 1rem;
     line-height: 1.6;
-    font-variation-settings: 'wght' 400;
+    font-weight: 430;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -280,8 +280,8 @@
     --tw-prose-td-borders: hsl(var(--border));
     max-width: none;
     color: hsl(var(--foreground));
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 1.0625rem;
+    line-height: 1.72;
   }
 
   .prose-recovery > :where(h1, h2, h3, h4) {
@@ -292,7 +292,7 @@
   }
 
   .prose-recovery > h2 {
-    margin: 2.8rem 0 1rem;
+    margin: 2.6rem 0 0.9rem;
     font-size: clamp(1.45rem, 1.42rem + 0.2vw, 1.55rem);
     line-height: 1.25;
   }
@@ -309,12 +309,16 @@
     line-height: 1.35;
   }
 
+  .prose-recovery > :first-child {
+    margin-top: 0;
+  }
+
   .prose-recovery > p {
-    margin: 0 0 1.25rem;
+    margin: 0 0 1.15rem;
   }
 
   .prose-recovery :where(p, li) {
-    line-height: 1.7;
+    line-height: 1.72;
   }
 
   .prose-recovery :where(ul, ol):not(.not-prose *) {

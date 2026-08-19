@@ -36,7 +36,7 @@ const currentPath = Astro.url.pathname;
     />
     <main id="main-content" class="min-w-0 flex-1">
       <header class="border-b border-border bg-card px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-9">
-        <div class="mx-auto max-w-[44rem]">
+        <div class="mx-auto max-w-[48rem]">
           <Breadcrumbs client:idle crumbs={[{ label: cat.title }]} />
           <div class="mt-4 inline-flex size-9 items-center justify-center rounded-lg bg-accent text-primary">
             <cat.Icon class="size-4.5" aria-hidden="true" />
@@ -48,7 +48,7 @@ const currentPath = Astro.url.pathname;
         </div>
       </header>
 
-      <div class="mx-auto max-w-[44rem] px-4 py-7 sm:px-8 sm:py-9 lg:px-10 lg:py-10">
+      <div class="mx-auto max-w-[48rem] px-4 py-7 sm:px-8 sm:py-9 lg:px-8 lg:py-9">
 
         {docs.length === 0 ? (
           <p class="mt-10 text-muted-foreground">No pages here yet.</p>

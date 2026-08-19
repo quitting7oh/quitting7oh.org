@@ -22,9 +22,9 @@ repeating each category description.
   small sizes.
 - **Newsreader Variable** handles titles and section headings. Its moderate
   contrast adds warmth without turning the site into a magazine layout.
-- The reading column tops out at 44rem. Body copy is 16px with a 1.7 line
-  height and 20px paragraph spacing. Dose and schedule data use tabular
-  numerals.
+- The reading column tops out at 48rem. Body copy is 17px on larger screens
+  and 16px on phones, with a 1.72 line height. Dose and schedule data use
+  tabular numerals.
 - Content-page titles run from 2.1rem to 2.5rem. Article section headings stay
   near 1.55rem. The larger display scale is reserved for the homepage.
 - Lists use familiar disc and decimal markers with restrained mulberry color.

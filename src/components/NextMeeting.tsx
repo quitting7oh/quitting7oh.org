@@ -110,6 +110,29 @@ function shouldShowNextUp(status: MeetingStatus): boolean {
   return status === 'live-now' || status === 'meeting-starting';
 }
 
+function LiveMeetingAlternatives({ standalone = false }: { standalone?: boolean }) {
+  return (
+    <div
+      className={cn(
+        'flex flex-col gap-2.5 text-sm sm:flex-row sm:items-center sm:justify-between',
+        standalone ? 'field-card p-5 sm:p-6' : 'border-t border-border pt-3.5',
+      )}
+    >
+      <span className="font-medium text-foreground/80">
+        No 7-OH/kratom meeting is live right now.
+      </span>
+      <span className="flex flex-wrap gap-x-4 gap-y-2 font-bold">
+        <a href="/virtual-na-meetings-now" className="text-primary hover:underline">
+          Live NA meetings
+        </a>
+        <a href="/virtual-smart-meetings-now" className="text-primary hover:underline">
+          Live SMART meetings
+        </a>
+      </span>
+    </div>
+  );
+}
+
 function MeetingCard({ display, now }: CardProps) {
   const { meeting, start, end, status } = display;
   const badge = STATUS_BADGE[status];
@@ -202,6 +225,8 @@ function MeetingCard({ display, now }: CardProps) {
         </div>
       )}
 
+      {!shouldShowNextUp(status) && <LiveMeetingAlternatives />}
+
     </div>
   );
 }
@@ -222,7 +247,7 @@ export function NextMeeting() {
   if (!now) return null;
 
   const display = findDisplayMeeting(now);
-  if (!display) return null;
+  if (!display) return <LiveMeetingAlternatives standalone />;
 
   return <MeetingCard display={display} now={now} />;
 }
