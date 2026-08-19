@@ -84,7 +84,7 @@ export function DiscordCard() {
         </div>
         <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
           <span
-            className="inline-block h-2 w-2 animate-pulse rounded-full bg-success"
+            className="inline-block h-2 w-2 rounded-full bg-success motion-safe:animate-pulse"
             aria-hidden="true"
           />
           <span>{data.presence_count} online</span>

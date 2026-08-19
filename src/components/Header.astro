@@ -1,7 +1,9 @@
 ---
 import { ThemePicker } from './ThemePicker';
 import { SearchBox } from './SearchBox';
+import { DiscordOnlineCount } from './DiscordOnlineCount';
 import Logo from './Logo.astro';
+import { MessageCircle } from 'lucide-react';
 ---
 
 <header class="sticky top-0 z-40 border-b border-border/90 bg-background/94 backdrop-blur-xl">
@@ -20,7 +22,7 @@ import Logo from './Logo.astro';
     <Logo size="2.25rem" />
 
     <p class="ml-3 hidden border-l border-border pl-4 text-xs leading-snug text-muted-foreground xl:block">
-      A field guide for leaving<br />7-OH and kratom synthetics
+      Help for quitting 7-OH<br />and kratom synthetics
     </p>
 
     <div class="ml-auto flex items-center gap-2 sm:gap-3">
@@ -34,6 +36,17 @@ import Logo from './Logo.astro';
         </span>
         <span class="hidden sm:inline">Find a meeting</span>
         <span class="sm:hidden">Meetings</span>
+      </a>
+      <a
+        href="https://discord.gg/quitting7oh"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hidden h-10 min-w-[8.75rem] items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 text-sm font-bold text-foreground transition-colors hover:border-primary/55 hover:bg-accent min-[760px]:inline-flex"
+      >
+        <MessageCircle class="size-4 shrink-0 text-primary" strokeWidth={1.9} aria-hidden="true" />
+        <span class="sr-only">Join the quitting7oh </span>
+        <span>Discord</span>
+        <DiscordOnlineCount client:load />
       </a>
       <SearchBox variant="header" client:load />
       <ThemePicker client:load />

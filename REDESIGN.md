@@ -1,21 +1,19 @@
 # Field Guide redesign
 
-This branch rebuilds the user interface around one constraint: a reader in
-withdrawal may have shaky hands, little sleep, and a small phone. Readers get a
-quiet page, a short path to urgent help, and enough space for long articles.
+This branch rebuilds the user interface for readers who may have shaky hands,
+little sleep, and a small phone. It keeps urgent help close and long articles
+easy to scan.
 
 ## Design intent
 
-The site now reads like an annotated field guide. Fine rules, numbered section
-markers, paper-like surfaces, and a restrained editorial serif give the content
-structure without making it feel clinical. Large tap targets, direct labels,
-and short paths to withdrawal help and meetings carry the interaction work.
+Fine rules, numbered section markers, paper-like surfaces, and an editorial
+serif separate navigation from article text. Large tap targets and direct
+labels shorten the path to withdrawal help and meetings.
 
-The homepage starts with the two decisions readers reach for most: help during
-withdrawal and a comparison of quitting paths. Search and the next meeting sit
-in the same opening view. The old card grid gave way to a compact guide index.
-Category blurbs were removed from that index after the first visual pass; names
-and page counts are enough at that point in the journey.
+The homepage starts with withdrawal help and a comparison of quitting options.
+Search and the next meeting appear in the opening view. A compact topic index
+replaces the old card grid. It uses category names and page counts without
+repeating each category description.
 
 ## Type
 

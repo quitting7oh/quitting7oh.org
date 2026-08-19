@@ -14,6 +14,15 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-08-19
+
+### Redesign follow-up
+
+- Added a Discord invite beside the meeting action in the desktop header. It
+  shows the current online count when Discord's widget API is available.
+- Replaced slogan-like homepage and brand-guide copy with direct labels and
+  specific descriptions after a stop-slop review.
+
 ## 2026-08-18
 
 ### Field Guide visual redesign
