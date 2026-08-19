@@ -118,9 +118,9 @@ export function CrisisButton() {
 
   return (
     <Sheet>
-      <div className="fixed bottom-6 left-6 z-20 sm:bottom-8 sm:left-8">
+      <div className="fixed bottom-3 left-3 z-20 sm:bottom-6 sm:left-6">
         <SheetTrigger
-          className="inline-flex h-12 items-center gap-2 rounded-xl border border-signal/70 bg-signal pl-4 pr-11 text-sm font-bold text-signal-foreground shadow-lg transition-colors hover:bg-signal/90"
+          className="inline-flex h-11 items-center gap-1.5 rounded-md border border-signal/70 bg-signal pl-3 pr-9 text-sm font-bold text-signal-foreground transition-colors hover:bg-signal/90"
           aria-label="Open crisis resources"
         >
           <LifeBuoy className="h-4 w-4" aria-hidden="true" />
@@ -132,7 +132,7 @@ export function CrisisButton() {
           type="button"
           onClick={dismissForSession}
           aria-label="Hide crisis button"
-          className="absolute right-1.5 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg text-signal-foreground/65 hover:bg-signal-foreground/10 hover:text-signal-foreground"
+          className="absolute right-1 top-1/2 inline-flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded text-signal-foreground/65 hover:bg-signal-foreground/10 hover:text-signal-foreground"
         >
           <X className="h-4 w-4" />
         </button>

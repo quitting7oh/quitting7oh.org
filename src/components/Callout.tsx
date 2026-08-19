@@ -31,7 +31,7 @@ const styles = {
 export function Callout({ type = 'info', title, children }: Props) {
   const { Icon, title: fallback, className } = styles[type];
   return (
-    <aside className={cn('not-prose my-7 grid grid-cols-[auto_minmax(0,1fr)] gap-3 rounded-xl px-4 py-3.5 shadow-sm', className)}>
+    <aside className={cn('not-prose my-7 grid grid-cols-[auto_minmax(0,1fr)] gap-3 rounded px-4 py-3.5', className)}>
       <span className="callout-icon inline-flex size-6 items-center justify-center">
         <Icon className="size-4" aria-hidden="true" />
       </span>
