@@ -52,11 +52,11 @@ way:**
 - **Type:** titles and major sections use **Newsreader**; body text,
   controls, and subsections use **Atkinson Hyperlegible Next**. Both are
   self-hosted variable fonts. The role split must stay visible.
-- **Palette:** warm paper and brown-charcoal ink with laurel green for
+- **Palette:** warm paper and brown-charcoal ink with burnt clay for
   links and ordinary actions. Light: background `hsl(43 38% 97%)`, text
-  `hsl(22 16% 14%)`, primary `hsl(145 29% 32%)`. Dark: background
+  `hsl(22 16% 14%)`, primary `hsl(15 42% 38%)`. Dark: background
   `hsl(22 14% 8%)`, text `hsl(42 28% 92%)`, primary
-  `hsl(143 35% 69%)`. Use the dark values directly.
+  `hsl(18 48% 70%)`. Use the dark values directly.
 - **Style by role, not raw hex:** background, foreground, card, primary,
   secondary, muted, accent, border, destructive — each with a light and a
   dark value. Support both modes.

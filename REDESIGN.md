@@ -29,7 +29,7 @@ repeating each category description.
 - Content-page titles run from 2.1rem to 2.5rem. Article section headings stay
   near 1.9rem; 1.16rem sans-serif subsection bands create a second, clearly
   different level. The larger display scale is reserved for the homepage.
-- Lists use familiar disc and decimal markers with restrained laurel color.
+- Lists use familiar disc and decimal markers with restrained burnt-clay color.
   The first pass's ring bullets and zero-padded counters were removed because
   they drew attention away from the text.
 
@@ -45,11 +45,11 @@ surface and contrast values.
 | --- | --- | --- | --- |
 | Page | `hsl(43 38% 97%)` | `hsl(22 14% 8%)` | Reading background |
 | Ink | `hsl(22 16% 14%)` | `hsl(42 28% 92%)` | Body and headings |
-| Laurel | `hsl(145 29% 32%)` | `hsl(143 35% 69%)` | Links, navigation, ordinary action |
+| Burnt clay | `hsl(15 42% 38%)` | `hsl(18 48% 70%)` | Links, navigation, ordinary action |
 | Amber | `hsl(35 88% 46%)` | `hsl(38 90% 58%)` | Crisis and time-sensitive status |
 | Leaf | `hsl(104 35% 34%)` | `hsl(104 43% 61%)` | Live meetings and available support |
 
-Laurel carries navigation and ordinary actions. Amber identifies urgency in
+Burnt clay carries navigation and ordinary actions. Amber identifies urgency in
 the banner, floating crisis control, and high-risk callouts.
 
 ## Space and layout
@@ -73,6 +73,9 @@ sections are not skipped.
 Wide data tables stay tables. Their containing card scrolls on the horizontal
 axis, keeps the day column visible, and uses tabular numerals. Calculators use
 the same field, summary, chart, and schedule treatments as the meeting tools.
+Callouts use a wider 46rem measure than paragraph text and tighter internal
+list rhythm, allowing dense summaries to stay compact without shrinking body
+type.
 
 ## Components
 
