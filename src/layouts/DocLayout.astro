@@ -54,9 +54,10 @@ const { prev, next } = await getPrevNext(currentPath);
       currentPath={currentPath}
     />
     <main id="main-content" class="min-w-0 flex-1">
-      <header>
-        <div class="min-w-0 px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-8">
-          <div class:list={['mx-auto', wide ? 'max-w-6xl' : 'max-w-[50rem]']}>
+      <header class="doc-header-surface">
+        <div class:list={['grid min-w-0', !wide && 'xl:grid-cols-[minmax(0,1fr)_15rem]']}>
+          <div class="min-w-0 px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-8">
+            <div class:list={['mx-auto', wide ? 'max-w-6xl' : 'max-w-[50rem]']}>
               <Breadcrumbs
                 client:idle
                 crumbs={[
@@ -74,6 +75,7 @@ const { prev, next } = await getPrevNext(currentPath);
               )}
               {!wide && <div class="mt-6 xl:hidden"><TocMobile headings={headings} client:idle /></div>}
               {wide && <TocWide headings={headings} />}
+            </div>
           </div>
         </div>
       </header>

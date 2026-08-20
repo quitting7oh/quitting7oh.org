@@ -40,10 +40,10 @@ function PageLink({ item, currentPath }: { item: SidebarItem; currentPath: strin
         href={item.href}
         aria-current={active ? 'page' : undefined}
         className={cn(
-          'relative block rounded-md px-3 py-1.5 text-[0.86rem] leading-snug transition-colors',
+          'relative block rounded-md border-l-2 px-3 py-1.5 text-[0.86rem] leading-snug transition-colors',
           active
-            ? 'font-bold text-primary before:absolute before:left-0 before:top-1/2 before:size-1 before:-translate-y-1/2 before:rounded-full before:bg-primary'
-            : 'text-sidebar-foreground/72 hover:bg-sidebar-accent/60 hover:text-sidebar-foreground',
+            ? 'border-primary bg-sidebar-accent/55 font-bold text-primary'
+            : 'border-transparent text-sidebar-foreground/72 hover:bg-sidebar-accent/45 hover:text-sidebar-foreground',
         )}
       >
         {item.title}
@@ -94,7 +94,7 @@ function Navigation({ categories, pinned, currentPath }: Props) {
                   Reference library
                 </p>
               )}
-              <section>
+              <section className={cn(current && 'rounded-lg bg-sidebar-accent/18')}>
                 <div className="flex items-center gap-1.5 p-1">
                   <button
                     type="button"
@@ -185,7 +185,7 @@ export function AppSidebar(props: Props) {
   }
 
   return (
-    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 bg-sidebar/45 lg:block">
+    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 bg-sidebar/58 shadow-[inset_-1px_0_0_hsl(var(--sidebar-border)/0.42)] lg:block">
       <div ref={desktopRef} className="scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-y-auto overscroll-contain">
         <Navigation {...props} />
       </div>

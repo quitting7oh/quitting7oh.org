@@ -14,25 +14,25 @@ const styles = {
   info: {
     Icon: Info,
     title: 'Note',
-    className: 'bg-muted/65 text-foreground [&_.callout-icon]:text-primary',
+    className: 'border-primary/18 bg-accent/55 text-foreground [&_.callout-icon]:text-primary',
   },
   warning: {
     Icon: AlertTriangle,
     title: 'Safety note',
-    className: 'bg-signal/10 text-foreground [&_.callout-icon]:text-signal',
+    className: 'border-signal/25 bg-signal/10 text-foreground [&_.callout-icon]:text-signal',
   },
   medical: {
     Icon: Stethoscope,
     title: 'Medical context',
-    className: 'bg-destructive/8 text-foreground [&_.callout-icon]:text-destructive',
+    className: 'border-destructive/18 bg-destructive/8 text-foreground [&_.callout-icon]:text-destructive',
   },
 } as const;
 
 export function Callout({ type = 'info', title, children }: Props) {
   const { Icon, title: fallback, className } = styles[type];
   return (
-    <aside className={cn('not-prose my-7 grid grid-cols-[auto_minmax(0,1fr)] gap-3 rounded px-4 py-3.5', className)}>
-      <span className="callout-icon inline-flex size-6 items-center justify-center">
+    <aside className={cn('not-prose my-7 grid grid-cols-[auto_minmax(0,1fr)] gap-3 rounded-md border px-4 py-3.5 shadow-[0_12px_30px_-28px_hsl(var(--foreground)/0.55)]', className)}>
+      <span className="callout-icon inline-flex size-7 items-center justify-center rounded-md bg-background/55">
         <Icon className="size-4" aria-hidden="true" />
       </span>
       <div className="min-w-0">

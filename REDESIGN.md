@@ -29,9 +29,10 @@ repeating each category description.
   16px on phones, with a 1.72 line height. Dose and schedule data use tabular
   numerals.
 - Content-page titles run from 2.05rem to 2.4rem. Article section headings stay
-  near 1.9rem; 1.16rem sans-serif subsections create a second, clearly
-  different level through family, weight, and spacing rather than decorative
-  rules or markers. The larger display scale is reserved for the homepage.
+  near 1.9rem and use one short clay stroke as an editorial section cue;
+  1.16rem sans-serif subsections create a clearly different level through
+  family, weight, and spacing. The larger display scale is reserved for the
+  homepage.
 - Lists use familiar disc and decimal markers with restrained burnt-clay color.
   The first pass's ring bullets and zero-padded counters were removed because
   they drew attention away from the text.
@@ -59,8 +60,10 @@ the banner, floating crisis control, and high-risk callouts.
 
 Spacing follows a four-pixel base with larger editorial jumps between reading
 sections. Controls have a minimum height of 44px. Object containers use a low
-radius and a quiet one-pixel boundary; navigation, metadata, and topic indexes
-use alignment and whitespace instead of card chrome.
+radius, a quiet one-pixel boundary, and a barely visible grounding shadow;
+navigation, metadata, and topic indexes use alignment and whitespace instead
+of card chrome. Selected navigation receives a narrow clay edge and low-contrast
+wash so state is obvious without turning every link into a pill.
 
 Page headers use short vertical padding and share the reading column's measure.
 The footer uses a tonal paper surface in both themes instead of reversing to a
@@ -75,11 +78,12 @@ header offset; the tracker also adjusts near the end of a page so short final
 sections are not skipped.
 
 Wide data tables stay tables. Their containing card scrolls on the horizontal
-axis, keeps the day column visible, and uses tabular numerals. Calculators use
-the same field, summary, chart, and schedule treatments as the meeting tools.
-Callouts use a 44rem measure, flat borderless tints, and tighter internal list
-rhythm, allowing dense summaries to stay
-compact without shrinking body type.
+axis, keeps the day column visible, uses tabular numerals, and separates rows
+with restrained alternating paper tones. Calculators use the same field,
+summary, chart, and schedule treatments as the meeting tools. Callouts use a
+44rem measure, a semantic accent edge, a light surface tint, and tighter
+internal list rhythm, allowing dense summaries to stay compact without
+shrinking body type.
 
 ## Components
 
