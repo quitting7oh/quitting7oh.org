@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { UpcomingMeetings } from '~/components/UpcomingMeetings';
+import { PreviouslyJoinedMeetings } from '~/components/PreviouslyJoinedMeetings';
 
-const title = 'Next kratom support meeting';
+const title = 'Next 7-OH and kratom support meeting';
 const description =
-  'Live virtual meeting schedule for Kratom Anonymous and Quitting Kratom Support - There Is A Way Out (TIAWO) — see the next meeting, when it starts in your time, and join from any device. Free, no signup.';
+  'Live virtual 7-OH and kratom support meeting schedule for Kratom Anonymous and Quitting Kratom Support - There Is A Way Out (TIAWO). See the next meeting, when it starts in your time, and join from any device. Free, no signup.';
 ---
 
 <BaseLayout title={title} description={description}>
@@ -15,10 +16,10 @@ const description =
     <header class="mb-9 max-w-3xl sm:mb-11">
       <p class="eyebrow">Live support · local time</p>
       <h1 class="mt-3 font-display text-[clamp(2.1rem,3.2vw,2.5rem)] font-semibold leading-[1.08] tracking-[-0.018em] text-foreground">
-        Next kratom support meeting
+        Next 7-OH and kratom support meeting
       </h1>
       <p class="mt-4 max-w-3xl text-base leading-[1.65] text-muted-foreground sm:text-[1.0625rem]">
-        Live virtual meetings every day from
+        Live virtual meetings for 7-OH and kratom recovery every day from{' '}
         <a
           href="https://www.kratom-anonymous.org"
           target="_blank"
@@ -26,8 +27,8 @@ const description =
           class="font-medium text-foreground underline underline-offset-2 hover:text-primary"
         >
           Kratom Anonymous
-        </a>
-        and
+        </a>{' '}
+        and{' '}
         <a
           href="https://kratomquitters.com/meetings"
           target="_blank"
@@ -40,6 +41,7 @@ const description =
       </p>
     </header>
 
+    <PreviouslyJoinedMeetings providers={['KA', 'KQS']} client:load />
     <UpcomingMeetings client:load />
 
     <footer class="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">

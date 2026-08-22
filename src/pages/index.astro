@@ -8,9 +8,10 @@ import { CATEGORIES, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getCollection } from 'astro:content';
 import {
+  Activity,
   ArrowRight,
   Calculator,
-  Library,
+  Leaf,
   MessageCircle,
   Pill,
 } from 'lucide-react';
@@ -26,26 +27,32 @@ const counts = Object.fromEntries(
 
 const immediatePaths = [
   {
-    href: '/other-tools/vitamins-supplements',
+    href: '/medications-supplements/vitamins-supplements',
     label: 'Vitamins & supplements',
-    detail: 'What helps, what to skip, and the mega-dose vitamin C protocol',
+    detail: 'Supplements and mega-dose vitamin C, including what to skip',
   },
   {
-    href: '/start-here/how-to-quit-7-oh',
-    label: 'Quitting options',
-    detail: 'Compare cold turkey, tapering, leaf, and MAT',
+    href: '/medications-supplements/helper-meds',
+    label: 'Helper medications',
+    detail: 'Medication options for common withdrawal symptoms',
+  },
+  {
+    href: '/mat-suboxone/sows-cows-induction-guide',
+    label: 'SOWS induction guide',
+    detail: 'Score symptoms before a buprenorphine induction',
   },
   {
     href: '/for-loved-ones/welcome',
     label: 'For someone you love',
-    detail: 'Support, boundaries, and safety for families',
+    detail: 'Help with support and boundaries for families',
   },
 ];
 
 const tools = [
   { href: '/resources/7-oh-taper-calculator', label: '7-OH taper', Icon: Calculator },
   { href: '/resources/suboxone-taper-calculator', label: 'Suboxone taper', Icon: Pill },
-  { href: '/mat-suboxone/sows-cows-induction-guide', label: 'SOWS score', Icon: Library },
+  { href: '/resources/kratom-leaf-taper-calculator', label: 'Kratom leaf taper', Icon: Leaf },
+  { href: '/resources/sr-17-taper-calculator', label: 'SR-17 taper', Icon: Activity },
 ];
 ---
 
@@ -56,30 +63,24 @@ const tools = [
         <div class="mx-auto max-w-3xl text-center">
           <p class="eyebrow">Start here</p>
           <h1 class="reading-title mx-auto mt-4 max-w-3xl">
-            Quitting <span class="whitespace-nowrap">7-OH:</span> next steps
+            Help quitting <span class="whitespace-nowrap">7-OH</span>
           </h1>
           <p class="mx-auto mt-5 max-w-2xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
             Find withdrawal guidance, taper tools, medication references, and peer support for quitting 7-OH and related kratom synthetics.
           </p>
 
-          <div class="mt-7 flex flex-col justify-center gap-3 sm:flex-row sm:items-center">
-            <a
-              href="/start-here/7-oh-withdrawal-help"
-              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              I’m in withdrawal now
-              <ArrowRight class="size-4" aria-hidden="true" />
-            </a>
+          <div class="mt-7 flex flex-col items-center gap-3">
             <a
               href="/start-here/how-to-quit-7-oh"
-              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-base font-bold text-foreground transition-colors hover:border-primary hover:bg-accent"
+              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Compare quitting options
+              <ArrowRight class="size-4" aria-hidden="true" />
             </a>
           </div>
 
           <div class="mx-auto mt-7 max-w-xl text-left">
-            <SearchBox variant="hero" client:idle placeholder="Search symptoms, treatments, medicines…" />
+            <SearchBox variant="hero" client:idle placeholder="Search the guide…" />
           </div>
         </div>
 
@@ -89,13 +90,13 @@ const tools = [
       </div>
     </section>
 
-    <section class="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
-      <nav aria-label="Common starting points" class="grid gap-8 md:grid-cols-3 md:gap-10">
+    <section class="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <nav aria-label="Common starting points" class="mx-auto grid max-w-3xl gap-x-12 gap-y-2 sm:grid-cols-2">
         {immediatePaths.map(({ href, label, detail }, index) => (
           <a
             href={href}
             class:list={[
-              'group grid min-h-24 grid-cols-[2rem_minmax(0,1fr)] gap-3 py-4',
+              'group grid min-h-24 grid-cols-[2.5rem_minmax(0,1fr)] gap-3 px-4 py-4 sm:px-5',
             ]}
           >
             <span class="pt-0.5 font-mono text-[0.68rem] font-bold text-primary">0{index + 1}</span>
@@ -149,7 +150,7 @@ const tools = [
     <section class="mx-auto grid max-w-6xl gap-8 px-4 py-11 sm:px-6 sm:py-14 lg:grid-cols-2 lg:px-8">
       <div>
         <p class="eyebrow">Calculators</p>
-        <h2 class="mt-2 max-w-lg font-display text-2xl font-medium tracking-[-0.015em] sm:text-3xl">Taper and withdrawal calculators</h2>
+        <h2 class="mt-2 max-w-lg font-display text-2xl font-medium tracking-[-0.015em] sm:text-3xl">Taper Calculators</h2>
         <div class="mt-5 space-y-1">
           {tools.map(({ href, label, Icon }) => (
             <a href={href} class="group flex min-h-12 items-center gap-3 font-bold text-foreground transition-colors hover:text-primary">
@@ -177,7 +178,7 @@ const tools = [
       <div class="pt-2 lg:col-span-2">
         <h2 class="text-sm font-bold text-foreground">Use these guides when you talk with a clinician.</h2>
         <p class="mt-1.5 max-w-4xl text-sm leading-relaxed text-muted-foreground">
-          This is community-compiled information, not medical advice. A clinician who knows your health and other medications has context this site does not. The guides can help you understand options, keep notes, and ask more specific questions.
+          This is community-compiled information, not medical advice. A clinician who knows your health and other medications has context this site does not. The guides can help you understand your options and ask more specific questions.
         </p>
       </div>
     </section>

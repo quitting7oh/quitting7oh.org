@@ -7,6 +7,7 @@
  *  a single row so the table communicates the *pattern* of the schedule
  *  rather than enumerating every day independently. */
 import { MEETINGS, FELLOWSHIPS, type Fellowship, type Meeting } from '~/data/meetings';
+import { TrackedMeetingLink } from './TrackedMeetingLink';
 
 interface Props {
   fellowship: Fellowship;
@@ -153,9 +154,14 @@ const zoomLookup = (() => {
             <td class="px-4 py-3 font-bold">{m.format}</td>
             <td class="px-4 py-3">
               {m.shortLink ? (
-                <a class="font-bold text-primary underline decoration-primary/30 underline-offset-4" href={m.shortLink} target="_blank" rel="noopener noreferrer">
-                  {shortLinkLabel(m.shortLink)}
-                </a>
+                <TrackedMeetingLink
+                  client:load
+                  provider={m.fellowship}
+                  meetingId={m.id}
+                  name={`${meta.shortName} — ${m.format}`}
+                  joinUrl={m.shortLink}
+                  label={shortLinkLabel(m.shortLink)}
+                />
               ) : (
                 '—'
               )}
@@ -164,9 +170,14 @@ const zoomLookup = (() => {
               {m.room ? (
                 m.room
               ) : (
-                <a class="font-bold text-primary underline decoration-primary/30 underline-offset-4" href={m.joinUrl} target="_blank" rel="noopener noreferrer">
-                  {shortLinkLabel(m.joinUrl)}
-                </a>
+                <TrackedMeetingLink
+                  client:load
+                  provider={m.fellowship}
+                  meetingId={m.id}
+                  name={`${meta.shortName} — ${m.format}`}
+                  joinUrl={m.joinUrl}
+                  label={shortLinkLabel(m.joinUrl)}
+                />
               )}
             </td>
           </tr>
@@ -205,9 +216,15 @@ const zoomLookup = (() => {
             </td>
             <td class="px-4 py-3 font-bold">{m.format}</td>
             <td class="px-4 py-3">
-              <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
-                <span class="inline-flex min-h-11 items-center rounded-lg bg-primary px-3 py-2 text-xs font-bold text-primary-foreground">Join meeting ↗</span>
-              </a>
+              <TrackedMeetingLink
+                client:load
+                provider={m.fellowship}
+                meetingId={m.id}
+                name={`${meta.shortName} — ${m.format}`}
+                joinUrl={m.joinUrl}
+                label="Join meeting"
+                variant="button"
+              />
             </td>
           </tr>
         ))}

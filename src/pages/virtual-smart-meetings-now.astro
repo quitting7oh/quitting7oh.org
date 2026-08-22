@@ -2,6 +2,7 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { VirtualSmartMeetings, type SmartMeetingsBundle } from '~/components/VirtualSmartMeetings';
 import bundleJson from '~/data/smart-meetings.generated.json';
+import { PreviouslyJoinedMeetings } from '~/components/PreviouslyJoinedMeetings';
 
 const bundle = bundleJson as unknown as SmartMeetingsBundle;
 
@@ -62,6 +63,7 @@ const description =
       </p>
     </header>
 
+    <PreviouslyJoinedMeetings providers={['SMART']} client:load />
     <VirtualSmartMeetings bundle={bundle} client:load />
 
     <footer class="mt-16 border-t border-border pt-6 text-sm text-muted-foreground">

@@ -10,6 +10,8 @@ import {
   type MeetingStatus,
 } from '~/data/meetings';
 import { cn } from '~/lib/utils';
+import { useMeetingHistory } from '~/hooks/use-meeting-history';
+import { meetingHistoryKey, recordMeetingJoin } from '~/lib/meeting-history';
 
 /** Refresh cadence. 30s is fast enough to catch the status transitions
  *  (starting-soon → meeting-starting → live-now → next) without burning
@@ -138,6 +140,12 @@ function MeetingCard({ display, now }: CardProps) {
   const badge = STATUS_BADGE[status];
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
+  const history = useMeetingHistory();
+  const joined = history.find(
+    (entry) =>
+      meetingHistoryKey(entry.provider, entry.meetingId) ===
+      meetingHistoryKey(meeting.fellowship, meeting.id),
+  );
 
   const nextUp = shouldShowNextUp(status)
     ? findNextStartingAfter(end)
@@ -168,6 +176,11 @@ function MeetingCard({ display, now }: CardProps) {
                 New
               </span>
             )}
+            {joined && (
+              <span className="text-[0.68rem] font-bold uppercase tracking-[0.08em] text-primary">
+                Previously joined
+              </span>
+            )}
             <span className="text-xs font-medium text-foreground/70">
               {statusDetail(status, start, end, now)}
             </span>
@@ -195,6 +208,14 @@ function MeetingCard({ display, now }: CardProps) {
             href={meeting.joinUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              recordMeetingJoin({
+                provider: meeting.fellowship,
+                meetingId: meeting.id,
+                name: `${fellowship.shortName} — ${meeting.format}`,
+                joinUrl: meeting.joinUrl,
+              })
+            }
             className="inline-flex min-h-11 items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"
           >
             Join meeting
@@ -216,6 +237,14 @@ function MeetingCard({ display, now }: CardProps) {
             href={nextUp.meeting.joinUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              recordMeetingJoin({
+                provider: nextUp.meeting.fellowship,
+                meetingId: nextUp.meeting.id,
+                name: `${FELLOWSHIPS[nextUp.meeting.fellowship].shortName} — ${nextUp.meeting.format}`,
+                joinUrl: nextUp.meeting.joinUrl,
+              })
+            }
             className="inline-flex items-center gap-1 font-bold text-primary"
           >
             {FELLOWSHIPS[nextUp.meeting.fellowship].shortName} — {nextUp.meeting.format}

@@ -9,6 +9,13 @@ import {
   type MeetingStatus,
 } from '~/data/meetings';
 import { cn } from '~/lib/utils';
+import { useMeetingHistory } from '~/hooks/use-meeting-history';
+import {
+  meetingHistoryKey,
+  recordMeetingJoin,
+  type MeetingHistoryEntry,
+} from '~/lib/meeting-history';
+import { LiveGeneralMeetingFallback } from '~/components/LiveGeneralMeetingFallback';
 
 const TICK_MS = 30_000;
 /** How far ahead to look. 3 days fits comfortably on a page without
@@ -106,10 +113,11 @@ const STATUS_TONES: Record<
 interface CardProps {
   display: DisplayMeeting;
   now: Date;
+  history: MeetingHistoryEntry[];
 }
 
 /** Featured "Next up" card — large, prominent, takes the top of the page. */
-function FeaturedCard({ display, now }: CardProps) {
+function FeaturedCard({ display, now, history }: CardProps) {
   const { meeting, start, end, status } = display;
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
@@ -118,6 +126,11 @@ function FeaturedCard({ display, now }: CardProps) {
   // Once it's starting / live, the status itself is what matters — the
   // reader doesn't need both "Next up" AND "Live now" stamped on it.
   const pillLabel = status === 'future' ? 'Next up' : tone.label;
+  const joined = history.find(
+    (entry) =>
+      meetingHistoryKey(entry.provider, entry.meetingId) ===
+      meetingHistoryKey(meeting.fellowship, meeting.id),
+  );
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border border-t-4 border-t-primary bg-card p-6 shadow-sm sm:p-8">
@@ -138,6 +151,11 @@ function FeaturedCard({ display, now }: CardProps) {
             )}
           >
             New meeting
+          </span>
+        )}
+        {joined && (
+          <span className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
+            Previously joined
           </span>
         )}
         <span className="text-sm font-medium text-foreground/80">
@@ -183,6 +201,14 @@ function FeaturedCard({ display, now }: CardProps) {
           href={meeting.joinUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            recordMeetingJoin({
+              provider: meeting.fellowship,
+              meetingId: meeting.id,
+              name: `${fellowship.shortName} — ${meeting.format}`,
+              joinUrl: meeting.joinUrl,
+            })
+          }
           className="inline-flex min-h-12 items-center gap-1.5 rounded-xl bg-primary px-5 py-3 text-base font-bold text-primary-foreground hover:bg-primary/90"
         >
           Join in {platform}
@@ -194,11 +220,16 @@ function FeaturedCard({ display, now }: CardProps) {
 }
 
 /** Compact card for the upcoming-meetings grid below the featured one. */
-function CompactCard({ display, now }: CardProps) {
+function CompactCard({ display, now, history }: CardProps) {
   const { meeting, start, end, status } = display;
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
   const tone = STATUS_TONES[status];
+  const joined = history.find(
+    (entry) =>
+      meetingHistoryKey(entry.provider, entry.meetingId) ===
+      meetingHistoryKey(meeting.fellowship, meeting.id),
+  );
 
   // The Join link is stretched over the whole card (after:inset-0), so
   // the card stays tap-anywhere-to-join; the org link sits above it on
@@ -228,6 +259,11 @@ function CompactCard({ display, now }: CardProps) {
               )}
             >
               {tone.label}
+            </span>
+          )}
+          {joined && (
+            <span className="inline-flex items-center rounded-md bg-accent px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
+              Previously joined
             </span>
           )}
         </span>
@@ -260,6 +296,14 @@ function CompactCard({ display, now }: CardProps) {
         href={meeting.joinUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() =>
+          recordMeetingJoin({
+            provider: meeting.fellowship,
+            meetingId: meeting.id,
+            name: `${fellowship.shortName} — ${meeting.format}`,
+            joinUrl: meeting.joinUrl,
+          })
+        }
         className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-foreground/80 focus-visible:outline-none group-hover:text-primary after:absolute after:inset-0 after:content-['']"
       >
         Join
@@ -303,6 +347,7 @@ function groupByDay(meetings: DisplayMeeting[], now: Date): DayGroup[] {
  *  sees them. */
 export function UpcomingMeetings() {
   const [now, setNow] = React.useState<Date | null>(null);
+  const history = useMeetingHistory();
 
   React.useEffect(() => {
     setNow(new Date());
@@ -336,10 +381,16 @@ export function UpcomingMeetings() {
 
   const [featured, ...rest] = meetings;
   const grouped = groupByDay(rest, now);
+  const hasLiveSpecificMeeting = meetings.some(
+    (meeting) =>
+      meeting.status === 'meeting-starting' || meeting.status === 'live-now',
+  );
 
   return (
     <div className="space-y-12">
-      <FeaturedCard display={featured} now={now} />
+      <FeaturedCard display={featured} now={now} history={history} />
+
+      {!hasLiveSpecificMeeting && <LiveGeneralMeetingFallback now={now} />}
 
       {grouped.length > 0 && (
         <div className="space-y-16">
@@ -350,7 +401,7 @@ export function UpcomingMeetings() {
               </h3>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {group.meetings.map((m, i) => (
-                  <CompactCard key={`${group.key}-${i}`} display={m} now={now} />
+                  <CompactCard key={`${group.key}-${i}`} display={m} now={now} history={history} />
                 ))}
               </div>
             </section>

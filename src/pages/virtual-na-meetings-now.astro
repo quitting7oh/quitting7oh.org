@@ -2,6 +2,7 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { VirtualNaMeetings, type MeetingsBundle } from '~/components/VirtualNaMeetings';
 import bundleJson from '~/data/na-meetings.generated.json';
+import { PreviouslyJoinedMeetings } from '~/components/PreviouslyJoinedMeetings';
 
 // The JSON import is typed loosely by Astro's bundler; assert into our
 // component's expected shape. The build script is the single writer.
@@ -60,6 +61,7 @@ const description =
       </p>
     </header>
 
+    <PreviouslyJoinedMeetings providers={['NA']} client:load />
     <VirtualNaMeetings bundle={bundle} client:load />
 
     <footer class="mt-16 border-t border-border pt-6 text-sm text-muted-foreground">

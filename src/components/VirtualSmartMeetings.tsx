@@ -8,6 +8,8 @@ import {
   Info,
 } from 'lucide-react';
 import { cn } from '~/lib/utils';
+import { useMeetingHistory } from '~/hooks/use-meeting-history';
+import { meetingHistoryKey, recordMeetingJoin } from '~/lib/meeting-history';
 
 const TICK_MS = 60_000;
 const LIVE_WINDOW_MIN = 60;
@@ -203,10 +205,12 @@ function MeetingCard({
   occurrence,
   bucket,
   now,
+  joined,
 }: {
   occurrence: Occurrence;
   bucket: Bucket;
   now: Date;
+  joined: boolean;
 }) {
   const { meeting, start } = occurrence;
   const isJoinable = bucket === 'live' || bucket === 'soon';
@@ -233,6 +237,11 @@ function MeetingCard({
         {isLive && (
           <span className="inline-flex items-center rounded-full bg-success px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-success-foreground">
             Live now
+          </span>
+        )}
+        {joined && (
+          <span className="text-[10px] font-bold uppercase tracking-wider text-primary">
+            Previously joined
           </span>
         )}
       </div>
@@ -267,6 +276,14 @@ function MeetingCard({
             href={meeting.pathminderUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              recordMeetingJoin({
+                provider: 'SMART',
+                meetingId: meeting.id,
+                name: meeting.name,
+                joinUrl: meeting.pathminderUrl,
+              })
+            }
             className="inline-flex min-h-11 items-center gap-1 rounded-lg bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
             title="Opens SMART's join gateway; redirects to the meeting room"
           >
@@ -324,12 +341,14 @@ function Pane({
   occurrences,
   bucket,
   now,
+  joinedKeys,
 }: {
   title: string;
   description: string;
   occurrences: Occurrence[];
   bucket: Bucket;
   now: Date;
+  joinedKeys: Set<string>;
 }) {
   const shown = occurrences.slice(0, MAX_ROWS_PER_PANE);
   const hidden = Math.max(0, occurrences.length - shown.length);
@@ -352,7 +371,13 @@ function Pane({
         <>
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((occ) => (
-              <MeetingCard key={occ.meeting.id} occurrence={occ} bucket={bucket} now={now} />
+              <MeetingCard
+                key={occ.meeting.id}
+                occurrence={occ}
+                bucket={bucket}
+                now={now}
+                joined={joinedKeys.has(meetingHistoryKey('SMART', occ.meeting.id))}
+              />
             ))}
           </ul>
           {hidden > 0 && (
@@ -376,6 +401,17 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     languages: new Set(),
     search: '',
   });
+  const [showPreviouslyJoined, setShowPreviouslyJoined] = React.useState(false);
+  const history = useMeetingHistory();
+  const joinedKeys = React.useMemo(
+    () =>
+      new Set(
+        history
+          .filter((entry) => entry.provider === 'SMART')
+          .map((entry) => meetingHistoryKey(entry.provider, entry.meetingId)),
+      ),
+    [history],
+  );
   React.useEffect(() => {
     setNow(new Date());
     const t = setInterval(() => setNow(new Date()), TICK_MS);
@@ -443,6 +479,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     const tomorrow: Occurrence[] = [];
     for (const m of bundle.meetings) {
       if (!matchesFilters(m, filterState)) continue;
+      if (showPreviouslyJoined && !joinedKeys.has(meetingHistoryKey('SMART', m.id))) continue;
       const occ = buildOccurrence(m);
       if (!occ) continue;
       const b = classify(occ, now);
@@ -454,7 +491,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
     const byStart = (a: Occurrence, b: Occurrence) => a.start.getTime() - b.start.getTime();
     live.sort(byStart); soon.sort(byStart); today.sort(byStart); tomorrow.sort(byStart);
     return { live, soon, today, tomorrow };
-  }, [now, bundle.meetings, filterState]);
+  }, [now, bundle.meetings, filterState, showPreviouslyJoined, joinedKeys]);
 
   function toggleSet(field: 'programs' | 'audiences' | 'languages', value: string) {
     setFilterState((prev) => {
@@ -471,13 +508,15 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
       languages: new Set(),
       search: '',
     });
+    setShowPreviouslyJoined(false);
   }
 
   const filtersActive =
     filterState.programs.size > 0 ||
     filterState.audiences.size > 0 ||
     filterState.languages.size > 0 ||
-    filterState.search.trim().length > 0;
+    filterState.search.trim().length > 0 ||
+    showPreviouslyJoined;
 
   // Audience chips show every option SMART exposes — zero-count chips
   // hide themselves below, so the row stays clean without a Show-all
@@ -515,6 +554,23 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
             </button>
           )}
         </div>
+
+        {joinedKeys.size > 0 && (
+          <div className="mt-3">
+            <button
+              type="button"
+              onClick={() => setShowPreviouslyJoined((value) => !value)}
+              className={cn(
+                'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold transition',
+                showPreviouslyJoined
+                  ? 'border-foreground bg-foreground text-background'
+                  : 'border-border bg-background text-foreground hover:border-foreground/40',
+              )}
+            >
+              Previously joined ({joinedKeys.size})
+            </button>
+          </div>
+        )}
 
         <div className="mt-3 flex flex-wrap gap-2">
           <span className="self-center text-xs font-medium text-muted-foreground">Program:</span>
@@ -631,6 +687,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
             occurrences={buckets.live}
             bucket="live"
             now={now}
+            joinedKeys={joinedKeys}
           />
           <Pane
             title="Starting soon"
@@ -638,6 +695,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
             occurrences={buckets.soon}
             bucket="soon"
             now={now}
+            joinedKeys={joinedKeys}
           />
           <Pane
             title="Later today"
@@ -645,6 +703,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
             occurrences={buckets.today}
             bucket="today"
             now={now}
+            joinedKeys={joinedKeys}
           />
           <Pane
             title="Tomorrow"
@@ -652,6 +711,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
             occurrences={buckets.tomorrow}
             bucket="tomorrow"
             now={now}
+            joinedKeys={joinedKeys}
           />
         </div>
       )}

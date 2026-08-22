@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ArrowRight, CalendarDays, ExternalLink } from 'lucide-react';
 import { FELLOWSHIPS, findDisplayMeeting } from '~/data/meetings';
 import { cn } from '~/lib/utils';
+import { recordMeetingJoin } from '~/lib/meeting-history';
 
 interface Props {
   variant?: 'row' | 'button';
@@ -22,6 +23,17 @@ function formatDay(date: Date, now: Date) {
   return date.toLocaleDateString(undefined, { weekday: 'short' });
 }
 
+function formatCountdown(ms: number) {
+  const totalMinutes = Math.max(0, Math.floor(ms / 60_000));
+  if (totalMinutes < 60) return `${totalMinutes} min`;
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  if (hours < 24) return minutes > 0 ? `${hours}h ${minutes}m` : `${hours}h`;
+  const days = Math.floor(hours / 24);
+  const remainingHours = hours % 24;
+  return remainingHours > 0 ? `${days}d ${remainingHours}h` : `${days}d`;
+}
+
 export function MeetingQuickLink({ variant = 'row', className }: Props) {
   const [now, setNow] = React.useState<Date | null>(null);
 
@@ -38,12 +50,22 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
   const external = Boolean(meeting);
   const label = display && now
     ? isLive
-      ? `${FELLOWSHIPS[meeting!.fellowship].shortName} is live now`
-      : `Next live meeting — ${formatDay(display.start, now)}, ${formatTime(display.start)}`
+      ? '7-OH/kratom meeting live now'
+      : `Next 7-OH/kratom meeting · in ${formatCountdown(display.start.getTime() - now.getTime())}`
     : 'Find the next live meeting';
   const detail = display
-    ? `${FELLOWSHIPS[meeting!.fellowship].shortName} · ${meeting!.format} · free, no signup`
+    ? `${FELLOWSHIPS[meeting!.fellowship].shortName} · ${formatDay(display.start, now!)} ${formatTime(display.start)} · ${meeting!.format}`
     : 'Kratom-specific meetings in your local time';
+
+  function recordJoin() {
+    if (!meeting) return;
+    recordMeetingJoin({
+      provider: meeting.fellowship,
+      meetingId: meeting.id,
+      name: `${FELLOWSHIPS[meeting.fellowship].shortName} — ${meeting.format}`,
+      joinUrl: meeting.joinUrl,
+    });
+  }
 
   if (variant === 'button') {
     return (
@@ -51,6 +73,7 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
         href={href}
         target={external ? '_blank' : undefined}
         rel={external ? 'noopener noreferrer' : undefined}
+        onClick={recordJoin}
         className={cn('inline-flex min-h-[3.25rem] items-center justify-center gap-2 rounded-lg border border-border bg-card px-4 py-3 text-center text-base font-bold text-foreground hover:border-primary hover:bg-accent', className)}
       >
         <span aria-live="polite">{label}</span>
@@ -68,6 +91,7 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
         href={href}
         target={external ? '_blank' : undefined}
         rel={external ? 'noopener noreferrer' : undefined}
+        onClick={recordJoin}
         className="group flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-md outline-offset-4"
       >
         <span className="min-w-0 flex-1" aria-live="polite">
@@ -76,12 +100,14 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
         </span>
         <ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
       </a>
-      {!isLive && (
-        <span className="ml-[3.25rem] flex w-full flex-wrap gap-2 text-sm font-bold sm:ml-0 sm:w-auto">
-          <a href="/virtual-na-meetings-now" className="inline-flex min-h-11 items-center rounded-md px-2 text-primary hover:bg-accent">Live NA</a>
-          <a href="/virtual-smart-meetings-now" className="inline-flex min-h-11 items-center rounded-md px-2 text-primary hover:bg-accent">Live SMART</a>
-        </span>
-      )}
+      <a
+        href="/resources/meeting-schedules"
+        aria-label="All 7-OH and kratom meetings"
+        className="ml-[3.25rem] inline-flex min-h-11 w-full items-center rounded-md px-2 text-sm font-bold text-primary hover:bg-accent sm:ml-0 sm:w-auto"
+      >
+        <span className="sm:hidden">Full schedule</span>
+        <span className="hidden sm:inline">All 7-OH/kratom meetings</span>
+      </a>
     </div>
   );
 }

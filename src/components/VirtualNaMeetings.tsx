@@ -11,6 +11,8 @@ import {
 } from 'lucide-react';
 import { cn } from '~/lib/utils';
 import { wallClockToUTC, todayInTimezone, addDays } from '~/lib/tz';
+import { useMeetingHistory } from '~/hooks/use-meeting-history';
+import { meetingHistoryKey, recordMeetingJoin } from '~/lib/meeting-history';
 
 const TICK_MS = 60_000;
 const LIVE_WINDOW_MIN = 60; // a meeting is "live" for this many minutes after start
@@ -262,7 +264,7 @@ const TAG_CHIPS: { label: string; tag: string }[] = [
 
 // ─── Sub-components ─────────────────────────────────────────────────────
 
-function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
+function FeaturedCard({ meeting, joined }: { meeting: FeaturedMeeting; joined: boolean }) {
   const [copied, setCopied] = React.useState(false);
 
   async function handleCopy() {
@@ -283,6 +285,11 @@ function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
         <span className="text-sm font-medium text-foreground/80">
           24/7 — join any time
         </span>
+        {joined && (
+          <span className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
+            Previously joined
+          </span>
+        )}
       </div>
       <h2 className="m-0 font-display text-3xl font-medium tracking-[-0.02em] text-foreground sm:text-4xl">
         {meeting.name}
@@ -300,6 +307,14 @@ function FeaturedCard({ meeting }: { meeting: FeaturedMeeting }) {
           href={meeting.joinUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            recordMeetingJoin({
+              provider: 'NA',
+              meetingId: meeting.id,
+              name: meeting.name,
+              joinUrl: meeting.joinUrl,
+            })
+          }
           className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-primary px-5 py-2 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
         >
           Join the 24/7 room
@@ -332,10 +347,12 @@ function MeetingCard({
   occurrence,
   bucket,
   now,
+  joined,
 }: {
   occurrence: Occurrence;
   bucket: Bucket;
   now: Date;
+  joined: boolean;
 }) {
   const { meeting, start } = occurrence;
   const isLive = bucket === 'live';
@@ -373,6 +390,11 @@ function MeetingCard({
         >
           {meeting.closed}
         </span>
+        {joined && (
+          <span className="text-[10px] font-bold uppercase tracking-wider text-primary">
+            Previously joined
+          </span>
+        )}
       </div>
 
       <div className="mt-2 font-medium text-foreground">{meeting.name}</div>
@@ -406,6 +428,14 @@ function MeetingCard({
             href={meeting.joinUrl}
             target={meeting.platform === 'Phone Call' ? undefined : '_blank'}
             rel={meeting.platform === 'Phone Call' ? undefined : 'noopener noreferrer'}
+            onClick={() =>
+              recordMeetingJoin({
+                provider: 'NA',
+                meetingId: meeting.id,
+                name: meeting.name,
+                joinUrl: meeting.joinUrl,
+              })
+            }
             className="inline-flex min-h-11 items-center gap-1 rounded-lg bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
           >
             {meeting.platform === 'Phone Call' ? `Call ${meeting.roomNumber}` : `Join ${meeting.platform}`}
@@ -464,12 +494,14 @@ function Pane({
   occurrences,
   bucket,
   now,
+  joinedKeys,
 }: {
   title: string;
   description: string;
   occurrences: Occurrence[];
   bucket: Bucket;
   now: Date;
+  joinedKeys: Set<string>;
 }) {
   const shown = occurrences.slice(0, MAX_ROWS_PER_PANE);
   const hidden = Math.max(0, occurrences.length - shown.length);
@@ -493,7 +525,13 @@ function Pane({
         <>
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((occ) => (
-              <MeetingCard key={occ.meeting.id} occurrence={occ} bucket={bucket} now={now} />
+              <MeetingCard
+                key={occ.meeting.id}
+                occurrence={occ}
+                bucket={bucket}
+                now={now}
+                joined={joinedKeys.has(meetingHistoryKey('NA', occ.meeting.id))}
+              />
             ))}
           </ul>
           {hidden > 0 && (
@@ -519,6 +557,17 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
   });
   const [showAllChips, setShowAllChips] = React.useState(false);
   const [showAllPlatforms, setShowAllPlatforms] = React.useState(false);
+  const [showPreviouslyJoined, setShowPreviouslyJoined] = React.useState(false);
+  const history = useMeetingHistory();
+  const joinedKeys = React.useMemo(
+    () =>
+      new Set(
+        history
+          .filter((entry) => entry.provider === 'NA')
+          .map((entry) => meetingHistoryKey(entry.provider, entry.meetingId)),
+      ),
+    [history],
+  );
 
   // The three platforms most readers want first. Everything else stays
   // behind the "Show all" affordance, matching the meeting-type chip
@@ -551,7 +600,11 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
   // filters change. With ~4k meetings this takes a few ms — fine.
   const buckets = React.useMemo(() => {
     if (!now) return null;
-    const filtered = bundle.meetings.filter((m) => matchesFilters(m, filterState));
+    const filtered = bundle.meetings.filter(
+      (m) =>
+        matchesFilters(m, filterState) &&
+        (!showPreviouslyJoined || joinedKeys.has(meetingHistoryKey('NA', m.id))),
+    );
     const live: Occurrence[] = [];
     const soon: Occurrence[] = [];
     const today: Occurrence[] = [];
@@ -572,7 +625,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
     today.sort(byStart);
     tomorrow.sort(byStart);
     return { live, soon, today, tomorrow };
-  }, [now, bundle.meetings, filterState]);
+  }, [now, bundle.meetings, filterState, showPreviouslyJoined, joinedKeys]);
 
   function toggleTag(tag: string) {
     setFilterState((prev) => {
@@ -598,19 +651,26 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
 
   function clearFilters() {
     setFilterState({ tags: new Set(), platforms: new Set(), openClosed: 'all', search: '' });
+    setShowPreviouslyJoined(false);
   }
 
   const filtersActive =
     filterState.tags.size > 0 ||
     filterState.platforms.size > 0 ||
     filterState.openClosed !== 'all' ||
-    filterState.search.trim().length > 0;
+    filterState.search.trim().length > 0 ||
+    showPreviouslyJoined;
 
   const visibleChips = showAllChips ? TAG_CHIPS : TAG_CHIPS.slice(0, 7);
 
   return (
     <div className="space-y-10">
-      {bundle.featured && <FeaturedCard meeting={bundle.featured} />}
+      {bundle.featured && (
+        <FeaturedCard
+          meeting={bundle.featured}
+          joined={joinedKeys.has(meetingHistoryKey('NA', bundle.featured.id))}
+        />
+      )}
 
       {/* Filter bar */}
       <div className="field-card p-4 sm:p-5">
@@ -627,6 +687,23 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
             </button>
           )}
         </div>
+
+        {joinedKeys.size > 0 && (
+          <div className="mt-3">
+            <button
+              type="button"
+              onClick={() => setShowPreviouslyJoined((value) => !value)}
+              className={cn(
+                'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold transition',
+                showPreviouslyJoined
+                  ? 'border-foreground bg-foreground text-background'
+                  : 'border-border bg-background text-foreground hover:border-foreground/40',
+              )}
+            >
+              Previously joined ({joinedKeys.size})
+            </button>
+          </div>
+        )}
 
         <div className="mt-3 flex flex-wrap gap-2">
           <span className="self-center text-xs font-medium text-muted-foreground">Meeting type:</span>
@@ -748,6 +825,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
             occurrences={buckets.live}
             bucket="live"
             now={now}
+            joinedKeys={joinedKeys}
           />
           <Pane
             title="Starting soon"
@@ -755,6 +833,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
             occurrences={buckets.soon}
             bucket="soon"
             now={now}
+            joinedKeys={joinedKeys}
           />
           <Pane
             title="Later today"
@@ -762,6 +841,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
             occurrences={buckets.today}
             bucket="today"
             now={now}
+            joinedKeys={joinedKeys}
           />
           <Pane
             title="Tomorrow"
@@ -769,6 +849,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
             occurrences={buckets.tomorrow}
             bucket="tomorrow"
             now={now}
+            joinedKeys={joinedKeys}
           />
         </div>
       )}
