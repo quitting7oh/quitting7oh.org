@@ -3,19 +3,21 @@ import '~/styles/global.css';
 import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
 import { BackToTop } from '~/components/BackToTop';
-import { CrisisButton } from '~/components/CrisisButton';
-import { SchedulingBanner } from '~/components/SchedulingBanner';
+import SchedulingBanner from '~/components/SchedulingBanner.astro';
 import Footer from '~/components/Footer.astro';
 import { SITE } from '~/lib/site';
+import bodyFontUrl from '@fontsource-variable/atkinson-hyperlegible-next/files/atkinson-hyperlegible-next-latin-wght-normal.woff2?url';
 
 interface Props {
   title?: string;
   description?: string;
   /** When true, render the canonical URL as the homepage. */
   canonical?: string;
+  /** Minimal chrome for the withdrawal fast-path. */
+  minimal?: boolean;
 }
 
-const { title, description = SITE.description, canonical } = Astro.props;
+const { title, description = SITE.description, canonical, minimal = false } = Astro.props;
 const pageTitle = title ? `${title} · ${SITE.title}.org` : `${SITE.title}.org — recovery information`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
 ---
@@ -30,10 +32,11 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     <ThemeScript />
-    <link rel="icon" href="/favicons/rose/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="/favicons/rose/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicons/rose/apple-touch-icon.png" />
-    <link rel="manifest" href="/favicons/rose/site.webmanifest" />
+    <link rel="preload" href={bodyFontUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href="/favicons/stone/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/stone/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicons/stone/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicons/stone/site.webmanifest" />
     {/* Open Graph (Discord, LinkedIn, Slack, Facebook). The brand-
         anchored og-image carries the Lift Cup lockup + wordmark on
         the stone-light background — generated once by
@@ -54,17 +57,16 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE.url}/og-image.png`} />
     <meta name="twitter:image:alt" content="quitting7oh.org — recovery information for 7-OH, MGM-15, and kratom-derived synthetics" />
-    <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#191512" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#211a15" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content="index,follow" />
   </head>
   <body class="min-h-screen overflow-x-hidden">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <SchedulingBanner client:load />
-    <Header />
+    {!minimal && <SchedulingBanner />}
+    {!minimal && <Header />}
     <slot />
-    <Footer />
-    <BackToTop client:idle />
-    <CrisisButton client:load />
+    {!minimal && <Footer />}
+    {!minimal && <BackToTop client:idle />}
   </body>
 </html>

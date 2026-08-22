@@ -267,7 +267,7 @@ function MeetingCard({
             href={meeting.pathminderUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-9 items-center gap-1 rounded-full bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
+            className="inline-flex min-h-11 items-center gap-1 rounded-lg bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
             title="Opens SMART's join gateway; redirects to the meeting room"
           >
             Join Online
@@ -278,7 +278,7 @@ function MeetingCard({
             href={meeting.detailUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-9 items-center gap-1 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-foreground transition hover:bg-muted"
+            className="inline-flex min-h-11 items-center gap-1 rounded-lg border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-foreground transition hover:bg-muted"
           >
             View on SMART Recovery
             <ExternalLink className="h-3 w-3" aria-hidden="true" />
@@ -297,7 +297,7 @@ function MeetingCard({
         <button
           type="button"
           onClick={handleCopy}
-          className="ml-auto inline-flex min-h-9 items-center gap-1 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground transition hover:bg-muted"
+          className="ml-auto inline-flex min-h-11 items-center gap-1 rounded-lg border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground transition hover:bg-muted"
           aria-label="Copy meeting details to clipboard"
           title="Copy meeting details"
         >
@@ -526,7 +526,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
                 type="button"
                 onClick={() => toggleSet('programs', name)}
                 className={cn(
-                  'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
+                  'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold transition',
                   active
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -556,7 +556,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
                 type="button"
                 onClick={() => toggleSet('audiences', name)}
                 className={cn(
-                  'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
+                  'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold transition',
                   active
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -584,7 +584,7 @@ export function VirtualSmartMeetings({ bundle }: { bundle: SmartMeetingsBundle }
                   type="button"
                   onClick={() => toggleSet('languages', name)}
                   className={cn(
-                    'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
+                    'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold transition',
                     active
                       ? 'border-foreground bg-foreground text-background'
                       : 'border-border bg-background text-foreground hover:border-foreground/40',

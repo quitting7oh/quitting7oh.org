@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { NextMeeting } from '~/components/NextMeeting';
+import RightNow from '~/components/RightNow.astro';
 import { AppSidebar } from '~/components/AppSidebar';
 import { SearchBox } from '~/components/SearchBox';
 import { DiscordOnlineCount } from '~/components/DiscordOnlineCount';
@@ -50,15 +50,6 @@ const tools = [
 ---
 
 <BaseLayout>
-  <div class="lg:hidden">
-    <AppSidebar
-      client:load
-      categories={sidebarCategories}
-      pinned={PINNED_PAGES}
-      currentPath={Astro.url.pathname}
-    />
-  </div>
-
   <main id="main-content">
     <section>
       <div class="mx-auto max-w-[88rem] px-4 py-11 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
@@ -88,16 +79,12 @@ const tools = [
           </div>
 
           <div class="mx-auto mt-7 max-w-xl text-left">
-            <SearchBox variant="hero" client:load placeholder="Search symptoms, treatments, medicines…" />
+            <SearchBox variant="hero" client:idle placeholder="Search symptoms, treatments, medicines…" />
           </div>
         </div>
 
-        <div class="mx-auto mt-11 max-w-5xl text-left">
-          <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-            <p class="eyebrow">7OH/Kratom support meeting</p>
-            <span class="text-xs text-muted-foreground">Shown in your local time</span>
-          </div>
-          <NextMeeting client:load />
+        <div class="mx-auto mt-10 max-w-3xl">
+          <RightNow />
         </div>
       </div>
     </section>
@@ -132,18 +119,21 @@ const tools = [
             Browse by topic
           </h2>
           <p class="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Open any section below. Each page stands on its own.
+            Every guide, reference, and tool is two taps away.
           </p>
         </div>
 
-        <ol class="mt-8 grid gap-x-12 gap-y-1 sm:grid-cols-2">
+        <ol class="mt-8 grid gap-x-12 sm:grid-cols-2">
           {CATEGORIES.map((category, index) => (
             <li>
-              <a href={`/${category.slug}`} class="group flex min-h-14 items-center gap-3 py-2">
+              <a href={`/${category.slug}`} class="group flex min-h-[4.5rem] items-start gap-3 border-b border-border py-3.5">
                 <span class="font-mono text-[0.66rem] font-bold text-muted-foreground">{String(index + 1).padStart(2, '0')}</span>
-                <span class="flex min-w-0 flex-1 items-center justify-between gap-3">
-                  <span class="font-display text-[1.05rem] font-semibold tracking-[-0.005em] text-foreground group-hover:text-primary">{category.title}</span>
-                  <span class="text-xs font-semibold tabular-nums text-muted-foreground">{counts[category.slug]}</span>
+                <span class="min-w-0 flex-1">
+                  <span class="flex items-baseline justify-between gap-3">
+                    <span class="font-display text-[1.05rem] font-semibold tracking-[-0.005em] text-foreground group-hover:text-primary">{category.title}</span>
+                    <span class="shrink-0 text-xs font-semibold tabular-nums text-muted-foreground">{counts[category.slug]} pages</span>
+                  </span>
+                  <span class="mt-0.5 line-clamp-1 block text-sm leading-snug text-muted-foreground">{category.blurb}</span>
                 </span>
               </a>
             </li>
@@ -179,7 +169,7 @@ const tools = [
           <a href="https://www.reddit.com/r/quitting7oh/" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-bold text-foreground hover:border-primary hover:bg-accent">Search Reddit</a>
           <a href="https://discord.gg/quitting7oh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-bold text-foreground hover:border-primary hover:bg-accent">
             <MessageCircle class="size-4" aria-hidden="true" />
-            Discord<DiscordOnlineCount client:idle />
+            Discord<DiscordOnlineCount client:visible />
           </a>
         </div>
       </div>
@@ -192,4 +182,12 @@ const tools = [
       </div>
     </section>
   </main>
+  <div class="lg:hidden">
+    <AppSidebar
+      client:load
+      categories={sidebarCategories}
+      pinned={PINNED_PAGES}
+      currentPath={Astro.url.pathname}
+    />
+  </div>
 </BaseLayout>

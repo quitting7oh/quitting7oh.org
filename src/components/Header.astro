@@ -6,12 +6,12 @@ import Logo from './Logo.astro';
 import { MessageCircle } from 'lucide-react';
 ---
 
-<header class="sticky top-0 z-40 bg-background/94 backdrop-blur-xl">
-  <div class="mx-auto flex h-[4.5rem] max-w-[94rem] items-center gap-2 px-3 sm:gap-3 sm:px-6 lg:px-8">
+<header class="sticky top-0 z-40 bg-background/94 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
+  <div class="mx-auto flex min-h-16 max-w-[94rem] items-center gap-2 px-3 sm:gap-3 sm:px-6 lg:px-8">
     <button
       id="nav-toggle"
       type="button"
-      class="inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent lg:hidden"
+      class="inline-flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent lg:hidden"
       aria-label="Open guide navigation"
     >
       <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
@@ -19,7 +19,8 @@ import { MessageCircle } from 'lucide-react';
       </svg>
     </button>
 
-    <Logo size="2.25rem" />
+    <span class="hidden min-[360px]:inline-flex"><Logo size="2.25rem" /></span>
+    <span class="inline-flex min-[360px]:hidden"><Logo size="2.1rem" wordmark={false} /></span>
 
     <p class="ml-4 hidden text-xs leading-snug text-muted-foreground xl:block">
       Help for quitting 7-OH<br />and kratom synthetics
@@ -28,7 +29,7 @@ import { MessageCircle } from 'lucide-react';
     <div class="ml-auto flex items-center gap-2 sm:gap-3">
       <a
         href="/next-kratom-support-meeting"
-        class="group hidden h-10 items-center gap-2 rounded-full border border-success/45 bg-success/10 px-3 text-sm font-bold text-foreground transition-colors hover:bg-success/17 min-[450px]:inline-flex sm:px-4"
+        class="group hidden h-11 items-center gap-2 rounded-lg border border-success/45 bg-success/10 px-3 text-sm font-bold text-foreground transition-colors hover:bg-success/17 min-[520px]:inline-flex sm:px-4"
       >
         <span class="relative flex size-2" aria-hidden="true">
           <span class="absolute inline-flex size-full rounded-full bg-success opacity-30 motion-safe:animate-ping"></span>
@@ -41,15 +42,21 @@ import { MessageCircle } from 'lucide-react';
         href="https://discord.gg/quitting7oh"
         target="_blank"
         rel="noopener noreferrer"
-        class="hidden h-10 min-w-[8.75rem] items-center justify-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 text-sm font-bold text-foreground transition-colors hover:border-primary/55 hover:bg-accent min-[760px]:inline-flex"
+        class="hidden h-11 min-w-[8.75rem] items-center justify-center gap-2 rounded-lg border border-primary/30 bg-primary/5 px-3 text-sm font-bold text-foreground transition-colors hover:border-primary/55 hover:bg-accent min-[760px]:inline-flex"
       >
         <MessageCircle class="size-4 shrink-0 text-primary" strokeWidth={1.9} aria-hidden="true" />
         <span class="sr-only">Join the quitting7oh </span>
         <span>Discord</span>
-        <DiscordOnlineCount client:load />
+        <DiscordOnlineCount client:media="(min-width: 760px)" />
       </a>
-      <SearchBox variant="header" client:load />
-      <ThemePicker client:load />
+      <SearchBox variant="header" client:idle />
+      <span class="hidden sm:inline-flex"><ThemePicker client:media="(min-width: 640px)" /></span>
+      <a
+        href="/start-here/7-oh-withdrawal-help"
+        class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-destructive px-3 text-sm font-bold text-destructive-foreground transition-colors hover:bg-destructive/90 sm:px-4"
+      >
+        Help now
+      </a>
     </div>
   </div>
 </header>

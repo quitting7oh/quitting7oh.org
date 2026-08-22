@@ -966,9 +966,9 @@ export function TaperCalculator({
           {/* Print-only header — visible when the reader picks
               "Save as PDF". Stripped from the on-screen view. */}
           <div className="hidden print:block">
-            <h1 className="m-0 text-xl font-bold text-foreground">
+            <h2 className="m-0 text-xl font-bold text-foreground">
               Taper schedule — {cfg.label}
-            </h1>
+            </h2>
             <p className="mt-1 text-sm text-muted-foreground">
               {roundDose(perDose)} {cfg.unit} × {dosesPerDay}/day → jump-off at{' '}
               {roundDose(jumpOff)} {cfg.unit} over {result.steps.length} days
@@ -988,9 +988,9 @@ export function TaperCalculator({
           </div>
 
           <div className="rounded-lg border border-border bg-card p-5 sm:p-6">
-            <h3 className="mb-4 font-display text-xl font-semibold text-foreground">
+            <h2 className="mb-4 font-display text-xl font-semibold text-foreground">
               Schedule curve (total daily)
-            </h3>
+            </h2>
             <ChartContainer config={chartConfig} className="h-[280px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={chartData} margin={{ left: 8, right: 8, top: 8, bottom: 8 }}>
@@ -1036,9 +1036,9 @@ export function TaperCalculator({
           </div>
 
           <div className="overflow-hidden rounded-lg border border-border bg-card">
-            <h3 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
+            <h2 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
               Schedule table
-            </h3>
+            </h2>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[40rem] text-sm">
                 <thead className="bg-muted/60 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">

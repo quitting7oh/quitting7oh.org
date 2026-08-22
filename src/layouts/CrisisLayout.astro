@@ -1,0 +1,117 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Logo from '~/components/Logo.astro';
+import { Callout } from '~/components/Callout';
+import { MeetingQuickLink } from '~/components/MeetingQuickLink';
+import { ArrowRight, Droplets, HeartHandshake, MessageCircle, Phone, Route, Stethoscope } from 'lucide-react';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} minimal>
+  <header class="border-b border-border pt-[env(safe-area-inset-top)]">
+    <div class="mx-auto flex min-h-16 max-w-[44rem] items-center px-4 sm:px-6">
+      <Logo size="2rem" />
+      <a href="/" class="ml-auto inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2 text-sm font-bold text-muted-foreground hover:bg-accent hover:text-primary">
+        Full site <ArrowRight class="size-4" aria-hidden="true" />
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content" class="mx-auto max-w-[44rem] px-4 pb-20 pt-9 sm:px-6 sm:pt-14">
+    <header>
+      <p class="eyebrow">The next hour</p>
+      <h1 class="mt-3 font-display text-[clamp(2.15rem,7vw,2.75rem)] font-semibold leading-[1.08] tracking-[-0.018em] text-foreground">
+        You’re going to be okay.
+      </h1>
+      <p class="mt-4 max-w-[34rem] text-[1.15rem] leading-[1.6] text-muted-foreground sm:text-[1.3rem]">
+        Withdrawal is finite. Your body knows how to do this. Here’s the next hour, one step at a time.
+      </p>
+      <p class="mt-3 text-base leading-relaxed text-muted-foreground">
+        No reading required beyond each step. Do one, then come back for the next.
+      </p>
+    </header>
+
+    <div class="mt-9 space-y-3 sm:mt-11">
+      <section class="crisis-step">
+        <span class="crisis-step-number" aria-hidden="true">1</span>
+        <div class="min-w-0">
+          <h2 class="font-sans text-lg font-bold tracking-normal text-foreground">Tell someone you’re in it</h2>
+          <p class="mt-1 text-base leading-relaxed text-muted-foreground">People in this community are online right now. Post one word in #sos — that’s enough.</p>
+          <div class="mt-4 grid gap-2.5 sm:grid-cols-2">
+            <a href="https://discord.gg/quitting7oh" target="_blank" rel="noopener noreferrer" class="crisis-action bg-primary text-primary-foreground hover:bg-primary/90">
+              <MessageCircle class="size-5" aria-hidden="true" /> Open Discord #sos
+            </a>
+            <MeetingQuickLink variant="button" client:load />
+          </div>
+        </div>
+      </section>
+
+      <section class="crisis-step">
+        <span class="crisis-step-number" aria-hidden="true">2</span>
+        <div>
+          <h2 class="flex items-center gap-2 font-sans text-lg font-bold tracking-normal text-foreground"><Droplets class="size-5 text-primary" aria-hidden="true" />Water, then a hot shower</h2>
+          <p class="mt-1 text-base leading-relaxed text-muted-foreground">Small sips, with electrolytes if you have them. Heat buys you 20–30 minutes of real relief. Use it.</p>
+        </div>
+      </section>
+
+      <section class="crisis-step">
+        <span class="crisis-step-number" aria-hidden="true">3</span>
+        <div>
+          <h2 class="flex items-center gap-2 font-sans text-lg font-bold tracking-normal text-foreground"><Stethoscope class="size-5 text-primary" aria-hidden="true" />Handle the worst symptom</h2>
+          <p class="mt-1 text-base leading-relaxed text-muted-foreground">Pick the one thing bothering you most and treat just that.</p>
+          <div class="mt-4 flex flex-wrap gap-2.5">
+            <a class="crisis-action-secondary" href="#sleep">Can’t sleep</a>
+            <a class="crisis-action-secondary" href="/other-tools/helper-meds#anti-nausea">Stomach / RLS</a>
+            <a class="crisis-action-secondary" href="/other-tools/helper-meds#clonidine">Anxiety</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="crisis-step">
+        <span class="crisis-step-number" aria-hidden="true">4</span>
+        <div>
+          <h2 class="flex items-center gap-2 font-sans text-lg font-bold tracking-normal text-foreground"><Route class="size-5 text-primary" aria-hidden="true" />Know your options from here</h2>
+          <p class="mt-1 text-base leading-relaxed text-muted-foreground">Cold turkey isn’t the only path. When you’re ready — not now, if now is too much — see the six ways off, ranked by fit.</p>
+          <a class="crisis-action-secondary mt-4" href="/start-here/how-to-quit-7-oh">Paths off 7-OH <ArrowRight class="size-4" aria-hidden="true" /></a>
+        </div>
+      </section>
+    </div>
+
+    <p class="mx-auto my-10 max-w-[32rem] text-center text-sm leading-relaxed text-muted-foreground sm:text-base">
+      The acute phase usually peaks around 48–72 hours, then it measurably improves.<br />You’re moving through it, not stuck in it.
+    </p>
+
+    <Callout type="emergency">
+      <ul>
+        <li>you can’t keep fluids down for 24+ hours</li>
+        <li>you have chest pain, fainting, or a racing heart that won’t settle</li>
+        <li>you have thoughts of harming yourself</li>
+      </ul>
+      <a href="tel:988" class="crisis-action mt-4 w-full bg-destructive text-destructive-foreground hover:bg-destructive/90 sm:w-auto">
+        <Phone class="size-5" aria-hidden="true" /> Call or text 988
+      </a>
+    </Callout>
+
+    <section id="full-guide" class="mt-16 border-t border-border pt-10">
+      <div class="mb-8">
+        <p class="eyebrow">When you have a little more room</p>
+        <h2 class="mt-2 font-display text-3xl font-semibold text-foreground">Full withdrawal guide</h2>
+        <p class="mt-2 text-base leading-relaxed text-muted-foreground">Timelines, symptom relief, ER expectations, sleep, food, and what comes next.</p>
+      </div>
+      <article class="prose-recovery dark:prose-invert" data-pagefind-body>
+        <slot />
+      </article>
+    </section>
+
+    <div class="mt-14 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+      <HeartHandshake class="size-4 text-primary" aria-hidden="true" />
+      <span>You do not have to do this alone.</span>
+    </div>
+  </main>
+</BaseLayout>

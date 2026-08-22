@@ -1,6 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
 import DocLayout from '~/layouts/DocLayout.astro';
+import CrisisLayout from '~/layouts/CrisisLayout.astro';
+import CompoundFactPanel from '~/components/CompoundFactPanel.astro';
+import { NextMeeting } from '~/components/NextMeeting';
 import { CATEGORY_SLUGS } from '~/lib/categories';
 
 export async function getStaticPaths() {
@@ -18,6 +21,7 @@ export async function getStaticPaths() {
 
 const { doc } = Astro.props;
 const { Content, headings } = await render(doc);
+const tocHeadings = headings.filter((heading) => heading.depth >= 2);
 
 // `doc.filePath` is the on-disk path (e.g. "src/content/start-here/welcome.md")
 // — use it to construct the GitHub edit link with the correct extension.
@@ -26,16 +30,35 @@ const CONTENT_ROOT = 'src/content/';
 const fp = doc.filePath ?? '';
 const idx = fp.indexOf(CONTENT_ROOT);
 const filePath = idx >= 0 ? fp.slice(idx + CONTENT_ROOT.length) : `${doc.id}.md`;
+const isCrisisPage = doc.id === 'start-here/7-oh-withdrawal-help';
+const compoundSlug = doc.data.category === 'compounds' ? doc.id.split('/').pop()! : undefined;
+const isMeetingSchedule = doc.id === 'resources/meeting-schedules';
 ---
 
-<DocLayout
-  title={doc.data.title}
-  description={doc.data.description}
-  category={doc.data.category}
-  lastUpdated={doc.data.last_updated}
-  filePath={filePath}
-  headings={headings}
-  wide={doc.data.wide}
->
-  <Content />
-</DocLayout>
+{isCrisisPage ? (
+  <CrisisLayout title={doc.data.title} description={doc.data.description}>
+    <Content />
+  </CrisisLayout>
+) : (
+  <DocLayout
+    title={doc.data.title}
+    description={doc.data.description}
+    category={doc.data.category}
+    lastUpdated={doc.data.last_updated}
+    filePath={filePath}
+    headings={tocHeadings}
+    wide={doc.data.wide}
+  >
+    {compoundSlug && <CompoundFactPanel slug={compoundSlug} />}
+    {isMeetingSchedule && (
+      <div class="not-prose mb-9">
+        <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <p class="eyebrow">Next 7-OH/Kratom support meeting</p>
+          <span class="text-xs text-muted-foreground">Shown in your local time</span>
+        </div>
+        <NextMeeting client:load />
+      </div>
+    )}
+    <Content />
+  </DocLayout>
+)}

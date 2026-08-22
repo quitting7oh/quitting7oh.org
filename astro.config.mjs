@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from './src/lib/rehype/externalLinks.mjs';
 import rehypeHeadingAnchors from './src/lib/rehype/headingAnchors.mjs';
+import rehypeNormalizeHeadings from './src/lib/rehype/normalizeHeadings.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -32,7 +33,7 @@ export default defineConfig({
     processor: unified({
       smartypants: true,
       gfm: true,
-      rehypePlugins: [rehypeSlug, rehypeHeadingAnchors, rehypeExternalLinks],
+      rehypePlugins: [rehypeNormalizeHeadings, rehypeSlug, rehypeHeadingAnchors, rehypeExternalLinks],
     }),
   },
 });

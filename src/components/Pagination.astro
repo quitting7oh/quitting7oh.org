@@ -12,13 +12,13 @@ const { prev, next } = Astro.props;
 {(prev || next) && (
   <nav
     aria-label="Page navigation"
-    class="mt-14 grid gap-8 sm:grid-cols-2"
+    class="mt-14 grid gap-3 sm:grid-cols-2"
   >
     {prev ? (
       <a
         href={prev.href}
         rel="prev"
-        class="group block py-3"
+        class="group block min-h-24 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/55 hover:bg-accent/35"
       >
         <div class="eyebrow !text-muted-foreground">
           ← Previous
@@ -34,7 +34,7 @@ const { prev, next } = Astro.props;
       <a
         href={next.href}
         rel="next"
-        class="group block py-3 sm:text-right"
+        class="group block min-h-24 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/55 hover:bg-accent/35 sm:text-right"
       >
         <div class="eyebrow !text-muted-foreground">
           Next →

@@ -696,9 +696,9 @@ function Output({
       </div>
 
       <div className="overflow-hidden rounded-lg border border-border bg-card">
-        <h3 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
+        <h2 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
           Day-by-day schedule
-        </h3>
+        </h2>
         <div className="overflow-x-auto px-5 pb-2">
           <table className="w-full min-w-[48rem] text-sm">
             <thead className="bg-muted/55 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">

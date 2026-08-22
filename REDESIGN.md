@@ -1,152 +1,171 @@
-# Field Guide redesign
+# Field Guide redesign, rev 2
 
-This branch rebuilds the user interface for readers who may have shaky hands,
-little sleep, and a small phone. It keeps urgent help close and long articles
-easy to scan.
+This branch extends the warm Field Guide redesign with a safety-and-structure
+layer for readers who may be anxious, sleep-deprived, shaky, or using a small
+phone. It keeps the existing content and routes intact while making the next
+useful action easier to find.
 
 ## Design intent
 
-A restrained editorial layout, generous reading measure, and a clear serif/sans
-hierarchy separate navigation from article text. Ordinary navigation and page
-sections remain unboxed; framing is reserved for real objects such as forms,
-meeting widgets, and data tables. Large tap targets and direct labels shorten
-the path to withdrawal help and meetings.
+The interface is calm and editorial rather than clinical or promotional.
+Typography, whitespace, and hierarchy do most of the work. Boxes are reserved
+for real objects—urgent care guidance, live meeting information, calculators,
+and tables—instead of framing every paragraph or navigation link.
 
-The homepage starts with withdrawal help and a comparison of quitting options.
-Search and the next meeting appear in the opening view. A compact topic index
-replaces the old card grid. It uses category names and page counts without
-repeating each category description.
+The second revision adds three clear urgency tiers, a persistent `Help now`
+action, a stripped withdrawal fast-path, a compact homepage support strip, and
+stronger structure for category indexes, compound facts, meeting schedules,
+and the 404 page.
 
-## Type
+## Typography
 
-- **Atkinson Hyperlegible Next Variable** handles body text, controls, tables,
-  and labels. Its open letterforms keep doses and medication names legible at
-  small sizes.
-- **Newsreader Variable** handles titles and section headings. Its moderate
-  contrast adds warmth without turning the site into a magazine layout.
-- The article column tops out at 50rem so tables and tools have room, while
-  paragraphs and lists stop at 43rem. Body copy is 17px on larger screens and
-  16px on phones, with a 1.72 line height. Dose and schedule data use tabular
-  numerals.
-- Content-page titles run from 2.05rem to 2.4rem. Article section headings stay
-  near 1.9rem and use one short clay stroke as an editorial section cue;
-  1.16rem sans-serif subsections create a clearly different level through
-  family, weight, and spacing. The larger display scale is reserved for the
-  homepage.
-- Lists use familiar disc and decimal markers with restrained burnt-clay color.
-  The first pass's ring bullets and zero-padded counters were removed because
-  they drew attention away from the text.
+- **Atkinson Hyperlegible Next Variable** handles article text, controls,
+  tables, labels, and numerical data. Its open letterforms are useful when a
+  reader is tired or viewing at low brightness.
+- **Newsreader Variable** handles page and section titles. It adds warmth and
+  hierarchy without turning the guide into a magazine layout.
+- Article text is 17px on phones and 18px from 640px up, with a 1.7 line height
+  and a 70ch measure. The surrounding object column may grow to 50rem for
+  tables and calculators.
+- Page titles remain deliberately smaller than marketing-style hero type:
+  roughly 2.05–2.4rem on document pages. Section headings use a short clay cue;
+  subsections switch back to the sans face for an obvious level change.
+- Lists use conventional disc and decimal markers with restrained clay color
+  and increased separation between items.
 
-Both font families ship with the site. Pages do not contact a font service.
+Both fonts are self-hosted. The reading face is preloaded; both use
+`font-display: optional`, so a slow connection gets an immediate system-font
+fallback instead of invisible or shifting text.
 
 ## Color
 
-The palette avoids blue. Light mode uses warm paper and brown-charcoal ink;
-dark mode uses warm graphite and parchment text. Both modes have their own
-surface and contrast values.
+The palette avoids blue. Light mode is warm paper and brown-charcoal ink; dark
+mode is lifted warm graphite with parchment text. Burnt clay is the brand and
+link color, amber communicates caution, green communicates available support,
+and red is reserved for immediate help.
 
 | Role | Light | Dark | Use |
 | --- | --- | --- | --- |
-| Page | `hsl(43 38% 97%)` | `hsl(22 14% 8%)` | Reading background |
+| Page | `hsl(43 38% 97%)` | `hsl(22 14% 10%)` | Reading background |
+| Card | `hsl(44 44% 99%)` | `hsl(22 13% 13%)` | Object surfaces |
 | Ink | `hsl(22 16% 14%)` | `hsl(42 28% 92%)` | Body and headings |
-| Burnt clay | `hsl(15 42% 38%)` | `hsl(18 48% 70%)` | Links, navigation, ordinary action |
-| Amber | `hsl(35 88% 46%)` | `hsl(38 90% 58%)` | Crisis and time-sensitive status |
-| Leaf | `hsl(104 35% 34%)` | `hsl(104 43% 61%)` | Live meetings and available support |
+| Burnt clay | `hsl(15 42% 38%)` | `hsl(18 48% 70%)` | Links and ordinary actions |
+| Amber | `hsl(35 88% 46%)` | `hsl(38 90% 58%)` | Caution and time-sensitive status |
+| Green | `hsl(104 35% 34%)` | `hsl(104 43% 61%)` | Live and available support |
+| Emergency | `hsl(2 62% 43%)` | `hsl(7 67% 67%)` | Immediate help only |
 
-Burnt clay carries navigation and ordinary actions. Amber identifies urgency in
-the banner, floating crisis control, and high-risk callouts.
+Body, muted text, links, primary controls, support, warning, and emergency
+token pairs were checked programmatically in both themes and meet WCAG AA.
 
-## Space and layout
+## Spacing and layout
 
-Spacing follows a four-pixel base with larger editorial jumps between reading
-sections. Controls have a minimum height of 44px. Object containers use a low
-radius, a quiet one-pixel boundary, and a barely visible grounding shadow;
-navigation, metadata, and topic indexes use alignment and whitespace instead
-of card chrome. Selected navigation receives a narrow clay edge and low-contrast
-wash so state is obvious without turning every link into a pill.
+Spacing follows a four-pixel base. Shared controls have a 44px minimum target;
+crisis actions use 52px. On phones the document source order puts the article
+before the hidden navigation payload. Desktop restores the guide index to the
+left visually, while long pages keep a sticky, internally scrolling contents
+rail on the right.
 
-Page headers use short vertical padding and share the reading column's measure.
-The footer uses a tonal paper surface in both themes instead of reversing to a
-high-contrast block.
+The mobile contents control sits above the article. Drawers and search use
+`dvh` and safe-area insets. Tables remain semantic tables inside horizontal
+scroll containers with a visible mobile swipe cue and a sticky first column
+where useful.
 
-On phones, the page has one reading column, an expandable contents list, and a
-full-height guide drawer. Wide screens gain a 17rem guide index and a 15rem
-contents rail around the reading column. The contents rail caps its height to
-the viewport, hides its scrollbar, and follows the active heading inside its
-own scroll area. Anchor landings and active-section tracking use the same
-header offset; the tracker also adjusts near the end of a page so short final
-sections are not skipped.
+Urgent care cards use a compact solid header and a full-size body:
 
-Wide data tables stay tables. Their containing card scrolls on the horizontal
-axis, keeps the day column visible, uses tabular numerals, and separates rows
-with restrained alternating paper tones. Calculators use the same field,
-summary, chart, and schedule treatments as the meeting tools. Callouts use a
-44rem measure, a semantic accent edge, a light surface tint, and tighter
-internal list rhythm, allowing dense summaries to stay compact without
-shrinking body type.
+- green support: talk to someone now;
+- amber caution: check with a clinician first;
+- red emergency: call 911 or go to the ER now, including an assistive-text
+  urgency prefix.
 
-## Components
+Quiet informational notes retain the simpler clay-edge treatment.
 
-The implementation uses Astro for the static shell and React only where browser
-state is necessary. Custom components use Radix primitives for focus handling,
-dialogs, menus, select controls, and sheets. The project no longer relies on
-the generated shadcn visual layer. This keeps the proven keyboard behavior and
-lets the Field Guide tokens control every rendered surface.
+## Components and behavior
 
-Lucide supplies the icon set. Icons use a 1.5px to 2px stroke and sit next to a
-text label when the action might be ambiguous. Crisis actions keep a text label.
+- The header carries a persistent `Help now` button. The overlapping floating
+  crisis pill was removed.
+- The scheduling notice is static Astro HTML with a tiny dismissal script. Its
+  existing localStorage key is preserved, and a pre-paint check prevents both
+  a dismissed-state flash and hydration layout shift.
+- Search renders as a working site-map link before hydration, then upgrades to
+  the Pagefind dialog at idle. The dialog uses full-screen mobile geometry,
+  focus management, Escape close, and keyboard result navigation.
+- The homepage `Right now, if you need it` strip combines withdrawal help,
+  Discord `#sos`, the next 7-OH/kratom meeting, and Live NA/SMART alternatives
+  when a kratom-specific meeting is not live.
+- The withdrawal-help URL now uses a stripped `CrisisLayout`: four short steps,
+  52px actions, community support, local meeting data, symptom shortcuts, and
+  an emergency care card before the full existing guide.
+- Live meeting SSR now reserves the hydrated card’s space, eliminating the
+  previous large layout shift.
+- Category indexes include page counts, descriptions, pinned cues, and updated
+  dates. Compound pages gain a fact panel; meeting schedules gain a local-time
+  hero; `/404` provides search and fast links.
+- A reusable two-column Do/Don’t component and the three-tier care-card anatomy
+  are available for future MDX use without changing current prose.
 
-## Motion
+Lucide remains the single icon family. Transitions are brief, pressed states
+are visible, and `prefers-reduced-motion` removes smooth scrolling and motion.
 
-Color and border changes use short transitions. The meeting status dot, drawer,
-dialogs, and disclosure chevrons carry the only noticeable motion. The
-`prefers-reduced-motion` rule removes animation and smooth scrolling across the
-site.
+## Preserved functionality
 
-## Preserved behavior
+- Static output remains enabled; there is no adapter, server function, or edge
+  middleware.
+- All 98 pre-existing routes remain. `/404` is the only added route.
+- Pagefind indexes the production output.
+- Theme selection still runs before paint and preserves system/light/dark
+  behavior.
+- Meeting widgets and schedules continue to use `src/data/meetings.ts`.
+- Taper and SOWS components retain their dosing and scoring math.
+- Breadcrumbs, category pagination, updated timestamps, changelog sync, mobile
+  navigation, active-section tracking, and external-link behavior remain.
+- No files under `src/content`, `.github/workflows`, or the existing automation
+  scripts were changed for rev 2.
 
-- All content collection routes and slugs remain intact. The project still
-  emits static HTML through `output: 'static'`.
-- Pagefind indexes the built pages and powers the keyboard search dialog.
-- The pre-paint theme script supports system, light, and dark modes.
-- Meeting widgets and schedule tables still read `src/data/meetings.ts`.
-- Taper and SOWS components keep their existing dose and scoring math.
-- The scheduling banner keeps its dismissal key behavior.
-- Crisis help, breadcrumbs, category pagination, timestamps, changelog sync,
-  the mobile drawer, and active contents tracking remain in place.
-
-No feature was deferred.
+No functionality was intentionally deferred.
 
 ## Toolchain
 
-The redesign removes the npm 10 lockfile constraint. The package now declares
-Node 22.22.2 or newer, npm 12.0.2 or newer, and `npm@12.0.2` as the package
-manager. Local verification used Node 26.7.0 and npm 12.0.2.
+Rev 2 did not add a dependency. It uses the current experimental-branch stack:
 
-| Package | Main branch | Redesign |
-| --- | --- | --- |
-| Astro | 5.18.1 | 7.2.3 |
-| Vite | Transitive | 8.2.1 direct |
-| React | 19.2.6 | 19.2.8 |
-| Tailwind CSS | 4.3.0 | 4.3.3 |
-| Pagefind | 1.1.1 | 1.5.2 |
-| TypeScript | 5.5.0 | 7.0.2 |
+| Package | Version |
+| --- | --- |
+| Astro | 7.2.3 |
+| Vite | 8.2.1 |
+| React | 19.2.8 |
+| Tailwind CSS | 4.3.3 |
+| Pagefind | 1.5.2 |
+| TypeScript | 7.0.2 |
 
-Astro 7 uses the supported `@astrojs/markdown-remark` processor so the existing
-external-link and heading plugins run without deprecated configuration.
-The static build inlines its compact compiled stylesheet, which removes a
-render-blocking request on first load. Font faces include the Latin variable
-subsets used by the interface.
+The project remains verified with Node 26.7.0 and npm 12.0.2.
 
-## Verification set
+## Verification
 
-The committed files under `docs/redesign-shots/` cover the homepage, a long
-content page, and meeting schedules at mobile and desktop sizes in both color
-modes. The browse-through also covers a compound page, the changelog, every
-taper calculator, SOWS scoring, persistence and reset behavior, copy/export
-actions, search navigation, appearance switching, the guide drawer, and 390px
-horizontal overflow.
+- Production build: 99 static pages; Pagefind indexed 82 content pages and
+  10,504 words.
+- Route diff: 98 baseline routes, zero removed or renamed, one addition
+  (`/404`).
+- Generated-HTML audit across all 99 pages: exactly one `h1`, skip link first,
+  no skipped heading levels, no duplicate IDs, and no external anchors missing
+  `target="_blank" rel="noopener noreferrer"`.
+- Axe 4.13.0 on homepage, crisis, long guide, meetings, and category templates:
+  zero violations on all five.
+- Mobile Lighthouse handoff run:
 
-The final mobile Lighthouse run on `/other-tools/helper-meds` scored 95 for
-performance and 100 for accessibility. It recorded a 2.3 second Largest
-Contentful Paint, 0ms Total Blocking Time, and no horizontal overflow.
+| Template | Performance | Accessibility | LCP | TBT | CLS |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Homepage | 95 | 100 | 2.7s | 0ms | 0 |
+| Crisis fast-path | 98 | 100 | 2.3s | 0ms | 0.006 |
+| Long guide (`helper-meds`) | 95 | 100 | 2.7s | 0ms | 0 |
+| Meeting schedules | 96 | 100 | 2.6s | 0ms | 0 |
+| Category index | 96 | 100 | 2.6s | 0ms | 0 |
+
+All five meet the package’s performance and accessibility score floors. Four
+simulated LCP readings remain 0.1–0.2s above the 2.5s stretch target; the
+observed long-guide LCP was 1.15s. The custom serif was retained rather than
+removed to optimize only the synthetic score.
+
+The existing twelve files under `docs/redesign-shots/` document the first
+redesign. They have not been refreshed for rev 2 because the app’s visual-test
+connection was unavailable throughout final QA. The required 320/390/768/1440
+light/dark screenshot matrix and manual keyboard/screen-reader walkthrough are
+the remaining verification artifacts; they are not functionality deferrals.

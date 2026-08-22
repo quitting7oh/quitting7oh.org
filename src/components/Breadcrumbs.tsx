@@ -54,7 +54,7 @@ export function Breadcrumbs({ crumbs, sharePath }: Props) {
         <button
           type="button"
           onClick={copy}
-          className="ml-auto inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-border bg-background text-muted-foreground hover:border-primary hover:text-primary"
+          className="ml-auto inline-flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-background text-muted-foreground hover:border-primary hover:text-primary"
           aria-label="Copy a link to this page"
         >
           {copied ? <Check className="size-3.5" aria-hidden="true" /> : <Copy className="size-3.5" aria-hidden="true" />}

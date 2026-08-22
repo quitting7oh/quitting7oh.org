@@ -118,15 +118,19 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   return (
     <DialogPrimitive.Root open={open} onOpenChange={setOpen}>
       <DialogPrimitive.Trigger asChild>
-        <button
-          type="button"
+        <a
+          href="/sitemap"
+          onClick={(event) => {
+            event.preventDefault();
+            setOpen(true);
+          }}
           className={cn(
             'group inline-flex items-center border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent',
             isHero
               ? 'h-14 w-full justify-between rounded-xl px-4 text-left shadow-sm sm:px-5'
-              : 'size-10 justify-center rounded-full xl:h-10 xl:w-auto xl:gap-2 xl:px-4',
+              : 'size-11 justify-center rounded-lg xl:w-auto xl:gap-2 xl:px-4',
           )}
-          aria-label="Search the site"
+          aria-label={placeholder ?? 'Search the guide'}
         >
           <span className={cn('flex items-center', isHero ? 'gap-3' : 'xl:gap-2')}>
             <Search className={cn('shrink-0 text-primary', isHero ? 'size-5' : 'size-[1.05rem]')} aria-hidden="true" />
@@ -135,13 +139,13 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
             </span>
           </span>
           {isHero && <span className="hidden rounded-md border border-border bg-muted px-2 py-1 text-xs text-muted-foreground sm:inline">⌘ K</span>}
-        </button>
+        </a>
       </DialogPrimitive.Trigger>
 
       <DialogPrimitive.Portal>
         <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-foreground/40 backdrop-blur-[2px] data-[state=closed]:opacity-0 data-[state=open]:opacity-100" />
         <DialogPrimitive.Content
-          className="fixed left-1/2 top-[8vh] z-50 flex max-h-[84vh] w-[calc(100%-1.5rem)] max-w-2xl -translate-x-1/2 flex-col overflow-hidden rounded-2xl border border-border bg-popover shadow-2xl sm:top-[12vh]"
+          className="fixed inset-0 z-50 flex h-dvh w-full flex-col overflow-hidden bg-popover pb-[env(safe-area-inset-bottom)] pt-[env(safe-area-inset-top)] shadow-2xl sm:inset-auto sm:left-1/2 sm:top-[10dvh] sm:h-auto sm:max-h-[80dvh] sm:w-[calc(100%-1.5rem)] sm:max-w-2xl sm:-translate-x-1/2 sm:rounded-xl sm:border sm:border-border"
           onOpenAutoFocus={(event) => {
             event.preventDefault();
             window.setTimeout(() => inputRef.current?.focus(), 0);
@@ -168,7 +172,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
               className="h-16 min-w-0 flex-1 bg-transparent text-lg text-foreground outline-none placeholder:text-muted-foreground sm:h-[4.5rem] sm:text-xl"
             />
             <DialogPrimitive.Close asChild>
-              <button type="button" className="inline-flex size-9 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Close search">
+              <button type="button" className="inline-flex size-11 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Close search">
                 <X className="size-4" />
               </button>
             </DialogPrimitive.Close>

@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'Atkinson Hyperlegible Next Variable';
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   font-weight: 200 800;
   src: url('@fontsource-variable/atkinson-hyperlegible-next/files/atkinson-hyperlegible-next-latin-wght-normal.woff2') format('woff2-variations');
 }
@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Newsreader Variable';
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
   font-weight: 200 800;
   src: url('@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2') format('woff2-variations');
 }
@@ -125,24 +125,24 @@
 
   html.dark {
     color-scheme: dark;
-    --background: 22 14% 8%;
+    --background: 22 14% 10%;
     --foreground: 42 28% 92%;
-    --card: 22 13% 11%;
+    --card: 22 13% 13%;
     --card-foreground: 42 28% 92%;
-    --popover: 22 13% 11%;
+    --popover: 22 13% 13%;
     --popover-foreground: 42 28% 92%;
     --primary: 18 48% 70%;
     --primary-foreground: 14 45% 10%;
-    --secondary: 22 12% 17%;
+    --secondary: 22 12% 19%;
     --secondary-foreground: 42 22% 88%;
-    --muted: 22 11% 16%;
+    --muted: 22 11% 18%;
     --muted-foreground: 30 11% 72%;
-    --accent: 17 22% 20%;
+    --accent: 17 22% 22%;
     --accent-foreground: 20 45% 82%;
-    --destructive: 3 55% 48%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 24 11% 25%;
-    --input: 24 11% 30%;
+    --destructive: 7 67% 67%;
+    --destructive-foreground: 14 45% 10%;
+    --border: 24 11% 27%;
+    --input: 24 11% 32%;
     --ring: 18 55% 69%;
     --signal: 38 90% 58%;
     --signal-foreground: 32 82% 10%;
@@ -153,18 +153,22 @@
     --chart-3: 38 90% 58%;
     --chart-4: 283 55% 72%;
     --chart-5: 4 70% 68%;
-    --sidebar: 22 14% 10%;
+    --sidebar: 22 14% 12%;
     --sidebar-foreground: 42 23% 86%;
     --sidebar-primary: 18 48% 70%;
     --sidebar-primary-foreground: 14 45% 10%;
-    --sidebar-accent: 17 22% 20%;
+    --sidebar-accent: 17 22% 22%;
     --sidebar-accent-foreground: 20 45% 82%;
-    --sidebar-border: 24 11% 24%;
+    --sidebar-border: 24 11% 27%;
     --sidebar-ring: 18 55% 69%;
   }
 
   * {
     border-color: hsl(var(--border));
+  }
+
+  html[data-scheduling-banner='hidden'] [data-scheduling-banner] {
+    display: none;
   }
 
   html {
@@ -204,6 +208,10 @@
 
   :where(button, a) {
     -webkit-tap-highlight-color: transparent;
+  }
+
+  :where(button, a):active {
+    opacity: 0.82;
   }
 
   :where(h1, h2, h3, h4, h5, h6) {
@@ -289,8 +297,8 @@
     --tw-prose-td-borders: hsl(var(--border));
     max-width: none;
     color: hsl(var(--foreground));
-    font-size: 1.0625rem;
-    line-height: 1.72;
+    font-size: 1.125rem;
+    line-height: 1.7;
   }
 
   .prose-recovery > :where(h1, h2) {
@@ -346,7 +354,7 @@
   }
 
   .prose-recovery > p {
-    max-width: 43rem;
+    max-width: 70ch;
     margin: 0 0 1.25rem;
   }
 
@@ -356,11 +364,11 @@
   }
 
   .prose-recovery :where(p, li) {
-    line-height: 1.72;
+    line-height: 1.7;
   }
 
   .prose-recovery :where(ul, ol):not(.not-prose *) {
-    max-width: 43rem;
+    max-width: 70ch;
     margin: 1.15rem 0 1.4rem;
     padding-left: 1.35rem;
   }
@@ -468,6 +476,69 @@
 
   .prose-recovery :where(blockquote) > :last-child {
     margin-bottom: 0;
+  }
+
+  .callout-urgent-body :where(ul, ol) {
+    margin: 0;
+    padding-left: 1.35rem;
+  }
+
+  .callout-urgent-body :where(li) {
+    margin: 0.4rem 0;
+    padding-left: 0.2rem;
+  }
+
+  .callout-urgent-body > :last-child {
+    margin-bottom: 0;
+  }
+
+  .crisis-step {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.875rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: 0.8rem;
+    background: hsl(var(--card));
+    padding: 1.1rem;
+  }
+
+  .crisis-step-number {
+    display: inline-grid;
+    width: 2.35rem;
+    height: 2.35rem;
+    place-items: center;
+    border-radius: 999px;
+    background: hsl(var(--accent));
+    color: hsl(var(--primary));
+    font-size: 0.95rem;
+    font-weight: 760;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .crisis-action,
+  .crisis-action-secondary {
+    display: inline-flex;
+    min-height: 3.25rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.55rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 740;
+    line-height: 1.25;
+    text-decoration: none;
+  }
+
+  .crisis-action-secondary {
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--card));
+    color: hsl(var(--foreground));
+  }
+
+  .crisis-action-secondary:hover {
+    border-color: hsl(var(--primary) / 0.6);
+    background: hsl(var(--accent) / 0.55);
   }
 
   .prose-recovery :where(blockquote) p:first-child::before,
@@ -589,7 +660,7 @@
 
 @media (max-width: 639px) {
   .prose-recovery {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     line-height: 1.7;
   }
 

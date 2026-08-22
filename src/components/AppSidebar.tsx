@@ -40,7 +40,7 @@ function PageLink({ item, currentPath }: { item: SidebarItem; currentPath: strin
         href={item.href}
         aria-current={active ? 'page' : undefined}
         className={cn(
-          'relative block rounded-md border-l-2 px-3 py-1.5 text-[0.86rem] leading-snug transition-colors',
+          'relative flex min-h-11 items-center rounded-md border-l-2 px-3 py-2 text-[0.86rem] leading-snug transition-colors lg:min-h-0 lg:py-1.5',
           active
             ? 'border-primary bg-sidebar-accent/55 font-bold text-primary'
             : 'border-transparent text-sidebar-foreground/72 hover:bg-sidebar-accent/45 hover:text-sidebar-foreground',
@@ -101,7 +101,7 @@ function Navigation({ categories, pinned, currentPath }: Props) {
                     onClick={() => setExpanded((state) => ({ ...state, [category.slug]: !open }))}
                     aria-expanded={open}
                     aria-controls={sectionId}
-                    className="inline-flex size-8 shrink-0 items-center justify-center rounded-lg text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground"
+                    className="inline-flex size-11 shrink-0 items-center justify-center rounded-lg text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground lg:size-8"
                   >
                     <ChevronDown className={cn('size-3.5 transition-transform', !open && '-rotate-90')} aria-hidden="true" />
                     <span className="sr-only">{open ? 'Collapse' : 'Expand'} {category.title}</span>
@@ -160,11 +160,21 @@ export function AppSidebar(props: Props) {
   const desktopRef = React.useRef<HTMLDivElement>(null);
   const mobileRef = React.useRef<HTMLDivElement>(null);
 
+  const openerRef = React.useRef<HTMLElement | null>(null);
+
   React.useEffect(() => {
-    const toggle = () => setOpen((value) => !value);
+    const toggle = () => {
+      openerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      setOpen((value) => !value);
+    };
     window.addEventListener('toggle-sidebar', toggle);
     return () => window.removeEventListener('toggle-sidebar', toggle);
   }, []);
+
+  const handleOpenChange = (next: boolean) => {
+    setOpen(next);
+    if (!next) window.setTimeout(() => openerRef.current?.focus(), 0);
+  };
 
   React.useEffect(() => {
     const frame = requestAnimationFrame(() => centerCurrent(mobile ? mobileRef.current : desktopRef.current));
@@ -173,7 +183,7 @@ export function AppSidebar(props: Props) {
 
   if (mobile) {
     return (
-      <Sheet open={open} onOpenChange={setOpen}>
+      <Sheet open={open} onOpenChange={handleOpenChange}>
         <SheetContent side="left" className="w-[min(88vw,21rem)] gap-0 border-0 bg-sidebar p-0 shadow-2xl">
           <SheetHeader className="sr-only"><SheetTitle>Guide navigation</SheetTitle></SheetHeader>
           <div ref={mobileRef} className="h-full overflow-y-auto overscroll-contain pt-4">
@@ -185,7 +195,7 @@ export function AppSidebar(props: Props) {
   }
 
   return (
-    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 bg-sidebar/58 shadow-[inset_-1px_0_0_hsl(var(--sidebar-border)/0.42)] lg:block">
+    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 bg-sidebar/58 shadow-[inset_-1px_0_0_hsl(var(--sidebar-border)/0.42)] lg:order-first lg:block">
       <div ref={desktopRef} className="scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-y-auto overscroll-contain">
         <Navigation {...props} />
       </div>

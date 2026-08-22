@@ -115,7 +115,7 @@ function LiveMeetingAlternatives({ standalone = false }: { standalone?: boolean 
     <div
       className={cn(
         'flex flex-col gap-2.5 text-sm sm:flex-row sm:items-center sm:justify-between',
-        standalone ? 'field-card p-5 sm:p-6' : 'pt-1',
+        standalone ? 'field-card min-h-[15.5rem] p-5 sm:min-h-44 sm:p-6' : 'pt-1',
       )}
     >
       <span className="font-medium text-foreground/80">
@@ -146,7 +146,7 @@ function MeetingCard({ display, now }: CardProps) {
     nextUp !== null &&
     nextUp.start.getTime() - end.getTime() <= MAX_NEXT_UP_WINDOW_MS;
   return (
-    <div className="field-card flex flex-col gap-4 p-5 sm:p-6">
+    <div className="field-card flex min-h-[15.5rem] flex-col gap-4 p-5 sm:min-h-44 sm:p-6">
       <div className="gap-5 sm:flex sm:items-center sm:justify-between">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
@@ -244,7 +244,19 @@ export function NextMeeting() {
     return () => clearInterval(interval);
   }, []);
 
-  if (!now) return null;
+  if (!now) {
+    return (
+      <div className="field-card flex min-h-[15.5rem] items-center p-5 sm:min-h-44 sm:p-6" aria-live="polite">
+        <div>
+          <span className="inline-flex rounded-md bg-muted px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+            Local time
+          </span>
+          <p className="mt-3 font-display text-xl font-semibold text-foreground">Finding the next support meeting…</p>
+          <p className="mt-1 text-sm text-muted-foreground">Times will appear in your timezone.</p>
+        </div>
+      </div>
+    );
+  }
 
   const display = findDisplayMeeting(now);
   if (!display) return <LiveMeetingAlternatives standalone />;

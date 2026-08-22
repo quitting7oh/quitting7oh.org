@@ -56,7 +56,7 @@ export function ThemePicker() {
       <DropdownMenuTrigger asChild>
         <button
           type="button"
-          className="inline-flex size-10 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent"
+          className="inline-flex size-11 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent"
           aria-label={`Appearance: ${mode}`}
         >
           <ActiveIcon className="size-[1.05rem]" aria-hidden="true" />
@@ -71,7 +71,7 @@ export function ThemePicker() {
             <DropdownMenuRadioItem
               key={value}
               value={value}
-              className="rounded-lg py-2.5 pl-8 pr-3 text-sm"
+              className="min-h-11 rounded-lg py-2.5 pl-8 pr-3 text-sm"
             >
               <Icon className="mr-2 size-4" aria-hidden="true" />
               {label}

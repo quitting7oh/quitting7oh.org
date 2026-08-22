@@ -23,6 +23,17 @@
     }
 
     apply(storedMode());
+    try {
+      var bannerPath = window.location.pathname.replace(/\/$/, '');
+      if (
+        bannerPath === '/compounds/7-oh-ban' ||
+        localStorage.getItem('scheduling-banner-dismissed-2026-08') === '1'
+      ) {
+        root.dataset.schedulingBanner = 'hidden';
+      }
+    } catch (error) {
+      // Storage blocked: leave the time-sensitive notice visible.
+    }
     media.addEventListener('change', function () {
       if (storedMode() === 'system') apply('system');
     });

@@ -406,7 +406,7 @@ function MeetingCard({
             href={meeting.joinUrl}
             target={meeting.platform === 'Phone Call' ? undefined : '_blank'}
             rel={meeting.platform === 'Phone Call' ? undefined : 'noopener noreferrer'}
-            className="inline-flex min-h-9 items-center gap-1 rounded-full bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
+            className="inline-flex min-h-11 items-center gap-1 rounded-lg bg-primary px-3.5 py-1.5 text-xs font-bold text-primary-foreground transition hover:bg-primary/90"
           >
             {meeting.platform === 'Phone Call' ? `Call ${meeting.roomNumber}` : `Join ${meeting.platform}`}
             {meeting.platform === 'Phone Call' ? (
@@ -437,7 +437,7 @@ function MeetingCard({
         <button
           type="button"
           onClick={handleCopy}
-          className="ml-auto inline-flex min-h-9 items-center gap-1 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground transition hover:bg-muted"
+          className="ml-auto inline-flex min-h-11 items-center gap-1 rounded-lg border border-border bg-background px-3 py-1 text-xs font-semibold text-foreground transition hover:bg-muted"
           aria-label="Copy meeting details to clipboard"
           title="Copy meeting details"
         >
@@ -638,7 +638,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
                 type="button"
                 onClick={() => toggleTag(tag)}
                 className={cn(
-                  'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold transition',
+                  'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold transition',
                   active
                     ? 'border-foreground bg-foreground text-background'
                     : 'border-border bg-background text-foreground hover:border-foreground/40',
@@ -667,7 +667,7 @@ export function VirtualNaMeetings({ bundle }: { bundle: MeetingsBundle }) {
               type="button"
               onClick={() => setOpenClosed(v)}
               className={cn(
-                'min-h-9 rounded-full border px-3 py-1 text-xs font-semibold capitalize transition',
+                'min-h-11 rounded-lg border px-3 py-1 text-xs font-semibold capitalize transition',
                 filterState.openClosed === v
                   ? 'border-foreground bg-foreground text-background'
                   : 'border-border bg-background text-foreground hover:border-foreground/40',
