@@ -2,7 +2,7 @@
 title: "Quit Kit & QuitK"
 description: "Honest review of two commercial supplement stacks marketed for kratom and opioid withdrawal, what's in them, what they cost, and what to know before buying."
 category: "other-tools"
-last_updated: "2026-06-04"
+last_updated: "2026-08-21"
 sort: 3
 ---
 > **This post is informational, not an endorsement.** Quit Kit is a commercial product some members of this community have used. We're explaining what it is, what's in it, and how it compares to building a similar stack yourself for less money. **Not medical advice.** If you're on a prescribed medication (Suboxone, LDN, antidepressants, etc.), check interactions for any new supplement with your pharmacist or prescriber, that's the narrow ask they can help with. Otherwise this is community ground; **#vitamins-supplements** is the chat channel for what's worked.
@@ -25,9 +25,9 @@ Quit Kit and QuitK are **commercial supplement stacks** marketed specifically fo
 - **Agmatine**: proposed to reduce opioid tolerance
 - **B vitamins, vitamin D, zinc**: foundational nutrients depleted during withdrawal
 
-This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's covered in [Vitamins & Supplements](/other-tools/vitamins-supplements) (the comprehensive guide to individual supplements, dosing, brands, and what to skip). Pre-packaged morning/night doses are convenient, especially when you're in the fog of acute withdrawal.
+This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's covered in [Vitamins & Supplements](/other-tools/vitamins-supplements) (the full guide to individual supplements, dosing, brands, and what to skip). Pre-packaged morning/night doses are convenient, especially when you're in the fog of acute withdrawal.
 
-## The honest tradeoff
+## The tradeoff
 
 **The case for buying it:**
 - Convenient, especially in the haze of acute withdrawal when assembling a stack feels overwhelming

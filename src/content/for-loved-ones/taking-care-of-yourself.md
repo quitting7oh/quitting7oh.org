@@ -2,13 +2,13 @@
 title: "Taking Care of Yourself"
 description: "The unglamorous basics that keep you standing — therapy, support groups, sleep, the hypervigilance trap, and why it's okay to be happy while your loved one isn't."
 category: "for-loved-ones"
-last_updated: "2026-06-08"
+last_updated: "2026-08-21"
 sort: 10
 ---
 
 You cannot pour from an empty cup. The people who burn out trying to rescue someone often end up unable to help when their person is finally ready. Taking care of yourself isn't selfish, it's strategic, and it's also just necessary, because you matter independently of whether anyone else gets well.
 
-## Caregiver burnout is real
+## Caregiver burnout
 
 The exhaustion, depression, anxiety, weight changes, sleep disruption, autoimmune flares, and stress-related illness that families of people in active addiction experience aren't your imagination. There's a real clinical literature on caregiver burnout, and it's worse for addiction-related caregiving than for many other chronic-illness contexts because the unpredictability is so high, the social support is often so low (people don't know what to say), and the "patient" is often actively complicating your life rather than just being ill.
 

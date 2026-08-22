@@ -2,7 +2,7 @@
 title: "What You Should Know About Long-Term Suboxone"
 description: "Long-term Suboxone effects, dependence, hormone changes, and tapering off — including the long-acting injectables some people use to exit."
 category: "mat-suboxone"
-last_updated: "2026-06-08"
+last_updated: "2026-08-21"
 sort: 8
 ---
 
@@ -36,7 +36,7 @@ things on this page. None of this is meant to push you off a medication
 that's working. It's meant to make sure that if you stay on it
 long-term, it's a fully informed choice.
 
-## It is an opioid. Full stop.
+## It is an opioid
 
 Buprenorphine activates the same mu-opioid receptors as the
 kratom-derived synthetics and other prescription opioids. It's a

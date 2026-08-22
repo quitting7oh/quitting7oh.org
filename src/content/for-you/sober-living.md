@@ -2,7 +2,7 @@
 title: "Sober Living Homes"
 description: "Sober living, defined: NARR quality levels, how to find a legitimate one, what it costs, red flags for predatory homes, and how Oxford House differs."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-08-21"
 sort: 8
 ---
 
@@ -82,7 +82,7 @@ Higher levels are not "better" in general, they're appropriate for people who ne
 
 ## Finding a legitimate home
 
-Sober living is unevenly regulated. Some states have robust oversight; others have almost none. That regulatory patchwork creates space for both excellent homes and exploitative ones. **Vetting matters.**
+Sober living is unevenly regulated. Some states have strict oversight; others have almost none. That regulatory patchwork creates space for both excellent homes and exploitative ones. **Vetting matters.**
 
 ### NARR certification
 
@@ -162,7 +162,7 @@ Common features of most sober living homes:
 - **Required employment or active job-search**: most homes expect you to be working or actively seeking work within 30 days.
 - **Chores and house responsibilities**: shared cleaning, maintenance, sometimes cooking rotations.
 - **No overnight guests** in most homes, especially in the first 30–90 days.
-- **Length of stay**: varies; many people stay 90 days to a year. Research suggests longer stays correlate with better outcomes.
+- **Length of stay**: varies; many people stay 90 days to a year. Stays of six months or longer are associated with better recovery outcomes ([Subbaraman et al., *Am J Drug Alcohol Abuse* 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC12841932/)).
 
 Some homes also require a length of sobriety before admission (often 30 days). Others will admit you straight from detox or residential.
 

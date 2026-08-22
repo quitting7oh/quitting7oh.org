@@ -2,7 +2,7 @@
 title: "Dopamine Recovery"
 description: "Flat motivation and anhedonia in the months after 7-OH and kratom synthetics: what helps, the realistic timeline, and the pseudoscience to skip."
 category: "post-acute"
-last_updated: "2026-06-09"
+last_updated: "2026-08-21"
 sort: 3
 ---
 
@@ -54,7 +54,7 @@ In the brain's reward circuitry, dopamine neurons in the **ventral tegmental are
 Chronic mu-opioid activity changes the dopamine system in measurable, lasting ways. The two best-characterized effects:
 
 - **Reduced D2 receptor availability.** PET imaging across multiple substance-dependent populations, including opioid users, shows [reduced striatal D2 receptor availability that persists months into detoxification](https://pmc.ncbi.nlm.nih.gov/articles/PMC3760378/), correlating with reduced activity in prefrontal regions that govern decision-making and inhibitory control. One of the most reproduced findings in addiction neuroscience.
-- **Blunted phasic dopamine responses.** The same imaging studies show that when previously-dependent people are exposed to natural rewards or stimulants, the dopamine release they produce is smaller than in non-dependent controls. The system isn't just downregulated at rest, it's less responsive to normal rewards.
+- **Blunted phasic dopamine responses.** The same imaging studies show that when previously-dependent people are exposed to natural rewards or stimulants, the dopamine release they produce is smaller than in non-dependent controls. The system is downregulated at rest and less responsive to normal rewards.
 
 That's the neurobiology behind "nothing feels good anymore." Receptors that normally signal "this is worth caring about" are less available, and the bursts of signaling that normally accompany pleasurable activities are muted.
 
