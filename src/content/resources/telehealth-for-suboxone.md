@@ -21,9 +21,9 @@ sort: 2
 
 **Buprenorphine is one of several options** people in this community
 use to come off [7-OH](/compounds/7-oh) and kratom synthetics, others
-include [SR-17](/other-tools/sr-17),
-[tapering with leaf kratom](/other-tools/quit-7-oh-with-kratom-leaf), and
-cold-turkey with [helper meds](/other-tools/helper-meds). This
+include [SR-17](/medications-supplements/sr-17),
+[tapering with leaf kratom](/medications-supplements/quit-7-oh-with-kratom-leaf), and
+cold-turkey with [helper meds](/medications-supplements/helper-meds). This
 page is specifically about telehealth providers that handle the
 **buprenorphine** path ([Suboxone] is buprenorphine + naloxone;
 [Subutex] is buprenorphine alone), since that's the part where a
@@ -749,7 +749,7 @@ treats OUD seriously should be able to answer them quickly.
 6. **What adjunct meds will you prescribe alongside buprenorphine if
    I need them?** Clonidine, gabapentin, ondansetron, trazodone,
    baclofen, and the rest of the menu on
-   [Helper Medications](/other-tools/helper-meds). Most
+   [Helper Medications](/medications-supplements/helper-meds). Most
    providers can; some won't.
 7. **Are you supportive if my goal is a structured taper rather than
    long-term maintenance, or vice versa?** Both are valid; make sure

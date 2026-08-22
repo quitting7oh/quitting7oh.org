@@ -87,7 +87,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     note: 'Community-observed taper patterns for concentrated 7-OH cluster around halving for the first half, then progressively slower steps. Most self-managed 7-OH tapers end with a jump-off at some low dose rather than a clean taper to zero. The calculator drops doses-per-day as the total falls; per-dose stays in a tolerable range.',
     related: [
       { label: 'Tapering Off 7-OH', href: '/for-you/tapering-7oh' },
-      { label: 'SR-17 as the other community-validated path', href: '/other-tools/sr-17' },
+      { label: 'SR-17 as the other community-validated path', href: '/medications-supplements/sr-17' },
     ],
   },
   bupe: {
@@ -121,7 +121,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
       { label: 'MIT-A and DHM Products', href: '/compounds/mit-a-dhm' },
       { label: 'MGM-15', href: '/compounds/mgm15' },
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
-      { label: 'SR-17', href: '/other-tools/sr-17' },
+      { label: 'SR-17', href: '/medications-supplements/sr-17' },
     ],
   },
   pseudo: {
@@ -138,7 +138,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     related: [
       { label: 'Pseudo (mitragynine pseudoindoxyl)', href: '/compounds/mitragynine-pseudoindoxyl' },
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
-      { label: 'SR-17', href: '/other-tools/sr-17' },
+      { label: 'SR-17', href: '/medications-supplements/sr-17' },
     ],
   },
   leaf: {
@@ -153,7 +153,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     tabletUnitName: 'capsule',
     note: 'Leaf alkaloid content varies between strains, batches, and vendors. Grams are an approximation of dose. Most community leaf tapers end with a jump-off at 1–2 g/day rather than tapering to zero.',
     related: [
-      { label: 'Quit 7-OH with Kratom Leaf', href: '/other-tools/quit-7-oh-with-kratom-leaf' },
+      { label: 'Quit 7-OH with Kratom Leaf', href: '/medications-supplements/quit-7-oh-with-kratom-leaf' },
     ],
   },
 };

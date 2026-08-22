@@ -171,9 +171,9 @@ If you've worked the tail down this way and still can't get clear of the jump, t
 ## Harm reduction layer (use ALL of these, not optional)
 
 - **Hydration and electrolytes.** LMNT, Liquid IV, coconut water, or salt + lemon in water. Sweating and GI symptoms drain you fast.
-- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/other-tools/helper-meds) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth-for-suboxone) for prescribers who will work with you on adjuncts.
+- **Helper meds, ideally prescribed.** Clonidine, trazodone, gabapentin, baclofen. See [Helper Medications](/medications-supplements/helper-meds) for the full menu (including the meds with restless-legs caveats), and the [Telehealth Providers comparison](/resources/telehealth-for-suboxone) for prescribers who will work with you on adjuncts.
 - **OTC support.** Loperamide for diarrhea (labeled doses only, do not exceed), ibuprofen for body aches, ginger for nausea.
-- **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
+- **Supplements.** Magnesium, B-complex, vitamin C (liposomal helps for higher doses), L-theanine for anxiety. See [Vitamins & Supplements](/medications-supplements/vitamins-supplements).
 - **A check-in person.** Someone who knows what you're doing and will check on you daily, especially days 3 to 7 after the last dose.
 - **Time off.** Don't try this during a high-stress work week if you can avoid it.
 

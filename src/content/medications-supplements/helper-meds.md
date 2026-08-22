@@ -1,7 +1,7 @@
 ---
 title: "Helper Medications"
 description: "Helper medications for 7-OH and kratom-synthetic withdrawal — clonidine, gabapentin, baclofen, trazodone, ondansetron — with symptom-by-symptom dosing."
-category: "other-tools"
+category: "medications-supplements"
 last_updated: "2026-06-20"
 sort: 1
 ---
@@ -93,7 +93,7 @@ Two vendors that ship manufacturer-packaged gabapentin for animal use:
 - **Tizanidine (Zanaflex):** alpha-2 agonist (similar mechanism to clonidine), helps muscle spasms and anxiety. Useful when clonidine isn't enough. Sedating.
 - **Cyclobenzaprine (Flexeril):** short-term muscle relaxant for the body-aches part of withdrawal. Often only prescribed for 1–2 weeks. Sedating.
 - **Methocarbamol (Robaxin):** older muscle relaxant, less sedating than the others, useful for muscle pain without much "drugged" feeling.
-- **Magnesium glycinate** (OTC, see [Vitamins & Supplements](/other-tools/vitamins-supplements)) covers some of the same territory. Some people don't need a prescription muscle relaxer if magnesium is on board.
+- **Magnesium glycinate** (OTC, see [Vitamins & Supplements](/medications-supplements/vitamins-supplements)) covers some of the same territory. Some people don't need a prescription muscle relaxer if magnesium is on board.
 
 ## Sleep medications
 
@@ -209,4 +209,4 @@ For chronic anxiety or depression that needs long-term treatment, a psychiatrist
 - **Add for muscle pain:** baclofen or tizanidine
 - **Add for post-acute mood:** bupropion (after the acute phase ends)
 
-Helper meds pair with any of the community-documented quitting paths: cold turkey, [tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/other-tools/sr-17). See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the supplement side, and [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture.
+Helper meds pair with any of the community-documented quitting paths: cold turkey, [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/medications-supplements/sr-17). See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the supplement side, and [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture.

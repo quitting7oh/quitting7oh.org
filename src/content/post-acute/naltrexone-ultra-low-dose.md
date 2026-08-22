@@ -175,7 +175,7 @@ Putting the framing in one box:
   magnitude smaller, opposite timing relative to opioids,
   different intended use.
 - **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh) or
-  [SR-17](/other-tools/sr-17).** It's a theoretical adjunct
+  [SR-17](/medications-supplements/sr-17).** It's a theoretical adjunct
   to opioid agonist therapy, not a substitute for it.
 - **Not a substitute for a real taper plan.** Even where the
   pharmacology might help smooth the bottom of a Suboxone taper,

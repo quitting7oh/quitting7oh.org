@@ -1,7 +1,7 @@
 ---
 title: "Quit Kit & QuitK"
 description: "Honest review of two commercial supplement stacks marketed for kratom and opioid withdrawal, what's in them, what they cost, and what to know before buying."
-category: "other-tools"
+category: "medications-supplements"
 last_updated: "2026-08-21"
 sort: 3
 ---
@@ -25,7 +25,7 @@ Quit Kit and QuitK are **commercial supplement stacks** marketed specifically fo
 - **Agmatine**: proposed to reduce opioid tolerance
 - **B vitamins, vitamin D, zinc**: foundational nutrients depleted during withdrawal
 
-This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's covered in [Vitamins & Supplements](/other-tools/vitamins-supplements) (the full guide to individual supplements, dosing, brands, and what to skip). Pre-packaged morning/night doses are convenient, especially when you're in the fog of acute withdrawal.
+This is a **reasonable formulation.** Most of these ingredients have at least some evidence supporting their use in withdrawal contexts and overlap heavily with what's covered in [Vitamins & Supplements](/medications-supplements/vitamins-supplements) (the full guide to individual supplements, dosing, brands, and what to skip). Pre-packaged morning/night doses are convenient, especially when you're in the fog of acute withdrawal.
 
 ## The tradeoff
 
@@ -46,7 +46,7 @@ This is a **reasonable formulation.** Most of these ingredients have at least so
 
 A commercial kit runs roughly **$50-75/month**. Sourcing the equivalent ingredients individually from third-party-tested brands (NOW Foods, Nature's Way, Pure Encapsulations, Thorne, Doctor's Best) typically lands at **$25-40/month** for a comparable foundational stack, plus the ability to see exact per-ingredient doses, drop or substitute anything that doesn't agree with you, and shop sales or Amazon Subscribe & Save.
 
-For the full per-supplement breakdown (doses, brand recommendations, when to add what, what to skip), see **[Vitamins & Supplements](/other-tools/vitamins-supplements)**, that page is the primary home for the DIY stack and the supplements covered here.
+For the full per-supplement breakdown (doses, brand recommendations, when to add what, what to skip), see **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**, that page is the primary home for the DIY stack and the supplements covered here.
 
 ## What we don't recommend
 A few specific concerns about both Quit Kit and QuitK:
@@ -59,6 +59,6 @@ A few specific concerns about both Quit Kit and QuitK:
 ## Bottom line
 If you can afford it and convenience matters more than cost, the commercial kits are a reasonable starting point. The ingredients are evidence-supported and people in this community have used them to get through withdrawal.
 
-If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper**, see **[Vitamins & Supplements](/other-tools/vitamins-supplements)** for the full per-supplement guide.
+If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper**, see **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)** for the full per-supplement guide.
 
-Either way: supplements help, but they're not the main event. Sleep, hydration, lifestyle, and (for some) medical support like [Suboxone](/mat-suboxone/suboxone-for-7oh) or [SR-17](/other-tools/sr-17) do the heaviest lifting. Don't let any commercial product convince you it's the difference between success and failure, it isn't.
+Either way: supplements help, but they're not the main event. Sleep, hydration, lifestyle, and (for some) medical support like [Suboxone](/mat-suboxone/suboxone-for-7oh) or [SR-17](/medications-supplements/sr-17) do the heaviest lifting. Don't let any commercial product convince you it's the difference between success and failure, it isn't.

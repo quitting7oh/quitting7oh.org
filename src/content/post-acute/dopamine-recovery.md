@@ -15,7 +15,7 @@ The dopamine system handles motivation, reward learning, and the felt sense of "
 - **Novelty.** New places, new people, new routines. The novelty-detection system is partly dopaminergic, and chronically-the-same environments tend to deepen the flatness.
 - **Time.** Most of the recovery curve is the system rebalancing on its own. There is no documented shortcut.
 
-For prescribed medications relevant to flat mood (bupropion specifically), see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) and [Helper Medications](/other-tools/helper-meds). For supplements the community discusses for the dopamine picture (L-tyrosine, mucuna pruriens, NAC, with real caveats), see [Vitamins & Supplements](/other-tools/vitamins-supplements).
+For prescribed medications relevant to flat mood (bupropion specifically), see [Depression and Anhedonia](/post-acute/depression-and-anhedonia) and [Helper Medications](/medications-supplements/helper-meds). For supplements the community discusses for the dopamine picture (L-tyrosine, mucuna pruriens, NAC, with real caveats), see [Vitamins & Supplements](/medications-supplements/vitamins-supplements).
 
 ## What the timeline looks like
 
@@ -65,5 +65,5 @@ That's the neurobiology behind "nothing feels good anymore." Receptors that norm
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep is load-bearing for dopamine recovery.
 - **[Impending Doom](/post-acute/impending-doom-anxiety)**: the acute-anxiety side of post-acute.
 - **[Long-Term Outlook](/post-acute/7-oh-recovery-timeline)**: what recovery looks like over the coming months.
-- **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: the practical breakdown of community-discussed supplements.
+- **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**: the practical breakdown of community-discussed supplements.
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: for bupropion, SSRI/SNRI, and Suboxone routing.

@@ -171,7 +171,7 @@ with a clinician, not as DIY.
   [Withdrawal Help](/start-here/7-oh-withdrawal-help) for the four
   community-documented paths off the synthetics.
 - **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh) or
-  [SR-17](/other-tools/sr-17)** during the active quitting
+  [SR-17](/medications-supplements/sr-17)** during the active quitting
   phase. LDN comes in after.
 - **Not a cure-all.** Real evidence in fibromyalgia and some
   autoimmune conditions; thinner evidence in OUD recovery; almost

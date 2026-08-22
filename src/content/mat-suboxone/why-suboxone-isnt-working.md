@@ -42,7 +42,7 @@ Provider attitudes vary on which adjuncts they'll add; see the [telehealth provi
 - **Magnesium glycinate.** OTC. [helps with the restless-legs, muscle-tension, anxiety cluster](https://naturalcalm.ca/magnesium-for-addiction/).
 - **L-theanine.** OTC. [Takes the edge off without sedation](https://southsideharmreduction.org/wp-content/uploads/2024/01/OpioidWithdrawalCondensed.pdf).
 
-See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the full picture on supplement support.
+See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the full picture on supplement support.
 
 ## Dose: you might need more
 This is the second-biggest thing people don't get told. The "right" dose of bupe varies a lot between people, and **landing at too low a dose is one of the most common reasons bupe feels inadequate.**
@@ -71,7 +71,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 > **If standard induction itself failed**: precipitated withdrawal, couldn't wait long enough, or symptoms wouldn't stabilize regardless of dose, the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is the alternative induction pathway for the long-acting compounds. Different mechanics: you keep your opioid going and ramp bup in over 5–10 days, instead of waiting in withdrawal and dosing larger at the bottom of the wait. Most clinical evidence is in fentanyl and methadone populations; the kratom-derivative experience is community-extrapolated rather than published. Bring it up with a prescriber if standard induction isn't a fit for your situation.
 
 ## Steps to take right now if Suboxone isn't working
-1. **Check the serotonergic/adrenergic piece first.** If you have any of the symptoms in the list above, that's where the problem is. Get clonidine, gabapentin, or trazodone added (see [Helper Medications](/other-tools/helper-meds) for the full menu, including the meds with RLS caveats).
+1. **Check the serotonergic/adrenergic piece first.** If you have any of the symptoms in the list above, that's where the problem is. Get clonidine, gabapentin, or trazodone added (see [Helper Medications](/medications-supplements/helper-meds) for the full menu, including the meds with RLS caveats).
 2. **Check your dose.** Are you covered, or parked too low? If symptoms return before your next dose, your dose is too low or you need to split it.
 3. **Be honest about what you were on.** If MGM-15, or pseudo were in the mix, the playbook changes.
 4. **Don't bail in the first 1-2 days.** This is when most people quit, because it's when bupe feels least like what their body was used to and the non-opioid symptoms are at their worst. Your dose may not be dialed in yet, your adjuncts may not be in your system yet. Push through to day 2 or 3 with the right dose and adjuncts in place.
@@ -102,4 +102,4 @@ If you're approaching the end of your taper and still feel terrible, talk to you
 - [Multifaceted modulation of human opioid receptors by kratom alkaloids (Frontiers in Pharmacology)](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full), receptor binding affinities for kratom alkaloids and synthetics
 - [Natural Calm: Magnesium for Addiction Recovery](https://naturalcalm.ca/magnesium-for-addiction/), magnesium and amino acids for opioid withdrawal
 - [Southside Harm Reduction: At-Home Opioid Withdrawal Management (PDF)](https://southsideharmreduction.org/wp-content/uploads/2024/01/OpioidWithdrawalCondensed.pdf), community harm reduction guide
-- See also: [Vitamins & Supplements](/other-tools/vitamins-supplements) for supplement strategies, and [Telehealth Providers](/resources/telehealth-for-suboxone) for prescribers comfortable adding adjunct medications
+- See also: [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for supplement strategies, and [Telehealth Providers](/resources/telehealth-for-suboxone) for prescribers comfortable adding adjunct medications

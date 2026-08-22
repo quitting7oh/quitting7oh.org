@@ -24,9 +24,9 @@ recovery themselves, who works with you on a regular schedule by text,
 call, or video to help you stay stopped. Coaching is not therapy, not
 medical care, and not a taper plan. It sits next to whatever path you're
 on, whether that's [buprenorphine](/mat-suboxone/suboxone-for-7oh),
-[SR-17](/other-tools/sr-17), a
-[leaf taper](/other-tools/quit-7-oh-with-kratom-leaf), or cold turkey
-with [helper meds](/other-tools/helper-meds), and focuses on the part
+[SR-17](/medications-supplements/sr-17), a
+[leaf taper](/medications-supplements/quit-7-oh-with-kratom-leaf), or cold turkey
+with [helper meds](/medications-supplements/helper-meds), and focuses on the part
 those don't cover: the daily structure of getting through the first
 year.
 
@@ -109,7 +109,7 @@ card. Any service that takes recovery seriously can answer these quickly.
    your say-so.
 4. **How does this fit with my prescriber and my quitting path?**
    Coaching doesn't replace [MAT](/mat-suboxone/suboxone-for-7oh),
-   [SR-17](/other-tools/sr-17), or a taper. Make sure your coach supports
+   [SR-17](/medications-supplements/sr-17), or a taper. Make sure your coach supports
    the path you've chosen.
 5. **What's the cancellation policy?** Month-to-month should mean you can
    stop without a penalty.

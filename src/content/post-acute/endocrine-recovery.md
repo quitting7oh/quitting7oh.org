@@ -104,7 +104,7 @@ For readers whose endocrine systems do not recover spontaneously, replacement th
 
 ## The supplement question, briefly
 
-Many readers will encounter heavily marketed "testosterone boosters" (DHEA, tongkat ali, ashwagandha, fenugreek, zinc-magnesium-vitamin-D stacks). The category exists; people use it. Published evidence for these supplements meaningfully raising testosterone in clinically hypogonadal individuals is generally limited; some have modest effects in some populations, others have essentially none. They are not substitutes for clinical evaluation when endocrine effects are persistent. Some interact with medications or have their own side effects. The [Vitamins & Supplements](/other-tools/vitamins-supplements) page covers the supplement-stack background; this page does not endorse specific protocols.
+Many readers will encounter heavily marketed "testosterone boosters" (DHEA, tongkat ali, ashwagandha, fenugreek, zinc-magnesium-vitamin-D stacks). The category exists; people use it. Published evidence for these supplements meaningfully raising testosterone in clinically hypogonadal individuals is generally limited; some have modest effects in some populations, others have essentially none. They are not substitutes for clinical evaluation when endocrine effects are persistent. Some interact with medications or have their own side effects. The [Vitamins & Supplements](/medications-supplements/vitamins-supplements) page covers the supplement-stack background; this page does not endorse specific protocols.
 
 ## Men specifically
 
@@ -166,5 +166,5 @@ The endocrine picture and the PAWS picture share substantial symptom overlap: lo
 - **[Depression and Anhedonia](/post-acute/depression-and-anhedonia)**: the focused page on mood symptoms and clinical interventions
 - **[Sleep Recovery](/post-acute/sleep-recovery)**: sleep architecture and what helps
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: endocrine recovery often begins during taper, not after
-- **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
+- **[Helper Medications](/medications-supplements/helper-meds)**: prescription comfort meds with established evidence
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: clinicians who can order endocrine testing and arrange specialty referrals

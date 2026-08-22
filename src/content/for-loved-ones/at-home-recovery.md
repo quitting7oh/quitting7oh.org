@@ -51,13 +51,13 @@ them](/for-you/at-home-treatment) has the full version):
 - **Suboxone as a structured rapid taper**: typically 5 to 10 days,
   often arranged through a [telehealth prescriber](/resources/telehealth-for-suboxone)
   with no in-person visit needed. Cuts most of the acute withdrawal.
-- **[SR-17](/other-tools/sr-17)**: a non-prescription option
+- **[SR-17](/medications-supplements/sr-17)**: a non-prescription option
   some people use to bridge off the synthetics.
-- **Stepping down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)**
+- **Stepping down to [kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)**
  , substituting lower-concentration leaf for concentrated 7-OH,
   then tapering the leaf.
-- **Cold turkey with [helper medications](/other-tools/helper-meds)
-  and [supplements](/other-tools/vitamins-supplements)**, for shorter
+- **Cold turkey with [helper medications](/medications-supplements/helper-meds)
+  and [supplements](/medications-supplements/vitamins-supplements)**, for shorter
   exposures and lower doses.
 
 Picking one path and sticking with it tends to work better than

@@ -527,9 +527,9 @@ The community is medication-agnostic. Buprenorphine (Suboxone, Subutex)
 is **one of several legitimate paths** people use to come off 7-OH and
 kratom synthetics. Others documented on the site include:
 
-- [SR-17](/other-tools/sr-17) as an informal taper bridge
-- [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
-- Cold turkey with [helper meds](/other-tools/helper-meds)
+- [SR-17](/medications-supplements/sr-17) as an informal taper bridge
+- [Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
+- Cold turkey with [helper meds](/medications-supplements/helper-meds)
 
 **Naltrexone (LDN, ULDN, Vivitrol) is NOT a path off opioids.** It's a
 mu-opioid *antagonist* — taking it while there are still opioids on
@@ -642,7 +642,7 @@ The site is **opinionless** on which path someone uses to quit. Every
 option has real pros and cons; the job here is to educate, not steer.
 
 **Easy rule to remember: if Suboxone is named in a quitting context,
-[SR-17](/other-tools/sr-17) is named alongside it.** They're the
+[SR-17](/medications-supplements/sr-17) is named alongside it.** They're the
 two community-validated medication-assisted paths off 7-OH and related
 synthetics. Naming one without the other implicitly endorses the named
 one as the "real" answer, which violates the opinionless posture.
@@ -654,8 +654,8 @@ apply inside content that is itself scoped to a specific medication (a
 Suboxone induction page can stay focused on Suboxone; an SR-17 protocol
 page can stay focused on SR-17).
 
-[Tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold turkey
-with [helper meds](/other-tools/helper-meds) are also legitimate
+[Tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) and cold turkey
+with [helper meds](/medications-supplements/helper-meds) are also legitimate
 paths — name them when they fit the context — but the Subs↔SR-17 pair
 is the load-bearing one: those are the two MAT-equivalent options the
 community has converged on for getting off the synthetics.
@@ -886,7 +886,7 @@ is misleading.
 
 - **If the page has room for a caveat, name the RLS issue inline.**
   ("Hydroxyzine works for some but can worsen restless legs.")
-  The [Helper Medications](/other-tools/helper-meds) entry is
+  The [Helper Medications](/medications-supplements/helper-meds) entry is
   the canonical version.
 - **If the mention is part of a compact list of adjuncts** —
   "clonidine, hydroxyzine, gabapentin, trazodone" — **drop
@@ -895,7 +895,7 @@ is misleading.
   wrong medication. The helper-meds page lists it with the caveat;
   readers who want the full menu will find it there.
 - **The helper-meds page itself is the exception.** Bare mentions
-  of hydroxyzine inside `other-tools/helper-meds.md` (the page
+  of hydroxyzine inside `medications-supplements/helper-meds.md` (the page
   where the canonical caveat lives) are fine.
 - **Factual documentation of what a third party offers is fine.**
   Quoting a vendor's published list of comfort meds (e.g., the

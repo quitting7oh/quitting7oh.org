@@ -25,15 +25,15 @@ next move matters more than the rest of this site. Go here first.
 
 Hour-by-hour timeline, what to do in the next sixty minutes, what to
 avoid, when to go to the ER, and the real paths out, tough it out,
-step down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf),
+step down to [kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf),
 [Suboxone](/mat-suboxone/suboxone-for-7oh), or
-[SR-17](/other-tools/sr-17).
+[SR-17](/medications-supplements/sr-17).
 
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: the main page for this.
-- **[Helper Medications](/other-tools/helper-meds)**: clonidine,
+- **[Helper Medications](/medications-supplements/helper-meds)**: clonidine,
   gabapentin, trazodone, baclofen, and others. A same-day telehealth
   appointment can get most of these.
-- **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: magnesium, electrolytes, NAC, melatonin, the rest of the OTC stack
+- **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**: magnesium, electrolytes, NAC, melatonin, the rest of the OTC stack
   that takes the edge off.
 - **[Impending Doom](/post-acute/impending-doom-anxiety)**: if the wave
   hitting you is the panicky "something terrible is about to happen"
@@ -66,10 +66,10 @@ exist with real pros and cons.
 
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)**: one widely-used path,
   with the community's low-and-slow induction approach.
-- **[SR-17](/other-tools/sr-17)**: a non-prescription option
+- **[SR-17](/medications-supplements/sr-17)**: a non-prescription option
   some people have used to bridge off 7-OH and related synthetics.
-- **[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
-- **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
+- **[Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
+- **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: a fact-checked
   comparison if you need a prescriber.
 

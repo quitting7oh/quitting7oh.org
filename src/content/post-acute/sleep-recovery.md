@@ -32,15 +32,15 @@ The full sleep recovery curve looks roughly like this:
 - Get sunlight within an hour of waking (resets circadian rhythm)
 - If you can't sleep, don't lie there spiraling. Get up, do something boring in dim light, try again
 
-**Supplement support** (see [Vitamins & Supplements](/other-tools/vitamins-supplements)): magnesium glycinate/threonate 200-400 mg at bedtime, glycine 3 g before bed, L-theanine 100-200 mg, melatonin at LOW doses (0.3-1 mg, not the 5-10 mg most stores sell), apigenin.
+**Supplement support** (see [Vitamins & Supplements](/medications-supplements/vitamins-supplements)): magnesium glycinate/threonate 200-400 mg at bedtime, glycine 3 g before bed, L-theanine 100-200 mg, melatonin at LOW doses (0.3-1 mg, not the 5-10 mg most stores sell), apigenin.
 
-**Medications** (see [Helper Medications](/other-tools/helper-meds)): trazodone is the most prescribed sleep med in recovery contexts. Mirtazapine at low doses covers sleep + anxiety + nausea in one. Doxepin at 3-6 mg is FDA-approved for insomnia. Hydroxyzine works for some but can worsen restless legs.
+**Medications** (see [Helper Medications](/medications-supplements/helper-meds)): trazodone is the most prescribed sleep med in recovery contexts. Mirtazapine at low doses covers sleep + anxiety + nausea in one. Doxepin at 3-6 mg is FDA-approved for insomnia. Hydroxyzine works for some but can worsen restless legs.
 
 ## Common pitfalls
 
 - **Catastrophizing the early weeks.** "I'll never sleep again" feels true at week 1 and is not true.
 - **Sleep medication dependence.** Using prescription sleep aids every night for months can create its own dependence. Use them as a bridge.
-- **THC for sleep.** Works short-term, has its own sleep architecture impact long-term, can become its own dependence. See [Cannabis and THC in Recovery](/other-tools/cannabis-thc-in-recovery) for the longer treatment.
+- **THC for sleep.** Works short-term, has its own sleep architecture impact long-term, can become its own dependence. See [Cannabis and THC in Recovery](/medications-supplements/cannabis-thc-in-recovery) for the longer treatment.
 - **Using Alcohol for sleep.** Wrecks the rest of recovery. Not worth it.
 - **Doomscrolling at 3 AM.** The single most common modern sleep destroyer.
 

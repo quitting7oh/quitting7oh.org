@@ -35,7 +35,7 @@ npm run preview
 │   │   ├── active-withdrawal/
 │   │   ├── compounds/
 │   │   ├── mat-suboxone/
-│   │   ├── other-tools/
+│   │   ├── medications-supplements/
 │   │   ├── post-acute/
 │   │   └── resources/
 │   ├── pages/                    ← Routing (auto-generated from content)
@@ -70,7 +70,7 @@ There are two ways to add or update pages.
    "your-channel-name": { "category": "start-here", "title_override": null }
    ```
    Category must be one of: `start-here`, `active-withdrawal`, `compounds`,
-   `mat-suboxone`, `other-tools`, `post-acute`, `resources`.
+   `mat-suboxone`, `medications-supplements`, `post-acute`, `resources`.
 3. Run `npm run ingest` (or `npm run ingest:dry` to preview without writing).
 4. Review the generated file at `src/content/<category>/<channel-name>.md`.
 5. Commit both the new content file and the mapping update.

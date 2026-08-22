@@ -1,7 +1,7 @@
 ---
 title: "NAD+ IV Therapy"
 description: "NAD+ infusions for 7-OH and kratom recovery — what's offered, what it costs, what the published evidence supports, and where it falls short."
-category: "other-tools"
+category: "medications-supplements"
 last_updated: "2026-06-08"
 sort: 7
 ---
@@ -48,7 +48,7 @@ NAD+ metabolism consumes methyl groups; many practitioners pair the infusion wit
 
 The methyl-depletion concern has more established basis with **oral NAD+ precursors** (NR, NMN) than with IV NAD+ directly. For IV NAD+ specifically, methyl support is a precautionary practice extrapolated from precursor pharmacology, not a measured requirement.
 
-For sourcing, see [Vitamins & Supplements](/other-tools/vitamins-supplements). Third-party testing certifications (USP, NSF, ConsumerLab) exist for readers who want to evaluate supplement quality without specific-brand endorsements.
+For sourcing, see [Vitamins & Supplements](/medications-supplements/vitamins-supplements). Third-party testing certifications (USP, NSF, ConsumerLab) exist for readers who want to evaluate supplement quality without specific-brand endorsements.
 
 ## Provider categories
 
@@ -118,8 +118,8 @@ Something in the package may help some people. The price tag attaches to the who
 For opioid-receptor dependence, including from 7-OH and the kratom synthetics, several paths have stronger evidence than IV NAD+ does:
 
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth-for-suboxone) at a small fraction of the cost of an NAD+ course, with decades of clinical evidence behind it
-- **[SR-17](/other-tools/sr-17)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
-- **[Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)** and cold turkey with **[helper medications](/other-tools/helper-meds)** are the non-MAT options
+- **[SR-17](/medications-supplements/sr-17)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
+- **[Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)** and cold turkey with **[helper medications](/medications-supplements/helper-meds)** are the non-MAT options
 
 None of these are exclusive with NAD+ IV; readers do combinations. The point of the comparison is that the major medical decision for someone in withdrawal is rarely "NAD+ or nothing," and the budget that an NAD+ course consumes can fund a year of telehealth bupe with money left over for the rest of recovery.
 
@@ -129,7 +129,7 @@ NAD+ IV therapy is investigational, expensive, and offers thin published evidenc
 
 A reader making this decision deserves both sides of the picture. This page does not tell anyone what to choose; it makes sure the comparison is part of the picture.
 
-For a far cheaper withdrawal adjunct with a more-established (though still preliminary) literature behind it, see [Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c).
+For a far cheaper withdrawal adjunct with a more-established (though still preliminary) literature behind it, see [Mega-Dose Vitamin C](/medications-supplements/mega-dose-vitamin-c).
 
 ## Talking it through
 
@@ -141,10 +141,10 @@ For drug-interaction questions about your other medications, a prescriber is the
 
 ## Further reading
 
-- **[Mega-Dose Vitamin C](/other-tools/mega-dose-vitamin-c)**: a far cheaper adjunct with older and stronger preliminary literature
-- **[Peptides for Opioid Withdrawal](/other-tools/peptides-for-withdrawal)**: BPC-157, Selank, Semax, DSIP, TB-500; what the evidence supports per peptide and the supply-chain safety reality
-- **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: supplement stack background and sourcing notes
-- **[Helper Medications](/other-tools/helper-meds)**: prescription comfort meds with established evidence
+- **[Mega-Dose Vitamin C](/medications-supplements/mega-dose-vitamin-c)**: a far cheaper adjunct with older and stronger preliminary literature
+- **[Peptides for Opioid Withdrawal](/medications-supplements/peptides-for-withdrawal)**: BPC-157, Selank, Semax, DSIP, TB-500; what the evidence supports per peptide and the supply-chain safety reality
+- **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**: supplement stack background and sourcing notes
+- **[Helper Medications](/medications-supplements/helper-meds)**: prescription comfort meds with established evidence
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: community taper patterns and what tends to help
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: what to actually do during acute withdrawal
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: addiction-medicine telehealth options

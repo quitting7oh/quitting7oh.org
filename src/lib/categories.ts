@@ -59,8 +59,8 @@ export const CATEGORIES = [
     section: 'recovery',
   },
   {
-    slug: 'other-tools',
-    title: 'Adjuncts & Supplements',
+    slug: 'medications-supplements',
+    title: 'Meds & Supplements',
     blurb: 'Helper meds, supplements, quit-kit stacks, SR-17, NAD+ IV, peptides, tapering with leaf.',
     Icon: Wrench,
     section: 'recovery',
@@ -96,7 +96,7 @@ export const CATEGORIES = [
   {
     slug: 'about',
     title: 'Site & Community',
-    blurb: 'What this site is, who made it possible, and how to contribute or send feedback.',
+    blurb: 'About the site, its community, technical architecture, changelog, and ways to contribute.',
     Icon: Info,
     section: 'reference',
   },
@@ -131,10 +131,10 @@ export function getCategorySection(slug: string): CategorySection | undefined {
  *  short (6 max) — these are shortcuts, not a nav tree. */
 export const PINNED_PAGES: { href: string; title: string }[] = [
   { href: '/start-here/7-oh-withdrawal-help', title: 'In active withdrawal' },
-  { href: '/other-tools/vitamins-supplements', title: 'Vitamins & Supplements' },
-  { href: '/other-tools/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C' },
-  { href: '/other-tools/helper-meds', title: 'Helper Medications' },
-  { href: '/other-tools/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom' },
+  { href: '/medications-supplements/vitamins-supplements', title: 'Vitamins & Supplements' },
+  { href: '/medications-supplements/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C' },
+  { href: '/medications-supplements/helper-meds', title: 'Helper Medications' },
+  { href: '/medications-supplements/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom' },
   { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone' },
   { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?' },
 ];
@@ -159,7 +159,7 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'Day-to-day', slugs: ['at-home-recovery', 'rehabilitation-centers', 'fmla-workplace'] },
     { name: 'For yourself', slugs: ['taking-care-of-yourself', 'support-groups'] },
   ],
-  'other-tools': [
+  'medications-supplements': [
     { name: 'Helper meds & supplements', slugs: ['helper-meds', 'vitamins-supplements', 'quit-kit', 'mega-dose-vitamin-c', 'nad-iv-therapy', 'peptides-for-withdrawal'] },
     { name: 'Other ways off 7-OH', slugs: ['quit-7-oh-with-kratom-leaf', 'quit-7-oh-with-mitragynine', 'sr-17'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },

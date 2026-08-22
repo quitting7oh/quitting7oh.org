@@ -1,14 +1,14 @@
 ---
 title: "Mega-Dose Vitamin C"
 description: "High-dose vitamin C as a 7-OH and kratom-synthetic withdrawal adjunct: the community protocol, brands, and the cautions to know."
-category: "other-tools"
+category: "medications-supplements"
 last_updated: "2026-06-08"
 sort: 4
 ---
 
 > **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, hemochromatosis (iron overload), or are taking an iron supplement. High-dose vitamin C interacts with these conditions and the conversation has to happen.
 
-Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-for-7oh), [SR-17](/other-tools/sr-17), [tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf), cold turkey with [helper meds](/other-tools/helper-meds), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
+Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-for-7oh), [SR-17](/medications-supplements/sr-17), [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), cold turkey with [helper meds](/medications-supplements/helper-meds), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
 
 ## The protocol
 
@@ -50,9 +50,9 @@ We have no affiliate relationship with any of these vendors. Substitute brands y
 ## Pair it with
 
 - **Vitamin E.** The 2000 Evangelou study used C + E together as antioxidants (~5 mg E per kg body weight per day).
-- **Magnesium glycinate.** For restless legs, sleep, and anxiety. See [Helper Medications](/other-tools/helper-meds).
+- **Magnesium glycinate.** For restless legs, sleep, and anxiety. See [Helper Medications](/medications-supplements/helper-meds).
 - **Electrolytes.** Megadosing increases urination; replace what you lose.
-- **The rest of the supplement stack.** L-tyrosine, NAC, B-complex, omega-3. See [Vitamins & Supplements](/other-tools/vitamins-supplements).
+- **The rest of the supplement stack.** L-tyrosine, NAC, B-complex, omega-3. See [Vitamins & Supplements](/medications-supplements/vitamins-supplements).
 
 ## Don't do this if
 
@@ -92,4 +92,4 @@ No single confirmed pathway. The plausible candidates:
 
 The "vitamin C occupies opioid receptors" hypothesis from the 1960s doesn't hold up under modern receptor pharmacology. Don't expect this to "block" opioid use the way naltrexone does.
 
-See [Vitamins & Supplements](/other-tools/vitamins-supplements) for the broader supplement context, and [NAD+ IV Therapy](/other-tools/nad-iv-therapy) for the much pricier infusion-clinic adjunct readers sometimes ask about alongside vitamin C.
+See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the broader supplement context, and [NAD+ IV Therapy](/medications-supplements/nad-iv-therapy) for the much pricier infusion-clinic adjunct readers sometimes ask about alongside vitamin C.

@@ -296,11 +296,11 @@ that exists. Known caveats:
   support alongside a leaf taper.
 
 If you're considering this approach in detail, the
-[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) page
+[Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) page
 covers the practical structure and limitations the community has
 documented. The closely related approach of using a concentrated
 mitragynine extract product instead of plain leaf is covered on
-[Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine),
+[Quit 7-OH with Concentrated Mitragynine](/medications-supplements/quit-7-oh-with-mitragynine),
 along with the product-contamination concerns specific to that
 route.
 
@@ -335,8 +335,8 @@ and DEA primary sources before relying on anything specific.
 > the [Withdrawal Help](/start-here/7-oh-withdrawal-help) page is where to go
 > for what to do right now, including the three real paths out
 > ([Suboxone](/mat-suboxone/suboxone-for-7oh),
-> [SR-17](/other-tools/sr-17), or toughing it out with
-> [helper meds](/other-tools/helper-meds)). For finding a
+> [SR-17](/medications-supplements/sr-17), or toughing it out with
+> [helper meds](/medications-supplements/helper-meds)). For finding a
 > prescriber for Suboxone or helper meds, see
 > [Telehealth Providers](/resources/telehealth-for-suboxone). SR-17 is
 > off-prescription; community ground.

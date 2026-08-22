@@ -110,7 +110,7 @@ delivery. The pharmacology that makes 7-OH attractive (faster onset,
 stronger effect, smaller dose to carry around) is the same pharmacology
 that makes dependence form quickly.
 
-This is also why [tapering off concentrated 7-OH using plain leaf](/other-tools/quit-7-oh-with-kratom-leaf)
+This is also why [tapering off concentrated 7-OH using plain leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
 is a planned protocol used by some people in this community. The
 leaf delivers vastly lower concentrations of the same family of
 alkaloids, so stepping down is a meaningful taper rather than a switch.
@@ -153,7 +153,7 @@ wired-but-exhausted feeling, autonomic instability) looks a lot like
 SSRI/SNRI discontinuation because the same receptor families are
 involved. See [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working)
 for why this overlay makes bupe alone feel insufficient for some
-people, and [Helper Medications](/other-tools/helper-meds) for
+people, and [Helper Medications](/medications-supplements/helper-meds) for
 what addresses the non-opioid side.
 
 ## Tapereability, mechanistically
@@ -265,7 +265,7 @@ position end up.
 
 > **Reminder:** 7-OH walks and talks like an opioid. Treat it as one, both in terms of
 > not underestimating dependence development and in terms of using
-> opioid-recovery tools (MAT, [SR-17](/other-tools/sr-17),
+> opioid-recovery tools (MAT, [SR-17](/medications-supplements/sr-17),
 > helper meds, structured tapers) when coming off. The community here
 > is built around people who have done this; you are not the first
 > person to try.
