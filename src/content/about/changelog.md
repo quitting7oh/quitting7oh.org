@@ -95,6 +95,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Category indexes now use wide directories built from their existing sidebar
   groups. We removed the tall center card and spread unboxed rows across two
   columns; flat sections use the same wider measure.
+- Removed sequence numbers from category entries. Titles now lead each row,
+  with the update date and directional arrow kept in a quiet trailing column.
 
 ### Homepage rhythm
 
