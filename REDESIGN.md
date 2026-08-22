@@ -123,6 +123,31 @@ are visible, and `prefers-reduced-motion` removes smooth scrolling and motion.
 
 No functionality was intentionally deferred.
 
+## Required before merging to `main`
+
+We have not adapted the ban-status automation on this branch. Complete and
+verify every item below before merging the redesign:
+
+- [ ] In `scripts/update-ban-status.mjs`, change both hard-coded banner paths
+  from `src/components/SchedulingBanner.tsx` to
+  `src/components/SchedulingBanner.astro` (the `BANNER` constant and the
+  early `currentBanner` read).
+- [ ] Update both date strings in `SchedulingBanner.astro`: the compact
+  “The DEA has not banned 7-OH as of …” text and the wider “As of …, the DEA
+  has not banned 7-OH” text. The updater must assert that both replacements
+  succeeded.
+- [ ] In `.github/workflows/update-ban-status.yml`, change the staged banner
+  filename from `src/components/SchedulingBanner.tsx` to
+  `src/components/SchedulingBanner.astro`.
+- [ ] Bring the latest ban-status commit from `main` into this branch before
+  the final merge so the verified date and docket count do not move backward.
+- [ ] Add a non-writing compatibility test that exercises the updater’s
+  expected banner and ban-page patterns without contacting external services
+  or changing working-tree files.
+
+Do not consider the redesign merge-ready until that compatibility test and the
+normal production build both pass.
+
 ## Toolchain
 
 Rev 2 did not add a dependency. It uses the current experimental-branch stack:
