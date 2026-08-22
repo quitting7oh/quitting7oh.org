@@ -68,6 +68,15 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#211a15" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content="index,follow" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZPHE0EXTM" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1ZPHE0EXTM');
+    </script>
   </head>
   <body class="min-h-screen overflow-x-hidden">
     <a class="skip-link" href="#main-content">Skip to content</a>

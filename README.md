@@ -149,8 +149,9 @@ The repo includes:
 - **[public/_headers](public/_headers)** — security + cache headers
 - **[public/_redirects](public/_redirects)** — placeholder for permanent redirects
 
-Enable **Cloudflare Web Analytics** in the dashboard for cookieless,
-privacy-preserving traffic stats. Don't add Google Analytics.
+[Google Analytics](https://marketingplatform.google.com/about/analytics/)
+loads on every page from `BaseLayout.astro` using measurement ID
+`G-1ZPHE0EXTM`.
 
 ### Option B — Self-hosted (Docker + GHCR + Caddy)
 
