@@ -7,6 +7,7 @@ import SchedulingBanner from '~/components/SchedulingBanner.astro';
 import Footer from '~/components/Footer.astro';
 import { SITE } from '~/lib/site';
 import bodyFontUrl from '@fontsource-variable/atkinson-hyperlegible-next/files/atkinson-hyperlegible-next-latin-wght-normal.woff2?url';
+import displayFontUrl from '@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2?url';
 
 interface Props {
   title?: string;
@@ -41,6 +42,7 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <link rel="canonical" href={canonicalUrl} />
     <ThemeScript />
     <link rel="preload" href={bodyFontUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={displayFontUrl} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicons/stone/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicons/stone/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicons/stone/apple-touch-icon.png" />

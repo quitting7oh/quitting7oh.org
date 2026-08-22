@@ -37,7 +37,12 @@ const {
 const cat = getCategory(category);
 const sourceUrl = viewOnGithubUrl(filePath);
 const updatedStr = lastUpdated
-  ? lastUpdated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  ? lastUpdated.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC',
+    })
   : undefined;
 
 const sidebarCategories = await getSidebarCategories();

@@ -1,0 +1,152 @@
+---
+interface Props {
+  index: number;
+  name: string;
+  heading: string;
+  body: string;
+  fit: string;
+  tradeoff: string;
+  displayStack: string;
+  label?: string;
+}
+
+const {
+  index,
+  name,
+  heading,
+  body,
+  fit,
+  tradeoff,
+  displayStack,
+  label = 'Candidate',
+} = Astro.props;
+---
+
+<section id={`option-${index}`} class="font-system scroll-mt-28 py-12 sm:py-16">
+  <div class="mb-8 grid gap-5 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-12">
+    <div>
+      <p class="font-mono text-xs font-bold tracking-[0.12em] text-primary">
+        {label} {String(index).padStart(2, '0')}
+      </p>
+      <h2 class="mt-2 font-display text-3xl font-semibold text-foreground">{name}</h2>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">The pairing</p>
+        <p class="mt-2 font-bold text-foreground">{heading} headings</p>
+        <p class="text-sm text-muted-foreground">{body} body and interface</p>
+      </div>
+      <div>
+        <p class="text-sm leading-relaxed text-foreground">{fit}</p>
+        <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+          <strong class="text-foreground">Watch for:</strong> {tradeoff}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <article
+    class="font-preview overflow-hidden rounded-2xl border border-border bg-card shadow-[0_24px_70px_-58px_hsl(var(--foreground)/0.7)]"
+    style={`--sample-display: ${displayStack};`}
+  >
+    <header class="preview-header px-5 py-10 sm:px-9 sm:py-14 lg:px-14 lg:py-16">
+      <div class="preview-ui flex flex-wrap items-center justify-between gap-3 text-xs font-bold uppercase tracking-[0.13em] text-primary">
+        <span>Start here · field note</span>
+        <span class="text-muted-foreground">Updated August 22, 2026</span>
+      </div>
+      <h3 class="preview-display mt-5 max-w-[14ch] text-[clamp(3rem,7.5vw,6.25rem)] font-semibold leading-[0.98] tracking-[-0.025em] text-foreground">
+        A steadier way through withdrawal
+      </h3>
+      <p class="mt-7 max-w-[50rem] text-[1.08rem] leading-[1.72] text-muted-foreground sm:text-[1.25rem]">
+        What the first hours can feel like, which decisions can wait, and how to make the next step smaller without losing sight of the full path off 7-OH.
+      </p>
+    </header>
+
+    <div class="border-t border-border lg:grid lg:grid-cols-[15rem_minmax(0,1fr)]">
+      <aside class="preview-ui border-b border-border bg-muted/28 px-5 py-7 sm:px-9 lg:border-b-0 lg:border-r lg:px-7 lg:py-12">
+        <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">On this page</p>
+        <ol class="mt-5 space-y-3 text-sm leading-snug text-muted-foreground">
+          <li class="font-bold text-primary">The first hour</li>
+          <li>What can wait</li>
+          <li>Signs of progress</li>
+          <li>Support tonight</li>
+        </ol>
+
+        <div class="mt-9 rounded-xl border border-border bg-background/70 p-4">
+          <p class="text-xs font-bold uppercase tracking-[0.11em] text-muted-foreground">Next meeting</p>
+          <p class="mt-3 text-lg font-bold leading-snug text-foreground">Today, 7:00 AM</p>
+          <p class="mt-1 text-sm text-muted-foreground">Free · no signup</p>
+          <a href="/next-kratom-support-meeting" class="mt-4 inline-flex min-h-11 items-center rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground">Find a meeting →</a>
+        </div>
+      </aside>
+
+      <div class="preview-copy px-5 py-10 sm:px-9 sm:py-14 lg:px-14 lg:py-16">
+        <div class="max-w-[47rem]">
+          <p class="preview-ui rounded-xl bg-accent/55 px-5 py-4 text-[0.98rem] font-semibold leading-relaxed text-foreground sm:px-6">
+            Need the short version right now? Drink something, tell one person, and deal with the worst symptom first. The rest of the plan can wait until your body is quieter.
+          </p>
+
+          <h4 class="preview-display mt-12 text-[clamp(2.25rem,5vw,3.6rem)] font-semibold leading-[1.04] tracking-[-0.015em] text-foreground">The first hour</h4>
+          <p class="mt-6 text-[1.075rem] leading-[1.82] text-foreground sm:text-[1.125rem]">
+            Withdrawal can make a single night feel impossibly large. Narrow the frame. You do not need to solve the next week, explain every decision, or choose a permanent treatment plan before morning. Begin with the needs directly in front of you.
+          </p>
+          <p class="mt-5 text-[1.075rem] leading-[1.82] text-foreground sm:text-[1.125rem]">
+            Drink slowly, lower the noise and light around you, and let somebody know what is happening. These steps sound modest because they are. A useful plan should still be possible when your hands are shaking and your attention keeps slipping.
+          </p>
+
+          <h5 class="preview-display mt-12 text-[clamp(1.8rem,3.5vw,2.5rem)] font-semibold leading-tight tracking-[-0.01em] text-foreground">What can wait until morning</h5>
+          <p class="mt-5 text-[1.075rem] leading-[1.82] text-foreground sm:text-[1.125rem]">
+            The long-term choice matters, but it does not have to be made at the peak of panic. Cold turkey, a measured taper, plain kratom leaf, helper medications, and buprenorphine each ask different things of you. Read those comparisons when you have enough room to weigh them.
+          </p>
+
+          <ul class="mt-7 space-y-4 text-[1.04rem] leading-[1.7] text-foreground sm:text-[1.08rem]">
+            <li class="grid grid-cols-[0.6rem_minmax(0,1fr)] gap-3.5"><span class="mt-[0.68em] size-1.5 rounded-full bg-primary" aria-hidden="true"></span><span><strong>Drink water.</strong> Small sips are easier to keep down than a full glass.</span></li>
+            <li class="grid grid-cols-[0.6rem_minmax(0,1fr)] gap-3.5"><span class="mt-[0.68em] size-1.5 rounded-full bg-primary" aria-hidden="true"></span><span><strong>Lower the sensory load.</strong> A dark room and steady background sound can help.</span></li>
+            <li class="grid grid-cols-[0.6rem_minmax(0,1fr)] gap-3.5"><span class="mt-[0.68em] size-1.5 rounded-full bg-primary" aria-hidden="true"></span><span><strong>Tell one person.</strong> “I’m in withdrawal and need company” is enough.</span></li>
+            <li class="grid grid-cols-[0.6rem_minmax(0,1fr)] gap-3.5"><span class="mt-[0.68em] size-1.5 rounded-full bg-primary" aria-hidden="true"></span><span><strong>Watch the clock honestly.</strong> Progress is measured in hours before it is measured in days.</span></li>
+          </ul>
+
+          <h5 class="preview-display mt-12 text-[clamp(1.8rem,3.5vw,2.5rem)] font-semibold leading-tight tracking-[-0.01em] text-foreground">Signs that the night is moving</h5>
+          <p class="mt-5 text-[1.075rem] leading-[1.82] text-foreground sm:text-[1.125rem]">
+            Symptoms often arrive in waves rather than a clean line. A rough half hour does not mean you have returned to the beginning. Notice the first sip that stays down, the first stretch of stillness, and the first time your attention leaves the clock.
+          </p>
+
+          <div class="preview-ui mt-12 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
+            <div class="bg-card p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.11em] text-muted-foreground">Early window</p>
+              <p class="mt-2 text-lg font-bold tabular-nums text-foreground">6–12 hours</p>
+            </div>
+            <div class="bg-card p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.11em] text-muted-foreground">Character check</p>
+              <p class="mt-2 text-lg font-bold tracking-[0.025em] text-foreground">1 I l · 0 O</p>
+            </div>
+            <div class="bg-card p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.11em] text-muted-foreground">Dose example</p>
+              <p class="mt-2 text-lg font-bold tabular-nums text-foreground">12.5 mg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<style>
+  .font-system + .font-system {
+    border-top: 1px solid hsl(var(--border));
+  }
+
+  .font-preview {
+    font-family: 'Commissioner Variable', ui-sans-serif, system-ui, sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .preview-display {
+    font-family: var(--sample-display);
+    font-optical-sizing: auto;
+  }
+
+  .preview-ui {
+    font-family: 'Commissioner Variable', ui-sans-serif, system-ui, sans-serif;
+  }
+</style>

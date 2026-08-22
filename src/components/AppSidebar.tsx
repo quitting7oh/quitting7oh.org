@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BookOpen, ChevronDown, Pin } from 'lucide-react';
+import { BookOpen, ChevronDown, PanelLeftClose, PanelLeftOpen, Pin } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '~/components/ui/sheet';
 import { useIsMobile } from '~/hooks/use-mobile';
 import { getCategoryIcon, getCategorySection } from '~/lib/categories';
@@ -27,6 +27,14 @@ interface Props {
   pinned: SidebarItem[];
   currentPath: string;
 }
+
+interface NavigationProps extends Props {
+  onCollapse?: () => void;
+  onCollapsePointerDown?: () => void;
+  collapseButtonRef?: React.Ref<HTMLButtonElement>;
+}
+
+const DESKTOP_SIDEBAR_STORAGE_KEY = 'desktop-sidebar-collapsed';
 
 function categoryIsCurrent(slug: string, currentPath: string) {
   return currentPath === `/${slug}` || currentPath.startsWith(`/${slug}/`);
@@ -62,12 +70,12 @@ function PageLink({
   );
 }
 
-function Navigation({ categories, pinned, currentPath }: Props) {
+function Navigation({ categories, pinned, currentPath, onCollapse, onCollapsePointerDown, collapseButtonRef }: NavigationProps) {
   const [expanded, setExpanded] = React.useState<Record<string, boolean>>({});
 
   return (
-    <nav aria-label="Guide index" className="px-3 pb-12 pt-5 lg:px-6">
-      <div className="mb-5 flex items-center gap-2 px-2 text-sidebar-foreground">
+    <nav aria-label="Guide index" className="px-3 pb-12 lg:px-6">
+      <div className="sidebar-nav-head sticky top-0 z-10 -mx-3 mb-5 flex items-center gap-2 px-5 pb-3 pt-5 text-sidebar-foreground lg:-mx-6 lg:px-8">
         <span className="inline-flex size-8 items-center justify-center rounded-lg bg-sidebar-accent text-primary">
           <BookOpen className="size-4" aria-hidden="true" />
         </span>
@@ -75,6 +83,21 @@ function Navigation({ categories, pinned, currentPath }: Props) {
           <p className="text-sm font-bold leading-tight">Guide index</p>
           <p className="text-[0.7rem] text-muted-foreground">All topics and tools</p>
         </div>
+        {onCollapse && (
+          <button
+            ref={collapseButtonRef}
+            type="button"
+            onPointerDown={onCollapsePointerDown}
+            onClick={onCollapse}
+            aria-controls="desktop-guide-navigation"
+            aria-expanded="true"
+            aria-label="Collapse guide navigation"
+            title="Collapse guide navigation"
+            className="ml-auto inline-flex size-10 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-sidebar-accent hover:text-sidebar-foreground"
+          >
+            <PanelLeftClose className="size-4" aria-hidden="true" />
+          </button>
+        )}
       </div>
 
       <section className="mb-7">
@@ -160,7 +183,7 @@ function Navigation({ categories, pinned, currentPath }: Props) {
 function centerCurrent(container: HTMLDivElement | null) {
   const link = container?.querySelector<HTMLElement>('a[aria-current="page"]');
   if (!container || !link) return;
-  const inset = 48;
+  const inset = 76;
   const linkTop = link.offsetTop;
   const linkBottom = linkTop + link.clientHeight;
   const visibleTop = container.scrollTop + inset;
@@ -173,29 +196,92 @@ function centerCurrent(container: HTMLDivElement | null) {
   }
 }
 
+function preservePageScroll(initialScroll: number, duration = 360) {
+  const root = document.documentElement;
+  root.dataset.sidebarTransitioning = 'true';
+  const started = performance.now();
+  const stabilize = (now: number) => {
+    if (Math.abs(window.scrollY - initialScroll) > 0.5) {
+      window.scrollTo({ top: initialScroll, behavior: 'instant' });
+    }
+    if (now - started < duration) {
+      requestAnimationFrame(stabilize);
+    } else {
+      delete root.dataset.sidebarTransitioning;
+    }
+  };
+  requestAnimationFrame(stabilize);
+}
+
 export function AppSidebar(props: Props) {
   const mobile = useIsMobile();
   const [open, setOpen] = React.useState(false);
+  const [desktopCollapsed, setDesktopCollapsed] = React.useState(false);
   const desktopRef = React.useRef<HTMLDivElement>(null);
   const mobileRef = React.useRef<HTMLDivElement>(null);
+  const desktopCollapseButtonRef = React.useRef<HTMLButtonElement>(null);
+  const desktopExpandButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const openerRef = React.useRef<HTMLElement | null>(null);
+  const pageScrollRef = React.useRef(0);
+  const pointerScrollRef = React.useRef<number | null>(null);
 
   React.useEffect(() => {
     const toggle = () => {
       openerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      pageScrollRef.current = window.scrollY;
       setOpen((value) => !value);
     };
     window.addEventListener('toggle-sidebar', toggle);
     return () => window.removeEventListener('toggle-sidebar', toggle);
   }, []);
 
+  React.useEffect(() => {
+    setDesktopCollapsed(document.documentElement.dataset.sidebarCollapsed === 'true');
+  }, []);
+
+  const setDesktopSidebarCollapsed = (collapsed: boolean) => {
+    const root = document.documentElement;
+    const pageScroll = pointerScrollRef.current ?? window.scrollY;
+    pointerScrollRef.current = null;
+    preservePageScroll(pageScroll);
+    if (collapsed) {
+      root.dataset.sidebarCollapsed = 'true';
+    } else {
+      delete root.dataset.sidebarCollapsed;
+    }
+
+    setDesktopCollapsed(collapsed);
+    try {
+      if (collapsed) {
+        localStorage.setItem(DESKTOP_SIDEBAR_STORAGE_KEY, '1');
+      } else {
+        localStorage.removeItem(DESKTOP_SIDEBAR_STORAGE_KEY);
+      }
+    } catch {
+      // Storage can be blocked; the control still works for this page view.
+    }
+
+    requestAnimationFrame(() => {
+      (collapsed ? desktopExpandButtonRef.current : desktopCollapseButtonRef.current)?.focus({ preventScroll: true });
+    });
+  };
+
   const handleOpenChange = (next: boolean) => {
     setOpen(next);
-    if (!next) window.setTimeout(() => openerRef.current?.focus(), 0);
+  };
+
+  const handleSidebarScroll = (event: React.UIEvent<HTMLDivElement>) => {
+    const container = event.currentTarget;
+    if (container.scrollTop > 4) {
+      container.dataset.sidebarScrolled = 'true';
+    } else {
+      delete container.dataset.sidebarScrolled;
+    }
   };
 
   React.useEffect(() => {
+    if (!mobile && desktopCollapsed) return;
     const revealCurrent = () => centerCurrent(mobile ? mobileRef.current : desktopRef.current);
     const frame = requestAnimationFrame(revealCurrent);
     // Hydration and font metrics can settle after the first frame. The fallback
@@ -206,14 +292,26 @@ export function AppSidebar(props: Props) {
       cancelAnimationFrame(frame);
       window.clearTimeout(timer);
     };
-  }, [mobile, open, props.currentPath]);
+  }, [mobile, open, desktopCollapsed, props.currentPath]);
 
   if (mobile) {
     return (
       <Sheet open={open} onOpenChange={handleOpenChange}>
-        <SheetContent side="left" className="w-[min(88vw,21rem)] gap-0 border-0 bg-sidebar p-0 shadow-2xl">
+        <SheetContent
+          side="left"
+          className="w-[min(88vw,21rem)] gap-0 border-0 bg-sidebar p-0 shadow-2xl"
+          onCloseAutoFocus={(event) => {
+            event.preventDefault();
+            openerRef.current?.focus({ preventScroll: true });
+            requestAnimationFrame(() => {
+              if (Math.abs(window.scrollY - pageScrollRef.current) > 1) {
+                window.scrollTo({ top: pageScrollRef.current, behavior: 'auto' });
+              }
+            });
+          }}
+        >
           <SheetHeader className="sr-only"><SheetTitle>Guide navigation</SheetTitle></SheetHeader>
-          <div ref={mobileRef} className="h-full overflow-y-auto overscroll-contain pt-4">
+          <div ref={mobileRef} onScroll={handleSidebarScroll} className="h-full overflow-y-auto overscroll-contain pt-4">
             <Navigation {...props} />
           </div>
         </SheetContent>
@@ -222,9 +320,42 @@ export function AppSidebar(props: Props) {
   }
 
   return (
-    <aside aria-label="Guide navigation" className="desktop-sidebar-rail hidden w-[17rem] shrink-0 lg:order-first lg:block">
-      <div ref={desktopRef} className="scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-y-auto overscroll-contain">
-        <Navigation {...props} />
+    <aside
+      aria-label="Guide navigation"
+      className="desktop-sidebar-rail hidden min-w-0 w-[17rem] shrink-0 motion-reduce:transition-none lg:order-first lg:grid"
+    >
+      <div
+        id="desktop-guide-navigation"
+        ref={desktopRef}
+        onScroll={handleSidebarScroll}
+        aria-hidden={desktopCollapsed}
+        className="desktop-sidebar-expanded scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-x-hidden overflow-y-auto overscroll-contain"
+      >
+        <Navigation
+          {...props}
+          onCollapsePointerDown={() => {
+            pointerScrollRef.current = window.scrollY;
+          }}
+          onCollapse={() => setDesktopSidebarCollapsed(true)}
+          collapseButtonRef={desktopCollapseButtonRef}
+        />
+      </div>
+      <div aria-hidden={!desktopCollapsed} className="desktop-sidebar-collapsed sticky top-[4.5rem] justify-start pt-5">
+        <button
+          ref={desktopExpandButtonRef}
+          type="button"
+          onPointerDown={() => {
+            pointerScrollRef.current = window.scrollY;
+          }}
+          onClick={() => setDesktopSidebarCollapsed(false)}
+          aria-controls="desktop-guide-navigation"
+          aria-expanded={!desktopCollapsed}
+          aria-label="Expand guide navigation"
+          title="Expand guide navigation"
+          className="inline-flex h-12 w-11 items-center justify-center rounded-r-xl border border-l-0 border-border/70 bg-card/95 text-primary shadow-[0_8px_24px_-16px_hsl(var(--foreground)/0.75)] backdrop-blur-sm transition-colors hover:border-primary/45 hover:bg-sidebar-accent hover:text-sidebar-foreground"
+        >
+          <PanelLeftOpen className="size-5" aria-hidden="true" />
+        </button>
       </div>
     </aside>
   );

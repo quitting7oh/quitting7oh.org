@@ -16,6 +16,32 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-08-22
 
+### Desktop navigation
+
+- Wide desktop readers can collapse the guide sidebar to a reopen control at
+  the viewport edge. They get a wider article and keep the same setting across
+  page visits.
+- The collapse now coordinates the rail, navigation, article width, and edge
+  control instead of swapping them abruptly. Opening or closing it preserves
+  the reader's scroll position.
+
+### Typography comparison
+
+- Added two font-comparison routes with complete reading systems, dense copy,
+  navigation, support UI, lists, and numerals. The finalists pair Commissioner
+  with Literata or STIX Two Text while the broader specimen retains the other
+  open-license candidates for reference.
+- Fixed inconsistent production typography between page loads. The bundled
+  reading and display faces now use a guaranteed swap policy, and both are
+  preloaded from the shared layout instead of allowing a timing-dependent
+  fallback font to remain for the full page visit.
+
+### Mobile navigation motion
+
+- The mobile guide drawer now slides in and out with a short eased transition
+  while its backdrop fades. Readers who prefer reduced motion get an
+  immediate open and close.
+
 ### Pharmacology evidence audit
 
 - Rebuilt all three pharmacology references against primary studies through
@@ -51,10 +77,20 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   stay on the same lines, so the rest of the rail holds its position during a
   scroll. Desktop rows use a consistent horizontal inset. The active background
   has even space around its label.
+- Feathered the article-header surface through several softer radial stops so
+  it dissolves into the outer page instead of ending at two visible vertical
+  edges on wide screens.
+- Extended the same treatment to the desktop guide rail. Its surface and
+  divider now begin fully transparent, emerge through low-opacity stops, and
+  feather back to transparent before the footer. The sticky Guide index header
+  gains a soft protective fade only after the navigation has been scrolled.
 - Assigned the full current-page sidebar treatment and `aria-current` to the
   canonical category link. Its matching Most Used shortcut uses a small clay
   dot and label color. The sidebar reveals a clipped canonical entry and
   preserves its position when the link fits in view.
+- Extended the desktop guide-rail surface through the outer viewport gutter and
+  faded it in below the masthead so the rail no longer begins as an exposed
+  vertical seam on wide screens.
 
 ## 2026-08-21
 

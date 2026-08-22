@@ -24,6 +24,13 @@
 
     apply(storedMode());
     try {
+      if (localStorage.getItem('desktop-sidebar-collapsed') === '1') {
+        root.dataset.sidebarCollapsed = 'true';
+      }
+    } catch (error) {
+      // Storage blocked: use the expanded desktop sidebar.
+    }
+    try {
       var bannerPath = window.location.pathname.replace(/\/$/, '');
       if (
         bannerPath === '/compounds/7-oh-ban' ||
