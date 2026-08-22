@@ -2,7 +2,7 @@
 title: "Welcome"
 description: "Start here — what quitting7oh.org is, who it's for, and the page most likely to help where you are right now."
 category: "start-here"
-last_updated: "2026-06-09"
+last_updated: "2026-08-22"
 sort: 1
 ---
 
@@ -36,9 +36,10 @@ and has been cleaned up and organized here so that the most useful
 information is easy to find at any hour, on any device, without needing
 to scroll through chat history or have an account.
 
-There are no ads, no sponsors, no products being sold, no analytics
-tracking you, and no monetization of any kind. This exists because the
-people who built it wanted the resource they wished they'd had.
+The site carries no ads or sponsors and sells no products. [Google
+Analytics](https://marketingplatform.google.com/about/analytics/) measures
+traffic and page use. The people who built the site wanted the resource they
+wished they'd had.
 
 ## Scope and disclaimers
 

@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-18"
+last_updated: "2026-08-22"
 sort: 6
 ---
 
@@ -13,6 +13,33 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-08-22
+
+### Site traffic analytics
+
+- The shared page layout now loads [Google
+  Analytics](https://marketingplatform.google.com/about/analytics/)
+  (`G-1ZPHE0EXTM`) on every route. The welcome page and deployment notes
+  disclose the change.
+
+## 2026-08-21
+
+### Stop-slop sweep across the content collection
+
+- Scanned all 83 content pages for AI-writing tells and repaired the
+  confirmed hits: cut a "Full stop." emphasis heading on the long-term
+  Suboxone risks page, unwound stacked "isn't just X, it's Y"
+  constructions on the why-Suboxone-isn't-working and dopamine-recovery
+  pages, renamed the "Caregiver burnout is real" and "The honest
+  tradeoff" headers, and replaced stock "robust" / "comprehensive"
+  filler on four pages with plainer words.
+- Replaced an uncited "research suggests" on the sober-living page with
+  the actual study: Subbaraman et al. 2023, six-month length of stay
+  associated with better recovery outcomes in sober living houses.
+- Left deliberate register intact: the funding-denial litany on the
+  community page, the closing passage of the recovery timeline, and
+  spec-sheet fragments in the telehealth comparison.
 
 ## 2026-08-18
 

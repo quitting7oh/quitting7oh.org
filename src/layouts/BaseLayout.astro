@@ -67,6 +67,15 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
         accent strip on the left edge of the embed. */}
     <meta name="theme-color" content={DEFAULT_THEME_COLOR_LIGHT} />
     <meta name="robots" content="index,follow" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZPHE0EXTM" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1ZPHE0EXTM');
+    </script>
     <ThemeScript />
     {/* Runs after ThemeScript so the favicon/theme-color are already aligned
         on first paint — no flash of the wrong icon. */}
