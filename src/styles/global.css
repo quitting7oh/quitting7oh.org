@@ -386,6 +386,7 @@
     color: hsl(var(--foreground));
     font-size: 1.125rem;
     line-height: 1.7;
+    overflow-wrap: anywhere;
   }
 
   .prose-recovery > :where(h1, h2) {
@@ -505,7 +506,6 @@
     border-radius: 0.3rem;
     background: hsl(var(--muted));
     padding: 0.08em 0.3em;
-    overflow-wrap: anywhere;
     word-break: break-word;
     font-family: var(--font-mono);
     font-size: 0.86em;
