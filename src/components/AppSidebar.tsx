@@ -32,16 +32,26 @@ function categoryIsCurrent(slug: string, currentPath: string) {
   return currentPath === `/${slug}` || currentPath.startsWith(`/${slug}/`);
 }
 
-function PageLink({ item, currentPath }: { item: SidebarItem; currentPath: string }) {
+function PageLink({
+  item,
+  currentPath,
+  shortcut = false,
+}: {
+  item: SidebarItem;
+  currentPath: string;
+  shortcut?: boolean;
+}) {
   const active = item.href === currentPath;
   return (
     <li>
       <a
         href={item.href}
-        aria-current={active ? 'page' : undefined}
+        aria-current={active && !shortcut ? 'page' : undefined}
         className={cn(
           'relative flex min-h-11 items-center rounded-md border-l-2 px-3 py-2 text-[0.86rem] leading-snug transition-colors lg:min-h-0 lg:py-1.5',
-          active
+          active && shortcut
+            ? 'border-transparent font-semibold text-primary before:absolute before:left-1 before:size-1 before:rounded-full before:bg-primary'
+            : active
             ? 'border-primary bg-sidebar-accent/55 font-bold text-primary'
             : 'border-transparent text-sidebar-foreground/72 hover:bg-sidebar-accent/45 hover:text-sidebar-foreground',
         )}
@@ -73,7 +83,7 @@ function Navigation({ categories, pinned, currentPath }: Props) {
           Most used
         </h2>
         <ul className="space-y-0.5">
-          {pinned.map((item) => <PageLink key={item.href} item={item} currentPath={currentPath} />)}
+          {pinned.map((item) => <PageLink key={item.href} item={item} currentPath={currentPath} shortcut />)}
         </ul>
       </section>
 
@@ -150,8 +160,17 @@ function Navigation({ categories, pinned, currentPath }: Props) {
 function centerCurrent(container: HTMLDivElement | null) {
   const link = container?.querySelector<HTMLElement>('a[aria-current="page"]');
   if (!container || !link) return;
-  const top = link.offsetTop - container.clientHeight / 2 + link.clientHeight / 2;
-  container.scrollTop = Math.max(0, top);
+  const inset = 48;
+  const linkTop = link.offsetTop;
+  const linkBottom = linkTop + link.clientHeight;
+  const visibleTop = container.scrollTop + inset;
+  const visibleBottom = container.scrollTop + container.clientHeight - inset;
+
+  if (linkTop < visibleTop) {
+    container.scrollTop = Math.max(0, linkTop - inset);
+  } else if (linkBottom > visibleBottom) {
+    container.scrollTop = linkBottom - container.clientHeight + inset;
+  }
 }
 
 export function AppSidebar(props: Props) {
@@ -177,8 +196,16 @@ export function AppSidebar(props: Props) {
   };
 
   React.useEffect(() => {
-    const frame = requestAnimationFrame(() => centerCurrent(mobile ? mobileRef.current : desktopRef.current));
-    return () => cancelAnimationFrame(frame);
+    const revealCurrent = () => centerCurrent(mobile ? mobileRef.current : desktopRef.current);
+    const frame = requestAnimationFrame(revealCurrent);
+    // Hydration and font metrics can settle after the first frame. The fallback
+    // makes sure the canonical entry is visible without moving an already
+    // visible link.
+    const timer = window.setTimeout(revealCurrent, 160);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.clearTimeout(timer);
+    };
   }, [mobile, open, props.currentPath]);
 
   if (mobile) {

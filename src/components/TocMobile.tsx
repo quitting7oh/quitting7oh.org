@@ -54,9 +54,9 @@ export function TocMobile({ headings }: Props) {
                   href={`#${h.slug}`}
                   aria-current={active === h.slug ? 'location' : undefined}
                   className={cn(
-                    'block rounded-sm px-3 py-2 leading-snug text-foreground transition-colors hover:text-primary',
+                    'block rounded-sm px-3 py-2 font-medium leading-snug text-foreground transition-colors hover:text-primary',
                     h.depth === 3 && 'pl-6 text-muted-foreground',
-                    active === h.slug && 'font-bold text-primary',
+                    active === h.slug && 'bg-primary/[0.07] text-primary',
                   )}
                 >
                   {h.text}

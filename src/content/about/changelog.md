@@ -14,6 +14,19 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-08-22
+
+### Stable reading navigation
+
+- Kept table-of-contents link weight constant across active states. Long labels
+  stay on the same lines, so the rest of the rail holds its position during a
+  scroll. Desktop rows use a consistent horizontal inset. The active background
+  has even space around its label.
+- Assigned the full current-page sidebar treatment and `aria-current` to the
+  canonical category link. Its matching Most Used shortcut uses a small clay
+  dot and label color. The sidebar reveals a clipped canonical entry and
+  preserves its position when the link fits in view.
+
 ## 2026-08-21
 
 ### Field Guide redesign v2 and responsive cleanup

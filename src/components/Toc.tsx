@@ -118,9 +118,9 @@ export function Toc({ headings }: Props) {
               href={`#${h.slug}`}
               aria-current={active === h.slug ? 'location' : undefined}
               className={cn(
-                'relative block py-1.5 text-[0.8rem] leading-snug text-muted-foreground transition-colors hover:text-foreground',
-                h.depth === 3 && 'pl-3 text-muted-foreground/75',
-                active === h.slug && 'font-bold text-primary before:absolute before:-left-[0.8125rem] before:top-1.5 before:bottom-1.5 before:w-0.5 before:rounded-full before:bg-primary',
+                'relative block rounded-md px-2 py-1.5 text-[0.8rem] font-medium leading-snug text-muted-foreground transition-colors hover:text-foreground',
+                h.depth === 3 && 'pl-5 text-muted-foreground/75',
+                active === h.slug && 'bg-primary/[0.07] text-primary before:absolute before:-left-[0.8125rem] before:top-1.5 before:bottom-1.5 before:w-0.5 before:rounded-full before:bg-primary',
               )}
             >
               {h.text}
