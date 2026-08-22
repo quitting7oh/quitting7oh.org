@@ -38,8 +38,90 @@ function useDebouncedValue(value: string, delay = 130) {
 }
 
 interface Props {
-  variant?: 'header' | 'hero';
+  variant?: 'header' | 'hero' | 'inline';
   placeholder?: string;
+}
+
+interface SearchResultsProps {
+  activeIndex: number;
+  available: boolean | null;
+  className?: string;
+  emptyMessage?: string;
+  onActiveIndexChange: (index: number) => void;
+  query: string;
+  resolvedQuery: string;
+  results: SearchResult[];
+  resultsId: string;
+  searching: boolean;
+}
+
+function SearchResults({
+  activeIndex,
+  available,
+  className,
+  emptyMessage,
+  onActiveIndexChange,
+  query,
+  resolvedQuery,
+  results,
+  resultsId,
+  searching,
+}: SearchResultsProps) {
+  if (!query.trim() && !emptyMessage) return null;
+
+  return (
+    <div id={resultsId} className={className} role="listbox" aria-label="Search results">
+      {!query.trim() ? (
+        <div className="px-5 py-8 text-sm text-muted-foreground">{emptyMessage}</div>
+      ) : available === false ? (
+        <div className="px-5 py-8 text-sm text-muted-foreground">
+          The search index is created by the production build. Use the preview server to test it locally.
+        </div>
+      ) : searching ? (
+        <div className="space-y-3 px-5 py-6" aria-live="polite">
+          <div className="h-3 w-28 animate-pulse rounded bg-muted" />
+          <div className="h-5 w-3/4 animate-pulse rounded bg-muted" />
+          <div className="h-3 w-full animate-pulse rounded bg-muted" />
+        </div>
+      ) : results.length === 0 ? (
+        <div className="px-5 py-8 text-sm text-muted-foreground">No pages matched “{resolvedQuery}”.</div>
+      ) : (
+        <ul className="divide-y divide-border">
+          {results.map((result, index) => {
+            const category = result.filters?.category?.[0];
+            return (
+              <li key={result.url}>
+                <a
+                  id={`${resultsId}-result-${index}`}
+                  href={result.url}
+                  role="option"
+                  aria-selected={index === activeIndex}
+                  onMouseMove={() => onActiveIndexChange(index)}
+                  className={cn(
+                    'group flex items-start gap-3 px-4 py-4 text-left sm:px-5',
+                    index === activeIndex && 'bg-accent',
+                  )}
+                >
+                  <div className="min-w-0 flex-1">
+                    {category && <div className="eyebrow mb-1">{category}</div>}
+                    <div className="font-bold text-foreground">{result.meta.title || result.url}</div>
+                    <div
+                      className="mt-1 line-clamp-2 text-sm text-muted-foreground [&_mark]:bg-primary/20 [&_mark]:text-foreground"
+                      dangerouslySetInnerHTML={{ __html: result.excerpt }}
+                    />
+                  </div>
+                  <ArrowRight
+                    className="mt-1 size-4 shrink-0 text-primary opacity-0 transition-opacity group-hover:opacity-100 group-aria-selected:opacity-100"
+                    aria-hidden="true"
+                  />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  );
 }
 
 export function SearchBox({ variant = 'header', placeholder }: Props) {
@@ -50,10 +132,13 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   const [available, setAvailable] = React.useState<boolean | null>(null);
   const [activeIndex, setActiveIndex] = React.useState(0);
   const inputRef = React.useRef<HTMLInputElement>(null);
+  const resultsId = React.useId();
   const debounced = useDebouncedValue(query);
   const isHero = variant === 'hero';
+  const isInline = variant === 'inline';
 
   React.useEffect(() => {
+    if (isInline) return;
     const onShortcut = (event: KeyboardEvent) => {
       if (event.key.toLowerCase() === 'k' && (event.metaKey || event.ctrlKey)) {
         event.preventDefault();
@@ -62,7 +147,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
     };
     window.addEventListener('keydown', onShortcut);
     return () => window.removeEventListener('keydown', onShortcut);
-  }, []);
+  }, [isInline]);
 
   React.useEffect(() => {
     const trimmed = debounced.trim();
@@ -113,7 +198,64 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       event.preventDefault();
       window.location.href = results[activeIndex].url;
     }
+    if (event.key === 'Escape' && isInline && query) {
+      event.preventDefault();
+      setQuery('');
+    }
   };
+
+  if (isInline) {
+    return (
+      <div>
+        <div className="flex h-14 items-center gap-3 rounded-xl border border-border bg-card px-4 text-left shadow-sm transition-colors focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/15 sm:px-5">
+          <Search className="size-5 shrink-0 text-primary" aria-hidden="true" />
+          <input
+            ref={inputRef}
+            type="text"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            onKeyDown={navigate}
+            placeholder={placeholder ?? 'Search the guide'}
+            autoComplete="off"
+            aria-label="Search all pages"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded={Boolean(query.trim())}
+            aria-controls={resultsId}
+            aria-activedescendant={results[activeIndex] ? `${resultsId}-result-${activeIndex}` : undefined}
+            className="h-full min-w-0 flex-1 bg-transparent text-base text-foreground outline-none placeholder:text-muted-foreground"
+          />
+          {query ? (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery('');
+                inputRef.current?.focus();
+              }}
+              className="inline-flex size-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground"
+              aria-label="Clear search"
+            >
+              <X className="size-4" aria-hidden="true" />
+            </button>
+          ) : (
+            <span className="hidden rounded-md border border-border bg-muted px-2 py-1 text-xs text-muted-foreground sm:inline">Type to search</span>
+          )}
+        </div>
+
+        <SearchResults
+          activeIndex={activeIndex}
+          available={available}
+          className="mt-2 max-h-[min(28rem,60dvh)] overflow-y-auto rounded-xl border border-border bg-popover shadow-xl"
+          onActiveIndexChange={setActiveIndex}
+          query={query}
+          resolvedQuery={resolvedQuery}
+          results={results}
+          resultsId={resultsId}
+          searching={searching}
+        />
+      </div>
+    );
+  }
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={setOpen}>
@@ -167,8 +309,8 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
               placeholder="What do you need help with?"
               autoComplete="off"
               aria-label="Search all pages"
-              aria-controls="site-search-results"
-              aria-activedescendant={results[activeIndex] ? `search-result-${activeIndex}` : undefined}
+              aria-controls={resultsId}
+              aria-activedescendant={results[activeIndex] ? `${resultsId}-result-${activeIndex}` : undefined}
               className="h-16 min-w-0 flex-1 bg-transparent text-lg text-foreground outline-none placeholder:text-muted-foreground sm:h-[4.5rem] sm:text-xl"
             />
             <DialogPrimitive.Close asChild>
@@ -178,57 +320,18 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
             </DialogPrimitive.Close>
           </div>
 
-          <div id="site-search-results" className="min-h-32 overflow-y-auto" role="listbox" aria-label="Search results">
-            {!query.trim() ? (
-              <div className="px-5 py-8 text-sm text-muted-foreground">
-                Search treatment paths, symptoms, medicines, meetings, or a compound name.
-              </div>
-            ) : available === false ? (
-              <div className="px-5 py-8 text-sm text-muted-foreground">
-                The search index is created by the production build. Use the preview server to test it locally.
-              </div>
-            ) : searching ? (
-              <div className="space-y-3 px-5 py-6" aria-live="polite">
-                <div className="h-3 w-28 animate-pulse rounded bg-muted" />
-                <div className="h-5 w-3/4 animate-pulse rounded bg-muted" />
-                <div className="h-3 w-full animate-pulse rounded bg-muted" />
-              </div>
-            ) : results.length === 0 ? (
-              <div className="px-5 py-8 text-sm text-muted-foreground">No pages matched “{resolvedQuery}”.</div>
-            ) : (
-              <ul className="divide-y divide-border">
-                {results.map((result, index) => {
-                  const category = result.filters?.category?.[0];
-                  return (
-                    <li key={result.url}>
-                      <a
-                        id={`search-result-${index}`}
-                        href={result.url}
-                        onClick={(event) => {
-                          event.preventDefault();
-                          window.location.href = result.url;
-                        }}
-                        role="option"
-                        aria-selected={index === activeIndex}
-                        onMouseMove={() => setActiveIndex(index)}
-                        className={cn(
-                          'group flex items-start gap-3 px-4 py-4 sm:px-5',
-                          index === activeIndex && 'bg-accent',
-                        )}
-                      >
-                        <div className="min-w-0 flex-1">
-                          {category && <div className="eyebrow mb-1">{category}</div>}
-                          <div className="font-bold text-foreground">{result.meta.title || result.url}</div>
-                          <div className="mt-1 line-clamp-2 text-sm text-muted-foreground" dangerouslySetInnerHTML={{ __html: result.excerpt }} />
-                        </div>
-                        <ArrowRight className="mt-1 size-4 shrink-0 text-primary opacity-0 transition-opacity group-hover:opacity-100 group-aria-selected:opacity-100" aria-hidden="true" />
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
-          </div>
+          <SearchResults
+            activeIndex={activeIndex}
+            available={available}
+            className="min-h-32 overflow-y-auto"
+            emptyMessage="Search treatment paths, symptoms, medicines, meetings, or a compound name."
+            onActiveIndexChange={setActiveIndex}
+            query={query}
+            resolvedQuery={resolvedQuery}
+            results={results}
+            resultsId={resultsId}
+            searching={searching}
+          />
           <div className="hidden items-center justify-between border-t border-border bg-muted/50 px-5 py-2.5 text-xs text-muted-foreground sm:flex">
             <span>↑ ↓ to move · Enter to open</span>
             <span>Esc to close</span>

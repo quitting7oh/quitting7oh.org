@@ -108,6 +108,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   the more direct heading "Help quitting 7-OH." The masthead now describes the
   site's contents as "Guides, tools, and peer support" instead of repeating the
   hero.
+- The homepage search field now accepts text in place and shows Pagefind results
+  beneath the field. Header search keeps the focused dialog for site-wide use.
 
 ### Typography comparison
 
