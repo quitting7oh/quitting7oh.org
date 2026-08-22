@@ -16,6 +16,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-08-22
 
+### A dedication to Fly
+
+- Added [For Fly](/about/for-fly), a permanent thank-you to
+  `/u/FlyAdventurous6231` for the guides he wrote and the time he gave this
+  community. The footer now carries the dedication on every page.
+
 ### Site traffic analytics
 
 - The shared page layout now loads [Google

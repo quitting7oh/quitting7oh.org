@@ -96,7 +96,7 @@ export const CATEGORIES = [
   {
     slug: 'about',
     title: 'Site & Community',
-    blurb: 'What this site is, who runs it, how to contribute or send feedback.',
+    blurb: 'What this site is, who made it possible, and how to contribute or send feedback.',
     Icon: Info,
     section: 'reference',
   },
@@ -171,4 +171,3 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'Long view', slugs: ['kindling-and-relapse', '7-oh-recovery-timeline'] },
   ],
 };
-
