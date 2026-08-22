@@ -22,77 +22,58 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   next-hour action plan and moved the longer timeline, symptom guidance, ER
   information, sleep, food, and follow-up material into a separate [7-OH
   Withdrawal Guide](/start-here/7-oh-withdrawal-guide). The original URL and
-  older redirect remain intact, the pages cross-link, and the footer opens the
-  full guide.
+  its older redirect remain intact, and the two pages link to each other. The
+  footer's Withdrawal help link now opens the full guide.
 
 ### About and community pages
 
-- Folded the standalone AI-use page into About This Site with its process,
-  sourcing rules, model limits, and human-review details. The old URL redirects
-  to the merged section.
-- Updated volunteer roles: Fly is the subreddit head admin, SadisticJake
-  replaces drjinglesMD on the moderator list, and 18YearsOfRegret is listed as
-  the manager of quitting7oh.org.
+- We folded the standalone AI-use page into About This Site and kept its
+  process, sourcing rules, model limits, and human-review details in one place.
+  A permanent redirect sends the old URL to the merged section.
+- We updated the current volunteer roles. Fly now appears as subreddit head
+  admin, SadisticJake replaces drjinglesMD on the moderator list, and
+  18YearsOfRegret is listed as the manager of quitting7oh.org.
 
 ### Site architecture reference
 
 - Added [Site Architecture](/about/site-architecture), a build-time inventory
-  of framework versions, the static publishing path, browser islands, design
-  system, and deployment targets. Dependency labels come from the installed
-  lockfile and build configuration.
+  of the framework versions, static publishing path, browser islands, design
+  system, and deployment targets behind the redesign. The page reads dependency
+  versions from the lockfile during the build, so the inventory follows the
+  installed stack.
 
-### Meeting language and continuity
+### Meeting language
 
-- The rolling page now names 7-OH alongside kratom in its title, introduction,
-  and site-map listing, with explicit spacing between fellowship links.
-- The homepage shows a local countdown to the next 7-OH/kratom meeting, links
-  the complete schedule, and offers a currently joinable NA or SMART meeting.
-  It keeps a random regular live choice stable for the browser session and uses
-  NA's always-open room only when the regular live pool is empty.
-- When no KA or TIAWO meeting is live, the rolling page offers one random live
-  NA meeting and one random live SMART meeting when available. Those options
-  disappear while a 7-OH/kratom-specific meeting is running.
+- The rolling next-meeting page now names 7-OH alongside kratom in its title,
+  introduction, and site-map listing. Explicit spaces separate the two
+  fellowship links at every width.
+
+### Meeting continuity
+
+- The homepage now shows a live countdown to the next 7-OH/kratom meeting,
+  links to the complete schedule, and offers one currently joinable Open NA or
+  general-audience SMART meeting. The suggestion stays stable for the browser
+  session, picks randomly from regular meetings that are live at that time,
+  and uses NA's always-open 24/7 room only when that live pool is empty.
+- When no KA or TIAWO meeting is live, the rolling next-meeting page now offers
+  a random currently joinable NA meeting and a random live SMART meeting when
+  one is listed. The alternatives disappear while a 7-OH/kratom-specific
+  meeting is running.
 - Join clicks are saved locally as "Previously joined." Matching KA, TIAWO, NA,
-  and SMART cards and schedule rows expose that history, directory filters can
-  narrow to it, and readers can reopen or clear recent rooms. No history leaves
-  the browser.
-- Added stable KA/TIAWO IDs and a trimmed, lazy-loaded static meeting index so
-  the homepage does not bundle the full NA and SMART datasets. Updated the
-  TypeScript path alias to the relative form required by TypeScript 7.
-
-### Homepage rhythm
-
-- Broke up the homepage's repeated three-item groups. The hero has one primary
-  comparison action, the immediate-support panel has two core rows plus live
-  meeting help, the starting-point area links four distinct needs, and the
-  calculator list has four entries.
-- Replaced repeated withdrawal routing with vitamins and supplements, helper
-  medications, SOWS induction, and family support. Added kratom-leaf and SR-17
-  tapers to the calculator list.
-- Aligned the starting points with the support panel, shortened the calculator
-  heading to "Taper Calculators," changed the hero to "Help quitting 7-OH," and
-  made the masthead describe the site's contents instead of repeating the hero.
+  and SMART cards and schedule rows show that history, the NA and SMART
+  directories can filter to it, and each meeting page offers a compact list for
+  reopening recent rooms or clearing the browser-only history. No meeting
+  history is sent to the site or an account.
+- Added stable IDs to the KA and TIAWO schedule and a trimmed, lazy-loaded
+  static live-meeting index. The homepage does not bundle the full NA and SMART
+  datasets.
+- Updated the TypeScript path alias to the relative form required by TypeScript
+  7, restoring a clean no-emit type check.
 
 ### Navigation wording
 
 - Renamed the "Adjuncts & Supplements" category to "Meds & Supplements."
   The shorter, plainer label fits the sidebar without truncation.
-
-### Medications and supplements URLs
-
-- Moved the category and its ten pages from `/other-tools` to
-  `/medications-supplements`. Permanent one-hop redirects cover the category,
-  every page, and the older aliases; internal links use the new addresses.
-
-### Category directories
-
-- Category indexes now use wide directories built from their existing sidebar
-  groups. Unboxed rows flow across two columns, while flat sections use the
-  same wider measure.
-- Fixed date-only metadata rendering so category indexes display the stored
-  calendar date consistently in every timezone.
-- Removed the directory shell's leftover desktop border so top-level topics use
-  the same feathered guide rail as article pages.
 
 ### Desktop navigation
 
@@ -103,12 +84,44 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   control instead of swapping them abruptly. Opening or closing it preserves
   the reader's scroll position.
 
+### Medications and supplements URLs
+
+- We moved the category and its ten pages from `/other-tools` to
+  `/medications-supplements`. Permanent redirects cover the category and all
+  page paths, including older aliases. Internal links use the new addresses.
+
+### Category directories
+
+- Category indexes now use wide directories built from their existing sidebar
+  groups. We removed the tall center card and spread unboxed rows across two
+  columns; flat sections use the same wider measure.
+
+### Homepage rhythm
+
+- Broke up the homepage's repeated three-item groups. The hero now has one
+  primary action for comparing quitting options, the immediate-support panel
+  has two rows, the starting-point area links to four distinct needs, and the
+  calculator list has four entries. SOWS induction now sits with the starting
+  points; the SR-17 taper takes its place in the calculator list.
+- Aligned the starting-point links with the support panel above them and
+  shortened the calculator heading to "Taper Calculators." The hero now uses
+  the more direct heading "Help quitting 7-OH." The masthead now describes the
+  site's contents as "Guides, tools, and peer support" instead of repeating the
+  hero.
+
 ### Typography comparison
 
-- Added two font-comparison routes with complete reading systems, dense copy,
-  navigation, support UI, lists, and numerals. The finalists pair Commissioner
-  with Literata or STIX Two Text while the broader specimen retains the other
-  open-license candidates for reference.
+- Added a font-sample page with five complete reading systems shown against the
+  same article copy, list, meeting card, numerals, and interface labels. The
+  page serves each open-license variable font from the site. Reviewers can
+  compare the candidates without changing production typography.
+- Added a second comparison with Commissioner fixed as the body and interface
+  face. Source Serif 4 anchors the page; Newsreader, Literata, STIX Two Text,
+  Roboto Serif, and Petrona provide five heading alternatives. Keeping one face
+  fixed makes the serif differences easier to judge.
+- Narrowed the second comparison to the two finalists, Literata and STIX Two
+  Text, and expanded each into a full reading-scale specimen with long titles,
+  section hierarchy, dense copy, navigation, support UI, lists, and numerals.
 - Fixed inconsistent production typography between page loads. The bundled
   reading and display faces now use a guaranteed swap policy, and both are
   preloaded from the shared layout instead of allowing a timing-dependent
@@ -133,14 +146,17 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   minor alkaloids cause a separate withdrawal syndrome that buprenorphine
   cannot cover. The related Paths Off 7-OH passage now carries the same limit
   on human evidence.
+- Fixed date-only metadata rendering in article headers and category indexes.
+  Every timezone now sees the calendar date stored in frontmatter.
 - Restored the intended scrollable wrapper around Markdown tables and gave
   narrow-screen comparison tables enough width to keep their evidence readable.
 
 ### Acknowledgments
 
-- Added [Acknowledgments](/about/acknowledgments) to note that much of the site's
-  early practical material came from `/u/FlyAdventurous6231`'s guides. The
-  footer uses the neutral source credit, and `/about/for-fly` redirects here.
+- We added [Acknowledgments](/about/acknowledgments) to note that much of the
+  site's early practical material came from `/u/FlyAdventurous6231`'s guides.
+  Readers can reach the note from every footer. The former
+  `/about/for-fly` address permanently redirects to the new acknowledgments URL.
 
 ### Site traffic analytics
 
@@ -159,16 +175,20 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   it dissolves into the outer page instead of ending at two visible vertical
   edges on wide screens.
 - Extended the same treatment to the desktop guide rail. Its surface and
-  divider now begin fully transparent, emerge through low-opacity stops, and
-  feather back to transparent before the footer. The sticky Guide index header
-  gains a soft protective fade only after the navigation has been scrolled.
+  divider now begin fully transparent and emerge through a longer sequence of
+  low-opacity stops instead of exposing the rail's top rectangle, then feather
+  back to transparent before the footer. The sticky Guide index header also
+  stays transparent at rest and gains a soft protective fade only after the
+  navigation has been scrolled.
 - Assigned the full current-page sidebar treatment and `aria-current` to the
   canonical category link. Its matching Most Used shortcut uses a small clay
   dot and label color. The sidebar reveals a clipped canonical entry and
   preserves its position when the link fits in view.
 - Extended the desktop guide-rail surface through the outer viewport gutter and
-  faded it in below the masthead so the rail no longer begins as an exposed
+  faded it in below the masthead. The rail no longer begins as an exposed
   vertical seam on wide screens.
+- Removed the category-directory shell's leftover desktop border so top-level
+  topic pages use the same feathered guide rail as article pages.
 
 ## 2026-08-21
 
@@ -446,7 +466,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   (rolling current + upcoming cards) instead of the static
   Meeting Schedules tables, which stay linked from that page.
 - The fourth "Start here" card on the homepage now points to
-  **[Vitamins & Supplements](src/content/other-tools/vitamins-supplements.md)**
+  **[Vitamins & Supplements](src/content/medications-supplements/vitamins-supplements.md)**
   ("The community-tested stack") instead of the "What the hell is
   7-OH?" explainer. The what-is-7-OH page is unchanged and still
   linked from the Start Here section; the supplement stack is a
@@ -545,7 +565,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### Veterinary gabapentin on the helper-meds page
 
 - Added a **Veterinary gabapentin (no prescription needed)** subsection
-  to [Helper Medications](src/content/other-tools/helper-meds.md): vet
+  to [Helper Medications](src/content/medications-supplements/helper-meds.md): vet
   gabapentin is the same molecule in the same manufacturer packaging and
   standard strengths, a no-prescription route the community uses. Framed
   with the existing dosing/taper cautions, the opioid+benzo+alcohol
@@ -748,8 +768,8 @@ values; the page is correct. Skipped.
   - [`/for-you/tapering-7oh`](src/content/for-you/tapering-7oh.md) → 7-OH Taper Calculator
   - [`/mat-suboxone/suboxone-for-7oh`](src/content/mat-suboxone/suboxone-for-7oh.md) → Suboxone Taper Calculator
   - [`/mat-suboxone/suboxone-rapid-taper`](src/content/mat-suboxone/suboxone-rapid-taper.md) → Suboxone Taper Calculator (framed as "doesn't see a taper plan that fits your situation? — build a custom one")
-  - [`/other-tools/sr-17`](src/content/other-tools/sr-17.md) → SR-17 Cross-Taper Calculator
-  - [`/other-tools/quit-7-oh-with-kratom-leaf`](src/content/other-tools/quit-7-oh-with-kratom-leaf.md) → Kratom Leaf Taper Calculator
+  - [`/other-tools/sr-17`](src/content/medications-supplements/sr-17.md) → SR-17 Cross-Taper Calculator
+  - [`/other-tools/quit-7-oh-with-kratom-leaf`](src/content/medications-supplements/quit-7-oh-with-kratom-leaf.md) → Kratom Leaf Taper Calculator
 - Same callout pattern across all five: blockquote with a chart
   emoji, an intent-matching CTA ("Want a day-by-day schedule…"),
   one-sentence description of what the calculator builds, and a
@@ -1079,7 +1099,7 @@ values; the page is correct. Skipped.
   preload is calibrated for pure short-acting 7-OH; most readers
   coming through the calculator are on synthetics or stacks where
   the longer runway works better. Calculator page prose updated to
-  match — points back to the [SR-17 page](/other-tools/sr-17) for the
+  match — points back to the [SR-17 page](/medications-supplements/sr-17) for the
   1-day textbook version and to push higher (4–5) for harder cases.
 - **No more "0 mg × 1" jump-off row.** When the SR jump-off is set to
   0, the generator now skips the zero-dose final row and lets the
@@ -1564,7 +1584,7 @@ Math model:
   page's published volumetric sub-0.25 mg doses
   (0.1 → 0.05 → 0.02 mg).
 - For SR-17, picking a named speed emits the
-  [community 4-day descending pattern](/other-tools/sr-17)
+  [community 4-day descending pattern](/medications-supplements/sr-17)
   (100 → 75 → 50 → 25 → jump) scaled to the reader's actual
   maintenance dose. Custom percentage available for
   non-standard courses.
@@ -1817,7 +1837,7 @@ section removed (restating the takeaway is slop).
 The "Bridge doses" section in "The path in practice" had a
 kratom-leaf-powder bullet that didn't belong on a page scoped to
 concentrated mitragynine. Plain-leaf use lives on its own page
-([Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf));
+([Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf));
 the mitragynine page now lists two on-topic categories:
 mitragynine-dominant extract tablets and shots, and "enhanced"
 kratom (leaf concentrated to ~10% mitragynine). The
@@ -1831,7 +1851,7 @@ this page's substance.
 New page at `/other-tools/quit-7-oh-with-mitragynine` covering the
 mitragynine-extract step-down as a documented community path off
 concentrated 7-OH. The page sits alongside [Quit 7-OH with Kratom
-Leaf](/other-tools/quit-7-oh-with-kratom-leaf) in the "Bridges off
+Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) in the "Bridges off
 the synthetics" sidebar group.
 
 Sourcing was unusual for the site: clinical literature on this
@@ -2899,7 +2919,7 @@ Distinction now made consistently:
   active recovery.
 - **Plain kratom leaf** — a *planned, deliberate* taper tool for some
   people in this community (see
-  [#tapering-with-kratom-leaf](/other-tools/tapering-with-kratom-leaf)); not a rescue
+  [#tapering-with-kratom-leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)); not a rescue
   medication and not improvised at 3 a.m.
 
 Updated in: `vitamins-supplements.md` (both "Avoid" sections),
