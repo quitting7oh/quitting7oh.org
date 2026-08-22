@@ -1039,8 +1039,8 @@ export function TaperCalculator({
             <h2 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
               Schedule table
             </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[40rem] text-sm">
+            <div className="taper-schedule-scroll overflow-x-auto">
+              <table className="taper-schedule-table w-full min-w-[40rem] text-sm">
                 <thead className="bg-muted/60 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">
                   <tr>
                     <th className="py-2 pr-4">Day</th>
@@ -1060,8 +1060,8 @@ export function TaperCalculator({
                       !isStopDay && prevN !== null && prevN !== s.dosesPerDay;
                     if (isStopDay) {
                       return (
-                        <tr key={i} className="border-y-2 border-success/60 bg-success/10">
-                          <td className="py-2 pr-4 font-semibold text-foreground">{i + 1}</td>
+                        <tr key={i} className="schedule-stop-row border-y-2 border-success/60 bg-success/10">
+                          <td className="py-2 pr-4 font-semibold text-foreground" data-label="Day">{i + 1}</td>
                           <td
                             colSpan={3}
                             className="py-2 text-sm font-semibold text-foreground"
@@ -1074,7 +1074,7 @@ export function TaperCalculator({
                     return (
                       <Fragment key={i}>
                         {isTransition && (
-                          <tr className="border-y-2 border-signal bg-signal/12">
+                          <tr className="schedule-note-row border-y-2 border-signal bg-signal/12">
                             <td
                               colSpan={4}
                               className="px-3 py-2 text-sm font-bold text-foreground"
@@ -1088,14 +1088,10 @@ export function TaperCalculator({
                           </tr>
                         )}
                         <tr
-                          className={
-                            isTransition
-                              ? 'bg-signal/7'
-                              : ''
-                          }
+                          className={`schedule-data-row ${isTransition ? 'bg-signal/7' : ''}`}
                         >
-                          <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
-                          <td className="py-2 pr-4 text-foreground">
+                          <td className="py-2 pr-4 text-muted-foreground" data-label="Day">{i + 1}</td>
+                          <td className="py-2 pr-4 text-foreground" data-label={`Per dose (${cfg.unit})`}>
                             {substance === 'bupe' ? (
                               <PerDoseHint
                                 hasHover={hasHover}
@@ -1120,6 +1116,7 @@ export function TaperCalculator({
                             )}
                           </td>
                           <td
+                            data-label="Times/day"
                             className={
                               isTransition
                                 ? 'py-2 pr-4 font-bold text-foreground'
@@ -1128,12 +1125,12 @@ export function TaperCalculator({
                           >
                             {s.dosesPerDay}
                           </td>
-                          <td className="py-2 font-medium text-foreground">{s.totalDaily}</td>
+                          <td className="py-2 font-medium text-foreground" data-label={`Total daily (${cfg.unit})`}>{s.totalDaily}</td>
                         </tr>
                       </Fragment>
                     );
                   })}
-                  <tr className="border-t-2 border-border">
+                  <tr className="schedule-total-row border-t-2 border-border">
                     <td
                       className="py-2 pr-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground"
                       colSpan={3}

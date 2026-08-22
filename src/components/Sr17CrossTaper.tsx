@@ -699,8 +699,8 @@ function Output({
         <h2 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
           Day-by-day schedule
         </h2>
-        <div className="overflow-x-auto px-5 pb-2">
-          <table className="w-full min-w-[48rem] text-sm">
+        <div className="sr-schedule-scroll overflow-x-auto px-5 pb-2">
+          <table className="sr-schedule-table w-full min-w-[48rem] text-sm">
             <thead className="bg-muted/55 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">
               <tr>
                 <th className="py-2 pr-3">Day</th>
@@ -734,14 +734,14 @@ function Output({
                       : '';
                 const cls = phaseRowClass(d.phase);
                 return (
-                  <tr key={i} className={cls}>
-                    <td className="py-2 pr-3 font-semibold text-foreground">
+                  <tr key={i} className={`sr-schedule-row ${cls}`}>
+                    <td className="py-2 pr-3 font-semibold text-foreground" data-label="Day">
                       {d.day}
                     </td>
-                    <td className="py-2 pr-3 text-foreground">{d.phaseLabel}</td>
-                    <td className="py-2 pr-3 text-foreground">{srCell}</td>
-                    <td className="py-2 pr-3 text-foreground">{ohCell}</td>
-                    <td className="py-2 text-muted-foreground">{d.note}</td>
+                    <td className="py-2 pr-3 text-foreground" data-label="Phase">{d.phaseLabel}</td>
+                    <td className="py-2 pr-3 text-foreground" data-label="SR-17">{srCell}</td>
+                    <td className="py-2 pr-3 text-foreground" data-label="7-OH">{ohCell}</td>
+                    <td className="py-2 text-muted-foreground" data-label="Notes">{d.note}</td>
                   </tr>
                 );
               })}

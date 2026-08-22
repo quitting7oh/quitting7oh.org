@@ -16,6 +16,15 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-08-22
 
+### Responsive data tables
+
+- Reference tables on narrow screens now reflow into labeled editorial rows.
+  Dense comparison matrices keep their grid, add a swipe cue, and pin the row
+  label while the reader moves across columns.
+- Meeting schedules and generated taper plans use compact mobile layouts built
+  for their data. Desktop tables keep their full comparison view, and pages no
+  longer overflow the viewport at narrow widths.
+
 ### Withdrawal help
 
 - Kept [Withdrawal Help](/start-here/7-oh-withdrawal-help) as a focused
@@ -33,6 +42,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - We updated the current volunteer roles. Fly now appears as subreddit head
   admin, SadisticJake replaces drjinglesMD on the moderator list, and
   18YearsOfRegret is listed as the manager of quitting7oh.org.
+- Rewrote [Acknowledgments](/about/acknowledgments) to credit Fly's specific
+  early calls — the antihistamine/restless-legs warning, low-dose induction
+  sized to 7-OH habits, batch variability, the liposomal vitamin C protocol,
+  and low-dose naltrexone for post-acute withdrawal — in place of the earlier
+  generic thank-you, and reframed the site's role as carrying that work
+  forward with sources attached.
 
 ### Site architecture reference
 
