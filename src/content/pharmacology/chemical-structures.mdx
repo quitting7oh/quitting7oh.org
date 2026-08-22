@@ -1,151 +1,162 @@
 ---
 title: "Chemical Structures (Appendix)"
-description: "Structure diagrams for morphine, the kratom leaf alkaloids, and the concentrated and semi-synthetic mitragynine derivatives that drive the 7-OH product market."
+description: "A visual guide to mitragynine, kratom alkaloids, 7-hydroxymitragynine, and related metabolites and derivatives."
 category: "pharmacology"
-last_updated: "2026-06-09"
+last_updated: "2026-08-22"
 sort: 3
 wide: true
 ---
 
-This is a visual appendix for the
-[Minor Alkaloids](/pharmacology/kratom-minor-alkaloids) and
-[Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom)
-reference pages. Each diagram is a 2D skeletal-formula representation
-of the molecule discussed on those pages. The pharmacology and clinical
-context lives on the main pages; this one is just the structures.
+This appendix puts the structures from [Minor Alkaloids](/pharmacology/kratom-minor-alkaloids) and [Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom) side by side. It maps molecular relationships. Receptor assays and human studies answer different questions from a structure drawing.
 
-If chemical structures aren't what you came here for, the main
-pharmacology pages cover everything in words and tables. The
-structures below are for readers who want to see what the alkaloids
-look like at the molecular level, and how 7-OH and the
-semi-synthetic derivatives ([MGM-15](/compounds/mgm15),
-[pseudo](/compounds/mitragynine-pseudoindoxyl)) relate to plain mitragynine structurally.
+## Reading the diagrams
 
-## Native kratom leaf alkaloids
+In a skeletal formula, each unlabeled corner is a carbon atom and most carbon-bound hydrogen atoms are omitted. Solid and hashed wedges show bonds that project out of or behind the page. Those wedges matter here: several kratom alkaloids have the same atoms and bond connections but differ in the three-dimensional arrangement at one carbon.
+
+A flat drawing cannot show the range of shapes a molecule adopts in solution, prove how it binds a receptor, or predict a dose. The captions below identify the structural change and summarize the assay result needed to place it in context.
+
+## Kratom leaf alkaloids
+
+Researchers have isolated mitragynine alongside related indole and oxindole alkaloids from kratom leaf and confirmed their structures with NMR and mass spectrometry ([Flores-Bocanegra et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32597657/)). Speciogynine and speciociliatine share mitragynine's formula and bond connections. Speciogynine reverses the arrangement at C-20; speciociliatine reverses it at C-3. Paynantheine has an ethenyl group at C-20 in place of mitragynine's ethyl group.
 
 <div class="not-prose grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/mitragynine.svg" alt="Chemical structure of mitragynine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold"><a href="/compounds/kratom-leaf" class="text-zinc-100 underline-offset-2 hover:underline">Mitragynine</a></div>
-      <div class="text-xs opacity-80">Reference alkaloid · partial µ-agonist</div>
+      <div class="text-xs opacity-80">Parent indole scaffold · partial agonist in one hMOR cAMP assay</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/paynantheine.svg" alt="Chemical structure of paynantheine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Paynantheine</div>
-      <div class="text-xs opacity-80">Usually 2nd most abundant · 5-HT₁ₐ activity</div>
+      <div class="text-xs opacity-80">C-20 ethenyl analog · 5-HT₁ₐ binding</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/speciogynine.svg" alt="Chemical structure of speciogynine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Speciogynine</div>
-      <div class="text-xs opacity-80">C-20 diastereomer · weak µ-antagonist + 5-HT₁ₐ</div>
+      <div class="text-xs opacity-80">C-20 epimer · weaker hMOR affinity</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/speciociliatine.svg" alt="Chemical structure of speciociliatine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Speciociliatine</div>
-      <div class="text-xs opacity-80">C-3 diastereomer · partial µ-agonist, higher affinity</div>
+      <div class="text-xs opacity-80">C-3 epimer · higher hMOR affinity</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/corynantheidine.svg" alt="Chemical structure of corynantheidine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Corynantheidine</div>
-      <div class="text-xs opacity-80">µ-opioid antagonist · α-1D-selective</div>
+      <div class="text-xs opacity-80">C-9 demethoxy analog · α₁D affinity</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
-    <img src="/images/structures/9-hydroxycorynantheidine.svg" alt="Chemical structure of 9-hydroxycorynantheidine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
-      <div class="font-semibold">9-Hydroxycorynantheidine</div>
-      <div class="text-xs opacity-80">9-OH restores µ-agonism</div>
-    </figcaption>
-  </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/mitraphylline.svg" alt="Chemical structure of mitraphylline" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Mitraphylline</div>
-      <div class="text-xs opacity-80">Oxindole alkaloid · poorly characterized</div>
+      <div class="text-xs opacity-80">Oxindole · no measurable hMOR binding in one 2026 assay</div>
     </figcaption>
   </figure>
 </div>
 
-## Concentrated and semi-synthetic mitragynine derivatives
+The epimers show why a name such as "minor alkaloid" says little about receptor activity. In one set of assays run across the same human receptors and cell systems, hMOR binding affinity (K<sub>i</sub>) was 238 nM for mitragynine, 472 nM for speciogynine, and 49 nM for speciociliatine. Mitraphylline had no measurable hMOR, hKOR, or hDOR binding at the concentrations tested ([Hemby et al., 2026](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full)). These are laboratory binding results, not human potency rankings.
 
-These are the structurally-modified compounds that drive the
-[7-OH product market](/compounds/7-oh) and the
-[stacked synthetics](/compounds/mgm15). Each is one or two atom-level
-changes away from plain mitragynine, and those changes can shift
-µ-opioid receptor affinity by orders of magnitude.
+Paynantheine and speciogynine bind 5-HT₁ₐ receptors, but their parent compounds did not activate the canonical G-protein pathway in that study; metabolites may account for some animal results ([León et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34467758/)). Corynantheidine showed α₁D-adrenergic affinity in another receptor panel ([Obeng et al., 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/)). Species, receptor preparation, cell system, and measured pathway can change the result.
+
+## Metabolites and semi-synthetic derivatives
+
+The compounds below share the mitragynine scaffold. Metabolism forms 7-hydroxymitragynine and mitragynine pseudoindoxyl. Chemical modification produces MGM-15 and 7-acetoxymitragynine. Product labels cannot establish a compound's identity, concentration, or contaminant profile.
 
 <div class="not-prose grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/7-hydroxymitragynine.svg" alt="Chemical structure of 7-hydroxymitragynine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">7-Hydroxymitragynine (7-OH)</div>
-      <div class="text-xs opacity-80">–OH at C-7 · large µ-affinity jump vs. mitragynine</div>
+      <div class="text-xs opacity-80">C-7 hydroxyindolenine · higher hMOR affinity</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
+    <img src="/images/structures/9-hydroxycorynantheidine.svg" alt="Chemical structure of 9-hydroxycorynantheidine" class="w-full h-auto" />
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
+      <div class="font-semibold">9-Hydroxycorynantheidine</div>
+      <div class="text-xs opacity-80">C-9 phenol metabolite · partial µ agonist in a tissue assay</div>
+    </figcaption>
+  </figure>
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/7-acetoxymitragynine.svg" alt="Chemical structure of 7-acetoxymitragynine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">7-Acetoxymitragynine</div>
-      <div class="text-xs opacity-80">Acetate ester · hydrolyzes back to 7-OH</div>
+      <div class="text-xs opacity-80">C-7 acetate ester · human pharmacokinetics unreported</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/dihydro-7-hydroxymitragynine-mgm-15.svg" alt="Chemical structure of dihydro-7-hydroxymitragynine (MGM-15)" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Dihydro-7-hydroxymitragynine (MGM-15)</div>
-      <div class="text-xs opacity-80">7-OH + saturated indolenine · tightest receptor fit</div>
+      <div class="text-xs opacity-80">N1–C2 reduction · high µ/δ affinity in preclinical assays</div>
     </figcaption>
   </figure>
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
-    <img src="/images/structures/pseudoindoxyl-mitragynine.svg" alt="Chemical structure of pseudoindoxyl mitragynine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
-      <div class="font-semibold">Pseudoindoxyl mitragynine</div>
-      <div class="text-xs opacity-80">Oxidative rearrangement · carbonyl H-bond acceptor</div>
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
+    <img src="/images/structures/pseudoindoxyl-mitragynine.svg" alt="One stereoisomer of mitragynine pseudoindoxyl" class="w-full h-auto" />
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
+      <div class="font-semibold">Mitragynine pseudoindoxyl</div>
+      <div class="text-xs opacity-80">Spiro-pseudoindoxyl · stereoisomer ensemble in solution</div>
     </figcaption>
   </figure>
 </div>
 
-## Reference
+### Oxidation at C-7
+
+Oxidation converts mitragynine's indole region into the C-7 hydroxyindolenine found in 7-OH. In the uniform 2026 human-receptor panel, 7-OH had about 16-fold higher hMOR binding affinity than mitragynine (15.1 nM versus 238 nM). A docking model placed the added hydroxyl near Asn124, where it could add a hydrogen-bond contact ([Hemby et al., 2026](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full)). That proposed contact comes from a computer model, not a solved 7-OH–receptor structure.
+
+9-Hydroxycorynantheidine is a different oxidation product: its hydroxyl replaces mitragynine's C-9 methoxy group, leaving a phenol. Researchers have detected it in mitragynine metabolism studies and reported partial µ-opioid agonism in guinea-pig ileum tissue ([Chakraborty et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34783240/); [Matsumoto et al., 2005](https://pubmed.ncbi.nlm.nih.gov/16266723/)). That tissue result does not establish its contribution to human kratom effects.
+
+7-Acetoxymitragynine carries an acetate ester at the same C-7 oxygen shown as a hydroxyl in 7-OH. The available structure and the 2002 medicinal-chemistry paper establish the compound's identity, but the sources cited here do not establish its absorption, ester cleavage, half-life, or role as a 7-OH prodrug in humans ([Takayama et al., 2002](https://pubmed.ncbi.nlm.nih.gov/11960505/)).
+
+### Reduction to MGM-15
+
+MGM-15 retains the C-7 hydroxyl and adds two hydrogen atoms across the N1–C2 bond, converting the indolenine region to an indoline. In guinea-pig brain membranes, the compound bound µ- and δ-opioid receptors with K<sub>i</sub> values of 6.4 nM and 16 nM ([Matsumoto et al., 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/)). Those preclinical values do not supply a human dose, duration, safety profile, or claim that MGM-15 is the strongest compound in a retail product. See [MGM-15](/compounds/mgm15) for the product-focused evidence limits.
+
+### Rearrangement to mitragynine pseudoindoxyl
+
+Mitragynine pseudoindoxyl rearranges the indole core into a spiro-pseudoindoxyl with a carbonyl group. Metabolism studies in mice and human liver preparations have found this product after mitragynine exposure ([Chakraborty et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34783240/)). In water and other protic environments, it forms a changing ensemble of stereoisomers, so the diagram above is one member rather than a complete account of the material in solution ([Angyal et al., 2023](https://doi.org/10.1002/anie.202303700)). Human pharmacokinetic data remain sparse.
+
+## Reference structure
 
 <div class="not-prose grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-  <figure class="rounded-lg bg-zinc-900 p-4 text-zinc-100">
+  <figure class="rounded-lg bg-zinc-900 p-3 text-zinc-100 sm:p-4">
     <img src="/images/structures/morphine.svg" alt="Chemical structure of morphine" class="w-full h-auto" />
-    <figcaption class="mt-2 text-center">
+    <figcaption class="mt-2 text-center [overflow-wrap:anywhere]">
       <div class="font-semibold">Morphine</div>
-      <div class="text-xs opacity-80">Phenanthrene-class opioid · NOT a mitragynine derivative</div>
+      <div class="text-xs opacity-80">Morphinan alkaloid · separate structural family</div>
     </figcaption>
   </figure>
 </div>
 
-Morphine shares the µ-opioid receptor with mitragynine and its
-derivatives, but it isn't structurally related to them, it's from a
-completely different alkaloid family. It's included on this site
-because clinical practice often references morphine for relative
-potency comparisons; see
-[Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom)
-for the affinity comparison and what the structural differences do.
+Morphine is not a mitragynine derivative and does not share its monoterpenoid indole scaffold. It is a morphinan alkaloid ([PubChem CID 5288826](https://pubchem.ncbi.nlm.nih.gov/compound/5288826)). Both compound families can engage µ-opioid receptors, but that common target does not make their structures or full pharmacology interchangeable. See [Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom) for the assay comparison and its limits.
 
-> **Reference, not advice.** Structures are 2D skeletal-formula
-> representations rendered from cheminformatics data. They don't
-> tell you anything about what to take or how to taper, those
-> decisions belong with a clinician familiar with your situation.
+> **Diagram limits.** A structure identifies an arrangement of atoms. It cannot confirm what is in a tablet, establish concentration or purity, reveal undeclared compounds, or turn a receptor result into dosing advice.
 
-## Where to read next
+## Sources and structure records
 
-- **[Minor Alkaloids](/pharmacology/kratom-minor-alkaloids)**: receptor
-  activity of the seven native kratom alkaloids across the µ-opioid,
-  serotonergic, and adrenergic systems
-- **[Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom)**
- , what each structural modification does to µ-opioid receptor
-  affinity
-- **[Compounds](/compounds)**: the clinical / lay overviews of each
-  named compound on this site
+- [Hemby et al. (2026), uniform human opioid-receptor assays and docking](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1763551/full)
+- [Flores-Bocanegra et al. (2020), isolation and structural characterization of kratom alkaloids](https://pubmed.ncbi.nlm.nih.gov/32597657/)
+- [León et al. (2021), serotonin-receptor pharmacology of paynantheine, speciogynine, and metabolites](https://pubmed.ncbi.nlm.nih.gov/34467758/)
+- [Obeng et al. (2020), opioid and adrenergic receptor binding](https://pmc.ncbi.nlm.nih.gov/articles/PMC7676998/)
+- [Chakraborty et al. (2021), mitragynine metabolism in mice and human liver preparations](https://pubmed.ncbi.nlm.nih.gov/34783240/)
+- [Matsumoto et al. (2005), 9-hydroxycorynantheidine tissue pharmacology](https://pubmed.ncbi.nlm.nih.gov/16266723/)
+- [Takayama et al. (2002), mitragynine structure–activity work](https://pubmed.ncbi.nlm.nih.gov/11960505/)
+- [Matsumoto et al. (2014), MGM-15 structure and preclinical pharmacology](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/)
+- [Angyal et al. (2023), stereochemical behavior of mitragynine pseudoindoxyl](https://doi.org/10.1002/anie.202303700)
+- Authoritative structure records: [mitragynine](https://pubchem.ncbi.nlm.nih.gov/compound/3034396), [paynantheine](https://pubchem.ncbi.nlm.nih.gov/compound/3037629), [speciogynine](https://pubchem.ncbi.nlm.nih.gov/compound/15560577), [speciociliatine](https://pubchem.ncbi.nlm.nih.gov/compound/15560576), [corynantheidine](https://pubchem.ncbi.nlm.nih.gov/compound/3000341), [7-hydroxymitragynine](https://pubchem.ncbi.nlm.nih.gov/compound/44301524), [9-hydroxycorynantheidine](https://pubchem.ncbi.nlm.nih.gov/compound/90360629), [7-acetoxymitragynine](https://pubchem.ncbi.nlm.nih.gov/compound/11015924), [MGM-15](https://pubchem.ncbi.nlm.nih.gov/compound/42629165), [mitragynine pseudoindoxyl](https://pubchem.ncbi.nlm.nih.gov/compound/44301701), and [mitraphylline](https://pubchem.ncbi.nlm.nih.gov/compound/94160)
+
+## Related pages
+
+- **[Minor Alkaloids](/pharmacology/kratom-minor-alkaloids)**: receptor data for leaf alkaloids across opioid, serotonin, and adrenergic systems
+- **[Morphine vs. Mitragyna Alkaloids](/pharmacology/morphine-vs-kratom)**: a comparison of receptor assays and structural families
+- **[Compounds](/compounds)**: the evidence and harm-reduction overview for each named compound

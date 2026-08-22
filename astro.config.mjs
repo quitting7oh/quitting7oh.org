@@ -9,6 +9,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from './src/lib/rehype/externalLinks.mjs';
 import rehypeHeadingAnchors from './src/lib/rehype/headingAnchors.mjs';
 import rehypeNormalizeHeadings from './src/lib/rehype/normalizeHeadings.mjs';
+import rehypeTableWrappers from './src/lib/rehype/tableWrappers.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -33,7 +34,13 @@ export default defineConfig({
     processor: unified({
       smartypants: true,
       gfm: true,
-      rehypePlugins: [rehypeNormalizeHeadings, rehypeSlug, rehypeHeadingAnchors, rehypeExternalLinks],
+      rehypePlugins: [
+        rehypeNormalizeHeadings,
+        rehypeSlug,
+        rehypeHeadingAnchors,
+        rehypeExternalLinks,
+        rehypeTableWrappers,
+      ],
     }),
   },
 });

@@ -2,7 +2,7 @@
 title: "Paths Off 7-OH"
 description: "Six ways people come off 7-OH and related synthetics, in the order this community would try them."
 category: "start-here"
-last_updated: "2026-07-04"
+last_updated: "2026-08-22"
 sort: 5
 ---
 
@@ -30,13 +30,13 @@ See [Withdrawal Help](/start-here/7-oh-withdrawal-help) for the timeline and sym
 
 Swap 7-OH for plain kratom leaf, then step the leaf down to zero over days or weeks. Leaf gives the receptors mitragynine at much lower potency while you wean.
 
-Plain leaf is preferred over concentrated mitragynine products. Concentrates work but introduce a stronger compound than necessary; use them only if leaf isn't available or isn't enough. The concentrated-mitragynine path is documented separately on [Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine), including the product-contamination concerns specific to that route.
+Plain leaf is preferred over concentrated mitragynine products. Concentrates work but introduce a stronger compound than necessary; use them only if leaf isn't available or isn't enough. The concentrated-mitragynine path is documented separately on [Quit 7-OH with Concentrated Mitragynine](/medications-supplements/quit-7-oh-with-mitragynine), including the product-contamination concerns specific to that route.
 
 Fits: stable supply of leaf, ability to weigh doses, patience for a multi-week wean.
 
 Doesn't fit: severe withdrawal that breaks through a leaf swap, no access to clean leaf, no time for a slow taper.
 
-See [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf).
+See [Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf).
 
 ### 3. Helper medications
 
@@ -46,7 +46,7 @@ Fits: moderate withdrawal, prescriber or telehealth access, willingness to take 
 
 Doesn't fit: severe withdrawal where helpers don't touch the floor.
 
-See [Helper Medications](/other-tools/helper-meds).
+See [Helper Medications](/medications-supplements/helper-meds).
 
 ### 4. Helper meds plus a kratom leaf taper
 
@@ -70,7 +70,7 @@ SR-17018. A biased mu agonist with a long duration of action. Sidesteps the bupr
 
 Fits: Suboxone isn't accessible, prior bupe induction failed, dual-receptor compounds like MGM-15 in the picture, or you want the long-acting MAT option that doesn't risk precipitated withdrawal during induction.
 
-See [SR-17018](/other-tools/sr-17).
+See [SR-17018](/medications-supplements/sr-17).
 
 **Rungs 5 and 6 are equivalent.** Pick based on access, prior experience, and which prescriber relationship you have.
 
@@ -81,7 +81,12 @@ See [SR-17018](/other-tools/sr-17).
 You can move between rungs in either direction. Some people start cold turkey, hit the wall on day three, and induct on Suboxone. Others stabilize on Suboxone and wind down to a leaf taper later.
 
 - Helpers work alongside any other rung. Adding clonidine to a Suboxone induction is routine.
-- Kratom leaf alongside Suboxone has a place. Bupe covers the mu-opioid side, but 7-OH dependence also involves the [minor alkaloids](/pharmacology/kratom-minor-alkaloids), whose adrenergic and serotonergic activity bupe doesn't touch. A small amount of leaf is a common community fix when that side of withdrawal breaks through.
+- Kratom leaf and Suboxone can overlap during a transition, but the reason
+  remains uncertain. Leaf adds mitragynine and a variable mixture of
+  [minor alkaloids](/pharmacology/kratom-minor-alkaloids). No human study has
+  shown that those alkaloids cause a separate serotonin or adrenergic
+  withdrawal syndrome, or that adding leaf treats symptoms that remain after
+  buprenorphine induction.
 - Never combine [naltrexone](/post-acute/naltrexone) (LDN, ULDN, Vivitrol) with active opioid use. Naltrexone is for after the acute phase. Taking it with opioids on board will precipitate withdrawal.
 
 ## Out of scope
