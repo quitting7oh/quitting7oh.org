@@ -15,9 +15,17 @@ interface Props {
   canonical?: string;
   /** Minimal chrome for the withdrawal fast-path. */
   minimal?: boolean;
+  /** Keep the reading-progress escape hatch available without restoring full chrome. */
+  showBackToTop?: boolean;
 }
 
-const { title, description = SITE.description, canonical, minimal = false } = Astro.props;
+const {
+  title,
+  description = SITE.description,
+  canonical,
+  minimal = false,
+  showBackToTop = !minimal,
+} = Astro.props;
 const pageTitle = title ? `${title} · ${SITE.title}.org` : `${SITE.title}.org — recovery information`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
 ---
@@ -67,6 +75,6 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     {!minimal && <Header />}
     <slot />
     {!minimal && <Footer />}
-    {!minimal && <BackToTop client:idle />}
+    {showBackToTop && <BackToTop client:idle />}
   </body>
 </html>

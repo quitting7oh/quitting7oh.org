@@ -271,6 +271,30 @@
     );
   }
 
+  .desktop-sidebar-rail {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--sidebar) / 0.58) 0,
+      hsl(var(--sidebar) / 0.58) calc(100% - 7rem),
+      hsl(var(--muted) / 0.45) 100%
+    );
+  }
+
+  .desktop-sidebar-rail::after {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--sidebar-border) / 0.42) 0,
+      hsl(var(--sidebar-border) / 0.42) calc(100% - 7rem),
+      transparent 100%
+    );
+    content: '';
+    pointer-events: none;
+  }
+
   .quiet-grid {
     background-image:
       linear-gradient(hsl(var(--border) / 0.22) 1px, transparent 1px),

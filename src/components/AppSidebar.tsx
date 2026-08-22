@@ -56,7 +56,7 @@ function Navigation({ categories, pinned, currentPath }: Props) {
   const [expanded, setExpanded] = React.useState<Record<string, boolean>>({});
 
   return (
-    <nav aria-label="Guide index" className="px-3 pb-8 pt-5">
+    <nav aria-label="Guide index" className="px-3 pb-12 pt-5 lg:px-6">
       <div className="mb-5 flex items-center gap-2 px-2 text-sidebar-foreground">
         <span className="inline-flex size-8 items-center justify-center rounded-lg bg-sidebar-accent text-primary">
           <BookOpen className="size-4" aria-hidden="true" />
@@ -195,7 +195,7 @@ export function AppSidebar(props: Props) {
   }
 
   return (
-    <aside aria-label="Guide navigation" className="hidden w-[17rem] shrink-0 bg-sidebar/58 shadow-[inset_-1px_0_0_hsl(var(--sidebar-border)/0.42)] lg:order-first lg:block">
+    <aside aria-label="Guide navigation" className="desktop-sidebar-rail hidden w-[17rem] shrink-0 lg:order-first lg:block">
       <div ref={desktopRef} className="scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-y-auto overscroll-contain">
         <Navigation {...props} />
       </div>

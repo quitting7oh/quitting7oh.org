@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-19"
+last_updated: "2026-08-22"
 sort: 6
 ---
 
@@ -13,6 +13,53 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-08-21
+
+### Field Guide redesign v2 and responsive cleanup
+
+- Added the withdrawal fast path with larger immediate actions, local meeting
+  access, symptom shortcuts, emergency guidance, and the persistent `Help now`
+  header action. The page now restores its back-to-top control after the reader
+  scrolls while keeping the reduced chrome.
+- The homepage now presents support options in one compact strip. Its quick-link
+  space points to vitamins and supplements, removing a repeated withdrawal
+  route. Category indexes, compound pages, meeting schedules, and the 404 page
+  received layouts built for their content.
+- Tightened the scheduling banner and header across the tablet breakpoints.
+  Meeting and Discord controls stay on one line, online counts shorten to fit,
+  and the 94rem page shell keeps the brand, sidebar, and content aligned.
+- Table-of-contents links now smooth-scroll to their headings and honor reduced
+  motion. Active-section tracking handles short sections, and the desktop guide
+  rail gains breathing room plus a soft transition into the footer on short
+  pages.
+- Added three care-card urgency levels, compound fact panels, local-time meeting
+  treatment, a static-first scheduling notice, and a reusable Do/Don’t pattern.
+  Existing routes, meeting data, calculator math, search, and theme behavior stay
+  intact.
+
+### Shared agent instructions
+
+- Added root `AGENTS.md` as the Codex adapter for `CLAUDE.md`. Codex follows the
+  same changelog gate, content-date rules, stop-slop review, link handling,
+  build process, preview ports, and per-push approval rule. The root changelog
+  remains canonical, and the sync script generates the public copy.
+
+### Stop-slop sweep across the content collection
+
+- Scanned all 83 content pages for AI-writing tells and repaired the
+  confirmed hits: cut a "Full stop." emphasis heading on the long-term
+  Suboxone risks page, unwound stacked "isn't just X, it's Y"
+  constructions on the why-Suboxone-isn't-working and dopamine-recovery
+  pages, renamed the "Caregiver burnout is real" and "The honest
+  tradeoff" headers, and replaced stock "robust" / "comprehensive"
+  filler on four pages with plainer words.
+- Replaced an uncited "research suggests" on the sober-living page with
+  the actual study: Subbaraman et al. 2023, six-month length of stay
+  associated with better recovery outcomes in sober living houses.
+- Left deliberate register intact: the funding-denial litany on the
+  community page, the closing passage of the recovery timeline, and
+  spec-sheet fragments in the telehealth comparison.
 
 ## 2026-08-19
 

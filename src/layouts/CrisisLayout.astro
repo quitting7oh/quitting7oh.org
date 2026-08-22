@@ -13,7 +13,7 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} minimal>
+<BaseLayout title={title} description={description} minimal showBackToTop>
   <header class="border-b border-border pt-[env(safe-area-inset-top)]">
     <div class="mx-auto flex min-h-16 max-w-[44rem] items-center px-4 sm:px-6">
       <Logo size="2rem" />

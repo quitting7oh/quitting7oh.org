@@ -46,7 +46,7 @@ const { prev, next } = await getPrevNext(currentPath);
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class="mx-auto flex max-w-[96rem] items-stretch">
+  <div class="mx-auto flex max-w-[94rem] items-stretch">
     <main id="main-content" class="min-w-0 flex-1">
       <header class="doc-header-surface">
         <div class:list={['grid min-w-0', !wide && 'xl:grid-cols-[minmax(0,1fr)_15rem]']}>
@@ -111,6 +111,40 @@ const { prev, next } = await getPrevNext(currentPath);
     <div id="copy-announce" aria-live="polite" class="sr-only"></div>
   </div>
 </BaseLayout>
+
+<script>
+  // TOC clicks are reader-initiated navigation, so let them animate. Hash
+  // stabilization below is reserved for initial loads, history navigation,
+  // and layout shifts after hydration.
+  document.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const clicked = event.target instanceof Element ? event.target : null;
+    const anchor = clicked?.closest('nav[aria-label="Table of contents"] a[href^="#"]');
+    if (!(anchor instanceof HTMLAnchorElement)) return;
+
+    const hash = anchor.getAttribute('href');
+    if (!hash || hash === '#') return;
+    let id = hash.slice(1);
+    try {
+      id = decodeURIComponent(id);
+    } catch {
+      return;
+    }
+    const heading = document.getElementById(id);
+    if (!heading) return;
+
+    event.preventDefault();
+    if (window.location.hash === hash) {
+      history.replaceState(null, '', hash);
+    } else {
+      history.pushState(null, '', hash);
+    }
+    heading.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start',
+    });
+  });
+</script>
 
 <script>
   // Heading anchors copy the section URL instead of navigating. The hash

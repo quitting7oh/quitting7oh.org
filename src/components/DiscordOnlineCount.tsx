@@ -30,14 +30,14 @@ export function DiscordOnlineCount() {
 
   return (
     <span
-      className="inline-flex items-center gap-1 align-middle text-xs font-semibold tabular-nums text-success"
+      className="inline-flex items-center gap-1 whitespace-nowrap align-middle text-xs font-semibold tabular-nums text-success"
       aria-label={`${count} members online`}
     >
       <span
         className="inline-block h-2 w-2 rounded-full bg-success motion-safe:animate-pulse"
         aria-hidden="true"
       />
-      {count} online
+      {count}<span className="hidden min-[900px]:inline"> online</span>
     </span>
   );
 }
