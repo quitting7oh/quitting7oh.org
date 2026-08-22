@@ -23,7 +23,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   label while the reader moves across columns.
 - Meeting schedules and generated taper plans use compact mobile layouts built
   for their data. Desktop tables keep their full comparison view, and pages no
-  longer overflow the viewport at narrow widths.
+  longer overflow the viewport at narrow widths. Long inline code paths wrap
+  before they widen the article.
 
 ### Withdrawal help
 
