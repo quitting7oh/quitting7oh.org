@@ -242,6 +242,9 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - The mobile guide drawer now slides in and out with a short eased transition
   while its backdrop fades. Readers who prefer reduced motion get an
   immediate open and close.
+- Tapping the visible X now closes the drawer because the control sits above
+  the sticky guide header. You can still tap the backdrop to dismiss the drawer,
+  and focus returns to the menu button.
 
 ### Pharmacology evidence audit
 
