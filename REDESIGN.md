@@ -180,17 +180,19 @@ smaller, explicit MiniSearch ranking policy.
 
 Search is still static and private by construction: Astro serializes the index
 at build time, browsers fetch it on demand, and queries are evaluated locally.
-The interface adds typo tolerance, recovery-language aliases, deep links to the
-best matching section, deterministic urgent-resource pins, negation handling,
-suggested queries, and shareable topic/type filters on `/search`.
+The interface adds typo tolerance, recovery-language aliases, natural-question
+routing, deep links to the best matching section, one quiet safety result for
+narrowly detected immediate risk, negation handling, suggested queries, and
+shareable topic/type filters on `/search`. Best-match recovery guidance does
+not receive crisis styling.
 
 ## Verification
 
 - Clean production build: 104 static outputs with no server runtime.
-- Search index: 87 page records, 735,894 bytes raw and 183,476 bytes gzip in the
+- Search index: 87 page records, 735,894 bytes raw and about 183 KB gzip in the
   measured build.
-- Search regression suite: 20 of 20 representative, typo, safety, negation,
-  and exclusion cases pass without writing files.
+- Search regression suite: 52 of 52 representative, intent, false-positive,
+  typo, safety, negation, and exclusion cases pass without writing files.
 - TypeScript `--noEmit` and `git diff --check` pass.
 - Keyboard and mobile-width interaction checks cover embedded homepage search,
   the header dialog, section links, urgent pins, filters, empty results, arrow

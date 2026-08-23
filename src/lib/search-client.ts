@@ -152,7 +152,9 @@ export async function searchSite(
   const ranked = [...bestByPage.values()]
     .sort((left, right) => right.score - left.score)
     .map(({ result }) => result);
-  const total = pinned.length + ranked.length;
+  const hasUrgentPin = pinned.some((result) => result.emphasis === 'urgent');
+  const visibleRanked = hasUrgentPin ? ranked.slice(0, 4) : ranked;
+  const total = pinned.length + visibleRanked.length;
 
   const suggestions = loaded.miniSearch
     .autoSuggest(indexQuery, {
@@ -171,7 +173,7 @@ export async function searchSite(
     .slice(0, 4);
 
   return {
-    results: [...pinned, ...ranked].slice(0, limit),
+    results: [...pinned, ...visibleRanked].slice(0, limit),
     suggestions,
     total,
     pageCount: loaded.pageCount,

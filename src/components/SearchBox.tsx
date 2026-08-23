@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ArrowRight, LoaderCircle, Search, ShieldAlert, X } from 'lucide-react';
+import { ArrowRight, LoaderCircle, Search, X } from 'lucide-react';
 import { Dialog as DialogPrimitive } from 'radix-ui';
 import {
   SEARCH_CATEGORY_OPTIONS,
@@ -136,6 +136,7 @@ function SearchResults({
           <ul className="divide-y divide-border" role="listbox" aria-label="Search results">
             {response.results.map((result, index) => {
               const pinned = isPinned(result);
+              const urgent = pinned && result.emphasis === 'urgent';
               return (
                 <li key={`${result.id}-${result.url}`}>
                   <a
@@ -148,18 +149,13 @@ function SearchResults({
                       'group relative flex items-start gap-3 text-left transition-colors',
                       variant === 'page' ? 'py-5 sm:py-6' : 'px-4 py-4 sm:px-5',
                       index === activeIndex && variant !== 'page' && 'bg-accent',
-                      pinned && variant === 'page' && 'my-3 rounded-lg border border-primary/35 bg-primary/[0.06] px-4 sm:px-5',
-                      pinned && variant !== 'page' && 'bg-primary/[0.07]',
+                      urgent && 'before:absolute before:inset-y-3 before:left-0 before:w-0.5 before:rounded-full before:bg-primary/70',
+                      urgent && variant === 'page' && 'pl-4',
                     )}
                   >
-                    {pinned && (
-                      <span className="mt-0.5 inline-flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/14 text-primary">
-                        <ShieldAlert className="size-4" aria-hidden="true" />
-                      </span>
-                    )}
                     <span className="min-w-0 flex-1">
                       <span className="eyebrow mb-1 block">
-                        {pinned ? `${result.pinLabel} · ` : ''}{result.categoryLabel} · {result.type}
+                        {urgent ? result.pinLabel : `${result.categoryLabel} · ${result.type}`}
                       </span>
                       <span className="block font-bold leading-snug text-foreground">
                         <HighlightedText text={result.title} query={query} />
