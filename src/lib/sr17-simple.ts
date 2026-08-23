@@ -3,6 +3,15 @@ export const SIMPLE_SR17_TAPER_DAYS = [7, 10, 14] as const;
 export type SimpleSr17TaperDays = (typeof SIMPLE_SR17_TAPER_DAYS)[number];
 export type SimpleSr17Phase = 'cross-taper' | 'hold' | 'sr-taper';
 
+export interface SimpleSr17Distribution {
+  targetDaily: number;
+  actualDaily: number;
+  perDose: number;
+  dosesPerDay: number;
+  requestedFrequency: number;
+  frequencyAdjusted: boolean;
+}
+
 export interface SimpleSr17Step {
   startDay: number;
   endDay: number;
@@ -21,18 +30,23 @@ export interface SimpleSr17Schedule {
   steps: SimpleSr17Step[];
   totalDurationDays: SimpleSr17TaperDays;
   totalSrMg: number;
+  totalSrTablets: number;
   sevenOhStopDay: number;
 }
 
 interface SimpleDaySpec {
   phase: SimpleSr17Phase;
   sevenOhFactor: number;
-  srFrequencyDrop: number;
+  srFrequencyStage: 0 | 1 | 2 | 3 | 4;
   srDoseFactor: number;
 }
 
 function roundDose(value: number): number {
   return Math.round(value * 100) / 100;
+}
+
+function roundToTabletQuarter(value: number): number {
+  return Math.max(12.5, Math.round(value / 12.5) * 12.5);
 }
 
 function repeat(spec: SimpleDaySpec, days: number): SimpleDaySpec[] {
@@ -45,21 +59,21 @@ function daySpecs(durationDays: SimpleSr17TaperDays): SimpleDaySpec[] {
       {
         phase: 'hold',
         sevenOhFactor: 0,
-        srFrequencyDrop: 0,
+        srFrequencyStage: 0,
         srDoseFactor: 1,
       },
       days,
     );
   const srTaper = (
     days: number,
-    srFrequencyDrop: number,
+    srFrequencyStage: 1 | 2 | 3 | 4,
     srDoseFactor = 1,
   ) =>
     repeat(
       {
         phase: 'sr-taper',
         sevenOhFactor: 0,
-        srFrequencyDrop,
+        srFrequencyStage,
         srDoseFactor,
       },
       days,
@@ -67,7 +81,7 @@ function daySpecs(durationDays: SimpleSr17TaperDays): SimpleDaySpec[] {
   const crossTaper = (sevenOhFactor: number) => ({
     phase: 'cross-taper' as const,
     sevenOhFactor,
-    srFrequencyDrop: 0,
+    srFrequencyStage: 0 as const,
     srDoseFactor: 1,
   });
 
@@ -76,9 +90,10 @@ function daySpecs(durationDays: SimpleSr17TaperDays): SimpleDaySpec[] {
       crossTaper(0.5),
       crossTaper(0.25),
       ...hold(1),
-      ...srTaper(2, 1),
+      ...srTaper(1, 1),
       ...srTaper(1, 2),
-      ...srTaper(1, Number.POSITIVE_INFINITY, 0.5),
+      ...srTaper(1, 3),
+      ...srTaper(1, 4, 0.5),
     ];
   }
 
@@ -90,8 +105,9 @@ function daySpecs(durationDays: SimpleSr17TaperDays): SimpleDaySpec[] {
       crossTaper(0),
       ...hold(1),
       ...srTaper(2, 1),
-      ...srTaper(2, 2),
-      ...srTaper(1, Number.POSITIVE_INFINITY, 0.5),
+      ...srTaper(1, 2),
+      ...srTaper(1, 3),
+      ...srTaper(1, 4, 0.5),
     ];
   }
 
@@ -104,26 +120,72 @@ function daySpecs(durationDays: SimpleSr17TaperDays): SimpleDaySpec[] {
     ...hold(2),
     ...srTaper(2, 1),
     ...srTaper(2, 2),
-    ...srTaper(2, Number.POSITIVE_INFINITY),
-    ...srTaper(1, Number.POSITIVE_INFINITY, 0.5),
+    ...srTaper(2, 3),
+    ...srTaper(1, 4, 0.5),
   ];
 }
 
-export function recommendedSr17PerDose(
-  sevenOhPerDose: number,
-  highDoseSr17 = 100,
+export function recommendedDailySr17(
+  dailySevenOh: number,
+  highDailySr17 = 300,
 ): number | null {
-  if (!Number.isFinite(sevenOhPerDose) || sevenOhPerDose <= 0) return null;
-  if (sevenOhPerDose < 100) return 25;
-  if (sevenOhPerDose < 300) return 50;
-  if (sevenOhPerDose < 1000) return 75;
-  return Math.min(100, Math.max(75, highDoseSr17));
+  if (!Number.isFinite(dailySevenOh) || dailySevenOh <= 0) return null;
+  if (dailySevenOh < 100) return 75;
+  if (dailySevenOh < 300) return 150;
+  if (dailySevenOh < 1000) return 225;
+  return Math.min(400, Math.max(300, highDailySr17));
+}
+
+export function distributeSr17DailyTarget(
+  targetDaily: number,
+  requestedFrequency: number,
+): SimpleSr17Distribution {
+  const normalizedTarget = Math.max(0, targetDaily);
+  const normalizedRequestedFrequency = Math.min(
+    6,
+    Math.max(1, Math.round(requestedFrequency)),
+  );
+  const minimumFrequency = Math.max(1, Math.ceil(normalizedTarget / 100));
+  const dosesPerDay = Math.min(
+    6,
+    Math.max(normalizedRequestedFrequency, minimumFrequency),
+  );
+  const perDose = Math.min(
+    100,
+    Math.max(
+      12.5,
+      Math.round(normalizedTarget / dosesPerDay / 12.5) * 12.5,
+    ),
+  );
+
+  return {
+    targetDaily: roundDose(normalizedTarget),
+    actualDaily: roundDose(perDose * dosesPerDay),
+    perDose: roundDose(perDose),
+    dosesPerDay,
+    requestedFrequency: normalizedRequestedFrequency,
+    frequencyAdjusted: dosesPerDay !== normalizedRequestedFrequency,
+  };
+}
+
+function srFrequencyStages(initialFrequency: number): number[] {
+  const normalized = Math.min(6, Math.max(1, Math.round(initialFrequency)));
+  const stages: Record<number, number[]> = {
+    1: [1, 1, 1, 1, 1],
+    2: [2, 1, 1, 1, 1],
+    3: [3, 2, 1, 1, 1],
+    4: [4, 3, 2, 1, 1],
+    5: [5, 4, 3, 2, 1],
+    6: [6, 5, 3, 2, 1],
+  };
+  return stages[normalized];
 }
 
 export function buildSimpleSr17Schedule(
   sevenOhPerDose: number,
+  sevenOhDosesPerDay: number,
   srPerDose: number,
-  dosesPerDay: number,
+  srDosesPerDay: number,
   durationDays: SimpleSr17TaperDays,
 ): SimpleSr17Schedule {
   if (!SIMPLE_SR17_TAPER_DAYS.includes(durationDays)) {
@@ -132,19 +194,20 @@ export function buildSimpleSr17Schedule(
 
   const normalizedSevenOhDose = Math.max(0, sevenOhPerDose);
   const normalizedSrDose = Math.max(0, srPerDose);
-  const normalizedFrequency = Math.min(
-    24,
-    Math.max(1, Math.round(dosesPerDay)),
+  const normalizedSevenOhFrequency = Math.min(
+    6,
+    Math.max(1, Math.round(sevenOhDosesPerDay)),
   );
+  const frequencies = srFrequencyStages(srDosesPerDay);
   const specs = daySpecs(durationDays);
   const dailySteps = specs.map((spec, index): SimpleSr17Step => {
-    const srDosesPerDay = Number.isFinite(spec.srFrequencyDrop)
-      ? Math.max(1, normalizedFrequency - spec.srFrequencyDrop)
-      : 1;
+    const currentSrDosesPerDay = frequencies[spec.srFrequencyStage];
     const currentSevenOhDose = roundDose(
       normalizedSevenOhDose * spec.sevenOhFactor,
     );
-    const currentSrDose = roundDose(normalizedSrDose * spec.srDoseFactor);
+    const currentSrDose = roundDose(
+      roundToTabletQuarter(normalizedSrDose * spec.srDoseFactor),
+    );
 
     return {
       startDay: index + 1,
@@ -153,13 +216,13 @@ export function buildSimpleSr17Schedule(
       sevenOhPercent: spec.sevenOhFactor * 100,
       sevenOhPerDose: currentSevenOhDose,
       sevenOhDosesPerDay:
-        currentSevenOhDose === 0 ? 0 : normalizedFrequency,
+        currentSevenOhDose === 0 ? 0 : normalizedSevenOhFrequency,
       sevenOhTotalDaily: roundDose(
-        currentSevenOhDose * normalizedFrequency,
+        currentSevenOhDose * normalizedSevenOhFrequency,
       ),
       srPerDose: currentSrDose,
-      srDosesPerDay,
-      srTotalDaily: roundDose(currentSrDose * srDosesPerDay),
+      srDosesPerDay: currentSrDosesPerDay,
+      srTotalDaily: roundDose(currentSrDose * currentSrDosesPerDay),
       tabletEquivalent: roundDose(currentSrDose / 50),
     };
   });
@@ -183,13 +246,15 @@ export function buildSimpleSr17Schedule(
   const sevenOhStopDay =
     dailySteps.find((step) => step.sevenOhPerDose === 0)?.startDay ??
     durationDays;
+  const totalSrMg = roundDose(
+    dailySteps.reduce((total, step) => total + step.srTotalDaily, 0),
+  );
 
   return {
     steps,
     totalDurationDays: durationDays,
-    totalSrMg: roundDose(
-      dailySteps.reduce((total, step) => total + step.srTotalDaily, 0),
-    ),
+    totalSrMg,
+    totalSrTablets: Math.ceil(totalSrMg / 50),
     sevenOhStopDay,
   };
 }
