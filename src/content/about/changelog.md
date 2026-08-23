@@ -16,12 +16,23 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-08-22
 
+### Final typography system
+
+- Replaced the production display face with STIX Two Text and the reading and
+  interface face with Commissioner. Both variable fonts remain self-hosted with
+  explicit preloads and `font-display: swap`, preserving the load behavior
+  verified during font testing.
+- Removed both temporary font-comparison routes and their shared specimen
+  component. The eight unused font packages are gone as well.
+
 ### Live meeting visibility
 
 - A live 7-OH or kratom meeting now gets a distinct green treatment in the
   homepage support panel, with a clear live badge, time remaining, meeting
   platform, and direct join button. Upcoming meetings keep the quieter default
   row so the live state is immediately recognizable.
+- The homepage link for all 7-OH and kratom meetings now opens the local-time
+  meeting finder. Readers can continue to the full schedule from that page.
 
 ### Withdrawal quickstart
 
@@ -29,13 +40,21 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   that puts the liposomal vitamin C schedule and basic supplies first, then
   routes readers to helper medications, kratom leaf, concentrated mitragynine,
   SR-17, and buprenorphine care.
-- Added verified direct-source links for the four basic supplies, TelyRx
-  clonidine review, and QuickMD 7-OH/kratom treatment. The page sends readers
-  back to the full site guides for medication dosing, sourcing caveats,
-  induction timing, and evidence limits.
+- Added Amazon links for the four basic supplies. TelyRx clonidine review and
+  QuickMD 7-OH/kratom treatment stay linked to their official sites. The page
+  sends readers back to the full site guides for medication dosing, sourcing
+  caveats, induction timing, and evidence limits.
 - Linked the quickstart from the immediate-help page and the site-use map so a
   reader can reach it without searching. Queries for a withdrawal supply list
   or quit preparation now route to the same page.
+- Added the quickstart beside the quitting-options comparison in the homepage
+  hero. The quickstart uses the filled action. The comparison stays available
+  in an outlined action.
+- Fixed the vitamin C schedule disclosure so its triangle and title remain on
+  one line.
+- Added a quiet copy shortcut at the end of the quickstart. It puts a
+  Reddit-formatted set of canonical quitting7oh.org starter links on the
+  clipboard, with a fallback for browsers that block the modern clipboard API.
 
 ### MiniSearch experiment
 
