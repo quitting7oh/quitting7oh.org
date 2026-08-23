@@ -25,7 +25,7 @@ RUN --mount=type=cache,target=/root/.npm \
 # Copy the rest of the source.
 COPY . .
 
-# Build Astro and the Pagefind search index (npm run build does both).
+# Build Astro, including the static MiniSearch index route.
 RUN npm run build
 
 # -------- Shared nginx runtime shell --------
