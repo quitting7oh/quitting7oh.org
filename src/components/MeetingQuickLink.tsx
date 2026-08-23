@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ArrowRight, CalendarDays, ExternalLink } from 'lucide-react';
-import { FELLOWSHIPS, findDisplayMeeting } from '~/data/meetings';
+import { ArrowRight, CalendarDays, ExternalLink, Radio } from 'lucide-react';
+import { FELLOWSHIPS, findDisplayMeeting, platformFromUrl } from '~/data/meetings';
 import { cn } from '~/lib/utils';
 import { recordMeetingJoin } from '~/lib/meeting-history';
 
@@ -74,11 +74,70 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
         target={external ? '_blank' : undefined}
         rel={external ? 'noopener noreferrer' : undefined}
         onClick={recordJoin}
-        className={cn('inline-flex min-h-[3.25rem] items-center justify-center gap-2 rounded-lg border border-border bg-card px-4 py-3 text-center text-base font-bold text-foreground hover:border-primary hover:bg-accent', className)}
+        className={cn(
+          'inline-flex min-h-[3.25rem] items-center justify-center gap-2 rounded-lg border px-4 py-3 text-center text-base font-bold',
+          isLive
+            ? 'border-success bg-success text-success-foreground shadow-sm hover:bg-success/90'
+            : 'border-border bg-card text-foreground hover:border-primary hover:bg-accent',
+          className,
+        )}
       >
+        {isLive && <Radio className="size-4" aria-hidden="true" />}
         <span aria-live="polite">{label}</span>
         {external && <ExternalLink className="size-4" aria-hidden="true" />}
       </a>
+    );
+  }
+
+  if (isLive && display && now && meeting) {
+    const fellowship = FELLOWSHIPS[meeting.fellowship];
+    const remaining = formatCountdown(display.end.getTime() - now.getTime());
+    const platform = platformFromUrl(meeting.joinUrl);
+
+    return (
+      <div
+        className={cn(
+          'relative grid min-h-[6.5rem] grid-cols-[2.5rem_minmax(0,1fr)] items-start gap-x-3 gap-y-2 overflow-hidden bg-success/[0.08] px-4 py-3.5 text-foreground before:absolute before:inset-y-0 before:left-0 before:w-1 before:bg-success sm:grid-cols-[2.5rem_minmax(0,1fr)_auto] sm:items-center sm:px-5',
+          className,
+        )}
+        aria-live="polite"
+      >
+        <span className="row-span-2 inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-success text-success-foreground shadow-sm sm:row-span-1">
+          <Radio className="size-5" aria-hidden="true" />
+        </span>
+
+        <span className="min-w-0">
+          <span className="inline-flex items-center gap-1.5 rounded-md bg-success px-2 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.1em] text-success-foreground">
+            <span className="size-1.5 rounded-full bg-current" aria-hidden="true" />
+            Live now · 7-OH / kratom
+          </span>
+          <span className="mt-1.5 block font-bold leading-snug">
+            {fellowship.shortName} — {meeting.format}
+          </span>
+          <span className="mt-0.5 block text-sm leading-snug text-muted-foreground">
+            {remaining} remaining · {platform}
+          </span>
+        </span>
+
+        <span className="col-start-2 flex flex-wrap items-center gap-x-3 gap-y-1 sm:col-start-3 sm:row-start-1 sm:flex-col sm:items-stretch sm:justify-center sm:gap-1.5">
+          <a
+            href={meeting.joinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={recordJoin}
+            className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-lg bg-success px-3.5 py-2 text-sm font-bold text-success-foreground shadow-sm hover:bg-success/90"
+          >
+            Join live
+            <ExternalLink className="size-3.5" aria-hidden="true" />
+          </a>
+          <a
+            href="/resources/meeting-schedules"
+            className="inline-flex min-h-9 items-center justify-center rounded-md px-1.5 text-xs font-bold text-primary hover:bg-accent"
+          >
+            Full schedule
+          </a>
+        </span>
+      </div>
     );
   }
 
