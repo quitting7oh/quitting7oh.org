@@ -55,6 +55,9 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Added a quiet copy shortcut at the end of the quickstart. It puts a
   Reddit-formatted set of canonical quitting7oh.org starter links on the
   clipboard, with a fallback for browsers that block the modern clipboard API.
+- Replaced the veterinary gabapentin notes shortcut with direct Dog & Cat Stuff
+  and Pet Pharm Canada product links. The full helper-medication reference stays
+  directly beneath them for dosing and mixing cautions.
 
 ### MiniSearch experiment
 
