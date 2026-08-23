@@ -7,6 +7,7 @@ sort: 4.25
 ---
 
 import QuickstartLinkRow from '../../components/QuickstartLinkRow.astro';
+import QuickstartRedditCopy from '../../components/QuickstartRedditCopy';
 
 > **Use this page to get set up.** It collects the links and supplies that readers reach for most. The linked guides carry the dosing details, evidence limits, and safety notes.
 
@@ -16,7 +17,7 @@ If your quit is planned, start the liposomal vitamin C preload before your last 
 
 <details className="not-prose my-6 overflow-hidden rounded-lg border border-border bg-card/55">
   <summary className="cursor-pointer px-4 py-3 font-bold text-foreground marker:text-primary hover:bg-accent/35 sm:px-5">
-    Exact liposomal vitamin C schedule
+    <span>Exact liposomal vitamin C schedule</span>
   </summary>
   <div className="border-t border-border px-4 py-4 text-[1rem] leading-relaxed text-foreground sm:px-5">
     <dl className="grid gap-4 sm:grid-cols-2">
@@ -41,32 +42,32 @@ If your quit is planned, start the liposomal vitamin C preload before your last 
 
 ### Buy the basics
 
-The links point to one current option for each item. Use any brand that matches the form and dose. The site earns nothing from these links. The [full supplement guide](/medications-supplements/vitamins-supplements) includes cheaper options and the rest of the stack.
+Each supply link opens a focused Amazon search. Use any brand that matches the form and dose. The site earns nothing from these links. The [full supplement guide](/medications-supplements/vitamins-supplements) includes cheaper options and the rest of the stack.
 
 <div className="not-prose mb-8 border-b border-border">
   <QuickstartLinkRow
     title="Liposomal vitamin C"
     description="LivOn Labs Lypo-Spheric Vitamin C in 1,000 mg packets. Match any substitute to the liposomal form used in the protocol."
-    href="https://www.livonlabs.com/products/vitamin-c/"
-    action="Shop LivOn"
+    href="https://www.amazon.com/s?k=LivOn+Labs+Lypo-Spheric+Vitamin+C+1000mg"
+    action="Shop Amazon"
   />
   <QuickstartLinkRow
     title="Electrolytes"
     description="LMNT variety pack. Pedialyte, Liquid I.V., coconut water, or another electrolyte mix can fill the same role."
-    href="https://drinklmnt.com/products/lmnt-recharge-variety-pack"
-    action="Shop LMNT"
+    href="https://www.amazon.com/s?k=LMNT+electrolyte+powder+variety+pack"
+    action="Shop Amazon"
   />
   <QuickstartLinkRow
     title="Magnesium glycinate"
     description="Nature Made 200 mg capsules. Check the elemental-magnesium amount when comparing labels."
-    href="https://www.naturemade.com/products/high-absorption-magnesium-glycinate-200-mg-capsules"
-    action="Shop Nature Made"
+    href="https://www.amazon.com/s?k=Nature+Made+magnesium+glycinate+200+mg"
+    action="Shop Amazon"
   />
   <QuickstartLinkRow
     title="B-complex"
     description="LivOn Labs B Complex Plus. A standard B-complex with methylated B12 and folate also works."
-    href="https://www.livonlabs.com/products/b-complex-plus"
-    action="Shop LivOn"
+    href="https://www.amazon.com/s?k=LivOn+Labs+B+Complex+Plus"
+    action="Shop Amazon"
   />
 </div>
 
@@ -136,3 +137,5 @@ QuickMD offers same-day online appointments in many states and lists treatment f
 </div>
 
 > **Stopping alcohol or benzodiazepines too?** Those withdrawals can cause seizures and need medical guidance. Use [SAMHSA treatment help](/resources/crisis-hotlines#samhsa-national-helpline) or medical care instead of this checklist alone.
+
+<QuickstartRedditCopy client:load />
