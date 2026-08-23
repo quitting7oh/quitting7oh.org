@@ -188,10 +188,10 @@ not receive crisis styling.
 
 ## Verification
 
-- Clean production build: 104 static outputs with no server runtime.
-- Search index: 87 page records, 735,894 bytes raw and about 183 KB gzip in the
+- Clean production build: 105 static outputs with no server runtime.
+- Search index: 88 page records, 739,207 bytes raw and about 184 KB gzip in the
   measured build.
-- Search regression suite: 52 of 52 representative, intent, false-positive,
+- Search regression suite: 53 of 53 representative, intent, false-positive,
   typo, safety, negation, and exclusion cases pass without writing files.
 - TypeScript `--noEmit` and `git diff --check` pass.
 - Keyboard and mobile-width interaction checks cover embedded homepage search,

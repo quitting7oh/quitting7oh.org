@@ -33,7 +33,7 @@ export const CATEGORIES = [
   {
     slug: 'start-here',
     title: 'Start Here',
-    blurb: 'Welcome, how to use the site, withdrawal help, craving moments.',
+    blurb: 'Welcome, withdrawal planning, quitting paths, and craving moments.',
     Icon: Compass,
     section: 'recovery',
   },

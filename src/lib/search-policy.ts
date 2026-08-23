@@ -109,6 +109,12 @@ const INTENT_RULES: IntentRule[] = [
     categoryLabel: 'Meds & Supplements',
   },
   {
+    test: /\b(withdrawal (?:shopping|supply|supplies) list|what should i (?:buy|have) (?:before|for) (?:quitting|withdrawal)|help me (?:prepare|get ready) (?:to quit|for withdrawal)|quit kit checklist|withdrawal quickstart)\b/i,
+    url: '/start-here/7-oh-withdrawal-quickstart',
+    title: 'Withdrawal quickstart',
+    excerpt: 'Vitamin C, basic supplies, helper medications, quitting routes, and buprenorphine access in one compact setup page.',
+  },
+  {
     test: /\b(cold turkey or taper|how do i quit|where do i start|best way to (?:quit|get off)|i keep failing to quit|i need to get off (?:this|7oh|7-oh)|i need off (?:this|7oh|7-oh))\b/i,
     url: '/start-here/how-to-quit-7-oh',
     title: 'Compare ways to quit 7-OH',

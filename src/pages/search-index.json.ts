@@ -131,6 +131,7 @@ function resultPriority(url: string): number {
   if (url === '/resources/crisis-hotlines') return 1.9;
   if (url === '/start-here/7-oh-withdrawal-help') return 1.75;
   if (url === '/start-here/7-oh-withdrawal-guide') return 1.65;
+  if (url === '/start-here/7-oh-withdrawal-quickstart') return 1.2;
   if (url === '/start-here/how-to-quit-7-oh') return 1.55;
   if (url === '/resources/taper-calculator') return 1.4;
   if (url === '/medications-supplements/helper-meds') return 1.35;

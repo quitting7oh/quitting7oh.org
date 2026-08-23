@@ -102,9 +102,14 @@ const { title, description } = Astro.props;
       <p class="eyebrow">When you have a little more room</p>
       <h2 class="mt-2 font-display text-3xl font-semibold text-foreground">Read the full withdrawal guide</h2>
       <p class="mt-2 max-w-[35rem] text-base leading-relaxed text-muted-foreground">The longer reference covers the withdrawal timeline, symptom relief, ER expectations, sleep, food, and what comes next.</p>
-      <a href="/start-here/7-oh-withdrawal-guide" class="crisis-action mt-5 w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto">
-        Open the full guide <ArrowRight class="size-5" aria-hidden="true" />
-      </a>
+      <div class="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+        <a href="/start-here/7-oh-withdrawal-guide" class="crisis-action w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto">
+          Open the full guide <ArrowRight class="size-5" aria-hidden="true" />
+        </a>
+        <a href="/start-here/7-oh-withdrawal-quickstart" class="inline-flex min-h-11 items-center gap-1.5 px-1 text-sm font-bold text-primary underline decoration-primary/35 underline-offset-4 hover:decoration-primary">
+          Set up medications and supplies <ArrowRight class="size-4" aria-hidden="true" />
+        </a>
+      </div>
     </section>
 
     <div class="mt-14 flex items-center justify-center gap-2 text-sm text-muted-foreground">

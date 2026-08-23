@@ -2,7 +2,7 @@
 title: "How to Use This Website"
 description: "A short map of the site, organized by where you are right now, find the one page that's most useful for what you're going through."
 category: "start-here"
-last_updated: "2026-05-25"
+last_updated: "2026-08-22"
 sort: 3
 ---
 
@@ -30,6 +30,9 @@ step down to [kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf),
 [SR-17](/medications-supplements/sr-17).
 
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: the main page for this.
+- **[Withdrawal Quickstart](/start-here/7-oh-withdrawal-quickstart)**: a compact
+  setup page for vitamin C, basic supplies, helper medications, quitting
+  routes, and buprenorphine access.
 - **[Helper Medications](/medications-supplements/helper-meds)**: clonidine,
   gabapentin, trazodone, baclofen, and others. A same-day telehealth
   appointment can get most of these.

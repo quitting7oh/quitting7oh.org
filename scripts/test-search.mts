@@ -66,6 +66,7 @@ const intentCases = [
   ['what can I take for sleep?', '/medications-supplements/helper-meds#sleep-medications'],
   ['what helps withdrawal?', '/medications-supplements/helper-meds#quick-reference'],
   ['what supplements help?', '/medications-supplements/vitamins-supplements'],
+  ['what should I buy before quitting?', '/start-here/7-oh-withdrawal-quickstart'],
   ['cold turkey or taper?', '/start-here/how-to-quit-7-oh'],
   ['make me a taper schedule', '/resources/taper-calculator'],
   ['I have 10 pills left', '/resources/taper-calculator'],
