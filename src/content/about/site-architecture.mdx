@@ -24,7 +24,7 @@ The build produces one portable directory. Cloudflare Pages and the Docker image
 
 <SiteArchitecture view="pipeline" />
 
-The `prebuild` step copies the repository changelog into its public page. Astro then renders the site, and Pagefind indexes the finished HTML. The final `dist/` directory contains the pages, search index, fonts, scripts, styles, and images.
+The `prebuild` step copies the repository changelog into its public page. Astro then renders the site and serializes the content collection into a static MiniSearch index. The final `dist/` directory contains the pages, search index, fonts, scripts, styles, and images.
 
 ## Browser code
 

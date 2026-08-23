@@ -924,8 +924,8 @@ can stay in bare lists.
 ## Build / dev
 
 ```sh
-npm run dev                    # local dev server (no search index)
-npm run build                  # full build + Pagefind index
+npm run dev                    # local dev server with the static search route
+npm run build                  # full static build + MiniSearch index
 npm run preview                # serve dist/ locally to test search
 npm run link:compounds         # auto-link compound mentions
 ```

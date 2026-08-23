@@ -86,8 +86,8 @@ Quiet informational notes retain the simpler clay-edge treatment.
 - The scheduling notice is static Astro HTML with a tiny dismissal script. Its
   existing localStorage key is preserved, and a pre-paint check prevents both
   a dismissed-state flash and hydration layout shift.
-- Search renders as a working site-map link before hydration, then upgrades to
-  the Pagefind dialog at idle. The dialog uses full-screen mobile geometry,
+- Search renders as a working results-page link before hydration, then upgrades
+  to the MiniSearch dialog at idle. The dialog uses full-screen mobile geometry,
   focus management, Escape close, and keyboard result navigation.
 - The homepage `Right now, if you need it` strip combines withdrawal help,
   Discord `#sos`, the next 7-OH/kratom meeting, and Live NA/SMART alternatives
@@ -110,16 +110,20 @@ are visible, and `prefers-reduced-motion` removes smooth scrolling and motion.
 
 - Static output remains enabled; there is no adapter, server function, or edge
   middleware.
-- All 98 pre-existing routes remain. `/404` is the only added route.
-- Pagefind indexes the production output.
+- Pre-existing routes remain available. The MiniSearch experiment adds a
+  dedicated `/search` page and a static `/search-index.json` asset.
+- MiniSearch indexes guide content and selected live-resource routes during
+  the Astro build. The changelog, font specimens, error page, and category
+  shells stay out of results.
 - Theme selection still runs before paint and preserves system/light/dark
   behavior.
 - Meeting widgets and schedules continue to use `src/data/meetings.ts`.
 - Taper and SOWS components retain their dosing and scoring math.
 - Breadcrumbs, category pagination, updated timestamps, changelog sync, mobile
   navigation, active-section tracking, and external-link behavior remain.
-- No files under `src/content`, `.github/workflows`, or the existing automation
-  scripts were changed for rev 2.
+- The site-architecture reference under `src/content` was updated to describe
+  this experiment. No recovery-guidance content, GitHub workflow, or existing
+  automation script was changed for the search work.
 
 No functionality was intentionally deferred.
 
@@ -150,7 +154,8 @@ normal production build both pass.
 
 ## Toolchain
 
-Rev 2 did not add a dependency. It uses the current experimental-branch stack:
+The MiniSearch experiment replaces Pagefind with one small client-side search
+dependency. It uses the current experimental-branch stack:
 
 | Package | Version |
 | --- | --- |
@@ -158,19 +163,43 @@ Rev 2 did not add a dependency. It uses the current experimental-branch stack:
 | Vite | 8.2.1 |
 | React | 19.2.8 |
 | Tailwind CSS | 4.3.3 |
-| Pagefind | 1.5.2 |
+| MiniSearch | 7.2.0 |
 | TypeScript | 7.0.2 |
 
-The project remains verified with Node 26.7.0 and npm 12.0.2.
+The project is verified with Node 24.15.0 and npm 12.0.2.
+
+## Search experiment
+
+The comparison used 40 representative queries plus an 18-query blind holdout.
+The existing Pagefind configuration returned a weighted relevance score of
+60.6% on the main set and 49.4% on the holdout. The MiniSearch prototype scored
+91.7% and 77.2% respectively, with the correct page first for 70.9% of the
+holdout weight. Tuning Pagefind against the known queries raised its main-set
+score but did not improve the blind holdout, so the experiment favors the
+smaller, explicit MiniSearch ranking policy.
+
+Search is still static and private by construction: Astro serializes the index
+at build time, browsers fetch it on demand, and queries are evaluated locally.
+The interface adds typo tolerance, recovery-language aliases, deep links to the
+best matching section, deterministic urgent-resource pins, negation handling,
+suggested queries, and shareable topic/type filters on `/search`.
 
 ## Verification
 
-- Production build: 99 static pages; Pagefind indexed 82 content pages and
-  10,504 words.
-- Route diff: 98 baseline routes, zero removed or renamed, one addition
-  (`/404`).
-- Generated-HTML audit across all 99 pages: exactly one `h1`, skip link first,
-  no skipped heading levels, no duplicate IDs, and no external anchors missing
+- Clean production build: 104 static outputs with no server runtime.
+- Search index: 87 page records, 735,894 bytes raw and 183,476 bytes gzip in the
+  measured build.
+- Search regression suite: 20 of 20 representative, typo, safety, negation,
+  and exclusion cases pass without writing files.
+- TypeScript `--noEmit` and `git diff --check` pass.
+- Keyboard and mobile-width interaction checks cover embedded homepage search,
+  the header dialog, section links, urgent pins, filters, empty results, arrow
+  navigation, Enter, and Escape.
+
+The earlier rev-2 redesign baseline remains:
+
+- Generated-HTML audit: exactly one `h1`, skip link first, no skipped heading
+  levels, no duplicate IDs, and no external anchors missing
   `target="_blank" rel="noopener noreferrer"`.
 - Axe 4.13.0 on homepage, crisis, long guide, meetings, and category templates:
   zero violations on all five.

@@ -3,9 +3,8 @@
 Static documentation site compiled from a community Discord server for people
 recovering from 7-OH, kratom synthetics, and related opioid dependence.
 
-Built with [Astro](https://astro.build), Tailwind CSS, and Pagefind. Content
-is plain markdown. There is no CMS, no database, no user accounts, and no
-tracking.
+Built with [Astro](https://astro.build), Tailwind CSS, and MiniSearch. Content
+is plain markdown. There is no CMS, database, or user account system.
 
 ## Quick start (local dev)
 
@@ -16,13 +15,9 @@ npm run dev
 
 Then open <http://localhost:4321>.
 
-Search uses [Pagefind](https://pagefind.app/), which indexes the site at build
-time. The dev server therefore won't have working search until you run:
-
-```sh
-npm run build
-npm run preview
-```
+Search uses [MiniSearch](https://lucaong.github.io/minisearch/). Astro builds a
+static index from the content collection; queries run entirely in the browser.
+Search works in both the development server and the production preview.
 
 ## Project structure
 
@@ -194,6 +189,6 @@ Cloudflare for caching/DDoS protection while keeping origin control.
 
 - No blog, comments, accounts, or forum (the Discord is the forum).
 - No affiliate links, ads, or any other monetization.
-- No JavaScript-heavy interactive features. Pagefind and the theme toggle
-  are the only scripts, and Pagefind only loads when the user focuses a
-  search input.
+- No application runtime or account system. Article HTML is static; focused
+  React islands handle calculators, meeting state, navigation, and search.
+  MiniSearch and its index load only when a reader focuses or opens search.

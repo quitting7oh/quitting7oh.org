@@ -37,7 +37,7 @@ const coreStack = [
   ['React DOM', installedVersion('react-dom'), 'Browser rendering for hydrated React islands'],
   ['Tailwind CSS', installedVersion('tailwindcss'), 'Design tokens, responsive layout, and component styling'],
   ['TypeScript', installedVersion('typescript'), 'Types for components, content data, and build tools'],
-  ['Pagefind', installedVersion('pagefind'), 'Static search index with a client-side search interface'],
+  ['MiniSearch', installedVersion('minisearch'), 'Browser-side full-text search over a static build-time index'],
   ['Radix UI', installedVersion('radix-ui'), 'Accessible behavior for selected interface primitives'],
   ['Lucide React', installedVersion('lucide-react'), 'Interface icon set'],
 ] as const;
@@ -45,13 +45,13 @@ const coreStack = [
 const buildPath = [
   ['01', 'Source', 'Markdown and MDX content, Astro pages, meeting data, and components'],
   ['02', 'Astro build', 'Renders routes to HTML and writes optimized assets'],
-  ['03', 'Pagefind pass', 'Indexes the finished pages after Astro writes the site'],
-  ['04', 'dist/', 'Portable static files with no application server'],
+  ['03', 'Search index', 'Astro serializes the guide into one static MiniSearch index'],
+  ['04', 'dist/', 'Portable pages, assets, and search data with no application server'],
 ] as const;
 
 const islands = [
   ['Header and guide drawer', 'React', 'Loaded when the page loads for navigation, theme controls, and the mobile drawer'],
-  ['Search', 'React + Pagefind', 'Loads the client search interface; the index stays in static files'],
+  ['Search', 'React + MiniSearch', 'Lazy-loads a static index and runs every query inside the reader’s browser'],
   ['Meetings', 'React', 'Calculates local time and live status from committed meeting data'],
   ['Calculators', 'React', 'Runs taper and symptom calculations in the browser without sending entries to a server'],
   ['Article navigation', 'React', 'Tracks the active section and exposes the mobile table of contents and back-to-top control'],

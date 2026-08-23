@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-22"
+last_updated: "2026-08-23"
 sort: 6
 ---
 
@@ -15,6 +15,24 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-08-22
+
+### MiniSearch experiment
+
+- Replaced Pagefind on the experiment branch with a compact static MiniSearch
+  index that loads only when search is used. The changelog and utility pages
+  stay out of results, while the live meeting finders remain searchable.
+- The homepage search now works in place. The header retains its focused search
+  dialog, and `/search` provides shareable topic and page-type filters for a
+  longer search session.
+- Added recovery-language aliases, typo tolerance, useful no-result suggestions,
+  and links to the best matching section within a guide instead of always
+  dropping readers at the top of a page.
+- Added deterministic urgent-resource results for overdose, self-harm, unsafe
+  surroundings, dangerous depressant combinations, severe withdrawal warning
+  signs, precipitated withdrawal, and immediate cravings. Negated phrases such
+  as “not suicidal” do not trigger the self-harm result.
+- Added 20 non-writing search regressions covering common queries, misspellings,
+  safety handling, meeting and calculator discovery, and index exclusions.
 
 ### Site search
 
