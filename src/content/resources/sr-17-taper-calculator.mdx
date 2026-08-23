@@ -1,8 +1,8 @@
 ---
-title: "SR-17 Cross-Taper Calculator"
-description: "Day-by-day schedule for the SR-17 cross-taper protocol: preload, 7-OH cross-taper, hold, then SR taper down to a jump-off. Configurable per phase."
+title: "SR-17 Taper Calculator"
+description: "Build a simple 7, 10, or 14-day 7-OH to SR-17 cross-taper, or switch to the configurable advanced calculator."
 category: "resources"
-last_updated: "2026-06-09"
+last_updated: "2026-08-22"
 sort: 8
 wide: true
 ---
@@ -11,9 +11,26 @@ import { Sr17CrossTaper } from '~/components/Sr17CrossTaper';
 
 <Sr17CrossTaper client:load />
 
-> **SR-17 has never been studied in humans.** All efficacy and safety data is rodent. The community protocol below is documented in detail on the [SR-17 page](/medications-supplements/sr-17); this calculator just does the day-by-day math from your inputs. SR-17 is still a mu-opioid agonist, it produces its own dependence and withdrawal, and the sourcing realities are real. Read the full page before committing to the protocol.
+> **SR-17 has never been studied in humans.** All efficacy and safety data is rodent. The community protocols below are documented in detail on the [SR-17 page](/medications-supplements/sr-17); this calculator does the day-by-day math from your inputs. SR-17 is still a mu-opioid agonist, produces its own dependence and withdrawal, and comes from an unregulated supply. Read the full page before committing to either protocol.
 
-## What this calculator builds
+## Simple mode
+
+Simple opens first. Enter your current 7-OH dose and choose how many times you take it each day. The calculator matches that frequency and selects the starting SR-17 dose from this community-developed ladder:
+
+- Under 100 mg of 7-OH per dose: 25 mg of SR-17 per dose
+- 100–299 mg: 50 mg of SR-17
+- 300–999 mg: 75 mg of SR-17
+- 1,000 mg or more: 100 mg of SR-17, adjustable down to 75 mg
+
+The ladder uses halves of a standard 50 mg tablet instead of hard-to-measure fifths or eighths. It gives more SR-17 than the original prototype. No human dosing study supports this community-derived conversion.
+
+The 7, 10, and 14-day choices cover the **complete cross-taper**. SR-17 begins at the same frequency as your current 7-OH schedule while 7-OH falls to zero. The plan then holds SR-17 for one or two days, removes daily SR-17 doses, and ends with half of the starting SR-17 amount for the final dose.
+
+- **7 days:** starts with half of the current 7-OH dose and stops 7-OH on Day 3.
+- **10 days:** keeps the current 7-OH dose on Day 1 and stops it on Day 4.
+- **14 days:** adds a 12.5% 7-OH step and stops it on Day 5, with a longer SR-only runway.
+
+## Advanced mode
 
 The SR-17 protocol is a **cross-taper**, not a single-substance taper. The calculator generates four sequential phases plus an optional allergy-test day:
 
