@@ -160,7 +160,7 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
         <ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
       </a>
       <a
-        href="/resources/meeting-schedules"
+        href="/next-kratom-support-meeting"
         aria-label="All 7-OH and kratom meetings"
         className="ml-[3.25rem] inline-flex min-h-11 w-full items-center rounded-md px-2 text-sm font-bold text-primary hover:bg-accent sm:ml-0 sm:w-auto"
       >
