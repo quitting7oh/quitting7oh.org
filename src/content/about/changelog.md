@@ -14,6 +14,14 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-08-23
+
+### Simple SR-17 starting tier
+
+- Lowered the under-100 mg/day 7-OH tier from 75 mg to 50 mg of SR-17 per
+  day. Three source doses map to two 25 mg SR-17 doses; five or six source
+  doses map to four 12.5 mg SR-17 doses. The source frequency stays unchanged.
+
 ## 2026-08-22
 
 ### Final typography system

@@ -342,6 +342,12 @@ function simplePhaseLabel(phase: 'cross-taper' | 'hold' | 'sr-taper') {
   return 'Reduce SR-17';
 }
 
+function routineFrequencyLabel(frequency: number): string {
+  if (frequency === 1) return 'once-daily';
+  if (frequency === 2) return 'twice-daily';
+  return `${frequency}-times-daily`;
+}
+
 function buildSimpleScheduleText(
   inputs: SimpleSr17Inputs,
   distribution: SimpleSr17Distribution,
@@ -619,9 +625,11 @@ function SimpleSr17Calculator() {
                   </p>
                 </div>
                 <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                  {distribution.frequencyAdjusted
+                  {distribution.frequencyAdjustment === 'dose-ceiling'
                     ? `The ${formatDose(distribution.targetDaily)} mg daily target would exceed 100 mg in ${distribution.requestedFrequency} SR-17 ${distribution.requestedFrequency === 1 ? 'dose' : 'doses'}, so the plan divides SR-17 into ${distribution.dosesPerDay} doses. Your 7-OH remains at ${inputs.ohDosesPerDay} ${inputs.ohDosesPerDay === 1 ? 'dose' : 'doses'} per day while it is reduced.`
-                    : `The plan matches your ${inputs.ohDosesPerDay}-times-daily routine, then reduces the number of SR-17 doses.`}
+                    : distribution.frequencyAdjustment === 'tablet-rounding'
+                      ? `The ${formatDose(distribution.targetDaily)} mg daily target cannot split evenly into ${distribution.requestedFrequency} SR-17 doses using quarter-tablet increments. The plan uses ${distribution.dosesPerDay} SR-17 doses. Your 7-OH remains at ${inputs.ohDosesPerDay} doses per day while it is reduced.`
+                      : `The plan matches your ${routineFrequencyLabel(inputs.ohDosesPerDay)} routine, then reduces the number of SR-17 doses.`}
                   {distribution.actualDaily !== distribution.targetDaily &&
                     ` The ${formatDose(distribution.targetDaily)} mg target rounds to ${formatDose(distribution.actualDaily)} mg using quarter-tablet increments.`}
                 </p>

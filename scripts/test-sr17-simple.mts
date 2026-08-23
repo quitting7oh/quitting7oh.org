@@ -9,7 +9,7 @@ import {
 
 const recommendationCases: Array<[number, number | undefined, number | null]> = [
   [0, undefined, null],
-  [99.99, undefined, 75],
+  [99.99, undefined, 50],
   [100, undefined, 150],
   [299.99, undefined, 150],
   [300, undefined, 225],
@@ -35,6 +35,7 @@ assert.deepEqual(distributeSr17DailyTarget(225, 6), {
   dosesPerDay: 6,
   requestedFrequency: 6,
   frequencyAdjusted: false,
+  frequencyAdjustment: null,
 });
 assert.deepEqual(distributeSr17DailyTarget(225, 1), {
   targetDaily: 225,
@@ -43,6 +44,7 @@ assert.deepEqual(distributeSr17DailyTarget(225, 1), {
   dosesPerDay: 3,
   requestedFrequency: 1,
   frequencyAdjusted: true,
+  frequencyAdjustment: 'dose-ceiling',
 });
 assert.deepEqual(distributeSr17DailyTarget(225, 4), {
   targetDaily: 225,
@@ -51,14 +53,25 @@ assert.deepEqual(distributeSr17DailyTarget(225, 4), {
   dosesPerDay: 4,
   requestedFrequency: 4,
   frequencyAdjusted: false,
+  frequencyAdjustment: null,
 });
-assert.deepEqual(distributeSr17DailyTarget(75, 6), {
-  targetDaily: 75,
-  actualDaily: 75,
+assert.deepEqual(distributeSr17DailyTarget(50, 6), {
+  targetDaily: 50,
+  actualDaily: 50,
   perDose: 12.5,
-  dosesPerDay: 6,
+  dosesPerDay: 4,
   requestedFrequency: 6,
-  frequencyAdjusted: false,
+  frequencyAdjusted: true,
+  frequencyAdjustment: 'tablet-rounding',
+});
+assert.deepEqual(distributeSr17DailyTarget(50, 3), {
+  targetDaily: 50,
+  actualDaily: 50,
+  perDose: 25,
+  dosesPerDay: 2,
+  requestedFrequency: 3,
+  frequencyAdjusted: true,
+  frequencyAdjustment: 'tablet-rounding',
 });
 assert.deepEqual(distributeSr17DailyTarget(400, 1), {
   targetDaily: 400,
@@ -67,6 +80,7 @@ assert.deepEqual(distributeSr17DailyTarget(400, 1), {
   dosesPerDay: 4,
   requestedFrequency: 1,
   frequencyAdjusted: true,
+  frequencyAdjustment: 'dose-ceiling',
 });
 assert.equal(distributeSr17DailyTarget(225, 24).requestedFrequency, 6);
 

@@ -10,6 +10,7 @@ export interface SimpleSr17Distribution {
   dosesPerDay: number;
   requestedFrequency: number;
   frequencyAdjusted: boolean;
+  frequencyAdjustment: 'dose-ceiling' | 'tablet-rounding' | null;
 }
 
 export interface SimpleSr17Step {
@@ -130,7 +131,7 @@ export function recommendedDailySr17(
   highDailySr17 = 300,
 ): number | null {
   if (!Number.isFinite(dailySevenOh) || dailySevenOh <= 0) return null;
-  if (dailySevenOh < 100) return 75;
+  if (dailySevenOh < 100) return 50;
   if (dailySevenOh < 300) return 150;
   if (dailySevenOh < 1000) return 225;
   return Math.min(400, Math.max(300, highDailySr17));
@@ -146,10 +147,13 @@ export function distributeSr17DailyTarget(
     Math.max(1, Math.round(requestedFrequency)),
   );
   const minimumFrequency = Math.max(1, Math.ceil(normalizedTarget / 100));
-  const dosesPerDay = Math.min(
+  let dosesPerDay = Math.min(
     6,
     Math.max(normalizedRequestedFrequency, minimumFrequency),
   );
+  if (normalizedTarget === 50 && ![1, 2, 4].includes(dosesPerDay)) {
+    dosesPerDay = dosesPerDay === 3 ? 2 : 4;
+  }
   const perDose = Math.min(
     100,
     Math.max(
@@ -157,6 +161,12 @@ export function distributeSr17DailyTarget(
       Math.round(normalizedTarget / dosesPerDay / 12.5) * 12.5,
     ),
   );
+  const frequencyAdjustment =
+    dosesPerDay === normalizedRequestedFrequency
+      ? null
+      : normalizedTarget === 50
+        ? 'tablet-rounding'
+        : 'dose-ceiling';
 
   return {
     targetDaily: roundDose(normalizedTarget),
@@ -165,6 +175,7 @@ export function distributeSr17DailyTarget(
     dosesPerDay,
     requestedFrequency: normalizedRequestedFrequency,
     frequencyAdjusted: dosesPerDay !== normalizedRequestedFrequency,
+    frequencyAdjustment,
   };
 }
 
