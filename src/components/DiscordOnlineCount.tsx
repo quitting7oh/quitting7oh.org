@@ -3,8 +3,12 @@ import { useEffect, useState } from 'react';
 const GUILD_ID = '1366097989382307901';
 const WIDGET_URL = `https://discord.com/api/guilds/${GUILD_ID}/widget.json`;
 
+interface DiscordOnlineCountProps {
+  showOnlineLabel?: boolean;
+}
+
 /** Show the Discord widget's current online count when it is available. */
-export function DiscordOnlineCount() {
+export function DiscordOnlineCount({ showOnlineLabel = false }: DiscordOnlineCountProps) {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
@@ -37,7 +41,8 @@ export function DiscordOnlineCount() {
         className="inline-block h-2 w-2 rounded-full bg-success motion-safe:animate-pulse"
         aria-hidden="true"
       />
-      {count}<span className="hidden min-[900px]:inline"> online</span>
+      {count}
+      <span className={showOnlineLabel ? undefined : 'hidden min-[900px]:inline'}> online</span>
     </span>
   );
 }

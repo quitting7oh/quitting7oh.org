@@ -1,5 +1,6 @@
 ---
 import { ArrowRight, CircleAlert, MessageCircle } from 'lucide-react';
+import { DiscordOnlineCount } from './DiscordOnlineCount';
 import { MeetingQuickLink } from './MeetingQuickLink';
 import { LiveMeetingSuggestion } from './LiveMeetingSuggestion';
 ---
@@ -16,8 +17,11 @@ import { LiveMeetingSuggestion } from './LiveMeetingSuggestion';
       rel="noopener noreferrer"
       class="inline-flex min-h-11 shrink-0 items-center gap-1.5 px-1 text-sm font-bold text-primary hover:underline"
     >
-      <MessageCircle class="size-4" aria-hidden="true" />
-      Discord
+      <MessageCircle class="hidden size-4 min-[760px]:block" aria-hidden="true" />
+      <span>Discord</span>
+      <span class="min-[760px]:hidden">
+        <DiscordOnlineCount client:media="(max-width: 759px)" showOnlineLabel />
+      </span>
     </a>
   </div>
   <div class="divide-y divide-border">
