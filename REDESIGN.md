@@ -19,11 +19,12 @@ and the 404 page.
 
 ## Typography
 
-- **Atkinson Hyperlegible Next Variable** handles article text, controls,
-  tables, labels, and numerical data. Its open letterforms are useful when a
-  reader is tired or viewing at low brightness.
-- **Newsreader Variable** handles page and section titles. It adds warmth and
-  hierarchy without turning the guide into a magazine layout.
+- **Commissioner Variable** handles article and interface text. Its open forms
+  and restrained proportions remain clear across long articles and compact
+  controls.
+- **STIX Two Text Variable** handles page and section titles. Its firm,
+  book-oriented shapes establish hierarchy without making the guide feel
+  promotional.
 - Article text is 17px on phones and 18px from 640px up, with a 1.7 line height
   and a 70ch measure. The surrounding object column may grow to 50rem for
   tables and calculators.
@@ -33,9 +34,9 @@ and the 404 page.
 - Lists use conventional disc and decimal markers with restrained clay color
   and increased separation between items.
 
-Both fonts are self-hosted. The reading face is preloaded; both use
-`font-display: optional`, so a slow connection gets an immediate system-font
-fallback instead of invisible or shifting text.
+Both fonts are self-hosted and use `font-display: swap`, so text remains
+visible while each bundled face loads. Explicit preloads keep the type system
+stable across the site.
 
 ## Color
 
@@ -113,8 +114,7 @@ are visible, and `prefers-reduced-motion` removes smooth scrolling and motion.
 - Pre-existing routes remain available. The MiniSearch experiment adds a
   dedicated `/search` page and a static `/search-index.json` asset.
 - MiniSearch indexes guide content and selected live-resource routes during
-  the Astro build. The changelog, font specimens, error page, and category
-  shells stay out of results.
+  the Astro build. The changelog and utility shells stay out of results.
 - Theme selection still runs before paint and preserves system/light/dark
   behavior.
 - Meeting widgets and schedules continue to use `src/data/meetings.ts`.

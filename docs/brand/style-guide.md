@@ -7,7 +7,7 @@ the main site. Every value here is pulled from the live codebase
 matches the site exactly.
 
 **The 30-second version:** warm and calm, not clinical or corporate.
-Body text in **IBM Plex Sans**, headings in **Fraunces** (a serif). The
+Body text in **Commissioner**, headings in **STIX Two Text** (a serif). The
 default palette is **stone** (warm beige/brown). The logo is the **Lift
 Cup** — a coffee cup with an up-arrow rising out of it. Rounded corners at
 **8px**. Everything supports light and dark.
@@ -72,10 +72,10 @@ the mono version in a single safe color.
 
 The full lockup is the mark + the wordmark `quitting7oh.org`:
 
-- Wordmark in **Fraunces, weight 600**, letter-spacing `-0.01em`.
+- Wordmark in **STIX Two Text, weight 610**, letter-spacing `-0.035em`.
 - `quitting` and `oh` use **foreground**; the **`7`** uses **primary**.
-- `.org` is smaller (0.45em of the wordmark), in **IBM Plex Sans weight
-  500**, colored **muted-foreground**.
+- `.org` is smaller (0.38em of the wordmark), in **Commissioner weight
+  650**, colored **muted-foreground**.
 - Mark and wordmark sit in a flex row, vertically centered, `gap: 0.5em`.
   The mark height is ~1.7× the wordmark's font size.
 
@@ -203,27 +203,26 @@ Two families, both free and self-hosted on the site via
 
 | Role | Family | Notes |
 |---|---|---|
-| Body / UI | **IBM Plex Sans** (variable) | All body text, buttons, nav, labels. `@fontsource-variable/ibm-plex-sans` |
-| Headings / display | **Fraunces** (variable) | Page titles and content headings (h1–h4), and the logo wordmark. `@fontsource-variable/fraunces` |
+| Body / UI | **Commissioner** (variable) | All reading and interface text. `@fontsource-variable/commissioner` |
+| Headings / display | **STIX Two Text** (variable) | Page and major content titles, plus the logo wordmark. `@fontsource-variable/stix-two-text` |
 | Mono | system mono stack | Code only: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace` |
 
 Font stacks as defined:
 
 ```
---font-sans:    'IBM Plex Sans Variable', ui-sans-serif, system-ui, -apple-system,
+--font-sans:    'Commissioner Variable', ui-sans-serif, system-ui, -apple-system,
                 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
---font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+--font-display: 'STIX Two Text Variable', Georgia, 'Times New Roman', serif;
 --font-mono:    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
                 'Liberation Mono', 'Courier New', monospace;
 ```
 
 ### Rules that matter
 
-- **Headings are Fraunces at weight 600**, never 700 (it gets blobby at
-  display sizes). Letter-spacing `tracking-tight` (~`-0.01em`) on large
-  titles. This serif/sans split — serif headings over sans body — is the
-  single most recognizable type signature of the brand.
-- **Body is IBM Plex Sans**, normal weight, **line-height 1.7** for
+- **Headings are STIX Two Text at weights 550–650.** Letter-spacing stays
+  negative on large titles. The serif headings over sans body are
+  the main type signature of the brand.
+- **Body is Commissioner**, normal weight, **line-height 1.7** for
   running prose (looser than typical UI; it's a reading site).
 - Body copy column maxes at **52rem (832px)** for readability — don't run
   prose full-bleed on wide screens.
@@ -232,11 +231,11 @@ Font stacks as defined:
 
 | Element | Size | Weight | Family |
 |---|---|---|---|
-| Page title (h1) | `text-3xl` → `text-4xl` (1.875 → 2.25rem) | 600 | Fraunces |
-| Section (h2) | `text-2xl` → `text-3xl` (1.5 → 1.875rem) | 600 | Fraunces |
-| Subsection (h3) | `text-xl` (1.25rem) | 600 | Fraunces |
-| Body | 1rem | 400 | IBM Plex Sans |
-| Small / hint | `text-sm` (0.875rem) | 400 | IBM Plex Sans, muted-foreground |
+| Page title (h1) | `text-3xl` → `text-4xl` (1.875 → 2.25rem) | 550–650 | STIX Two Text |
+| Section (h2) | `text-2xl` → `text-3xl` (1.5 → 1.875rem) | 650 | STIX Two Text |
+| Subsection (h3) | `text-xl` (1.25rem) | 760 | Commissioner |
+| Body | 1rem | 430 | Commissioner |
+| Small / hint | `text-sm` (0.875rem) | 400–700 | Commissioner, muted-foreground |
 
 ---
 
@@ -285,7 +284,7 @@ Lucide is the icon set the whole site uses; match it in the app.
 ### Cards
 
 `card` background, `border` outline, 8px radius, comfortable padding. Title
-in Fraunces if it's a content heading, otherwise IBM Plex Sans semibold.
+in STIX Two Text if it's a major content heading, otherwise Commissioner bold.
 
 ---
 
@@ -334,8 +333,8 @@ and (optionally) "variant" to the hex tables in section 3.
 
 ## Quick start: the minimum to look on-brand
 
-1. Fonts: **Fraunces** for headings/titles (weight 600), **IBM Plex Sans**
-   for everything else.
+1. Fonts: **STIX Two Text** for headings and titles, **Commissioner** for
+   body and interface text.
 2. Colors: use the **stone light + dark** hex tables (section 3). Page =
    `background`, text = `foreground`, buttons/links/accents = `primary`.
 3. Logo: drop in [`lift-cup-themed.svg`](./logo/lift-cup-themed.svg);

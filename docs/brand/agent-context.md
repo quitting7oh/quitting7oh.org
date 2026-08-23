@@ -49,8 +49,8 @@ way:**
 
 ## Non-negotiables (apply even before you fetch anything)
 
-- **Type:** titles and major sections use **Newsreader**; body text,
-  controls, and subsections use **Atkinson Hyperlegible Next**. Both are
+- **Type:** titles and major sections use **STIX Two Text**; body and
+  interface text use **Commissioner**. Both are
   self-hosted variable fonts. The role split must stay visible.
 - **Palette:** warm paper and brown-charcoal ink with burnt clay for
   links and ordinary actions. Light: background `hsl(43 38% 97%)`, text

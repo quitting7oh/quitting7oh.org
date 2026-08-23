@@ -2,28 +2,36 @@
 @plugin '@tailwindcss/typography';
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible Next Variable';
-  font-style: normal;
+  font-family: 'Commissioner Variable';
+  font-style: oblique 0deg 12deg;
   font-display: swap;
-  font-weight: 200 800;
-  src: url('@fontsource-variable/atkinson-hyperlegible-next/files/atkinson-hyperlegible-next-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  src: url('@fontsource-variable/commissioner/files/commissioner-latin-standard-normal.woff2') format('woff2-variations');
 }
 
 @font-face {
-  font-family: 'Newsreader Variable';
+  font-family: 'STIX Two Text Variable';
   font-style: normal;
   font-display: swap;
-  font-weight: 200 800;
-  src: url('@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  src: url('@fontsource-variable/stix-two-text/files/stix-two-text-latin-wght-normal.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'STIX Two Text Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('@fontsource-variable/stix-two-text/files/stix-two-text-latin-wght-italic.woff2') format('woff2-variations');
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Field Guide design system: quiet paper, burnt clay, warm signals. */
 @theme {
-  --font-sans: 'Atkinson Hyperlegible Next Variable', ui-sans-serif, system-ui,
+  --font-sans: 'Commissioner Variable', ui-sans-serif, system-ui,
     -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Newsreader Variable', ui-serif, Georgia, Cambria, serif;
+  --font-display: 'STIX Two Text Variable', ui-serif, Georgia, Cambria, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   --color-accent-50: #fcf6f3;
