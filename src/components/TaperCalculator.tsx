@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { Input } from '~/components/ui/input';
+import { NumberInput } from '~/components/ui/number-input';
 import { Label } from '~/components/ui/label';
 import { Button } from '~/components/ui/button';
 import {
@@ -814,29 +814,28 @@ export function TaperCalculator({
 
         <div>
           <Label htmlFor="per-dose">Per-dose amount ({cfg.unit})</Label>
-          <Input
+          <NumberInput
             id="per-dose"
-            type="number"
             inputMode="decimal"
             min={0}
             step="any"
             value={perDose}
-            onChange={(e) => setPerDose(parseFloat(e.target.value) || 0)}
+            onValueChange={setPerDose}
             className="mt-1.5"
           />
         </div>
 
         <div>
           <Label htmlFor="doses-per-day">Times per day</Label>
-          <Input
+          <NumberInput
             id="doses-per-day"
-            type="number"
             inputMode="numeric"
             min={1}
             max={12}
             step={1}
             value={dosesPerDay}
-            onChange={(e) => setDosesPerDay(parseInt(e.target.value, 10) || 1)}
+            onValueChange={setDosesPerDay}
+            integer
             className="mt-1.5"
           />
         </div>
@@ -846,14 +845,14 @@ export function TaperCalculator({
             <Label htmlFor="tablet-size">
               {cfg.tabletUnitName.charAt(0).toUpperCase() + cfg.tabletUnitName.slice(1)} size ({cfg.unit} per {cfg.tabletUnitName})
             </Label>
-            <Input
+            <NumberInput
               id="tablet-size"
-              type="number"
               inputMode="decimal"
               min={0}
               step="any"
-              value={tabletSize || ''}
-              onChange={(e) => setTabletSize(parseFloat(e.target.value) || 0)}
+              value={tabletSize}
+              onValueChange={setTabletSize}
+              emptyWhenZero
               placeholder={
                 cfg.defaultTabletSize !== null
                   ? `e.g. ${cfg.defaultTabletSize}`
@@ -880,14 +879,13 @@ export function TaperCalculator({
 
         <div>
           <Label htmlFor="jump-off">Jump-off dose ({cfg.unit})</Label>
-          <Input
+          <NumberInput
             id="jump-off"
-            type="number"
             inputMode="decimal"
             min={0}
             step="any"
             value={jumpOff}
-            onChange={(e) => setJumpOff(parseFloat(e.target.value) || 0)}
+            onValueChange={setJumpOff}
             className="mt-1.5"
           />
           <p className="mt-1 text-xs text-muted-foreground">
@@ -920,17 +918,15 @@ export function TaperCalculator({
             <div>
               <Label htmlFor="custom-days">Total duration</Label>
               <div className="mt-1.5 flex items-center gap-2">
-                <Input
+                <NumberInput
                   id="custom-days"
-                  type="number"
                   inputMode="numeric"
                   min={1}
                   max={365}
                   step={1}
-                  value={customDays || ''}
-                  onChange={(e) =>
-                    setCustomDays(Math.max(1, parseInt(e.target.value, 10) || 1))
-                  }
+                  value={customDays}
+                  onValueChange={setCustomDays}
+                  integer
                   className="w-24"
                 />
                 <span className="text-sm text-muted-foreground">days</span>
@@ -942,15 +938,14 @@ export function TaperCalculator({
             <div>
               <Label htmlFor="custom-pct">Percentage per day</Label>
               <div className="mt-1.5 flex items-center gap-2">
-                <Input
+                <NumberInput
                   id="custom-pct"
-                  type="number"
                   inputMode="decimal"
                   min={0.1}
                   max={75}
                   step="0.5"
-                  value={customPctDisplay || ''}
-                  onChange={(e) => handleCustomPctChange(parseFloat(e.target.value) || 0)}
+                  value={customPctDisplay}
+                  onValueChange={handleCustomPctChange}
                   className="w-24"
                 />
                 <span className="text-sm text-muted-foreground">% per day</span>

@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { Input } from '~/components/ui/input';
+import { NumberInput } from '~/components/ui/number-input';
 import { Label } from '~/components/ui/label';
 import { Button } from '~/components/ui/button';
 
@@ -325,30 +325,27 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
         <div className="grid gap-3 sm:grid-cols-2">
           <div>
             <Label htmlFor="oh-per-dose">Current per-dose (mg)</Label>
-            <Input
+            <NumberInput
               id="oh-per-dose"
-              type="number"
               inputMode="decimal"
               min={0}
               step="any"
               value={inputs.ohPerDose}
-              onChange={(e) => set('ohPerDose', parseFloat(e.target.value) || 0)}
+              onValueChange={(value) => set('ohPerDose', value)}
               className="mt-1.5"
             />
           </div>
           <div>
             <Label htmlFor="oh-doses">Times per day</Label>
-            <Input
+            <NumberInput
               id="oh-doses"
-              type="number"
               inputMode="numeric"
               min={1}
               max={12}
               step={1}
               value={inputs.ohDosesPerDay}
-              onChange={(e) =>
-                set('ohDosesPerDay', parseInt(e.target.value, 10) || 1)
-              }
+              onValueChange={(value) => set('ohDosesPerDay', value)}
+              integer
               className="mt-1.5"
             />
           </div>
@@ -402,52 +399,42 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
         <div className="grid gap-3 sm:grid-cols-3">
           <div>
             <Label htmlFor="preload-days">Preload days</Label>
-            <Input
+            <NumberInput
               id="preload-days"
-              type="number"
               inputMode="numeric"
               min={1}
               max={14}
               step={1}
               value={inputs.preloadDays}
-              onChange={(e) =>
-                set('preloadDays', Math.max(1, parseInt(e.target.value, 10) || 1))
-              }
+              onValueChange={(value) => set('preloadDays', value)}
+              integer
               className="mt-1.5"
             />
           </div>
           <div>
             <Label htmlFor="preload-per-dose">SR per dose (mg)</Label>
-            <Input
+            <NumberInput
               id="preload-per-dose"
-              type="number"
               inputMode="decimal"
               min={10}
               max={200}
               step={5}
               value={inputs.preloadPerDose}
-              onChange={(e) =>
-                set('preloadPerDose', parseFloat(e.target.value) || 0)
-              }
+              onValueChange={(value) => set('preloadPerDose', value)}
               className="mt-1.5"
             />
           </div>
           <div>
             <Label htmlFor="preload-doses">Doses per day</Label>
-            <Input
+            <NumberInput
               id="preload-doses"
-              type="number"
               inputMode="numeric"
               min={2}
               max={6}
               step={1}
               value={inputs.preloadDosesPerDay}
-              onChange={(e) =>
-                set(
-                  'preloadDosesPerDay',
-                  Math.max(2, parseInt(e.target.value, 10) || 2),
-                )
-              }
+              onValueChange={(value) => set('preloadDosesPerDay', value)}
+              integer
               className="mt-1.5"
             />
           </div>
@@ -499,20 +486,15 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
           {inputs.crossTaperMode === 'custom-days' && (
             <div>
               <Label htmlFor="cross-days">Cross-taper days</Label>
-              <Input
+              <NumberInput
                 id="cross-days"
-                type="number"
                 inputMode="numeric"
                 min={1}
                 max={7}
                 step={1}
                 value={inputs.crossTaperDays}
-                onChange={(e) =>
-                  set(
-                    'crossTaperDays',
-                    Math.max(1, parseInt(e.target.value, 10) || 1),
-                  )
-                }
+                onValueChange={(value) => set('crossTaperDays', value)}
+                integer
                 className="mt-1.5"
               />
               <p className="mt-1 text-xs text-muted-foreground">
@@ -530,17 +512,15 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
         </div>
         <div className="sm:w-48">
           <Label htmlFor="hold-days">Hold days</Label>
-          <Input
+          <NumberInput
             id="hold-days"
-            type="number"
             inputMode="numeric"
             min={0}
             max={14}
             step={1}
             value={inputs.holdDays}
-            onChange={(e) =>
-              set('holdDays', Math.max(0, parseInt(e.target.value, 10) || 0))
-            }
+            onValueChange={(value) => set('holdDays', value)}
+            integer
             className="mt-1.5"
           />
           <p className="mt-1 text-xs text-muted-foreground">
@@ -580,17 +560,14 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
           {inputs.srTaperMode === 'custom-mg' && (
             <div>
               <Label htmlFor="sr-cut-mg">Cut per day (mg)</Label>
-              <Input
+              <NumberInput
                 id="sr-cut-mg"
-                type="number"
                 inputMode="decimal"
                 min={5}
                 max={100}
                 step={5}
                 value={inputs.srTaperMg}
-                onChange={(e) =>
-                  set('srTaperMg', parseFloat(e.target.value) || 0)
-                }
+                onValueChange={(value) => set('srTaperMg', value)}
                 className="mt-1.5"
               />
             </div>
@@ -598,17 +575,14 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
           {inputs.srTaperMode === 'custom-pct' && (
             <div>
               <Label htmlFor="sr-cut-pct">Cut per day (%)</Label>
-              <Input
+              <NumberInput
                 id="sr-cut-pct"
-                type="number"
                 inputMode="decimal"
                 min={1}
                 max={50}
                 step={1}
                 value={inputs.srTaperPct}
-                onChange={(e) =>
-                  set('srTaperPct', parseFloat(e.target.value) || 0)
-                }
+                onValueChange={(value) => set('srTaperPct', value)}
                 className="mt-1.5"
               />
             </div>
@@ -616,17 +590,14 @@ function ConfigPanel({ inputs, setInputs }: ConfigPanelProps) {
         </div>
         <div className="mt-3 sm:w-48">
           <Label htmlFor="sr-jump">Jump-off (mg)</Label>
-          <Input
+          <NumberInput
             id="sr-jump"
-            type="number"
             inputMode="decimal"
             min={0}
             max={75}
             step={5}
             value={inputs.srJumpOff}
-            onChange={(e) =>
-              set('srJumpOff', parseFloat(e.target.value) || 0)
-            }
+            onValueChange={(value) => set('srJumpOff', value)}
             className="mt-1.5"
           />
           <p className="mt-1 text-xs text-muted-foreground">
