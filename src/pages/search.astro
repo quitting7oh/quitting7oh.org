@@ -1,0 +1,30 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { SearchBox } from '~/components/SearchBox';
+import { Database } from 'lucide-react';
+
+const title = 'Search the guide';
+const description = 'Search quitting7oh.org guides, calculators, compounds, meetings, and recovery resources.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main id="main-content" class="mx-auto w-full max-w-[58rem] px-4 py-9 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
+    <header class="max-w-3xl">
+      <p class="eyebrow">Find a specific answer</p>
+      <h1 class="mt-3 font-display text-[clamp(2.2rem,5vw,3.35rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-foreground">
+        Search the guide
+      </h1>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+        Search symptoms, medications, quitting paths, compounds, meetings, or the words you remember seeing.
+      </p>
+      <p class="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground">
+        <Database class="size-4 text-primary" aria-hidden="true" />
+        Results are computed in your browser from a static index.
+      </p>
+    </header>
+
+    <section class="mt-8 sm:mt-10" aria-label="Site search">
+      <SearchBox variant="page" client:load placeholder="What do you need help with?" />
+    </section>
+  </main>
+</BaseLayout>
