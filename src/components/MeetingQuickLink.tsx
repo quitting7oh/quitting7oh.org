@@ -131,7 +131,7 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
             <ExternalLink className="size-3.5" aria-hidden="true" />
           </a>
           <a
-            href="/resources/meeting-schedules"
+            href="/next-kratom-support-meeting"
             className="inline-flex min-h-9 items-center justify-center rounded-md px-1.5 text-xs font-bold text-primary hover:bg-accent"
           >
             Full schedule

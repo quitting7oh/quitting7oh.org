@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-23"
+last_updated: "2026-08-24"
 sort: 6
 ---
 
@@ -15,6 +15,17 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-08-23
+
+### Homepage search title
+
+- Replaced the generic homepage title with a concise 7-OH withdrawal and taper
+  title. The homepage description and opening copy now include the full
+  7-hydroxymitragynine name for readers who search by the compound name.
+
+### Live meeting routing
+
+- Routed the homepage live-meeting schedule action through the local-time
+  7-OH and kratom meeting finder instead of the raw weekly schedule.
 
 ### Simple SR-17 starting tier
 

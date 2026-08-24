@@ -27,7 +27,9 @@ const {
   minimal = false,
   showBackToTop = !minimal,
 } = Astro.props;
-const pageTitle = title ? `${title} · ${SITE.title}.org` : `${SITE.title}.org — recovery information`;
+const pageTitle = title
+  ? `${title} · ${SITE.title}.org`
+  : `7-OH Withdrawal Help & Taper Guides | ${SITE.title}.org`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
 ---
 

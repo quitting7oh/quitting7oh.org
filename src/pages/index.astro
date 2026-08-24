@@ -69,9 +69,12 @@ const categorySections = [
     categories: CATEGORIES.filter((category) => category.section === 'reference'),
   },
 ];
+
+const homepageDescription =
+  'Practical help quitting 7-OH (7-hydroxymitragynine), including withdrawal guidance, taper calculators, medication references, and peer support.';
 ---
 
-<BaseLayout>
+<BaseLayout description={homepageDescription}>
   <main id="main-content">
     <section>
       <div class="mx-auto max-w-[88rem] px-4 py-11 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
@@ -81,7 +84,7 @@ const categorySections = [
             Help quitting <span class="whitespace-nowrap">7-OH</span>
           </h1>
           <p class="mx-auto mt-5 max-w-2xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
-            Find withdrawal guidance, taper tools, medication references, and peer support for quitting 7-OH and related kratom synthetics.
+            Find withdrawal guidance, taper tools, medication references, and peer support for quitting 7-OH (7-hydroxymitragynine) and related kratom synthetics.
           </p>
 
           <div class="mt-7 flex flex-col items-center justify-center gap-2.5 sm:flex-row">
