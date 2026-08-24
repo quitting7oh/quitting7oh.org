@@ -46,7 +46,7 @@ export function SchedulingBanner() {
           aria-hidden="true"
         />
         <span className="font-semibold">
-          As of August 23, the DEA has not yet banned 7-OH.
+          As of August 24, the DEA has not yet banned 7-OH.
         </span>{' '}
         <span className="opacity-90">
           The ban could take effect at any time. What's happening and what
