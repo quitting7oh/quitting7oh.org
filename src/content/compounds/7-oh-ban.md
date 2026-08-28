@@ -88,7 +88,7 @@ products, this is a ban.
 federally legal.** In its natural form, 7-OH occurs only
 in trace amounts, and both DEA and HHS state the action is not
 intended to capture botanical leaf. That matters here because
-[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
+[tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
 is one of the documented paths off 7-OH, and this action does not
 remove it. State law is its own patchwork: nine states (Alabama,
 Arkansas, Florida, Indiana, Kentucky, Louisiana, Ohio, Vermont, and
@@ -207,16 +207,16 @@ The paths off are the same ones this site has always documented:
 - **A structured taper or planned stop** — start with
   [How to Quit 7-OH](/start-here/how-to-quit-7-oh), and if you're
   already in withdrawal, [Withdrawal Help](/start-here/7-oh-withdrawal-help).
-- **[Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)** —
+- **[Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)** —
   leaf below the threshold stays federally legal, so this path
   survives the ban.
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)** or
-  **[SR-17](/other-tools/sr-17)** — the two medication-assisted paths
+  **[SR-17](/medications-supplements/sr-17)** — the two medication-assisted paths
   the community has documented. SR-17018 is not named in either
   notice, but it is its own legal grey area; read its page before
   relying on it.
-- **Cold turkey with [helper medications](/other-tools/helper-meds)**
-  and the [quit kit](/other-tools/quit-kit).
+- **Cold turkey with [helper medications](/medications-supplements/helper-meds)**
+  and the [quit kit](/medications-supplements/quit-kit).
 
 A few cautions specific to a ban deadline:
 

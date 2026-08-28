@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-24"
+last_updated: "2026-08-28"
 sort: 6
 ---
 
@@ -13,6 +13,51 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-08-28
+
+### Pseudo, MGM-15, and MGM-16 are Schedule I; 7-OH comment window reopened
+
+- Two Federal Register documents published August 26. DEA's [temporary
+  scheduling order](https://www.federalregister.gov/documents/2026/08/26/2026-17429/schedules-of-controlled-substances-temporary-placement-of-mitragynine-pseudoindoxyl-mgm-15-and)
+  (Docket DEA-1644) put mitragynine pseudoindoxyl, MGM-15, and MGM-16
+  into Schedule I effective that day, through August 26, 2028. HHS OASH
+  separately [extended the comment period](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period)
+  on the 7-OH threshold RFI to September 10, 2026.
+- [The Federal 7-OH Ban](/compounds/7-oh-ban) now separates the two
+  states: 7-OH is still unscheduled with its order pending, while the
+  three related synthetics are banned. Added the effective dates and
+  the two-year term, what Schedule I placement means for possession,
+  the reopened comment window (reported neutrally, per the site's
+  no-position posture), and both documents to the sources list.
+- The scheduling banner names both states rather than 7-OH alone, in
+  its mobile and desktop variants. A reader carrying pseudo or MGM-15
+  was reading "the DEA has not banned 7-OH" as an all-clear. The
+  dismiss key moved in `SchedulingBanner.astro` and `ThemeScript.astro`
+  together, so the new message reappears for readers who dismissed the
+  old one.
+- The [MGM-15](/compounds/mgm15), [MGM-16](/compounds/mgm16), and
+  [pseudo](/compounds/mitragynine-pseudoindoxyl) pages moved from
+  notice-of-intent framing to in-effect. [7-OH](/compounds/7-oh) and
+  [kratom leaf](/compounds/kratom-leaf) dropped the stale "earliest the
+  order can take effect is August 5" line, which had passed.
+
+### Ban-status automation now tracks documents, not a date
+
+- `scripts/update-ban-status.mjs` checked for any Federal Register
+  document published after July 6, so the two August 26 documents
+  pinned the daily job red. It now compares against an allowlist of
+  reviewed document numbers. Unreviewed documents still stop the run,
+  which is the behavior that caught this; documents a human has folded
+  into the page no longer keep it stuck.
+- The script pointed at `SchedulingBanner.tsx`, which this redesign
+  replaced with an Astro component, so it would have failed on the
+  missing file. It now targets the `.astro` banner and rewrites both
+  responsive variants, asserting it found exactly two so a dropped
+  variant fails loudly instead of half-updating.
+- Added a guard for the inverse failure: if a reviewed document
+  disappears from the Federal Register query, the run goes red rather
+  than verifying an empty result set.
 
 ## 2026-08-23
 
