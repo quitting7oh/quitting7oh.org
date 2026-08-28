@@ -537,11 +537,6 @@ kratom synthetics. Others documented on the site include:
 - [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
 - Cold turkey with [helper meds](/other-tools/helper-meds)
 
-[SR-17](/other-tools/sr-17) was on this list as an informal taper
-bridge until **August 27, 2026**, when DEA placed SR-17018 in
-Schedule I under the name 5,6-dichloro desmethylchlorphine. It is no
-longer a path to route anyone toward. See the pairing rule below.
-
 **Naltrexone (LDN, ULDN, Vivitrol) is NOT a path off opioids.** It's a
 mu-opioid *antagonist* — taking it while there are still opioids on
 your receptors will precipitate withdrawal. The
@@ -580,8 +575,8 @@ violated the rule):
   up everything else as not-evidence-based.
 - "This is self-medication without clinical supervision" / "this is
   unsupervised" / "this isn't real medicine" — applied to leaf taper,
-  SR-17, helper-med cold turkey, or anything community-documented.
-  All four are legitimate paths some people in this community use.
+  helper-med cold turkey, or anything community-documented. These are
+  all legitimate paths some people in this community use.
 - "The standard treatment is Suboxone" / "the gold standard is X" /
   "the standard of care is X" — already covered above, restated here
   because it's the same family of error.
@@ -664,19 +659,15 @@ quit, see X" callouts, compound-page reminders, etc. It does **not**
 apply inside content that is itself scoped to a specific medication (a
 Suboxone induction page can stay focused on Suboxone).
 
-**This rule used to pair Suboxone with [SR-17](/other-tools/sr-17)**,
-on the reasoning that those were the two MAT-equivalent options the
-community had converged on. SR-17018 went into Schedule I on
-August 27, 2026, so that pairing is retired: routing a reader toward
-a Schedule I substance is not neutrality, it's a bad handoff. Leaf
-taper and helper-med cold turkey now carry the job of keeping
-Suboxone from reading as the single legitimate answer.
-
-Do not reintroduce SR-17 into routing or "your options are" lists.
-It stays documented on its own page and in the taper calculator for
-readers who are already mid-taper, and it can be named in historical
-or comparative context as long as its Schedule I status travels with
-the mention.
+**Why this rule changed.** Until August 2026 it paired Suboxone with
+SR-17 specifically, on the reasoning that those were the two
+MAT-equivalent options the community had converged on. DEA placed
+SR-17018 in Schedule I on August 27, 2026, and handing someone a
+scheduled substance is not neutrality, so the pairing was retired and
+leaf taper and helper-med cold turkey took over the job. Don't
+reintroduce SR-17 into routing or "your options are" lists. It stays
+documented on its own page and in the cross-taper calculator, for
+readers who are already partway through one.
 
 ### Don't apply opioid-overdose framing to 7-OH specifically
 
@@ -854,8 +845,6 @@ actually help with:
 - **Cannabis use during recovery.** Most clinicians have a
   one-sentence policy (allow / don't allow), not a conversation.
   Drug-interaction questions (CBD ↔ bupe) are the narrow exception.
-- **SR-17018.** Schedule I since August 27, 2026, no human clinical
-  literature; most clinicians have never heard of it.
 - **LDN / ULDN protocols for post-acute use.** A small subset of
   prescribers run these; the typical addiction-medicine telehealth
   intake will not. Route only with the caveat that prescribers

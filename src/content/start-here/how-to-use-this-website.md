@@ -65,8 +65,9 @@ exist with real pros and cons.
 
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)**: one widely-used path,
   with the community's low-and-slow induction approach.
-- **[SR-17](/other-tools/sr-17)**: Schedule I since August 27, 2026
-  some people have used to bridge off 7-OH and related synthetics.
+- **[SR-17](/other-tools/sr-17)**: a bridge some people used off 7-OH
+  and the related synthetics, in Schedule I since August 27, 2026 and
+  no longer a path you can start.
 - **[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: a fact-checked

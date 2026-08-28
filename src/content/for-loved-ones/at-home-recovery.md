@@ -51,8 +51,9 @@ them](/for-you/at-home-treatment) has the full version):
 - **Suboxone as a structured rapid taper**: typically 5 to 10 days,
   often arranged through a [telehealth prescriber](/resources/telehealth-for-suboxone)
   with no in-person visit needed. Cuts most of the acute withdrawal.
-- **[SR-17](/other-tools/sr-17)**: Schedule I since August 27, 2026
-  some people use to bridge off the synthetics.
+- **[SR-17](/other-tools/sr-17)**: a bridge some people used off the
+  synthetics, in Schedule I since August 27, 2026 and no longer a path
+  they can start.
 - **Stepping down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)**
  , substituting lower-concentration leaf for concentrated 7-OH,
   then tapering the leaf.
