@@ -1,35 +1,44 @@
 ---
 title: "The Federal 7-OH Ban: Dates, Scope, What It Means"
-description: "DEA has filed notice to place 7-OH above a threshold, pseudo, MGM-15, and MGM-16 in Schedule I. The dates, the legal process, the public comment window, and what to do if you're still using."
+description: "Pseudo, MGM-15, and MGM-16 are Schedule I as of August 26, 2026. The 7-OH threshold order is still pending. Dates, scope, the reopened comment window, and what to do if you're still using."
 category: "compounds"
-last_updated: "2026-08-25"
+last_updated: "2026-08-28"
 sort: 0
 ---
 
-> **Last verified against primary sources on August 25, 2026.** This page
+> **Last verified against primary sources on August 28, 2026.** This page
 > tracks a live regulatory action; we'll update it as things move.
 
-## Status: not banned yet
+## Status: three compounds banned, 7-OH not yet
 
-**As of August 25, 2026, nothing is banned.** DEA has not issued the
-scheduling order. The 30-day waiting period expired on August 5, so
-the order can now publish on any business day, and it takes effect
-the day it publishes.
+**As of August 28, 2026, 7-OH is not banned.** DEA has not issued the
+threshold order. The 30-day waiting period expired on August 5, so the
+order can publish on any business day, and it takes effect the day it
+publishes.
+
+**[Pseudo](/compounds/mitragynine-pseudoindoxyl),
+[MGM-15](/compounds/mgm15), and [MGM-16](/compounds/mgm16) are
+banned.** DEA issued the temporary scheduling order for those three on
+August 26, 2026. It took effect the day it published and runs until
+August 26, 2028. Possession of any quantity is now unlawful, and
+consumers got no grace period.
 
 | Date | What happened |
 | --- | --- |
 | **July 1, 2026** | DEA signed and filed two notices of intent to temporarily schedule [7-OH](/compounds/7-oh) and three related compounds. HHS and FDA announced their support the same day. |
 | **July 6, 2026** | The notices published in the Federal Register, starting the legally required 30-day waiting period. |
-| **July 31, 2026** | The public comment window on the 7-OH threshold closed with **32,145 comments** submitted (see [the comment window](#public-comments-closed-july-31) below). |
-| **August 5, 2026** | The earliest date the ban could take effect. It passed with no order issued. |
-| **August 25, 2026** | Latest check against the Federal Register: still no scheduling order. The ban is not in effect. |
+| **July 31, 2026** | The public comment window on the 7-OH threshold closed with **32,145 comments** submitted. |
+| **August 5, 2026** | The earliest date either order could take effect. It passed with no order issued. |
+| **August 26, 2026** | DEA's order for pseudo, MGM-15, and MGM-16 published and took effect the same day. HHS separately reopened the 7-OH comment window through September 10 (see [the comment window](#public-comments-reopened-through-september-10) below). |
+| **August 28, 2026** | Latest check against the Federal Register: still no order on the 7-OH threshold. |
 
-Both notices state the order "will be published in the Federal
-Register on or after August 5, 2026," and that DEA intends to issue it
-"as soon as possible after the expiration of 30 days." That window is
-open now. **The ban takes effect the day the order publishes**, with
-no additional grace period, and lasts two years, extendable by one
-more.
+Both notices stated the order "will be published in the Federal
+Register on or after August 5, 2026," and that DEA intended to issue it
+"as soon as possible after the expiration of 30 days." For pseudo,
+MGM-15, and MGM-16, that took 21 days. The 7-OH threshold order is
+still pending on the same authority. **It takes effect the day it
+publishes**, with no additional grace period, and lasts two years,
+extendable by one more.
 
 If you use 7-OH tablets, shots, or other concentrated products, the
 remaining legal retail window has no schedule. It could close this
@@ -48,6 +57,9 @@ Wednesday, July 1, 2026, signed by DEA Administrator Terrance Cole:
 2. **[Temporary Placement of Mitragynine Pseudoindoxyl, MGM-15, and MGM-16 in Schedule I](https://www.federalregister.gov/documents/2026/07/06/2026-13581/schedules-of-controlled-substances-temporary-placement-of-mitragynine-pseudoindoxyl-mgm-15-and)**
    (Docket No. DEA-1644) — schedules the three related compounds
    entirely, with no threshold.
+
+The second notice became a final order on August 26, 2026. The first
+has not.
 
 [HHS and FDA issued a joint statement](https://www.hhs.gov/press-room/hhs-fda-support-dea-7-oh-scheduling.html)
 the same day supporting the action. HHS had recommended scheduling in a
@@ -83,12 +95,14 @@ Arkansas, Florida, Indiana, Kentucky, Louisiana, Ohio, Vermont, and
 Wisconsin) already prohibit 7-OH, and the federal order does not
 override stricter state rules.
 
-## Pseudo, MGM-15, and MGM-16: scheduled outright
+## Pseudo, MGM-15, and MGM-16: Schedule I since August 26
 
-The second notice puts three compounds fully into Schedule I, at any
-concentration:
+The [temporary scheduling order](https://www.federalregister.gov/documents/2026/08/26/2026-17429/schedules-of-controlled-substances-temporary-placement-of-mitragynine-pseudoindoxyl-mgm-15-and)
+published on August 26, 2026 and took effect that day. It runs through
+August 26, 2028 and covers three compounds at any concentration, along
+with their isomers, esters, ethers, and salts:
 
-- **[Mitragynine pseudoindoxyl](/compounds/pseudo) (MP / "pseudo")** — a rearrangement
+- **[Mitragynine pseudoindoxyl](/compounds/mitragynine-pseudoindoxyl) (MP / "pseudo")** — a rearrangement
   product of 7-OH sold in candies, tablets, and liquid shots.
 - **[MGM-15](/compounds/mgm15) (dihydro-7-hydroxymitragynine)** — a synthetic 7-OH
   derivative with a long half-life.
@@ -97,7 +111,18 @@ concentration:
 
 None of the three occurs naturally in the kratom plant. HHS confirmed
 there are no approved or investigational drug applications for any of
-them, so nothing blocks Schedule I placement.
+them, so nothing blocked Schedule I placement.
+
+What the order changes in practice: retail sale of these three is over,
+because Schedule I substances cannot be sold to the public at all.
+Possession of any quantity in an unauthorized manner on or after
+August 26 is unlawful. The 30-day compliance windows written into the
+order cover DEA registrants working through labeling, inventory, and
+recordkeeping.
+
+Labels were never reliable here. Lab analyses have found pseudo in
+products sold as something else, so a package doesn't tell you which
+side of this order its contents fall on.
 
 ## Emergency scheduling under § 811(h)
 
@@ -125,23 +150,32 @@ The mechanics:
   use, no accepted safety under medical supervision, as the statute
   defines it.
 
-Once the order takes effect, manufacture, distribution, sale, and
-**possession** of covered products become subject to the criminal,
-civil, and administrative provisions of the CSA.
+For pseudo, MGM-15, and MGM-16 that point has passed:
+manufacture, distribution, sale, and **possession** are subject to the
+criminal, civil, and administrative provisions of the CSA as of
+August 26. Covered 7-OH products reach the same point the day their
+order publishes.
 
-## Public comments: closed July 31
+## Public comments: reopened through September 10
 
 Alongside DEA's notices, the HHS Office of the Assistant Secretary for
 Health ran a
 [Request for Information](https://www.federalregister.gov/documents/2026/07/06/2026-13608/temporary-placement-of-7-hydroxymitragynine-above-a-specified-threshold-in-schedule-i-request-for)
 (Docket No. **HHS-OASH-2026-0232**) seeking public comment on the
 7-OH threshold. The window closed **July 31, 2026**, with **32,145
-comments submitted**. As of August 25,
-[the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
-shows 26,545 of them processed and posted; the rest are still moving
-through review.
+comments submitted**.
 
-The scope was narrow. OASH asked two questions only:
+On August 26, OASH
+[extended the comment period](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period)
+to **September 10, 2026**, after receiving a request for more time.
+The docket is open again, and comments already submitted stand; nobody
+needs to refile. As of August 28,
+[the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
+shows 26,545 comments posted, with the rest still moving through
+review.
+
+The scope did not change with the extension. OASH asked two questions
+only:
 
 1. Is there scientific data supporting the proposed threshold or an
    alternative one? In the docket's words: what concentration or
@@ -150,11 +184,11 @@ The scope was narrow. OASH asked two questions only:
 2. Is there data supporting a different way of measuring the
    threshold?
 
-OASH said explicitly that it was **not** taking comments on permanent
+OASH said explicitly that it is **not** taking comments on permanent
 scheduling, on the general safety or usefulness of kratom products, or
-on whether the ban should happen at all. With the window closed, HHS
-forwards the submissions to the Attorney General for consideration
-before the order issues.
+on whether the ban should happen at all, and it repeated that limit in
+the extension notice. HHS forwards the submissions to the Attorney
+General for consideration before the order issues.
 
 This RFI was the only formal comment channel. DEA's own notices were
 not open for comment: the temporary scheduling law works by order, not
@@ -163,10 +197,10 @@ by the usual notice-and-comment rulemaking.
 ## If you're using 7-OH right now
 
 **Supply is going to disappear on a schedule you don't control.**
-Running out abruptly means unplanned cold-turkey withdrawal. The
-notice window has already run out: the order can publish any day now,
-so if you're dependent, the planning has to happen on supply you
-already have.
+Running out abruptly means unplanned cold-turkey withdrawal. For
+pseudo, MGM-15, and MGM-16 that already happened on August 26. For
+7-OH the order can publish any day, so if you're dependent, the
+planning has to happen on supply you already have.
 
 The paths off are the same ones this site has always documented:
 
@@ -190,10 +224,11 @@ A few cautions specific to a ban deadline:
   fails more often than a planned one. If you can't finish a taper
   before supply dries up, a bridge (leaf, Suboxone, SR-17) is a
   decision to make now, not the day the order publishes.
-- **Stockpiling has a legal cliff.** Once the order takes effect,
-  possession of covered products is a federal crime. What you do with
-  that fact is your call; we want you to know it before the order
-  lands, not after.
+- **Stockpiling has a legal cliff.** For pseudo, MGM-15, and MGM-16
+  that cliff is behind you: possession has been a federal offense since
+  August 26. For 7-OH it arrives the day the order publishes. What you
+  do with that fact is your call; we want you to know it before the
+  order lands, not after.
 - **Post-ban street supply is a different product.** When retail
   channels close, what replaces them has no labeling at all. Lab
   analyses have already found undisclosed compounds like pseudo in
@@ -233,6 +268,8 @@ people affected by it have accurate dates and a plan.
 - [Federal Register: 7-OH threshold notice of intent (Docket DEA-1570)](https://www.federalregister.gov/documents/2026/07/06/2026-13580/schedules-of-controlled-substance-temporary-placement-of-7-hydroxymitragynine-above-a-specified)
 - [Federal Register: pseudo / MGM-15 / MGM-16 notice of intent (Docket DEA-1644)](https://www.federalregister.gov/documents/2026/07/06/2026-13581/schedules-of-controlled-substances-temporary-placement-of-mitragynine-pseudoindoxyl-mgm-15-and)
 - [Federal Register: HHS OASH Request for Information (Docket HHS-OASH-2026-0232)](https://www.federalregister.gov/documents/2026/07/06/2026-13608/temporary-placement-of-7-hydroxymitragynine-above-a-specified-threshold-in-schedule-i-request-for)
+- [Federal Register: temporary scheduling order for pseudo, MGM-15, and MGM-16, August 26, 2026 (Docket DEA-1644)](https://www.federalregister.gov/documents/2026/08/26/2026-17429/schedules-of-controlled-substances-temporary-placement-of-mitragynine-pseudoindoxyl-mgm-15-and)
+- [Federal Register: HHS OASH extension of comment period, August 26, 2026](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period)
 - [21 U.S.C. § 811 — temporary scheduling authority](https://www.law.cornell.edu/uscode/text/21/811)
 - [FDA warning letters press release, July 2025](https://www.fda.gov/news-events/press-announcements/fda-issues-warning-letters-firms-marketing-products-containing-7-hydroxymitragynine)
 - [FDA statement recommending scheduling, July 2025](https://www.fda.gov/news-events/press-announcements/fda-takes-steps-restrict-7-oh-opioid-products-threatening-american-consumers)
