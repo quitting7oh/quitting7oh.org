@@ -1,6 +1,6 @@
 ---
 title: "Paths Off 7-OH"
-description: "Six ways people come off 7-OH and related synthetics, in the order this community would try them."
+description: "Five ways people come off 7-OH and related synthetics, in the order this community would try them."
 category: "start-here"
 last_updated: "2026-08-28"
 sort: 5
@@ -64,15 +64,9 @@ Fits: high-dose synthetics, long use, multiple failed lower-rung attempts, sever
 
 See [Suboxone](/mat-suboxone/suboxone-for-7oh).
 
-### 6. SR-17 (Schedule I as of August 27, 2026)
-
-SR-17018. A biased mu agonist with a long duration of action, and until recently the non-prescription bridge this community documented. DEA placed it in Schedule I on August 27, 2026, under the name 5,6-dichloro desmethylchlorphine. Possession is now a federal offense.
-
-This rung is listed because people are partway through SR-17 tapers right now and need the stepdown schedule. It is not a path you can start.
-
-See [SR-17018](/other-tools/sr-17) for the order, what it covers, and what to do if you're mid-taper.
-
 **A note on direct dose-tapering of 7-OH itself.** Some people don't switch to anything; they step the concentrated 7-OH dose down on its own schedule, halving from high doses, plateauing at the lower end, then jumping off. That path sits adjacent to this ladder rather than on it (it doesn't reduce to one rung), and it has its own characteristic shape and stall points. [Tapering Off 7-OH](/for-you/tapering-7oh) covers what it looks like in practice and how it usually ends.
+
+**This ladder had a sixth rung until August 2026.** [SR-17018](/other-tools/sr-17) was the non-prescription bridge, and DEA placed it in Schedule I on August 27, 2026. It is off the ladder because it is no longer something you can start. Its page stays up for anyone partway through a taper.
 
 ## Moving between rungs
 

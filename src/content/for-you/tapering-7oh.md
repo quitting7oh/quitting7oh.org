@@ -71,9 +71,9 @@ The reader chooses based on what's accessible. Clinical support and community ap
 
 **Buprenorphine transition.** Switching from concentrated 7-OH to [buprenorphine](/mat-suboxone/suboxone-for-7oh) and tapering the bupe draws on the established OUD taper literature. Requires a prescriber. The [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) protocol covers the 5-to-10-day version this community uses for short-acting 7-OH specifically.
 
-**SR-17 transition.** [SR-17](/other-tools/sr-17) went into Schedule I on August 27, 2026, so this is no longer a bridge you can start legally. It is documented here for readers already mid-taper. Pharmacologically a biased mu-agonist with a long duration of action; used as a substitute the same way bupe is, with the trade-offs of thinner clinical literature and gray-market sourcing. Sidesteps the precipitated-withdrawal problem that the standard bupe induction can produce. The [SR-17 page](/other-tools/sr-17) covers the protocol and the caveats.
-
 **Kratom leaf or mitragynine extract as a step-down.** Plain [kratom leaf](/compounds/kratom-leaf) carries a much lower 7-OH load and a different alkaloid profile than concentrated 7-OH products. Some people transition to leaf for the lower portion of the taper and jump off the leaf rather than the concentrated product. [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) covers that protocol. The closely related path of stepping down to a concentrated mitragynine extract product is covered on [Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine), along with the product-contamination concerns specific to that route.
+
+An SR-17 transition sat alongside these until August 27, 2026, when [SR-17018](/other-tools/sr-17) went into Schedule I.
 
 ## Ending the taper
 
