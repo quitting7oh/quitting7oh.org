@@ -2,7 +2,7 @@
 title: "Peptides for 7-OH and Kratom-Synthetic Withdrawal"
 description: "Peptides used as adjuncts in 7-OH and kratom-synthetic recovery — BPC-157, Selank, Semax, DSIP, TB-500 — the evidence and the unregulated-supply safety concerns."
 category: "other-tools"
-last_updated: "2026-06-08"
+last_updated: "2026-08-28"
 sort: 8
 ---
 
@@ -168,7 +168,6 @@ The risks here are different from other community-discussed adjuncts because the
 For opioid-receptor dependence, including from 7-OH and the kratom synthetics, several paths have substantially stronger evidence than the peptides discussed here:
 
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)** (buprenorphine), accessible through [telehealth providers](/resources/telehealth-for-suboxone), with decades of clinical evidence and standard pharmacy-supply quality
-- **[SR-17](/other-tools/sr-17)** is the other medication-assisted path the community has converged on for getting off the synthetics, off-prescription and with thinner clinical literature
 - **[Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)** and cold turkey with **[helper medications](/other-tools/helper-meds)** are the non-MAT options
 - For specific PAWS symptoms, evidence-based prescription options include SSRIs for mood, bupropion for motivation, trazodone or doxepin for sleep, and clonidine and gabapentin for acute and post-acute symptoms; see [Helper Medications](/other-tools/helper-meds)
 

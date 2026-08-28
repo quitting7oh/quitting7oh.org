@@ -2,7 +2,7 @@
 title: "How to Use This Website"
 description: "A short map of the site, organized by where you are right now, find the one page that's most useful for what you're going through."
 category: "start-here"
-last_updated: "2026-05-25"
+last_updated: "2026-08-28"
 sort: 3
 ---
 
@@ -25,9 +25,8 @@ next move matters more than the rest of this site. Go here first.
 
 Hour-by-hour timeline, what to do in the next sixty minutes, what to
 avoid, when to go to the ER, and the real paths out, tough it out,
-step down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf),
-[Suboxone](/mat-suboxone/suboxone-for-7oh), or
-[SR-17](/other-tools/sr-17).
+step down to [kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf), or
+[Suboxone](/mat-suboxone/suboxone-for-7oh).
 
 - **[Withdrawal Help](/start-here/7-oh-withdrawal-help)**: the main page for this.
 - **[Helper Medications](/other-tools/helper-meds)**: clonidine,
@@ -66,8 +65,6 @@ exist with real pros and cons.
 
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)**: one widely-used path,
   with the community's low-and-slow induction approach.
-- **[SR-17](/other-tools/sr-17)**: a non-prescription option
-  some people have used to bridge off 7-OH and related synthetics.
 - **[Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf)**: a gentler taper that works for some people coming off lower doses.
 - **[Vitamins & Supplements](/other-tools/vitamins-supplements)**: what to have on hand before you start, whichever path you pick.
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: a fact-checked

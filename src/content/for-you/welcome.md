@@ -2,7 +2,7 @@
 title: "For You: Start Here"
 description: "Practical resources for the person in recovery, treatment, work protections, mutual aid, and sober living. Meets you wherever you are."
 category: "for-you"
-last_updated: "2026-06-04"
+last_updated: "2026-08-28"
 sort: 1
 ---
 
@@ -20,7 +20,7 @@ This section is the practical-resources version. The rest of this site covers wh
 
 ## Section overview
 
-- **[At-Home Treatment](/for-you/at-home-treatment)**: the path this site is built around: the four community-validated approaches (cold turkey with helper meds, leaf taper, Suboxone, SR-17), the tools to have on hand, and when at-home isn't the right fit.
+- **[At-Home Treatment](/for-you/at-home-treatment)**: the path this site is built around: the community-validated approaches (cold turkey with helper meds, leaf taper, Suboxone), the tools to have on hand, and when at-home isn't the right fit.
 - **[Tapering Off 7-OH](/for-you/tapering-7oh)**: what direct dose-tapering of concentrated 7-OH looks like, the lower-dose plateau where most self-managed tapers stall, and the jump-off endpoint.
 - **[Rehabilitation Centers](/for-you/rehabilitation-centers)**: detox, residential, PHP, IOP, and outpatient, plus how insurance parity works under [MHPAEA](https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/mental-health-and-substance-use-disorder-parity), free and low-cost options, and what to expect when you call.
 - **[FMLA, ADA & Your Job](/for-you/fmla-ada-job)**: federal job-protected leave for your own treatment, [ADA](https://www.ada.gov) recovery protections, what HR sees, and EAPs.

@@ -2,7 +2,7 @@
 title: "Ultra-Low-Dose Naltrexone (ULDN)"
 description: "Ultra-low-dose naltrexone (ULDN) at microgram doses taken alongside opioids — the investigational concept, the thin clinical evidence, why it isn't standard care."
 category: "post-acute"
-last_updated: "2026-06-08"
+last_updated: "2026-08-28"
 sort: 13
 ---
 
@@ -174,9 +174,9 @@ Putting the framing in one box:
 - **Not [LDN](/post-acute/naltrexone-low-dose).** Three orders of
   magnitude smaller, opposite timing relative to opioids,
   different intended use.
-- **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh) or
-  [SR-17](/other-tools/sr-17).** It's a theoretical adjunct
-  to opioid agonist therapy, not a substitute for it.
+- **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh).**
+  It's a theoretical adjunct to opioid agonist therapy, not a
+  substitute for it.
 - **Not a substitute for a real taper plan.** Even where the
   pharmacology might help smooth the bottom of a Suboxone taper,
   it doesn't replace the taper itself.

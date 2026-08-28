@@ -38,7 +38,17 @@ const REVIEWED_DOCS = new Map([
   ['2026-13608', 'Jul 6, 2026 — HHS OASH request for information (HHS-OASH-2026-0232)'],
   ['2026-17429', 'Aug 26, 2026 — DEA temporary scheduling ORDER, pseudo / MGM-15 / MGM-16 (in effect)'],
   ['2026-17409', 'Aug 26, 2026 — HHS OASH comment period extended to Sep 10, 2026'],
+  ['2026-13364', 'Jul 1, 2026 — DEA notice of intent, SR-17018 and three other synthetic opioids (DEA-1665)'],
+  ['2026-17531', 'Aug 27, 2026 — DEA temporary scheduling ORDER, SR-17018 / 5,6-dichloro desmethylchlorphine (in effect)'],
 ]);
+
+/**
+ * Search terms queried against the Federal Register. 7-OH covers the
+ * kratom synthetics; SR-17018 is a separate scheduling track (DEA-1665)
+ * that the 7-OH query does not surface, and the site makes dated claims
+ * about it, so it gets watched too.
+ */
+const SEARCH_TERMS = ['7-hydroxymitragynine', 'SR-17018'];
 
 /**
  * Documents published before this are the pre-2026 historical record
@@ -67,16 +77,23 @@ const isoDate = new Intl.DateTimeFormat('en-CA', {
 }).format(now);
 
 // ── 1. Federal Register check ────────────────────────────────────────
-const frUrl =
-  'https://www.federalregister.gov/api/v1/documents.json' +
-  '?conditions%5Bterm%5D=7-hydroxymitragynine&order=newest&per_page=20';
-const frRes = await fetch(frUrl);
-if (!frRes.ok) {
-  console.error(`Federal Register API returned ${frRes.status}; cannot verify. Aborting without changes.`);
-  process.exit(1);
+const byNumber = new Map();
+for (const term of SEARCH_TERMS) {
+  const frUrl =
+    'https://www.federalregister.gov/api/v1/documents.json' +
+    `?conditions%5Bterm%5D=${encodeURIComponent(term)}&order=newest&per_page=20`;
+  const frRes = await fetch(frUrl);
+  if (!frRes.ok) {
+    console.error(`Federal Register API returned ${frRes.status} for "${term}"; cannot verify. Aborting without changes.`);
+    process.exit(1);
+  }
+  const fr = await frRes.json();
+  for (const d of fr.results ?? []) {
+    // A document can match more than one term; dedupe by number.
+    if (d.publication_date >= FLOOR_DATE) byNumber.set(d.document_number, d);
+  }
 }
-const fr = await frRes.json();
-const inScope = (fr.results ?? []).filter((d) => d.publication_date >= FLOOR_DATE);
+const inScope = [...byNumber.values()];
 const unreviewed = inScope.filter((d) => !REVIEWED_DOCS.has(d.document_number));
 
 if (unreviewed.length > 0) {
@@ -103,7 +120,8 @@ if (missing.length > 0) {
 }
 
 console.log(
-  `Federal Register: ${inScope.length} document(s) since ${FLOOR_DATE}, all reviewed. ` +
+  `Federal Register: ${inScope.length} document(s) since ${FLOOR_DATE} across ` +
+    `${SEARCH_TERMS.length} search terms, all reviewed. ` +
     `No order on the 7-OH threshold as of ${monthDayYear}.`,
 );
 
