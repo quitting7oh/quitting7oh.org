@@ -2,7 +2,7 @@
 title: "What You Should Know About Long-Term Suboxone"
 description: "Long-term Suboxone effects, dependence, hormone changes, and tapering off — including the long-acting injectables some people use to exit."
 category: "mat-suboxone"
-last_updated: "2026-08-21"
+last_updated: "2026-08-28"
 sort: 8
 ---
 
@@ -22,10 +22,11 @@ produces opioid withdrawal. Long-term use changes how you feel
 emotionally and physically.
 
 Suboxone is one widely-used path off 7-OH and kratom synthetics, not
-the only one. [SR-17](/other-tools/sr-17),
-[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf), and cold
-turkey with [helper meds](/other-tools/helper-meds) are the other
-community-documented options. This page is specifically about the
+the only one. [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
+and cold turkey with [helper meds](/other-tools/helper-meds) are the
+other community-documented options.
+([SR-17](/other-tools/sr-17) was a third until it went into Schedule I
+on August 27, 2026.) This page is specifically about the
 trade-offs of staying on Suboxone past the rapid-taper window, and,
 toward the bottom, about a newer exit path (the long-acting
 injectables) that some people are using now and that's showing

@@ -534,9 +534,13 @@ The community is medication-agnostic. Buprenorphine (Suboxone, Subutex)
 is **one of several legitimate paths** people use to come off 7-OH and
 kratom synthetics. Others documented on the site include:
 
-- [SR-17](/other-tools/sr-17) as an informal taper bridge
 - [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
 - Cold turkey with [helper meds](/other-tools/helper-meds)
+
+[SR-17](/other-tools/sr-17) was on this list as an informal taper
+bridge until **August 27, 2026**, when DEA placed SR-17018 in
+Schedule I under the name 5,6-dichloro desmethylchlorphine. It is no
+longer a path to route anyone toward. See the pairing rule below.
 
 **Naltrexone (LDN, ULDN, Vivitrol) is NOT a path off opioids.** It's a
 mu-opioid *antagonist* — taking it while there are still opioids on
@@ -562,7 +566,7 @@ options before diving in.
 
 #### The site is objective; don't rank paths in editorial voice
 
-This is the **broader rule** that the Subs↔SR-17 pairing rule (below)
+This is the **broader rule** that the path-pairing rule (below)
 operationalizes. The site is an objective reference. We describe
 options, the evidence behind them, the trade-offs, and the practical
 realities. We do **not** rank one path as more legitimate, more
@@ -643,29 +647,36 @@ coming off 7-OH land in the 2–8 mg range" (dose observation).
 These are observations about a specific clinical detail, not
 popularity claims about which path is the right one.
 
-#### Subs ↔ SR-17 pairing rule
+#### Path-pairing rule
 
 The site is **opinionless** on which path someone uses to quit. Every
 option has real pros and cons; the job here is to educate, not steer.
 
-**Easy rule to remember: if Suboxone is named in a quitting context,
-[SR-17](/other-tools/sr-17) is named alongside it.** They're the
-two community-validated medication-assisted paths off 7-OH and related
-synthetics. Naming one without the other implicitly endorses the named
-one as the "real" answer, which violates the opinionless posture.
+**Easy rule to remember: never let Suboxone be the only path named in
+a quitting context.** [Tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf)
+and cold turkey with [helper meds](/other-tools/helper-meds) get named
+alongside it. Naming Suboxone alone implicitly endorses it as the
+"real" answer, which violates the opinionless posture.
 
 Applies whenever the writing is recommending or routing — wayfinder
 branches, "where to go next" sections, in-content "if you're trying to
 quit, see X" callouts, compound-page reminders, etc. It does **not**
 apply inside content that is itself scoped to a specific medication (a
-Suboxone induction page can stay focused on Suboxone; an SR-17 protocol
-page can stay focused on SR-17).
+Suboxone induction page can stay focused on Suboxone).
 
-[Tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold turkey
-with [helper meds](/other-tools/helper-meds) are also legitimate
-paths — name them when they fit the context — but the Subs↔SR-17 pair
-is the load-bearing one: those are the two MAT-equivalent options the
-community has converged on for getting off the synthetics.
+**This rule used to pair Suboxone with [SR-17](/other-tools/sr-17)**,
+on the reasoning that those were the two MAT-equivalent options the
+community had converged on. SR-17018 went into Schedule I on
+August 27, 2026, so that pairing is retired: routing a reader toward
+a Schedule I substance is not neutrality, it's a bad handoff. Leaf
+taper and helper-med cold turkey now carry the job of keeping
+Suboxone from reading as the single legitimate answer.
+
+Do not reintroduce SR-17 into routing or "your options are" lists.
+It stays documented on its own page and in the taper calculator for
+readers who are already mid-taper, and it can be named in historical
+or comparative context as long as its Schedule I status travels with
+the mention.
 
 ### Don't apply opioid-overdose framing to 7-OH specifically
 
@@ -843,8 +854,8 @@ actually help with:
 - **Cannabis use during recovery.** Most clinicians have a
   one-sentence policy (allow / don't allow), not a conversation.
   Drug-interaction questions (CBD ↔ bupe) are the narrow exception.
-- **SR-17018.** Off-prescription, no human clinical literature; most
-  clinicians have never heard of it.
+- **SR-17018.** Schedule I since August 27, 2026, no human clinical
+  literature; most clinicians have never heard of it.
 - **LDN / ULDN protocols for post-acute use.** A small subset of
   prescribers run these; the typical addiction-medicine telehealth
   intake will not. Route only with the caveat that prescribers

@@ -2,7 +2,7 @@
 title: "Paths Off 7-OH"
 description: "Six ways people come off 7-OH and related synthetics, in the order this community would try them."
 category: "start-here"
-last_updated: "2026-07-04"
+last_updated: "2026-08-28"
 sort: 5
 ---
 
@@ -64,15 +64,13 @@ Fits: high-dose synthetics, long use, multiple failed lower-rung attempts, sever
 
 See [Suboxone](/mat-suboxone/suboxone-for-7oh).
 
-### 6. SR-17, with helpers if needed
+### 6. SR-17 (Schedule I as of August 27, 2026)
 
-SR-17018. A biased mu agonist with a long duration of action. Sidesteps the buprenorphine-displacement problem that makes Suboxone tricky for long-acting kratom synthetics like [MGM-15](/compounds/mgm15). Off-prescription, less clinical literature than buprenorphine.
+SR-17018. A biased mu agonist with a long duration of action, and until recently the non-prescription bridge this community documented. DEA placed it in Schedule I on August 27, 2026, under the name 5,6-dichloro desmethylchlorphine. Possession is now a federal offense.
 
-Fits: Suboxone isn't accessible, prior bupe induction failed, dual-receptor compounds like MGM-15 in the picture, or you want the long-acting MAT option that doesn't risk precipitated withdrawal during induction.
+This rung is listed because people are partway through SR-17 tapers right now and need the stepdown schedule. It is not a path you can start.
 
-See [SR-17018](/other-tools/sr-17).
-
-**Rungs 5 and 6 are equivalent.** Pick based on access, prior experience, and which prescriber relationship you have.
+See [SR-17018](/other-tools/sr-17) for the order, what it covers, and what to do if you're mid-taper.
 
 **A note on direct dose-tapering of 7-OH itself.** Some people don't switch to anything; they step the concentrated 7-OH dose down on its own schedule, halving from high doses, plateauing at the lower end, then jumping off. That path sits adjacent to this ladder rather than on it (it doesn't reduce to one rung), and it has its own characteristic shape and stall points. [Tapering Off 7-OH](/for-you/tapering-7oh) covers what it looks like in practice and how it usually ends.
 

@@ -2,14 +2,14 @@
 title: "Quit 7-OH with Kratom Leaf"
 description: "Using plain kratom leaf as a bridge off concentrated 7-OH and other kratom synthetics, when it works, when it doesn't, and how to taper the leaf afterward."
 category: "other-tools"
-last_updated: "2026-06-09"
+last_updated: "2026-08-28"
 sort: 5
 ---
 For some users in this community, **plain kratom leaf powder can be used as a taper tool** to come off [7-OH](/compounds/7-oh) and other concentrated kratom-derived products. The reasoning is straightforward: [7-OH](/compounds/7-oh) is one of the alkaloids naturally present in kratom leaf, just at far lower concentrations than in concentrated products. Tapering down to leaf is essentially reducing your alkaloid exposure to a fraction of what concentrated products deliver, and then tapering off the leaf itself.
 
 The other taper-shaped path is tapering the concentrated 7-OH dose directly without switching to anything. See [Tapering Off 7-OH](/for-you/tapering-7oh) for that one, including where it stalls and what the jump-off looks like.
 
-**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support (Suboxone, see [Suboxone](/mat-suboxone/suboxone-for-7oh)) or SR-17018 to bridge through. **The two paths covered here:**
+**This works best for users currently at lower daily [7-OH](/compounds/7-oh) equivalent doses.** Heavier users typically need pharmaceutical support ([Suboxone](/mat-suboxone/suboxone-for-7oh)) to bridge through. **The two paths covered here:**
 
 - **Under ~100 mg [7-OH](/compounds/7-oh) equivalent per day:** leaf alone may be enough
 - **Under ~500 mg 7-OH equivalent per day:** leaf plus helper meds may work
@@ -107,10 +107,10 @@ What to look for:
 - **Taking leaf too frequently.** Mitragynine has a long half-life. Most users do well with 3 to 4 doses per day spaced 4 to 6 hours apart.
 - **Skipping the strain transitions.** Sticking with red veins through the whole taper means the last 1 to 2 grams hits harder. Shifting to greens then whites smooths the bottom.
 - **Switching brands mid-taper.** Different brands and batches have different alkaloid profiles. Stick with one source through your taper if you can.
-- **Trying this at higher daily doses.** If you're at 500+ mg/day, leaf is unlikely to cover you adequately. Look at Suboxone or SR-17018 instead.
+- **Trying this at higher daily doses.** If you're at 500+ mg/day, leaf is unlikely to cover you adequately. Look at [Suboxone](/mat-suboxone/suboxone-for-7oh) instead.
 
 ## If leaf isn't working
-**That's not failure, it just means you need a different tool.** Suboxone, SR-17018, or a clinical taper plan may be a better fit. Post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) to talk through options with people who've faced the same call. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
+**That's not failure, it just means you need a different tool.** Suboxone or a clinical taper plan may be a better fit. Post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) to talk through options with people who've faced the same call. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
 
 ## Sources
 - [Mitragynine, Wikipedia](https://en.wikipedia.org/wiki/Mitragynine)

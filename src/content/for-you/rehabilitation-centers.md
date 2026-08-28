@@ -2,7 +2,7 @@
 title: "Rehabilitation Centers"
 description: "Detox, residential, PHP, IOP, and outpatient, what each level of care looks like, how to find a program, how to pay, and what to be skeptical of."
 category: "for-you"
-last_updated: "2026-05-25"
+last_updated: "2026-08-28"
 sort: 4
 ---
 
@@ -83,8 +83,8 @@ are legitimate; the right one depends on the specific situation.
 
 For the full medication details (community-validated induction
 protocol, rapid-taper structure, long-term risks, and the other
-community-documented paths like [SR-17](/other-tools/sr-17)
-and [tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)),
+community-documented paths like
+[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)),
 see **[At-Home Treatment](/for-you/at-home-treatment)** and the
 **[MAT / Suboxone section](/mat-suboxone)**.
 
