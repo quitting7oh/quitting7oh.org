@@ -2,7 +2,7 @@
 title: "Kratom Leaf & Mitragynine"
 description: "Kratom basics, what mitragynine does in the body, how it relates to 7-OH, and why concentrated 7-OH products are not the same thing as leaf."
 category: "compounds"
-last_updated: "2026-07-03"
+last_updated: "2026-08-28"
 sort: 1
 ---
 
@@ -311,11 +311,13 @@ route.
   maintains [Import Alert 54-15](https://www.accessdata.fda.gov/cms_ia/importalert_1137.html)
   on bulk *M. speciosa* material
   ([FDA on kratom](https://www.fda.gov/news-events/public-health-focus/fda-and-kratom)).
-- **7-OH:** not yet federally scheduled, but the clock is running. On
-  July 1, 2026, DEA filed a notice of intent to temporarily place 7-OH
-  above a 0.05% / 1 mg threshold in **Schedule I**; the earliest the
-  order can take effect is August 5, 2026. Leaf below the threshold is
-  explicitly outside the action. Dates, scope, and process:
+- **7-OH:** not yet federally scheduled, but the clock has run out. DEA
+  filed a notice of intent to temporarily place 7-OH above a 0.05% /
+  1 mg threshold in **Schedule I**, and the 30-day waiting period
+  expired August 5, 2026, so the order can publish any business day.
+  Three related synthetics (pseudo, MGM-15, MGM-16) went into
+  Schedule I on August 26, 2026. Leaf below the threshold is explicitly
+  outside both actions. Dates, scope, and process:
   [The Federal 7-OH Ban](/compounds/7-oh-ban).
 - **State actions:** Louisiana placed mitragynine and 7-OH in state
   Schedule I effective Aug 1, 2025. Ohio enacted an emergency rule

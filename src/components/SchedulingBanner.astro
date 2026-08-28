@@ -12,9 +12,9 @@ const PAGE_URL = '/compounds/7-oh-ban';
     <span class="size-2 shrink-0 rounded-full bg-signal" aria-hidden="true"></span>
     <span class="line-clamp-2 text-muted-foreground">
       <span class="font-semibold text-foreground">Ban status:</span>
-      <span class="min-[820px]:hidden"> The DEA has not banned 7-OH as of August 20.</span>
+      <span class="min-[820px]:hidden"> As of August 28, 7-OH is not banned. Pseudo, MGM-15, and MGM-16 are.</span>
       <span class="hidden min-[820px]:inline">
-        &nbsp;As of August 20, the DEA has not banned 7-OH. What’s happening and what it means&nbsp;&rarr;
+        &nbsp;As of August 28, 7-OH is not banned. Pseudo, MGM-15, and MGM-16 are. Schedule I for those three took effect August 26&nbsp;&rarr;
       </span>
     </span>
   </a>
@@ -34,7 +34,7 @@ const PAGE_URL = '/compounds/7-oh-ban';
   dismiss?.addEventListener('click', () => {
     document.documentElement.dataset.schedulingBanner = 'hidden';
     try {
-      localStorage.setItem('scheduling-banner-dismissed-2026-08', '1');
+      localStorage.setItem('scheduling-banner-dismissed-2026-08-26', '1');
     } catch {
       // The page-level state still applies when storage is unavailable.
     }
