@@ -171,7 +171,7 @@ to **September 10, 2026**, after receiving a request for more time.
 The docket is open again, and comments already submitted stand; nobody
 needs to refile. As of August 28,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
-shows 26,545 comments posted, with the rest still moving through
+shows 26,886 comments posted, with the rest still moving through
 review.
 
 The scope did not change with the extension. OASH asked two questions
