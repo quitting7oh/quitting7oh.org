@@ -1,16 +1,18 @@
 name: Update 7-OH ban status
 
 # Daily re-verification of the ban page and site banner. The script
-# checks the Federal Register for any new 7-hydroxymitragynine
-# document; if none has published, it bumps the "as of" dates and
-# refreshes the docket's processed-comment count, and this workflow
-# commits the result (CF Pages deploys on push).
+# checks the Federal Register for 7-hydroxymitragynine documents and
+# compares them against the reviewed-document allowlist it carries. If
+# everything published has already been folded into the page, it bumps
+# the "as of" dates and refreshes the docket's posted-comment count,
+# and this workflow commits the result (CF Pages deploys on push).
 #
-# If a scheduling order HAS published, the script exits non-zero
-# WITHOUT touching the files: the page keeps its last verified date,
-# the run goes red, and a human rewrites the page. Stale-but-true
-# beats fresh-but-false; never let a cron claim "not banned" past a
-# new Federal Register document.
+# If an UNREVIEWED document has published (the pending 7-OH threshold
+# order, most importantly), the script exits non-zero WITHOUT touching
+# the files: the page keeps its last verified date, the run goes red,
+# and a human rewrites the page and adds the document number to
+# REVIEWED_DOCS. Stale-but-true beats fresh-but-false; never let a cron
+# claim "7-OH is not banned" past a document nobody has read.
 #
 # Re-running:
 #   - The Federal Register publishes at 8:45 AM ET, with special
