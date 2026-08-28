@@ -2,7 +2,7 @@
 title: "Low-Dose Naltrexone (LDN)"
 description: "Low-dose naltrexone (LDN) at a small fraction of the standard dose — off-label for chronic pain, autoimmune conditions, and as a post-acute adjunct. Evidence and caveats."
 category: "post-acute"
-last_updated: "2026-06-08"
+last_updated: "2026-08-28"
 sort: 12
 ---
 
@@ -170,9 +170,8 @@ with a clinician, not as DIY.
   not better, if started while opioids are still active. See
   [Withdrawal Help](/start-here/7-oh-withdrawal-help) for the four
   community-documented paths off the synthetics.
-- **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh) or
-  [SR-17](/medications-supplements/sr-17)** during the active quitting
-  phase. LDN comes in after.
+- **Not a substitute for [MAT](/mat-suboxone/suboxone-for-7oh)**
+  during the active quitting phase. LDN comes in after.
 - **Not a cure-all.** Real evidence in fibromyalgia and some
   autoimmune conditions; thinner evidence in OUD recovery; almost
   no 7-OH-specific data. Real but limited.

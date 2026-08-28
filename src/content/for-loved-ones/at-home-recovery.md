@@ -2,7 +2,7 @@
 title: "When They're Recovering at Home"
 description: "What at-home recovery from 7-OH and kratom-derived synthetics looks like from outside, the tools your loved one is using, and when to push for higher-intensity care."
 category: "for-loved-ones"
-last_updated: "2026-06-08"
+last_updated: "2026-08-28"
 sort: 7
 ---
 
@@ -51,8 +51,6 @@ them](/for-you/at-home-treatment) has the full version):
 - **Suboxone as a structured rapid taper**: typically 5 to 10 days,
   often arranged through a [telehealth prescriber](/resources/telehealth-for-suboxone)
   with no in-person visit needed. Cuts most of the acute withdrawal.
-- **[SR-17](/medications-supplements/sr-17)**: a non-prescription option
-  some people use to bridge off the synthetics.
 - **Stepping down to [kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)**
  , substituting lower-concentration leaf for concentrated 7-OH,
   then tapering the leaf.
@@ -112,7 +110,7 @@ for weeks to months.
 - **Checking on them constantly.** Doors closed when they want them
   closed. They will reach out if they need you.
 - **Trying to manage their medication.** Their relationship with
-  what they're taking (Subs, SR-17, leaf, supplements, helper meds)
+  what they're taking (Subs, leaf, supplements, helper meds)
   is theirs to manage. You can help with logistics; you can't run
   the protocol.
 - **Treating the at-home path as inadequate.** Pushing for

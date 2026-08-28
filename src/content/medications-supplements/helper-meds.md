@@ -2,7 +2,7 @@
 title: "Helper Medications"
 description: "Helper medications for 7-OH and kratom-synthetic withdrawal — clonidine, gabapentin, baclofen, trazodone, ondansetron — with symptom-by-symptom dosing."
 category: "medications-supplements"
-last_updated: "2026-06-20"
+last_updated: "2026-08-28"
 sort: 1
 ---
 > **This is a reference, not a prescription.** Each of these requires a doctor. The [Telehealth Providers comparison](/resources/telehealth-for-suboxone) lists telehealth options that will work with you on adjuncts.
@@ -209,4 +209,4 @@ For chronic anxiety or depression that needs long-term treatment, a psychiatrist
 - **Add for muscle pain:** baclofen or tizanidine
 - **Add for post-acute mood:** bupropion (after the acute phase ends)
 
-Helper meds pair with any of the community-documented quitting paths: cold turkey, [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), [Suboxone](/mat-suboxone/suboxone-for-7oh), or [SR-17](/medications-supplements/sr-17). See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the supplement side, and [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture.
+Helper meds pair with any of the community-documented quitting paths: cold turkey, [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), or [Suboxone](/mat-suboxone/suboxone-for-7oh). See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the supplement side, and [What is PAWS](/post-acute/paws-post-acute-withdrawal) for the longer-term picture.

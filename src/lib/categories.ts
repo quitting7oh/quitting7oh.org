@@ -61,7 +61,7 @@ export const CATEGORIES = [
   {
     slug: 'medications-supplements',
     title: 'Meds & Supplements',
-    blurb: 'Helper meds, supplements, quit-kit stacks, SR-17, NAD+ IV, peptides, tapering with leaf.',
+    blurb: 'Helper meds, supplements, quit-kit stacks, NAD+ IV, peptides, tapering with leaf, cannabis in recovery.',
     Icon: Wrench,
     section: 'recovery',
   },
@@ -161,8 +161,9 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
   ],
   'medications-supplements': [
     { name: 'Helper meds & supplements', slugs: ['helper-meds', 'vitamins-supplements', 'quit-kit', 'mega-dose-vitamin-c', 'nad-iv-therapy', 'peptides-for-withdrawal'] },
-    { name: 'Other ways off 7-OH', slugs: ['quit-7-oh-with-kratom-leaf', 'quit-7-oh-with-mitragynine', 'sr-17'] },
+    { name: 'Other ways off 7-OH', slugs: ['quit-7-oh-with-kratom-leaf', 'quit-7-oh-with-mitragynine'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
+    { name: 'Scheduled compounds', slugs: ['sr-17'] },
   ],
   'post-acute': [
     { name: 'The map', slugs: ['paws-post-acute-withdrawal'] },

@@ -2,7 +2,7 @@
 title: "Recovery Coaching"
 description: "What peer recovery coaching is, what it costs, and how to weigh a paid service like You Are Accountable against the free peer support this community already runs."
 category: "resources"
-last_updated: "2026-06-16"
+last_updated: "2026-08-28"
 sort: 3
 ---
 
@@ -23,8 +23,7 @@ A recovery coach is a trained peer, usually someone in long-term
 recovery themselves, who works with you on a regular schedule by text,
 call, or video to help you stay stopped. Coaching is not therapy, not
 medical care, and not a taper plan. It sits next to whatever path you're
-on, whether that's [buprenorphine](/mat-suboxone/suboxone-for-7oh),
-[SR-17](/medications-supplements/sr-17), a
+on, whether that's [buprenorphine](/mat-suboxone/suboxone-for-7oh), a
 [leaf taper](/medications-supplements/quit-7-oh-with-kratom-leaf), or cold turkey
 with [helper meds](/medications-supplements/helper-meds), and focuses on the part
 those don't cover: the daily structure of getting through the first
@@ -108,8 +107,8 @@ card. Any service that takes recovery seriously can answer these quickly.
    are supposed to be consent-based, so confirm nothing is shared without
    your say-so.
 4. **How does this fit with my prescriber and my quitting path?**
-   Coaching doesn't replace [MAT](/mat-suboxone/suboxone-for-7oh),
-   [SR-17](/medications-supplements/sr-17), or a taper. Make sure your coach supports
+   Coaching doesn't replace [MAT](/mat-suboxone/suboxone-for-7oh) or a
+   taper. Make sure your coach supports
    the path you've chosen.
 5. **What's the cancellation policy?** Month-to-month should mean you can
    stop without a penalty.

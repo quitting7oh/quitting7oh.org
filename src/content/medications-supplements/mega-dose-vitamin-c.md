@@ -2,13 +2,13 @@
 title: "Mega-Dose Vitamin C"
 description: "High-dose vitamin C as a 7-OH and kratom-synthetic withdrawal adjunct: the community protocol, brands, and the cautions to know."
 category: "medications-supplements"
-last_updated: "2026-06-08"
+last_updated: "2026-08-28"
 sort: 4
 ---
 
 > **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, hemochromatosis (iron overload), or are taking an iron supplement. High-dose vitamin C interacts with these conditions and the conversation has to happen.
 
-Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-for-7oh), [SR-17](/medications-supplements/sr-17), [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), cold turkey with [helper meds](/medications-supplements/helper-meds), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
+Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-for-7oh), [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), cold turkey with [helper meds](/medications-supplements/helper-meds), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
 
 ## The protocol
 

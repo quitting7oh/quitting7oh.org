@@ -5,6 +5,13 @@ category: "compounds"
 last_updated: "2026-08-28"
 sort: 6
 ---
+> **Pseudo is banned.** DEA placed mitragynine pseudoindoxyl in
+> Schedule I effective August 26, 2026, running through August 26,
+> 2028. Possession of any quantity is a federal offense, with no grace
+> period for consumers. See
+> [The Federal 7-OH Ban](/compounds/7-oh-ban) for the dates, the scope,
+> and what to do if you're still using.
+
 ## General risks
 - **Despite the "safer opioid" academic framing, MP is still a potent MOR agonist** with full opioid-class dependence, withdrawal, and overdose risk in real-world unregulated use.
 - The reduced-respiratory-depression findings come from controlled animal studies, they don't mean MP is safe to mix with depressants. **Combining with benzos, alcohol, gabapentinoids, or other opioids significantly raises overdose risk.**
@@ -44,6 +51,6 @@ The delta picture is favorable here: buprenorphine is essentially a delta antago
 
 What people have found helps: a longer washout when feasible, prescribers familiar with high-affinity opioid transitions (the fentanyl-induction playbook is more relevant here than the standard kratom-recovery playbook), and being patient with stabilization, it can take 2–3 weeks.
 
-## SR-17 as the other community-validated path
+## SR-17: scheduled as of August 27, 2026
 
-[SR-17](/medications-supplements/sr-17) is the second MAT-equivalent option community members have used for coming off pseudo. SR-17 is a biased mu agonist with a long duration of action; because there's no partial-agonist displacement involved, it sidesteps the high-affinity precipitated-withdrawal problem that makes Suboxone induction off MP difficult. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) is the path with the clinical safety net. Pseudo's tight MOR binding is exactly the territory where the SR-17 community discussion is most active. The [SR-17 page](/medications-supplements/sr-17) has the protocol and the real unknowns.
+[SR-17](/medications-supplements/sr-17) went into Schedule I on August 27, 2026, so it is no longer an available path. Community members did use it for coming off pseudo, and the pharmacology is worth understanding if you are mid-taper. SR-17 is a biased mu agonist with a long duration of action; because there's no partial-agonist displacement involved, it sidesteps the high-affinity precipitated-withdrawal problem that makes Suboxone induction off MP difficult. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) is the path with the clinical safety net. Pseudo's tight MOR binding is exactly the territory where the SR-17 community discussion is most active. The [SR-17 page](/medications-supplements/sr-17) has the protocol and the real unknowns.

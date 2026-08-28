@@ -2,7 +2,7 @@
 title: "About This Site"
 description: "What quitting7oh.org is, who it serves, how the team uses AI, and where to go next."
 category: "about"
-last_updated: "2026-08-22"
+last_updated: "2026-08-28"
 sort: 1
 ---
 
@@ -34,7 +34,7 @@ The full set of instructions lives in [CLAUDE.md](https://github.com/quitting7oh
 ### Rules that shape the drafts
 
 - The site does not rank quitting paths or present one option as the authentic choice.
-- Routing copy names [Suboxone](/mat-suboxone/suboxone-for-7oh) and [SR-17018](/medications-supplements/sr-17) together. A page about one medication can stay focused on that medication.
+- Routing copy never names [Suboxone](/mat-suboxone/suboxone-for-7oh) alone. [Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) and cold turkey with [helper medications](/medications-supplements/helper-meds) appear alongside it. A page about one medication can stay focused on that medication. This rule paired Suboxone with [SR-17018](/medications-supplements/sr-17) until August 2026, when SR-17 went into Schedule I and stopped being a path a reader could take.
 - Substance rules prevent authors from applying heroin and fentanyl mortality figures to 7-OH. They also bar multi-year claims about synthetics that entered the consumer market in 2023.
 - The team checks off-site links before publication. Product pages must show that the named item exists and can be purchased.
 - Dosing pages use the community's lower-dose, short-taper approach for 7-OH and name where it differs from common opioid guidance.

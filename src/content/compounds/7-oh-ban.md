@@ -210,11 +210,12 @@ The paths off are the same ones this site has always documented:
 - **[Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)** —
   leaf below the threshold stays federally legal, so this path
   survives the ban.
-- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** or
-  **[SR-17](/medications-supplements/sr-17)** — the two medication-assisted paths
-  the community has documented. SR-17018 is not named in either
-  notice, but it is its own legal grey area; read its page before
-  relying on it.
+- **[Suboxone](/mat-suboxone/suboxone-for-7oh)** — the
+  medication-assisted path, through a prescriber.
+  **[SR-17](/medications-supplements/sr-17)** filled this slot without a
+  prescriber until August 27, 2026, when DEA placed it in Schedule I
+  under a [separate order](https://www.federalregister.gov/documents/2026/08/27/2026-17531/schedules-of-controlled-substances-temporary-placement-of-56-dichloro-brorphine-56-dichloro).
+  It is no longer a path you can start.
 - **Cold turkey with [helper medications](/medications-supplements/helper-meds)**
   and the [quit kit](/medications-supplements/quit-kit).
 
@@ -222,8 +223,8 @@ A few cautions specific to a ban deadline:
 
 - **Don't compress a taper into a panic.** A rushed, steep taper
   fails more often than a planned one. If you can't finish a taper
-  before supply dries up, a bridge (leaf, Suboxone, SR-17) is a
-  decision to make now, not the day the order publishes.
+  before supply dries up, a bridge (leaf or Suboxone) is a decision
+  to make now, not the day the order publishes.
 - **Stockpiling has a legal cliff.** For pseudo, MGM-15, and MGM-16
   that cliff is behind you: possession has been a federal offense since
   August 26. For 7-OH it arrives the day the order publishes. What you
