@@ -46,7 +46,7 @@ export function SchedulingBanner() {
           aria-hidden="true"
         />
         <span className="font-semibold">
-          As of September 2, 7-OH is not banned. Pseudo, MGM-15, and MGM-16
+          As of September 3, 7-OH is not banned. Pseudo, MGM-15, and MGM-16
           are.
         </span>{' '}
         <span className="opacity-90">
