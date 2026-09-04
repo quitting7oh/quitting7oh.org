@@ -429,7 +429,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
             event.preventDefault();
             setOpen(true);
           }}
-          className="group inline-flex size-11 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent xl:w-auto xl:gap-2 xl:px-4"
+          className="group inline-flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent xl:w-auto xl:gap-2 xl:px-4"
           aria-label={placeholder ?? 'Search the guide'}
         >
           <Search className="size-[1.05rem] shrink-0 text-primary" aria-hidden="true" />

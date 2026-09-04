@@ -318,7 +318,7 @@ export function AppSidebar(props: Props) {
           }}
         >
           <SheetHeader className="sr-only"><SheetTitle>Guide navigation</SheetTitle></SheetHeader>
-          <div ref={mobileRef} onScroll={handleSidebarScroll} className="h-full overflow-y-auto overscroll-contain pt-4">
+          <div ref={mobileRef} onScroll={handleSidebarScroll} className="h-full overflow-y-auto overscroll-contain">
             <Navigation {...props} />
           </div>
         </SheetContent>

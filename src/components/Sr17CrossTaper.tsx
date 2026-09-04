@@ -693,7 +693,7 @@ function SimpleSr17Calculator() {
             <button
               type="button"
               onClick={handleReset}
-              className="shrink-0 text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
+              className="-mt-3 inline-flex min-h-11 shrink-0 items-center text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
             >
               Reset
             </button>
@@ -1591,7 +1591,7 @@ function AdvancedSr17CrossTaper() {
         <button
           type="button"
           onClick={handleReset}
-          className="text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
+          className="inline-flex min-h-11 items-center text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
           title="Clear saved settings and reset all inputs to defaults"
         >
           Reset form

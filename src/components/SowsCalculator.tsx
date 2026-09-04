@@ -367,7 +367,7 @@ export function SowsCalculator() {
           <button
             type="button"
             onClick={reset}
-            className="text-xs text-muted-foreground underline-offset-2 hover:underline focus-visible:outline-none focus-visible:underline"
+            className="inline-flex min-h-11 shrink-0 items-center text-xs text-muted-foreground underline-offset-2 hover:underline focus-visible:outline-none focus-visible:underline"
           >
             Reset
           </button>
