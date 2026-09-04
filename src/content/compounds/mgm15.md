@@ -6,6 +6,12 @@ last_updated: "2026-08-28"
 sort: 3
 ---
 
+> **MGM-15 is banned.** DEA placed it in Schedule I effective
+> August 26, 2026, running through August 26, 2028. Possession of any
+> quantity is a federal offense, with no grace period for consumers.
+> See [The Federal 7-OH Ban](/compounds/7-oh-ban) for the dates, the
+> scope, and what to do if you're still using.
+
 ## What it is
 
 MGM-15 is a semi-synthetic opioid made by chemically reducing [7-OH](/compounds/7-oh). It is the 1,2-dihydro version of [7-OH](/compounds/7-oh). Academic papers also call it "Dihydro-7-Hydroxy Mitragynine" or "DH7OH MG"; forensic-chemistry monographs use "Dihydro-7-Hydroxy Mitragynine."
@@ -103,9 +109,9 @@ Two patterns recur in community reports:
 
 Community knowledge on MGM-15 is ahead of the published literature. Share what's worked or hasn't.
 
-## SR-17 as the other community-validated path
+## SR-17: scheduled as of August 27, 2026
 
-[SR-17](/medications-supplements/sr-17) is the second MAT-equivalent option the community has converged on for getting off the synthetics, and it applies to MGM-15. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above. There's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol and dose ranges community members have used for long-acting compounds like MGM-15. It also documents the unknowns. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) carries the clinical safety net. Both are legitimate paths; pick based on your situation.
+[SR-17](/medications-supplements/sr-17) went into Schedule I on August 27, 2026, so it is no longer an available path. It is covered here because the pharmacology explains why people reached for it with MGM-15 specifically, and because some readers are mid-taper. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above. There's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol and dose ranges community members have used for long-acting compounds like MGM-15. It also documents the unknowns. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) carries the clinical safety net. Both are legitimate paths; pick based on your situation.
 
 ## For the reader being sold one of these products
 
@@ -114,7 +120,7 @@ The working picture: low-dose MGM-15 plus concentrated mitragynine, with composi
 - These products contain opioid-receptor-active compounds. User-reported effects confirm this.
 - A GC-MS COA showing "mitragynine, no 7-OH" on a product producing opioid-class effects is the analytical method hiding the active compound, not the product being mild.
 - For meaningful verification, look for LC-MS/MS or LC-QTOF-MS analysis. Be prepared for those tests to show MGM-15 even when GC-MS doesn't.
-- Dependence on these products produces opioid withdrawal. The withdrawal arc is longer than 7-OH withdrawal because MGM-15's duration is longer. Standard Suboxone induction often needs a longer washout (36–72 hours) and may not cover the first 2–3 days well; community reports consistently describe this. See [Suboxone](/mat-suboxone/suboxone-for-7oh), [SR-17](/medications-supplements/sr-17), the [COWS & SOWS induction guide](/mat-suboxone/sows-cows-induction-guide), and [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
+- Dependence on these products produces opioid withdrawal. The withdrawal arc is longer than 7-OH withdrawal because MGM-15's duration is longer. Standard Suboxone induction often needs a longer washout (36–72 hours) and may not cover the first 2–3 days well; community reports consistently describe this. See [Suboxone](/mat-suboxone/suboxone-for-7oh), the [COWS & SOWS induction guide](/mat-suboxone/sows-cows-induction-guide), and [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 - For the live discussion of what specific products are being sold and what the latest testing shows, the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are the places to go.
 
 ## Open questions and limits
@@ -139,7 +145,7 @@ This page documents what's established and what's reasonably inferred. What isn'
 
 - [7-OH](/compounds/7-oh): the upstream compound from which MGM-15 is derived.
 - [MGM-16](/compounds/mgm16): the fluorinated analog of MGM-15 in the published literature; not yet documented in U.S. consumer products.
-- [Suboxone](/mat-suboxone/suboxone-for-7oh) and [SR-17](/medications-supplements/sr-17): the medication-assisted paths.
+- [Suboxone](/mat-suboxone/suboxone-for-7oh): the medication-assisted path.
 - [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working): the long-acting-synthetic notes apply directly to MGM-15.
 - [COWS & SOWS Induction Guide](/mat-suboxone/sows-cows-induction-guide): the longer-washout note for long-acting synthetics applies here.
 - [Tapering Off 7-OH](/for-you/tapering-7oh): the main taper page.

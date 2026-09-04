@@ -2,7 +2,7 @@
 title: "Impending Doom"
 description: "The specific terror that hits in withdrawal and PAWS — feeling like something catastrophic is about to happen. What it is, what to do right now, when it's more than withdrawal."
 category: "post-acute"
-last_updated: "2026-06-09"
+last_updated: "2026-08-28"
 sort: 5
 ---
 
@@ -222,9 +222,9 @@ anxiety / impending-doom picture include:
 - **Propranolol**: beta-blocker, targets the [physical symptoms specifically](https://pmc.ncbi.nlm.nih.gov/articles/PMC9456064/)
 - **Benzodiazepines**: effective short-term with real caveats (dependence, cross-tolerance with bupe is a documented overdose pattern)
 - **Buprenorphine or other MAT**: addresses the underlying
-  receptor-system dysregulation. See [MAT / Suboxone](/mat-suboxone)
-  and [SR-17](/medications-supplements/sr-17) as the two
-  community-validated medication-assisted paths off the synthetics
+  receptor-system dysregulation. See
+  [MAT / Suboxone](/mat-suboxone) for the medication-assisted path
+  off the synthetics
 
 For what each does, when it's used, the caveats, and the
 interactions: **[Helper Medications](/medications-supplements/helper-meds)**

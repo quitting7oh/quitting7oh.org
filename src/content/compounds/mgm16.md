@@ -6,6 +6,11 @@ last_updated: "2026-08-28"
 sort: 4
 ---
 
+> **MGM-16 is banned.** DEA placed it in Schedule I by name, effective
+> August 26, 2026, running through August 26, 2028. Possession of any
+> quantity is a federal offense. See
+> [The Federal 7-OH Ban](/compounds/7-oh-ban) for the dates and scope.
+
 MGM-16 is a fluorinated semi-synthetic derivative of mitragynine,
 first reported by the Takayama / Matsumoto research group in
 [*J Pharmacol Exp Ther* 2014 (PMID 24345467)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/).

@@ -335,10 +335,8 @@ and DEA primary sources before relying on anything specific.
 > **Reminder.** This is a pharmacology reference, not medical
 > advice. If you're trying to come off concentrated 7-OH products,
 > the [Withdrawal Help](/start-here/7-oh-withdrawal-help) page is where to go
-> for what to do right now, including the three real paths out
-> ([Suboxone](/mat-suboxone/suboxone-for-7oh),
-> [SR-17](/medications-supplements/sr-17), or toughing it out with
-> [helper meds](/medications-supplements/helper-meds)). For finding a
-> prescriber for Suboxone or helper meds, see
-> [Telehealth Providers](/resources/telehealth-for-suboxone). SR-17 is
-> off-prescription; community ground.
+> for what to do right now, including the real paths out
+> ([Suboxone](/mat-suboxone/suboxone-for-7oh), a leaf taper, or
+> toughing it out with [helper meds](/medications-supplements/helper-meds)). For
+> finding a prescriber for Suboxone or helper meds, see
+> [Telehealth Providers](/resources/telehealth-for-suboxone).

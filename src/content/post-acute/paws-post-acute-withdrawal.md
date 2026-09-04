@@ -2,7 +2,7 @@
 title: "What is PAWS? A Field Guide to Post-Acute Withdrawal"
 description: "Post-acute withdrawal syndrome, what it is, when it shows up, what symptoms look like, the neurobiology behind it, and what helps, labeled by evidence level."
 category: "post-acute"
-last_updated: "2026-06-09"
+last_updated: "2026-08-28"
 sort: 1
 ---
 
@@ -230,8 +230,7 @@ dependence),
 **[low-dose naltrexone](/post-acute/naltrexone-low-dose)** (post-acute only, can't combine with bupe),
 and continued **MAT**, buprenorphine via the [Sublocade single-shot
 exit](/mat-suboxone/sublocade-brixadi#using-a-single-shot-as-an-exit-from-long-term-suboxone),
-or [SR-17](/medications-supplements/sr-17) as the second
-community-validated medication-assisted path off the synthetics.
+or a planned taper off it.
 
 For what each does, when it's used, dosing context, and the
 interaction profile: **[Helper Medications](/medications-supplements/helper-meds)**
@@ -397,4 +396,4 @@ connections you maintain, all of it adds up.
   SSRI / SNRI / bupropion / buspirone / Suboxone / Sublocade items
   in the clinically-used list. LDN sits outside standard OUD
   telehealth; see the [LDN page](/post-acute/naltrexone-low-dose)
-  for that routing. SR-17 is off-prescription.
+  for that routing.

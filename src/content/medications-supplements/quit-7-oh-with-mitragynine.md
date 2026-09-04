@@ -2,7 +2,7 @@
 title: "Quit 7-OH with Concentrated Mitragynine"
 description: "Concentrated mitragynine extracts as a bridge from 7-OH to abstinence — doses, timelines, the contamination concern, and how it compares to the other paths off."
 category: "medications-supplements"
-last_updated: "2026-06-09"
+last_updated: "2026-08-28"
 sort: 6
 ---
 
@@ -30,8 +30,7 @@ sort: 6
 >   kratom synthetics. Without lab verification, the protocol may not
 >   be the step-down it looks like.
 > - One path of several. [Plain leaf](/medications-supplements/quit-7-oh-with-kratom-leaf),
->   [Suboxone](/mat-suboxone/suboxone-for-7oh),
->   [SR-17](/medications-supplements/sr-17), and direct
+>   [Suboxone](/mat-suboxone/suboxone-for-7oh), and direct
 >   [7-OH taper](/for-you/tapering-7oh) are the other documented
 >   options; community-reported outcomes don't clearly favor one over
 >   the others.
@@ -42,7 +41,7 @@ The shape community reports converge on. Numbers come from substantive threads (
 
 ### Starting 7-OH doses
 
-Attempted mitragynine step-downs span the full dependence range, with the largest cluster at **100–500 mg/day of 7-OH**. Lighter users (50–150 mg/day) attempt it but post less; heavy users (500–2000+ mg/day) post more but also more often report that mitragynine alone is not enough and end up adding [SR-17](/medications-supplements/sr-17), [Suboxone](/mat-suboxone/suboxone-for-7oh), or stronger comfort medications on top.
+Attempted mitragynine step-downs span the full dependence range, with the largest cluster at **100–500 mg/day of 7-OH**. Lighter users (50–150 mg/day) attempt it but post less; heavy users (500–2000+ mg/day) post more but also more often report that mitragynine alone is not enough and end up adding [Suboxone](/mat-suboxone/suboxone-for-7oh) or stronger comfort medications on top. Accounts through mid-2026 also describe adding [SR-17](/medications-supplements/sr-17), which went into Schedule I on August 27, 2026.
 
 ### Bridge doses on the mitragynine side
 
@@ -78,7 +77,7 @@ Without independent lab verification, the protocol can be a continuation of 7-OH
 
 **Continuing to redose 7-OH "for hard moments."** The bridge assumes a clean break on day one. Taking a 7-OH dose every few days when cravings spike resets receptor adaptation and defeats the step-down. Dozens of accounts document this; it's the canonical addiction-discipline failure for this approach.
 
-**Mitragynine alone is often insufficient above ~500 mg/day of 7-OH.** Multiple heavy-dose accounts report that mitragynine extracts don't cover withdrawal, and the reader ends up adding [SR-17](/medications-supplements/sr-17), [Suboxone](/mat-suboxone/suboxone-for-7oh), or aggressive [comfort medications](/medications-supplements/helper-meds) to keep the bridge functional.
+**Mitragynine alone is often insufficient above ~500 mg/day of 7-OH.** Multiple heavy-dose accounts report that mitragynine extracts don't cover withdrawal, and the reader ends up adding [Suboxone](/mat-suboxone/suboxone-for-7oh) or aggressive [comfort medications](/medications-supplements/helper-meds) to keep the bridge functional.
 
 **Polysubstance bridge stacking obscures dose tracking.** Combining mitragynine extract with kratom leaf with helper meds with leftover 7-OH "as needed" produces a regimen that can't be tapered cleanly. Single-vehicle dosing makes the schedule tractable.
 
@@ -118,7 +117,7 @@ Reliable success-rate numbers don't exist in the corpus. The directional pattern
 - A fraction of writers report acute success at 1–2 weeks (survivorship-biased; people post during the moment they want to share).
 - A non-trivial share stall at a low maintenance dose of 7-OH or mitragynine extract and stay there indefinitely. "Fine at this dose, no longer affected by life" descriptions recur.
 - Relapse to 7-OH within days to weeks is regularly reported, usually craving-driven rather than withdrawal-driven; the reader is physically through the acute window but psychologically still pulled back.
-- A growing share of 2026 accounts pivot to [SR-17](/medications-supplements/sr-17) mid-attempt when mitragynine alone isn't covering.
+- A growing share of 2026 accounts pivoted to [SR-17](/medications-supplements/sr-17) mid-attempt when mitragynine alone wasn't covering. That route closed when SR-17 went into Schedule I on August 27, 2026.
 
 The patterns associated with success in community accounts: starting dose under ~300 mg/day, under six months on the synthetic, first quit attempt, an external constraint on the no-7-OH side (state ban, supplier cutoff, geographic separation), and concrete preparation in advance. The patterns associated with struggle: starting dose over 500 mg/day, repeat prior attempts, polysubstance use, no external accountability, pre-existing kratom-leaf dependence layered under the 7-OH habit.
 
@@ -130,7 +129,7 @@ Different paths fit different people, the site doesn't rank them, and community-
 
 **Versus kratom-leaf step-down.** Concentrated mitragynine extract is more dose-predictable and easier to track. Plain leaf is less concentrated, carries the broader natural alkaloid mixture, and is generally more forgiving on the bridge phase. Contamination risk is meaningfully smaller with plain leaf from a reputable vendor than with concentrated extracts.
 
-**Versus [Suboxone](/mat-suboxone/suboxone-for-7oh) and [SR-17](/medications-supplements/sr-17).** Buprenorphine has decades of clinical evidence behind it for opioid-use-disorder tapers. SR-17 is the community-validated non-prescription alternative with thinner clinical literature. Both substitute a long-acting agonist for short-acting 7-OH and sidestep the redose-discipline problem in different ways. Suboxone requires a prescriber; SR-17 is off-prescription with gray-market sourcing. The mitragynine bridge has no clinical evidence base but doesn't require clinical involvement and stays in the kratom-product space the reader is already familiar with.
+**Versus [Suboxone](/mat-suboxone/suboxone-for-7oh).** Buprenorphine has decades of clinical evidence behind it for opioid-use-disorder tapers. It substitutes a long-acting agonist for short-acting 7-OH and sidesteps the redose-discipline problem, and it requires a prescriber. The mitragynine bridge has no clinical evidence base but doesn't require clinical involvement and stays in the kratom-product space the reader is already familiar with. ([SR-17](/medications-supplements/sr-17) sat alongside Suboxone here until it went into Schedule I on August 27, 2026.)
 
 **Versus cold turkey.** Shorter total duration but more acutely brutal. See [Withdrawal Help](/start-here/7-oh-withdrawal-help) for the cold-turkey arc.
 
@@ -149,7 +148,7 @@ For the path-shape questions (am I doing this right, should I cut faster, when d
 
 - [Tapering Off 7-OH](/for-you/tapering-7oh): the main taper page; covers direct 7-OH taper and where leaf or mitragynine step-downs fit at the ending stretch
 - [Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf): the sibling leaf-step-down path with strain considerations
-- [Suboxone](/mat-suboxone/suboxone-for-7oh) and [SR-17](/medications-supplements/sr-17): the medication-assisted paths
+- [Suboxone](/mat-suboxone/suboxone-for-7oh): the medication-assisted path
 - [Withdrawal Help](/start-here/7-oh-withdrawal-help): the acute arc after jumping off
 - [Helper Medications](/medications-supplements/helper-meds): comfort meds that pair with the bridge
 - [Thinking About Using?](/start-here/cravings-and-relapse-thoughts) and [Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse): the craving and post-acute arcs

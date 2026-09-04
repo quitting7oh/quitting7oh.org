@@ -2,7 +2,7 @@
 title: "Rehabilitation Centers"
 description: "Detox, residential, PHP, IOP, and outpatient, from the family's perspective — insurance, parity law, free paths, and how to spot predatory treatment marketing."
 category: "for-loved-ones"
-last_updated: "2026-06-08"
+last_updated: "2026-08-28"
 sort: 8
 ---
 
@@ -62,7 +62,7 @@ legitimate; the right one depends on the specific situation.
 
 For the medication details, community-validated induction protocol,
 rapid-taper structure, long-term risks, and the other
-community-documented paths like [SR-17](/medications-supplements/sr-17) and
+community-documented paths like
 [tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), see
 **[When They're Recovering at Home](/for-loved-ones/at-home-recovery)**
 or the [MAT / Suboxone section](/mat-suboxone). Many clinicians have
