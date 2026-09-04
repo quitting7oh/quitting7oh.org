@@ -194,6 +194,18 @@ function centerCurrent(container: HTMLDivElement | null) {
   } else if (linkBottom > visibleBottom) {
     container.scrollTop = linkBottom - container.clientHeight + inset;
   }
+  // Assigning scrollTop from script does not always fire a scroll event
+  // before paint, so the sticky header's opaque state is derived here as
+  // well as in the onScroll handler.
+  syncScrolledState(container);
+}
+
+function syncScrolledState(container: HTMLElement) {
+  if (container.scrollTop > 4) {
+    container.dataset.sidebarScrolled = 'true';
+  } else {
+    delete container.dataset.sidebarScrolled;
+  }
 }
 
 function preservePageScroll(initialScroll: number, duration = 360) {
@@ -272,12 +284,7 @@ export function AppSidebar(props: Props) {
   };
 
   const handleSidebarScroll = (event: React.UIEvent<HTMLDivElement>) => {
-    const container = event.currentTarget;
-    if (container.scrollTop > 4) {
-      container.dataset.sidebarScrolled = 'true';
-    } else {
-      delete container.dataset.sidebarScrolled;
-    }
+    syncScrolledState(event.currentTarget);
   };
 
   React.useEffect(() => {
