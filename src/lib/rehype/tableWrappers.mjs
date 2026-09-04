@@ -64,6 +64,38 @@ function isComparisonTable(headers) {
   return false;
 }
 
+function isCell(node) {
+  return (
+    node?.type === 'element' && (node.tagName === 'td' || node.tagName === 'th')
+  );
+}
+
+/**
+ * Wrap each cell's content in a single span. On narrow screens the record
+ * layout turns every cell into a two-column grid (label, value). Without a
+ * wrapper, a cell that mixes text with inline elements (a link, bold, code)
+ * contributes several grid items and the extras wrap into the label column.
+ * One wrapper means one value item, so the sentence stays together.
+ */
+function wrapCellValues(table) {
+  visit(table, 'element', (node) => {
+    if (!isCell(node) || !Array.isArray(node.children) || node.children.length === 0) {
+      return;
+    }
+
+    node.children = [
+      {
+        type: 'element',
+        tagName: 'span',
+        properties: { className: ['responsive-table__value'] },
+        children: node.children,
+      },
+    ];
+
+    return SKIP;
+  });
+}
+
 function enhanceRecordCells(table, headers) {
   const tbody = table.children?.find(
     (child) => child.type === 'element' && child.tagName === 'tbody',
@@ -106,6 +138,7 @@ export default function rehypeTableWrappers() {
       const headers = tableHeaders(node);
       const kind = isComparisonTable(headers) ? 'matrix' : 'records';
 
+      wrapCellValues(node);
       if (kind === 'records') enhanceRecordCells(node, headers);
 
       const scrollRegion = {
