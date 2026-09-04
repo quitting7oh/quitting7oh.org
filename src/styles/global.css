@@ -760,6 +760,7 @@
     }
 
     .prose-recovery .responsive-table--records :is(td, th)::before {
+      grid-column: 1;
       content: attr(data-label);
       color: hsl(var(--muted-foreground));
       font-family: var(--font-sans);
@@ -768,6 +769,11 @@
       letter-spacing: 0.075em;
       line-height: 1.35;
       text-transform: uppercase;
+    }
+
+    .prose-recovery .responsive-table--records :is(td, th) > .responsive-table__value {
+      grid-column: 2;
+      min-width: 0;
     }
 
     .prose-recovery .responsive-table--records .responsive-table__primary {
