@@ -338,7 +338,6 @@
 
   .sidebar-nav-head {
     background: transparent;
-    transition: background 180ms ease-out;
   }
 
   .sidebar-nav-head::after {
@@ -355,6 +354,16 @@
     content: '';
     opacity: 0;
     pointer-events: none;
+  }
+
+  /* The fade only runs once the scroll container has finished its initial
+     sync (see AppSidebar's reveal effect). Without the gate the opaque state
+     transitions in on load while rows are already under the header. */
+  [data-sidebar-ready='true'] .sidebar-nav-head {
+    transition: background 180ms ease-out;
+  }
+
+  [data-sidebar-ready='true'] .sidebar-nav-head::after {
     transition: opacity 180ms ease-out;
   }
 
