@@ -16,6 +16,16 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-04
 
+### Suboxone page leads with SOWS
+
+- The Suboxone page timed induction by COWS first and mentioned SOWS as
+  the alternative, while the SOWS calculator is the tool the site
+  actually hands readers. Every threshold, heading, and reminder now
+  leads with SOWS ≥ 17 and gives COWS ≥ 12 as the clinician-scored
+  equivalent. Guide links carry the guide's real title, and the WHO
+  SOWS form joins the further-reading list ahead of the two COWS
+  references.
+
 ### Taper calculator cards on phones
 
 - Below 56rem the calculator schedule becomes stacked cards with a small
