@@ -16,6 +16,41 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-04
 
+### Overlapping live meetings show up everywhere
+
+- The schedule has real overlaps: Grow Recovery shares both Wednesday
+  Kratom Anonymous slots, KA's weekday 9 PM runs into TIAWO's 9:15 PM,
+  and Sunday's KA 1 PM overlaps the women's meeting at 1:30. Every
+  "live now" surface picked the earliest-started room and hid the
+  rest. A new `findLiveMeetings` helper in `src/data/meetings.ts`
+  returns the whole set, and the widgets render it.
+- Homepage "Support right now" row: with several rooms open it lists
+  each one under a "2 live now" header, each with its own join
+  button, instead of one room standing in for both. The crisis page's
+  compact button says how many are live and links to the schedule
+  page rather than silently joining one.
+- Next-meeting page: every live meeting is featured at the top under
+  a "2 meetings are live right now" heading, side by side on wide
+  screens, with the sage top rule that marks "open now" elsewhere on
+  the site. Before, the second live room sat in the "Today" grid as
+  an ordinary card with a small pill.
+- Meeting-schedules page widget: the featured card gains an "Also
+  live now" list for the other open rooms, with join links.
+
+### One Node line across local, CI, Docker, and Cloudflare
+
+- The repo referenced four Node majors at once: workflows pinned
+  22.16.0, `.nvmrc` said 24.15.0, `engines` asked for 22.22.2, and the
+  Dockerfile and Cloudflare setup used 26. Everything now follows
+  `.nvmrc` (26.8.1): the workflows read it with `node-version-file`,
+  `engines.node` is `>=26.0.0`, and the Docker base image already
+  matched.
+- No Node release bundles the npm that wrote the lockfile
+  (`packageManager` is `npm@12.0.2`; Node 26 ships 11.19), so the Docker
+  build and the image-publishing workflow install that npm before
+  `npm ci`. Verified on Node 26.8.1: clean `npm ci` with the lockfile
+  untouched, full build, and the daily ban-status script.
+
 ### Design review fixes on the beta redesign
 
 - Emergency card routes medical emergencies to 911. The withdrawal-help
@@ -59,6 +94,15 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Dark-mode emergency red carries urgency. The dark `--destructive`
   token moved from a peach `hsl(7 67% 67%)` to `hsl(4 62% 50%)` with
   white text (4.87:1 on the button, 3.6:1 against the page).
+
+### Sidebar header snaps solid on load, fades only on scroll
+
+- The guide sidebar's sticky header still ran its 180ms fade when the
+  list auto-scrolled to the current page on load, so on slow loads the
+  header faded from transparent to opaque over rows already beneath it.
+  The fade is now gated on a `data-sidebar-ready` flag that the reveal
+  effect sets one frame after each initial sync, so the load-time state
+  paints instantly and only later user scrolls animate.
 
 ## 2026-08-28
 

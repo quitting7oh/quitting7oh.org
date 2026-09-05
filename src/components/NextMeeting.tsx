@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ExternalLink } from 'lucide-react';
 import {
   findDisplayMeeting,
+  findLiveMeetings,
   findNextStartingAfter,
   isNewMeeting,
   FELLOWSHIPS,
@@ -99,6 +100,8 @@ function statusDetail(status: MeetingStatus, start: Date, end: Date, now: Date):
 
 interface CardProps {
   display: DisplayMeeting;
+  /** Other rooms open at the same time as `display`. */
+  alsoLive: DisplayMeeting[];
   now: Date;
 }
 
@@ -135,7 +138,58 @@ function LiveMeetingAlternatives({ standalone = false }: { standalone?: boolean 
   );
 }
 
-function MeetingCard({ display, now }: CardProps) {
+/** Rooms open at the same time as the featured one. Each gets its own
+ *  join link so the reader sees the choice rather than the earliest
+ *  started room standing in for all of them. */
+function AlsoLive({ live, now }: { live: DisplayMeeting[]; now: Date }) {
+  return (
+    <div className="border-t border-border pt-3">
+      <span className="inline-flex items-center gap-1.5 rounded-md bg-success px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-success-foreground">
+        <span className="size-1.5 rounded-full bg-current" aria-hidden="true" />
+        Also live now
+      </span>
+      <ul className="mt-2 divide-y divide-border">
+        {live.map(({ meeting, end }) => {
+          const fellowship = FELLOWSHIPS[meeting.fellowship];
+          return (
+            <li key={meeting.id} className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-2 text-sm">
+              <span className="min-w-0 flex-1 basis-48">
+                <span className="font-bold text-foreground">
+                  {fellowship.shortName} — {meeting.format}
+                </span>
+                {meeting.note && (
+                  <span className="ml-1 text-muted-foreground">({meeting.note})</span>
+                )}
+                <span className="block text-xs text-muted-foreground">
+                  {formatDuration(end.getTime() - now.getTime())} remaining · {platformFromUrl(meeting.joinUrl)}
+                </span>
+              </span>
+              <a
+                href={meeting.joinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  recordMeetingJoin({
+                    provider: meeting.fellowship,
+                    meetingId: meeting.id,
+                    name: `${fellowship.shortName} — ${meeting.format}`,
+                    joinUrl: meeting.joinUrl,
+                  })
+                }
+                className="inline-flex min-h-10 items-center gap-1.5 rounded-lg bg-success px-3.5 py-2 text-sm font-bold text-success-foreground hover:bg-success/90"
+              >
+                Join meeting
+                <ExternalLink className="h-3.5 w-3.5" aria-hidden={true} />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+function MeetingCard({ display, alsoLive, now }: CardProps) {
   const { meeting, start, end, status } = display;
   const badge = STATUS_BADGE[status];
   const fellowship = FELLOWSHIPS[meeting.fellowship];
@@ -147,7 +201,7 @@ function MeetingCard({ display, now }: CardProps) {
       meetingHistoryKey(meeting.fellowship, meeting.id),
   );
 
-  const nextUp = shouldShowNextUp(status)
+  const nextUp = shouldShowNextUp(status) && alsoLive.length === 0
     ? findNextStartingAfter(end)
     : null;
   const showNextUp =
@@ -230,6 +284,8 @@ function MeetingCard({ display, now }: CardProps) {
         </div>
       </div>
 
+      {alsoLive.length > 0 && <AlsoLive live={alsoLive} now={now} />}
+
       {showNextUp && nextUp && (
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-border pt-3 text-xs text-muted-foreground">
           <span className="font-medium text-foreground/80">Up next at {formatLocalTime(nextUp.start)}:</span>
@@ -290,5 +346,11 @@ export function NextMeeting() {
   const display = findDisplayMeeting(now);
   if (!display) return <LiveMeetingAlternatives standalone />;
 
-  return <MeetingCard display={display} now={now} />;
+  // findLiveMeetings shares its first entry with findDisplayMeeting, so
+  // everything after it is a second room open right now.
+  const alsoLive = findLiveMeetings(now).filter(
+    (entry) => entry.meeting.id !== display.meeting.id,
+  );
+
+  return <MeetingCard display={display} alsoLive={alsoLive} now={now} />;
 }
