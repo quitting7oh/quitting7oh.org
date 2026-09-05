@@ -930,6 +930,16 @@ npm run preview                # serve dist/ locally to test search
 npm run link:compounds         # auto-link compound mentions
 ```
 
+### One Node line everywhere
+
+Node is pinned in `.nvmrc`. The four GitHub workflows read it through
+`actions/setup-node`'s `node-version-file`, the Dockerfile's `FROM node:`
+major matches it, and the Cloudflare Pages `NODE_VERSION` variable (see
+the README) is set to the same major. When bumping Node, move all of
+them in one commit; `engines.node` in `package.json` states the floor.
+Node bundles an older npm than `packageManager` pins, so anything that
+runs npm in CI or Docker installs `npm@<packageManager version>` first.
+
 ### Lockfile maintenance
 
 The project tracks the current npm release in `packageManager` and the
