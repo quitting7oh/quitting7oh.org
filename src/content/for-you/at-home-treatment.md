@@ -28,15 +28,15 @@ The [Paths Off 7-OH](/start-here/how-to-quit-7-oh) page covers the six paths thi
 
 ## The tools to have on hand before you stop
 
-- **A [supplement and OTC stack](/other-tools/vitamins-supplements)**: magnesium glycinate, electrolytes, vitamin C, melatonin at low
+- **A [supplement and OTC stack](/medications-supplements/vitamins-supplements)**: magnesium glycinate, electrolytes, vitamin C, melatonin at low
   doses (1 to 3 mg), NAC. The
-  [Quit Kit-style pre-packaged stacks](/other-tools/quit-kit) are
+  [Quit Kit-style pre-packaged stacks](/medications-supplements/quit-kit) are
   an option if you'd rather not source individual supplements.
 - **A few days of food and drinks you can keep down**: broth, plain
   rice, bananas, toast, applesauce, and protein shakes or
   ready-to-drink protein for when solid food won't go down. A scoop
   of protein powder stirred into yogurt is easier than a meal.
-- **A plan for sleep**: see [Helper Medications](/other-tools/helper-meds)
+- **A plan for sleep**: see [Helper Medications](/medications-supplements/helper-meds)
   for the prescription options (trazodone, gabapentin, doxepin, and
   others), plus low-dose melatonin and magnesium from the supplement
   stack.
@@ -58,7 +58,7 @@ clinicians have never encountered these compounds and may not handle
 the taper well otherwise.
 
 Same-day telehealth can also surface several of the [helper
-medications](/other-tools/helper-meds), clonidine, gabapentin,
+medications](/medications-supplements/helper-meds), clonidine, gabapentin,
 trazodone, for the cold-turkey path.
 
 ## When at-home isn't the right fit

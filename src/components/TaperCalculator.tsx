@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { Input } from '~/components/ui/input';
+import { NumberInput } from '~/components/ui/number-input';
 import { Label } from '~/components/ui/label';
 import { Button } from '~/components/ui/button';
 import {
@@ -87,7 +87,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     note: 'Community-observed taper patterns for concentrated 7-OH cluster around halving for the first half, then progressively slower steps. Most self-managed 7-OH tapers end with a jump-off at some low dose rather than a clean taper to zero. The calculator drops doses-per-day as the total falls; per-dose stays in a tolerable range.',
     related: [
       { label: 'Tapering Off 7-OH', href: '/for-you/tapering-7oh' },
-      { label: 'SR-17 as the other community-validated path', href: '/other-tools/sr-17' },
+      { label: 'SR-17 as the other community-validated path', href: '/medications-supplements/sr-17' },
     ],
   },
   bupe: {
@@ -121,7 +121,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
       { label: 'MIT-A and DHM Products', href: '/compounds/mit-a-dhm' },
       { label: 'MGM-15', href: '/compounds/mgm15' },
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
-      { label: 'SR-17', href: '/other-tools/sr-17' },
+      { label: 'SR-17', href: '/medications-supplements/sr-17' },
     ],
   },
   pseudo: {
@@ -138,7 +138,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     related: [
       { label: 'Pseudo (mitragynine pseudoindoxyl)', href: '/compounds/mitragynine-pseudoindoxyl' },
       { label: 'Suboxone Rapid Taper', href: '/mat-suboxone/suboxone-rapid-taper' },
-      { label: 'SR-17', href: '/other-tools/sr-17' },
+      { label: 'SR-17', href: '/medications-supplements/sr-17' },
     ],
   },
   leaf: {
@@ -153,7 +153,7 @@ const SUBSTANCES: Record<SubstanceKey, SubstanceConfig> = {
     tabletUnitName: 'capsule',
     note: 'Leaf alkaloid content varies between strains, batches, and vendors. Grams are an approximation of dose. Most community leaf tapers end with a jump-off at 1–2 g/day rather than tapering to zero.',
     related: [
-      { label: 'Quit 7-OH with Kratom Leaf', href: '/other-tools/quit-7-oh-with-kratom-leaf' },
+      { label: 'Quit 7-OH with Kratom Leaf', href: '/medications-supplements/quit-7-oh-with-kratom-leaf' },
     ],
   },
 };
@@ -514,7 +514,7 @@ function PerDoseHint({
   const trigger = (
     <button
       type="button"
-      className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+      className="inline-flex min-h-6 items-center gap-1.5 rounded py-0.5 text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
       aria-label={ariaLabel}
     >
       <span>{perDose}</span>
@@ -779,7 +779,7 @@ export function TaperCalculator({
     <TooltipProvider delayDuration={150}>
     <div className="not-prose my-6 space-y-6">
       {/* Form */}
-      <div className="grid gap-4 rounded-lg border border-border bg-card p-4 sm:grid-cols-2 print:hidden">
+      <div className="grid gap-5 rounded-lg border border-border bg-card p-5 sm:grid-cols-2 sm:p-6 print:hidden">
         <div className="sm:col-span-2 flex items-start justify-between gap-3">
           <div className="flex-1">
             {substances.length > 1 && (
@@ -789,7 +789,7 @@ export function TaperCalculator({
           <button
             type="button"
             onClick={handleResetAll}
-            className="text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
+            className="-mt-3 inline-flex min-h-11 shrink-0 items-center text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline focus-visible:outline-none focus-visible:text-foreground focus-visible:underline"
             title="Clear saved settings and reset all inputs to defaults"
           >
             Reset form
@@ -814,29 +814,28 @@ export function TaperCalculator({
 
         <div>
           <Label htmlFor="per-dose">Per-dose amount ({cfg.unit})</Label>
-          <Input
+          <NumberInput
             id="per-dose"
-            type="number"
             inputMode="decimal"
             min={0}
             step="any"
             value={perDose}
-            onChange={(e) => setPerDose(parseFloat(e.target.value) || 0)}
+            onValueChange={setPerDose}
             className="mt-1.5"
           />
         </div>
 
         <div>
           <Label htmlFor="doses-per-day">Times per day</Label>
-          <Input
+          <NumberInput
             id="doses-per-day"
-            type="number"
             inputMode="numeric"
             min={1}
             max={12}
             step={1}
             value={dosesPerDay}
-            onChange={(e) => setDosesPerDay(parseInt(e.target.value, 10) || 1)}
+            onValueChange={setDosesPerDay}
+            integer
             className="mt-1.5"
           />
         </div>
@@ -846,14 +845,14 @@ export function TaperCalculator({
             <Label htmlFor="tablet-size">
               {cfg.tabletUnitName.charAt(0).toUpperCase() + cfg.tabletUnitName.slice(1)} size ({cfg.unit} per {cfg.tabletUnitName})
             </Label>
-            <Input
+            <NumberInput
               id="tablet-size"
-              type="number"
               inputMode="decimal"
               min={0}
               step="any"
-              value={tabletSize || ''}
-              onChange={(e) => setTabletSize(parseFloat(e.target.value) || 0)}
+              value={tabletSize}
+              onValueChange={setTabletSize}
+              emptyWhenZero
               placeholder={
                 cfg.defaultTabletSize !== null
                   ? `e.g. ${cfg.defaultTabletSize}`
@@ -867,7 +866,7 @@ export function TaperCalculator({
           </div>
         )}
 
-        <div className="sm:col-span-2 rounded-md bg-muted/40 px-3 py-2 text-sm">
+        <div className="sm:col-span-2 rounded-md bg-muted/45 px-4 py-3 text-sm">
           <span className="text-muted-foreground">Total daily:</span>{' '}
           <span className="font-semibold text-foreground">
             {roundDose(totalDaily)} {cfg.unit}
@@ -880,14 +879,13 @@ export function TaperCalculator({
 
         <div>
           <Label htmlFor="jump-off">Jump-off dose ({cfg.unit})</Label>
-          <Input
+          <NumberInput
             id="jump-off"
-            type="number"
             inputMode="decimal"
             min={0}
             step="any"
             value={jumpOff}
-            onChange={(e) => setJumpOff(parseFloat(e.target.value) || 0)}
+            onValueChange={setJumpOff}
             className="mt-1.5"
           />
           <p className="mt-1 text-xs text-muted-foreground">
@@ -916,21 +914,19 @@ export function TaperCalculator({
         </div>
 
         {difficulty === 'custom' && (
-          <div className="sm:col-span-2 grid gap-4 rounded-md bg-muted/40 p-3 sm:grid-cols-2">
+          <div className="sm:col-span-2 grid gap-4 rounded-md bg-muted/40 p-4 sm:grid-cols-2">
             <div>
               <Label htmlFor="custom-days">Total duration</Label>
               <div className="mt-1.5 flex items-center gap-2">
-                <Input
+                <NumberInput
                   id="custom-days"
-                  type="number"
                   inputMode="numeric"
                   min={1}
                   max={365}
                   step={1}
-                  value={customDays || ''}
-                  onChange={(e) =>
-                    setCustomDays(Math.max(1, parseInt(e.target.value, 10) || 1))
-                  }
+                  value={customDays}
+                  onValueChange={setCustomDays}
+                  integer
                   className="w-24"
                 />
                 <span className="text-sm text-muted-foreground">days</span>
@@ -942,15 +938,14 @@ export function TaperCalculator({
             <div>
               <Label htmlFor="custom-pct">Percentage per day</Label>
               <div className="mt-1.5 flex items-center gap-2">
-                <Input
+                <NumberInput
                   id="custom-pct"
-                  type="number"
                   inputMode="decimal"
                   min={0.1}
                   max={75}
                   step="0.5"
-                  value={customPctDisplay || ''}
-                  onChange={(e) => handleCustomPctChange(parseFloat(e.target.value) || 0)}
+                  value={customPctDisplay}
+                  onValueChange={handleCustomPctChange}
                   className="w-24"
                 />
                 <span className="text-sm text-muted-foreground">% per day</span>
@@ -966,9 +961,9 @@ export function TaperCalculator({
           {/* Print-only header — visible when the reader picks
               "Save as PDF". Stripped from the on-screen view. */}
           <div className="hidden print:block">
-            <h1 className="m-0 text-xl font-bold text-foreground">
+            <h2 className="m-0 text-xl font-bold text-foreground">
               Taper schedule — {cfg.label}
-            </h1>
+            </h2>
             <p className="mt-1 text-sm text-muted-foreground">
               {roundDose(perDose)} {cfg.unit} × {dosesPerDay}/day → jump-off at{' '}
               {roundDose(jumpOff)} {cfg.unit} over {result.steps.length} days
@@ -978,7 +973,7 @@ export function TaperCalculator({
             </p>
           </div>
 
-          <div className="grid gap-4 rounded-lg border border-border bg-muted/30 p-4 sm:grid-cols-3">
+          <div className="grid gap-2 sm:grid-cols-3">
             <Stat label="Total duration" value={totalDuration} />
             <Stat
               label="Total medication"
@@ -987,10 +982,10 @@ export function TaperCalculator({
             <Stat label="Approach" value={sourceLabel(result.source)} />
           </div>
 
-          <div className="rounded-lg border border-border bg-card p-4">
-            <h3 className="mb-3 text-sm font-semibold text-foreground">
+          <div className="rounded-lg border border-border bg-card p-5 sm:p-6">
+            <h2 className="mb-4 font-display text-xl font-semibold text-foreground">
               Schedule curve (total daily)
-            </h3>
+            </h2>
             <ChartContainer config={chartConfig} className="h-[280px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={chartData} margin={{ left: 8, right: 8, top: 8, bottom: 8 }}>
@@ -1035,13 +1030,13 @@ export function TaperCalculator({
             </ChartContainer>
           </div>
 
-          <div className="rounded-lg border border-border bg-card p-4">
-            <h3 className="mb-3 text-sm font-semibold text-foreground">
+          <div className="overflow-hidden rounded-lg border border-border bg-card">
+            <h2 className="bg-muted/45 px-5 py-4 font-display text-xl font-semibold text-foreground">
               Schedule table
-            </h3>
-            <div>
-              <table className="w-full text-sm">
-                <thead className="bg-card text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            </h2>
+            <div className="taper-schedule-scroll overflow-x-auto">
+              <table className="taper-schedule-table w-full min-w-[40rem] text-sm">
+                <thead className="bg-muted/60 text-left text-[0.7rem] font-bold uppercase tracking-[0.08em] text-muted-foreground">
                   <tr>
                     <th className="py-2 pr-4">Day</th>
                     <th className="py-2 pr-4">Per dose ({cfg.unit})</th>
@@ -1060,8 +1055,8 @@ export function TaperCalculator({
                       !isStopDay && prevN !== null && prevN !== s.dosesPerDay;
                     if (isStopDay) {
                       return (
-                        <tr key={i} className="border-y-2 border-emerald-500/60 bg-emerald-500/10 dark:bg-emerald-400/10">
-                          <td className="py-2 pr-4 font-semibold text-foreground">{i + 1}</td>
+                        <tr key={i} className="schedule-stop-row border-y-2 border-success/60 bg-success/10">
+                          <td className="py-2 pr-4 font-semibold text-foreground" data-label="Day">{i + 1}</td>
                           <td
                             colSpan={3}
                             className="py-2 text-sm font-semibold text-foreground"
@@ -1074,10 +1069,10 @@ export function TaperCalculator({
                     return (
                       <Fragment key={i}>
                         {isTransition && (
-                          <tr className="border-y-2 border-amber-500 bg-amber-500/15 dark:bg-amber-400/15">
+                          <tr className="schedule-note-row border-y-2 border-signal bg-signal/12">
                             <td
                               colSpan={4}
-                              className="px-2 py-2 text-sm font-bold text-amber-900 dark:text-amber-100"
+                              className="px-3 py-2 text-sm font-bold text-foreground"
                             >
                               <span className="mr-2 text-base" aria-hidden="true">
                                 ↓
@@ -1088,14 +1083,10 @@ export function TaperCalculator({
                           </tr>
                         )}
                         <tr
-                          className={
-                            isTransition
-                              ? 'bg-amber-50/50 dark:bg-amber-950/20'
-                              : ''
-                          }
+                          className={`schedule-data-row ${isTransition ? 'bg-signal/7' : ''}`}
                         >
-                          <td className="py-2 pr-4 text-muted-foreground">{i + 1}</td>
-                          <td className="py-2 pr-4 text-foreground">
+                          <td className="py-2 pr-4 text-muted-foreground" data-label="Day">{i + 1}</td>
+                          <td className="py-2 pr-4 text-foreground" data-label={`Per dose (${cfg.unit})`}>
                             {substance === 'bupe' ? (
                               <PerDoseHint
                                 hasHover={hasHover}
@@ -1120,20 +1111,21 @@ export function TaperCalculator({
                             )}
                           </td>
                           <td
+                            data-label="Times/day"
                             className={
                               isTransition
-                                ? 'py-2 pr-4 font-bold text-amber-900 dark:text-amber-100'
+                                ? 'py-2 pr-4 font-bold text-foreground'
                                 : 'py-2 pr-4 text-foreground'
                             }
                           >
                             {s.dosesPerDay}
                           </td>
-                          <td className="py-2 font-medium text-foreground">{s.totalDaily}</td>
+                          <td className="py-2 font-medium text-foreground" data-label={`Total daily (${cfg.unit})`}>{s.totalDaily}</td>
                         </tr>
                       </Fragment>
                     );
                   })}
-                  <tr className="border-t-2 border-border">
+                  <tr className="schedule-total-row border-t-2 border-border">
                     <td
                       className="py-2 pr-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground"
                       colSpan={3}
@@ -1205,13 +1197,13 @@ export function TaperCalculator({
           </div>
         </>
       ) : (
-        <div className="rounded-lg border border-border bg-card p-4 text-sm text-muted-foreground">
+        <div className="rounded-xl border border-border bg-card p-5 text-sm text-muted-foreground">
           Enter a per-dose amount and times-per-day larger than the jump-off
           dose to see a schedule.
         </div>
       )}
 
-      <div className="rounded-lg border border-border bg-muted/30 p-4 print:hidden">
+      <div className="rounded-xl border border-border bg-muted/40 p-5 print:hidden">
         <p className="text-sm text-foreground">{cfg.note}</p>
         {cfg.related.length > 0 && (
           <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-sm">
@@ -1234,11 +1226,11 @@ export function TaperCalculator({
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div>
-      <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+    <div className="rounded-md border border-border/70 bg-card p-4 sm:p-5">
+      <div className="text-[0.68rem] font-bold uppercase tracking-[0.1em] text-muted-foreground">
         {label}
       </div>
-      <div className="mt-1 text-lg font-semibold text-foreground">{value}</div>
+      <div className="mt-1.5 font-display text-xl font-semibold text-foreground">{value}</div>
     </div>
   );
 }
@@ -1665,4 +1657,3 @@ IMPORTANT:
 - Flag anything that looks dangerous given my context
 - Be honest about uncertainty; the published clinical literature on these compounds is thin`;
 }
-

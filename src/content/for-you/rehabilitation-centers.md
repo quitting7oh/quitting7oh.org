@@ -84,7 +84,7 @@ are legitimate; the right one depends on the specific situation.
 For the full medication details (community-validated induction
 protocol, rapid-taper structure, long-term risks, and the other
 community-documented paths like
-[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)),
+[tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)),
 see **[At-Home Treatment](/for-you/at-home-treatment)** and the
 **[MAT / Suboxone section](/mat-suboxone)**.
 

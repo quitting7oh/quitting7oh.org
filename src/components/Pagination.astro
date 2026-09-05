@@ -12,18 +12,18 @@ const { prev, next } = Astro.props;
 {(prev || next) && (
   <nav
     aria-label="Page navigation"
-    class="mt-12 grid gap-3 border-t border-border pt-6 sm:grid-cols-2"
+    class="mt-14 grid gap-3 sm:grid-cols-2"
   >
     {prev ? (
       <a
         href={prev.href}
         rel="prev"
-        class="group block rounded-lg border border-border bg-card p-4 transition hover:border-primary hover:bg-accent/40"
+        class="group block min-h-24 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/55 hover:bg-accent/35"
       >
-        <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          ← Previous · {prev.categoryTitle}
+        <div class="text-xs font-bold text-muted-foreground">
+          ← Previous
         </div>
-        <div class="mt-1 font-semibold text-foreground group-hover:text-primary">
+        <div class="mt-2 font-display text-lg font-semibold leading-tight text-foreground group-hover:text-primary">
           {prev.title}
         </div>
       </a>
@@ -34,12 +34,12 @@ const { prev, next } = Astro.props;
       <a
         href={next.href}
         rel="next"
-        class="group block rounded-lg border border-border bg-card p-4 transition hover:border-primary hover:bg-accent/40 sm:text-right"
+        class="group block min-h-24 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/55 hover:bg-accent/35 sm:text-right"
       >
-        <div class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Next · {next.categoryTitle} →
+        <div class="text-xs font-bold text-muted-foreground">
+          Next →
         </div>
-        <div class="mt-1 font-semibold text-foreground group-hover:text-primary">
+        <div class="mt-2 font-display text-lg font-semibold leading-tight text-foreground group-hover:text-primary">
           {next.title}
         </div>
       </a>

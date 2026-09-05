@@ -40,6 +40,8 @@ export interface FellowshipMeta {
 }
 
 export interface Meeting {
+  /** Stable history key. Never derive this from display copy or join URLs. */
+  id: string;
   fellowship: Fellowship;
   /** Days of week as JS getDay() numbers (0=Sun, 1=Mon, ..., 6=Sat).
    *  Multiple days means this same meeting recurs on each. */
@@ -151,45 +153,45 @@ const KQS_ROOMS = {
 export const MEETINGS: Meeting[] = [
   // ─── Kratom Anonymous (KA) ───────────────────────────────────────────
   // Weekday 10:00 AM ET — same Zoom room, format alternates by day.
-  { fellowship: 'KA', daysOfWeek: [1, 3, 5], hourET: 10, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekday10am },
-  { fellowship: 'KA', daysOfWeek: [2, 4], hourET: 10, minuteET: 0, format: 'Step', ...KA_ROOMS.weekday10am },
+  { id: 'ka-weekday-10-discussion', fellowship: 'KA', daysOfWeek: [1, 3, 5], hourET: 10, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekday10am },
+  { id: 'ka-weekday-10-step', fellowship: 'KA', daysOfWeek: [2, 4], hourET: 10, minuteET: 0, format: 'Step', ...KA_ROOMS.weekday10am },
 
   // Weekday 9:00 PM ET — same Zoom room, format alternates by day.
-  { fellowship: 'KA', daysOfWeek: [1, 3, 5], hourET: 21, minuteET: 0, format: 'Step', ...KA_ROOMS.weekday9pm },
-  { fellowship: 'KA', daysOfWeek: [2, 4], hourET: 21, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekday9pm },
+  { id: 'ka-weekday-21-step', fellowship: 'KA', daysOfWeek: [1, 3, 5], hourET: 21, minuteET: 0, format: 'Step', ...KA_ROOMS.weekday9pm },
+  { id: 'ka-weekday-21-discussion', fellowship: 'KA', daysOfWeek: [2, 4], hourET: 21, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekday9pm },
 
   // Thursday evening (separate Zoom room from the regular 9pm).
-  { fellowship: 'KA', daysOfWeek: [4], hourET: 18, minuteET: 45, format: 'Discussion', ...KA_ROOMS.thuEvening },
+  { id: 'ka-thursday-1845-discussion', fellowship: 'KA', daysOfWeek: [4], hourET: 18, minuteET: 45, format: 'Discussion', ...KA_ROOMS.thuEvening },
 
   // Grow Recovery (side-panel listing on the KA site, Google Meet).
-  { fellowship: 'KA', daysOfWeek: [3], hourET: 10, minuteET: 0, format: 'Discussion', note: 'Grow Recovery', ...KA_ROOMS.growRecovery },
-  { fellowship: 'KA', daysOfWeek: [3], hourET: 21, minuteET: 0, format: '12-Step', note: 'Grow Recovery', ...KA_ROOMS.growRecovery },
+  { id: 'ka-grow-wednesday-10-discussion', fellowship: 'KA', daysOfWeek: [3], hourET: 10, minuteET: 0, format: 'Discussion', note: 'Grow Recovery', ...KA_ROOMS.growRecovery },
+  { id: 'ka-grow-wednesday-21-step', fellowship: 'KA', daysOfWeek: [3], hourET: 21, minuteET: 0, format: '12-Step', note: 'Grow Recovery', ...KA_ROOMS.growRecovery },
 
   // Weekend — single Zoom room covers all four slots.
-  { fellowship: 'KA', daysOfWeek: [6], hourET: 13, minuteET: 0, format: 'Step', ...KA_ROOMS.weekend },
-  { fellowship: 'KA', daysOfWeek: [6], hourET: 17, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekend },
-  { fellowship: 'KA', daysOfWeek: [0], hourET: 13, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekend },
-  { fellowship: 'KA', daysOfWeek: [0], hourET: 17, minuteET: 0, format: 'Step', ...KA_ROOMS.weekend },
+  { id: 'ka-saturday-13-step', fellowship: 'KA', daysOfWeek: [6], hourET: 13, minuteET: 0, format: 'Step', ...KA_ROOMS.weekend },
+  { id: 'ka-saturday-17-discussion', fellowship: 'KA', daysOfWeek: [6], hourET: 17, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekend },
+  { id: 'ka-sunday-13-discussion', fellowship: 'KA', daysOfWeek: [0], hourET: 13, minuteET: 0, format: 'Discussion', ...KA_ROOMS.weekend },
+  { id: 'ka-sunday-17-step', fellowship: 'KA', daysOfWeek: [0], hourET: 17, minuteET: 0, format: 'Step', ...KA_ROOMS.weekend },
 
   // ─── Quitting Kratom Support (KQS / TIAWO) ───────────────────────────
   // Daily Mon–Sun on the shared Google Meet room.
-  { fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 8, minuteET: 0, format: 'Morning', ...KQS_ROOMS.main },
-  { fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 12, minuteET: 0, format: 'Midday', ...KQS_ROOMS.main },
-  { fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 20, minuteET: 0, format: 'Evening', ...KQS_ROOMS.main },
+  { id: 'kqs-daily-08-morning', fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 8, minuteET: 0, format: 'Morning', ...KQS_ROOMS.main },
+  { id: 'kqs-daily-12-midday', fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 12, minuteET: 0, format: 'Midday', ...KQS_ROOMS.main },
+  { id: 'kqs-daily-20-evening', fellowship: 'KQS', daysOfWeek: [0, 1, 2, 3, 4, 5, 6], hourET: 20, minuteET: 0, format: 'Evening', ...KQS_ROOMS.main },
 
   // Mon/Wed/Fri afternoon.
-  { fellowship: 'KQS', daysOfWeek: [1, 3, 5], hourET: 16, minuteET: 0, format: 'Afternoon', ...KQS_ROOMS.main },
+  { id: 'kqs-mwf-16-afternoon', fellowship: 'KQS', daysOfWeek: [1, 3, 5], hourET: 16, minuteET: 0, format: 'Afternoon', ...KQS_ROOMS.main },
 
   // Tuesday newcomers meeting.
-  { fellowship: 'KQS', daysOfWeek: [2], hourET: 16, minuteET: 0, format: 'Newcomers', addedOn: '2026-08-11', ...KQS_ROOMS.main },
+  { id: 'kqs-tuesday-16-newcomers', fellowship: 'KQS', daysOfWeek: [2], hourET: 16, minuteET: 0, format: 'Newcomers', addedOn: '2026-08-11', ...KQS_ROOMS.main },
 
   // Tue/Thu/Fri/Sun late evening.
-  { fellowship: 'KQS', daysOfWeek: [2, 4, 5, 0], hourET: 21, minuteET: 15, format: 'Late evening', ...KQS_ROOMS.main },
+  { id: 'kqs-tue-thu-fri-sun-2115-late', fellowship: 'KQS', daysOfWeek: [2, 4, 5, 0], hourET: 21, minuteET: 15, format: 'Late evening', ...KQS_ROOMS.main },
 
   // Sunday identity-based meetings, separate Google Meet rooms.
-  { fellowship: 'KQS', daysOfWeek: [0], hourET: 11, minuteET: 0, format: "Men's meeting", ...KQS_ROOMS.mens },
-  { fellowship: 'KQS', daysOfWeek: [0], hourET: 13, minuteET: 30, format: "Women's meeting", ...KQS_ROOMS.womens },
-  { fellowship: 'KQS', daysOfWeek: [0], hourET: 16, minuteET: 0, format: 'LGBTQ+ meeting', addedOn: '2026-08-11', ...KQS_ROOMS.lgbtq },
+  { id: 'kqs-sunday-11-mens', fellowship: 'KQS', daysOfWeek: [0], hourET: 11, minuteET: 0, format: "Men's meeting", ...KQS_ROOMS.mens },
+  { id: 'kqs-sunday-1330-womens', fellowship: 'KQS', daysOfWeek: [0], hourET: 13, minuteET: 30, format: "Women's meeting", ...KQS_ROOMS.womens },
+  { id: 'kqs-sunday-16-lgbtq', fellowship: 'KQS', daysOfWeek: [0], hourET: 16, minuteET: 0, format: 'LGBTQ+ meeting', addedOn: '2026-08-11', ...KQS_ROOMS.lgbtq },
 ];
 
 // ─── Platform / URL helpers ──────────────────────────────────────────────
@@ -346,6 +348,31 @@ export function findDisplayMeeting(now: Date = new Date()): DisplayMeeting | nul
   if (candidates.length === 0) return null;
   candidates.sort((a, b) => a.start.getTime() - b.start.getTime());
   return candidates[0];
+}
+
+/** Whether a status means the room is open right now. */
+export function isLiveStatus(status: MeetingStatus): boolean {
+  return status === 'live-now' || status === 'meeting-starting';
+}
+
+/** Every meeting whose room is open right now, earliest start first
+ *  (ties keep MEETINGS order, so the first entry matches what
+ *  findDisplayMeeting picks). The schedule has real overlaps: Grow
+ *  Recovery shares both Wednesday KA slots, KA's weekday 9 PM runs into
+ *  TIAWO's 9:15 PM, and Sunday's KA 1 PM overlaps the women's meeting
+ *  at 1:30. Widgets that only show a single pick hide the second room,
+ *  so anything that says "live now" should render this whole list. */
+export function findLiveMeetings(now: Date = new Date()): DisplayMeeting[] {
+  const live: DisplayMeeting[] = [];
+  for (const m of MEETINGS) {
+    const occ = meetingOccurrence(m, now);
+    if (!occ) continue;
+    const status = classifyStatus(occ.start, now);
+    if (!isLiveStatus(status)) continue;
+    live.push({ meeting: m, start: occ.start, end: occ.end, status });
+  }
+  live.sort((a, b) => a.start.getTime() - b.start.getTime());
+  return live;
 }
 
 /** Find all meeting occurrences whose end is in the future and whose

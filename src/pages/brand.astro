@@ -2,383 +2,143 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Logo from '~/components/Logo.astro';
 import { Callout } from '~/components/Callout';
-import { BrandThemeControl } from '~/components/BrandThemeControl';
 import { CopyBlock } from '~/components/CopyBlock';
-import { buttonVariants } from '~/components/ui/button';
-// The paste-able AI agent context is maintained as a single file so the
-// page and the repo copy never drift. Imported with Vite's `?raw` so the
-// contents are inlined at build time — no runtime file read, which keeps
-// it working in the Docker build (where most of docs/ is excluded) as
-// well as on Cloudflare. The one file is whitelisted in .dockerignore.
 import agentContext from '../../docs/brand/agent-context.md?raw';
 
-// Live semantic swatches — these recolor with the active theme variant.
-const fills = [
-  { bg: 'bg-background', fg: 'text-foreground', token: 'background', role: 'Page background' },
-  { bg: 'bg-card', fg: 'text-card-foreground', token: 'card', role: 'Cards, raised surfaces' },
-  { bg: 'bg-foreground', fg: 'text-background', token: 'foreground', role: 'Primary text' },
-  { bg: 'bg-primary', fg: 'text-primary-foreground', token: 'primary', role: 'Actions, links, the “7”' },
-  { bg: 'bg-secondary', fg: 'text-secondary-foreground', token: 'secondary', role: 'Secondary surface' },
-  { bg: 'bg-muted', fg: 'text-muted-foreground', token: 'muted', role: 'Subtle fill / hint text' },
-  { bg: 'bg-accent', fg: 'text-accent-foreground', token: 'accent', role: 'Hover / highlight' },
-  { bg: 'bg-destructive', fg: 'text-white', token: 'destructive', role: 'Errors, destructive actions' },
+const swatches = [
+  { name: 'Paper', role: 'Reading background', className: 'bg-background text-foreground' },
+  { name: 'Ink', role: 'Text and dark fields', className: 'bg-foreground text-background' },
+  { name: 'Burnt clay', role: 'Links and primary actions', className: 'bg-primary text-primary-foreground' },
+  { name: 'Mist', role: 'Selected and supporting surfaces', className: 'bg-accent text-accent-foreground' },
+  { name: 'Amber', role: 'Urgent and time-sensitive states', className: 'bg-signal text-signal-foreground' },
+  { name: 'Leaf', role: 'Live and positive states', className: 'bg-success text-success-foreground' },
 ];
 
-const typeScale = [
-  { label: 'Page title', cls: 'font-display text-4xl font-semibold tracking-tight', sample: 'Getting off 7-OH', meta: 'Fraunces 600 · text-4xl' },
-  { label: 'Section', cls: 'font-display text-3xl font-semibold tracking-tight', sample: 'The first year', meta: 'Fraunces 600 · text-3xl' },
-  { label: 'Subsection', cls: 'font-display text-xl font-semibold', sample: 'What recovery coaching is', meta: 'Fraunces 600 · text-xl' },
-  { label: 'Body', cls: 'text-base', sample: 'Short declarative sentences. Concrete details. Quiet authority.', meta: 'IBM Plex Sans 400 · 1rem · line-height 1.7' },
-  { label: 'Small / hint', cls: 'text-sm text-muted-foreground', sample: 'Last updated June 2026 · community-compiled', meta: 'IBM Plex Sans 400 · text-sm · muted' },
+const scale = [
+  ['Display', 'font-display text-[3.6rem] font-medium leading-[1.04] tracking-[-0.022em]', 'Quitting 7-OH'],
+  ['Page title', 'font-display text-[2.5rem] font-semibold leading-[1.08] tracking-[-0.018em]', 'Withdrawal help'],
+  ['Section', 'font-display text-[1.9rem] font-semibold leading-[1.18]', 'The first hour'],
+  ['Subsection', 'text-[1.16rem] font-bold leading-[1.32]', 'Cold turkey'],
+  ['Body', 'text-base leading-[1.7]', 'Long-form text uses a measured line height and narrow column.'],
+  ['Interface', 'text-sm font-bold', 'Find a meeting'],
 ];
-
-const btn = (variant: string) => buttonVariants({ variant: variant as any });
-const buttonSpecimens = ['default', 'secondary', 'outline', 'ghost', 'destructive', 'link'];
-
-const SECTION = 'mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8';
-const KICKER = 'text-xs font-semibold uppercase tracking-wider text-muted-foreground';
-const H2 = 'mt-2 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl';
-
-const repoBrand = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/brand';
 ---
 
-<BaseLayout
-  title="Brand & Style Guide"
-  description="The visual identity of quitting7oh.org — logo, colors, typography, and components. A live, theme-aware reference for building on the brand."
->
+<BaseLayout title="Brand & Style Guide" description="The Field Guide visual system for quitting7oh.org.">
   <main id="main-content">
-    <!-- Hero -->
-    <section class={`${SECTION} pt-12 pb-10 sm:pt-16`}>
-      <p class={KICKER}>Brand &amp; style guide</p>
-      <div class="mt-5 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+    <header class="quiet-grid border-b border-border">
+      <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-18 lg:px-8 lg:py-24">
+        <p class="eyebrow">Brand and interface system</p>
+        <h1 class="reading-title mt-5 max-w-4xl">The quitting7oh.org visual system</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
+          Type, color, spacing, components, and motion for a readable harm-reduction reference site. Urgent actions use a separate signal color so they remain easy to find.
+        </p>
+      </div>
+    </header>
+
+    <div class="mx-auto max-w-6xl space-y-16 px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <section id="logo" class="grid gap-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
         <div>
-          <h1 class="font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-            The look &amp; feel of <span class="text-primary">quitting7oh</span>
-          </h1>
-          <p class="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Everything you need to build something that feels like part of the
-            site: the logo, the color system, the type, and the components. Pulled
-            straight from the live codebase, so matching what's here matches the site.
+          <p class="eyebrow">01 · Mark</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight">The Lift Cup</h2>
+        </div>
+        <div>
+          <div class="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
+            <div class="flex min-h-52 items-center justify-center bg-card p-8"><Logo link={false} size="3.75rem" /></div>
+            <div class="flex min-h-52 items-center justify-center bg-foreground p-8 [&_.logo-mark]:!bg-background/10 [&_.logo-wm]:!text-background [&_.logo-wm-tld]:!text-background/55"><Logo link={false} size="3.75rem" /></div>
+          </div>
+          <p class="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The cup and upward arrow remain the fixed brand mark. The rounded field and STIX Two Text wordmark give it a grounded, reference-book character.
           </p>
         </div>
-        <div class="shrink-0">
-          <Logo link={false} size="clamp(2.5rem, 1.5rem + 3vw, 4rem)" />
+      </section>
+
+      <section id="color" class="grid gap-8 border-t border-border pt-14 lg:grid-cols-[18rem_minmax(0,1fr)]">
+        <div>
+          <p class="eyebrow">02 · Color</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight">Color tokens</h2>
         </div>
-      </div>
-
-      <!-- in-page nav -->
-      <nav class="mt-10 flex flex-wrap gap-2 text-sm">
-        {[
-          ['#logo', 'Logo'],
-          ['#color', 'Color'],
-          ['#type', 'Typography'],
-          ['#components', 'Components'],
-          ['#shape', 'Shape & focus'],
-          ['#voice', 'Voice'],
-          ['#assets', 'Assets'],
-          ['#agent', 'AI agent'],
-        ].map(([href, label]) => (
-          <a
-            href={href}
-            class="rounded-full border border-border bg-card px-3 py-1 text-muted-foreground transition hover:border-primary hover:text-foreground"
-          >{label}</a>
-        ))}
-      </nav>
-    </section>
-
-    <!-- Live theme switcher — sticky so you can recolor while scrolling -->
-    <div class="sticky top-20 z-20 mx-auto mb-4 max-w-[88rem] px-4 sm:px-6 lg:px-8">
-      <BrandThemeControl client:load layout="bar" />
-    </div>
-
-    <!-- Logo -->
-    <section id="logo" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>01 — Logo</p>
-      <h2 class={H2}>The Lift Cup</h2>
-      <p class="mt-3 max-w-2xl text-muted-foreground">
-        A coffee cup with an arrow rising out of it: the daily ritual, plus
-        moving upward. Two strokes carry the color — the cup is
-        <span class="font-medium text-foreground">foreground</span>, the arrow is
-        <span class="font-medium text-primary">primary</span>.
-      </p>
-
-      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-        <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-8">
-          <Logo link={false} size="2.75rem" />
-          <span class="text-xs text-muted-foreground">Primary lockup</span>
-        </div>
-        <div class="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-card p-8">
-          <Logo link={false} wordmark={false} size="3.25rem" />
-          <span class="text-xs text-muted-foreground">Mark only</span>
-        </div>
-        <BrandThemeControl client:load layout="logo-dark" />
-      </div>
-
-      <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div class="rounded-xl border border-border bg-card p-6">
-          <p class="font-display text-lg font-semibold text-foreground">Wordmark</p>
-          <p class="mt-2 text-sm text-muted-foreground">
-            <span class="font-medium text-foreground">Fraunces 600</span> for
-            <code class="rounded bg-muted px-1 py-0.5 text-xs">quitting</code> and
-            <code class="rounded bg-muted px-1 py-0.5 text-xs">oh</code>; the
-            <span class="font-medium text-primary">7</span> in primary; the
-            <code class="rounded bg-muted px-1 py-0.5 text-xs">.org</code> smaller,
-            in IBM Plex Sans 500, muted-foreground.
-          </p>
-        </div>
-        <div class="rounded-xl border border-border bg-card p-6">
-          <p class="font-display text-lg font-semibold text-foreground">Don't</p>
-          <ul class="mt-2 space-y-1 text-sm text-muted-foreground">
-            <li>· Don't recolor outside the cup/arrow mapping.</li>
-            <li>· Don't stretch the square mark or rotate it.</li>
-            <li>· Don't add gradients, shadows, or outlines.</li>
-            <li>· Below ~20px, drop the wordmark and show the mark alone.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Color -->
-    <section id="color" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>02 — Color</p>
-      <h2 class={H2}>Semantic tokens</h2>
-      <p class="mt-3 max-w-2xl text-muted-foreground">
-        Style by role, not by hex. These swatches are the live tokens for the
-        theme you're viewing right now — change the theme and they all move together.
-      </p>
-
-      <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        {fills.map((s) => (
-          <div>
-            <div class:list={['flex h-24 items-end rounded-lg border border-border p-2.5', s.bg]}>
-              <span class:list={['text-xs font-medium', s.fg]}>{s.token}</span>
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {swatches.map((swatch) => (
+            <div class:list={['flex min-h-40 flex-col justify-end rounded-xl border border-border p-4', swatch.className]}>
+              <p class="font-bold">{swatch.name}</p>
+              <p class="mt-1 text-xs opacity-70">{swatch.role}</p>
             </div>
-            <p class="mt-1.5 text-xs text-muted-foreground">{s.role}</p>
-          </div>
-        ))}
-      </div>
-
-      <h3 class="mt-12 font-display text-xl font-semibold text-foreground">The 8 variants</h3>
-      <p class="mt-2 max-w-2xl text-muted-foreground">
-        Readers can switch the whole site between these. <span class="font-medium text-foreground">Stone</span>
-        is the default. Each card shows the variant's background, text, and primary in light and dark —
-        <span class="font-medium text-foreground">click one to recolor this page</span>.
-      </p>
-
-      <div class="mt-6">
-        <BrandThemeControl client:load layout="grid" />
-      </div>
-    </section>
-
-    <!-- Typography -->
-    <section id="type" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>03 — Typography</p>
-      <h2 class={H2}>Two families</h2>
-      <p class="mt-3 max-w-2xl text-muted-foreground">
-        Serif headings over sans body — the most recognizable part of the type
-        signature. Both are free, variable, and self-hosted via Fontsource.
-      </p>
-
-      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-        <div class="rounded-xl border border-border bg-card p-8">
-          <div class="font-display text-7xl font-semibold leading-none text-foreground">Aa</div>
-          <p class="mt-4 font-display text-xl font-semibold text-foreground">Fraunces</p>
-          <p class="mt-1 text-sm text-muted-foreground">Display / headings · weight 600 · the logo wordmark</p>
-          <p class="mt-3 font-display text-lg text-foreground">The quiet authority of a calm reference.</p>
+          ))}
         </div>
-        <div class="rounded-xl border border-border bg-card p-8">
-          <div class="text-7xl font-semibold leading-none text-foreground">Aa</div>
-          <p class="mt-4 font-display text-xl font-semibold text-foreground">IBM Plex Sans</p>
-          <p class="mt-1 text-sm text-muted-foreground">Body / UI · the default everywhere · line-height 1.7</p>
-          <p class="mt-3 text-base leading-relaxed text-foreground">
-            Short declarative sentences. Concrete details. The voice of someone
-            who knows the material and trusts the reader to follow.
-          </p>
-        </div>
-      </div>
+      </section>
 
-      <div class="mt-8 divide-y divide-border rounded-xl border border-border bg-card">
-        {typeScale.map((t) => (
-          <div class="flex flex-col gap-2 p-5 sm:flex-row sm:items-baseline sm:gap-8">
-            <div class="w-40 shrink-0">
-              <p class="text-sm font-medium text-foreground">{t.label}</p>
-              <p class="text-xs text-muted-foreground">{t.meta}</p>
+      <section id="type" class="grid gap-8 border-t border-border pt-14 lg:grid-cols-[18rem_minmax(0,1fr)]">
+        <div>
+          <p class="eyebrow">03 · Typography</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight">Typography</h2>
+        </div>
+        <div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-border bg-card p-6 sm:p-8">
+              <p class="font-display text-7xl font-medium leading-none">Aa</p>
+              <p class="mt-5 font-display text-2xl font-semibold">STIX Two Text</p>
+              <p class="mt-2 text-sm text-muted-foreground">Titles and long-form headings. Bookish forms stay stable in dense technical material.</p>
             </div>
-            <p class:list={[t.cls, 'text-foreground']}>{t.sample}</p>
+            <div class="rounded-2xl border border-border bg-card p-6 sm:p-8">
+              <p class="text-7xl font-semibold leading-none">Aa</p>
+              <p class="mt-5 text-2xl font-bold">Commissioner</p>
+              <p class="mt-2 text-sm text-muted-foreground">Body copy and controls. Open shapes and measured spacing stay clear at reading and interface sizes.</p>
+            </div>
           </div>
-        ))}
-      </div>
-    </section>
-
-    <!-- Components -->
-    <section id="components" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>04 — Components</p>
-      <h2 class={H2}>Building blocks</h2>
-
-      <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <!-- Buttons -->
-        <div class="rounded-xl border border-border bg-card p-6">
-          <p class="font-display text-lg font-semibold text-foreground">Buttons</p>
-          <p class="mt-1 text-sm text-muted-foreground">8px radius. Primary carries the brand color.</p>
-          <div class="mt-4 flex flex-wrap items-center gap-3">
-            {buttonSpecimens.map((v) => (
-              <span class={btn(v)}>{v}</span>
-            ))}
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="rounded-xl border border-border bg-card p-6">
-          <p class="font-display text-lg font-semibold text-foreground">Card</p>
-          <p class="mt-1 text-sm text-muted-foreground">Surfaces lift with <code class="rounded bg-muted px-1 py-0.5 text-xs">card</code>, separated by borders, not shadows.</p>
-          <div class="mt-4 rounded-lg border border-border bg-background p-4">
-            <p class="font-display font-semibold text-foreground">A nested surface</p>
-            <p class="mt-1 text-sm text-muted-foreground">Background inside card, bordered. Calm and flat.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Callouts -->
-      <div class="mt-6 rounded-xl border border-border bg-card p-6">
-        <p class="font-display text-lg font-semibold text-foreground">Callouts</p>
-        <p class="mt-1 text-sm text-muted-foreground">Three tones, fixed colors (independent of theme), 4px left border, Lucide icons.</p>
-        <div class="mt-2 grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <Callout type="info" client:visible>Neutral context the reader should notice.</Callout>
-          <Callout type="warning" client:visible>Something to be careful about.</Callout>
-          <Callout type="medical" client:visible>Safety and medical-territory framing.</Callout>
-        </div>
-      </div>
-
-      <!-- Inputs -->
-      <div class="mt-6 rounded-xl border border-border bg-card p-6">
-        <p class="font-display text-lg font-semibold text-foreground">Inputs &amp; focus</p>
-        <div class="mt-4 flex flex-wrap items-center gap-4">
-          <input
-            type="text"
-            placeholder="Text input"
-            class="h-9 w-56 rounded-md border border-input bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          />
-          <span class="inline-flex h-9 items-center rounded-md px-3 text-sm ring-2 ring-ring ring-offset-2 ring-offset-background text-foreground">Focus ring (always on)</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shape & focus -->
-    <section id="shape" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>05 — Shape &amp; surfaces</p>
-      <h2 class={H2}>Rounded, flat, layered</h2>
-
-      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div class="rounded-xl border border-border bg-card p-6">
-          <p class="font-display text-lg font-semibold text-foreground">Radius</p>
-          <p class="mt-1 text-sm text-muted-foreground">Base 8px, with 6px and 4px steps.</p>
-          <div class="mt-4 flex items-end gap-4">
-            {[['rounded-sm', '4px'], ['rounded-md', '6px'], ['rounded-lg', '8px']].map(([cls, px]) => (
-              <div class="text-center">
-                <div class:list={['h-16 w-16 border border-border bg-accent', cls]}></div>
-                <p class="mt-2 text-xs text-muted-foreground">{px}</p>
+          <div class="mt-4 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card">
+            {scale.map(([label, className, sample]) => (
+              <div class="grid gap-3 p-5 sm:grid-cols-[8rem_minmax(0,1fr)] sm:items-baseline sm:p-6">
+                <p class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">{label}</p>
+                <p class={className}>{sample}</p>
               </div>
             ))}
           </div>
         </div>
-        <div class="rounded-xl border border-border bg-card p-6">
-          <p class="font-display text-lg font-semibold text-foreground">Surface layers</p>
-          <p class="mt-1 text-sm text-muted-foreground">background → card → muted, each a small step.</p>
-          <div class="mt-4 space-y-2">
-            <div class="rounded-lg bg-background p-3 text-sm text-foreground">background</div>
-            <div class="rounded-lg bg-card p-3 text-sm text-foreground">card</div>
-            <div class="rounded-lg bg-muted p-3 text-sm text-muted-foreground">muted</div>
+      </section>
+
+      <section id="components" class="grid gap-8 border-t border-border pt-14 lg:grid-cols-[18rem_minmax(0,1fr)]">
+        <div>
+          <p class="eyebrow">04 · Components</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight">Controls and status</h2>
+        </div>
+        <div class="space-y-6">
+          <div class="rounded-2xl border border-border bg-card p-6">
+            <p class="text-sm font-bold">Actions</p>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <button class="min-h-11 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground">Primary action</button>
+              <button class="min-h-11 rounded-lg border border-border bg-card px-4 py-2 text-sm font-bold text-foreground">Secondary action</button>
+              <button class="min-h-11 rounded-lg bg-signal px-4 py-2 text-sm font-bold text-signal-foreground">Urgent action</button>
+            </div>
+          </div>
+          <Callout type="warning" title="Safety information stays visually separate">
+            Amber identifies urgency and risk. Burnt clay stays reserved for navigation and ordinary actions, so the two are never confused.
+          </Callout>
+          <div class="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
+            <div class="bg-card p-5"><p class="eyebrow !text-muted-foreground">Duration</p><p class="mt-2 font-display text-2xl font-semibold">21 days</p></div>
+            <div class="bg-card p-5"><p class="eyebrow !text-muted-foreground">Starting dose</p><p class="mt-2 font-display text-2xl font-semibold">45 mg</p></div>
+            <div class="bg-card p-5"><p class="eyebrow !text-muted-foreground">Status</p><p class="mt-2 font-display text-2xl font-semibold">Saved locally</p></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Voice -->
-    <section id="voice" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>06 — Voice &amp; tone</p>
-      <h2 class={H2}>How it should read</h2>
-      <div class="prose-recovery dark:prose-invert mt-6 max-w-3xl">
-        <p>
-          The audience is people in recovery, often reading mid-withdrawal at
-          3 a.m. The whole job of the brand is to feel calm, plain, and
-          trustworthy.
-        </p>
-        <ul>
-          <li><strong>Calm and factual.</strong> No marketing language, no hype, no urgency tricks, no judgment.</li>
-          <li><strong>Plain words.</strong> Short sentences. Say the thing directly.</li>
-          <li><strong>Meet people where they are.</strong> No shame, no gatekeeping, no assuming readiness.</li>
-          <li><strong>No dark patterns.</strong> No ads, no growth hacks, no manipulative retention.</li>
-        </ul>
-        <p>
-          When in doubt, do less. If a sentence sounds like an executive summary,
-          rewrite it as something a person would actually say.
-        </p>
-      </div>
-    </section>
+      <section id="motion" class="grid gap-8 border-t border-border pt-14 lg:grid-cols-[18rem_minmax(0,1fr)]">
+        <div>
+          <p class="eyebrow">05 · Motion</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight">Motion rules</h2>
+        </div>
+        <div class="max-w-3xl text-base leading-relaxed text-muted-foreground">
+          <p>Color transitions clarify hover and selection. Drawers and dialogs use short entrance transitions. The live-meeting dot is the only repeating motion. Every transition is removed when reduced motion is preferred.</p>
+        </div>
+      </section>
 
-    <!-- Assets -->
-    <section id="assets" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>07 — Assets &amp; downloads</p>
-      <h2 class={H2}>Where everything lives</h2>
-
-      <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {[
-          ['Full written guide', 'docs/brand/style-guide.md', `${repoBrand}/style-guide.md`],
-          ['AI agent context', 'docs/brand/agent-context.md', `${repoBrand}/agent-context.md`],
-          ['Logo — themed SVG', 'docs/brand/logo/lift-cup-themed.svg', `${repoBrand}/logo/lift-cup-themed.svg`],
-          ['Logo — mono SVG', 'docs/brand/logo/lift-cup-mono.svg', `${repoBrand}/logo/lift-cup-mono.svg`],
-          ['Favicons & app icons', 'public/favicons/<theme>/', 'https://github.com/quitting7oh/quitting7oh.org/tree/main/public/favicons'],
-          ['Color tokens (source)', 'src/styles/global.css', 'https://github.com/quitting7oh/quitting7oh.org/blob/main/src/styles/global.css'],
-          ['Icon details', 'docs/brand/THEME-ICONS-README.md', `${repoBrand}/THEME-ICONS-README.md`],
-        ].map(([title, path, href]) => (
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group flex flex-col rounded-xl border border-border bg-card p-5 transition hover:border-primary"
-          >
-            <span class="font-medium text-foreground group-hover:text-primary">{title} ↗</span>
-            <code class="mt-1 text-xs text-muted-foreground">{path}</code>
-          </a>
-        ))}
-      </div>
-
-      <div class="mt-10 rounded-xl border border-border bg-muted/50 p-6">
-        <p class="font-display text-lg font-semibold text-foreground">Minimum to look on-brand</p>
-        <ol class="mt-3 list-decimal space-y-1.5 pl-5 text-sm text-muted-foreground">
-          <li><span class="text-foreground">Fonts:</span> Fraunces for titles (600), IBM Plex Sans for everything else.</li>
-          <li><span class="text-foreground">Colors:</span> use the stone light + dark sets — page = background, text = foreground, actions = primary.</li>
-          <li><span class="text-foreground">Logo:</span> the Lift Cup, cup in foreground, arrow in primary.</li>
-          <li><span class="text-foreground">Corners:</span> 8px. Borders over shadows. Always keep a visible focus ring.</li>
-          <li><span class="text-foreground">Tone:</span> calm, plain, no marketing. When unsure, do less.</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Build with an AI agent -->
-    <section id="agent" class={`${SECTION} border-t border-border py-12 sm:py-16`}>
-      <p class={KICKER}>08 — Build with an AI agent</p>
-      <h2 class={H2}>Hand this to your coding agent</h2>
-      <p class="mt-3 max-w-2xl text-muted-foreground">
-        Building an app or companion tool? Drop this context into your project —
-        as <code class="rounded bg-muted px-1 py-0.5 text-xs">AGENTS.md</code>,
-        <code class="rounded bg-muted px-1 py-0.5 text-xs">CLAUDE.md</code>, or
-        your agent's rules file — so your AI agent matches the brand. It points
-        at this guide and the repo, and tells the agent to scrape with a headless
-        browser (Playwright) if it can't fetch them directly.
-      </p>
-      <div class="mt-6 max-w-3xl">
-        <CopyBlock client:load text={agentContext} filename="AGENTS.md" />
-      </div>
-      <p class="mt-3 text-sm text-muted-foreground">
-        Maintained in the repo at{' '}
-        <a
-          href="https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/brand/agent-context.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-primary underline underline-offset-2 hover:opacity-80"
-        ><code>docs/brand/agent-context.md</code></a>.
-      </p>
-    </section>
+      <section id="agent" class="grid gap-8 border-t border-border pt-14 lg:grid-cols-[18rem_minmax(0,1fr)]">
+        <div>
+          <p class="eyebrow">06 · Agent context</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight">Implementation context</h2>
+        </div>
+        <CopyBlock text={agentContext} filename="agent-context.md" client:load />
+      </section>
+    </div>
   </main>
 </BaseLayout>

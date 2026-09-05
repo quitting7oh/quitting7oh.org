@@ -1,0 +1,41 @@
+---
+import { ArrowRight, CircleAlert, MessageCircle } from 'lucide-react';
+import { DiscordOnlineCount } from './DiscordOnlineCount';
+import { MeetingQuickLink } from './MeetingQuickLink';
+import { LiveMeetingSuggestion } from './LiveMeetingSuggestion';
+---
+
+<section class="field-card overflow-hidden text-left" aria-labelledby="right-now-title">
+  <div class="flex min-h-14 items-center justify-between gap-3 border-b border-border px-4 py-2 sm:px-5">
+    <div class="flex min-w-0 items-center gap-2.5">
+      <span class="size-2 shrink-0 rounded-full bg-primary" aria-hidden="true"></span>
+      <h2 id="right-now-title" class="font-sans text-base font-bold tracking-normal text-foreground">Support right now</h2>
+    </div>
+    <a
+      href="https://discord.gg/quitting7oh"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex min-h-11 shrink-0 items-center gap-1.5 px-1 text-sm font-bold text-primary hover:underline"
+    >
+      <MessageCircle class="hidden size-4 min-[760px]:block" aria-hidden="true" />
+      <span>Discord</span>
+      <span class="min-[760px]:hidden">
+        <DiscordOnlineCount client:media="(max-width: 759px)" />
+      </span>
+    </a>
+  </div>
+  <div class="divide-y divide-border">
+    <a href="/start-here/7-oh-withdrawal-help" class="group flex min-h-[4.75rem] items-center gap-3 px-4 py-3 text-foreground hover:bg-muted/55 sm:px-5">
+      <span class="inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive">
+        <CircleAlert class="size-5" aria-hidden="true" />
+      </span>
+      <span class="min-w-0 flex-1">
+        <span class="block font-bold leading-snug">In active withdrawal?</span>
+        <span class="mt-0.5 block text-sm leading-snug text-muted-foreground">What to do this hour, step by step</span>
+      </span>
+      <ArrowRight class="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+    </a>
+    <MeetingQuickLink client:load />
+    <LiveMeetingSuggestion client:idle />
+  </div>
+</section>

@@ -81,7 +81,7 @@ These are bigger calls because every page under the category changes URL.
 
 | Current category | Possible direction | Discussion |
 |---|---|---|
-| `/other-tools/` | `/adjuncts/` or `/recovery-tools/` | The sidebar title is "Adjuncts & Supplements" but the URL is `other-tools`. That disconnect is bad for both SEO and consistency. Eight pages move. **Recommend `/adjuncts/`**: short, semantic, matches the title's first word. |
+| `/other-tools/` | `/medications-supplements/` | Shipped 2026-08-22. The new path matches the "Meds & Supplements" navigation label and uses words readers know. Ten pages moved. |
 | `/mat-suboxone/` | `/suboxone/` | "MAT" is industry shorthand; "Suboxone" is what people type. Eight pages move. |
 | `/start-here/` | `/getting-started/` or keep | "Start here" is action-y but doesn't match search behavior. The category is reachable from the homepage funnel anyway. Could leave. |
 | `/for-you/` | `/recovery/` | "For you" is vague for crawlers. "Recovery" is the actual category. Seven pages move. |
@@ -92,7 +92,10 @@ These are bigger calls because every page under the category changes URL.
 | `/resources/` | (keep) | Clear. |
 | `/about/` | (keep) | Standard. |
 
-**The biggest single SEO win at the category level** is renaming `/other-tools/` to `/adjuncts/` and fixing the title/URL disconnect. **The biggest at the page level** is `/start-here/withdrawal-help` getting "7-oh" in the slug, since that's likely the highest-traffic page on the site.
+The site uses `/medications-supplements/` in place of `/other-tools/`.
+The chosen slug matches the navigation without relying on the clinical term
+"adjuncts." The biggest page-level change was adding "7-oh" to the former
+`/start-here/withdrawal-help` path.
 
 ## Already optimal: leave alone
 
@@ -112,9 +115,9 @@ These slugs are already good and shouldn't change.
 - `/mat-suboxone/suboxone-bernese-method`
 - `/mat-suboxone/suboxone-rapid-taper`
 - `/mat-suboxone/suboxone-custom-dose`
-- `/other-tools/vitamins-supplements`
-- `/other-tools/cannabis-thc-in-recovery`
-- `/other-tools/nad-iv-therapy`
+- `/medications-supplements/vitamins-supplements`
+- `/medications-supplements/cannabis-thc-in-recovery`
+- `/medications-supplements/nad-iv-therapy`
 - `/post-acute/dopamine-recovery`
 - `/post-acute/depression-and-anhedonia`
 - `/post-acute/sleep-recovery`
@@ -127,7 +130,6 @@ These slugs are already good and shouldn't change.
 - `/pharmacology/morphine-vs-kratom`
 - `/resources/crisis-hotlines`
 - `/about/changelog`
-- `/about/how-ai-was-used`
 - `/about/contributing`
 - `/about/where-we-stand`
 
@@ -141,7 +143,7 @@ For each slug change:
    ```
    For category renames with wildcards:
    ```
-   /other-tools/*    /adjuncts/:splat    301
+   /other-tools/*    /medications-supplements/:splat    301
    ```
 2. **Rename the content file** (`src/content/<category>/<old>.md` → `src/content/<category>/<new>.md`).
 3. **Sweep internal links** across the site so nothing points at the old URL. `grep -rn "/old-slug" src/content/ src/lib/ src/pages/ src/components/` finds them. Update every hit to the new URL. Don't rely on the redirect for internal navigation; search engines and accessibility-tooling both penalize unnecessary redirect hops.
@@ -154,7 +156,9 @@ For each slug change:
    Expected: `HTTP/2 301`, `location: /new-slug`, then `HTTP/2 200` from the new URL.
 7. **Add a CHANGELOG entry** describing the rename (per the `Keep CHANGELOG.md current` rule).
 
-Category renames (e.g., `/other-tools/` → `/adjuncts/`) are the biggest workflow item: the folder rename, the categories.ts slug update, every cross-link in content files, the `_redirects` wildcard rule, and sidebar config all touch in one commit. Worth treating as a dedicated PR rather than mixed with content changes.
+The `/other-tools/` category migration required a folder rename, a
+`categories.ts` slug update, a cross-link sweep, direct historical redirects,
+and a wildcard redirect. Category renames belong in a dedicated change set.
 
 ## Suggested order if shipping in batches
 
@@ -168,9 +172,9 @@ Drop the `-info` suffix from helper-meds, mega-vit-c, quitkit, sr17018, peptides
 
 Twelve medium-risk renames (what-is-paws, kindling, long-term-outlook, impending-doom, thinking-about-using, pseudo, mit-a-dhm, minor-alkaloids, telehealth, suboxone-cows, suboxone-isnt-working, suboxone-risks) plus three judgment-call renames (about/community → the-community, for-you/start-here → welcome, for-loved-ones/start-here → welcome). The remaining judgment calls (pink-cloud, sleep-recovery, this-site) were left alone — `(keep)` directions in the table.
 
-**Batch 3: category rename, if you decide to do it.**
+**Batch 3: category rename.** ✅ Shipped 2026-08-22.
 
-`/other-tools/` → `/adjuncts/`. Dedicated PR.
+`/other-tools/` → `/medications-supplements/`.
 
 **Batch 4 (optional): `/mat-suboxone/` → `/suboxone/`.**
 

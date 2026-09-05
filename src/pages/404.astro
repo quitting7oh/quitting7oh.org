@@ -1,0 +1,25 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { SearchBox } from '~/components/SearchBox';
+import { ArrowRight, Compass } from 'lucide-react';
+---
+
+<BaseLayout title="Page not found" description="That quitting7oh.org page could not be found.">
+  <main id="main-content" class="mx-auto flex min-h-[60dvh] max-w-3xl flex-col justify-center px-4 py-14 sm:px-6">
+    <span class="inline-flex size-11 items-center justify-center rounded-lg bg-accent text-primary">
+      <Compass class="size-5" aria-hidden="true" />
+    </span>
+    <p class="eyebrow mt-5">404 · Page not found</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">That page isn’t here.</h1>
+    <p class="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">The link may be old, or the address may have been typed differently. Search the guide or choose a common starting point.</p>
+    <div class="mt-7 max-w-xl">
+      <SearchBox variant="hero" client:load placeholder="Search the guide…" />
+    </div>
+    <nav aria-label="Common destinations" class="mt-7 grid gap-2 sm:grid-cols-2">
+      <a href="/start-here/7-oh-withdrawal-help" class="group flex min-h-12 items-center justify-between rounded-lg border border-border bg-card px-4 py-3 font-bold text-foreground hover:border-primary hover:bg-accent">Withdrawal help <ArrowRight class="size-4 text-primary group-hover:translate-x-0.5" aria-hidden="true" /></a>
+      <a href="/" class="group flex min-h-12 items-center justify-between rounded-lg border border-border bg-card px-4 py-3 font-bold text-foreground hover:border-primary hover:bg-accent">Homepage <ArrowRight class="size-4 text-primary group-hover:translate-x-0.5" aria-hidden="true" /></a>
+      <a href="/resources/meeting-schedules" class="group flex min-h-12 items-center justify-between rounded-lg border border-border bg-card px-4 py-3 font-bold text-foreground hover:border-primary hover:bg-accent">Meeting schedules <ArrowRight class="size-4 text-primary group-hover:translate-x-0.5" aria-hidden="true" /></a>
+      <a href="/sitemap" class="group flex min-h-12 items-center justify-between rounded-lg border border-border bg-card px-4 py-3 font-bold text-foreground hover:border-primary hover:bg-accent">Complete site map <ArrowRight class="size-4 text-primary group-hover:translate-x-0.5" aria-hidden="true" /></a>
+    </nav>
+  </main>
+</BaseLayout>

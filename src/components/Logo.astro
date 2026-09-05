@@ -1,19 +1,6 @@
 ---
-// Lift Cup logo + wordmark lockup.
-//
-// The SVG is inlined so its strokes can read CSS variables from whichever
-// data-theme + light/dark combination is active — that's how a single
-// component covers all 16 theme states without ever hardcoding a hex.
-//
-// Token mapping (matches docs/brand/theme-coverage.html):
-//   cup         → var(--foreground)
-//   arrow       → var(--primary)
-//   wordmark    → var(--foreground)
-//   the "7"     → var(--primary)
-//   ".org"      → var(--muted-foreground)
-//
-// `size` controls mark dimension. The wordmark font-size is derived so
-// the mark sits at 1.7em of the text — passing one prop scales both.
+// Lift Cup logo, reset for the Field Guide system. The mark stays intact;
+// its container, wordmark, proportions, and color mapping are new.
 
 interface Props {
   /** Mark dimension as a CSS length. Wordmark text scales with it. */
@@ -75,7 +62,7 @@ const Tag = link ? 'a' : 'span';
   .logo-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.62em;
     text-decoration: none;
     line-height: 1;
     color: hsl(var(--foreground));
@@ -86,15 +73,17 @@ const Tag = link ? 'a' : 'span';
     height: var(--logo-mark-size);
     flex: none;
     display: block;
+    border-radius: 28%;
+    background: hsl(var(--accent));
+    padding: calc(var(--logo-mark-size) * 0.12);
   }
 
   .logo-wm {
     font-family: var(--font-display);
-    font-weight: 600;
-    /* Wordmark text scales so the mark sits at ~1.7em of it. */
-    font-size: calc(var(--logo-mark-size) / 1.7);
-    letter-spacing: -0.01em;
-    line-height: 1;
+    font-weight: 610;
+    font-size: calc(var(--logo-mark-size) / 1.62);
+    letter-spacing: -0.035em;
+    line-height: 0.95;
     color: hsl(var(--foreground));
   }
 
@@ -104,13 +93,14 @@ const Tag = link ? 'a' : 'span';
 
   .logo-wm-tld {
     font-family: var(--font-sans);
-    font-weight: 500;
-    font-size: 0.45em;
+    font-weight: 650;
+    font-size: 0.38em;
+    letter-spacing: 0.02em;
     color: hsl(var(--muted-foreground));
-    margin-left: 0.05em;
+    margin-left: 0.08em;
   }
 
-  .logo-link:hover .logo-wm-seven {
-    opacity: 0.85;
+  .logo-link:hover .logo-mark {
+    background: hsl(var(--accent-foreground) / 0.13);
   }
 </style>

@@ -17,7 +17,7 @@
  *    from the regulations.gov API (REGSGOV_API_KEY env var). Count
  *    failures are non-fatal: the date bump rests on the Federal
  *    Register check, not the count.
- * 3. Rewrites the as-of dates in SchedulingBanner.tsx and
+ * 3. Rewrites the as-of dates in SchedulingBanner.astro and
  *    src/content/compounds/7-oh-ban.md, plus the page's last_updated.
  *
  * Every rewrite asserts its pattern matched. If an edit reshapes the
@@ -57,7 +57,7 @@ const SEARCH_TERMS = ['7-hydroxymitragynine', 'SR-17018'];
  */
 const FLOOR_DATE = '2026-07-01';
 
-const BANNER = 'src/components/SchedulingBanner.tsx';
+const BANNER = 'src/components/SchedulingBanner.astro';
 const PAGE = 'src/content/compounds/7-oh-ban.md';
 
 const now = new Date();
@@ -130,7 +130,9 @@ console.log(
 // rewrites anything; later runs are pure verification so the page
 // doesn't churn with count-only commits.
 const currentBanner = fs.readFileSync(BANNER, 'utf8');
-if (currentBanner.includes(`As of ${monthDay}, 7-OH is not banned.`)) {
+// The banner renders a short mobile variant and a longer desktop one,
+// so the as-of line appears twice. Both are already current, or neither.
+if (currentBanner.split(`As of ${monthDay}, 7-OH is not banned.`).length - 1 === 2) {
   console.log(`Already current for ${monthDayYear}; verification-only run, no rewrites.`);
   process.exit(0);
 }
@@ -164,13 +166,28 @@ function mustReplace(file, content, pattern, replacement, label) {
   return content.replace(pattern, replacement);
 }
 
+/** Same, but asserts an exact match count so a dropped or duplicated
+ *  responsive variant fails loudly instead of half-updating. */
+function mustReplaceAll(file, content, pattern, replacement, expected, label) {
+  const found = content.match(pattern)?.length ?? 0;
+  if (found !== expected) {
+    console.error(
+      `Expected ${expected} match(es) in ${file} for ${label}, found ${found}. ` +
+        'The text has drifted; update this script.',
+    );
+    process.exit(1);
+  }
+  return content.replace(pattern, replacement);
+}
+
 let banner = fs.readFileSync(BANNER, 'utf8');
-banner = mustReplace(
+banner = mustReplaceAll(
   BANNER,
   banner,
-  /As of [A-Z][a-z]+ \d+, 7-OH is not banned\./,
+  /As of [A-Z][a-z]+ \d+, 7-OH is not banned\./g,
   `As of ${monthDay}, 7-OH is not banned.`,
-  'banner as-of line',
+  2,
+  'banner as-of lines (mobile + desktop variants)',
 );
 fs.writeFileSync(BANNER, banner);
 

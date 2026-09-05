@@ -6,13 +6,24 @@ interface Props {
   headings: MarkdownHeading[];
 }
 
-/* The reader's current section is the last heading whose top edge has
-   crossed this line. Sits just below where anchored headings land
-   (scroll-margin-top: 5rem in global.css), so a heading the reader
-   just clicked to registers as active. */
-const READING_LINE_PX = 88;
+function readingLine(): number {
+  const offset = Number.parseFloat(
+    window.getComputedStyle(document.documentElement).scrollPaddingTop,
+  );
+  const anchorLine = Number.isFinite(offset) ? offset + 1 : 105;
 
-function useActiveSlug(slugs: string[]): string | null {
+  // Near the end of a page, later headings cannot always reach the normal
+  // anchor line. Pull the reading line down gradually so short final sections
+  // still receive an active state before the reader hits the absolute bottom.
+  const remaining = Math.max(
+    0,
+    document.documentElement.scrollHeight - window.innerHeight - window.scrollY,
+  );
+  const pullRange = Math.min(220, window.innerHeight * 0.24);
+  return anchorLine + Math.max(0, pullRange - remaining);
+}
+
+export function useActiveSlug(slugs: string[]): string | null {
   const [active, setActive] = React.useState<string | null>(null);
   const key = slugs.join('\n');
 
@@ -34,9 +45,10 @@ function useActiveSlug(slugs: string[]): string | null {
         setActive(targets[targets.length - 1].id);
         return;
       }
+      const line = readingLine();
       let current: string | null = null;
       for (const el of targets) {
-        if (el.getBoundingClientRect().top <= READING_LINE_PX) {
+        if (el.getBoundingClientRect().top <= line) {
           current = el.id;
         } else {
           break;
@@ -51,10 +63,12 @@ function useActiveSlug(slugs: string[]): string | null {
     update();
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', schedule, { passive: true });
+    window.addEventListener('hashchange', schedule);
     return () => {
       if (frame) window.cancelAnimationFrame(frame);
       window.removeEventListener('scroll', schedule);
       window.removeEventListener('resize', schedule);
+      window.removeEventListener('hashchange', schedule);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key]);
@@ -91,12 +105,12 @@ export function Toc({ headings }: Props) {
 
   return (
     <nav aria-label="Table of contents" className="text-sm">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+      <p className="eyebrow mb-3 !text-muted-foreground">
         On this page
       </p>
       <ul
         ref={listRef}
-        className="scrollbar-none max-h-[calc(100vh-10rem)] space-y-1.5 overflow-y-auto overscroll-contain border-l border-border"
+        className="scrollbar-none max-h-[calc(100vh-12rem)] space-y-0.5 overflow-y-auto overscroll-contain border-l border-border/65 pl-3"
       >
         {filtered.map((h) => (
           <li key={h.slug}>
@@ -104,9 +118,9 @@ export function Toc({ headings }: Props) {
               href={`#${h.slug}`}
               aria-current={active === h.slug ? 'location' : undefined}
               className={cn(
-                '-ml-px block border-l border-transparent pl-3 text-muted-foreground transition hover:border-primary hover:text-foreground',
-                h.depth === 3 && 'pl-6 text-muted-foreground/80',
-                active === h.slug && 'border-primary font-medium text-foreground',
+                'relative block rounded-md px-2 py-1.5 text-[0.8rem] font-medium leading-snug text-muted-foreground transition-colors hover:text-foreground',
+                h.depth === 3 && 'pl-5 text-muted-foreground/75',
+                active === h.slug && 'bg-primary/[0.07] text-primary before:absolute before:-left-[0.8125rem] before:top-1.5 before:bottom-1.5 before:w-0.5 before:rounded-full before:bg-primary',
               )}
             >
               {h.text}

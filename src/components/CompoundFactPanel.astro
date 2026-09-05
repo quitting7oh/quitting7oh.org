@@ -1,0 +1,36 @@
+---
+import { AlertTriangle } from 'lucide-react';
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+const facts = slug === '7-oh' ? [
+  ['Class', 'Kratom-derived partial opioid agonist'],
+  ['Primary activity', 'Mu-opioid receptor dominant'],
+  ['Common forms', 'Tablets, liquid shots, powders, stacked products'],
+  ['Withdrawal profile', 'Opioid-class; usually peaks around 24–72 hours'],
+] : null;
+---
+
+{facts && (
+  <aside class="not-prose mb-8 overflow-hidden rounded-lg border border-border bg-card" aria-labelledby="key-facts-title">
+    <div class="flex items-center justify-between gap-3 border-b border-border bg-muted/55 px-4 py-3 sm:px-5">
+      <h2 id="key-facts-title" class="font-sans text-sm font-bold uppercase tracking-[0.09em] text-foreground">Key facts</h2>
+      <span class="inline-flex items-center gap-1.5 rounded-md bg-signal/12 px-2 py-1 text-xs font-bold text-foreground">
+        <AlertTriangle class="size-3.5 text-signal" aria-hidden="true" />
+        Federal status changing
+      </span>
+    </div>
+    <dl class="grid sm:grid-cols-2">
+      {facts.map(([term, detail]) => (
+        <div class="border-b border-border/70 px-4 py-3 last:border-b-0 sm:px-5 sm:[&:nth-last-child(-n+2)]:border-b-0 sm:[&:nth-child(odd)]:border-r">
+          <dt class="text-xs font-bold uppercase tracking-[0.07em] text-muted-foreground">{term}</dt>
+          <dd class="mt-1 text-base leading-snug text-foreground">{detail}</dd>
+        </div>
+      ))}
+    </dl>
+  </aside>
+)}

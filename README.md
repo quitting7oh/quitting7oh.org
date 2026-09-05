@@ -3,11 +3,15 @@
 Static documentation site compiled from a community Discord server for people
 recovering from 7-OH, kratom synthetics, and related opioid dependence.
 
-Built with [Astro](https://astro.build), Tailwind CSS, and Pagefind. Content
-is plain markdown. There is no CMS, no database, no user accounts, and no
-tracking.
+Built with [Astro](https://astro.build), Tailwind CSS, and MiniSearch. Content
+is plain markdown. There is no CMS, database, or user account system.
 
 ## Quick start (local dev)
+
+Requires Node 26 (pinned in `.nvmrc`; `fnm use` or `nvm use` picks it up) and
+npm 12 (`packageManager` in `package.json`; Node bundles npm 11, so run
+`npm install -g npm@12.0.2` once). The GitHub workflows, the Dockerfile, and
+the Cloudflare Pages `NODE_VERSION` all follow the same Node line.
 
 ```sh
 npm install
@@ -16,13 +20,9 @@ npm run dev
 
 Then open <http://localhost:4321>.
 
-Search uses [Pagefind](https://pagefind.app/), which indexes the site at build
-time. The dev server therefore won't have working search until you run:
-
-```sh
-npm run build
-npm run preview
-```
+Search uses [MiniSearch](https://lucaong.github.io/minisearch/). Astro builds a
+static index from the content collection; queries run entirely in the browser.
+Search works in both the development server and the production preview.
 
 ## Project structure
 
@@ -35,7 +35,7 @@ npm run preview
 │   │   ├── active-withdrawal/
 │   │   ├── compounds/
 │   │   ├── mat-suboxone/
-│   │   ├── other-tools/
+│   │   ├── medications-supplements/
 │   │   ├── post-acute/
 │   │   └── resources/
 │   ├── pages/                    ← Routing (auto-generated from content)
@@ -70,7 +70,7 @@ There are two ways to add or update pages.
    "your-channel-name": { "category": "start-here", "title_override": null }
    ```
    Category must be one of: `start-here`, `active-withdrawal`, `compounds`,
-   `mat-suboxone`, `other-tools`, `post-acute`, `resources`.
+   `mat-suboxone`, `medications-supplements`, `post-acute`, `resources`.
 3. Run `npm run ingest` (or `npm run ingest:dry` to preview without writing).
 4. Review the generated file at `src/content/<category>/<channel-name>.md`.
 5. Commit both the new content file and the mapping update.
@@ -139,7 +139,7 @@ VPS or don't want one.
    → **Connect to Git**. Select this repo.
 3. Set the **build command** to `npm run build` and the **build output
    directory** to `dist`.
-4. Set environment variable `NODE_VERSION=22` (Cloudflare sometimes defaults
+4. Set environment variable `NODE_VERSION=26` (Cloudflare sometimes defaults
    to older Node).
 5. Deploy. Subsequent commits to `main` deploy automatically.
 
@@ -194,6 +194,6 @@ Cloudflare for caching/DDoS protection while keeping origin control.
 
 - No blog, comments, accounts, or forum (the Discord is the forum).
 - No affiliate links, ads, or any other monetization.
-- No JavaScript-heavy interactive features. Pagefind and the theme toggle
-  are the only scripts, and Pagefind only loads when the user focuses a
-  search input.
+- No application runtime or account system. Article HTML is static; focused
+  React islands handle calculators, meeting state, navigation, and search.
+  MiniSearch and its index load only when a reader focuses or opens search.

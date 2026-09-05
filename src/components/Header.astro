@@ -1,61 +1,70 @@
 ---
 import { ThemePicker } from './ThemePicker';
 import { SearchBox } from './SearchBox';
+import { DiscordOnlineCount } from './DiscordOnlineCount';
 import Logo from './Logo.astro';
+import { MessageCircle } from 'lucide-react';
 ---
 
-<header
-  class="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur"
->
-  <div class="mx-auto flex max-w-[88rem] items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+<header class="sticky top-0 z-40 bg-background/94 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
+  <div class="mx-auto flex min-h-16 max-w-[94rem] items-center gap-2 px-3 min-[720px]:gap-3 min-[720px]:px-6 lg:px-8">
     <button
       id="nav-toggle"
       type="button"
-      class="-ml-2 inline-flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground hover:bg-accent hover:text-accent-foreground lg:hidden"
-      aria-label="Open navigation"
+      class="inline-flex size-11 shrink-0 items-center justify-center rounded-lg border border-border bg-card text-foreground transition-colors hover:border-primary hover:bg-accent lg:hidden"
+      aria-label="Open guide navigation"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-        <line x1="3" y1="6" x2="21" y2="6" />
-        <line x1="3" y1="12" x2="21" y2="12" />
-        <line x1="3" y1="18" x2="21" y2="18" />
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 7h16M4 12h11M4 17h16" />
       </svg>
     </button>
 
-    {/* Mark scales 28px → 40px from mobile to ~2xl; wordmark tracks. */}
-    <Logo size="clamp(1.75rem, 0.8rem + 2vw, 2.5rem)" />
+    <span class="hidden min-[360px]:inline-flex"><Logo size="2.25rem" /></span>
+    <span class="inline-flex min-[360px]:hidden"><Logo size="2.1rem" wordmark={false} /></span>
 
-    <div class="ml-auto flex items-center gap-3">
-      {/* Global CTA to the live meeting schedule. Full label when the
-          header has room; shortens to "Meetings" on small screens. */}
+    <p class="ml-4 hidden text-xs leading-snug text-muted-foreground xl:block">
+      Guides, tools,<br />and peer support
+    </p>
+
+    <div class="ml-auto flex items-center gap-2 min-[720px]:gap-3">
       <a
         href="/next-kratom-support-meeting"
-        class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground shadow-sm hover:opacity-90"
+        class="group hidden h-11 items-center gap-2 whitespace-nowrap rounded-lg border border-success/45 bg-success/10 px-3 text-sm font-bold text-foreground transition-colors hover:bg-success/17 min-[520px]:inline-flex min-[900px]:px-4"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-          <rect x="2" y="6" width="14" height="12" rx="2" />
-        </svg>
-        <span class="hidden lg:inline">Virtual Support Meetings</span>
-        <span class="lg:hidden">Meetings</span>
+        <span class="relative flex size-2" aria-hidden="true">
+          <span class="absolute inline-flex size-full rounded-full bg-success opacity-30 motion-safe:animate-ping"></span>
+          <span class="relative inline-flex size-2 rounded-full bg-success"></span>
+        </span>
+        <span class="hidden min-[900px]:inline">Find a meeting</span>
+        <span class="min-[900px]:hidden">Meetings</span>
       </a>
-      <div class="hidden sm:block">
-        <SearchBox variant="header" client:load />
-      </div>
-      <ThemePicker client:load />
+      <a
+        href="https://discord.gg/quitting7oh"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hidden h-11 items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-primary/30 bg-primary/5 px-3 text-sm font-bold text-foreground transition-colors hover:border-primary/55 hover:bg-accent min-[760px]:inline-flex min-[900px]:min-w-[8.75rem]"
+      >
+        <span class="hidden shrink-0 text-primary min-[900px]:inline-flex" aria-hidden="true">
+          <MessageCircle size={16} strokeWidth={1.9} />
+        </span>
+        <span class="sr-only">Join the quitting7oh </span>
+        <span>Discord</span>
+        <DiscordOnlineCount client:media="(min-width: 760px)" />
+      </a>
+      <SearchBox variant="header" client:idle />
+      <span class="hidden min-[720px]:inline-flex"><ThemePicker client:media="(min-width: 720px)" /></span>
+      <a
+        href="/start-here/7-oh-withdrawal-help"
+        class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-destructive pb-[9px] pl-[13px] pr-[11px] pt-[7px] text-sm font-bold text-destructive-foreground transition-colors hover:bg-destructive/90 sm:pl-[17px] sm:pr-[15px]"
+      >
+        Help now
+      </a>
     </div>
-  </div>
-
-  <!-- Mobile-only search row -->
-  <div class="border-t border-border px-4 py-2 sm:hidden">
-    <SearchBox variant="header" client:load />
   </div>
 </header>
 
 <script>
-  // The mobile hamburger lives outside the React SidebarShell tree, so it
-  // dispatches a custom event the AppSidebar listens for.
-  const btn = document.getElementById('nav-toggle');
-  btn?.addEventListener('click', () => {
+  document.getElementById('nav-toggle')?.addEventListener('click', () => {
     window.dispatchEvent(new CustomEvent('toggle-sidebar'));
   });
 </script>

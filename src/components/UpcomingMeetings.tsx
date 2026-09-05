@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Calendar, Clock, ExternalLink } from 'lucide-react';
 import {
   findUpcomingMeetings,
+  isLiveStatus,
   isNewMeeting,
   FELLOWSHIPS,
   platformFromUrl,
@@ -9,6 +10,13 @@ import {
   type MeetingStatus,
 } from '~/data/meetings';
 import { cn } from '~/lib/utils';
+import { useMeetingHistory } from '~/hooks/use-meeting-history';
+import {
+  meetingHistoryKey,
+  recordMeetingJoin,
+  type MeetingHistoryEntry,
+} from '~/lib/meeting-history';
+import { LiveGeneralMeetingFallback } from '~/components/LiveGeneralMeetingFallback';
 
 const TICK_MS = 30_000;
 /** How far ahead to look. 3 days fits comfortably on a page without
@@ -79,8 +87,7 @@ function statusDetail(
 /** Pill for meetings the fellowship recently added to its roster.
  *  Distinct hue from every status tone so it reads as "new on the
  *  schedule", not a meeting state. */
-const NEW_PILL =
-  'bg-violet-700 text-violet-50 dark:bg-violet-300 dark:text-violet-950';
+const NEW_PILL = 'border border-primary/35 bg-accent text-accent-foreground';
 
 const STATUS_TONES: Record<
   MeetingStatus,
@@ -88,29 +95,38 @@ const STATUS_TONES: Record<
 > = {
   future: {
     label: 'Upcoming',
-    pill: 'bg-sky-700 text-sky-50 dark:bg-sky-300 dark:text-sky-950',
+    pill: 'bg-primary text-primary-foreground',
   },
   'starting-soon': {
     label: 'Starting soon',
-    pill: 'bg-amber-500 text-white dark:bg-amber-400 dark:text-amber-950',
+    pill: 'bg-signal text-signal-foreground',
   },
   'meeting-starting': {
     label: 'Meeting starting',
-    pill: 'bg-emerald-600 text-white dark:bg-emerald-400 dark:text-emerald-950',
+    pill: 'bg-success text-success-foreground',
   },
   'live-now': {
     label: 'Live now',
-    pill: 'bg-emerald-600 text-white dark:bg-emerald-400 dark:text-emerald-950',
+    pill: 'bg-success text-success-foreground',
   },
 };
 
 interface CardProps {
   display: DisplayMeeting;
   now: Date;
+  history: MeetingHistoryEntry[];
 }
 
-/** Featured "Next up" card — large, prominent, takes the top of the page. */
-function FeaturedCard({ display, now }: CardProps) {
+interface FeaturedCardProps extends CardProps {
+  /** Set when several featured cards share a row, so the type scale
+   *  and padding step down enough for two to sit side by side. */
+  shared?: boolean;
+}
+
+/** Featured card at the top of the page: the next meeting, or every
+ *  meeting that's live right now. Live cards carry the sage top rule
+ *  so "open now" reads the same here as it does on the homepage. */
+function FeaturedCard({ display, now, history, shared = false }: FeaturedCardProps) {
   const { meeting, start, end, status } = display;
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
@@ -119,13 +135,26 @@ function FeaturedCard({ display, now }: CardProps) {
   // Once it's starting / live, the status itself is what matters — the
   // reader doesn't need both "Next up" AND "Live now" stamped on it.
   const pillLabel = status === 'future' ? 'Next up' : tone.label;
+  const joined = history.find(
+    (entry) =>
+      meetingHistoryKey(entry.provider, entry.meetingId) ===
+      meetingHistoryKey(meeting.fellowship, meeting.id),
+  );
+
+  const live = isLiveStatus(status);
 
   return (
-    <div className="rounded-xl border-2 border-sky-300 bg-sky-50 p-6 shadow-sm dark:border-sky-800/70 dark:bg-sky-950/30 sm:p-8">
+    <div
+      className={cn(
+        'overflow-hidden rounded-2xl border border-border border-t-4 bg-card p-6 shadow-sm',
+        live ? 'border-t-success' : 'border-t-primary',
+        shared ? 'sm:p-6' : 'sm:p-8',
+      )}
+    >
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <span
           className={cn(
-            'inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-sm',
+            'inline-flex items-center rounded-md px-3 py-1 text-xs font-bold uppercase tracking-[0.1em]',
             tone.pill,
           )}
         >
@@ -134,11 +163,16 @@ function FeaturedCard({ display, now }: CardProps) {
         {isNewMeeting(meeting, now) && (
           <span
             className={cn(
-              'inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-sm',
+              'inline-flex items-center rounded-md px-3 py-1 text-xs font-bold uppercase tracking-[0.1em]',
               NEW_PILL,
             )}
           >
             New meeting
+          </span>
+        )}
+        {joined && (
+          <span className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
+            Previously joined
           </span>
         )}
         <span className="text-sm font-medium text-foreground/80">
@@ -146,7 +180,12 @@ function FeaturedCard({ display, now }: CardProps) {
         </span>
       </div>
 
-      <h2 className="m-0 text-2xl font-semibold text-foreground sm:text-3xl">
+      <h2
+        className={cn(
+          'm-0 font-display font-semibold leading-tight text-foreground',
+          shared ? 'text-2xl sm:text-3xl' : 'text-3xl sm:text-4xl',
+        )}
+      >
         {fellowship.shortName} — {meeting.format}
         {meeting.note && (
           <span className="ml-2 text-base font-normal text-muted-foreground">
@@ -184,7 +223,15 @@ function FeaturedCard({ display, now }: CardProps) {
           href={meeting.joinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-4 py-2 text-base font-medium text-background hover:opacity-90"
+          onClick={() =>
+            recordMeetingJoin({
+              provider: meeting.fellowship,
+              meetingId: meeting.id,
+              name: `${fellowship.shortName} — ${meeting.format}`,
+              joinUrl: meeting.joinUrl,
+            })
+          }
+          className="inline-flex min-h-12 items-center gap-1.5 rounded-xl bg-primary px-5 py-3 text-base font-bold text-primary-foreground hover:bg-primary/90"
         >
           Join in {platform}
           <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -195,17 +242,22 @@ function FeaturedCard({ display, now }: CardProps) {
 }
 
 /** Compact card for the upcoming-meetings grid below the featured one. */
-function CompactCard({ display, now }: CardProps) {
+function CompactCard({ display, now, history }: CardProps) {
   const { meeting, start, end, status } = display;
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
   const tone = STATUS_TONES[status];
+  const joined = history.find(
+    (entry) =>
+      meetingHistoryKey(entry.provider, entry.meetingId) ===
+      meetingHistoryKey(meeting.fellowship, meeting.id),
+  );
 
   // The Join link is stretched over the whole card (after:inset-0), so
   // the card stays tap-anywhere-to-join; the org link sits above it on
   // its own z layer.
   return (
-    <div className="group relative flex flex-col gap-2 rounded-lg border border-border bg-card p-4 transition hover:border-primary/50 hover:bg-accent/40 focus-within:ring-2 focus-within:ring-ring">
+    <div className="group relative flex flex-col gap-2 rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary hover:bg-accent focus-within:ring-2 focus-within:ring-ring">
       <div className="flex items-center justify-between gap-2">
         <span className="text-sm font-semibold tabular-nums text-foreground">
           {formatLocalTime(start)}
@@ -214,7 +266,7 @@ function CompactCard({ display, now }: CardProps) {
           {isNewMeeting(meeting, now) && (
             <span
               className={cn(
-                'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                'inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
                 NEW_PILL,
               )}
             >
@@ -224,11 +276,16 @@ function CompactCard({ display, now }: CardProps) {
           {status !== 'future' && (
             <span
               className={cn(
-                'inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
+                'inline-flex items-center rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider',
                 tone.pill,
               )}
             >
               {tone.label}
+            </span>
+          )}
+          {joined && (
+            <span className="inline-flex items-center rounded-md bg-accent px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
+              Previously joined
             </span>
           )}
         </span>
@@ -261,6 +318,14 @@ function CompactCard({ display, now }: CardProps) {
         href={meeting.joinUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() =>
+          recordMeetingJoin({
+            provider: meeting.fellowship,
+            meetingId: meeting.id,
+            name: `${fellowship.shortName} — ${meeting.format}`,
+            joinUrl: meeting.joinUrl,
+          })
+        }
         className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-foreground/80 focus-visible:outline-none group-hover:text-primary after:absolute after:inset-0 after:content-['']"
       >
         Join
@@ -304,6 +369,7 @@ function groupByDay(meetings: DisplayMeeting[], now: Date): DayGroup[] {
  *  sees them. */
 export function UpcomingMeetings() {
   const [now, setNow] = React.useState<Date | null>(null);
+  const history = useMeetingHistory();
 
   React.useEffect(() => {
     setNow(new Date());
@@ -335,23 +401,54 @@ export function UpcomingMeetings() {
     );
   }
 
-  const [featured, ...rest] = meetings;
-  const grouped = groupByDay(rest, now);
+  // Live meetings started before `now`, so they sort ahead of everything
+  // upcoming. Feature all of them; if none is live, feature the next one.
+  const liveCount = meetings.filter((meeting) => isLiveStatus(meeting.status)).length;
+  const featured = meetings.slice(0, Math.max(1, liveCount));
+  const grouped = groupByDay(meetings.slice(featured.length), now);
+  const hasLiveSpecificMeeting = liveCount > 0;
 
   return (
     <div className="space-y-12">
-      <FeaturedCard display={featured} now={now} />
+      {featured.length > 1 ? (
+        <section aria-labelledby="live-now-heading">
+          <h2
+            id="live-now-heading"
+            className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl"
+          >
+            {featured.length} meetings are live right now
+          </h2>
+          <p className="mt-1.5 text-sm text-muted-foreground">
+            Every room is open. Pick whichever fits.
+          </p>
+          <div className="mt-5 grid gap-4 lg:grid-cols-2">
+            {featured.map((display) => (
+              <FeaturedCard
+                key={display.meeting.id}
+                display={display}
+                now={now}
+                history={history}
+                shared
+              />
+            ))}
+          </div>
+        </section>
+      ) : (
+        <FeaturedCard display={featured[0]} now={now} history={history} />
+      )}
+
+      {!hasLiveSpecificMeeting && <LiveGeneralMeetingFallback now={now} />}
 
       {grouped.length > 0 && (
         <div className="space-y-16">
           {grouped.map((group) => (
             <section key={group.key}>
-              <h3 className="mb-5 border-b border-border pb-2 text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+              <h3 className="mb-5 border-b border-border pb-3 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
                 {group.label}
               </h3>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {group.meetings.map((m, i) => (
-                  <CompactCard key={`${group.key}-${i}`} display={m} now={now} />
+                  <CompactCard key={`${group.key}-${i}`} display={m} now={now} history={history} />
                 ))}
               </div>
             </section>

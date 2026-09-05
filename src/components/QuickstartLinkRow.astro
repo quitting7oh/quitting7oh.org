@@ -1,0 +1,94 @@
+---
+import { ArrowRight, ExternalLink } from 'lucide-react';
+
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  action?: string;
+}
+
+const {
+  title,
+  description,
+  href,
+  action = 'Open guide',
+} = Astro.props;
+const external = /^https?:\/\//.test(href);
+---
+
+<a
+  href={href}
+  target={external ? '_blank' : undefined}
+  rel={external ? 'noopener noreferrer' : undefined}
+  class="quickstart-row group not-prose"
+>
+  <span class="min-w-0">
+    <span class="block font-sans text-base font-bold leading-snug text-foreground sm:text-[1.04rem]">
+      {title}
+    </span>
+    <span class="mt-1 block max-w-[62ch] text-sm leading-relaxed text-muted-foreground">
+      {description}
+    </span>
+  </span>
+  <span class="quickstart-action">
+    <span>{action}</span>
+    {external ? (
+      <ExternalLink class="size-3.5 shrink-0" aria-hidden="true" />
+    ) : (
+      <ArrowRight class="size-4 shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+    )}
+  </span>
+</a>
+
+<style>
+  .quickstart-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    min-height: 5.5rem;
+    border-top: 1px solid hsl(var(--border));
+    padding: 1rem 0.2rem;
+    color: hsl(var(--foreground));
+    text-decoration: none;
+    transition: background-color 160ms ease-out;
+  }
+
+  .quickstart-row:hover {
+    background: hsl(var(--accent) / 0.34);
+  }
+
+  .quickstart-action {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.45rem;
+    color: hsl(var(--primary));
+    font-size: 0.82rem;
+    font-weight: 760;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 34rem) {
+    .quickstart-row {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.35rem;
+      padding-block: 0.9rem;
+    }
+
+    .quickstart-action {
+      min-height: 2rem;
+      justify-content: flex-start;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .quickstart-row,
+    .quickstart-row :global(svg) {
+      transition: none;
+    }
+  }
+</style>

@@ -33,7 +33,7 @@ export const CATEGORIES = [
   {
     slug: 'start-here',
     title: 'Start Here',
-    blurb: 'Welcome, how to use the site, withdrawal help, craving moments.',
+    blurb: 'Welcome, withdrawal planning, quitting paths, and craving moments.',
     Icon: Compass,
     section: 'recovery',
   },
@@ -59,8 +59,8 @@ export const CATEGORIES = [
     section: 'recovery',
   },
   {
-    slug: 'other-tools',
-    title: 'Adjuncts & Supplements',
+    slug: 'medications-supplements',
+    title: 'Meds & Supplements',
     blurb: 'Helper meds, supplements, quit-kit stacks, NAD+ IV, peptides, tapering with leaf, cannabis in recovery.',
     Icon: Wrench,
     section: 'recovery',
@@ -96,7 +96,7 @@ export const CATEGORIES = [
   {
     slug: 'about',
     title: 'Site & Community',
-    blurb: 'What this site is, who runs it, how to contribute or send feedback.',
+    blurb: 'About the site, its community, technical architecture, changelog, and ways to contribute.',
     Icon: Info,
     section: 'reference',
   },
@@ -129,14 +129,14 @@ export function getCategorySection(slug: string): CategorySection | undefined {
  *  funnel for cross-page persistence so a reader doesn't have to navigate
  *  back to / to find the high-traffic destinations again. Keep this list
  *  short (6 max) — these are shortcuts, not a nav tree. */
-export const PINNED_PAGES: { href: string; title: string }[] = [
-  { href: '/start-here/7-oh-withdrawal-help', title: 'In active withdrawal' },
-  { href: '/other-tools/vitamins-supplements', title: 'Vitamins & Supplements' },
-  { href: '/other-tools/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C' },
-  { href: '/other-tools/helper-meds', title: 'Helper Medications' },
-  { href: '/other-tools/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom' },
-  { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone' },
-  { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?' },
+export const PINNED_PAGES: { href: string; title: string; detail: string }[] = [
+  { href: '/start-here/7-oh-withdrawal-help', title: 'In active withdrawal', detail: 'What to do this hour, step by step' },
+  { href: '/medications-supplements/vitamins-supplements', title: 'Vitamins & Supplements', detail: 'The supplement stack: what to start with, what to skip' },
+  { href: '/medications-supplements/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C', detail: 'The high-dose vitamin C protocol and its cautions' },
+  { href: '/medications-supplements/helper-meds', title: 'Helper Medications', detail: 'Clonidine, gabapentin, and other non-opioid symptom relief' },
+  { href: '/medications-supplements/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom', detail: 'Plain leaf as a bridge off 7-OH, and how to taper it after' },
+  { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone', detail: 'Induction, low-and-slow dosing, and short tapers' },
+  { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?', detail: 'The first thing to do, and who to call' },
 ];
 
 /** Sub-groupings inside long categories. Each entry maps a group name
@@ -159,7 +159,7 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'Day-to-day', slugs: ['at-home-recovery', 'rehabilitation-centers', 'fmla-workplace'] },
     { name: 'For yourself', slugs: ['taking-care-of-yourself', 'support-groups'] },
   ],
-  'other-tools': [
+  'medications-supplements': [
     { name: 'Helper meds & supplements', slugs: ['helper-meds', 'vitamins-supplements', 'quit-kit', 'mega-dose-vitamin-c', 'nad-iv-therapy', 'peptides-for-withdrawal'] },
     { name: 'Other ways off 7-OH', slugs: ['quit-7-oh-with-kratom-leaf', 'quit-7-oh-with-mitragynine'] },
     { name: 'Lifestyle', slugs: ['cannabis-thc-in-recovery'] },
@@ -172,4 +172,3 @@ export const CATEGORY_GROUPS: Record<string, { name: string; slugs: string[] }[]
     { name: 'Long view', slugs: ['kindling-and-relapse', '7-oh-recovery-timeline'] },
   ],
 };
-

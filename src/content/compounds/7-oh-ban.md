@@ -88,7 +88,7 @@ products, this is a ban.
 federally legal.** In its natural form, 7-OH occurs only
 in trace amounts, and both DEA and HHS state the action is not
 intended to capture botanical leaf. That matters here because
-[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
+[tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
 is one of the documented paths off 7-OH, and this action does not
 remove it. State law is its own patchwork: nine states (Alabama,
 Arkansas, Florida, Indiana, Kentucky, Louisiana, Ohio, Vermont, and
@@ -171,7 +171,7 @@ to **September 10, 2026**, after receiving a request for more time.
 The docket is open again, and comments already submitted stand; nobody
 needs to refile. As of September 4,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
-shows 28,381 comments posted, with the rest still moving through
+shows 28,501 comments posted, with the rest still moving through
 review.
 
 The scope did not change with the extension. OASH asked two questions
@@ -207,17 +207,17 @@ The paths off are the same ones this site has always documented:
 - **A structured taper or planned stop** — start with
   [How to Quit 7-OH](/start-here/how-to-quit-7-oh), and if you're
   already in withdrawal, [Withdrawal Help](/start-here/7-oh-withdrawal-help).
-- **[Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)** —
+- **[Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)** —
   leaf below the threshold stays federally legal, so this path
   survives the ban.
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)** — the
   medication-assisted path, through a prescriber.
-  **[SR-17](/other-tools/sr-17)** filled this slot without a
+  **[SR-17](/medications-supplements/sr-17)** filled this slot without a
   prescriber until August 27, 2026, when DEA placed it in Schedule I
   under a [separate order](https://www.federalregister.gov/documents/2026/08/27/2026-17531/schedules-of-controlled-substances-temporary-placement-of-56-dichloro-brorphine-56-dichloro).
   It is no longer a path you can start.
-- **Cold turkey with [helper medications](/other-tools/helper-meds)**
-  and the [quit kit](/other-tools/quit-kit).
+- **Cold turkey with [helper medications](/medications-supplements/helper-meds)**
+  and the [quit kit](/medications-supplements/quit-kit).
 
 A few cautions specific to a ban deadline:
 
