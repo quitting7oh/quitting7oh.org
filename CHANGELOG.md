@@ -2709,7 +2709,7 @@ clobbering editorial work.
   block.
 
 User-facing Discord references (the homepage card, the
-[/resources/community](/resources/community) page, "Join the Discord"
+[/resources/community](/about/the-community) page, "Join the Discord"
 callouts, the `discord.gg/quitting7oh` invite link) are **kept** — these
 are community-pointer content, not data sources, and they're how
 readers find live help.
@@ -2760,10 +2760,10 @@ been replaced with plain descriptions.
   that sidesteps many regulatory issues that buprenorphine and methadone
   trigger. Cross-linked from
   [suboxone-for-7oh](/mat-suboxone/suboxone-for-7oh),
-  [for-you/treatment-rehab](/for-you/treatment-rehab),
+  [for-you/treatment-rehab](/for-you/rehabilitation-centers),
   [for-you/fmla-ada-job](/for-you/fmla-ada-job),
-  [for-you/start-here](/for-you/start-here), and
-  [for-loved-ones/treatment-options](/for-loved-ones/treatment-options).
+  [for-you/start-here](/for-you/welcome), and
+  [for-loved-ones/treatment-options](/for-loved-ones/rehabilitation-centers).
 - **for-you/ sort order updated** to slot the new MAT-job page between
   fmla-ada-job (3) and mutual-aid: mat-and-your-job (4), mutual-aid (5),
   sober-living (6).
