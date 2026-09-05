@@ -19,6 +19,8 @@ WORKDIR /build
 
 # Install dependencies first for better layer caching.
 COPY package.json package-lock.json* ./
+# Match the npm release pinned in package.json (node:26 bundles npm 11).
+RUN npm install -g npm@12.0.2
 RUN --mount=type=cache,target=/root/.npm \
     npm ci
 

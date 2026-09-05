@@ -8,6 +8,11 @@ is plain markdown. There is no CMS, database, or user account system.
 
 ## Quick start (local dev)
 
+Requires Node 26 (pinned in `.nvmrc`; `fnm use` or `nvm use` picks it up) and
+npm 12 (`packageManager` in `package.json`; Node bundles npm 11, so run
+`npm install -g npm@12.0.2` once). The GitHub workflows, the Dockerfile, and
+the Cloudflare Pages `NODE_VERSION` all follow the same Node line.
+
 ```sh
 npm install
 npm run dev
