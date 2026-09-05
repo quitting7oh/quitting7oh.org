@@ -514,7 +514,7 @@ function PerDoseHint({
   const trigger = (
     <button
       type="button"
-      className="inline-flex items-center gap-1.5 rounded text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+      className="inline-flex min-h-6 items-center gap-1.5 rounded py-0.5 text-left text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
       aria-label={ariaLabel}
     >
       <span>{perDose}</span>
