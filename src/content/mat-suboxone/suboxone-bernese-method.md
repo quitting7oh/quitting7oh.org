@@ -19,7 +19,7 @@ Micro-induction is the alternative when the standard "wait for withdrawal sympto
 - **You're on a stacked product** where you don't know which compound (or combination) you're coming off.
 - **You can't tolerate the wait.** Life, work, prior trauma around active withdrawal, severe baseline symptoms.
 
-For most [7-OH](/compounds/7-oh)-alone users (short half-life, clears fast), the standard induction is faster, has decades of evidence behind it, and works. Micro-induction is for the specific cases above. The standard approach is covered on [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh), with the timing tool on [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide). If Suboxone isn't right for you, [tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold turkey with [helper medications](/other-tools/helper-meds) are the other documented paths.
+For most [7-OH](/compounds/7-oh)-alone users (short half-life, clears fast), the standard induction is faster, has decades of evidence behind it, and works. Micro-induction is for the specific cases above. The standard approach is covered on [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh), with the timing tool on [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide). If Suboxone isn't right for you, [tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) and cold turkey with [helper medications](/medications-supplements/helper-meds) are the other documented paths.
 
 ## How to do it
 
@@ -99,7 +99,7 @@ Since then:
 
 **Inpatient completion is high; outpatient completion is much lower.** That's the gap that matters for most people in this community, because most micro-inductions for kratom-derivative dependence will be done at home, not in a hospital. The dropoff comes mostly from people abandoning the protocol partway through, inadequate symptom relief during the overlap, life getting in the way of the dosing schedule, or returning to the 7-OH product when it feels easier than continuing the slow ramp.
 
-For the right person micro-induction works, but plan for the support structure that an inpatient setting would provide: a prescriber who's reachable when symptoms get rough mid-overlap, a clear plan for [helper medications](/other-tools/helper-meds) to ease the rough patches, and a few people who know what you're doing and can help you stay on the schedule. That's the variable that drives completion.
+For the right person micro-induction works, but plan for the support structure that an inpatient setting would provide: a prescriber who's reachable when symptoms get rough mid-overlap, a clear plan for [helper medications](/medications-supplements/helper-meds) to ease the rough patches, and a few people who know what you're doing and can help you stay on the schedule. That's the variable that drives completion.
 
 ## The kratom-derivative evidence gap
 
@@ -137,7 +137,7 @@ If your current prescriber isn't comfortable with the protocol, the [Telehealth 
 - **You don't have a prescriber on board.** Self-running a micro-induction from films cut by hand, with no clinical backstop if symptoms get rough, is a much higher-risk version of this protocol than the published cohorts describe. Some people do it; it's not the safe version.
 - **You're in acute withdrawal already.** If you've already been off your 7-OH for 12+ hours and your COWS is climbing, you're in a position where standard induction is the cleaner move. Micro-induction starts from a stable baseline of regular dosing, not from active withdrawal.
 
-For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh) for the standard approach. If Suboxone isn't right for you at all, [tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf) and cold turkey with [helper medications](/other-tools/helper-meds) are the paths that remain.
+For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone-for-7oh) for the standard approach. If Suboxone isn't right for you at all, [tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) and cold turkey with [helper medications](/medications-supplements/helper-meds) are the paths that remain.
 
 ## Sources
 
@@ -164,4 +164,4 @@ For any of these, see [Suboxone (Buprenorphine/Naloxone)](/mat-suboxone/suboxone
 - **[Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)**: the practical mechanics of cutting films to micro-induction doses (0.25, 0.5, 1 mg)
 - **[Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper)**: what happens after you've stabilized, regardless of which induction method got you there
 - **[Telehealth Providers](/resources/telehealth-for-suboxone)**: prescriber comparison; flags which providers explicitly handle kratom/7-OH
-- **[Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)** and **[helper medications](/other-tools/helper-meds)**: the paths off the synthetics if Suboxone isn't the right fit
+- **[Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)** and **[helper medications](/medications-supplements/helper-meds)**: the paths off the synthetics if Suboxone isn't the right fit

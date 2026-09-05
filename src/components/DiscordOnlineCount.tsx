@@ -3,10 +3,12 @@ import { useEffect, useState } from 'react';
 const GUILD_ID = '1366097989382307901';
 const WIDGET_URL = `https://discord.com/api/guilds/${GUILD_ID}/widget.json`;
 
-/** Renders " · N online" inline (with a pulsing dot) when the Discord
- *  widget JSON reports an online count. Renders nothing while loading
- *  or on fetch failure, so the surrounding copy stays clean. */
-export function DiscordOnlineCount() {
+interface DiscordOnlineCountProps {
+  showOnlineLabel?: boolean;
+}
+
+/** Show the Discord widget's current online count when it is available. */
+export function DiscordOnlineCount({ showOnlineLabel = false }: DiscordOnlineCountProps) {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
@@ -31,12 +33,16 @@ export function DiscordOnlineCount() {
   if (count === null || count <= 0) return null;
 
   return (
-    <span className="ml-1 inline-flex items-center gap-1 align-middle text-xs font-normal text-emerald-700 dark:text-emerald-300">
+    <span
+      className="inline-flex items-center gap-1 whitespace-nowrap align-middle text-xs font-semibold tabular-nums text-success"
+      aria-label={`${count} members online`}
+    >
       <span
-        className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-500 dark:bg-emerald-400"
+        className="inline-block h-2 w-2 rounded-full bg-success motion-safe:animate-pulse"
         aria-hidden="true"
       />
-      {count} online
+      {count}
+      <span className={showOnlineLabel ? undefined : 'hidden min-[900px]:inline'}> online</span>
     </span>
   );
 }

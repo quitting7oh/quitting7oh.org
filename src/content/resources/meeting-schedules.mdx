@@ -6,8 +6,11 @@ last_updated: "2026-08-11"
 sort: 3
 ---
 import MeetingsTable from '~/components/MeetingsTable.astro';
+import { PreviouslyJoinedMeetings } from '~/components/PreviouslyJoinedMeetings';
 
 This page is the schedule for the two peer support fellowships focused specifically on kratom, kratom extracts, and [7-OH](/compounds/7-oh): **Kratom Anonymous (KA)**, a 12-step fellowship, and **Quitting Kratom Support - There Is A Way Out (TIAWO)**, a non-12-step volunteer-led community. Both are listed below with day, time, format, and join links, pulled from the fellowships' own sites.
+
+<PreviouslyJoinedMeetings providers={['KA', 'KQS']} client:load />
 
 For the broader directory of mutual aid options ([NA](https://www.na.org), [Heroin Anonymous](https://heroinanonymous.org), [SMART Recovery](https://smartrecovery.org), Refuge Recovery, [The Phoenix](https://thephoenix.org), and others), see [Mutual Aid & Recovery Groups](/for-you/mutual-aid). For peer support specifically for family and friends, see [Support Groups for Family & Friends](/for-loved-ones/support-groups).
 

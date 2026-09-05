@@ -3,26 +3,33 @@ import '~/styles/global.css';
 import ThemeScript from '~/components/ThemeScript.astro';
 import Header from '~/components/Header.astro';
 import { BackToTop } from '~/components/BackToTop';
-import { CrisisButton } from '~/components/CrisisButton';
-import { SchedulingBanner } from '~/components/SchedulingBanner';
+import SchedulingBanner from '~/components/SchedulingBanner.astro';
 import Footer from '~/components/Footer.astro';
 import { SITE } from '~/lib/site';
-
-// Default theme is 'stone' (see ThemeScript.astro); the static favicon refs
-// and the initial theme-color use stone's light-mode values. theme-sync.js
-// swaps them on the fly when data-theme or .dark changes.
-const DEFAULT_THEME = 'stone';
-const DEFAULT_THEME_COLOR_LIGHT = '#604020';
+import bodyFontUrl from '@fontsource-variable/commissioner/files/commissioner-latin-standard-normal.woff2?url';
+import displayFontUrl from '@fontsource-variable/stix-two-text/files/stix-two-text-latin-wght-normal.woff2?url';
 
 interface Props {
   title?: string;
   description?: string;
   /** When true, render the canonical URL as the homepage. */
   canonical?: string;
+  /** Minimal chrome for the withdrawal fast-path. */
+  minimal?: boolean;
+  /** Keep the reading-progress escape hatch available without restoring full chrome. */
+  showBackToTop?: boolean;
 }
 
-const { title, description = SITE.description, canonical } = Astro.props;
-const pageTitle = title ? `${title} · ${SITE.title}.org` : `${SITE.title}.org — recovery information`;
+const {
+  title,
+  description = SITE.description,
+  canonical,
+  minimal = false,
+  showBackToTop = !minimal,
+} = Astro.props;
+const pageTitle = title
+  ? `${title} · ${SITE.title}.org`
+  : `7-OH Withdrawal Help & Taper Guides | ${SITE.title}.org`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
 ---
 
@@ -35,13 +42,13 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    {/* Favicons / app icons. Static refs use the default theme (stone);
-        theme-sync.js below repoints the SVG favicon and theme-color when
-        the active data-theme or .dark class changes. */}
-    <link rel="icon" href={`/favicons/${DEFAULT_THEME}/favicon.ico`} sizes="any" />
-    <link rel="icon" type="image/svg+xml" href={`/favicons/${DEFAULT_THEME}/favicon.svg`} />
-    <link rel="apple-touch-icon" href={`/favicons/${DEFAULT_THEME}/apple-touch-icon.png`} />
-    <link rel="manifest" href={`/favicons/${DEFAULT_THEME}/site.webmanifest`} />
+    <ThemeScript />
+    <link rel="preload" href={bodyFontUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={displayFontUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href="/favicons/stone/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/stone/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicons/stone/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicons/stone/site.webmanifest" />
     {/* Open Graph (Discord, LinkedIn, Slack, Facebook). The brand-
         anchored og-image carries the Lift Cup lockup + wordmark on
         the stone-light background — generated once by
@@ -62,10 +69,8 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE.url}/og-image.png`} />
     <meta name="twitter:image:alt" content="quitting7oh.org — recovery information for 7-OH, MGM-15, and kratom-derived synthetics" />
-    {/* Default to stone-light primary; theme-sync.js rewrites this on the
-        fly to match the active theme + mode. Discord reads this for the
-        accent strip on the left edge of the embed. */}
-    <meta name="theme-color" content={DEFAULT_THEME_COLOR_LIGHT} />
+    <meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#211a15" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content="index,follow" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZPHE0EXTM" is:inline></script>
@@ -76,18 +81,13 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
 
       gtag('config', 'G-1ZPHE0EXTM');
     </script>
-    <ThemeScript />
-    {/* Runs after ThemeScript so the favicon/theme-color are already aligned
-        on first paint — no flash of the wrong icon. */}
-    <script src="/favicons/theme-sync.js" is:inline></script>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen overflow-x-hidden">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <SchedulingBanner client:load />
-    <Header />
+    {!minimal && <SchedulingBanner />}
+    {!minimal && <Header />}
     <slot />
-    <Footer />
-    <BackToTop client:load />
-    <CrisisButton client:load />
+    {!minimal && <Footer />}
+    {showBackToTop && <BackToTop client:idle />}
   </body>
 </html>

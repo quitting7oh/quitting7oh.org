@@ -2,16 +2,16 @@
 title: "The Federal 7-OH Ban: Dates, Scope, What It Means"
 description: "Pseudo, MGM-15, and MGM-16 are Schedule I as of August 26, 2026. The 7-OH threshold order is still pending. Dates, scope, the reopened comment window, and what to do if you're still using."
 category: "compounds"
-last_updated: "2026-09-04"
+last_updated: "2026-08-28"
 sort: 0
 ---
 
-> **Last verified against primary sources on September 4, 2026.** This page
+> **Last verified against primary sources on August 28, 2026.** This page
 > tracks a live regulatory action; we'll update it as things move.
 
 ## Status: three compounds banned, 7-OH not yet
 
-**As of September 4, 2026, 7-OH is not banned.** DEA has not issued the
+**As of August 28, 2026, 7-OH is not banned.** DEA has not issued the
 threshold order. The 30-day waiting period expired on August 5, so the
 order can publish on any business day, and it takes effect the day it
 publishes.
@@ -30,7 +30,7 @@ consumers got no grace period.
 | **July 31, 2026** | The public comment window on the 7-OH threshold closed with **32,145 comments** submitted. |
 | **August 5, 2026** | The earliest date either order could take effect. It passed with no order issued. |
 | **August 26, 2026** | DEA's order for pseudo, MGM-15, and MGM-16 published and took effect the same day. HHS separately reopened the 7-OH comment window through September 10 (see [the comment window](#public-comments-reopened-through-september-10) below). |
-| **September 4, 2026** | Latest check against the Federal Register: still no order on the 7-OH threshold. |
+| **August 28, 2026** | Latest check against the Federal Register: still no order on the 7-OH threshold. |
 
 Both notices stated the order "will be published in the Federal
 Register on or after August 5, 2026," and that DEA intended to issue it
@@ -88,7 +88,7 @@ products, this is a ban.
 federally legal.** In its natural form, 7-OH occurs only
 in trace amounts, and both DEA and HHS state the action is not
 intended to capture botanical leaf. That matters here because
-[tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
+[tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
 is one of the documented paths off 7-OH, and this action does not
 remove it. State law is its own patchwork: nine states (Alabama,
 Arkansas, Florida, Indiana, Kentucky, Louisiana, Ohio, Vermont, and
@@ -169,9 +169,9 @@ On August 26, OASH
 [extended the comment period](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period)
 to **September 10, 2026**, after receiving a request for more time.
 The docket is open again, and comments already submitted stand; nobody
-needs to refile. As of September 4,
+needs to refile. As of August 28,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
-shows 28,381 comments posted, with the rest still moving through
+shows 26,886 comments posted, with the rest still moving through
 review.
 
 The scope did not change with the extension. OASH asked two questions
@@ -207,17 +207,17 @@ The paths off are the same ones this site has always documented:
 - **A structured taper or planned stop** — start with
   [How to Quit 7-OH](/start-here/how-to-quit-7-oh), and if you're
   already in withdrawal, [Withdrawal Help](/start-here/7-oh-withdrawal-help).
-- **[Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)** —
+- **[Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)** —
   leaf below the threshold stays federally legal, so this path
   survives the ban.
 - **[Suboxone](/mat-suboxone/suboxone-for-7oh)** — the
   medication-assisted path, through a prescriber.
-  **[SR-17](/other-tools/sr-17)** filled this slot without a
+  **[SR-17](/medications-supplements/sr-17)** filled this slot without a
   prescriber until August 27, 2026, when DEA placed it in Schedule I
   under a [separate order](https://www.federalregister.gov/documents/2026/08/27/2026-17531/schedules-of-controlled-substances-temporary-placement-of-56-dichloro-brorphine-56-dichloro).
   It is no longer a path you can start.
-- **Cold turkey with [helper medications](/other-tools/helper-meds)**
-  and the [quit kit](/other-tools/quit-kit).
+- **Cold turkey with [helper medications](/medications-supplements/helper-meds)**
+  and the [quit kit](/medications-supplements/quit-kit).
 
 A few cautions specific to a ban deadline:
 

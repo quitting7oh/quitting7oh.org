@@ -7,6 +7,7 @@
  *  a single row so the table communicates the *pattern* of the schedule
  *  rather than enumerating every day independently. */
 import { MEETINGS, FELLOWSHIPS, type Fellowship, type Meeting } from '~/data/meetings';
+import { TrackedMeetingLink } from './TrackedMeetingLink';
 
 interface Props {
   fellowship: Fellowship;
@@ -88,24 +89,28 @@ const zoomLookup = (() => {
 ---
 
 {variant === 'zoom-lookup' && (
-  <div class="overflow-x-auto">
-    <table>
-      <thead>
+  <div class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="border-b border-border bg-muted/45 px-4 py-3">
+      <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Kratom Anonymous · room lookup</p>
+    </div>
+    <div class="meeting-table-scroll overflow-x-auto overscroll-x-contain">
+    <table class="meeting-table meeting-lookup-table w-full min-w-[36rem] border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-[0.7rem] uppercase tracking-[0.08em] text-muted-foreground">
         <tr>
-          <th>Shortlink</th>
-          <th>Zoom URL</th>
+          <th class="px-4 py-3">Shortlink</th>
+          <th class="px-4 py-3">Zoom URL</th>
         </tr>
       </thead>
       <tbody>
         {zoomLookup.map((r) => (
-          <tr>
-            <td>
-              <a href={r.shortLink} target="_blank" rel="noopener noreferrer">
+          <tr class="border-t border-border first:border-t-0 hover:bg-accent/35">
+            <td class="meeting-primary px-4 py-3 font-bold">
+              <a class="text-primary underline decoration-primary/30 underline-offset-4" href={r.shortLink} target="_blank" rel="noopener noreferrer">
                 {shortLinkLabel(r.shortLink)}
               </a>
             </td>
-            <td>
-              <a href={r.joinUrl} target="_blank" rel="noopener noreferrer">
+            <td class="meeting-detail px-4 py-3 font-mono text-xs" data-label="Zoom URL">
+              <a class="text-primary underline decoration-primary/30 underline-offset-4" href={r.joinUrl} target="_blank" rel="noopener noreferrer">
                 {shortLinkLabel(r.joinUrl)}
               </a>
             </td>
@@ -113,86 +118,221 @@ const zoomLookup = (() => {
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}
 
 {variant === 'schedule' && fellowship === 'KA' && (
-  <div class="overflow-x-auto">
-    <table>
-      <thead>
+  <div class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="flex items-center justify-between gap-3 border-b border-border bg-muted/45 px-4 py-3">
+      <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">{meta.shortName} · weekly schedule</p>
+      <span class="text-xs text-muted-foreground">ET / PT</span>
+    </div>
+    <div class="meeting-table-scroll overflow-x-auto overscroll-x-contain">
+    <table class="meeting-table w-full min-w-[50rem] border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-[0.7rem] uppercase tracking-[0.08em] text-muted-foreground">
         <tr>
-          <th>Day</th>
-          <th>Time (ET / PT)</th>
-          <th>Format</th>
-          <th>Shortlink</th>
-          <th>Zoom Room</th>
+          <th class="sticky left-0 z-10 bg-muted px-4 py-3">Day</th>
+          <th class="px-4 py-3">Time (ET / PT)</th>
+          <th class="whitespace-nowrap px-4 py-3">Format</th>
+          <th class="whitespace-nowrap px-4 py-3">Shortlink</th>
+          <th class="whitespace-nowrap px-4 py-3">Zoom room</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((m) => (
-          <tr>
-            <td>
+          <tr class="border-t border-border hover:bg-accent/35">
+            <td class="meeting-primary sticky left-0 bg-card px-4 py-3 group-hover:bg-accent">
               <strong>{formatDayCell(m.daysOfWeek)}</strong>
               {m.note && <em class="ml-1">({m.note})</em>}
             </td>
-            <td>
+            <td class="meeting-time whitespace-nowrap px-4 py-3 text-muted-foreground">
               {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
             </td>
-            <td>{m.format}</td>
-            <td>
+            <td class="meeting-format whitespace-nowrap px-4 py-3 font-bold">{m.format}</td>
+            <td class="meeting-detail whitespace-nowrap px-4 py-3" data-label="Short link">
               {m.shortLink ? (
-                <a href={m.shortLink} target="_blank" rel="noopener noreferrer">
-                  {shortLinkLabel(m.shortLink)}
-                </a>
+                <TrackedMeetingLink
+                  client:load
+                  provider={m.fellowship}
+                  meetingId={m.id}
+                  name={`${meta.shortName} — ${m.format}`}
+                  joinUrl={m.shortLink}
+                  label={shortLinkLabel(m.shortLink)}
+                />
               ) : (
                 '—'
               )}
             </td>
-            <td>
+            <td class="meeting-detail px-4 py-3" data-label="Zoom room">
               {m.room ? (
                 m.room
               ) : (
-                <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
-                  {shortLinkLabel(m.joinUrl)}
-                </a>
+                <TrackedMeetingLink
+                  client:load
+                  provider={m.fellowship}
+                  meetingId={m.id}
+                  name={`${meta.shortName} — ${m.format}`}
+                  joinUrl={m.joinUrl}
+                  label={shortLinkLabel(m.joinUrl)}
+                />
               )}
             </td>
           </tr>
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}
 
 {variant === 'schedule' && fellowship === 'KQS' && (
-  <div class="overflow-x-auto">
-    <table>
-      <thead>
+  <div class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="flex items-center justify-between gap-3 border-b border-border bg-muted/45 px-4 py-3">
+      <p class="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">{meta.shortName} · weekly schedule</p>
+      <span class="text-xs text-muted-foreground">ET / PT</span>
+    </div>
+    <div class="meeting-table-scroll overflow-x-auto overscroll-x-contain">
+    <table class="meeting-table w-full min-w-[42rem] border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-[0.7rem] uppercase tracking-[0.08em] text-muted-foreground">
         <tr>
-          <th>Day</th>
-          <th>Time (ET / PT)</th>
-          <th>Meeting</th>
-          <th>Join</th>
+          <th class="sticky left-0 z-10 bg-muted px-4 py-3">Day</th>
+          <th class="px-4 py-3">Time (ET / PT)</th>
+          <th class="px-4 py-3">Meeting</th>
+          <th class="px-4 py-3">Join</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((m) => (
-          <tr>
-            <td>
+          <tr class="border-t border-border hover:bg-accent/35">
+            <td class="meeting-primary sticky left-0 bg-card px-4 py-3">
               <strong>{formatDayCell(m.daysOfWeek)}</strong>
             </td>
-            <td>
+            <td class="meeting-time whitespace-nowrap px-4 py-3 text-muted-foreground">
               {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
             </td>
-            <td>{m.format}</td>
-            <td>
-              <a href={m.joinUrl} target="_blank" rel="noopener noreferrer">
-                {shortLinkLabel(m.joinUrl)}
-              </a>
+            <td class="meeting-format px-4 py-3 font-bold">{m.format}</td>
+            <td class="meeting-detail px-4 py-3" data-label="Join">
+              <TrackedMeetingLink
+                client:load
+                provider={m.fellowship}
+                meetingId={m.id}
+                name={`${meta.shortName} — ${m.format}`}
+                joinUrl={m.joinUrl}
+                label="Join meeting"
+                variant="button"
+              />
             </td>
           </tr>
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}
+
+<style>
+  @media (max-width: 56rem) {
+    .meeting-table-scroll {
+      overflow: visible;
+    }
+
+    .meeting-table,
+    .meeting-table tbody,
+    .meeting-table tr,
+    .meeting-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .meeting-table {
+      min-width: 0;
+    }
+
+    .meeting-table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .meeting-table tbody tr {
+      padding: 0.95rem 1rem 1rem;
+      border-top: 1px solid hsl(var(--border));
+      background: transparent;
+    }
+
+    .meeting-table tbody tr:first-child {
+      border-top: 0;
+    }
+
+    .meeting-table td {
+      position: static;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .meeting-primary {
+      color: hsl(var(--foreground));
+      font-size: 1rem;
+      font-weight: 760;
+      line-height: 1.35;
+    }
+
+    .meeting-time {
+      margin-top: 0.2rem;
+      color: hsl(var(--muted-foreground));
+      font-size: 0.8rem;
+      line-height: 1.4;
+      white-space: normal;
+    }
+
+    .meeting-table .meeting-format {
+      display: inline-flex;
+      width: auto;
+      margin-top: 0.65rem;
+      border-radius: 0.35rem;
+      background: hsl(var(--muted) / 0.7);
+      padding: 0.28rem 0.45rem;
+      color: hsl(var(--foreground));
+      font-size: 0.72rem;
+      line-height: 1.2;
+    }
+
+    .meeting-table .meeting-detail {
+      display: grid;
+      grid-template-columns: minmax(4.8rem, 26%) minmax(0, 1fr);
+      align-items: baseline;
+      gap: 0.65rem;
+      margin-top: 0.65rem;
+      color: hsl(var(--foreground));
+      overflow-wrap: anywhere;
+    }
+
+    .meeting-table .meeting-detail::before {
+      content: attr(data-label);
+      color: hsl(var(--muted-foreground));
+      font-family: var(--font-sans);
+      font-size: 0.64rem;
+      font-weight: 760;
+      letter-spacing: 0.07em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .meeting-lookup-table tbody tr {
+      padding-block: 0.85rem 0.95rem;
+    }
+
+    .meeting-lookup-table .meeting-detail {
+      font-size: 0.72rem;
+    }
+  }
+</style>

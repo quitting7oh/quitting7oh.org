@@ -1,7 +1,8 @@
 /** Helper to assemble the prop shape AppSidebar expects from the content
  *  collection. Called from Astro pages/layouts at build time.
  *
- *  Long categories (mat-suboxone, for-loved-ones, other-tools, post-acute)
+ *  Long categories (mat-suboxone, for-loved-ones,
+ *  medications-supplements, post-acute)
  *  get rendered with sub-group sub-headings declared in CATEGORY_GROUPS.
  *  Pages in those categories that aren't listed in any group are dropped
  *  from the sidebar — if you add a page, add it to the group list too. */

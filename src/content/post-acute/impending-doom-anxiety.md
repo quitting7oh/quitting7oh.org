@@ -227,7 +227,7 @@ anxiety / impending-doom picture include:
   off the synthetics
 
 For what each does, when it's used, the caveats, and the
-interactions: **[Helper Medications](/other-tools/helper-meds)**
+interactions: **[Helper Medications](/medications-supplements/helper-meds)**
 is the primary page. For getting a prescriber, see
 **[Telehealth Providers](/resources/telehealth-for-suboxone)**.
 

@@ -1,0 +1,42 @@
+---
+import { X } from 'lucide-react';
+
+const PAGE_URL = '/compounds/7-oh-ban';
+---
+
+<aside aria-label="Federal scheduling status" data-scheduling-banner class="relative bg-signal/12 pt-[env(safe-area-inset-top)] text-foreground">
+  <a
+    href={PAGE_URL}
+    class="flex min-h-11 items-center justify-center gap-2 px-3 py-2 pr-14 text-center text-[0.82rem] leading-snug hover:bg-signal/8 min-[820px]:px-14 min-[820px]:text-sm"
+  >
+    <span class="size-2 shrink-0 rounded-full bg-signal" aria-hidden="true"></span>
+    <span class="line-clamp-2 text-muted-foreground">
+      <span class="font-semibold text-foreground">Ban status:</span>
+      <span class="min-[820px]:hidden"> As of August 28, 7-OH is not banned. Pseudo, MGM-15, and MGM-16 are.</span>
+      <span class="hidden min-[820px]:inline">
+        &nbsp;As of August 28, 7-OH is not banned. Pseudo, MGM-15, and MGM-16 are. Schedule I for those three took effect August 26&nbsp;&rarr;
+      </span>
+    </span>
+  </a>
+  <button
+    data-dismiss-scheduling-banner
+    type="button"
+    aria-label="Dismiss announcement"
+    class="absolute right-1.5 top-1/2 inline-flex size-11 -translate-y-1/2 items-center justify-center rounded-lg text-muted-foreground hover:bg-signal/15 hover:text-foreground"
+  >
+    <X class="size-4" aria-hidden="true" />
+  </button>
+</aside>
+
+<script>
+  const banner = document.querySelector<HTMLElement>('[data-scheduling-banner]');
+  const dismiss = banner?.querySelector<HTMLButtonElement>('[data-dismiss-scheduling-banner]');
+  dismiss?.addEventListener('click', () => {
+    document.documentElement.dataset.schedulingBanner = 'hidden';
+    try {
+      localStorage.setItem('scheduling-banner-dismissed-2026-08-26', '1');
+    } catch {
+      // The page-level state still applies when storage is unavailable.
+    }
+  });
+</script>

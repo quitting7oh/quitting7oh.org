@@ -22,9 +22,10 @@
 #
 # For each old→new pair the script confirms:
 #   1. The initial response to the old URL is a 301
-#   2. The redirect chain ends at the expected new URL (trailing-slash
+#   2. The redirect reaches the new URL in one hop
+#   3. The redirect ends at the expected new URL (trailing-slash
 #      normalization is tolerated)
-#   3. The final response is 200
+#   4. The final response is 200
 #
 # Exit code is non-zero if any pair fails.
 
@@ -40,15 +41,28 @@ BASE="${BASE%/}"
 # and /foo/ as different keys and (worse) will serve a stale cached
 # /foo/ page if the trailing-slash variant isn't explicitly listed.
 PAIRS="
-/other-tools/helper-meds-info|/other-tools/helper-meds
-/other-tools/mega-vit-c-info|/other-tools/mega-dose-vitamin-c
-/other-tools/quitkit-info|/other-tools/quit-kit
-/other-tools/sr17018-info|/other-tools/sr-17
-/other-tools/peptides-info|/other-tools/peptides-for-withdrawal
+/other-tools|/medications-supplements
+/other-tools/cannabis-thc-in-recovery|/medications-supplements/cannabis-thc-in-recovery
+/other-tools/helper-meds|/medications-supplements/helper-meds
+/other-tools/mega-dose-vitamin-c|/medications-supplements/mega-dose-vitamin-c
+/other-tools/nad-iv-therapy|/medications-supplements/nad-iv-therapy
+/other-tools/peptides-for-withdrawal|/medications-supplements/peptides-for-withdrawal
+/other-tools/quit-7-oh-with-kratom-leaf|/medications-supplements/quit-7-oh-with-kratom-leaf
+/other-tools/quit-7-oh-with-mitragynine|/medications-supplements/quit-7-oh-with-mitragynine
+/other-tools/quit-kit|/medications-supplements/quit-kit
+/other-tools/sr-17|/medications-supplements/sr-17
+/other-tools/vitamins-supplements|/medications-supplements/vitamins-supplements
+/other-tools/helper-meds-info|/medications-supplements/helper-meds
+/other-tools/mega-vit-c-info|/medications-supplements/mega-dose-vitamin-c
+/other-tools/quitkit-info|/medications-supplements/quit-kit
+/other-tools/sr17018-info|/medications-supplements/sr-17
+/other-tools/peptides-info|/medications-supplements/peptides-for-withdrawal
 /mat-suboxone/suboxone-info|/mat-suboxone/suboxone-for-7oh
 /mat-suboxone/sublocade-brixadi-info|/mat-suboxone/sublocade-brixadi
-/other-tools/tapering-with-leaf|/other-tools/quit-7-oh-with-kratom-leaf
-/other-tools/tapering-with-kratom-leaf|/other-tools/quit-7-oh-with-kratom-leaf
+/other-tools/tapering-with-leaf|/medications-supplements/quit-7-oh-with-kratom-leaf
+/other-tools/tapering-with-kratom-leaf|/medications-supplements/quit-7-oh-with-kratom-leaf
+/other-tools/low-dose-naltrexone|/post-acute/naltrexone-low-dose
+/other-tools/ultra-low-dose-naltrexone|/post-acute/naltrexone-ultra-low-dose
 /start-here/withdrawal-help|/start-here/7-oh-withdrawal-help
 /start-here/paths-off|/start-here/how-to-quit-7-oh
 /post-acute/what-is-paws|/post-acute/paws-post-acute-withdrawal
@@ -64,6 +78,8 @@ PAIRS="
 /mat-suboxone/suboxone-isnt-working|/mat-suboxone/why-suboxone-isnt-working
 /mat-suboxone/suboxone-risks|/mat-suboxone/long-term-suboxone-risks
 /about/community|/about/the-community
+/about/how-ai-was-used|/about/this-site/#ai-assisted-writing
+/about/for-fly|/about/acknowledgments
 /for-you/start-here|/for-you/welcome
 /for-loved-ones/start-here|/for-loved-ones/welcome
 "
@@ -77,8 +93,12 @@ pass=0
 fail=0
 failed_lines=()
 
-# Strip trailing slash from a path for canonical comparison.
-norm() { printf '%s' "${1%/}"; }
+# Strip fragments and trailing slashes for canonical path comparison. Redirect
+# anchors stay in _redirects, while curl verifies the route that serves them.
+norm() {
+  value="${1%%#*}"
+  printf '%s' "${value%/}"
+}
 
 check_one() {
   old="$1"
@@ -87,6 +107,7 @@ check_one() {
   first_code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 "$BASE$old" || echo "000")
   final_url=$(curl -sL -o /dev/null -w '%{url_effective}' --max-time 20 "$BASE$old" || echo "")
   final_code=$(curl -sL -o /dev/null -w '%{http_code}' --max-time 20 "$BASE$old" || echo "000")
+  redirect_count=$(curl -sL -o /dev/null -w '%{num_redirects}' --max-time 20 "$BASE$old" || echo "0")
 
   final_path="${final_url#$BASE}"
   final_path_canonical=$(norm "$final_path")
@@ -95,8 +116,10 @@ check_one() {
   status="FAIL"
   notes=""
 
-  if [ "$first_code" != "301" ] && [ "$first_code" != "302" ]; then
+  if [ "$first_code" != "301" ]; then
     notes="initial response was $first_code (expected 301)"
+  elif [ "$redirect_count" != "1" ]; then
+    notes="followed $redirect_count redirects (expected 1)"
   elif [ "$final_code" != "200" ]; then
     notes="final response was $final_code (expected 200)"
   elif [ "$final_path_canonical" != "$expected_canonical" ]; then

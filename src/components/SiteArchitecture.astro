@@ -1,0 +1,282 @@
+---
+import nodeVersionRaw from '../../.nvmrc?raw';
+import lockfileData from '../../package-lock.json';
+import projectPackageData from '../../package.json';
+
+type View = 'summary' | 'stack' | 'pipeline' | 'islands' | 'design' | 'operations';
+
+interface Props {
+  view: View;
+}
+
+interface LockPackage {
+  version?: string;
+}
+
+interface Lockfile {
+  packages: Record<string, LockPackage | undefined>;
+}
+
+interface ProjectPackage {
+  packageManager?: string;
+}
+
+const { view } = Astro.props;
+const lockfile = lockfileData as Lockfile;
+const projectPackage = projectPackageData as ProjectPackage;
+const nodeVersion = nodeVersionRaw.trim();
+
+const installedVersion = (packageName: string) =>
+  lockfile.packages[`node_modules/${packageName}`]?.version ?? 'Not installed';
+const npmVersion = projectPackage.packageManager?.replace(/^npm@/, '') ?? 'Not pinned';
+
+const coreStack = [
+  ['Astro', installedVersion('astro'), 'Static page generation, routing, layouts, and content collections'],
+  ['Vite', installedVersion('vite'), 'Development server and production asset bundling'],
+  ['React', installedVersion('react'), 'Interactive calculators, navigation, search, and live meeting controls'],
+  ['React DOM', installedVersion('react-dom'), 'Browser rendering for hydrated React islands'],
+  ['Tailwind CSS', installedVersion('tailwindcss'), 'Design tokens, responsive layout, and component styling'],
+  ['TypeScript', installedVersion('typescript'), 'Types for components, content data, and build tools'],
+  ['MiniSearch', installedVersion('minisearch'), 'Browser-side full-text search over a static build-time index'],
+  ['Radix UI', installedVersion('radix-ui'), 'Accessible behavior for selected interface primitives'],
+  ['Lucide React', installedVersion('lucide-react'), 'Interface icon set'],
+] as const;
+
+const buildPath = [
+  ['01', 'Source', 'Markdown and MDX content, Astro pages, meeting data, and components'],
+  ['02', 'Astro build', 'Renders routes to HTML and writes optimized assets'],
+  ['03', 'Search index', 'Astro serializes the guide into one static MiniSearch index'],
+  ['04', 'dist/', 'Portable pages, assets, and search data with no application server'],
+] as const;
+
+const islands = [
+  ['Header and guide drawer', 'React', 'Loaded when the page loads for navigation, theme controls, and the mobile drawer'],
+  ['Search', 'React + MiniSearch', 'Lazy-loads a static index and runs every query inside the reader’s browser'],
+  ['Meetings', 'React', 'Calculates local time and live status from committed meeting data'],
+  ['Calculators', 'React', 'Runs taper and symptom calculations in the browser without sending entries to a server'],
+  ['Article navigation', 'React', 'Tracks the active section and exposes the mobile table of contents and back-to-top control'],
+] as const;
+
+const designSystem = [
+  ['Reading and interface type', 'Commissioner', installedVersion('@fontsource-variable/commissioner')],
+  ['Display type', 'STIX Two Text', installedVersion('@fontsource-variable/stix-two-text')],
+  ['Color', 'Burnt-clay accent with warm neutral surfaces', 'Light and dark tokens'],
+  ['Motion', 'Short transitions for drawers, state changes, and scroll navigation', 'Reduced-motion fallback'],
+  ['Components', 'Site-specific Astro and React components with selected Radix primitives', installedVersion('radix-ui')],
+] as const;
+---
+
+{view === 'summary' && (
+  <div class="not-prose my-8 overflow-hidden rounded-xl border border-border bg-card">
+    <div class="grid md:grid-cols-[minmax(0,1.35fr)_minmax(14rem,0.65fr)]">
+      <div class="p-5 sm:p-6">
+        <p class="eyebrow !text-primary">Rendering model</p>
+        <p class="mt-2 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          Static HTML first
+        </p>
+        <p class="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+          Astro turns the guide into ordinary pages during the build. React runs only where a reader needs live state or a calculation.
+        </p>
+      </div>
+      <dl class="divide-y divide-border border-t border-border bg-muted/35 md:border-l md:border-t-0">
+        <div class="px-5 py-3.5">
+          <dt class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">Astro output</dt>
+          <dd class="mt-1 font-mono text-sm font-semibold text-foreground">static</dd>
+        </div>
+        <div class="px-5 py-3.5">
+          <dt class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">Server runtime</dt>
+          <dd class="mt-1 text-sm font-semibold text-foreground">None required</dd>
+        </div>
+        <div class="px-5 py-3.5">
+          <dt class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">Primary host</dt>
+          <dd class="mt-1 text-sm font-semibold text-foreground">Cloudflare Pages</dd>
+        </div>
+        <div class="px-5 py-3.5">
+          <dt class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">Second target</dt>
+          <dd class="mt-1 text-sm font-semibold text-foreground">nginx container</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+)}
+
+{view === 'stack' && (
+  <div class="architecture-table not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    <table class="w-full border-collapse text-left text-sm">
+      <thead class="bg-muted/55 text-xs uppercase tracking-[0.09em] text-muted-foreground">
+        <tr>
+          <th class="px-4 py-3 font-bold sm:px-5">Technology</th>
+          <th class="px-4 py-3 font-bold">Installed</th>
+          <th class="px-4 py-3 font-bold sm:px-5">Job</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-border">
+        {coreStack.map(([name, version, role]) => (
+          <tr class="align-top">
+            <th class="architecture-table__primary px-4 py-3.5 font-bold text-foreground sm:px-5">{name}</th>
+            <td class="whitespace-nowrap px-4 py-3.5 font-mono text-xs font-semibold text-primary" data-label="Installed">{version}</td>
+            <td class="px-4 py-3.5 leading-relaxed text-muted-foreground sm:px-5" data-label="Job">{role}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+<style>
+  @media (max-width: 56rem) {
+    .architecture-table table,
+    .architecture-table tbody,
+    .architecture-table tr,
+    .architecture-table th,
+    .architecture-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .architecture-table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .architecture-table tbody tr {
+      display: grid;
+      gap: 0.55rem;
+      padding: 0.9rem 1rem 1rem;
+      border-top: 1px solid hsl(var(--border));
+    }
+
+    .architecture-table tbody tr:first-child {
+      border-top: 0;
+    }
+
+    .architecture-table :where(th, td) {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      white-space: normal;
+    }
+
+    .architecture-table__primary {
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .architecture-table td {
+      display: grid;
+      grid-template-columns: minmax(5rem, 25%) minmax(0, 1fr);
+      align-items: baseline;
+      gap: 0.7rem;
+    }
+
+    .architecture-table td::before {
+      content: attr(data-label);
+      color: hsl(var(--muted-foreground));
+      font-family: var(--font-sans);
+      font-size: 0.64rem;
+      font-weight: 760;
+      letter-spacing: 0.075em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+  }
+</style>
+
+{view === 'pipeline' && (
+  <div class="not-prose my-6">
+    <ol class="grid overflow-hidden rounded-xl border border-border bg-card md:grid-cols-4">
+      {buildPath.map(([number, label, detail], index) => (
+        <li class:list={['relative p-4 sm:p-5', index > 0 && 'border-t border-border md:border-l md:border-t-0']}>
+          <span class="font-mono text-[0.7rem] font-bold text-primary">{number}</span>
+          <p class="mt-2 font-display text-xl font-semibold text-foreground">{label}</p>
+          <p class="mt-2 text-sm leading-relaxed text-muted-foreground">{detail}</p>
+        </li>
+      ))}
+    </ol>
+    <div class="mt-4 grid gap-3 sm:grid-cols-2">
+      <div class="rounded-lg bg-muted/55 px-4 py-3.5">
+        <p class="text-xs font-bold uppercase tracking-[0.09em] text-muted-foreground">Public site</p>
+        <p class="mt-1 text-sm font-semibold text-foreground">Cloudflare Pages serves <code class="font-mono text-xs text-primary">dist/</code> from the edge.</p>
+      </div>
+      <div class="rounded-lg bg-muted/55 px-4 py-3.5">
+        <p class="text-xs font-bold uppercase tracking-[0.09em] text-muted-foreground">Container image</p>
+        <p class="mt-1 text-sm font-semibold text-foreground">nginx serves the same <code class="font-mono text-xs text-primary">dist/</code> directory on port 8080.</p>
+      </div>
+    </div>
+  </div>
+)}
+
+{view === 'islands' && (
+  <div class="not-prose my-6 divide-y divide-border border-y border-border">
+    {islands.map(([feature, tool, behavior]) => (
+      <div class="grid gap-1 py-4 sm:grid-cols-[11.5rem_8rem_minmax(0,1fr)] sm:gap-4">
+        <p class="font-bold text-foreground">{feature}</p>
+        <p class="font-mono text-xs font-semibold text-primary sm:pt-1">{tool}</p>
+        <p class="text-sm leading-relaxed text-muted-foreground">{behavior}</p>
+      </div>
+    ))}
+  </div>
+)}
+
+{view === 'design' && (
+  <dl class="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card">
+    {designSystem.map(([area, choice, version]) => (
+      <div class="grid gap-1 border-b border-border px-4 py-4 last:border-b-0 sm:grid-cols-[8rem_minmax(0,1fr)_10rem] sm:gap-4 sm:px-5">
+        <dt class="text-xs font-bold uppercase tracking-[0.09em] text-muted-foreground sm:pt-1">{area}</dt>
+        <dd class="font-semibold text-foreground">{choice}</dd>
+        <dd class="font-mono text-xs text-primary sm:pt-1 sm:text-right">{version}</dd>
+      </div>
+    ))}
+  </dl>
+)}
+
+{view === 'operations' && (
+  <div class="not-prose my-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_17rem]">
+    <div class="overflow-hidden rounded-xl border border-border bg-card">
+      <div class="border-b border-border bg-muted/45 px-4 py-3 sm:px-5">
+        <p class="text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">Build and hosting versions</p>
+      </div>
+      <dl class="divide-y divide-border">
+        <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 px-4 py-3.5 sm:px-5">
+          <dt class="text-sm text-muted-foreground">Redesign Node</dt>
+          <dd class="font-mono text-xs font-semibold text-foreground">{nodeVersion}</dd>
+        </div>
+        <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 px-4 py-3.5 sm:px-5">
+          <dt class="text-sm text-muted-foreground">Redesign npm</dt>
+          <dd class="font-mono text-xs font-semibold text-foreground">{npmVersion}</dd>
+        </div>
+        <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 px-4 py-3.5 sm:px-5">
+          <dt class="text-sm text-muted-foreground">Build command</dt>
+          <dd class="font-mono text-xs font-semibold text-foreground">npm run build</dd>
+        </div>
+        <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 px-4 py-3.5 sm:px-5">
+          <dt class="text-sm text-muted-foreground">Astro output</dt>
+          <dd class="font-mono text-xs font-semibold text-foreground">static</dd>
+        </div>
+        <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 px-4 py-3.5 sm:px-5">
+          <dt class="text-sm text-muted-foreground">Published directory</dt>
+          <dd class="font-mono text-xs font-semibold text-foreground">dist/</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div>
+      <p class="eyebrow !text-muted-foreground">Source map</p>
+      <ul class="mt-3 space-y-2.5 font-mono text-xs leading-relaxed text-muted-foreground">
+        <li><code class="font-semibold text-foreground">src/content/</code> articles and frontmatter</li>
+        <li><code class="font-semibold text-foreground">src/pages/</code> route templates</li>
+        <li><code class="font-semibold text-foreground">src/layouts/</code> page shells</li>
+        <li><code class="font-semibold text-foreground">src/components/</code> interface and tools</li>
+        <li><code class="font-semibold text-foreground">src/data/</code> meeting data</li>
+        <li><code class="font-semibold text-foreground">scripts/</code> build-time automation</li>
+      </ul>
+    </div>
+  </div>
+)}

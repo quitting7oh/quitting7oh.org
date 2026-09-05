@@ -13,22 +13,22 @@
 # URL so CF Pages doesn't serve the still-cached old page when a
 # request includes the slash (CF Pages' _redirects matches the path
 # literally, so /foo and /foo/ are different keys).
-/other-tools/helper-meds-info         /other-tools/helper-meds/                   301
-/other-tools/helper-meds-info/        /other-tools/helper-meds/                   301
-/other-tools/mega-vit-c-info          /other-tools/mega-dose-vitamin-c/           301
-/other-tools/mega-vit-c-info/         /other-tools/mega-dose-vitamin-c/           301
-/other-tools/quitkit-info             /other-tools/quit-kit/                      301
-/other-tools/quitkit-info/            /other-tools/quit-kit/                      301
-/other-tools/sr17018-info             /other-tools/sr-17/                         301
-/other-tools/sr17018-info/            /other-tools/sr-17/                         301
-/other-tools/peptides-info            /other-tools/peptides-for-withdrawal/       301
-/other-tools/peptides-info/           /other-tools/peptides-for-withdrawal/       301
+/other-tools/helper-meds-info         /medications-supplements/helper-meds/        301
+/other-tools/helper-meds-info/        /medications-supplements/helper-meds/        301
+/other-tools/mega-vit-c-info          /medications-supplements/mega-dose-vitamin-c/ 301
+/other-tools/mega-vit-c-info/         /medications-supplements/mega-dose-vitamin-c/ 301
+/other-tools/quitkit-info             /medications-supplements/quit-kit/           301
+/other-tools/quitkit-info/            /medications-supplements/quit-kit/           301
+/other-tools/sr17018-info             /medications-supplements/sr-17/              301
+/other-tools/sr17018-info/            /medications-supplements/sr-17/              301
+/other-tools/peptides-info            /medications-supplements/peptides-for-withdrawal/ 301
+/other-tools/peptides-info/           /medications-supplements/peptides-for-withdrawal/ 301
 /mat-suboxone/suboxone-info           /mat-suboxone/suboxone-for-7oh/             301
 /mat-suboxone/suboxone-info/          /mat-suboxone/suboxone-for-7oh/             301
 /mat-suboxone/sublocade-brixadi-info  /mat-suboxone/sublocade-brixadi/            301
 /mat-suboxone/sublocade-brixadi-info/ /mat-suboxone/sublocade-brixadi/            301
-/other-tools/tapering-with-leaf       /other-tools/quit-7-oh-with-kratom-leaf/    301
-/other-tools/tapering-with-leaf/      /other-tools/quit-7-oh-with-kratom-leaf/    301
+/other-tools/tapering-with-leaf       /medications-supplements/quit-7-oh-with-kratom-leaf/ 301
+/other-tools/tapering-with-leaf/      /medications-supplements/quit-7-oh-with-kratom-leaf/ 301
 /start-here/withdrawal-help           /start-here/7-oh-withdrawal-help/           301
 /start-here/withdrawal-help/          /start-here/7-oh-withdrawal-help/           301
 /start-here/paths-off                 /start-here/how-to-quit-7-oh/               301
@@ -73,13 +73,49 @@
 # strategy; the taper of the bridge is the second half. The new
 # pattern targets the actual search behavior ("quit 7-oh with
 # kratom leaf") instead of the internal site framing.
-/other-tools/tapering-with-kratom-leaf   /other-tools/quit-7-oh-with-kratom-leaf/  301
-/other-tools/tapering-with-kratom-leaf/  /other-tools/quit-7-oh-with-kratom-leaf/  301
+/other-tools/tapering-with-kratom-leaf   /medications-supplements/quit-7-oh-with-kratom-leaf/ 301
+/other-tools/tapering-with-kratom-leaf/  /medications-supplements/quit-7-oh-with-kratom-leaf/ 301
 
 # 2026-07-04: old naltrexone paths (pages moved from other-tools/ to
 # post-acute/ in an earlier restructure; these were never bridged and
 # soft-404'd to the homepage shell).
-/other-tools/low-dose-naltrexone         /post-acute/naltrexone-low-dose/          301
-/other-tools/low-dose-naltrexone/        /post-acute/naltrexone-low-dose/          301
-/other-tools/ultra-low-dose-naltrexone   /post-acute/naltrexone-ultra-low-dose/    301
-/other-tools/ultra-low-dose-naltrexone/  /post-acute/naltrexone-ultra-low-dose/    301
+/other-tools/low-dose-naltrexone         /post-acute/naltrexone-low-dose/           301
+/other-tools/low-dose-naltrexone/        /post-acute/naltrexone-low-dose/           301
+/other-tools/ultra-low-dose-naltrexone   /post-acute/naltrexone-ultra-low-dose/     301
+/other-tools/ultra-low-dose-naltrexone/  /post-acute/naltrexone-ultra-low-dose/     301
+
+# 2026-08-22: renamed the other-tools category to match the visible
+# "Meds & Supplements" navigation label. Keep the historical aliases
+# above this wildcard so they land on their final pages without a
+# redirect chain.
+/other-tools   /medications-supplements/ 301
+/other-tools/  /medications-supplements/ 301
+/other-tools/cannabis-thc-in-recovery    /medications-supplements/cannabis-thc-in-recovery/ 301
+/other-tools/cannabis-thc-in-recovery/   /medications-supplements/cannabis-thc-in-recovery/ 301
+/other-tools/helper-meds                 /medications-supplements/helper-meds/ 301
+/other-tools/helper-meds/                /medications-supplements/helper-meds/ 301
+/other-tools/mega-dose-vitamin-c         /medications-supplements/mega-dose-vitamin-c/ 301
+/other-tools/mega-dose-vitamin-c/        /medications-supplements/mega-dose-vitamin-c/ 301
+/other-tools/nad-iv-therapy              /medications-supplements/nad-iv-therapy/ 301
+/other-tools/nad-iv-therapy/             /medications-supplements/nad-iv-therapy/ 301
+/other-tools/peptides-for-withdrawal     /medications-supplements/peptides-for-withdrawal/ 301
+/other-tools/peptides-for-withdrawal/    /medications-supplements/peptides-for-withdrawal/ 301
+/other-tools/quit-7-oh-with-kratom-leaf  /medications-supplements/quit-7-oh-with-kratom-leaf/ 301
+/other-tools/quit-7-oh-with-kratom-leaf/ /medications-supplements/quit-7-oh-with-kratom-leaf/ 301
+/other-tools/quit-7-oh-with-mitragynine  /medications-supplements/quit-7-oh-with-mitragynine/ 301
+/other-tools/quit-7-oh-with-mitragynine/ /medications-supplements/quit-7-oh-with-mitragynine/ 301
+/other-tools/quit-kit                    /medications-supplements/quit-kit/ 301
+/other-tools/quit-kit/                   /medications-supplements/quit-kit/ 301
+/other-tools/sr-17                       /medications-supplements/sr-17/ 301
+/other-tools/sr-17/                      /medications-supplements/sr-17/ 301
+/other-tools/vitamins-supplements        /medications-supplements/vitamins-supplements/ 301
+/other-tools/vitamins-supplements/       /medications-supplements/vitamins-supplements/ 301
+/other-tools/* /medications-supplements/:splat 301
+
+# 2026-08-22: folded the standalone AI-use page into About This Site.
+/about/how-ai-was-used  /about/this-site/#ai-assisted-writing  301
+/about/how-ai-was-used/ /about/this-site/#ai-assisted-writing  301
+
+# 2026-08-22: moved the source-credit page to a neutral, descriptive URL.
+/about/for-fly  /about/acknowledgments/  301
+/about/for-fly/ /about/acknowledgments/  301

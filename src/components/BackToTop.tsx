@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ArrowUp } from 'lucide-react';
-import { Button } from '~/components/ui/button';
 import { cn } from '~/lib/utils';
 
 const SHOW_AFTER_PX = 400;
@@ -50,15 +49,14 @@ export function BackToTop() {
   };
 
   return (
-    <Button
+    <button
       type="button"
       onClick={handleClick}
       aria-label="Back to top"
       aria-hidden={!shown}
       tabIndex={shown ? 0 : -1}
-      size="icon"
       className={cn(
-        'fixed bottom-6 right-6 z-20 h-11 w-11 rounded-full shadow-lg transition-all duration-200',
+        'fixed bottom-6 right-6 z-20 inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-lg transition-all duration-200 hover:border-primary hover:bg-accent',
         'sm:bottom-8 sm:right-8',
         shown
           ? 'pointer-events-auto translate-y-0 opacity-100'
@@ -66,6 +64,6 @@ export function BackToTop() {
       )}
     >
       <ArrowUp className="h-5 w-5" />
-    </Button>
+    </button>
   );
 }

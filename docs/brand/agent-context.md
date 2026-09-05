@@ -49,14 +49,14 @@ way:**
 
 ## Non-negotiables (apply even before you fetch anything)
 
-- **Type:** headings/display = **Fraunces** (weight 600); body/UI = **IBM
-  Plex Sans**. Both are free (Google Fonts / Fontsource). Serif headings
-  over sans body is the signature — keep it.
-- **Default palette is "stone"** (warm). Light: background `#f6f1ea`,
-  text `#261f17`, primary `#604020`. Dark: background `#130f0b`, text
-  `#f6f5f3`, primary `#d5b890`. Dark mode is **not** a mechanical
-  inversion — use the dark values directly. (Seven more color variants
-  exist; stone is the default.)
+- **Type:** titles and major sections use **STIX Two Text**; body and
+  interface text use **Commissioner**. Both are
+  self-hosted variable fonts. The role split must stay visible.
+- **Palette:** warm paper and brown-charcoal ink with burnt clay for
+  links and ordinary actions. Light: background `hsl(43 38% 97%)`, text
+  `hsl(22 16% 14%)`, primary `hsl(15 42% 38%)`. Dark: background
+  `hsl(22 14% 8%)`, text `hsl(42 28% 92%)`, primary
+  `hsl(18 48% 70%)`. Use the dark values directly.
 - **Style by role, not raw hex:** background, foreground, card, primary,
   secondary, muted, accent, border, destructive — each with a light and a
   dark value. Support both modes.
@@ -64,8 +64,8 @@ way:**
   it. The cup is stroked in the foreground color, the arrow in primary.
   Don't recolor outside that mapping, don't stretch or rotate it, don't
   add gradients or shadows. SVGs and favicons are in the repo.
-- **Shape:** 8px corner radius. Prefer borders over shadows. Always keep
-  a visible focus ring.
+- **Shape:** small radii, fine borders, and little or no shadow. Always
+  keep a visible focus ring.
 - **Voice:** calm, plain, factual. No marketing language, no hype, no
   urgency tricks, no dark patterns. The audience is people in recovery,
   often reading mid-withdrawal. When unsure, do less.

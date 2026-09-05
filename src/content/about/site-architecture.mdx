@@ -1,0 +1,51 @@
+---
+title: "Site Architecture"
+description: "The software, build pipeline, deployment targets, and design system behind quitting7oh.org."
+category: "about"
+last_updated: "2026-08-22"
+sort: 8
+---
+
+import SiteArchitecture from '~/components/SiteArchitecture.astro';
+
+quitting7oh.org is built as a static reference site. Pages arrive as complete HTML, while calculators, search, navigation, and live meeting details add browser code where they need it. The version labels below come from the installed lockfile and build configuration during each site build.
+
+<SiteArchitecture view="summary" />
+
+## Core stack
+
+These are the installed versions in the current redesign build, not the broader version ranges in `package.json`.
+
+<SiteArchitecture view="stack" />
+
+## Static publishing path
+
+The build produces one portable directory. Cloudflare Pages and the Docker image serve the same files without an Astro server, database, edge function, or application process.
+
+<SiteArchitecture view="pipeline" />
+
+The `prebuild` step copies the repository changelog into its public page. Astro then renders the site and serializes the content collection into a static MiniSearch index. The final `dist/` directory contains the pages, search index, fonts, scripts, styles, and images.
+
+## Browser code
+
+Most article reading needs no client framework. React is limited to controls that hold state, respond to local time, or perform a calculation.
+
+<SiteArchitecture view="islands" />
+
+Theme selection runs before paint so light and dark mode do not flash between states. Meeting times and calculator entries remain in the reader's browser. The site has no user account system or application database.
+
+## Design system
+
+The redesign uses self-hosted variable fonts, a warm neutral palette, a burnt-clay accent, and a single icon family. Light and dark modes use separate tokens rather than a blanket color inversion.
+
+<SiteArchitecture view="design" />
+
+Keyboard focus, semantic landmarks, reduced-motion support, and minimum control sizes are part of the shared components. Long articles keep a reading measure, while schedules and calculators can use more width when the information needs it.
+
+## Build and repository map
+
+The redesign builds with Node 24 and npm 12. Both deployment targets receive the same static `dist/` directory, so neither needs the Astro project or a Node application server after the build.
+
+<SiteArchitecture view="operations" />
+
+The source is public at [GitHub](https://github.com/quitting7oh/quitting7oh.org). `astro.config.mjs`, `package.json`, `Dockerfile`, `wrangler.toml`, and the workflows under `.github/workflows/` are the authoritative configuration files.

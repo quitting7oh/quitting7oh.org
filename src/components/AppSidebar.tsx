@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ChevronRight, Pin } from 'lucide-react';
+import { BookOpen, ChevronDown, PanelLeftClose, PanelLeftOpen, Pin } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '~/components/ui/sheet';
 import { useIsMobile } from '~/hooks/use-mobile';
 import { getCategoryIcon, getCategorySection } from '~/lib/categories';
@@ -18,10 +18,7 @@ export interface SidebarGroup {
 export interface SidebarCategory {
   slug: string;
   title: string;
-  /** Flat list, used when the category has no sub-groups. */
   items: SidebarItem[];
-  /** When present, the sidebar renders these instead of the flat items
-   *  list — each group gets its own sub-heading. */
   groups?: SidebarGroup[];
 }
 
@@ -31,32 +28,40 @@ interface Props {
   currentPath: string;
 }
 
-/** True if currentPath sits under this category. Used to decide which
- *  category opens by default on each page load. */
-function isCategoryCurrent(slug: string, currentPath: string): boolean {
+interface NavigationProps extends Props {
+  onCollapse?: () => void;
+  onCollapsePointerDown?: () => void;
+  collapseButtonRef?: React.Ref<HTMLButtonElement>;
+}
+
+const DESKTOP_SIDEBAR_STORAGE_KEY = 'desktop-sidebar-collapsed';
+
+function categoryIsCurrent(slug: string, currentPath: string) {
   return currentPath === `/${slug}` || currentPath.startsWith(`/${slug}/`);
 }
 
-interface ItemLinkProps {
+function PageLink({
+  item,
+  currentPath,
+  shortcut = false,
+}: {
   item: SidebarItem;
   currentPath: string;
-  /** Indent the link to sit under a group sub-heading. */
-  indented?: boolean;
-}
-
-function ItemLink({ item, currentPath, indented }: ItemLinkProps) {
-  const isActive = currentPath === item.href;
+  shortcut?: boolean;
+}) {
+  const active = item.href === currentPath;
   return (
     <li>
       <a
         href={item.href}
-        aria-current={isActive ? 'page' : undefined}
+        aria-current={active && !shortcut ? 'page' : undefined}
         className={cn(
-          'block rounded px-2 py-1 text-sm transition',
-          indented && 'ml-3',
-          isActive
-            ? 'bg-accent font-medium text-accent-foreground'
-            : 'text-foreground/80 hover:bg-accent/50 hover:text-foreground',
+          'relative flex min-h-11 items-center rounded-md border-l-2 px-3 py-2 text-[0.86rem] leading-snug transition-colors lg:min-h-0 lg:py-1.5',
+          active && shortcut
+            ? 'border-transparent font-semibold text-primary before:absolute before:left-1 before:size-1 before:rounded-full before:bg-primary'
+            : active
+            ? 'border-primary bg-sidebar-accent/55 font-bold text-primary'
+            : 'border-transparent text-sidebar-foreground/72 hover:bg-sidebar-accent/45 hover:text-sidebar-foreground',
         )}
       >
         {item.title}
@@ -65,240 +70,272 @@ function ItemLink({ item, currentPath, indented }: ItemLinkProps) {
   );
 }
 
-interface NavContentProps extends Props {
-  expanded: Record<string, boolean>;
-  toggle: (slug: string) => void;
-}
+function Navigation({ categories, pinned, currentPath, onCollapse, onCollapsePointerDown, collapseButtonRef }: NavigationProps) {
+  const [expanded, setExpanded] = React.useState<Record<string, boolean>>({});
 
-function NavContent({ categories, pinned, currentPath, expanded, toggle }: NavContentProps) {
   return (
-    <nav className="px-4 py-6 lg:px-6">
-      {/* Pinned: quick links to the highest-traffic pages, persistent
-          across categories. Mirrors the homepage funnel. */}
-      {pinned.length > 0 && (
-        <section className="mb-6 border-b border-border pb-4">
-          <h2 className="mb-2 flex items-center gap-2 px-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/70">
-            <Pin className="h-3 w-3 shrink-0" aria-hidden={true} />
-            Quick links
-          </h2>
-          <ul className="space-y-0.5">
-            {pinned.map((item) => (
-              <ItemLink key={item.href} item={item} currentPath={currentPath} />
-            ))}
-          </ul>
-        </section>
-      )}
+    <nav aria-label="Guide index" className="px-3 pb-12 lg:px-6">
+      <div className="sidebar-nav-head sticky top-0 z-10 -mx-3 mb-5 flex items-center gap-2 px-5 pb-3 pt-5 text-sidebar-foreground lg:-mx-6 lg:px-8">
+        <span className="inline-flex size-8 items-center justify-center rounded-lg bg-sidebar-accent text-primary">
+          <BookOpen className="size-4" aria-hidden="true" />
+        </span>
+        <div>
+          <p className="text-sm font-bold leading-tight">Guide index</p>
+          <p className="text-[0.7rem] text-muted-foreground">All topics and tools</p>
+        </div>
+        {onCollapse && (
+          <button
+            ref={collapseButtonRef}
+            type="button"
+            onPointerDown={onCollapsePointerDown}
+            onClick={onCollapse}
+            aria-controls="desktop-guide-navigation"
+            aria-expanded="true"
+            aria-label="Collapse guide navigation"
+            title="Collapse guide navigation"
+            className="ml-auto inline-flex size-10 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-sidebar-accent hover:text-sidebar-foreground"
+          >
+            <PanelLeftClose className="size-4" aria-hidden="true" />
+          </button>
+        )}
+      </div>
 
-      {categories.map((cat, idx) => {
-        const Icon = getCategoryIcon(cat.slug);
-        const userToggled = expanded[cat.slug];
-        const isOpen =
-          userToggled !== undefined
-            ? userToggled
-            : isCategoryCurrent(cat.slug, currentPath);
-        const listId = `sidebar-section-${cat.slug}`;
+      <section className="mb-7">
+        <h2 className="mb-2 flex items-center gap-2 px-2 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+          <Pin className="size-3" aria-hidden="true" />
+          Most used
+        </h2>
+        <ul className="space-y-0.5">
+          {pinned.map((item) => <PageLink key={item.href} item={item} currentPath={currentPath} shortcut />)}
+        </ul>
+      </section>
 
-        // Draw a labeled separator when the section flips from
-        // 'recovery' (active what-to-do content) to 'reference'
-        // (compound details, pharmacology, external links, meta).
-        const thisSection = getCategorySection(cat.slug);
-        const prevSection =
-          idx > 0 ? getCategorySection(categories[idx - 1].slug) : undefined;
-        const showSeparator =
-          thisSection === 'reference' && prevSection !== 'reference';
+      <div className="space-y-1">
+        {categories.map((category, index) => {
+          const current = categoryIsCurrent(category.slug, currentPath);
+          const open = expanded[category.slug] ?? current;
+          const Icon = getCategoryIcon(category.slug);
+          const section = getCategorySection(category.slug);
+          const previousSection = index > 0 ? getCategorySection(categories[index - 1].slug) : undefined;
+          const beginsReference = section === 'reference' && previousSection !== 'reference';
+          const sectionId = `guide-section-${category.slug}`;
 
-        const hasGroups = cat.groups && cat.groups.length > 0;
-        const hasItems = hasGroups || cat.items.length > 0;
-
-        return (
-          <React.Fragment key={cat.slug}>
-            {showSeparator && (
-              <div className="mb-6 border-t border-border pt-4">
-                <p className="px-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/60">
-                  Reference
+          return (
+            <React.Fragment key={category.slug}>
+              {beginsReference && (
+                <p className="mb-2 mt-7 px-2 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+                  Reference library
                 </p>
-              </div>
-            )}
-            <section className="mb-6 last:mb-0">
-              <h2 className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                <button
-                  type="button"
-                  onClick={() => toggle(cat.slug)}
-                  aria-expanded={isOpen}
-                  aria-controls={listId}
-                  className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded text-muted-foreground hover:bg-accent/40 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  <ChevronRight
-                    className={cn(
-                      'h-3.5 w-3.5 transition-transform',
-                      isOpen && 'rotate-90',
-                    )}
-                    aria-hidden={true}
-                  />
-                  <span className="sr-only">
-                    {isOpen ? 'Collapse' : 'Expand'} {cat.title}
-                  </span>
-                </button>
-                {Icon && <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden={true} />}
-                <a href={`/${cat.slug}`} className="hover:text-foreground">
-                  {cat.title}
-                </a>
-              </h2>
-              {isOpen && (
-                !hasItems ? (
-                  <p id={listId} className="text-sm italic text-muted-foreground/70">
-                    No pages yet.
-                  </p>
-                ) : hasGroups ? (
-                  <div id={listId} className="space-y-3">
-                    {cat.groups!.map((group) => (
-                      <div key={group.name}>
-                        <p className="mb-1 px-2 text-[10px] font-medium uppercase tracking-wider text-muted-foreground/55">
-                          {group.name}
-                        </p>
-                        <ul className="space-y-0.5">
-                          {group.items.map((item) => (
-                            <ItemLink
-                              key={item.href}
-                              item={item}
-                              currentPath={currentPath}
-                              indented
-                            />
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <ul id={listId} className="space-y-1">
-                    {cat.items.map((item) => (
-                      <ItemLink key={item.href} item={item} currentPath={currentPath} />
-                    ))}
-                  </ul>
-                )
               )}
-            </section>
-          </React.Fragment>
-        );
-      })}
+              <section className={cn(current && 'rounded-lg bg-sidebar-accent/18')}>
+                <div className="flex items-center gap-1.5 p-1">
+                  <button
+                    type="button"
+                    onClick={() => setExpanded((state) => ({ ...state, [category.slug]: !open }))}
+                    aria-expanded={open}
+                    aria-controls={sectionId}
+                    className="inline-flex size-11 shrink-0 items-center justify-center rounded-lg text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground lg:size-8"
+                  >
+                    <ChevronDown className={cn('size-3.5 transition-transform', !open && '-rotate-90')} aria-hidden="true" />
+                    <span className="sr-only">{open ? 'Collapse' : 'Expand'} {category.title}</span>
+                  </button>
+                  <a
+                    href={`/${category.slug}`}
+                    className={cn(
+                      'flex min-w-0 flex-1 items-center gap-2 rounded-lg px-1 py-2 text-sm font-bold text-sidebar-foreground hover:text-primary',
+                      current && 'text-primary',
+                    )}
+                  >
+                    {Icon && <Icon className="size-3.5 shrink-0" aria-hidden="true" />}
+                    <span className="truncate">{category.title}</span>
+                  </a>
+                </div>
+
+                {open && (
+                  <div id={sectionId} className="pb-3 pl-5 pr-1">
+                    {category.groups?.length ? (
+                      <div className="space-y-3">
+                        {category.groups.map((group) => (
+                          <div key={group.name}>
+                            <p className="mb-1 px-3 text-[0.62rem] font-bold uppercase tracking-[0.1em] text-muted-foreground/75">{group.name}</p>
+                            <ul className="space-y-0.5">
+                              {group.items.map((item) => <PageLink key={item.href} item={item} currentPath={currentPath} />)}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <ul className="space-y-0.5">
+                        {category.items.map((item) => <PageLink key={item.href} item={item} currentPath={currentPath} />)}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </section>
+            </React.Fragment>
+          );
+        })}
+      </div>
     </nav>
   );
 }
 
-/** Scroll the given overflow-y-auto container so its active page link
- *  is centered. No-op if there is no active link, or if it is already
- *  fully visible. Only touches the container's own scrollTop, never the
- *  document. */
-function scrollActiveIntoCenter(container: HTMLDivElement | null) {
-  if (!container) return;
-  const active = container.querySelector<HTMLElement>(
-    'a[aria-current="page"]',
-  );
-  if (!active) return;
-  const cRect = container.getBoundingClientRect();
-  const aRect = active.getBoundingClientRect();
-  if (aRect.top >= cRect.top && aRect.bottom <= cRect.bottom) return;
-  const offsetTop = aRect.top - cRect.top + container.scrollTop;
-  const target =
-    offsetTop - container.clientHeight / 2 + active.clientHeight / 2;
-  container.style.scrollBehavior = 'auto';
-  container.scrollTop = Math.max(0, target);
+function centerCurrent(container: HTMLDivElement | null) {
+  const link = container?.querySelector<HTMLElement>('a[aria-current="page"]');
+  if (!container || !link) return;
+  const inset = 76;
+  const linkTop = link.offsetTop;
+  const linkBottom = linkTop + link.clientHeight;
+  const visibleTop = container.scrollTop + inset;
+  const visibleBottom = container.scrollTop + container.clientHeight - inset;
+
+  if (linkTop < visibleTop) {
+    container.scrollTop = Math.max(0, linkTop - inset);
+  } else if (linkBottom > visibleBottom) {
+    container.scrollTop = linkBottom - container.clientHeight + inset;
+  }
+  // Assigning scrollTop from script does not always fire a scroll event
+  // before paint, so the sticky header's opaque state is derived here as
+  // well as in the onScroll handler.
+  syncScrolledState(container);
 }
 
-export function AppSidebar({ categories, pinned, currentPath }: Props) {
-  const isMobile = useIsMobile();
+function syncScrolledState(container: HTMLElement) {
+  if (container.scrollTop > 4) {
+    container.dataset.sidebarScrolled = 'true';
+  } else {
+    delete container.dataset.sidebarScrolled;
+  }
+}
+
+function preservePageScroll(initialScroll: number, duration = 360) {
+  const root = document.documentElement;
+  root.dataset.sidebarTransitioning = 'true';
+  const started = performance.now();
+  const stabilize = (now: number) => {
+    if (Math.abs(window.scrollY - initialScroll) > 0.5) {
+      window.scrollTo({ top: initialScroll, behavior: 'instant' });
+    }
+    if (now - started < duration) {
+      requestAnimationFrame(stabilize);
+    } else {
+      delete root.dataset.sidebarTransitioning;
+    }
+  };
+  requestAnimationFrame(stabilize);
+}
+
+export function AppSidebar(props: Props) {
+  const mobile = useIsMobile();
   const [open, setOpen] = React.useState(false);
-  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
-  const mobileScrollRef = React.useRef<HTMLDivElement>(null);
+  const [desktopCollapsed, setDesktopCollapsed] = React.useState(false);
+  const desktopRef = React.useRef<HTMLDivElement>(null);
+  const mobileRef = React.useRef<HTMLDivElement>(null);
+  const desktopCollapseButtonRef = React.useRef<HTMLButtonElement>(null);
+  const desktopExpandButtonRef = React.useRef<HTMLButtonElement>(null);
 
-  // Per-category expand/collapse state. Entries are user-set overrides;
-  // the default for any unset slug is "expanded iff this category
-  // contains the current page." That gives a sensible first render
-  // (current section open, others closed) and lets users override.
-  const [expanded, setExpanded] = React.useState<Record<string, boolean>>({});
-  const toggle = React.useCallback(
-    (slug: string) =>
-      setExpanded((prev) => ({
-        ...prev,
-        [slug]:
-          prev[slug] === undefined
-            ? !isCategoryCurrent(slug, currentPath)
-            : !prev[slug],
-      })),
-    [currentPath],
-  );
+  const openerRef = React.useRef<HTMLElement | null>(null);
+  const pageScrollRef = React.useRef(0);
+  const pointerScrollRef = React.useRef<number | null>(null);
 
-  // The mobile hamburger lives in Header.astro (outside this React tree)
-  // and dispatches 'toggle-sidebar' which we toggle from here.
   React.useEffect(() => {
-    const handler = () => setOpen((prev) => !prev);
-    window.addEventListener('toggle-sidebar', handler);
-    return () => window.removeEventListener('toggle-sidebar', handler);
+    const toggle = () => {
+      openerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      pageScrollRef.current = window.scrollY;
+      setOpen((value) => !value);
+    };
+    window.addEventListener('toggle-sidebar', toggle);
+    return () => window.removeEventListener('toggle-sidebar', toggle);
   }, []);
 
-  // Scroll the desktop sidebar so the active page is centered in view.
-  // Without this, a long sidebar always starts at the top and readers
-  // have to scan to find where they are. Skips on mobile (the Sheet
-  // doesn't use scrollContainerRef).
-  //
-  // Double-RAF before measuring: the Lucide SVG icons in each category
-  // header render at their intrinsic 24×24 before Tailwind's h-3.5
-  // applies, so measuring on the first frame after hydration sometimes
-  // catches a stale layout. Two frames lets the CSS settle.
-  //
-  // We set container.scrollTop directly (not scrollIntoView) because
-  // scrollIntoView with block:'center' also scrolls the document to
-  // bring the link into viewport-center, which causes a visible
-  // page-level jump on every refresh.
   React.useEffect(() => {
-    if (typeof window === 'undefined') return;
-    if (isMobile) return;
-    let raf1 = 0;
-    let raf2 = 0;
-    raf1 = requestAnimationFrame(() => {
-      raf2 = requestAnimationFrame(() => {
-        scrollActiveIntoCenter(scrollContainerRef.current);
-      });
-    });
-    return () => {
-      cancelAnimationFrame(raf1);
-      if (raf2) cancelAnimationFrame(raf2);
-    };
-  }, [currentPath, isMobile]);
+    setDesktopCollapsed(document.documentElement.dataset.sidebarCollapsed === 'true');
+  }, []);
 
-  // Mobile: when the Sheet opens, center the active page in the drawer.
-  // Runs on every open (and whenever the page changes while the drawer
-  // is open) so the user always sees where they are. The double-RAF
-  // gives Radix's open animation time to settle the layout before we
-  // measure.
+  const setDesktopSidebarCollapsed = (collapsed: boolean) => {
+    const root = document.documentElement;
+    const pageScroll = pointerScrollRef.current ?? window.scrollY;
+    pointerScrollRef.current = null;
+    preservePageScroll(pageScroll);
+    if (collapsed) {
+      root.dataset.sidebarCollapsed = 'true';
+    } else {
+      delete root.dataset.sidebarCollapsed;
+    }
+
+    setDesktopCollapsed(collapsed);
+    try {
+      if (collapsed) {
+        localStorage.setItem(DESKTOP_SIDEBAR_STORAGE_KEY, '1');
+      } else {
+        localStorage.removeItem(DESKTOP_SIDEBAR_STORAGE_KEY);
+      }
+    } catch {
+      // Storage can be blocked; the control still works for this page view.
+    }
+
+    requestAnimationFrame(() => {
+      (collapsed ? desktopExpandButtonRef.current : desktopCollapseButtonRef.current)?.focus({ preventScroll: true });
+    });
+  };
+
+  const handleOpenChange = (next: boolean) => {
+    setOpen(next);
+  };
+
+  const handleSidebarScroll = (event: React.UIEvent<HTMLDivElement>) => {
+    syncScrolledState(event.currentTarget);
+  };
+
   React.useEffect(() => {
-    if (typeof window === 'undefined') return;
-    if (!isMobile) return;
-    if (!open) return;
-    let raf1 = 0;
-    let raf2 = 0;
-    raf1 = requestAnimationFrame(() => {
-      raf2 = requestAnimationFrame(() => {
-        scrollActiveIntoCenter(mobileScrollRef.current);
+    if (!mobile && desktopCollapsed) return;
+    let readyFrame = 0;
+    const revealCurrent = () => {
+      const container = mobile ? mobileRef.current : desktopRef.current;
+      if (!container) return;
+      // The sticky header's fade is gated on `data-sidebar-ready`. Clearing it
+      // before the jump means the opaque state paints in the same frame as the
+      // scroll instead of fading in over rows that are already beneath it. A
+      // persisting container (the desktop rail across page changes or collapse
+      // toggles) snaps the same way as a freshly mounted drawer.
+      delete container.dataset.sidebarReady;
+      centerCurrent(container);
+      cancelAnimationFrame(readyFrame);
+      readyFrame = requestAnimationFrame(() => {
+        container.dataset.sidebarReady = 'true';
       });
-    });
-    return () => {
-      cancelAnimationFrame(raf1);
-      if (raf2) cancelAnimationFrame(raf2);
     };
-  }, [isMobile, open, currentPath]);
+    const frame = requestAnimationFrame(revealCurrent);
+    // Hydration and font metrics can settle after the first frame. The fallback
+    // makes sure the canonical entry is visible without moving an already
+    // visible link.
+    const timer = window.setTimeout(revealCurrent, 160);
+    return () => {
+      cancelAnimationFrame(frame);
+      cancelAnimationFrame(readyFrame);
+      window.clearTimeout(timer);
+    };
+  }, [mobile, open, desktopCollapsed, props.currentPath]);
 
-  // Mobile: Sheet drawer (Radix Dialog under the hood — focus trap, ESC,
-  // scroll lock, ARIA all handled).
-  if (isMobile) {
+  if (mobile) {
     return (
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="w-72 p-0">
-          <SheetHeader className="sr-only">
-            <SheetTitle>Site navigation</SheetTitle>
-          </SheetHeader>
-          <div ref={mobileScrollRef} className="h-full overflow-y-auto pt-4">
-            <NavContent categories={categories} pinned={pinned} currentPath={currentPath} expanded={expanded} toggle={toggle} />
+      <Sheet open={open} onOpenChange={handleOpenChange}>
+        <SheetContent
+          side="left"
+          className="w-[min(88vw,21rem)] gap-0 border-0 bg-sidebar p-0 shadow-2xl"
+          onCloseAutoFocus={(event) => {
+            event.preventDefault();
+            openerRef.current?.focus({ preventScroll: true });
+            requestAnimationFrame(() => {
+              if (Math.abs(window.scrollY - pageScrollRef.current) > 1) {
+                window.scrollTo({ top: pageScrollRef.current, behavior: 'auto' });
+              }
+            });
+          }}
+        >
+          <SheetHeader className="sr-only"><SheetTitle>Guide navigation</SheetTitle></SheetHeader>
+          <div ref={mobileRef} onScroll={handleSidebarScroll} className="h-full overflow-y-auto overscroll-contain">
+            <Navigation {...props} />
           </div>
         </SheetContent>
       </Sheet>
@@ -307,14 +344,41 @@ export function AppSidebar({ categories, pinned, currentPath }: Props) {
 
   return (
     <aside
-      aria-label="Site navigation"
-      className="hidden w-64 shrink-0 border-r border-border lg:block"
+      aria-label="Guide navigation"
+      className="desktop-sidebar-rail hidden min-w-0 w-[17rem] shrink-0 motion-reduce:transition-none lg:order-first lg:grid"
     >
       <div
-        ref={scrollContainerRef}
-        className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto"
+        id="desktop-guide-navigation"
+        ref={desktopRef}
+        onScroll={handleSidebarScroll}
+        aria-hidden={desktopCollapsed}
+        className="desktop-sidebar-expanded scrollbar-none sticky top-[4.5rem] max-h-[calc(100vh-4.5rem)] overflow-x-hidden overflow-y-auto overscroll-contain"
       >
-        <NavContent categories={categories} pinned={pinned} currentPath={currentPath} expanded={expanded} toggle={toggle} />
+        <Navigation
+          {...props}
+          onCollapsePointerDown={() => {
+            pointerScrollRef.current = window.scrollY;
+          }}
+          onCollapse={() => setDesktopSidebarCollapsed(true)}
+          collapseButtonRef={desktopCollapseButtonRef}
+        />
+      </div>
+      <div aria-hidden={!desktopCollapsed} className="desktop-sidebar-collapsed sticky top-[4.5rem] justify-start pt-5">
+        <button
+          ref={desktopExpandButtonRef}
+          type="button"
+          onPointerDown={() => {
+            pointerScrollRef.current = window.scrollY;
+          }}
+          onClick={() => setDesktopSidebarCollapsed(false)}
+          aria-controls="desktop-guide-navigation"
+          aria-expanded={!desktopCollapsed}
+          aria-label="Expand guide navigation"
+          title="Expand guide navigation"
+          className="inline-flex h-12 w-11 items-center justify-center rounded-r-xl border border-l-0 border-border/70 bg-card/95 text-primary shadow-[0_8px_24px_-16px_hsl(var(--foreground)/0.75)] backdrop-blur-sm transition-colors hover:border-primary/45 hover:bg-sidebar-accent hover:text-sidebar-foreground"
+        >
+          <PanelLeftOpen className="size-5" aria-hidden="true" />
+        </button>
       </div>
     </aside>
   );

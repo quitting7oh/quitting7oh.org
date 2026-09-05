@@ -238,19 +238,17 @@ The site is the source of truth. Edit pages directly under
 front-matter and conventions. The original Discord-export ingest
 pipeline has been retired; do not reintroduce it.
 
-## UI components: shadcn/ui + React
+## UI components: Astro first, React islands
 
-All user-facing components are **React** built on **shadcn/ui** (Radix
-primitives + Tailwind). Astro renders the markup and content collection
-shell; React handles every interactive component as an island.
+Astro renders the page shell and static components. React handles controls
+that need browser state, such as search, theme selection, calculators, and
+the mobile drawer. The interface uses a small set of custom Radix primitives
+instead of the generated shadcn component layer.
 
 Conventions:
 
-- New components go in `src/components/` (top level) and import shadcn
-  primitives from `~/components/ui/`.
-- Add a new shadcn primitive with `npx shadcn@latest add <name>` — it
-  drops the source into `src/components/ui/<name>.tsx`, which you can
-  edit freely.
+- New components go in `src/components/`. Put reusable Radix wrappers in
+  `src/components/ui/` and style them with the Field Guide tokens.
 - Mount React components from `.astro` files with the appropriate
   hydration directive:
   - `client:load` — needs to be interactive immediately (theme picker,
@@ -260,27 +258,22 @@ Conventions:
   - `client:visible` — below-the-fold-only components.
 - Use semantic theme tokens (`bg-background`, `text-foreground`,
   `text-primary`, `text-muted-foreground`, `border-border`, etc.) rather
-  than hardcoded zinc/teal scales. The theme picker switches between 8
-  variants by setting `data-theme` on `<html>`; only semantic tokens
-  follow the variant.
-- The `--color-accent-*` (hex) scale is preserved for backward
-  compatibility but new code should use semantic tokens.
+  than hardcoded color scales. Mulberry handles ordinary action and
+  navigation, amber signals urgency, and sage marks live or available
+  support.
 
 Theme picker state:
 
-- `theme` localStorage key → mode (`system` | `light` | `dark`)
-- `theme-variant` localStorage key → variant (`accent-teal` | `zinc` |
-  `slate` | `stone` | `neutral` | `rose` | `blue` | `green`)
-- `ThemeScript.astro` is the inline pre-paint script — it applies both
-  values to `<html>` before first render so there's no flash.
+- `theme` localStorage key stores `system`, `light`, or `dark`.
+- `ThemeScript.astro` applies the mode to `<html>` before first paint.
 
 Layout:
 
-- `BaseLayout.astro` provides the HTML shell + Header + BetaBanner +
-  Footer + BackToTop.
-- `DocLayout.astro` wraps in `SidebarShell` which provides the centered
-  flex container with the sidebar (Sheet on mobile, plain `<aside>` on
-  desktop) and the main content area.
+- `BaseLayout.astro` provides the HTML shell, Header, SchedulingBanner,
+  Footer, and BackToTop.
+- `DocLayout.astro` keeps the static reading column outside React and mounts
+  `AppSidebar` as an island. The guide index becomes a sheet on mobile; the
+  table of contents scrolls independently on wide screens.
 - The Astro hamburger in `Header.astro` dispatches a `'toggle-sidebar'`
   window event that `AppSidebar.tsx` listens for to open the mobile
   drawer.
@@ -534,8 +527,8 @@ The community is medication-agnostic. Buprenorphine (Suboxone, Subutex)
 is **one of several legitimate paths** people use to come off 7-OH and
 kratom synthetics. Others documented on the site include:
 
-- [Tapering with kratom leaf](/other-tools/quit-7-oh-with-kratom-leaf)
-- Cold turkey with [helper meds](/other-tools/helper-meds)
+- [Tapering with kratom leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
+- Cold turkey with [helper meds](/medications-supplements/helper-meds)
 
 **Naltrexone (LDN, ULDN, Vivitrol) is NOT a path off opioids.** It's a
 mu-opioid *antagonist* — taking it while there are still opioids on
@@ -648,10 +641,10 @@ The site is **opinionless** on which path someone uses to quit. Every
 option has real pros and cons; the job here is to educate, not steer.
 
 **Easy rule to remember: never let Suboxone be the only path named in
-a quitting context.** [Tapering with leaf](/other-tools/quit-7-oh-with-kratom-leaf)
-and cold turkey with [helper meds](/other-tools/helper-meds) get named
-alongside it. Naming Suboxone alone implicitly endorses it as the
-"real" answer, which violates the opinionless posture.
+a quitting context.** [Tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf)
+and cold turkey with [helper meds](/medications-supplements/helper-meds)
+get named alongside it. Naming Suboxone alone implicitly endorses it as
+the "real" answer, which violates the opinionless posture.
 
 Applies whenever the writing is recommending or routing — wayfinder
 branches, "where to go next" sections, in-content "if you're trying to
@@ -666,8 +659,8 @@ SR-17018 in Schedule I on August 27, 2026, and handing someone a
 scheduled substance is not neutrality, so the pairing was retired and
 leaf taper and helper-med cold turkey took over the job. Don't
 reintroduce SR-17 into routing or "your options are" lists. It stays
-documented on its own page and in the cross-taper calculator, for
-readers who are already partway through one.
+documented on its own page and in the taper calculator, for readers
+who are already partway through one.
 
 ### Don't apply opioid-overdose framing to 7-OH specifically
 
@@ -893,7 +886,7 @@ is misleading.
 
 - **If the page has room for a caveat, name the RLS issue inline.**
   ("Hydroxyzine works for some but can worsen restless legs.")
-  The [Helper Medications](/other-tools/helper-meds) entry is
+  The [Helper Medications](/medications-supplements/helper-meds) entry is
   the canonical version.
 - **If the mention is part of a compact list of adjuncts** —
   "clonidine, hydroxyzine, gabapentin, trazodone" — **drop
@@ -902,7 +895,7 @@ is misleading.
   wrong medication. The helper-meds page lists it with the caveat;
   readers who want the full menu will find it there.
 - **The helper-meds page itself is the exception.** Bare mentions
-  of hydroxyzine inside `other-tools/helper-meds.md` (the page
+  of hydroxyzine inside `medications-supplements/helper-meds.md` (the page
   where the canonical caveat lives) are fine.
 - **Factual documentation of what a third party offers is fine.**
   Quoting a vendor's published list of comfort meds (e.g., the
@@ -931,41 +924,25 @@ can stay in bare lists.
 ## Build / dev
 
 ```sh
-npm run dev                    # local dev server (no search index)
-npm run build                  # full build + Pagefind index
+npm run dev                    # local dev server with the static search route
+npm run build                  # full static build + MiniSearch index
 npm run preview                # serve dist/ locally to test search
 npm run link:compounds         # auto-link compound mentions
 ```
 
-### Lockfile maintenance: always use npm 10.9.2
+### One Node line everywhere
 
-CF Pages builds with **Node 22.16.0 / npm 10.9.2**, pinned via
-`engines` and `packageManager` in `package.json`. Local devs on newer
-npm versions can regenerate or mutate the lockfile in ways that look
-fine locally but break CF.
+Node is pinned in `.nvmrc`. The four GitHub workflows read it through
+`actions/setup-node`'s `node-version-file`, the Dockerfile's `FROM node:`
+major matches it, and the Cloudflare Pages `NODE_VERSION` variable (see
+the README) is set to the same major. When bumping Node, move all of
+them in one commit; `engines.node` in `package.json` states the floor.
+Node bundles an older npm than `packageManager` pins, so anything that
+runs npm in CI or Docker installs `npm@<packageManager version>` first.
 
-The trap: **npm 11 prunes optional peer dep entries** (`@emnapi/core`,
-`@emnapi/runtime`, anything marked `optional: true, peer: true`) from
-the lockfile. **npm 10.9.2 expects them present** and fails `npm ci`
-with `Missing: @emnapi/runtime@x.y.z from lock file`. This has bitten
-us — a `npx shadcn add <component>` invocation on npm 11 pruned those
-entries and the next push broke CF.
+### Lockfile maintenance
 
-Whenever you run a command that mutates `package-lock.json`
-(`npm install`, `npm ci`, `npx shadcn add`, `npm update`, anything),
-use npm 10.9.2 explicitly:
-
-```sh
-npx -y npm@10.9.2 install --no-audit --no-fund        # add/update deps
-npx -y npm@10.9.2 ci --no-audit --no-fund             # verify lockfile is in sync
-npx -y npm@10.9.2 install --package-lock-only         # update lockfile only
-```
-
-Verifying with `npm ci` on the local npm version is **not enough** —
-it has to be npm 10.9.2. If you regenerated the lockfile, before
-pushing always run `npx -y npm@10.9.2 ci` to confirm it'll resolve
-the same way on CF.
-
-If a build does fail on CF, the symptom is `npm error code EUSAGE` /
-`Missing: X from lock file` in the CF deploy log. Fix: regenerate the
-lockfile with npm 10.9.2 as above, commit, push.
+The project tracks the current npm release in `packageManager` and the
+minimum compatible Node release in `engines`. Use those versions when
+regenerating `package-lock.json`, and verify the result with a clean
+`npm ci` before committing dependency changes.

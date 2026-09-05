@@ -1,17 +1,24 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import { unified } from '@astrojs/markdown-remark';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from './src/lib/rehype/externalLinks.mjs';
 import rehypeHeadingAnchors from './src/lib/rehype/headingAnchors.mjs';
+import rehypeNormalizeHeadings from './src/lib/rehype/normalizeHeadings.mjs';
+import rehypeTableWrappers from './src/lib/rehype/tableWrappers.mjs';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://quitting7oh.org',
+  output: 'static',
   trailingSlash: 'never',
+  build: {
+    inlineStylesheets: 'always',
+  },
   integrations: [mdx(), react(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
@@ -24,8 +31,16 @@ export default defineConfig({
       },
       wrap: true,
     },
-    smartypants: true,
-    gfm: true,
-    rehypePlugins: [rehypeSlug, rehypeHeadingAnchors, rehypeExternalLinks],
+    processor: unified({
+      smartypants: true,
+      gfm: true,
+      rehypePlugins: [
+        rehypeNormalizeHeadings,
+        rehypeSlug,
+        rehypeHeadingAnchors,
+        rehypeExternalLinks,
+        rehypeTableWrappers,
+      ],
+    }),
   },
 });

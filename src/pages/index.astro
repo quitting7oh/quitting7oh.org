@@ -1,57 +1,198 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { NextMeeting } from '~/components/NextMeeting';
+import RightNow from '~/components/RightNow.astro';
 import { AppSidebar } from '~/components/AppSidebar';
+import { SearchBox } from '~/components/SearchBox';
 import { DiscordOnlineCount } from '~/components/DiscordOnlineCount';
 import { CATEGORIES, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getCollection } from 'astro:content';
-import { LifeBuoy, Pill, Signpost, Users, MessageCircle, BookOpen } from 'lucide-react';
+import {
+  Activity,
+  ArrowRight,
+  Calculator,
+  Leaf,
+  MessageCircle,
+  Pill,
+} from 'lucide-react';
 
-const docs = await getCollection('docs', (d) => !d.data.draft);
+const docs = await getCollection('docs', (doc) => !doc.data.draft);
 const sidebarCategories = await getSidebarCategories();
-
 const counts = Object.fromEntries(
-  CATEGORIES.map((c) => [c.slug, docs.filter((d) => d.data.category === c.slug).length]),
+  CATEGORIES.map((category) => [
+    category.slug,
+    docs.filter((doc) => doc.data.category === category.slug).length,
+  ]),
 );
 
-const hotPaths = [
+const tools = [
+  { href: '/resources/7-oh-taper-calculator', label: '7-OH taper', Icon: Calculator },
+  { href: '/resources/suboxone-taper-calculator', label: 'Suboxone taper', Icon: Pill },
+  { href: '/resources/kratom-leaf-taper-calculator', label: 'Kratom leaf taper', Icon: Leaf },
+  { href: '/resources/sr-17-taper-calculator', label: 'SR-17 taper', Icon: Activity },
+];
+
+const categorySections = [
   {
-    href: '/start-here/7-oh-withdrawal-help',
-    Icon: LifeBuoy,
-    title: 'In active withdrawal right now?',
-    sub: 'What to do this hour',
-    tone: 'crisis',
+    id: 'support-recovery',
+    title: 'Support & recovery',
+    description: 'Practical guidance for quitting, treatment, family support, and the weeks after.',
+    categories: CATEGORIES.filter((category) => category.section === 'recovery'),
   },
   {
-    href: '/start-here/how-to-quit-7-oh',
-    Icon: Signpost,
-    title: 'Ready to quit?',
-    sub: 'The six paths, ranked by what fits',
-    tone: 'neutral',
-  },
-  {
-    href: '/for-loved-ones/welcome',
-    Icon: Users,
-    title: 'Loving someone going through this?',
-    sub: 'For family, partners, friends',
-    tone: 'neutral',
-  },
-  {
-    href: '/other-tools/vitamins-supplements',
-    Icon: Pill,
-    title: 'Vitamins & supplements',
-    sub: 'The community-tested stack',
-    tone: 'neutral',
+    id: 'reference-site',
+    title: 'Reference & site',
+    description: 'Compound science, meeting resources, and information about this project.',
+    categories: CATEGORIES.filter((category) => category.section === 'reference'),
   },
 ];
+
+const homepageDescription =
+  'Practical help quitting 7-OH (7-hydroxymitragynine), including withdrawal guidance, taper calculators, medication references, and peer support.';
 ---
 
-<BaseLayout>
-  {/* Mobile-only: mount AppSidebar to power the hamburger drawer.
-      Sheet renders to body via Radix Portal, so being inside lg:hidden
-      doesn't block it. Desktop suppresses the inline aside entirely so
-      the homepage layout stays centered without a sidebar column. */}
+<BaseLayout description={homepageDescription}>
+  <main id="main-content">
+    <section>
+      <div class="mx-auto max-w-[88rem] px-4 py-11 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div class="mx-auto max-w-3xl text-center">
+          <h1 class="reading-title mx-auto max-w-3xl">
+            Help quitting <span class="whitespace-nowrap">7-OH</span>
+          </h1>
+          <p class="mx-auto mt-5 max-w-2xl text-base leading-[1.7] text-muted-foreground sm:text-lg">
+            Find withdrawal guidance, taper tools, medication references, and peer support for quitting 7-OH (7-hydroxymitragynine) and related kratom synthetics.
+          </p>
+
+          <div class="mt-7 flex flex-col items-center justify-center gap-2.5 sm:flex-row">
+            <a
+              href="/start-here/7-oh-withdrawal-quickstart"
+              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Withdrawal quickstart
+              <ArrowRight class="size-4" aria-hidden="true" />
+            </a>
+            <a
+              href="/start-here/how-to-quit-7-oh"
+              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-base font-bold text-foreground transition-colors hover:border-primary hover:bg-accent"
+            >
+              Compare quitting options
+              <ArrowRight class="size-4" aria-hidden="true" />
+            </a>
+          </div>
+
+          <div class="mx-auto mt-7 max-w-xl text-left">
+            <SearchBox variant="inline" client:load placeholder="Search the guide…" />
+          </div>
+        </div>
+
+        <div class="mx-auto mt-10 max-w-3xl">
+          <RightNow />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="font-display text-2xl font-medium tracking-[-0.015em] text-foreground sm:text-[1.75rem]">Most used</h2>
+        <p class="mt-1.5 text-sm text-muted-foreground">The pages readers reach for first. The same list is pinned at the top of the guide index.</p>
+        <nav aria-label="Most used pages" class="mt-4 grid gap-x-12 gap-y-1 sm:grid-cols-2">
+          {PINNED_PAGES.map(({ href, title, detail }) => (
+            <a
+              href={href}
+              class="group -mx-2 flex min-h-20 items-start justify-between gap-4 rounded-lg px-2 py-3.5 transition-colors hover:bg-accent/40 focus-visible:bg-accent/40"
+            >
+              <span class="min-w-0">
+                <span class="font-display text-xl font-semibold text-foreground transition-colors group-hover:text-primary">{title}</span>
+                <span class="mt-1 block text-sm leading-snug text-muted-foreground">{detail}</span>
+              </span>
+              <ArrowRight class="mt-1 size-4 shrink-0 text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </a>
+          ))}
+        </nav>
+      </div>
+    </section>
+
+    <section class="bg-muted/30">
+      <div class="mx-auto max-w-6xl px-4 py-11 sm:px-6 sm:py-14 lg:px-8">
+        <div class="max-w-2xl">
+          <h2 class="font-display text-3xl font-medium leading-tight tracking-[-0.015em] text-foreground sm:text-[2.25rem]">
+            Browse by topic
+          </h2>
+          <p class="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+            Every guide, reference, and tool is two taps away.
+          </p>
+        </div>
+
+        <div class="mt-9 grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16">
+          {categorySections.map((section) => (
+            <section aria-labelledby={`directory-${section.id}`}>
+              <h3
+                id={`directory-${section.id}`}
+                class="font-display text-lg font-semibold text-foreground"
+              >
+                {section.title}
+              </h3>
+              <p class="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground lg:min-h-[2.75rem]">{section.description}</p>
+
+              <ul class="mt-4 space-y-1" role="list">
+                {section.categories.map((category) => {
+                  const Icon = category.Icon;
+                  return (
+                    <li>
+                      <a
+                        href={`/${category.slug}`}
+                        class="group -mx-2 grid min-h-[4.75rem] grid-cols-[1.5rem_minmax(0,1fr)_auto] items-start gap-3 rounded-lg px-2 py-3 transition-colors hover:bg-accent/45 focus-visible:bg-accent/45"
+                      >
+                        <Icon class="mt-0.5 size-4.5 text-primary" stroke-width={1.7} aria-hidden="true" />
+                        <span class="min-w-0">
+                          <span class="font-display text-[1.05rem] font-semibold tracking-[-0.005em] text-foreground transition-colors group-hover:text-primary">
+                            {category.title}
+                          </span>
+                          <span class="mt-0.5 block text-sm leading-snug text-muted-foreground">{category.blurb}</span>
+                        </span>
+                        <span class="pt-0.5 text-xs font-semibold tabular-nums text-muted-foreground">{counts[category.slug]} pages</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          ))}
+        </div>
+
+        <a href="/sitemap" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline">
+          Complete site map <ArrowRight class="size-4" aria-hidden="true" />
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-6xl gap-8 px-4 py-11 sm:px-6 sm:py-14 lg:grid-cols-2 lg:px-8">
+      <div>
+        <h2 class="max-w-lg font-display text-2xl font-medium tracking-[-0.015em] sm:text-3xl">Taper Calculators</h2>
+        <div class="mt-5 space-y-1">
+          {tools.map(({ href, label, Icon }) => (
+            <a href={href} class="group flex min-h-12 items-center gap-3 font-bold text-foreground transition-colors hover:text-primary">
+              <Icon class="size-4.5 shrink-0 text-primary" aria-hidden="true" />
+              <span>{label}</span>
+              <ArrowRight class="ml-auto size-4 text-muted-foreground transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 class="max-w-lg font-display text-2xl font-medium tracking-[-0.015em] sm:text-3xl">Discord and Reddit</h2>
+        <p class="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">Join the quitting7oh Discord or search past discussions on Reddit.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="https://www.reddit.com/r/quitting7oh/" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-bold text-foreground hover:border-primary hover:bg-accent">Search Reddit</a>
+          <a href="https://discord.gg/quitting7oh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-bold text-foreground hover:border-primary hover:bg-accent">
+            <MessageCircle class="size-4" aria-hidden="true" />
+            Discord<DiscordOnlineCount client:visible />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
   <div class="lg:hidden">
     <AppSidebar
       client:load
@@ -60,155 +201,4 @@ const hotPaths = [
       currentPath={Astro.url.pathname}
     />
   </div>
-
-  <main id="main-content">
-    {/* Hero: title + tight tagline + search */}
-    <section class="mx-auto max-w-5xl px-4 pt-12 pb-6 sm:px-6 sm:pt-16 lg:px-8">
-      <h1 class="font-display text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-        A calm reference for getting off 7-OH and kratom synthetics.
-      </h1>
-      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-        Community-compiled by people who have been through it, for people going through it now and
-        the ones who love them.
-      </p>
-    </section>
-
-    {/* Next live meeting (KA + TIAWO) in the viewer's local timezone.
-        Placed above the hot list so it's visible on mobile without
-        scrolling past four stacked hot-list cards. client:load: the
-        widget needs `new Date()` at render time and the viewer's IANA
-        tz, neither known at build time. */}
-    <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
-      <NextMeeting client:load />
-    </section>
-
-    {/* Hot list: four funnel paths (crisis card gets amber emphasis) */}
-    <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
-      <h2 class="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        Start here
-      </h2>
-      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {hotPaths.map(({ href, Icon, title, sub, tone }) => (
-          <a
-            href={href}
-            class:list={[
-              'group flex items-start gap-3 rounded-lg border px-4 py-3 transition',
-              tone === 'crisis'
-                ? 'border-2 border-amber-500 bg-amber-50 hover:bg-amber-100 dark:border-amber-400 dark:bg-amber-950/40 dark:hover:bg-amber-950/70'
-                : 'border-border bg-card hover:border-accent-400 hover:bg-accent-50/40 dark:hover:border-accent-500 dark:hover:bg-accent-950/30',
-            ]}
-          >
-            <Icon
-              class={tone === 'crisis'
-                ? 'mt-0.5 h-5 w-5 shrink-0 text-amber-700 dark:text-amber-300'
-                : 'mt-0.5 h-5 w-5 shrink-0 text-accent-700 dark:text-accent-300'}
-              aria-hidden="true"
-            />
-            <span class="flex-1">
-              <span class={tone === 'crisis'
-                ? 'block font-semibold text-amber-900 dark:text-amber-100'
-                : 'block font-semibold text-foreground'}>
-                {title}
-              </span>
-              <span class={tone === 'crisis'
-                ? 'block text-sm text-amber-800/80 dark:text-amber-200/80'
-                : 'block text-sm text-muted-foreground'}>
-                {sub} →
-              </span>
-            </span>
-          </a>
-        ))}
-      </div>
-    </section>
-
-    {/* Community: Reddit (first per house preference) + Discord, as
-        proper cards mirroring the hot-list pattern. About-link sits
-        below as a small text link. */}
-    <section class="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
-      <h2 class="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        Live community
-      </h2>
-      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <a
-          href="https://www.reddit.com/r/quitting7oh/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group flex items-start gap-3 rounded-lg border border-border bg-card px-4 py-3 transition hover:border-accent-400 hover:bg-accent-50/40 dark:hover:border-accent-500 dark:hover:bg-accent-950/30"
-        >
-          <BookOpen class="mt-0.5 h-5 w-5 shrink-0 text-accent-700 dark:text-accent-300" aria-hidden="true" />
-          <span class="flex-1">
-            <span class="block font-semibold text-foreground">r/quitting7oh</span>
-            <span class="block text-sm text-muted-foreground">Searchable archive, stories, longform threads →</span>
-          </span>
-        </a>
-        <a
-          href="https://discord.gg/quitting7oh"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="group flex items-start gap-3 rounded-lg border-2 border-emerald-500 bg-emerald-50 px-4 py-3 transition hover:bg-emerald-100 dark:border-emerald-400 dark:bg-emerald-950/40 dark:hover:bg-emerald-950/70"
-        >
-          <MessageCircle class="mt-0.5 h-5 w-5 shrink-0 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
-          <span class="flex-1">
-            <span class="block font-semibold text-emerald-900 dark:text-emerald-100">
-              Discord<DiscordOnlineCount client:idle />
-            </span>
-            <span class="block text-sm text-emerald-800/80 dark:text-emerald-200/80">Real-time chat, live meetings, peers right now →</span>
-          </span>
-        </a>
-      </div>
-      <p class="mt-3 text-sm">
-        <a
-          href="/about/the-community"
-          class="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
-        >
-          About the community <span aria-hidden="true">→</span>
-        </a>
-      </p>
-    </section>
-
-    {/* Browse by topic: denser list, no chunky cards. Two columns on
-        wider viewports; one column on mobile. Sidebar already exposes
-        the full hierarchy, so this is a supplementary overview. */}
-    <section class="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
-      <h2 class="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        Browse by topic
-      </h2>
-      <div class="grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2">
-        {CATEGORIES.map((cat) => (
-          <a
-            href={`/${cat.slug}`}
-            class="group flex items-start gap-3 rounded border border-transparent px-2 py-2 transition hover:border-border hover:bg-accent-50/30 dark:hover:bg-accent-950/20"
-          >
-            <cat.Icon class="mt-1 h-4 w-4 shrink-0 text-accent-700 dark:text-accent-300" aria-hidden="true" />
-            <span class="flex-1">
-              <span class="block text-sm font-semibold text-foreground group-hover:text-accent-700 dark:group-hover:text-accent-300">
-                {cat.title}
-                <span class="ml-1 text-xs font-normal text-muted-foreground">({counts[cat.slug]})</span>
-              </span>
-              <span class="block text-xs leading-snug text-muted-foreground">{cat.blurb}</span>
-            </span>
-          </a>
-        ))}
-      </div>
-    </section>
-
-    {/* Medical-territory framing. Sits at the bottom on purpose: the
-        reader who is actually in withdrawal does not need a disclaimer
-        between them and the crisis card. */}
-    <section class="mx-auto max-w-5xl px-4 pb-16 pt-4 sm:px-6 lg:px-8">
-      <div class="callout-medical">
-        <p class="m-0 font-semibold text-zinc-800 dark:text-zinc-100">
-          A note before you read anything else
-        </p>
-        <p class="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
-          Recovery is medical territory. The information here is meant to help you bring lived
-          experience and better questions into the conversation with your prescriber, not replace
-          that conversation. For most medical decisions a clinician who knows your situation will
-          have context you don't — listen to them. For a few (like Suboxone starting doses and
-          taper pacing) the community has hands-on experience worth bringing to the table. Both
-          sides of that conversation matter.
-        </p>
-      </div>
-    </section>
-  </main>
 </BaseLayout>

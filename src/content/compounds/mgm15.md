@@ -111,7 +111,7 @@ Community knowledge on MGM-15 is ahead of the published literature. Share what's
 
 ## SR-17: scheduled as of August 27, 2026
 
-[SR-17](/other-tools/sr-17) went into Schedule I on August 27, 2026, so it is no longer an available path. It is covered here because the pharmacology explains why people reached for it with MGM-15 specifically, and because some readers are mid-taper. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above. There's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol and dose ranges community members have used for long-acting compounds like MGM-15. It also documents the unknowns. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) carries the clinical safety net. Both are legitimate paths; pick based on your situation.
+[SR-17](/medications-supplements/sr-17) went into Schedule I on August 27, 2026, so it is no longer an available path. It is covered here because the pharmacology explains why people reached for it with MGM-15 specifically, and because some readers are mid-taper. SR-17 is a biased mu agonist with a long duration of action, which sidesteps the Suboxone-affinity problem above. There's no partial-agonist displacement to trigger precipitated withdrawal. The SR-17 page covers the protocol and dose ranges community members have used for long-acting compounds like MGM-15. It also documents the unknowns. SR-17 is off-prescription and unregulated; the [Suboxone path](/mat-suboxone/suboxone-for-7oh) carries the clinical safety net. Both are legitimate paths; pick based on your situation.
 
 ## For the reader being sold one of these products
 
@@ -149,7 +149,7 @@ This page documents what's established and what's reasonably inferred. What isn'
 - [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working): the long-acting-synthetic notes apply directly to MGM-15.
 - [COWS & SOWS Induction Guide](/mat-suboxone/sows-cows-induction-guide): the longer-washout note for long-acting synthetics applies here.
 - [Tapering Off 7-OH](/for-you/tapering-7oh): the main taper page.
-- [Quit 7-OH with Kratom Leaf](/other-tools/quit-7-oh-with-kratom-leaf) and [Quit 7-OH with Concentrated Mitragynine](/other-tools/quit-7-oh-with-mitragynine): bridge paths, with the caveat that bridge products themselves can contain MGM-15.
+- [Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) and [Quit 7-OH with Concentrated Mitragynine](/medications-supplements/quit-7-oh-with-mitragynine): bridge paths, with the caveat that bridge products themselves can contain MGM-15.
 - [Thinking About Using?](/start-here/cravings-and-relapse-thoughts) and [Will One Use Bring Withdrawal Back? (Kindling)](/post-acute/kindling-and-relapse): the craving and post-acute arcs.
 
 ## Sources

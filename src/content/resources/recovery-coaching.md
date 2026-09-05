@@ -24,8 +24,8 @@ recovery themselves, who works with you on a regular schedule by text,
 call, or video to help you stay stopped. Coaching is not therapy, not
 medical care, and not a taper plan. It sits next to whatever path you're
 on, whether that's [buprenorphine](/mat-suboxone/suboxone-for-7oh), a
-[leaf taper](/other-tools/quit-7-oh-with-kratom-leaf), or cold turkey
-with [helper meds](/other-tools/helper-meds), and focuses on the part
+[leaf taper](/medications-supplements/quit-7-oh-with-kratom-leaf), or cold turkey
+with [helper meds](/medications-supplements/helper-meds), and focuses on the part
 those don't cover: the daily structure of getting through the first
 year.
 

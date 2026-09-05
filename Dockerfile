@@ -13,19 +13,21 @@
 #      the image assembly runs no JavaScript at all.
 
 # -------- Stage 1: build the static site (default path only) --------
-FROM node:22-alpine AS builder
+FROM node:26-alpine AS builder
 
 WORKDIR /build
 
 # Install dependencies first for better layer caching.
 COPY package.json package-lock.json* ./
+# Match the npm release pinned in package.json (node:26 bundles npm 11).
+RUN npm install -g npm@12.0.2
 RUN --mount=type=cache,target=/root/.npm \
     npm ci
 
 # Copy the rest of the source.
 COPY . .
 
-# Build Astro and the Pagefind search index (npm run build does both).
+# Build Astro, including the static MiniSearch index route.
 RUN npm run build
 
 # -------- Shared nginx runtime shell --------
