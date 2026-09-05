@@ -5,6 +5,7 @@ import { AppSidebar } from '~/components/AppSidebar';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { CATEGORIES, CATEGORY_GROUPS, getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
+import { ArrowRight } from 'lucide-react';
 
 export async function getStaticPaths() {
   return CATEGORIES.map((cat) => ({ params: { category: cat.slug } }));
@@ -80,7 +81,7 @@ if (configuredGroups.length && ungroupedDocs.length) {
               ]}>
                   {section.name && (
                     <div class="mb-5 lg:mb-0 lg:pt-4">
-                      <h2 class="eyebrow !text-primary">{section.name}</h2>
+                      <h2 class="font-display text-lg font-semibold text-foreground">{section.name}</h2>
                       <p class="mt-2 text-xs font-semibold text-muted-foreground">
                         {section.docs.length} {section.docs.length === 1 ? 'page' : 'pages'}
                       </p>
@@ -92,15 +93,9 @@ if (configuredGroups.length && ungroupedDocs.length) {
                       const slug = doc.id.replace(/\.(md|mdx)$/, '').split('/').pop()!;
                       const href = `/${cat.slug}/${slug}`;
                       const pinned = pinnedPaths.has(href);
-                      const updated = doc.data.last_updated?.toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric',
-                        timeZone: 'UTC',
-                      });
                       return (
                         <li class="min-w-0 border-t border-border/70">
-                          <a href={href} class="group -mx-3 block h-full rounded-lg px-3 py-5 transition-colors hover:bg-muted/55">
+                          <a href={href} class="group -mx-3 block h-full rounded-lg px-3 py-5 transition-colors hover:bg-accent/45 focus-visible:bg-accent/45">
                             <div class="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-4 gap-y-2">
                               <div class="flex min-w-0 flex-wrap items-center gap-2">
                                 {section.name ? (
@@ -110,10 +105,7 @@ if (configuredGroups.length && ungroupedDocs.length) {
                                 )}
                                 {pinned && <span class="rounded-md bg-accent px-1.5 py-0.5 text-[0.65rem] font-bold uppercase tracking-[0.08em] text-primary">Most used</span>}
                               </div>
-                              <span class="flex shrink-0 items-center gap-3 pt-0.5 text-xs text-muted-foreground">
-                                {updated && <time datetime={doc.data.last_updated?.toISOString()}>{updated}</time>}
-                                <span class="text-primary transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
-                              </span>
+                              <ArrowRight class="mt-0.5 size-4 shrink-0 text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
                             </div>
                             {doc.data.description && (
                               <p class="mt-2.5 text-sm leading-relaxed text-muted-foreground">{doc.data.description}</p>

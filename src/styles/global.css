@@ -147,8 +147,8 @@
     --muted-foreground: 30 11% 72%;
     --accent: 17 22% 22%;
     --accent-foreground: 20 45% 82%;
-    --destructive: 7 67% 67%;
-    --destructive-foreground: 14 45% 10%;
+    --destructive: 4 62% 50%;
+    --destructive-foreground: 0 0% 100%;
     --border: 24 11% 27%;
     --input: 24 11% 32%;
     --ring: 18 55% 69%;
@@ -538,6 +538,13 @@
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
 
+  /* Wide-layout pages (calculators, charts): let prose share the object
+     column so the page keeps one right edge instead of jogging narrower. */
+  .prose-recovery.prose-wide > :where(p, h3, h4, blockquote),
+  .prose-recovery.prose-wide :where(ul, ol):not(.not-prose *) {
+    max-width: none;
+  }
+
   .prose-recovery :where(blockquote) {
     max-width: 44rem;
     margin: 1.4rem 0;
@@ -578,6 +585,11 @@
   .callout-urgent-body :where(ul, ol) {
     margin: 0;
     padding-left: 1.35rem;
+    list-style: disc;
+  }
+
+  .callout-urgent-body :where(ol) {
+    list-style: decimal;
   }
 
   .callout-urgent-body :where(li) {

@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-08-28"
+last_updated: "2026-09-05"
 sort: 6
 ---
 
@@ -14,7 +14,63 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-09-04
+
+### Design review fixes on the beta redesign
+
+- Emergency card routes medical emergencies to 911. The withdrawal-help
+  page's red card listed chest pain and fainting under "Call 911 or go to
+  the ER" but its only button dialed 988. It now has a `tel:911` action for
+  the medical items and keeps 988 scoped to the self-harm line. The card's
+  bullet markers were also restored.
+- Crisis-page reassurance at body size. "The acute phase usually peaks
+  around 48–72 hours" was a small muted footnote; it is now regular
+  reading text in the foreground color.
+- Meeting tables stop breaking words. Format and shortlink cells no
+  longer wrap mid-word ("Discussi / on") at desktop width.
+- Homepage support strip readable on phones. The live-meeting row
+  stacks its Join button and browse links under 640px instead of
+  truncating the meeting name, and the Discord count drops its "online"
+  label at narrow widths so the strip title fits on one line.
+- One "most used" list. The homepage's unlabeled four-card block now
+  renders the same `PINNED_PAGES` list the sidebar pins, under a "Most
+  used" heading, with a one-line detail per page.
+- Fewer tracked-caps eyebrow labels. Removed the decorative ones
+  (homepage section labels, "Field note" on every article, the crisis
+  page's "The next hour", the search page label); converted footer,
+  pagination, and category-group labels to sentence case. Informative
+  labels (404, live-meeting status, table headers) stay.
+- GitHub edit link moved below the article. It was in bold accent
+  color directly under every title; it now sits after the body, before
+  the previous/next links.
+- Duplicate homepage disclaimer removed. The footer version stays.
+- Wide-layout pages keep one right edge. Prose on calculator and chart
+  pages now shares the object column instead of jogging narrower.
+- Search dialog controls distinguishable. The clear-text control is a
+  small filled circle inside the field; the close control is a labeled
+  button.
+- Category index rows read as links. Dates dropped from index rows in
+  favor of a clear arrow and hover/focus background.
+- Dark-mode emergency red carries urgency. The dark `--destructive`
+  token moved from a peach `hsl(7 67% 67%)` to `hsl(4 62% 50%)` with
+  white text (4.87:1 on the button, 3.6:1 against the page).
+
 ## 2026-08-28
+
+### Guide navigation reachable on tablets
+
+- Between 768px and 1023px the header hamburger did nothing and the
+  desktop rail was hidden, so DocLayout pages had no way to reach the
+  guide index. `useIsMobile()` switched at 768px while the rail and
+  hamburger switch at Tailwind `lg` (1024px); the hook now uses 1024 so
+  the drawer serves every width below the rail.
+### Sidebar header stays opaque after auto-scroll
+
+- The guide sidebar's sticky header only turned opaque on a user scroll
+  event, so pages whose current entry sits far down the list (the
+  sidebar auto-scrolls to it on load) rendered nav rows through the
+  header. The scrolled flag is now derived from the container's
+  `scrollTop` after every auto-scroll as well as on scroll events.
 
 ### SR-17018 is Schedule I
 
@@ -107,6 +163,27 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Added a guard for the inverse failure: if a reviewed document
   disappears from the Federal Register query, the run goes red rather
   than verifying an empty result set.
+
+### Responsive tables keep cell text together
+
+- On narrow screens, record-style tables turn each cell into a
+  two-column grid (label, value). A cell that mixed plain text with a
+  link or bold text produced several grid items, and the extras
+  dropped into the label column: the July 1 entry on the 7-OH ban page
+  split around the linked compound name. The table plugin now wraps
+  every cell's content in a single `responsive-table__value` span
+  pinned to the value column, so each cell reads as one run of text.
+  Wide-screen table layout is unchanged.
+### Mobile tap targets and drawer padding
+
+- Four cosmetic fixes from a visual QA pass on the redesign. The
+  header search control no longer shrinks below 44px at phone widths
+  (it was missing `shrink-0`), the quiet "Reset" links in the SR-17,
+  taper, and SOWS calculators get a 44px-tall hit area at the same
+  text size, the footer credit line clears the floating back-to-top
+  button at tablet and desktop widths, and the mobile guide drawer
+  drops the padding that let a row peek above its sticky "Guide index"
+  header.
 
 ## 2026-08-23
 

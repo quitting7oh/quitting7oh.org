@@ -129,14 +129,14 @@ export function getCategorySection(slug: string): CategorySection | undefined {
  *  funnel for cross-page persistence so a reader doesn't have to navigate
  *  back to / to find the high-traffic destinations again. Keep this list
  *  short (6 max) — these are shortcuts, not a nav tree. */
-export const PINNED_PAGES: { href: string; title: string }[] = [
-  { href: '/start-here/7-oh-withdrawal-help', title: 'In active withdrawal' },
-  { href: '/medications-supplements/vitamins-supplements', title: 'Vitamins & Supplements' },
-  { href: '/medications-supplements/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C' },
-  { href: '/medications-supplements/helper-meds', title: 'Helper Medications' },
-  { href: '/medications-supplements/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom' },
-  { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone' },
-  { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?' },
+export const PINNED_PAGES: { href: string; title: string; detail: string }[] = [
+  { href: '/start-here/7-oh-withdrawal-help', title: 'In active withdrawal', detail: 'What to do this hour, step by step' },
+  { href: '/medications-supplements/vitamins-supplements', title: 'Vitamins & Supplements', detail: 'The supplement stack: what to start with, what to skip' },
+  { href: '/medications-supplements/mega-dose-vitamin-c', title: 'Mega-Dose Vitamin C', detail: 'The high-dose vitamin C protocol and its cautions' },
+  { href: '/medications-supplements/helper-meds', title: 'Helper Medications', detail: 'Clonidine, gabapentin, and other non-opioid symptom relief' },
+  { href: '/medications-supplements/quit-7-oh-with-kratom-leaf', title: 'Quit 7-OH with Kratom', detail: 'Plain leaf as a bridge off 7-OH, and how to taper it after' },
+  { href: '/mat-suboxone/suboxone-for-7oh', title: 'Suboxone', detail: 'Induction, low-and-slow dosing, and short tapers' },
+  { href: '/start-here/cravings-and-relapse-thoughts', title: 'Thinking about using?', detail: 'The first thing to do, and who to call' },
 ];
 
 /** Sub-groupings inside long categories. Each entry maps a group name

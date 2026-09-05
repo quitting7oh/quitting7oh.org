@@ -92,8 +92,8 @@ export function LiveMeetingSuggestion() {
 
   const { meeting, fallback } = choice;
   return (
-    <div className="grid min-h-[5.25rem] grid-cols-[2.5rem_minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1 px-4 py-3 text-foreground sm:px-5" aria-live="polite">
-      <span className="row-span-2 inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+    <div className="grid min-h-[5.25rem] grid-cols-[2.5rem_minmax(0,1fr)] items-start gap-x-3 gap-y-2 px-4 py-3 text-foreground sm:grid-cols-[2.5rem_minmax(0,1fr)_auto] sm:items-center sm:gap-y-1 sm:px-5" aria-live="polite">
+      <span className="row-span-3 inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary sm:row-span-2">
         <Radio className="size-5" aria-hidden="true" />
       </span>
       <span className="min-w-0">
@@ -101,7 +101,7 @@ export function LiveMeetingSuggestion() {
           Join a meeting now
           {joined && <span className="text-[0.68rem] uppercase tracking-[0.08em] text-primary">Previously joined</span>}
         </span>
-        <span className="mt-0.5 block truncate text-sm leading-snug text-muted-foreground">
+        <span className="mt-0.5 block text-sm leading-snug text-muted-foreground">
           {providerLabel(meeting.provider)} · {meeting.name}{fallback ? ' · always open' : ''}
         </span>
       </span>
@@ -117,14 +117,14 @@ export function LiveMeetingSuggestion() {
             joinUrl: meeting.joinUrl,
           })
         }
-        className="col-start-3 row-start-1 row-end-3 inline-flex min-h-11 items-center gap-1.5 self-center rounded-lg bg-primary px-3.5 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"
+        className="col-start-2 row-start-2 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-lg bg-primary px-3.5 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90 sm:col-start-3 sm:row-start-1 sm:row-end-3 sm:w-auto sm:self-center"
       >
         Join
         <ExternalLink className="size-3.5" aria-hidden="true" />
       </a>
-      <span className="col-start-2 col-end-4 flex flex-wrap gap-x-3 gap-y-1 text-xs font-bold text-primary">
-        <a href="/virtual-na-meetings-now" className="hover:underline">Browse NA</a>
-        <a href="/virtual-smart-meetings-now" className="hover:underline">Browse SMART</a>
+      <span className="col-start-2 row-start-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-bold text-primary sm:col-end-4 sm:row-start-2 sm:text-xs">
+        <a href="/virtual-na-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Browse NA</a>
+        <a href="/virtual-smart-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Browse SMART</a>
         <span className="font-medium text-muted-foreground">NA runs virtually 24/7</span>
       </span>
     </div>

@@ -134,9 +134,9 @@ const zoomLookup = (() => {
         <tr>
           <th class="sticky left-0 z-10 bg-muted px-4 py-3">Day</th>
           <th class="px-4 py-3">Time (ET / PT)</th>
-          <th class="px-4 py-3">Format</th>
-          <th class="px-4 py-3">Shortlink</th>
-          <th class="px-4 py-3">Zoom room</th>
+          <th class="whitespace-nowrap px-4 py-3">Format</th>
+          <th class="whitespace-nowrap px-4 py-3">Shortlink</th>
+          <th class="whitespace-nowrap px-4 py-3">Zoom room</th>
         </tr>
       </thead>
       <tbody>
@@ -149,8 +149,8 @@ const zoomLookup = (() => {
             <td class="meeting-time whitespace-nowrap px-4 py-3 text-muted-foreground">
               {format12hET(m.hourET, m.minuteET)} ET / {format12hPT(m.hourET, m.minuteET)} PT
             </td>
-            <td class="meeting-format px-4 py-3 font-bold">{m.format}</td>
-            <td class="meeting-detail px-4 py-3" data-label="Short link">
+            <td class="meeting-format whitespace-nowrap px-4 py-3 font-bold">{m.format}</td>
+            <td class="meeting-detail whitespace-nowrap px-4 py-3" data-label="Short link">
               {m.shortLink ? (
                 <TrackedMeetingLink
                   client:load

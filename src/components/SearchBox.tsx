@@ -453,13 +453,14 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
             <Search className="size-5 shrink-0 text-primary" aria-hidden="true" />
             {searchInput('h-16 min-w-0 flex-1 bg-transparent text-lg text-foreground outline-none placeholder:text-muted-foreground sm:h-[4.5rem] sm:text-xl')}
             {query && (
-              <button type="button" onClick={() => setQuery('')} className="inline-flex size-10 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Clear search">
-                <X className="size-4" aria-hidden="true" />
+              <button type="button" onClick={() => setQuery('')} className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-border hover:text-foreground" aria-label="Clear search">
+                <X className="size-3.5" aria-hidden="true" />
               </button>
             )}
             <DialogPrimitive.Close asChild>
-              <button type="button" className="inline-flex size-11 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Close search">
+              <button type="button" className="ml-1 inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-lg px-2.5 text-sm font-bold text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Close search">
                 <X className="size-4" aria-hidden="true" />
+                <span className="hidden sm:inline">Close</span>
               </button>
             </DialogPrimitive.Close>
           </div>
