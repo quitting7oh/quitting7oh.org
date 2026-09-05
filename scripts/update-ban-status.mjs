@@ -17,7 +17,7 @@
  *    from the regulations.gov API (REGSGOV_API_KEY env var). Count
  *    failures are non-fatal: the date bump rests on the Federal
  *    Register check, not the count.
- * 3. Rewrites the as-of dates in SchedulingBanner.tsx and
+ * 3. Rewrites the as-of dates in SchedulingBanner.astro and
  *    src/content/compounds/7-oh-ban.md, plus the page's last_updated.
  *
  * Every rewrite asserts its pattern matched. If an edit reshapes the
