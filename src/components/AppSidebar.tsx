@@ -289,7 +289,22 @@ export function AppSidebar(props: Props) {
 
   React.useEffect(() => {
     if (!mobile && desktopCollapsed) return;
-    const revealCurrent = () => centerCurrent(mobile ? mobileRef.current : desktopRef.current);
+    let readyFrame = 0;
+    const revealCurrent = () => {
+      const container = mobile ? mobileRef.current : desktopRef.current;
+      if (!container) return;
+      // The sticky header's fade is gated on `data-sidebar-ready`. Clearing it
+      // before the jump means the opaque state paints in the same frame as the
+      // scroll instead of fading in over rows that are already beneath it. A
+      // persisting container (the desktop rail across page changes or collapse
+      // toggles) snaps the same way as a freshly mounted drawer.
+      delete container.dataset.sidebarReady;
+      centerCurrent(container);
+      cancelAnimationFrame(readyFrame);
+      readyFrame = requestAnimationFrame(() => {
+        container.dataset.sidebarReady = 'true';
+      });
+    };
     const frame = requestAnimationFrame(revealCurrent);
     // Hydration and font metrics can settle after the first frame. The fallback
     // makes sure the canonical entry is visible without moving an already
@@ -297,6 +312,7 @@ export function AppSidebar(props: Props) {
     const timer = window.setTimeout(revealCurrent, 160);
     return () => {
       cancelAnimationFrame(frame);
+      cancelAnimationFrame(readyFrame);
       window.clearTimeout(timer);
     };
   }, [mobile, open, desktopCollapsed, props.currentPath]);
