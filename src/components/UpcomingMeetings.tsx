@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Calendar, Clock, ExternalLink } from 'lucide-react';
 import {
   findUpcomingMeetings,
+  isLiveStatus,
   isNewMeeting,
   FELLOWSHIPS,
   platformFromUrl,
@@ -116,8 +117,16 @@ interface CardProps {
   history: MeetingHistoryEntry[];
 }
 
-/** Featured "Next up" card — large, prominent, takes the top of the page. */
-function FeaturedCard({ display, now, history }: CardProps) {
+interface FeaturedCardProps extends CardProps {
+  /** Set when several featured cards share a row, so the type scale
+   *  and padding step down enough for two to sit side by side. */
+  shared?: boolean;
+}
+
+/** Featured card at the top of the page: the next meeting, or every
+ *  meeting that's live right now. Live cards carry the sage top rule
+ *  so "open now" reads the same here as it does on the homepage. */
+function FeaturedCard({ display, now, history, shared = false }: FeaturedCardProps) {
   const { meeting, start, end, status } = display;
   const fellowship = FELLOWSHIPS[meeting.fellowship];
   const platform = platformFromUrl(meeting.joinUrl);
@@ -132,8 +141,16 @@ function FeaturedCard({ display, now, history }: CardProps) {
       meetingHistoryKey(meeting.fellowship, meeting.id),
   );
 
+  const live = isLiveStatus(status);
+
   return (
-    <div className="overflow-hidden rounded-2xl border border-border border-t-4 border-t-primary bg-card p-6 shadow-sm sm:p-8">
+    <div
+      className={cn(
+        'overflow-hidden rounded-2xl border border-border border-t-4 bg-card p-6 shadow-sm',
+        live ? 'border-t-success' : 'border-t-primary',
+        shared ? 'sm:p-6' : 'sm:p-8',
+      )}
+    >
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <span
           className={cn(
@@ -163,7 +180,12 @@ function FeaturedCard({ display, now, history }: CardProps) {
         </span>
       </div>
 
-      <h2 className="m-0 font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
+      <h2
+        className={cn(
+          'm-0 font-display font-semibold leading-tight text-foreground',
+          shared ? 'text-2xl sm:text-3xl' : 'text-3xl sm:text-4xl',
+        )}
+      >
         {fellowship.shortName} — {meeting.format}
         {meeting.note && (
           <span className="ml-2 text-base font-normal text-muted-foreground">
@@ -379,16 +401,41 @@ export function UpcomingMeetings() {
     );
   }
 
-  const [featured, ...rest] = meetings;
-  const grouped = groupByDay(rest, now);
-  const hasLiveSpecificMeeting = meetings.some(
-    (meeting) =>
-      meeting.status === 'meeting-starting' || meeting.status === 'live-now',
-  );
+  // Live meetings started before `now`, so they sort ahead of everything
+  // upcoming. Feature all of them; if none is live, feature the next one.
+  const liveCount = meetings.filter((meeting) => isLiveStatus(meeting.status)).length;
+  const featured = meetings.slice(0, Math.max(1, liveCount));
+  const grouped = groupByDay(meetings.slice(featured.length), now);
+  const hasLiveSpecificMeeting = liveCount > 0;
 
   return (
     <div className="space-y-12">
-      <FeaturedCard display={featured} now={now} history={history} />
+      {featured.length > 1 ? (
+        <section aria-labelledby="live-now-heading">
+          <h2
+            id="live-now-heading"
+            className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl"
+          >
+            {featured.length} meetings are live right now
+          </h2>
+          <p className="mt-1.5 text-sm text-muted-foreground">
+            Every room is open. Pick whichever fits.
+          </p>
+          <div className="mt-5 grid gap-4 lg:grid-cols-2">
+            {featured.map((display) => (
+              <FeaturedCard
+                key={display.meeting.id}
+                display={display}
+                now={now}
+                history={history}
+                shared
+              />
+            ))}
+          </div>
+        </section>
+      ) : (
+        <FeaturedCard display={featured[0]} now={now} history={history} />
+      )}
 
       {!hasLiveSpecificMeeting && <LiveGeneralMeetingFallback now={now} />}
 

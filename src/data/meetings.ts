@@ -350,6 +350,31 @@ export function findDisplayMeeting(now: Date = new Date()): DisplayMeeting | nul
   return candidates[0];
 }
 
+/** Whether a status means the room is open right now. */
+export function isLiveStatus(status: MeetingStatus): boolean {
+  return status === 'live-now' || status === 'meeting-starting';
+}
+
+/** Every meeting whose room is open right now, earliest start first
+ *  (ties keep MEETINGS order, so the first entry matches what
+ *  findDisplayMeeting picks). The schedule has real overlaps: Grow
+ *  Recovery shares both Wednesday KA slots, KA's weekday 9 PM runs into
+ *  TIAWO's 9:15 PM, and Sunday's KA 1 PM overlaps the women's meeting
+ *  at 1:30. Widgets that only show a single pick hide the second room,
+ *  so anything that says "live now" should render this whole list. */
+export function findLiveMeetings(now: Date = new Date()): DisplayMeeting[] {
+  const live: DisplayMeeting[] = [];
+  for (const m of MEETINGS) {
+    const occ = meetingOccurrence(m, now);
+    if (!occ) continue;
+    const status = classifyStatus(occ.start, now);
+    if (!isLiveStatus(status)) continue;
+    live.push({ meeting: m, start: occ.start, end: occ.end, status });
+  }
+  live.sort((a, b) => a.start.getTime() - b.start.getTime());
+  return live;
+}
+
 /** Find all meeting occurrences whose end is in the future and whose
  *  start is no later than `now + maxDays * 24h`. Used by the dedicated
  *  /next-kratom-support-meeting landing page to render a rolling
