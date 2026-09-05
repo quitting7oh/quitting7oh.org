@@ -947,6 +947,7 @@
       letter-spacing: 0.065em;
       line-height: 1.25;
       text-transform: uppercase;
+      overflow-wrap: normal;
     }
 
     .taper-schedule-table .schedule-data-row {
@@ -960,7 +961,7 @@
 
     .taper-schedule-table .schedule-data-row td {
       display: block;
-      padding: 0;
+      padding: 0 !important;
       border: 0;
     }
 
@@ -1033,7 +1034,7 @@
       grid-column: 2;
       align-items: baseline;
       gap: 0.65rem;
-      padding: 0;
+      padding: 0 !important;
       border: 0;
     }
 
