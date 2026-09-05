@@ -68,6 +68,19 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
   }
 
   if (variant === 'button') {
+    // Two deliberate lines: a short headline that fits one line at every
+    // width, and a small detail line with the fellowship and time. Long
+    // single labels wrapped unpredictably next to the Discord button.
+    const headline = display && now
+      ? isLive
+        ? 'Join the live meeting'
+        : `Next meeting · in ${formatCountdown(display.start.getTime() - now.getTime())}`
+      : 'Find a meeting';
+    const sub = display && meeting && now
+      ? isLive
+        ? `7-OH/kratom · ${FELLOWSHIPS[meeting.fellowship].shortName} ${meeting.format} · ${formatCountdown(display.end.getTime() - now.getTime())} left`
+        : `7-OH/kratom · ${FELLOWSHIPS[meeting.fellowship].shortName} ${meeting.format} · ${formatDay(display.start, now)} ${formatTime(display.start)}`
+      : 'Kratom-specific meetings, in your local time';
     return (
       <a
         href={href}
@@ -75,16 +88,19 @@ export function MeetingQuickLink({ variant = 'row', className }: Props) {
         rel={external ? 'noopener noreferrer' : undefined}
         onClick={recordJoin}
         className={cn(
-          'inline-flex min-h-[3.25rem] items-center justify-center gap-2 rounded-lg border px-4 py-3 text-center text-base font-bold',
+          'inline-flex min-h-[3.25rem] flex-col items-center justify-center gap-0.5 rounded-lg border px-3 py-2.5 text-center',
           isLive
             ? 'border-success bg-success text-success-foreground shadow-sm hover:bg-success/90'
             : 'border-border bg-card text-foreground hover:border-primary hover:bg-accent',
           className,
         )}
       >
-        {isLive && <Radio className="size-4" aria-hidden="true" />}
-        <span aria-live="polite">{label}</span>
-        {external && <ExternalLink className="size-4" aria-hidden="true" />}
+        <span className="inline-flex items-center gap-1.5 whitespace-nowrap text-base font-bold leading-tight" aria-live="polite">
+          {isLive && <Radio className="size-4 shrink-0" aria-hidden="true" />}
+          {headline}
+          {external && <ExternalLink className="size-3.5 shrink-0 opacity-80" aria-hidden="true" />}
+        </span>
+        <span className="text-xs font-semibold leading-snug opacity-85">{sub}</span>
       </a>
     );
   }

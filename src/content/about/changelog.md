@@ -23,6 +23,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   the ER" but its only button dialed 988. It now has a `tel:911` action for
   the medical items and keeps 988 scoped to the self-harm line. The card's
   bullet markers were also restored.
+- Crisis-page meeting button no longer wraps unpredictably. The step 1
+  meeting action is now a two-line stack: a short headline ("Join the
+  live meeting", "Next meeting · in 32 min", "Find a meeting") that fits
+  one line at every width, and a small detail line with the fellowship,
+  format, and time.
 - Crisis-page reassurance at body size. "The acute phase usually peaks
   around 48–72 hours" was a small muted footnote; it is now regular
   reading text in the foreground color.
