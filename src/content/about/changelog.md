@@ -16,6 +16,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-06
 
+### Suboxone page leads with SOWS
+
+- The Suboxone page now leads with SOWS for at-home scoring and keeps
+  COWS as the clinician-scored alternative. Updated guide labels and
+  added the SOWS form to further reading.
+
 ### Ban-status updates
 
 - Fixed the ban-status automation's commit step to use the Astro banner's
