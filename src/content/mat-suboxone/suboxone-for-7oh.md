@@ -2,7 +2,7 @@
 title: "Suboxone"
 description: "Suboxone for coming off 7-OH and kratom synthetics. Induction, low-and-slow dosing, short-taper schedules, and the receptor pharmacology behind the approach."
 category: "mat-suboxone"
-last_updated: "2026-09-04"
+last_updated: "2026-09-06"
 sort: 2
 ---
 > **Hold a CDL, FAA medical, LEO position, armed-security license, or healthcare license?** Buprenorphine can trigger licensure-board or regulatory issues separate from whether your direct employer is supportive. Read **[MAT & Your Professional License](/for-you/mat-and-your-job)** before disclosing or starting MAT.

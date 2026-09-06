@@ -311,7 +311,7 @@ interface SimpleSr17Inputs {
 
 const SIMPLE_DEFAULTS: SimpleSr17Inputs = {
   ohPerDose: 0,
-  ohDosesPerDay: 4,
+  ohDosesPerDay: 2,
   highDailySr17: 300,
   taperDays: 10,
 };

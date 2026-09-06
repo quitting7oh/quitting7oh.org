@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-09-05"
+last_updated: "2026-09-06"
 sort: 6
 ---
 
@@ -14,17 +14,26 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
-## 2026-09-04
+## 2026-09-06
 
 ### Suboxone page leads with SOWS
 
-- The Suboxone page timed induction by COWS first and mentioned SOWS as
-  the alternative, while the SOWS calculator is the tool the site
-  actually hands readers. Every threshold, heading, and reminder now
-  leads with SOWS ≥ 17 and gives COWS ≥ 12 as the clinician-scored
-  equivalent. Guide links carry the guide's real title, and the WHO
-  SOWS form joins the further-reading list ahead of the two COWS
-  references.
+- The Suboxone page now leads with SOWS for at-home scoring and keeps
+  COWS as the clinician-scored alternative. Updated guide labels and
+  added the SOWS form to further reading.
+
+### Ban-status updates
+
+- Fixed the ban-status automation's commit step to use the Astro banner's
+  filename. The old React filename caused runs to fail after verification,
+  leaving the banner and ban page's dates unchanged on the site.
+
+## 2026-09-04
+
+### SR-17 simple calculator default
+
+- The simple SR-17 cross-taper now opens with 7-OH at two doses per
+  day instead of four. Saved inputs still win on return visits.
 
 ### Taper calculator cards on phones
 
