@@ -166,6 +166,14 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-06
 
+### Moderator comment sharing
+
+- Added an unlisted moderator page with a sticky-comment preview and
+  copy buttons for Reddit Markdown and the full AutoModerator rule. The
+  comment links community resources, asks readers to search the guides and
+  post flairs, and explains that moderators may remove posts made without
+  searching.
+
 ### Suboxone page leads with SOWS
 
 - The Suboxone page now leads with SOWS for at-home scoring and keeps

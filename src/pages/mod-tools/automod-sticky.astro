@@ -1,0 +1,124 @@
+---
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import rehypeExternalLinks from '~/lib/rehype/externalLinks.mjs';
+
+// Keep the preview and clipboard content tied to the same Reddit Markdown.
+const markdown = `**Welcome to r/quitting7oh. We're here to help you quit and stay off 7-OH.**
+
+**Resources:** [Quitting7oh.org](https://quitting7oh.org) · [Discord](https://discord.com/invite/Bp8Qb5Uuhm) · [FIX PAWS community guide](https://www.reddit.com/r/quitting7oh/comments/1v8495j/fix_paws/) · [Suboxone megapost](https://www.reddit.com/r/quitting7oh/comments/1ncqg8x/suboxone_mega_post_how_not_to_screw_yourself_with/)
+
+**Search before you post.** We have guides, tutorials, and past discussions available through subreddit search and post flairs. **If you post without searching, moderators may remove your post.** If you still need help after searching, ask.
+
+Respect each other's recovery choices and keep advice grounded in your experience.`;
+
+const automodConfig = `---
+type: submission
+is_edited: false
+moderators_exempt: false
+comment_stickied: true
+comment: |-
+${markdown.split('\n').map((line) => line ? `    ${line}` : '').join('\n')}`;
+
+const processor = await createMarkdownProcessor({
+  smartypants: false,
+  rehypePlugins: [rehypeExternalLinks],
+});
+const { code: preview } = await processor.render(markdown);
+---
+
+<BaseLayout
+  title="AutoModerator sticky"
+  description="Preview and copy the r/quitting7oh sticky comment."
+  minimal
+  noindex
+>
+  <main id="main-content" class="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-16">
+    <header class="mb-8">
+      <p class="eyebrow">r/quitting7oh · Moderator tools</p>
+      <h1 class="mt-3 font-display text-4xl font-semibold tracking-tight text-foreground">AutoModerator sticky</h1>
+      <p class="mt-4 text-muted-foreground">The comment for each new post. This page is unlisted; anyone with the link can open it.</p>
+    </header>
+
+    <section aria-labelledby="preview-title" class="rounded-2xl border border-border bg-card p-5 sm:p-7">
+      <h2 id="preview-title" class="eyebrow mb-5">Comment preview</h2>
+      <div class="prose prose-stone max-w-none dark:prose-invert" set:html={preview} />
+    </section>
+
+    <section aria-labelledby="markdown-title" class="mt-8">
+      <h2 id="markdown-title" class="font-display text-2xl font-semibold text-foreground">Reddit Markdown</h2>
+      <p id="copy-help" class="mt-2 text-sm leading-relaxed text-muted-foreground">
+        Copy the text below to preserve the links and bold formatting. For a manual comment, paste into Reddit's Markdown editor. For AutoModerator, use it as the comment text in your rule.
+      </p>
+      <label for="sticky-markdown" class="sr-only">Sticky comment Markdown</label>
+      <textarea
+        id="sticky-markdown"
+        readonly
+        rows="13"
+        spellcheck="false"
+        aria-describedby="copy-help"
+        class="mt-4 block w-full resize-y rounded-xl border border-border bg-card p-4 font-mono text-sm leading-relaxed text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-primary"
+      >{markdown}</textarea>
+      <button
+        data-copy-target="sticky-markdown"
+        data-copy-success="Copied. Paste into Reddit using Markdown mode."
+        type="button"
+        hidden
+        class="mt-4 min-h-11 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-primary-foreground hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >Copy Reddit Markdown</button>
+      <p id="sticky-markdown-status" role="status" class="mt-3 min-h-6 text-sm text-muted-foreground"></p>
+    </section>
+
+    <section aria-labelledby="config-title" class="mt-8 border-t border-border pt-8">
+      <h2 id="config-title" class="font-display text-2xl font-semibold text-foreground">Full AutoModerator rule</h2>
+      <p id="config-help" class="mt-2 text-sm leading-relaxed text-muted-foreground">
+        Open r/quitting7oh's AutoModerator configuration (<code>config/automoderator</code>)
+        and replace the old sticky-comment rule with this block. Keep your other rules;
+        separate each rule with <code>---</code> on its own line. Save the configuration.
+      </p>
+      <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+        This posts a sticky comment on new submissions, including moderator posts,
+        and skips edits. Moderators decide whether to remove posts; AutoModerator
+        cannot check a user's search history.{' '}
+        <a href="https://www.reddit.com/r/reddit.com/wiki/automoderator/full-documentation/" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2">AutoModerator documentation</a>.
+      </p>
+      <label for="automod-config" class="sr-only">Full AutoModerator configuration</label>
+      <textarea
+        id="automod-config"
+        readonly
+        rows="18"
+        spellcheck="false"
+        aria-describedby="config-help"
+        class="mt-4 block w-full resize-y rounded-xl border border-border bg-card p-4 font-mono text-sm leading-relaxed text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-primary"
+      >{automodConfig}</textarea>
+      <button
+        data-copy-target="automod-config"
+        data-copy-success="Copied. Replace the old sticky-comment rule in AutoModerator, then save."
+        type="button"
+        hidden
+        class="mt-4 min-h-11 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-primary-foreground hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >Copy AutoModerator rule</button>
+      <p id="automod-config-status" role="status" class="mt-3 min-h-6 text-sm text-muted-foreground"></p>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('button[data-copy-target]').forEach((button) => {
+    const source = document.getElementById(button.dataset.copyTarget ?? '');
+    const status = document.getElementById(`${button.dataset.copyTarget}-status`);
+
+    if (!(source instanceof HTMLTextAreaElement) || !status) return;
+    button.hidden = false;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(source.value);
+        status.textContent = button.dataset.copySuccess ?? 'Copied.';
+      } catch {
+        source.focus();
+        source.select();
+        status.textContent = 'Copy is unavailable in this browser. The text is selected; use your device’s Copy command.';
+      }
+    });
+  });
+</script>
