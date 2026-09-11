@@ -8,19 +8,34 @@ sort: 4
 
 ## A starting schedule
 
-This **liposomal vitamin C** schedule is a community starting point. Larger doses may help; see [Schauss's higher-dose protocol](#higher-doses-in-schausss-protocol) below.
-
-Read the [cautions](#dont-do-this-if) first if you have kidney problems, iron overload, or G6PD deficiency, or take iron supplements.
-
-| Phase | Liposomal vitamin C dose |
-| --- | --- |
-| Preload | Start **3 days before your quit date** with **2 grams per day**, divided across the day. Build toward **4 to 6 grams per day** if tolerated. |
-| Acute withdrawal | **1 to 2 grams every 2 to 3 waking hours**. Example total: 6 to 12 grams per day, depending on dose and frequency. |
-| Symptoms easing | Reduce your intake. |
-
-No overnight alarms needed.
-
-> **Standard vitamin C (ascorbic acid)** can cause diarrhea, nausea, and stomach cramps at these doses. Reduce or stop if you develop these symptoms with any form, including liposomal.
+<div class="vitamin-c-schedule not-prose">
+<p class="medicine">Liposomal vitamin C<span class="community">Community starting schedule<span class="gram-key">1 g = 1,000 mg</span></span></p>
+<p class="conditions"><a href="#dont-do-this-if">Read the cautions first</a> if you have kidney problems, iron overload, G6PD deficiency, or take iron supplements.</p>
+<section aria-label="Preload"><h3>Preload</h3>
+<p class="preload-note">Start 3 days before your quit date. Increase only if tolerated.</p><table class="dose-calendar" aria-label="Preload doses by time of day"><caption>Amount per dose</caption>
+<thead><tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Lunch</th><th scope="col">Evening</th></tr></thead>
+<tbody><tr><th scope="row">Day 1<small class="total">2 g daily total</small></th><td data-time="Morning"><span>1 g</span></td><td data-time="Lunch"><span class="empty" aria-label="No dose">—</span></td><td data-time="Evening"><span>1 g</span></td></tr>
+<tr><th scope="row">Day 2<small class="total">4 g daily total</small></th><td data-time="Morning"><span>2 g</span></td><td data-time="Lunch"><span class="empty" aria-label="No dose">—</span></td><td data-time="Evening"><span>2 g</span></td></tr>
+<tr><th scope="row">Day 3<small class="total">6 g daily total</small></th><td data-time="Morning"><span>2 g</span></td><td data-time="Lunch"><span>2 g</span></td><td data-time="Evening"><span>2 g</span></td></tr></tbody>
+</table></section><section class="acute" aria-label="Acute withdrawal"><h3>Acute withdrawal</h3>
+<p class="acute-main"><span><strong class="dose">2 g</strong> <span class="unit">per dose</span></span><span class="frequency">Every 2–3 waking hours.</span></p>
+<p class="example-label">Example at 2-hour intervals:</p>
+<div class="dayparts">
+<section aria-label="Morning doses"><h4>Morning</h4><ul class="clock-doses" role="list"><li data-hour="8">8 am<strong>2 g</strong></li><li data-hour="10">10 am<strong>2 g</strong></li></ul></section>
+<section aria-label="Afternoon doses"><h4>Afternoon</h4><ul class="clock-doses" role="list"><li data-hour="12">12 pm<strong>2 g</strong></li><li data-hour="14">2 pm<strong>2 g</strong></li><li data-hour="16">4 pm<strong>2 g</strong></li></ul></section>
+<section aria-label="Evening and night doses"><h4>Evening / night</h4><ul class="clock-doses" role="list"><li data-hour="18">6 pm<strong>2 g</strong></li><li data-hour="20">8 pm<strong>2 g</strong></li><li data-hour="22">10 pm<strong>2 g</strong></li></ul></section>
+</div>
+<section class="overnight" aria-label="Optional overnight doses">
+<div class="overnight-heading"><h4>Optional overnight</h4><span>Only if awake with symptoms.</span></div>
+<ul class="clock-doses" role="list"><li data-hour="24">12 am<strong>2 g</strong></li><li data-hour="26">2 am<strong>2 g</strong></li></ul>
+<p class="overnight-note">Skip if asleep. Keep doses at least 2 hours apart.</p>
+</section>
+<small class="total">Daily total: 16 g in this example; 18–20 g with 1–2 overnight doses.</small>
+<p class="starting-point">This is a starting point. People report relief at lower and higher doses.</p>
+</section><p class="after">Reduce your intake as symptoms ease.</p>
+<p class="stomach"><strong>Standard vitamin C (ascorbic acid)</strong> can cause diarrhea, nausea, and stomach cramps at these doses. Reduce or stop if you develop these symptoms with any form, including liposomal.</p>
+<p class="research">Researchers haven’t established the best liposomal dose for withdrawal. See <a href="#higher-doses-in-schausss-protocol">Schauss’s higher-dose protocol</a> for the historical schedule.</p>
+</div>
 
 ## Where to buy
 
@@ -64,16 +79,22 @@ If you use 7-OH or opioids with other substances, get professional medical super
 
 Schauss used **sodium ascorbate** in a small heroin-withdrawal pilot, with nurses adjusting doses. His [2012 paper (PDF page 5)](https://isom.ca/wp-content/uploads/2013/01/Attenuation-of-Heroin-Withdrawl-Syndrome-by-the-Administration-of-High-Dose-Vitamin-C-27.4.pdf#page=5) gives this schedule:
 
+<div class="vitamin-c-history">
+
 | Day | Sodium ascorbate per dose | Daytime frequency |
 | --- | --- | --- |
-| 1: first preload day | 0.5 to 1 gram | Every 2 hours until bedtime |
-| 2 | 1 to 2.5 grams | Every 2 hours until bedtime |
-| 3: final preload day | **5 to 7.5 grams** | Every 3 hours until bedtime |
-| 4 | 2.5 to 5 grams | Every 2 hours until bedtime |
-| 5 | 1 to 2.5 grams | Every 2 hours until bedtime |
-| 6 | 1 gram | Every 2 hours until bedtime |
+| <span class="history-day-wide">Day 1: first preload day</span><span class="history-day-compact">Day 1<small>Preload</small></span> | <span class="history-dose-wide">0.5 to 1 gram</span><span class="history-dose-compact">0.5–1 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 4–8 g</small> |
+| <span class="history-day-wide">Day 2</span><span class="history-day-compact">Day 2<small>Preload</small></span> | <span class="history-dose-wide">1 to 2.5 grams</span><span class="history-dose-compact">1–2.5 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 8–20 g</small> |
+| <span class="history-day-wide">Day 3: final preload day</span><span class="history-day-compact">Day 3<small>Preload</small></span> | <span class="history-dose-wide"><strong>5 to 7.5 grams</strong></span><span class="history-dose-compact">5–7.5 g <span class="per-dose">per dose</span></span> | Every 3 hours until bedtime<small class="history-total">Daily total: 25–37.5 g<span>With 2 overnight: 35–52.5 g</span></small><span class="withdrawal-start">Withdrawal began at bedtime.</span> |
+| <span class="history-day-wide">Day 4</span><span class="history-day-compact">Day 4</span> | <span class="history-dose-wide">2.5 to 5 grams</span><span class="history-dose-compact">2.5–5 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 20–40 g<span>With 2 overnight: 25–50 g</span></small> |
+| <span class="history-day-wide">Day 5</span><span class="history-day-compact">Day 5</span> | <span class="history-dose-wide">1 to 2.5 grams</span><span class="history-dose-compact">1–2.5 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 8–20 g<span>With 2 overnight: 10–25 g</span></small> |
+| <span class="history-day-wide">Day 6</span><span class="history-day-compact">Day 6</span> | <span class="history-dose-wide">1 gram</span><span class="history-dose-compact">1 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 8 g<span>With 2 overnight: 10 g</span></small> |
 
-Participants drank each dose in six ounces of a half-juice, half-water mix. Withdrawal began at bedtime on day 3. On nights 3 to 6, the protocol called for that day's dose every two hours while awake if withdrawal symptoms occurred, until they eased.
+<p class="history-math">Calculated examples for 8 am–10 pm: 8 daytime doses, or 5 on day 3. Overnight totals add 2 doses.</p>
+
+</div>
+
+Participants drank each dose in six ounces of a half-juice, half-water mix. On nights 3 to 6, the protocol called for that day's dose every two hours while awake if withdrawal symptoms occurred, until they eased.
 
 The [2020 review](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) lists **7 grams per dose** at the upper end; Schauss's original paper lists **7.5 grams**. Researchers have not validated this historical schedule for liposomal vitamin C or 7-OH withdrawal.
 

@@ -32,6 +32,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   removing the repeated intro, and replacing the caution panel with a
   linked sentence. Added a short callout below the table about stomach
   symptoms from standard vitamin C at these doses.
+- Broke the preload into morning, lunch, and evening doses for each day.
+  Added a two-hour acute-withdrawal example with optional overnight doses,
+  smaller daily totals, and the conversion from grams to milligrams.
+- Added calculated daily totals to Schauss's schedule and grouped each
+  day's dose and timing together on phones. Kept the starting-point note
+  and marked when withdrawal began on day 3 in the historical schedule.
 
 ### In-page navigation
 
