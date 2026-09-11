@@ -29,7 +29,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   and added Schauss's six-day schedule as a table.
 - Brought the dosing table higher on the page by shortening the subtitle,
   removing the repeated intro, and replacing the caution panel with a
-  linked sentence.
+  linked sentence. Added a short callout below the table about stomach
+  symptoms from standard vitamin C at these doses.
 
 ### In-page navigation
 

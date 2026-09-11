@@ -18,7 +18,9 @@ Read the [cautions](#dont-do-this-if) first if you have kidney problems, iron ov
 | Acute withdrawal | **1 to 2 grams every 2 to 3 waking hours**. Example total: 6 to 12 grams per day, depending on dose and frequency. |
 | Symptoms easing | Reduce your intake. |
 
-No overnight alarms needed. Reduce or stop if vitamin C causes diarrhea, nausea, or cramps.
+No overnight alarms needed.
+
+> **Standard vitamin C (ascorbic acid)** can cause diarrhea, nausea, and stomach cramps at these doses. Reduce or stop if you develop these symptoms with any form, including liposomal.
 
 ## Where to buy
 
