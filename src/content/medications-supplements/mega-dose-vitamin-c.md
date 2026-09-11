@@ -1,18 +1,16 @@
 ---
 title: "Mega-Dose Vitamin C"
-description: "A starting schedule for high-dose vitamin C during withdrawal, where to buy it, and the research behind larger doses."
+description: "High-dose vitamin C may ease opioid withdrawal."
 category: "medications-supplements"
 last_updated: "2026-09-11"
 sort: 4
 ---
 
-High-dose vitamin C may help ease opioid withdrawal.
-
 ## A starting schedule
 
 This **liposomal vitamin C** schedule is a community starting point. Larger doses may help; see [Schauss's higher-dose protocol](#higher-doses-in-schausss-protocol) below.
 
-> Read the [cautions](#dont-do-this-if) first if you have kidney problems, iron overload, or G6PD deficiency, or take iron supplements.
+Read the [cautions](#dont-do-this-if) first if you have kidney problems, iron overload, or G6PD deficiency, or take iron supplements.
 
 | Phase | Liposomal vitamin C dose |
 | --- | --- |
