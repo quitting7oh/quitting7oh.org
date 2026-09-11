@@ -14,15 +14,9 @@ This **liposomal vitamin C** schedule is a community starting point. Larger dose
 
 > Read the [cautions](#dont-do-this-if) first if you have kidney problems, iron overload, or G6PD deficiency, or take iron supplements.
 
-| Situation | Start when |
-| --- | --- |
-| Planned quit date | 3 days before |
-| Tapering off the synthetics | 1 to 2 weeks before, alongside the taper |
-| Already in withdrawal | Start without preloading, at a dose you tolerate |
-
 | Phase | Liposomal vitamin C dose |
 | --- | --- |
-| Preload | Start with **2 grams per day**, divided across the day. Build toward **4 to 6 grams per day** if tolerated. |
+| Preload | Start **3 days before your quit date** with **2 grams per day**, divided across the day. Build toward **4 to 6 grams per day** if tolerated. |
 | Acute withdrawal | **1 to 2 grams every 2 to 3 waking hours**. Example total: 6 to 12 grams per day, depending on dose and frequency. |
 | Symptoms easing | Reduce your intake. |
 
