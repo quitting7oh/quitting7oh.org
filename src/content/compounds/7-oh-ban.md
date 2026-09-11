@@ -1,6 +1,6 @@
 ---
 title: "The Federal 7-OH Ban: Dates, Scope, What It Means"
-description: "Pseudo, MGM-15, and MGM-16 are Schedule I as of August 26, 2026. The 7-OH threshold order is still pending. Dates, scope, the reopened comment window, and what to do if you're still using."
+description: "Pseudo, MGM-15, and MGM-16 are Schedule I as of August 26, 2026. The 7-OH threshold order is still pending. Dates, scope, the closed comment period, and what to do if you're still using."
 category: "compounds"
 last_updated: "2026-09-11"
 sort: 0
@@ -23,14 +23,19 @@ August 26, 2026. It took effect the day it published and runs until
 August 26, 2028. Possession of any quantity is now unlawful, and
 consumers got no grace period.
 
+<div class="ban-timeline">
+
 | Date | What happened |
 | --- | --- |
 | **July 1, 2026** | DEA signed and filed two notices of intent to temporarily schedule [7-OH](/compounds/7-oh) and three related compounds. HHS and FDA announced their support the same day. |
 | **July 6, 2026** | The notices published in the Federal Register, starting the legally required 30-day waiting period. |
 | **July 31, 2026** | The public comment window on the 7-OH threshold closed with **32,145 comments** submitted. |
 | **August 5, 2026** | The earliest date either order could take effect. It passed with no order issued. |
-| **August 26, 2026** | DEA's order for pseudo, MGM-15, and MGM-16 published and took effect the same day. HHS separately reopened the 7-OH comment window through September 10 (see [the comment window](#public-comments-reopened-through-september-10) below). |
+| **August 26, 2026** | DEA's order for pseudo, MGM-15, and MGM-16 published and took effect the same day. HHS separately reopened the 7-OH comment window through September 10 (see [the comment period](#public-comments-closed-september-10) below). |
+| **September 10, 2026** | The extended HHS comment period on the 7-OH threshold closed. |
 | **September 11, 2026** | Latest check against the Federal Register: still no order on the 7-OH threshold. |
+
+</div>
 
 Both notices stated the order "will be published in the Federal
 Register on or after August 5, 2026," and that DEA intended to issue it
@@ -156,7 +161,14 @@ criminal, civil, and administrative provisions of the CSA as of
 August 26. Covered 7-OH products reach the same point the day their
 order publishes.
 
-## Public comments: reopened through September 10
+<span id="public-comments-reopened-through-september-10" aria-hidden="true"></span>
+
+## Public comments: closed September 10
+
+**The HHS comment period closed September 10, 2026.** OASH had
+[reopened it on August 26](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period)
+after receiving a request for more time. Previously submitted comments
+remained in the docket.
 
 Alongside DEA's notices, the HHS Office of the Assistant Secretary for
 Health ran a
@@ -165,14 +177,9 @@ Health ran a
 7-OH threshold. The window closed **July 31, 2026**, with **32,145
 comments submitted**.
 
-On August 26, OASH
-[extended the comment period](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period)
-to **September 10, 2026**, after receiving a request for more time.
-The docket is open again, and comments already submitted stand; nobody
-needs to refile. As of September 11,
+As of September 11,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
-shows 30,346 comments posted, with the rest still moving through
-review.
+showed 30,346 comments posted.
 
 The scope did not change with the extension. OASH asked two questions
 only:
@@ -184,7 +191,7 @@ only:
 2. Is there data supporting a different way of measuring the
    threshold?
 
-OASH said explicitly that it is **not** taking comments on permanent
+OASH did **not** seek comments on permanent
 scheduling, on the general safety or usefulness of kratom products, or
 on whether the ban should happen at all, and it repeated that limit in
 the extension notice. HHS forwards the submissions to the Attorney

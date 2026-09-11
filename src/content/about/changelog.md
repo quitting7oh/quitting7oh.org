@@ -16,6 +16,13 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-11
 
+### Ban-page dates and comment deadline
+
+- Kept month names intact in the ban timeline instead of splitting
+  September across lines.
+- Marked the HHS comment period closed on September 10 in the timeline,
+  comments section, and 7-OH overview. Kept the old section link working.
+
 ### Vitamin C dosing and study context
 
 - Clarified that the vitamin C schedule is a community starting point,
