@@ -24,6 +24,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Removed the unsupported liposomal dose conversion, corrected the
   attribution of symptom-relief results, and clarified study limitations
   and cautions for larger doses.
+- Put the starting schedule and buying options first. Moved research
+  details below them and added Schauss's six-day schedule as a table.
 
 ## 2026-09-06
 
