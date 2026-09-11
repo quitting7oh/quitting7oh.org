@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-09-06"
+last_updated: "2026-09-11"
 sort: 6
 ---
 
@@ -13,6 +13,37 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-09-11
+
+### Vitamin C dosing and study context
+
+- Clarified that the vitamin C schedule is a community starting point,
+  with lower doses than Schauss's historical protocol. Added the 7-gram
+  per-dose figure from the review and the 7.5-gram upper end in his paper.
+- Removed the unsupported liposomal dose conversion, corrected the
+  attribution of symptom-relief results, and clarified study limitations
+  and cautions for larger doses.
+- Put the starting schedule and buying options first, with the three-day
+  preload timing in the dosing table. Moved research details below them
+  and added Schauss's six-day schedule as a table. Linked the source to
+  PDF page 5, with the viewer's page number in the citation.
+- Brought the dosing table higher on the page by shortening the subtitle,
+  removing the repeated intro, and replacing the caution panel with a
+  linked sentence. Added a short callout below the table about stomach
+  symptoms from standard vitamin C at these doses.
+- Broke the preload into morning, lunch, and evening doses for each day.
+  Added a two-hour acute-withdrawal example with optional overnight doses,
+  smaller daily totals, and the conversion from grams to milligrams.
+- Added calculated daily totals to Schauss's schedule and grouped each
+  day's dose and timing together on phones. Kept the starting-point note
+  and marked when withdrawal began on day 3 in the historical schedule.
+
+### In-page navigation
+
+- Article links to sections on the same page now scroll smoothly, like
+  the table of contents. Direct links on a fresh page load still jump
+  to the section, and reduced-motion preferences still take priority.
 
 ## 2026-09-06
 

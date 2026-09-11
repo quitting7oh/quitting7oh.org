@@ -1,85 +1,114 @@
 ---
 title: "Mega-Dose Vitamin C"
-description: "High-dose vitamin C as a 7-OH and kratom-synthetic withdrawal adjunct: the community protocol, brands, and the cautions to know."
+description: "High-dose vitamin C may ease opioid withdrawal."
 category: "medications-supplements"
-last_updated: "2026-08-28"
+last_updated: "2026-09-11"
 sort: 4
 ---
 
-> **Talk to your prescriber first if** you have a history of kidney stones, kidney disease, hemochromatosis (iron overload), or are taking an iron supplement. High-dose vitamin C interacts with these conditions and the conversation has to happen.
+## A starting schedule
 
-Mega-dose vitamin C is an old harm-reduction tool for opioid withdrawal. [Research going back to the 1960s](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) suggests it can reduce withdrawal severity. It pairs with [Suboxone](/mat-suboxone/suboxone-for-7oh), [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), cold turkey with [helper meds](/medications-supplements/helper-meds), or any other path off the synthetics. It does not replace sleep, hydration, nutrition, or the rest of the supplement stack.
+<div class="vitamin-c-schedule not-prose">
+<p class="medicine">Liposomal vitamin C<span class="community">Community starting schedule<span class="gram-key">1 g = 1,000 mg</span></span></p>
+<p class="conditions"><a href="#dont-do-this-if">Read the cautions first</a> if you have kidney problems, iron overload, G6PD deficiency, or take iron supplements.</p>
+<section aria-label="Preload"><h3>Preload</h3>
+<p class="preload-note">Start 3 days before your quit date. Increase only if tolerated.</p><table class="dose-calendar" aria-label="Preload doses by time of day"><caption>Amount per dose</caption>
+<thead><tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Lunch</th><th scope="col">Evening</th></tr></thead>
+<tbody><tr><th scope="row">Day 1<small class="total">2 g daily total</small></th><td data-time="Morning"><span>1 g</span></td><td data-time="Lunch"><span class="empty" aria-label="No dose">—</span></td><td data-time="Evening"><span>1 g</span></td></tr>
+<tr><th scope="row">Day 2<small class="total">4 g daily total</small></th><td data-time="Morning"><span>2 g</span></td><td data-time="Lunch"><span class="empty" aria-label="No dose">—</span></td><td data-time="Evening"><span>2 g</span></td></tr>
+<tr><th scope="row">Day 3<small class="total">6 g daily total</small></th><td data-time="Morning"><span>2 g</span></td><td data-time="Lunch"><span>2 g</span></td><td data-time="Evening"><span>2 g</span></td></tr></tbody>
+</table></section><section class="acute" aria-label="Acute withdrawal"><h3>Acute withdrawal</h3>
+<p class="acute-main"><span><strong class="dose">2 g</strong> <span class="unit">per dose</span></span><span class="frequency">Every 2–3 waking hours.</span></p>
+<p class="example-label">Example at 2-hour intervals:</p>
+<div class="dayparts">
+<section aria-label="Morning doses"><h4>Morning</h4><ul class="clock-doses" role="list"><li data-hour="8">8 am<strong>2 g</strong></li><li data-hour="10">10 am<strong>2 g</strong></li></ul></section>
+<section aria-label="Afternoon doses"><h4>Afternoon</h4><ul class="clock-doses" role="list"><li data-hour="12">12 pm<strong>2 g</strong></li><li data-hour="14">2 pm<strong>2 g</strong></li><li data-hour="16">4 pm<strong>2 g</strong></li></ul></section>
+<section aria-label="Evening and night doses"><h4>Evening / night</h4><ul class="clock-doses" role="list"><li data-hour="18">6 pm<strong>2 g</strong></li><li data-hour="20">8 pm<strong>2 g</strong></li><li data-hour="22">10 pm<strong>2 g</strong></li></ul></section>
+</div>
+<section class="overnight" aria-label="Optional overnight doses">
+<div class="overnight-heading"><h4>Optional overnight</h4><span>Only if awake with symptoms.</span></div>
+<ul class="clock-doses" role="list"><li data-hour="24">12 am<strong>2 g</strong></li><li data-hour="26">2 am<strong>2 g</strong></li></ul>
+<p class="overnight-note">Skip if asleep. Keep doses at least 2 hours apart.</p>
+</section>
+<small class="total">Daily total: 16 g in this example; 18–20 g with 1–2 overnight doses.</small>
+<p class="starting-point">This is a starting point. People report relief at lower and higher doses.</p>
+</section><p class="after">Reduce your intake as symptoms ease.</p>
+<p class="stomach"><strong>Standard vitamin C (ascorbic acid)</strong> can cause diarrhea, nausea, and stomach cramps at these doses. Reduce or stop if you develop these symptoms with any form, including liposomal.</p>
+<p class="research">Researchers haven’t established the best liposomal dose for withdrawal. See <a href="#higher-doses-in-schausss-protocol">Schauss’s higher-dose protocol</a> for the historical schedule.</p>
+</div>
 
-## The protocol
+## Where to buy
 
-This page assumes you're using **liposomal vitamin C** from a reputable vendor (see [Reputable brands](#reputable-brands) below). The doses below are calibrated for liposomal absorption. Plain ascorbic acid hits a bowel-tolerance ceiling around 1 to 2 grams per dose where the rest causes diarrhea instead of benefit.
+Liposomal options:
 
-**Preload if you can.** Tissue saturation takes time. Starting at full dose the day withdrawal hits is playing catch-up.
+- **[LivOn Labs Lypo-Spheric Vitamin C](https://www.livonlabs.com/products/vitamin-c)** ([Amazon](https://www.amazon.com/dp/B000CD9XGC)). 1,000 mg packets.
+- **[Quicksilver Scientific Liquid Liposomal Vitamin C](https://www.quicksilverscientific.com/products/vitamin-c)** ([Amazon](https://www.amazon.com/dp/B0743JPDKN)). Liquid.
+- **[Aurora Nutrascience Mega-Liposomal Vitamin C](https://www.amazon.com/dp/B09S2G84CD)**. 3,000 mg packets.
 
-| Situation | Start when |
-| --- | --- |
-| Planned quit date | 3 days before |
-| Tapering off the synthetics | 1 to 2 weeks before, alongside the taper |
-| Already in withdrawal | Skip preload, start at full dose now |
+We have no affiliate relationship with these vendors. Buy elsewhere or choose another brand you trust.
 
-**Preload dosing (ramp up):**
+### If liposomal isn't accessible
 
-- Days 1 to 2: **2 grams** of liposomal C per day
-- Days 3 to 4: **4 to 6 grams** per day
-- From your quit day (or once you reach your target taper level): full protocol below
-
-**During acute withdrawal:**
-
-- **1 to 2 grams of liposomal C every 2 to 3 waking hours**
-- Total: 6 to 12 grams per day
-- No need to set overnight alarms; resume on waking
-- Severe stretches may take more (some readers run 15 to 30 grams per day; cost climbs fast)
-
-**Tapering off vitamin C:** once acute symptoms ease (typically days 5 to 7), step down to 1 to 3 grams per day. Hold at that maintenance level for a few weeks into [post-acute](/post-acute/paws-post-acute-withdrawal).
-
-## Reputable brands
-
-Liposomal-vitamin-C marketing is full of products that aren't actually liposomal. The three brands the community has converged on, each with verifiable phospholipid encapsulation:
-
-- **[LivOn Labs Lypo-Spheric Vitamin C](https://www.livonlabs.com/products/vitamin-c)** ([Amazon](https://www.amazon.com/dp/B000CD9XGC)). The original commercial liposomal C. 1,000 mg packets.
-- **[Quicksilver Scientific Liquid Liposomal Vitamin C](https://www.quicksilverscientific.com/products/vitamin-c)** ([Amazon](https://www.amazon.com/dp/B0743JPDKN)). Liquid format. Per-dose cost runs lower at higher daily totals.
-- **[Aurora Nutrascience Mega-Liposomal Vitamin C](https://www.amazon.com/dp/B09S2G84CD)** (Amazon-canonical; also on iHerb and Vitacost). 3,000 mg packets, useful at higher daily totals.
-
-We have no affiliate relationship with any of these vendors. Substitute brands you trust or buy elsewhere; the protocol is what matters.
-
-## Pair it with
-
-- **Vitamin E.** The 2000 Evangelou study used C + E together as antioxidants (~5 mg E per kg body weight per day).
-- **Magnesium glycinate.** For restless legs, sleep, and anxiety. See [Helper Medications](/medications-supplements/helper-meds).
-- **Electrolytes.** Megadosing increases urination; replace what you lose.
-- **The rest of the supplement stack.** L-tyrosine, NAC, B-complex, omega-3. See [Vitamins & Supplements](/medications-supplements/vitamins-supplements).
-
-## Don't do this if
-
-- **You have a history of kidney stones or kidney disease.** High-dose vitamin C raises oxalate excretion, which is a stone-formation risk factor. Buffered forms (sodium ascorbate) are gentler if you proceed, but the prescriber conversation has to happen first.
-- **You have hemochromatosis or take an iron supplement.** Vitamin C sharply increases iron absorption.
-- **You have G6PD deficiency.** Rare, but high-dose vitamin C can trigger hemolysis in this group.
-
-High-dose vitamin C can also interfere with glucose, occult-blood, and other lab tests. Tell your doctor if bloodwork is coming up.
-
-## If liposomal isn't accessible
-
-Buffered ascorbate powders (sodium ascorbate, calcium ascorbate) cost a fraction of liposomal per gram and raise the bowel-tolerance ceiling above plain ascorbic acid. Absorption is lower than liposomal, so daily totals trend higher to reach equivalent effect.
+Buffered powders cost less. Schauss used sodium ascorbate, a buffered form of vitamin C. Some people tolerate these less acidic forms better, though high doses can still cause diarrhea.
 
 - **[NOW Foods Sodium Ascorbate Powder](https://www.nowfoods.com/products/supplements/sodium-ascorbate-powder)** ([Amazon](https://www.amazon.com/dp/B000MGOX1E))
 - **[NutriBiotic Sodium Ascorbate Powder](https://www.nutribiotic.com/sodium-ascorbate-powder.html)** ([Amazon](https://www.amazon.com/dp/B000Z8YM7O))
 
-DIY liposomal (sodium ascorbate + lecithin + blender) is cheaper still, with less reliable absorption than commercial liposomal. Recipes are widely available online.
+## Pair it with
+
+Vitamin C can be an adjunct alongside [Suboxone](/mat-suboxone/suboxone-for-7oh), [tapering with leaf](/medications-supplements/quit-7-oh-with-kratom-leaf), or cold turkey with [helper meds](/medications-supplements/helper-meds).
+
+- **Vitamin E.** The 2000 Evangelou study used C + E together as antioxidants (~5 mg E per kg body weight per day).
+- **Magnesium glycinate.** For restless legs, sleep, and anxiety. See [Helper Medications](/medications-supplements/helper-meds).
+- **Electrolytes.** Replace losses from sweating, vomiting, or diarrhea during withdrawal.
+- **The rest of the supplement stack.** L-tyrosine, NAC, B-complex, omega-3. See [Vitamins & Supplements](/medications-supplements/vitamins-supplements).
+
+## Don't do this if
+
+- **You have a history of kidney stones or kidney disease.** High-dose vitamin C can increase urinary oxalate, a concern for stone formation and kidney injury. Discuss this risk with your prescriber before trying it. Buffering does not establish kidney safety.
+- **You have hemochromatosis or take an iron supplement.** Vitamin C sharply increases iron absorption.
+- **You have G6PD deficiency.** Rare, but high-dose vitamin C can trigger hemolysis in this group.
+
+These doses exceed the [adult upper intake level of 2 grams per day](https://www.ncbi.nlm.nih.gov/books/NBK225483/pdf/Bookshelf_NBK225483.pdf#page=186). Medical use above it calls for clinician oversight of kidney and iron-related risks.
+
+High-dose vitamin C can also interfere with glucose, occult-blood, and other lab tests. Tell your doctor if bloodwork is coming up.
+
+If you use 7-OH or opioids with other substances, get professional medical supervision for withdrawal. [FindTreatment.gov](https://findtreatment.gov/) lists treatment services.
+
+## Higher doses in Schauss's protocol
+
+Schauss used **sodium ascorbate** in a small heroin-withdrawal pilot, with nurses adjusting doses. His [2012 paper (PDF page 5)](https://isom.ca/wp-content/uploads/2013/01/Attenuation-of-Heroin-Withdrawl-Syndrome-by-the-Administration-of-High-Dose-Vitamin-C-27.4.pdf#page=5) gives this schedule:
+
+<div class="vitamin-c-history">
+
+| Day | Sodium ascorbate per dose | Daytime frequency |
+| --- | --- | --- |
+| <span class="history-day-wide">Day 1: first preload day</span><span class="history-day-compact">Day 1<small>Preload</small></span> | <span class="history-dose-wide">0.5 to 1 gram</span><span class="history-dose-compact">0.5–1 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 4–8 g</small> |
+| <span class="history-day-wide">Day 2</span><span class="history-day-compact">Day 2<small>Preload</small></span> | <span class="history-dose-wide">1 to 2.5 grams</span><span class="history-dose-compact">1–2.5 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 8–20 g</small> |
+| <span class="history-day-wide">Day 3: final preload day</span><span class="history-day-compact">Day 3<small>Preload</small></span> | <span class="history-dose-wide"><strong>5 to 7.5 grams</strong></span><span class="history-dose-compact">5–7.5 g <span class="per-dose">per dose</span></span> | Every 3 hours until bedtime<small class="history-total">Daily total: 25–37.5 g<span>With 2 overnight: 35–52.5 g</span></small><span class="withdrawal-start">Withdrawal began at bedtime.</span> |
+| <span class="history-day-wide">Day 4</span><span class="history-day-compact">Day 4</span> | <span class="history-dose-wide">2.5 to 5 grams</span><span class="history-dose-compact">2.5–5 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 20–40 g<span>With 2 overnight: 25–50 g</span></small> |
+| <span class="history-day-wide">Day 5</span><span class="history-day-compact">Day 5</span> | <span class="history-dose-wide">1 to 2.5 grams</span><span class="history-dose-compact">1–2.5 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 8–20 g<span>With 2 overnight: 10–25 g</span></small> |
+| <span class="history-day-wide">Day 6</span><span class="history-day-compact">Day 6</span> | <span class="history-dose-wide">1 gram</span><span class="history-dose-compact">1 g <span class="per-dose">per dose</span></span> | Every 2 hours until bedtime<small class="history-total">Daily total: 8 g<span>With 2 overnight: 10 g</span></small> |
+
+<p class="history-math">Calculated examples for 8 am–10 pm: 8 daytime doses, or 5 on day 3. Overnight totals add 2 doses.</p>
+
+</div>
+
+Participants drank each dose in six ounces of a half-juice, half-water mix. On nights 3 to 6, the protocol called for that day's dose every two hours while awake if withdrawal symptoms occurred, until they eased.
+
+The [2020 review](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) lists **7 grams per dose** at the upper end; Schauss's original paper lists **7.5 grams**. Researchers have not validated this historical schedule for liposomal vitamin C or 7-OH withdrawal.
 
 ## Research support
 
-The original protocol comes from [Alexander Schauss in 1969](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/), at a Harlem heroin-withdrawal facility, using high-dose sodium ascorbate.
+Schauss's historical pilot is the source of the higher-dose schedule [described above](#higher-doses-in-schausss-protocol). His observations suggest possible benefit, but an open-label pilot cannot separate the supplement's effects from expectations and other care.
 
-The most-cited follow-up is [Evangelou et al., 2000](https://pubmed.ncbi.nlm.nih.gov/10836211/): heroin-dependent inpatients received 300 mg/kg/day of vitamin C plus vitamin E. 10 to 16 percent of the treated group reported major withdrawal symptoms, versus 56.6 percent of the control group. Half the vitamin C group reported a 60-percent-or-greater reduction in symptoms.
+[Evangelou and colleagues (2000)](https://pubmed.ncbi.nlm.nih.gov/10836211/) studied 70 men with heroin dependence. The researchers gave 30 inpatients and 10 outpatients **300 mg/kg/day of vitamin C plus 5 mg/kg/day of vitamin E** for at least four weeks. For a 70 kg adult, that vitamin C amount equals 21 grams per day. The treated inpatients also received diazepam and an analgesic; 30 control inpatients received conventional medication without the added vitamins. Major withdrawal occurred in 10 to 16.6 percent of the vitamin-treated groups, versus 56.6 percent of controls. The combination treatment prevents us from attributing the result to vitamin C alone.
 
-[A 2020 PMC review](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) summarized the earlier work: "One-third of 60 patients reported that 70% or more of their acute withdrawal symptoms abated when taking buffered vitamin C during the active detox phase; half reported at least 60% relief of symptoms."
+The [2020 review](https://pmc.ncbi.nlm.nih.gov/articles/PMC7572147/) attributes a different result to Newmeyer and colleagues at the Haight-Ashbury Free Clinic: half of 60 participants reported at least 60 percent symptom relief with buffered vitamin C during detox from opiates or stimulants. That result comes from a separate report, not the Evangelou study.
 
-These studies are old and small. The work hasn't been replicated at modern scale, in part because vitamin C is unpatentable and there's no commercial driver. The evidence is suggestive, not definitive. Many readers in this community find it helpful; some don't.
+Some liposomal forms [absorb better](https://link.springer.com/article/10.1007/s00394-024-03487-8), but researchers haven't established matching withdrawal doses for liposomal and buffered vitamin C.
+
+These small studies suggest possible benefit. Researchers have not established the best dose for 7-OH withdrawal or a maintenance dose for [post-acute withdrawal](/post-acute/paws-post-acute-withdrawal).
 
 ## Probable mechanisms
 

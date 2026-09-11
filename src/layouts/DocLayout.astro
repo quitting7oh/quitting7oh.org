@@ -122,16 +122,25 @@ const { prev, next } = await getPrevNext(currentPath);
 </BaseLayout>
 
 <script>
-  // TOC clicks are reader-initiated navigation, so let them animate. Hash
+  // Same-page content and TOC links animate when the reader clicks them. Hash
   // stabilization below is reserved for initial loads, history navigation,
   // and layout shifts after hydration.
   document.addEventListener('click', (event) => {
-    if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     const clicked = event.target instanceof Element ? event.target : null;
-    const anchor = clicked?.closest('nav[aria-label="Table of contents"] a[href^="#"]');
+    const anchor = clicked?.closest('article a[href], nav[aria-label="Table of contents"] a[href]');
     if (!(anchor instanceof HTMLAnchorElement)) return;
+    if (anchor.classList.contains('heading-anchor') || anchor.hasAttribute('download')) return;
+    if (anchor.target && anchor.target.toLowerCase() !== '_self') return;
 
-    const hash = anchor.getAttribute('href');
+    const destination = new URL(anchor.href);
+    if (
+      destination.origin !== window.location.origin ||
+      destination.pathname !== window.location.pathname ||
+      destination.search !== window.location.search
+    ) return;
+
+    const hash = destination.hash;
     if (!hash || hash === '#') return;
     let id = hash.slice(1);
     try {
