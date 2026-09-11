@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-09-06"
+last_updated: "2026-09-11"
 sort: 6
 ---
 
@@ -13,6 +13,17 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-09-11
+
+### Vitamin C dosing and study context
+
+- Clarified that the vitamin C schedule is a community starting point,
+  with lower doses than Schauss's historical protocol. Added the 7-gram
+  per-dose figure from the review and the 7.5-gram upper end in his paper.
+- Removed the unsupported liposomal dose conversion, corrected the
+  attribution of symptom-relief results, and clarified study limitations
+  and cautions for larger doses.
 
 ## 2026-09-06
 
