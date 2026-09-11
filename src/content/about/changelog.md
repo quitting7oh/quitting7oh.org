@@ -16,6 +16,12 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-11
 
+### Homepage search overlay
+
+- Homepage search results now float below the input without moving
+  the content beneath it. Click outside, move focus away, or press
+  Escape to dismiss the panel; return to the input to reopen it.
+
 ### Ban-page dates and comment deadline
 
 - Kept month names intact in the ban timeline instead of splitting

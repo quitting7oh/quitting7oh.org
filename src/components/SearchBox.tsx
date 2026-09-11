@@ -235,11 +235,14 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   const [type, setType] = React.useState<SearchResultType | ''>('');
   const [pageReady, setPageReady] = React.useState(false);
   const inputRef = React.useRef<HTMLInputElement>(null);
+  const embeddedRef = React.useRef<HTMLDivElement>(null);
   const requestRef = React.useRef(0);
   const resultsId = React.useId();
   const debounced = useDebouncedValue(query);
   const isPage = variant === 'page';
+  const isInline = variant === 'inline';
   const isEmbedded = variant === 'inline' || variant === 'hero' || isPage;
+  const resultsVisible = Boolean(query.trim()) && (!isInline || open);
   const resultLimit = isPage ? 60 : variant === 'header' ? 8 : 6;
 
   const warmIndex = React.useCallback(() => {
@@ -284,6 +287,17 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   }, [isEmbedded, warmIndex]);
 
   React.useEffect(() => {
+    if (!isInline || !open) return;
+    const dismissOutside = (event: PointerEvent) => {
+      if (event.target instanceof Node && !embeddedRef.current?.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('pointerdown', dismissOutside);
+    return () => document.removeEventListener('pointerdown', dismissOutside);
+  }, [isInline, open]);
+
+  React.useEffect(() => {
     const trimmed = debounced.trim();
     if (!trimmed) {
       setResponse(EMPTY_RESPONSE);
@@ -310,7 +324,24 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       });
   }, [category, debounced, resultLimit, type]);
 
+  React.useEffect(() => {
+    if (!isInline || !resultsVisible || status !== 'ready') return;
+    const panel = document.getElementById(resultsId);
+    const active = document.getElementById(`${resultsId}-result-${activeIndex}`);
+    if (!panel || !active) return;
+    const top = active.offsetTop;
+    const bottom = top + active.offsetHeight;
+    if (top < panel.scrollTop) panel.scrollTop = top;
+    else if (bottom > panel.scrollTop + panel.clientHeight) panel.scrollTop = bottom - panel.clientHeight;
+  }, [activeIndex, isInline, resultsId, resultsVisible, response, status]);
+
   const navigate = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (isInline && !open && query.trim() && (event.key === 'ArrowDown' || event.key === 'ArrowUp')) {
+      event.preventDefault();
+      setOpen(true);
+      setActiveIndex(event.key === 'ArrowUp' ? Math.max(0, response.results.length - 1) : 0);
+      return;
+    }
     if (event.key === 'ArrowDown' && response.results.length) {
       event.preventDefault();
       setActiveIndex((index) => (index + 1) % response.results.length);
@@ -319,11 +350,11 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       event.preventDefault();
       setActiveIndex((index) => (index - 1 + response.results.length) % response.results.length);
     }
-    if (event.key === 'Enter' && response.results[activeIndex]) {
+    if (event.key === 'Enter' && resultsVisible && response.results[activeIndex]) {
       event.preventDefault();
       window.location.href = response.results[activeIndex].url;
     }
-    if (event.key === 'Escape' && isEmbedded && query) {
+    if (event.key === 'Escape' && isEmbedded && !isInline && query) {
       event.preventDefault();
       setQuery('');
     }
@@ -335,8 +366,17 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       type="text"
       inputMode="search"
       value={query}
-      onFocus={warmIndex}
-      onChange={(event) => setQuery(event.target.value)}
+      onFocus={() => {
+        warmIndex();
+        if (isInline) setOpen(true);
+      }}
+      onClick={() => {
+        if (isInline) setOpen(true);
+      }}
+      onChange={(event) => {
+        setQuery(event.target.value);
+        if (isInline) setOpen(true);
+      }}
       onKeyDown={navigate}
       placeholder={placeholder ?? 'Search the guide'}
       autoComplete="off"
@@ -344,16 +384,29 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       aria-label="Search all pages"
       role="combobox"
       aria-autocomplete="list"
-      aria-expanded={Boolean(query.trim())}
-      aria-controls={resultsId}
-      aria-activedescendant={response.results[activeIndex] ? `${resultsId}-result-${activeIndex}` : undefined}
+      aria-expanded={resultsVisible}
+      aria-controls={isInline && !resultsVisible ? undefined : resultsId}
+      aria-activedescendant={resultsVisible && response.results[activeIndex] ? `${resultsId}-result-${activeIndex}` : undefined}
       className={className}
     />
   );
 
   if (isEmbedded) {
     return (
-      <div className={cn(isPage && 'w-full')}>
+      <div
+        ref={embeddedRef}
+        className={cn(isPage && 'w-full', isInline && 'relative')}
+        onBlur={(event) => {
+          if (isInline && !event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+        }}
+        onKeyDown={(event) => {
+          if (isInline && event.key === 'Escape') {
+            event.preventDefault();
+            inputRef.current?.focus();
+            setOpen(false);
+          }
+        }}
+      >
         <div className={cn(
           'flex items-center gap-3 border border-border bg-card text-left shadow-sm transition-colors focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/15',
           isPage ? 'h-16 rounded-xl px-4 sm:px-5' : 'h-14 rounded-xl px-4 sm:px-5',
@@ -396,21 +449,26 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
           </div>
         )}
 
-        <SearchResults
-          activeIndex={activeIndex}
-          className={cn(isPage ? 'mt-5' : 'mt-2 max-h-[min(30rem,62dvh)] overflow-y-auto rounded-xl border border-border bg-popover shadow-xl')}
-          onActiveIndexChange={setActiveIndex}
-          onQueryChange={(nextQuery) => {
-            setQuery(nextQuery);
-            inputRef.current?.focus();
-          }}
-          query={query}
-          response={response}
-          resolvedQuery={resolvedQuery}
-          resultsId={resultsId}
-          status={status}
-          variant={isPage ? 'page' : 'embedded'}
-        />
+        {(!isInline || open) && (
+          <SearchResults
+            activeIndex={activeIndex}
+            className={cn(
+              isPage ? 'mt-5' : 'mt-2 max-h-[min(30rem,62dvh)] overflow-y-auto rounded-xl border border-border bg-popover shadow-xl',
+              isInline && 'absolute inset-x-0 top-full z-30',
+            )}
+            onActiveIndexChange={setActiveIndex}
+            onQueryChange={(nextQuery) => {
+              setQuery(nextQuery);
+              inputRef.current?.focus();
+            }}
+            query={query}
+            response={response}
+            resolvedQuery={resolvedQuery}
+            resultsId={resultsId}
+            status={status}
+            variant={isPage ? 'page' : 'embedded'}
+          />
+        )}
       </div>
     );
   }
