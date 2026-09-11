@@ -1139,6 +1139,10 @@
     box-shadow: 0 12px 30px -30px hsl(var(--foreground) / 0.6);
   }
 
+  .prose-recovery .ban-timeline :is(th, td):first-child {
+    overflow-wrap: normal;
+  }
+
   .responsive-table__scroll {
     max-width: 100%;
     overflow-x: auto;
