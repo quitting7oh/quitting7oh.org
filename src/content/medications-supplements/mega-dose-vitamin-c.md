@@ -62,7 +62,7 @@ If you use 7-OH or opioids with other substances, get professional medical super
 
 ## Higher doses in Schauss's protocol
 
-Schauss used **sodium ascorbate** in a small heroin-withdrawal pilot, with nurses adjusting doses. His [2012 paper, page 193](https://isom.ca/wp-content/uploads/2013/01/Attenuation-of-Heroin-Withdrawl-Syndrome-by-the-Administration-of-High-Dose-Vitamin-C-27.4.pdf), gives this schedule:
+Schauss used **sodium ascorbate** in a small heroin-withdrawal pilot, with nurses adjusting doses. His [2012 paper (PDF page 5)](https://isom.ca/wp-content/uploads/2013/01/Attenuation-of-Heroin-Withdrawl-Syndrome-by-the-Administration-of-High-Dose-Vitamin-C-27.4.pdf#page=5) gives this schedule:
 
 | Day | Sodium ascorbate per dose | Daytime frequency |
 | --- | --- | --- |

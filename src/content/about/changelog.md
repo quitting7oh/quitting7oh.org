@@ -26,7 +26,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   and cautions for larger doses.
 - Put the starting schedule and buying options first, with the three-day
   preload timing in the dosing table. Moved research details below them
-  and added Schauss's six-day schedule as a table.
+  and added Schauss's six-day schedule as a table. Linked the source to
+  PDF page 5, with the viewer's page number in the citation.
 - Brought the dosing table higher on the page by shortening the subtitle,
   removing the repeated intro, and replacing the caution panel with a
   linked sentence. Added a short callout below the table about stomach
