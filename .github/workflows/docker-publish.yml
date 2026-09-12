@@ -56,6 +56,9 @@ jobs:
         # the pinned release keeps CI on the same tool as contributors.
         run: npm install -g npm@12.0.2
 
+      - name: Test ban-status updater against the current page
+        run: node --test scripts/test-ban-status.mjs
+
       - name: Build the site
         run: |
           npm ci --no-audit --no-fund

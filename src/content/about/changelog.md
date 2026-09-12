@@ -14,6 +14,16 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-09-12
+
+### Ban-status updates
+
+- Fixed the daily status refresh after the comment-period wording changed.
+  Added checks against the current page and validation before either file
+  changes, so a text mismatch leaves both dates intact.
+- Added the September 12 total of 35,946 submissions received. We update
+  that total by hand; the automated count covers posted comments.
+
 ## 2026-09-11
 
 ### Homepage search overlay
