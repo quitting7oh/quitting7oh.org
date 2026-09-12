@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "sync:changelog": "node scripts/sync-site-changelog.mjs",
+    "test:ban-status": "node --test scripts/test-ban-status.mjs",
     "test:search": "node --experimental-strip-types scripts/test-search.mts",
     "build:og": "node scripts/build-og-image.mjs",
     "link:compounds": "node scripts/link-compounds.mjs",

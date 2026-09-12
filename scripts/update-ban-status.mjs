@@ -16,7 +16,8 @@
  * 2. Refreshes the posted-comment count for docket HHS-OASH-2026-0232
  *    from the regulations.gov API (REGSGOV_API_KEY env var). Count
  *    failures are non-fatal: the date bump rests on the Federal
- *    Register check, not the count.
+ *    Register check, not the count. The submissions-received total is
+ *    maintained by hand; this API only exposes posted comments.
  * 3. Rewrites the as-of dates in SchedulingBanner.astro and
  *    src/content/compounds/7-oh-ban.md, plus the page's last_updated.
  *
@@ -189,8 +190,6 @@ banner = mustReplaceAll(
   2,
   'banner as-of lines (mobile + desktop variants)',
 );
-fs.writeFileSync(BANNER, banner);
-
 let page = fs.readFileSync(PAGE, 'utf8');
 page = mustReplace(
   PAGE,
@@ -224,11 +223,13 @@ if (postedCount !== null) {
   page = mustReplace(
     PAGE,
     page,
-    /As of [A-Z][a-z]+ \d+,\n(\[the docket\]\([^)]+\)\n)shows [\d,]+ comments posted/,
-    `As of ${monthDay},\n$1shows ${postedCount.toLocaleString('en-US')} comments posted`,
+    /As of [A-Z][a-z]+ \d+,\n(\[the docket\]\([^)]+\)\n)showed [\d,]+ comments posted/,
+    `As of ${monthDay},\n$1showed ${postedCount.toLocaleString('en-US')} comments posted`,
     'posted-comment count',
   );
 }
+// Validate every replacement before writing either file.
+fs.writeFileSync(BANNER, banner);
 fs.writeFileSync(PAGE, page);
 
 console.log(`Updated banner and ban page to ${monthDayYear}.`);

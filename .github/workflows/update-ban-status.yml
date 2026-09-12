@@ -66,6 +66,9 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
+      - name: Test ban-status updater against the current page
+        run: node --test scripts/test-ban-status.mjs
+
       - name: Re-verify and update
         env:
           REGSGOV_API_KEY: ${{ secrets.REGSGOV_API_KEY }}

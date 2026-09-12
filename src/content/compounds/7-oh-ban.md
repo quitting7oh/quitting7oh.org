@@ -2,7 +2,7 @@
 title: "The Federal 7-OH Ban: Dates, Scope, What It Means"
 description: "Pseudo, MGM-15, and MGM-16 are Schedule I as of August 26, 2026. The 7-OH threshold order is still pending. Dates, scope, the closed comment period, and what to do if you're still using."
 category: "compounds"
-last_updated: "2026-09-11"
+last_updated: "2026-09-12"
 sort: 0
 ---
 
@@ -180,6 +180,9 @@ comments submitted**.
 As of September 11,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
 showed 30,346 comments posted.
+
+<!-- Update this total and its date by hand. The API only exposes posted comments. -->
+The docket reported **35,946 submissions received** on September 12, 2026.
 
 The scope did not change with the extension. OASH asked two questions
 only:
