@@ -235,6 +235,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   const [type, setType] = React.useState<SearchResultType | ''>('');
   const [pageReady, setPageReady] = React.useState(false);
   const inputRef = React.useRef<HTMLInputElement>(null);
+  const triggerRef = React.useRef<HTMLAnchorElement>(null);
   const embeddedRef = React.useRef<HTMLDivElement>(null);
   const requestRef = React.useRef(0);
   const resultsId = React.useId();
@@ -480,6 +481,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
     }}>
       <DialogPrimitive.Trigger asChild>
         <a
+          ref={triggerRef}
           href="/search"
           onPointerEnter={warmIndex}
           onFocus={warmIndex}
@@ -502,6 +504,10 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
           onOpenAutoFocus={(event) => {
             event.preventDefault();
             window.setTimeout(() => inputRef.current?.focus(), 0);
+          }}
+          onCloseAutoFocus={(event) => {
+            event.preventDefault();
+            triggerRef.current?.focus({ preventScroll: true });
           }}
         >
           <DialogPrimitive.Title className="sr-only">Search quitting7oh.org</DialogPrimitive.Title>

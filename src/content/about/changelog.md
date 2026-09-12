@@ -18,6 +18,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Homepage search overlay
 
+- Closing the header search popup keeps your place on the page.
 - Homepage search results now float below the input without moving
   the content beneath it. Click outside, move focus away, or press
   Escape to dismiss the panel; return to the input to reopen it.
