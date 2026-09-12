@@ -397,7 +397,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
         ref={embeddedRef}
         className={cn(isPage && 'w-full', isInline && 'relative')}
         onBlur={(event) => {
-          if (isInline && !event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+          if (isInline && event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) setOpen(false);
         }}
         onKeyDown={(event) => {
           if (isInline && event.key === 'Escape') {
