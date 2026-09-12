@@ -2,19 +2,26 @@
 import { X } from 'lucide-react';
 
 const PAGE_URL = '/compounds/7-oh-ban';
+// Updated by scripts/update-ban-status.mjs after checking the Federal Register.
+const LAST_CHECKED = '2026-09-12';
+const lastCheckedLabel = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(LAST_CHECKED));
 ---
 
 <aside aria-label="Federal scheduling status" data-scheduling-banner class="relative bg-signal/12 pt-[env(safe-area-inset-top)] text-foreground">
   <a
     href={PAGE_URL}
-    class="flex min-h-11 items-center justify-center gap-2 px-3 py-2 pr-14 text-center text-[0.82rem] leading-snug hover:bg-signal/8 min-[820px]:px-14 min-[820px]:text-sm"
+    class="flex min-h-11 items-center justify-center gap-2 px-3 py-2 pr-14 text-left text-sm leading-snug hover:bg-signal/8 min-[820px]:px-14 min-[820px]:text-center"
   >
     <span class="size-2 shrink-0 rounded-full bg-signal" aria-hidden="true"></span>
-    <span class="line-clamp-2 text-muted-foreground">
-      <span class="font-semibold text-foreground">Ban status:</span>
-      <span class="min-[820px]:hidden"> As of September 12, 7-OH is not banned. Pseudo, MGM-15, and MGM-16 are.</span>
-      <span class="hidden min-[820px]:inline">
-        &nbsp;As of September 12, 7-OH is not banned. Pseudo, MGM-15, and MGM-16 are. Schedule I for those three took effect August 26&nbsp;&rarr;
+    <span class="min-w-0 text-foreground">
+      <span class="font-semibold">Federal bans:</span>{' '}
+      Proposed for <span class="whitespace-nowrap">7-OH.</span> In effect for pseudo and <span class="whitespace-nowrap">MGM-15.</span>{' '}
+      <span class="whitespace-nowrap text-muted-foreground">
+        <time datetime={LAST_CHECKED}>Last checked {lastCheckedLabel}</time> &rarr;
       </span>
     </span>
   </a>

@@ -29,12 +29,15 @@ function fixture(t, { drift = false } = {}) {
   const read = () => [bannerPath, pagePath].map((file) => fs.readFileSync(path.join(cwd, file), 'utf8'));
   return {
     read,
-    run({ unreviewed = false, countUnavailable = false, withoutKey = false } = {}) {
+    editBanner(transform) {
+      fs.writeFileSync(path.join(cwd, bannerPath), transform(read()[0]));
+    },
+    run({ unreviewed = false, countUnavailable = false, withoutKey = false, now = '2099-01-02T12:00:00Z' } = {}) {
       // Run the unmodified updater against real files, with only the clock and APIs replaced.
       const preload = `
         const NativeDate = Date;
         globalThis.Date = class extends NativeDate {
-          constructor(...args) { super(...(args.length ? args : ['2099-01-02T12:00:00Z'])); }
+          constructor(...args) { super(...(args.length ? args : [${JSON.stringify(now)}])); }
         };
         globalThis.fetch = async (url) => {
           if (url.startsWith('https://www.federalregister.gov/api/v1/documents.json?')) {
@@ -73,7 +76,9 @@ test('refreshes the current ban page with past-tense comment wording', (t) => {
   const result = f.run();
   assert.equal(result.status, 0, result.stderr);
   const [banner, page] = f.read();
-  assert.equal(banner.match(/As of January 2, 7-OH is not banned\./g)?.length, 2);
+  assert.match(banner, /^const LAST_CHECKED = '2099-01-02';$/m);
+  assert.match(banner, /Federal bans:/);
+  assert.match(banner.replace(/<[^>]*>/g, ''), /Proposed for 7-OH\. In effect for pseudo and MGM-15\./);
   assert.match(page, /last_updated: "2099-01-02"/);
   assert.match(page, /Last verified against primary sources on January 2, 2099\./);
   assert.match(page, /As of January 2, 2099, 7-OH is not banned\./);
@@ -119,8 +124,66 @@ for (const options of [{ countUnavailable: true }, { withoutKey: true }]) {
     const result = f.run(options);
     assert.equal(result.status, 0, result.stderr);
     const [banner, page] = f.read();
-    assert.equal(banner.match(/As of January 2, 7-OH is not banned\./g)?.length, 2);
+    assert.match(banner, /^const LAST_CHECKED = '2099-01-02';$/m);
     assert.match(page, /last_updated: "2099-01-02"/);
     assert.ok(page.includes(count));
   });
 }
+
+for (const kind of ['missing', 'duplicate']) {
+  test(`leaves both files untouched when the banner date is ${kind}`, (t) => {
+    const f = fixture(t);
+    assert.equal(f.run().status, 0);
+    f.editBanner((banner) => banner.replace(
+      "const LAST_CHECKED = '2099-01-02';",
+      kind === 'missing' ? '' : "const LAST_CHECKED = '2099-01-02';\nconst LAST_CHECKED = '2099-01-02';",
+    ));
+    const before = f.read();
+    // Even today's date must not bypass the banner's structural checks.
+    const result = f.run();
+    assert.equal(result.status, 1, result.stderr);
+    assert.match(result.stderr, /Expected 1 match\(es\).*banner last-checked date/);
+    assert.deepEqual(f.read(), before);
+  });
+}
+
+test('refreshes the same month and day in a new year', (t) => {
+  const f = fixture(t);
+  assert.equal(f.run().status, 0);
+  const result = f.run({ now: '2100-01-02T12:00:00Z' });
+  assert.equal(result.status, 0, result.stderr);
+  const [banner, page] = f.read();
+  assert.match(banner, /^const LAST_CHECKED = '2100-01-02';$/m);
+  assert.match(page, /last_updated: "2100-01-02"/);
+});
+
+test('refreshes the date without depending on or overwriting banner wording', (t) => {
+  const f = fixture(t);
+  const wording = 'Fixture editorial copy independent of the date.';
+  f.editBanner((banner) => banner.replace(
+    'Proposed for ', wording,
+  ));
+  assert.ok(f.read()[0].includes(wording));
+  const result = f.run();
+  assert.equal(result.status, 0, result.stderr);
+  const [banner, page] = f.read();
+  assert.match(banner, /^const LAST_CHECKED = '2099-01-02';$/m);
+  assert.ok(banner.includes(wording));
+  assert.match(page, /last_updated: "2099-01-02"/);
+});
+
+test('uses the New York calendar day for both the banner and page', (t) => {
+  const f = fixture(t);
+  assert.equal(f.run().status, 0);
+  const before = f.read();
+  const sameDay = f.run({ now: '2099-01-03T03:00:00Z' });
+  assert.equal(sameDay.status, 0, sameDay.stderr);
+  assert.match(sameDay.stdout, /verification-only run/);
+  assert.deepEqual(f.read(), before);
+
+  const nextDay = f.run({ now: '2099-01-03T05:00:00Z' });
+  assert.equal(nextDay.status, 0, nextDay.stderr);
+  const [banner, page] = f.read();
+  assert.match(banner, /^const LAST_CHECKED = '2099-01-03';$/m);
+  assert.match(page, /last_updated: "2099-01-03"/);
+});

@@ -18,6 +18,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Ban-status updates
 
+- Reworded the federal ban banner to distinguish the proposed 7-OH ban
+  from the bans in effect for pseudo and MGM-15. Labeled the
+  verification date and kept the full text visible on phones.
+- Separated the banner's automated date from its wording. Added checks
+  for missing or duplicate dates, year changes, and the New York day boundary.
 - Fixed the daily status refresh after the comment-period wording changed.
   Added checks against the current page and validation before either file
   changes, so a text mismatch leaves both dates intact.
