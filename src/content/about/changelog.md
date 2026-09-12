@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-09-11"
+last_updated: "2026-09-12"
 sort: 6
 ---
 
@@ -15,6 +15,13 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-09-11
+
+### Homepage search overlay
+
+- Homepage search results now float below the input without moving
+  the content beneath it. Click outside, move focus away, or press
+  Escape to dismiss the panel; return to the input to reopen it.
+  Result links stay clickable when a browser doesn't focus them.
 
 ### Ban-page dates and comment deadline
 
