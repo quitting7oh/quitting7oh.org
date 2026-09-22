@@ -120,7 +120,6 @@ export function LiveMeetingSuggestion() {
       </a>
       <span className="col-start-2 row-start-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-bold text-primary sm:col-end-4 sm:row-start-2 sm:text-xs">
         <a href="/virtual-na-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Browse NA</a>
-        <a href="/virtual-smart-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Find a SMART meeting</a>
         <span className="font-medium text-muted-foreground">NA runs virtually 24/7</span>
       </span>
     </div>

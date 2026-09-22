@@ -25,6 +25,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Removed SMART meetings from live suggestions and retired the daily
   collector. Updated navigation and search descriptions; NA and kratom
   support meeting tools remain available.
+- Removed links to the retired SMART finder from the homepage and meeting
+  cards.
 
 ## 2026-09-12
 

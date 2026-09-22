@@ -145,7 +145,6 @@ export function LiveGeneralMeetingFallback({ now }: { now: Date }) {
 
       <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-bold text-primary">
         <a href="/virtual-na-meetings-now" className="hover:underline">Browse all NA meetings</a>
-        <a href="/virtual-smart-meetings-now" className="hover:underline">Find a SMART meeting</a>
       </div>
     </aside>
   );
