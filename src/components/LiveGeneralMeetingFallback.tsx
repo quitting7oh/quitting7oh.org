@@ -2,19 +2,14 @@ import * as React from 'react';
 import { ExternalLink, Radio } from 'lucide-react';
 import { useMeetingHistory } from '~/hooks/use-meeting-history';
 import {
-  chooseLiveMeetingForProvider,
+  chooseLiveMeeting,
   liveMeetingChoiceKey,
   type LiveMeetingChoice,
   type LiveMeetingIndex,
-  type LiveMeetingRecord,
 } from '~/lib/live-meeting-index';
 import { meetingHistoryKey, recordMeetingJoin } from '~/lib/meeting-history';
 
-const SESSION_KEY_PREFIX = 'quitting7oh:next-page-live-choice:v1';
-
-function providerName(provider: LiveMeetingRecord['provider']): string {
-  return provider === 'NA' ? 'Narcotics Anonymous' : 'SMART Recovery';
-}
+const SESSION_KEY = 'quitting7oh:next-page-live-choice:v1:NA';
 
 function remainingLabel(choice: LiveMeetingChoice, now: Date): string {
   if (choice.fallback || !choice.end) return 'Always open';
@@ -24,21 +19,20 @@ function remainingLabel(choice: LiveMeetingChoice, now: Date): string {
 
 function choiceFromSession(
   index: LiveMeetingIndex,
-  provider: LiveMeetingRecord['provider'],
   now: Date,
 ): LiveMeetingChoice | null {
   let preferred: string | null = null;
   try {
-    preferred = window.sessionStorage.getItem(`${SESSION_KEY_PREFIX}:${provider}`);
+    preferred = window.sessionStorage.getItem(SESSION_KEY);
   } catch {
     // A random live choice still works when session storage is unavailable.
   }
 
-  const choice = chooseLiveMeetingForProvider(index, provider, now, preferred);
+  const choice = chooseLiveMeeting(index, now, preferred);
   if (choice) {
     try {
       window.sessionStorage.setItem(
-        `${SESSION_KEY_PREFIX}:${provider}`,
+        SESSION_KEY,
         liveMeetingChoiceKey(choice),
       );
     } catch {
@@ -60,7 +54,7 @@ function MeetingOption({ choice, now }: { choice: LiveMeetingChoice; now: Date }
   return (
     <article className="flex min-w-0 flex-col rounded-xl border border-border bg-card p-4 sm:p-5">
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-[0.08em] text-primary">
-        <span>{providerName(meeting.provider)}</span>
+        <span>Narcotics Anonymous</span>
         <span className="text-muted-foreground" aria-hidden="true">·</span>
         <span className="text-muted-foreground">{remainingLabel(choice, now)}</span>
         {joined && <span className="normal-case tracking-normal">Previously joined</span>}
@@ -92,7 +86,8 @@ function MeetingOption({ choice, now }: { choice: LiveMeetingChoice; now: Date }
 
 export function LiveGeneralMeetingFallback({ now }: { now: Date }) {
   const [index, setIndex] = React.useState<LiveMeetingIndex | null>(null);
-  const [choices, setChoices] = React.useState<LiveMeetingChoice[] | null>(null);
+  const [choice, setChoice] = React.useState<LiveMeetingChoice | null>(null);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     let cancelled = false;
@@ -105,7 +100,7 @@ export function LiveGeneralMeetingFallback({ now }: { now: Date }) {
         if (!cancelled) setIndex(nextIndex);
       })
       .catch(() => {
-        if (!cancelled) setChoices([]);
+        if (!cancelled) setLoading(false);
       });
     return () => {
       cancelled = true;
@@ -114,12 +109,8 @@ export function LiveGeneralMeetingFallback({ now }: { now: Date }) {
 
   React.useEffect(() => {
     if (!index) return;
-    setChoices(
-      (['NA', 'SMART'] as const).flatMap((provider) => {
-        const choice = choiceFromSession(index, provider, now);
-        return choice ? [choice] : [];
-      }),
-    );
+    setChoice(choiceFromSession(index, now));
+    setLoading(false);
   }, [index, now]);
 
   return (
@@ -133,24 +124,18 @@ export function LiveGeneralMeetingFallback({ now }: { now: Date }) {
             Need a meeting before the next 7-OH/kratom meeting?
           </h2>
           <p className="mt-1 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-            No KA or TIAWO meeting is live right now. These general recovery meetings are joinable now.
+            No KA or TIAWO meeting is live right now. You can check for a live NA meeting below.
           </p>
         </div>
       </div>
 
-      {choices === null ? (
+      {loading ? (
         <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">
-          Checking live NA and SMART meetings…
+          Checking live NA meetings…
         </p>
-      ) : choices.length > 0 ? (
-        <div className="mt-4 grid gap-3 sm:grid-cols-2" aria-live="polite">
-          {choices.map((choice) => (
-            <MeetingOption
-              key={liveMeetingChoiceKey(choice)}
-              choice={choice}
-              now={now}
-            />
-          ))}
+      ) : choice ? (
+        <div className="mt-4" aria-live="polite">
+          <MeetingOption choice={choice} now={now} />
         </div>
       ) : (
         <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">
@@ -160,7 +145,7 @@ export function LiveGeneralMeetingFallback({ now }: { now: Date }) {
 
       <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-bold text-primary">
         <a href="/virtual-na-meetings-now" className="hover:underline">Browse all NA meetings</a>
-        <a href="/virtual-smart-meetings-now" className="hover:underline">Browse all SMART meetings</a>
+        <a href="/virtual-smart-meetings-now" className="hover:underline">Find a SMART meeting</a>
       </div>
     </aside>
   );

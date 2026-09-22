@@ -12,10 +12,6 @@ import { useMeetingHistory } from '~/hooks/use-meeting-history';
 const TICK_MS = 60_000;
 const SESSION_KEY = 'quitting7oh:live-meeting-choice:v1';
 
-function providerLabel(provider: 'NA' | 'SMART'): string {
-  return provider === 'NA' ? 'Narcotics Anonymous' : 'SMART Recovery';
-}
-
 export function LiveMeetingSuggestion() {
   const [index, setIndex] = React.useState<LiveMeetingIndex | null>(null);
   const [now, setNow] = React.useState<Date | null>(null);
@@ -102,7 +98,7 @@ export function LiveMeetingSuggestion() {
           {joined && <span className="text-[0.68rem] uppercase tracking-[0.08em] text-primary">Previously joined</span>}
         </span>
         <span className="mt-0.5 block text-sm leading-snug text-muted-foreground">
-          {providerLabel(meeting.provider)} · {meeting.name}{fallback ? ' · always open' : ''}
+          Narcotics Anonymous · {meeting.name}{fallback ? ' · always open' : ''}
         </span>
       </span>
       <a
@@ -124,7 +120,7 @@ export function LiveMeetingSuggestion() {
       </a>
       <span className="col-start-2 row-start-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-bold text-primary sm:col-end-4 sm:row-start-2 sm:text-xs">
         <a href="/virtual-na-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Browse NA</a>
-        <a href="/virtual-smart-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Browse SMART</a>
+        <a href="/virtual-smart-meetings-now" className="inline-flex min-h-8 items-center hover:underline">Find a SMART meeting</a>
         <span className="font-medium text-muted-foreground">NA runs virtually 24/7</span>
       </span>
     </div>

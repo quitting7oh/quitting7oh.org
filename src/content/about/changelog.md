@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-09-12"
+last_updated: "2026-09-22"
 sort: 6
 ---
 
@@ -13,6 +13,18 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-09-21
+
+### SMART meeting finder retirement
+
+- Retired our SMART meeting finder because we can no longer refresh its
+  listings. The existing page now directs readers to the
+  [SMART Recovery meeting finder](https://meetings.smartrecovery.org/meetings/?meetingType=1)
+  for current times and join links.
+- Removed SMART meetings from live suggestions and retired the daily
+  collector. Updated navigation and search descriptions; NA and kratom
+  support meeting tools remain available.
 
 ## 2026-09-12
 

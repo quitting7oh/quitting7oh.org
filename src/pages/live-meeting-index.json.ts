@@ -1,9 +1,7 @@
 import naBundle from '~/data/na-meetings.generated.json';
-import smartBundle from '~/data/smart-meetings.generated.json';
 import type {
   LiveMeetingIndex,
   LiveNaMeeting,
-  LiveSmartMeeting,
 } from '~/lib/live-meeting-index';
 
 export const prerender = true;
@@ -26,23 +24,6 @@ export function GET(): Response {
       timezone: meeting.timezone,
     }));
 
-  const smart = smartBundle.meetings
-    .filter(
-      (meeting) =>
-        meeting.program === '4-Point Recovery' &&
-        meeting.audiences.length === 1 &&
-        meeting.audiences[0] === 'Adults' &&
-        isWebJoin(meeting.pathminderUrl),
-    )
-    .map<LiveSmartMeeting>((meeting) => ({
-      provider: 'SMART',
-      id: meeting.id,
-      name: meeting.name,
-      joinUrl: meeting.pathminderUrl,
-      platform: 'SMART Online',
-      utcStart: meeting.utcStart,
-    }));
-
   const featuredNa: LiveNaMeeting | null = naBundle.featured && isWebJoin(naBundle.featured.joinUrl)
     ? {
         provider: 'NA',
@@ -62,7 +43,8 @@ export function GET(): Response {
     generatedAt: new Date().toISOString(),
     featuredNa,
     na,
-    smart,
+    // Older cached clients still read this array.
+    smart: [],
   };
 
   return new Response(JSON.stringify(body), {
