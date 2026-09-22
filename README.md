@@ -1,20 +1,165 @@
 <p align="center">
-  <img src="docs/assets/readme-banner.svg" alt="quitting7oh.org · A community field guide to recovery" width="1000">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme-banner-dark.svg">
+    <img src="docs/assets/readme-banner-light.svg" alt="quitting7oh.org · A community field guide to recovery" width="1200">
+  </picture>
 </p>
 
-# quitting7oh.org
+<h1 align="center">quitting7oh.org</h1>
 
-A community-written reference for people coming off 7-OH and kratom-derived
-synthetics, and for the people supporting them. Recovery guides, compound
-references, taper calculators, and meeting finders share one searchable site.
+<p align="center">
+  A community-written reference for people coming off 7-OH and kratom-derived synthetics,<br>
+  and for the people supporting them. Recovery guides, compound references,<br>
+  taper calculators, and meeting finders share one searchable site.
+</p>
 
-[![Build and image status](https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/docker-publish.yml?branch=main&style=flat-square&label=build%20%26%20image)](https://github.com/quitting7oh/quitting7oh.org/actions/workflows/docker-publish.yml)
-[![NA meeting refresh status](https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/refresh-na-meetings.yml?branch=main&style=flat-square&label=NA%20meetings)](https://github.com/quitting7oh/quitting7oh.org/actions/workflows/refresh-na-meetings.yml)
-[![Ban-status verification](https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/update-ban-status.yml?branch=main&style=flat-square&label=ban%20status)](https://github.com/quitting7oh/quitting7oh.org/actions/workflows/update-ban-status.yml)
+<p align="center">
+  <a href="https://quitting7oh.org"><strong>Visit the site ↗</strong></a> ·
+  <a href="#quick-start">Quick start</a> ·
+  <a href="#contributing">Contribute</a> ·
+  <a href="CHANGELOG.md">Changelog</a>
+</p>
 
-**[Visit the site](https://quitting7oh.org)** · [Quick start](#quick-start) ·
-[Code map](#code-map) · [Conventions](#conventions) ·
-[Agent policy](#agent-policy) · [Changelog](CHANGELOG.md)
+<p align="center">
+  <a href="https://github.com/quitting7oh/quitting7oh.org/actions/workflows/docker-publish.yml" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/docker-publish.yml?branch=main&amp;style=flat-square&amp;label=build%20%26%20image&amp;labelColor=332b25">
+      <img src="https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/docker-publish.yml?branch=main&amp;style=flat-square&amp;label=build%20%26%20image&amp;labelColor=706050" alt="Build and image status">
+    </picture>
+  </a>
+  <a href="https://github.com/quitting7oh/quitting7oh.org/actions/workflows/refresh-na-meetings.yml" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/refresh-na-meetings.yml?branch=main&amp;style=flat-square&amp;label=NA%20meetings&amp;labelColor=332b25">
+      <img src="https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/refresh-na-meetings.yml?branch=main&amp;style=flat-square&amp;label=NA%20meetings&amp;labelColor=706050" alt="NA meeting refresh status">
+    </picture>
+  </a>
+  <a href="https://github.com/quitting7oh/quitting7oh.org/actions/workflows/update-ban-status.yml" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/update-ban-status.yml?branch=main&amp;style=flat-square&amp;label=ban%20status&amp;labelColor=332b25">
+      <img src="https://img.shields.io/github/actions/workflow/status/quitting7oh/quitting7oh.org/update-ban-status.yml?branch=main&amp;style=flat-square&amp;label=ban%20status&amp;labelColor=706050" alt="Ban-status verification">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Astro-BC522E?style=for-the-badge&amp;logo=astro&amp;logoColor=white&amp;labelColor=332b25">
+      <img src="https://img.shields.io/badge/Astro-BC522E?style=for-the-badge&amp;logo=astro&amp;logoColor=white&amp;labelColor=706050" alt="Astro">
+    </picture>
+  </a>
+  <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/React-326E85?style=for-the-badge&amp;logo=react&amp;logoColor=white&amp;labelColor=332b25">
+      <img src="https://img.shields.io/badge/React-326E85?style=for-the-badge&amp;logo=react&amp;logoColor=white&amp;labelColor=706050" alt="React">
+    </picture>
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white&amp;labelColor=332b25">
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white&amp;labelColor=706050" alt="TypeScript">
+    </picture>
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Tailwind_CSS-287F8F?style=for-the-badge&amp;logo=tailwindcss&amp;logoColor=white&amp;labelColor=332b25">
+      <img src="https://img.shields.io/badge/Tailwind_CSS-287F8F?style=for-the-badge&amp;logo=tailwindcss&amp;logoColor=white&amp;labelColor=706050" alt="Tailwind CSS">
+    </picture>
+  </a>
+  <a href="https://lucaong.github.io/minisearch/" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/MiniSearch-607448?style=for-the-badge&amp;labelColor=332b25">
+      <img src="https://img.shields.io/badge/MiniSearch-607448?style=for-the-badge&amp;labelColor=706050" alt="MiniSearch">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/quitting7oh/quitting7oh.org/commits/main" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/last-commit/quitting7oh/quitting7oh.org/main?style=flat-square&amp;color=8a4d38&amp;labelColor=332b25">
+      <img src="https://img.shields.io/github/last-commit/quitting7oh/quitting7oh.org/main?style=flat-square&amp;color=8a4d38&amp;labelColor=706050" alt="Latest commit on main">
+    </picture>
+  </a>
+  <a href="https://github.com/quitting7oh/quitting7oh.org/graphs/contributors" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/contributors/quitting7oh/quitting7oh.org?style=flat-square&amp;color=607448&amp;labelColor=332b25">
+      <img src="https://img.shields.io/github/contributors/quitting7oh/quitting7oh.org?style=flat-square&amp;color=607448&amp;labelColor=706050" alt="Repository contributors">
+    </picture>
+  </a>
+  <a href="https://github.com/quitting7oh/quitting7oh.org/issues" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/issues/quitting7oh/quitting7oh.org?style=flat-square&amp;color=84704a&amp;labelColor=332b25">
+      <img src="https://img.shields.io/github/issues/quitting7oh/quitting7oh.org?style=flat-square&amp;color=84704a&amp;labelColor=706050" alt="Open issues">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://quitting7oh.org" target="_blank" rel="noopener noreferrer">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-read-dark.svg">
+    <img src="docs/assets/nav-read-light.svg" alt="Read the guide: guides, tools, and peer support" width="49%">
+  </picture>
+  </a>
+  <a href="#quick-start">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-start-dark.svg">
+    <img src="docs/assets/nav-start-light.svg" alt="Run it locally: install, build, and preview" width="49%">
+  </picture>
+  </a>
+  <br>
+  <a href="#code-map">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-code-dark.svg">
+    <img src="docs/assets/nav-code-light.svg" alt="Explore the code: routes, components, and conventions" width="49%">
+  </picture>
+  </a>
+  <a href="#agent-policy">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-agents-dark.svg">
+    <img src="docs/assets/nav-agents-light.svg" alt="Agent playbook: changelogs, page dates, and review" width="49%">
+  </picture>
+  </a>
+</p>
+
+## A look inside
+
+<table>
+  <tr><th>Desktop · Light</th><th>Desktop · Dark</th></tr>
+  <tr>
+    <td width="50%"><a href="docs/assets/site-desktop-light.jpg"><img src="docs/assets/site-desktop-light.jpg" alt="Desktop homepage in light mode" width="640"></a></td>
+    <td width="50%"><a href="docs/assets/site-desktop-dark.jpg"><img src="docs/assets/site-desktop-dark.jpg" alt="Desktop homepage in dark mode" width="640"></a></td>
+  </tr>
+</table>
+
+<details>
+<summary><strong>On your phone</strong> · Light and dark previews</summary>
+
+<table>
+  <tr><th>Mobile · Light</th><th>Mobile · Dark</th></tr>
+  <tr>
+    <td width="50%" align="center"><a href="docs/assets/site-mobile-light.jpg"><img src="docs/assets/site-mobile-light.jpg" alt="Mobile homepage in light mode" width="280"></a></td>
+    <td width="50%" align="center"><a href="docs/assets/site-mobile-dark.jpg"><img src="docs/assets/site-mobile-dark.jpg" alt="Mobile homepage in dark mode" width="280"></a></td>
+  </tr>
+</table>
+
+</details>
+
+Screenshots show the site in both themes. Click a preview to see the full image;
+meeting times and online counts reflect the capture, not a live feed.
+
+<details>
+<summary><strong>Find your way around this repository</strong></summary>
+
+| Build and explore | Contribute and maintain |
+| --- | --- |
+| [Quick start](#quick-start) | [Contributing](#contributing) |
+| [Code map](#code-map) | [Changelog rules](#changelog-updates) |
+| [Conventions](#conventions) | [Page dates](#page-dates) |
+| [Commands and checks](#commands-and-checks) | [Agent policy](#agent-policy) |
+
+</details>
 
 ## The site
 

@@ -24,6 +24,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   workflow, corrected local server ports, and documented build checks,
   generated files, automation, deployment, and agent requirements for
   changelogs, page dates, prose review, and push approval.
+- Added light and dark desktop and mobile screenshots, illustrated navigation
+  cards, stack badges, and live repository activity badges to the README.
 
 ### SMART meeting finder retirement
 
