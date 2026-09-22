@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">quitting7oh.org</title>
+  <desc id="desc">A community field guide to recovery. The Lift Cup mark on warm paper with burnt-clay accents.</desc>
+  <rect width="1200" height="300" rx="20" fill="#faf8f3"/>
+  <rect x="1" y="1" width="1198" height="298" rx="19" fill="none" stroke="#dad3c8" stroke-width="2"/>
+  <path d="M52 47H1148" stroke="#dad3c8"/>
+  <text x="52" y="33" fill="#665d57" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.5">COMMUNITY RECOVERY REFERENCE</text>
+  <text x="1148" y="33" text-anchor="end" fill="#665d57" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5">QUITTING7OH.ORG</text>
+  <rect x="52" y="81" width="118" height="118" rx="32" fill="#efe4dc"/>
+  <g transform="translate(59 88) scale(1.625)" fill="none" stroke-width="8" stroke-linecap="round">
+    <path d="M20 33 V39 a12 12 0 0 0 24 0 V33" stroke="#29221e"/>
+    <path d="M32 37 V14" stroke="#8a4d38"/>
+    <path d="M23 24 L32 11 L41 24" stroke="#8a4d38" stroke-linejoin="round"/>
+  </g>
+  <text x="208" y="147" fill="#29221e" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-2">quitting<tspan fill="#8a4d38">7</tspan>oh<tspan fill="#665d57" font-size="35" font-weight="400" letter-spacing="0">.org</tspan></text>
+  <text x="211" y="185" fill="#665d57" font-family="Arial, Helvetica, sans-serif" font-size="22">A community field guide to recovery.</text>
+  <path d="M52 231H1148" stroke="#dad3c8"/>
+  <text x="52" y="266" fill="#8a4d38" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1">GUIDES</text>
+  <circle cx="140" cy="261" r="2" fill="#aaa094"/>
+  <text x="163" y="266" fill="#8a4d38" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1">REFERENCE</text>
+  <circle cx="291" cy="261" r="2" fill="#aaa094"/>
+  <text x="314" y="266" fill="#8a4d38" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1">CALCULATORS</text>
+  <circle cx="465" cy="261" r="2" fill="#aaa094"/>
+  <text x="488" y="266" fill="#8a4d38" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1">MEETINGS</text>
+  <circle cx="993" cy="261" r="4" fill="#61775d"/>
+  <text x="1007" y="266" fill="#665d57" font-family="Arial, Helvetica, sans-serif" font-size="14">Community-written</text>
+</svg>
