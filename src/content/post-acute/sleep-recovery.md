@@ -24,6 +24,7 @@ The full sleep recovery curve looks roughly like this:
 ## What helps
 
 **Sleep hygiene basics matter more here than in normal life:**
+
 - Consistent bedtime and wake time, even on weekends
 - No screens 30-60 minutes before bed (blue light blocks melatonin)
 - Cool room (65-68°F is the research-backed sweet spot)

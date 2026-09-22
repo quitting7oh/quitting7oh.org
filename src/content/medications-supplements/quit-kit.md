@@ -14,6 +14,7 @@ A note on naming: there are at least two similarly-named products in this space,
 Quit Kit and QuitK are **commercial supplement stacks** marketed specifically for kratom, [7-OH](/compounds/7-oh), and opioid withdrawal. They come as morning and nighttime capsule packs, typically taken for several weeks before and during a taper. Both products are made of well-known recovery supplements bundled into convenient pre-packed doses.
 
 **Common ingredients (varies by product):**
+
 - **Magnesium glycinate**: anxiety, sleep, restless legs
 - **L-tyrosine**: dopamine precursor, helps motivation and anhedonia
 - **L-theanine**: calming without sedation
@@ -30,12 +31,14 @@ This is a **reasonable formulation.** Most of these ingredients have at least so
 ## The tradeoff
 
 **The case for buying it:**
+
 - Convenient, especially in the haze of acute withdrawal when assembling a stack feels overwhelming
 - Pre-dosed so you don't have to measure individual supplements
 - One purchase instead of 8-12 separate bottles
 - Some users report it helped them get through
 
 **The case against:**
+
 - **Significantly more expensive than building it yourself** (roughly 2× the cost of an equivalent DIY stack, see the cost breakdown below).
 - Doses for individual ingredients aren't always optimal, proprietary blends can hide actual amounts of each compound.
 - You can't adjust if one ingredient causes side effects (e.g., 5-HTP being problematic if you're on antidepressants).
@@ -49,6 +52,7 @@ A commercial kit runs roughly **$50-75/month**. Sourcing the equivalent ingredie
 For the full per-supplement breakdown (doses, brand recommendations, when to add what, what to skip), see **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**, that page is the primary home for the DIY stack and the supplements covered here.
 
 ## What we don't recommend
+
 A few specific concerns about both Quit Kit and QuitK:
 
 - **5-HTP is in some of these products** and can interact dangerously with antidepressants (SSRIs, SNRIs, MAOIs, tramadol), risk of serotonin syndrome. If you're on any psychiatric medication, check the ingredient list carefully or build your own stack and skip 5-HTP.
@@ -57,6 +61,7 @@ A few specific concerns about both Quit Kit and QuitK:
 - **Marketing language** ("backed by science," "12-in-1," etc.) is essentially supplement industry standard. The supplements work because of what they are, not because they're packaged as a "kit."
 
 ## Bottom line
+
 If you can afford it and convenience matters more than cost, the commercial kits are a reasonable starting point. The ingredients are evidence-supported and people in this community have used them to get through withdrawal.
 
 If you're cost-conscious, want full control, or have any prescription medications, **building your own stack is straightforward and significantly cheaper**, see **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)** for the full per-supplement guide.

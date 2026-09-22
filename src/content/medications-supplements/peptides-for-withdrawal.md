@@ -24,7 +24,7 @@ sort: 8
 Peptides are short chains of amino acids that act as signaling molecules in the body. The five most commonly discussed in opioid-withdrawal contexts:
 
 | Peptide | Common route | Used for | Key caveat |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **BPC-157** | Subcutaneous injection (oral exists, debated absorption) | GI symptoms, gut healing, inflammation, tissue recovery | WADA-banned since 2022; theoretical cancer-promotion concern (see safety section) |
 | **Selank** | Intranasal | Anxiety, including withdrawal-related | Approved in Russia, not FDA-approved; clinical evidence mostly Russian-language |
 | **Semax** | Intranasal | Cognitive symptoms, mood, attention | Approved in Russia for post-stroke recovery; no Western validation in addiction populations |
@@ -57,7 +57,7 @@ PAWS, the months-long stretch of anxiety, sleep disruption, cognitive fog, anhed
 Ranges from community sources and, where they exist, from the small human-trial literature. Doses vary widely between practitioners and over time.
 
 | Peptide | Community-discussed range | Source quality |
-|---|---|---|
+| --- | --- | --- |
 | **BPC-157** | 200 to 500 mcg/day subcutaneous, often in 4 to 8 week cycles | Community/vendor protocol pages; no human dose-ranging trial |
 | **Selank** | 250 to 500 mcg intranasal, 2 to 3 times daily (Russian GAD protocol: 300 to 900 mcg three times daily, 14 days, as 0.15% nasal drops) | Russian trial protocol for GAD; addiction-population range is extrapolated |
 | **Semax** | 200 to 600 mcg/day intranasal for cognitive use; 2 to 3 mg/day for stroke (Russian) | Stroke dose is trial-derived; nootropic dose is community |
@@ -91,7 +91,7 @@ The supply-chain-quality difference between these channels is large, and it matt
 Approximate ranges; insurance does not cover peptide therapy.
 
 | Source | Range |
-|---|---|
+| --- | --- |
 | Compounded through telehealth clinic | A few hundred dollars per month for single-peptide protocols; substantially more for multi-peptide stacks |
 | Compounding pharmacy with prescriber | Similar to above without telehealth markup |
 | Gray-market "research chemical" supplier | Substantially cheaper; per-mg cost may be a fraction of compounded |

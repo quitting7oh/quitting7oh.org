@@ -20,7 +20,7 @@ brands, and the *why* behind each one.
 | **Electrolytes** (LMNT, etc.) | Throughout day | Hydration, fatigue, the "shaky" feeling |
 | **B-complex** (methylated) | Morning | Energy, mood, nervous-system function |
 | **Vitamin D3 + K2** | Daily | Mood regulation, baseline deficiency |
-| **Omega-3 (EPA/DHA)** | Daily, with food| Dopamine support, inflammation |
+| **Omega-3 (EPA/DHA)** | Daily, with food | Dopamine support, inflammation |
 
 ### Add if sleep is a problem
 
@@ -76,6 +76,8 @@ of the edge off.
 
 > **Don't want to assemble it yourself?** Pre-packaged commercial kits like [Quit Kit & QuitK](/medications-supplements/quit-kit) bundle many of these supplements into morning/night packs. More expensive than building it yourself, but the convenience matters in early withdrawal.
 
+<!-- Separate callouts. -->
+
 > **A note on the Amazon links below.** Products linked throughout the deep dives are **starting points** at the doses recommended, well-reviewed brands at fair prices, verified in stock at the time of last update. **We are not Amazon affiliates and earn nothing from clicks or purchases.** Substitute brands you already trust, buy elsewhere, or skip Amazon entirely; the supplements matter, not where you get them.
 
 ## Foundational support (most people benefit, low risk)
@@ -91,6 +93,7 @@ Magnesium citrate works too but is more likely to cause loose stools.
 Skip magnesium oxide (poorly absorbed).
 
 **Common Amazon picks (glycinate, ~200 mg dose):**
+
 - [Nature Made Magnesium Glycinate 200 mg, 180 ct](https://www.amazon.com/dp/B08XXHCGZT), $16.79, 4.6★ (21,088 reviews); matches the recommended dose exactly.
 - [Nature's Bounty High Absorption Magnesium Glycinate 240 mg](https://www.amazon.com/dp/B0DT1JKGPH), $15.97, 4.7★ (5,196 reviews); Amazon's Choice.
 - [Pure Encapsulations Magnesium Glycinate](https://www.amazon.com/dp/B07P5K7DQP), $27.00, 4.7★ (47,986 reviews); premium, third-party tested.
@@ -103,6 +106,7 @@ Cheap and well-tolerated. GI upset (loose stools) at higher doses is the
 main thing to watch for, which is the argument for the next bullet.
 
 **Common Amazon picks (pure 1,000 mg, no rose hips / additions):**
+
 - [Amazon Elements Vitamin C 1,000 mg, 300 tablets](https://www.amazon.com/dp/B07122C9VC), $13.99, 4.8★ (22,455 reviews); cheapest per gram.
 - [Pure Encapsulations Ascorbic Acid Capsules 1,000 mg](https://www.amazon.com/dp/B000GX7E8W), $22.50, 4.8★ (2,467 reviews); Amazon's Choice, hypoallergenic.
 
@@ -131,6 +135,7 @@ can make a noticeable difference in how you feel.
 [Harm reduction resources consistently recommend 2 to 3 liters of fluid daily during withdrawal](https://www.southjerseyrecovery.com/opioids/vitamins-supplements-opioid-withdrawal/).
 
 **Common Amazon picks:**
+
 - [LMNT Zero Sugar Variety Pack Bundle, 18-count](https://www.amazon.com/dp/B0FTGJGPTM), $26.91, 4.6★ (767 reviews); good for figuring out which flavors you tolerate.
 - [LMNT Zero Sugar Raspberry Salt, 30 packets](https://www.amazon.com/dp/B07SH31T9V), $45.00, 4.6★ (6,174 reviews); bulk single-flavor once you've picked a favorite.
 
@@ -141,6 +146,7 @@ and they're involved in neurotransmitter production. Helps with energy,
 mood, and nervous system function during recovery.
 
 **Common Amazon picks (methylated forms):**
+
 - [Thorne Basic B Complex](https://www.amazon.com/dp/B00HST919C), $27.00, 4.7★ (4,365 reviews); Amazon's Choice, fully methylated, NSF tested.
 - [Pure Encapsulations B-Complex Plus](https://www.amazon.com/dp/B00JYFN6DU), $42.00, 4.7★ (10,906 reviews); premium methylated formulation.
 
@@ -151,6 +157,7 @@ Get tested if you can; otherwise 2000 to 5000 IU daily is a common
 range. Talk to a doctor about dosing if you haven't had levels checked.
 
 **Common Amazon picks (5,000 IU D3 + K2 MK-7):**
+
 - [Bronson D3 5,000 IU + K2 MK-7](https://www.amazon.com/dp/B0779M341X), $9.97, 4.7★ (39,893 reviews); cheapest of the well-reviewed options.
 - [Sports Research Vitamin D3 + K2 (coconut oil)](https://www.amazon.com/dp/B07255MPRN), $23.95, 4.7★ (53,554 reviews); highest review count in the category.
 - [Micro Ingredients D3 + K2, 300 softgels](https://www.amazon.com/dp/B07RX4P4RL), $28.99, 4.7★ (30,285 reviews); Amazon's Choice, larger bottle.
@@ -161,12 +168,14 @@ and chronic opioid use depletes omega-3 stores. Supports mood and reduces
 inflammation.
 
 **Common Amazon pick:**
+
 - [Nordic Naturals Ultimate Omega](https://www.amazon.com/dp/B0739KKHWL), $33.30, 4.7★ (58,508 reviews); Amazon's Choice and the de-facto category default. Higher EPA/DHA per softgel than most cheaper brands; third-party tested.
 
 **Rhodiola rosea** at 200 to 400 mg in the morning. Adaptogen for
 fatigue, mood, and stress tolerance. Avoid if you have bipolar disorder.
 
 **Common Amazon picks:**
+
 - [Bronson Rhodiola Rosea](https://www.amazon.com/dp/B0BYK8WYT4), $8.99, 4.5★ (6,410 reviews); cheapest of the well-reviewed options.
 - [NOW Supplements Rhodiola 500 mg](https://www.amazon.com/dp/B005P0U7TY), $17.99, 4.5★ (2,943 reviews); established brand at a typical dose.
 - [Gaia Herbs Rhodiola Rosea](https://www.amazon.com/dp/B00HGA994K), $49.49, 4.6★ (1,436 reviews); Amazon's Choice, premium herbalist brand.
@@ -177,6 +186,7 @@ Avoid if you have hyperthyroidism or autoimmune conditions without
 checking with a doctor.
 
 **Common Amazon picks (KSM-66 standardization preferred):**
+
 - [Nutricost KSM-66 Ashwagandha 600 mg](https://www.amazon.com/dp/B079K32QB6), $14.95, 4.6★ (3,898 reviews); Amazon's Choice, lowest price for KSM-66.
 - [Youtheory Ashwagandha KSM-66](https://www.amazon.com/dp/B07TWS9XVN), $16.79, 4.6★ (5,581 reviews); highest review count in the KSM-66 category.
 - [NOW Foods KSM-66 Ashwagandha, 90 caps](https://www.amazon.com/dp/B0DHWGVVT2), $19.10, 4.7★ (1,126 reviews); established brand.
@@ -191,6 +201,7 @@ and
 Probably the most universally tolerated calming supplement on this list.
 
 **Common Amazon picks (200 mg capsules):**
+
 - [Nature's Trove L-Theanine 200 mg, 120 ct](https://www.amazon.com/dp/B01D1YQBOK), $9.98, 4.6★ (27,082 reviews); Amazon's Choice, best value.
 - [Nutricost L-Theanine 200 mg, 240 ct](https://www.amazon.com/dp/B0731JC54K), $19.95, 4.6★ (12,593 reviews); larger size, lower per-cap cost.
 - [NOW Foods L-Theanine 200 mg with Inositol](https://www.amazon.com/dp/B00GQV9YX6), $20.97, 4.7★ (7,233 reviews); established brand, slightly different formula.
@@ -200,6 +211,7 @@ the "very safe" category. Can also be taken during the day for mild
 calming.
 
 **Common Amazon picks (powder form, cheaper per gram):**
+
 - [NOW Foods Glycine Pure Powder](https://www.amazon.com/dp/B0013OVZJW), $17.40, 4.6★ (2,158 reviews); established brand.
 - [BulkSupplements Glycine Powder](https://www.amazon.com/dp/B00EOXU0N6), $22.97, 4.4★ (4,121 reviews); Amazon's Choice, bulk pricing.
 - [Nutricost Glycine Powder, 1 lb](https://www.amazon.com/dp/B09F83CPX8), $21.95, 4.7★ (1,464 reviews); strong rating, 1 lb bag.
@@ -214,6 +226,7 @@ much. Lower doses are more effective for sleep onset and have fewer
 next-day effects.
 
 **Common Amazon picks (true low-dose options, most retail melatonin is 3–10 mg, way too high):**
+
 - [Natrol Fast Dissolve Melatonin 1 mg](https://www.amazon.com/dp/B00C3Q5JVE), $6.97, 4.7★ (16,918 reviews); Amazon's Choice, the easiest-to-find true low-dose option.
 - [Life Extension Melatonin 1 mg](https://www.amazon.com/dp/B000LVFIX2), $4.39, 4.6★ (693 reviews); cheapest 1 mg option from a reputable brand.
 
@@ -234,6 +247,7 @@ hyperthyroidism, or are on MAOIs.** Don't take in the evening (can
 disrupt sleep).
 
 **Common Amazon picks (500 mg capsules):**
+
 - [NOW Supplements L-Tyrosine 500 mg](https://www.amazon.com/dp/B0013OUPSE), $10.40, 4.4★ (15,660 reviews); established brand, lowest price.
 - [Nutricost L-Tyrosine 500 mg, 180 ct](https://www.amazon.com/dp/B01AMSMDY0), $14.95, 4.4★ (5,823 reviews); Amazon's Choice.
 - [NOW Foods L-Tyrosine 500 mg, 300 ct](https://www.amazon.com/dp/B07HPD2K8K), $24.97, 4.6★ (2,102 reviews); bulk size for ongoing use.
@@ -244,6 +258,7 @@ disrupt sleep).
 Generally well-tolerated. Smells like sulfur, which is normal.
 
 **Common Amazon picks (600 mg capsules):**
+
 - [NOW NAC 600 mg, 100 ct](https://www.amazon.com/dp/B000MGWFWI), $12.70, 4.6★ (20,563 reviews); smaller pack from the category default brand.
 - [Nutricost NAC 600 mg, 120 ct](https://www.amazon.com/dp/B07984ZPVP), $12.95, 4.6★ (13,655 reviews); slightly larger pack at similar price.
 - [NOW NAC 600 mg, 250 ct](https://www.amazon.com/dp/B0013OUQ3S), $21.85, 4.6★ (20,563 reviews); Amazon's Choice, best per-cap price.
@@ -255,6 +270,7 @@ Generally well-tolerated. Smells like sulfur, which is normal.
 Don't take long-term at high doses (depletes copper).
 
 **Common Amazon picks (zinc picolinate, 30 mg):**
+
 - [Nutricost Zinc Picolinate 30 mg, 240 ct](https://www.amazon.com/dp/B09JTXHKM1), $18.95, 4.8★ (859 reviews); best per-capsule price.
 - [Thorne Zinc Picolinate 30 mg](https://www.amazon.com/dp/B0012ZQPKG), $20.00, 4.8★ (10,856 reviews); Amazon's Choice, NSF tested.
 - [Pure Encapsulations Zinc 30 mg](https://www.amazon.com/dp/B000H7Y9A8), $40.50, 4.8★ (14,675 reviews); premium, hypoallergenic.

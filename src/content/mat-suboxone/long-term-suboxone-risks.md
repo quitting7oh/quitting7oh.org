@@ -92,6 +92,7 @@ people don't notice it until they finally taper off and are surprised
 by how much color comes back.
 
 ## Suboxone withdrawal is real and often described as worse than what brought people to MAT in the first place
+
 This is the part that gets minimized by a lot of recovery resources, and it's the most important thing to understand if you're considering long-term use.
 
 Buprenorphine has [a half-life of 28 to 37 hours sublingually](https://www.columbusrecoverycenter.com/drugs/suboxone-addiction/withdrawal-detox/), which is much longer than most opioids people use recreationally. That means:
@@ -133,11 +134,13 @@ The longer you've been on it, the more it costs to come off. That's not a reason
   or active hepatitis. LFTs are reasonable to check annually.
 
 ## Practical implications
+
 None of this is a reason not to use Suboxone. **Suboxone keeps people out of active use, and that comes first.** Active opioid use disorder causes life havoc; Suboxone, on balance, doesn't. If you're in early recovery and the choice is "Suboxone or back to [7-OH](/compounds/7-oh)/[MGM-15](/compounds/mgm15)/whatever," Suboxone wins every time.
 
 What this *does* mean is that the casual framing of Suboxone as a benign, take-it-as-long-as-you-want-no-big-deal medication isn't accurate. Time on the medication is a real cost, and that cost compounds. The longer you're on it, the harder coming off becomes, and the more time you spend with whatever long-term effects show up for you.
 
 ## This community's posture
+
 This community leans toward **short, structured tapers** because of what's on this page. The reasoning:
 
 - **Less time on the medication = less withdrawal to come off of later.**

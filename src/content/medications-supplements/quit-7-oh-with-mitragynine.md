@@ -14,6 +14,7 @@ sort: 6
 > risks specific to this path.
 >
 > **The 90-second version:**
+>
 > - Mitragynine is a weaker partial mu-opioid agonist than 7-OH and
 >   has a much longer half-life. The substitution logic is the same
 >   general shape buprenorphine and methadone use: trade a stronger

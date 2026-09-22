@@ -10,6 +10,7 @@ If you're freaking out because bupe isn't doing what you thought it would: **you
 This community leans toward short-term tapers, so most of what's below is about **how to make bupe work well enough to get you through to the other side**, not about long-term maintenance.
 
 ## The big one: bupe doesn't touch the serotonergic and adrenergic side of withdrawal
+
 This is the part most people aren't told, and it's the single biggest reason Suboxone feels incomplete for our population.
 
 **[7-OH](/compounds/7-oh) and the related synthetics are not pure opioids.** Kratom's minor alkaloids (paynantheine, speciogynine, corynantheidine, and others) bind serotonin and adrenergic receptors **directly**. The peer-reviewed literature shows paynantheine and speciogynine bind 5-HT₁ₐ at low-nanomolar affinity (Ki ≈ 32 and 39 nM), with their liver metabolites acting as full 5-HT₁ₐ agonists ([León et al., *J Med Chem* 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/)). Corynantheidine binds α-1D adrenergic receptors selectively (Ki ≈ 42 nM) and mitragynine itself behaves as a low-efficacy α-2A agonist ([Obeng et al., *J Med Chem* 2020](https://pubmed.ncbi.nlm.nih.gov/31834797/); [Obeng et al., *Eur J Pharmacol* 2024](https://pubmed.ncbi.nlm.nih.gov/39111419/)).
@@ -34,6 +35,7 @@ If any of this sounds like what you're experiencing on bupe, **bupe is doing its
 ## Adjuncts for the serotonergic and adrenergic piece
 
 Provider attitudes vary on which adjuncts they'll add; see the [telehealth providers comparison](/resources/telehealth-for-suboxone) if you need a prescriber who works with kratom/7-OH dependence.
+
 - **Clonidine.** Alpha-2 agonist. Takes the edge off the noradrenergic symptoms (sweating, anxiety, fast heart rate, restlessness). Most prescribers familiar with MAT will prescribe this on request.
 - **Hydroxyzine.** Non-addictive antihistamine that helps with anxiety and sleep without controlled-substance risk. Easy to get prescribed. **Caveat:** hydroxyzine is a first-generation antihistamine (H1 antagonist), and antihistamines have been associated with [worsening restless legs syndrome and may exacerbate other withdrawal symptoms in some people](https://pubmed.ncbi.nlm.nih.gov/27448465/). If you're already struggling with RLS, twitchy legs, or jumpy/agitated symptoms, hydroxyzine may make these worse rather than better. Worth trying carefully, but if you notice your legs getting worse after starting it, that's a known mechanism and a reason to switch to a different adjunct.
 - **Gabapentin.** Anxiety, restless legs, sleep, brain zaps. effective.
@@ -45,6 +47,7 @@ Provider attitudes vary on which adjuncts they'll add; see the [telehealth provi
 See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the full picture on supplement support.
 
 ## Dose: you might need more
+
 This is the second-biggest thing people don't get told. The "right" dose of bupe varies a lot between people, and **landing at too low a dose is one of the most common reasons bupe feels inadequate.**
 
 This community uses a low-and-slow induction (start at 2 mg, titrate up by 1 mg as needed) precisely because we don't want people parked at a higher dose than they need. But the flip side is also true: **if you're parked too low, the bupe isn't covering you, and that's a fixable problem.**
@@ -56,6 +59,7 @@ If you're at 2 mg and you're still feeling withdrawal symptoms throughout the da
 **The practical takeaway:** if you're struggling on bupe, before assuming the medication isn't working, check whether you're at a dose that covers you. Track when symptoms return relative to dosing. If they're returning hours before your next dose, talk to your prescriber about either a higher dose or splitting your daily dose into two smaller doses (morning and evening) to keep blood levels more stable.
 
 ## If you've been on long-acting synthetics or stacked compounds
+
 Most people in this community are coming off 7-OH, but if you've also been on **[MGM-15](/compounds/mgm15), or [pseudo](/compounds/mitragynine-pseudoindoxyl)**, the picture changes meaningfully:
 
 **[MGM-15](/compounds/mgm15)** is a [dual mu/delta receptor agonist](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/) (Matsumoto 2014 reports MOR Kᵢ 6.4 nM, DOR Kᵢ 16 nM). Buprenorphine is essentially mu-only and is a delta antagonist. The delta contribution to mood, analgesia, and overall opioid tone gets removed entirely when you switch off [MGM-15](/compounds/mgm15). This shows up as restlessness, anhedonia, low mood, and a persistent low-grade "off" feeling that lasts longer than 7-OH users typically experience. That's pharmacology, not your imagination. See [MGM-15](/compounds/mgm15) for the full breakdown, and [Depression and Anhedonia](/post-acute/depression-and-anhedonia) for the broader treatment picture for these symptoms.
@@ -71,6 +75,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 > **If standard induction itself failed**: precipitated withdrawal, couldn't wait long enough, or symptoms wouldn't stabilize regardless of dose, the [Bernese method (micro-induction)](/mat-suboxone/suboxone-bernese-method) is the alternative induction pathway for the long-acting compounds. Different mechanics: you keep your opioid going and ramp bup in over 5–10 days, instead of waiting in withdrawal and dosing larger at the bottom of the wait. Most clinical evidence is in fentanyl and methadone populations; the kratom-derivative experience is community-extrapolated rather than published. Bring it up with a prescriber if standard induction isn't a fit for your situation.
 
 ## Steps to take right now if Suboxone isn't working
+
 1. **Check the serotonergic/adrenergic piece first.** If you have any of the symptoms in the list above, that's where the problem is. Get clonidine, gabapentin, or trazodone added (see [Helper Medications](/medications-supplements/helper-meds) for the full menu, including the meds with RLS caveats).
 2. **Check your dose.** Are you covered, or parked too low? If symptoms return before your next dose, your dose is too low or you need to split it.
 3. **Be honest about what you were on.** If MGM-15, or pseudo were in the mix, the playbook changes.
@@ -79,6 +84,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 6. **Talk to the community.** People in our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) have lived through what you're going through with these specific compounds.
 
 ## When to seek emergency help
+
 - Severe symptoms that won't resolve and feel unmanageable
 - Any thoughts of self-harm or suicide. Call or text **911**.
 - Inability to keep down fluids for more than 24 hours
@@ -88,11 +94,13 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 None of those is giving up. They're tools.
 
 ## A note on patience
+
 The standard recovery resources tell you bupe will make you feel "back to normal" pretty quickly. For our population, that's not always true on the standard timeline. **The first few days are the hardest, and day 1 to 2 is when most people in this community quit.** That's exactly the window where bupe hasn't fully kicked in, your dose probably isn't optimized yet, and the serotonergic/adrenergic symptoms haven't responded to adjuncts that need a day or two to take effect. **Push through.** Adjuncts help. The right dose helps. By day 4 or 5 most people are in noticeably better shape than day 1 or 2.
 
 If you're approaching the end of your taper and still feel terrible, talk to your prescriber, and post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) for community input. There may be something specific to your situation worth troubleshooting.
 
 ## Sources
+
 - [León F, Obeng S, et al. Activity of *Mitragyna speciosa* ("Kratom") Alkaloids at Serotonin Receptors. *J Med Chem* 2021;64(18):13510–13523](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/), 5-HT₁ₐ/2 binding affinities for mitragynine vs. paynantheine and speciogynine; opioid-independent 5-HT₁ₐ antinociception
 - [Obeng S, et al. Investigation of the Adrenergic and Opioid Binding Affinities … of Selected Indole-Based Kratom Alkaloids. *J Med Chem* 2020;63(1):433–439](https://pubmed.ncbi.nlm.nih.gov/31834797/), α-1 / α-2 binding values, including corynantheidine at α-1D
 - [Obeng S, et al. The *Mitragyna speciosa* (kratom) alkaloid mitragynine: Analysis of adrenergic α2 receptor activity in vitro and in vivo. *Eur J Pharmacol* 2024;980:176863](https://pubmed.ncbi.nlm.nih.gov/39111419/), mitragynine as a low-efficacy α-2A agonist

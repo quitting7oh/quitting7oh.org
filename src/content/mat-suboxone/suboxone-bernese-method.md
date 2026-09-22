@@ -28,7 +28,7 @@ Two community-used schedules, both built on the **BC 7-day** shape ([Suen et al.
 The difference is where you land on day 7. The **lower target (4 mg/day)** reflects the community's experience that 2 mg twice daily is often plenty for 7-OH dependence and lines up with the site's [low-and-slow dosing rationale](/mat-suboxone/suboxone-for-7oh). The **higher target (8 mg/day)** matches the published BC 7-day schedule and is what most prescribers will reach for by default. Either can be adjusted on day 7+ if symptoms aren't covered.
 
 | Day | Lower target (4 mg/day) | Higher target (8 mg/day) |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 0.5 mg once | 0.5 mg once |
 | 2 | 0.5 mg twice daily | 0.5 mg twice daily |
 | 3 | 0.5 mg twice daily | 1 mg twice daily |
@@ -52,7 +52,7 @@ The BC 7-day above is the most commonly used schedule. These are alternatives a 
 The method was first published as a [two-case report by Hammig et al. in *Subst Abuse Rehabil* 2016](https://pubmed.ncbi.nlm.nih.gov/27499655/) (full text at [Dove Press](https://www.dovepress.com/use-of-microdoses-for-induction-of-buprenorphine-treatment-with-overla-peer-reviewed-fulltext-article-SAR)). The Bern team had been using it clinically since around 2010 for **methadone-to-buprenorphine** transitions, which were notoriously hard with standard induction.
 
 | Day | Buprenorphine dose | 7-OH / synthetic dose |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 0.2 mg under the tongue, once | Continued unchanged |
 | 2 | 0.4 mg twice daily | Continued unchanged |
 | 3–7 | +0.4 mg/day each day, reaching ~3.4 mg | Continued unchanged |
@@ -64,7 +64,7 @@ Modern variants compress the 29-day schedule substantially; the BC 7-day above i
 ## How this compares to standard induction
 
 | | **Standard induction** | **Bernese (micro-induction)** |
-|---|---|---|
+| --- | --- | --- |
 | **Wait in withdrawal?** | Yes, until [COWS](/mat-suboxone/sows-cows-induction-guide) ≥ 12 (or SOWS ≥ 17) | No, you keep your 7-OH (or other synthetic) going |
 | **First buprenorphine dose** | 2 mg under the tongue | 0.2–0.5 mg under the tongue (or a transdermal patch) |
 | **Time to full coverage** | Hours, same day if induction succeeds | 5–10 days |

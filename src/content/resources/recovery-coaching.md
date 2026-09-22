@@ -59,7 +59,7 @@ prescriber. It's meant to run alongside a quitting path, not replace one.
 screening, community groups, and updates to the people you choose:
 
 | Feature | Frequency |
-|---|---|
+| --- | --- |
 | 1:1 peer coaching sessions | 1–3× weekly, by plan |
 | At-home toxicology screening | Weekly or more |
 | Breathalyzer monitoring | Daily, optional |

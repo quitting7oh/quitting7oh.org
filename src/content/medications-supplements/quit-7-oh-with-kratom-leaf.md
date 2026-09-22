@@ -22,9 +22,11 @@ The other taper-shaped path is tapering the concentrated 7-OH dose directly with
 > kratom-leaf finish.
 
 ## The pharmacology of why leaf works
+
 Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is the dominant alkaloid (up to 66% of total alkaloid content in Thai varieties), with 7-OH as a minor constituent (up to 2% of total alkaloid content)](https://en.wikipedia.org/wiki/Mitragynine). [Total alkaloid concentration in dried leaves ranges from 0.5 to 1.5%](https://en.wikipedia.org/wiki/Mitragynine).
 
 **Practical translation:**
+
 - A typical 1 gram dose of leaf powder contains roughly [10 to 18 mg of mitragynine and trace amounts of 7-OH (typically well under 1 mg per gram; leaf 7-OH content is reported up to about 0.04% by dry weight)](https://www.nature.com/articles/s41598-020-76119-w) depending on the strain and batch.
 - A 5 gram dose delivers around 50 to 90 mg mitragynine and a few mg of 7-OH at most.
 - Compared to concentrated 7-OH products (which can deliver 30+ mg of pure 7-OH per dose), leaf is dramatically less potent on the 7-OH dimension specifically.
@@ -32,6 +34,7 @@ Plain kratom leaf is a complex mixture of dozens of alkaloids. [Mitragynine is t
 [Mitragynine is a partial mu-opioid receptor agonist that, unlike morphine, does not activate the β-arrestin-2 respiratory depression pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/), and its withdrawal profile is generally milder than full agonist withdrawal. Mitragynine has a long human plasma half-life of [roughly 7 to 39 hours in single-dose studies, longer with repeated dosing](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/) (Huestis et al., 2024), which helps with tapering: blood levels stay relatively stable between doses.
 
 ## Strain selection
+
 Kratom strains vary in their mitragynine-to-7-OH ratio based on leaf maturity at harvest:
 
 - **Red vein** comes from the most mature leaves and has [higher 7-OH content](https://kratomspot.com/blog/the-ultimate-guide-to-red-kratom). More sedating, more opioid-like effects. **Most useful in early taper** when you're stepping down from concentrated 7-OH.
@@ -81,6 +84,7 @@ This is the same logic as Suboxone + helper meds (see [Why Suboxone Might Not Be
 See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for the full supplement protocol.
 
 **General approach for path 2:**
+
 - Same leaf-replacement and stabilization steps as Path 1
 - Add helper meds before you start the taper, not after symptoms appear
 - Expect higher leaf doses (often 5 to 8 grams per dose, 4 to 6 doses per day) due to higher dependence baseline
@@ -92,6 +96,7 @@ See [Vitamins & Supplements](/medications-supplements/vitamins-supplements) for 
 **Leaf kratom quality varies significantly between vendors.** Because alkaloid content varies between strains, batches, and even within the same harvest, **buying from a reputable vendor with batch-specific lab testing matters more here than for most supplements.**
 
 What to look for:
+
 - **Third-party Certificate of Analysis (COA)** for each batch, ideally from an ISO-certified lab. Reports should show mitragynine percentage, 7-OH percentage, heavy metals, and microbial safety.
 - **Recent COA dates.** [Reports older than six months are outdated](https://yourhealthmagazine.net/article/reviews/best-kratom-strains-for-energy-and-pain-in-2026-5-trusted-brands/).
 - **AKA (American Kratom Association) GMP certification** is one decent quality signal but not the only one.
@@ -102,6 +107,7 @@ What to look for:
 **Avoid "enhanced" leaf products.** Some products labeled as kratom leaf are leaf adulterated with concentrated extract or 7-OH. These defeat the purpose of tapering with leaf.
 
 ## Common mistakes
+
 - **Stopping 7-OH cold and then trying leaf to recover.** Start the leaf transition while you're still taking 7-OH, replace doses one at a time, then taper the leaf.
 - **Using too little leaf at the start.** If 3 grams isn't covering you, you need more. Undermedicating during the initial transition makes it harder, not easier.
 - **Taking leaf too frequently.** Mitragynine has a long half-life. Most users do well with 3 to 4 doses per day spaced 4 to 6 hours apart.
@@ -110,9 +116,11 @@ What to look for:
 - **Trying this at higher daily doses.** If you're at 500+ mg/day, leaf is unlikely to cover you adequately. Look at [Suboxone](/mat-suboxone/suboxone-for-7oh) instead.
 
 ## If leaf isn't working
+
 **That's not failure, it just means you need a different tool.** Suboxone or a clinical taper plan may be a better fit. Post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) to talk through options with people who've faced the same call. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
 
 ## Sources
+
 - [Mitragynine, Wikipedia](https://en.wikipedia.org/wiki/Mitragynine)
 - [Human Mitragynine PK study (PMC, 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934259/)
 - [Chemical composition of kratom (Nature)](https://www.nature.com/articles/s41598-020-76119-w)
