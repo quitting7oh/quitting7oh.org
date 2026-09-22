@@ -26,6 +26,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   changelogs, page dates, prose review, and push approval.
 - Added light and dark desktop and mobile screenshots, illustrated navigation
   cards, stack badges, and live repository activity badges to the README.
+  Matched MiniSearch badge spacing to the stack row and made navigation cards
+  wrap on phones with larger labels.
 
 ### SMART meeting finder retirement
 

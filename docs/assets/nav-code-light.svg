@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="120" viewBox="0 0 560 120" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="132" viewBox="0 0 560 132" role="img" aria-labelledby="title desc">
 <title id="title">Explore the code</title><desc id="desc">Routes, components, and conventions.</desc>
 <rect x="1" y="1" width="558" height="118" rx="14" fill="#faf8f3" stroke="#dad3c8" stroke-width="2"/>
 <rect x="20" y="28" width="64" height="64" rx="17" fill="#f2ece3"/>
 <path d="M8 5l-6 7 6 7M16 5l6 7-6 7M14 2l-4 20" transform="translate(36 44) scale(1.3)" fill="none" stroke="#8a4d38" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="106" y="50" fill="#29221e" font-family="Georgia, DejaVu Serif, serif" font-size="25" font-weight="700">Explore the code</text>
-<text x="107" y="80" fill="#665d57" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="16">Routes, components, and conventions</text>
-<text x="526" y="32" text-anchor="end" fill="#665d57" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="11" letter-spacing="1">03</text>
+<text x="106" y="50" fill="#29221e" font-family="Georgia, DejaVu Serif, serif" font-size="32" font-weight="700">Explore the code</text>
+<text x="107" y="80" fill="#665d57" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="25">Files and conventions</text>
 <path d="M499 74h24m-7-7 7 7-7 7" fill="none" stroke="#8a4d38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

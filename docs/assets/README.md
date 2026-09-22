@@ -6,7 +6,8 @@ and site previews. Keep the `-light` and `-dark` filename pairs together.
 | Asset | Source and size |
 | --- | --- |
 | `readme-banner-{light,dark}.svg` | Editable SVG, 1200 × 350. Uses the site's Lift Cup mark and Field Guide palette. |
-| `nav-{read,start,code,agents}-{light,dark}.svg` | Editable SVG, 560 × 120. The README supplies each card's link and alt text. |
+| `nav-{read,start,code,agents}-{light,dark}.svg` | Editable SVG, 560 × 132. The README supplies each card's link and alt text. |
+| `badge-minisearch-{light,dark}.svg` | Editable SVG, 142 × 28. A search icon, 32-pixel icon panel, and text padding matched to the stack badges. |
 | `site-desktop-{light,dark}.jpg` | Local production preview at a 1280 × 720 viewport, captured September 21, 2026. |
 | `site-mobile-{light,dark}.jpg` | Local production preview at a 390 × 844 viewport, captured September 21, 2026. |
 

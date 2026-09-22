@@ -68,8 +68,8 @@
   </a>
   <a href="https://lucaong.github.io/minisearch/" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/MiniSearch-607448?style=for-the-badge&amp;labelColor=332b25">
-      <img src="https://img.shields.io/badge/MiniSearch-607448?style=for-the-badge&amp;labelColor=706050" alt="MiniSearch">
+      <source media="(prefers-color-scheme: dark)" srcset="docs/assets/badge-minisearch-dark.svg">
+      <img src="docs/assets/badge-minisearch-light.svg" alt="MiniSearch">
     </picture>
   </a>
 </p>
@@ -99,26 +99,26 @@
   <a href="https://quitting7oh.org" target="_blank" rel="noopener noreferrer">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-read-dark.svg">
-    <img src="docs/assets/nav-read-light.svg" alt="Read the guide: guides, tools, and peer support" width="49%">
+    <img src="docs/assets/nav-read-light.svg" alt="Read the guide: guides, tools, and peer support" width="440">
   </picture>
   </a>
   <a href="#quick-start">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-start-dark.svg">
-    <img src="docs/assets/nav-start-light.svg" alt="Run it locally: install, build, and preview" width="49%">
+    <img src="docs/assets/nav-start-light.svg" alt="Run it locally: install, build, and preview" width="440">
   </picture>
   </a>
   <br>
   <a href="#code-map">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-code-dark.svg">
-    <img src="docs/assets/nav-code-light.svg" alt="Explore the code: routes, components, and conventions" width="49%">
+    <img src="docs/assets/nav-code-light.svg" alt="Explore the code: routes, components, and conventions" width="440">
   </picture>
   </a>
   <a href="#agent-policy">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/nav-agents-dark.svg">
-    <img src="docs/assets/nav-agents-light.svg" alt="Agent playbook: changelogs, page dates, and review" width="49%">
+    <img src="docs/assets/nav-agents-light.svg" alt="Agent playbook: changelogs, page dates, and review" width="440">
   </picture>
   </a>
 </p>
