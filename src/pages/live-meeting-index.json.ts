@@ -1,4 +1,5 @@
 import naBundle from '~/data/na-meetings.generated.json';
+import { hasGeneralNaAudience } from '~/lib/na-meeting-eligibility';
 import type {
   LiveMeetingIndex,
   LiveNaMeeting,
@@ -11,7 +12,7 @@ function isWebJoin(url: string): boolean {
 }
 export function GET(): Response {
   const na = naBundle.meetings
-    .filter((meeting) => meeting.closed === 'Open' && isWebJoin(meeting.joinUrl))
+    .filter((meeting) => meeting.closed === 'Open' && hasGeneralNaAudience(meeting) && isWebJoin(meeting.joinUrl))
     .map<LiveNaMeeting>((meeting) => ({
       provider: 'NA',
       id: meeting.id,
@@ -24,7 +25,7 @@ export function GET(): Response {
       timezone: meeting.timezone,
     }));
 
-  const featuredNa: LiveNaMeeting | null = naBundle.featured && isWebJoin(naBundle.featured.joinUrl)
+  const featuredNa: LiveNaMeeting | null = naBundle.featured && hasGeneralNaAudience(naBundle.featured) && isWebJoin(naBundle.featured.joinUrl)
     ? {
         provider: 'NA',
         id: naBundle.featured.id,
