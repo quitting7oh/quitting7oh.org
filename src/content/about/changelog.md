@@ -16,6 +16,13 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-21
 
+### General NA meeting suggestions
+
+- Limited random NA suggestions on the homepage and next kratom meeting
+  page to general meetings, using audience tags and meeting names to
+  exclude special-interest groups. Kept those groups in the full NA
+  schedule and kept random selection among eligible live rooms.
+
 ### SMART meeting finder retirement
 
 - Retired our SMART meeting finder because we can no longer refresh its
