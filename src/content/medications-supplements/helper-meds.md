@@ -12,7 +12,7 @@ sort: 1
 What helps which symptom, with the doses you'll typically see prescribed.
 
 | Symptom cluster | Medication | Typical dose |
-|---|---|---|
+| --- | --- | --- |
 | Sweating, fast heart rate, anxiety, restlessness | Clonidine | 0.1–0.2 mg every 6–8 hours |
 | Restless legs, wired insomnia, brain zaps | Gabapentin | Start 100–300 mg; titrate up to 1,800 mg/day in divided doses |
 | Muscle aches, body tension | Baclofen | 5 mg three times daily, up to 40 mg/day |
@@ -77,6 +77,8 @@ A few specifics:
 Two vendors that ship manufacturer-packaged gabapentin for animal use:
 
 > **[Dog & Cat Stuff](https://dogandcatstuff.com/product/gabapentin-100ct-and-500ct-bottles-100mg-300mg-600mg-800mg/)** — gabapentin in 100- and 500-count bottles, 100/300/600/800 mg, capsules and tablets.
+
+<!-- Separate callouts. -->
 
 > **[Pet Pharm Canada](https://petpharmcanada.com/product/gabapentin-100ct-and-500ct-bottles-100mg-300mg-600mg-800mg/)** — the same manufacturer-packaged strengths and bottle sizes.
 

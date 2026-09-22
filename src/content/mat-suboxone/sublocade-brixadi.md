@@ -45,6 +45,7 @@ below.
 - **Dose strength:** Sublocade only comes in higher doses; Brixadi has lower-dose weekly options that some people find easier to start with.
 
 ## Mechanism
+
 The depot under the skin releases buprenorphine into the bloodstream at a controlled rate. Once steady-state is reached (typically after a few injections), plasma buprenorphine levels stay relatively constant between doses, which avoids the daily peak-and-trough cycle of oral Suboxone. For people whose adherence is a problem with daily dosing, this is a significant practical advantage. For people who are stable on oral and want fine-grained dose control, it removes that flexibility.
 
 ## The very long half-life (this is the part that matters most)
@@ -52,6 +53,7 @@ The depot under the skin releases buprenorphine into the bloodstream at a contro
 **[The terminal half-life of Sublocade is 43 to 60 days](https://www.drugs.com/medical-answers/long-sublocade-3535230/).** Brixadi monthly is similar; Brixadi weekly is shorter. For comparison, oral buprenorphine has a half-life of ~24 to 42 hours.
 
 Practical consequences:
+
 - After a single Sublocade injection, [buprenorphine remains detectable in the body for approximately 172 to 300 days (5 to 10 months)](https://www.drugs.com/medical-answers/long-sublocade-3535230/).
 - After multiple injections, total elimination can take a year or more.
 - [Withdrawal symptoms after stopping may not appear for several weeks after the last injection](https://porchlighthealth.com/sublocade-withdrawal-timeline/), then ramp up gradually as plasma levels finally drop.
@@ -62,6 +64,7 @@ This is the single most important thing to understand before agreeing to one of 
 For some people, this is a feature: it removes daily decision-making, prevents missed doses, and provides a built-in slow taper if they decide to stop. For others, it's a bug: it locks them into the medication and into clinic visits, and makes any change of plan slow.
 
 ## Discontinuation profile
+
 Because of the long half-life, **stopping these injections is essentially a built-in slow taper.** Plasma buprenorphine declines gradually over months. Some clinicians and patients view this favorably; some view it as a multi-month withdrawal tail rather than a clean exit.
 
 [Reddit-based qualitative research on stopping Sublocade](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12064969/) found patients reported a wide range of experiences. Some had relatively mild withdrawal due to the gradual decline; others reported a long, drawn-out process with extended PAWS-like symptoms because plasma levels never drop sharply enough to trigger a clean withdrawal-then-recovery curve.
@@ -180,6 +183,7 @@ years.
   my out-of-pocket?
 
 ## When injectables make sense
+
 - **Adherence problems with daily oral dosing.** Missing oral Suboxone doses can lead to relapse; injections eliminate that risk.
 - **Stable maintenance over months to years** is the actual goal (rather than a short taper).
 - **High-stakes life situations** (incarceration transitions, custody arrangements, employment requirements) where consistent treatment is critical.
@@ -187,6 +191,7 @@ years.
 - **Cravings that aren't controlled by oral bupe** even at maximum dosing.
 
 ## When injectables aren't the fit
+
 - **Short taper is the goal.** These medications make a fast, controlled exit much harder. Once injected, the long tail is unavoidable.
 - **You're still figuring out the right dose.** Dose changes are slow, monthly affairs rather than day-to-day adjustments.
 - **You're considering pregnancy.** Talk to your prescriber. Buprenorphine is generally considered acceptable in pregnancy, but the long-acting nature complicates things if changes are needed.
@@ -194,6 +199,7 @@ years.
 - **Cost or access issues.** [Brixadi requires REMS-certified providers and pharmacies](https://mcgs.bcbsfl.com/MCG?mcgId=09-J2000-68&pv=false).
 
 ## Questions if your prescriber suggests one
+
 - What's the long-term plan? Indefinite maintenance, or a defined endpoint?
 - If I want to stop, what does that look like, and how long will I feel effects after the last injection?
 - Why this over continuing oral bupe, in my specific situation?
@@ -203,11 +209,13 @@ years.
 - Can I switch back to oral bupe later if needed?
 
 ## Cost and access notes
+
 Both medications are expensive without insurance coverage. Sublocade list price runs roughly $2,100 to $2,200 per monthly injection. Brixadi pricing varies by dose. Most insurance plans cover one or both as part of MAT, but prior authorization is common. Manufacturer assistance programs exist for patients who qualify.
 
 Both medications must be administered by a healthcare provider; you can't take them home.
 
 ## Sources
+
 - [Drugs.com: Difference between Sublocade and Brixadi](https://www.drugs.com/medical-answers/what-difference-between-sublocade-brixadi-3574098/)
 - [Drugs.com: How long does Sublocade last](https://www.drugs.com/medical-answers/long-sublocade-3535230/)
 - [Brixadi prescribing information](https://www.brixadihcp.com/dosing-and-administration/)

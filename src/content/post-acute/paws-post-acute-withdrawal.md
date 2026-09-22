@@ -210,7 +210,7 @@ avoid. This page gives the overview; the focused pages own the detail.
 The non-medication interventions with peer-reviewed support:
 
 | Intervention | What it does | Source |
-|---|---|---|
+| --- | --- | --- |
 | **Aerobic exercise** | 20-30 min of cardio, 4-5 days/week. Increases BDNF, lifts mood, reduces craving intensity. Strongest single non-medication intervention. | [Szuhany et al., meta-analysis (29 studies)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4314337/) |
 | **Sleep optimization** | Bad sleep amplifies every other PAWS symptom. Consistent schedule, dark/cool room, morning sunlight. | [Sleep Recovery](/post-acute/sleep-recovery) for the focused page |
 | **CBT** | Most-studied behavioral intervention for substance use disorders. | [Magill et al., CBT for SUD review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10572095/) |

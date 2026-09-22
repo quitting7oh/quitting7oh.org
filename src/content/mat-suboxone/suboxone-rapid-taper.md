@@ -16,6 +16,7 @@ These schedules go faster than what a prescriber will typically suggest. They're
 > or somewhere between the protocols here.
 
 ## Pharmacology: 7-OH vs. the heavier synthetics
+
 [7-OH](/compounds/7-oh) has a short half-life (community-observed effect duration roughly 90 minutes to a couple of hours; no direct human PK is published — see [7-OH compound page](/compounds/7-oh#plasma-half-life)) and is primarily mu-dominant. The acute withdrawal window is shorter and the receptor adaptation is less entrenched than with longer-acting full agonists. **What this community has consistently observed:** a brief, low-dose bupe course taken long enough to bridge through acute [7-OH](/compounds/7-oh) withdrawal, then tapered out within 5 to 10 days, doesn't establish bupe dependence. The bupe gets used as a short-term tool, not as a substitution medication, and people walk away from it without a meaningful bupe withdrawal of their own.
 
 This is different from the standard MAT model, where bupe is taken for months or years and produces its own dependence and withdrawal profile (see [Long-Term Suboxone Risks](/mat-suboxone/long-term-suboxone-risks)). Same medication, different use case, different outcome.
@@ -23,6 +24,7 @@ This is different from the standard MAT model, where bupe is taken for months or
 ## The schedules
 
 All schedules assume:
+
 - Induction has happened correctly (COWS ≥ 12, low-and-slow titration to find your day 1 dose, see [COWS & SOWS Guide](/mat-suboxone/sows-cows-induction-guide) & [Suboxone](/mat-suboxone/suboxone-for-7oh))
 - You're using sublingual tabs or films that can be split for fractional dosing, see [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose)
 - You have access to hydration, electrolytes, and basic comfort meds (see harm reduction section below)
@@ -37,7 +39,7 @@ All schedules assume:
 <summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 2 mg taper schedule (5-day)</summary>
 
 | Day | 5-day |
-|---|---|
+| --- | --- |
 | 1 | 2 |
 | 2 | 1.5 |
 | 3 | 1 |
@@ -53,7 +55,7 @@ All schedules assume:
 <summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 4 mg taper schedule (5-day or 7-day)</summary>
 
 | Day | 5-day | 7-day |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 4 | 4 |
 | 2 | 2 | 4 |
 | 3 | 1 | 3 |
@@ -71,7 +73,7 @@ All schedules assume:
 <summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 6 mg taper schedule (5/7/10-day options)</summary>
 
 | Day | 5-day | 7-day | 10-day |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | 6 | 6 | 6 |
 | 2 | 4 | 6 | 6 |
 | 3 | 2 | 4 | 6 |
@@ -94,7 +96,7 @@ All schedules assume:
 <summary class="cursor-pointer rounded-md bg-muted/50 px-3 py-2 font-semibold text-foreground hover:bg-muted">Show 8 mg taper schedule (5/7/10/14/21-day options)</summary>
 
 | Day | 5-day | 7-day | 10-day | 14-day | 21-day |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 1 | 8 | 8 | 8 | 8 | 8 |
 | 2 | 5 | 8 | 8 | 8 | 8 |
 | 3 | 3 | 6 | 6 | 7 | 8 |
@@ -133,7 +135,7 @@ Some people land their last 0.25 mg dose, expect to walk away, and instead get c
 If that's you, extending the tail for a few more days at sub-0.25 mg doses can soften the jump. With [volumetric dosing](/mat-suboxone/suboxone-custom-dose#volumetric-dosing-films-and-tablets) (dissolving a strip in water and drawing a measured fraction with an oral syringe), you can target doses well below the scissor-cut floor of 0.125 mg. A practical three-day tail, sized to the 8 mg strips most prescriptions come as:
 
 | Tail day | Target dose | Volumetric mix (one 8 mg strip) |
-|---|---|---|
+| --- | --- | --- |
 | +1 | 0.1 mg | dissolve in 80 mL water → draw 1 mL |
 | +2 | 0.05 mg | dissolve in 160 mL water → draw 1 mL |
 | +3 | 0.02 mg | dissolve in 400 mL water → draw 1 mL |
@@ -148,6 +150,7 @@ If you've worked the tail down this way and still can't get clear of the jump, t
 ## Choosing the right schedule
 
 **Pick the longer end of the range if:**
+
 - You've been on [7-OH](/compounds/7-oh) for more than a few months
 - You don't have a stable home environment, support person, or time off work
 - You have a history of relapse during withdrawal
@@ -155,6 +158,7 @@ If you've worked the tail down this way and still can't get clear of the jump, t
 - You're not 100% sure 7-OH is the only thing you've been on
 
 **Pick the shorter end of the range if:**
+
 - You've successfully done a rapid taper before and know how your body responds
 - You have someone checking on you daily
 - You can take time off from responsibilities
@@ -178,7 +182,9 @@ If you've worked the tail down this way and still can't get clear of the jump, t
 - **Time off.** Don't try this during a high-stress work week if you can avoid it.
 
 ## When to abort and stabilize
+
 Rapid tapers don't always work. **It's not failure to stop and try again with a slower taper.** Stabilize and reassess if:
+
 - You can't keep fluids down for more than 24 hours
 - Heart rate stays consistently above 110 at rest
 - You're having thoughts of using your old compound to make it stop
@@ -188,6 +194,7 @@ Rapid tapers don't always work. **It's not failure to stop and try again with a 
 How to stabilize: take enough bupe to make you feel okay (usually somewhere between your previous day's dose and the next step up), hold there for a day or two, then restart on a slower schedule. **Going back up briefly does not undo your progress.**
 
 ## When to seek emergency help
+
 - Severe dehydration that won't resolve with fluids
 - Thoughts of suicide or self-harm (call or text **911**)
 - Severe chest pain, irregular heartbeat

@@ -10,6 +10,7 @@ Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5
 This post is the practical how-to. The general taper schedules are in [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) and [Suboxone](/mat-suboxone/suboxone-for-7oh).
 
 ## Supplies
+
 - **Bupe film** (any strength, but 8 mg films give you the most flexibility)
 - **Sharp X-Acto knife** (or fresh single-edge razor blade). A dull blade tears the film, which makes uneven pieces.
 - **Cutting surface** that won't dull the blade. A self-healing cutting mat is ideal. A clean ceramic plate or glass cutting board works. Avoid cardboard, paper, or wood (fibers contaminate the film).
@@ -18,9 +19,11 @@ This post is the practical how-to. The general taper schedules are in [Suboxone 
 - **Clean hands and clean workspace.** Bupe gets absorbed sublingually, so contamination is a real concern.
 
 ## The math
+
 Films are rectangular and the medication is uniformly distributed across the film. If you cut a film in half, each half contains half the dose. If you cut into quarters, each quarter is a quarter dose. The film is the same thickness everywhere, so cutting along either axis works.
 
 **From an 8 mg film:**
+
 - Half = 4 mg
 - Quarter = 2 mg
 - Eighth = 1 mg
@@ -28,6 +31,7 @@ Films are rectangular and the medication is uniformly distributed across the fil
 - Thirty-second = 0.25 mg
 
 **From a 2 mg film:**
+
 - Half = 1 mg
 - Quarter = 0.5 mg
 - Eighth = 0.25 mg
@@ -64,6 +68,7 @@ For most rapid-taper schedules, an 8 mg film cut into eighths gives you 1 mg dos
 - If you can't taste any bitterness from the piece, it's probably too small or has degraded. Most people find that even a 0.25 mg piece has noticeable taste.
 
 ## Common mistakes
+
 - **Cutting on a hard surface that dulls the blade.** Replace blades regularly. A dull blade is the #1 cause of uneven pieces.
 - **Cutting a film that's been opened too long.** Films absorb moisture and become rubbery, which makes accurate cutting nearly impossible. Cut from a fresh-opened film.
 - **Trying to weigh the pieces.** Bupe films are too light for kitchen scales and too imprecise for dose verification this way. Trust the geometric math; uniform distribution means equal area = equal dose.
@@ -103,7 +108,7 @@ What to avoid: **plastic for long-term storage.** [Diluted bupe in glass vials r
 Pick a dissolved amount and a water volume that make your target dose come out to at least 0.5 mL on the syringe. The 8 mg rows come first because that's what most prescriptions come as; 2 mg rows underneath are the same concentrations scaled down, for readers who asked for and got the smaller strength.
 
 | Bupe dissolved | Water | Concentration | What 1 mL gives | What 0.5 mL gives |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 8 mg (1 strip / tablet) | 80 mL | 0.1 mg/mL | 0.1 mg | 0.05 mg |
 | 8 mg | 160 mL | 0.05 mg/mL | 0.05 mg | 0.025 mg |
 | 8 mg | 400 mL | 0.02 mg/mL | 0.02 mg | 0.01 mg |

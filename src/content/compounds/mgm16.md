@@ -64,7 +64,7 @@ That's where the evidence centers.
 From [Matsumoto et al., *J Pharmacol Exp Ther* 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC6067406/):
 
 | Measurement | Value | Assay |
-|---|---|---|
+| --- | --- | --- |
 | Mu-opioid receptor Kᵢ | **2.1 nM** | DAMGO displacement |
 | Delta-opioid receptor Kᵢ | **7.0 nM** | DPDPE displacement |
 | Kappa-opioid receptor Kᵢ | **29 nM** | (less selective) |

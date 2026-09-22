@@ -9,6 +9,8 @@ sort: 2
 > **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language before the pharmacology below.
 
+<!-- Separate callouts. -->
+
 > **Regulatory news:** DEA filed notice of intent to temporarily place
 > 7-OH above a 0.05% / 1 mg threshold in Schedule I. The 30-day waiting
 > period expired August 5, 2026, so the order can publish any business
@@ -97,13 +99,13 @@ The differences that matter:
 | Property | Leaf kratom (mitragynine-dominant) | Concentrated 7-OH |
 | ------------------------------ | ---------------------------------- | ------------------------ |
 | **Main active alkaloid** | Mitragynine (~40-66% of leaf) | 7-OH (isolated) |
-| **µ-receptor binding affinity**| Weak (K<sub>i</sub> ~709 nM at hMOR) | Moderate (K<sub>i</sub> ~78 nM at hMOR) |
+| **µ-receptor binding affinity** | Weak (K<sub>i</sub> ~709 nM at hMOR) | Moderate (K<sub>i</sub> ~78 nM at hMOR) |
 | **µ-agonism efficacy** | Minimal at hMOR | Partial agonist (E<sub>max</sub> ~41%) |
 | **Serotonergic / adrenergic activity** | Significant (via minor alkaloids) | Minimal |
 | **Typical use cadence** | Every 4-6 h, often less | Every 3-6 h, often more |
 | **Dependence trajectory** | Slow | Fast (weeks to months) |
 | **Withdrawal severity** | Mild to moderate | Moderate to severe |
-| **Withdrawal duration (acute)**| Several days | 5-10 days |
+| **Withdrawal duration (acute)** | Several days | 5-10 days |
 | **Bupe-induction profile** | Straightforward | Straightforward (12-18 h) |
 
 The shorthand: **kratom leaf is to 7-OH roughly what poppy tea is to

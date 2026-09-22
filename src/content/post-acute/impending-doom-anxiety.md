@@ -2,7 +2,7 @@
 title: "Impending Doom"
 description: "The specific terror that hits in withdrawal and PAWS — feeling like something catastrophic is about to happen. What it is, what to do right now, when it's more than withdrawal."
 category: "post-acute"
-last_updated: "2026-08-28"
+last_updated: "2026-09-21"
 sort: 5
 ---
 
@@ -22,7 +22,7 @@ page covers both shapes.
 The actionable stuff is first, those techniques are what to reach
 for in a wave. If yours is the sustained kind that isn't
 wave-shaped, skip down to
-[When it doesn't pass quickly](#when-it-doesnt-pass-quickly--the-sustained-version).
+[When it doesn't pass quickly](#when-it-doesnt-pass-quickly-the-sustained-version).
 
 ## Immediate interventions (next 10 minutes)
 

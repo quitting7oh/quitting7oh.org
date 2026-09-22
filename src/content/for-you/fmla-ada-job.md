@@ -2,7 +2,7 @@
 title: "FMLA, ADA & Your Job"
 description: "Federal job-protected leave for your own treatment, ADA protections in recovery, what HR actually sees, and how to use EAPs without your manager finding out."
 category: "for-you"
-last_updated: "2026-06-08"
+last_updated: "2026-09-21"
 sort: 5
 ---
 
@@ -144,7 +144,7 @@ If your employer has under 50 employees within 75 miles, or you haven't been the
 - **Many employers offer unpaid personal leave** outside of FMLA. It's discretionary and not job-protected the same way, but it exists at many employers.
 - **PTO, sick leave, vacation**: using these strategically can buy time while you arrange longer-term plans.
 - **Short-term disability** may apply if your treatment-related condition (or a co-occurring condition documented by your provider) meets the policy's definition. Check your benefits or ask HR.
-- **Your [EAP](#eaps--employee-assistance-programs)**, if you have one, doesn't go through HR and may cover counseling sessions and referrals at no cost regardless of FMLA eligibility.
+- **Your [EAP](#eaps-employee-assistance-programs)**, if you have one, doesn't go through HR and may cover counseling sessions and referrals at no cost regardless of FMLA eligibility.
 - **An employment lawyer**: many offer free initial consultations, can review your specific situation. If your employer has been treating you differently because of suspected use, this conversation is worth having early.
 
 ## A word on disclosure to coworkers

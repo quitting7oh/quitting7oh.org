@@ -56,7 +56,7 @@ can offer. This page only covers the telehealth side.
 ## At a glance
 
 | Provider | States | Initial / follow-up | Insurance | Primary MOUD | Kratom-specific content |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | [Bicycle Health](#bicycle-health) | 27 (per their locations page) | Bundled, $249/mo self-pay | Yes, UHC, Anthem, Aetna, BCBS, Cigna, Medicare | Buprenorphine/naloxone | Educational blog only |
 | [Boulder Care](#boulder-care) | 7 (CO, MI, NM, NC, OH, OR, WA) | Insurance / self-pay (price not published) | Yes, broad Medicaid by state + commercial | Buprenorphine/naloxone | **Yes, kratom + 7-OH** ([blog by MD](https://www.boulder.care/blog/what-is-kratom)) |
 | [Bright Heart Health](#bright-heart-health) | ~7 confirmed | $300 initial / $740 monthly self-pay (one state LP) | Yes, Medicaid + commercial | Buprenorphine ± naloxone | None found |
@@ -123,6 +123,7 @@ Shield, Cigna, Medicare named on the homepage. Per-state subpages
 list Medicaid coverage where applicable.
 
 **Reviews & complaints.**
+
 - **BBB:** rated **F**, 1.43 / 5 across 23 customer reviews
   (BBB profile URL no longer resolves; data accessed 2026-05-24).
   BBB noted "Failure to respond to 5 complaint(s) filed against
@@ -170,6 +171,7 @@ a specific number.
 
 **Insurance.** Yes, **broad Medicaid coverage by state** is their
 distinguishing trait. Per their eligibility page (verbatim, 2026-05-24):
+
 - **Colorado:** CCHA, Health First Colorado, Medicare Colorado,
   Wellcare.
 - **Michigan:** Priority Health (commercial; no Medicaid listed).
@@ -187,6 +189,7 @@ distinguishing trait. Per their eligibility page (verbatim, 2026-05-24):
   Medicare.
 
 **Reviews & complaints.**
+
 - **App Store:** 4.9 / 5 across ~3,900 ratings (one of the higher
   patient-app ratings in this category).
 - **BBB:** no profile located for the telehealth company.
@@ -240,6 +243,7 @@ named in New Mexico, Tennessee, and Michigan in one source, but
 state-by-state Medicaid plan lists were not published.
 
 **Reviews & complaints.**
+
 - **BBB:** **B-**, not accredited, 2.33 / 5 across 6 reviews
   ([profile](https://www.bbb.org/us/ca/walnut-creek/profile/health-and-wellness/bright-heart-health-1116-550578),
   accessed 2026-05-24). B- is driven by "Failure to respond to 1
@@ -291,6 +295,7 @@ One app-store reviewer reports the Virginia Optima Medicaid MCO is
 not accepted, unverified against an official list.
 
 **Reviews & complaints.**
+
 - **App Store:** 4.4 / 5 across 69 ratings (small sample).
 - **Trustpilot:** no profile located.
 - **BBB:** no profile for the telehealth company.
@@ -345,6 +350,7 @@ acceptance in LA, MA, NJ, NC, OH, TX (per secondary source, confirm
 with Eleanor).
 
 **Reviews & complaints.**
+
 - **Trustpilot:** no profile for the US provider located.
 - **BBB:** A+ rated, not BBB-accredited. Customer review volume not
   surfaced.
@@ -400,6 +406,7 @@ plus UHC and Optum per search snippets. Medicaid acceptance is
 state-by-state. ([Insurance page](https://joingroups.com/insurance/).)
 
 **Reviews & complaints.**
+
 - **CARF accredited** (3-year accreditation, first accredited 2018)
   for Office-Based Opioid Treatment. Source:
   [CARF directory](https://carf.org/provider/recover-together-inc-dba-groups-recover-together-southern-region-335763/).
@@ -460,6 +467,7 @@ UPMC, plus Medicare/Medicaid in many of their 15 states. Full list on
 their [insurance and pricing page](https://ophelia.com/insurance-and-pricing).
 
 **Reviews & complaints.**
+
 - **BBB:** **Customer review average 1 / 5 stars across 6 reviews**;
   not accredited; documented failure to respond to formal complaints.
   Letter grade fetched as D- or F on 2026-05-24 (sources disagreed).
@@ -518,6 +526,7 @@ Island, OPEH&W Health Plan. Pelago does not publish a full partner
 list.
 
 **Reviews & complaints.**
+
 - **App Store:** 4.5 / 5 across ~5.2K ratings.
 - **Google Play:** 3.77 / 5 across ~2.4K ratings.
 - **Trustpilot:** the [Trustpilot page for "pelago.co"](https://www.trustpilot.com/review/pelago.co)
@@ -563,6 +572,7 @@ UnitedHealthcare, WellCare, Wellpoint. Medicaid in supported states,
 but no state-by-state matrix published.
 
 **Reviews & complaints.**
+
 - **BBB:** A+ accredited (2020). **Customer reviews 1.6 / 5 across
   10 reviews.** Themes: provider no-shows, medication refill delays
   during provider transitions, high staff turnover. Most recent
@@ -621,6 +631,7 @@ comfort meds** (clonidine, gabapentin, hydroxyzine, trazodone, etc.).
 
 **Cost** (per their [pricing page](https://www.quick.md/pricing/),
 accessed 2026-05-24):
+
 - **$99** induction visit
 - **$99** follow-up visits (first follow-up within 14 days is included
   in the induction fee)
@@ -633,6 +644,7 @@ accessed 2026-05-24):
 still cover the medication at your chosen pharmacy.
 
 **Reviews & complaints.**
+
 - **App Store:** 4.8 / 5 across ~4,900 ratings.
 - **Google Play:** 4.87 / 5 across ~3,600 ratings.
 - **Trustpilot:** page returned 403 on verification; search snippets
@@ -696,6 +708,7 @@ Cigna, UHC, Humana, Oscar, and VA Health Administration. Medicaid is
 state-limited.
 
 **Reviews & complaints.**
+
 - **App Store:** 4.7 / 5 across 936 ratings (Workit's own /reviews
   page claims 32K+ "App Store reviews", figure not reconcilable with
   the 936 visible on Apple, possibly iOS + Android + in-app combined).
@@ -784,6 +797,7 @@ For every provider on this page:
   fit different people.
 
 **Things we couldn't verify and flagged in-line:**
+
 - Workit Health and Eleanor Health do not publish self-pay prices on
   their current site; figures cited come from a 2025 third-party
   review.

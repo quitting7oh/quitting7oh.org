@@ -22,7 +22,7 @@ Three protocols use the same molecule at doses that span **three orders of magni
 ## The three protocols at a glance
 
 | Protocol | Typical dose | Primary use | Evidence base | Where it fits in recovery |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **[Normal dose, oral](/post-acute/naltrexone-normal-dose)** | 50 mg/day (after a 25 mg initial dose) | Sustained abstinence after detox; alcohol use disorder | FDA-approved; well-supported for AUD ([COMBINE, Anton 2006](https://pubmed.ncbi.nlm.nih.gov/16670409/)); adherence-limited for OUD | After complete opioid clearance (7–14 days, varies by opioid) |
 | **[Normal dose, Vivitrol injection](/post-acute/naltrexone-normal-dose)** | 380 mg IM gluteal every 4 weeks | Same as oral; monthly dosing solves adherence | FDA-approved; [X:BOT 2018](https://pubmed.ncbi.nlm.nih.gov/29150198/) found XR-NTX and bupe-nx equivalent *once successfully started* | After complete opioid clearance |
 | **[Low dose (LDN)](/post-acute/naltrexone-low-dose)** | 1–5 mg/day (most commonly 4.5 mg nightly) ([Toljan & Vrooman 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6313374/)) | Off-label: chronic pain, autoimmune conditions, PAWS adjunct | Emerging, small trials in fibromyalgia, Crohn's, MS; one RCT in opioid detox enhancement; no large RCTs | After acute withdrawal is over; **not** during active opioid use |

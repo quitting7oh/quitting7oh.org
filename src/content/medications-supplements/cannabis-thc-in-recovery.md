@@ -13,6 +13,7 @@ sort: 11
 > The page describes; it doesn't prescribe.
 >
 > **TL;DR:**
+>
 > - Cannabis has documented short-term benefits for some symptoms common
 > in withdrawal and [PAWS](/post-acute/paws-post-acute-withdrawal) (nausea, sleep
 > onset, anxiety at low doses, appetite), and clear downsides with
