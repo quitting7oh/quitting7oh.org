@@ -47,9 +47,9 @@ const SPECIAL_PAGES: SpecialPage[] = [
   },
   {
     url: '/virtual-smart-meetings-now',
-    title: 'Virtual SMART Recovery meetings happening now',
-    description: 'Find a SMART Recovery meeting that is live or starting soon in your local time zone.',
-    content: 'Virtual SMART Recovery meetings, non-12-step mutual aid, online meeting, local time.',
+    title: 'Find a SMART Recovery meeting',
+    description: 'We have retired our SMART meeting finder. Find current meeting times and join links on the SMART Recovery website.',
+    content: 'Find virtual SMART Recovery meetings on the official website. Non-12-step mutual aid, online meetings.',
     aliases: 'SMART SMART Recovery meeting meetings live now non 12 step online mutual aid support group',
     category: 'resources',
     categoryLabel: 'Resources',

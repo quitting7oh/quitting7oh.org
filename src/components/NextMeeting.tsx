@@ -130,9 +130,6 @@ function LiveMeetingAlternatives({ standalone = false }: { standalone?: boolean 
         <a href="/virtual-na-meetings-now" className="text-primary hover:underline">
           Live NA meetings
         </a>
-        <a href="/virtual-smart-meetings-now" className="text-primary hover:underline">
-          Live SMART meetings
-        </a>
       </span>
     </div>
   );
