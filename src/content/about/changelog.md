@@ -16,6 +16,19 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ## 2026-09-21
 
+### Contributor README
+
+- Rebuilt the repository README with a Field Guide banner, live workflow
+  badges, a code map, naming conventions, and content-authoring examples.
+  Replaced the retired Discord-import instructions with the current editing
+  workflow, corrected local server ports, and documented build checks,
+  generated files, automation, deployment, and agent requirements for
+  changelogs, page dates, prose review, and push approval.
+- Added light and dark desktop and mobile screenshots, illustrated navigation
+  cards, stack badges, and live repository activity badges to the README.
+  Matched MiniSearch badge spacing to the stack row and made navigation cards
+  wrap on phones with larger labels.
+
 ### SMART meeting finder retirement
 
 - Retired our SMART meeting finder because we can no longer refresh its

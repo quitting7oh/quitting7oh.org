@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
+<title id="title">quitting7oh.org</title>
+<desc id="desc">A community field guide to recovery. Guides, reference, calculators, and meetings. Dark edition.</desc>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#4d4035" stroke-width="0.7"/></pattern></defs>
+<rect width="1200" height="350" rx="22" fill="#1d1916"/>
+<rect x="1" y="1" width="1198" height="348" rx="21" fill="none" stroke="#4d4035" stroke-width="2"/>
+<path d="M48 53H1152M48 286H1152" stroke="#4d4035"/>
+<g font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="12" font-weight="700" letter-spacing="2">
+<text x="48" y="34" fill="#c4b5a6">THE COMMUNITY FIELD GUIDE</text>
+<text x="1152" y="34" text-anchor="end" fill="#e2a58e">READ · BUILD · CONTRIBUTE</text></g>
+<rect x="48" y="97" width="106" height="106" rx="29" fill="#3c2e26"/>
+<g transform="translate(55 104) scale(1.44)" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20 33V39a12 12 0 0 0 24 0V33" stroke="#f0e9df"/>
+<path d="M32 37V14M23 24L32 11L41 24" stroke="#e2a58e"/></g>
+<text x="183" y="150" fill="#f0e9df" font-family="Georgia, DejaVu Serif, serif" font-size="59" font-weight="700" letter-spacing="-2">quitting<tspan fill="#e2a58e">7</tspan>oh<tspan fill="#c4b5a6" font-size="31" font-weight="400" letter-spacing="0">.org</tspan></text>
+<text x="186" y="191" fill="#c4b5a6" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="21">A community field guide to recovery.</text>
+<g font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="13" fill="#a4bf93" font-weight="700"><text x="49" y="249">COMMUNITY-WRITTEN</text><text x="264" y="249">OPEN TO CONTRIBUTORS</text></g>
+<rect x="855" y="77" width="297" height="184" rx="12" fill="#28221d"/>
+<rect x="855" y="77" width="297" height="184" rx="12" fill="url(#grid)" opacity="0.5"/>
+<g transform="translate(912 91) rotate(7 82 74)"><rect x="7" y="7" width="161" height="142" rx="8" fill="#3c2e26" stroke="#4d4035"/>
+<rect width="161" height="142" rx="8" fill="#1d1916" stroke="#4d4035"/>
+<path d="M18 0V142" stroke="#e2a58e" stroke-width="3"/>
+<text x="34" y="37" fill="#e2a58e" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="2">FIELD NOTES</text>
+<path d="M34 56H135M34 71H117M34 86H130" stroke="#4d4035" stroke-width="3" stroke-linecap="round"/>
+<circle cx="43" cy="113" r="6" fill="#a4bf93"/><path d="M61 113H116" stroke="#a4bf93" stroke-width="3" stroke-linecap="round"/></g>
+<g font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="14" font-weight="700" letter-spacing="1" fill="#e2a58e">
+<text x="48" y="322">GUIDES</text><text x="180" y="322">REFERENCE</text><text x="360" y="322">CALCULATORS</text><text x="565" y="322">MEETINGS</text></g>
+<text x="1152" y="322" text-anchor="end" fill="#c4b5a6" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="13">LIGHT / DARK / YOUR DEVICE</text>
+</svg>
