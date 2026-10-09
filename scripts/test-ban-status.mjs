@@ -32,7 +32,13 @@ function fixture(t, { drift = false } = {}) {
     editBanner(transform) {
       fs.writeFileSync(path.join(cwd, bannerPath), transform(read()[0]));
     },
-    run({ unreviewed = false, countUnavailable = false, withoutKey = false, now = '2099-01-02T12:00:00Z' } = {}) {
+    run({
+      unreviewed = false, unreviewedInspection = false, laterPage = false,
+      missingInspection = false, inspectionUnavailable = false,
+      malformedInspection = false, changedPublicationDate = false,
+      noticesPublished = false, countUnavailable = false, withoutKey = false,
+      now = '2099-01-02T12:00:00Z',
+    } = {}) {
       // Run the unmodified updater against real files, with only the clock and APIs replaced.
       const preload = `
         const NativeDate = Date;
@@ -40,12 +46,36 @@ function fixture(t, { drift = false } = {}) {
           constructor(...args) { super(...(args.length ? args : [${JSON.stringify(now)}])); }
         };
         globalThis.fetch = async (url) => {
-          if (url.startsWith('https://www.federalregister.gov/api/v1/documents.json?')) {
+          const query = new URL(url);
+          const notices = ['2026-20943', '2026-20942'].map(document_number => ({
+            document_number, publication_date: ${changedPublicationDate} ? '2026-10-15' : '2026-10-14',
+            filed_at: '2026-10-09T12:00:00-04:00', title: 'Fixture notice', type: 'Proposed Rule',
+          }));
+          if (query.pathname === '/api/v1/documents.json') {
             const numbers = ${JSON.stringify(reviewedDocuments)};
             if (${unreviewed}) numbers.push('2099-99999');
-            return { ok: true, json: async () => ({ results: numbers.map(document_number => ({
+            let results = numbers.map(document_number => ({
               document_number, publication_date: '2026-09-01', title: 'Fixture document',
-            })) }) };
+            }));
+            if (${noticesPublished}) results.push(...notices);
+            const paginated = ${laterPage} && query.searchParams.get('conditions[term]') === '7-hydroxymitragynine';
+            if (paginated && query.searchParams.get('page') === '2') {
+              results = [{ document_number: '2099-99998', publication_date: '2099-01-02', title: 'Later-page order' }];
+            }
+            return { ok: true, json: async () => ({ results, total_pages: paginated ? 2 : 1 }) };
+          }
+          if (query.pathname === '/api/v1/public-inspection-documents.json') {
+            if (${inspectionUnavailable}) return { ok: false, status: 503 };
+            if (${malformedInspection}) return { ok: true, json: async () => ({ count: 1 }) };
+            if (query.searchParams.get('conditions[term]') === 'SR-17018') {
+              return { ok: true, json: async () => ({ description: 'No pending SR-17 filings', count: 0 }) };
+            }
+            const results = ${missingInspection} || ${noticesPublished} ? [] : notices;
+            if (${unreviewedInspection}) results.push({
+              document_number: '2099-99997', publication_date: '2099-01-05',
+              filed_at: '2099-01-02T12:00:00-05:00', title: 'Unreviewed pending order',
+            });
+            return { ok: true, json: async () => ({ results, total_pages: results.length ? 1 : 0 }) };
           }
           if (url.startsWith('https://api.regulations.gov/v4/comments?')) {
             if (${countUnavailable}) throw new Error('Fixture API outage');
@@ -78,10 +108,10 @@ test('refreshes the current ban page with past-tense comment wording', (t) => {
   const [banner, page] = f.read();
   assert.match(banner, /^const LAST_CHECKED = '2099-01-02';$/m);
   assert.match(banner, /Federal bans:/);
-  assert.match(banner.replace(/<[^>]*>/g, ''), /Proposed for 7-OH\. In effect for pseudo and MGM-15\./);
+  assert.match(banner.replace(/<[^>]*>/g, ''), /New 7-OH\/pseudo notice\. Pseudo and MGM-15\/16 remain Schedule I\./);
   assert.match(page, /last_updated: "2099-01-02"/);
   assert.match(page, /Last verified against primary sources on January 2, 2099\./);
-  assert.match(page, /As of January 2, 2099, 7-OH is not banned\./);
+  assert.match(page, /As of January 2, 2099, \[7-OH\]\(\/compounds\/7-oh\) is not federally scheduled\./);
   assert.match(page, /\| \*\*January 2, 2099\*\* \| Latest check against the Federal Register/);
   assert.match(page, /As of January 2,\n\[the docket\][^\n]+\nshowed 45,678 comments posted\./);
   assert.ok(page.includes(submissions), 'Preserve the manual total and its verification date.');
@@ -161,7 +191,7 @@ test('refreshes the date without depending on or overwriting banner wording', (t
   const f = fixture(t);
   const wording = 'Fixture editorial copy independent of the date.';
   f.editBanner((banner) => banner.replace(
-    'Proposed for ', wording,
+    'New 7-OH/pseudo notice.', wording,
   ));
   assert.ok(f.read()[0].includes(wording));
   const result = f.run();
@@ -186,4 +216,50 @@ test('uses the New York calendar day for both the banner and page', (t) => {
   const [banner, page] = f.read();
   assert.match(banner, /^const LAST_CHECKED = '2099-01-03';$/m);
   assert.match(page, /last_updated: "2099-01-03"/);
+});
+
+for (const now of ['2099-01-02T12:00:00Z', '2026-10-09T20:00:00Z']) {
+  test(`blocks an unreviewed public-inspection filing even with current dates (${now})`, (t) => {
+    const f = fixture(t);
+    const before = f.read();
+    const result = f.run({ unreviewedInspection: true, now });
+    assert.equal(result.status, 2, result.stderr);
+    assert.match(result.stderr, /public-inspection-documents.*2099-99997/);
+    assert.deepEqual(f.read(), before);
+  });
+}
+
+test('finds an unreviewed order beyond the first results page', (t) => {
+  const f = fixture(t);
+  const before = f.read();
+  const result = f.run({ laterPage: true });
+  assert.equal(result.status, 2, result.stderr);
+  assert.match(result.stderr, /2099-99998/);
+  assert.deepEqual(f.read(), before);
+});
+
+for (const option of ['inspectionUnavailable', 'malformedInspection', 'missingInspection']) {
+  test(`leaves dates untouched when public-inspection verification fails: ${option}`, (t) => {
+    const f = fixture(t);
+    const before = f.read();
+    const result = f.run({ [option]: true });
+    assert.equal(result.status, 1, result.stderr);
+    assert.deepEqual(f.read(), before);
+  });
+}
+
+test('requires another review if a notice publication date changes', (t) => {
+  const f = fixture(t);
+  const before = f.read();
+  const result = f.run({ changedPublicationDate: true });
+  assert.equal(result.status, 2, result.stderr);
+  assert.match(result.stderr, /Publication date changed for 2026-20943/);
+  assert.deepEqual(f.read(), before);
+});
+
+test('keeps verifying when reviewed notices move from public inspection to publication', (t) => {
+  const f = fixture(t);
+  const result = f.run({ noticesPublished: true });
+  assert.equal(result.status, 0, result.stderr);
+  assert.match(result.stdout, /published and public-inspection feeds, all reviewed/);
 });

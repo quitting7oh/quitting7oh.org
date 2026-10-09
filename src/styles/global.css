@@ -1143,6 +1143,15 @@
     overflow-wrap: normal;
   }
 
+  .prose-recovery .ban-product-examples :is(th, td) {
+    overflow-wrap: normal;
+  }
+
+  .prose-recovery .ban-product-examples td:nth-child(2),
+  .prose-recovery .ban-product-examples :is(th, td):nth-child(3) {
+    white-space: nowrap;
+  }
+
   .responsive-table__scroll {
     max-width: 100%;
     overflow-x: auto;

@@ -1,47 +1,22 @@
 name: Update 7-OH ban status
 
-# Daily re-verification of the ban page and site banner. The script
-# checks the Federal Register for 7-hydroxymitragynine documents and
-# compares them against the reviewed-document allowlist it carries. If
-# everything published has already been folded into the page, it bumps
-# the "as of" dates and refreshes the docket's posted-comment count,
-# and this workflow commits the result (CF Pages deploys on push).
+# Check published documents and notices on public inspection before
+# refreshing dates. New unreviewed filings stop the run without edits;
+# a maintainer must update the page and reviewed-document allowlist.
+# Pending notices are not scheduling orders. Changes to the October
+# notices' expected publication dates also require another review.
 #
-# If an UNREVIEWED document has published (the pending 7-OH threshold
-# order, most importantly), the script exits non-zero WITHOUT touching
-# the files: the page keeps its last verified date, the run goes red,
-# and a human rewrites the page and adds the document number to
-# REVIEWED_DOCS. Stale-but-true beats fresh-but-false; never let a cron
-# claim "7-OH is not banned" past a document nobody has read.
-#
-# Re-running:
-#   - The Federal Register publishes at 8:45 AM ET, with special
-#     filings at 11:15 AM and 4:15 PM ET. A run is scheduled 4
-#     minutes after each slot. GitHub's cron is best-effort (starts
-#     routinely lag 3-15 min), so real notification latency is
-#     roughly 5-20 minutes past publication.
-#   - Cron is UTC with no DST awareness, so each slot gets BOTH its
-#     EDT and EST anchor (six crons). The wrong-season run of each
-#     pair lands an hour off target and hits the script's
-#     verification-only no-op; the right-season one lands 4 minutes
-#     after the slot. Extra runs cost nothing and can still catch a
-#     late-indexed document.
-#   - Only the day's first run commits; every later run is pure
-#     verification (the script exits before rewriting when the date
-#     is already current, and only goes red if something published).
-#   - workflow_dispatch lets a maintainer trigger it manually.
+# Runs follow the main 8:45 AM ET slot (both EDT/EST anchors) and
+# check hourly through the US publication day for special filings,
+# including irregular ones such as the October 9 noon notices.
+# GitHub cron is best-effort; these times are not notification guarantees.
+# Only the first run of the day rewrites dates. Later runs still check
+# both feeds, so a same-day filing cannot bypass review.
 
 on:
   schedule:
-    # 8:45 AM ET main publication + 4 min (EDT / EST anchors)
-    - cron: '49 12 * * *'
-    - cron: '49 13 * * *'
-    # 11:15 AM ET special filing + 4 min (EDT / EST anchors)
-    - cron: '19 15 * * *'
-    - cron: '19 16 * * *'
-    # 4:15 PM ET special filing + 4 min (EDT / EST anchors)
-    - cron: '19 20 * * *'
-    - cron: '19 21 * * *'
+    - cron: '49 12,13 * * *'
+    - cron: '19 12-22 * * *'
   workflow_dispatch:
 
 permissions:
@@ -86,7 +61,7 @@ jobs:
 
           git add src/components/SchedulingBanner.astro src/content/compounds/7-oh-ban.md
           git commit -m "content(ban): daily status re-verify" \
-                     -m "Federal Register checked: no scheduling order. As-of dates bumped; docket count refreshed." \
+                     -m "Published and public-inspection documents checked: all reviewed. As-of dates bumped; docket count refreshed." \
                      -m "See scripts/update-ban-status.mjs." \
                      -m "Co-Authored-By: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
 

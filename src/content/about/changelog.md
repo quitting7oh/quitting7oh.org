@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-09-22"
+last_updated: "2026-10-09"
 sort: 6
 ---
 
@@ -13,6 +13,21 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-10-09
+
+### Revised federal 7-OH and pseudo notices
+
+- Updated the ban page for DEA's October 9 filings: the combined
+  7-OH/pseudo concentration and mitragynine-ratio tests, the conditional
+  November 13 earliest order date, and continued Schedule I controls for
+  pseudo, MGM-15, and MGM-16. Added plain-language limits and product
+  examples showing passes and failures. Updated the compound-page notice
+  and banner.
+- The status monitor now checks public inspection as well as published
+  documents, follows pagination, and stops on unreviewed filings or changed
+  publication dates. Added both reviewed notices, regression coverage, and
+  hourly checks for irregular filings.
 
 ## 2026-09-21
 
