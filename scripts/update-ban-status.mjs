@@ -1,8 +1,8 @@
 /**
  * Daily re-verification of the 7-OH ban status.
  *
- * 1. Queries the Federal Register API for 7-hydroxymitragynine
- *    documents and compares them against REVIEWED_DOCS below.
+ * 1. Queries published and public-inspection Federal Register documents
+ *    and compares them against REVIEWED_DOCS below.
  *    - Any document a human hasn't reviewed makes this script REFUSE
  *      to touch the files and exit 2. The page keeps its last verified
  *      date (stale but true) and the red run is the signal to read the
@@ -30,8 +30,8 @@ import fs from 'node:fs';
 
 /**
  * Federal Register documents a human has read and reflected on the ban
- * page. Anything outside this set published on or after FLOOR_DATE
- * stops the run.
+ * page. Anything outside this set published or filed on or after
+ * FLOOR_DATE stops the run, including notices awaiting publication.
  */
 const REVIEWED_DOCS = new Map([
   ['2026-13580', 'Jul 6, 2026 — DEA notice of intent, 7-OH above a threshold (DEA-1570)'],
@@ -41,6 +41,8 @@ const REVIEWED_DOCS = new Map([
   ['2026-17409', 'Aug 26, 2026 — HHS OASH comment period extended to Sep 10, 2026'],
   ['2026-13364', 'Jul 1, 2026 — DEA notice of intent, SR-17018 and three other synthetic opioids (DEA-1665)'],
   ['2026-17531', 'Aug 27, 2026 — DEA temporary scheduling ORDER, SR-17018 / 5,6-dichloro desmethylchlorphine (in effect)'],
+  ['2026-20943', 'Filed Oct 9, 2026 — new 7-OH/pseudo threshold NOI; publication scheduled Oct 14 (DEA-1570)'],
+  ['2026-20942', 'Filed Oct 9, 2026 — companion MGM-15/MGM-16 NOI; existing controls remain (DEA-1644)'],
 ]);
 
 /**
@@ -49,7 +51,14 @@ const REVIEWED_DOCS = new Map([
  * that the 7-OH query does not surface, and the site makes dated claims
  * about it, so it gets watched too.
  */
-const SEARCH_TERMS = ['7-hydroxymitragynine', 'SR-17018'];
+const SEARCH_TERMS = ['7-hydroxymitragynine', 'MGM-15', 'MGM-16', 'SR-17018'];
+
+// The page's conditional earliest-order date depends on these dates.
+// A rescheduled filing needs another review before any date refresh.
+const EXPECTED_PUBLICATION_DATES = new Map([
+  ['2026-20943', '2026-10-14'],
+  ['2026-20942', '2026-10-14'],
+]);
 
 /**
  * Documents published before this are the pre-2026 historical record
@@ -79,19 +88,48 @@ const isoDate = new Intl.DateTimeFormat('en-CA', {
 
 // ── 1. Federal Register check ────────────────────────────────────────
 const byNumber = new Map();
-for (const term of SEARCH_TERMS) {
-  const frUrl =
-    'https://www.federalregister.gov/api/v1/documents.json' +
-    `?conditions%5Bterm%5D=${encodeURIComponent(term)}&order=newest&per_page=20`;
-  const frRes = await fetch(frUrl);
-  if (!frRes.ok) {
-    console.error(`Federal Register API returned ${frRes.status} for "${term}"; cannot verify. Aborting without changes.`);
-    process.exit(1);
-  }
-  const fr = await frRes.json();
-  for (const d of fr.results ?? []) {
-    // A document can match more than one term; dedupe by number.
-    if (d.publication_date >= FLOOR_DATE) byNumber.set(d.document_number, d);
+for (const feed of ['documents', 'public-inspection-documents']) {
+  for (const term of SEARCH_TERMS) {
+    let pageNumber = 1;
+    let totalPages = 1;
+    do {
+      const url = new URL(`https://www.federalregister.gov/api/v1/${feed}.json`);
+      url.searchParams.set('conditions[term]', term);
+      url.searchParams.set('per_page', '100');
+      url.searchParams.set('page', String(pageNumber));
+      if (feed === 'documents') url.searchParams.set('order', 'newest');
+      try {
+        const res = await fetch(url.href);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        // The API omits results and pagination for a zero-match search.
+        const empty = data.count === 0 && data.results === undefined && data.total_pages === undefined;
+        const results = empty ? [] : data.results;
+        const pages = empty ? 0 : data.total_pages;
+        if (!Array.isArray(results) || !Number.isInteger(pages) || pages < 0 || (pages === 0 && results.length > 0)) {
+          throw new Error('missing results or pagination metadata');
+        }
+        totalPages = Math.max(1, pages);
+        if (pageNumber < totalPages && results.length === 0) {
+          throw new Error('empty page before the end of the feed');
+        }
+        for (const d of results) {
+          if (typeof d.document_number !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(d.publication_date ?? '')) {
+            throw new Error('document missing its number or publication date');
+          }
+          const filedDate = d.filed_at?.slice(0, 10);
+          if (d.publication_date >= FLOOR_DATE || filedDate >= FLOOR_DATE) {
+            // Deduplicate across terms and feeds; a pending notice is
+            // reviewed before its publication, without treating it as an order.
+            byNumber.set(d.document_number, { ...d, feed });
+          }
+        }
+      } catch (error) {
+        console.error(`Federal Register ${feed} check failed for "${term}": ${error.message}. Aborting without changes.`);
+        process.exit(1);
+      }
+      pageNumber += 1;
+    } while (pageNumber <= totalPages);
   }
 }
 const inScope = [...byNumber.values()];
@@ -100,7 +138,7 @@ const unreviewed = inScope.filter((d) => !REVIEWED_DOCS.has(d.document_number));
 if (unreviewed.length > 0) {
   console.error('UNREVIEWED Federal Register document(s):');
   for (const d of unreviewed) {
-    console.error(`  ${d.publication_date} | ${d.document_number} | ${d.type} | ${d.title}`);
+    console.error(`  ${d.feed} | ${d.publication_date} | ${d.document_number} | ${d.type} | ${d.title}`);
     console.error(`  ${d.html_url}`);
   }
   console.error(
@@ -110,7 +148,16 @@ if (unreviewed.length > 0) {
   process.exit(2);
 }
 
-// A reviewed document that vanishes from the feed means the query or
+for (const d of inScope) {
+  const expectedDate = EXPECTED_PUBLICATION_DATES.get(d.document_number);
+  if (expectedDate && d.publication_date !== expectedDate) {
+    console.error(`Publication date changed for ${d.document_number}: expected ${expectedDate}, found ${d.publication_date}.`);
+    console.error('Review the filing and update the ban page timing before refreshing dates. Aborting without changes.');
+    process.exit(2);
+  }
+}
+
+// A reviewed document that vanishes from both feeds means the query or
 // the API changed shape; better to go red than to verify nothing.
 const seen = new Set(inScope.map((d) => d.document_number));
 const missing = [...REVIEWED_DOCS.keys()].filter((n) => !seen.has(n));
@@ -122,12 +169,12 @@ if (missing.length > 0) {
 
 console.log(
   `Federal Register: ${inScope.length} document(s) since ${FLOOR_DATE} across ` +
-    `${SEARCH_TERMS.length} search terms, all reviewed. ` +
+    `${SEARCH_TERMS.length} search terms in published and public-inspection feeds, all reviewed. ` +
     `No order on the 7-OH threshold as of ${monthDayYear}.`,
 );
 
 // The workflow runs after each of the Federal Register's publication
-// slots (8:45 AM, 11:15 AM, 4:15 PM ET). Only the day's first run
+// slots and throughout the day for irregular filings. Only the day's first run
 // rewrites anything; later runs are pure verification so the page
 // doesn't churn with count-only commits.
 const currentBanner = fs.readFileSync(BANNER, 'utf8');
@@ -207,8 +254,8 @@ page = mustReplace(
 page = mustReplace(
   PAGE,
   page,
-  /\*\*As of [A-Z][a-z]+ \d+, \d{4}, 7-OH is not banned\.\*\*/,
-  `**As of ${monthDayYear}, 7-OH is not banned.**`,
+  /\*\*As of [A-Z][a-z]+ \d+, \d{4}, (\[7-OH\]\(\/compounds\/7-oh\)|7-OH) is not federally scheduled\.\*\*/,
+  `**As of ${monthDayYear}, $1 is not federally scheduled.**`,
   'status as-of line',
 );
 page = mustReplace(

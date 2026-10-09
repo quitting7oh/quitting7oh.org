@@ -19,7 +19,7 @@ const lastCheckedLabel = new Intl.DateTimeFormat('en-US', {
     <span class="size-2 shrink-0 rounded-full bg-signal" aria-hidden="true"></span>
     <span class="min-w-0 text-foreground">
       <span class="font-semibold">Federal bans:</span>{' '}
-      Proposed for <span class="whitespace-nowrap">7-OH.</span> In effect for pseudo and <span class="whitespace-nowrap">MGM-15.</span>{' '}
+      New 7-OH/pseudo notice. Pseudo and <span class="whitespace-nowrap">MGM-15/16</span> remain Schedule I.{' '}
       <span class="whitespace-nowrap text-muted-foreground">
         <time datetime={LAST_CHECKED}>Last checked {lastCheckedLabel}</time> &rarr;
       </span>
@@ -41,7 +41,7 @@ const lastCheckedLabel = new Intl.DateTimeFormat('en-US', {
   dismiss?.addEventListener('click', () => {
     document.documentElement.dataset.schedulingBanner = 'hidden';
     try {
-      localStorage.setItem('scheduling-banner-dismissed-2026-08-26', '1');
+      localStorage.setItem('scheduling-banner-dismissed-2026-10-09', '1');
     } catch {
       // The page-level state still applies when storage is unavailable.
     }

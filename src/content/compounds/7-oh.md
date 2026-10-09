@@ -2,20 +2,21 @@
 title: "7-OH (7-Hydroxymitragynine)"
 description: "Concentrated 7-hydroxymitragynine, how it differs from kratom leaf, why dependence builds fast, and what makes it taperable."
 category: "compounds"
-last_updated: "2026-09-11"
+last_updated: "2026-10-09"
 sort: 2
 ---
 
 > **Looking for the 60-second version?** [What the Hell Is 7-OH?](/start-here/what-is-7-oh)
 > covers the basics in plain language before the pharmacology below.
 
-> **Regulatory news:** DEA filed notice of intent to temporarily place
-> 7-OH above a 0.05% / 1 mg threshold in Schedule I. The 30-day waiting
-> period expired August 5, 2026, so the order can publish any business
-> day and takes effect the day it does. Pseudo, MGM-15, and MGM-16 are
-> already Schedule I as of August 26, 2026. The HHS comment period
-> closed September 10. Dates and scope:
-> [The Federal 7-OH Ban](/compounds/7-oh-ban).
+<!-- Separate introductory callouts. -->
+
+> **Regulatory news:** DEA filed a new 7-OH/pseudo notice on October 9,
+> 2026, proposing combined concentration and mitragynine-ratio limits.
+> The filing lists October 14 for publication; a new order could issue
+> November 13 at the earliest if publication happens that day. Pseudo,
+> MGM-15, and MGM-16 remain Schedule I under the August 26 order.
+> [The Federal 7-OH Ban](/compounds/7-oh-ban) covers the dates and scope.
 
 7-OH is the compound this site is named after, and the compound most
 people here are trying to get off of. **It walks and talks like an opioid.**
@@ -97,13 +98,13 @@ The differences that matter:
 | Property | Leaf kratom (mitragynine-dominant) | Concentrated 7-OH |
 | ------------------------------ | ---------------------------------- | ------------------------ |
 | **Main active alkaloid** | Mitragynine (~40-66% of leaf) | 7-OH (isolated) |
-| **µ-receptor binding affinity**| Weak (K<sub>i</sub> ~709 nM at hMOR) | Moderate (K<sub>i</sub> ~78 nM at hMOR) |
+| **µ-receptor binding affinity** | Weak (K<sub>i</sub> ~709 nM at hMOR) | Moderate (K<sub>i</sub> ~78 nM at hMOR) |
 | **µ-agonism efficacy** | Minimal at hMOR | Partial agonist (E<sub>max</sub> ~41%) |
 | **Serotonergic / adrenergic activity** | Significant (via minor alkaloids) | Minimal |
 | **Typical use cadence** | Every 4-6 h, often less | Every 3-6 h, often more |
 | **Dependence trajectory** | Slow | Fast (weeks to months) |
 | **Withdrawal severity** | Mild to moderate | Moderate to severe |
-| **Withdrawal duration (acute)**| Several days | 5-10 days |
+| **Withdrawal duration (acute)** | Several days | 5-10 days |
 | **Bupe-induction profile** | Straightforward | Straightforward (12-18 h) |
 
 The shorthand: **kratom leaf is to 7-OH roughly what poppy tea is to
