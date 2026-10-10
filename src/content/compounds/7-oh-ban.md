@@ -2,16 +2,16 @@
 title: "The Federal 7-OH Ban: Dates and Scope"
 description: "DEA filed a new 7-OH and pseudo notice on October 9, 2026, with revised thresholds and a new waiting period. Pseudo, MGM-15, and MGM-16 remain Schedule I."
 category: "compounds"
-last_updated: "2026-10-09"
+last_updated: "2026-10-10"
 sort: 0
 ---
 
-> **Last verified against primary sources on October 9, 2026.** This page
+> **Last verified against primary sources on October 10, 2026.** This page
 > tracks published orders and notices on public inspection before publication.
 
 ## Status: new notice for 7-OH and pseudo
 
-**As of October 9, 2026, [7-OH](/compounds/7-oh) is not federally scheduled.** DEA filed a
+**As of October 10, 2026, [7-OH](/compounds/7-oh) is not federally scheduled.** DEA filed a
 [new notice of intent](https://public-inspection.federalregister.gov/2026-20943.pdf)
 for 7-OH and [mitragynine pseudoindoxyl](/compounds/pseudo) on October 9, following a new HHS
 recommendation. It changes the proposed threshold and starts a new
@@ -45,7 +45,7 @@ period and that the order would take effect on its publication date.
 | **October 9, 2026** | DEA filed new notices for 7-OH/pseudo and for MGM-15/MGM-16 on public inspection. |
 | **October 14, 2026 (scheduled)** | Publication date listed for the two new notices. Publication starts a new 30-day waiting period. |
 | **November 13, 2026 (conditional)** | Earliest new order date if the notices publish October 14. DEA has not announced an order date. |
-| **October 9, 2026** | Latest check against the Federal Register and public inspection: no temporary scheduling order for 7-OH; the August order remains in effect for the other three compounds. |
+| **October 10, 2026** | Latest check against the Federal Register and public inspection: no temporary scheduling order for 7-OH; the August order remains in effect for the other three compounds. |
 
 </div>
 
@@ -190,7 +190,7 @@ of the Assistant Secretary for Health ran a
 (Docket **HHS-OASH-2026-0232**) on the original threshold and
 [extended the period on August 26](https://www.federalregister.gov/documents/2026/08/26/2026-17409/hydroxymitragynine-above-a-specified-threshold-in-schedule-i-extension-of-comment-period).
 
-As of October 9,
+As of October 10,
 [the docket](https://www.regulations.gov/docket/HHS-OASH-2026-0232)
 showed 30,346 comments posted.
 
