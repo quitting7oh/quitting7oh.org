@@ -2,7 +2,7 @@
 title: "Welcome"
 description: "Start here — what quitting7oh.org is, who it's for, and the page most likely to help where you are right now."
 category: "start-here"
-last_updated: "2026-08-22"
+last_updated: "2026-10-18"
 sort: 1
 ---
 
@@ -31,7 +31,7 @@ considering quitting, people in PAWS, and the family and friends
 trying to help them.
 
 The content here was written by people who went through this.
-It was originally posted in our [Discord server](https://discord.gg/quitting7oh)
+It was originally posted in our [Discord server](https://discord.gg/FDJuEPcQz5)
 and has been cleaned up and organized here so that the most useful
 information is easy to find at any hour, on any device, without needing
 to scroll through chat history or have an account.
@@ -79,7 +79,7 @@ single most useful page for the next hour.
 
 For real-time help, live conversation, and the people behind the writing:
 
-- **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh),
+- **Discord:** [discord.gg/FDJuEPcQz5](https://discord.gg/FDJuEPcQz5),
   the active, real-time community
 - **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh/),
   searchable, slower, good for stories and questions you want to keep

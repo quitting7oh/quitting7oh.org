@@ -2,7 +2,7 @@
 title: "Quit 7-OH with Concentrated Mitragynine"
 description: "Concentrated mitragynine extracts as a bridge from 7-OH to abstinence — doses, timelines, the contamination concern, and how it compares to the other paths off."
 category: "medications-supplements"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 6
 ---
 
@@ -142,7 +142,7 @@ Most readers on this path do it without clinicians, and the site respects that. 
 - **Symptoms that aren't manageable at the bridge dose.** Higher mitragynine doses don't always solve this; sometimes the receptor load needs a medication path entirely. See [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
 - **Concurrent mental-health symptoms getting worse.** Depression, anxiety, or sleep disruption warranting clinical care exists separately from the addiction-medicine path.
 
-For the path-shape questions (am I doing this right, should I cut faster, when do I jump), the live discussion happens in the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). Post there. Real people, real time.
+For the path-shape questions (am I doing this right, should I cut faster, when do I jump), the live discussion happens in the [Discord](https://discord.gg/FDJuEPcQz5) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). Post there. Real people, real time.
 
 ## Further reading
 

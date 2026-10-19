@@ -2,7 +2,7 @@
 title: "For You: Start Here"
 description: "Practical resources for the person in recovery, treatment, work protections, mutual aid, and sober living. Meets you wherever you are."
 category: "for-you"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 1
 ---
 
@@ -41,7 +41,7 @@ The community's experience with [7-OH](/compounds/7-oh) and kratom synthetics sp
 
 You're not the first person to be where you are. Real-time conversation often helps more than reference material:
 
-- **Discord:** [discord.gg/quitting7oh](https://discord.gg/quitting7oh), active, real-time, includes a `#sos` channel for the hardest moments.
+- **Discord:** [discord.gg/FDJuEPcQz5](https://discord.gg/FDJuEPcQz5), active, real-time, includes a `#sos` channel for the hardest moments.
 - **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh), slower, searchable, good for reading how others handled what you're going through.
 - See **[Community](/about/the-community)** for which to use when.
 

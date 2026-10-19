@@ -2,7 +2,7 @@
 title: "Why Suboxone Might Not Be Working: Read This First"
 description: "Why bupe sometimes doesn't cover you: serotonergic and adrenergic symptoms, the dose-ceiling question, long-acting compounds."
 category: "mat-suboxone"
-last_updated: "2026-08-21"
+last_updated: "2026-10-18"
 sort: 7
 ---
 If you're freaking out because bupe isn't doing what you thought it would: **you're not broken, your medication isn't broken, and you're not failing.** There are well-understood reasons it can feel inadequate, especially coming off [7-OH](/compounds/7-oh) and related compounds. Standard Suboxone protocols were built around heroin, oxy, and prescription opioids. What we're recovering from is different in several ways, and the medication needs to be used a little differently to fully cover what's happening.
@@ -76,7 +76,7 @@ There's also a partial agonist ceiling effect that matters here: bupe activates 
 3. **Be honest about what you were on.** If MGM-15, or pseudo were in the mix, the playbook changes.
 4. **Don't bail in the first 1-2 days.** This is when most people quit, because it's when bupe feels least like what their body was used to and the non-opioid symptoms are at their worst. Your dose may not be dialed in yet, your adjuncts may not be in your system yet. Push through to day 2 or 3 with the right dose and adjuncts in place.
 5. **Don't redose your old compound to take the edge off.** That's how this restarts.
-6. **Talk to the community.** People in our [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) have lived through what you're going through with these specific compounds.
+6. **Talk to the community.** People in our [Discord](https://discord.gg/FDJuEPcQz5) and [subreddit](https://www.reddit.com/r/quitting7oh/) have lived through what you're going through with these specific compounds.
 
 ## When to seek emergency help
 - Severe symptoms that won't resolve and feel unmanageable
@@ -90,7 +90,7 @@ None of those is giving up. They're tools.
 ## A note on patience
 The standard recovery resources tell you bupe will make you feel "back to normal" pretty quickly. For our population, that's not always true on the standard timeline. **The first few days are the hardest, and day 1 to 2 is when most people in this community quit.** That's exactly the window where bupe hasn't fully kicked in, your dose probably isn't optimized yet, and the serotonergic/adrenergic symptoms haven't responded to adjuncts that need a day or two to take effect. **Push through.** Adjuncts help. The right dose helps. By day 4 or 5 most people are in noticeably better shape than day 1 or 2.
 
-If you're approaching the end of your taper and still feel terrible, talk to your prescriber, and post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) for community input. There may be something specific to your situation worth troubleshooting.
+If you're approaching the end of your taper and still feel terrible, talk to your prescriber, and post in the [Discord](https://discord.gg/FDJuEPcQz5) or [subreddit](https://www.reddit.com/r/quitting7oh/) for community input. There may be something specific to your situation worth troubleshooting.
 
 ## Sources
 - [León F, Obeng S, et al. Activity of *Mitragyna speciosa* ("Kratom") Alkaloids at Serotonin Receptors. *J Med Chem* 2021;64(18):13510–13523](https://pmc.ncbi.nlm.nih.gov/articles/PMC9235362/), 5-HT₁ₐ/2 binding affinities for mitragynine vs. paynantheine and speciogynine; opioid-independent 5-HT₁ₐ antinociception

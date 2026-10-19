@@ -2,7 +2,7 @@
 title: "Tapering Off 7-OH"
 description: "What a 7-OH taper actually looks like — the early dose-halving stretch, the low-dose plateau where most tapers stall, the jump-off, and what helps at each stage."
 category: "for-you"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 3
 ---
 
@@ -29,7 +29,7 @@ Tapering off 7-OH means stepping your daily dose down on a schedule until you ca
 
 The numbers are community observation, not clinical thresholds. Starting dose, duration of use, polysubstance history, and the specific products used all shift where the plateau lands.
 
-> **Reference, not advice.** Numbers and patterns on this page come from community observation in the [Discord](https://discord.gg/quitting7oh) and the [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) and r/quittingkratom subreddits, plus extrapolation from the broader opioid-use-disorder taper literature. Published clinical research on 7-OH-specific tapering is essentially absent. This page describes what tapering looks like; it does not provide a schedule for you to follow. For medication-supported paths, see [Suboxone](/mat-suboxone/suboxone-for-7oh) (bupe bridge) or [Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) (kratom-leaf step-down).
+> **Reference, not advice.** Numbers and patterns on this page come from community observation in the [Discord](https://discord.gg/FDJuEPcQz5) and the [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) and r/quittingkratom subreddits, plus extrapolation from the broader opioid-use-disorder taper literature. Published clinical research on 7-OH-specific tapering is essentially absent. This page describes what tapering looks like; it does not provide a schedule for you to follow. For medication-supported paths, see [Suboxone](/mat-suboxone/suboxone-for-7oh) (bupe bridge) or [Quit 7-OH with Kratom Leaf](/medications-supplements/quit-7-oh-with-kratom-leaf) (kratom-leaf step-down).
 
 ## The four phases in more detail
 
@@ -65,7 +65,7 @@ The reader chooses based on what's accessible. Clinical support and community ap
 
 **Cannabis.** Some people use cannabis during a taper, particularly for sleep, anxiety, and nausea. See [Cannabis and THC in Recovery](/medications-supplements/cannabis-thc-in-recovery) for the trade-offs and the community-discussed limits.
 
-**Community support.** The [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are how most people get through this. Accountability, pattern-matching with peers in the same phase, and the simple fact of someone knowing what you're doing make a measurable difference. See [The Community](/about/the-community) for more on each space.
+**Community support.** The [Discord](https://discord.gg/FDJuEPcQz5) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are how most people get through this. Accountability, pattern-matching with peers in the same phase, and the simple fact of someone knowing what you're doing make a measurable difference. See [The Community](/about/the-community) for more on each space.
 
 **Clinical support.** Available to readers who want it. [Telehealth providers](/resources/telehealth-for-suboxone) experienced with kratom and 7-OH dependence can prescribe [comfort medications](/medications-supplements/helper-meds), clonidine, gabapentin, hydroxyzine (with the [restless-legs caveat](/medications-supplements/helper-meds)), trazodone, anti-emetics, sleep medications, that meaningfully reduce the symptom burden at the lower-dose plateau especially. Many people taper successfully without clinical support; many find that adding it at the plateau is what gets them through. Both work.
 

@@ -2,7 +2,7 @@
 title: "Bernese Method (Micro-Induction)"
 description: "The Bernese Method — low-dose Suboxone induction with overlapping full-agonist use. Original protocol, modern variants, and where it fits for kratom synthetics."
 category: "mat-suboxone"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 3
 ---
 
@@ -111,7 +111,7 @@ For the right person micro-induction works, but plan for the support structure t
 
 If you're considering the Bernese method for [MGM-15](/compounds/mgm15), [pseudo](/compounds/mitragynine-pseudoindoxyl), or any of the other kratom synthetics, **you're extrapolating from the methadone and fentanyl literature.** The pharmacologic rationale (a long-acting full agonist with receptor adaptation that benefits from a gradual ramp) is the same shape, and prescribers familiar with micro-induction will recognize that immediately. But there's no published cohort that has tested this for the kratom synthetics specifically. Anyone telling you "this is the proven protocol for MGM-15" is overstating what the literature shows.
 
-**A handful of people in this community have used micro-induction successfully for 7-OH, MGM-15, and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/quitting7oh) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked, community knowledge here is ahead of the published literature.
+**A handful of people in this community have used micro-induction successfully for 7-OH, MGM-15, and stacked synthetic products,** generally with a prescriber who understood the rationale and was willing to adapt. The volume of community experience is small. If you've used it, the [Discord](https://discord.gg/FDJuEPcQz5) and [subreddit](https://www.reddit.com/r/quitting7oh/) are the places to share what worked, community knowledge here is ahead of the published literature.
 
 ## You usually don't need prescriber buy-in on the protocol
 

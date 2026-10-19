@@ -2,7 +2,7 @@
 title: "Quit 7-OH with Kratom Leaf"
 description: "Using plain kratom leaf as a bridge off concentrated 7-OH and other kratom synthetics, when it works, when it doesn't, and how to taper the leaf afterward."
 category: "medications-supplements"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 5
 ---
 For some users in this community, **plain kratom leaf powder can be used as a taper tool** to come off [7-OH](/compounds/7-oh) and other concentrated kratom-derived products. The reasoning is straightforward: [7-OH](/compounds/7-oh) is one of the alkaloids naturally present in kratom leaf, just at far lower concentrations than in concentrated products. Tapering down to leaf is essentially reducing your alkaloid exposure to a fraction of what concentrated products deliver, and then tapering off the leaf itself.
@@ -110,7 +110,7 @@ What to look for:
 - **Trying this at higher daily doses.** If you're at 500+ mg/day, leaf is unlikely to cover you adequately. Look at [Suboxone](/mat-suboxone/suboxone-for-7oh) instead.
 
 ## If leaf isn't working
-**That's not failure, it just means you need a different tool.** Suboxone or a clinical taper plan may be a better fit. Post in the [Discord](https://discord.gg/quitting7oh) or [subreddit](https://www.reddit.com/r/quitting7oh/) to talk through options with people who've faced the same call. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
+**That's not failure, it just means you need a different tool.** Suboxone or a clinical taper plan may be a better fit. Post in the [Discord](https://discord.gg/FDJuEPcQz5) or [subreddit](https://www.reddit.com/r/quitting7oh/) to talk through options with people who've faced the same call. If symptoms become unmanageable, your prescriber or local urgent care are appropriate resources. **911** is the crisis line if you need it.
 
 ## Sources
 - [Mitragynine, Wikipedia](https://en.wikipedia.org/wiki/Mitragynine)

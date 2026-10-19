@@ -2,7 +2,7 @@
 title: "MGM-15"
 description: "MGM-15 (dihydro-7-hydroxymitragynine), the long-acting reduced 7-OH. The same compound sold under the labels MIT-A and (mislabeled) DHM. Chemistry, the COA-testing problem, regulatory landscape, taper plan, Suboxone induction notes."
 category: "compounds"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 3
 ---
 
@@ -121,7 +121,7 @@ The working picture: low-dose MGM-15 plus concentrated mitragynine, with composi
 - A GC-MS COA showing "mitragynine, no 7-OH" on a product producing opioid-class effects is the analytical method hiding the active compound, not the product being mild.
 - For meaningful verification, look for LC-MS/MS or LC-QTOF-MS analysis. Be prepared for those tests to show MGM-15 even when GC-MS doesn't.
 - Dependence on these products produces opioid withdrawal. The withdrawal arc is longer than 7-OH withdrawal because MGM-15's duration is longer. Standard Suboxone induction often needs a longer washout (36–72 hours) and may not cover the first 2–3 days well; community reports consistently describe this. See [Suboxone](/mat-suboxone/suboxone-for-7oh), the [COWS & SOWS induction guide](/mat-suboxone/sows-cows-induction-guide), and [Why Suboxone Might Not Be Working](/mat-suboxone/why-suboxone-isnt-working).
-- For the live discussion of what specific products are being sold and what the latest testing shows, the [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are the places to go.
+- For the live discussion of what specific products are being sold and what the latest testing shows, the [Discord](https://discord.gg/FDJuEPcQz5) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are the places to go.
 
 ## Open questions and limits
 
