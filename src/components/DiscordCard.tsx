@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 const GUILD_ID = '1366097989382307901';
 const WIDGET_URL = `https://discord.com/api/guilds/${GUILD_ID}/widget.json`;
-const INVITE_URL = 'https://discord.gg/quitting7oh';
+const INVITE_URL = 'https://discord.gg/FDJuEPcQz5';
 
 interface DiscordMember {
   id: string;

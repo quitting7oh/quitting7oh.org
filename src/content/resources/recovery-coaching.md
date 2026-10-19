@@ -2,7 +2,7 @@
 title: "Recovery Coaching"
 description: "What peer recovery coaching is, what it costs, and how to weigh a paid service like You Are Accountable against the free peer support this community already runs."
 category: "resources"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 3
 ---
 
@@ -30,7 +30,7 @@ those don't cover: the daily structure of getting through the first
 year.
 
 Most of what coaching provides, you can get for free. The community runs
-a [Discord](https://discord.gg/quitting7oh) and
+a [Discord](https://discord.gg/FDJuEPcQz5) and
 [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) where people
 who've been through this answer at any hour.
 [Mutual-aid groups](/for-you/mutual-aid) like Kratom Anonymous and SMART

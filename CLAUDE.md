@@ -770,7 +770,7 @@ When writing taper, induction, or dosing guidance:
 
 ### Community routing: only our resources for calls-to-action
 
-The site is the [Discord](https://discord.gg/quitting7oh) and
+The site is the [Discord](https://discord.gg/FDJuEPcQz5) and
 [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) community's
 public reference. When telling readers where to go for community
 support, those are the only addresses we name.

@@ -2,7 +2,7 @@
 title: "NAD+ IV Therapy"
 description: "NAD+ infusions for 7-OH and kratom recovery — what's offered, what it costs, what the published evidence supports, and where it falls short."
 category: "medications-supplements"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 7
 ---
 
@@ -134,7 +134,7 @@ For a far cheaper withdrawal adjunct with a more-established (though still preli
 
 NAD+ IV therapy requires a clinician to prescribe and a clinical setting to administer. The clinicians who actively offer it are typically functional and integrative medicine practitioners, addiction-specialty NAD+ programs, or specialty IV therapy clinics. Most standard addiction-medicine prescribers (the kind reachable through general telehealth platforms) will not have a substantive position on it; some have a one-line stance, supportive or skeptical, and few will engage with the dose-and-protocol nuance the published literature does not yet support.
 
-The decision itself is closer to community ground than clinic ground. The most useful conversation is usually with someone who has done a course and can describe what the experience was like, what they paid, and what they think they got. The [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are reasonable starting points.
+The decision itself is closer to community ground than clinic ground. The most useful conversation is usually with someone who has done a course and can describe what the experience was like, what they paid, and what they think they got. The [Discord](https://discord.gg/FDJuEPcQz5) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are reasonable starting points.
 
 For drug-interaction questions about your other medications, a prescriber is the right address.
 

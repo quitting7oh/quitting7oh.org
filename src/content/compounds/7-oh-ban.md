@@ -245,7 +245,7 @@ supervision. Call the
 (1-800-662-4357) or use [findtreatment.gov](https://findtreatment.gov).
 
 For peer support and discussion of supply changes, the
-[Discord](https://discord.gg/quitting7oh) and
+[Discord](https://discord.gg/FDJuEPcQz5) and
 [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are the
 community's resources.
 

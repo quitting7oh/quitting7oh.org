@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-10-09"
+last_updated: "2026-10-19"
 sort: 6
 ---
 
@@ -13,6 +13,16 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-10-18
+
+### New Discord invite link
+
+- Swapped every `discord.gg/quitting7oh` reference for the new invite,
+  `discord.gg/FDJuEPcQz5`: the header, footer, homepage, crisis layout,
+  Discord card, and 21 content pages, plus the project notes and the
+  changelog's own historical mentions. The third-party NA meeting
+  servers in the meetings data are unrelated and were left alone.
 
 ## 2026-10-09
 
@@ -2317,7 +2327,7 @@ content includes MGM-15 in the products that have been tested.
 ### Community routing: only our resources for calls-to-action
 
 New CLAUDE.md rule: when telling readers where to go for community
-support, name only the [Discord](https://discord.gg/quitting7oh)
+support, name only the [Discord](https://discord.gg/FDJuEPcQz5)
 and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). Other
 subs can be named accurately in sourcing context, but ours go
 first in that list. The line between routing (only ours) and
@@ -2583,7 +2593,7 @@ moved.
   as a small text link below.
 - **Footer Community column** added to the disclaimer row (4-up on
   desktop, 2x2 on tablet, stacked on mobile). Full-domain anchor
-  text (`reddit.com/r/quitting7oh`, `discord.gg/quitting7oh`) for
+  text (`reddit.com/r/quitting7oh`, `discord.gg/FDJuEPcQz5`) for
   backlink SEO.
 - **Category blurbs** in `src/lib/categories.ts` brought current.
   `other-tools` dropped the stale naltrexone reference and gained
@@ -2896,7 +2906,7 @@ clobbering editorial work.
 
 User-facing Discord references (the homepage card, the
 [/resources/community](/about/the-community) page, "Join the Discord"
-callouts, the `discord.gg/quitting7oh` invite link) are **kept** — these
+callouts, the `discord.gg/FDJuEPcQz5` invite link) are **kept** — these
 are community-pointer content, not data sources, and they're how
 readers find live help.
 
@@ -3112,7 +3122,7 @@ been replaced with plain descriptions.
   Suboxone vs. SR-17018), explicit ER red flags, sleep/food/mindset
   sections, closing reading list.
 - **`resources/community.md`** — full page on the Discord
-  (`discord.gg/quitting7oh`) and subreddit (`r/quitting7oh`), with a
+  (`discord.gg/FDJuEPcQz5`) and subreddit (`r/quitting7oh`), with a
   "which to use when" comparison table, anonymity note, "how to help"
   section.
 
@@ -3447,7 +3457,7 @@ list), `imports/suboxone-rapid-taper.md` ("seek help" trigger).
 Added a row of community links to the homepage hero, just below the
 SOS CTA:
 
-- **💬 Discord:** `discord.gg/quitting7oh` — real-time community
+- **💬 Discord:** `discord.gg/FDJuEPcQz5` — real-time community
 - **📖 r/quitting7oh:** searchable, slower, good for stories
 - **→ About the community** — links to the deeper community page
 

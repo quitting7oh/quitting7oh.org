@@ -2,7 +2,7 @@
 title: "Thinking About Using? (The Fuck Its)"
 description: "You're considering using again right now. Here's the one thing to do first, the people to call, and what to know about post-abstinence tolerance."
 category: "start-here"
-last_updated: "2026-06-09"
+last_updated: "2026-10-18"
 sort: 6
 ---
 
@@ -93,7 +93,7 @@ In order. **Real humans first. Digital community is the fallback.**
 6. **Text a human who knows you**, if a call is impossible
    right now.
 7. **Online community**, the
-   [Discord](https://discord.gg/quitting7oh) `#sos` channel and
+   [Discord](https://discord.gg/FDJuEPcQz5) `#sos` channel and
    [r/quitting7oh](https://www.reddit.com/r/quitting7oh/). These are
    real people, but they're the **fallback**, not the first move,
    async text in a feed doesn't substitute for a voice.

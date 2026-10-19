@@ -2,7 +2,7 @@
 title: "Peptides for 7-OH and Kratom-Synthetic Withdrawal"
 description: "Peptides used as adjuncts in 7-OH and kratom-synthetic recovery — BPC-157, Selank, Semax, DSIP, TB-500 — the evidence and the unregulated-supply safety concerns."
 category: "medications-supplements"
-last_updated: "2026-08-28"
+last_updated: "2026-10-18"
 sort: 8
 ---
 
@@ -185,7 +185,7 @@ For other adjuncts in this category, see [NAD+ IV Therapy](/medications-suppleme
 
 Functional and integrative medicine practitioners and peptide-specialty telehealth clinics are the prescribers who actively engage with peptides. Most standard addiction-medicine prescribers will not have a substantive position; a few have a one-line stance, supportive or skeptical.
 
-For the choice itself, the most useful conversation is usually with someone in the community who has used a specific peptide and can describe the experience, source, cost, and result. The [Discord](https://discord.gg/quitting7oh) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are reasonable starting points. For drug-interaction questions about your prescribed medications, a prescriber is the right address. For BPC-157 with personal or family cancer history, an oncologist's input is worth having before starting.
+For the choice itself, the most useful conversation is usually with someone in the community who has used a specific peptide and can describe the experience, source, cost, and result. The [Discord](https://discord.gg/FDJuEPcQz5) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are reasonable starting points. For drug-interaction questions about your prescribed medications, a prescriber is the right address. For BPC-157 with personal or family cancer history, an oncologist's input is worth having before starting.
 
 ## Further reading
 
