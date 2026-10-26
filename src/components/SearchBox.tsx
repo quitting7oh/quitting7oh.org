@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ArrowRight, LoaderCircle, Search, X } from 'lucide-react';
 import { Dialog as DialogPrimitive } from 'radix-ui';
+import { Button } from '~/components/ui/button';
 import {
   SEARCH_CATEGORY_OPTIONS,
   SEARCH_EXAMPLE_QUERIES,
@@ -244,6 +245,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
   const isInline = variant === 'inline';
   const isEmbedded = variant === 'inline' || variant === 'hero' || isPage;
   const resultsVisible = Boolean(query.trim()) && (!isInline || open);
+  const resultsReady = resultsVisible && status === 'ready' && query.trim() === resolvedQuery;
   const resultLimit = isPage ? 60 : variant === 'header' ? 8 : 6;
 
   const warmIndex = React.useCallback(() => {
@@ -343,15 +345,15 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       setActiveIndex(event.key === 'ArrowUp' ? Math.max(0, response.results.length - 1) : 0);
       return;
     }
-    if (event.key === 'ArrowDown' && response.results.length) {
+    if (event.key === 'ArrowDown' && resultsReady && response.results.length) {
       event.preventDefault();
       setActiveIndex((index) => (index + 1) % response.results.length);
     }
-    if (event.key === 'ArrowUp' && response.results.length) {
+    if (event.key === 'ArrowUp' && resultsReady && response.results.length) {
       event.preventDefault();
       setActiveIndex((index) => (index - 1 + response.results.length) % response.results.length);
     }
-    if (event.key === 'Enter' && resultsVisible && response.results[activeIndex]) {
+    if (event.key === 'Enter' && resultsReady && response.results[activeIndex]) {
       event.preventDefault();
       window.location.href = response.results[activeIndex].url;
     }
@@ -359,6 +361,11 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       event.preventDefault();
       setQuery('');
     }
+  };
+
+  const clearSearch = () => {
+    setQuery('');
+    inputRef.current?.focus();
   };
 
   const searchInput = (className: string) => (
@@ -387,7 +394,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
       aria-autocomplete="list"
       aria-expanded={resultsVisible}
       aria-controls={isInline && !resultsVisible ? undefined : resultsId}
-      aria-activedescendant={resultsVisible && response.results[activeIndex] ? `${resultsId}-result-${activeIndex}` : undefined}
+      aria-activedescendant={resultsReady && response.results[activeIndex] ? `${resultsId}-result-${activeIndex}` : undefined}
       className={className}
     />
   );
@@ -415,17 +422,16 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
           <Search className="size-5 shrink-0 text-primary" aria-hidden="true" />
           {searchInput(cn('h-full min-w-0 flex-1 bg-transparent text-foreground outline-none placeholder:text-muted-foreground', isPage ? 'text-lg' : 'text-base'))}
           {query ? (
-            <button
+            <Button
               type="button"
-              onClick={() => {
-                setQuery('');
-                inputRef.current?.focus();
-              }}
-              className="inline-flex size-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground"
+              variant="ghost"
+              size="icon"
+              onClick={clearSearch}
+              className="text-muted-foreground hover:bg-muted hover:text-foreground"
               aria-label="Clear search"
             >
               <X className="size-4" aria-hidden="true" />
-            </button>
+            </Button>
           ) : (
             <span className="hidden text-xs font-semibold text-muted-foreground sm:inline">Type to search</span>
           )}
@@ -517,9 +523,16 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
             <Search className="size-5 shrink-0 text-primary" aria-hidden="true" />
             {searchInput('h-16 min-w-0 flex-1 bg-transparent text-lg text-foreground outline-none placeholder:text-muted-foreground sm:h-[4.5rem] sm:text-xl')}
             {query && (
-              <button type="button" onClick={() => setQuery('')} className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-border hover:text-foreground" aria-label="Clear search">
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={clearSearch}
+                className="rounded-full bg-muted text-muted-foreground hover:bg-border hover:text-foreground"
+                aria-label="Clear search"
+              >
                 <X className="size-3.5" aria-hidden="true" />
-              </button>
+              </Button>
             )}
             <DialogPrimitive.Close asChild>
               <button type="button" className="ml-1 inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-lg px-2.5 text-sm font-bold text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Close search">
@@ -543,7 +556,7 @@ export function SearchBox({ variant = 'header', placeholder }: Props) {
             variant="dialog"
           />
 
-          {query.trim() && status === 'ready' && response.results.length > 0 && (
+          {resultsReady && response.results.length > 0 && (
             <a href={`/search?q=${encodeURIComponent(query.trim())}`} className="flex min-h-12 items-center justify-between border-t border-border px-5 text-sm font-bold text-primary hover:bg-accent">
               View all {response.total.toLocaleString()} results
               <ArrowRight className="size-4" aria-hidden="true" />
