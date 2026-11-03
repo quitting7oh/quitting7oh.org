@@ -242,13 +242,17 @@ pipeline has been retired; do not reintroduce it.
 
 Astro renders the page shell and static components. React handles controls
 that need browser state, such as search, theme selection, calculators, and
-the mobile drawer. The interface uses a small set of custom Radix primitives
-instead of the generated shadcn component layer.
+the mobile drawer. Shared controls use Radix primitives, including components
+originally added through shadcn/ui and styled with the Field Guide tokens.
 
 Conventions:
 
-- New components go in `src/components/`. Put reusable Radix wrappers in
-  `src/components/ui/` and style them with the Field Guide tokens.
+- New components go in `src/components/`. Reuse controls from
+  `src/components/ui/` before repeating their markup and styles.
+- For a missing interactive control, start with a suitable Radix-backed
+  shadcn/ui component and adapt it to the Field Guide tokens. Keep custom
+  Radix wrappers for needs the existing components do not cover; document
+  the reason for custom behavior. Keep static content in Astro.
 - Mount React components from `.astro` files with the appropriate
   hydration directive:
   - `client:load` — needs to be interactive immediately (theme picker,
