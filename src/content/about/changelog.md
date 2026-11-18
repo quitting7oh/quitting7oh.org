@@ -26,6 +26,10 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   from r/quittingcatsclaw with the brands named, a mixed-drug risk
   bullet with naloxone guidance, and a polysubstance withdrawal warning
   routing to SAMHSA and findtreatment.gov.
+- Reorganized the page around the testing: the intro now names what's
+  in these products, the cover-story and corynoxine B sections merged
+  into one shorter section on why the label says cat's claw, and the
+  speculative synthesis section was cut.
 
 ### Search and AI-crawler groundwork
 
