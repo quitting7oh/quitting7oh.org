@@ -36,7 +36,12 @@ const isMeetingSchedule = doc.id === 'resources/meeting-schedules';
 ---
 
 {isCrisisPage ? (
-  <CrisisLayout title={doc.data.title} description={doc.data.description} />
+  <CrisisLayout
+    title={doc.data.title}
+    description={doc.data.description}
+    category={doc.data.category}
+    lastUpdated={doc.data.last_updated}
+  />
 ) : (
   <DocLayout
     title={doc.data.title}

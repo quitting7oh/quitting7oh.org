@@ -5,7 +5,8 @@ import Header from '~/components/Header.astro';
 import { BackToTop } from '~/components/BackToTop';
 import SchedulingBanner from '~/components/SchedulingBanner.astro';
 import Footer from '~/components/Footer.astro';
-import { SITE } from '~/lib/site';
+import { routePath, SITE } from '~/lib/site';
+import { serializeJsonLd, siteGraph } from '~/lib/structured-data';
 import bodyFontUrl from '@fontsource-variable/commissioner/files/commissioner-latin-standard-normal.woff2?url';
 import displayFontUrl from '@fontsource-variable/stix-two-text/files/stix-two-text-latin-wght-normal.woff2?url';
 
@@ -18,6 +19,15 @@ interface Props {
   minimal?: boolean;
   /** Keep the reading-progress escape hatch available without restoring full chrome. */
   showBackToTop?: boolean;
+  /** Exclude unlisted pages from search-engine results. */
+  noindex?: boolean;
+  /** Open Graph type: 'article' for content pages, 'website' elsewhere. */
+  ogType?: 'website' | 'article';
+  /** Emitted as article:modified_time when ogType is 'article'. */
+  modifiedTime?: Date;
+  /** Page-level JSON-LD nodes added to the site-wide graph. Dropped on
+   *  noindex pages. */
+  structuredData?: Record<string, unknown>[];
 }
 
 const {
@@ -26,11 +36,16 @@ const {
   canonical,
   minimal = false,
   showBackToTop = !minimal,
+  noindex = false,
+  ogType = 'website',
+  modifiedTime,
+  structuredData = [],
 } = Astro.props;
 const pageTitle = title
   ? `${title} · ${SITE.title}.org`
   : `7-OH Withdrawal Help & Taper Guides | ${SITE.title}.org`;
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
+const canonicalUrl = canonical ?? new URL(routePath(Astro.url.pathname), SITE.url).toString();
+const jsonLd = serializeJsonLd([...siteGraph(), ...(noindex ? [] : structuredData)]);
 ---
 
 <!doctype html>
@@ -56,7 +71,10 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta property="og:site_name" content={`${SITE.title}.org`} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
+    {ogType === 'article' && modifiedTime && (
+      <meta property="article:modified_time" content={modifiedTime.toISOString().slice(0, 10)} />
+    )}
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={`${SITE.url}/og-image.png`} />
     <meta property="og:image:width" content="1200" />
@@ -71,7 +89,8 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString
     <meta name="twitter:image:alt" content="quitting7oh.org — recovery information for 7-OH, MGM-15, and kratom-derived synthetics" />
     <meta name="theme-color" content="#f8f5ef" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#211a15" media="(prefers-color-scheme: dark)" />
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
+    <script type="application/ld+json" set:html={jsonLd} />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZPHE0EXTM" is:inline></script>
     <script is:inline>

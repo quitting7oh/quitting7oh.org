@@ -5,6 +5,8 @@ import { AppSidebar } from '~/components/AppSidebar';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { CATEGORIES, CATEGORY_GROUPS, getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
+import { routePath, SITE } from '~/lib/site';
+import { breadcrumbNode, pageNode } from '~/lib/structured-data';
 import { ArrowRight } from 'lucide-react';
 
 export async function getStaticPaths() {
@@ -24,7 +26,7 @@ docs.sort((a, b) => {
 });
 
 const sidebarCategories = await getSidebarCategories();
-const currentPath = Astro.url.pathname;
+const currentPath = routePath(Astro.url.pathname);
 const pinnedPaths = new Set(PINNED_PAGES.map((item) => item.href));
 const configuredGroups = CATEGORY_GROUPS[cat.slug] ?? [];
 const docBySlug = new Map(
@@ -50,9 +52,21 @@ const ungroupedDocs = docs.filter((doc) => {
 if (configuredGroups.length && ungroupedDocs.length) {
   sections.push({ name: 'More in this section', docs: ungroupedDocs });
 }
+
+const pageUrl = new URL(currentPath, SITE.url).toString();
+const structuredData = [
+  pageNode({
+    type: 'CollectionPage',
+    url: pageUrl,
+    name: cat.title,
+    description: cat.blurb,
+    breadcrumb: true,
+  }),
+  breadcrumbNode(pageUrl, [{ label: cat.title }]),
+];
 ---
 
-<BaseLayout title={cat.title} description={cat.blurb}>
+<BaseLayout title={cat.title} description={cat.blurb} structuredData={structuredData}>
   <div class="mx-auto flex max-w-[94rem] items-stretch">
     <main id="main-content" class="min-w-0 flex-1">
       <header class="border-b border-border bg-card px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-9">

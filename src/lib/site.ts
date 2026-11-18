@@ -16,3 +16,17 @@ export function viewOnGithubUrl(filePath: string): string {
   // filePath looks like "start-here/welcome.md"
   return `${SITE.repo}/blob/${SITE.branch}/${SITE.contentRoot}/${filePath}`;
 }
+
+/**
+ * The public route for a built page. With `build.format: 'file'`,
+ * `Astro.url.pathname` at build time includes the `.html` suffix
+ * (`/compounds/7-oh.html`, `/index.html`). Readers, canonicals, and the
+ * sitemap use the extensionless form, so strip it here.
+ */
+export function routePath(pathname: string): string {
+  const path = pathname
+    .replace(/\.html$/, '')
+    .replace(/\/index$/, '/')
+    .replace(/(.)\/+$/, '$1');
+  return path || '/';
+}
