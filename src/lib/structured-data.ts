@@ -38,7 +38,7 @@ export function siteGraph(): Node[] {
         width: 512,
         height: 512,
       },
-      sameAs: ['https://discord.gg/quitting7oh', 'https://www.reddit.com/r/quitting7oh/'],
+      sameAs: ['https://discord.gg/FDJuEPcQz5', 'https://www.reddit.com/r/quitting7oh/'],
     },
     {
       '@type': 'WebSite',

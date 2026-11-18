@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-10-19"
+last_updated: "2026-11-18"
 sort: 6
 ---
 
@@ -13,6 +13,28 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-11-18
+
+### Search and AI-crawler groundwork
+
+- Page URLs now load without a redirect. Canonicals and the sitemap
+  used `/compounds/7-oh`, but Cloudflare Pages answered that with a 308
+  to `/compounds/7-oh/`, so every declared URL pointed at a redirect.
+  The build now emits `compounds/7-oh.html`, which Pages serves at the
+  no-slash address, and the slash form redirects to it. Redirect
+  targets in `_redirects` dropped their trailing slashes, and the
+  self-hosted nginx config matches Pages.
+- Added schema.org structured data: an Organization and WebSite graph
+  on every page (with the Discord and r/quitting7oh as `sameAs`, and a
+  site-search action), a page node with `dateModified` and a
+  BreadcrumbList on content pages, and a CollectionPage on category
+  indexes. Content pages also report `og:type` `article` with
+  `article:modified_time`.
+- The XML sitemap carries `<lastmod>` from each page's `last_updated`.
+- New `/llms.txt` and `/llms-full.txt`, built from the content
+  collection: a categorized page index for AI tools, and the full text
+  of every page as clean markdown.
 
 ## 2026-10-18
 
