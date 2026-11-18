@@ -9,7 +9,8 @@ import { getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getPrevNext } from '~/lib/pagination';
 import Pagination from '~/components/Pagination.astro';
-import { routePath, viewOnGithubUrl } from '~/lib/site';
+import { routePath, SITE, viewOnGithubUrl } from '~/lib/site';
+import { breadcrumbNode, pageNode, pageTypeFor } from '~/lib/structured-data';
 import type { MarkdownHeading } from 'astro';
 
 interface Props {
@@ -48,9 +49,32 @@ const updatedStr = lastUpdated
 const sidebarCategories = await getSidebarCategories();
 const currentPath = routePath(Astro.url.pathname);
 const { prev, next } = await getPrevNext(currentPath);
+
+const crumbs = [
+  ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
+  { label: title },
+];
+const pageUrl = new URL(currentPath, SITE.url).toString();
+const structuredData = [
+  pageNode({
+    type: pageTypeFor(category),
+    url: pageUrl,
+    name: title,
+    description,
+    dateModified: lastUpdated,
+    breadcrumb: true,
+  }),
+  breadcrumbNode(pageUrl, crumbs),
+];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  modifiedTime={lastUpdated}
+  structuredData={structuredData}
+>
   <div class="mx-auto flex max-w-[94rem] items-stretch">
     <main id="main-content" class="min-w-0 flex-1">
       <header class="doc-header-surface">
@@ -59,10 +83,7 @@ const { prev, next } = await getPrevNext(currentPath);
             <div class:list={['mx-auto', wide ? 'max-w-6xl' : 'max-w-[50rem]']}>
               <Breadcrumbs
                 client:idle
-                crumbs={[
-                  ...(cat ? [{ label: cat.title, href: `/${cat.slug}` }] : []),
-                  { label: title },
-                ]}
+                crumbs={crumbs}
                 sharePath={currentPath}
               />
               <h1 class="mt-5 font-display text-[clamp(2.05rem,3vw,2.4rem)] font-semibold leading-[1.08] tracking-[-0.018em] text-foreground">

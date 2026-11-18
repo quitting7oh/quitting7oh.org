@@ -3,17 +3,39 @@ import BaseLayout from './BaseLayout.astro';
 import Logo from '~/components/Logo.astro';
 import { Callout } from '~/components/Callout';
 import { MeetingQuickLink } from '~/components/MeetingQuickLink';
+import { routePath, SITE } from '~/lib/site';
+import { pageNode, pageTypeFor } from '~/lib/structured-data';
 import { ArrowRight, Droplets, HeartHandshake, MessageCircle, Phone, Route, Stethoscope } from 'lucide-react';
 
 interface Props {
   title: string;
   description?: string;
+  category: string;
+  lastUpdated?: Date;
 }
 
-const { title, description } = Astro.props;
+const { title, description, category, lastUpdated } = Astro.props;
+// No visible breadcrumbs on this page, so no BreadcrumbList either.
+const structuredData = [
+  pageNode({
+    type: pageTypeFor(category),
+    url: new URL(routePath(Astro.url.pathname), SITE.url).toString(),
+    name: title,
+    description,
+    dateModified: lastUpdated,
+  }),
+];
 ---
 
-<BaseLayout title={title} description={description} minimal showBackToTop>
+<BaseLayout
+  title={title}
+  description={description}
+  minimal
+  showBackToTop
+  ogType="article"
+  modifiedTime={lastUpdated}
+  structuredData={structuredData}
+>
   <header class="border-b border-border pt-[env(safe-area-inset-top)]">
     <div class="mx-auto flex min-h-16 max-w-[44rem] items-center px-4 sm:px-6">
       <Logo size="2rem" />
