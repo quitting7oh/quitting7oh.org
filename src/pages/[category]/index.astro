@@ -5,6 +5,7 @@ import { AppSidebar } from '~/components/AppSidebar';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { CATEGORIES, CATEGORY_GROUPS, getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
+import { routePath } from '~/lib/site';
 import { ArrowRight } from 'lucide-react';
 
 export async function getStaticPaths() {
@@ -24,7 +25,7 @@ docs.sort((a, b) => {
 });
 
 const sidebarCategories = await getSidebarCategories();
-const currentPath = Astro.url.pathname;
+const currentPath = routePath(Astro.url.pathname);
 const pinnedPaths = new Set(PINNED_PAGES.map((item) => item.href));
 const configuredGroups = CATEGORY_GROUPS[cat.slug] ?? [];
 const docBySlug = new Map(

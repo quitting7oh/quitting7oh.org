@@ -5,7 +5,7 @@ import Header from '~/components/Header.astro';
 import { BackToTop } from '~/components/BackToTop';
 import SchedulingBanner from '~/components/SchedulingBanner.astro';
 import Footer from '~/components/Footer.astro';
-import { SITE } from '~/lib/site';
+import { routePath, SITE } from '~/lib/site';
 import bodyFontUrl from '@fontsource-variable/commissioner/files/commissioner-latin-standard-normal.woff2?url';
 import displayFontUrl from '@fontsource-variable/stix-two-text/files/stix-two-text-latin-wght-normal.woff2?url';
 
@@ -30,7 +30,7 @@ const {
 const pageTitle = title
   ? `${title} · ${SITE.title}.org`
   : `7-OH Withdrawal Help & Taper Guides | ${SITE.title}.org`;
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).toString();
+const canonicalUrl = canonical ?? new URL(routePath(Astro.url.pathname), SITE.url).toString();
 ---
 
 <!doctype html>

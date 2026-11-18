@@ -17,6 +17,11 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'never',
   build: {
+    // Emit `foo.html` rather than `foo/index.html`. With trailingSlash
+    // 'never', canonicals and the sitemap use /foo; Cloudflare Pages serves
+    // foo.html at /foo and 308s /foo/ and /foo.html to it. The directory
+    // format made every canonical URL a redirect to /foo/.
+    format: 'file',
     inlineStylesheets: 'always',
   },
   integrations: [mdx(), react(), sitemap()],

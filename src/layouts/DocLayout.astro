@@ -9,7 +9,7 @@ import { getCategory, PINNED_PAGES } from '~/lib/categories';
 import { getSidebarCategories } from '~/lib/sidebar-data';
 import { getPrevNext } from '~/lib/pagination';
 import Pagination from '~/components/Pagination.astro';
-import { viewOnGithubUrl } from '~/lib/site';
+import { routePath, viewOnGithubUrl } from '~/lib/site';
 import type { MarkdownHeading } from 'astro';
 
 interface Props {
@@ -46,7 +46,7 @@ const updatedStr = lastUpdated
   : undefined;
 
 const sidebarCategories = await getSidebarCategories();
-const currentPath = Astro.url.pathname;
+const currentPath = routePath(Astro.url.pathname);
 const { prev, next } = await getPrevNext(currentPath);
 ---
 
