@@ -246,7 +246,7 @@ supervision. Call the
 
 For peer support and discussion of supply changes, the
 [Discord](https://discord.gg/FDJuEPcQz5) and
-[r/quitting7oh](https://www.reddit.com/r/quitting7oh/) are the
+[r/stopping7oh](https://www.reddit.com/r/stopping7oh/) are the
 community's resources.
 
 ## DEA's stated rationale

@@ -2,7 +2,7 @@
 title: "7-OH Withdrawal Guide"
 description: "The full 7-OH withdrawal timeline, symptom relief, ER guidance, sleep, food, and what comes next."
 category: "start-here"
-last_updated: "2026-10-18"
+last_updated: "2026-11-19"
 sort: 4.5
 ---
 
@@ -32,7 +32,7 @@ right now. You don't need to introduce yourself. You can just post:
 - 💬 **Discord:** [discord.gg/FDJuEPcQz5](https://discord.gg/FDJuEPcQz5)
  , the `#sos` channel is for the hardest moments. Post one word.
   Someone will reply.
-- 📖 **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh/)
+- 📖 **Subreddit:** [r/stopping7oh](https://www.reddit.com/r/stopping7oh/)
  , slower, but searchable. Read what others have done. Post your own
   question when you're ready.
 

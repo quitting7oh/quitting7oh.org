@@ -28,6 +28,7 @@ export default defineConfig({
     inlineStylesheets: 'always',
   },
   integrations: [mdx(), react(), sitemap({
+    filter: (page) => !/^\/mod-tools(?:\/|$)/.test(new URL(page).pathname),
     serialize(item) {
       const path = new URL(item.url).pathname.replace(/\/+$/, '') || '/';
       const lastmod = lastModByPath.get(path);

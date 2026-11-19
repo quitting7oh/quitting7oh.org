@@ -1538,7 +1538,7 @@ function buildPrintHTML(
   <strong>Reference, not a prescription.</strong> This schedule is community-derived from
   quitting7oh.org and is not clinical guidance. For buprenorphine, see a prescriber. For
   the kratom-derived synthetics, the live community discussion on the Discord and at
-  r/quitting7oh is genuinely ahead of the published clinical literature for path-shape
+  r/stopping7oh is genuinely ahead of the published clinical literature for path-shape
   questions.
 </p>
 

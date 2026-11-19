@@ -2,7 +2,7 @@
 title: "Welcome"
 description: "Start here — what quitting7oh.org is, who it's for, and the page most likely to help where you are right now."
 category: "start-here"
-last_updated: "2026-10-18"
+last_updated: "2026-11-19"
 sort: 1
 ---
 
@@ -81,7 +81,7 @@ For real-time help, live conversation, and the people behind the writing:
 
 - **Discord:** [discord.gg/FDJuEPcQz5](https://discord.gg/FDJuEPcQz5),
   the active, real-time community
-- **Subreddit:** [r/quitting7oh](https://www.reddit.com/r/quitting7oh/),
+- **Subreddit:** [r/stopping7oh](https://www.reddit.com/r/stopping7oh/),
   searchable, slower, good for stories and questions you want to keep
   around
 
