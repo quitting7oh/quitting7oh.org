@@ -771,7 +771,7 @@ When writing taper, induction, or dosing guidance:
 ### Community routing: only our resources for calls-to-action
 
 The site is the [Discord](https://discord.gg/FDJuEPcQz5) and
-[r/quitting7oh](https://www.reddit.com/r/quitting7oh/) community's
+[r/stopping7oh](https://www.reddit.com/r/stopping7oh/) community's
 public reference. When telling readers where to go for community
 support, those are the only addresses we name.
 
@@ -781,7 +781,7 @@ the rule is different in each:
 - **Routing / call-to-action context.** "Go here for the live
   conversation," "talk to peers," "post in #channel," "ask in the
   subreddit." Use ONLY our resources: the Discord and
-  r/quitting7oh. Pointing readers to other subs as if they were
+  r/stopping7oh. Pointing readers to other subs as if they were
   our destinations is wrong. Those communities have their own
   rules, their own moderation, and their own posture, and we
   don't speak for them. Routing readers there in a "where to find
@@ -789,9 +789,15 @@ the rule is different in each:
 - **Sourcing / attribution context.** "Numbers come from threads
   in X." "The pattern is documented across r/X and r/Y." That's
   factual citation, and other subs are named accurately. **When
-  we do name other subs in sourcing, our resources (r/quitting7oh
+  we do name other subs in sourcing, our resources (r/stopping7oh
   and the Discord) go first in the list,** so the reader's eye
   lands on us before the third-party citations.
+
+Reddit banned the original r/quitting7oh in November 2026 and the
+community moved to r/stopping7oh. Route and link only to
+r/stopping7oh. Sourcing notes that cite threads from before the ban
+keep naming r/quitting7oh, unlinked, because that's where the data
+came from. Don't link to r/quitting7oh posts; they no longer load.
 
 The line between routing and sourcing: if the sentence is telling
 the reader where to go, it's routing (our resources only). If the

@@ -2,7 +2,7 @@
 title: "Contributing & Feedback"
 description: "Suggest corrections, propose changes, or reach the maintainers — via GitHub PR, Discord, subreddit modmail, or email."
 category: "about"
-last_updated: "2026-10-18"
+last_updated: "2026-11-19"
 sort: 4
 ---
 
@@ -27,7 +27,7 @@ You don't need to be a developer to open a PR. GitHub's edit-in-browser flow han
 If a PR isn't the right shape, several other ways to get feedback to us:
 
 - **Discord:** [discord.gg/FDJuEPcQz5](https://discord.gg/FDJuEPcQz5). Fastest. Anyone in the moderator channels will see it; tag a mod if it's urgent.
-- **Subreddit:** post on [/r/quitting7oh](https://www.reddit.com/r/quitting7oh/), or [send modmail](https://www.reddit.com/message/compose?to=/r/quitting7oh) for something that should reach the whole team privately.
+- **Subreddit:** post on [/r/stopping7oh](https://www.reddit.com/r/stopping7oh/), or [send modmail](https://www.reddit.com/message/compose?to=/r/stopping7oh) for something that should reach the whole team privately.
 - **Email:** [feedback@quitting7oh.org](mailto:feedback@quitting7oh.org).
 
 Any of these works for general feedback, content concerns, or "this page made me angry, here's why", all of which are useful and welcome.

@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-11-18"
+last_updated: "2026-11-19"
 sort: 6
 ---
 
@@ -13,6 +13,30 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-11-19
+
+### Subreddit move to r/stopping7oh
+
+- Reddit banned r/quitting7oh, and the community moved to
+  r/stopping7oh. Every Reddit link and call-to-action on the site now
+  points to r/stopping7oh, including the footer, the homepage community
+  block, contributing modmail, the JSON-LD `sameAs` list, and
+  `llms.txt`.
+- The Community page records the ban and lists the new mod team, with
+  cartmancakes as head admin. Links to posts on the old subreddit were
+  removed because those posts no longer load.
+- Sourcing notes that cite threads from before the ban still name
+  r/quitting7oh, since that's where the data came from. `CLAUDE.md`
+  now records the routing rule for the new subreddit.
+
+### Moderator comment sharing
+
+- Added an unlisted moderator page with a sticky-comment preview and
+  copy buttons for Reddit Markdown and the full AutoModerator rule. The
+  comment points new posters to the site's guides and the Discord, and
+  notes that the new subreddit has little history to search yet. The
+  page is kept out of search results and the sitemap.
 
 ## 2026-11-18
 
@@ -165,14 +189,6 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   to the section, and reduced-motion preferences still take priority.
 
 ## 2026-09-06
-
-### Moderator comment sharing
-
-- Added an unlisted moderator page with a sticky-comment preview and
-  copy buttons for Reddit Markdown and the full AutoModerator rule. The
-  comment links community resources, asks readers to search the guides and
-  post flairs, and explains that moderators may remove posts made without
-  searching.
 
 ### Suboxone page leads with SOWS
 

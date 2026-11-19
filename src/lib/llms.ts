@@ -93,7 +93,7 @@ function header(variant: 'index' | 'full'): string {
     '',
     `> ${SITE.description}`,
     '',
-    `${SITE.domain} is a community-maintained reference for the [quitting7oh Discord](https://discord.gg/FDJuEPcQz5) and [r/quitting7oh](https://www.reddit.com/r/quitting7oh/) community. It documents several ways off 7-OH and the kratom-derived synthetics, including tapering with kratom leaf, stopping with helper medications, and buprenorphine, without ranking them. It is not medical advice.`,
+    `${SITE.domain} is a community-maintained reference for the [quitting7oh Discord](https://discord.gg/FDJuEPcQz5) and [r/stopping7oh](https://www.reddit.com/r/stopping7oh/) community. It documents several ways off 7-OH and the kratom-derived synthetics, including tapering with kratom leaf, stopping with helper medications, and buprenorphine, without ranking them. It is not medical advice.`,
     '',
     `For someone in crisis in the U.S.: the [988 Suicide & Crisis Lifeline](https://988lifeline.org) answers calls and texts at 988, and the [SAMHSA National Helpline](https://www.samhsa.gov/find-help/national-helpline) (1-800-662-4357) gives free, confidential treatment referrals at any hour. The site's [crisis hotlines page](${SITE.url}/resources/crisis-hotlines) and [active-withdrawal page](${SITE.url}/start-here/7-oh-withdrawal-help) carry the full routing.`,
     '',

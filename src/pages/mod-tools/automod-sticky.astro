@@ -4,11 +4,11 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import rehypeExternalLinks from '~/lib/rehype/externalLinks.mjs';
 
 // Keep the preview and clipboard content tied to the same Reddit Markdown.
-const markdown = `**Welcome to r/quitting7oh. We're here to help you quit and stay off 7-OH.**
+const markdown = `**Welcome to r/stopping7oh. We're here to help you quit and stay off 7-OH.**
 
-**Resources:** [Quitting7oh.org](https://quitting7oh.org) · [Discord](https://discord.com/invite/Bp8Qb5Uuhm) · [FIX PAWS community guide](https://www.reddit.com/r/quitting7oh/comments/1v8495j/fix_paws/) · [Suboxone megapost](https://www.reddit.com/r/quitting7oh/comments/1ncqg8x/suboxone_mega_post_how_not_to_screw_yourself_with/)
+**Resources:** [Quitting7oh.org](https://quitting7oh.org) · [Discord](https://discord.gg/FDJuEPcQz5)
 
-**Search before you post.** We have guides, tutorials, and past discussions available through subreddit search and post flairs. **If you post without searching, moderators may remove your post.** If you still need help after searching, ask.
+**Have a look around first.** Quitting7oh.org has guides on withdrawal, tapering, Suboxone, helper meds, and post-acute recovery. This subreddit is new, so search won't turn up much here yet. If you don't find what you need, post your question. Someone will help.
 
 Respect each other's recovery choices and keep advice grounded in your experience.`;
 
@@ -29,13 +29,13 @@ const { code: preview } = await processor.render(markdown);
 
 <BaseLayout
   title="AutoModerator sticky"
-  description="Preview and copy the r/quitting7oh sticky comment."
+  description="Preview and copy the r/stopping7oh sticky comment."
   minimal
   noindex
 >
   <main id="main-content" class="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-16">
     <header class="mb-8">
-      <p class="eyebrow">r/quitting7oh · Moderator tools</p>
+      <p class="eyebrow">r/stopping7oh · Moderator tools</p>
       <h1 class="mt-3 font-display text-4xl font-semibold tracking-tight text-foreground">AutoModerator sticky</h1>
       <p class="mt-4 text-muted-foreground">The comment for each new post. This page is unlisted; anyone with the link can open it.</p>
     </header>
@@ -72,14 +72,13 @@ const { code: preview } = await processor.render(markdown);
     <section aria-labelledby="config-title" class="mt-8 border-t border-border pt-8">
       <h2 id="config-title" class="font-display text-2xl font-semibold text-foreground">Full AutoModerator rule</h2>
       <p id="config-help" class="mt-2 text-sm leading-relaxed text-muted-foreground">
-        Open r/quitting7oh's AutoModerator configuration (<code>config/automoderator</code>)
+        Open r/stopping7oh's AutoModerator configuration (<code>config/automoderator</code>)
         and replace the old sticky-comment rule with this block. Keep your other rules;
         separate each rule with <code>---</code> on its own line. Save the configuration.
       </p>
       <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
         This posts a sticky comment on new submissions, including moderator posts,
-        and skips edits. Moderators decide whether to remove posts; AutoModerator
-        cannot check a user's search history.{' '}
+        and skips edits.{' '}
         <a href="https://www.reddit.com/r/reddit.com/wiki/automoderator/full-documentation/" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2">AutoModerator documentation</a>.
       </p>
       <label for="automod-config" class="sr-only">Full AutoModerator configuration</label>
