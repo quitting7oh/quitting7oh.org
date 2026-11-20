@@ -25,7 +25,72 @@ const raw = await fs.readFile(SRC, 'utf8');
 // its own title from frontmatter and adds its own reader-facing intro.
 // We keep everything from the first "## " section header onward.
 const firstSection = raw.search(/\n## /);
-const body = firstSection >= 0 ? raw.slice(firstSection + 1).trim() : raw.trim();
+const repoBody = firstSection >= 0 ? raw.slice(firstSection + 1).trim() : raw.trim();
+
+// CHANGELOG.md links to repo files with repo-relative paths
+// (`src/content/compounds/7-oh.md`, `scripts/foo.mjs`). Those work on
+// GitHub, but on the site page they resolve against /about/ and 404
+// (`/about/src/content/...`). Rewrite each one to where it lives for a
+// reader: content pages and Astro pages to their site route, other repo
+// files to GitHub, and files that no longer exist to plain text.
+const REPO_BLOB = 'https://github.com/quitting7oh/quitting7oh.org/blob/main/';
+
+function frontmatterField(source, field) {
+  const fm = source.match(/^---\n([\s\S]*?)\n---/);
+  if (!fm) return undefined;
+  const line = fm[1].match(new RegExp(`^${field}:\\s*(.*)$`, 'm'));
+  return line ? line[1].trim().replace(/^["']|["']$/g, '') : undefined;
+}
+
+// Returns the new href, or null to drop the link and keep its text.
+async function resolveRepoLink(href) {
+  const hashAt = href.indexOf('#');
+  const filePath = hashAt >= 0 ? href.slice(0, hashAt) : href;
+  const fragment = hashAt >= 0 ? href.slice(hashAt) : '';
+  const abs = path.join(repoRoot, filePath);
+
+  let source;
+  try {
+    const stat = await fs.stat(abs);
+    source = stat.isFile() ? await fs.readFile(abs, 'utf8') : '';
+  } catch {
+    return null;
+  }
+
+  const content = filePath.match(/^src\/content\/(.+\/)?([^/]+)\.mdx?$/);
+  if (content && content[2] !== 'README') {
+    const category = frontmatterField(source, 'category');
+    const draft = frontmatterField(source, 'draft') === 'true';
+    if (!category || draft) return null;
+    return `/${category}/${content[2]}${fragment}`;
+  }
+
+  const page = filePath.match(/^src\/pages\/([^[\]]+)\.astro$/);
+  if (page) {
+    const route = page[1].replace(/(^|\/)index$/, '');
+    return `/${route}${fragment}`;
+  }
+
+  return `${REPO_BLOB}${filePath}${fragment}`;
+}
+
+async function rewriteRepoLinks(markdown) {
+  const linkRe = /(?<!!)\[((?:[^[\]]|\[[^[\]]*\])*)\]\(\s*([^)\s]+)\s*\)/g;
+  const isRepoRelative = (href) => !/^(?:[a-z][a-z0-9+.-]*:|\/|#)/i.test(href);
+  const replacements = new Map();
+  for (const [, , href] of markdown.matchAll(linkRe)) {
+    if (isRepoRelative(href) && !replacements.has(href)) {
+      replacements.set(href, await resolveRepoLink(href));
+    }
+  }
+  return markdown.replace(linkRe, (whole, text, href) => {
+    if (!replacements.has(href)) return whole;
+    const target = replacements.get(href);
+    return target === null ? text : `[${text}](${target})`;
+  });
+}
+
+const body = await rewriteRepoLinks(repoBody);
 
 const header = `---
 title: "Changelog"

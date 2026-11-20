@@ -41,9 +41,16 @@ const {
   modifiedTime,
   structuredData = [],
 } = Astro.props;
-const pageTitle = title
-  ? `${title} · ${SITE.title}.org`
-  : `7-OH Withdrawal Help & Taper Guides | ${SITE.title}.org`;
+// Search engines truncate or ignore titles over 70 characters (Bing's site
+// scan flags them), so drop the site suffix when a long page title would
+// push the full string past that.
+const MAX_TITLE_LENGTH = 70;
+const suffixedTitle = title ? `${title} · ${SITE.title}.org` : '';
+const pageTitle = !title
+  ? `7-OH Withdrawal Help & Taper Guides | ${SITE.title}.org`
+  : suffixedTitle.length > MAX_TITLE_LENGTH
+    ? title
+    : suffixedTitle;
 const canonicalUrl = canonical ?? new URL(routePath(Astro.url.pathname), SITE.url).toString();
 const jsonLd = serializeJsonLd([...siteGraph(), ...(noindex ? [] : structuredData)]);
 ---
