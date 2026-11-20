@@ -2,7 +2,9 @@
 /**
  * Horizontal "On this page" anchor bar for wide-layout pages, which
  * hide the right-rail TOC to give the content the full container.
- * H2 only — subsections would crowd a single row.
+ * H2 only; subsections would crowd a single row. On phones it collapses
+ * into a disclosure so tools placed at the top of the page (the taper
+ * calculators) start higher up.
  */
 import type { MarkdownHeading } from 'astro';
 
@@ -16,9 +18,32 @@ const sections = headings.filter((h) => h.depth === 2);
 
 {
   sections.length > 1 && (
+    <details class="group mt-5 text-sm sm:hidden">
+      <summary class="flex min-h-11 cursor-pointer list-none items-center gap-2 font-bold text-muted-foreground [&::-webkit-details-marker]:hidden">
+        <span class="eyebrow !text-muted-foreground">On this page</span>
+        <span class="text-xs font-semibold">({sections.length})</span>
+        <svg class="size-4 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </summary>
+      <nav aria-label="Table of contents" class="mt-1 flex flex-col">
+        {sections.map((h) => (
+          <a
+            href={`#${h.slug}`}
+            class="py-2 font-bold text-muted-foreground underline decoration-border underline-offset-4 transition-colors hover:text-primary hover:decoration-primary"
+          >
+            {h.text}
+          </a>
+        ))}
+      </nav>
+    </details>
+  )
+}
+{
+  sections.length > 1 && (
     <nav
       aria-label="Table of contents"
-      class="mt-7 flex flex-wrap items-center gap-2 text-sm"
+      class="mt-7 hidden flex-wrap items-center gap-2 text-sm sm:flex"
     >
       <span class="eyebrow mr-2 !text-muted-foreground">
         On this page

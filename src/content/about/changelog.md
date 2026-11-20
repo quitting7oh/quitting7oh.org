@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-11-20"
+last_updated: "2026-11-21"
 sort: 6
 ---
 
@@ -15,6 +15,78 @@ sort: 6
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
 ## 2026-11-20
+
+### Taper calculator redesign
+
+- Rebuilt the shared taper calculator on the 7-OH, Suboxone, and kratom
+  leaf pages so the first thing it shows is what to take today. A day
+  card lists the scheduled dose with a checkbox for each dose. With a
+  start date set it follows the calendar, so a returning reader lands
+  on the right day; without one it opens on the first unchecked day.
+- Settings use segmented buttons and a duration slider with presets.
+  The jump-off dose and tablet size sit under "More settings." On
+  phones, a returning reader's settings fold into a one-line summary
+  under today's dose, and the "On this page" links above wide pages
+  fold into a disclosure.
+- The day card explains drop days (fewer, larger doses while the day's
+  total stays level or falls), spells out the mg when a tablet count
+  falls between quarters, and offers "Restart from today" for holding a
+  dose or slowing down. The old plan's checkmarks stay saved with it.
+- On a plan already underway, changing its length re-spreads the plan
+  from the start date and can move today's dose. The calculator now says
+  so right away and offers to keep today's dose and restart from today.
+- Each calculator now carries the polysubstance warning: tapering
+  alongside alcohol, benzodiazepines, gabapentinoids, or other sedatives
+  needs medical supervision, with links to the SAMHSA National Helpline
+  and findtreatment.gov.
+- The schedule has a by-week view and an every-day view, both sized for
+  phones. PDF, copy, and AI-prompt exports sit under the schedule.
+  Suboxone exports include strip fractions, and the AI prompt includes
+  tablet strength.
+- Checkmarks are saved with the plan they were made on and sync between
+  open tabs. Partly done days show how many doses were logged. Reset,
+  Clear checkmarks, and Restart offer an undo.
+- Suboxone readers choose between the published table and a custom
+  taper. Published tables apply only to once-a-day dosing, so a 4 mg
+  twice-a-day plan keeps its split doses.
+- Schedule math: day 1 is exactly the dose entered and the last day is
+  exactly the jump-off. Rounding can't raise a day's total, push a day
+  below the jump-off, or ask for a bigger single dose than day 1. With
+  a tablet size set, middle days use quarter tablets where they land
+  close to the planned curve and stay in mg where a quarter tablet
+  would mean a big jump or a long hold. Kratom leaf keeps at least two
+  doses a day, like 7-OH, and steps in 0.1 g (0.05 g below 1 g) so low
+  days don't stall. Custom Suboxone tapers step in 0.125 mg below 2 mg.
+- Measuring labels: leaf capsules read as whole capsules plus loose
+  powder ("6 caps + 0.25 g"). Suboxone strips follow the rapid-taper
+  page: 8 mg strips down to sixteenths, then 2 mg strips, then
+  volumetric.
+- A jump-off at or above the starting dose shows an explanation next to
+  the dose fields instead of a one-day "taper." Retired SR-17 links came
+  out of the related-pages box, and the MGM-15 links now include the
+  leaf taper, in line with the path-pairing rule.
+- The site header switches to the compact logo below 400px so "Help
+  now" isn't clipped on small phones.
+- The schedule math lives in its own module with unit tests.
+
+### Faster homepage on phones
+
+- The "Join a meeting now" box checks about 2,700 NA meetings to find
+  one in session. Each check built a new date formatter, and on a
+  mid-range phone that froze the page for over a second after load.
+  The timezone helpers now build one formatter per timezone and reuse
+  it, which also speeds up the virtual NA meeting finder.
+- Google Analytics now loads on the first scroll, tap, or keypress, or
+  four seconds after the page finishes loading. Page views still
+  queue from the first moment; the script itself stays out of the way
+  while the page is becoming usable.
+
+### Discord short link
+
+- `quitting7oh.org/discord` now redirects to the community Discord
+  invite, so the address is easy to say out loud or put in a post.
+  It's a 302, so the target can change without browsers holding on
+  to the old invite.
 
 ### Bing site-scan fixes
 

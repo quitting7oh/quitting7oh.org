@@ -10,6 +10,11 @@ interface NumberInputProps
   onValueChange: (value: number) => void;
   integer?: boolean;
   emptyWhenZero?: boolean;
+  /** Only commit on blur or Enter, not on every keystroke. For fields where a
+   *  partial value ("1" on the way to "14") would do something drastic. */
+  commitOnBlur?: boolean;
+  /** Called with false while the text can't be used (blank or not a number). */
+  onDraftValidityChange?: (valid: boolean) => void;
 }
 
 function finiteConstraint(value: string | number | undefined): number | null {
@@ -28,10 +33,13 @@ export function NumberInput({
   onValueChange,
   integer = false,
   emptyWhenZero = false,
+  commitOnBlur = false,
+  onDraftValidityChange,
   min,
   max,
   onBlur,
   onFocus,
+  onKeyDown,
   ...props
 }: NumberInputProps) {
   const focused = React.useRef(false);
@@ -41,12 +49,17 @@ export function NumberInput({
   );
   const [draft, setDraft] = React.useState(() => displayValue(value));
 
+  // A field that unmounts mid-edit shouldn't leave its parent thinking a
+  // value is still unfinished.
+  React.useEffect(() => () => onDraftValidityChange?.(true), []); // eslint-disable-line react-hooks/exhaustive-deps
+
   React.useEffect(() => {
     if (!focused.current) setDraft(displayValue(value));
   }, [displayValue, value]);
 
   const parseDraft = (raw: string): number | null => {
-    if (raw.trim() === '') return null;
+    // A field that shows 0 as blank treats blank as 0, not as unfinished.
+    if (raw.trim() === '') return emptyWhenZero ? 0 : null;
     const parsed = Number(raw);
     if (!Number.isFinite(parsed)) return null;
 
@@ -73,11 +86,30 @@ export function NumberInput({
         const raw = event.target.value;
         setDraft(raw);
         const next = parseDraft(raw);
-        if (next !== null) onValueChange(next);
+        onDraftValidityChange?.(next !== null);
+        if (next !== null && !commitOnBlur) onValueChange(next);
+      }}
+      onKeyDown={(event) => {
+        if (commitOnBlur && event.key === 'Enter') {
+          const next = parseDraft(event.currentTarget.value);
+          if (next !== null) {
+            onValueChange(next);
+            setDraft(displayValue(next));
+          }
+        }
+        onKeyDown?.(event);
       }}
       onBlur={(event) => {
         focused.current = false;
+        // Leaving the field without editing commits nothing. Otherwise a
+        // displayed value outside min/max would be clamped and sent back.
+        if (event.target.value === displayValue(value)) {
+          onDraftValidityChange?.(true);
+          onBlur?.(event);
+          return;
+        }
         const next = parseDraft(event.target.value);
+        onDraftValidityChange?.(true);
         if (next === null) {
           setDraft(displayValue(value));
         } else {

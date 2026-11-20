@@ -1344,15 +1344,10 @@
       background: hsl(var(--accent));
     }
 
-    .taper-schedule-scroll,
     .sr-schedule-scroll {
       overflow: visible;
     }
 
-    .taper-schedule-table,
-    .taper-schedule-table tbody,
-    .taper-schedule-table tr,
-    .taper-schedule-table td,
     .sr-schedule-table,
     .sr-schedule-table tbody,
     .sr-schedule-table tr,
@@ -1360,13 +1355,11 @@
       width: 100%;
     }
 
-    .taper-schedule-table,
     .sr-schedule-table {
       display: block;
       min-width: 0 !important;
     }
 
-    .taper-schedule-table thead,
     .sr-schedule-table thead {
       position: absolute;
       width: 1px;
@@ -1379,12 +1372,10 @@
       border: 0;
     }
 
-    .taper-schedule-table tbody,
     .sr-schedule-table tbody {
       display: block;
     }
 
-    .taper-schedule-table :where(td)::before,
     .sr-schedule-table :where(td)::before {
       content: attr(data-label);
       display: block;
@@ -1396,71 +1387,6 @@
       line-height: 1.25;
       text-transform: uppercase;
       overflow-wrap: normal;
-    }
-
-    .taper-schedule-table .schedule-data-row {
-      display: grid;
-      grid-template-columns: 2.15rem minmax(3.4rem, 1fr) minmax(3.15rem, 0.7fr) minmax(4.2rem, 0.85fr);
-      gap: 0.4rem;
-      align-items: start;
-      padding: 0.72rem 0.8rem 0.76rem;
-      border-top: 1px solid hsl(var(--border));
-    }
-
-    .taper-schedule-table .schedule-data-row td {
-      display: block;
-      padding: 0 !important;
-      border: 0;
-    }
-
-    .taper-schedule-table .schedule-data-row td:nth-child(1) {
-      grid-column: 1;
-      font-weight: 760;
-    }
-
-    .taper-schedule-table .schedule-data-row td:nth-child(2) {
-      grid-column: 2;
-    }
-
-    .taper-schedule-table .schedule-data-row td:nth-child(3) {
-      grid-column: 3;
-    }
-
-    .taper-schedule-table .schedule-data-row td:nth-child(4) {
-      grid-column: 4;
-      text-align: right;
-    }
-
-    .taper-schedule-table .schedule-note-row,
-    .taper-schedule-table .schedule-stop-row,
-    .taper-schedule-table .schedule-total-row {
-      display: grid;
-      padding: 0.72rem 1rem;
-    }
-
-    .taper-schedule-table .schedule-note-row td,
-    .taper-schedule-table .schedule-stop-row td,
-    .taper-schedule-table .schedule-total-row td {
-      display: block;
-      width: auto;
-      padding: 0;
-      border: 0;
-    }
-
-    .taper-schedule-table .schedule-note-row td::before,
-    .taper-schedule-table .schedule-total-row td::before {
-      display: none;
-    }
-
-    .taper-schedule-table .schedule-stop-row {
-      grid-template-columns: 2.45rem minmax(0, 1fr);
-      gap: 0.75rem;
-    }
-
-    .taper-schedule-table .schedule-total-row {
-      grid-template-columns: minmax(0, 1fr) auto;
-      align-items: baseline;
-      gap: 1rem;
     }
 
     .sr-schedule-scroll {
@@ -1572,6 +1498,55 @@
     color: hsl(var(--muted-foreground));
     font-size: 0.74em;
     vertical-align: 0.12em;
+  }
+
+  /* The input is a tall, transparent hit area; the visible track is drawn
+     by the pseudo-elements so the thumb stays easy to grab on touch. */
+  .taper-range {
+    appearance: none;
+    height: 2.75rem;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .taper-range::-webkit-slider-runnable-track {
+    height: 0.4rem;
+    border-radius: 999px;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .taper-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-top: calc((0.4rem - 2px - 1.35rem) / 2);
+    border-radius: 999px;
+    background: hsl(var(--primary));
+    border: 2px solid hsl(var(--card));
+    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.28);
+  }
+
+  .taper-range::-moz-range-thumb {
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 999px;
+    background: hsl(var(--primary));
+    border: 2px solid hsl(var(--card));
+    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.28);
+  }
+
+  .taper-range::-moz-range-track {
+    height: 0.4rem;
+    border-radius: 999px;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .taper-range:focus-visible {
+    outline: 3px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 0.4rem;
   }
 }
 
