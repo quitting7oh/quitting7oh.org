@@ -1,8 +1,8 @@
 ---
-title: "Sublocade & Brixadi: Long-Acting Buprenorphine Injections"
+title: "Sublocade & Brixadi: Injectable Buprenorphine"
 description: "Sublocade and Brixadi — long-acting buprenorphine injections for maintenance, the long discontinuation tail, and the single-shot exit strategy."
 category: "mat-suboxone"
-last_updated: "2026-06-09"
+last_updated: "2026-11-20"
 sort: 6
 ---
 

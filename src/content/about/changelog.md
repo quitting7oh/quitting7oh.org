@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-11-19"
+last_updated: "2026-11-20"
 sort: 6
 ---
 
@@ -13,6 +13,23 @@ sort: 6
 -->
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
+
+## 2026-11-20
+
+### Bing site-scan fixes
+
+- The public changelog linked to repo files by relative path. On the
+  site those resolved under `/about/` and returned 404s
+  (`/about/src/content/compounds/7-oh.md`). The sync script now
+  rewrites them while generating the page: content and Astro pages
+  point to their site URLs, other repo files point to GitHub, and
+  files that no longer exist become plain text. `CHANGELOG.md` keeps
+  its relative links, which still work on GitHub.
+- Shortened two page titles that ran past Bing's 70-character limit
+  once the site name was appended: "Sublocade & Brixadi: Injectable
+  Buprenorphine" and "What to Expect: Addiction, Withdrawal &
+  Recovery". The layout now drops the " · quitting7oh.org" suffix from
+  any title that would still go over 70.
 
 ## 2026-11-19
 
@@ -880,9 +897,9 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   "Illegal instruction" — Node's JIT running inside the
   QEMU-emulated arm64 container, a known flake (failures on the 11th
   and 17th too, uncorrelated with what changed). The site now builds
-  once on the runner and the [workflow](.github/workflows/docker-publish.yml)
+  once on the runner and the [workflow](https://github.com/quitting7oh/quitting7oh.org/blob/main/.github/workflows/docker-publish.yml)
   assembles the image from the prebuilt `dist/` via a new
-  `runtime-prebuilt` [Dockerfile](Dockerfile) target, so the emulated
+  `runtime-prebuilt` [Dockerfile](https://github.com/quitting7oh/quitting7oh.org/blob/main/Dockerfile) target, so the emulated
   leg copies files and never executes JavaScript. The default
   `docker build .` self-hosting path is unchanged (both targets
   build- and serve-tested locally).
@@ -890,10 +907,10 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### Right-rail TOC scrolls on long pages
 
 - On pages whose table of contents outgrows the viewport (the
-  [changelog](src/content/about/changelog.md) is the worst case), the
+  [changelog](/about/changelog) is the worst case), the
   right-rail TOC was sticky with no height cap: entries below the
   fold were unreachable and the active-section highlight walked
-  off-screen. The list in [Toc.tsx](src/components/Toc.tsx) now caps
+  off-screen. The list in [Toc.tsx](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/components/Toc.tsx) now caps
   at the viewport height and scrolls internally, and it follows the
   reader — when the active entry leaves the list's visible band, the
   list re-centers it (scrolling only itself, never the page). The
@@ -903,15 +920,15 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### Daily automated ban-status re-verification
 
 - The by-hand routine of re-verifying the ban status became a cron:
-  [`update-ban-status.yml`](.github/workflows/update-ban-status.yml)
-  runs [`scripts/update-ban-status.mjs`](scripts/update-ban-status.mjs)
+  [`update-ban-status.yml`](https://github.com/quitting7oh/quitting7oh.org/blob/main/.github/workflows/update-ban-status.yml)
+  runs [`scripts/update-ban-status.mjs`](https://github.com/quitting7oh/quitting7oh.org/blob/main/scripts/update-ban-status.mjs)
   three times a day, once after each Federal Register publication
   slot (the 8:45 AM ET main publication and the 11:15 AM and 4:15 PM
   ET special filings; crons anchored to EST so they land after the
   slot year-round). The script checks the Federal Register for any
   new 7-hydroxymitragynine document; when nothing has published it
-  bumps the as-of dates on the [banner](src/components/SchedulingBanner.tsx)
-  and [ban page](src/content/compounds/7-oh-ban.md) and refreshes the
+  bumps the as-of dates on the banner
+  and [ban page](/compounds/7-oh-ban) and refreshes the
   docket's processed-comment count from the regulations.gov API. Only
   the day's first run commits; the later two are verification-only. If a
   scheduling order ever does publish, the script refuses to touch the
@@ -923,7 +940,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Ban page re-verified: comment window closed, still no order
 
-- Re-verified [the ban page](src/content/compounds/7-oh-ban.md)
+- Re-verified [the ban page](/compounds/7-oh-ban)
   against the Federal Register (no scheduling order has published;
   nothing is banned as of August 14) and rewrote the stale
   pre-August-5 framing. The timeline now records the July 31 close
@@ -948,11 +965,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Scheduling banner: past the earliest ban date
 
-- The site-wide [scheduling banner](src/components/SchedulingBanner.tsx)
+- The site-wide scheduling banner
   said "Earliest ban date: August 5, 2026" — a date now in the past.
   It now reads "As of August 11, the DEA has not yet banned 7-OH.
   The ban could take effect at any time," still linking to the
-  [ban page](src/content/compounds/7-oh-ban.md). Dismiss key bumped
+  [ban page](/compounds/7-oh-ban). Dismiss key bumped
   so readers who dismissed the old banner see the new message. The
   as-of date is hand-maintained; it needs a bump whenever the status
   is re-verified.
@@ -960,9 +977,9 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### "Virtual Support Meetings" button in the header
 
 - The site header now carries a
-  [Virtual Support Meetings](src/components/Header.astro) button to
+  [Virtual Support Meetings](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/components/Header.astro) button to
   the left of the search box, on every page, linking to the
-  [next-meeting page](src/pages/next-kratom-support-meeting.astro).
+  [next-meeting page](/next-kratom-support-meeting).
   Full label on wide screens; shortens to "Meetings" below the `lg`
   breakpoint. Styled with semantic theme tokens so it follows all
   eight theme variants.
@@ -970,7 +987,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### "Hosted by" links on meeting cards
 
 - The homepage next-meeting widget and the featured card on the
-  [next-meeting page](src/pages/next-kratom-support-meeting.astro)
+  [next-meeting page](/next-kratom-support-meeting)
   now show a "Hosted by" line linking the fellowship's own site
   (kratom-anonymous.org, kratomquitters.com), so a reader can see
   who runs a meeting before joining it. Backed by a new `orgUrl`
@@ -985,8 +1002,8 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### "New" badges on the next-meeting page
 
-- Meetings in [the meeting data](src/data/meetings.ts) can now carry
-  an `addedOn` date. The [next-meeting page](src/pages/next-kratom-support-meeting.astro)
+- Meetings in [the meeting data](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/data/meetings.ts) can now carry
+  an `addedOn` date. The [next-meeting page](/next-kratom-support-meeting)
   badges those meetings with a violet "New" pill — on the featured
   card and in the compact grid — for 30 days after that date, then
   the badge expires on its own with no cleanup edit. The homepage
@@ -999,10 +1016,10 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   day-by-day schedule on the kratomquitters.com homepage: a
   **Newcomers meeting, 4:00 PM ET Tuesdays** in the shared Google
   Meet room, and an **LGBTQ+ meeting, 4:00 PM ET Sundays** in its
-  own room. Both added to [the meeting data](src/data/meetings.ts)
-  (which feeds the [Meeting Schedules](src/content/resources/meeting-schedules.mdx)
+  own room. Both added to [the meeting data](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/data/meetings.ts)
+  (which feeds the [Meeting Schedules](/resources/meeting-schedules)
   tables and the homepage next-meeting widget) and to the TIAWO
-  entry on [Mutual Aid](src/content/for-you/mutual-aid.md).
+  entry on [Mutual Aid](/for-you/mutual-aid).
 
 ## 2026-07-29
 
@@ -1010,11 +1027,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 - The daily SMART Recovery refresh silently committed an **empty
   dataset** this morning, leaving the
-  [live SMART meetings page](src/pages/virtual-smart-meetings-now.astro)
+  [live SMART meetings page](/virtual-smart-meetings-now)
   with no meetings. meetings.smartrecovery.org changed its finder:
   location searches now require a `finder_form=true` parameter, and
   without it the server redirects to a reset-search page with zero
-  rows. [`build-smart-meetings.mjs`](scripts/build-smart-meetings.mjs)
+  rows. `build-smart-meetings.mjs`
   now sends the parameter, and it refuses to write a zero-meeting
   dataset (the cron goes red instead of overwriting good data with
   nothing, which is how this slipped through green).
@@ -1025,9 +1042,9 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   Is A Way Out** (per its own 501(c)(3) filings); the site had been
   using fragments of it ("There Is A Way Out (TIAWO)", "Quitting
   Kratom Support (KQS)") inconsistently. First mentions now use the
-  full name across [Meeting Schedules](src/content/resources/meeting-schedules.mdx),
-  [Mutual Aid](src/content/for-you/mutual-aid.md),
-  [Support Groups](src/content/for-loved-ones/support-groups.md),
+  full name across [Meeting Schedules](/resources/meeting-schedules),
+  [Mutual Aid](/for-you/mutual-aid),
+  [Support Groups](/for-loved-ones/support-groups),
   the next-meeting landing page, and the meeting-data fellowship
   metadata. TIAWO stays as the short form on subsequent mentions.
   Also repaired a stale section anchor on the Mutual Aid page.
@@ -1039,20 +1056,20 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   PM ET late-evening slot to include **Friday** (now Tue/Thu/Fri/Sun).
   Updated the schedule source of truth (`src/data/meetings.ts`, which
   drives the homepage next-meeting widget, the
-  [Meeting Schedules](src/content/resources/meeting-schedules.mdx)
+  [Meeting Schedules](/resources/meeting-schedules)
   tables, and the next-meeting landing page) plus the prose slot lists
   on Meeting Schedules and
-  [Mutual Aid](src/content/for-you/mutual-aid.md). Verified against
+  [Mutual Aid](/for-you/mutual-aid). Verified against
   the live kratomquitters.com/meetings page.
 
 ### Homepage quick-link swap
 
 - The "All meetings" button on the homepage next-meeting widget now
-  goes to the [next-meeting landing page](src/pages/next-kratom-support-meeting.astro)
+  goes to the [next-meeting landing page](/next-kratom-support-meeting)
   (rolling current + upcoming cards) instead of the static
   Meeting Schedules tables, which stay linked from that page.
 - The fourth "Start here" card on the homepage now points to
-  **[Vitamins & Supplements](src/content/medications-supplements/vitamins-supplements.md)**
+  **[Vitamins & Supplements](/medications-supplements/vitamins-supplements)**
   ("The community-tested stack") instead of the "What the hell is
   7-OH?" explainer. The what-is-7-OH page is unchanged and still
   linked from the Start Here section; the supplement stack is a
@@ -1062,7 +1079,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Cat's Claw page rewritten around corynoxine B
 
-- **[Cat's Claw](src/content/compounds/cats-claw.md)** rewritten
+- **[Cat's Claw](/compounds/cats-claw)** rewritten
   end-to-end. The earlier version had corynoxine B bolted onto a
   structure built before it, with two separate botanical-cover
   passages and a trailing synthetic-chemistry section that read as
@@ -1082,7 +1099,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   cited on the page), and it is **not** named in any of the July 2026
   DEA scheduling notices, so a corynoxine-B product can sit under the
   7-OH threshold and still deliver opioid effects. Cross-linked to
-  [The Federal 7-OH Ban](src/content/compounds/7-oh-ban.md).
+  [The Federal 7-OH Ban](/compounds/7-oh-ban).
 - Corrected the "real cat's claw isn't psychoactive" framing: the same
   Frontiers study found mitraphylline and rhynchophylline (the
   marketing-cover alkaloids) inactive at opioid receptors but
@@ -1096,7 +1113,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Leaf-alongside-Suboxone correction
 
-- Fixed a factual error on [Paths Off 7-OH](src/content/start-here/how-to-quit-7-oh.md):
+- Fixed a factual error on [Paths Off 7-OH](/start-here/how-to-quit-7-oh):
   the "Moving between rungs" list claimed leaf alongside Suboxone is
   "uncommon and unnecessary; bupe already covers the receptors." Bupe
   covers the mu side only; the community commonly recommends a small
@@ -1106,7 +1123,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 - Same list, next line: the naltrexone warning linked
   `/other-tools/low-dose-naltrexone`, a path that soft-404s to the
   homepage shell (the naltrexone pages live under `post-acute/`).
-  Re-pointed to [Naltrexone](src/content/post-acute/naltrexone.md) and
+  Re-pointed to [Naltrexone](/post-acute/naltrexone) and
   added `_redirects` bridges for the two old naltrexone paths so stale
   inbound links land on the right pages.
 
@@ -1114,7 +1131,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Federal scheduling action: new page + site-wide banner
 
-- **New page: [The Federal 7-OH Ban](src/content/compounds/7-oh-ban.md)**
+- **New page: [The Federal 7-OH Ban](/compounds/7-oh-ban)**
   (`/compounds/7-oh-ban`) covering DEA's July 1, 2026 notices of intent
   to temporarily schedule 7-OH above a 0.05% / 1 mg threshold (Docket
   DEA-1570) and to place mitragynine pseudoindoxyl, MGM-15, and MGM-16
@@ -1127,7 +1144,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   and a planning section routing to the site's documented paths off.
   All dates and quotes verified against the Federal Register full
   texts and the DEA/HHS press releases.
-- **New site-wide banner** ([SchedulingBanner.tsx](src/components/SchedulingBanner.tsx),
+- **New site-wide banner** (SchedulingBanner.tsx,
   mounted in `BaseLayout.astro`): one-line announcement linking to the
   new page on every page. Dismissible, persisted in localStorage under
   a dated key so a future re-announcement can reset it; hides itself on
@@ -1137,11 +1154,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   phrasing ("Read the 1 mg line again...", "Practical translation:",
   "Here is the clock") in favor of direct statements.
 - **Stale federal-status text updated** on the
-  [7-OH](src/content/compounds/7-oh.md),
-  [kratom leaf](src/content/compounds/kratom-leaf.md),
-  [MGM-15](src/content/compounds/mgm15.md),
-  [MGM-16](src/content/compounds/mgm16.md), and
-  [pseudo](src/content/compounds/mitragynine-pseudoindoxyl.md) pages
+  [7-OH](/compounds/7-oh),
+  [kratom leaf](/compounds/kratom-leaf),
+  [MGM-15](/compounds/mgm15),
+  [MGM-16](/compounds/mgm16), and
+  [pseudo](/compounds/mitragynine-pseudoindoxyl) pages
   ("DEA has not acted as of mid-2026" and similar), each now pointing
   at the ban page. Compounds category blurb mentions the scheduling
   action.
@@ -1151,7 +1168,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### Veterinary gabapentin on the helper-meds page
 
 - Added a **Veterinary gabapentin (no prescription needed)** subsection
-  to [Helper Medications](src/content/medications-supplements/helper-meds.md): vet
+  to [Helper Medications](/medications-supplements/helper-meds): vet
   gabapentin is the same molecule in the same manufacturer packaging and
   standard strengths, a no-prescription route the community uses. Framed
   with the existing dosing/taper cautions, the opioid+benzo+alcohol
@@ -1164,7 +1181,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Brand & style guide
 
-- **New page: [`/brand`](src/pages/brand.astro)** — a live, theme-aware
+- **New page: [`/brand`](/brand)** — a live, theme-aware
   brand showcase: the Lift Cup logo and its color mapping, the semantic
   color tokens, all 8 variants in light and dark, the Fraunces + IBM Plex
   Sans type system and scale, component specimens (buttons, callouts,
@@ -1181,11 +1198,11 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
   active variant's dark palette. New `BrandThemeControl` island; `Logo`
   gained a `link={false}` option so the on-page specimens aren't
   homepage links.
-- **New doc: [`docs/brand/style-guide.md`](docs/brand/style-guide.md)** —
+- **New doc: [`docs/brand/style-guide.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/brand/style-guide.md)** —
   the written companion (exact HSL/hex tokens, font specs, logo usage),
   GitHub-linkable, cross-referencing the existing logo SVGs and favicons.
 - **AI agent context for downstream builds.** A copy-pasteable block on
-  `/brand` (and [`docs/brand/agent-context.md`](docs/brand/agent-context.md))
+  `/brand` (and [`docs/brand/agent-context.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/brand/agent-context.md))
   that someone can drop into their own project's `AGENTS.md`/`CLAUDE.md`
   so an AI agent matches the brand. It links the rendered guide, the repo
   tokens/logo, and tells the agent to scrape with Playwright if it can't
@@ -1195,7 +1212,7 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 
 ### Recovery coaching resource (You Are Accountable)
 
-- **New page: [Recovery Coaching](src/content/resources/recovery-coaching.md)**
+- **New page: [Recovery Coaching](/resources/recovery-coaching)**
   in resources (`sort: 3`). Explains what peer recovery coaching is,
   what it costs, and how to weigh a paid service, with You Are
   Accountable as the first listed entry. Follows the telehealth-comparison
@@ -1351,11 +1368,11 @@ values; the page is correct. Skipped.
   so a reader arriving on the master from search or a referral
   doesn't have to know the calculator exists to find it.
 - Added on:
-  - [`/for-you/tapering-7oh`](src/content/for-you/tapering-7oh.md) → 7-OH Taper Calculator
-  - [`/mat-suboxone/suboxone-for-7oh`](src/content/mat-suboxone/suboxone-for-7oh.md) → Suboxone Taper Calculator
-  - [`/mat-suboxone/suboxone-rapid-taper`](src/content/mat-suboxone/suboxone-rapid-taper.md) → Suboxone Taper Calculator (framed as "doesn't see a taper plan that fits your situation? — build a custom one")
-  - [`/other-tools/sr-17`](src/content/medications-supplements/sr-17.md) → SR-17 Cross-Taper Calculator
-  - [`/other-tools/quit-7-oh-with-kratom-leaf`](src/content/medications-supplements/quit-7-oh-with-kratom-leaf.md) → Kratom Leaf Taper Calculator
+  - [`/for-you/tapering-7oh`](/for-you/tapering-7oh) → 7-OH Taper Calculator
+  - [`/mat-suboxone/suboxone-for-7oh`](/mat-suboxone/suboxone-for-7oh) → Suboxone Taper Calculator
+  - [`/mat-suboxone/suboxone-rapid-taper`](/mat-suboxone/suboxone-rapid-taper) → Suboxone Taper Calculator (framed as "doesn't see a taper plan that fits your situation? — build a custom one")
+  - [`/other-tools/sr-17`](/medications-supplements/sr-17) → SR-17 Cross-Taper Calculator
+  - [`/other-tools/quit-7-oh-with-kratom-leaf`](/medications-supplements/quit-7-oh-with-kratom-leaf) → Kratom Leaf Taper Calculator
 - Same callout pattern across all five: blockquote with a chart
   emoji, an intent-matching CTA ("Want a day-by-day schedule…"),
   one-sentence description of what the calculator builds, and a
@@ -1396,12 +1413,12 @@ values; the page is correct. Skipped.
   `for-loved-ones/*`, `other-tools/*`, `post-acute/*`, and the
   calculator pages.
 - **Removed the dihydro-mitragynine structure from
-  [`/pharmacology/chemical-structures`](src/content/pharmacology/chemical-structures.mdx)**.
+  [`/pharmacology/chemical-structures`](/pharmacology/chemical-structures)**.
   The structure was an illustration of a compound that doesn't
   appear in characterized commercial products — diagramming it
   in the synthetic-derivatives row was misleading.
 - **Affinity is not activity** — new dedicated section on
-  [`/pharmacology/morphine-vs-kratom`](src/content/pharmacology/morphine-vs-kratom.md)
+  [`/pharmacology/morphine-vs-kratom`](/pharmacology/morphine-vs-kratom)
   placed right before the binding-affinity ranking table. Reframes
   affinity, activity (full / partial agonist / antagonist, ceiling
   effects), and exposure as three independent things that combine
@@ -1413,7 +1430,7 @@ values; the page is correct. Skipped.
 
 ### Pharmacology page reflects DHM/MIT-A relabeling
 
-- Updated [`/pharmacology/morphine-vs-kratom`](src/content/pharmacology/morphine-vs-kratom.md)
+- Updated [`/pharmacology/morphine-vs-kratom`](/pharmacology/morphine-vs-kratom)
   after the community converged on the fact that products sold as
   "DHM" or "MIT-A" have been characterized as MGM-15, not as a
   distinct dihydro-mitragynine compound. The chemistry of saturating
@@ -1441,7 +1458,7 @@ values; the page is correct. Skipped.
 ### Virtual SMART Recovery meeting finder at /virtual-smart-meetings-now
 
 - New shareable landing page at
-  [`/virtual-smart-meetings-now`](src/pages/virtual-smart-meetings-now.astro):
+  [`/virtual-smart-meetings-now`](/virtual-smart-meetings-now):
   a third-party viewer over the public SMART Recovery online meeting
   list, sorted into the reader's local timezone. Same four-pane
   structure as the NA page — Live now, Starting soon, Later today,
@@ -1467,7 +1484,7 @@ values; the page is correct. Skipped.
   attributes meeting data to © SMART Recovery, and routes
   update reports back to SMART's own meeting search.
 - **Data pipeline.** A new build script at
-  [`scripts/build-smart-meetings.mjs`](scripts/build-smart-meetings.mjs)
+  `scripts/build-smart-meetings.mjs`
   scrapes the SMART listing UI with multi-city union coverage
   (Houston, LA, NYC, Kansas City at 1000-mi radius each) because a
   single-city search misses meetings hosted outside its radius.
@@ -1489,19 +1506,19 @@ values; the page is correct. Skipped.
   set from SMART's own form dropdown so the tag with the literal
   comma stays intact.
 - **Daily refresh.** A new cron at
-  [`.github/workflows/refresh-smart-meetings.yml`](.github/workflows/refresh-smart-meetings.yml)
+  `.github/workflows/refresh-smart-meetings.yml`
   runs every morning at 09:30 UTC (just after the NA refresh). Daily
   not weekly because SMART's listing exposes each meeting's next
   occurrence as a specific UTC timestamp, not a recurring template
   — weekly would leave "next meeting at 7 PM today" stamps stale
   for days.
 - **Homepage hook updated.** The
-  [`NextMeeting`](src/components/NextMeeting.tsx) card now points
+  [`NextMeeting`](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/components/NextMeeting.tsx) card now points
   readers at both the NA finder and the SMART finder when no
   kratom-specific meeting is in session, instead of just NA. No
   specific meeting is named — the finders are the destinations.
 - Added to the human-facing
-  [`/sitemap`](src/pages/sitemap.astro) under "Standalone tools".
+  [`/sitemap`](/sitemap) under "Standalone tools".
 - **Filter-chip counts reflect what's actually visible.** Initial
   build showed the build-time dataset count on each chip (e.g.
   LGBTIA+ "9"), which was misleading: most meetings aren't in the
@@ -1515,7 +1532,7 @@ values; the page is correct. Skipped.
 ### Virtual NA meeting finder at /virtual-na-meetings-now
 
 - New shareable landing page at
-  [`/virtual-na-meetings-now`](src/pages/virtual-na-meetings-now.astro):
+  [`/virtual-na-meetings-now`](/virtual-na-meetings-now):
   a third-party viewer over the public Narcotics Anonymous® virtual
   meeting list, US English-language only, sorted into the reader's
   local timezone. The page leads with the always-on 24/7 room as a
@@ -1541,7 +1558,7 @@ values; the page is correct. Skipped.
   are routed back to na.org's own "Submit Update" form rather than
   being collected on our end.
 - **Data pipeline.** A new build script
-  [`scripts/build-na-meetings.mjs`](scripts/build-na-meetings.mjs)
+  [`scripts/build-na-meetings.mjs`](https://github.com/quitting7oh/quitting7oh.org/blob/main/scripts/build-na-meetings.mjs)
   pulls the full week of meetings from na.org's `admin-ajax` endpoint
   (the same one their `/meetingsearch/virtual-meeting-search/` page
   uses), filters to US + English (4,104 of 7,043 raw rows),
@@ -1550,7 +1567,7 @@ values; the page is correct. Skipped.
   JSON at build time so the page is fully static — no runtime data
   fetch, no Pages Functions.
 - **Freshness.** A new weekly cron at
-  [`.github/workflows/refresh-na-meetings.yml`](.github/workflows/refresh-na-meetings.yml)
+  [`.github/workflows/refresh-na-meetings.yml`](https://github.com/quitting7oh/quitting7oh.org/blob/main/.github/workflows/refresh-na-meetings.yml)
   runs the fetcher every Sunday 09:00 UTC, content-hashes the result
   (ignoring the `fetched_at` timestamp so it's not a no-op commit),
   commits if changed, and pushes to `main`. Cloudflare auto-deploys
@@ -1558,22 +1575,22 @@ values; the page is correct. Skipped.
 - **Authorization.** NAWS senior leadership approved republication
   with a link back to na.org and a clear unaffiliated disclaimer.
 - **Supporting infrastructure.** Extracted a generic
-  [`src/lib/tz.ts`](src/lib/tz.ts) with `wallClockToUTC`,
+  [`src/lib/tz.ts`](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/lib/tz.ts) with `wallClockToUTC`,
   `todayInTimezone`, `addDays`, and `nextOccurrence` helpers that
   work against any IANA timezone (the existing
-  [`src/data/meetings.ts`](src/data/meetings.ts) was ET-only). The
+  [`src/data/meetings.ts`](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/data/meetings.ts) was ET-only). The
   NA dataset spans dozens of timezones, every meeting carries its
   own. Pre-existing kratom-meeting code untouched — the new lib is
   additive.
 - Added to the human-facing
-  [`/sitemap`](src/pages/sitemap.astro) under "Standalone tools".
+  [`/sitemap`](/sitemap) under "Standalone tools".
 - **Homepage hook.** The homepage `<NextMeeting>` card now surfaces
   the NA finder when the next kratom-specific meeting isn't in
   session (status `future`, i.e. more than 15 minutes away). A small
   inline callout above the card body says "The kratom-specific
   meeting below starts later. There's a virtual NA meeting happening
   every hour — find one live." with a link to
-  [`/virtual-na-meetings-now`](src/pages/virtual-na-meetings-now.astro).
+  [`/virtual-na-meetings-now`](/virtual-na-meetings-now).
   No specific NA meeting is named on the homepage — the finder is
   the destination, and the reader picks. When a kratom meeting is
   starting soon, live, or just started, the callout doesn't appear.
@@ -1607,7 +1624,7 @@ values; the page is correct. Skipped.
   FreeConferenceCall 2, Facebook 2, Jitsi 1). The semantics are OR —
   selecting multiple chips shows meetings on any of them — because a
   meeting is on one platform, so AND would be empty. Detection
-  upgraded in [`scripts/build-na-meetings.mjs`](scripts/build-na-meetings.mjs):
+  upgraded in [`scripts/build-na-meetings.mjs`](https://github.com/quitting7oh/quitting7oh.org/blob/main/scripts/build-na-meetings.mjs):
   GoToMeeting, FreeConferenceCall, Microsoft Teams Live, Discord,
   Jitsi all now recognized; previously they fell into the
   "Online meeting" catch-all. The phone-dial-in platform is labeled
@@ -1809,13 +1826,13 @@ The rest of the opioid framing in body content stays as-is — most
 of it is correct technical claims (bupe is an opioid, kratom-
 synthetic withdrawal is biochemically opioid withdrawal) or
 deliberate borrowing from OUD literature. Detailed audit in
-[docs/page-descriptions-audit.md](docs/page-descriptions-audit.md)
+[docs/page-descriptions-audit.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/page-descriptions-audit.md)
 Part 3.
 
 ### Per-page descriptions: SEO + 7-OH/MGM-15/kratom-synthetic framing
 
 - 48 content pages got tightened meta descriptions per the audit in
-  [docs/page-descriptions-audit.md](docs/page-descriptions-audit.md)
+  [docs/page-descriptions-audit.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/page-descriptions-audit.md)
   Part 2. Target: 120-160 chars to fit Google's SERP truncation
   (many of the originals ran 180-260 and were getting cut off in
   every result), with the search-query nouns front-loaded.
@@ -1849,7 +1866,7 @@ Part 3.
   to match the new scope ("…recovery information for 7-OH, MGM-15,
   and kratom-derived synthetics"). The previous "Community recovery
   information." was too generic to do any SEO or accessibility work.
-- Recommendation source: [docs/page-descriptions-audit.md](docs/page-descriptions-audit.md) Part 1.
+- Recommendation source: [docs/page-descriptions-audit.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/docs/page-descriptions-audit.md) Part 1.
 
 ### Helper Medications rewrite: quick-reference table, cluster ordering, slop pass
 
@@ -2189,7 +2206,7 @@ alongside the existing entries.
 
 Swapped the iframe-based Discord embed on
 [The Community](/about/the-community) for a custom widget
-([`DiscordCard.tsx`](src/components/DiscordCard.tsx)) that pulls
+([`DiscordCard.tsx`](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/components/DiscordCard.tsx)) that pulls
 the same live data (server name, online count, member avatars,
 status dots) directly from `discord.com/api/guilds/{id}/widget.json`
 and renders it as a styled card using the site's theme tokens
@@ -2588,7 +2605,7 @@ moved.
 
 ### Infrastructure
 
-- **Public changelog page** at [`/about/changelog`](src/content/about/changelog.md),
+- **Public changelog page** at [`/about/changelog`](/about/changelog),
   generated from this `CHANGELOG.md` by `scripts/sync-site-changelog.mjs`.
   The sync runs as the `npm run prebuild` hook so the page rebuilds
   automatically on every CF Pages deploy. Idempotent: re-running
@@ -2959,9 +2976,9 @@ clobbering editorial work.
   from all 46 content files. The site rebuilds cleanly with the
   trimmed schema.
 - **Docs cleanup:** updated
-  [src/content/README.md](src/content/README.md) front-matter table to
+  [src/content/README.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/src/content/README.md) front-matter table to
   drop the removed fields and add a row for the `wide` field that was
-  already in use. Updated [CLAUDE.md](CLAUDE.md) to remove the ingest
+  already in use. Updated [CLAUDE.md](https://github.com/quitting7oh/quitting7oh.org/blob/main/CLAUDE.md) to remove the ingest
   references in the "Editing content" section and the build commands
   block.
 
@@ -3430,7 +3447,7 @@ modern wide screens.
 
 ### Site map + footer
 
-- **New `/sitemap` page** at [src/pages/sitemap.astro](src/pages/sitemap.astro)
+- **New `/sitemap` page** at [src/pages/sitemap.astro](/sitemap)
   — human-readable index of every page on the site, grouped by category,
   with title + source channel + description for each entry, and an
   "editorial" badge on `manual: true` pages. Cross-links the
