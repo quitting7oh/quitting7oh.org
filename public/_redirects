@@ -119,3 +119,8 @@
 # 2026-08-22: moved the source-credit page to a neutral, descriptive URL.
 /about/for-fly  /about/acknowledgments  301
 /about/for-fly/ /about/acknowledgments  301
+
+# 2026-11-20: short link to the community Discord invite. 302 rather
+# than 301 so browsers don't cache it forever if the invite changes.
+/discord   https://discord.gg/invite/FDJuEPcQz5  302
+/discord/  https://discord.gg/invite/FDJuEPcQz5  302
