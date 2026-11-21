@@ -3,9 +3,10 @@
  *
  * A plan is built once, when the reader starts it, and saved as concrete
  * dated days. Nothing recomputes it later. Changes (holding a dose, slowing
- * down, speeding up) rebuild only the days from today on; earlier days stay
- * exactly as they were. Logged doses are stored by calendar date, separate
- * from the plan, so editing a plan can never move or hide them.
+ * down, speeding up, restarting from a different dose) rebuild only the days
+ * from the change on; earlier days stay exactly as they were. Logged doses are
+ * stored by calendar date, separate from the plan, so editing a plan can never
+ * move or hide them.
  */
 import {
   SUBSTANCES,
@@ -19,10 +20,16 @@ import {
 
 export type PlannerCompound = Extract<SubstanceKey, '7oh' | 'mgm' | 'pseudo'>;
 
-export type Measure = { kind: 'tablet'; size: number } | { kind: 'powder' };
+/** Tablets: every dose is whole quarter pieces of a tablet of `size` mg.
+ *  Powder: amounts are what the scale reads; `strengthPct` (optional) is the
+ *  active content on the label, used only to show the active amount. */
+export type Measure =
+  | { kind: 'tablet'; size: number }
+  | { kind: 'powder'; strengthPct?: number };
 
 export interface PlanInput {
   compound: PlannerCompound;
+  /** mg per dose (tablets: tablet count × strength). */
   perDose: number;
   dosesPerDay: number;
   /** Daily total on the last day. 0 adds a stop day. */
@@ -40,7 +47,7 @@ export interface PlanDay {
   totalDaily: number;
 }
 
-export type ChangeKind = 'start' | 'hold' | 'slower' | 'faster';
+export type ChangeKind = 'start' | 'hold' | 'slower' | 'faster' | 'restart';
 
 export interface PlanChange {
   kind: ChangeKind;
@@ -54,7 +61,13 @@ export interface SavedPlan {
   v: 1;
   compound: PlannerCompound;
   measure: Measure;
+  /** As set up: 0 means the plan ends with a stop day. */
   jumpOff: number;
+  /** The last dosing day's total, kept so later changes end at the same dose. */
+  endTotal: number;
+  /** Day 1 of the original plan, kept so rebuilt days drop doses per day at the
+   *  same points. */
+  anchor: { total: number; doses: number };
   days: PlanDay[];
   changes: PlanChange[];
 }
@@ -62,9 +75,27 @@ export interface SavedPlan {
 /** Dose slots logged per date. Independent of any plan. */
 export type DoseLog = Record<string, number[]>;
 
-function isoPlus(iso: string, offset: number): string {
+export function isoPlus(iso: string, offset: number): string {
   const d = addDaysToIso(iso, offset);
   return d ? formatLocalIsoDate(d) : iso;
+}
+
+function scheduleOptions(measure: Measure, anchor?: { total: number; doses: number }) {
+  return measure.kind === 'tablet'
+    ? { tabletPieces: measure.size, anchor }
+    : { powder: true, anchor };
+}
+
+function datedFrom(
+  steps: { perDose: number; dosesPerDay: number; totalDaily: number }[],
+  start: string,
+): PlanDay[] {
+  return steps.map((s, i) => ({
+    date: isoPlus(start, i),
+    perDose: s.perDose,
+    dosesPerDay: s.dosesPerDay,
+    totalDaily: s.totalDaily,
+  }));
 }
 
 /** Days for a plan input, dated from `startDate`. */
@@ -75,34 +106,25 @@ export function buildDays(input: PlanInput, startDate: string): PlanDay[] {
     input.dosesPerDay,
     input.jumpOff,
     input.days,
-    input.measure.kind === 'tablet' ? { tabletSize: input.measure.size } : { powder: true },
+    scheduleOptions(input.measure),
   ).steps;
-  return steps.map((s, i) => ({
-    date: isoPlus(startDate, i),
-    perDose: s.perDose,
-    dosesPerDay: s.dosesPerDay,
-    totalDaily: s.totalDaily,
-  }));
+  return datedFrom(steps, startDate);
 }
 
 export function startPlan(input: PlanInput, startDate: string): SavedPlan | null {
   const days = buildDays(input, startDate);
   if (days.length === 0) return null;
+  const lastDose = [...days].reverse().find((d) => d.totalDaily > 0) ?? days[0];
   return {
     v: 1,
     compound: input.compound,
     measure: input.measure,
     jumpOff: input.jumpOff,
+    endTotal: lastDose.totalDaily,
+    anchor: { total: days[0].totalDaily, doses: days[0].dosesPerDay },
     days,
     changes: [{ kind: 'start', from: startDate, deltaDays: 0 }],
   };
-}
-
-/** Index of `date` in the plan, or null when the date falls outside it. */
-export function dayIndex(plan: SavedPlan, date: string): number | null {
-  const diff = daysBetweenIso(plan.days[0].date, date);
-  if (diff === null || diff < 0 || diff >= plan.days.length) return null;
-  return diff;
 }
 
 /** Where today sits relative to the plan. */
@@ -116,80 +138,127 @@ export function planPosition(
   return { kind: 'during', index: diff };
 }
 
-/** Days left counting today (today included). */
-export function daysLeft(plan: SavedPlan, index: number): number {
-  return plan.days.length - index;
+export function lastDoseDay(days: PlanDay[]): PlanDay {
+  return [...days].reverse().find((d) => d.totalDaily > 0) ?? days[0];
 }
 
 /**
- * Rebuild the plan from `index` (today) on. Earlier days are kept as they
- * are. `startFrom` is the dose the rebuilt part starts at; `length` is how
- * many days the rebuilt part runs.
+ * The days from `from` on, starting at `start` and ending at the plan's end
+ * dose (plus a stop day when the plan has one), `length` days in all.
  */
-function rebuildFrom(
+function tail(
   plan: SavedPlan,
-  index: number,
-  startFrom: { perDose: number; dosesPerDay: number },
+  fromDate: string,
+  start: { perDose: number; dosesPerDay: number },
   length: number,
 ): PlanDay[] {
-  const kept = plan.days.slice(0, index);
-  const from = plan.days[index]?.date ?? isoPlus(plan.days[0].date, index);
-  // Nothing left to taper: hold the dose for the days left.
-  if (plan.jumpOff > 0 && startFrom.perDose * startFrom.dosesPerDay <= plan.jumpOff + 1e-9) {
-    const hold = Array.from({ length: Math.max(1, length) }, (_, i) => ({
-      date: isoPlus(from, i),
-      perDose: startFrom.perDose,
-      dosesPerDay: startFrom.dosesPerDay,
-      totalDaily: exactProduct(startFrom.perDose, startFrom.dosesPerDay),
-    }));
-    return kept.concat(hold);
+  const withStop = plan.jumpOff === 0;
+  const dosing = Math.max(1, length - (withStop ? 1 : 0));
+  const startTotal = exactProduct(start.perDose, start.dosesPerDay);
+  let steps: { perDose: number; dosesPerDay: number; totalDaily: number }[];
+  if (startTotal <= plan.endTotal + 1e-9 || dosing === 1) {
+    // Already at the end dose: hold it for the days left.
+    steps = Array.from({ length: dosing }, () => ({ ...start, totalDaily: startTotal }));
+  } else {
+    steps = generateSchedule(
+      plan.compound,
+      start.perDose,
+      start.dosesPerDay,
+      plan.endTotal,
+      Math.max(2, dosing),
+      scheduleOptions(plan.measure, plan.anchor),
+    ).steps;
   }
-  const rest = buildDays(
-    {
-      compound: plan.compound,
-      perDose: startFrom.perDose,
-      dosesPerDay: startFrom.dosesPerDay,
-      jumpOff: plan.jumpOff,
-      days: Math.max(2, length),
-      measure: plan.measure,
-    },
-    from,
-  );
-  return kept.concat(rest);
+  if (withStop) steps = [...steps, { perDose: 0, dosesPerDay: 0, totalDaily: 0 }];
+  return datedFrom(steps, fromDate);
 }
 
-/** Stay on yesterday's dose today, then continue the taper from there. The
- *  plan gets one day longer. */
-export function holdToday(plan: SavedPlan, index: number): SavedPlan {
-  if (index <= 0) return plan;
-  const yesterday = plan.days[index - 1];
-  const length = daysLeft(plan, index) + 1;
+function dateAt(plan: SavedPlan, index: number): string {
+  return plan.days[index]?.date ?? isoPlus(plan.days[0].date, index);
+}
+
+/**
+ * Stay on the previous day's dose on day `from`, then carry on with the rest
+ * of the plan one day later. Nothing is recalculated. Not offered when the
+ * previous day's dose is no higher than this day's.
+ */
+export function holdAt(plan: SavedPlan, from: number): SavedPlan | null {
+  if (from <= 0 || from >= plan.days.length) return null;
+  const prev = plan.days[from - 1];
+  if (prev.totalDaily <= plan.days[from].totalDaily) return null;
+  const date = dateAt(plan, from);
+  const repeated: PlanDay = { ...prev, date };
+  const shifted = plan.days.slice(from).map((d, i) => ({ ...d, date: isoPlus(date, i + 1) }));
   return {
     ...plan,
-    days: rebuildFrom(plan, index, yesterday, length),
-    changes: [...plan.changes, { kind: 'hold', from: plan.days[index].date, deltaDays: 1 }],
+    days: [...plan.days.slice(0, from), repeated, ...shifted],
+    changes: [...plan.changes, { kind: 'hold', from: date, deltaDays: 1 }],
   };
 }
 
-/** Change how many days are left, starting from today's current dose. */
-export function changePace(plan: SavedPlan, index: number, deltaDays: number): SavedPlan {
-  const today = plan.days[index];
-  const left = daysLeft(plan, index);
-  const length = Math.max(2, left + deltaDays);
-  const applied = length - left;
-  if (applied === 0) return plan;
+/** Fewest days a rebuilt tail may have (start, end, and the stop day). */
+function minTail(plan: SavedPlan): number {
+  return plan.jumpOff === 0 ? 3 : 2;
+}
+
+/**
+ * Spread the days from `from` on over `deltaDays` more (or fewer) days,
+ * starting at that day's dose and ending at the plan's end dose. Returns null
+ * when the change isn't possible (a stop day, or too few days left).
+ */
+export function changePaceAt(plan: SavedPlan, from: number, deltaDays: number): SavedPlan | null {
+  const start = plan.days[from];
+  if (!start || start.totalDaily === 0 || deltaDays === 0) return null;
+  const left = plan.days.length - from;
+  const length = Math.min(365 - from, left + deltaDays);
+  if (length < minTail(plan) || length === left) return null;
+  if (start.totalDaily <= plan.endTotal + 1e-9) return null;
+  const days = [...plan.days.slice(0, from), ...tail(plan, start.date, start, length)];
+  const applied = days.length - plan.days.length;
+  if (applied === 0) return null;
   return {
     ...plan,
-    days: rebuildFrom(plan, index, today, length),
-    changes: [
-      ...plan.changes,
-      { kind: applied > 0 ? 'slower' : 'faster', from: today.date, deltaDays: applied },
-    ],
+    days,
+    changes: [...plan.changes, { kind: applied > 0 ? 'slower' : 'faster', from: start.date, deltaDays: applied }],
   };
 }
 
-/** Tablet count for a dose, when it's a whole number of quarter tablets. */
-export function quarterTablets(perDose: number, size: number): number | null {
+/** Restart from `from` at a dose the reader names, over `length` days. */
+export function restartAt(
+  plan: SavedPlan,
+  from: number,
+  dose: { perDose: number; dosesPerDay: number },
+  length: number,
+): SavedPlan | null {
+  if (dose.perDose <= 0 || dose.dosesPerDay < 1 || from < 0 || from > plan.days.length) return null;
+  const date = dateAt(plan, from);
+  const days = [...plan.days.slice(0, from), ...tail(plan, date, dose, Math.max(minTail(plan), length))];
+  return {
+    ...plan,
+    anchor:
+      exactProduct(dose.perDose, dose.dosesPerDay) > plan.anchor.total
+        ? { total: exactProduct(dose.perDose, dose.dosesPerDay), doses: dose.dosesPerDay }
+        : plan.anchor,
+    days,
+    changes: [...plan.changes, { kind: 'restart', from: date, deltaDays: days.length - plan.days.length }],
+  };
+}
+
+/** Largest one-day drop in daily total from `from` on, as a fraction. */
+export function largestCut(days: PlanDay[], from = 1): { pct: number; date: string } | null {
+  let best: { pct: number; date: string } | null = null;
+  for (let i = Math.max(1, from); i < days.length; i++) {
+    if (days[i].totalDaily <= 0 || days[i - 1].totalDaily <= 0) continue;
+    const pct = 1 - days[i].totalDaily / days[i - 1].totalDaily;
+    if (!best || pct > best.pct) best = { pct, date: days[i].date };
+  }
+  return best;
+}
+
+/* ---------- measuring ---------- */
+
+/** Quarter-tablet pieces in a dose, or null when it isn't whole pieces. */
+export function tabletPieces(perDose: number, size: number): number | null {
   const q = (perDose / size) * 4;
   const r = Math.round(q);
   return r >= 1 && Math.abs(q - r) < 1e-6 ? r : null;
@@ -197,28 +266,55 @@ export function quarterTablets(perDose: number, size: number): number | null {
 
 const FRACTIONS = ['', '¼', '½', '¾'];
 
-export function formatQuarters(quarters: number): string {
-  const whole = Math.floor(quarters / 4);
-  const frac = FRACTIONS[quarters % 4];
-  return whole === 0 ? frac : `${whole}${frac}`;
+function tabletAmount(pieces: number): string {
+  const whole = Math.floor(pieces / 4);
+  const frac = FRACTIONS[pieces % 4];
+  if (whole === 0) return `${frac} of a tablet`;
+  if (!frac) return `${whole} ${whole === 1 ? 'tablet' : 'tablets'}`;
+  return `${whole}${frac} tablets`;
 }
 
-/** How to measure one dose, in words. */
-export function measureHint(perDose: number, measure: Measure, unit: string): string {
-  if (perDose <= 0) return '';
-  if (measure.kind === 'powder') return `Weigh ${formatAmount(perDose)} ${unit}`;
-  const q = quarterTablets(perDose, measure.size);
-  if (q !== null) {
-    return `${formatQuarters(q)} ${q <= 4 ? 'tablet' : 'tablets'} (${measure.size} ${unit} each)`;
+/** How to take one dose: a short line and a plain instruction. */
+export function measureHint(perDose: number, measure: Measure, unit: string): { main: string; how: string } {
+  if (perDose <= 0) return { main: '', how: '' };
+  if (measure.kind === 'powder') {
+    const active =
+      measure.strengthPct && measure.strengthPct > 0
+        ? ` (about ${formatAmount(exactProduct((perDose * measure.strengthPct) / 100, 1))} ${unit} active at ${measure.strengthPct}%)`
+        : '';
+    return { main: `Weigh ${formatAmount(perDose)} ${unit} of powder`, how: `Each dose${active}.` };
   }
-  return `Between tablet quarters: weigh or dissolve ${formatAmount(perDose)} ${unit}`;
+  const pieces = tabletPieces(perDose, measure.size);
+  if (pieces === null) {
+    return {
+      main: `About ${formatAmount(perDose / measure.size)} tablets`,
+      how: `${formatAmount(perDose)} ${unit} with ${measure.size} ${unit} tablets.`,
+    };
+  }
+  const whole = Math.floor(pieces / 4);
+  const rest = pieces % 4;
+  let how: string;
+  if (rest === 0) how = `${whole === 1 ? 'One whole tablet' : `${whole} whole tablets`} (${measure.size} ${unit} each).`;
+  else if (whole === 0) how = `Cut a tablet into 4 equal pieces and take ${rest}.`;
+  else
+    how = `${whole === 1 ? 'One whole tablet' : `${whole} whole tablets`}, plus ${rest} ${rest === 1 ? 'piece' : 'pieces'} from a tablet cut into 4.`;
+  return { main: tabletAmount(pieces), how };
 }
 
-/** Days in the plan whose dose can be cut from tablets as quarters. */
-export function cuttableDays(days: PlanDay[], measure: Measure): number {
-  if (measure.kind !== 'tablet') return days.length;
-  return days.filter((d) => d.totalDaily === 0 || quarterTablets(d.perDose, measure.size) !== null)
-    .length;
+/** A short tablet label for tables: "¾ tab", "1¼ tabs". */
+export function shortTablets(perDose: number, size: number): string {
+  const pieces = tabletPieces(perDose, size);
+  if (pieces === null) return `≈ ${formatAmount(perDose / size)} tabs`;
+  const whole = Math.floor(pieces / 4);
+  const frac = FRACTIONS[pieces % 4];
+  const n = whole === 0 ? frac : `${whole}${frac}`;
+  return `${n} ${pieces <= 4 ? 'tab' : 'tabs'}`;
+}
+
+/** Tablets needed for a set of days, rounded up to whole tablets. */
+export function tabletsNeeded(days: PlanDay[], size: number): number {
+  const pieces = days.reduce((a, d) => a + (tabletPieces(d.perDose, size) ?? Math.ceil((d.perDose / size) * 4)) * d.dosesPerDay, 0);
+  return Math.ceil(pieces / 4);
 }
 
 /** An amount without float noise; repeating splits show "≈". */
@@ -230,8 +326,8 @@ export function formatAmount(x: number): string {
 
 /** A +/- step that's about 5% of the amount, on a round number. */
 export function niceStep(amount: number): number {
-  const target = Math.max(0.25, amount * 0.05);
-  const steps = [0.25, 0.5, 1, 2.5, 5, 10, 25, 50, 100, 250];
+  const target = Math.max(1, amount * 0.05);
+  const steps = [1, 2, 5, 10, 25, 50, 100, 250];
   let best = steps[0];
   for (const s of steps) if (s <= target) best = s;
   return best;
@@ -245,11 +341,12 @@ export function defaultsFor(compound: PlannerCompound): PlanInput {
     dosesPerDay: cfg.defaultDosesPerDay,
     jumpOff: cfg.defaultJumpOff,
     days: cfg.defaultDurationDays,
-    measure: { kind: 'powder' },
+    measure: { kind: 'tablet', size: cfg.defaultTabletSize ?? 15 },
   };
 }
 
-/** Validate a saved plan read from storage. */
+/* ---------- storage ---------- */
+
 export function readSavedPlan(raw: unknown): SavedPlan | null {
   if (!raw || typeof raw !== 'object') return null;
   const p = raw as Partial<SavedPlan>;
@@ -264,15 +361,24 @@ export function readSavedPlan(raw: unknown): SavedPlan | null {
       typeof d.totalDaily === 'number',
   );
   if (days.length === 0) return null;
+  const m = p.measure as Measure | undefined;
   const measure: Measure =
-    p.measure && p.measure.kind === 'tablet' && typeof p.measure.size === 'number' && p.measure.size > 0
-      ? { kind: 'tablet', size: p.measure.size }
-      : { kind: 'powder' };
+    m && m.kind === 'tablet' && typeof m.size === 'number' && m.size > 0
+      ? { kind: 'tablet', size: m.size }
+      : m && m.kind === 'powder' && typeof m.strengthPct === 'number' && m.strengthPct > 0
+        ? { kind: 'powder', strengthPct: m.strengthPct }
+        : { kind: 'powder' };
+  const last = lastDoseDay(days);
   return {
     v: 1,
     compound: p.compound,
     measure,
     jumpOff: typeof p.jumpOff === 'number' ? p.jumpOff : 0,
+    endTotal: typeof p.endTotal === 'number' ? p.endTotal : last.totalDaily,
+    anchor:
+      p.anchor && typeof p.anchor.total === 'number' && typeof p.anchor.doses === 'number'
+        ? p.anchor
+        : { total: days[0].totalDaily, doses: days[0].dosesPerDay },
     days,
     changes: Array.isArray(p.changes) ? p.changes : [],
   };

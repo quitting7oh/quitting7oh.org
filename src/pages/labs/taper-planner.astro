@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import { AppSidebar } from '~/components/AppSidebar';
 import { TaperPlanner } from '~/components/planner/TaperPlanner';
+import { PINNED_PAGES } from '~/lib/categories';
+import { getSidebarCategories } from '~/lib/sidebar-data';
+import { routePath } from '~/lib/site';
+
+const sidebarCategories = await getSidebarCategories();
 ---
 
 <BaseLayout
@@ -13,8 +19,8 @@ import { TaperPlanner } from '~/components/planner/TaperPlanner';
       <p class="eyebrow">Labs · Preview</p>
       <h1 class="mt-2 font-display text-4xl font-semibold tracking-tight text-foreground">Taper planner</h1>
       <p class="mt-3 text-muted-foreground">
-        A test version of a new taper calculator for 7-OH, MGM-15, and pseudo. Set up a plan once, then come
-        back each day for today's dose. Plans and logged doses stay in this browser.
+        A test version of a new taper calculator for 7-OH, MGM-15, and pseudo. Set up a plan once, then
+        come back each day for today's dose.
       </p>
       <p class="mt-2 text-sm text-muted-foreground">
         The current calculator is at <a href="/resources/7-oh-taper-calculator" class="font-medium text-primary underline underline-offset-2">7-OH Taper Calculator</a>.
@@ -22,4 +28,12 @@ import { TaperPlanner } from '~/components/planner/TaperPlanner';
     </header>
     <TaperPlanner client:load />
   </main>
+  <div class="lg:hidden">
+    <AppSidebar
+      client:load
+      categories={sidebarCategories}
+      pinned={PINNED_PAGES}
+      currentPath={routePath(Astro.url.pathname)}
+    />
+  </div>
 </BaseLayout>
