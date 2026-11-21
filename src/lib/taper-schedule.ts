@@ -541,7 +541,24 @@ export interface ScheduleOptions {
   tabletSize?: number;
   /** Suboxone: follow a matching published table, or a custom curve. */
   bupeMode?: 'published' | 'custom';
+  /** Weighed powder: round each dose to a step a scale can weigh at that
+   *  size (0.25 mg for small doses up to 10 mg for doses near 1000 mg). */
+  powder?: boolean;
 }
+
+/** Rounding step a reader can weigh, scaled to the dose (about 1-2%). */
+export function scaleStepFor(x: number): number {
+  if (x < 10) return 0.25;
+  if (x < 50) return 0.5;
+  if (x < 200) return 1;
+  if (x < 1000) return 5;
+  return 10;
+}
+
+const scaleQuantizer: Quantizer = (x, mode) => {
+  const step = scaleStepFor(x);
+  return exactProduct(toStep(x, 1 / step, mode), 1);
+};
 
 /** Durations with a published once-a-day Suboxone table for this start. */
 export function publishedBupeDurations(perDose: number, dosesPerDay: number): number[] {
@@ -658,14 +675,14 @@ export function generateSchedule(
           n0,
           minDoses,
           quarterTabletQuantizer(tabletSize),
-          quarterQuantizer,
+          options.powder ? scaleQuantizer : quarterQuantizer,
         )
       : buildSteps(
           totals,
           totalStart,
           n0,
           minDoses,
-          substance === 'leaf' ? leafQuantizer : quarterQuantizer,
+          substance === 'leaf' ? leafQuantizer : options.powder ? scaleQuantizer : quarterQuantizer,
         ),
   );
   return {
