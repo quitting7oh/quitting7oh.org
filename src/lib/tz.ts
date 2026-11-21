@@ -12,6 +12,27 @@
  *  moment in question.
  */
 
+/** Constructing an Intl.DateTimeFormat costs far more than calling
+ *  format on one. The live-meeting index runs these helpers over a few
+ *  thousand meetings spread across a handful of timezones, so building a
+ *  fresh formatter per call blocked the main thread for over a second on
+ *  mobile. Keep one formatter per timezone for each option set. */
+const wallClockFormatters = new Map<string, Intl.DateTimeFormat>();
+const dateFormatters = new Map<string, Intl.DateTimeFormat>();
+
+function cachedFormatter(
+  cache: Map<string, Intl.DateTimeFormat>,
+  timezone: string,
+  options: Intl.DateTimeFormatOptions,
+): Intl.DateTimeFormat {
+  let fmt = cache.get(timezone);
+  if (!fmt) {
+    fmt = new Intl.DateTimeFormat('en-CA', { ...options, timeZone: timezone });
+    cache.set(timezone, fmt);
+  }
+  return fmt;
+}
+
 /** Convert a wall-clock moment (year, month, day, hour, minute) in a
  *  given IANA timezone to a UTC timestamp in milliseconds. */
 export function wallClockToUTC(
@@ -23,8 +44,7 @@ export function wallClockToUTC(
   timezone: string,
 ): number {
   const naiveUTC = Date.UTC(y, m - 1, d, h, min, 0);
-  const fmt = new Intl.DateTimeFormat('en-CA', {
-    timeZone: timezone,
+  const fmt = cachedFormatter(wallClockFormatters, timezone, {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
@@ -55,8 +75,7 @@ export function todayInTimezone(
   now: Date,
   timezone: string,
 ): { y: number; m: number; d: number; dow: number } {
-  const fmt = new Intl.DateTimeFormat('en-CA', {
-    timeZone: timezone,
+  const fmt = cachedFormatter(dateFormatters, timezone, {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',

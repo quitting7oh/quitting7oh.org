@@ -98,14 +98,34 @@ const jsonLd = serializeJsonLd([...siteGraph(), ...(noindex ? [] : structuredDat
     <meta name="theme-color" content="#211a15" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow'} />
     <script type="application/ld+json" set:html={jsonLd} />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZPHE0EXTM" is:inline></script>
+    {/* Google tag (gtag.js), loaded late. The commands queue in
+        dataLayer right away; the 180 KiB library itself waits for the
+        first interaction, or 4 s after load, so its long tasks stay out
+        of the page-load window on slow phones. */}
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-1ZPHE0EXTM');
+
+      (function () {
+        var events = ['pointerdown', 'keydown', 'scroll'];
+        var opts = { passive: true };
+        var loaded = false;
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+          events.forEach(function (e) { removeEventListener(e, loadGtag, opts); });
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1ZPHE0EXTM';
+          document.head.appendChild(s);
+        }
+        events.forEach(function (e) { addEventListener(e, loadGtag, opts); });
+        function afterLoad() { setTimeout(loadGtag, 4000); }
+        if (document.readyState === 'complete') afterLoad();
+        else addEventListener('load', afterLoad, { once: true });
+      })();
     </script>
   </head>
   <body class="min-h-screen overflow-x-hidden">
