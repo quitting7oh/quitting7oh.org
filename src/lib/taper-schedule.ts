@@ -330,6 +330,9 @@ export interface ScheduleResult {
   steps: ScheduleStep[];
   source: ScheduleSource;
   totalMedication: number;
+  /** Set when no schedule came out because the end dose, rounded to what
+   *  can be measured (tablet pieces, scale steps), isn't below the start. */
+  reason?: 'end-not-below-start';
 }
 
 export interface SchedulePhase {
@@ -424,6 +427,7 @@ function buildSteps(
   /** When set, a day only uses `quantize` (e.g. quarter tablets) if the step
    *  stays close to the planned curve; otherwise it uses this one (mg). */
   fallback?: Quantizer,
+  anchor?: { total: number; doses: number },
 ): ScheduleStep[] {
   const floor = Math.min(n0, Math.max(1, minDoses));
   const target = totals[totals.length - 1];
@@ -453,7 +457,9 @@ function buildSteps(
     let n = isLast
       ? lastDayDoses(rawTotal, prevStep?.dosesPerDay ?? n0)
       : Math.min(
-          dosesPerDayFor(rawTotal, totalStart, n0, minDoses),
+          anchor && i > 0
+            ? Math.min(n0, dosesPerDayFor(rawTotal, anchor.total, anchor.doses, minDoses))
+            : dosesPerDayFor(rawTotal, totalStart, n0, minDoses),
           prevStep?.dosesPerDay ?? n0,
         );
     // Day 1 is exactly what the reader entered, and the last day is exactly
@@ -490,7 +496,7 @@ function buildSteps(
         const raw = rawTotal / m;
         return [bq(raw, 'round'), bq(raw, 'ceil'), bq(raw, 'floor')]
           .sort((x, y) => Math.abs(x - raw) - Math.abs(y - raw))
-          .concat([bq(target / m, 'ceil'), bq(prevTotal / m, 'floor')])
+          .concat([bq(maxPerDose, 'floor'), bq(prevTotal / m, 'floor'), bq(target / m, 'ceil')])
           .find((c) => c > 0 && c <= maxPerDose + 1e-9 && fits(exactProduct(c, m)));
       };
       // Try this frequency, then fewer doses a day (down to the floor), then
@@ -541,13 +547,41 @@ export interface ScheduleOptions {
   tabletSize?: number;
   /** Suboxone: follow a matching published table, or a custom curve. */
   bupeMode?: 'published' | 'custom';
+  /** Weighed powder: round each dose to a step a scale can weigh at that
+   *  size (1 mg for small doses up to 10 mg for doses near 1000 mg). */
+  powder?: boolean;
+  /** Tablets, cuttable doses only: every dose is a whole number of
+   *  quarter-tablet pieces (value: tablet strength). */
+  tabletPieces?: number;
+  /** Where doses per day were anchored originally (a rebuilt tail keeps the
+   *  original plan's points where doses per day drop). */
+  anchor?: { total: number; doses: number };
 }
+
+/** Rounding step a reader can weigh, scaled to the dose (about 1-2%). */
+export function scaleStepFor(x: number): number {
+  // A typical milligram scale reads in 1 mg steps.
+  if (x < 200) return 1;
+  if (x < 1000) return 5;
+  return 10;
+}
+
+const scaleQuantizer: Quantizer = (x, mode) => {
+  const step = scaleStepFor(x);
+  return exactProduct(toStep(x, 1 / step, mode), 1);
+};
 
 /** Durations with a published once-a-day Suboxone table for this start. */
 export function publishedBupeDurations(perDose: number, dosesPerDay: number): number[] {
   if (Math.round(dosesPerDay) !== 1) return [];
   const table = BUPE_SCHEDULES[perDose * dosesPerDay];
   return table ? Object.keys(table).map(Number).sort((a, b) => a - b) : [];
+}
+
+/** Every dose is whole quarter-tablet pieces; never below one piece. */
+function tabletPiecesQuantizer(tabletSize: number): Quantizer {
+  const piece = tabletSize / 4;
+  return (x, mode) => exactProduct(Math.max(1, toStep(x / piece, 1, mode)) * piece, 1);
 }
 
 function quarterTabletQuantizer(tabletSize: number): Quantizer {
@@ -647,9 +681,45 @@ export function generateSchedule(
   }
 
   const descendDays = wantsAbsoluteZero ? Math.max(2, days - 1) : days;
-  const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, descendDays);
+  let endTotal = effectiveJumpOff;
+  if (options.powder) {
+    const floorN = Math.min(n0, Math.max(1, minDoses));
+    const per = effectiveJumpOff / floorN;
+    endTotal = exactProduct(Math.max(1, toStep(per, 1 / scaleStepFor(per), 'round')), floorN);
+    if (endTotal >= totalStart - 1e-9) {
+      return { steps: [], source: 'percent', totalMedication: 0, reason: 'end-not-below-start' };
+    }
+  }
+  const totals = percentTotalsSchedule(totalStart, endTotal, descendDays);
   const tabletSize = options.tabletSize ?? 0;
   const useTablets = tabletSize > 0 && SUBSTANCES[substance].tabletUnitName === 'tablet';
+  if (options.tabletPieces && options.tabletPieces > 0) {
+    // Cuttable doses only: the end dose rounds to whole pieces too.
+    const piece = options.tabletPieces / 4;
+    const floorN = Math.min(n0, Math.max(1, minDoses));
+    const endPer = Math.max(piece, Math.round(effectiveJumpOff / floorN / piece) * piece);
+    const end = exactProduct(endPer, floorN);
+    if (end >= totalStart - 1e-9) {
+      return { steps: [], source: 'percent', totalMedication: 0, reason: 'end-not-below-start' };
+    }
+    const pieceTotals = percentTotalsSchedule(totalStart, end, descendDays);
+    const pieceSteps = withZeroIfRequested(
+      buildSteps(
+        pieceTotals,
+        totalStart,
+        n0,
+        minDoses,
+        tabletPiecesQuantizer(options.tabletPieces),
+        undefined,
+        options.anchor,
+      ),
+    );
+    return {
+      steps: pieceSteps,
+      source: 'percent',
+      totalMedication: round2(pieceSteps.reduce((a, st) => a + st.totalDaily, 0)),
+    };
+  }
   const steps = withZeroIfRequested(
     useTablets
       ? buildSteps(
@@ -658,14 +728,16 @@ export function generateSchedule(
           n0,
           minDoses,
           quarterTabletQuantizer(tabletSize),
-          quarterQuantizer,
+          options.powder ? scaleQuantizer : quarterQuantizer,
         )
       : buildSteps(
           totals,
           totalStart,
           n0,
           minDoses,
-          substance === 'leaf' ? leafQuantizer : quarterQuantizer,
+          substance === 'leaf' ? leafQuantizer : options.powder ? scaleQuantizer : quarterQuantizer,
+          undefined,
+          options.anchor,
         ),
   );
   return {
