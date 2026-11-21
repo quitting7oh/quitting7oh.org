@@ -11,8 +11,11 @@ import {
   daysBetweenIso,
 } from '~/lib/taper-schedule';
 import {
-  buildDays,
   changePaceAt,
+  activeAmount,
+  extendAt,
+  formatNumber,
+  previewDays,
   defaultsFor,
   formatAmount,
   holdAt,
@@ -50,11 +53,13 @@ const SEG_BTN =
   'inline-flex min-h-11 items-center justify-center rounded-md px-2 text-sm font-bold text-muted-foreground transition-colors hover:text-foreground aria-pressed:bg-card aria-pressed:text-foreground aria-pressed:shadow-xs aria-pressed:ring-1 aria-pressed:ring-border disabled:cursor-not-allowed disabled:opacity-45';
 const CHOICE =
   'w-full rounded-lg border border-border bg-card px-4 py-3 text-left transition-colors hover:border-primary/60 aria-pressed:border-primary aria-pressed:bg-accent/60 disabled:cursor-not-allowed disabled:opacity-50';
+const NAV_BTN =
+  'inline-flex min-h-11 items-center justify-center rounded-md px-2 text-sm font-bold text-muted-foreground transition-colors hover:text-foreground aria-[current=page]:bg-card aria-[current=page]:text-foreground aria-[current=page]:shadow-xs aria-[current=page]:ring-1 aria-[current=page]:ring-border';
 const LINK_BTN =
   'inline-flex min-h-11 items-center font-semibold text-primary underline-offset-2 hover:underline';
 
 type View = 'setup' | 'today' | 'schedule' | 'change';
-type ChangeKind = 'hold' | 'slower' | 'faster' | 'restart';
+type ChangeKind = 'hold' | 'extend' | 'slower' | 'faster' | 'restart';
 
 interface Draft {
   compound: PlannerCompound;
@@ -121,7 +126,7 @@ function draftFromPlan(plan: SavedPlan, today: string): Draft {
 }
 
 /** Prefill from the older calculator on this device, at today's dose. */
-function draftFromOldCalculator(today: string): Draft | null {
+function draftFromOldCalculator(today: string): (Draft & { fromText: string }) | null {
   try {
     const raw = localStorage.getItem(OLD_CALCULATOR_KEY);
     if (!raw) return null;
@@ -136,7 +141,7 @@ function draftFromOldCalculator(today: string): Draft | null {
     if (typeof d.startDate === 'string' && d.startDate) {
       idx = Math.max(0, daysBetweenIso(d.startDate, today) ?? 0);
     }
-    if (idx >= steps.length) return null;
+    if (idx >= steps.length || steps[idx].totalDaily <= 0) return null;
     const step = steps[idx];
     const size = d.tabletSize > 0 ? d.tabletSize : base.tabletSize;
     return {
@@ -144,10 +149,11 @@ function draftFromOldCalculator(today: string): Draft | null {
       measureKind: d.tabletSize > 0 ? 'tablet' : 'powder',
       tabletSize: size,
       tabletsPerDose: Math.max(0.25, Math.round((step.perDose / size) * 4) / 4),
-      powderPerDose: Math.round(step.perDose),
+      powderPerDose: step.perDose,
       dosesPerDay: step.dosesPerDay,
       jumpOff: typeof d.jumpOff === 'number' ? d.jumpOff : base.jumpOff,
       days: Math.max(2, steps.length - idx),
+      fromText: `${formatAmount(step.perDose)} mg × ${step.dosesPerDay}`,
     };
   } catch {
     return null;
@@ -157,7 +163,8 @@ function draftFromOldCalculator(today: string): Draft | null {
 function changeText(c: PlanChange): string {
   const date = formatWeekdayDate(c.from, 0);
   const n = Math.abs(c.deltaDays);
-  if (c.kind === 'hold') return `Held the dose on ${date}. The plan is 1 day longer.`;
+  if (c.kind === 'hold') return `Stayed on the day before's dose on ${date}. The plan is 1 day longer.`;
+  if (c.kind === 'extend') return `Took the same dose one more day on ${date}. The plan is 1 day longer.`;
   if (c.kind === 'slower') return `Slowed down from ${date}: ${n} ${plural(n, 'day')} added.`;
   if (c.kind === 'faster') return `Sped up from ${date}: ${n} ${plural(n, 'day')} taken off.`;
   if (c.kind === 'restart') return `Restarted from ${date} at a new dose.`;
@@ -172,7 +179,8 @@ export function TaperPlanner() {
   const [view, setView] = useState<View>('setup');
   const [step, setStep] = useState(1);
   const [draft, setDraft] = useState<Draft>(() => draftDefaults('7oh'));
-  const [prefilled, setPrefilled] = useState(false);
+  const [prefilled, setPrefilled] = useState('');
+  const [saveError, setSaveError] = useState(false);
   const [customFreq, setCustomFreq] = useState(false);
   const [changeKind, setChangeKind] = useState<ChangeKind | null>(null);
   const [slowerBy, setSlowerBy] = useState(7);
@@ -220,8 +228,9 @@ export function TaperPlanner() {
     } else {
       const old = draftFromOldCalculator(now);
       if (old) {
-        setDraft(old);
-        setPrefilled(true);
+        const { fromText, ...rest } = old;
+        setDraft(rest);
+        setPrefilled(fromText);
       }
     }
     setHydrated(true);
@@ -232,8 +241,9 @@ export function TaperPlanner() {
     try {
       const blob = JSON.stringify({ v: 1, plan, log });
       if (localStorage.getItem(STORAGE_KEY) !== blob) localStorage.setItem(STORAGE_KEY, blob);
+      setSaveError(false);
     } catch {
-      // Ignore quota / blocked storage.
+      setSaveError(true);
     }
   }, [hydrated, plan, log]);
 
@@ -299,13 +309,17 @@ export function TaperPlanner() {
   const draftTotal = perDose * draft.dosesPerDay;
   const jumpTooHigh = draft.jumpOff > 0 && draft.jumpOff >= draftTotal;
   const startDate = draft.startWhen === 'tomorrow' && today ? isoPlus(today, 1) : today;
-  const preview = useMemo(() => {
-    if (!today || jumpTooHigh || perDose <= 0 || (draft.measureKind === 'tablet' && draft.tabletSize <= 0)) return [];
-    return buildDays(
+  const previewResult = useMemo(() => {
+    if (!today || jumpTooHigh || perDose <= 0 || (draft.measureKind === 'tablet' && draft.tabletSize <= 0)) {
+      return { days: [] as PlanDay[] };
+    }
+    return previewDays(
       { compound: draft.compound, perDose, dosesPerDay: draft.dosesPerDay, jumpOff: draft.jumpOff, days: draft.days, measure: draftMeasure(draft) },
       startDate,
     );
   }, [today, jumpTooHigh, perDose, draft, startDate]);
+  const preview = previewResult.days;
+  const roundedEnd = preview.length > 0 ? lastDoseDay(preview) : null;
   const previewFacts = useMemo(() => {
     if (preview.length === 0) return null;
     const firstDrop = preview.findIndex((d, i) => i > 0 && d.totalDaily > 0 && d.dosesPerDay < preview[i - 1].dosesPerDay);
@@ -333,9 +347,9 @@ export function TaperPlanner() {
     if (!p) return;
     if (plan) setUndo({ message: 'New plan started. Your logged doses are kept.', plan });
     setPlan(p);
-    setPrefilled(false);
+    setPrefilled('');
     go('today');
-    say('Plan started.');
+    say(plan ? 'New plan started. Undo is available.' : 'Plan started.');
   };
 
   /* ---------- running plan ---------- */
@@ -351,11 +365,16 @@ export function TaperPlanner() {
       ? plan.days.findIndex((d, i) => i > index && d.totalDaily > 0 && d.dosesPerDay < plan.days[i - 1].dosesPerDay)
       : -1;
   const todayLogged = todayDay ? (log[todayDay.date]?.length ?? 0) > 0 : false;
-  // Once today has logged doses, changes start tomorrow so they can't relabel them.
-  const changeFrom = index !== null ? index + (todayLogged ? 1 : 0) : null;
-  const holdPlan = plan && changeFrom !== null ? holdAt(plan, changeFrom) : null;
+  // Holding works from today even after logging (logs are by date and still
+  // count). Pace changes and restarts start tomorrow once today has logged
+  // doses, so they can't change the amount under doses already taken.
+  const holdPlan = plan && index !== null ? holdAt(plan, index) : null;
+  const extendPlan = plan && index !== null ? extendAt(plan, index) : null;
   const canHold = !!holdPlan;
-  const measure: Measure = plan?.measure ?? draftMeasure(draft);
+  const paceFromRaw = index !== null ? index + (todayLogged ? 1 : 0) : null;
+  const changeFrom = plan && paceFromRaw !== null && paceFromRaw < plan.days.length ? paceFromRaw : null;
+  const everLogged = Object.keys(log).length > 0;
+  const measure: Measure = plan && view !== 'setup' ? plan.measure : draftMeasure(draft);
   const activeCompound = view === 'setup' || !plan ? draft.compound : plan.compound;
 
   const toggleSlot = (date: string, slot: number) =>
@@ -368,22 +387,49 @@ export function TaperPlanner() {
       return next;
     });
 
+  const restartDose =
+    measure.kind === 'tablet' ? restart.perDose : restart.perDose;
   const changed = useMemo(() => {
-    if (!plan || changeFrom === null || !changeKind) return null;
+    if (!plan || !changeKind) return null;
     if (changeKind === 'hold') return holdPlan;
+    if (changeKind === 'extend') return extendPlan;
+    if (changeFrom === null) return null;
     if (changeKind === 'slower') return changePaceAt(plan, changeFrom, slowerBy);
     if (changeKind === 'faster') return changePaceAt(plan, changeFrom, -fasterBy);
-    return restartAt(plan, changeFrom, { perDose: restart.perDose, dosesPerDay: restart.doses }, restart.days);
-  }, [plan, changeFrom, changeKind, slowerBy, fasterBy, restart, holdPlan]);
+    if (measure.kind === 'tablet' && tabletPieces(restartDose, measure.size) === null) return null;
+    if (measure.kind === 'powder' && restartDose < 1) return null;
+    return restartAt(plan, changeFrom, { perDose: restartDose, dosesPerDay: restart.doses }, restart.days);
+  }, [plan, changeFrom, changeKind, slowerBy, fasterBy, restart, restartDose, holdPlan, extendPlan, measure]);
   const fasterOptions = [3, 5, 7].map((n) => ({ n, ok: !!(plan && changeFrom !== null && changePaceAt(plan, changeFrom, -n)) }));
   const slowerOptions = [3, 7, 14].map((n) => ({ n, ok: !!(plan && changeFrom !== null && changePaceAt(plan, changeFrom, n)) }));
-  const changedCut = changed && changeFrom !== null ? largestCut(changed.days, changeFrom) : null;
+  const cmpFrom = changeKind === 'hold' || changeKind === 'extend' ? index : changeFrom;
+  const changedCut = changed && cmpFrom !== null ? largestCut(changed.days, cmpFrom) : null;
+
+  const pickKind = (kind: ChangeKind) => {
+    setChangeKind(kind);
+    if (kind === 'slower' && !slowerOptions.find((o) => o.n === slowerBy)?.ok) {
+      const first = slowerOptions.find((o) => o.ok);
+      if (first) setSlowerBy(first.n);
+    }
+    if (kind === 'faster' && !fasterOptions.find((o) => o.n === fasterBy)?.ok) {
+      const first = fasterOptions.find((o) => o.ok);
+      if (first) setFasterBy(first.n);
+    }
+  };
 
   const openChange = (kind: ChangeKind | null) => {
-    setChangeKind(kind);
+    const first: ChangeKind | null =
+      kind ??
+      (slowerOptions.some((o) => o.ok) ? 'slower' : canHold ? 'hold' : extendPlan ? 'extend' : changeFrom !== null ? 'restart' : null);
+    if (first) pickKind(first);
+    else setChangeKind(null);
     if (todayDay && plan && index !== null) {
       const base = plan.days[changeFrom ?? index] ?? todayDay;
-      setRestart({ perDose: base.perDose || todayDay.perDose, doses: base.dosesPerDay || 1, days: Math.max(3, plan.days.length - index) });
+      setRestart({
+        perDose: base.perDose || todayDay.perDose,
+        doses: base.dosesPerDay || 1,
+        days: Math.max(3, plan.days.length - (changeFrom ?? index)),
+      });
     }
     go('change');
   };
@@ -394,7 +440,7 @@ export function TaperPlanner() {
     setPlan(changed);
     setChangeKind(null);
     go('today');
-    say('Plan changed.');
+    say('Plan changed. Undo is available.');
   };
 
   const beginReset = () => {
@@ -451,41 +497,16 @@ export function TaperPlanner() {
     );
   }
 
-  const doseLine = (d: PlanDay) => (d.totalDaily === 0 ? 'Stop day' : `${formatAmount(d.perDose)} ${UNIT} × ${d.dosesPerDay}`);
+  const doseLine = (d: PlanDay, m: Measure = measure) =>
+    d.totalDaily === 0
+      ? 'Stop day'
+      : m.kind === 'tablet'
+        ? `${shortTablets(d.perDose, m.size)} × ${d.dosesPerDay}`
+        : `${formatAmount(d.perDose)} ${UNIT} × ${d.dosesPerDay}`;
   const cfg = SUBSTANCES[activeCompound];
-
-  return (
-    <div className="not-prose my-6 tabular-nums [overflow-wrap:normal]">
-      <span className="sr-only" aria-live="polite">
-        {announce}
-      </span>
-      <span className="sr-only" aria-live="polite">
-        {undo ? `${undo.message} Undo is available.` : ''}
-      </span>
-
-      {plan && view !== 'setup' && (
-        <div className="mb-5 space-y-2">
-          <nav aria-label="Planner" className={`${SEG_GROUP} grid-cols-3`}>
-            {(
-              [
-                ['today', 'Today'],
-                ['schedule', 'Schedule'],
-                ['change', 'Change plan'],
-              ] as const
-            ).map(([v, label]) => (
-              <button
-                key={v}
-                type="button"
-                aria-current={view === v ? 'page' : undefined}
-                aria-pressed={view === v}
-                onClick={() => (v === 'change' ? openChange(null) : (setScrollTo(v === 'schedule' ? today : null), go(v)))}
-                className={SEG_BTN}
-              >
-                {label}
-              </button>
-            ))}
-          </nav>
-          <div className="flex flex-wrap items-center justify-end gap-x-1 text-sm">
+  const toolbar = plan && view !== 'setup' ? (
+    <div className="mt-4 space-y-2">
+          <div className="flex flex-wrap items-center justify-start gap-x-1 text-sm">
             <button type="button" onClick={savePdf} className={`${LINK_BTN} gap-1.5 px-2`}>
               <Download className="size-4" aria-hidden="true" />
               {flash === 'pdf' ? 'Saved' : flash === 'pdf-failed' ? 'PDF failed' : 'Save PDF'}
@@ -515,7 +536,43 @@ export function TaperPlanner() {
               </div>
             </div>
           )}
+    </div>
+  ) : null;
+
+  return (
+    <div className="not-prose my-6 tabular-nums [overflow-wrap:normal]">
+      <span className="sr-only" aria-live="polite">
+        {announce}
+      </span>
+
+      {plan && view !== 'setup' && (
+        <div className="mb-5 space-y-2">
+          <nav aria-label="Planner" className={`${SEG_GROUP} grid-cols-3`}>
+            {(
+              [
+                ['today', 'Today'],
+                ['schedule', 'Schedule'],
+                ['change', 'Change plan'],
+              ] as const
+            ).map(([v, label]) => (
+              <button
+                key={v}
+                type="button"
+                aria-current={view === v ? 'page' : undefined}
+                onClick={() => (v === 'change' ? openChange(null) : (setScrollTo(v === 'schedule' ? today : null), go(v)))}
+                className={NAV_BTN}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
         </div>
+      )}
+
+      {saveError && plan && (
+        <p role="alert" className="m-0 rounded-lg border border-border bg-accent/60 px-4 py-3 text-sm text-accent-foreground">
+          This browser isn&apos;t saving your plan, so it will be gone when you close the page. Use Save PDF to keep a copy.
+        </p>
       )}
 
       {/* ===================== SETUP ===================== */}
@@ -532,8 +589,8 @@ export function TaperPlanner() {
           <div className="space-y-5 p-5 sm:p-6">
             {prefilled && step === 1 && (
               <p className="m-0 rounded-lg bg-accent/60 px-4 py-3 text-sm text-accent-foreground">
-                We filled this in from the calculator you used before on this device, starting from
-                today&apos;s dose. Check each step before you start.
+                We filled this in from the calculator you used before on this device. There, today was{' '}
+                {prefilled}. Check each step before you start, especially how you measure.
               </p>
             )}
 
@@ -623,28 +680,38 @@ export function TaperPlanner() {
                       <Button type="button" variant="outline" size="icon" aria-label="A quarter tablet less" onClick={() => patch({ tabletsPerDose: Math.max(0.25, draft.tabletsPerDose - 0.25) })}>
                         −
                       </Button>
-                      <p className="m-0 flex-1 text-center">
-                        <span className="block font-display text-2xl font-semibold">
-                          {measureHint(perDose, { kind: 'tablet', size: draft.tabletSize }, UNIT).main}
-                        </span>
-                        <span className="block text-sm text-muted-foreground">
-                          {formatAmount(perDose)} {UNIT} each time
-                        </span>
-                      </p>
+                      <NumberInput
+                        id="planner-tablets"
+                        aria-labelledby="tablets-label"
+                        inputMode="decimal"
+                        min={0.25}
+                        step="0.25"
+                        value={draft.tabletsPerDose}
+                        onValueChange={(v) => patch({ tabletsPerDose: Math.max(0.25, Math.round(v * 4) / 4) })}
+                        className="h-14 flex-1 text-center font-display text-2xl font-semibold"
+                      />
                       <Button type="button" variant="outline" size="icon" aria-label="A quarter tablet more" onClick={() => patch({ tabletsPerDose: draft.tabletsPerDose + 0.25 })}>
                         +
                       </Button>
                     </div>
+                    <p className="mt-1.5 text-sm text-muted-foreground">
+                      {measureHint(perDose, { kind: 'tablet', size: draft.tabletSize }, UNIT).main}, {formatAmount(perDose)} {UNIT} each time.
+                      Type a number like 2.5 or use − and + for quarters.
+                    </p>
                   </div>
                 ) : (
                   <div>
-                    <Label htmlFor="planner-amount">Powder each time ({UNIT})</Label>
+                    <Label htmlFor="planner-amount">Powder on your scale each time ({UNIT})</Label>
+                    <p id="planner-amount-help" className="m-0 mt-1 text-xs text-muted-foreground">
+                      Put your powder on the scale and enter what it reads. This is the weight of the powder, not the
+                      active amount.
+                    </p>
                     <div className="mt-1.5 flex items-center gap-2">
                       <Button type="button" variant="outline" size="icon" aria-label={`${niceStep(draft.powderPerDose)} ${UNIT} less`} onClick={() => patch({ powderPerDose: Math.max(1, draft.powderPerDose - niceStep(draft.powderPerDose)) })}>
                         −
                       </Button>
                       <div className="relative flex-1">
-                        <NumberInput id="planner-amount" inputMode="decimal" min={0} step="any" value={draft.powderPerDose} onValueChange={(v) => patch({ powderPerDose: v })} className="h-14 pr-12 text-center font-display text-2xl font-semibold" />
+                        <NumberInput id="planner-amount" aria-describedby="planner-amount-help" inputMode="decimal" min={0} step="any" value={draft.powderPerDose} onValueChange={(v) => patch({ powderPerDose: v })} className="h-14 pr-12 text-center font-display text-2xl font-semibold" />
                         <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-sm font-bold text-muted-foreground" aria-hidden="true">
                           {UNIT}
                         </span>
@@ -655,7 +722,7 @@ export function TaperPlanner() {
                     </div>
                     {draft.strengthPct > 0 && (
                       <p className="mt-1.5 text-xs text-muted-foreground">
-                        About {formatAmount((draft.powderPerDose * draft.strengthPct) / 100)} {UNIT} active at {draft.strengthPct}%.
+                        About {formatAmount(activeAmount(draft.powderPerDose, draft.strengthPct))} {UNIT} active at {draft.strengthPct}%.
                       </p>
                     )}
                   </div>
@@ -715,12 +782,14 @@ export function TaperPlanner() {
                     <Label htmlFor="planner-days" className="text-xs text-muted-foreground">
                       Or exactly
                     </Label>
-                    <NumberInput id="planner-days" inputMode="numeric" min={2} max={365} step={1} integer commitOnBlur value={draft.days} onValueChange={(v) => patch({ days: v })} className="h-10 w-20 text-sm" />
+                    <NumberInput id="planner-days" inputMode="numeric" min={2} max={365} step={1} integer value={draft.days} onValueChange={(v) => patch({ days: v })} className="h-10 w-20 text-sm" />
                     <span className="text-xs text-muted-foreground">days</span>
                   </div>
                 </div>
                 <div>
-                  <Label htmlFor="planner-jump">Last day&apos;s total ({UNIT})</Label>
+                  <Label htmlFor="planner-jump">
+                    Last day&apos;s total{draft.measureKind === 'powder' ? ', powder on the scale' : ''} ({UNIT})
+                  </Label>
                   <NumberInput
                     id="planner-jump"
                     inputMode="decimal"
@@ -735,10 +804,27 @@ export function TaperPlanner() {
                   <p id="planner-jump-help" className={`mt-1.5 text-xs ${jumpTooHigh ? 'font-semibold text-foreground' : 'text-muted-foreground'}`}>
                     {jumpTooHigh
                       ? `This needs to be below your ${formatAmount(draftTotal)} ${UNIT} a day now.`
-                      : draft.measureKind === 'tablet'
-                        ? 'Your jump-off dose. It rounds to whole tablet pieces. Set 0 to end with a stop day.'
-                        : 'Your jump-off dose: the day total before you stop. Set 0 to end with a stop day.'}
+                      : 'Your jump-off dose: the day total before you stop. Set 0 to end with a stop day.'}
                   </p>
+                  {roundedEnd && draft.jumpOff > 0 && Math.abs(roundedEnd.totalDaily - draft.jumpOff) > 1e-9 && (
+                    <p className="m-0 mt-1 text-xs font-semibold">
+                      Rounded to what you can measure, the last day is {doseLine(roundedEnd)} ({formatAmount(roundedEnd.totalDaily)} {UNIT}).
+                    </p>
+                  )}
+                  {draft.measureKind === 'powder' && draft.strengthPct > 0 && draft.jumpOff > 0 && (
+                    <p className="m-0 mt-1 text-xs text-muted-foreground">
+                      About {formatAmount(activeAmount(draft.jumpOff, draft.strengthPct))} {UNIT} active at {draft.strengthPct}%.
+                    </p>
+                  )}
+                  {previewResult.reason === 'end-not-below-start' && (
+                    <p role="alert" className="m-0 mt-2 rounded-lg border border-signal/50 bg-signal/10 px-3 py-2 text-sm">
+                      Rounded to what you can measure, the last day comes out no lower than today, so there&apos;s nothing to
+                      taper.{' '}
+                      {draft.measureKind === 'tablet'
+                        ? 'Lower the last day’s total, set it to 0 to end with a stop day, or use a lower-strength tablet.'
+                        : 'Lower the last day’s total, or set it to 0 to end with a stop day.'}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <span id="start-label" className="block text-sm font-medium">
@@ -842,6 +928,13 @@ export function TaperPlanner() {
               <p className="m-0 mt-2 text-sm text-muted-foreground">
                 You logged doses on {plan.days.filter((d) => (log[d.date]?.length ?? 0) > 0).length} of {plan.days.length} days.
               </p>
+              <p className="m-0 mt-3 text-sm">
+                The weeks after a taper bring their own symptoms. The{' '}
+                <a href="/post-acute" className="font-medium text-primary underline decoration-primary/40 underline-offset-2">
+                  post-acute guides
+                </a>{' '}
+                cover what to expect and what helps.
+              </p>
             </div>
           )}
 
@@ -850,6 +943,10 @@ export function TaperPlanner() {
               <div className="p-5 sm:p-6">
                 <p className="eyebrow m-0">
                   Today · {formatWeekdayDate(todayDay.date, 0)} · Day {index + 1} of {plan.days.length}
+                </p>
+                <p className="m-0 mt-1 text-xs text-muted-foreground">
+                  {SUBSTANCES[plan.compound].shortLabel} ·{' '}
+                  {plan.measure.kind === 'tablet' ? `${plan.measure.size} ${UNIT} tablets` : 'powder on a scale'}
                 </p>
                 {todayDay.totalDaily === 0 ? (
                   <>
@@ -862,15 +959,14 @@ export function TaperPlanner() {
                   </>
                 ) : (
                   <>
-                    <h2 id="planner-heading" ref={headingRef} tabIndex={-1} className="m-0 mt-2 font-display text-4xl font-semibold tracking-tight outline-none sm:text-5xl">
+                    <h2 id="planner-heading" ref={headingRef} tabIndex={-1} className="m-0 mt-2 font-display text-3xl font-semibold tracking-tight outline-none sm:text-5xl">
                       {measure.kind === 'tablet' ? measureHint(todayDay.perDose, measure, UNIT).main : `${formatAmount(todayDay.perDose)} ${UNIT}`}{' '}
-                      <span className="font-sans text-2xl font-semibold text-muted-foreground">
+                      <span className="block font-sans text-xl font-semibold text-muted-foreground sm:inline sm:text-2xl">
                         × {todayDay.dosesPerDay} {plural(todayDay.dosesPerDay, 'dose')}
                       </span>
                     </h2>
                     <p className="m-0 mt-2 text-base">{measureHint(todayDay.perDose, measure, UNIT).how}</p>
                     <p className="m-0 mt-1 text-sm text-muted-foreground">
-                      {measure.kind === 'tablet' ? `${formatAmount(todayDay.perDose)} ${UNIT} each, ` : ''}
                       {formatAmount(todayDay.totalDaily)} {UNIT} for the day
                     </p>
                     {yesterday && yesterday.totalDaily > 0 && yesterday.dosesPerDay > todayDay.dosesPerDay && (
@@ -887,10 +983,16 @@ export function TaperPlanner() {
                 )}
               </div>
               <div className="grid gap-2 border-t border-border/75 bg-muted/30 p-4 sm:grid-cols-2 sm:p-5">
-                <Button type="button" variant="outline" disabled={!canHold} onClick={() => openChange('hold')}>
-                  {todayLogged ? 'Repeat today’s dose tomorrow' : 'Stay on yesterday’s dose'}
-                </Button>
-                <Button type="button" variant="outline" onClick={() => openChange(todayDay.totalDaily === 0 ? 'hold' : 'slower')}>
+                {canHold ? (
+                  <Button type="button" variant="outline" onClick={() => openChange('hold')}>
+                    Stay on yesterday’s dose
+                  </Button>
+                ) : (
+                  <Button type="button" variant="outline" disabled={!extendPlan} onClick={() => openChange('extend')}>
+                    One more day at this dose
+                  </Button>
+                )}
+                <Button type="button" variant="outline" onClick={() => openChange(null)}>
                   Change the plan
                 </Button>
               </div>
@@ -905,7 +1007,7 @@ export function TaperPlanner() {
                 {nextDrop > 0 && <Fact k={formatWeekdayDate(plan.days[nextDrop].date, 0)} v={`Down to ${plan.days[nextDrop].dosesPerDay} ${plural(plan.days[nextDrop].dosesPerDay, 'dose')} a day`} />}
                 {last && <Fact k="Last dose" v={`${formatWeekdayDate(last.date, 0)}, ${formatAmount(last.totalDaily)} ${UNIT}`} />}
               </dl>
-              {yesterday && yesterday.totalDaily > 0 && (log[yesterday.date]?.length ?? 0) < yesterday.dosesPerDay && (
+              {everLogged && yesterday && yesterday.totalDaily > 0 && (log[yesterday.date]?.length ?? 0) < yesterday.dosesPerDay && (
                 <p className="m-0 mt-3 text-sm text-muted-foreground">
                   Yesterday: {log[yesterday.date]?.length ?? 0} of {yesterday.dosesPerDay} doses logged.{' '}
                   <button
@@ -932,7 +1034,7 @@ export function TaperPlanner() {
           <h2 id="planner-heading" ref={headingRef} tabIndex={-1} className="m-0 font-display text-3xl font-semibold tracking-tight outline-none">
             Change the plan
           </h2>
-          {changeFrom === null || !plan.days[changeFrom] ? (
+          {index === null || !todayDay ? (
             <p className="m-0 mt-3 text-sm">
               {position?.kind === 'before'
                 ? 'This plan hasn’t started yet. To change it, use Start over and set it up again.'
@@ -941,47 +1043,72 @@ export function TaperPlanner() {
           ) : (
             <>
               <p className="m-0 mt-1.5 text-sm text-muted-foreground">
-                {todayLogged
-                  ? `You've logged doses today, so changes start tomorrow, ${formatWeekdayDate(plan.days[changeFrom].date, 0)}.`
-                  : 'Changes start today.'}{' '}
+                {changeFrom === null
+                  ? 'Today is the last day of the plan.'
+                  : todayLogged
+                    ? `You've logged doses today, so a new pace or a new amount starts tomorrow, ${formatWeekdayDate(plan.days[changeFrom].date, 0)}.`
+                    : 'Changes start today.'}{' '}
                 Earlier days and the doses you&apos;ve logged stay as they are.
               </p>
               <div role="group" aria-label="Kind of change" className="mt-4 space-y-2">
-                <button type="button" aria-pressed={changeKind === 'hold'} disabled={!canHold} onClick={() => setChangeKind('hold')} className={CHOICE}>
-                  <span className="block font-bold">{todayLogged ? 'Repeat today’s dose tomorrow' : 'Stay on yesterday’s dose today'}</span>
+                {canHold && (
+                  <button type="button" aria-pressed={changeKind === 'hold'} onClick={() => pickKind('hold')} className={CHOICE}>
+                    <span className="block font-bold">Stay on yesterday&apos;s dose today</span>
+                    <span className="block text-sm text-muted-foreground">
+                      Take {doseLine(plan.days[index - 1])} today, then carry on with the plan a day later.
+                    </span>
+                  </button>
+                )}
+                <button type="button" aria-pressed={changeKind === 'extend'} disabled={!extendPlan} onClick={() => pickKind('extend')} className={CHOICE}>
+                  <span className="block font-bold">One more day at today&apos;s dose</span>
                   <span className="block text-sm text-muted-foreground">
-                    {canHold
-                      ? `Take ${doseLine(plan.days[changeFrom - 1])} again, then carry on with the plan a day later.`
-                      : 'There’s no higher dose the day before to stay on.'}
+                    {extendPlan
+                      ? `Take ${doseLine(todayDay)} tomorrow too, then carry on a day later.`
+                      : 'There’s no dose today to repeat.'}
                   </span>
                 </button>
-                <button type="button" aria-pressed={changeKind === 'slower'} disabled={!slowerOptions.some((o) => o.ok)} onClick={() => setChangeKind('slower')} className={CHOICE}>
+                <button type="button" aria-pressed={changeKind === 'slower'} disabled={!slowerOptions.some((o) => o.ok)} onClick={() => pickKind('slower')} className={CHOICE}>
                   <span className="block font-bold">Slow down</span>
                   <span className="block text-sm text-muted-foreground">Spread the rest over more days, ending at the same dose.</span>
                 </button>
                 {changeKind === 'slower' && <DayCountPicker sign="+" value={slowerBy} options={slowerOptions} onChange={setSlowerBy} />}
-                <button type="button" aria-pressed={changeKind === 'faster'} disabled={!fasterOptions.some((o) => o.ok)} onClick={() => setChangeKind('faster')} className={CHOICE}>
+                <button type="button" aria-pressed={changeKind === 'faster'} disabled={!fasterOptions.some((o) => o.ok)} onClick={() => pickKind('faster')} className={CHOICE}>
                   <span className="block font-bold">Speed up</span>
                   <span className="block text-sm text-muted-foreground">Finish sooner, ending at the same dose.</span>
                 </button>
                 {changeKind === 'faster' && <DayCountPicker sign="−" value={fasterBy} options={fasterOptions} onChange={setFasterBy} />}
-                <button type="button" aria-pressed={changeKind === 'restart'} onClick={() => setChangeKind('restart')} className={CHOICE}>
+                <button type="button" aria-pressed={changeKind === 'restart'} disabled={changeFrom === null} onClick={() => pickKind('restart')} className={CHOICE}>
                   <span className="block font-bold">I&apos;m taking a different amount</span>
-                  <span className="block text-sm text-muted-foreground">Restart the rest of the plan from what you actually take now.</span>
+                  <span className="block text-sm text-muted-foreground">Restart the rest of the plan from what you take now.</span>
                 </button>
                 {changeKind === 'restart' && (
                   <div className="grid gap-3 rounded-lg border border-border p-4 sm:grid-cols-3">
-                    <div>
-                      <Label htmlFor="restart-dose" className="text-xs">
-                        Each dose ({UNIT})
-                      </Label>
-                      <NumberInput id="restart-dose" inputMode="decimal" min={0} step="any" value={restart.perDose} onValueChange={(v) => setRestart((r) => ({ ...r, perDose: v }))} className="mt-1 h-11 text-base" />
-                      {measure.kind === 'tablet' && restart.perDose > 0 && (
+                    {measure.kind === 'tablet' ? (
+                      <div>
+                        <Label htmlFor="restart-dose" className="text-xs">
+                          Tablets each time
+                        </Label>
+                        <NumberInput
+                          id="restart-dose"
+                          inputMode="decimal"
+                          min={0.25}
+                          step="0.25"
+                          value={Math.round((restart.perDose / measure.size) * 4) / 4}
+                          onValueChange={(v) => setRestart((r) => ({ ...r, perDose: Math.max(0.25, Math.round(v * 4) / 4) * measure.size }))}
+                          className="mt-1 h-11 text-base"
+                        />
                         <p className="m-0 mt-1 text-xs text-muted-foreground">
-                          {tabletPieces(restart.perDose, measure.size) !== null ? measureHint(restart.perDose, measure, UNIT).main : 'Not whole tablet pieces'}
+                          {measureHint(restart.perDose, measure, UNIT).main}, {formatAmount(restart.perDose)} {UNIT}
                         </p>
-                      )}
-                    </div>
+                      </div>
+                    ) : (
+                      <div>
+                        <Label htmlFor="restart-dose" className="text-xs">
+                          Powder on your scale each time ({UNIT})
+                        </Label>
+                        <NumberInput id="restart-dose" inputMode="decimal" min={1} step="any" value={restart.perDose} onValueChange={(v) => setRestart((r) => ({ ...r, perDose: v }))} className="mt-1 h-11 text-base" />
+                      </div>
+                    )}
                     <div>
                       <Label htmlFor="restart-times" className="text-xs">
                         Times a day
@@ -992,20 +1119,20 @@ export function TaperPlanner() {
                       <Label htmlFor="restart-days" className="text-xs">
                         Days left
                       </Label>
-                      <NumberInput id="restart-days" inputMode="numeric" min={3} max={365} step={1} integer commitOnBlur value={restart.days} onValueChange={(v) => setRestart((r) => ({ ...r, days: v }))} className="mt-1 h-11 text-base" />
+                      <NumberInput id="restart-days" inputMode="numeric" min={3} max={365} step={1} integer value={restart.days} onValueChange={(v) => setRestart((r) => ({ ...r, days: v }))} className="mt-1 h-11 text-base" />
                     </div>
                   </div>
                 )}
               </div>
 
-              {changed && (
+              {changed && cmpFrom !== null && (
                 <div className="mt-5 rounded-lg border border-border bg-muted/30 p-4">
                   <h3 className="m-0 text-sm font-bold text-muted-foreground">Before and after</h3>
                   <table className="mt-2 w-full text-sm">
                     <thead>
                       <tr className="text-left text-xs text-muted-foreground">
                         <th scope="col" className="pb-1 font-semibold">
-                          <span className="sr-only">Item</span>
+                          <span className="sr-only">Day</span>
                         </th>
                         <th scope="col" className="pb-1 font-semibold">
                           Now
@@ -1016,26 +1143,45 @@ export function TaperPlanner() {
                       </tr>
                     </thead>
                     <tbody>
-                      <CompareRow k={formatWeekdayDate(plan.days[changeFrom].date, 0)} before={doseLine(plan.days[changeFrom])} after={doseLine(changed.days[changeFrom])} />
-                      <CompareRow
-                        k="Next day"
-                        before={plan.days[changeFrom + 1] ? doseLine(plan.days[changeFrom + 1]) : 'Done'}
-                        after={changed.days[changeFrom + 1] ? doseLine(changed.days[changeFrom + 1]) : 'Done'}
-                      />
-                      <CompareRow k="Days left" before={String(plan.days.length - (index ?? 0))} after={String(changed.days.length - (index ?? 0))} />
+                      {[0, 1, 2].map((k) => {
+                        const i = cmpFrom + k;
+                        const before = plan.days[i];
+                        const after = changed.days[i];
+                        if (!before && !after) return null;
+                        return (
+                          <CompareRow
+                            key={k}
+                            k={formatWeekdayDate((after ?? before).date, 0)}
+                            before={before ? doseLine(before) : 'Done'}
+                            after={after ? doseLine(after) : 'Done'}
+                          />
+                        );
+                      })}
+                      <CompareRow k="Days left" before={String(plan.days.length - index)} after={String(changed.days.length - index)} />
                       <CompareRow k="Last dose" before={last ? formatWeekdayDate(last.date, 0) : ''} after={formatWeekdayDate(lastDoseDay(changed.days).date, 0)} />
                     </tbody>
                   </table>
                   {changedCut && changedCut.pct > STEEP_CUT && (
                     <p className="m-0 mt-3 rounded-lg bg-accent/60 px-3 py-2 text-sm text-accent-foreground">
-                      On {formatWeekdayDate(changedCut.date, 0)} the day total would drop {Math.round(changedCut.pct * 100)}%. Fewer days
-                      off, or slowing down instead, keeps the steps smaller.
+                      On {formatWeekdayDate(changedCut.date, 0)} the day total would drop {Math.round(changedCut.pct * 100)}%.{' '}
+                      {changeKind === 'faster'
+                        ? 'Taking fewer days off keeps the steps smaller.'
+                        : changeKind === 'restart'
+                          ? 'More days left keeps the steps smaller.'
+                          : measure.kind === 'tablet'
+                            ? 'Tablet pieces get big near the end; a lower-strength tablet makes the last steps smaller.'
+                            : 'Adding more days keeps the steps smaller.'}
                     </p>
                   )}
                   <Button type="button" className="mt-4 w-full sm:w-auto" onClick={applyChange}>
                     Make this change
                   </Button>
                 </div>
+              )}
+              {changeKind === 'restart' && !changed && (
+                <p className="m-0 mt-4 text-sm text-muted-foreground">
+                  {measure.kind === 'powder' ? 'Enter at least 1 mg per dose.' : 'Enter how many tablets you take each time.'}
+                </p>
               )}
             </>
           )}
@@ -1054,7 +1200,7 @@ export function TaperPlanner() {
               {plan.measure.kind === 'tablet' ? ` · about ${tabletsNeeded(plan.days, plan.measure.size)} tablets` : ''}
             </span>
           </div>
-          <ul className="m-0 list-none p-0">
+          <ul className="m-0 list-none p-0 pb-16">
             {plan.days.map((d, i) => {
               const changes = plan.changes.filter((c) => c.kind !== 'start' && c.from === d.date);
               const logged = log[d.date]?.length ?? 0;
@@ -1065,8 +1211,8 @@ export function TaperPlanner() {
               const open = expanded === d.date;
               return (
                 <li key={d.date} id={`day-${d.date}`} className="scroll-mt-24">
-                  {changes.map((c) => (
-                    <p key={`${c.kind}-${c.from}-${c.deltaDays}`} className="m-0 bg-accent/60 px-5 py-2 text-xs font-semibold text-accent-foreground">
+                  {changes.map((c, ci) => (
+                    <p key={`${c.kind}-${c.from}-${ci}`} className="m-0 bg-accent/60 px-5 py-2 text-xs font-semibold text-accent-foreground">
                       {changeText(c)}
                     </p>
                   ))}
@@ -1075,7 +1221,7 @@ export function TaperPlanner() {
                       From here: {d.dosesPerDay} {plural(d.dosesPerDay, 'dose')} a day
                     </p>
                   )}
-                  <div className={`border-t border-border/60 ${isToday ? 'bg-accent/45' : ''}`}>
+                  <div className={`border-t border-border/60 ${isToday ? 'border-l-4 border-l-primary bg-accent/45' : ''}`}>
                     <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-2.5">
                       <span className="min-w-0">
                         <span className="block text-sm font-bold">
@@ -1124,6 +1270,8 @@ export function TaperPlanner() {
         </section>
       )}
 
+      {toolbar}
+
       {undo && (
         <div
           className="fixed inset-x-4 bottom-24 z-50 flex items-center justify-between gap-3 rounded-lg border border-border bg-popover px-4 py-3 text-sm shadow-lg sm:left-auto sm:right-24 sm:w-96"
@@ -1157,7 +1305,7 @@ export function TaperPlanner() {
         <p className="m-0">{cfg.note}</p>
         <p className="m-0 mt-3">
           If you also use alcohol, benzodiazepines, gabapentinoids, or other sedatives, taper with medical
-          supervision. Combinations carry the serious risk. The{' '}
+          supervision. Mixing them raises overdose risk. The{' '}
           <a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline decoration-primary/40 underline-offset-2">
             SAMHSA National Helpline
           </a>{' '}

@@ -330,6 +330,9 @@ export interface ScheduleResult {
   steps: ScheduleStep[];
   source: ScheduleSource;
   totalMedication: number;
+  /** Set when no schedule came out because the end dose, rounded to what
+   *  can be measured (tablet pieces, scale steps), isn't below the start. */
+  reason?: 'end-not-below-start';
 }
 
 export interface SchedulePhase {
@@ -454,7 +457,7 @@ function buildSteps(
     let n = isLast
       ? lastDayDoses(rawTotal, prevStep?.dosesPerDay ?? n0)
       : Math.min(
-          anchor
+          anchor && i > 0
             ? Math.min(n0, dosesPerDayFor(rawTotal, anchor.total, anchor.doses, minDoses))
             : dosesPerDayFor(rawTotal, totalStart, n0, minDoses),
           prevStep?.dosesPerDay ?? n0,
@@ -493,7 +496,7 @@ function buildSteps(
         const raw = rawTotal / m;
         return [bq(raw, 'round'), bq(raw, 'ceil'), bq(raw, 'floor')]
           .sort((x, y) => Math.abs(x - raw) - Math.abs(y - raw))
-          .concat([bq(target / m, 'ceil'), bq(prevTotal / m, 'floor')])
+          .concat([bq(maxPerDose, 'floor'), bq(prevTotal / m, 'floor'), bq(target / m, 'ceil')])
           .find((c) => c > 0 && c <= maxPerDose + 1e-9 && fits(exactProduct(c, m)));
       };
       // Try this frequency, then fewer doses a day (down to the floor), then
@@ -678,7 +681,16 @@ export function generateSchedule(
   }
 
   const descendDays = wantsAbsoluteZero ? Math.max(2, days - 1) : days;
-  const totals = percentTotalsSchedule(totalStart, effectiveJumpOff, descendDays);
+  let endTotal = effectiveJumpOff;
+  if (options.powder) {
+    const floorN = Math.min(n0, Math.max(1, minDoses));
+    const per = effectiveJumpOff / floorN;
+    endTotal = exactProduct(Math.max(1, toStep(per, 1 / scaleStepFor(per), 'round')), floorN);
+    if (endTotal >= totalStart - 1e-9) {
+      return { steps: [], source: 'percent', totalMedication: 0, reason: 'end-not-below-start' };
+    }
+  }
+  const totals = percentTotalsSchedule(totalStart, endTotal, descendDays);
   const tabletSize = options.tabletSize ?? 0;
   const useTablets = tabletSize > 0 && SUBSTANCES[substance].tabletUnitName === 'tablet';
   if (options.tabletPieces && options.tabletPieces > 0) {
@@ -686,7 +698,10 @@ export function generateSchedule(
     const piece = options.tabletPieces / 4;
     const floorN = Math.min(n0, Math.max(1, minDoses));
     const endPer = Math.max(piece, Math.round(effectiveJumpOff / floorN / piece) * piece);
-    const end = Math.min(exactProduct(endPer, floorN), totalStart);
+    const end = exactProduct(endPer, floorN);
+    if (end >= totalStart - 1e-9) {
+      return { steps: [], source: 'percent', totalMedication: 0, reason: 'end-not-below-start' };
+    }
     const pieceTotals = percentTotalsSchedule(totalStart, end, descendDays);
     const pieceSteps = withZeroIfRequested(
       buildSteps(

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
   changePaceAt,
+  extendAt,
   holdAt,
   largestCut,
   measureHint,
@@ -37,8 +38,38 @@ test('A started plan is dated day by day from the start date', () => {
   assert.equal(plan.days[0].date, '2026-11-01');
   assert.equal(plan.days[29].date, '2026-11-30');
   assert.equal(plan.days[0].perDose, 15);
-  assert.equal(plan.days[29].totalDaily, 5);
-  assert.equal(plan.endTotal, 5);
+  // 5 mg/day over 2 doses is 2.5 mg, which a 1 mg scale can't read: it rounds to 3 x 2.
+  assert.equal(plan.days[29].totalDaily, plan.endTotal);
+  assert.equal(plan.endTotal, 6);
+  for (const d of plan.days) assert.equal(d.perDose % 1, 0, `${d.date}: ${d.perDose}`);
+});
+
+test('A restart keeps the dose and frequency the reader entered, with no cliff after', () => {
+  for (const measure of [{ kind: 'powder' } as const, { kind: 'tablet', size: 15 } as const]) {
+    const plan = startPlan({ ...powder, measure }, '2026-11-01')!;
+    for (const dose of [
+      { perDose: measure.kind === 'tablet' ? 7.5 : 7, dosesPerDay: 6 },
+      { perDose: measure.kind === 'tablet' ? 7.5 : 10, dosesPerDay: 4 },
+    ]) {
+      const r = restartAt(plan, 5, dose, 14)!;
+      assert.equal(r.days[5].perDose, dose.perDose);
+      assert.equal(r.days[5].dosesPerDay, dose.dosesPerDay);
+      const cut = largestCut(r.days, 6);
+      assert.ok(!cut || cut.pct < 0.55, `${measure.kind} ${dose.perDose}x${dose.dosesPerDay}: ${cut && Math.round(cut.pct * 100)}%`);
+    }
+  }
+});
+
+test('Slowing down keeps the first rebuilt day at its planned dose', () => {
+  const plan = startPlan(tablets, '2026-11-01')!;
+  const slow = changePaceAt(plan, 4, 7)!;
+  assert.equal(slow.days[4].perDose, plan.days[4].perDose);
+  assert.equal(slow.days[4].dosesPerDay, plan.days[4].dosesPerDay);
+});
+
+test('An end dose that rounds up to the start gives no schedule, not a one-day plan', () => {
+  const p = startPlan({ ...tablets, perDose: 7.5, dosesPerDay: 2, jumpOff: 14, measure: { kind: 'tablet', size: 30 } }, '2026-11-01');
+  assert.equal(p, null);
 });
 
 test('Holding repeats the previous day and shifts the rest without recalculating', () => {
@@ -52,6 +83,18 @@ test('Holding repeats the previous day and shifts the rest without recalculating
     assert.equal(held.days[i + 1].totalDaily, plan.days[i].totalDaily);
   }
   assert.equal(holdAt(plan, 0), null);
+});
+
+test('One more day repeats that day and shifts the rest', () => {
+  const plan = startPlan(powder, '2026-11-01')!;
+  const ext = extendAt(plan, 0)!;
+  assert.equal(ext.days.length, 31);
+  assert.deepEqual({ ...ext.days[1], date: '' }, { ...plan.days[0], date: '' });
+  assert.equal(ext.days[1].date, '2026-11-02');
+  for (let i = 1; i < plan.days.length; i++) assert.equal(ext.days[i + 1].totalDaily, plan.days[i].totalDaily);
+  assert.equal(ext.changes.at(-1)!.kind, 'extend');
+  const stop = startPlan({ ...powder, jumpOff: 0 }, '2026-11-01')!;
+  assert.equal(extendAt(stop, stop.days.length - 1), null);
 });
 
 test('Pace changes keep earlier days, keep the end dose, and never raise a day', () => {

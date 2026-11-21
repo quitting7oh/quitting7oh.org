@@ -47,7 +47,7 @@ export interface PlanDay {
   totalDaily: number;
 }
 
-export type ChangeKind = 'start' | 'hold' | 'slower' | 'faster' | 'restart';
+export type ChangeKind = 'start' | 'hold' | 'extend' | 'slower' | 'faster' | 'restart';
 
 export interface PlanChange {
   kind: ChangeKind;
@@ -98,17 +98,24 @@ function datedFrom(
   }));
 }
 
-/** Days for a plan input, dated from `startDate`. */
-export function buildDays(input: PlanInput, startDate: string): PlanDay[] {
-  const steps = generateSchedule(
+/** Days for a plan input, dated from `startDate`, plus why none came out. */
+export function previewDays(
+  input: PlanInput,
+  startDate: string,
+): { days: PlanDay[]; reason?: 'end-not-below-start' } {
+  const r = generateSchedule(
     input.compound,
     input.perDose,
     input.dosesPerDay,
     input.jumpOff,
     input.days,
     scheduleOptions(input.measure),
-  ).steps;
-  return datedFrom(steps, startDate);
+  );
+  return { days: datedFrom(r.steps, startDate), reason: r.reason };
+}
+
+export function buildDays(input: PlanInput, startDate: string): PlanDay[] {
+  return previewDays(input, startDate).days;
 }
 
 export function startPlan(input: PlanInput, startDate: string): SavedPlan | null {
@@ -169,7 +176,7 @@ function tail(
       scheduleOptions(plan.measure, plan.anchor),
     ).steps;
   }
-  if (withStop) steps = [...steps, { perDose: 0, dosesPerDay: 0, totalDaily: 0 }];
+  if (withStop) steps = [...steps, { perDose: 0, dosesPerDay: 1, totalDaily: 0 }];
   return datedFrom(steps, fromDate);
 }
 
@@ -177,23 +184,40 @@ function dateAt(plan: SavedPlan, index: number): string {
   return plan.days[index]?.date ?? isoPlus(plan.days[0].date, index);
 }
 
+/** Insert `repeat` as day `at` and push everything from `at` back a day. */
+function insertDay(plan: SavedPlan, at: number, repeat: PlanDay, kind: ChangeKind): SavedPlan {
+  const date = dateAt(plan, at);
+  const shifted = plan.days.slice(at).map((d, i) => ({ ...d, date: isoPlus(date, i + 1) }));
+  return {
+    ...plan,
+    days: [...plan.days.slice(0, at), { ...repeat, date }, ...shifted],
+    changes: [
+      ...plan.changes.map((c) => (c.from >= date && c.kind !== 'start' ? { ...c, from: isoPlus(c.from, 1) } : c)),
+      { kind, from: date, deltaDays: 1 },
+    ],
+  };
+}
+
 /**
  * Stay on the previous day's dose on day `from`, then carry on with the rest
- * of the plan one day later. Nothing is recalculated. Not offered when the
- * previous day's dose is no higher than this day's.
+ * of the plan one day later. Nothing is recalculated. Only when the previous
+ * day's dose was higher.
  */
 export function holdAt(plan: SavedPlan, from: number): SavedPlan | null {
   if (from <= 0 || from >= plan.days.length) return null;
   const prev = plan.days[from - 1];
   if (prev.totalDaily <= plan.days[from].totalDaily) return null;
-  const date = dateAt(plan, from);
-  const repeated: PlanDay = { ...prev, date };
-  const shifted = plan.days.slice(from).map((d, i) => ({ ...d, date: isoPlus(date, i + 1) }));
-  return {
-    ...plan,
-    days: [...plan.days.slice(0, from), repeated, ...shifted],
-    changes: [...plan.changes, { kind: 'hold', from: date, deltaDays: 1 }],
-  };
+  return insertDay(plan, from, prev, 'hold');
+}
+
+/**
+ * Take day `at`'s dose one more day: repeat it the next day and push the rest
+ * back. Works on a plateau and on the last dosing day.
+ */
+export function extendAt(plan: SavedPlan, at: number): SavedPlan | null {
+  const day = plan.days[at];
+  if (!day || day.totalDaily <= 0) return null;
+  return insertDay(plan, at + 1, day, 'extend');
 }
 
 /** Fewest days a rebuilt tail may have (start, end, and the stop day). */
@@ -219,7 +243,10 @@ export function changePaceAt(plan: SavedPlan, from: number, deltaDays: number): 
   return {
     ...plan,
     days,
-    changes: [...plan.changes, { kind: applied > 0 ? 'slower' : 'faster', from: start.date, deltaDays: applied }],
+    changes: [
+      ...plan.changes.filter((c) => c.from <= start.date || c.kind === 'start'),
+      { kind: applied > 0 ? 'slower' : 'faster', from: start.date, deltaDays: applied },
+    ],
   };
 }
 
@@ -232,15 +259,22 @@ export function restartAt(
 ): SavedPlan | null {
   if (dose.perDose <= 0 || dose.dosesPerDay < 1 || from < 0 || from > plan.days.length) return null;
   const date = dateAt(plan, from);
-  const days = [...plan.days.slice(0, from), ...tail(plan, date, dose, Math.max(minTail(plan), length))];
-  return {
+  // The reader is starting over from what they take now: anchor to it.
+  const anchored: SavedPlan = {
     ...plan,
-    anchor:
-      exactProduct(dose.perDose, dose.dosesPerDay) > plan.anchor.total
-        ? { total: exactProduct(dose.perDose, dose.dosesPerDay), doses: dose.dosesPerDay }
-        : plan.anchor,
+    anchor: { total: exactProduct(dose.perDose, dose.dosesPerDay), doses: dose.dosesPerDay },
+  };
+  const days = [
+    ...plan.days.slice(0, from),
+    ...tail(anchored, date, dose, Math.max(minTail(plan), Math.min(365 - from, length))),
+  ];
+  return {
+    ...anchored,
     days,
-    changes: [...plan.changes, { kind: 'restart', from: date, deltaDays: days.length - plan.days.length }],
+    changes: [
+      ...plan.changes.filter((c) => c.from < date || c.kind === 'start'),
+      { kind: 'restart', from: date, deltaDays: days.length - plan.days.length },
+    ],
   };
 }
 
@@ -274,20 +308,29 @@ function tabletAmount(pieces: number): string {
   return `${whole}${frac} tablets`;
 }
 
+/** Active amount in a powder dose, rounded to what's worth reading: whole mg from 10 mg up. */
+export function activeAmount(perDose: number, strengthPct: number): number {
+  const a = (perDose * strengthPct) / 100;
+  return a >= 10 ? Math.round(a) : Math.round(a * 10) / 10;
+}
+
 /** How to take one dose: a short line and a plain instruction. */
 export function measureHint(perDose: number, measure: Measure, unit: string): { main: string; how: string } {
   if (perDose <= 0) return { main: '', how: '' };
   if (measure.kind === 'powder') {
     const active =
       measure.strengthPct && measure.strengthPct > 0
-        ? ` (about ${formatAmount(exactProduct((perDose * measure.strengthPct) / 100, 1))} ${unit} active at ${measure.strengthPct}%)`
+        ? ` (about ${formatAmount(activeAmount(perDose, measure.strengthPct))} ${unit} active at ${measure.strengthPct}%)`
         : '';
-    return { main: `Weigh ${formatAmount(perDose)} ${unit} of powder`, how: `Each dose${active}.` };
+    return {
+      main: `Weigh ${formatAmount(perDose)} ${unit} of powder`,
+      how: `What your scale reads for each dose${active}.`,
+    };
   }
   const pieces = tabletPieces(perDose, measure.size);
   if (pieces === null) {
     return {
-      main: `About ${formatAmount(perDose / measure.size)} tablets`,
+      main: `About ${formatNumber(perDose / measure.size)} tablets`,
       how: `${formatAmount(perDose)} ${unit} with ${measure.size} ${unit} tablets.`,
     };
   }
@@ -304,7 +347,7 @@ export function measureHint(perDose: number, measure: Measure, unit: string): { 
 /** A short tablet label for tables: "¾ tab", "1¼ tabs". */
 export function shortTablets(perDose: number, size: number): string {
   const pieces = tabletPieces(perDose, size);
-  if (pieces === null) return `≈ ${formatAmount(perDose / size)} tabs`;
+  if (pieces === null) return `≈ ${formatNumber(perDose / size)} tabs`;
   const whole = Math.floor(pieces / 4);
   const frac = FRACTIONS[pieces % 4];
   const n = whole === 0 ? frac : `${whole}${frac}`;
@@ -315,6 +358,13 @@ export function shortTablets(perDose: number, size: number): string {
 export function tabletsNeeded(days: PlanDay[], size: number): number {
   const pieces = days.reduce((a, d) => a + (tabletPieces(d.perDose, size) ?? Math.ceil((d.perDose / size) * 4)) * d.dosesPerDay, 0);
   return Math.ceil(pieces / 4);
+}
+
+/** A number without float noise, never prefixed. */
+export function formatNumber(x: number): string {
+  const e = exactProduct(x, 1);
+  if (Math.abs(e * 1000 - Math.round(e * 1000)) <= 1e-6) return String(e);
+  return String(e >= 1 ? Math.round(e * 100) / 100 : Number(e.toPrecision(2)));
 }
 
 /** An amount without float noise; repeating splits show "≈". */

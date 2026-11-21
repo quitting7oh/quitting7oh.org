@@ -91,7 +91,11 @@ export class PdfDoc {
     obj(3, '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>');
     obj(4, '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>');
     this.pages.forEach((ops, i) => {
-      const content = ops.map(renderOp).join('\n');
+      // `{pages}` in any text becomes the page count, for "Page 2 of 3".
+      const content = ops
+        .map((op) => (op.t === 'text' ? { ...op, text: op.text.replaceAll('{pages}', String(pageCount)) } : op))
+        .map(renderOp)
+        .join('\n');
       const pageN = 5 + i * 2;
       obj(
         pageN,
