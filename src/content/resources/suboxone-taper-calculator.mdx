@@ -2,7 +2,7 @@
 title: "Suboxone Taper Calculator"
 description: "Day-by-day buprenorphine taper schedule with the published 5/7/10/14/21-day rapid-taper columns built in, plus custom-duration math for non-standard start doses."
 category: "resources"
-last_updated: "2026-11-19"
+last_updated: "2026-11-21"
 sort: 6
 wide: true
 ---
@@ -15,9 +15,9 @@ import { TaperCalculator } from '~/components/TaperCalculator';
 
 ## How this calculator handles buprenorphine
 
-When your start dose matches one of the published 5 / 7 / 10 / 14 / 21-day columns from the [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) page (2, 4, 6, or 8 mg start), the calculator returns the established schedule exactly. For other start doses or durations, it generates a daily percentage taper from your starting total to your jump-off.
+The [Suboxone Rapid Taper](/mat-suboxone/suboxone-rapid-taper) page publishes once-a-day schedules for some starting doses: 2 mg over 5 days, 4 mg over 5 or 7, 6 mg over 5, 7, or 10, and 8 mg over 5, 7, 10, 14, or 21. When your dose matches one, the calculator offers two choices: **Published table** follows that schedule exactly, and **Custom taper** builds a daily percentage curve over any number of days. Other starting doses, and split doses taken more than once a day, always use the custom curve.
 
-Setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses (0.1, 0.05, 0.02 mg) using the same math as [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose) — useful when a standard short taper isn't slow enough at the bottom.
+On a published table, setting a jump-off below 0.25 mg extends the tail with volumetric sub-0.25 mg doses (0.1, 0.05, 0.02 mg) using the same math as [Custom Suboxone Dosing](/mat-suboxone/suboxone-custom-dose) — useful when a standard short taper isn't slow enough at the bottom.
 
 ## Where bupe tapers tend to go sideways
 
