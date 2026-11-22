@@ -1,6 +1,6 @@
 ---
 title: "Custom Suboxone Dosing"
-description: "Cutting Suboxone films down to 0.25 mg and volumetric liquid dosing below 0.5 mg, with dilution tables, sublingual hold times, and glass storage rules."
+description: "Cutting Suboxone strips to 0.25 mg and dissolving a strip or tablet in water for doses under 0.5 mg, with a dilution table and storage for pieces and liquid."
 category: "mat-suboxone"
 last_updated: "2026-11-21"
 sort: 5

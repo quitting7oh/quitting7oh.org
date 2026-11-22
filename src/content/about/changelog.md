@@ -19,8 +19,10 @@ This page tracks substantive changes to the site: new pages, rewrites, layout wo
 ### Longer search descriptions
 
 - Bing Webmaster Tools flagged 16 pages whose meta descriptions were
-  under 100 characters. Ten guide pages got new 145-to-157-character
-  summaries, which also appear as the lede under each page title.
+  under 100 characters. Ten guide pages got new summaries of about 155
+  characters, which also appear as the lede under each page title. The
+  search-facing ones use the words people search for: withdrawal
+  symptoms and timeline, Suboxone taper schedules, cutting strips.
 - Category pages now carry their own search description, separate from
   the short blurb on the homepage. The sitemap and brand pages got
   longer descriptions too.

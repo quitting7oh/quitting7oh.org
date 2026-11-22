@@ -1,6 +1,6 @@
 ---
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
-description: "Mitragynine pseudoindoxyl (MP): mu-opioid affinity, Schedule I status, overdose and labeling risks, and why tight binding complicates Suboxone induction."
+description: "Mitragynine pseudoindoxyl (MP, or pseudo): tighter mu-opioid binding than 7-OH, Schedule I status, overdose and labeling risks, and harder Suboxone induction."
 category: "compounds"
 last_updated: "2026-11-21"
 sort: 6

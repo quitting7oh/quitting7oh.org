@@ -1,6 +1,6 @@
 ---
 title: "Suboxone Rapid Taper"
-description: "Community Suboxone rapid taper schedules for short-acting 7-OH, starting at 2 to 8 mg over 5 to 21 days, plus sub-0.25 mg tail dosing and post-jump timing."
+description: "Community Suboxone taper schedules for 7-OH, day by day: 2 to 8 mg starts over 5 to 21 days, an optional tail below 0.25 mg, and symptoms after the last dose."
 category: "mat-suboxone"
 last_updated: "2026-11-21"
 sort: 4
