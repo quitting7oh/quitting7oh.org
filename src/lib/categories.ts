@@ -25,6 +25,10 @@ export interface Category {
   slug: string;
   title: string;
   blurb: string;
+  /** Longer summary for the category index page's meta description and
+   *  structured data. The short `blurb` stays on the homepage and in the
+   *  page header; search engines flag descriptions under ~100 characters. */
+  metaDescription: string;
   Icon: LucideIcon;
   section: CategorySection;
 }
@@ -34,6 +38,8 @@ export const CATEGORIES = [
     slug: 'start-here',
     title: 'Start Here',
     blurb: 'Welcome, withdrawal planning, quitting paths, and craving moments.',
+    metaDescription:
+      "Start here for quitting 7-OH and kratom synthetics: active withdrawal steps, an hour-by-hour timeline, quitting options, supply setup, and craving help.",
     Icon: Compass,
     section: 'recovery',
   },
@@ -41,6 +47,8 @@ export const CATEGORIES = [
     slug: 'for-you',
     title: 'For You',
     blurb: 'Treatment, work protections, mutual aid, sober living, for the person in recovery.',
+    metaDescription:
+      "Recovery planning for people quitting 7-OH and kratom synthetics: at-home care, tapering, rehab levels, sober living, mutual aid, FMLA, ADA, and licenses.",
     Icon: Heart,
     section: 'recovery',
   },
@@ -48,6 +56,8 @@ export const CATEGORIES = [
     slug: 'for-loved-ones',
     title: 'For Loved Ones',
     blurb: 'For family, partners, and friends of someone struggling: what to expect, how to help, how to stay safe.',
+    metaDescription:
+      "Resources for family and friends of someone using 7-OH or kratom synthetics: withdrawal basics, CRAFT, boundaries, safety, rehab, FMLA, and peer groups.",
     Icon: Users,
     section: 'recovery',
   },
@@ -55,6 +65,8 @@ export const CATEGORIES = [
     slug: 'mat-suboxone',
     title: 'MAT / Suboxone',
     blurb: 'COWS, induction, tapers, risks, custom dosing.',
+    metaDescription:
+      "Buprenorphine as one option for 7-OH and kratom synthetics: SOWS/COWS induction, Bernese method, rapid tapers, custom dosing, Sublocade, and troubleshooting.",
     Icon: Pill,
     section: 'recovery',
   },
@@ -62,6 +74,8 @@ export const CATEGORIES = [
     slug: 'medications-supplements',
     title: 'Meds & Supplements',
     blurb: 'Helper meds, supplements, quit-kit stacks, NAD+ IV, peptides, tapering with leaf, cannabis in recovery.',
+    metaDescription:
+      "Medications and supplements for 7-OH withdrawal: helper meds, high-dose vitamin C, plain kratom leaf tapers, commercial stacks, NAD+ IV, peptides, and THC.",
     Icon: Wrench,
     section: 'recovery',
   },
@@ -69,6 +83,8 @@ export const CATEGORIES = [
     slug: 'post-acute',
     title: 'Post-Acute',
     blurb: 'PAWS, sleep recovery, dopamine recovery, endocrine recovery, naltrexone.',
+    metaDescription:
+      "Post-acute recovery (PAWS) after quitting 7-OH and kratom synthetics: sleep, dopamine, hormones, anhedonia, anxiety, kindling, and post-detox naltrexone.",
     Icon: Sprout,
     section: 'recovery',
   },
@@ -76,6 +92,8 @@ export const CATEGORIES = [
     slug: 'compounds',
     title: 'Compounds',
     blurb: '7-OH, pseudo, MGM-15, MIT-A, mitragynine, cat’s claw, and the federal scheduling action.',
+    metaDescription:
+      "Compound profiles for 7-OH, mitragynine pseudoindoxyl, MGM-15 (MIT-A/DHM), MGM-16, plain kratom leaf, mislabeled Cat's Claw, and federal DEA scheduling.",
     Icon: TestTube,
     section: 'reference',
   },
@@ -83,6 +101,8 @@ export const CATEGORIES = [
     slug: 'pharmacology',
     title: 'Pharmacology',
     blurb: 'Deeper science: receptor binding, structure-activity, minor alkaloids.',
+    metaDescription:
+      "Reference pharmacology for 7-OH and kratom alkaloids: chemical structures, morphine receptor comparisons, minor-alkaloid binding, and assay limits.",
     Icon: Microscope,
     section: 'reference',
   },
@@ -90,6 +110,8 @@ export const CATEGORIES = [
     slug: 'resources',
     title: 'Resources',
     blurb: 'Telehealth, recovery coaching, meetings, calculators, finding help.',
+    metaDescription:
+      "Recovery tools for quitting 7-OH: taper calculators for 7-OH, kratom leaf, and Suboxone, telehealth comparisons, live meetings, coaching, and hotlines.",
     Icon: Link2,
     section: 'reference',
   },
@@ -97,6 +119,8 @@ export const CATEGORIES = [
     slug: 'about',
     title: 'Site & Community',
     blurb: 'About the site, its community, technical architecture, changelog, and ways to contribute.',
+    metaDescription:
+      "About quitting7oh.org and its community: the Discord and r/stopping7oh, editorial stances, AI review rules, changelog, architecture, and ways to contribute.",
     Icon: Info,
     section: 'reference',
   },

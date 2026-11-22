@@ -1,8 +1,8 @@
 ---
 title: "Suboxone Rapid Taper"
-description: "A 5-to-10-day Suboxone taper used by people coming off short-acting 7-OH."
+description: "Community Suboxone taper schedules for 7-OH, day by day: 2 to 8 mg starts over 5 to 21 days, an optional tail below 0.25 mg, and symptoms after the last dose."
 category: "mat-suboxone"
-last_updated: "2026-06-09"
+last_updated: "2026-11-21"
 sort: 4
 ---
 These schedules go faster than what a prescriber will typically suggest. They're built on community experience with hundreds of successful rapid tapers from 7-OH, where 5-to-10-day bupe courses at low-to-moderate doses have not produced meaningful bupe dependence. Most prescribers won't sign off on these timelines; you're choosing a community-developed approach over standard clinical practice.

@@ -1,8 +1,8 @@
 ---
 title: "Custom Suboxone Dosing"
-description: "Liquid titration for doses below 0.5 mg, when pill cuts can't get you low enough to finish a taper."
+description: "Cutting Suboxone strips to 0.25 mg and dissolving a strip or tablet in water for doses under 0.5 mg, with a dilution table and storage for pieces and liquid."
 category: "mat-suboxone"
-last_updated: "2026-06-04"
+last_updated: "2026-11-21"
 sort: 5
 ---
 Suboxone and generic buprenorphine-naloxone films come in fixed strengths (2/0.5 mg, 4/1 mg, 8/2 mg, 12/3 mg). When you're tapering, especially at the lower end, you need fractional doses that don't exist as a manufactured product. Cutting films into smaller pieces is how the bupe community has handled this for years. Done carefully, it's accurate enough to taper by 0.25 mg increments.

@@ -1,8 +1,8 @@
 ---
 title: "Paths Off 7-OH"
-description: "Five ways people come off 7-OH and related synthetics, in the order this community would try them."
+description: "Five options for quitting 7-OH and kratom synthetics: cold turkey, kratom leaf taper, helper meds, leaf with helpers, and Suboxone, plus switching paths."
 category: "start-here"
-last_updated: "2026-08-28"
+last_updated: "2026-11-21"
 sort: 5
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Acknowledgments"
-description: "Source notes for the community knowledge behind quitting7oh.org."
+description: "Source notes crediting /u/FlyAdventurous6231 and the community work behind quitting7oh.org, including low-dose bupe induction, vitamin C, and LDN for PAWS."
 category: "about"
-last_updated: "2026-11-19"
+last_updated: "2026-11-21"
 sort: 7
 ---
 
