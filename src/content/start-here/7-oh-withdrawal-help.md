@@ -1,7 +1,7 @@
 ---
 title: "You're in Withdrawal Right Now"
-description: "If you're in active withdrawal right now: what to do this hour, what's coming, where to get help."
+description: "Four next-hour steps for active 7-OH withdrawal: live Discord #sos and meetings, water and a hot shower, symptom links, and when to call 911 or 988."
 category: "start-here"
-last_updated: "2026-08-22"
+last_updated: "2026-11-21"
 sort: 4
 ---

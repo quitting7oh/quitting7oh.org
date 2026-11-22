@@ -1,8 +1,8 @@
 ---
 title: "About This Site"
-description: "What quitting7oh.org is, who it serves, how the team uses AI, and where to go next."
+description: "quitting7oh.org is an ad-free community reference for quitting 7-OH and kratom synthetics: its audience, AI and human review rules, and site boundaries."
 category: "about"
-last_updated: "2026-08-28"
+last_updated: "2026-11-21"
 sort: 1
 ---
 

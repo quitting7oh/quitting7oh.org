@@ -1,8 +1,8 @@
 ---
 title: "7-Pseudoindoxyl / MP (Mitragynine Pseudoindoxyl)"
-description: "Mitragynine pseudoindoxyl (MP), receptor affinity, why bupe induction is harder, what to watch for."
+description: "Mitragynine pseudoindoxyl (MP): mu-opioid affinity, Schedule I status, overdose and labeling risks, and why tight binding complicates Suboxone induction."
 category: "compounds"
-last_updated: "2026-08-28"
+last_updated: "2026-11-21"
 sort: 6
 ---
 > **Pseudo is banned.** DEA placed mitragynine pseudoindoxyl in

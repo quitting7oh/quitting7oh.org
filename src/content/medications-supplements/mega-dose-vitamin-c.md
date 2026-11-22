@@ -1,8 +1,8 @@
 ---
 title: "Mega-Dose Vitamin C"
-description: "High-dose vitamin C may ease opioid withdrawal."
+description: "High-dose liposomal vitamin C for 7-OH withdrawal, with a 3-day preload, acute dosing, buffered powder options, kidney and iron cautions, and study limits."
 category: "medications-supplements"
-last_updated: "2026-09-11"
+last_updated: "2026-11-21"
 sort: 4
 ---
 

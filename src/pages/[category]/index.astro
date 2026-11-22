@@ -59,14 +59,14 @@ const structuredData = [
     type: 'CollectionPage',
     url: pageUrl,
     name: cat.title,
-    description: cat.blurb,
+    description: cat.metaDescription,
     breadcrumb: true,
   }),
   breadcrumbNode(pageUrl, [{ label: cat.title }]),
 ];
 ---
 
-<BaseLayout title={cat.title} description={cat.blurb} structuredData={structuredData}>
+<BaseLayout title={cat.title} description={cat.metaDescription} structuredData={structuredData}>
   <div class="mx-auto flex max-w-[94rem] items-stretch">
     <main id="main-content" class="min-w-0 flex-1">
       <header class="border-b border-border bg-card px-4 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-9">

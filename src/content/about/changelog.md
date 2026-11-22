@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "Recent changes to quitting7oh.org: new pages, rewrites, design tweaks, and editorial sweeps. Newest entries first."
 category: "about"
-last_updated: "2026-11-20"
+last_updated: "2026-11-22"
 sort: 6
 ---
 
@@ -14,7 +14,39 @@ sort: 6
 
 This page tracks substantive changes to the site: new pages, rewrites, layout work, sourcing passes, editorial cleanups. Newest entries at the top. The same content lives in [`CHANGELOG.md`](https://github.com/quitting7oh/quitting7oh.org/blob/main/CHANGELOG.md) at the repo root, which is the source this page is generated from.
 
+## 2026-11-21
+
+### Longer search descriptions
+
+- Bing Webmaster Tools flagged 16 pages whose meta descriptions were
+  under 100 characters. Ten guide pages got new 145-to-157-character
+  summaries, which also appear as the lede under each page title.
+- Category pages now carry their own search description, separate from
+  the short blurb on the homepage. The sitemap and brand pages got
+  longer descriptions too.
+- The "How to quit 7-OH" summary no longer says the options come "in
+  the order this community would try them." It now names all five.
+
 ## 2026-11-20
+
+### Faster homepage on phones
+
+- The "Join a meeting now" box checks about 2,700 NA meetings to find
+  one in session. Each check built a new date formatter, and on a
+  mid-range phone that froze the page for over a second after load.
+  The timezone helpers now build one formatter per timezone and reuse
+  it, which also speeds up the virtual NA meeting finder.
+- Google Analytics now loads on the first scroll, tap, or keypress, or
+  four seconds after the page finishes loading. Page views still
+  queue from the first moment; the script itself stays out of the way
+  while the page is becoming usable.
+
+### Discord short link
+
+- `quitting7oh.org/discord` now redirects to the community Discord
+  invite, so the address is easy to say out loud or put in a post.
+  It's a 302, so the target can change without browsers holding on
+  to the old invite.
 
 ### Bing site-scan fixes
 

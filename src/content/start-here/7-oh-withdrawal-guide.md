@@ -1,8 +1,8 @@
 ---
 title: "7-OH Withdrawal Guide"
-description: "The full 7-OH withdrawal timeline, symptom relief, ER guidance, sleep, food, and what comes next."
+description: "Hour-by-hour 7-OH withdrawal timeline, next-hour steps, short-term symptom relief, sleep and nutrition basics, and warning signs for an ER visit."
 category: "start-here"
-last_updated: "2026-11-19"
+last_updated: "2026-11-21"
 sort: 4.5
 ---
 
